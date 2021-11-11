@@ -22,13 +22,13 @@ label cam0_alice_sleep_night:
         # день веселья. начало
         hide other
         show Alice cams fun-in-bed 01 at laptop_screen
-        Max_07 "Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?"
+        Max_07 "{m}Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?{/m}"
 
         $ renpy.show('Alice cams fun-in-bed 02'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
-        Max_02 "Ага! Теперь ясно... Порнушку она решила посмотреть... посасывая заодно свою игрушку..."
+        Max_02 "{m}Ага! Теперь ясно... Порнушку она решила посмотреть... посасывая заодно свою игрушку...{/m}"
 
         $ renpy.show('Alice cams fun-in-bed 03'+renpy.random.choice(['a', 'b', 'c']), at_list=[laptop_screen])
-        Max_06 "Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!"
+        Max_06 "{m}Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!{/m}"
         if not alice.flags.hip_mass:
             $ alice.flags.hip_mass = 1
             $ poss['naughty'].open(4)
@@ -38,11 +38,11 @@ label cam0_alice_sleep_night:
         $ cam_flag.append('alice_end_sleep_fun')
         # день веселья. интресное закончилось
         if alice.req.result == 'sleep':
-            Max_04 "Ночное шоу закончилось. Теперь Алиса спит... без лифчика... Умничка!"
+            Max_04 "{m}Ночное шоу закончилось. Теперь Алиса спит... без лифчика... Умничка!{/m}"
         elif alice.req.result == 'not_sleep' and not alice.req.noted:
-            Max_09 "Ночное шоу закончилось. Теперь Алиса спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
+            Max_09 "{m}Ночное шоу закончилось. Теперь Алиса спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!{/m}"
         else:
-            Max_01 "Ночное шоу закончилось. Теперь Алиса спит..."
+            Max_01 "{m}Ночное шоу закончилось. Теперь Алиса спит...{/m}"
 
     elif all([flags.eric_jerk, '02:00'<=tm<'02:30', not eric.stat.mast, not flags.eric_noticed, 'eric_jerk' not in cam_flag]):
         # Эрик дрочит на Алису первый раз
@@ -50,12 +50,12 @@ label cam0_alice_sleep_night:
         $ flags.eric_noticed = True
         if prenoted:
             # уже заглядывали к Ане
-            Max_09 "Эй, так вот же он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+            Max_09 "{m}Эй, так вот же он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого...{/m}"
         else:
-            Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
+            Max_09 "{m}Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого...{/m}"
 
         menu:
-            Max_03 "Может, попробовать осторожно подсмотреть за ним с балкона, а то как-то даже не верится?!"
+            Max_03 "{m}Может, попробовать осторожно подсмотреть за ним с балкона, а то как-то даже не верится?!{/m}"
             "{i}Конечно{/i}":
                 jump first_jerk_balkon
 
@@ -65,23 +65,28 @@ label cam0_alice_sleep_night:
         $ flags.eric_noticed = True
         if alice.sleepnaked:
             # Алиса спит голой, Эрик в комнате
+            if all([flags.eric_wallet == 2, flags.eric_photo2]):
+                jump cam_before_frame_eric
 
-            if 'eric.photo2' > 0:
-                Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
+            if flags.eric_photo2:
+                Max_03 "{m}Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой...{/m}"
             else:
                 menu:
-                    Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
+                    Max_03 "{m}Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой...{/m}"
                     "{i}Взять фотоаппарат и пойти к окну Алисы{/i}" ('lucky', 50):
                         jump jerk_photohant2
                     "{i}Да и хрен с ним, пусть дрочит{/i}":
                         pass
         else:
             # Алиса спит в белье, Эрик на балконе
-            if 'eric.photo1' > 0:
-                Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
+            if flags.eric_photo1:
+                if flags.eric_wallet == 2:
+                    Max_13 "{m}Вот чёрт! Я совсем забыл, что Эрик заходит в комнату к Алисе только тогда, когда она голая... Чтобы подставить Эрика, Алиса должна быть голой, иначе будет несостыковка со снимками и мне никто не поверит!{/m}"
+                else:
+                    Max_09 "{m}Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь...{/m}"
             else:
                 menu:
-                    Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
+                    Max_09 "{m}Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь...{/m}"
                     "{i}Взять фотоаппарат и пойти на балкон{/i}" ('lucky', 50):
                         jump jerk_photohant1
                     "{i}Да и хрен с ним, пусть дрочит{/i}":
@@ -90,13 +95,13 @@ label cam0_alice_sleep_night:
     elif 'alice_sleep' not in cam_flag:
         $ cam_flag.append('alice_sleep')
         if alice.req.result == 'sleep':
-            Max_04 "Алиса сейчас спит... без лифчика... Умничка!"
+            Max_04 "{m}Алиса сейчас спит... без лифчика... Умничка!{/m}"
         elif alice.req.result == 'naked':
-            Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
+            Max_04 "{m}Алиса сейчас спит... совсем голенькая и прекрасная...{/m}"
         elif alice.req.result in ['not_sleep', 'not_naked'] and not alice.req.noted:
-            Max_09 "Алиса сейчас спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
+            Max_09 "{m}Алиса сейчас спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!{/m}"
         else:
-            Max_01 "Алиса сейчас спит..."
+            Max_01 "{m}Алиса сейчас спит...{/m}"
     return
 
 label cam0_alice_sleep_morning:
@@ -107,13 +112,13 @@ label cam0_alice_sleep_morning:
     if 'alice_sleep' not in cam_flag:
         $ cam_flag.append('alice_sleep')
         if alice.req.result == 'sleep':
-            Max_04 "Алиса ещё спит... без лифчика... Умничка!"
+            Max_04 "{m}Алиса ещё спит... без лифчика... Умничка!{/m}"
         elif alice.req.result == 'naked':
-            Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
+            Max_04 "{m}Алиса сейчас спит... совсем голенькая и прекрасная...{/m}"
         elif alice.req.result in ['not_sleep', 'not_naked']:
-            Max_09 "Алиса ещё спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
+            Max_09 "{m}Алиса ещё спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!{/m}"
         else:
-            Max_01 "Алиса ещё спит..."
+            Max_01 "{m}Алиса ещё спит...{/m}"
     return
 
 label cam0_alice_shower:
@@ -122,9 +127,9 @@ label cam0_alice_shower:
         if 'alice_not_shower' not in cam_flag:
             $ cam_flag.append('alice_not_shower')
             if len(house[3].cams)>1:
-                Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+                Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
             else:
-                Max_09 "Алисы не видно через эту камеру..."
+                Max_09 "{m}Алисы не видно через эту камеру...{/m}"
 
     else:
         $ alice.dress_inf = '00aa'
@@ -133,7 +138,7 @@ label cam0_alice_shower:
         show FG cam-shum-act at laptop_screen
         if 'alice_shower' not in cam_flag:
             $ cam_flag.append('alice_shower')
-            Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
+            Max_04 "{m}Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест...{/m}"
     return
 
 label cam1_alice_shower:
@@ -152,13 +157,13 @@ label cam1_alice_shower:
         show FG cam-shum-act at laptop_screen
         if 'alice_bath_mirror' not in cam_flag:
             $ cam_flag.append('alice_bath_mirror')
-            Max_03 "Алиса, прежде чем принять душ, любуется собой перед зеркалом. А я и мои зрители с радостью полюбуемся этим через камеру..."
+            Max_03 "{m}Алиса, прежде чем принять душ, любуется собой перед зеркалом. А я и мои зрители с радостью полюбуемся этим через камеру...{/m}"
 
     else:
         show FG cam-shum-noact at laptop_screen
         if 'alice_shower1' not in cam_flag:
             $ cam_flag.append('alice_shower1')
-            Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+            Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
     return
 
 label cam0_alice_lisa_shower:
@@ -187,13 +192,13 @@ label cam0_alice_lisa_shower:
 
         if 'alice_shower' not in cam_flag:
             $ cam_flag.append('alice_shower')
-            Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
+            Max_04 "{m}Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест...{/m}"
             if 'lisa_mirror' not in cam_flag:
                 # Лизу ещё не видели
                 if len(house[3].cams)>1:
-                    Max_09 "Лиза, должно быть, красуется перед зеркалом. Надо взглянуть через другую камеру..."
+                    Max_09 "{m}Лиза, должно быть, красуется перед зеркалом. Надо взглянуть через другую камеру...{/m}"
                 else:
-                    Max_09 "Лиза, должно быть, красуется перед зеркалом, но здесь этого не увидеть..."
+                    Max_09 "{m}Лиза, должно быть, красуется перед зеркалом, но здесь этого не увидеть...{/m}"
     elif __var == 'lisa':
         # в душе Лиза, перед умывальниками Алиса
         $ lisa.dress_inf != '00a'
@@ -203,13 +208,13 @@ label cam0_alice_lisa_shower:
 
         if 'lisa_shower' not in cam_flag:
             $ cam_flag.append('lisa_shower')
-            Max_05 "Младшая сестрёнка принимает душ... На её прелести я мог бы смотреть часами..."
+            Max_05 "{m}Младшая сестрёнка принимает душ... На её прелести я мог бы смотреть часами...{/m}"
             if 'alice_mirror' not in cam_flag:
                 # Алису ещё не видели
                 if len(house[3].cams)>1:
-                    Max_09 "Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру..."
+                    Max_09 "{m}Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру...{/m}"
                 else:
-                    Max_09 "Алиса, должно быть, красуется перед зеркалом, но здесь этого не увидеть..."
+                    Max_09 "{m}Алиса, должно быть, красуется перед зеркалом, но здесь этого не увидеть...{/m}"
     else:
         # обе девчонки в душе, у зеркал никого
         $ lisa.dress_inf != '00a'
@@ -220,7 +225,7 @@ label cam0_alice_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'lisa_shower' not in cam_flag:
             $ cam_flag.append('lisa_shower')
-            Max_05 "Обе мои сестрёнки сейчас принимают душ. Глаз не отвести..."
+            Max_05 "{m}Обе мои сестрёнки сейчас принимают душ. Глаз не отвести...{/m}"
     return
 
 label cam1_alice_lisa_shower:
@@ -255,7 +260,7 @@ label cam1_alice_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'lisa_mirror' not in cam_flag:
             $ cam_flag.append('lisa_mirror')
-            Max_03 "Лиза внимательно разглядывает себя в зеркало... А я и мои зрители с радостью полюбуемся на это через камеру..."
+            Max_03 "{m}Лиза внимательно разглядывает себя в зеркало... А я и мои зрители с радостью полюбуемся на это через камеру...{/m}"
     elif __var == 'alice':
         # перед умывальниками Алиса, Лизу не видно, она сейчас в душе
         if tm[-2:] < '10' and alice.dress_inf != '00aa': # первая треть часа, Алису в душе не видели
@@ -269,12 +274,12 @@ label cam1_alice_lisa_shower:
         show FG cam-shum-act at laptop_screen
         if 'alice_mirror' not in cam_flag:
             $ cam_flag.append('alice_mirror')
-            Max_05 "Ух, старшая сестрёнка просто сногсшибательна..."
+            Max_05 "{m}Ух, старшая сестрёнка просто сногсшибательна...{/m}"
     else:
         show FG cam-shum-noact at laptop_screen
         if 'alice_shower1' not in cam_flag:
             $ cam_flag.append('alice_shower1')
-            Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
+            Max_09 "{m}Через эту камеру никого не видно... Может посмотреть через другую?{/m}"
 
     return
 
@@ -307,7 +312,7 @@ label cam0_alice_dressed_shop:
         $ alice.dress_inf = '01'
         if 'alice_dressed_txt' not in cam_flag:
             $ cam_flag.append('alice_dressed_txt')
-            Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
+            Max_09 "{m}Ничего интересного я здесь уже не увижу, Алиса полностью оделась.{/m}"
         return
 
     $ cam_flag.append('alice_dressed')
@@ -325,7 +330,7 @@ label cam0_alice_dressed_shop:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_07 "Ага! Алиса наряжается, чтобы отправиться на шопинг..."
+        Max_07 "{m}Ага! Алиса наряжается, чтобы отправиться на шопинг...{/m}"
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -336,7 +341,7 @@ label cam0_alice_dressed_shop:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_02 "О да! Сейчас она совсем голенькая..."
+        Max_02 "{m}О да! Сейчас она совсем голенькая...{/m}"
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -347,15 +352,15 @@ label cam0_alice_dressed_shop:
     if alice.req.result == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_2
-        Max_01 "Похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала!"
+        Max_01 "{m}Похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала!{/m}"
     elif alice.req.result == 'nopants':
         $ renpy.show('Alice cams dressed 10a', at_list=[laptop_screen])
         call alice_cam_dress_inf('10a') from _call_alice_cam_dress_inf_3
-        Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит?"
+        Max_05 "{m}Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит?{/m}"
     else:
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_4
-        Max_04 "Какая соблазнительная попка у неё... Уверен, зрителям это нравится!"
+        Max_04 "{m}Какая соблазнительная попка у неё... Уверен, зрителям это нравится!{/m}"
     return
 
 label cam0_alice_dressed_friend:
@@ -365,7 +370,7 @@ label cam0_alice_dressed_friend:
         $ alice.dress_inf = '01'
         if 'alice_dressed_txt' not in cam_flag:
             $ cam_flag.append('alice_dressed_txt')
-            Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
+            Max_09 "{m}Ничего интересного я здесь уже не увижу, Алиса полностью оделась.{/m}"
         return
 
     $ cam_flag.append('alice_dressed')
@@ -383,7 +388,7 @@ label cam0_alice_dressed_friend:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_07 "Ага! Алиса наряжается, чтобы куда-то отправиться..."
+        Max_07 "{m}Ага! Алиса наряжается, чтобы куда-то отправиться...{/m}"
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -394,7 +399,7 @@ label cam0_alice_dressed_friend:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_02 "О да! Сейчас она совсем голенькая..."
+        Max_02 "{m}О да! Сейчас она совсем голенькая...{/m}"
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -405,15 +410,15 @@ label cam0_alice_dressed_friend:
     if alice.req.result == 'not_nopants':
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_7
-        Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
+        Max_01 "{m}Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!{/m}"
     elif alice.req.result == 'nopants':
         $ renpy.show('Alice cams dressed 10a', at_list=[laptop_screen])
         call alice_cam_dress_inf('10a') from _call_alice_cam_dress_inf_8
-        Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт..."
+        Max_05 "{m}Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт...{/m}"
     else:
         $ renpy.show('Alice cams dressed 10', at_list=[laptop_screen])
         call alice_cam_dress_inf('10') from _call_alice_cam_dress_inf_9
-        Max_04 "Трусики хорошо смотрятся на её попке. Но без них было бы лучше..."
+        Max_04 "{m}Трусики хорошо смотрятся на её попке. Но без них было бы лучше...{/m}"
     return
 
 label cam0_alice_dressed_club:
@@ -423,7 +428,7 @@ label cam0_alice_dressed_club:
         $ alice.dress_inf = '06'
         if 'alice_dressed_txt' not in cam_flag:
             $ cam_flag.append('alice_dressed_txt')
-            Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
+            Max_09 "{m}Ничего интересного я здесь уже не увижу, Алиса полностью оделась.{/m}"
         return
 
     $ cam_flag.append('alice_dressed')
@@ -435,7 +440,7 @@ label cam0_alice_dressed_club:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_07 "Ага! Алиса наряжается, чтобы отправиться в клуб..."
+        Max_07 "{m}Ага! Алиса наряжается, чтобы отправиться в клуб...{/m}"
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -446,7 +451,7 @@ label cam0_alice_dressed_club:
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     menu:
-        Max_02 "О да! Сейчас она совсем голенькая..."
+        Max_02 "{m}О да! Сейчас она совсем голенькая...{/m}"
         "{i}продолжать смотреть{/i}":
             pass
         "{i}достаточно{/i}":
@@ -456,15 +461,15 @@ label cam0_alice_dressed_club:
     if alice.req.result == 'not_nopants':
         $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
         call alice_cam_dress_inf('11') from _call_alice_cam_dress_inf_12
-        Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
+        Max_01 "{m}Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!{/m}"
     elif alice.req.result == 'nopants':
         $ renpy.show('Alice cams dressed 11a', at_list=[laptop_screen])
         call alice_cam_dress_inf('11a') from _call_alice_cam_dress_inf_13
-        Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Это платье без трусиков смотрится гораздо лучше... Интересно, в клубе на это кто-нибудь обратит внимание?"
+        Max_05 "{m}Супер! Алиса не надевает трусики... И правильно делает! Это платье без трусиков смотрится гораздо лучше... Интересно, в клубе на это кто-нибудь обратит внимание?{/m}"
     else:
         $ renpy.show('Alice cams dressed 11', at_list=[laptop_screen])
         call alice_cam_dress_inf('11') from _call_alice_cam_dress_inf_14
-        Max_04 "Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше..."
+        Max_04 "{m}Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше...{/m}"
     return
 
 label cam0_alice_rest_morning:
@@ -473,7 +478,7 @@ label cam0_alice_rest_morning:
 
     if 'alice_morning' not in cam_flag:
         $ cam_flag.append('alice_morning')
-        Max_01 "Алиса валяется со своим ноутбуком. Смотрится неплохо..."
+        Max_01 "{m}Алиса валяется со своим ноутбуком. Смотрится неплохо...{/m}"
     return
 
 label cam0_alice_dishes:
@@ -482,7 +487,7 @@ label cam0_alice_dishes:
 
     if 'alice_dishes' not in cam_flag:
         $ cam_flag.append('alice_dishes')
-        Max_01 "Алиса моет посуду. Правильно, нечего весь день прохлаждаться во дворе и за ноутбуком..."
+        Max_01 "{m}Алиса моет посуду. Правильно, нечего весь день прохлаждаться во дворе и за ноутбуком...{/m}"
     return
 
 label cam0_alice_read:
@@ -491,9 +496,9 @@ label cam0_alice_read:
 
     if 'alice_read' not in cam_flag:
         $ cam_flag.append('alice_read')
-        Max_07 "Так, Алиса просто читает. Не особо интересно."
+        Max_07 "{m}Так, Алиса просто читает. Не особо интересно.{/m}"
         if poss['secretbook'].st() > 2:
-            Max_09 "Хотя, книжки она читает эротического жанра, может она возбудится и начнёт себя трогать..."
+            Max_09 "{m}Хотя, книжки она читает эротического жанра, может она возбудится и начнёт себя трогать...{/m}"
     return
 
 label cam0_alice_smoke:
@@ -501,9 +506,9 @@ label cam0_alice_smoke:
     if 'alice_smoke' not in cam_flag:
         $ cam_flag.append('alice_smoke')
         if alice.dcv.special.stage < 1:
-            Max_09 "Алиса должна быть во дворе, но через камеру её не видно... Интересно, где она?!"
+            Max_09 "{m}Алиса должна быть во дворе, но через камеру её не видно... Интересно, где она?!{/m}"
         else:
-            Max_01 "Алиса должна быть во дворе, но через камеру её не видно... Наверное, опять курит..."
+            Max_01 "{m}Алиса должна быть во дворе, но через камеру её не видно... Наверное, опять курит...{/m}"
     return
 
 label cam1_alice_smoke:
@@ -520,7 +525,7 @@ label cam0_alice_sun:
     show FG cam-shum-act at laptop_screen
     if 'alice_sun0' not in cam_flag:
         $ cam_flag.append('alice_sun0')
-        Max_01 "Загорающая Алиса радует глаза зрителей! Ну и мои заодно..."
+        Max_01 "{m}Загорающая Алиса радует глаза зрителей! Ну и мои заодно...{/m}"
     return
 
 label cam1_alice_sun:
@@ -538,9 +543,9 @@ label cam1_alice_sun:
         $ cam_flag.append('alice_sun1')
         if alice.daily.oiled:
             if 'alice_sun0' not in cam_flag:
-                Max_01 "Загорающая Алиса радует глаза зрителей! Ну и мои заодно..."
+                Max_01 "{m}Загорающая Алиса радует глаза зрителей! Ну и мои заодно...{/m}"
         else:
-            Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
+            Max_09 "{m}Через эту камеру ничего не видно... Может посмотреть через другую?{/m}"
     return
 
 label cam0_alice_swim:
@@ -548,9 +553,9 @@ label cam0_alice_swim:
     if 'alice_swim0' not in cam_flag:
         $ cam_flag.append('alice_swim0')
         if len(house[6].cams)>1:
-            Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
+            Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
         else:
-            Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
+            Max_09 "{m}Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн...{/m}"
     return
 
 label cam1_alice_swim:
@@ -558,7 +563,7 @@ label cam1_alice_swim:
     show FG cam-shum-act at laptop_screen
     if 'alice_swim1' not in cam_flag:
         $ cam_flag.append('alice_swim1')
-        Max_01 "На мокренькую старшую сестрёнку всегда приятно взглянуть..."
+        Max_01 "{m}На мокренькую старшую сестрёнку всегда приятно взглянуть...{/m}"
     return
 
 label cam0_alice_cooking_dinner:
@@ -567,7 +572,7 @@ label cam0_alice_cooking_dinner:
 
     if 'alice_cooking' not in cam_flag:
         $ cam_flag.append('alice_cooking')
-        Max_01 "Алиса готовит ужин. А могла бы и попкой покрутить заодно..."
+        Max_01 "{m}Алиса готовит ужин. А могла бы и попкой покрутить заодно...{/m}"
     return
 
 label cam0_alice_rest_evening:
@@ -588,14 +593,14 @@ label cam0_alice_rest_evening:
         # день развлечения. Развлечение начинается
         $ __suf = 'a' if alice.dress =='a' and alice.nopants else ''
         $ renpy.show('Alice cams fun-at-desk 02'+alice.dress+__suf, at_list=[laptop_screen])
-        Max_03 "Ого! Похоже, начинается что-то интересненькое! Алиса решила снять лишнюю одежду и поразвлечься?!"
+        Max_03 "{m}Ого! Похоже, начинается что-то интересненькое! Алиса решила снять лишнюю одежду и поразвлечься?!{/m}"
 
         $ __suf = 'a' if alice.dress in ['a', 'c'] else alice.dress
         $ renpy.show('Alice cams fun-at-desk '+renpy.random.choice(['03', '04'])+__suf, at_list=[laptop_screen])
-        Max_05 "Вот так, сестрёнка! То, как ты ласкаешь киску и посасываешь свою игрушку что мне, что зрителям, однозначно нравится..."
+        Max_05 "{m}Вот так, сестрёнка! То, как ты ласкаешь киску и посасываешь свою игрушку что мне, что зрителям, однозначно нравится...{/m}"
 
         if not alice.stat.mast:
-            Max_02 "А ведь Алиса прекрасно бы смотрелась в роли тех девчонок, которые развлекают народ тем, что раздеваются на камеру и ласкают себя... Всё прибыльнее, чем эта её косметика! Надо бы ей на это как-то легонько намекнуть..."
+            Max_02 "{m}А ведь Алиса прекрасно бы смотрелась в роли тех девчонок, которые развлекают народ тем, что раздеваются на камеру и ласкают себя... Всё прибыльнее, чем эта её косметика! Надо бы ей на это как-то легонько намекнуть...{/m}"
             $ alice.dcv.feature.set_lost(1)
 
         $ alice.stat.mast += 1
@@ -604,15 +609,15 @@ label cam0_alice_rest_evening:
     elif all([tm >= '21:00', 'alice_blog_fun' in cam_flag, 'alice_end_blog_fun' not in cam_flag]):
         $ cam_flag.append('alice_end_blog_fun')
         # день развлечения. развлечение закончилось
-        Max_07 "К сожалению, шоу закончилось и теперь Алиса просто занимается своим блогом..."
+        Max_07 "{m}К сожалению, шоу закончилось и теперь Алиса просто занимается своим блогом...{/m}"
 
     elif 'alice_evening' not in cam_flag:
         #
         $ cam_flag.append('alice_evening')
         if 'blog_fun' in cam_flag:
-            Max_07 "Алиса занимается своим блогом. Ничего интересного не намечается. Хотя... как знать, может стоит подождать..."
+            Max_07 "{m}Алиса занимается своим блогом. Ничего интересного не намечается. Хотя... как знать, может стоит подождать...{/m}"
         else:
-            Max_07 "Алиса занимается своим блогом. Ничего интересного не намечается..."
+            Max_07 "{m}Алиса занимается своим блогом. Ничего интересного не намечается...{/m}"
 
     return
 
@@ -622,7 +627,7 @@ label cam0_alice_tv:
 
     if 'alice_tv' not in cam_flag:
         $ cam_flag.append('alice_tv')
-        Max_01 "Алиса смотрит ТВ. Наверняка залипла в какие-нибудь сериалы..."
+        Max_01 "{m}Алиса смотрит ТВ. Наверняка залипла в какие-нибудь сериалы...{/m}"
     return
 
 label cam0_alice_bath:
@@ -632,27 +637,27 @@ label cam0_alice_bath:
         show FG cam-shum-act at laptop_screen
         if 'alice_bath0_st0' not in cam_flag:
             $ cam_flag.append('alice_bath0_st0')
-            Max_01 "Алиса ещё только набирает воду, а вид уже классный!"
+            Max_01 "{m}Алиса ещё только набирает воду, а вид уже классный!{/m}"
     elif tm[-2:] > '40':
         # вытирается
         show Alice cams bath 05 at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'alice_bath0_st1' not in cam_flag:
             $ cam_flag.append('alice_bath0_st1')
-            Max_04 "Не спеши, Алиса. Вытирайся помедленнее..."
+            Max_04 "{m}Не спеши, Алиса. Вытирайся помедленнее...{/m}"
     else:
         $ renpy.show('Alice cams bath '+cam_poses_manager(alice, ['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'alice_bath0_st0' not in cam_flag:
             $ cam_flag.append('alice_bath0_st0')
-            Max_05 "Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение..."
+            Max_05 "{m}Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение...{/m}"
     return
 
 label cam1_alice_bath:
     show FG cam-shum-noact at laptop_screen
     if 'alice_bath1' not in cam_flag:
         $ cam_flag.append('alice_bath1')
-        Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+        Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
     return
 
 label cam0_alice_blog_lingerie:
@@ -676,9 +681,9 @@ label cam0_alice_blog_lingerie:
     if 'alice_blog' not in cam_flag:
         $ cam_flag.append('alice_blog')
         if cur_pose == '01':
-            Max_02 "Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее..."
+            Max_02 "{m}Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее...{/m}"
         else:
-            Max_04 "Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!"
+            Max_04 "{m}Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!{/m}"
     return
 
 label cam0_alice_after_club:
@@ -687,22 +692,22 @@ label cam0_alice_after_club:
         if 'alice_not_bath' not in cam_flag:
             $ cam_flag.append('alice_not_bath')
             if len(house[3].cams)>1:
-                Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+                Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
             else:
-                Max_09 "Алисы не видно через эту камеру..."
+                Max_09 "{m}Алисы не видно через эту камеру...{/m}"
     elif tm[-2:] > '30':
         # вытирается
         show Alice cams bath 05 at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'alice_bath0_st1' not in cam_flag:
             $ cam_flag.append('alice_bath0_st1')
-            Max_04 "Не спеши, Алиса. Вытирайся помедленнее..."
+            Max_04 "{m}Не спеши, Алиса. Вытирайся помедленнее...{/m}"
     else:
         $ renpy.show('Alice cams bath '+cam_poses_manager(alice, ['02', '03', '04']), at_list=[laptop_screen,])
         show FG cam-shum-act at laptop_screen
         if 'alice_bath0_st0' not in cam_flag:
             $ cam_flag.append('alice_bath0_st0')
-            Max_05 "Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение..."
+            Max_05 "{m}Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение...{/m}"
     return
 
 label cam1_alice_after_club:
@@ -715,12 +720,12 @@ label cam1_alice_after_club:
         show FG cam-shum-act at laptop_screen
         if 'alice_bath_mirror' not in cam_flag:
             $ cam_flag.append('alice_bath_mirror')
-            Max_01 "Алиса вернулась из клуба."
+            Max_01 "{m}Алиса вернулась из клуба.{/m}"
     else:
         show FG cam-shum-noact at laptop_screen
         if 'alice_bath1' not in cam_flag:
             $ cam_flag.append('alice_bath1')
-            Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
+            Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
     return
 
 label cam0_blog_with_Eric:

@@ -5,7 +5,7 @@ label cam0_olivia_lisa_sun:
     show FG cam-shum-act at laptop_screen
     if 'olivia_lisa_sun' not in cam_flag:
         $ cam_flag.append('olivia_lisa_sun')
-        Max_01 "Благодаря натуризму Оливии, внимания ко двору станет побольше..."
+        Max_01 "{m}Благодаря натуризму Оливии, внимания ко двору станет побольше...{/m}"
     return
 
 
@@ -28,7 +28,7 @@ label cam1_olivia_lisa_swim:
     show FG cam-shum-act at laptop_screen
     if 'lisa_swim1' not in cam_flag:
         $ cam_flag.append('lisa_swim1')
-        Max_01 "Приятно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями..."
+        Max_01 "{m}Приятно наблюдать за младшей сестрёнкой у водички и тем, как Оливия светит своими прелестями...{/m}"
     return
 
 
@@ -39,7 +39,7 @@ label cam0_olivia_lisa_tv:
     if 'olivia_lisa_tv' not in cam_flag:
         $ cam_flag.append('olivia_lisa_tv')
         if lisa.dress < 'd':
-            Max_01 "Девчонки смотрят сериалы... Жду не дождусь, когда Лиза тоже начнёт смотреть их голой, как Оливия!"
+            Max_01 "{m}Девчонки смотрят сериалы... Жду не дождусь, когда Лиза тоже начнёт смотреть их голой, как Оливия!{/m}"
         else:
             pass
             # Max_01 ""
@@ -51,5 +51,5 @@ label cam0_olivia_lisa_sleep:
     show FG cam-shum-act at laptop_screen
     if 'olivia_lisa_sleep' not in cam_flag:
         $ cam_flag.append('olivia_lisa_sleep')
-        Max_01 "Красавицы сладко спят..."
+        Max_01 "{m}Красавицы сладко спят...{/m}"
     return

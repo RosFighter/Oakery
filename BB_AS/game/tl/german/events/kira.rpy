@@ -1,10 +1,10 @@
 ﻿# TODO: Translation updated at 2021-09-01 17:03
 
-# game/events/kira.rpy:23
-translate german kira_bath_e51d277a:
+# game/events/kira.rpy:26
+translate german kira_bath_a64599ce:
 
-    # Max_01 "Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!" nointeract
-    Max_01 "Nur eine Person wäre zu diesem Zeitpunkt wach und in der Badewanne, Tante Kira!" nointeract
+    # Max_01 "{m}Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!{/m}" nointeract
+    Max_01 "{m}Nur eine Person wäre zu diesem Zeitpunkt wach und in der Badewanne, Tante Kira!{/m}" nointeract
 
 # game/events/kira.rpy:26
 translate german kira_bath_fef8596e:
@@ -12,83 +12,83 @@ translate german kira_bath_fef8596e:
     # Kira "{b}Кира:{/b} Кто там? Я принимаю ванну и абсолютно голая... Так что не входите, дайте отдохнуть!"
     Kira "{b}Kira:{/b} Wer ist da? Ich nehme ein Bad und bin völlig nackt... Also komm nicht rein!"
 
-# game/events/kira.rpy:28
-translate german kira_bath_5bdda7d4:
-
-    # Max_09 "Нужно найти способ как-то подглядеть за девчонками в ванной. Может, попробовать вечером со двора?!"
-    Max_09 "Es muss einen besseren Standort geben, um in das Badezimmer zu sehen. Vielleicht sollte ich es heute Abend auf dem Hof versuchen?"
-
 # game/events/kira.rpy:30
-translate german kira_bath_b499c0e8:
+translate german kira_bath_9db81a9c:
 
-    # Max_09 "Нужно найти способ как-то подглядеть за девчонками в ванной. Может, стоит осмотреться изнутри?!"
-    Max_09 "Es muss eine bessere Möglichkeit geben, die Mädchen auf der Toilette zu beobachten. Vielleicht sollte ich einen Blick hinein werfen?"
+    # Max_09 "{m}Нужно найти способ как-то подглядеть за девчонками в ванной. Может, попробовать вечером со двора?!{/m}"
+    Max_09 "{m}Es muss einen besseren Standort geben, um in das Badezimmer zu sehen. Vielleicht sollte ich es heute Abend auf dem Hof versuchen?{/m}"
 
 # game/events/kira.rpy:32
-translate german kira_bath_e602bda6:
+translate german kira_bath_b6f7091d:
 
-    # Max_09 "Нужно уже наконец купить стремянку, чтобы подглядывать за тем, что происходит в ванной..."
-    Max_09 "Es sieht so aus, als ob der Kauf einer Trittleiter meine beste Chance ist, einen schönen Blick auf das Badezimmer zu bekommen."
+    # Max_09 "{m}Нужно найти способ как-то подглядеть за девчонками в ванной. Может, стоит осмотреться изнутри?!{/m}"
+    Max_09 "{m}Es muss eine bessere Möglichkeit geben, die Mädchen auf der Toilette zu beobachten. Vielleicht sollte ich einen Blick hinein werfen?{/m}"
 
 # game/events/kira.rpy:34
-translate german kira_bath_67b54ecf:
+translate german kira_bath_2055310d:
 
-    # Max_09 "В следующий раз лучше заглянуть со стремянки..."
-    Max_09 "Ich sollte nächstes Mal die Leiter benutzen..."
+    # Max_09 "{m}Нужно уже наконец купить стремянку, чтобы подглядывать за тем, что происходит в ванной...{/m}"
+    Max_09 "{m}Es sieht so aus, als ob der Kauf einer Trittleiter meine beste Chance ist, einen schönen Blick auf das Badezimmer zu bekommen.{/m}"
 
-# game/events/kira.rpy:43
-translate german kira_bath_226743d2:
+# game/events/kira.rpy:36
+translate german kira_bath_784a00af:
 
-    # Max_09 "Пусть лучше тётя Кира отдохнёт, а вернее отмоется от Эрика... А то как-то не очень хочется что-то делать в ванне сразу после него!"
-    Max_09 "Es ist besser für Tante Kira, sich auszuruhen, oder noch besser, Eric loszuwerden... Ich habe keine Lust, hinterher noch etwas wegen der Badewanne auszuhandeln!"
+    # Max_09 "{m}В следующий раз лучше заглянуть со стремянки...{/m}"
+    Max_09 "{m}Ich sollte nächstes Mal die Leiter benutzen...{/m}"
 
 # game/events/kira.rpy:45
-translate german kira_bath_b08ab956:
+translate german kira_bath_22e7552b:
 
-    # Max_09 "Пусть лучше тётя Кира отдохнёт и отмоется от Эрика... Можно было бы всё же зайти, но вдруг Эрик этого и ждёт. Лучше не рисковать!"
-    Max_09 "Es wäre besser, wenn Tante Kira sich ausruhen und von Eric befreien würde... Ich könnte immer noch reingehen, aber vielleicht ist es das, worauf Eric gewartet hat. Ich sollte besser kein Risiko eingehen!"
+    # Max_09 "{m}Пусть лучше тётя Кира отдохнёт, а вернее отмоется от Эрика... А то как-то не очень хочется что-то делать в ванне сразу после него!{/m}"
+    Max_09 "{m}Es ist besser für Tante Kira, sich auszuruhen, oder noch besser, Eric loszuwerden... Ich habe keine Lust, hinterher noch etwas wegen der Badewanne auszuhandeln!{/m}"
 
-# game/events/kira.rpy:54
-translate german kira_bath_6a58c36d:
+# game/events/kira.rpy:47
+translate german kira_bath_c03ee6d6:
 
-    # Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
-    Max_01 "Ich hoffe, niemand fragt sich, was die Trittleiter hier zu suchen hat... Was, was? Natürlich ist es das, man weiß ja nie! Und jetzt kommt der lustige Teil..."
+    # Max_09 "{m}Пусть лучше тётя Кира отдохнёт и отмоется от Эрика... Можно было бы всё же зайти, но вдруг Эрик этого и ждёт. Лучше не рисковать!{/m}"
+    Max_09 "{m}Es wäre besser, wenn Tante Kira sich ausruhen und von Eric befreien würde... Ich könnte immer noch reingehen, aber vielleicht ist es das, worauf Eric gewartet hat. Ich sollte besser kein Risiko eingehen!{/m}"
 
-# game/events/kira.rpy:70
-translate german kira_bath_ladder_2b325faf:
+# game/events/kira.rpy:56
+translate german kira_bath_4a929722:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Mal sehen, was wir hier haben..."
+    # Max_01 "{m}Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное...{/m}"
+    Max_01 "{m}Ich hoffe, niemand fragt sich, was die Trittleiter hier zu suchen hat... Was, was? Natürlich ist es das, man weiß ja nie! Und jetzt kommt der lustige Teil...{/m}"
 
-# game/events/kira.rpy:77
-translate german kira_bath_ladder_7cba9683:
+# game/events/kira.rpy:72
+translate german kira_bath_ladder_76e8b72b:
 
-    # Max_02 "Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой..."
-    Max_02 "Oh! Was für einen prächtigen Arsch sie hat... Gut, dass ich auf ihre Rückkehr gewartet habe! Komm schon, Tante Kira, es wird Zeit, dass der Hintern nass wird..."
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Mal sehen, was wir hier haben...{/m}"
 
-# game/events/kira.rpy:81
-translate german kira_bath_ladder_1e31a44d:
+# game/events/kira.rpy:79
+translate german kira_bath_ladder_ad4cb718:
 
-    # Max_05 "Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально..."
-    Max_05 "Wow! Sie hat beschlossen, mit ihrer Muschi zu spielen... Oh, das ist fantastisch. Warum macht sie es nicht einfach im Liegen im Badezimmer? Es fühlt sich an, als hätte sie es mit Absicht gemacht..."
+    # Max_02 "{m}Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой...{/m}"
+    Max_02 "{m}Oh! Was für einen prächtigen Arsch sie hat... Gut, dass ich auf ihre Rückkehr gewartet habe! Komm schon, Tante Kira, es wird Zeit, dass der Hintern nass wird...{/m}"
 
 # game/events/kira.rpy:83
-translate german kira_bath_ladder_a5472214:
+translate german kira_bath_ladder_cd6aa247:
 
-    # Max_10 "Блин! Она меня видела! Вот это уже не круто... Хотя, это же тётя Кира... она же не станет меня сдавать маме? Или нет?!"
-    Max_10 "Scheiße! Sie hat mich gesehen! Das ist kein Quatsch... Es ist aber Tante Kira... sie wird mich doch nicht an Mom ausliefern, oder?"
+    # Max_05 "{m}Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально...{/m}"
+    Max_05 "{m}Wow! Sie hat beschlossen, mit ihrer Muschi zu spielen... Oh, das ist fantastisch. Warum macht sie es nicht einfach im Liegen im Badezimmer? Es fühlt sich an, als hätte sie es mit Absicht gemacht...{/m}"
 
 # game/events/kira.rpy:85
-translate german kira_bath_ladder_25ce42f2:
+translate german kira_bath_ladder_2e94138e:
 
-    # Max_08 "Что? Она зовёт меня к себе?! Да ладно! Как-то мне это не очень нравится..." nointeract
-    Max_08 "Was? Ruft sie mich rüber?! Ich bin nervös, mir gefällt nicht, wohin das führt..." nointeract
+    # Max_10 "{m}Блин! Она меня видела! Вот это уже не круто... Хотя, это же тётя Кира... она же не станет меня сдавать маме? Или нет?!{/m}"
+    Max_10 "{m}Scheiße! Sie hat mich gesehen! Das ist kein Quatsch... Es ist aber Tante Kira... sie wird mich doch nicht an Mom ausliefern, oder?{/m}"
 
-# game/events/kira.rpy:95
-translate german kira_bath_ladder_be5e0493:
+# game/events/kira.rpy:88
+translate german kira_bath_ladder_d1389531:
 
-    # Max_04 "Да-а-а, у неё просто обалденная грудь! Сосочки прямо там, где надо... Ох, я бы с ней ванну попринимал! Надеюсь, мне это приснится. Пора идти спать..."
-    Max_04 "Ja, sie hat tolle Titten! Ihre Brustwarzen sind genau da, wo sie sein sollten... Oh, ich würde ein Bad mit ihr nehmen! Ich hoffe, es passiert wenigstens in meinen Träumen."
+    # Max_08 "{m}Что? Она зовёт меня к себе?! Да ладно! Как-то мне это не очень нравится...{/m}" nointeract
+    Max_08 "{m}Was? Ruft sie mich rüber?! Ich bin nervös, mir gefällt nicht, wohin das führt...{/m}" nointeract
+
+# game/events/kira.rpy:98
+translate german kira_bath_ladder_947ff46b:
+
+    # Max_04 "{m}Да-а-а, у неё просто обалденная грудь! Сосочки прямо там, где надо... Ох, я бы с ней ванну попринимал! Надеюсь, мне это приснится. Пора идти спать...{/m}"
+    Max_04 "{m}Ja, sie hat tolle Titten! Ihre Brustwarzen sind genau da, wo sie sein sollten... Oh, ich würde ein Bad mit ihr nehmen! Ich hoffe, es passiert wenigstens in meinen Träumen.{/m}"
 
 # game/events/kira.rpy:102
 translate german kira_bath_kira_mass_bath_first_7398c496:
@@ -1434,29 +1434,29 @@ translate german kira_night_swim_end_cum_171022d2:
     # Max_01 "Не забуду... Спокойной ночи!"
     Max_01 "Das werde ich nicht... Gute Nacht!"
 
-# game/events/kira.rpy:928
-translate german kira_sleep_night_96d0aaaf:
+# game/events/kira.rpy:904
+translate german kira_sleep_night_af0e14bf:
 
-    # Max_04 "Ага! Тётя Кира спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..." nointeract
-    Max_04 "Aha! Tante Kira ist eingeschlafen. Es ist gut, dass ihr Nachthemd leicht transparent ist... Uhh, sie ist erstaunlich..." nointeract
+    # Max_04 "{m}Ага! Тётя Кира спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша...{/m}" nointeract
+    Max_04 "{m}Aha! Tante Kira ist eingeschlafen. Es ist gut, dass ihr Nachthemd leicht transparent ist... Uhh, sie ist erstaunlich...{/m}" nointeract
 
-# game/events/kira.rpy:934
-translate german kira_sleep_night_37f4a3ba:
+# game/events/kira.rpy:909
+translate german kira_sleep_night_0d97185d:
 
-    # Max_02 "Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться..."
-    Max_02 "Wow! Meine Tante hat einen geilen Arsch... Ich will ihn mir ewig ansehen. Und nicht nur das..."
+    # Max_02 "{m}Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться...{/m}"
+    Max_02 "{m}Wow! Meine Tante hat einen geilen Arsch... Ich will ihn mir ewig ansehen. Und nicht nur das...{/m}"
 
-# game/events/kira.rpy:936
-translate german kira_sleep_night_c1353df2:
+# game/events/kira.rpy:911
+translate german kira_sleep_night_9b930cb9:
 
-    # Max_03 "О, да! К этой шикарной попке я бы с удовольствием прижался... Как и к этим соблазнительным сисечкам. Ммм, очаровательна, как ни крути..."
-    Max_03 "Oh, ja! Ich würde diesen Arsch gerne für mich haben... und diese saftigen Titten auch. Fantastisch..."
+    # Max_03 "{m}О, да! К этой шикарной попке я бы с удовольствием прижался... Как и к этим соблазнительным сисечкам. Ммм, очаровательна, как ни крути...{/m}"
+    Max_03 "{m}Oh, ja! Ich würde diesen Arsch gerne für mich haben... und diese saftigen Titten auch. Fantastisch...{/m}"
 
-# game/events/kira.rpy:938
-translate german kira_sleep_night_e88b00c2:
+# game/events/kira.rpy:913
+translate german kira_sleep_night_dd1a5bb4:
 
-    # Max_05 "Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!"
-    Max_05 "Verdammt, der Anblick dieser gespreizten und schlanken Beine macht es in diesen Shorts zu eng... Trotzdem, so eine heiße Schönheit!"
+    # Max_05 "{m}Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!{/m}"
+    Max_05 "{m}Verdammt, der Anblick dieser gespreizten und schlanken Beine macht es in diesen Shorts zu eng... Trotzdem, so eine heiße Schönheit!{/m}"
 
 # game/events/kira.rpy:958
 translate german kira_sleep_morning_aa901b38:
@@ -1464,35 +1464,35 @@ translate german kira_sleep_morning_aa901b38:
     # Max_04 "[txt!t]" nointeract
     Max_04 "[txt!t]" nointeract
 
-# game/events/kira.rpy:964
-translate german kira_sleep_morning_37f4a3ba:
+# game/events/kira.rpy:939
+translate german kira_sleep_morning_0d97185d:
 
-    # Max_02 "Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться..."
-    Max_02 "Cool! Was für einen geilen Arsch meine Tante hat... den ich unendlich lang bewundern möchte. Und nicht nur das..."
+    # Max_02 "{m}Класс! Какая сладкая попка у моей тёти... Хочется любоваться бесконечно. И не только любоваться...{/m}"
+    Max_02 "{m}Cool! Was für einen geilen Arsch meine Tante hat... den ich unendlich lang bewundern möchte. Und nicht nur das...{/m}"
 
-# game/events/kira.rpy:966
-translate german kira_sleep_morning_c1353df2:
+# game/events/kira.rpy:941
+translate german kira_sleep_morning_9b930cb9:
 
-    # Max_03 "О, да! К этой шикарной попке я бы с удовольствием прижался... Как и к этим соблазнительным сисечкам. Ммм, очаровательна, как ни крути..."
-    Max_03 "Oh, ja! Ich würde mich gerne an diesem Arsch festhalten... Und ihre verführerischen Brüste..."
+    # Max_03 "{m}О, да! К этой шикарной попке я бы с удовольствием прижался... Как и к этим соблазнительным сисечкам. Ммм, очаровательна, как ни крути...{/m}"
+    Max_03 "{m}Oh, ja! Ich würde mich gerne an diesem Arsch festhalten... Und ihre verführerischen Brüste...{/m}"
 
-# game/events/kira.rpy:968
-translate german kira_sleep_morning_e88b00c2:
+# game/events/kira.rpy:943
+translate german kira_sleep_morning_dd1a5bb4:
 
-    # Max_05 "Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!"
-    Max_05 "Verdammt, der Anblick dieser gespreizten und schlanken Beine macht es sehr eng in meinen Shorts... Darauf kann man wetten, sie ist so heiß!"
+    # Max_05 "{m}Чёрт, от вида этих раздвинутых и стройных ножек в шортах становится слишком тесно... Ещё бы, такая горячая красотка!{/m}"
+    Max_05 "{m}Verdammt, der Anblick dieser gespreizten und schlanken Beine macht es sehr eng in meinen Shorts... Darauf kann man wetten, sie ist so heiß!{/m}"
 
-# game/events/kira.rpy:996
-translate german kira_night_tv_234d0568:
+# game/events/kira.rpy:972
+translate german kira_night_tv_8077fc73:
 
-    # Max_01 "Тётя Кира ещё не легла спать... смотрит сериалы. Может, стоит задержаться?" nointeract
-    Max_01 "Tante Kira ist noch nicht ins Bett gegangen... schaut Filme. Vielleicht sollte ich länger aufbleiben?" nointeract
+    # Max_01 "{m}Тётя Кира ещё не легла спать... смотрит сериалы. Может, стоит задержаться?{/m}" nointeract
+    Max_01 "{m}Tante Kira ist noch nicht ins Bett gegangen... schaut Filme. Vielleicht sollte ich länger aufbleiben?{/m}" nointeract
 
-# game/events/kira.rpy:1002
-translate german kira_night_tv_e247cac6:
+# game/events/kira.rpy:978
+translate german kira_night_tv_825c1951:
 
-    # Max_04 "Да-а-а, кто-то залипает на сериалы, а я вот залипаю на свою тётю..." nointeract
-    Max_04 "Ja, irgendjemand hält sich an TV-Sendungen, und ich halte mich an meine Tante..." nointeract
+    # Max_04 "{m}Да-а-а, кто-то залипает на сериалы, а я вот залипаю на свою тётю...{/m}" nointeract
+    Max_04 "{m}Ja, irgendjemand hält sich an TV-Sendungen, und ich halte mich an meine Tante...{/m}" nointeract
 
 # game/events/kira.rpy:1009
 translate german kira_night_tv_a95566ce:
@@ -1542,11 +1542,11 @@ translate german kira_night_tv_e72c8e0b:
     # Max_00 "Ага, приятных снов..."
     Max_00 "Ja, süße Träume..."
 
-# game/events/kira.rpy:1031
-translate german kira_night_tv_ab0640d8:
+# game/events/kira.rpy:1007
+translate german kira_night_tv_a7abcb85:
 
-    # Max_05 "Ухх... Она начала ласкать свою киску... Вот это уже горячо!" nointeract
-    Max_05 "Uhh... Sie hat angefangen, ihre Pussy zu massieren... Das ist heiß!" nointeract
+    # Max_05 "{m}Ухх... Она начала ласкать свою киску... Вот это уже горячо!{/m}" nointeract
+    Max_05 "{m}Uhh... Sie hat angefangen, ihre Pussy zu massieren... Das ist heiß!{/m}" nointeract
 
 # game/events/kira.rpy:1038
 translate german kira_night_tv_a0ee876d:
@@ -1561,9 +1561,9 @@ translate german kira_night_tv_9353de64:
     Kira_04 "Wenn deine Mom das herausfindet, sind wir beide in Schwierigkeiten. Also, lass uns das geheim halten."
 
 # game/events/kira.rpy:1043
-translate german kira_night_tv_e03b5ea1:
+translate german kira_night_tv_900519e1:
 
-    # Max_03 "Конечно, тётя Кира. Мне что-то не спится. Можно тоже телек с тобой посмотреть?"
+    # Max_03 "Конечно, тётя Кира. Мне что-то не спится. Можно тоже телик с тобой посмотреть?"
     Max_03 "Natürlich, Tante Kira. Ich kann nicht schlafen. Kann ich mit dir fernsehen?"
 
 # game/events/kira.rpy:1047
@@ -1573,22 +1573,22 @@ translate german kira_night_tv_413b9a2c:
     Kira_04 "Komm schon, Max. Ich habe nur nicht erwartet, dass mich jemand sieht. So peinlich... Wir werden diesen Vorfall geheim halten, nicht wahr?"
 
 # game/events/kira.rpy:1048
-translate german kira_night_tv_e03b5ea1_1:
+translate german kira_night_tv_900519e1_1:
 
-    # Max_03 "Конечно, тётя Кира. Мне что-то не спится. Можно тоже телек с тобой посмотреть?"
+    # Max_03 "Конечно, тётя Кира. Мне что-то не спится. Можно тоже телик с тобой посмотреть?"
     Max_03 "Natürlich, Tante Kira. Ich kann nicht schlafen. Kann ich mit dir fernsehen?"
 
-# game/events/kira.rpy:1067
-translate german kira_night_tv_10418689:
+# game/events/kira.rpy:1043
+translate german kira_night_tv_73382a2a:
 
-    # Max_01 "Тётя Кира ещё не легла спать... смотрит порнушку. Может, стоит задержаться?" nointeract
-    Max_01 "Tante Kira ist noch nicht ins Bett gegangen... schaut Pornos. Soll ich länger bleiben?" nointeract
+    # Max_01 "{m}Тётя Кира ещё не легла спать... смотрит порнушку. Может, стоит задержаться?{/m}" nointeract
+    Max_01 "{m}Tante Kira ist noch nicht ins Bett gegangen... schaut Pornos. Soll ich länger bleiben?{/m}" nointeract
 
-# game/events/kira.rpy:1073
-translate german kira_night_tv_48edd355:
+# game/events/kira.rpy:1049
+translate german kira_night_tv_5892b367:
 
-    # Max_05 "Ухх... Она начала ласкать свою киску... Вот это уже горячо! От такой компании я не откажусь..." nointeract
-    Max_05 "Uhh... Sie hat angefangen, ihre Pussy zu massieren... Das ist heiß!" nointeract
+    # Max_05 "{m}Ухх... Она начала ласкать свою киску... Вот это уже горячо! От такой компании я не откажусь...{/m}" nointeract
+    Max_05 "{m}Uhh... Sie hat angefangen, ihre Pussy zu massieren... Das ist heiß!{/m}" nointeract
 
 # game/events/kira.rpy:1081
 translate german kira_night_tv_8a132a75:
@@ -2191,9 +2191,9 @@ translate german kira_night_tv_second_lesson_e9adc097:
     Max_07 "Ich dachte, ich wäre ziemlich gut darin..."
 
 # game/events/kira.rpy:1458
-translate german kira_night_tv_second_lesson_50f2907c:
+translate german kira_night_tv_second_lesson_85e001ed:
 
-    # Kira_04 "Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телек посмотреть..."
+    # Kira_04 "Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телик посмотреть..."
     Kira_04 "Besser. Du hast in der heutigen Lektion sehr gut abgeschnitten, aber nur ein bisschen. Und jetzt geh ins Bett! Ich habe vor, noch etwas fernzusehen..."
 
 # game/events/kira.rpy:1464
@@ -2203,9 +2203,9 @@ translate german kira_night_tv_second_lesson_cb14d79c:
     Kira_07 "Mmm ... Max ... Ich denke... wir sollten fertig werden. Es ist schon so spät." nointeract
 
 # game/events/kira.rpy:1472
-translate german kira_night_tv_second_lesson_d78e1c5c:
+translate german kira_night_tv_second_lesson_30137438:
 
-    # Kira_04 "[failed!t]Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телек посмотреть..."
+    # Kira_04 "[failed!t]Уже значительно лучше. С сегодняшним уроком ты справился очень хорошо, но хорошего помаленьку. А то у тебя будет мозоль на языке... А теперь бегом спать! Я тут планирую ещё немного телик посмотреть..."
     Kira_04 "[failed!t]Besser. Du hast in der heutigen Lektion sehr gut abgeschnitten, aber nur ein bisschen. Und jetzt geh ins Bett! Ich habe vor, noch etwas fernzusehen..."
 
 # game/events/kira.rpy:1477
@@ -2401,16 +2401,16 @@ translate german kira_night_tv_repeat_lesson_0b605960:
     Kira_09 "Einfach nur genießen..." nointeract
 
 # game/events/kira.rpy:1611
-translate german kira_night_tv_repeat_lesson_11330b66:
+translate german kira_night_tv_repeat_lesson_941d71d2:
 
-    # Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Видно, что это не так-то просто... ей еле хватает рта, чтобы это сделать.{/i}" nointeract
-    Max_20 "[restrain!t]{i}Uhh, sie erkundet sanft die Spitze meines Schwanzes ... Es sieht so aus, als würde sie entscheiden, ob sie meine volle Länge nehmen kann.{/i}" nointeract
+    # Max_20 "[restrain!t]{m}Ухх, она так нежно посасывает головку моего члена... Видно, что это не так-то просто... ей еле хватает рта, чтобы это сделать.{/m}" nointeract
+    Max_20 "[restrain!t]{m}Uhh, sie erkundet sanft die Spitze meines Schwanzes ... Es sieht so aus, als würde sie entscheiden, ob sie meine volle Länge nehmen kann.{/m}" nointeract
 
 # game/events/kira.rpy:1626
-translate german kira_night_tv_repeat_lesson_011a1437:
+translate german kira_night_tv_repeat_lesson_ff92f459:
 
-    # Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}" nointeract
-    Max_21 "[restrain!t]{i}Unglaublich! Ich bin praktisch in ihrem Mund drin verschwunden! Scheiße, ich bin schon kurz vorm Durchdrehen... Ich bin kurz davor, fertig zu werden... Jetzt bewegt sie sich!{/i}" nointeract
+    # Max_21 "[restrain!t]{m}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/m}" nointeract
+    Max_21 "[restrain!t]{m}Unglaublich! Ich bin praktisch in ihrem Mund drin verschwunden! Scheiße, ich bin schon kurz vorm Durchdrehen... Ich bin kurz davor, fertig zu werden... Jetzt bewegt sie sich!{/m}" nointeract
 
 # game/events/kira.rpy:1629
 translate german kira_night_tv_repeat_lesson_609a6e0c:
@@ -2623,16 +2623,16 @@ translate german kira_night_tv_bj_0b605960:
     Kira_09 "Einfach nur genießen..." nointeract
 
 # game/events/kira.rpy:1816
-translate german kira_night_tv_bj_4e70d008:
+translate german kira_night_tv_bj_34578d21:
 
-    # Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/i}" nointeract
-    Max_20 "[restrain!t]{i}Uhh, sie saugt so sanft an der Spitze meines Schwanzes... Ich weiß nicht, wie sie es schafft, ihn in ihren Mund zu bekommen!{/i}" nointeract
+    # Max_20 "[restrain!t]{m}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/m}" nointeract
+    Max_20 "[restrain!t]{m}Uhh, sie saugt so sanft an der Spitze meines Schwanzes... Ich weiß nicht, wie sie es schafft, ihn in ihren Mund zu bekommen!{/m}" nointeract
 
 # game/events/kira.rpy:1837
-translate german kira_night_tv_bj_011a1437:
+translate german kira_night_tv_bj_ff92f459:
 
-    # Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}" nointeract
-    Max_21 "[restrain!t]{i}Unglaublich! Ich bin praktisch in ihrem Mund drin verschwunden! Scheiße, ich bin schon kurz vorm Durchdrehen... Ich bin kurz davor, fertig zu werden... Jetzt bewegt sie sich!{/i}" nointeract
+    # Max_21 "[restrain!t]{m}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/m}" nointeract
+    Max_21 "[restrain!t]{m}Unglaublich! Ich bin praktisch in ihrem Mund drin verschwunden! Scheiße, ich bin schon kurz vorm Durchdrehen... Ich bin kurz davor, fertig zu werden... Jetzt bewegt sie sich!{/m}" nointeract
 
 # game/events/kira.rpy:1840
 translate german kira_night_tv_bj_2d0d8f41:
@@ -2863,16 +2863,16 @@ translate german kira_night_tv_missionary_38f54446:
     Max_07 "Ja, Tante Kira, es tut mir leid! Ich konnte es nicht lassen... Bis zum nächsten Mal, dann?!"
 
 # game/events/kira.rpy:2099
-translate german kira_night_tv_cum_in_mouth_4be7addd:
+translate german kira_night_tv_cum_in_mouth_353487aa:
 
-    # Max_20 "[restrain!t]{i}Ухх, как же смачно она посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот, но она справляется! А я кончаю... Д-а-а...{/i}"
-    Max_20 "[restrain!t]{i}Uh, sie lutscht meinen Schwanz so hart... Ich kann mir nicht vorstellen, wie sie es schafft, ihn in ihren Mund zu stecken, aber sie tut es! Ich werde abspritzen... J-a-a...{/i}"
+    # Max_20 "[restrain!t]{m}Ухх, как же смачно она посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот, но она справляется! А я кончаю... Д-а-а...{/m}"
+    Max_20 "[restrain!t]{m}Uh, sie lutscht meinen Schwanz so hart... Ich kann mir nicht vorstellen, wie sie es schafft, ihn in ihren Mund zu stecken, aber sie tut es! Ich werde abspritzen... J-a-a...{/m}"
 
 # game/events/kira.rpy:2105
-translate german kira_night_tv_cum_in_mouth_5d1bbc4c:
+translate german kira_night_tv_cum_in_mouth_2d0d8f41:
 
-    # Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
-    Max_05 "{i}Puh... Oh ja... Direkt in ihren Mund! Sie schluckt alles! Oh, Gott... Das fühlt sich so gut an!{/i}"
+    # Max_05 "{m}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/m}"
+    Max_05 "{m}Puh... Oh ja... Direkt in ihren Mund! Sie schluckt alles! Oh, Gott... Das fühlt sich so gut an!{/m}"
 
 # game/events/kira.rpy:2106
 translate german kira_night_tv_cum_in_mouth_2f0c8e1d:
@@ -2923,10 +2923,10 @@ translate german kira_night_tv_minet_after_sex_0b605960:
     Kira_09 "Genieße es einfach..." nointeract
 
 # game/events/kira.rpy:2148
-translate german kira_night_tv_minet_after_sex_ac8a5ca0:
+translate german kira_night_tv_minet_after_sex_97d56799:
 
-    # Max_20 "[restrain!t]{i}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/i}"
-    Max_20 "[restrain!t]{i}Uhh, sie saugt so sanft an der Spitze meines Schwanzes... Ich weiß nicht, wie sie es schafft, ihn in ihren Mund zu bekommen!{/i}"
+    # Max_20 "[restrain!t]{m}Ухх, она так нежно посасывает головку моего члена... Не представляю, как ей удаётся поместить её в рот!{/m}"
+    Max_20 "[restrain!t]{m}Uhh, sie saugt so sanft an der Spitze meines Schwanzes... Ich weiß nicht, wie sie es schafft, ihn in ihren Mund zu bekommen!{/m}"
 
 # game/events/kira.rpy:2150
 translate german kira_night_tv_minet_after_sex_2cc14887:
@@ -2935,10 +2935,10 @@ translate german kira_night_tv_minet_after_sex_2cc14887:
     Max_19 "Ja, das ist es Tante Kira, deine Lippen bewirken Wunder! Ohhh..." nointeract
 
 # game/events/kira.rpy:2163
-translate german kira_night_tv_minet_after_sex_b9d9402f:
+translate german kira_night_tv_minet_after_sex_a82d1cec:
 
-    # Max_21 "[restrain!t]{i}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/i}"
-    Max_21 "[restrain!t]{i}Unglaublich! Ich bin praktisch in ihrem Mund drin verschwunden! Scheiße, ich bin schon kurz vorm Durchdrehen... Ich bin kurz davor, fertig zu werden... Jetzt bewegt sie sich!{/i}"
+    # Max_21 "[restrain!t]{m}Обалдеть! Как глубоко она берёт его в рот! Блин, я уже на грани... Вот-вот и кончу... А она ускоряет темп!{/m}"
+    Max_21 "[restrain!t]{m}Unglaublich! Ich bin praktisch in ihrem Mund drin verschwunden! Scheiße, ich bin schon kurz vorm Durchdrehen... Ich bin kurz davor, fertig zu werden... Jetzt bewegt sie sich!{/m}"
 
 # game/events/kira.rpy:2165
 translate german kira_night_tv_minet_after_sex_6aa1b7d8:
@@ -2947,10 +2947,10 @@ translate german kira_night_tv_minet_after_sex_6aa1b7d8:
     Max_22 "Tante Kira, noch schneller... Ja... Ich werde abspritzen... Ah..."
 
 # game/events/kira.rpy:2166
-translate german kira_night_tv_minet_after_sex_5d1bbc4c:
+translate german kira_night_tv_minet_after_sex_2d0d8f41:
 
-    # Max_05 "{i}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/i}"
-    Max_05 "{i}Puh... Oh ja... Direkt in ihren Mund! Sie schluckt alles! Oh, Gott... Das fühlt sich so gut an!{/i}"
+    # Max_05 "{m}Фух... О да... Прямо ей в рот! Она всё глотает! О боже... Как же это приятно!{/m}"
+    Max_05 "{m}Puh... Oh ja... Direkt in ihren Mund! Sie schluckt alles! Oh, Gott... Das fühlt sich so gut an!{/m}"
 
 # game/events/kira.rpy:2171
 translate german kira_night_tv_minet_after_sex_2f0c8e1d:
@@ -3018,113 +3018,113 @@ translate german kira_night_tv_failed_120d2a41:
     # Max_09 "{m}Тётю Киру довольно трудно в чём-то убедить... Возможно, онлайн-курсы мне с этим помогут.{/m}"
     Max_09 "{m}Tante Kira ist nicht leicht zu beeindrucken. Ich sollte ein paar Online-Kurse belegen, damit ich überzeugender werde.{/m}"
 
-# game/events/kira.rpy:2226
-translate german kira_shower_90e1e372:
+# game/events/kira.rpy:2242
+translate german kira_shower_b0e31026:
 
-    # Max_00 "Кира сейчас принимает душ, не стоит ей мешать..." nointeract
-    Max_00 "Kira duscht gerade, also stören Ich sie besser nicht..." nointeract
+    # Max_00 "{m}Кира сейчас принимает душ, не стоит ей мешать...{/m}" nointeract
+    Max_00 "{m}Kira duscht gerade, also stören Ich sie besser nicht...{/m}" nointeract
 
-# game/events/kira.rpy:2231
-translate german kira_shower_c78a15a2:
+# game/events/kira.rpy:2247
+translate german kira_shower_537fba6c:
 
-    # Max_01 "Интересно, кто сейчас в душе?" nointeract
-    Max_01 "Ich frage mich, wer jetzt unter der Dusche steht?" nointeract
+    # Max_01 "{m}Интересно, кто сейчас в душе?{/m}" nointeract
+    Max_01 "{m}Ich frage mich, wer jetzt unter der Dusche steht?{/m}" nointeract
 
-# game/events/kira.rpy:2244
-translate german kira_shower_ladder_2b325faf:
+# game/events/kira.rpy:2259
+translate german kira_shower_ladder_76e8b72b:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Schauen wir mal, was wir hier haben..."
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Schauen wir mal, was wir hier haben...{/m}"
 
-# game/events/kira.rpy:2252
-translate german kira_shower_ladder_547cf525:
+# game/events/kira.rpy:2267
+translate german kira_shower_ladder_7add17a2:
 
-    # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком..."
-    Max_07 "Es ist seltsam, dass Tante Kira ein Handtuch trägt... Sie stellt ihre fast nackte Schönheit gerne überall zur Schau! Sie ist wahrscheinlich noch nicht aufgewacht..."
+    # Max_07 "{m}Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком...{/m}"
+    Max_07 "{m}Es ist seltsam, dass Tante Kira ein Handtuch trägt... Sie stellt ihre fast nackte Schönheit gerne überall zur Schau! Sie ist wahrscheinlich noch nicht aufgewacht...{/m}"
 
-# game/events/kira.rpy:2254
-translate german kira_shower_ladder_ee7e4217:
+# game/events/kira.rpy:2269
+translate german kira_shower_ladder_1bd1c1fc:
 
-    # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
-    Max_03 "Tante Kira bewundert sich selbst in ihrem Höschen! Ihre Brüste sind so rund und voll, und ich liebe ihre frechen Brustwarzen..."
+    # Max_03 "{m}Здорово, тётя Кира в одних трусиках любуется собой! Отпадные у неё сиськи, люблю эти аппетитные сосочки...{/m}"
+    Max_03 "{m}Tante Kira bewundert sich selbst in ihrem Höschen! Ihre Brüste sind so rund und voll, und ich liebe ihre frechen Brustwarzen...{/m}"
 
-# game/events/kira.rpy:2256
-translate german kira_shower_ladder_90b187c3:
+# game/events/kira.rpy:2271
+translate german kira_shower_ladder_b195781f:
 
-    # Max_06 "Голая тётя Кира - это шикарно! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
-    Max_06 "Tante Kira nackt ist umwerfend! Warum hat man ihr noch nie eine Filmrolle angeboten? Sie sollte diese mörderischen Kurven ausnutzen..."
-
-# game/events/kira.rpy:2260
-translate german kira_shower_ladder_f790b709:
-
-    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
-
-# game/events/kira.rpy:2261
-translate german kira_shower_ladder_90ff417e:
-
-    # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-    Max_00 "Auch wenn ich nicht will, aber bevor ich entdeckt werde, gehe ich lieber..."
+    # Max_06 "{m}Голая тётя Кира - это шикарно! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой...{/m}"
+    Max_06 "{m}Tante Kira nackt ist umwerfend! Warum hat man ihr noch nie eine Filmrolle angeboten? Sie sollte diese mörderischen Kurven ausnutzen...{/m}"
 
 # game/events/kira.rpy:2275
-translate german kira_shower_start_peeping_ceaa567f:
+translate german kira_shower_ladder_1409147d:
 
-    # Max_05 "Ага! Тётя Кира сегодня одна... и похоже, решила немножко себя развлечь принимая водные процедуры... Это я удачно зашёл!" nointeract
-    Max_05 "Aha! Tante Kira ist heute allein... und es scheint, dass sie beschlossen hat, sich ein wenig zu unterhalten... Bin ich nicht ein Glückspilz!" nointeract
+    # Max_07 "{m}Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру...{/m}"
+    Max_07 "{m}Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren...{/m}"
 
-# game/events/kira.rpy:2287
-translate german kira_shower_start_peeping_adae6fbb:
+# game/events/kira.rpy:2276
+translate german kira_shower_ladder_63c0b6bb:
 
-    # Max_07 "Супер! Тётя Кира в душе... и совсем одна... такая голая и мокренькая... Вот это зрелище!" nointeract
-    Max_07 "Toll! Tante Kira steht unter der Dusche... und ganz allein... so nackt und nass... Was für ein Anblick!" nointeract
+    # Max_00 "{m}Хоть и не хочется, но пока меня не заметили, лучше уходить...{/m}"
+    Max_00 "{m}Auch wenn ich nicht will, aber bevor ich entdeckt werde, gehe ich lieber...{/m}"
 
-# game/events/kira.rpy:2305
-translate german kira_shower_start_peeping_1a39c5f6:
+# game/events/kira.rpy:2291
+translate german kira_shower_start_peeping_777ee1eb:
 
-    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
-    Max_03 "Uhh... Meine Tante zu beobachten ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und Anmut der Bewegung sind so verführerisch..." nointeract
+    # Max_05 "{m}Ага! Тётя Кира сегодня одна... и похоже, решила немножко себя развлечь принимая водные процедуры... Это я удачно зашёл!{/m}" nointeract
+    Max_05 "{m}Aha! Tante Kira ist heute allein... und es scheint, dass sie beschlossen hat, sich ein wenig zu unterhalten... Bin ich nicht ein Glückspilz!{/m}" nointeract
 
-# game/events/kira.rpy:2307
-translate german kira_shower_start_peeping_a32344ac:
+# game/events/kira.rpy:2304
+translate german kira_shower_start_peeping_c35eb511:
 
-    # Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
-    Max_05 "Ich könnte die Aussicht bewundern, aber Tante Kira hat mich nicht nur zum Zuschauen hierher eingeladen!" nointeract
+    # Max_07 "{m}Супер! Тётя Кира в душе... и совсем одна... такая голая и мокренькая... Вот это зрелище!{/m}" nointeract
+    Max_07 "{m}Toll! Tante Kira steht unter der Dusche... und ganz allein... so nackt und nass... Was für ein Anblick!{/m}" nointeract
 
-# game/events/kira.rpy:2315
-translate german kira_shower_start_peeping_f934835c:
+# game/events/kira.rpy:2322
+translate german kira_shower_start_peeping_7664101b:
 
-    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
-    Max_03 "Uhh... meiner Tante zuzuschauen ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und die Anmut der Bewegung sind sehr erregend..."
+    # Max_03 "{m}Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают...{/m}" nointeract
+    Max_03 "{m}Uhh... Meine Tante zu beobachten ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und Anmut der Bewegung sind so verführerisch...{/m}" nointeract
 
-# game/events/kira.rpy:2317
-translate german kira_shower_start_peeping_eab86a2d:
+# game/events/kira.rpy:2324
+translate german kira_shower_start_peeping_df7b7c82:
 
-    # Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
-    Max_05 "Das ist es, Tante Kira... Reib deine Muschi für mich! Oh, wie sie das genießt... Es wäre peinlich, wenn sie mich sehen würde! Obwohl, das wird sie sicher nicht..."
+    # Max_05 "{m}За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!{/m}" nointeract
+    Max_05 "{m}Ich könnte die Aussicht bewundern, aber Tante Kira hat mich nicht nur zum Zuschauen hierher eingeladen!{/m}" nointeract
 
-# game/events/kira.rpy:2328
-translate german kira_shower_alt_peepeng_1a39c5f6:
+# game/events/kira.rpy:2333
+translate german kira_shower_start_peeping_c265c869:
 
-    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..." nointeract
-    Max_03 "Uhh... Meine Tante zu beobachten ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und Anmut der Bewegung sind so verführerisch..." nointeract
+    # Max_03 "{m}Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают...{/m}"
+    Max_03 "{m}Uhh... meiner Tante zuzuschauen ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und die Anmut der Bewegung sind sehr erregend...{/m}"
 
-# game/events/kira.rpy:2330
-translate german kira_shower_alt_peepeng_a32344ac:
+# game/events/kira.rpy:2335
+translate german kira_shower_start_peeping_5ef44b23:
 
-    # Max_05 "За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!" nointeract
-    Max_05 "Ich könnte die Aussicht bewundern, aber Tante Kira hat mich nicht nur zum Zuschauen hierher eingeladen!" nointeract
+    # Max_05 "{m}Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет...{/m}"
+    Max_05 "{m}Das ist es, Tante Kira... Reib deine Muschi für mich! Oh, wie sie das genießt... Es wäre peinlich, wenn sie mich sehen würde! Obwohl, das wird sie sicher nicht...{/m}"
 
-# game/events/kira.rpy:2338
-translate german kira_shower_alt_peepeng_f934835c:
+# game/events/kira.rpy:2347
+translate german kira_shower_alt_peepeng_7664101b:
 
-    # Max_03 "Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают..."
-    Max_03 "Uhh... Meine Tante zu beobachten ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und Anmut der Bewegung sind so verführerisch..."
+    # Max_03 "{m}Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают...{/m}" nointeract
+    Max_03 "{m}Uhh... Meine Tante zu beobachten ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und Anmut der Bewegung sind so verführerisch...{/m}" nointeract
 
-# game/events/kira.rpy:2340
-translate german kira_shower_alt_peepeng_eab86a2d:
+# game/events/kira.rpy:2349
+translate german kira_shower_alt_peepeng_df7b7c82:
 
-    # Max_05 "Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет..."
-    Max_05 "Das ist es, Tante Kira... Spiel mit deiner Muschi für mich! Sie ist sehr konzentriert... Es wäre peinlich, wenn sie mich sehen würde! Obwohl, etwas sagt mir, dass sie das nicht tun wird..."
+    # Max_05 "{m}За этим можно долго смотреть, а лучше присоединиться... Не зря же меня тётя Кира пригласила!{/m}" nointeract
+    Max_05 "{m}Ich könnte die Aussicht bewundern, aber Tante Kira hat mich nicht nur zum Zuschauen hierher eingeladen!{/m}" nointeract
+
+# game/events/kira.rpy:2358
+translate german kira_shower_alt_peepeng_c265c869:
+
+    # Max_03 "{m}Ухх... Наблюдать за моей тётей просто загляденье! Её округлости и изящность движений очень возбуждают...{/m}"
+    Max_03 "{m}Uhh... Meine Tante zu beobachten ist ein Anblick, den man sich nicht entgehen lassen sollte! Ihre Kurven und Anmut der Bewegung sind so verführerisch...{/m}"
+
+# game/events/kira.rpy:2360
+translate german kira_shower_alt_peepeng_5ef44b23:
+
+    # Max_05 "{m}Вот так, тётя Кира... Хорошенько поласкай свою киску для меня! Ох, как же она этим наслаждается... Вот будет неловко, если она меня увидит! Хотя, ей уж точно не будет...{/m}"
+    Max_05 "{m}Das ist es, Tante Kira... Spiel mit deiner Muschi für mich! Sie ist sehr konzentriert... Es wäre peinlich, wenn sie mich sehen würde! Obwohl, etwas sagt mir, dass sie das nicht tun wird...{/m}"
 
 # game/events/kira.rpy:2351
 translate german kira_shower_promise_cuni_c2262ba3:
@@ -3192,197 +3192,197 @@ translate german kira_shower_promise_cuni_6a25c28c:
     # Kira_07 "Да, Макс, я как раз должна немного... успеть отойти..."
     Kira_07 "Ja, Max, ich brauche ein wenig... eine kleine Weile..."
 
-# game/events/kira.rpy:2403
-translate german kira_lisa_shower_e1e82272:
+# game/events/kira.rpy:2426
+translate german kira_lisa_shower_096d6593:
 
-    # Max_00 "Лиза и Кира принимают душ, не стоит им мешать..." nointeract
-    Max_00 "Kira und Lisa sind unter der Dusche, also störe ich sie nicht..." nointeract
+    # Max_00 "{m}Лиза и Кира принимают душ, не стоит им мешать...{/m}" nointeract
+    Max_00 "{m}Kira und Lisa sind unter der Dusche, also störe ich sie nicht...{/m}" nointeract
 
-# game/events/kira.rpy:2408
-translate german kira_lisa_shower_c78a15a2:
+# game/events/kira.rpy:2431
+translate german kira_lisa_shower_537fba6c:
 
-    # Max_01 "Интересно, кто сейчас в душе?" nointeract
-    Max_01 "Ich frage mich, wer jetzt unter der Dusche steht?" nointeract
+    # Max_01 "{m}Интересно, кто сейчас в душе?{/m}" nointeract
+    Max_01 "{m}Ich frage mich, wer jetzt unter der Dusche steht?{/m}" nointeract
 
-# game/events/kira.rpy:2421
-translate german kira_lisa_shower_ladder_2b325faf:
+# game/events/kira.rpy:2443
+translate german kira_lisa_shower_ladder_76e8b72b:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Schauen wir mal, was wir hier haben..."
-
-# game/events/kira.rpy:2460
-translate german kira_lisa_shower_ladder_aa3e76cc:
-
-    # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Лиза принимает душ!"
-    Max_07 "Es ist seltsam zu sehen, dass sie ein Handtuch trägt. Sie ist wahrscheinlich noch nicht ganz aufgewacht. Und Lisa ist in der Dusche!"
-
-# game/events/kira.rpy:2462
-translate german kira_lisa_shower_ladder_22c3d9c6:
-
-    # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Лиза принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
-    Max_03 "Tante Kira bewundert sich selbst in ihrem Höschen, und Lisa ist in der Dusche. Ihre Brüste sind so rund und voll, und ich liebe ihre frechen Brustwarzen..."
-
-# game/events/kira.rpy:2464
-translate german kira_lisa_shower_ladder_fbd5fc9b:
-
-    # Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Лиза принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
-    Max_06 "Die nackte Tante Kira ist umwerfend! Und es sieht aus, als ob Lisa unter der Dusche steht. Wie kann es sein, dass ihr noch niemand eine Filmrolle angeboten hat? Sie sollte diese mörderischen Kurven ausnutzen..."
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Schauen wir mal, was wir hier haben...{/m}"
 
 # game/events/kira.rpy:2482
-translate german kira_lisa_shower_ladder_df5b66fd:
+translate german kira_lisa_shower_ladder_d9a68323:
 
-    # Max_03 "Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и тётя Кира принимает душ!"
-    Max_03 "Lisa sieht in dem Morgenmantel, den ich ihr geschenkt habe, sehr verlockend aus... Vor allem, wenn man ihre festen Brüste so gut sehen kann, und hinten duscht Tante Kira gerade!"
+    # Max_07 "{m}Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Лиза принимает душ!{/m}"
+    Max_07 "{m}Es ist seltsam zu sehen, dass sie ein Handtuch trägt. Sie ist wahrscheinlich noch nicht ganz aufgewacht. Und Lisa ist in der Dusche!{/m}"
 
 # game/events/kira.rpy:2484
-translate german kira_lisa_shower_ladder_ba9256f1:
+translate german kira_lisa_shower_ladder_9d7fb9ce:
 
-    # Max_07 "Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки, а за кадром ещё и тётя Кира принимает душ!"
-    Max_07 "Meine bezaubernde Schwester ist in ihrem Höschen... Ich will einfach nur reinkommen und sie von ihrem schönen Arsch ziehen! Und Tante Kira ist in der Dusche!"
+    # Max_03 "{m}Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Лиза принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки...{/m}"
+    Max_03 "{m}Tante Kira bewundert sich selbst in ihrem Höschen, und Lisa ist in der Dusche. Ihre Brüste sind so rund und voll, und ich liebe ihre frechen Brustwarzen...{/m}"
 
 # game/events/kira.rpy:2486
-translate german kira_lisa_shower_ladder_14a55f78:
+translate german kira_lisa_shower_ladder_7501551a:
 
-    # Max_06 "Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой, а за кадром ещё и тётя Кира принимает душ!"
-    Max_06 "Morgens kann es in der Tat sehr schön sein, wenn man eine komplett nackte Lisa bewundern kann, und Tante Kira hinter auch noch in der Dusche steht!"
+    # Max_06 "{m}Голая тётя Кира - это шикарно, а за кадром ещё и Лиза принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой...{/m}"
+    Max_06 "{m}Die nackte Tante Kira ist umwerfend! Und es sieht aus, als ob Lisa unter der Dusche steht. Wie kann es sein, dass ihr noch niemand eine Filmrolle angeboten hat? Sie sollte diese mörderischen Kurven ausnutzen...{/m}"
 
-# game/events/kira.rpy:2493
-translate german kira_lisa_shower_ladder_79519da7:
+# game/events/kira.rpy:2504
+translate german kira_lisa_shower_ladder_22987dee:
 
-    # Max_05 "Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом в одних трусиках... Это просто заглядение!"
-    Max_05 "Toll, heute sind Lisa und Tante Kira zusammen! Sie sind beide im Spiegel und tragen Unterwäsche... Das ist einfach ein Anblick, der sich sehen lassen kann!"
+    # Max_03 "{m}Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и тётя Кира принимает душ!{/m}"
+    Max_03 "{m}Lisa sieht in dem Morgenmantel, den ich ihr geschenkt habe, sehr verlockend aus... Vor allem, wenn man ihre festen Brüste so gut sehen kann, und hinten duscht Tante Kira gerade!{/m}"
 
-# game/events/kira.rpy:2495
-translate german kira_lisa_shower_ladder_30333acb:
+# game/events/kira.rpy:2506
+translate german kira_lisa_shower_ladder_2ea677a5:
 
-    # Max_06 "Ухх, невероятно горячие и голенькие тётя с моей младшей сестрёнкой! Любовался бы бесконечно, как они красуются перед зеркалом..."
-    Max_06 "Es gibt nichts Schöneres, als meine sexy Tante nackt mit meiner kleinen Schwester zu sehen! Ich würde gerne zwischen sie kommen..."
+    # Max_07 "{m}Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки, а за кадром ещё и тётя Кира принимает душ!{/m}"
+    Max_07 "{m}Meine bezaubernde Schwester ist in ihrem Höschen... Ich will einfach nur reinkommen und sie von ihrem schönen Arsch ziehen! Und Tante Kira ist in der Dusche!{/m}"
 
-# game/events/kira.rpy:2500
-translate german kira_lisa_shower_ladder_f790b709:
+# game/events/kira.rpy:2508
+translate german kira_lisa_shower_ladder_0f98602e:
 
-    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
+    # Max_06 "{m}Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой, а за кадром ещё и тётя Кира принимает душ!{/m}"
+    Max_06 "{m}Morgens kann es in der Tat sehr schön sein, wenn man eine komplett nackte Lisa bewundern kann, und Tante Kira hinter auch noch in der Dusche steht!{/m}"
 
-# game/events/kira.rpy:2501
-translate german kira_lisa_shower_ladder_87af87e8:
+# game/events/kira.rpy:2515
+translate german kira_lisa_shower_ladder_008ee6d0:
 
-    # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
-    Max_00 "Also gut, eines nach dem anderen, sonst bemerkt mich hier noch jemand..."
+    # Max_05 "{m}Отлично, сегодня Лиза с тётей Кирой вместе! Красуются перед зеркалом в одних трусиках... Это просто заглядение!{/m}"
+    Max_05 "{m}Toll, heute sind Lisa und Tante Kira zusammen! Sie sind beide im Spiegel und tragen Unterwäsche... Das ist einfach ein Anblick, der sich sehen lassen kann!{/m}"
 
-# game/events/kira.rpy:2510
-translate german kira_lisa_shower_start_peeping_c64a3986:
+# game/events/kira.rpy:2517
+translate german kira_lisa_shower_ladder_a9e4d73e:
 
-    # Max_07 "Отлично! Лиза вместе с тётей Кирой сегодня оказались в одно и то же время в душе... Очень соблазнительно!" nointeract
-    Max_07 "Toll! Lisa und Tante Kira waren heute zur gleichen Zeit unter der Dusche... Sehr verlockend!" nointeract
+    # Max_06 "{m}Ухх, невероятно горячие и голенькие тётя с моей младшей сестрёнкой! Любовался бы бесконечно, как они красуются перед зеркалом...{/m}"
+    Max_06 "{m}Es gibt nichts Schöneres, als meine sexy Tante nackt mit meiner kleinen Schwester zu sehen! Ich würde gerne zwischen sie kommen...{/m}"
 
-# game/events/kira.rpy:2526
-translate german kira_lisa_shower_start_peeping_ddbc59ae:
+# game/events/kira.rpy:2522
+translate german kira_lisa_shower_ladder_1409147d:
 
-    # Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
-    Max_04 "Diese beiden Muschis sind so nass... Ich kann meine Augen nicht von ihnen abwenden! Wie kann ich nicht ein Perverser in diesem Haus sein?!"
+    # Max_07 "{m}Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру...{/m}"
+    Max_07 "{m}Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren...{/m}"
 
-# game/events/kira.rpy:2540
-translate german kira_lisa_shower_alt_peepeng_ddbc59ae:
+# game/events/kira.rpy:2523
+translate german kira_lisa_shower_ladder_5478c4d6:
 
-    # Max_04 "Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!"
-    Max_04 "Diese beiden Muschis sind so nass... Ich kann meine Augen nicht von ihnen abwenden! Wie kann ich nicht ein Perverser in diesem Haus sein?!"
+    # Max_00 "{m}Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь...{/m}"
+    Max_00 "{m}Also gut, eines nach dem anderen, sonst bemerkt mich hier noch jemand...{/m}"
 
-# game/events/kira.rpy:2553
-translate german kira_alice_shower_d719e4e2:
+# game/events/kira.rpy:2533
+translate german kira_lisa_shower_start_peeping_9345d9f0:
 
-    # Max_00 "Кира и Алиса принимают душ, не стоит им мешать..." nointeract
-    Max_00 "Kira und Alice duschen gerade, also sollte man sie nicht stören..." nointeract
+    # Max_07 "{m}Отлично! Лиза вместе с тётей Кирой сегодня оказались в одно и то же время в душе... Очень соблазнительно!{/m}" nointeract
+    Max_07 "{m}Toll! Lisa und Tante Kira waren heute zur gleichen Zeit unter der Dusche... Sehr verlockend!{/m}" nointeract
 
-# game/events/kira.rpy:2558
-translate german kira_alice_shower_c78a15a2:
+# game/events/kira.rpy:2549
+translate german kira_lisa_shower_start_peeping_c85911ce:
 
-    # Max_01 "Интересно, кто сейчас в душе?" nointeract
-    Max_01 "Ich frage mich, wer jetzt unter der Dusche steht?" nointeract
+    # Max_04 "{m}Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!{/m}"
+    Max_04 "{m}Diese beiden Muschis sind so nass... Ich kann meine Augen nicht von ihnen abwenden! Wie kann ich nicht ein Perverser in diesem Haus sein?!{/m}"
 
-# game/events/kira.rpy:2571
-translate german kira_alice_shower_ladder_2b325faf:
+# game/events/kira.rpy:2564
+translate german kira_lisa_shower_alt_peepeng_c85911ce:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Mal sehen, wen wir hier haben..."
+    # Max_04 "{m}Эти две киски такие мокрые... Глаз не оторвать! Ну и как в этом доме не быть извращенцем?!{/m}"
+    Max_04 "{m}Diese beiden Muschis sind so nass... Ich kann meine Augen nicht von ihnen abwenden! Wie kann ich nicht ein Perverser in diesem Haus sein?!{/m}"
 
-# game/events/kira.rpy:2609
-translate german kira_alice_shower_ladder_d9e41a49:
+# game/events/kira.rpy:2579
+translate german kira_alice_shower_95733571:
 
-    # Max_07 "Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Алиса принимает душ!"
-    Max_07 "Es ist seltsam, dass Tante Kira ein Handtuch trägt... Sie ist wahrscheinlich noch nicht aufgewacht, und Alice duscht auch gerade!"
+    # Max_00 "{m}Кира и Алиса принимают душ, не стоит им мешать...{/m}" nointeract
+    Max_00 "{m}Kira und Alice duschen gerade, also sollte man sie nicht stören...{/m}" nointeract
 
-# game/events/kira.rpy:2611
-translate german kira_alice_shower_ladder_716d82cb:
+# game/events/kira.rpy:2584
+translate german kira_alice_shower_537fba6c:
 
-    # Max_03 "Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Алиса принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки..."
-    Max_03 "Toll, Tante Kira bewundert sich selbst in ihrem Höschen und hinter duscht Alice! Diese Brüste sind toll, ich liebe diese leckeren Brustwarzen..."
+    # Max_01 "{m}Интересно, кто сейчас в душе?{/m}" nointeract
+    Max_01 "{m}Ich frage mich, wer jetzt unter der Dusche steht?{/m}" nointeract
 
-# game/events/kira.rpy:2613
-translate german kira_alice_shower_ladder_78119736:
+# game/events/kira.rpy:2596
+translate german kira_alice_shower_ladder_76e8b72b:
 
-    # Max_06 "Голая тётя Кира - это шикарно, а за кадром ещё и Алиса принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой..."
-    Max_06 "Die nackte Tante Kira ist umwerfend! Und es sieht aus, als ob Alice unter der Dusche steht. Wie kann es sein, dass ihr noch niemand eine Filmrolle angeboten hat? Sie sollte diese mörderischen Kurven ausnutzen..."
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Mal sehen, wen wir hier haben...{/m}"
 
-# game/events/kira.rpy:2629
-translate german kira_alice_shower_ladder_0159a8ee:
+# game/events/kira.rpy:2634
+translate german kira_alice_shower_ladder_052333b5:
 
-    # Max_02 "Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и тётя Кира принимает душ!"
-    Max_02 "Alice trägt zwar ihr Nachthemd, aber ihre Brüste sind gut zu sehen, und Tante Kira duscht gerade!"
+    # Max_07 "{m}Странно, что тётя Кира в полотенце... Она же любит везде посверкать своими почти голыми прелестями! Наверно, не проснулась ещё толком, а за кадром ещё и Алиса принимает душ!{/m}"
+    Max_07 "{m}Es ist seltsam, dass Tante Kira ein Handtuch trägt... Sie ist wahrscheinlich noch nicht aufgewacht, und Alice duscht auch gerade!{/m}"
 
-# game/events/kira.rpy:2631
-translate german kira_alice_shower_ladder_1d3dd6d3:
+# game/events/kira.rpy:2636
+translate german kira_alice_shower_ladder_85329d0f:
 
-    # Max_04 "Алиса сегодня без халатика... в одних трусиках... Гдядя на эту красоту, можно мечтать лишь об одном, а за кадром ещё и тётя Кира принимает душ!"
-    Max_04 "Alice trägt heute keinen Morgenmantel... aber ihr Höschen... Beim Anblick dieser Schönheit kann man nur von einer Sache träumen, und hinten duscht Tante Kira!"
+    # Max_03 "{m}Здорово, тётя Кира в одних трусиках любуется собой, а за кадром ещё и Алиса принимает душ! Отпадные у неё сиськи, люблю эти аппетитные сосочки...{/m}"
+    Max_03 "{m}Toll, Tante Kira bewundert sich selbst in ihrem Höschen und hinter duscht Alice! Diese Brüste sind toll, ich liebe diese leckeren Brustwarzen...{/m}"
 
-# game/events/kira.rpy:2633
-translate german kira_alice_shower_ladder_36f201a2:
+# game/events/kira.rpy:2638
+translate german kira_alice_shower_ladder_992c63e8:
 
-    # Max_06 "Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и тётя Кира принимает душ!"
-    Max_06 "Alice ist heute komplett nackt! Und sie hat keine Ahnung, dass sie mir die Gelegenheit gibt, all ihre Reize zu bewundern, und hinten duscht auch Tante Kira!"
+    # Max_06 "{m}Голая тётя Кира - это шикарно, а за кадром ещё и Алиса принимает душ! Ей нужно в кино играть роковых красоток, с такой-то внешностью и фигурой...{/m}"
+    Max_06 "{m}Die nackte Tante Kira ist umwerfend! Und es sieht aus, als ob Alice unter der Dusche steht. Wie kann es sein, dass ihr noch niemand eine Filmrolle angeboten hat? Sie sollte diese mörderischen Kurven ausnutzen...{/m}"
 
-# game/events/kira.rpy:2641
-translate german kira_alice_shower_ladder_e400863b:
+# game/events/kira.rpy:2654
+translate german kira_alice_shower_ladder_376de89a:
 
-    # Max_05 "Класс, две самые непослушные девчонки этого дома вместе! Так изящно позируют перед зеркалом... Глаза аж разбегаются!"
-    Max_05 "Toll, zwei der frechsten Mädchen im Haus zusammen! So anmutig vor dem Spiegel posierend... Ich kann nicht genug von ihnen bekommen!"
+    # Max_02 "{m}Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и тётя Кира принимает душ!{/m}"
+    Max_02 "{m}Alice trägt zwar ihr Nachthemd, aber ihre Brüste sind gut zu sehen, und Tante Kira duscht gerade!{/m}"
 
-# game/events/kira.rpy:2643
-translate german kira_alice_shower_ladder_40f09602:
+# game/events/kira.rpy:2656
+translate german kira_alice_shower_ladder_3b2bed10:
 
-    # Max_06 "О да, сегодня тётя Кира и Алиса зажигают своими голыми попками перед зеркалом! Это можно прировнять к новому чуду света..."
-    Max_06 "Tante Kira und Alice sind endlich beide zusammen nackt! Das ist ein Moment, den ich in meinem Gedächtnis verankert haben werde..."
-
-# game/events/kira.rpy:2648
-translate german kira_alice_shower_ladder_f790b709:
-
-    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
-
-# game/events/kira.rpy:2649
-translate german kira_alice_shower_ladder_87af87e8:
-
-    # Max_00 "Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь..."
-    Max_00 "Na gut, das reicht, bevor ich auffalle..."
+    # Max_04 "{m}Алиса сегодня без халатика... в одних трусиках... Гдядя на эту красоту, можно мечтать лишь об одном, а за кадром ещё и тётя Кира принимает душ!{/m}"
+    Max_04 "{m}Alice trägt heute keinen Morgenmantel... aber ihr Höschen... Beim Anblick dieser Schönheit kann man nur von einer Sache träumen, und hinten duscht Tante Kira!{/m}"
 
 # game/events/kira.rpy:2658
-translate german kira_alice_shower_start_peeping_15451dbe:
+translate german kira_alice_shower_ladder_de371c86:
 
-    # Max_07 "Ого... Две очень плохие девочки сегодня моются вместе... тётя Кира и Алиса! Как же они хороши..." nointeract
-    Max_07 "Wow... Zwei sehr böse Mädchen waschen heute zusammen... Tante Kira und Alice! Sehr schön..." nointeract
+    # Max_06 "{m}Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и тётя Кира принимает душ!{/m}"
+    Max_06 "{m}Alice ist heute komplett nackt! Und sie hat keine Ahnung, dass sie mir die Gelegenheit gibt, all ihre Reize zu bewundern, und hinten duscht auch Tante Kira!{/m}"
+
+# game/events/kira.rpy:2666
+translate german kira_alice_shower_ladder_e2603318:
+
+    # Max_05 "{m}Класс, две самые непослушные девчонки этого дома вместе! Так изящно позируют перед зеркалом... Глаза аж разбегаются!{/m}"
+    Max_05 "{m}Toll, zwei der frechsten Mädchen im Haus zusammen! So anmutig vor dem Spiegel posierend... Ich kann nicht genug von ihnen bekommen!{/m}"
+
+# game/events/kira.rpy:2668
+translate german kira_alice_shower_ladder_00d5b925:
+
+    # Max_06 "{m}О да, сегодня тётя Кира и Алиса зажигают своими голыми попками перед зеркалом! Это можно прировнять к новому чуду света...{/m}"
+    Max_06 "{m}Oh ja, heute präsentieren sich Tante Kira und Alice mit nacktem Hintern vor dem Spiegel! Dies könnte man mit einem neuen Weltwunder gleichsetzen...{/m}"
+
+# game/events/kira.rpy:2673
+translate german kira_alice_shower_ladder_1409147d:
+
+    # Max_07 "{m}Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру...{/m}"
+    Max_07 "{m}Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren...{/m}"
 
 # game/events/kira.rpy:2674
-translate german kira_alice_shower_start_peeping_2ddf2244:
+translate german kira_alice_shower_ladder_5478c4d6:
 
-    # Max_02 "О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!"
-    Max_02 "Oh, ja... Etwas zwischen ihre Brüste zu schieben, wäre ein Traum!"
+    # Max_00 "{m}Ладно, хорошего понемногу, а то ещё заметит меня здесь кто-нибудь...{/m}"
+    Max_00 "{m}Na gut, das reicht, bevor ich auffalle...{/m}"
 
-# game/events/kira.rpy:2688
-translate german kira_alice_shower_alt_peepeng_72bf06b5:
+# game/events/kira.rpy:2684
+translate german kira_alice_shower_start_peeping_bcaccc47:
 
-    # Max_03 "Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!"
-    Max_03 "Ja-a-a... Ich wünschte, ich wäre zwischen diesen beiden nassen Ärschen. Ich würde sie gerne waschen."
+    # Max_07 "{m}Ого... Две очень плохие девочки сегодня моются вместе... тётя Кира и Алиса! Как же они хороши...{/m}" nointeract
+    Max_07 "{m}Wow... Zwei sehr böse Mädchen waschen heute zusammen... Tante Kira und Alice! Sehr schön...{/m}" nointeract
+
+# game/events/kira.rpy:2699
+translate german kira_alice_shower_start_peeping_c51c6352:
+
+    # Max_02 "{m}О, да... Поскользить чем-нибудь между их сисечками было бы невероятно круто!{/m}"
+    Max_02 "{m}Oh, ja... Etwas zwischen ihre Brüste zu schieben, wäre ein Traum!{/m}"
+
+# game/events/kira.rpy:2714
+translate german kira_alice_shower_alt_peepeng_a2b77766:
+
+    # Max_03 "{m}Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!{/m}"
+    Max_03 "{m}Ja-a-a... Ich wünschte, ich wäre zwischen diesen beiden nassen Ärschen. Ich würde sie gerne waschen.{/m}"
 
 # game/events/kira.rpy:2704
 translate german return_from_club_ad7639d7:
@@ -3859,10 +3859,10 @@ translate german return_from_club_boobs_a38e6fb8:
     Max_08 "Alles klar, bist du sicher? Ähm... Tante Kira? Sie ist bewusstlos. Nun, das ist ein Jammer. Ich sollte sie auf die Couch legen und sie ausruhen lassen."
 
 # game/events/kira.rpy:2975
-translate german return_from_club_boobs_20ab4298:
+translate german return_from_club_boobs_88c93592:
 
-    # Max_01 "{i}Надеюсь, мама не будет сильно её осуждать за то, что она легла спать голая... С кем не бывает! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать...{/i}" nointeract
-    Max_01 "{i}Ich hoffe, Mom schimpft sie nicht zu sehr, weil sie nackt ins Bett geht... Das kann jedem passieren! Sie ist eine hübsche Tante, die mich mit ihrer Schönheit hypnotisiert. Aber es ist Zeit für mich, ins Bett zu gehen...{/i}" nointeract
+    # Max_01 "{m}Надеюсь, мама не будет сильно её осуждать за то, что она легла спать голая... С кем не бывает! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать...{/m}" nointeract
+    Max_01 "{m}Ich hoffe, Mom schimpft sie nicht zu sehr, weil sie nackt ins Bett geht... Das kann jedem passieren! Sie ist eine hübsche Tante, die mich mit ihrer Schönheit hypnotisiert. Aber es ist Zeit für mich, ins Bett zu gehen...{/m}" nointeract
 
 # game/events/kira.rpy:2986
 translate german return_from_club_ass_5e3c81e6:
@@ -3900,53 +3900,53 @@ translate german return_from_club_ass_a38e6fb8:
     # Max_08 "Ну ладно. А ты уверена, что сможешь? Эээ... Тётя Кира? Заснула... И похоже, что крепко. Ну какой же это облом! Нужно уложить её на диван, пусть отдыхает."
     Max_08 "Alles klar, bist du sicher? Ähm... Tante Kira? Sie ist bewusstlos. Nun, das ist ein Jammer. Ich sollte sie auf die Couch legen und sie ausruhen lassen."
 
-# game/events/kira.rpy:3008
-translate german return_from_club_ass_ee61265b:
+# game/events/kira.rpy:3036
+translate german return_from_club_ass_0abe858e:
 
-    # Max_01 "Надеюсь, мама не будет сильно её ругать за то, что она легла спать голая... Со всеми может случиться! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать..." nointeract
-    Max_01 "Ich hoffe, Mom schimpft sie nicht zu sehr, weil sie nackt ins Bett geht... Das kann jedem passieren! Sie ist eine hübsche Tante, die mich mit ihrer Schönheit hypnotisiert. Aber es ist Zeit für mich, ins Bett zu gehen..." nointeract
+    # Max_01 "{m}Надеюсь, мама не будет сильно её ругать за то, что она легла спать голая... Со всеми может случиться! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать...{/m}" nointeract
+    Max_01 "{m}Ich hoffe, Mom schimpft sie nicht zu sehr, weil sie nackt ins Bett geht... Das kann jedem passieren! Sie ist eine hübsche Tante, die mich mit ihrer Schönheit hypnotisiert. Aber es ist Zeit für mich, ins Bett zu gehen...{/m}" nointeract
 
-# game/events/kira.rpy:3025
-translate german kira_bath_with_eric_e51d277a:
+# game/events/kira.rpy:3053
+translate german kira_bath_with_eric_a64599ce:
 
-    # Max_01 "Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!" nointeract
-    Max_01 "Nur eine Person kann in dieser Zeit wach sein und in der Badewanne herumplanschen. Und diese Person ist Kira!" nointeract
+    # Max_01 "{m}Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!{/m}" nointeract
+    Max_01 "{m}Nur eine Person kann in dieser Zeit wach sein und in der Badewanne herumplanschen. Und diese Person ist Kira!{/m}" nointeract
 
-# game/events/kira.rpy:3037
-translate german kira_bath_with_eric_1593e4c0:
+# game/events/kira.rpy:3064
+translate german kira_bath_with_eric_97e543d2:
 
-    # Max_08 "Конечно, почему бы среди ночи не сходить в ванную, когда тебя там будет ждать шикарная тётя Кира, чтобы отсосать..."
-    Max_08 "Natürlich, warum nicht mitten in der Nacht auf die Toilette gehen, wenn die wunderschöne Tante Kira dort wartet, um dir einen Blowjob zu geben..."
+    # Max_08 "{m}Конечно, почему бы среди ночи не сходить в ванную, когда тебя там будет ждать шикарная тётя Кира, чтобы отсосать...{/m}"
+    Max_08 "{m}Natürlich, warum nicht mitten in der Nacht auf die Toilette gehen, wenn die wunderschöne Tante Kira dort wartet, um dir einen Blowjob zu geben...{/m}"
 
-# game/events/kira.rpy:3039
-translate german kira_bath_with_eric_460fc52f:
+# game/events/kira.rpy:3066
+translate german kira_bath_with_eric_1d51e0c6:
 
-    # Max_01 "Наверно, тётя Кира хотела прийти с работы и отдохнуть, а тут ещё и Эрику нужно отсосать сперва..."
-    Max_01 "Tante Kira wollte wohl von der Arbeit nach Hause kommen und sich ausruhen, musste aber erst Erics Schwanz lutschen..."
+    # Max_01 "{m}Наверно, тётя Кира хотела прийти с работы и отдохнуть, а тут ещё и Эрику нужно отсосать сперва...{/m}"
+    Max_01 "{m}Tante Kira wollte wohl von der Arbeit nach Hause kommen und sich ausruhen, musste aber erst Erics Schwanz lutschen...{/m}"
 
-# game/events/kira.rpy:3050
-translate german kira_bath_with_eric_21dc0f91:
+# game/events/kira.rpy:3077
+translate german kira_bath_with_eric_9606bafb:
 
-    # Max_10 "Хватит уже трахать её в рот, как какую-то порнозвезду! Она конечно порнозвезда, но не круглые же сутки..."
-    Max_10 "Hör auf, sie in den Mund zu ficken wie ein Pornostar! Ich meine, sie ist es, aber sie ist kein 24-Stunden-Pornostar..."
+    # Max_10 "{m}Хватит уже трахать её в рот, как какую-то порнозвезду! Она конечно порнозвезда, но не круглые же сутки...{/m}"
+    Max_10 "{m}Hör auf, sie in den Mund zu ficken wie ein Pornostar! Ich meine, sie ist es, aber sie ist kein 24-Stunden-Pornostar...{/m}"
 
-# game/events/kira.rpy:3052
-translate german kira_bath_with_eric_bff48399:
+# game/events/kira.rpy:3079
+translate german kira_bath_with_eric_bb5a0c0a:
 
-    # Max_07 "Неплохо так Эрик её голову на свой член напяливает! Как будто так и надо..."
-    Max_07 "Es ist schön, wie Eric ihren Kopf auf seinen Schwanz drückt Es ist, als ob es so gewollt ist..."
+    # Max_07 "{m}Неплохо так Эрик её голову на свой член напяливает! Как будто так и надо...{/m}"
+    Max_07 "{m}Es ist schön, wie Eric ihren Kopf auf seinen Schwanz drückt Es ist, als ob es so gewollt ist...{/m}"
 
-# game/events/kira.rpy:3060
-translate german kira_bath_with_eric_b8b602d6:
+# game/events/kira.rpy:3088
+translate german kira_bath_with_eric_3c329f0e:
 
-    # Max_09 "Вот же сволочь! Спустил всё до последней капли Кире прямо в рот! Ну Эрик, ты у меня сполна получишь рано или поздно..." nointeract
-    Max_09 "Was für ein Mistkerl! Er hat jeden einzelnen Tropfen direkt in Kiras Mund geschossen! Tja, Eric, früher oder später werde ich dich kriegen..." nointeract
+    # Max_09 "{m}Вот же сволочь! Спустил всё до последней капли Кире прямо в рот! Ну Эрик, ты у меня сполна получишь рано или поздно...{/m}" nointeract
+    Max_09 "{m}Was für ein Mistkerl! Er hat jeden einzelnen Tropfen direkt in Kiras Mund geschossen! Tja, Eric, früher oder später werde ich dich kriegen...{/m}" nointeract
 
-# game/events/kira.rpy:3065
-translate german kira_bath_with_eric_6bca3a88:
+# game/events/kira.rpy:3093
+translate german kira_bath_with_eric_56dad693:
 
-    # Max_02 "Кира не упустила ни единой капли мимо! И как будто никто ни у кого только что смачно не отсасывал... Чистая работа!" nointeract
-    Max_02 "Kira hat keinen Tropfen ausgelassen! Und es ist so, als ob sie ihn einfach abgesaugt hätte... Saubere Arbeit!" nointeract
+    # Max_02 "{m}Кира не упустила ни единой капли мимо! И как будто никто ни у кого только что смачно не отсасывал... Чистая работа!{/m}" nointeract
+    Max_02 "{m}Kira hat keinen Tropfen ausgelassen! Und es ist so, als ob sie ihn einfach abgesaugt hätte... Saubere Arbeit!{/m}" nointeract
 
 translate german strings:
 
@@ -4058,13 +4058,13 @@ translate german strings:
     old "{i}подойти поближе{/i}"
     new "{i}näher kommen{/i}"
 
-    # game/events/kira.rpy:955
-    old "Тёте Кире очень идёт быть голой! Может быть, это потому что я привык видеть её голой? В такие округлости просто нельзя не влюбиться..."
-    new "Tante Kira sieht nackt so gut aus! Man kann einfach nicht anders, als sich jedes Mal, wenn man sie sieht, in ihre Kurven zu verlieben..."
+    # game/events/kira.rpy:930
+    old "{m}Тёте Кире очень идёт быть голой! Может быть, это потому что я привык видеть её голой? В такие округлости просто нельзя не влюбиться...{/m}"
+    new "{m}Tante Kira sieht nackt so gut aus! Man kann einfach nicht anders, als sich jedes Mal, wenn man sie sieht, in ihre Kurven zu verlieben...{/m}"
 
-    # game/events/kira.rpy:957
-    old "Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша..."
-    new "Aha! Tante Kira ist noch am Schlafen. Gut, dass ihr Nachthemd ein wenig durchsichtig ist... Oooh, sie sieht gut aus..."
+    # game/events/kira.rpy:932
+    old "{m}Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша...{/m}"
+    new "{m}Aha! Tante Kira ist noch am Schlafen. Gut, dass ihr Nachthemd ein wenig durchsichtig ist... Oooh, sie sieht gut aus...{/m}"
 
     # game/events/kira.rpy:1002
     old "{i}посмотреть, что будет дальше{/i}"
@@ -4075,7 +4075,7 @@ translate german strings:
     new "{i}Es ist schon spät. Zeit, ins Bett zu gehen...{/i}"
 
     # game/events/kira.rpy:1009
-    old "Мне что-то не спится. Можно тоже телек с тобой посмотреть?"
+    old "Мне что-то не спится. Можно тоже телик с тобой посмотреть?"
     new "Ich kann nicht schlafen. Kann ich mit dir auch fernsehen?"
 
     # game/events/kira.rpy:1009
@@ -4304,7 +4304,7 @@ translate german kira_night_tv_tv_sex2_4e28d11a:
 translate german kira_night_tv_tv_sex2_dcce85b2:
 
     # Kira_11 "Охх... Да... Тогда я буду опускаться на твой член очень медленно! Чтобы ты прочувствовал всю нежность моей мокрой киски... Ухх, как это обалденно! Ммм... Хочешь быстрее?"
-    Kira_11 "Ohhh... Ja... Dann werde ich mich ganz langsam an deinem Schwanz bedienen! So kannst du die Zärtlichkeit meiner feuchten Pussy spüren... Oh, das ist so gut! Hmmm... Wollen Sie schneller werden?"
+    Kira_11 "Ohhh... Ja... Dann werde ich mich ganz langsam an deinem Schwanz bedienen! So kannst du die Zärtlichkeit meiner feuchten Pussy spüren... Oh, das ist so gut! Hmmm... Willst du schneller machen?"
 
 # game/events/kira.rpy:1949
 translate german kira_night_tv_tv_sex2_7c90ec0a:
@@ -4393,4 +4393,3 @@ translate german strings:
     # game/events/kira.rpy:1952
     old "{i}кончить в Киру{/i}"
     new "{i}in Kira abspritzen{/i}"
-

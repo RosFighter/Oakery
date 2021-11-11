@@ -7,13 +7,13 @@ label lisa_sleep_night:
 
     scene BG char Lisa bed-n-01
     $ AvailableActions['touch'].active = True
-    $ renpy.show('Lisa sleep-night '+pose3_1)
-    $ renpy.show('FG Lisa sleep-night '+pose3_1+lisa.dress)
+    $ renpy.show('Lisa sleep-night ' + pose3_1)
+    $ renpy.show('FG Lisa sleep-night ' + pose3_1+lisa.dress)
     return
 
 
 label lisa_sleep_morning:
-    scene BG char Lisa bed-morning
+    scene BG char Lisa bed-m-01
     $ renpy.show('Lisa sleep-morning '+pose3_1)
     $ renpy.show('FG Lisa sleep-morning '+pose3_1+lisa.dress)
     return
@@ -23,24 +23,24 @@ label lisa_shower:
     scene location house bathroom door-morning
     if lisa.daily.shower > 3:
         menu:
-            Max_00 "Лиза сейчас принимает душ..."
+            Max_00 "{m}Лиза сейчас принимает душ...{/m}"
             "{i}уйти{/i}":
                 jump .end_peeping2
     elif lisa.daily.shower > 2:
-        Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
+        Max_14 "{m}Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше.{/m}"
         jump .end_peeping2
     elif lisa.daily.shower > 1:
-        Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз."
+        Max_09 "{m}Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз.{/m}"
         jump .end_peeping2
     elif lisa.daily.shower > 0:
-        Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз."
+        Max_01 "{m}Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз.{/m}"
         jump .end_peeping2
 
     $ renpy.block_rollback()
     $ renpy.dynamic('r1')
     $ lisa.daily.shower = 4
     menu:
-        Max_09 "Кажется, Лиза что-то делает в ванной..."
+        Max_09 "{m}Кажется, Лиза что-то делает в ванной...{/m}"
         "{i}постучаться{/i}":
             menu:
                 Lisa "{b}Лиза:{/b} Кто там? Я ещё не закончила. Подождите немного..."
@@ -59,9 +59,9 @@ label lisa_shower:
                 "{i}уйти{/i}":
                     $ lisa.daily.shower = 4
                     jump .end_peeping
-        "{i}заглянуть со двора{/i}":
+        "{i}заглянуть со двора{/i}" if not flags.block_peeping:
             if lisa.sorry.owe:
-                Max_10 "Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное..."
+                Max_10 "{m}Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное...{/m}"
                 jump .end_peeping2
             jump .start_peeping
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
@@ -74,7 +74,7 @@ label lisa_shower:
         $ renpy.dynamic('lst')
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
-        Max_04 "Посмотрим, что у нас тут..."
+        Max_04 "{m}Посмотрим, что у нас тут...{/m}"
         $ lisa.flags.ladder += 1
         # назначим или определим одёжку
         if lisa.dress_inf != '04a':
@@ -89,17 +89,17 @@ label lisa_shower:
         show FG bathroom-morning-00
         $ Skill('hide', 0.05)
         if r1 in ['a', 'b']:
-            Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
+            Max_03 "{m}Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!{/m}"
         elif r1 == 'c':
-            Max_07 "О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!"
+            Max_07 "{m}О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!{/m}"
         else:
-            Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
+            Max_06 "{m}Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает...{/m}"
 
         if looked_ladder():
             $ house[3].max_cam = 2
             $ items['hide_cam'].unblock()
-            Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-        Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
+            Max_07 "{m}Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру...{/m}"
+        Max_00 "{m}Хоть и не хочется, но пока меня не заметили, лучше уходить...{/m}"
         jump .end_peeping
 
     label .start_peeping:
@@ -110,9 +110,17 @@ label lisa_shower:
         $ renpy.scene()
         $ renpy.show('Lisa shower 0'+str(r1))
         $ renpy.show('FG shower 00'+mgg.dress)
+        if flags.eric_wallet == 2:
+            Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+            menu:
+                Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}"
+                "{i}уйти{/i}":
+                    $ flags.block_peeping = 1
+                    jump .end_peeping
+
         play music spying
         menu:
-            Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..."
+            Max_07 "{m}Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила...{/m}"
             "{i}продолжить смотреть{/i}" ('hide', mgg.stealth * 3, 90, 2) if lisa.dcv.shower.stage<2:
                 jump .closer_peepeng
             "{i}взглянуть со стороны{/i}" ('hide', mgg.stealth * 2, 90, 2) if lisa.dcv.shower.stage<2:
@@ -136,9 +144,9 @@ label lisa_shower:
         $ renpy.show('Lisa shower-alt 0'+str(r1))
         show FG shower-water
         if 1 < r1 < 5:
-            Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
+            Max_02 "[undetect!t]{m}Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!{/m}"
         else:
-            Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
+            Max_03 "[undetect!t]{m}О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь...{/m}"
         jump .end_peeping
 
     label .closer_peepeng:
@@ -151,9 +159,9 @@ label lisa_shower:
             $ renpy.show('Lisa shower-closer 0'+str(r1))
             show FG shower-closer
             if 1 < r1 < 5:
-                Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
+                Max_02 "[undetect!t]{m}Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!{/m}"
             else:
-                Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
+                Max_03 "[undetect!t]{m}О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь...{/m}"
             jump .end_peeping
         else:
             jump .not_luck
@@ -168,7 +176,7 @@ label lisa_shower:
             scene BG shower-closer
             $ renpy.show('Lisa shower-closer '+r1)
             show FG shower-closer
-            Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
+            Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\n{m}О нет! Похоже, она что-то заметила... Надо бежать!{/m}"
         else:
             jump .pinded
         jump .end_peeping
@@ -787,7 +795,7 @@ label lisa_dressed:
 
             $ Skill('hide', 0.03, 10)
             menu:
-                Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
+                Max_01 "{m}Ого, какой вид! Вот это я удачно заглянул!{/m}"
                 "{i}уйти{/i}":
                     $ renpy.block_rollback()
                     $ alt_wait()
@@ -897,13 +905,17 @@ label lisa_dressed:
         # $ print(lvl, lisa.dress, lisa.prev_dress, lisa.prev_plan, lisa.plan_name)
         $ pose, var = get_lisa_dress_pose(0)
         scene BG char Lisa dressing-02
-        $ renpy.show('Lisa dressing '+pose)
+        $ renpy.show('Lisa dressing '+pose, at_list=[stay_in_room,])    # добавить увеличение и положение
         with dissolve
+        if flags.eric_wallet == 2:
+            # Макс на сроке за воровство
+            Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
+        else:
+            Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..." nointeract
         menu:
-            Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..."
-            "{i}отвернуться{/i}":
+            "{i}отвернуться{/i}" if flags.eric_wallet != 2:
                 # myroom-bedmax-morning,day,evening-01
-                scene BG char Max bed-day-01
+                scene BG char Max bed-mde-01
                 if lvl == 1:
                     Lisa "{b}Лиза:{/b} Я быстро... Главное, не подглядывай! Надеюсь, тебе это по силам..." nointeract
                 elif lvl == 2:
@@ -916,7 +928,7 @@ label lisa_dressed:
                         jump .wait_in_room
                     "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth*2, 80, lisa.daily.in_room+1) if lisa.daily.in_room < 2 and not lisa.daily.gotcha:
                         call .try_to_peek from _call_lisa_dressed_try_to_peek
-                    "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth*2, 80, lisa.daily.in_room+1) if lisa.daily.in_room == 2 and not lisa.daily.gotcha:
+                    "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth, 80, lisa.daily.in_room+1) if lisa.daily.in_room == 2 and not lisa.daily.gotcha:
                         call .try_to_peek from _call_lisa_dressed_try_to_peek_1
 
             "{i}подождать за дверью, пока Лиза переоденется{/i}":
@@ -1094,7 +1106,7 @@ label lisa_dressed:
     label .wait_in_room:
         window hide
         $ hide_say()
-        scene BG char Max bed-day-01 with dissolve
+        scene BG char Max bed-mde-01 with dissolve
         pause(1)
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
@@ -1226,7 +1238,7 @@ label lisa_bath:
     $ mood = 0
     $ rel = 0
     menu:
-        Max_00 "В это время Лиза обычно плескается в ванне..."
+        Max_00 "{m}В это время Лиза обычно плескается в ванне...{/m}"
         "{i}постучаться{/i}":
             jump .knock
         "{i}открыть дверь{/i}":
@@ -1234,14 +1246,14 @@ label lisa_bath:
         "{i}заглянуть со двора{/i}" if flags.ladder < 2:
             scene Lisa bath 01
             $ renpy.show('FG voyeur-bath-00'+mgg.dress)
-            Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
-            Max_09 "Нужно что-нибудь придумать..."
+            Max_00 "{m}Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить...{/m}"
+            Max_09 "{m}Нужно что-нибудь придумать...{/m}"
             $ flags.ladder = 1
             jump .end
         "{i}установить стремянку{/i}" if items['ladder'].have:
             scene BG char Max bathroom-window-evening-00
             $ renpy.show('Max bathroom-window-evening 01'+mgg.dress)
-            Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
+            Max_01 "{m}Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное...{/m}"
             $ flags.ladder = 3
             $ items['ladder'].give()
             jump .ladder
@@ -1253,7 +1265,7 @@ label lisa_bath:
     label .ladder:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-evening 02'+mgg.dress)
-        Max_04 "Посмотрим, что у нас тут..."
+        Max_04 "{m}Посмотрим, что у нас тут...{/m}"
         $ spent_time += 10
 
         $ r1 = renpy.random.randint(1, 4)
@@ -1264,13 +1276,13 @@ label lisa_bath:
         $ Skill('hide', 0.03, 10)
         if r1 == 1:
             menu:
-                Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!"
+                Max_03 "{m}Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!{/m}"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     $ renpy.show('Lisa bath-window '+renpy.random.choice(['02', '03', '04']))
                     $ Skill('hide', 0.03, 10)
                     menu:
-                        Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
+                        Max_05 "{m}Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было...{/m}"
                         "{i}уйти{/i}":
                             $ spent_time += 10
                             $ lisa.dress_inf = '00a'
@@ -1279,13 +1291,13 @@ label lisa_bath:
                     jump .end
         else:
             menu:
-                Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..."
+                Max_05 "{m}Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было...{/m}"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
                     show Lisa bath-window 05
                     $ Skill('hide', 0.03, 10)
                     menu:
-                        Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..."
+                        Max_07 "{m}Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота...{/m}"
                         "{i}уйти{/i}":
                             $ spent_time += 10
                             $ lisa.dress_inf = '04a'

@@ -38,7 +38,15 @@ init python:
             (renpy.TEXT_TAG, u"/i"),
         ]
 
+    def red_tag(tag, argument, contents):
+        return [
+            (renpy.TEXT_TAG, u"color=#f00"), #88ddff
+        ] + contents + [
+            (renpy.TEXT_TAG, u"/color"),
+        ]
+
     config.custom_text_tags["m"] = mind_tag
+    config.custom_text_tags["r"] = red_tag
 
     ############################################################################
 
@@ -439,15 +447,17 @@ init python:
 
     class Hourly_resets():      # сбрасываемые ежечасно
         # подсматривания
-        sleep   = 0
-        dressed = 0
+        sleep       = 0
+        dressed     = 0
+        talkblock   = 0
 
         # диалоги
         sun_cream = 0
 
         def __init__(self):
-            self.sleep   = 0
-            self.dressed = 0
+            self.sleep     = 0
+            self.dressed   = 0
+            self.talkblock = 0
             self.sun_cream = 0
 
         def reset(self):
@@ -469,6 +479,7 @@ init python:
         private     = False     # доступно приватное наказание (оговорили дни и условия)
         crush       = 0         # стадии разговора об увлечении (для Эрика - стадии начального отношения)
         incident    = 0         # стадии разговора об инцеденте
+        talkblock   = 0         # диалог с персонажем блокирован (Эрик запустил кошелёк, первый разговор об этом состоялся)
 
         # счетчики
         defend      = 0         # счетчик спасений от наказания голышом
@@ -495,10 +506,14 @@ init python:
             # флаги
             self.nakedpunish    = False
             self.handmass       = False
+            self.touched        = False
             self.promise        = False
             self.hip_mass       = 0
             self.hugs_type      = 0
             self.private        = False
+            self.crush          = 0
+            self.incident       = 0
+            self.talkblock      = 0
 
             #счетчики
             self.defend         = 0
@@ -516,6 +531,8 @@ init python:
             self.erofilms       = 0
             self.help           = 0
             self.truehelp       = 0
+            self.ladder         = 0
+            self.topless        = 0
             self.held_out       = 0
 
         def __repr__(self):
@@ -1113,6 +1130,8 @@ init python:
         mistres_pun     = False     # в качестве наказания за подглядывания теперь доминирует Алиса
         trick           = False     # пакость Эрику использована в текущую неделю
         eric_wallet     = 0         # стадия события с кошельком Эрика
+        block_peeping   = 0         # блокированы подглядывания после запуска кошелька
+        eric_banished   = 0         # Эрик изгнан
 
         # счетчики
         breakfast       = 0         # завтраков
@@ -1148,6 +1167,8 @@ init python:
             self.mistres_pun        = False
             self.trick              = False
             self.eric_wallet        = 0
+            self.block_peeping      = 0
+            self.eric_banished      = 0
 
             self.breakfast          = 0
             self.dinner             = 0
@@ -1456,7 +1477,7 @@ init python:
 
         MorningWood     = CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True)
         MorningWood1    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].st()<4])", sleep=True, cut=True)
-        MorningWood2    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([poss['seduction'].st()>11, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
+        MorningWood2    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([flags.eric_wallet < 2, poss['seduction'].st()>11, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
 
         MeetingEric     = CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True)
         Eric_af_dinner  = CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day<12 or flags.dinner==11')
@@ -1481,8 +1502,10 @@ init python:
         Lisa_ab_Eric0   = CutEvent('20:00', (4, ), 'lisa_about_ae_sexed5', "Диалог с Лизой о практике у Эрика", "all([flags.lisa_sexed == 5, alice.dcv.intrusion.stage>5])")
         # состоялся разговор с Лизой о практике, война с Эриком, таблетки не подсыпаны, влияние Эрика было выше
         Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])")
-        # состоялся разговор с Лизой о практике, война с Эриком,, влияние Эрика было ниже
+        # состоялся разговор с Лизой о практике, война с Эриком, влияние Эрика было ниже
         Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, lisa.dcv.intrusion.stage==4])")
+        Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", 'flags.eric_wallet == 1')
+        Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable='flags.eric_wallet == 3', sleep=True, extend=True)
 
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки
@@ -1524,8 +1547,6 @@ init python:
                     continue
                 except Exception:
                     continue
-
-
 
                 if resp:
                     lst.append(cut)
@@ -1692,15 +1713,17 @@ init python:
 
         def add_m(self, d, b = False):
             if self.__m is not None:
-                d = d if self.__m + d < self.lim_m else self.lim_m - self.__m
+                d1 = d if self.__m + d < self.lim_m else self.lim_m - self.__m
+            else:
+                d1 = 0
             if d == 0:
                 return
 
             if b or not self.freeze:
                 if self.__m is not None:
-                    self.__m += d
+                    self.__m += d1
                 else:
-                    self.__m = d
+                    self.__m = d1
                 if self.__e is not None:
                     self.__e -= d // 2
                     if self.__e < 0:
@@ -1708,15 +1731,17 @@ init python:
 
         def add_e(self, d, b = False):
             if self.__e is not None:
-                d = d if self.__e + d < self.lim_e else self.lim_e - self.__e
+                d1 = d if self.__e + d < self.lim_e else self.lim_e - self.__e
+            else:
+                d1 = 0
             if d == 0:
                 return
 
             if b or not self.freeze:
                 if self.__e is not None:
-                    self.__e += d
+                    self.__e += d1
                 else:
-                    self.__e = d
+                    self.__e = d1
                 if self.__m is not None:
                     self.__m -= d // 2
                     if self.__m < 0:

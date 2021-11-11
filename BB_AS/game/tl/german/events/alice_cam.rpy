@@ -1,520 +1,520 @@
 ﻿# TODO: Translation updated at 2021-09-01 17:03
 
 # game/events/alice_cam.rpy:25
-translate german cam0_alice_sleep_night_f2d9a8b1:
+translate german cam0_alice_sleep_night_8807f690:
 
-    # Max_07 "Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?"
-    Max_07 "Alice hat beschlossen, sich vor dem Schlafengehen etwas anzusehen... Ich frage mich, was es ist?"
+    # Max_07 "{m}Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?{/m}"
+    Max_07 "{m}Alice hat beschlossen, sich vor dem Schlafengehen etwas anzusehen... Ich frage mich, was es ist?{/m}"
 
 # game/events/alice_cam.rpy:28
-translate german cam0_alice_sleep_night_5d7e1834:
+translate german cam0_alice_sleep_night_08906b7f:
 
-    # Max_02 "Ага! Теперь ясно... Порнушку она решила посмотреть... посасывая заодно свою игрушку..."
-    Max_02 "Aha! Jetzt verstehe ich... sie schaut einen Porno, während sie mit ihrem Spielzeug spielt..."
+    # Max_02 "{m}Ага! Теперь ясно... Порнушку она решила посмотреть... посасывая заодно свою игрушку...{/m}"
+    Max_02 "{m}Aha! Jetzt verstehe ich... sie schaut einen Porno, während sie mit ihrem Spielzeug spielt...{/m}"
 
 # game/events/alice_cam.rpy:31
-translate german cam0_alice_sleep_night_7ea3366c:
+translate german cam0_alice_sleep_night_2036aa83:
 
-    # Max_06 "Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!"
-    Max_06 "Wow! Meine Süßigkeiten und meine Fußmassage haben meine Schwester wohl erregt! Vielleicht sollte ich nächstes Mal versuchen, mehr als nur ihre Beine zu massieren!"
+    # Max_06 "{m}Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!{/m}"
+    Max_06 "{m}Wow! Meine Süßigkeiten und meine Fußmassage haben meine Schwester wohl erregt! Vielleicht sollte ich nächstes Mal versuchen, mehr als nur ihre Beine zu massieren!{/m}"
 
 # game/events/alice_cam.rpy:41
-translate german cam0_alice_sleep_night_bd2d0d90:
+translate german cam0_alice_sleep_night_941253bb:
 
-    # Max_04 "Ночное шоу закончилось. Теперь Алиса спит... без лифчика... Умничка!"
-    Max_04 "Die Show ist vorbei. Jetzt schläft sie ohne BH. Braves Mädchen!"
+    # Max_04 "{m}Ночное шоу закончилось. Теперь Алиса спит... без лифчика... Умничка!{/m}"
+    Max_04 "{m}Die Show ist vorbei. Jetzt schläft sie ohne BH. Braves Mädchen!{/m}"
 
 # game/events/alice_cam.rpy:43
-translate german cam0_alice_sleep_night_5eb0479b:
+translate german cam0_alice_sleep_night_4e184b4d:
 
-    # Max_09 "Ночное шоу закончилось. Теперь Алиса спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
-    Max_09 "Die Show ist vorbei, aber irgendetwas stimmt nicht. Alice hat vergessen, etwas auszuziehen!"
+    # Max_09 "{m}Ночное шоу закончилось. Теперь Алиса спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!{/m}"
+    Max_09 "{m}Die Show ist vorbei, aber irgendetwas stimmt nicht. Alice hat vergessen, etwas auszuziehen!{/m}"
 
 # game/events/alice_cam.rpy:45
-translate german cam0_alice_sleep_night_4b7e896c:
+translate german cam0_alice_sleep_night_b8a0158a:
 
-    # Max_01 "Ночное шоу закончилось. Теперь Алиса спит..."
-    Max_01 "Die Show ist vorbei. Alice schläft tief und fest."
+    # Max_01 "{m}Ночное шоу закончилось. Теперь Алиса спит...{/m}"
+    Max_01 "{m}Die Show ist vorbei. Alice schläft tief und fest.{/m}"
 
 # game/events/alice_cam.rpy:53
-translate german cam0_alice_sleep_night_64517693:
+translate german cam0_alice_sleep_night_a01b9b3d:
 
-    # Max_09 "Эй, так вот же он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 "Hey, da ist er ja! Was macht er da, sich einen runterholen oder so? Ja... Wow! Eric holt sich auf Alice im Schlaf einen runter! Ich wusste nicht, dass Eric ein Fan davon ist..."
+    # Max_09 "{m}Эй, так вот же он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого...{/m}"
+    Max_09 "{m}Hey, da ist er ja! Was macht er da, sich einen runterholen oder so? Ja... Wow! Eric holt sich auf Alice im Schlaf einen runter! Ich wusste nicht, dass Eric ein Fan davon ist...{/m}"
 
 # game/events/alice_cam.rpy:55
-translate german cam0_alice_sleep_night_22b77a79:
+translate german cam0_alice_sleep_night_6094a2c7:
 
-    # Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 "Whoa, Eric! Was macht er da drin, holt er sich einen runter oder so? Ja... Wow! Eric holt sich auf Alice im Schlaf einen runter! Ich wusste nicht, dass Eric auf so was steht..."
+    # Max_09 "{m}Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого...{/m}"
+    Max_09 "{m}Whoa, Eric! Was macht er da drin, holt er sich einen runter oder so? Ja... Wow! Eric holt sich auf Alice im Schlaf einen runter! Ich wusste nicht, dass Eric auf so was steht...{/m}"
 
-# game/events/alice_cam.rpy:57
-translate german cam0_alice_sleep_night_ba6907da:
+# game/events/alice_cam.rpy:58
+translate german cam0_alice_sleep_night_8219b103:
 
-    # Max_03 "Может, попробовать осторожно подсмотреть за ним с балкона, а то как-то даже не верится?!" nointeract
-    Max_03 "Vielleicht sollte ich versuchen, ihn unauffällig vom Balkon aus zu beobachten, denn irgendwie kann ich das gar nicht glauben!" nointeract
+    # Max_03 "{m}Может, попробовать осторожно подсмотреть за ним с балкона, а то как-то даже не верится?!{/m}" nointeract
+    Max_03 "{m}Vielleicht sollte ich versuchen, ihn unauffällig vom Balkon aus zu beobachten, denn irgendwie kann ich das gar nicht glauben!{/m}" nointeract
 
-# game/events/alice_cam.rpy:71
-translate german cam0_alice_sleep_night_5b3adf24:
+# game/events/alice_cam.rpy:72
+translate german cam0_alice_sleep_night_2098780c:
 
-    # Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..."
-    Max_03 "Aha! Eric holt sich wieder auf Alice einen runter... Nur dieses Mal in ihrem Zimmer, vor ihren Augen! Was für ein Perversling..."
+    # Max_03 "{m}Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой...{/m}"
+    Max_03 "{m}Aha! Eric holt sich wieder auf Alice einen runter... Nur dieses Mal in ihrem Zimmer, vor ihren Augen! Was für ein Perversling...{/m}"
 
-# game/events/alice_cam.rpy:73
-translate german cam0_alice_sleep_night_e319aa8d:
+# game/events/alice_cam.rpy:75
+translate german cam0_alice_sleep_night_d77d346a:
 
-    # Max_03 "Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой..." nointeract
-    Max_03 "Aha! Eric holt sich wieder auf Alice einen runter... Nur dieses Mal in ihrem Zimmer, vor ihren Augen! Was für ein Perversling..." nointeract
+    # Max_03 "{m}Ага! Эрик опять дрочит на Алису... Только теперь уже прямо в её комнате, перед ней! Вот же извращенец какой...{/m}" nointeract
+    Max_03 "{m}Aha! Eric holt sich wieder auf Alice einen runter... Nur dieses Mal in ihrem Zimmer, vor ihren Augen! Was für ein Perversling...{/m}" nointeract
 
-# game/events/alice_cam.rpy:82
-translate german cam0_alice_sleep_night_badc9d8f:
+# game/events/alice_cam.rpy:86
+translate german cam0_alice_sleep_night_9756406b:
 
-    # Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..."
-    Max_09 "Eric holt sich wieder einen runter wegen Alice... Echt jetzt? Nicht mal ich lasse mich zu so etwas herab..."
+    # Max_09 "{m}Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь...{/m}"
+    Max_09 "{m}Eric holt sich wieder einen runter wegen Alice... Echt jetzt? Nicht mal ich lasse mich zu so etwas herab...{/m}"
 
-# game/events/alice_cam.rpy:84
-translate german cam0_alice_sleep_night_1d708372:
+# game/events/alice_cam.rpy:89
+translate german cam0_alice_sleep_night_f18bbaed:
 
-    # Max_09 "Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь..." nointeract
-    Max_09 "Eric holt sich wieder einen runter wegen Alice... Echt jetzt? Nicht mal ich lasse mich zu so etwas herab..." nointeract
-
-# game/events/alice_cam.rpy:94
-translate german cam0_alice_sleep_night_ecdbc7a2:
-
-    # Max_04 "Алиса сейчас спит... без лифчика... Умничка!"
-    Max_04 "Alice schläft und sie trägt keinen BH. Braves Mädchen!"
-
-# game/events/alice_cam.rpy:96
-translate german cam0_alice_sleep_night_902c46ec:
-
-    # Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
-    Max_04 "Alice ist eingeschlafen... Ganz nackt und schön..."
+    # Max_09 "{m}Эрик опять дрочит на Алису... В чём прикол?! Даже я до такого не опускаюсь...{/m}" nointeract
+    Max_09 "{m}Eric holt sich wieder einen runter wegen Alice... Echt jetzt? Nicht mal ich lasse mich zu so etwas herab...{/m}" nointeract
 
 # game/events/alice_cam.rpy:98
-translate german cam0_alice_sleep_night_6dc7005e:
+translate german cam0_alice_sleep_night_e13c61ff:
 
-    # Max_09 "Алиса сейчас спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
-    Max_09 "Alice schläft, aber es sieht so aus, als hätte sie vergessen, etwas auszuziehen!"
+    # Max_04 "{m}Алиса сейчас спит... без лифчика... Умничка!{/m}"
+    Max_04 "{m}Alice schläft und sie trägt keinen BH. Braves Mädchen!{/m}"
 
 # game/events/alice_cam.rpy:100
-translate german cam0_alice_sleep_night_2795e9eb:
+translate german cam0_alice_sleep_night_2014a72d:
 
-    # Max_01 "Алиса сейчас спит..."
-    Max_01 "Alice schläft."
+    # Max_04 "{m}Алиса сейчас спит... совсем голенькая и прекрасная...{/m}"
+    Max_04 "{m}Alice ist eingeschlafen... Ganz nackt und schön...{/m}"
 
-# game/events/alice_cam.rpy:111
-translate german cam0_alice_sleep_morning_e96b98f3:
+# game/events/alice_cam.rpy:102
+translate german cam0_alice_sleep_night_f60069bc:
 
-    # Max_04 "Алиса ещё спит... без лифчика... Умничка!"
-    Max_04 "Alice schläft immer noch ohne ihren BH. Braves Mädchen!"
+    # Max_09 "{m}Алиса сейчас спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!{/m}"
+    Max_09 "{m}Alice schläft, aber es sieht so aus, als hätte sie vergessen, etwas auszuziehen!{/m}"
 
-# game/events/alice_cam.rpy:113
-translate german cam0_alice_sleep_morning_902c46ec:
+# game/events/alice_cam.rpy:104
+translate german cam0_alice_sleep_night_05dad1bb:
 
-    # Max_04 "Алиса сейчас спит... совсем голенькая и прекрасная..."
-    Max_04 "Alice ist eingeschlafen... Ganz nackt und schön..."
+    # Max_01 "{m}Алиса сейчас спит...{/m}"
+    Max_01 "{m}Alice schläft.{/m}"
 
 # game/events/alice_cam.rpy:115
-translate german cam0_alice_sleep_morning_8db64cb6:
+translate german cam0_alice_sleep_morning_3d3832bd:
 
-    # Max_09 "Алиса ещё спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!"
-    Max_09 "Alice schläft noch, aber sie hat vergessen, etwas auszuziehen!"
+    # Max_04 "{m}Алиса ещё спит... без лифчика... Умничка!{/m}"
+    Max_04 "{m}Alice schläft immer noch ohne ihren BH. Braves Mädchen!{/m}"
 
 # game/events/alice_cam.rpy:117
-translate german cam0_alice_sleep_morning_9186f10b:
+translate german cam0_alice_sleep_morning_2014a72d:
 
-    # Max_01 "Алиса ещё спит..."
-    Max_01 "Alice schläft noch..."
+    # Max_04 "{m}Алиса сейчас спит... совсем голенькая и прекрасная...{/m}"
+    Max_04 "{m}Alice ist eingeschlafen... Ganz nackt und schön...{/m}"
 
-# game/events/alice_cam.rpy:126
-translate german cam0_alice_shower_ce893c17:
+# game/events/alice_cam.rpy:119
+translate german cam0_alice_sleep_morning_19ad4507:
 
-    # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Mit diesem Winkel kann ich Alice nicht sehen. Gibt es eine andere Kamera, die ich überprüfen kann?"
+    # Max_09 "{m}Алиса ещё спит... но не всё так, как должно быть... Кое-что она забыла с себя снять!{/m}"
+    Max_09 "{m}Alice schläft noch, aber sie hat vergessen, etwas auszuziehen!{/m}"
 
-# game/events/alice_cam.rpy:128
-translate german cam0_alice_shower_d8fc5c8e:
+# game/events/alice_cam.rpy:121
+translate german cam0_alice_sleep_morning_27833a50:
 
-    # Max_09 "Алисы не видно через эту камеру..."
-    Max_09 "Ich kann Alice durch diese Kamera nicht sehen..."
+    # Max_01 "{m}Алиса ещё спит...{/m}"
+    Max_01 "{m}Alice schläft noch...{/m}"
 
-# game/events/alice_cam.rpy:137
-translate german cam0_alice_shower_ce820080:
+# game/events/alice_cam.rpy:130
+translate german cam0_alice_shower_d245ef91:
 
-    # Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
-    Max_04 "Meine große Schwester nimmt eine Dusche... Es ist ein Anblick, an dem ich mich nie satt sehen werde..."
+    # Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Mit diesem Winkel kann ich Alice nicht sehen. Gibt es eine andere Kamera, die ich überprüfen kann?{/m}"
 
-# game/events/alice_cam.rpy:156
-translate german cam1_alice_shower_77f51d82:
+# game/events/alice_cam.rpy:132
+translate german cam0_alice_shower_fb8560fe:
 
-    # Max_03 "Алиса, прежде чем принять душ, любуется собой перед зеркалом. А я и мои зрители с радостью полюбуемся этим через камеру..."
-    Max_03 "Alice bewundert ihre Kurven vor dem Spiegel. Sie hat keine Ahnung, wie glücklich sie gerade jetzt ihr Publikum macht..."
+    # Max_09 "{m}Алисы не видно через эту камеру...{/m}"
+    Max_09 "{m}Ich kann Alice durch diese Kamera nicht sehen...{/m}"
 
-# game/events/alice_cam.rpy:162
-translate german cam1_alice_shower_ce893c17:
+# game/events/alice_cam.rpy:141
+translate german cam0_alice_shower_1164a14f:
 
-    # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Ich kann Alice durch diese Kamera nicht sehen. Kann ich eine andere ausprobieren?"
+    # Max_04 "{m}Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест...{/m}"
+    Max_04 "{m}Meine große Schwester nimmt eine Dusche... Es ist ein Anblick, an dem ich mich nie satt sehen werde...{/m}"
 
-# game/events/alice_cam.rpy:191
-translate german cam0_alice_lisa_shower_ce820080:
+# game/events/alice_cam.rpy:160
+translate german cam1_alice_shower_fef6b513:
 
-    # Max_04 "Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест..."
-    Max_04 "Meine große Schwester nimmt eine Dusche... Es ist ein Anblick, an dem ich mich nie satt sehen werde..."
+    # Max_03 "{m}Алиса, прежде чем принять душ, любуется собой перед зеркалом. А я и мои зрители с радостью полюбуемся этим через камеру...{/m}"
+    Max_03 "{m}Alice bewundert ihre Kurven vor dem Spiegel. Sie hat keine Ahnung, wie glücklich sie gerade jetzt ihr Publikum macht...{/m}"
+
+# game/events/alice_cam.rpy:166
+translate german cam1_alice_shower_d245ef91:
+
+    # Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann Alice durch diese Kamera nicht sehen. Kann ich eine andere ausprobieren?{/m}"
 
 # game/events/alice_cam.rpy:195
-translate german cam0_alice_lisa_shower_038e8b74:
+translate german cam0_alice_lisa_shower_1164a14f:
 
-    # Max_09 "Лиза, должно быть, красуется перед зеркалом. Надо взглянуть через другую камеру..."
-    Max_09 "Lisa schaut sich wohl gerade ihren Körper im Spiegel an. Ich muss durch eine andere Kamera schauen..."
+    # Max_04 "{m}Старшая сестрёнка принимает душ... Это зрелище, которое никогда мне не надоест...{/m}"
+    Max_04 "{m}Meine große Schwester nimmt eine Dusche... Es ist ein Anblick, an dem ich mich nie satt sehen werde...{/m}"
 
-# game/events/alice_cam.rpy:197
-translate german cam0_alice_lisa_shower_3c0684d8:
+# game/events/alice_cam.rpy:199
+translate german cam0_alice_lisa_shower_e39ac49e:
 
-    # Max_09 "Лиза, должно быть, красуется перед зеркалом, но здесь этого не увидеть..."
-    Max_09 "Lisa schaut sich wohl gerade im Spiegel an, aber aus diesem Blickwinkel kann ich nichts sehen."
+    # Max_09 "{m}Лиза, должно быть, красуется перед зеркалом. Надо взглянуть через другую камеру...{/m}"
+    Max_09 "{m}Lisa schaut sich wohl gerade ihren Körper im Spiegel an. Ich muss durch eine andere Kamera schauen...{/m}"
 
-# game/events/alice_cam.rpy:207
-translate german cam0_alice_lisa_shower_7316172d:
+# game/events/alice_cam.rpy:201
+translate german cam0_alice_lisa_shower_837def72:
 
-    # Max_05 "Младшая сестрёнка принимает душ... На её прелести я мог бы смотреть часами..."
-    Max_05 "Ich könnte meiner ahnungslosen kleinen Schwester stundenlang beim Duschen zusehen..."
+    # Max_09 "{m}Лиза, должно быть, красуется перед зеркалом, но здесь этого не увидеть...{/m}"
+    Max_09 "{m}Lisa schaut sich wohl gerade im Spiegel an, aber aus diesem Blickwinkel kann ich nichts sehen.{/m}"
 
 # game/events/alice_cam.rpy:211
-translate german cam0_alice_lisa_shower_f7e1d741:
+translate german cam0_alice_lisa_shower_06ce2e5f:
 
-    # Max_09 "Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру..."
-    Max_09 "Alice schaut sich wohl gerade im Spiegel an... Ich muss durch eine andere Kamera schauen..."
+    # Max_05 "{m}Младшая сестрёнка принимает душ... На её прелести я мог бы смотреть часами...{/m}"
+    Max_05 "{m}Ich könnte meiner ahnungslosen kleinen Schwester stundenlang beim Duschen zusehen...{/m}"
 
-# game/events/alice_cam.rpy:213
-translate german cam0_alice_lisa_shower_1dc7f6ff:
+# game/events/alice_cam.rpy:215
+translate german cam0_alice_lisa_shower_520d2d69:
 
-    # Max_09 "Алиса, должно быть, красуется перед зеркалом, но здесь этого не увидеть..."
-    Max_09 "Alice schaut sich wohl gerade im Spiegel an, aber aus diesem Winkel kann ich nichts sehen..."
+    # Max_09 "{m}Алиса, должно быть, красуется перед зеркалом... Надо взглянуть через другую камеру...{/m}"
+    Max_09 "{m}Alice schaut sich wohl gerade im Spiegel an... Ich muss durch eine andere Kamera schauen...{/m}"
 
-# game/events/alice_cam.rpy:224
-translate german cam0_alice_lisa_shower_ff4d64ec:
+# game/events/alice_cam.rpy:217
+translate german cam0_alice_lisa_shower_3a606923:
 
-    # Max_05 "Обе мои сестрёнки сейчас принимают душ. Глаз не отвести..."
-    Max_05 "Meine beiden Schwestern sind unter der Dusche? Ich kann nicht wegsehen..."
+    # Max_09 "{m}Алиса, должно быть, красуется перед зеркалом, но здесь этого не увидеть...{/m}"
+    Max_09 "{m}Alice schaut sich wohl gerade im Spiegel an, aber aus diesem Winkel kann ich nichts sehen...{/m}"
 
-# game/events/alice_cam.rpy:259
-translate german cam1_alice_lisa_shower_51c91303:
+# game/events/alice_cam.rpy:228
+translate german cam0_alice_lisa_shower_83926c4f:
 
-    # Max_03 "Лиза внимательно разглядывает себя в зеркало... А я и мои зрители с радостью полюбуемся на это через камеру..."
-    Max_03 "Lisa betrachtet sich neugierig im Spiegel. Mein Publikum und ich schauen gerne zu..."
+    # Max_05 "{m}Обе мои сестрёнки сейчас принимают душ. Глаз не отвести...{/m}"
+    Max_05 "{m}Meine beiden Schwestern sind unter der Dusche? Ich kann nicht wegsehen...{/m}"
 
-# game/events/alice_cam.rpy:273
-translate german cam1_alice_lisa_shower_69b5e572:
+# game/events/alice_cam.rpy:263
+translate german cam1_alice_lisa_shower_e427d811:
 
-    # Max_05 "Ух, старшая сестрёнка просто сногсшибательна..."
-    Max_05 "Wow, die große Schwester ist absolut umwerfend..."
+    # Max_03 "{m}Лиза внимательно разглядывает себя в зеркало... А я и мои зрители с радостью полюбуемся на это через камеру...{/m}"
+    Max_03 "{m}Lisa betrachtet sich neugierig im Spiegel. Mein Publikum und ich schauen gerne zu...{/m}"
 
-# game/events/alice_cam.rpy:278
-translate german cam1_alice_lisa_shower_77deb168:
+# game/events/alice_cam.rpy:277
+translate german cam1_alice_lisa_shower_0938eb0c:
 
-    # Max_09 "Через эту камеру никого не видно... Может посмотреть через другую?"
-    Max_09 "Ich kann durch diese Kamera niemanden sehen. Gibt es eine weitere, die ich überprüfen kann?"
+    # Max_05 "{m}Ух, старшая сестрёнка просто сногсшибательна...{/m}"
+    Max_05 "{m}Wow, die große Schwester ist absolut umwerfend...{/m}"
 
-# game/events/alice_cam.rpy:311
-translate german cam0_alice_dressed_shop_4018efed:
+# game/events/alice_cam.rpy:282
+translate german cam1_alice_lisa_shower_90e1f759:
 
-    # Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
-    Max_09 "Hier gibt es nichts Interessantes. Alice ist vollständig angezogen."
+    # Max_09 "{m}Через эту камеру никого не видно... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann durch diese Kamera niemanden sehen. Gibt es eine weitere, die ich überprüfen kann?{/m}"
 
-# game/events/alice_cam.rpy:328
-translate german cam0_alice_dressed_shop_c8aa5176:
+# game/events/alice_cam.rpy:315
+translate german cam0_alice_dressed_shop_8b130390:
 
-    # Max_07 "Ага! Алиса наряжается, чтобы отправиться на шопинг..." nointeract
-    Max_07 "Aha! Alice macht sich zum Einkaufen fertig..." nointeract
+    # Max_09 "{m}Ничего интересного я здесь уже не увижу, Алиса полностью оделась.{/m}"
+    Max_09 "{m}Hier gibt es nichts Interessantes. Alice ist vollständig angezogen.{/m}"
 
-# game/events/alice_cam.rpy:339
-translate german cam0_alice_dressed_shop_9d360f84:
+# game/events/alice_cam.rpy:333
+translate german cam0_alice_dressed_shop_5ea48260:
 
-    # Max_02 "О да! Сейчас она совсем голенькая..." nointeract
-    Max_02 "Ja! Sie ist jetzt völlig nackt..." nointeract
+    # Max_07 "{m}Ага! Алиса наряжается, чтобы отправиться на шопинг...{/m}" nointeract
+    Max_07 "{m}Aha! Alice macht sich zum Einkaufen fertig...{/m}" nointeract
 
-# game/events/alice_cam.rpy:351
-translate german cam0_alice_dressed_shop_64a95c05:
+# game/events/alice_cam.rpy:344
+translate german cam0_alice_dressed_shop_1f916806:
 
-    # Max_01 "Похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала!"
-    Max_01 "Sieht aus, als ob sie in ihr Höschen geht, wenn sie nicht soll... Verlass dich drauf, Schwesterherz, du kriegst Ärger!"
+    # Max_02 "{m}О да! Сейчас она совсем голенькая...{/m}" nointeract
+    Max_02 "{m}Ja! Sie ist jetzt völlig nackt...{/m}" nointeract
 
 # game/events/alice_cam.rpy:355
-translate german cam0_alice_dressed_shop_dcef6691:
+translate german cam0_alice_dressed_shop_d757a788:
 
-    # Max_05 "Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит?"
-    Max_05 "Wow! Sie wird sogar ohne Höschen einkaufen gehen! Ich frage mich, was Mom sagen würde, wenn sie das merkt?"
+    # Max_01 "{m}Похоже, пойдёт она в трусиках, а не должна... Считай, сестрёнка, ты попала!{/m}"
+    Max_01 "{m}Sieht aus, als ob sie in ihr Höschen geht, wenn sie nicht soll... Verlass dich drauf, Schwesterherz, du kriegst Ärger!{/m}"
 
 # game/events/alice_cam.rpy:359
-translate german cam0_alice_dressed_shop_f1b3f435:
+translate german cam0_alice_dressed_shop_16528d9d:
 
-    # Max_04 "Какая соблазнительная попка у неё... Уверен, зрителям это нравится!"
-    Max_04 "Das ist ein schöner, runder Arsch, den sie hat. Ich hoffe, das Publikum denkt das auch!"
+    # Max_05 "{m}Ого! Алиса даже на шопинг пойдёт без трусиков! Интересно, что она скажет маме в кабинке для переодевания, если та это заметит?{/m}"
+    Max_05 "{m}Wow! Sie wird sogar ohne Höschen einkaufen gehen! Ich frage mich, was Mom sagen würde, wenn sie das merkt?{/m}"
 
-# game/events/alice_cam.rpy:369
-translate german cam0_alice_dressed_friend_4018efed:
+# game/events/alice_cam.rpy:363
+translate german cam0_alice_dressed_shop_44c5fd4f:
 
-    # Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
-    Max_09 "Hier gibt es nichts Interessantes. Alice ist vollständig angezogen."
+    # Max_04 "{m}Какая соблазнительная попка у неё... Уверен, зрителям это нравится!{/m}"
+    Max_04 "{m}Das ist ein schöner, runder Arsch, den sie hat. Ich hoffe, das Publikum denkt das auch!{/m}"
 
-# game/events/alice_cam.rpy:386
-translate german cam0_alice_dressed_friend_bf45de39:
+# game/events/alice_cam.rpy:373
+translate german cam0_alice_dressed_friend_8b130390:
 
-    # Max_07 "Ага! Алиса наряжается, чтобы куда-то отправиться..." nointeract
-    Max_07 "Alice macht sich fertig, um irgendwo hinzugehen..." nointeract
+    # Max_09 "{m}Ничего интересного я здесь уже не увижу, Алиса полностью оделась.{/m}"
+    Max_09 "{m}Hier gibt es nichts Interessantes. Alice ist vollständig angezogen.{/m}"
 
-# game/events/alice_cam.rpy:397
-translate german cam0_alice_dressed_friend_9d360f84:
+# game/events/alice_cam.rpy:391
+translate german cam0_alice_dressed_friend_363c2c1a:
 
-    # Max_02 "О да! Сейчас она совсем голенькая..." nointeract
-    Max_02 "Ja! Sie ist jetzt völlig ausgezogen..." nointeract
+    # Max_07 "{m}Ага! Алиса наряжается, чтобы куда-то отправиться...{/m}" nointeract
+    Max_07 "{m}Alice macht sich fertig, um irgendwo hinzugehen...{/m}" nointeract
 
-# game/events/alice_cam.rpy:409
-translate german cam0_alice_dressed_friend_356c787f:
+# game/events/alice_cam.rpy:402
+translate german cam0_alice_dressed_friend_1f916806:
 
-    # Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
-    Max_01 "So schön dieses Höschen auch ist, sie sollte es nicht tragen. Du kriegst Ärger, Schwesterherz!"
+    # Max_02 "{m}О да! Сейчас она совсем голенькая...{/m}" nointeract
+    Max_02 "{m}Ja! Sie ist jetzt völlig ausgezogen...{/m}" nointeract
 
 # game/events/alice_cam.rpy:413
-translate german cam0_alice_dressed_friend_d32fd8a9:
+translate german cam0_alice_dressed_friend_e872a8d5:
 
-    # Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт..."
-    Max_05 "Großartig! Alice trägt ihr Höschen nicht, so wie es sein sollte! Ich frage mich, ob es jemandem auffällt..."
+    # Max_01 "{m}Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!{/m}"
+    Max_01 "{m}So schön dieses Höschen auch ist, sie sollte es nicht tragen. Du kriegst Ärger, Schwesterherz!{/m}"
 
 # game/events/alice_cam.rpy:417
-translate german cam0_alice_dressed_friend_74b2c212:
+translate german cam0_alice_dressed_friend_24dcb435:
 
-    # Max_04 "Трусики хорошо смотрятся на её попке. Но без них было бы лучше..."
-    Max_04 "So gut diese Höschen auch aussehen, es ist schade, dass es das Gesamtbild verschlechtert..."
+    # Max_05 "{m}Супер! Алиса не надевает трусики... И правильно делает! Надеюсь, кто-то это заметит там, куда она идёт...{/m}"
+    Max_05 "{m}Großartig! Alice trägt ihr Höschen nicht, so wie es sein sollte! Ich frage mich, ob es jemandem auffällt...{/m}"
 
-# game/events/alice_cam.rpy:427
-translate german cam0_alice_dressed_club_4018efed:
+# game/events/alice_cam.rpy:421
+translate german cam0_alice_dressed_friend_6dade498:
 
-    # Max_09 "Ничего интересного я здесь уже не увижу, Алиса полностью оделась."
-    Max_09 "Hier gibt es nichts Interessantes. Alice ist vollständig angezogen."
+    # Max_04 "{m}Трусики хорошо смотрятся на её попке. Но без них было бы лучше...{/m}"
+    Max_04 "{m}So gut diese Höschen auch aussehen, es ist schade, dass es das Gesamtbild verschlechtert...{/m}"
 
-# game/events/alice_cam.rpy:438
-translate german cam0_alice_dressed_club_cc04128a:
+# game/events/alice_cam.rpy:431
+translate german cam0_alice_dressed_club_8b130390:
 
-    # Max_07 "Ага! Алиса наряжается, чтобы отправиться в клуб..." nointeract
-    Max_07 "Aha! Alice macht sich bereit, in den Club zu gehen..." nointeract
+    # Max_09 "{m}Ничего интересного я здесь уже не увижу, Алиса полностью оделась.{/m}"
+    Max_09 "{m}Hier gibt es nichts Interessantes. Alice ist vollständig angezogen.{/m}"
 
-# game/events/alice_cam.rpy:449
-translate german cam0_alice_dressed_club_9d360f84:
+# game/events/alice_cam.rpy:443
+translate german cam0_alice_dressed_club_0a40c953:
 
-    # Max_02 "О да! Сейчас она совсем голенькая..." nointeract
-    Max_02 "Ja! Sie ist jetzt völlig ausgezogen..." nointeract
+    # Max_07 "{m}Ага! Алиса наряжается, чтобы отправиться в клуб...{/m}" nointeract
+    Max_07 "{m}Aha! Alice macht sich bereit, in den Club zu gehen...{/m}" nointeract
 
-# game/events/alice_cam.rpy:460
-translate german cam0_alice_dressed_club_356c787f:
+# game/events/alice_cam.rpy:454
+translate german cam0_alice_dressed_club_1f916806:
 
-    # Max_01 "Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!"
-    Max_01 "So schön dieses Höschen auch ist, sie sollte es nicht tragen. Du kriegst Ärger, Schwesterherz!"
+    # Max_02 "{m}О да! Сейчас она совсем голенькая...{/m}" nointeract
+    Max_02 "{m}Ja! Sie ist jetzt völlig ausgezogen...{/m}" nointeract
 
 # game/events/alice_cam.rpy:464
-translate german cam0_alice_dressed_club_08a1f2c8:
+translate german cam0_alice_dressed_club_e872a8d5:
 
-    # Max_05 "Супер! Алиса не надевает трусики... И правильно делает! Это платье без трусиков смотрится гораздо лучше... Интересно, в клубе на это кто-нибудь обратит внимание?"
-    Max_05 "Großartig! Dass Alice ihr Kleid ohne Höschen trägt, ist eine so große Verbesserung. Ich frage mich, ob es jemandem im Club auffallen wird?"
+    # Max_01 "{m}Трусики хорошо смотрятся на её попке. Вот только быть их на ней не должно... Считай, сестрёнка, ты попала!{/m}"
+    Max_01 "{m}So schön dieses Höschen auch ist, sie sollte es nicht tragen. Du kriegst Ärger, Schwesterherz!{/m}"
 
 # game/events/alice_cam.rpy:468
-translate german cam0_alice_dressed_club_90be932b:
+translate german cam0_alice_dressed_club_888581eb:
 
-    # Max_04 "Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше..."
-    Max_04 "So gut ihr Höschen auch aussieht, wenn sie es nicht trägt, würde das ihr Outfit wirklich verbessern..."
+    # Max_05 "{m}Супер! Алиса не надевает трусики... И правильно делает! Это платье без трусиков смотрится гораздо лучше... Интересно, в клубе на это кто-нибудь обратит внимание?{/m}"
+    Max_05 "{m}Großartig! Dass Alice ihr Kleid ohne Höschen trägt, ist eine so große Verbesserung. Ich frage mich, ob es jemandem im Club auffallen wird?{/m}"
 
-# game/events/alice_cam.rpy:477
-translate german cam0_alice_rest_morning_57385ee4:
+# game/events/alice_cam.rpy:472
+translate german cam0_alice_dressed_club_79e8edcf:
 
-    # Max_01 "Алиса валяется со своим ноутбуком. Смотрится неплохо..."
-    Max_01 "Alice liegt mit ihrem Laptop herum. Sieht gut aus..."
+    # Max_04 "{m}Трусики хорошо смотрятся на её попке. Но без них это платье смотрелось бы гораздо лучше...{/m}"
+    Max_04 "{m}So gut ihr Höschen auch aussieht, wenn sie es nicht trägt, würde das ihr Outfit wirklich verbessern...{/m}"
 
-# game/events/alice_cam.rpy:486
-translate german cam0_alice_dishes_b656e8e4:
+# game/events/alice_cam.rpy:481
+translate german cam0_alice_rest_morning_fae5dd2e:
 
-    # Max_01 "Алиса моет посуду. Правильно, нечего весь день прохлаждаться во дворе и за ноутбуком..."
-    Max_01 "Alice wäscht das Geschirr ab. Ich bin sicher, sie hasst es insgeheim, sich die Hände schmutzig zu machen..."
+    # Max_01 "{m}Алиса валяется со своим ноутбуком. Смотрится неплохо...{/m}"
+    Max_01 "{m}Alice liegt mit ihrem Laptop herum. Sieht gut aus...{/m}"
 
-# game/events/alice_cam.rpy:495
-translate german cam0_alice_read_2a1ac283:
+# game/events/alice_cam.rpy:490
+translate german cam0_alice_dishes_a2a73221:
 
-    # Max_07 "Так, Алиса просто читает. Не особо интересно."
-    Max_07 "Alice liest gerade ein Buch. Es scheint ihr Spaß zu machen."
+    # Max_01 "{m}Алиса моет посуду. Правильно, нечего весь день прохлаждаться во дворе и за ноутбуком...{/m}"
+    Max_01 "{m}Alice wäscht das Geschirr ab. Ich bin sicher, sie hasst es insgeheim, sich die Hände schmutzig zu machen...{/m}"
 
-# game/events/alice_cam.rpy:497
-translate german cam0_alice_read_ad8735f5:
+# game/events/alice_cam.rpy:499
+translate german cam0_alice_read_b7322552:
 
-    # Max_09 "Хотя, книжки она читает эротического жанра, может она возбудится и начнёт себя трогать..."
-    Max_09 "Sie liest gerne Schweinereien, ich wäre nicht überrascht, wenn sie sich erregt und anfängt, sich selbst zu berühren..."
+    # Max_07 "{m}Так, Алиса просто читает. Не особо интересно.{/m}"
+    Max_07 "{m}Alice liest gerade ein Buch. Es scheint ihr Spaß zu machen.{/m}"
 
-# game/events/alice_cam.rpy:505
-translate german cam0_alice_smoke_8754cb82:
+# game/events/alice_cam.rpy:501
+translate german cam0_alice_read_d43fe115:
 
-    # Max_09 "Алиса должна быть во дворе, но через камеру её не видно... Интересно, где она?!"
-    Max_09 "Alice sollte im Garten sein, aber ich kann sie nicht auf der Kamera sehen... Ich frage mich, wo sie wohl ist?"
+    # Max_09 "{m}Хотя, книжки она читает эротического жанра, может она возбудится и начнёт себя трогать...{/m}"
+    Max_09 "{m}Sie liest gerne Schweinereien, ich wäre nicht überrascht, wenn sie sich erregt und anfängt, sich selbst zu berühren...{/m}"
 
-# game/events/alice_cam.rpy:507
-translate german cam0_alice_smoke_abc50ba4:
+# game/events/alice_cam.rpy:509
+translate german cam0_alice_smoke_547c66fc:
 
-    # Max_01 "Алиса должна быть во дворе, но через камеру её не видно... Наверное, опять курит..."
-    Max_01 "Alice sollte im Garten sein, aber sie ist nicht vor der Kamera. Wahrscheinlich raucht sie wieder..."
+    # Max_09 "{m}Алиса должна быть во дворе, но через камеру её не видно... Интересно, где она?!{/m}"
+    Max_09 "{m}Alice sollte im Garten sein, aber ich kann sie nicht auf der Kamera sehen... Ich frage mich, wo sie wohl ist?{/m}"
 
-# game/events/alice_cam.rpy:524
-translate german cam0_alice_sun_9e7392c6:
+# game/events/alice_cam.rpy:511
+translate german cam0_alice_smoke_b82d6400:
 
-    # Max_01 "Загорающая Алиса радует глаза зрителей! Ну и мои заодно..."
-    Max_01 "Das Sonnenbad mit Alice ist sicherlich ein erfreulicher Anblick für das Publikum! Und für mich natürlich auch."
+    # Max_01 "{m}Алиса должна быть во дворе, но через камеру её не видно... Наверное, опять курит...{/m}"
+    Max_01 "{m}Alice sollte im Garten sein, aber sie ist nicht vor der Kamera. Wahrscheinlich raucht sie wieder...{/m}"
 
-# game/events/alice_cam.rpy:542
-translate german cam1_alice_sun_9e7392c6:
+# game/events/alice_cam.rpy:528
+translate german cam0_alice_sun_05a02fa2:
 
-    # Max_01 "Загорающая Алиса радует глаза зрителей! Ну и мои заодно..."
-    Max_01 "Das Sonnenbad mit Alice ist sicherlich ein erfreulicher Anblick für das Publikum! Und für mich natürlich auch."
+    # Max_01 "{m}Загорающая Алиса радует глаза зрителей! Ну и мои заодно...{/m}"
+    Max_01 "{m}Das Sonnenbad mit Alice ist sicherlich ein erfreulicher Anblick für das Publikum! Und für mich natürlich auch.{/m}"
 
-# game/events/alice_cam.rpy:544
-translate german cam1_alice_sun_ce238a73:
+# game/events/alice_cam.rpy:546
+translate german cam1_alice_sun_05a02fa2:
 
-    # Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
-    Max_09 "Ich sehe nichts. Soll ich eine andere Kamera ausprobieren?"
+    # Max_01 "{m}Загорающая Алиса радует глаза зрителей! Ну и мои заодно...{/m}"
+    Max_01 "{m}Das Sonnenbad mit Alice ist sicherlich ein erfreulicher Anblick für das Publikum! Und für mich natürlich auch.{/m}"
 
-# game/events/alice_cam.rpy:552
-translate german cam0_alice_swim_39c0bef3:
+# game/events/alice_cam.rpy:548
+translate german cam1_alice_sun_762850fc:
 
-    # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
-    Max_09 "Ich kann nicht wirklich etwas sehen. Es könnte sich lohnen, eine andere Kamera auszuprobieren..."
+    # Max_09 "{m}Через эту камеру ничего не видно... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich sehe nichts. Soll ich eine andere Kamera ausprobieren?{/m}"
 
-# game/events/alice_cam.rpy:554
-translate german cam0_alice_swim_06c19036:
+# game/events/alice_cam.rpy:556
+translate german cam0_alice_swim_4bc4874c:
 
-    # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
-    Max_09 "Ich kann nichts sehen. Ich sollte eine Kamera installieren, die den gesamten Pool abdeckt..."
+    # Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
+    Max_09 "{m}Ich kann nicht wirklich etwas sehen. Es könnte sich lohnen, eine andere Kamera auszuprobieren...{/m}"
 
-# game/events/alice_cam.rpy:562
-translate german cam1_alice_swim_47226f5e:
+# game/events/alice_cam.rpy:558
+translate german cam0_alice_swim_14337802:
 
-    # Max_01 "На мокренькую старшую сестрёнку всегда приятно взглянуть..."
-    Max_01 "Es ist immer schön zu sehen, wenn die große Schwester nass wird..."
+    # Max_09 "{m}Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн...{/m}"
+    Max_09 "{m}Ich kann nichts sehen. Ich sollte eine Kamera installieren, die den gesamten Pool abdeckt...{/m}"
 
-# game/events/alice_cam.rpy:571
-translate german cam0_alice_cooking_dinner_6ebaaa99:
+# game/events/alice_cam.rpy:566
+translate german cam1_alice_swim_d4c63c68:
 
-    # Max_01 "Алиса готовит ужин. А могла бы и попкой покрутить заодно..."
-    Max_01 "Alice macht das Abendessen. Ist es zu viel verlangt, sie dazu zu bringen, ihren Hintern etwas mehr zu zeigen?"
+    # Max_01 "{m}На мокренькую старшую сестрёнку всегда приятно взглянуть...{/m}"
+    Max_01 "{m}Es ist immer schön zu sehen, wenn die große Schwester nass wird...{/m}"
 
-# game/events/alice_cam.rpy:592
-translate german cam0_alice_rest_evening_74f01201:
+# game/events/alice_cam.rpy:575
+translate german cam0_alice_cooking_dinner_a6504070:
 
-    # Max_03 "Ого! Похоже, начинается что-то интересненькое! Алиса решила снять лишнюю одежду и поразвлечься?!"
-    Max_03 "Wow! Sieht aus, als würde etwas Interessantes passieren! Alice hat beschlossen, sich auszuziehen und sich zu entspannen?"
+    # Max_01 "{m}Алиса готовит ужин. А могла бы и попкой покрутить заодно...{/m}"
+    Max_01 "{m}Alice macht das Abendessen. Ist es zu viel verlangt, sie dazu zu bringen, ihren Hintern etwas mehr zu zeigen?{/m}"
 
 # game/events/alice_cam.rpy:596
-translate german cam0_alice_rest_evening_9247cd76:
+translate german cam0_alice_rest_evening_16350832:
 
-    # Max_05 "Вот так, сестрёнка! То, как ты ласкаешь киску и посасываешь свою игрушку что мне, что зрителям, однозначно нравится..."
-    Max_05 "Das war's, Schwesterherz! Das Publikum wird wirklich die Art und Weise mögen, wie du deine Muschi befingerst und das Spielzeug lutschst..."
+    # Max_03 "{m}Ого! Похоже, начинается что-то интересненькое! Алиса решила снять лишнюю одежду и поразвлечься?!{/m}"
+    Max_03 "{m}Wow! Sieht aus, als würde etwas Interessantes passieren! Alice hat beschlossen, sich auszuziehen und sich zu entspannen?{/m}"
 
-# game/events/alice_cam.rpy:599
-translate german cam0_alice_rest_evening_c01b3486:
+# game/events/alice_cam.rpy:600
+translate german cam0_alice_rest_evening_e854f0c8:
 
-    # Max_02 "А ведь Алиса прекрасно бы смотрелась в роли тех девчонок, которые развлекают народ тем, что раздеваются на камеру и ласкают себя... Всё прибыльнее, чем эта её косметика! Надо бы ей на это как-то легонько намекнуть..."
-    Max_02 "Alice könnte ein großartiges Camgirl sein, alles wäre besser geeignet als ihr albernes Blog! Ich sollte ihr einen Tipp geben..."
+    # Max_05 "{m}Вот так, сестрёнка! То, как ты ласкаешь киску и посасываешь свою игрушку что мне, что зрителям, однозначно нравится...{/m}"
+    Max_05 "{m}Das war's, Schwesterherz! Das Publikum wird wirklich die Art und Weise mögen, wie du deine Muschi befingerst und das Spielzeug lutschst...{/m}"
 
-# game/events/alice_cam.rpy:608
-translate german cam0_alice_rest_evening_262ced24:
+# game/events/alice_cam.rpy:603
+translate german cam0_alice_rest_evening_822de6bf:
 
-    # Max_07 "К сожалению, шоу закончилось и теперь Алиса просто занимается своим блогом..."
-    Max_07 "Die Show ist leider vorbei. Sie arbeitet gerade an ihrem Blog."
+    # Max_02 "{m}А ведь Алиса прекрасно бы смотрелась в роли тех девчонок, которые развлекают народ тем, что раздеваются на камеру и ласкают себя... Всё прибыльнее, чем эта её косметика! Надо бы ей на это как-то легонько намекнуть...{/m}"
+    Max_02 "{m}Alice könnte ein großartiges Camgirl sein, alles wäre besser geeignet als ihr albernes Blog! Ich sollte ihr einen Tipp geben...{/m}"
 
-# game/events/alice_cam.rpy:614
-translate german cam0_alice_rest_evening_126cc7cc:
+# game/events/alice_cam.rpy:612
+translate german cam0_alice_rest_evening_3c34eb01:
 
-    # Max_07 "Алиса занимается своим блогом. Ничего интересного не намечается. Хотя... как знать, может стоит подождать..."
-    Max_07 "Sieht aus, als wäre sie mit ihrem Blog beschäftigt. Vielleicht könnte es sich lohnen, etwas zu warten?"
+    # Max_07 "{m}К сожалению, шоу закончилось и теперь Алиса просто занимается своим блогом...{/m}"
+    Max_07 "{m}Die Show ist leider vorbei. Sie arbeitet gerade an ihrem Blog.{/m}"
 
-# game/events/alice_cam.rpy:616
-translate german cam0_alice_rest_evening_8ad5ae2d:
+# game/events/alice_cam.rpy:618
+translate german cam0_alice_rest_evening_8da9d809:
 
-    # Max_07 "Алиса занимается своим блогом. Ничего интересного не намечается..."
-    Max_07 "Alice arbeitet an ihrem Blog. Nichts Interessantes..."
+    # Max_07 "{m}Алиса занимается своим блогом. Ничего интересного не намечается. Хотя... как знать, может стоит подождать...{/m}"
+    Max_07 "{m}Sieht aus, als wäre sie mit ihrem Blog beschäftigt. Vielleicht könnte es sich lohnen, etwas zu warten?{/m}"
 
-# game/events/alice_cam.rpy:626
-translate german cam0_alice_tv_f2a9b64b:
+# game/events/alice_cam.rpy:620
+translate german cam0_alice_rest_evening_29ebe6ec:
 
-    # Max_01 "Алиса смотрит ТВ. Наверняка залипла в какие-нибудь сериалы..."
-    Max_01 "Alice sieht fern. Wahrscheinlich ein todlangweiliges Drama, wie ich sie kenne."
+    # Max_07 "{m}Алиса занимается своим блогом. Ничего интересного не намечается...{/m}"
+    Max_07 "{m}Alice arbeitet an ihrem Blog. Nichts Interessantes...{/m}"
 
-# game/events/alice_cam.rpy:636
-translate german cam0_alice_bath_e0114ed1:
+# game/events/alice_cam.rpy:630
+translate german cam0_alice_tv_6c3872e9:
 
-    # Max_01 "Алиса ещё только набирает воду, а вид уже классный!"
-    Max_01 "Sie holt gerade Wasser und wir haben schon eine tolle Aussicht!"
+    # Max_01 "{m}Алиса смотрит ТВ. Наверняка залипла в какие-нибудь сериалы...{/m}"
+    Max_01 "{m}Alice sieht fern. Wahrscheinlich ein todlangweiliges Drama, wie ich sie kenne.{/m}"
 
-# game/events/alice_cam.rpy:643
-translate german cam0_alice_bath_822a443e:
+# game/events/alice_cam.rpy:640
+translate german cam0_alice_bath_d3d737e8:
 
-    # Max_04 "Не спеши, Алиса. Вытирайся помедленнее..."
-    Max_04 "Lass dir Zeit, Alice. Trockne dich langsam ab..."
+    # Max_01 "{m}Алиса ещё только набирает воду, а вид уже классный!{/m}"
+    Max_01 "{m}Sie holt gerade Wasser und wir haben schon eine tolle Aussicht!{/m}"
 
-# game/events/alice_cam.rpy:649
-translate german cam0_alice_bath_667774e8:
+# game/events/alice_cam.rpy:647
+translate german cam0_alice_bath_8af01322:
 
-    # Max_05 "Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение..."
-    Max_05 "Das ist der beste Winkel, um Alice beim Baden zuzuschauen! Ein schöner Anblick..."
+    # Max_04 "{m}Не спеши, Алиса. Вытирайся помедленнее...{/m}"
+    Max_04 "{m}Lass dir Zeit, Alice. Trockne dich langsam ab...{/m}"
 
-# game/events/alice_cam.rpy:656
-translate german cam1_alice_bath_ce893c17:
+# game/events/alice_cam.rpy:653
+translate german cam0_alice_bath_d9457482:
 
-    # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Ich kann Alice durch diese Kamera nicht sehen. Kann ich eine andere ausprobieren?"
+    # Max_05 "{m}Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение...{/m}"
+    Max_05 "{m}Das ist der beste Winkel, um Alice beim Baden zuzuschauen! Ein schöner Anblick...{/m}"
 
-# game/events/alice_cam.rpy:680
-translate german cam0_alice_blog_lingerie_75ff8725:
+# game/events/alice_cam.rpy:660
+translate german cam1_alice_bath_d245ef91:
 
-    # Max_02 "Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее..."
-    Max_02 "Alice, wenn sie in Unterwäsche an ihrem Blog arbeitet! Das ist viel interessanter...."
+    # Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann Alice durch diese Kamera nicht sehen. Kann ich eine andere ausprobieren?{/m}"
 
-# game/events/alice_cam.rpy:682
-translate german cam0_alice_blog_lingerie_470567da:
+# game/events/alice_cam.rpy:684
+translate german cam0_alice_blog_lingerie_a9cbbaee:
 
-    # Max_04 "Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!"
-    Max_04 "Stimmt, Schwesterchen, es liegt alles an der Haltung! Und wenn du dich ausziehen würdest, bin ich sicher, das würde die Show noch besser machen!"
+    # Max_02 "{m}Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее...{/m}"
+    Max_02 "{m}Alice, wenn sie in Unterwäsche an ihrem Blog arbeitet! Das ist viel interessanter....{/m}"
 
-# game/events/alice_cam.rpy:691
-translate german cam0_alice_after_club_ce893c17:
+# game/events/alice_cam.rpy:686
+translate german cam0_alice_blog_lingerie_62f092f7:
 
-    # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Ich kann Alice durch diese Kamera nicht sehen... Vielleicht sollte ich eine andere ausprobieren?"
+    # Max_04 "{m}Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!{/m}"
+    Max_04 "{m}Stimmt, Schwesterchen, es liegt alles an der Haltung! Und wenn du dich ausziehen würdest, bin ich sicher, das würde die Show noch besser machen!{/m}"
 
-# game/events/alice_cam.rpy:693
-translate german cam0_alice_after_club_d8fc5c8e:
+# game/events/alice_cam.rpy:695
+translate german cam0_alice_after_club_d245ef91:
 
-    # Max_09 "Алисы не видно через эту камеру..."
-    Max_09 "Ich kann Alice durch diese Kamera nicht sehen..."
+    # Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann Alice durch diese Kamera nicht sehen... Vielleicht sollte ich eine andere ausprobieren?{/m}"
 
-# game/events/alice_cam.rpy:700
-translate german cam0_alice_after_club_822a443e:
+# game/events/alice_cam.rpy:697
+translate german cam0_alice_after_club_fb8560fe:
 
-    # Max_04 "Не спеши, Алиса. Вытирайся помедленнее..."
-    Max_04 "Lass dir Zeit, Alice. Trockne dich langsam ab..."
+    # Max_09 "{m}Алисы не видно через эту камеру...{/m}"
+    Max_09 "{m}Ich kann Alice durch diese Kamera nicht sehen...{/m}"
 
-# game/events/alice_cam.rpy:706
-translate german cam0_alice_after_club_667774e8:
+# game/events/alice_cam.rpy:704
+translate german cam0_alice_after_club_8af01322:
 
-    # Max_05 "Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение..."
-    Max_05 "Das ist der beste Winkel, um Alice beim Baden zuzuschauen! Ein schöner Anblick..."
+    # Max_04 "{m}Не спеши, Алиса. Вытирайся помедленнее...{/m}"
+    Max_04 "{m}Lass dir Zeit, Alice. Trockne dich langsam ab...{/m}"
 
-# game/events/alice_cam.rpy:719
-translate german cam1_alice_after_club_2e382a0f:
+# game/events/alice_cam.rpy:710
+translate german cam0_alice_after_club_d9457482:
 
-    # Max_01 "Алиса вернулась из клуба."
-    Max_01 "Alice ist aus dem Club zurück."
+    # Max_05 "{m}Это самый лучший ракурс, чтобы понаблюдать за тем, как Алиса принимает ванну! Заглядение...{/m}"
+    Max_05 "{m}Das ist der beste Winkel, um Alice beim Baden zuzuschauen! Ein schöner Anblick...{/m}"
 
-# game/events/alice_cam.rpy:724
-translate german cam1_alice_after_club_ce893c17:
+# game/events/alice_cam.rpy:723
+translate german cam1_alice_after_club_bc1436f8:
 
-    # Max_09 "Алисы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Ich kann Alice durch diese Kamera nicht sehen. Kann ich eine andere ausprobieren?"
+    # Max_01 "{m}Алиса вернулась из клуба.{/m}"
+    Max_01 "{m}Alice ist aus dem Club zurück.{/m}"
+
+# game/events/alice_cam.rpy:728
+translate german cam1_alice_after_club_d245ef91:
+
+    # Max_09 "{m}Алисы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann Alice durch diese Kamera nicht sehen. Kann ich eine andere ausprobieren?{/m}"
 
 # game/events/alice_cam.rpy:736
 translate german cam0_blog_with_Eric_2dbcbfe9:
@@ -578,3 +578,10 @@ translate german strings:
     old "{i}достаточно{/i}"
     new "{i}Es ist genug{/i}"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+# game/events/alice_cam.rpy:84
+translate german cam0_alice_sleep_night_f2542dc5:
+
+    # Max_13 "{m}Вот чёрт! Я совсем забыл, что Эрик заходит в комнату к Алисе только тогда, когда она голая... Чтобы подставить Эрика, Алиса должна быть голой, иначе будет несостыковка со снимками и мне никто не поверит!{/m}"
+    Max_13 ""

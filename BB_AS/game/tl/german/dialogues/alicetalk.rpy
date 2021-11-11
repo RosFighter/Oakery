@@ -66,11 +66,11 @@ translate german wash_dishes_alice_9cbbc5d1:
     # Alice_07 "Что это с тобой? Но я не откажусь. И... спасибо." nointeract
     Alice_07 "Wirklich? Das klingt nicht nach dir. Ich lehne das Angebot aber nicht ab..." nointeract
 
-# game/dialogues/alicetalk.rpy:106
-translate german wash_dishes_alice_07966f8d:
+# game/dialogues/alicetalk.rpy:118
+translate german wash_dishes_alice_133a9c4b:
 
-    # Max_11 "И почему здесь нет посудомоечной машины..." nointeract
-    Max_11 "Warum haben wir keinen Geschirrspüler..." nointeract
+    # Max_11 "{m}И почему здесь нет посудомоечной машины...{/m}" nointeract
+    Max_11 "{m}Warum haben wir keinen Geschirrspüler...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:112
 translate german wash_dishes_alice_e341ef54:
@@ -355,9 +355,9 @@ translate german alice_talk_tv_a38da904:
     Alice_13 "Es ist nichts Bestimmtes. Ich ruhe mich nur aus und es ist mir egal, was ich sehe. Deshalb schaue ich alles..." nointeract
 
 # game/dialogues/alicetalk.rpy:331
-translate german alice_talk_tv_02b97e42:
+translate german alice_talk_tv_0f86ff43:
 
-    # Max_11 "{m}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/m}"
+    # Max_11 "{m}По телику сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/m}"
     Max_11 "{m}Heute gibt es nichts Interessantes im Fernsehen... Kein Porno, nicht einmal Erotik... Es würde Spaß machen, sowas mit meiner Schwester zu sehen...{/m}"
 
 # game/dialogues/alicetalk.rpy:332
@@ -2914,7 +2914,7 @@ translate german Alice_sorry_6943c4c1:
 translate german Alice_sorry_af83a90f:
 
     # Alice_16 "Это что вообще за недовольства?! Наверное, я погорячилась со свои заказом и тебя нужно просто отправить маме, которая отучит тебя подглядывать."
-    Alice_16 "Was ist das für ein Verhalten?! Vielleicht habe ich zu viel verlangt und du musst einfach zu Mom geschickt werden, die dir beibringt, nicht zu spionieren."
+    Alice_16 "Was soll der Groll?! Vielleicht habe ich zu viel verlangt und du musst einfach zu unserer Mom geschickt werden, die dir beibringt, nicht zu spionieren."
 
 # game/dialogues/alicetalk.rpy:2260
 translate german Alice_sorry_1951a195:
@@ -2944,13 +2944,13 @@ translate german Alice_sorry_c6b0a949:
 translate german Alice_sorry_fcfcdff9:
 
     # Max_10 "Но ведь это, наверняка, стоит очень дорого."
-    Max_10 "Es muss aber sehr teuer sein."
+    Max_10 "Es sollte aber nicht zu teuer sein."
 
 # game/dialogues/alicetalk.rpy:2265
 translate german Alice_sorry_11f015fc:
 
     # Alice_05 "Ну конечно, ведь всё имеет свою цену. Это только подглядывать за собственной сестрой и дрочить на неё в тихушку ничего не стоит!"
-    Alice_05 "Natürlich hat alles seinen Preis. Es kostet dich nicht viel, wenn du deine eigene Schwester ausspionierst und dir heimlich auf sie einen runterholst!"
+    Alice_05 "Natürlich hat alles seinen Preis. Es kostet dich auch nicht viel, wenn du deine eigene Schwester ausspionierst und dir heimlich auf sie einen runterholst!"
 
 # game/dialogues/alicetalk.rpy:2266
 translate german Alice_sorry_00fd6771:
@@ -3894,11 +3894,11 @@ translate german Alice_solar_260044ac:
     # Max_00 "Ясно. Ну, в другой раз значит..."
     Max_00 "Okay... Nun, das nächste Mal dann..."
 
-# game/dialogues/alicetalk.rpy:2680
-translate german Alice_solar_6edc5f35:
+# game/dialogues/alicetalk.rpy:2628
+translate german Alice_solar_596d8ab7:
 
-    # Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
-    Max_09 "Sonnencreme gibt es wahrscheinlich im Online-Store. Ich sollte auch ein paar zwanglosere Klamotten besorgen, bevor ich versuche, Alice zu massieren."
+    # Max_09 "{m}Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче.{/m}"
+    Max_09 "{m}Sonnencreme gibt es wahrscheinlich im Online-Store. Ich sollte auch ein paar zwanglosere Klamotten besorgen, bevor ich versuche, Alice zu massieren.{/m}"
 
 # game/dialogues/alicetalk.rpy:2691
 translate german Alice_solar_f917ca15:
@@ -4133,7 +4133,6 @@ translate german massage_sunscreen_ass_e47a4169:
 
     # "попка"
     "Arsch"
-
 
 # game/dialogues/alicetalk.rpy:2975
 translate german massage_sunscreen_hips_cac75cfe:
@@ -4729,7 +4728,7 @@ translate german massage_sunscreen_squeeze_chest_1c5bed82:
     # Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо...{p=5}{nw}"
     Alice_15 "Was?!? Spinnst du oder was?! Wenn du nicht in fünf Sekunden deine Hände wegnimmst, wird es dir schlecht...{p=5}{nw}"
 
-# game/dialogues/alicetalk.rpy:3239
+# game/dialogues/alicetalk.rpy:3175
 translate german massage_sunscreen_squeeze_chest_11fdb519:
 
     # extend "" nointeract
@@ -4819,11 +4818,11 @@ translate german massage_sunscreen_end_61f00467:
     # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
     Max_08 "{m}Es ist nicht genug Sonnencreme übrig, beim nächsten Mal reicht sie vielleicht nicht mehr aus. Es ist besser, im Voraus mehr zu kaufen.{/m}"
 
-# game/dialogues/alicetalk.rpy:3311
-translate german alice_sorry_gifts_21b81128:
+# game/dialogues/alicetalk.rpy:3247
+translate german alice_sorry_gifts_3ad3d6a8:
 
-    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
-    Max_09 "Ich denke nicht, dass es sich lohnt, es ihr heute zu geben. Es könnte unnötigen Verdacht erregen... Es ist besser, es morgen zu tun."
+    # Max_09 "{m}Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра.{/m}"
+    Max_09 "{m}Ich denke nicht, dass es sich lohnt, es ihr heute zu geben. Es könnte unnötigen Verdacht erregen... Es ist besser, es morgen zu tun.{/m}"
 
 # game/dialogues/alicetalk.rpy:3320
 translate german alice_sorry_gifts_a4021d45:
@@ -7999,11 +7998,11 @@ translate german gift_black_lingerie_final_efb73eb0:
     # Max_01 "Хорошо, я что-нибудь подыщу..."
     Max_01 "Ich werde sehen, was ich tun kann. Und ich fasse das als Kompliment auf..."
 
-# game/dialogues/alicetalk.rpy:4486
-translate german alice_gift_sweets_21b81128:
+# game/dialogues/alicetalk.rpy:4341
+translate german alice_gift_sweets_3ad3d6a8:
 
-    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
-    Max_09 "Ich glaube nicht, dass es eine gute Idee ist, heute ein Geschenk zu machen. Es könnte unnötigen Verdacht erregen... Es ist besser, es morgen zu tun."
+    # Max_09 "{m}Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра.{/m}"
+    Max_09 "{m}Ich glaube nicht, dass es eine gute Idee ist, heute ein Geschenk zu machen. Es könnte unnötigen Verdacht erregen... Es ist besser, es morgen zu tun.{/m}"
 
 # game/dialogues/alicetalk.rpy:4491
 translate german alice_gift_sweets_3bc9c952:
@@ -8891,7 +8890,7 @@ translate german alice_private_punish_r_pun_08cf69a4:
 translate german alice_private_punish_r_pun_1e46a369:
 
     # Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
-    Max_02 "kay, bis zum nächsten Mal. Das ist ein schöner Arsch, den du da hast."
+    Max_02 "Okay, bis zum nächsten Mal. Das ist ein schöner Arsch, den du da hast."
 
 # game/dialogues/alicetalk.rpy:5021
 translate german alice_private_punish_r_pun_e5a94fd2:
@@ -8951,7 +8950,7 @@ translate german alice_gift_mistress1_e63acb48:
 translate german alice_gift_mistress1_62932bde:
 
     # Alice_12 "Что? Раз ты мне его купил, то я обязательно тебе в нём должна показаться? Так ты считаешь, да? Костюмчик ведь для ролевых игр, а мы с тобой вообще-то брат и сестра!"
-    Alice_12 "Weil? Nur, weil du es für mich gekauft hast, muss ich mich dir darin zeigen? Das denkst du doch, oder? Das Kostüm ist für Rollenspiele, und wir sind eigentlich Bruder und Schwester!"
+    Alice_12 "Wieso? Nur weil Du es mir gekauft hast, muss ich es dir auch vorführen? Das denkst Du doch, oder? Das Kostüm ist für Rollenspiele, und wir sind eigentlich Bruder und Schwester!"
 
 # game/dialogues/alicetalk.rpy:5050
 translate german alice_gift_mistress1_7c4b01e3:
@@ -9275,7 +9274,7 @@ translate german alice_mistress_0_b5d05fa8:
 translate german alice_mistress_0_bb08674b:
 
     # Alice_16 "Не перебивай меня, Макс! Я ведь могу использовать этот стек по его назначению... Хочешь?"
-    Alice_16 "Unterbrich mich nicht, Max! Immerhin kann ich diesen Stack für den vorgesehenen Zweck verwenden... Willst du das?"
+    Alice_16 "Unterbrich mich nicht, Max! Immerhin kann ich diese Reitgerte für den vorgesehenen Zweck verwenden... Willst du das?"
 
 # game/dialogues/alicetalk.rpy:5174
 translate german alice_mistress_0_febc43c1:
@@ -10687,7 +10686,7 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:2069
     old "Ага..."
-    new "Ja, also..."
+    new "Ja, ja..."
 
     # game/dialogues/alicetalk.rpy:2082
     old "Ничего, просто любуюсь..."
@@ -11124,6 +11123,7 @@ translate german strings:
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку успокоительное{/i}"
     new "{i}Sedativum auf Erics Teller verteilen{/i}"
+
 # TODO: Translation updated at 2021-10-07 01:05
 
 # game/dialogues/alicetalk.rpy:5330
@@ -11672,7 +11672,7 @@ translate german alice_domine_drink_kiss_9d5fdb90:
 translate german alice_domine_drink_kiss_cdcd1179:
 
     # Max_19 "{m}Да я этому только рад, сестрёнка! Как бы мне не кончить от её стонов и жарких поцелуев... Так можно ей всё удовольствие обломать, а после схлопотать вдогонку по заднице её стеком! Мне лучше и правда держаться, но как же это непросто...{/m}" nointeract
-    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen und den heißen Küssen kommen... Das wird dir den Spaß verderben und dann werde ich von deinem Stack verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
+    Max_19 "{m}Ich bin froh, dass du es getan hast, Schwesterherz! Ich sollte besser nicht von deinem Stöhnen und den heißen Küssen kommen... Das würde dir den Spaß verderben und dann werde ich mit dieser Reitgerte verprügelt! Ich halte mich besser zurück, aber es ist nicht einfach...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:5594
 translate german alice_domine_drink_kiss_9e72ee84:
@@ -11786,3 +11786,100 @@ translate german alice_private_punish_r_pun_e4f55396:
     # Max_01 "А ты куда-то торопишься разве?"
     Max_01 "Hast du es eilig, woanders hinzugehen?"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+# game/dialogues/alicetalk.rpy:36
+translate german AliceTalkStart_429c2af4:
+
+    # Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?" nointeract
+    Alice_17 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5775
+translate german alice_about_wallet_1fc2b461:
+
+    # Alice_16 "Мне это не интересно, Макс!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:5776
+translate german alice_about_wallet_7fa286a3:
+
+    # Max_07 "Э-э-э... Что не интересно?"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:5777
+translate german alice_about_wallet_b528c3ce:
+
+    # Alice_12 "Всё, с чем бы ты не пришёл. Просто уходи... Или врежу!"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:5778
+translate german alice_about_wallet_d249d4b4:
+
+    # Max_09 "Ты что, поверила Эрику?!"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:5779
+translate german alice_about_wallet_1310eef7:
+
+    # Alice_17 "А ты ещё здесь?!"
+    Alice_17 ""
+
+# game/dialogues/alicetalk.rpy:5780
+translate german alice_about_wallet_3deff628:
+
+    # Max_10 "Ладно. Всё понял. Ухожу."
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:5792
+translate german smoke_after_wallet_aa2d0826:
+
+    # Alice_12 "Нечего на меня тут глазеть, Макс! Иди отсюда. Или тебя поджопником ускорить?"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:5793
+translate german smoke_after_wallet_8a0bacb0:
+
+    # Max_09 "Ты, конечно, можешь это сделать... Но, знаешь кто вечером узнает, что ты продолжаешь курить?"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:5794
+translate german smoke_after_wallet_b149a7c2:
+
+    # Alice_16 "Не вздумай говорить маме!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:5795
+translate german smoke_after_wallet_4b38b441:
+
+    # Max_07 "Запросто! Ты спишь голая, а я молчу. И всем хорошо..."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:5796
+translate german smoke_after_wallet_02e0beca:
+
+    # Alice_17 "Говнюк ты, Макс! Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
+    Alice_17 ""
+
+# game/dialogues/alicetalk.rpy:5797
+translate german smoke_after_wallet_b5ff10cd:
+
+    # Max_01 "Вот и отлично!"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:5799
+translate german smoke_after_wallet_40b817ec:
+
+    # Alice_13 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
+    Alice_13 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5809
+translate german smoke_after_wallet_429c2af4:
+
+    # Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?" nointeract
+    Alice_17 "" nointeract
+
+translate german strings:
+
+    # game/dialogues/alicetalk.rpy:5782
+    old "{b}Оповещение:{/b} Алиса больше не хочет взаимодействовать с Максом"
+    new ""

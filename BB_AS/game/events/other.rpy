@@ -306,7 +306,7 @@ label Kira_arrival:
 
     scene BG punish-morning 00
     with Fade(0.4, 0, 0.3)
-    Max_11 "Ну где они все?! Если я начну завтракать без них, то потом все только и будут говорить о моей невоспитанности. Давайте уже быстрее!"
+    Max_11 "{m}Ну где они все?! Если я начну завтракать без них, то потом все только и будут говорить о моей невоспитанности. Давайте уже быстрее!{/m}"
 
     ## Примерка Лизы
     show Kira arrival 04-lisa-01
@@ -372,4 +372,263 @@ label Kira_arrival:
     call AddKira from _call_AddKira
 
     $ AddRelMood('ann', 0, __mood)
+    jump Waiting
+
+
+label follow_cameras_eric:
+    # спящая Лиза
+    scene BG char Lisa bed-n-01
+    $ AvailableActions['touch'].active = True
+    $ renpy.show('Lisa sleep-night ' + pose3_1)
+    $ renpy.show('FG Lisa sleep-night ' + pose3_1+lisa.dress)
+    with Fade(0.4, 0, 0.3)
+    pause 1.5
+    # веранда
+    scene location house terrace night-b
+    with Fade(0.4, 0, 0.3)
+    pause .5
+    # экран ноутбука
+    scene BG char Max laptop-night-01t
+    show interface laptop start page at laptop_screen
+
+    show video1_movie:
+        xpos 221 ypos 93
+    pause .2
+    if tm<'02:20':
+        # камера Алисиной комнаты
+        # Эрик ещё в комнате Алисы
+        scene BG char Max laptop-night-01t
+        $ renpy.show('BG-cam house aliceroom-0 night', at_list=[laptop_screen,])
+        $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
+        show Eric cams Alice-room 02 at laptop_screen
+        show FG cam-shum-act at laptop_screen
+        with dissolve
+        menu:
+            Max_09 "{m}Неутомимый Эрик! Вали уже обратно к маме в комнату и засыпай. А то у меня тоже есть дела у Алисы в комнате...{/m}"
+            "{i}подождать{/i}":
+                pass
+
+    # камера Алисиной комнаты
+    # комната Алисы без Эрика
+    scene BG char Max laptop-night-01t
+    $ renpy.show('BG-cam house aliceroom-0 night', at_list=[laptop_screen,])
+    $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    with dissolve
+    pause 1
+    # комната Анны с Эриком
+    scene BG char Max laptop-night-01t
+    $ renpy.show('BG-cam house annroom-0 night', at_list=[laptop_screen,])
+    $ renpy.show('Eric cams sleep2 '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    with dissolve
+    # Эрик покинул комнату Алисы
+    menu:
+        Max_01 "{m}Отлично! Пора...{/m}"
+        "{i}идти к комнате Алисы{/i}":
+            jump frame_eric
+
+
+label frame_eric:
+    scene BG char Alice bed-night-01
+    $ renpy.show('Alice sleep-night '+pose3_2)
+    $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
+    with Fade(0.4, 0, 0.3)
+
+    if pose3_2 == '01':
+        Max_07 "{m}О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её совершенно обнажённого тела хочется смотреть вечно!{/m}" nointeract
+    elif pose3_2 == '02':
+        Max_04 "{m}Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою голенькую попку для меня во всей красе.{/m}" nointeract
+    else:
+        Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
+
+    menu:
+        "{i}подставить Эрика{/i}":
+            pass
+
+    # aliceroom-bedalice-night-02 + alice-sleep-night-(04/05/06)
+    scene BG char Alice bed-night-02
+    $ renpy.show('Alice sleep-night-closer '+pose3_2)
+    menu:
+        Max_07 "{m}Уж прости, Алиса, ничего личного. Мне позарез нужно показать всем вам, а особенно маме, что Эрик собирается тут с вами всеми делать...{/m}"
+        "{i}осторожно дрочить на Алису{/i}":
+            pass
+
+    #aliceroom-bedalice-night-02 + alice-sleep-night-(04/05/06) + max-night-(04b/04c)
+    $ renpy.show('Max frame-eric 04'+mgg.dress)
+    menu:
+        Max_20 "{m}Только бы Алиса не проснулась! Иначе я отправлюсь не в военный лагерь, а сразу на кладбище... Но сейчас лучше думать не об этом, а о том, как сладко я бы проникал своим членом во все её самые интересные дырочки... Д-а-а... Это было бы очень приятно...{/m}"
+        "{i}кончить Алисе на ноги{/i}":
+            pass
+
+    # aliceroom-bedalice-night-02 + alice-sleep-night-(04/05/06) + max-night-(04b/04c) + alice-sleep-night-(04cum/05cum/06cum)
+    $ renpy.show('other Max frame-eric '+pose3_2)
+    menu:
+        Max_08 "{m}Фух! Вроде, не проснулась... Надеюсь, этого хватит, чтобы утром Алиса забила тревогу. Наверняка, она сразу подумает, что это я её чем-то испачкал. И вот тогда-то я и покажу снимки с Эриком, а уже всю картину воедино она сложит сама. Если я, конечно, смогу уйти незамеченным в свою комнату...{/m}"
+        "{i}осторожно идти спать{/i}":
+            $ flags.eric_wallet = 3
+            $ SetCamsGrow(house[1], 200)
+            jump Sleep
+
+
+label showdown_with_eric:
+    #Алиса утром будит Макса
+
+    scene BG black with Fade(0.4, 0, 0.3)
+    $ alice.dress = alice.clothes.sleep.GetCur().suf
+
+    # morning-oops-01 + morning-oops-01-lisa-02a + morning-oops-01-alice-(01a/01b)
+    scene BG char Lisa morning-oops 01
+    show Lisa wake up 01
+    $ renpy.show('Alice wake up 01' + alice.dress)
+
+    Alice_17 "Макс! Ну-ка быстро просыпайся, а не то я тебе всыплю! Признавайся, чем ты меня ночью измазал?"
+    Max_07 "Измазал?! А почему сразу я?!"
+    Alice_16 "А кто ещё это может быть?! Здесь вообще без вариантов и гадалка не нужна! Так что говори, чем измазал и пошли к маме..."
+    Lisa_10 "Алиса, хватит уже кричать! Я же сплю..."
+    Max_00 "Да, Алиса, ты как-то слишком возбуждена. Тебя может неслабо так шокировать то, что я тебе скажу. И даже покажу."
+    Alice_06 "Так я и знала, что это гадость какая-то! Ну так что это?"
+    Max_01 "Это Эрик с тобой кое-чем... поделился..."
+
+    scene BG black with dissolve # Fade(0.2, 0, 0.2)
+    # morning-oops-04-05 + morning-oops-04-alice-(01a/01b) + morning-oops-04-max-01
+    scene BG char Lisa morning-oops 04-05
+    $ renpy.show('Alice wake up 04' + alice.dress)
+    show Max wake up 04
+
+    Alice_12 "Макс, хватит уже... И что мне этот снимок должен сказать? Хотя... не поняла... Он дрочит что ли?! А где это он?"
+    Max_07 "А ты присмотрись и отгадаешь где."
+    Alice_14 "Ну... Это получается... Эй! Это он что, у моего окна стоит?"
+    Max_04 "Не только..."
+
+    # morning-oops-06 + morning-oops-06-alice-(01a/01b) + morning-oops-06-lisa-01a + morning-oops-06-max-01
+    scene BG char Lisa morning-oops 06
+    $ renpy.show('Alice wake up 06-1' + alice.dress)
+    show Lisa wake up 06-1
+    show Max wake up 06-1
+
+    Lisa_13 "Вы что тут с утра пораньше разглядываете? Ой! Эрик! Прямо у тебя в комнате, Алиса..."
+    Alice_15 "Он что, правда в моей комнате и... дрочит... на меня?!"
+    Max_02 "Ну да. Видишь, не такой уж я и извращенец, правда?"
+    Alice_06 "То есть, то... что у меня было на ноге, это..."
+    Max_10 "Да, Алиса. Оно самое."
+
+    # morning-oops-06 + morning-oops-06-alice-(02a/02b) + morning-oops-06-lisa-02a + morning-oops-06-max-02
+    $ renpy.show('Alice wake up 06-2' + alice.dress)
+    show Lisa wake up 06-2
+    show Max wake up 06-2
+
+    Alice_17 "Вот же подонок озабоченный! Подожди... А ты какого хрена это всё фотографировал?!"
+    Max_09 "Видишь ли, Эрик мне много раз угрожал проблемами и ссылкой в военный лагерь, если я буду ему мешать в подобных... делах. Вот и пришлось подстраховаться."
+    Alice_16 "И часто этот онанист чёртов ко мне в комнату ходит по ночам?"
+    Max_07 "Я бы сказал, что с завидным постоянством!"
+    Alice_12 "Ублюдок какой! А ты чего молчал всё это время?!"
+    Max_15 "Так ведь, если говорит Эрик, то это святая истина, а если я, то это чепуха какая-то."
+    menu:
+        Alice_17 "Вот я Эрику с мамой сейчас устрою! Макс, пошли за мной!"
+        "{i}идти за Алисой{/i}":
+            scene BG black with Fade(0.4, 0, 0.3)
+
+    # annroom-morning-01 + eric-dresses-morning-01 + ann-dresses-morning-05c
+    scene BG char Ann morning
+    show Eric dressed 01
+    show Ann dressed 05c
+
+    Ann_13 "Алиса! Ты зачем так врываешься?! Стучаться надо..."
+    Alice_16 "Не волнуйся, мам, я обязательно сейчас по кое-кому постучу! Знаешь, что твой мужчина вытворяет по ночам?"
+    Ann_17 "Это что за тон, Алиса! Конечно, знаю. Ой, вы все здесь! Что происходит?"
+    Max_07 "У Алисы есть претензии к Эрику..."
+
+    # hugging-annroom-00 + sud-01-ann-01-eric-01 + sud-01-alice-(01a/01b) + sud-01-max-01
+    scene BG char Ann hugging-annroom-00
+    show Eric showdown 00
+    $ renpy.show('Alice showdown 00' + alice.dress)
+    show Max showdown 00
+
+    Alice_17 "И ещё какие! Эрик дрочит на меня по ночам! Это как вообще называется? Я думала у нас Макс извращенец, но ты, Эрик..."
+    Ann_16 "Ты что такое вообще несёшь, Алиса?! Обвинять в таком Эрика, это..."
+    Alice_18 "Мам! У Макса есть фотографии! А это животное лохматое ещё и обкончало меня этой ночью..."
+    Eric_09 "Так, Алиса, давай успокаивайся!"
+
+    # annroom-sud-01 + annroom-sud-01-eric-01 + annroom-sud-01-ann-01 + annroom-sud-01-alice-(01a/01b) + annroom-sud-01-max-01 + annroom-sud-01-lisa-01
+    scene BG char Eric annroom-sud-01
+    show Eric showdown 01
+    show Ann showdown 01
+    $ renpy.show('Alice showdown 01' + alice.dress)
+    show Max showdown 01
+    show Lisa showdown 01
+
+    Alice_17 "Ну-ка заткнулся! Меня лучше не злить! Сейчас Макс покажет маме снимки и мы послушаем, как ты это объяснишь..."
+    Ann_14 "И что вы хотите мне тут показать? Я не понимаю... Как такое вообще может быть?! Эрик, будь добр, объясни это..."
+    Eric_13 "Ань, не знаю, что там за снимки, но могу уверить тебя - это фотошоп!"
+    Max_09 "В таком случае, я за то, чтобы провести экспертизу их подлинности!"
+    Ann_15 "Эрик! У меня в голове не укладывается то, что я вижу... Господи! Ты же дрочишь на мою дочь! Как ты мог такое делать, мерзавец... Лиза, а с тобой всё в порядке?! Эрик ничего с тобой не делал?"
+    Lisa_10 "Нет... Правда, он предлагал мне закрепить на практике те уроки сексуального воспитания, что вы для меня проводили."
+
+    # annroom-sud-01 + annroom-sud-01-eric-02 + annroom-sud-01-ann-02 + annroom-sud-01-alice-(02a/02b) + annroom-sud-01-max&lisa-02
+    show Eric showdown 02
+    show Ann showdown 02
+    $ renpy.show('Alice showdown 02' + alice.dress)
+    show Max showdown 02
+    hide Lisa
+
+    Alice_18 "Ах так! Значит, ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
+    Ann_20 "Эрик, ты совсем что ли больной?! Как ты мог такое делать с моими девочками! Живо выметайся из нашего дома, пока я полицию не вызвала!"
+    show Eric showdown 01
+    $ renpy.show('Alice showdown 01' + alice.dress)
+    Eric_10 "Какую ещё полицию?! Я ничего не делал. Это всё Макс!"
+    Lisa_13 "Не надо всё на Макса сваливать! Он хороший..."
+    Alice_16 "Я раньше от души могла навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
+
+    # annroom-sud-01 + annroom-sud-01-ann-03 + annroom-sud-01-max&lisa-03 + annroom-sud-01-alice-(03a/03b) + annroom-sud-01-eric-03
+    scene BG char Eric annroom-sud-01
+    show Ann showdown 03
+    show Max showdown 03
+    $ renpy.show('Alice showdown 03' + alice.dress)
+    show Eric showdown 03
+
+    Ann_19 "Эрик, проваливай! Я не хочу тебя больше видеть!"
+    Eric_09 "Вижу, вы все на взводе, так что я поговорю с вами, когда успокоитесь... А сейчас я оденусь и отправлюсь на работу."
+    Ann_20 "Я сказала, {b}ПОШЁЛ ВОН НЕМЕДЛЕННО!!!{/b}"
+    Alice_17 "И полотенце можешь оставить себе, грязное животное! Убирайся!"
+
+    scene BG black with dissolve # Fade(0.2, 0, 0.2)
+    # sexed-hj + annroom-sud-01-alice-(04a/04b) + annroom-sud-01-ann-04 + annroom-sud-01-lisa-04 + annroom-sud-01-max-04
+    scene BG char Eric sexed-hj
+    $ renpy.show('Alice showdown 04' + alice.dress)
+    show Ann showdown 04
+    show Lisa showdown 04
+    show Max showdown 04
+
+    Max_00 "Мам, ты только не расстраивайся так из-за него. Всякое бывает..."
+    Ann_14 "Всё никак в голове не укладывается, что Эрик тут с вами творил... И что я за мать после этого? Я в шоке..."
+    Alice_13 "Уж лучше узнать поздно, чем никогда. А у нас всё ещё лучше... Мы узнали, пока ещё не стало поздно. Так что не переживай, мам, мы все думали, что Эрик... уж точно не такой..."
+    Max_09 "Хорошо, что я своим мужским взглядом сразу понял, что он мутный тип!"
+    Lisa_09 "Так это получается, что? Про бумажник Эрик наврал?"
+    Max_08 "Конечно! Он это придумал, чтобы вы меня в военный лагерь сослали. А то я стал слишком мешаться."
+    Ann_13 "Ты прости меня, сынок, я должна была прислушиваться к тому, что ты говорил. Что же теперь делать?"
+    Max_01 "Жить, как жили до Эрика! Ничего сложного..."
+    Ann_12 "Нет, Макс, я о другом... Он же мой начальник! Как мне теперь быть? Ох, не знаю..."
+    Max_07 "Д-а-а... Это проблемка. Ты главное не слушай его оправдания, а то он умеет убеждать, как ты сама убедилась прекрасно. А теперь давайте, все вместе, поддержим маму!"
+
+    # annroom-morning-01 + annroom-sud-01-ann&max&lisa-alice-(05a/05b)
+    scene BG char Ann morning
+    $ renpy.show('Alice showdown 05' + alice.dress)
+
+    Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
+    Lisa_01 "Не бери в голову, мам. Не вини себя, всё ведь хорошо. Мы с тобой."
+    Alice_05 "И если он начнёт устраивать тебе проблемы на работе, то мы все так же дружно, как сейчас, соберёмся и отпинаем его!"
+    Max_09 "Думаю, Эрик не настолько туп, чтобы строить маме козни. Особенно, если она будет с ним жёстче..."
+    Ann_17 "Ох, ребята, я постараюсь... Хотя, мне даже думать о нём сейчас противно, не то что видеть. Надеюсь, я не потеряю работу."
+    Max_08 "Может, удастся перевестись в какой-нибудь другой отдел?"
+    Ann_02 "Надеюсь... Ну всё, мне уже дышать нечем. Пора делами заниматься. Я вас очень люблю..."
+    Lisa_05 "И мы тебя!"
+
+    $ spent_time = 40
+    $ flags.eric_banished = 1       # Эрик изгнан
+    $ eric.dcv.battle.stage = 1     # подстава с фотографиями
+    $ eric.dcv.battle.set_lost(61)  # откат 2 месяца
+    $ current_room = house[2]
+    $ SetCamsGrow(house[2], 150)
+
     jump Waiting

@@ -34,7 +34,7 @@ translate german typical_dinner_1211a2f4:
 translate german typical_dinner_4a7da202:
 
     # Max_00 "Приятного аппетита!"
-    Max_00 "Genießt es!"
+    Max_00 "Guten Appetit!"
 
 # game/dialogues/dinner.rpy:98
 translate german typical_dinner_e7b121b0:
@@ -238,7 +238,7 @@ translate german dinner_first_secret_399f1d43:
 translate german dinner_first_secret_c95cf852:
 
     # Ann_07 "Тоже верно... Так, ладно. Спасибо всем за ужин. Лиза, сейчас как раз твоя очередь мыть посуду?"
-    Ann_07 "Es ist in Ordnung, du darfst natürlich männliche Freunde haben! Jedenfalls danke ich euch allen für das Abendessen. Lisa, bist du mit dem Abwasch dran?"
+    Ann_07 "Auch wahr... Also gut. Ich danke euch allen für das Abendessen. Lisa, bist du mit dem Abwasch dran?"
 
 # game/dialogues/dinner.rpy:194
 translate german dinner_first_secret_31c152af:
@@ -256,25 +256,25 @@ translate german dinner_first_secret_05ec93c4:
 translate german dinner_first_secret_6d6390f1:
 
     # Ann_04 "Ладно, разбирайтесь сами. А я собираюсь принять ванну. Так что, не беспокоить!" nointeract
-    Ann_04 "Klärt das unter euch, ich nehme ein Bad!" nointeract
+    Ann_04 "In Ordnung, ihr zwei regelt das. Ich werde jetzt ein Bad nehmen. Also, keine Störung!" nointeract
 
 # game/dialogues/dinner.rpy:206
 translate german dinner_2_289e7bc7:
 
     # Ann_04 "Всем приятного аппетита. У кого какие новости? Рассказывайте..."
-    Ann_04 "Genießt das Essen, Leute. Hat jemand eine Neuigkeit, die er gerne mitteilen möchte?"
+    Ann_04 "Guten Appetit, allerseits. Wer hat Neuigkeiten? Erzählt mal..."
 
 # game/dialogues/dinner.rpy:207
 translate german dinner_2_4fe6c45d:
 
     # Max_04 "У меня всё как всегда"
-    Max_04 "Keine Neuigkeiten von mir."
+    Max_04 "Bei mir ist alles wie immer"
 
 # game/dialogues/dinner.rpy:208
 translate german dinner_2_a1846146:
 
     # Alice_04 "Ещё бы. Ты же дома всё время сидишь..." nointeract
-    Alice_04 "Wie üblich. Du verlässt ja nicht einmal das Haus." nointeract
+    Alice_04 "Natürlich nicht. Du bist die ganze Zeit zu Hause..." nointeract
 
 # game/dialogues/dinner.rpy:214
 translate german dinner_2_bcecad73:
@@ -298,19 +298,19 @@ translate german dinner_2_c9d4df9f:
 translate german dinner_2_fb8d43bf:
 
     # Alice_13 "Лиза, я же тебе говорила, что в тех вещах, что пропали, были все мои кремы, лаки, про которые я и вела свой бьюти-блог..."
-    Alice_13 "Habe ich es dir nicht gesagt, Lisa? Ich habe alle meine Sachen, die ich für meinen Schönheitsblog brauche, verloren, als wir umgezogen sind."
+    Alice_13 "Lisa, ich habe dir gesagt, dass alle meine Cremes und Nagellacke, über die ich in meinem Blog geschrieben habe, fehlen..."
 
 # game/dialogues/dinner.rpy:218
 translate german dinner_2_dfe71170:
 
     # Lisa_09 "Ой, точно. Извини, я совсем забыла про это. Да, сочувствую..."
-    Lisa_09 "Oh, richtig, tut mir leid, ich vergaß..."
+    Lisa_09 "Ach ja, richtig. Entschuldigung, das hatte ich ganz vergessen. Ja, es tut mir leid..."
 
 # game/dialogues/dinner.rpy:219
 translate german dinner_2_925d99c6:
 
     # Ann_01 "Бьюти-блог... Эх, Алиса, лучше бы делом занялась! Тебе поступать пора, а ты воздух пинаешь. Сидела бы и готовилась!" nointeract
-    Ann_01 "Beauty Blog... Oh, Alice, du solltest dich lieber beschäftigen! Es ist an der Zeit, dass du dich bewirbst und dann geht es auch voran. Du solltest dich hinsetzen und lernen!" nointeract
+    Ann_01 "Beauty Blog... Oh, Alice, du solltest dich besser ranhalten! Es ist an der Zeit, sich zu bewerben, und du machst blau. Du solltest dich hinsetzen und lernen!" nointeract
 
 # game/dialogues/dinner.rpy:222
 translate german dinner_2_da5e0a4f:
@@ -340,7 +340,7 @@ translate german dinner_2_who_89ba014f:
 translate german dinner_2_star_4fa372d6:
 
     # Alice_04 "Да, звезда. И я бы не отказалась от лишних денег. А если серьёзно, то на блогах можно заработать больше, чем на работе после нескольких лет учёбы!" nointeract
-    Alice_04 "Wäre das nicht schön... Jedenfalls könnte ich mit meinem Blog mehr Geld verdienen als mit einem Job, der einen Abschluss erfordert!" nointeract
+    Alice_04 "Ja, Herzchen. Und ich hätte nichts gegen etwas zusätzliches Geld. Und im Ernst: Man kann mit dem Bloggen mehr Geld verdienen als mit seinem Job nach Jahren des Studiums!" nointeract
 
 # game/dialogues/dinner.rpy:253
 translate german dinner_2_wtf_5ae1e087:
@@ -352,7 +352,7 @@ translate german dinner_2_wtf_5ae1e087:
 translate german dinner_2_poor_afe4f7a3:
 
     # Alice_13 "Для тупых повторяю - у меня всё украли! Так что меня не трогать, я думаю и строю план!" nointeract
-    Alice_13 "Für die Dummen sage ich es noch einmal - alles ist mir abhanden gekommen! Also fass mich nicht an, ich denke nach und mache einen Plan!" nointeract
+    Alice_13 "Für die Dummen - alles wurde mir genommen! Also nerv mich nicht, ich denke nach und mache einen Plan!" nointeract
 
 # game/dialogues/dinner.rpy:271
 translate german dinner_2_plan_2c02a509:
@@ -364,7 +364,7 @@ translate german dinner_2_plan_2c02a509:
 translate german dinner_2_blog2_3f0ae547:
 
     # Alice_00 "Кстати, ты уже предлагал свою помощь, если я не ошибаюсь... Или это было так, не серьёзно всё?"
-    Alice_00 "Hast du nicht bereits deine Hilfe angeboten? Oder hast du das nicht so gemeint?"
+    Alice_00 "Übrigens hast du bereits deine Hilfe angeboten, wenn ich mich nicht irre... Oder war es doch nicht ernst gemeint?"
 
 # game/dialogues/dinner.rpy:282
 translate german dinner_2_blog2_a87ae875:
@@ -1042,7 +1042,7 @@ translate german dinner_6_457b166b:
 translate german dinner_6_0603d673:
 
     # Eric_02 "А зря. Хотя ваша мама и воспитала вас очень хорошо, ну некоторых точно. Но она воспитывала одна, а для того, чтобы мальчик стал настоящим мужчиной, нужно строгое, мужское воспитание. Вот в этом лагере его можно получить."
-    Eric_02 "Das solltest du aber tun. Obwohl deine Mutter dich sehr gut erzogen hat, zumindest einige von euch, hat sie dich allein erzogen, und um einen Jungen zu einem richtigen Mann zu erziehen, sollte es strenge, männliche Hilfe geben. Die bekommst du im dem Lager."
+    Eric_02 "Das solltest du aber tun. Obwohl deine Mutter dich sehr gut erzogen hat, zumindest einige von euch, hat sie dich allein erzogen, und um einen Jungen zu einem richtigen Mann zu erziehen, sollte es Strenge, männliche Hilfe geben. Die bekommst du im dem Lager."
 
 # game/dialogues/dinner.rpy:536
 translate german dinner_6_2f9d222e:

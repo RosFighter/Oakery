@@ -156,9 +156,12 @@ label eric_time_settings:
         $ flags.eric_jerk = False
         if all([check_is_home('eric'), not eric.daily.sweets,
                'sexbody2' in alice.gifts or flags.lisa_sexed >= 3]):
-            if any([weekday==4 and random_outcome(70),
+            if flags.eric_wallet != 2 and any([weekday==4 and random_outcome(70),
                     weekday==5 and random_outcome(35)]):
                 # Эрик дрочит на спящую Алису
+                $ flags.eric_jerk = True
+            elif all([flags.eric_wallet == 2, not eric.daily.sweets, weekday!=5]):
+                # после запуска кошелька дрочке Эрика могут помешать лишь таблетки
                 $ flags.eric_jerk = True
 
     if day != prevday:
@@ -217,7 +220,7 @@ label Midnight:
     $ film = ''
     $ olivia_night_visits = olivia_nightvisits()
 
-    if poss['nightclub'].stn >= 5 and kol_choco == 0:
+    if poss['nightclub'].st() >= 5 and kol_choco == 0:
         $ items['choco'].unblock()
 
     python:
@@ -386,6 +389,11 @@ label NewWeek:
     $ flags.noclub = False
     $ flags.trick = False
 
+    if 'eric' in chars and eric_obligation.get_debt():
+        # Макс не заплатил Эрику дань, запускается кошелёк
+        $ eric_obligation.volume = 0
+        $ flags.eric_wallet = 1
+
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
         wcv.countdown()
@@ -493,7 +501,7 @@ label AfterWaiting:
         $ status_sleep = False
         with Fade(0.4, 0, 0.3)
     if mgg.energy < 10 and not mgg.flags.tired:
-        Max_00 "Я слишком устал. Надо бы вздремнуть..."
+        Max_00 "{m}Я слишком устал. Надо бы вздремнуть...{/m}"
         $ mgg.flags.tired = True
 
     if mgg.energy < 5:
@@ -547,7 +555,7 @@ label random_dressed:
             elif all([current_room != prev_room, current_room == house[0]]):
                 # Макс входит в свою комнату
 
-                call chance_dressing_roll from _call_chance_dressing_roll
+                call chance_dressing_roll('Lisa') from _call_chance_dressing_roll
 
         elif any([
                 # после школы в купальник (без Оливии)
@@ -573,35 +581,61 @@ label random_dressed:
                 # сегодня ещё не попадали на переодевание
                 if 'bikini' in lisa.gifts:
                     # красное бикини есть, доступны все варианты
-                    call chance_dressing_roll from _call_chance_dressing_roll_1
+                    call chance_dressing_roll('Lisa') from _call_chance_dressing_roll_1
 
                 elif lisa.daily.dressed in [0, 2] and random_outcome(40):
                     # красного бикини ещё нет, то может быть только нулевой момент
                     $ lisa.daily.dressed += 1
                     call lisa_dressed.moment0 from _call_lisa_dressed_moment0_3    # "нулевой"
+
+        elif all([lisa.prev_plan in ['in_shcool', 'on_courses'], lisa.plan_name in ['sun', 'swim'], olivia_visits()]):
+            # после школы в купальник (Оливия в гостях)
+            if all([current_room == prev_room, current_room == house[0]]):
+                # Макс оставался в комнате в своей комнате
+                if not persistent.skip_lisa_dressed:
+                    $ lisa.hourly.dressed = 1
+                    call olivia_dressed.stay_in_room
+
+            elif all([current_room != prev_room, current_room == house[0]]):
+                # Макс входит в свою комнату
+                $ lisa.hourly.dressed = 1
+                call chance_dressing_roll('Olivia')
+
         elif all([tm=='00:00', lisa.plan_name == 'sleep', current_room == prev_room, current_room == house[0], not persistent.skip_lisa_dressed]):
             $ lisa.hourly.dressed = 1
             # $ print('#3')
             call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room
     return
 
-label chance_dressing_roll:
-    if lisa.daily.dressed in [0, 1]:
-
+label chance_dressing_roll(persone=''):
+    if persone == 'Olivia':
+        # Оливия в гостях
         if random_outcome(40):
-            $ lisa.daily.dressed += 1
-            call lisa_dressed.moment0 from _call_lisa_dressed_moment0_4    # "нулевой"
+            # $ olivia.daily.dressed += 1
+            call olivia_dressed.moment0    # "нулевой"
         elif random_outcome(35):
-            $ lisa.daily.dressed += 2
-            call lisa_dressed.moment1 from _call_lisa_dressed_moment1_2    # неповезло
+            # $ olivia.daily.dressed += 2
+            call olivia_dressed.moment1    # неповезло
         elif random_outcome(25):
-            $ lisa.daily.dressed += 2
-            call lisa_dressed.moment2 from _call_lisa_dressed_moment2_1    # повезло
+            # $ olivia.daily.dressed += 2
+            call olivia_dressed.moment2    # повезло
 
-    elif lisa.daily.dressed in [0, 2] and random_outcome(25):
-        # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
-        $ lisa.daily.dressed += 1
-        call lisa_dressed.moment0 from _call_lisa_dressed_moment0_5    # "нулевой"
+    elif persone == 'Lisa':
+        if lisa.daily.dressed in [0, 1]:
+            if random_outcome(40):
+                $ lisa.daily.dressed += 1
+                call lisa_dressed.moment0 from _call_lisa_dressed_moment0_4    # "нулевой"
+            elif random_outcome(35):
+                $ lisa.daily.dressed += 2
+                call lisa_dressed.moment1 from _call_lisa_dressed_moment1_2    # неповезло
+            elif random_outcome(25):
+                $ lisa.daily.dressed += 2
+                call lisa_dressed.moment2 from _call_lisa_dressed_moment2_1    # повезло
+
+        elif lisa.daily.dressed in [0, 2] and random_outcome(25):
+            # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
+            $ lisa.daily.dressed += 1
+            call lisa_dressed.moment0 from _call_lisa_dressed_moment0_5    # "нулевой"
 
     return
 
@@ -638,7 +672,7 @@ label night_of_fun:
     scene BG char Max bed-night-01
     $ renpy.show('Max sleep-night '+pose3_3)
     $ renpy.show('FG Max sleep-night '+pose3_3)
-    Max_19 "Теперь можно спокойно спать и ничего больше..."
+    Max_19 "{m}Теперь можно спокойно спать и ничего больше...{/m}"
     jump Waiting
 
 
@@ -675,19 +709,19 @@ label cam_after_waiting:
                 # на веранде никого, разговора про веранду ещё не было
                 $ flags.warning = True
                 menu:
-                    Max_09 "Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть..."
+                    Max_09 "{m}Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть...{/m}"
                     "{i}идти на веранду{/i}":
                         $ current_room = house[5]
                         $ cam_flag.append('notebook_on_terrace')
                     "{i}не сейчас{/i}":
                         jump open_site
             elif house[5].cur_char:
-                Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
+                Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
                 jump open_site
             else:
                 # речь про веранду уже была
                 menu:
-                    Max_09 "Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила..."
+                    Max_09 "{m}Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила...{/m}"
                     "{i}идти на веранду{/i}" if not house[5].cur_char:
                         $ current_room = house[5]
                         $ cam_flag.append('notebook_on_terrace')
@@ -699,19 +733,19 @@ label cam_after_waiting:
                 # на веранде никого, разговора про веранду ещё не было
                 $ flags.warning = True
                 menu:
-                    Max_09 "Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть..."
+                    Max_09 "{m}Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть...{/m}"
                     "{i}идти на веранду{/i}":
                         $ current_room = house[5]
                         $ cam_flag.append('notebook_on_terrace')
                     "{i}не сейчас{/i}":
                         jump open_site
             elif house[5].cur_char:
-                Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
+                Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
                 jump open_site
             else:
                 # речь про веранду уже была или там сейчас кто-то есть
                 menu:
-                    Max_09 "Лучше просматривать камеры в другом месте! Лиза может проснуться и заметить, что я делаю..."
+                    Max_09 "{m}Лучше просматривать камеры в другом месте! Лиза может проснуться и заметить, что я делаю...{/m}"
                     "{i}идти на веранду{/i}" if not house[5].cur_char:
                         $ current_room = house[5]
                         $ cam_flag.append('notebook_on_terrace')
@@ -763,7 +797,7 @@ label cam_after_waiting:
         if view_cam[0].id+'-'+str(view_cam[2]) not in cam_flag:
             $ cam_flag.append(view_cam[0].id+'-'+str(view_cam[2]))
             ## случайная фраза
-            Max_00 "Сейчас здесь ничего не происходит."
+            Max_00 "{m}Сейчас здесь ничего не происходит.{/m}"
         call screen cam_show
 
 
@@ -813,6 +847,9 @@ label after_load:
     if renpy.loadable('extra/extra.webp'):
         $ set_extra_album()
 
+    if main_menu:
+        return
+
     if 'current_ver' in globals():
         # "ver [current_ver], _ver [_version], conf.ver [config.version]"
 
@@ -851,6 +888,8 @@ label after_load:
         $ _version = config.version
 
     # корректировка persistent
+    if 'eric' in chars:
+        $ added_mem_var('eric')
     if 'kira' in chars:
         $ added_mem_var('kira')
     if items['max-a'].have:
@@ -1623,6 +1662,14 @@ label update_07_p1_99:
                 $ olivia.dcv.special.lost -= 5
         $ olivia_night_visits = olivia_nightvisits()
 
+        if all([current_room == house[0], lisa.plan_name == 'sleep', tm < '06:00']):
+            call lisa_sleep_night
+        elif all([current_room == house[0], lisa.plan_name == 'sleep', tm >= '06:00']):
+            call lisa_sleep_morning
+        elif 'olivia' in chars:
+            if all([current_room == house[0], lisa.plan_name == 'sleep2']):
+                call olivia_lisa_sleep
+
     if _version < '0.07.p1.02':
         if flags.lisa_sexed == 6 and lisa.dcv.battle.stage in [1, 4]:
             # временные этапы при дружбе с Эриком
@@ -1634,3 +1681,8 @@ label update_07_p1_99:
 
         if kira.dcv.feature.stage == 11 and len(expected_photo) == 10:
             $ expected_photo.clear()
+
+    if all([poss['SoC'].used(16), not lisa.flags.topless, lisa.dcv.special.stage < 5]):
+        python:
+            for st in range(14, len(poss['SoC'].stages)):
+                poss['SoC'].stages[st] = 0

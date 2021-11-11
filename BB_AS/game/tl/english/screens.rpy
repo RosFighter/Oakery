@@ -107,8 +107,8 @@ translate english strings:
     new "QUIT"
 
     # game/screens.rpy:527
-    old "ГЛАВНОЕ МЕНЮ"
-    new "MAIN MENU"
+    old "МЕНЮ"
+    new "MENU"
 
     # game/screens.rpy:661
     old "Введите описание файла сохранения:"
@@ -442,3 +442,10 @@ translate english strings:
     old "Переодевания Лизы пропускаются, если Макс в комнате"
     new "Lisa skips getting dressed if Max is in the room"
 
+# TODO: Translation updated at 2021-11-11 13:38
+
+translate english strings:
+
+    # game/screens.rpy:400
+    old "Главное меню"
+    new "Main menu"

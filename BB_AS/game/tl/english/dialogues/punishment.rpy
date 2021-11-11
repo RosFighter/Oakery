@@ -336,11 +336,11 @@ translate english punishment_max_pun_reson_678436cc:
     # Ann_16 "[_text!t]"
     Ann_16 "[_text!t]"
 
-# game/dialogues/punishment.rpy:302
-translate english punishment_max_pun_reson_219ecbe7:
+# game/dialogues/punishment.rpy:308
+translate english punishment_max_pun_reson_e027e673:
 
-    # Max_14 "{i}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 "{i}Mom is punishing me in front of everyone... This is so humiliating...{/i}\n\n{color=[orange]}{b}Warning:{/b} Your influence on your family has decreased.{/color}"
+    # Max_14 "[impact_reduced!t]{m}Мама наказывает меня прямо перед сёстрами... Это так унизительно...{/m}"
+    Max_14 "[impact_reduced!t]{m}Mom is punishing me in front of everyone... This is so humiliating...{/m}"
 
 # game/dialogues/punishment.rpy:322
 translate english punishment_max_pun_reson_700a2ea3:
@@ -384,11 +384,11 @@ translate english punishment_max_pun_reson_678436cc_1:
     # Ann_16 "[_text!t]"
     Ann_16 "[_text!t]"
 
-# game/dialogues/punishment.rpy:372
-translate english punishment_max_pun_reson_c632e1a6:
+# game/dialogues/punishment.rpy:378
+translate english punishment_max_pun_reson_a77a4336:
 
-    # Max_14 "{i}Блин... Все с таким интересом смотрят, как меня наказывают... Это так унизительно...{/i}\n\n{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}"
-    Max_14 "{i}Shit... I can feel everyone's eyes on me...This is so humiliating...{/i}\n\n{color=[orange]}{b}Attention:{/b} Your influence on the family has decreased!{/color}"
+    # Max_14 "[impact_reduced!t]{m}Блин... Все с таким интересом смотрят, как меня наказывают... Это так унизительно...{/m}"
+    Max_14 "[impact_reduced!t]{m}Shit... I can feel everyone's eyes on me...This is so humiliating...{/m}"
 
 # game/dialogues/punishment.rpy:394
 translate english punishment_max_pun_reson_faf292df:
@@ -714,11 +714,11 @@ translate english punishment_alice_dd1264f2:
     # Ann_12 "Так, Алиса, раздевайся. Надеюсь, не надо объяснять, за что я тебя сейчас буду наказывать и сама всё понимаешь..."
     Ann_12 "Alice, strip. I should not need to explain why you are about to be punished, I believe you already know."
 
-# game/dialogues/punishment.rpy:694
-translate english punishment_alice_ce43f374:
+# game/dialogues/punishment.rpy:696
+translate english punishment_alice_23976523:
 
-    # Max_07 "{i}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/i}"
-    Max_07 "{i}Let's see if Alice will be more cooperative if I stop interfering... I have to talk to her while it's still painful to sit down!{/i}"
+    # Max_07 "{m}Посмотрим, станет ли Алиса посговорчивей, если я перестану вмешиваться... Главное, успеть поговорить с ней, пока ей будет ещё больно сидеть!{/m}"
+    Max_07 "{m}Let's see if Alice will be more cooperative if I stop interfering... I have to talk to her while it's still painful to sit down!{/m}"
 
 # game/dialogues/punishment.rpy:699
 translate english punishment_alice_a4b257c5_1:
@@ -756,11 +756,11 @@ translate english punishment_alice_2a128a29_1:
     # Alice_13 "Хорошо, мам. Спасибо, Макс, я этого не забуду."
     Alice_13 "Okay, Mom. Thank you, Max, I won't forget this."
 
-# game/dialogues/punishment.rpy:718
-translate english punishment_alice_9e76b62f:
+# game/dialogues/punishment.rpy:720
+translate english punishment_alice_f34a7f97:
 
-    # Max_09 "{i}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/i}"
-    Max_09 "{i}Yeah, well, she won't forget... Hmm... Maybe I should ask her for something so she doesn't think my kindness is gratuitous. And I should do it today, while she's still under the impression...{/i}"
+    # Max_09 "{m}Ага, как же, не забудет она... Хм... Может, стоит попросить у неё что-нибудь, чтобы она не думала, что моя доброта безвозмездна?! И сделать это нужно сегодня, пока она ещё под впечатлением...{/m}"
+    Max_09 "{m}Yeah, well, she won't forget... Hmm... Maybe I should ask her for something so she doesn't think my kindness is gratuitous. And I should do it today, while she's still under the impression...{/m}"
 
 # game/dialogues/punishment.rpy:728
 translate english punishment_alice_c8f8e3ea_1:
@@ -948,3 +948,16 @@ translate english strings:
     old "Ну как, Алиса, стыдно тебе? Молчишь? Вот подумай о своём поступке, пока я буду наказывать тебя на глазах у всех... Ложись на мои колени!"
     new "Well, Alice, are you ashamed? Silent? Think about what you did while I'm punishing you in front of everyone... Get on my lap!"
 
+# TODO: Translation updated at 2021-11-11 13:38
+
+# game/dialogues/punishment.rpy:519
+translate english punishment_lisa_5e582e44:
+
+    # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... А ты, Лиза, не стой столбом, шевелись давай..."
+    Ann_12 ""
+
+# game/dialogues/punishment.rpy:712
+translate english punishment_alice_3eaef6e3:
+
+    # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... Алиса, пошевеливайся..."
+    Ann_12 ""

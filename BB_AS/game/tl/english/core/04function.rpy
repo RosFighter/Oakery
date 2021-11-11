@@ -68,7 +68,7 @@ translate english strings:
 
     # game/core/04function.rpy:285
     old "{color=[lime]}повысилось{/color}"
-    new "{color=[lime]}rose{/color}"
+    new "{color=[lime]}increased{/color}"
 
     # game/core/04function.rpy:313
     old "Настроение %s %s \nЕё отношение к Максу %s"

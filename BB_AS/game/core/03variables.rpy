@@ -19,6 +19,8 @@ default shower_schedule = 0
 
 default start_version = config.version
 
+default rmi = None # rel_mood_inf
+
 default ctd = Countdown(5, '')  #{'time_left':4.9, 'timer_range':4.9, 'timer_jump':''}
 
 ################################################################################
@@ -234,8 +236,10 @@ label AddEric:
     $ eric = chars['eric']
 
     call set_eric_schedule from _call_set_eric_schedule_1
-    call ann_after_appearance_eric from _call_ann_after_appearance_eric_1
+    # call ann_after_appearance_eric from _call_ann_after_appearance_eric_1
     $ infl[ann].freeze = False
+
+    $ added_mem_var('eric')
 
     $ items['hide_cam'].unblock()
     $ eric_obligation = Obligation()
@@ -273,7 +277,7 @@ label alice_add_black_linderie:
         $ alice.dcv.feature.set_lost(1) # включаем суточный откат, чтобы Алиса не начала блог в белье в этот же день, если блог уже начат
 
     # прописываем расписание:
-    call alice_can_blog_in_underwear from _call_alice_can_blog_in_underwear_1
+    # call alice_can_blog_in_underwear from _call_alice_can_blog_in_underwear_1
 
     return
 

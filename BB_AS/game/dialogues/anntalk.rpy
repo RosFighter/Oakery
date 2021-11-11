@@ -12,8 +12,18 @@ label AnnTalkStart:
     else:
         jump Waiting
 
-
     $ renpy.block_rollback()
+
+    if flags.eric_wallet == 2:
+        if not ann.flags.talkblock:
+            jump ann_about_wallet
+        else:
+            menu:
+                Ann_17 "Уйди, Макс. Нам не о чем говорить, пока ты не вернёшь Эрику деньги и не извинишься перед ним и всеми нами!"
+                "{i}уйти{/i}":
+                    $ alice.hourly.talkblock = 1
+                    jump AfterWaiting
+
     Ann_00 "Что-то случилось, дорогой?" nointeract
 
     $ rez =  renpy.display_menu(dial)
@@ -1432,4 +1442,19 @@ label erofilm2_2:
     $ SetCamsGrow(house[4], 180)
     $ items['erofilm2'].block()
     $ poss['mom-tv'].open(10)
+    jump Waiting
+
+
+label ann_about_wallet:
+
+    Ann_16 "Ты вернул Эрику бумажник и деньги?"
+    Max_09 "Да не крал я у него ничего! Он всех обманывает!"
+    Ann_18 "Пока не вернёшь, даже не подходи ко мне, Макс! Всё настроение от тебя только портится. А уж как мне перед Эриком стыдно..."
+    Max_11 "Как скажешь, мам."
+
+    $ notify_list.append(__("{b}Оповещение:{/b} Анна больше не хочет взаимодействовать с Максом"))
+
+    $ spent_time = 10
+    $ ann.hourly.talkblock = 1
+    $ ann.flags.talkblock = 1
     jump Waiting

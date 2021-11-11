@@ -575,7 +575,7 @@ label dinner_11:
     Ann_19 "Макс! Что за тон? Уважительно разговаривай с Эриком! А не то накажу. В общем, мы сейчас поехали, а вы приберитесь тут. Завтра я вернусь. Всем спасибо за ужин!"
     Max_00 "Да, спасибо..."
     ## теперь Алиса посещает ночной клуб по пятницам
-    call alice_init_nightclub from _call_alice_init_nightclub
+    # call alice_init_nightclub from _call_alice_init_nightclub
 
     ## после ужина должен состоятся разговор Макса с Эриком на счет решения Макса
     # $ EventsByTime['Eric_afterdinner'].variable = "flags.dinner==11"

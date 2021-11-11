@@ -2,10 +2,9 @@ label AliceTalkStart:
 
     $ dial = TalkMenuItems()
 
-    # $ __cur_plan = GetPlan(plan_alice, day, tm)
     $ __cur_plan = alice.get_plan()
 
-    if __cur_plan.name == 'tv' and 1 < alice.daily.mistress < 2:
+    if __cur_plan.name == 'tv' and alice.daily.mistress == 1:
         #начиная с этого момента, если Макс отбыл наказание у Алисы в комнате, то отправляясь в гостиную, если Алиса смотрит ТВ, Макс не сможет составить ей компанию
         #ракурс с экраном ТВ и смотрящей на него Алисой
         if alice.daily.drink:
@@ -16,6 +15,8 @@ label AliceTalkStart:
             Max_09 "{m}Впечатлений от времяпрепровождения с Алисой мне и в её комнате хватило. Сегодня к ней лучше больше не лезть...{/m}"
         $ alice.daily.mistress = 2
         jump Waiting
+    elif __cur_plan.name == 'tv' and alice.daily.mistress:
+        jump Waiting
 
     if __cur_plan.talklabel is not None:
         call expression __cur_plan.talklabel from _call_expression_1
@@ -25,8 +26,18 @@ label AliceTalkStart:
     else:
         jump Waiting
 
-
     $ renpy.block_rollback()
+
+    if flags.eric_wallet == 2:
+        if not alice.flags.talkblock:
+            jump alice_about_wallet
+        else:
+            menu:
+                Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?"
+                "{i}уйти{/i}":
+                    $ alice.hourly.talkblock = 1
+                    jump AfterWaiting
+
     Alice_00 "Ну, Макс, чего надо?" nointeract
 
     $ rez =  renpy.display_menu(dial)
@@ -104,7 +115,7 @@ label wash_dishes_alice:
                     scene BG crockery-morning-00
                     $ renpy.show("Max crockery-morning 01"+mgg.dress)
                     menu:
-                        Max_11 "И почему здесь нет посудомоечной машины..."
+                        Max_11 "{m}И почему здесь нет посудомоечной машины...{/m}"
                         "{i}закончить{/i}":
                             $ cur_ratio = 2
                             jump Waiting
@@ -328,7 +339,7 @@ label alice_talk_tv:
     menu:
         Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..."
         "Ну, давай смотреть всё подряд..." if not _in_replay:
-            Max_11 "{m}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/m}"
+            Max_11 "{m}По телику сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/m}"
             Max_00 "Ладно, пойду я..."
             jump alice_talk_tv_end
 
@@ -895,7 +906,7 @@ label alice_talk_tv_massage_next:
 
     else:
         # понравился массаж, Алиса съела конфетку
-        # или без конфеты после прохождения трезвого пути
+        # или без конфеты после прохождения трезвого пути ???
         pass
 
     # массаж понравился
@@ -2614,7 +2625,7 @@ label Alice_solar:
                 Alice_13 "Может быть. Вот только у меня его нет..."
                 Max_00 "Ясно. Ну, в другой раз значит..."
                 if not any([items['max-a'].InShop, items['max-a'].have]):
-                    Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
+                    Max_09 "{m}Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче.{/m}"
                     $ items['solar'].unblock()
                     $ items['max-a'].unblock()
                     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
@@ -3233,7 +3244,7 @@ label massage_sunscreen:
 
 label alice_sorry_gifts:
     if alice.sorry.days[0] == day:
-        Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
+        Max_09 "{m}Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра.{/m}"
         return
 
     $ txt = {
@@ -4327,7 +4338,7 @@ label gift_black_lingerie:
 label alice_gift_sweets:   # Периодическое дарение сладости
 
     if alice.sorry.owe and alice.sorry.days[0] == day:
-        Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
+        Max_09 "{m}Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра.{/m}"
         $ alice.daily.sweets = 1
         return
 
@@ -5290,7 +5301,7 @@ label alice_mistress_3:
             menu:
                 Max_09 "Да мне всё-равно..."
                 "{i}уйти{/i}":
-                    $ alice.daily.mistress = 2
+                    $ alice.daily.mistress = 1
                     $ spent_time += 40
                     $ current_room = house[0]
                     jump Waiting
@@ -5757,3 +5768,46 @@ label alice_help_carry_plates:
             $ AddRelMood('alice', 0, -30)
             $ spent_time += 10
             jump Waiting
+
+
+label alice_about_wallet:
+
+    Alice_16 "Мне это не интересно, Макс!"
+    Max_07 "Э-э-э... Что не интересно?"
+    Alice_12 "Всё, с чем бы ты не пришёл. Просто уходи... Или врежу!"
+    Max_09 "Ты что, поверила Эрику?!"
+    Alice_17 "А ты ещё здесь?!"
+    Max_10 "Ладно. Всё понял. Ухожу."
+
+    $ notify_list.append(__("{b}Оповещение:{/b} Алиса больше не хочет взаимодействовать с Максом"))
+
+    $ spent_time = 10
+    $ alice.hourly.talkblock = 1
+    $ alice.flags.talkblock = 1
+    jump Waiting
+
+
+label smoke_after_wallet:
+    if alice.req.result is None:
+        Alice_12 "Нечего на меня тут глазеть, Макс! Иди отсюда. Или тебя поджопником ускорить?"
+        Max_09 "Ты, конечно, можешь это сделать... Но, знаешь кто вечером узнает, что ты продолжаешь курить?"
+        Alice_16 "Не вздумай говорить маме!"
+        Max_07 "Запросто! Ты спишь голая, а я молчу. И всем хорошо..."
+        Alice_17 "Говнюк ты, Макс! Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
+        Max_01 "Вот и отлично!"
+        menu:
+            Alice_13 "А теперь вали отсюда. Дай спокойно покурить!"
+            "{i}уйти{/i}":
+                $ punalice[0][0] = 8
+                $ alice.req.req = "naked"
+                $ alice.req.result = "naked"
+                $ alice.sleepnaked = True
+                $ added_mem_var('alice_sleepnaked')
+                $ alice.dcv.prudence.set_lost(7)
+    else:
+        menu:
+            Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?"
+            "{i}уйти{/i}":
+                $ alice.hourly.talkblock = 1
+    $ spent_time += 10
+    jump Waiting

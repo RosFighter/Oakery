@@ -66,11 +66,11 @@ translate english wash_dishes_alice_9cbbc5d1:
     # Alice_07 "Что это с тобой? Но я не откажусь. И... спасибо." nointeract
     Alice_07 "Really? That doesn't sound like you. I'm not declining the offer though..." nointeract
 
-# game/dialogues/alicetalk.rpy:106
-translate english wash_dishes_alice_07966f8d:
+# game/dialogues/alicetalk.rpy:118
+translate english wash_dishes_alice_133a9c4b:
 
-    # Max_11 "И почему здесь нет посудомоечной машины..." nointeract
-    Max_11 "Why don't we have a dishwasher..." nointeract
+    # Max_11 "{m}И почему здесь нет посудомоечной машины...{/m}" nointeract
+    Max_11 "{m}Why don't we have a dishwasher...{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:112
 translate english wash_dishes_alice_e341ef54:
@@ -354,10 +354,10 @@ translate english alice_talk_tv_a38da904:
     # Alice_13 "Да так, всякую ерунду. Я просто отдыхаю, и мне без разницы, что смотреть. Поэтому смотрю всё подряд..." nointeract
     Alice_13 "Nothing interesting, really. I'm just kinda zoning out..." nointeract
 
-# game/dialogues/alicetalk.rpy:331
-translate english alice_talk_tv_02b97e42:
+# game/dialogues/alicetalk.rpy:342
+translate english alice_talk_tv_0f86ff43:
 
-    # Max_11 "{m}По телеку сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/m}"
+    # Max_11 "{m}По телику сегодня нет ничего интересного... Ни порнушки, ни даже эротики... А было бы забавно посмотреть такое с сестрёнкой...{/m}"
     Max_11 "{m}There's nothing interesting on TV today. It would be exciting if there were some adult films to choose from. Could even be fun to watch it with sis...{/m}"
 
 # game/dialogues/alicetalk.rpy:332
@@ -520,7 +520,7 @@ translate english alice_talk_tv_massage_67ad610f:
 translate english alice_talk_tv_choice_mass_create_menu_264b44e4:
 
     # Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
-    Alice_02 "[succes!t]Max, what are you... Oh, okay, let's have one more... But this is the last one, don't offer any more, or I'll kick you know where! And this candy seems to taste even better than the last one! I feel really warm..."
+    Alice_02 "[succes!t]Max, what are you... Oh, okay, let's have one more... But this is the last one, don't offer any more, or I'll kick you, you know where! And this candy seems to taste even better than the last one! I feel really warm..."
 
 # game/dialogues/alicetalk.rpy:579
 translate english alice_talk_tv_choice_mass_create_menu_6b3e8ab2:
@@ -3894,11 +3894,11 @@ translate english Alice_solar_260044ac:
     # Max_00 "Ясно. Ну, в другой раз значит..."
     Max_00 "Okay. Well, next time then..."
 
-# game/dialogues/alicetalk.rpy:2680
-translate english Alice_solar_6edc5f35:
+# game/dialogues/alicetalk.rpy:2628
+translate english Alice_solar_596d8ab7:
 
-    # Max_09 "Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче."
-    Max_09 "Sunscreen can probably be found at the online store. I should also get some more casual clothes before I try and massage Alice."
+    # Max_09 "{m}Такой крем наверняка можно найти в интернет-магазине. Да и прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче.{/m}"
+    Max_09 "{m}Sunscreen can probably be found at the online store. I should also get some more casual clothes before I try and massage Alice.{/m}"
 
 # game/dialogues/alicetalk.rpy:2691
 translate english Alice_solar_f917ca15:
@@ -4728,7 +4728,7 @@ translate english massage_sunscreen_squeeze_chest_1c5bed82:
     # Alice_15 "Кто??? Пауки что ли?! Если через пять секунд не уберёшь руки, тебе будет плохо...{p=5}{nw}"
     Alice_15 "What? Spiders or something?! If you don't take your hands off in five seconds, you're gonna regret it...{p=5}{nw}"
 
-# game/dialogues/alicetalk.rpy:3239
+# game/dialogues/alicetalk.rpy:3175
 translate english massage_sunscreen_squeeze_chest_11fdb519:
 
     # extend "" nointeract
@@ -4818,11 +4818,11 @@ translate english massage_sunscreen_end_61f00467:
     # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
     Max_08 "{m}There's not enough sunscreen left, next time it may not be enough. It's better to buy more in advance.{/m}"
 
-# game/dialogues/alicetalk.rpy:3311
-translate english alice_sorry_gifts_21b81128:
+# game/dialogues/alicetalk.rpy:3247
+translate english alice_sorry_gifts_3ad3d6a8:
 
-    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
-    Max_09 "I don't think it's worth giving it to her today. It may raise unnecessary suspicions... It's better to do it tomorrow."
+    # Max_09 "{m}Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра.{/m}"
+    Max_09 "{m}I don't think it's worth giving it to her today. It may raise unnecessary suspicions... It's better to do it tomorrow.{/m}"
 
 # game/dialogues/alicetalk.rpy:3320
 translate english alice_sorry_gifts_a4021d45:
@@ -7998,11 +7998,11 @@ translate english gift_black_lingerie_final_efb73eb0:
     # Max_01 "Хорошо, я что-нибудь подыщу..."
     Max_01 "I'll see what I can do. And I'll take that as a compliment..."
 
-# game/dialogues/alicetalk.rpy:4486
-translate english alice_gift_sweets_21b81128:
+# game/dialogues/alicetalk.rpy:4341
+translate english alice_gift_sweets_3ad3d6a8:
 
-    # Max_09 "Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра."
-    Max_09 "I don't think it's a good idea to give a goodie today. It might arouse unnecessary suspicion... It is better to do it tomorrow."
+    # Max_09 "{m}Думаю, не стоит дарить вкусняшку сегодня. Это может вызвать ненужные подозрения... Лучше это сделать завтра.{/m}"
+    Max_09 "{m}I don't think it's a good idea to give a goodie today. It might arouse unnecessary suspicion... It is better to do it tomorrow.{/m}"
 
 # game/dialogues/alicetalk.rpy:4491
 translate english alice_gift_sweets_3bc9c952:
@@ -11785,3 +11785,101 @@ translate english alice_private_punish_r_pun_e4f55396:
 
     # Max_01 "А ты куда-то торопишься разве?"
     Max_01 "Are you in a hurry?"
+
+# TODO: Translation updated at 2021-11-11 13:38
+
+# game/dialogues/alicetalk.rpy:36
+translate english AliceTalkStart_429c2af4:
+
+    # Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?" nointeract
+    Alice_17 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5775
+translate english alice_about_wallet_1fc2b461:
+
+    # Alice_16 "Мне это не интересно, Макс!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:5776
+translate english alice_about_wallet_7fa286a3:
+
+    # Max_07 "Э-э-э... Что не интересно?"
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:5777
+translate english alice_about_wallet_b528c3ce:
+
+    # Alice_12 "Всё, с чем бы ты не пришёл. Просто уходи... Или врежу!"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:5778
+translate english alice_about_wallet_d249d4b4:
+
+    # Max_09 "Ты что, поверила Эрику?!"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:5779
+translate english alice_about_wallet_1310eef7:
+
+    # Alice_17 "А ты ещё здесь?!"
+    Alice_17 ""
+
+# game/dialogues/alicetalk.rpy:5780
+translate english alice_about_wallet_3deff628:
+
+    # Max_10 "Ладно. Всё понял. Ухожу."
+    Max_10 ""
+
+# game/dialogues/alicetalk.rpy:5792
+translate english smoke_after_wallet_aa2d0826:
+
+    # Alice_12 "Нечего на меня тут глазеть, Макс! Иди отсюда. Или тебя поджопником ускорить?"
+    Alice_12 ""
+
+# game/dialogues/alicetalk.rpy:5793
+translate english smoke_after_wallet_8a0bacb0:
+
+    # Max_09 "Ты, конечно, можешь это сделать... Но, знаешь кто вечером узнает, что ты продолжаешь курить?"
+    Max_09 ""
+
+# game/dialogues/alicetalk.rpy:5794
+translate english smoke_after_wallet_b149a7c2:
+
+    # Alice_16 "Не вздумай говорить маме!"
+    Alice_16 ""
+
+# game/dialogues/alicetalk.rpy:5795
+translate english smoke_after_wallet_4b38b441:
+
+    # Max_07 "Запросто! Ты спишь голая, а я молчу. И всем хорошо..."
+    Max_07 ""
+
+# game/dialogues/alicetalk.rpy:5796
+translate english smoke_after_wallet_02e0beca:
+
+    # Alice_17 "Говнюк ты, Макс! Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
+    Alice_17 ""
+
+# game/dialogues/alicetalk.rpy:5797
+translate english smoke_after_wallet_b5ff10cd:
+
+    # Max_01 "Вот и отлично!"
+    Max_01 ""
+
+# game/dialogues/alicetalk.rpy:5799
+translate english smoke_after_wallet_40b817ec:
+
+    # Alice_13 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
+    Alice_13 "" nointeract
+
+# game/dialogues/alicetalk.rpy:5809
+translate english smoke_after_wallet_429c2af4:
+
+    # Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?" nointeract
+    Alice_17 "" nointeract
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:5782
+    old "{b}Оповещение:{/b} Алиса больше не хочет взаимодействовать с Максом"
+    new ""

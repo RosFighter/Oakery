@@ -24,7 +24,7 @@ default lucky           = _("{color=#00FF00}{i}Повезло!{/i}{/color}\n")
 default alice_good_mass = _("{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n")
 default lisa_good_mass  = _("{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n")
 default lisa_good_kiss  = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
-default ann_good_mass   = _("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")
+default ann_good_mass   = renpy.config.say_menu_text_filter(renpy.translate_string(_("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")))
 
 define failed           = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
 define spotted          = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
@@ -35,8 +35,9 @@ define dont_like        = _("{color=#E59400}{i}Ей не нравится!{/i}{/
 define unlucky          = _("{color=#E59400}{i}Не повезло!{/i}{/color}\n")
 define alice_bad_mass   = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
 define lisa_bad_mass    = _("{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n")
-define ann_bad_mass     = _("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")
+define ann_bad_mass     = renpy.config.say_menu_text_filter(renpy.translate_string(_("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")))
 define lisa_bad_kiss    = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
+define impact_reduced   = _("{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n")
 
 define config.has_autosave = False
 define config.has_quicksave = False
@@ -45,7 +46,7 @@ define config.autosave_slots = 30
 define config.quicksave_slots = 30
 define config.autosave_on_quit = False
 default persistent.grid_vbox = 'grid'
-default persistent.orint = False
+# default persistent.orint = False
 default persistent.request_savename = True
 default persistent.transparent_textbox = False
 default persistent.all_opportunities = False
@@ -62,6 +63,7 @@ default rand_result = 0
 default day = 1
 default tm  = '08:50'
 default save_name = ''
+default weekday = GetWeekday(day)
 
 default morningwood_var = [1, 2, 3]
 
@@ -150,6 +152,7 @@ define talks = {
     'a.privpun'     : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_0', "all([alice.plan_name in ['sun', 'smoke'], alice.flags.private, alice.dcv.private.stage==4, not alice.dcv.private.done, not alice.spanked])"),
     'a.privpunr'    : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_r', "all([alice.plan_name == 'sun', alice.dcv.private.stage==5, not alice.dcv.private.done, not alice.spanked])"),
     'a.carry'       : TalkTheme('alice', _("Тебе помочь накрыть на стол?"), 'alice_help_carry_plates', "all([alice.plan_name == 'cooking', alice.dcv.battle.stage])"),
+    'a.wallet'      : TalkTheme('alice', "Э-э-э... Что не интересно?", 'alice_about_wallet', "all([flags.eric_wallet == 2, not alice.flags.talkblock])"),
 
     'a.domine0'     : TalkTheme('alice', _("Я пришёл извиниться за то, что было утром. Я больше не буду."), 'alice_mistress_0', "all([not alice.dcv.mistress.stage, alice.plan_name == 'tv', not alice.dcv.mistress.done, not alice.daily.mistress])"),
     'a.domine1'     : TalkTheme('alice', _("Я снова подглядывал. Извини."), 'alice_mistress_1', "all([alice.dcv.mistress.stage == 1, alice.plan_name == 'tv', not alice.dcv.mistress.done, not alice.daily.mistress])"),
@@ -165,6 +168,7 @@ define talks = {
     'ann.secr1'     : TalkTheme('ann', _("Мам, Кира отправила меня к тебе..."), 'ann_about_ann_secret1', "ann.dcv.feature.stage==1"),
     'ann.yoga0'     : TalkTheme('ann', _("С тобой можно?"), 'ann_yoga_with_max0', "all([ann.plan_name=='yoga', ann.dcv.feature.stage==4, ann.dcv.feature.done])"),
     'ann.yoga1'     : TalkTheme('ann', _("Я присоединюсь?"), 'ann_yoga_with_maxr', "all([ann.plan_name=='yoga', ann.dcv.feature.stage>4, ann.dcv.feature.done])"),
+    'm.wallet'      : TalkTheme('ann', "Да не крал я у него ничего! Он всех обманывает!", 'ann_about_wallet', "all([flags.eric_wallet == 2, not ann.flags.talkblock])"),
 
     'eric.money'    : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([not eric.daily.ask_money, GetRelMax('eric')[0]>3, 'money' in flags.bonus_from_eric])"),
     'eric.wtf'      : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "all([flags.voy_stage==1, GetRelMax('eric')[0]>0])"),
@@ -189,6 +193,7 @@ define talks = {
     'ann.secr2'     : TalkTheme('kira', _("Я хотел спросить про тот случай из детства мамы..."), 'kira_about_ann_secret2', "all([kira.plan_name=='sun', ann.dcv.feature.stage==2, ann.dcv.feature.done])"),
     'ann.secr_r'    : TalkTheme('kira', _("Расскажи уже про тот случай из детства мамы..."), 'kira_about_ann_secret_r', "all([kira.plan_name=='sun', ann.dcv.feature.stage==3, ann.dcv.feature.done])"),
     'kt_ft3_0'      : TalkTheme('kira', _("Когда будет новая фотосессия, тётя Кира?"), 'kira_about_photo3_0', "all([kira.dcv.feature.stage==8, ann.dcv.feature.stage>3, kira.dcv.feature.done])"),
+    'k.wallet'      : TalkTheme('kira', "Ты уже в курсе, что Эрик заявил?", 'kira_about_wallet', "all([flags.eric_wallet == 2, not kira.flags.talkblock])"),
 
     'lisa_fd'       : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and flags.lisa_fd==0 and lisa.flags.crush==0"),
     'lisa_swim'     : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].st()<0 and lisa.plan_name == 'sun'"),
@@ -228,6 +233,7 @@ define talks = {
     'ol.l.t3'       : TalkTheme(['lisa', 'olivia'], _("Что новенького, Оливия?"), 'olivia_talk3', "all([olivia.plan_name=='sun', weekday==2, olivia.dcv.feature.stage==3, olivia.dcv.feature.done])"),
     'ol.l.t4'       : TalkTheme(['lisa', 'olivia'], _("Рад тебя видеть, Оливия!"), 'olivia_talk4', "all([olivia.plan_name=='sun', weekday in[2, 5], olivia.dcv.feature.stage==4, olivia.dcv.feature.done, olivia.dcv.special.stage])"),
     'l.take_school' : TalkTheme('lisa', _("Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"), 'take_to_school', "all([lisa.flags.help, lisa.plan_name == 'repeats'])", 1),
+    'l.wallet'      : TalkTheme('lisa', "Надеюсь, ты не поверила Эрику?", 'lisa_about_wallet', "all([flags.eric_wallet == 2, not lisa.flags.talkblock])"),
     }
 
 

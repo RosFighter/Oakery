@@ -655,16 +655,16 @@ translate english kira_talk4_9a8f75a9:
     Max_09 "Okay, laugh it up..."
 
 # game/dialogues/kiratalk.rpy:307
-translate english kira_talk4_2dfeb566:
+translate english kira_talk4_4f8e6ef4:
 
-    # Max_04 "{m}Моя тётя снимается в порно! О таком лучше вообще никому не рассказывать. Ох... вот это мне повезло!{/m}"
-    Max_04 "{m}My Aunt is doing porn! I should keep this a secret. Oh ... how lucky for me!{/m}"
+    # Max_04 "Моя тётя снимается в порно! О таком лучше вообще никому не рассказывать. Ох... вот это мне повезло!"
+    Max_04 "My Aunt is doing porn! I should keep this a secret. Oh ... how lucky for me!"
 
-# game/dialogues/kiratalk.rpy:311
-translate english kira_talk4_5da79743:
+# game/dialogues/kiratalk.rpy:315
+translate english kira_talk4_1b11ce0f:
 
-    # Max_19 "{m}О да, Кира, мы с тобой ещё снимемся в фильме... и даже не в одном. Я сделаю тебя звездой и не только!{/m}"
-    Max_19 "{m}Oh Yes, Kira, you and I will be in a movie... and not just one. I'll make you a star and more!{/m}"
+    # Max_19 "О да, Кира, мы с тобой ещё снимемся в фильме... и даже не в одном. Я сделаю тебя звездой и не только!"
+    Max_19 "Oh Yes, Kira, you and I will be in a movie... and not just one. I'll make you a star and more!"
 
 # game/dialogues/kiratalk.rpy:312
 translate english kira_talk4_ed62975f:
@@ -828,17 +828,17 @@ translate english kira_talk5_6ed85272:
     # Max_04 "{m}Вот это удача! Порно-звезда будет мне позировать для фотосессии! Я где-то слышал, что порно-модели всегда дают фотографам в качестве оплаты за съёмку... Или нет? Но вдруг!{/m}"
     Max_04 "{m}What luck! I've got a photo shoot with a pornstar! I've heard stories about cameramen getting all kinds of rewards for their services... maybe I'll get something too?{/m}"
 
-# game/dialogues/kiratalk.rpy:378
-translate english kira_talk5_34346893:
+# game/dialogues/kiratalk.rpy:382
+translate english kira_talk5_cea37e86:
 
-    # Max_20 "Фотоаппарат у меня уже есть. Дело за тем, чтобы повысить мои шансы на что-нибудь особенное от тёти Киры за эту фотосессию. Не прикупить ли для неё какую-нибудь очень сексуальную сорочку?! Я думаю, это будет совсем не лишним... О да..." nointeract
-    Max_20 "I already have a camera. It's just a matter of increasing my chances of getting something special from Aunt Kira for this photo shoot. Shouldn't I get her a sexy nightgown?! I don't think it would be out of place at all... Oh, yeah..." nointeract
+    # Max_20 "{m}Фотоаппарат у меня уже есть. Дело за тем, чтобы повысить мои шансы на что-нибудь особенное от тёти Киры за эту фотосессию. Не прикупить ли для неё какую-нибудь очень сексуальную сорочку?! Я думаю, это будет совсем не лишним... О да...{/m}" nointeract
+    Max_20 "{m}I already have a camera. It's just a matter of increasing my chances of getting something special from Aunt Kira for this photo shoot. Shouldn't I get her a sexy nightgown?! I don't think it would be out of place at all... Oh, yeah...{/m}" nointeract
 
-# game/dialogues/kiratalk.rpy:380
-translate english kira_talk5_dfeec0a5:
+# game/dialogues/kiratalk.rpy:384
+translate english kira_talk5_fe9ad210:
 
-    # Max_20 "Дело за малым. Осталось где-то взять фотоаппарат и тогда... Да... Интересно, сколько они стоят? А, не важно. Важно, что мне может дать сама тётя Кира! Ради этого стоит попотеть... О да..." nointeract
-    Max_20 "There's just the small matter of getting a camera. I wonder how much they cost? Oh, I'll worry about that later. I'm so looking forward to what I'll get from Aunt Kira! I'm sure it'll be worth the effort." nointeract
+    # Max_20 "{m}Дело за малым. Осталось где-то взять фотоаппарат и тогда... Да... Интересно, сколько они стоят? А, не важно. Важно, что мне может дать сама тётя Кира! Ради этого стоит попотеть... О да...{/m}" nointeract
+    Max_20 "{m}There's just the small matter of getting a camera. I wonder how much they cost? Oh, I'll worry about that later. I'm so looking forward to what I'll get from Aunt Kira! I'm sure it'll be worth the effort.{/m}" nointeract
 
 # game/dialogues/kiratalk.rpy:384
 translate english kira_talk5_7a7cc18f:
@@ -1110,7 +1110,7 @@ translate english first_photoset_set6_fd2a8d5d:
     # Max_02 "Я думаю, кадры будут отличные...{p=1.5}{nw}"
     Max_02 "I'm sure the pics will be great...{p=1.5}{nw}"
 
-# game/dialogues/kiratalk.rpy:566
+# game/dialogues/kiratalk.rpy:570
 translate english first_photoset_set6_11fdb519:
 
     # extend "" nointeract
@@ -3341,3 +3341,77 @@ translate english strings:
     # game/dialogues/kiratalk.rpy:1436
     old "{i}Наслаждаться{/i}"
     new "{i}Feels good{/i}"
+
+# TODO: Translation updated at 2021-11-11 13:38
+
+# game/dialogues/kiratalk.rpy:1509
+translate english kira_about_wallet_6c2cb919:
+
+    # Kira_14 "Как ты, Макс?"
+    Kira_14 ""
+
+# game/dialogues/kiratalk.rpy:1510
+translate english kira_about_wallet_597b52dd:
+
+    # Max_07 "Ты уже в курсе, что Эрик заявил?"
+    Max_07 ""
+
+# game/dialogues/kiratalk.rpy:1511
+translate english kira_about_wallet_f06fac4b:
+
+    # Kira_15 "Да, Макс, уже наслышана... Скажи, это же не ты взял его деньги?"
+    Kira_15 ""
+
+# game/dialogues/kiratalk.rpy:1512
+translate english kira_about_wallet_7353e46b:
+
+    # Max_09 "Ты ещё спрашиваешь?"
+    Max_09 ""
+
+# game/dialogues/kiratalk.rpy:1513
+translate english kira_about_wallet_3a51cf23:
+
+    # Kira_10 "Ну, я так, для формальности. Конечно, я тебе верю... Что же делать..."
+    Kira_10 ""
+
+# game/dialogues/kiratalk.rpy:1514
+translate english kira_about_wallet_58d13745:
+
+    # Max_09 "Есть у меня мысль обновить газон у нас во дворе... Заодно куплю пищевую плёнку. И кажется ещё лопаты у нас нет..."
+    Max_09 ""
+
+# game/dialogues/kiratalk.rpy:1515
+translate english kira_about_wallet_7c0b737a:
+
+    # Kira_17 "Макс, ты это серьёзно?!"
+    Kira_17 ""
+
+# game/dialogues/kiratalk.rpy:1516
+translate english kira_about_wallet_ccfc5079:
+
+    # Max_11 "Увы, нет. Потому что меня это в глазах семьи не оправдает. Так что буду действовать умнее..."
+    Max_11 ""
+
+# game/dialogues/kiratalk.rpy:1517
+translate english kira_about_wallet_e91240fe:
+
+    # Kira_00 "Может, тебе нужна моя помощь в чём-то?"
+    Kira_00 ""
+
+# game/dialogues/kiratalk.rpy:1518
+translate english kira_about_wallet_3acdb772:
+
+    # Max_01 "Нет, тётя Кира. Мне нужно самому разобраться с Эриком. Но всё равно спасибо, за то, что ты на моей стороне!"
+    Max_01 ""
+
+# game/dialogues/kiratalk.rpy:1519
+translate english kira_about_wallet_cf38bd43:
+
+    # Kira_10 "Ты только осторожнее, Макс! Хорошо?"
+    Kira_10 ""
+
+# game/dialogues/kiratalk.rpy:1520
+translate english kira_about_wallet_261aa15e:
+
+    # Max_07 "Конечно. Что будет, то будет..."
+    Max_07 ""

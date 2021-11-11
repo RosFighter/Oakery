@@ -4,27 +4,27 @@ translate german strings:
 
     # game/screens.rpy:244
     old "массаж, "
-    new "massage, "
+    new "Massage, "
 
     # game/screens.rpy:244
     old "убеждение, "
-    new "überzeugung, "
+    new "Überzeugung, "
 
     # game/screens.rpy:244
     old "сексуальный опыт, "
-    new "sexuelle erfahrung, "
+    new "sexuelle Erfahrung, "
 
     # game/screens.rpy:244
     old "поцелуи, "
-    new "küssen, "
+    new "Küssen, "
 
     # game/screens.rpy:244
     old "удача, "
-    new "glück, "
+    new "Glück, "
 
     # game/screens.rpy:244
     old "скрытность, "
-    new "schleichen, "
+    new "Schleichen, "
 
     # game/screens.rpy:270
     old "[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}"
@@ -107,8 +107,8 @@ translate german strings:
     new "ENDE"
 
     # game/screens.rpy:527
-    old "ГЛАВНОЕ МЕНЮ"
-    new "HAUPTMENUE"
+    old "МЕНЮ"
+    new "MENUE"
 
     # game/screens.rpy:661
     old "Введите описание файла сохранения:"
@@ -136,7 +136,7 @@ translate german strings:
 
     # game/screens.rpy:776
     old "Пустой слот"
-    new "Leer"
+    new "Leerer Platz"
 
     # game/screens.rpy:784
     old "ДЕНЬ [load_day]"
@@ -442,3 +442,10 @@ translate german strings:
     old "Переодевания Лизы пропускаются, если Макс в комнате"
     new "Lisas Umziehen wird übersprungen, wenn Max im Zimmer ist"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+translate german strings:
+
+    # game/screens.rpy:400
+    old "Главное меню"
+    new "Hauptmenue"

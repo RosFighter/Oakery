@@ -715,11 +715,11 @@ translate english strings:
     new "There is still a little hope for Aunt Kira. She is an interesting and open woman. Maybe she'll have some good advice..."
 
     # game/core/09_opportunities.rpy:4
-    old "Кажется, я нашёл ту, которая научит меня целоваться. И это... моя тётя! Это так странно... Ну она точно в этом вопросе понимает достаточно. Да я был бы рад любому учителю, но такой - идеален! Да, тётя Кира сказала, что лучше об этом поговорить в более интимной обстановке. Например, когда она ночью смотрит телек."
+    old "Кажется, я нашёл ту, которая научит меня целоваться. И это... моя тётя! Это так странно... Ну она точно в этом вопросе понимает достаточно. Да я был бы рад любому учителю, но такой - идеален! Да, тётя Кира сказала, что лучше об этом поговорить в более интимной обстановке. Например, когда она ночью смотрит телик."
     new "I think I've found someone who can teach me how to kiss. My aunt! This is so strange... Well, she certainly knows enough about the topic. I'd be happy with any teacher, but this is better than what I expected! Aunt Kira said it would be better to talk about this in a more intimate setting. For example, when she's watching TV at night."
 
     # game/core/09_opportunities.rpy:4
-    old "Телек тётя Кира смотрит после возвращения с работы поздней ночью, в среду и воскресенье. Нужно постараться успеть, прежде чем она ляжет спать..."
+    old "Телик тётя Кира смотрит после возвращения с работы поздней ночью, в среду и воскресенье. Нужно постараться успеть, прежде чем она ляжет спать..."
     new "Aunt Kira watches TV after she gets home from work late on Wednesday and Sunday nights. We have to try to make it before she goes to bed..."
 
     # game/core/09_opportunities.rpy:4

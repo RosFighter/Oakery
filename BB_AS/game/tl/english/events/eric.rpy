@@ -390,35 +390,35 @@ translate english eric_ann_tv_9b0d1773_1:
     # Max_07 "[txt2!t]" nointeract
     Max_07 "[txt2!t]" nointeract
 
-# game/events/eric.rpy:422
-translate english eric_ann_tv_42ac5694:
+# game/events/eric.rpy:423
+translate english eric_ann_tv_bfcfdbde:
 
-    # Max_10 "Если меня заметят, пока я смотрю порно на большом экране и подглядываю за тем, что происходит здесь же, наяву, меня точно накажут" nointeract
-    Max_10 "If I get noticed while I'm watching porn on the big screen and peeking at what's going on here, I'll definitely get punished." nointeract
+    # Max_10 "{m}Если меня заметят, пока я смотрю порно на большом экране и подглядываю за тем, что происходит здесь же, наяву, меня точно накажут{/m}" nointeract
+    Max_10 "{m}If I get noticed while I'm watching porn on the big screen and peeking at what's going on here, I'll definitely get punished.{/m}" nointeract
 
 # game/events/eric.rpy:426
-translate english eric_ann_tv_c1692c11:
+translate english eric_ann_tv_9f5684d4:
 
-    # Max_09 "Похоже, порно подходит к концу, а вот Эрик не кончает! Наверно, они просто решили {i}разогреться{/i} перед тем, что будет в маминой спальне... А это значит, мне пора уходить."
-    Max_09 "It looks like the porn is nearly over, but Eric isn't coming! They probably just decided to {i}warm up{/i} before continuing in Mom's room... Which means it's time for me to leave."
+    # Max_09 "{m}Похоже, порно подходит к концу, а вот Эрик не кончает! Наверно, они просто решили {b}разогреться{/b} перед тем, что будет в маминой спальне... А это значит, мне пора уходить.{/m}"
+    Max_09 "{m}It looks like the porn is nearly over, but Eric isn't coming! They probably just decided to {b}warm up{/b} before continuing in Mom's room... Which means it's time for me to leave.{/m}"
 
-# game/events/eric.rpy:432
-translate english eric_ann_tv_f9ebeced:
+# game/events/eric.rpy:433
+translate english eric_ann_tv_3a24c8c9:
 
-    # Max_10 "Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!" nointeract
-    Max_10 "Wow! If I get noticed while I'm peeking, I'm definitely gonna get punished. We gotta get out of here now!" nointeract
+    # Max_10 "{m}Ого! Если меня заметят, пока я подглядываю за ТАКИМ, меня точно накажут. Нужно срочно уходить!{/m}" nointeract
+    Max_10 "{m}Wow! If I get noticed while I'm peeking, I'm definitely gonna get punished. We gotta get out of here now!{/m}" nointeract
 
 # game/events/eric.rpy:455
-translate english eric_ann_tv_closer1_39475977:
+translate english eric_ann_tv_closer1_60cd4ca1:
 
-    # Max_15 "Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?" nointeract
-    Max_15 "Wait, is she jerking him off?! Right here... We have to stop this right now! What's the best way to do it?" nointeract
+    # Max_15 "{m}Она что, дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?{/m}" nointeract
+    Max_15 "{m}Wait, is she jerking him off?! Right here... We have to stop this right now! What's the best way to do it?{/m}" nointeract
 
 # game/events/eric.rpy:457
-translate english eric_ann_tv_closer1_717fa033:
+translate english eric_ann_tv_closer1_b860cd90:
 
-    # Max_16 "Она что, совершенно голая дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?" nointeract
-    Max_16 "Wait, is she jerking him off completely naked?! Right here... We have to stop this right now! How can I do it?" nointeract
+    # Max_16 "{m}Она что, совершенно голая дрочит ему?! Прямо здесь... Нужно это срочно прекратить! Только, как это лучше сделать?{/m}" nointeract
+    Max_16 "{m}Wait, is she jerking him off completely naked?! Right here... We have to stop this right now! How can I do it?{/m}" nointeract
 
 # game/events/eric.rpy:461
 translate english eric_ann_tv_closer1_849abea4:
@@ -433,34 +433,34 @@ translate english eric_ann_tv_closer1_03d660f3:
     Max_12 "Fucking hell!"
 
 # game/events/eric.rpy:471
-translate english eric_ann_tv_closer1_d646f6b6:
+translate english eric_ann_tv_closer1_3b23a932:
 
-    # Max_11 "Да, она ему дрочит! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_11 "She's jerking him off! Right here... They're so passionate about each other, they don't notice anything around them! Well, besides what's happening on the screen..." nointeract
+    # Max_11 "{m}Да, она ему дрочит! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит...{/m}" nointeract
+    Max_11 "{m}She's jerking him off! Right here... They're so passionate about each other, they don't notice anything around them! Well, besides what's happening on the screen...{/m}" nointeract
 
 # game/events/eric.rpy:473
-translate english eric_ann_tv_closer1_224a6ad6:
+translate english eric_ann_tv_closer1_7e5671b4:
 
-    # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
+    # Max_07 "{m}Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит...{/m}" nointeract
+    Max_07 "{m}Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they are so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen...{/m}" nointeract
 
 # game/events/eric.rpy:476
-translate english eric_ann_tv_closer1_bdf10685:
+translate english eric_ann_tv_closer1_f04a9a57:
 
-    # Max_11 "Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_11 "She's giving him a blow job! Right here... They're so involved with each other that they do not notice anything around them! Well, except for what's happening on the screen..." nointeract
+    # Max_11 "{m}Да, она отсасывает ему! Прямо здесь... Они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит...{/m}" nointeract
+    Max_11 "{m}She's giving him a blow job! Right here... They're so involved with each other that they do not notice anything around them! Well, except for what's happening on the screen...{/m}" nointeract
 
 # game/events/eric.rpy:478
-translate english eric_ann_tv_closer1_224a6ad6_1:
+translate english eric_ann_tv_closer1_7e5671b4_1:
 
-    # Max_07 "Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит..." nointeract
-    Max_07 "Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they're so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen..." nointeract
+    # Max_07 "{m}Ох... мама такая голая и мокрая... У неё такое соблазнительное тело, а какая попка! Ммм... Хорошо, что они настолько увлечены друг другом, что ничего вокруг не замечают! Ну, кроме того, что на экране происходит...{/m}" nointeract
+    Max_07 "{m}Oh... Mom is naked and wet... She has such a curvy body, and what an ass! Mmm... It's good that they're so involved with each other that they don't notice anything around them! Well, except for what's happening on the screen...{/m}" nointeract
 
 # game/events/eric.rpy:480
-translate english eric_ann_tv_closer1_dd256959:
+translate english eric_ann_tv_closer1_741ad417:
 
-    # Max_15 "Она что, отсасывает ему?! Прямо здесь... Вот же развратница, а если кто-то зайдёт и увидит!" nointeract
-    Max_15 "Is she giving him a blow job?! Right here... what if someone comes in and sees!" nointeract
+    # Max_15 "{m}Она что, отсасывает ему?! Прямо здесь... Вот же развратница, а если кто-то зайдёт и увидит!{/m}" nointeract
+    Max_15 "{m}Is she giving him a blow job?! Right here... what if someone comes in and sees!{/m}" nointeract
 
 # game/events/eric.rpy:489
 translate english eric_ann_tv_closer1_1cc34756:
@@ -535,10 +535,10 @@ translate english eric_ann_tv_closer1_cd0fd095:
     Max_10 "Okay, I'm going now..."
 
 # game/events/eric.rpy:535
-translate english eric_ann_fucking_60cad7ba:
+translate english eric_ann_fucking_2d694b69:
 
-    # Max_00 "Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит..." nointeract
-    Max_00 "Judging by the sounds, Mom and Eric are doing something. There's no need to open the door..." nointeract
+    # Max_00 "{m}Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит...{/m}" nointeract
+    Max_00 "{m}Judging by the sounds, Mom and Eric are doing something. There's no need to open the door...{/m}" nointeract
 
 # game/events/eric.rpy:577
 translate english eric_ann_fucking_voyeur_c6b7e289:
@@ -618,35 +618,35 @@ translate english eric_ann_fucking_voyeur_6e7aee99:
     # Max_00 "Хорошо..."
     Max_00 "Fine..."
 
-# game/events/eric.rpy:622
-translate english eric_ann_fucking_voyeur_02303e2f:
+# game/events/eric.rpy:613
+translate english eric_ann_fucking_voyeur_3f292d08:
 
-    # Max_10 "[undetect!t]Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!" nointeract
-    Max_10 "[undetect!t]My God, what's mom doing?! Does she really like sucking that jerk off?!" nointeract
+    # Max_10 "[undetect!t]{m}Боже мой, что моя мама творит?! Неужели ей действительно нравится отсасывать этому придурку?!{/m}" nointeract
+    Max_10 "[undetect!t]{m}My God, what's mom doing?! Does she really like sucking that jerk off?!{/m}" nointeract
 
-# game/events/eric.rpy:624
-translate english eric_ann_fucking_voyeur_6f277737:
+# game/events/eric.rpy:615
+translate english eric_ann_fucking_voyeur_e30603c7:
 
-    # Max_07 "[undetect!t]Вот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!" nointeract
-    Max_07 "[undetect!t]Wow! It's like a porn movie! I couldn't even imagine that mom could do that. And Eric's keeping up with her... I think she really likes it!" nointeract
+    # Max_07 "[undetect!t]{m}Вот это да! Прямо как в крутом порнофильме! Я даже представить себе не мог, что моя строгая мама способна на такое. Да и Эрик от неё не отстаёт... Кажется, ей это очень нравится!{/m}" nointeract
+    Max_07 "[undetect!t]{m}Wow! It's like a porn movie! I couldn't even imagine that mom could do that. And Eric's keeping up with her... I think she really likes it!{/m}" nointeract
 
-# game/events/eric.rpy:626
-translate english eric_ann_fucking_voyeur_fd07b201:
+# game/events/eric.rpy:617
+translate english eric_ann_fucking_voyeur_5bcaf7a6:
 
-    # Max_10 "[undetect!t]Что?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!" nointeract
-    Max_10 "[undetect!t]What?! My mom sucks off this freak? Eric, the bastard, he... fucks her in the mouth like some street whore! Why does she let him do that?!" nointeract
+    # Max_10 "[undetect!t]{m}Что?! Моя мама сосёт этому уроду? Эрик, гад, он же... трахает её в рот, как какую-то дешёвую уличную шлюху! Почему она ему это позволяет?!{/m}" nointeract
+    Max_10 "[undetect!t]{m}What?! My mom sucks off this freak? Eric, the bastard, he... fucks her in the mouth like some street whore! Why does she let him do that?!{/m}" nointeract
 
-# game/events/eric.rpy:628
-translate english eric_ann_fucking_voyeur_2223829f:
+# game/events/eric.rpy:619
+translate english eric_ann_fucking_voyeur_4f753f1f:
 
-    # Max_08 "[undetect!t]Ну вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!" nointeract
-    Max_08 "[undetect!t]Well, Eric's fucking Mom from behind so powerfully... She just doesn't seem to have the strength to resist it, maybe she even likes it!" nointeract
+    # Max_08 "[undetect!t]{m}Ну вот, Эрик трахает маму сзади, да так активно... Кажется, у неё просто нет сил противиться этому, хотя, может быть, ей это даже нравится!{/m}" nointeract
+    Max_08 "[undetect!t]{m}Well, Eric's fucking Mom from behind so powerfully... She just doesn't seem to have the strength to resist it, maybe she even likes it!{/m}" nointeract
 
-# game/events/eric.rpy:630
-translate english eric_ann_fucking_voyeur_769f0bc5:
+# game/events/eric.rpy:621
+translate english eric_ann_fucking_voyeur_c2a3b9b0:
 
-    # Max_07 "[undetect!t]Ничего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла..." nointeract
-    Max_07 "[undetect!t]Wow! What passion! My mom's riding Eric like crazy! I had no idea she was capable of that! They seem so passionate about each other, they won't notice if I come out from around the corner..." nointeract
+    # Max_07 "[undetect!t]{m}Ничего себе! Вот это страсть! Моя мама скачет на Эрике как сумасшедшая! Я даже представить себе не мог, что она способна на такое! Кажется, они так увлечены друг другом, что не заметят, если я выйду из-за угла...{/m}" nointeract
+    Max_07 "[undetect!t]{m}Wow! What passion! My mom's riding Eric like crazy! I had no idea she was capable of that! They seem so passionate about each other, they won't notice if I come out from around the corner...{/m}" nointeract
 
 # game/events/eric.rpy:642
 translate english eric_ann_fucking_voyeur_c6b7e289_1:
@@ -654,299 +654,299 @@ translate english eric_ann_fucking_voyeur_c6b7e289_1:
     # Ann_15 "[spotted!t]Макс?! Какого чёрта? Ты за нами подглядываешь?! Завтра ты будешь наказан! Немедленно убирайся!"
     Ann_15 "[spotted!t]Max?! What the hell? Are you spying on us?! You will be punished tomorrow! Get out now!"
 
-# game/events/eric.rpy:665
-translate english eric_ann_fucking_voyeur_7613d8b5:
+# game/events/eric.rpy:651
+translate english eric_ann_fucking_voyeur_e4f5fb50:
 
-    # Max_09 "Чёрт, этот удачливый ублюдок кончил ей прямо в рот, причём, судя по довольному лицу мамы, ей это понравилось! Ну почему таким уродам всегда везёт?! Ладно, надо уходить, а то они сейчас меня заметят..."
-    Max_09 "Shit, that lucky bastard came right in her mouth, and judging from her face, she loved it! Why do you always get lucky?! Okay, we gotta go, or they're gonna see me..."
+    # Max_09 "{m}Чёрт, этот удачливый ублюдок кончил ей прямо в рот, причём, судя по довольному лицу мамы, ей это понравилось! Ну почему таким уродам всегда везёт?! Ладно, надо уходить, а то они сейчас меня заметят...{/m}"
+    Max_09 "{m}Shit, that lucky bastard came right in her mouth, and judging from her face, she loved it! Why do you always get lucky?! Okay, we gotta go, or they're gonna see me...{/m}"
 
-# game/events/eric.rpy:667
-translate english eric_ann_fucking_voyeur_2d5a32c4:
+# game/events/eric.rpy:653
+translate english eric_ann_fucking_voyeur_35a8a819:
 
-    # Max_08 "Ого! Похоже, мама кончила и... Эрик тоже... Хорошо, что хоть не маме в рот... А она у нас та ещё проказница! Пора сматываться, пока меня не заметили!"
-    Max_08 "Wow! Looks like Mom came and... Eric did, too... It's a good thing it's not in her mouth... And she's such so naughty! We gotta get out of here before they see me!"
+    # Max_08 "{m}Ого! Похоже, мама кончила и... Эрик тоже... Хорошо, что хоть не маме в рот... А она у нас та ещё проказница! Пора сматываться, пока меня не заметили!{/m}"
+    Max_08 "{m}Wow! Looks like Mom came and... Eric did, too... It's a good thing it's not in her mouth... And she's such so naughty! We gotta get out of here before they see me!{/m}"
 
-# game/events/eric.rpy:669
-translate english eric_ann_fucking_voyeur_05040526:
+# game/events/eric.rpy:655
+translate english eric_ann_fucking_voyeur_03bc9f25:
 
-    # Max_11 "Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватало ещё, чтобы меня увидели..."
-    Max_11 "Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon..."
+    # Max_11 "{m}Чёрт, эта сволочь кончила ей прямо в рот и... похоже мама не в восторге от всего этого. Бедная моя мама... это нельзя так просто оставлять! А пока лучше скорее уходить, не хватало ещё, чтобы меня увидели...{/m}"
+    Max_11 "{m}Shit, that bastard came right in her mouth and... Mom doesn't seem too thrilled about it. Poor mom... you can't just leave it like that! I better leave soon...{/m}"
 
-# game/events/eric.rpy:671
-translate english eric_ann_fucking_voyeur_8f598321:
+# game/events/eric.rpy:657
+translate english eric_ann_fucking_voyeur_732dbbeb:
 
-    # Max_10 "Ох, чёрт... наконец-то Эрик кончил и... хорошо, что не в маму... Вот же счастливый сукин сын... залил ей своей спермой всю спину... Пожалуй, не стоит здесь задерживаться, они могут меня увидеть."
-    Max_10 "Oh, shit... Eric finally came and... good thing he wasn't inside... What a lucky son of a bitch... poured his sperm all over her back... Maybe I shouldn't stay here, they might see me."
+    # Max_10 "{m}Ох, чёрт... наконец-то Эрик кончил и... хорошо, что не в маму... Вот же счастливый сукин сын... залил ей своей спермой всю спину... Пожалуй, не стоит здесь задерживаться, они могут меня увидеть.{/m}"
+    Max_10 "{m}Oh, shit... Eric finally came and... good thing he wasn't inside... What a lucky son of a bitch... poured his sperm all over her back... Maybe I shouldn't stay here, they might see me.{/m}"
 
-# game/events/eric.rpy:673
-translate english eric_ann_fucking_voyeur_844b777a:
+# game/events/eric.rpy:659
+translate english eric_ann_fucking_voyeur_46cd8c20:
 
-    # Max_10 "Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!"
-    Max_10 "Fuck... he didn't hold back and he's already finished... Although, it's no wonder, after all that! What a lucky bastard! And we have to get out of here before they see me!"
+    # Max_10 "{m}Чёрт возьми... он не сдержался и уже кончил... Хотя, это не удивительно, после таких-то скачек! Вот же повезло этой сволочи Эрику! И надо уже уходить, пока меня не заметили!{/m}"
+    Max_10 "{m}Fuck... he didn't hold back and he's already finished... Although, it's no wonder, after all that! What a lucky bastard! And we have to get out of here before they see me!{/m}"
 
-# game/events/eric.rpy:691
-translate english eric_ann_sleep_eb3bfa8c:
+# game/events/eric.rpy:676
+translate english eric_ann_sleep_6d97eb0c:
 
-    # Max_00 "Кажется, все спят..." nointeract
-    Max_00 "Everyone seems to be asleep..." nointeract
+    # Max_00 "{m}Кажется, все спят...{/m}" nointeract
+    Max_00 "{m}Everyone seems to be asleep...{/m}" nointeract
 
 # game/events/eric.rpy:706
-translate english eric_ann_sleep_7df403de:
+translate english eric_ann_sleep_adf5bbdf:
 
-    # Max_09 "О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!" nointeract
-    Max_09 "Oh! Mom sleeps alone... She's so hot, especially naked... Where's Eric? Isn't he in Alice's room?" nointeract
+    # Max_09 "{m}О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!{/m}" nointeract
+    Max_09 "{m}Oh! Mom sleeps alone... She's so hot, especially naked... Where's Eric? Isn't he in Alice's room?{/m}" nointeract
 
 # game/events/eric.rpy:728
-translate english eric_ann_sleep_b52c6465:
+translate english eric_ann_sleep_980b6a59:
 
-    # Max_01 "Похоже, они крепко спят... Совершенно голые! Чёрт, жаль только мама лежит за Эриком и её почти не видно... Почему он такой здоровый?" nointeract
-    Max_01 "They seem to be sleeping... Totally naked! Shit, it's a shame Mom's lying behind Eric and I can barely see her... Why is he so fit?" nointeract
+    # Max_01 "{m}Похоже, они крепко спят... Совершенно голые! Чёрт, жаль только мама лежит за Эриком и её почти не видно... Почему он такой здоровый?{/m}" nointeract
+    Max_01 "{m}They seem to be sleeping... Totally naked! Shit, it's a shame Mom's lying behind Eric and I can barely see her... Why is he so fit?{/m}" nointeract
 
 # game/events/eric.rpy:730
-translate english eric_ann_sleep_3032e3eb:
+translate english eric_ann_sleep_9f0558e6:
 
-    # Max_07 "О, да! Этой ночью мама предстала во всей красе... Полностью голенькая... такая соблазнительная. Только вот обезьяна здесь лишняя повисла!" nointeract
-    Max_07 "Oh, yes! mom's completely exposed!... Totally naked... so tempting. Except there's some asshole there too!" nointeract
+    # Max_07 "{m}О, да! Этой ночью мама предстала во всей красе... Полностью голенькая... такая соблазнительная. Только вот обезьяна здесь лишняя повисла!{/m}" nointeract
+    Max_07 "{m}Oh, yes! mom's completely exposed!... Totally naked... so tempting. Except there's some asshole there too!{/m}" nointeract
 
 # game/events/eric.rpy:732
-translate english eric_ann_sleep_bf16469a:
+translate english eric_ann_sleep_5da2c2be:
 
-    # Max_04 "Класс! У моей мамы лучшая попка в мире... а голая она просто сводит с ума! Ещё бы эта гора мышц около неё не лежала..." nointeract
-    Max_04 "Nice! My mom has the best ass in the world... and her being naked is driving me crazy! Just wish this prick wasn't lying there..." nointeract
+    # Max_04 "{m}Класс! У моей мамы лучшая попка в мире... а голая она просто сводит с ума! Ещё бы эта гора мышц около неё не лежала...{/m}" nointeract
+    Max_04 "{m}Nice! My mom has the best ass in the world... and her being naked is driving me crazy! Just wish this prick wasn't lying there...{/m}" nointeract
 
 # game/events/eric.rpy:741
-translate english eric_ann_sleep_5dbd568a:
+translate english eric_ann_sleep_784afa47:
 
-    # Max_03 "Они действительно крепко спят... Может самого интересного и не видно, но мама так элегантно, по-женски, закинула на него свою ножку... Хорошо, что такая жара и дома нет кондиционеров... Так, пора уходить." nointeract
-    Max_03 "They really sleep well... Maybe I can't see the best part, but Mom threw her foot on it so elegantly, in a woman's way... It's a good thing it's so hot and there's no air conditioning... Okay, time to go." nointeract
+    # Max_03 "{m}Они действительно крепко спят... Может самого интересного и не видно, но мама так элегантно, по-женски, закинула на него свою ножку... Хорошо, что такая жара и дома нет кондиционеров... Так, пора уходить.{/m}" nointeract
+    Max_03 "{m}They really sleep well... Maybe I can't see the best part, but Mom threw her foot on it so elegantly, in a woman's way... It's a good thing it's so hot and there's no air conditioning... Okay, time to go.{/m}" nointeract
 
 # game/events/eric.rpy:743
-translate english eric_ann_sleep_1a7abd7b:
+translate english eric_ann_sleep_2bbb8611:
 
-    # Max_02 "Просто с ума сойти можно! Она лежит всего в метре от меня... совсем голая... и мне видно её киску... такая красивая! А этот ублюдок, Эрик, так по-хозяйски облапал её... Врезать бы ему, гаду... Ладно, пора бы мне уже уходить, а то они ещё проснутся." nointeract
-    Max_02 "It's just crazy! She's so close... ...completely naked... and I can see her pussy... ...so beautiful! And that bastard, Eric, groping her...Okay, I'd better get going or they'll wake up." nointeract
+    # Max_02 "{m}Просто с ума сойти можно! Она лежит всего в метре от меня... совсем голая... и мне видно её киску... такая красивая! А этот ублюдок, Эрик, так по-хозяйски облапал её... Врезать бы ему, гаду... Ладно, пора бы мне уже уходить, а то они ещё проснутся.{/m}" nointeract
+    Max_02 "{m}It's just crazy! She's so close... ...completely naked... and I can see her pussy... ...so beautiful! And that bastard, Eric, groping her...Okay, I'd better get going or they'll wake up.{/m}" nointeract
 
 # game/events/eric.rpy:745
-translate english eric_ann_sleep_9771290e:
+translate english eric_ann_sleep_b74cc146:
 
-    # Max_05 "Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись..." nointeract
-    Max_05 "Mom is so beautiful... and her round, plump ass is a miracle! It's so mesmerizing! I wish I could touch her... As long as they don't wake up now..." nointeract
+    # Max_05 "{m}Мама такая красивая... а её кругленькая оттопыренная попка просто чудо! Так завораживает! Как бы мне хотелось потрогать её... Ох, мечты... Только бы они сейчас не проснулись...{/m}" nointeract
+    Max_05 "{m}Mom is so beautiful... and her round, plump ass is a miracle! It's so mesmerizing! I wish I could touch her... As long as they don't wake up now...{/m}" nointeract
 
 # game/events/eric.rpy:756
-translate english eric_ann_sleep_not_eric_a05237c8:
+translate english eric_ann_sleep_not_eric_b63d8481:
 
-    # Max_01 "Класс! Мама спит голая... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!" nointeract
-    Max_01 "Great! Mom sleeps naked... I can't even believe that beauty has three kids. I wouldn't have believed it in my life!" nointeract
+    # Max_01 "{m}Класс! Мама спит голая... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!{/m}" nointeract
+    Max_01 "{m}Great! Mom sleeps naked... I can't even believe that beauty has three kids. I wouldn't have believed it in my life!{/m}" nointeract
 
 # game/events/eric.rpy:758
-translate english eric_ann_sleep_not_eric_f8c5f5ec:
+translate english eric_ann_sleep_not_eric_8dd67095:
 
-    # Max_07 "О, да! Какая у мамы голая попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!" nointeract
-    Max_07 "Oh, yes! What a nice ass Mom has! Still, it's nice that it's so hot and everyone sleeps without covering up... That's great!" nointeract
+    # Max_07 "{m}О, да! Какая у мамы голая попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Просто супер!{/m}" nointeract
+    Max_07 "{m}Oh, yes! What a nice ass Mom has! Still, it's nice that it's so hot and everyone sleeps without covering up... That's great!{/m}" nointeract
 
 # game/events/eric.rpy:760
-translate english eric_ann_sleep_not_eric_ca37ba4b:
+translate english eric_ann_sleep_not_eric_ab61de8e:
 
-    # Max_04 "Обалденно! Как же повезло, что у меня такая горячая мама... Голой она выглядит потрясающе, аж глаза отрывать не хочется!" nointeract
-    Max_04 "Awesome! How lucky I am to have such a hot mom... She looks amazing naked, you can't take your eyes off her!" nointeract
+    # Max_04 "{m}Обалденно! Как же повезло, что у меня такая горячая мама... Голой она выглядит потрясающе, аж глаза отрывать не хочется!{/m}" nointeract
+    Max_04 "{m}Awesome! How lucky I am to have such a hot mom... She looks amazing naked, you can't take your eyes off her!{/m}" nointeract
 
 # game/events/eric.rpy:774
-translate english eric_ann_sleep_not_eric_closer_0982aff1:
+translate english eric_ann_sleep_not_eric_closer_b7823d18:
 
-    # Max_03 "Чёрт, у меня самая аппетитная мама на свете! Я бы с огромным удовольствием пораспускал с ней руки... Но лучше потихоньку уходить, пока она не проснулась." nointeract
-    Max_03 "Damn, I have the sexiest mom in the world! I'd love to get my hands on her... But I'd better leave quietly before she wakes up." nointeract
+    # Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Я бы с огромным удовольствием пораспускал с ней руки... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
+    Max_03 "{m}Damn, I have the sexiest mom in the world! I'd love to get my hands on her... But I'd better leave quietly before she wakes up.{/m}" nointeract
 
 # game/events/eric.rpy:776
-translate english eric_ann_sleep_not_eric_closer_5aa8a3a4:
+translate english eric_ann_sleep_not_eric_closer_e7f8bb49:
 
-    # Max_02 "Ухх! Так и хочется прижаться к этой обворожительной голой попке и шалить всю ночь... Но пора уходить, а то она может проснуться." nointeract
-    Max_02 "Oooh! I just want to snuggle up to that gorgeous naked ass and fool around all night... But it's time to go, or she might wake up." nointeract
+    # Max_02 "{m}Ухх! Так и хочется прижаться к этой обворожительной голой попке и шалить всю ночь... Но пора уходить, а то она может проснуться.{/m}" nointeract
+    Max_02 "{m}Oooh! I just want to snuggle up to that gorgeous naked ass and fool around all night... But it's time to go, or she might wake up.{/m}" nointeract
 
 # game/events/eric.rpy:778
-translate english eric_ann_sleep_not_eric_closer_947120a8:
+translate english eric_ann_sleep_not_eric_closer_2e9d5e9f:
 
-    # Max_05 "Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительная у неё киска! Только бы она сейчас не проснулась..." nointeract
-    Max_05 "Wow, the sight of those spread legs makes me forget that she's my mother... Her pussy is too tempting! I hope she doesn't wake up now..." nointeract
+    # Max_05 "{m}Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком соблазнительная у неё киска! Только бы она сейчас не проснулась...{/m}" nointeract
+    Max_05 "{m}Wow, the sight of those spread legs makes me forget that she's my mother... Her pussy is too tempting! I hope she doesn't wake up now...{/m}" nointeract
 
-# game/events/eric.rpy:795
-translate english eric_ann_shower_2822b9e1:
+# game/events/eric.rpy:796
+translate english eric_ann_shower_1aa7afa0:
 
-    # Max_00 "Похоже, мама вместе с Эриком принимают душ... Или что они там ещё могут делать?" nointeract
-    Max_00 "Looks like Mom and Eric are taking a shower...what else could they be doing there?" nointeract
+    # Max_00 "{m}Похоже, мама вместе с Эриком принимают душ... Или что они там ещё могут делать?{/m}" nointeract
+    Max_00 "{m}Looks like Mom and Eric are taking a shower...what else could they be doing there?{/m}" nointeract
 
 # game/events/eric.rpy:810
-translate english eric_ann_shower_ladder_2b325faf:
+translate english eric_ann_shower_ladder_76e8b72b:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Let's see what we got here..."
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Let's see what we got here...{/m}"
 
 # game/events/eric.rpy:821
-translate english eric_ann_shower_ladder_6725d9af:
+translate english eric_ann_shower_ladder_cea35296:
 
-    # Max_07 "Охх... Боже мой, какие нежности. Похоже, сейчас что-то начнётся..."
-    Max_07 "Ohh... Oh, my God, what tenderness. Looks like something's about to start..."
+    # Max_07 "{m}Охх... Боже мой, какие нежности. Похоже, сейчас что-то начнётся...{/m}"
+    Max_07 "{m}Ohh... Oh, my God, what tenderness. Looks like something's about to start...{/m}"
 
 # game/events/eric.rpy:825
-translate english eric_ann_shower_ladder_20e247fe:
+translate english eric_ann_shower_ladder_7b0a0d67:
 
-    # Max_10 "Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..."
-    Max_10 "My Mom's sucking it again... ! With such passion! Does she really like it that much, or does she love it? Although I don't even want to think about the possibility..."
+    # Max_10 "{m}Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется...{/m}"
+    Max_10 "{m}My Mom's sucking it again... ! With such passion! Does she really like it that much, or does she love it? Although I don't even want to think about the possibility...{/m}"
 
 # game/events/eric.rpy:827
-translate english eric_ann_shower_ladder_90b0887e:
+translate english eric_ann_shower_ladder_713e4b6e:
 
-    # Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!"
-    Max_09 "Oh, shit! Eric came right on Mom's face, like in some porno! And she likes it so much, she smiles and catches his cum with her mouth! Is she really that depraved?!"
+    # Max_09 "{m}Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!{/m}"
+    Max_09 "{m}Oh, shit! Eric came right on Mom's face, like in some porno! And she likes it so much, she smiles and catches his cum with her mouth! Is she really that depraved?!{/m}"
 
 # game/events/eric.rpy:830
-translate english eric_ann_shower_ladder_4ce9d959:
+translate english eric_ann_shower_ladder_89298c59:
 
-    # Max_09 "Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!"
-    Max_09 "Yeah, Eric's settling in well... Mom sucks him off with such pleasure, she can't get away! Does she really like sucking his stump?!"
+    # Max_09 "{m}Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!{/m}"
+    Max_09 "{m}Yeah, Eric's settling in well... Mom sucks him off with such pleasure, she can't get away! Does she really like sucking his stump?!{/m}"
 
 # game/events/eric.rpy:835
-translate english eric_ann_shower_ladder_993c77ee:
+translate english eric_ann_shower_ladder_bbf123bb:
 
-    # Max_09 "Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?"
-    Max_09 "Wow! What a passion Mom has for sucking Eric... And he doesn't seem to have enough and he's trying to put his dick deep in her mouth... Why does she let him do it, does she like to obey?"
+    # Max_09 "{m}Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?{/m}"
+    Max_09 "{m}Wow! What a passion Mom has for sucking Eric... And he doesn't seem to have enough and he's trying to put his dick deep in her mouth... Why does she let him do it, does she like to obey?{/m}"
 
 # game/events/eric.rpy:840
-translate english eric_ann_shower_ladder_c6081091:
+translate english eric_ann_shower_ladder_83ee9801:
 
-    # Max_08 "О Боже! Как бы я мечтал оказаться на месте это счастливого ублюдка! И всё равно, что она - моя мама... Когда её мокрая попка так красиво скачет на члене, голова начинает идти кругом!"
-    Max_08 "Oh, my God! I wish I could have been that lucky bastard! When her wet ass jumps so nicely on her dick, her head starts to bounce!"
+    # Max_08 "{m}О Боже! Как бы я мечтал оказаться на месте это счастливого ублюдка! И всё равно, что она - моя мама... Когда её мокрая попка так красиво скачет на члене, голова начинает идти кругом!{/m}"
+    Max_08 "{m}Oh, my God! I wish I could have been that lucky bastard! When her wet ass jumps so nicely on her dick, her head starts to bounce!{/m}"
 
 # game/events/eric.rpy:845
-translate english eric_ann_shower_ladder_fa236e0e:
+translate english eric_ann_shower_ladder_2ca95f17:
 
-    # Max_10 "Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку, а она ещё при этом ласкает свою и без того влажную киску... Да уж, только бы со стремянки не упасть от такого зрелища!"
-    Max_10 "Wow! That's what they do! Eric fucks Mom like some slut in the mirror, and she also caresses her already wet pussy... Yeah, as long as you don't fall off a ladder like that!"
+    # Max_10 "{m}Ничего себе! Вот это они вытворяют! Эрик трахает маму, разложив её у зеркала как какую-то шлюшку, а она ещё при этом ласкает свою и без того влажную киску... Да уж, только бы со стремянки не упасть от такого зрелища!{/m}"
+    Max_10 "{m}Wow! That's what they do! Eric fucks Mom like some slut in the mirror, and she also caresses her already wet pussy... Yeah, as long as you don't fall off a ladder like that!{/m}"
 
 # game/events/eric.rpy:852
-translate english eric_ann_shower_ladder_6bc8173a:
+translate english eric_ann_shower_ladder_c4969be1:
 
-    # Max_10 "Ого! Эрик долбит маму сзади с такой силой, что через стекло даже слышны шлепки о её попку! Похоже, она еле сдерживается, чтобы не кричать слишком громко..."
-    Max_10 "Wow! Eric's pounding Mom in the back with such force that you can even hear a slap on her ass through the glass! Looks like she can barely hold herself back from screaming too loud..."
+    # Max_10 "{m}Ого! Эрик долбит маму сзади с такой силой, что через стекло даже слышны шлепки о её попку! Похоже, она еле сдерживается, чтобы не кричать слишком громко...{/m}"
+    Max_10 "{m}Wow! Eric's pounding Mom in the back with such force that you can even hear a slap on her ass through the glass! Looks like she can barely hold herself back from screaming too loud...{/m}"
 
 # game/events/eric.rpy:859
-translate english eric_ann_shower_fin1_547d305b:
+translate english eric_ann_shower_fin1_6b60f91d:
 
-    # Max_08 "Чёрт возьми! Она приняла всю его сперму себе в рот и на лицо, и теперь с такой жадностью и удовольствием слизывает её с его члена... Охх... мама, а ведь ты та ещё развратница!"
-    Max_08 "Crap! She took all his sperm in her mouth and in her face, and now she licks it off his dick with such greed and pleasure... Ohh... Mom, you are such a pervert!"
+    # Max_08 "{m}Чёрт возьми! Она приняла всю его сперму себе в рот и на лицо, и теперь с такой жадностью и удовольствием слизывает её с его члена... Охх... мама, а ведь ты та ещё развратница!{/m}"
+    Max_08 "{m}Crap! She took all his sperm in her mouth and in her face, and now she licks it off his dick with such greed and pleasure... Ohh... Mom, you are such a pervert!{/m}"
 
 # game/events/eric.rpy:863
-translate english eric_ann_shower_fin2_7b69081a:
+translate english eric_ann_shower_fin2_0bd53c37:
 
-    # Max_10 "А вот и финал не заставил себя ждать! Эрик обкончал маме всё лицо и грудь, и она, похоже, очень довольна... улыбается... Охх... какая же она горячая и развратная!"
-    Max_10 "And here comes the finale! Eric finished on Mom's whole face and chest, and she seems very happy... smiling... Ohh... how hot and dirty she is!"
+    # Max_10 "{m}А вот и финал не заставил себя ждать! Эрик обкончал маме всё лицо и грудь, и она, похоже, очень довольна... улыбается... Охх... какая же она горячая и развратная!{/m}"
+    Max_10 "{m}And here comes the finale! Eric finished on Mom's whole face and chest, and she seems very happy... smiling... Ohh... how hot and dirty she is!{/m}"
 
 # game/events/eric.rpy:867
-translate english eric_ann_shower_end_90ff417e:
+translate english eric_ann_shower_end_63c0b6bb:
 
-    # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-    Max_00 "I don't want to, but before I get noticed, I'd better..."
+    # Max_00 "{m}Хоть и не хочется, но пока меня не заметили, лучше уходить...{/m}"
+    Max_00 "{m}I don't want to, but before I get noticed, I'd better...{/m}"
 
 # game/events/eric.rpy:871
-translate english eric_ann_shower_end_f00d8bbc:
+translate english eric_ann_shower_end_801d3976:
 
-    # Max_09 "Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину..."
-    Max_09 "They're all having fun in here but my lone bathroom camera can't capture all the action! It seems that I should install another camera so that my audience can see the whole picture..."
+    # Max_09 "{m}Кстати, они здесь во всю развлекаются и совершенно не попадают под ракурс моей камеры в ванной! Похоже, мне стоит установить ещё одну камеру, чтобы мои зрители видели всю происходящую здесь картину...{/m}"
+    Max_09 "{m}They're all having fun in here but my lone bathroom camera can't capture all the action! It seems that I should install another camera so that my audience can see the whole picture...{/m}"
 
-# game/events/eric.rpy:885
-translate english eric_ann_shower_start_peeping_1cdffa73:
+# game/events/eric.rpy:893
+translate english eric_ann_shower_start_peeping_bacc73be:
 
-    # Max_07 "Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим..." nointeract
-    Max_07 "Wow... Looks like there's more to it than just showering! I'm afraid to imagine what would happen if I got caught peeking... at this..." nointeract
-
-# game/events/eric.rpy:912
-translate english eric_ann_shower_alt_peepeng_d769a708:
-
-    # Max_10 "[undetect!t]Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется..." nointeract
-    Max_10 "[undetect!t]My Moms sucking it again With such passion! Did she really like doing it that much, or is it because she loves Eric? Although I don't even want to think about the second one..." nointeract
-
-# game/events/eric.rpy:914
-translate english eric_ann_shower_alt_peepeng_42177608:
-
-    # Max_09 "[undetect!t]Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!" nointeract
-    Max_09 "[undetect!t]Yeah, Eric's settling in well... Mom sucks him off with such pleasure, she can't get away! Does she really like sucking his stump?!" nointeract
-
-# game/events/eric.rpy:916
-translate english eric_ann_shower_alt_peepeng_5b560f45:
-
-    # Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
-    Max_04 "[undetect!t]Ohh... Eric's lucky... Mom's hands are so gentle and tender! Cant believe that's the only thing that makes her completely naked and wet body come..." nointeract
+    # Max_07 "{m}Вот это да... Похоже намечается что-то большее, чем просто принять душ! Боюсь даже представить, что будет, если меня поймают, пока я подглядываю... за этим...{/m}" nointeract
+    Max_07 "{m}Wow... Looks like there's more to it than just showering! I'm afraid to imagine what would happen if I got caught peeking... at this...{/m}" nointeract
 
 # game/events/eric.rpy:918
-translate english eric_ann_shower_alt_peepeng_065723ba:
+translate english eric_ann_shower_alt_peepeng_a9df0b41:
 
-    # Max_06 "[undetect!t]Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
-    Max_06 "[undetect!t]Crap! That's amazing! They seem so passionate about each other, they don't seem to care if someone sees them or not... And Mom seems to really like it!" nointeract
+    # Max_10 "[undetect!t]{m}Моя мама снова отсасывает этому... Эрику! Да с такой страстью! Ей что, действительно так нравится это делать или она его настолько любит? Хотя о втором мне даже думать не хочется...{/m}" nointeract
+    Max_10 "[undetect!t]{m}My Moms sucking it again With such passion! Did she really like doing it that much, or is it because she loves Eric? Although I don't even want to think about the second one...{/m}" nointeract
 
 # game/events/eric.rpy:920
-translate english eric_ann_shower_alt_peepeng_cedd144b:
+translate english eric_ann_shower_alt_peepeng_4bbef346:
 
-    # Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
-    Max_05 "[undetect!t]Wow! Eric's fucking Mom from behind like an animal...she seems to really like it, she's even grinding her ass against him!!" nointeract
+    # Max_09 "[undetect!t]{m}Да уж, устроился Эрик хорошо... Мама отсасывает ему с таким наслаждением, аж оторваться не может! Неужели ей действительно нравится сосать этот его огрызок?!{/m}" nointeract
+    Max_09 "[undetect!t]{m}Yeah, Eric's settling in well... Mom sucks him off with such pleasure, she can't get away! Does she really like sucking his stump?!{/m}" nointeract
 
-# game/events/eric.rpy:932
-translate english eric_ann_shower_alt_peepeng_c849c0ca:
+# game/events/eric.rpy:922
+translate english eric_ann_shower_alt_peepeng_c8bfd09c:
 
-    # Max_09 "Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!" nointeract
-    Max_09 "Damn it! Eric came on her face, like in some porno! Moreover, she likes it so much that she smiles and catches his sperm with her mouth! Is she so depraved?!" nointeract
+    # Max_04 "[undetect!t]{m}Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить...{/m}" nointeract
+    Max_04 "[undetect!t]{m}Ohh... Eric's lucky... Mom's hands are so gentle and tender! Cant believe that's the only thing that makes her completely naked and wet body come...{/m}" nointeract
 
-# game/events/eric.rpy:934
-translate english eric_ann_shower_alt_peepeng_925cd30e:
+# game/events/eric.rpy:924
+translate english eric_ann_shower_alt_peepeng_62ae8e11:
 
-    # Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
-    Max_01 "Yeah! Who'd doubt that Eric wouldn't last too long. Mom knows what she's doing! Okay, we gotta get out of here before they see me!" nointeract
+    # Max_06 "[undetect!t]{m}Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!{/m}" nointeract
+    Max_06 "[undetect!t]{m}Crap! That's amazing! They seem so passionate about each other, they don't seem to care if someone sees them or not... And Mom seems to really like it!{/m}" nointeract
 
-# game/events/eric.rpy:936
-translate english eric_ann_shower_alt_peepeng_b85f5146:
+# game/events/eric.rpy:926
+translate english eric_ann_shower_alt_peepeng_cd84b893:
 
-    # Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
-    Max_07 "Oh, shit... Eric's already finished... It's a good thing it's not inside... Lucky son of a bitch... And she's still smiling?! It's time for me to leave or they'll notice..." nointeract
+    # Max_05 "[undetect!t]{m}Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!{/m}" nointeract
+    Max_05 "[undetect!t]{m}Wow! Eric's fucking Mom from behind like an animal...she seems to really like it, she's even grinding her ass against him!!{/m}" nointeract
 
 # game/events/eric.rpy:938
-translate english eric_ann_shower_alt_peepeng_cc0c1868:
+translate english eric_ann_shower_alt_peepeng_745d1ff0:
 
-    # Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
-    Max_08 "He's already finished... Lucky bastard... splattered all over mom's back with his sperm! We've got to go, they're about to notice me..." nointeract
+    # Max_09 "{m}Вот чёрт! Эрик кончает маме прямо на лицо, как в каком-то порно! Причём, ей это настолько нравится, что она улыбается и ловит его сперму своим ртом! Неужели она настолько развратна?!{/m}" nointeract
+    Max_09 "{m}Damn it! Eric came on her face, like in some porno! Moreover, she likes it so much that she smiles and catches his sperm with her mouth! Is she so depraved?!{/m}" nointeract
 
-# game/events/eric.rpy:964
-translate english eric_ann_shower_closer_peepeng_5b560f45:
+# game/events/eric.rpy:940
+translate english eric_ann_shower_alt_peepeng_7fb09690:
 
-    # Max_04 "[undetect!t]Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить..." nointeract
-    Max_04 "[undetect!t]Ohh... Eric was lucky... After all, Mom has such tender and affectionate hands! Just the sight of her completely naked and wet body can make you cum..." nointeract
+    # Max_01 "{m}Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!{/m}" nointeract
+    Max_01 "{m}Yeah! Who'd doubt that Eric wouldn't last too long. Mom knows what she's doing! Okay, we gotta get out of here before they see me!{/m}" nointeract
 
-# game/events/eric.rpy:966
-translate english eric_ann_shower_closer_peepeng_065723ba:
+# game/events/eric.rpy:942
+translate english eric_ann_shower_alt_peepeng_75e47802:
 
-    # Max_06 "[undetect!t]Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!" nointeract
-    Max_06 "[undetect!t]Holy shit! They seem so taken with each other that they don't care if anyone sees them or not... And my mother seems to like it very much!" nointeract
+    # Max_07 "{m}Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят...{/m}" nointeract
+    Max_07 "{m}Oh, shit... Eric's already finished... It's a good thing it's not inside... Lucky son of a bitch... And she's still smiling?! It's time for me to leave or they'll notice...{/m}" nointeract
+
+# game/events/eric.rpy:944
+translate english eric_ann_shower_alt_peepeng_2f53b8ff:
+
+    # Max_08 "{m}Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят...{/m}" nointeract
+    Max_08 "{m}He's already finished... Lucky bastard... splattered all over mom's back with his sperm! We've got to go, they're about to notice me...{/m}" nointeract
 
 # game/events/eric.rpy:968
-translate english eric_ann_shower_closer_peepeng_cedd144b:
+translate english eric_ann_shower_closer_peepeng_c8bfd09c:
 
-    # Max_05 "[undetect!t]Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!" nointeract
-    Max_05 "[undetect!t]Wow! Eric's taking Mom from behind, so actively... And... it seems that she likes it very much, she even moves towards him... and languishes with passion!" nointeract
+    # Max_04 "[undetect!t]{m}Охх... Вот же Эрику повезло... Ведь у мамы такие нежные и ласковые руки! Уже только от одного вида её совершенно голого и мокрого тела можно кончить...{/m}" nointeract
+    Max_04 "[undetect!t]{m}Ohh... Eric was lucky... After all, Mom has such tender and affectionate hands! Just the sight of her completely naked and wet body can make you cum...{/m}" nointeract
 
-# game/events/eric.rpy:980
-translate english eric_ann_shower_closer_peepeng_925cd30e:
+# game/events/eric.rpy:970
+translate english eric_ann_shower_closer_peepeng_62ae8e11:
 
-    # Max_01 "Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!" nointeract
-    Max_01 "Yeah! Who'd doubt that Eric wouldn't last too long. Mom knows what she's doing! Okay, we gotta get out of here before they see me!" nointeract
+    # Max_06 "[undetect!t]{m}Охренеть! Вот это страсть! Кажется, они так увлечены друг другом, что им всё равно, увидит их кто-то или нет... И похоже, маме это очень нравится!{/m}" nointeract
+    Max_06 "[undetect!t]{m}Holy shit! They seem so taken with each other that they don't care if anyone sees them or not... And my mother seems to like it very much!{/m}" nointeract
 
-# game/events/eric.rpy:982
-translate english eric_ann_shower_closer_peepeng_b85f5146:
+# game/events/eric.rpy:972
+translate english eric_ann_shower_closer_peepeng_cd84b893:
 
-    # Max_07 "Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят..." nointeract
-    Max_07 "Oh, shit... Eric's already finished... It's a good thing it's not on Mom... Lucky son of a bitch... And she's still smiling?! It's time for me to leave or they'll notice..." nointeract
+    # Max_05 "[undetect!t]{m}Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!{/m}" nointeract
+    Max_05 "[undetect!t]{m}Wow! Eric's taking Mom from behind, so actively... And... it seems that she likes it very much, she even moves towards him... and languishes with passion!{/m}" nointeract
 
 # game/events/eric.rpy:984
-translate english eric_ann_shower_closer_peepeng_cc0c1868:
+translate english eric_ann_shower_closer_peepeng_7fb09690:
 
-    # Max_08 "Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят..." nointeract
-    Max_08 "Bloody hell... he's already finished... Lucky bastard... splattered all over Mom's back with his cum! We've got to go, before they notice me..." nointeract
+    # Max_01 "{m}Ну да! Кто бы сомневался, что Эрик не продержится слишком долго. Мама своё дело знает! Ладно, надо сматываться, пока они меня не заметили!{/m}" nointeract
+    Max_01 "{m}Yeah! Who'd doubt that Eric wouldn't last too long. Mom knows what she's doing! Okay, we gotta get out of here before they see me!{/m}" nointeract
+
+# game/events/eric.rpy:986
+translate english eric_ann_shower_closer_peepeng_75e47802:
+
+    # Max_07 "{m}Ох, чёрт... Эрик уже кончил... Хорошо, что не в маму... Счастливый сукин сын... И она ещё улыбается?! Пора бы мне уходить, а то ещё заметят...{/m}" nointeract
+    Max_07 "{m}Oh, shit... Eric's already finished... It's a good thing it's not on Mom... Lucky son of a bitch... And she's still smiling?! It's time for me to leave or they'll notice...{/m}" nointeract
+
+# game/events/eric.rpy:988
+translate english eric_ann_shower_closer_peepeng_2f53b8ff:
+
+    # Max_08 "{m}Чёрт возьми... он уже кончил... Счастливый ублюдок... забрызгал маме всю спину с попкой своей спермой! Нужно уходить, а то они вот-вот меня заметят...{/m}" nointeract
+    Max_08 "{m}Bloody hell... he's already finished... Lucky bastard... splattered all over Mom's back with his cum! We've got to go, before they notice me...{/m}" nointeract
 
 # game/events/eric.rpy:1002
 translate english eric_ann_shower_not_luck_cdfa03c1:
@@ -1530,89 +1530,89 @@ translate english sexed_lisa_lesson_3_762fcd5f:
     # Lisa_01 "Хорошо. Ну, я побежала..."
     Lisa_01 "Ok... I'm going."
 
-# game/events/eric.rpy:1331
-translate english first_jerk_balkon_22b77a79:
-
-    # Max_09 "Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 "Whoa, Eric! What's he doing in there, jacking off or something? Yes... Wow! Eric is standing in the middle of the night jerking off to Alice in her sleep! I didn't know Eric was a fan of that..."
-
 # game/events/eric.rpy:1332
-translate english first_jerk_balkon_028c8f53:
+translate english first_jerk_balkon_6094a2c7:
 
-    # Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..." nointeract
-    Max_03 "Maybe I should take a picture of him quietly next time! Just in case..." nointeract
+    # Max_09 "{m}Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого...{/m}"
+    Max_09 "{m}Whoa, Eric! What's he doing in there, jacking off or something? Yes... Wow! Eric is standing in the middle of the night jerking off to Alice in her sleep! I didn't know Eric was a fan of that...{/m}"
 
-# game/events/eric.rpy:1346
-translate english first_jerk_yard_b743b57a:
+# game/events/eric.rpy:1334
+translate english first_jerk_balkon_c14fd12f:
 
-    # Max_07 "Опа, Эрик! Что это он делает среди ночи у окна Алисы?!" nointeract
-    Max_07 "Whoa, Eric! What's he doing at Alice's window in the middle of the night?!" nointeract
+    # Max_03 "{m}Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай...{/m}" nointeract
+    Max_03 "{m}Maybe I should take a picture of him quietly next time! Just in case...{/m}" nointeract
 
-# game/events/eric.rpy:1352
-translate english first_jerk_yard_36a13914:
+# game/events/eric.rpy:1348
+translate english first_jerk_yard_24645ec4:
 
-    # Max_09 "Вот и он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого..."
-    Max_09 "There he is! What's he doing there, jerking off or something? Yes... Wow! Eric's standing in the middle of the night jerking off to Alice in her sleep! I didn't know Eric was a fan of that..."
+    # Max_07 "{m}Опа, Эрик! Что это он делает среди ночи у окна Алисы?!{/m}" nointeract
+    Max_07 "{m}Whoa, Eric! What's he doing at Alice's window in the middle of the night?!{/m}" nointeract
 
 # game/events/eric.rpy:1353
-translate english first_jerk_yard_028c8f53:
+translate english first_jerk_yard_351c6970:
 
-    # Max_03 "Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай..." nointeract
-    Max_03 "Maybe I should take a picture of him quietly next time! Just in case..." nointeract
+    # Max_09 "{m}Вот и он! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого...{/m}"
+    Max_09 "{m}There he is! What's he doing there, jerking off or something? Yes... Wow! Eric's standing in the middle of the night jerking off to Alice in her sleep! I didn't know Eric was a fan of that...{/m}"
 
-# game/events/eric.rpy:1375
-translate english jerk_balkon_f235bbdd:
+# game/events/eric.rpy:1355
+translate english first_jerk_yard_c14fd12f:
 
-    # Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!" nointeract
-    Max_07 "Eric keeps jerking off to Alice! How can he be bothered at this time of night?!" nointeract
+    # Max_03 "{m}Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай...{/m}" nointeract
+    Max_03 "{m}Maybe I should take a picture of him quietly next time! Just in case...{/m}" nointeract
 
-# game/events/eric.rpy:1388
-translate english jerk_balkon_63126f2e:
+# game/events/eric.rpy:1379
+translate english jerk_balkon_7882c2f1:
 
-    # Max_03 "Ага, Эрик здесь! Не устоял перед голой Алисой и дрочит прямо посреди её комнаты... Вот же грязное животное!" nointeract
-    Max_03 "Aha, Eric's here! He can't resist a naked Alice and is jerking off right in the middle of her room... What a dirty animal!" nointeract
+    # Max_07 "{m}Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!{/m}" nointeract
+    Max_07 "{m}Eric keeps jerking off to Alice! How can he be bothered at this time of night?!{/m}" nointeract
 
-# game/events/eric.rpy:1422
-translate english jerk_yard_f235bbdd:
+# game/events/eric.rpy:1406
+translate english jerk_balkon_3b98a2ff:
 
-    # Max_07 "Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!" nointeract
-    Max_07 "Eric keeps jerking off to Alice! How can he be bothered at this time of night?!" nointeract
+    # Max_03 "{m}Ага, Эрик здесь! Не устоял перед голой Алисой и дрочит прямо посреди её комнаты... Вот же грязное животное!{/m}" nointeract
+    Max_03 "{m}Aha, Eric's here! He can't resist a naked Alice and is jerking off right in the middle of her room... What a dirty animal!{/m}" nointeract
 
-# game/events/eric.rpy:1438
-translate english jerk_photohant1_0f4523b2:
+# game/events/eric.rpy:1423
+translate english jerk_yard_7882c2f1:
 
-    # Max_09 "Вот и он! Всё ещё дрочит... Да так жёско! Смотри, шышку не сотри... Хотя нет, лучше стирай!" nointeract
-    Max_09 "There he is! Still jerking off... So hard! Don't wipe it off... No, you better wash it!" nointeract
+    # Max_07 "{m}Эрик всё дрочит на Алису! И не лень ему вставать среди ночи для этого?!{/m}" nointeract
+    Max_07 "{m}Eric keeps jerking off to Alice! How can he be bothered at this time of night?!{/m}" nointeract
+
+# game/events/eric.rpy:1439
+translate english jerk_photohant1_7865ceac:
+
+    # Max_09 "{m}Вот и он! Всё ещё дрочит... Да так жёско! Смотри, шышку не сотри... Хотя нет, лучше стирай!{/m}" nointeract
+    Max_09 "{m}There he is! Still jerking off... So hard! Don't wipe it off... No, you better wash it!{/m}" nointeract
 
 # game/events/eric.rpy:1445
-translate english jerk_photohant1_9aed2e73:
+translate english jerk_photohant1_2f5f5cbd:
 
-    # Max_02 "О да! Такой отвратительный снимок явно может стать полезным для меня. Конечно, если правильно его использовать..."
-    Max_02 "Oh yes! Such a disgusting picture could obviously be useful to me. Of course, if used properly..."
+    # Max_02 "{m}О да! Такой отвратительный снимок явно может стать полезным для меня. Конечно, если правильно его использовать...{/m}"
+    Max_02 "{m}Oh yes! Such a disgusting picture could obviously be useful to me. Of course, if used properly...{/m}"
 
-# game/events/eric.rpy:1447
-translate english jerk_photohant1_9fa70f41:
+# game/events/eric.rpy:1448
+translate english jerk_photohant1_f18969bd:
 
-    # Max_09 "А если попробовать загнать Эрика в комнату Алисы?! Тогда бы у меня появился шанс сделать уже более определённый снимок, где видно на кого дрочит Эрик. Только вот как..." nointeract
-    Max_09 "What if I tried to get Eric into Alice's room?! Then I'd have a chance to take a more definitive picture of who Eric is jerking off to. Only how..." nointeract
+    # Max_09 "{m}А если попробовать загнать Эрика в комнату Алисы?! Тогда бы у меня появился шанс сделать уже более определённый снимок, где видно на кого дрочит Эрик. Только вот как...{/m}" nointeract
+    Max_09 "{m}What if I tried to get Eric into Alice's room?! Then I'd have a chance to take a more definitive picture of who Eric is jerking off to. Only how...{/m}" nointeract
 
-# game/events/eric.rpy:1462
-translate english jerk_photohant1_5893f935:
+# game/events/eric.rpy:1463
+translate english jerk_photohant1_7df01892:
 
-    # Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..." nointeract
-    Max_10 "By the time I was running, Eric had already left... Well, I'll catch him next time..." nointeract
+    # Max_10 "{m}Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз...{/m}" nointeract
+    Max_10 "{m}By the time I was running, Eric had already left... Well, I'll catch him next time...{/m}" nointeract
 
-# game/events/eric.rpy:1482
-translate english jerk_photohant2_52df7afd:
+# game/events/eric.rpy:1483
+translate english jerk_photohant2_8c6a080b:
 
-    # Max_05 "Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!" nointeract
-    Max_05 "You are so busted! With a dirty picture like that, if anything happens, we'll know everything... The main thing now is not to get caught!" nointeract
+    # Max_05 "{m}Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!{/m}" nointeract
+    Max_05 "{m}You are so busted! With a dirty picture like that, if anything happens, we'll know everything... The main thing now is not to get caught!{/m}" nointeract
 
-# game/events/eric.rpy:1496
-translate english jerk_photohant2_5893f935:
+# game/events/eric.rpy:1497
+translate english jerk_photohant2_7df01892:
 
-    # Max_10 "Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз..." nointeract
-    Max_10 "By the time I got there, Eric had already left... Well, I'll catch him next time..." nointeract
+    # Max_10 "{m}Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз...{/m}" nointeract
+    Max_10 "{m}By the time I got there, Eric had already left... Well, I'll catch him next time...{/m}" nointeract
 
 translate english strings:
 
@@ -1801,16 +1801,16 @@ translate english strings:
     new "{color=[lime]}{i}{b}Attention:{/b} Your relationship has improved significantly{/i}{/color}"
 
     # game/events/eric.rpy:320
-    old "Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно..."
-    new "I think Mom and Eric are watching a movie. Probably porn again..."
+    old "{m}Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно...{/m}"
+    new "{m}I think Mom and Eric are watching a movie. Probably porn again...{/m}"
 
     # game/events/eric.rpy:321
     old "Макс, мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?"
     new "Max, Eric and I are watching a movie. I would invite you, but it's not for children. Could you take a walk somewhere? And please don't peek. All right?"
 
     # game/events/eric.rpy:323
-    old "Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой..."
-    new "I think Mom and Eric are watching some kind of movie. I wonder what it is..."
+    old "{m}Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой...{/m}"
+    new "{m}I think Mom and Eric are watching some kind of movie. I wonder what it is...{/m}"
 
     # game/events/eric.rpy:324
     old "Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?"
@@ -1833,20 +1833,20 @@ translate english strings:
     new "Of course, Mom! {i}(Hide){/i}"
 
     # game/events/eric.rpy:353
-    old "Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику..."
-    new "Wow! That's interesting! And Mom, apparently, is going to suck off Eric..."
+    old "{m}Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику...{/m}"
+    new "{m}Wow! That's interesting! And Mom, apparently, is going to suck off Eric...{/m}"
 
     # game/events/eric.rpy:354
-    old "На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?"
-    new "The screen is already full of the most interesting things and Mom took off her towel! I would like to see this naked ass from a different angle... Should I come closer?"
+    old "{m}На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?{/m}"
+    new "{m}The screen is already full of the most interesting things and Mom took off her towel! I would like to see this naked ass from a different angle... Should I come closer?{/m}"
 
     # game/events/eric.rpy:356
-    old "Ого! На экране стало интереснее! А куда это мама так наклонилась?"
-    new "Wow! The screen got more interesting! What's Mom doing leaning like that?"
+    old "{m}Ого! На экране стало интереснее! А куда это мама так наклонилась?{/m}"
+    new "{m}Wow! The screen got more interesting! What's Mom doing leaning like that?{/m}"
 
     # game/events/eric.rpy:357
-    old "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?"
-    new "Wow! Eric pulled Mom's towel off and I see her naked ass! Maybe we should get closer."
+    old "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?{/m}"
+    new "{m}Wow! Eric pulled Mom's towel off and I see her naked ass! Maybe we should get closer.{/m}"
 
     # game/events/eric.rpy:358
     old "{i}подойти ближе{/i}"
@@ -1861,20 +1861,20 @@ translate english strings:
     new "{i}What kind of question is that? Absolutely!{/i}"
 
     # game/events/eric.rpy:387
-    old "Ого! На экране стало интереснее! А мама, вроде, снова начала дрочить Эрику..."
-    new "Wow! That's interesting! And Mom starting jerking off Eric again..."
+    old "{m}Ого! На экране стало интереснее! А мама, вроде, снова начала дрочить Эрику...{/m}"
+    new "{m}Wow! That's interesting! And Mom starting jerking off Eric again...{/m}"
 
     # game/events/eric.rpy:388
-    old "На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?"
-    new "There's a lot going on right now now! A Mom's thrown off her towel. It's a pity I can't see her breasts... Should I come closer?"
+    old "{m}На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?{/m}"
+    new "{m}There's a lot going on right now now! A Mom's thrown off her towel. It's a pity I can't see her breasts... Should I come closer?{/m}"
 
     # game/events/eric.rpy:390
-    old "Ого! На экране стало интереснее! А что это мама там делает?"
-    new "Wow! The screen got more interesting! What's Mom doing there?"
+    old "{m}Ого! На экране стало интереснее! А что это мама там делает?{/m}"
+    new "{m}Wow! The screen got more interesting! What's Mom doing there?{/m}"
 
     # game/events/eric.rpy:391
-    old "Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?"
-    new "Wow! Eric pulled off Mom's towel and I can see her naked breasts! Maybe we should get closer?"
+    old "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?{/m}"
+    new "{m}Wow! Eric pulled off Mom's towel and I can see her naked breasts! Maybe we should get closer?{/m}"
 
     # game/events/eric.rpy:422
     old "{i}тихо сматываться{/i}"
@@ -2169,7 +2169,7 @@ translate english lisa_eric_sex_ed_practice_practice_1_b112636c:
     Max_00 "Go ahead and try it..."
 
 # game/events/eric.rpy:1628
-translate english lisa_eric_sex_ed_practice_practice_1_254985a9:
+translate english lisa_eric_sex_ed_practice_practice_1_3ad9a6c7:
 
     # Eric_13 "Я вижу, что ты точно не уймёшься и будешь мне только мешать. До меня дошли некоторые слухи, Макс... О твоей \"хозяйственности\"... И я сделаю так, что это выйдет тебе боком."
     Eric_13 "I can see that you're certainly not going to give in and you're only going to get in my way. I've heard some rumors, Max... About your thriftiness... And I'm going to make it very difficult for you."
@@ -2574,3 +2574,210 @@ translate english lisa_eric_sex_ed_practice_practice_1_3ad9a6c7:
     # Eric_13 "Я вижу, что ты точно не уймёшься и будешь мне только мешать. До меня дошли некоторые слухи, Макс... О твоей \"хозяйственности\"... И я сделаю так, что это выйдет тебе боком."
     Eric_13 "I can see that you're certainly not going to give in and you're only going to get in my way. I've heard some rumors, Max... About your thriftiness... And I'm going to make it very difficult for you."
 
+# TODO: Translation updated at 2021-11-11 13:38
+
+# game/events/eric.rpy:693
+translate english eric_ann_sleep_56167bf9:
+
+    # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спойкойно его подставить...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:703
+translate english eric_ann_sleep_e02970a1:
+
+    # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спойкойно его подставить...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:884
+translate english eric_ann_shower_start_peeping_fc5db481:
+
+    # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+    Max_09 ""
+
+# game/events/eric.rpy:886
+translate english eric_ann_shower_start_peeping_dda24c4d:
+
+    # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
+    Max_01 "" nointeract
+
+# game/events/eric.rpy:1377
+translate english jerk_balkon_069d2e5a:
+
+    # Max_13 "{m}Вот чёрт! Я совсем забыл, что Эрик заходит в комнату к Алисе только тогда, когда она голая... Чтобы подставить Эрика, Алиса должна быть голой, иначе будет несостыковка со снимками и мне никто не поверит!{/m}" nointeract
+    Max_13 "" nointeract
+
+# game/events/eric.rpy:1395
+translate english jerk_balkon_93f9155e:
+
+    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спойкойно его подставить...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:1402
+translate english jerk_balkon_0492bc5e:
+
+    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спойкойно его подставить...{/m}" nointeract
+    Max_07 "" nointeract
+
+# game/events/eric.rpy:1843
+translate english start_eric_wallet_c1ca5e1e:
+
+    # Eric_00 "Было вкусно! Но прежде, чем мы разойдёмся, я бы хотел кое о чём рассказать... Это очень важно и отнеситесь к моим словам серьёзно!"
+    Eric_00 ""
+
+# game/events/eric.rpy:1844
+translate english start_eric_wallet_a9a3d262:
+
+    # Max_09 "Можно я пойду, а мне потом Лиза это расскажет?"
+    Max_09 ""
+
+# game/events/eric.rpy:1845
+translate english start_eric_wallet_6a754288:
+
+    # Ann_12 "Макс! Тебя это тоже касается. Точнее, именно тебя это и касается. Но пусть всё скажет Эрик..."
+    Ann_12 ""
+
+# game/events/eric.rpy:1846
+translate english start_eric_wallet_8deadb4d:
+
+    # Max_07 "Опять какую-то фигню придумали?"
+    Max_07 ""
+
+# game/events/eric.rpy:1847
+translate english start_eric_wallet_630fb780:
+
+    # Eric_09 "Что-то ты очень весел, Макс, для того, кто украл мой бумажник..."
+    Eric_09 ""
+
+# game/events/eric.rpy:1848
+translate english start_eric_wallet_fea122b6:
+
+    # Max_08 "Что? Ничего я не крал!"
+    Max_08 ""
+
+# game/events/eric.rpy:1849
+translate english start_eric_wallet_01db12a6:
+
+    # Ann_17 "Макс! У Эрика есть обоснованные подозрения и просто так такими обвинениями он бросаться не станет. Так что, давай не прикидывайся дурачком. Пока не поздно, нужно всё уладить."
+    Ann_17 ""
+
+# game/events/eric.rpy:1850
+translate english start_eric_wallet_8c91f040:
+
+    # Max_10 "Что уладить? Я ничего не брал!"
+    Max_10 ""
+
+# game/events/eric.rpy:1851
+translate english start_eric_wallet_074415cb:
+
+    # Eric_13 "Именно это и сказал бы вор! В общем, в бумажнике было $ 25 000 и теперь ты должен их вернуть. Я даю тебе неделю... Как только это время истечёт, мы повторим этот разговор на этом месте и если ты не вернёшь деньги, то точно отправишься в военный лагерь. Всё понял?"
+    Eric_13 ""
+
+# game/events/eric.rpy:1852
+translate english start_eric_wallet_bb073fbf:
+
+    # Max_15 "Ты эту сумму с потолка взял?! А почему не миллион или миллиард?"
+    Max_15 ""
+
+# game/events/eric.rpy:1853
+translate english start_eric_wallet_970e5f65:
+
+    # Ann_16 "Макс! Ты как со взрослыми разговариваешь? Если Эрик говорит, значит точно уверен в твоей виновности. Так что, давай без истерик!"
+    Ann_16 ""
+
+# game/events/eric.rpy:1854
+translate english start_eric_wallet_cf89d297:
+
+    # Max_16 "Так, а какие у него доказательства? Он же врёт!"
+    Max_16 ""
+
+# game/events/eric.rpy:1855
+translate english start_eric_wallet_eed33a57:
+
+    # Eric_14 "Ну а кто тут у нас ещё девочек разными подарками задаривает? Если прикинуть, то сумма уже приличная набегает... Или хочешь сказать, что ты в интернете столько умудряешься зарабатывать? В таком случае покажи нам, чем ты там занимаешься!"
+    Eric_14 ""
+
+# game/events/eric.rpy:1856
+translate english start_eric_wallet_4520c649:
+
+    # Max_10 "Нет, там ничего особенного... Так, просто халтурка."
+    Max_10 ""
+
+# game/events/eric.rpy:1857
+translate english start_eric_wallet_75289435:
+
+    # Eric_09 "Мой бумажник пропал ещё давно и именно здесь. Я об этом ничего не говорил, потому что хотел посмотреть, у кого и что начнёт появляться. Так что это ты, Макс! Без вариантов! И сумма, которую я прошу вернуть, названа уже с примерным вычетом того, что ты потратил."
+    Eric_09 ""
+
+# game/events/eric.rpy:1858
+translate english start_eric_wallet_424e7e6c:
+
+    # Max_17 "Мам!!! Меня подставляют!"
+    Max_17 ""
+
+# game/events/eric.rpy:1859
+translate english start_eric_wallet_1833e925:
+
+    # Ann_18 "Всё, Макс. Мне это надоело! Твоё слово против слова Эрика. И поверь, у тебя нет шансов. Так что, признайся и верни то, что он просит. Больше я ничего слышать не хочу. Закончили!"
+    Ann_18 ""
+
+# game/events/eric.rpy:1860
+translate english start_eric_wallet_40074965:
+
+    # Max_11 "Да как так-то?!"
+    Max_11 ""
+
+# game/events/eric.rpy:1901
+translate english start_eric_wallet_aaaab0c1:
+
+    # Eric_01 "Ты уж извини... Такое следовало бы решить с глазу на глаз, но я решил, что твоя семья должна знать, что ты за человек."
+    Eric_01 ""
+
+# game/events/eric.rpy:1902
+translate english start_eric_wallet_a0a5454a:
+
+    # Max_15 "Я не брал твои деньги! Как это всё понимать?!"
+    Max_15 ""
+
+# game/events/eric.rpy:1903
+translate english start_eric_wallet_11bfa182:
+
+    # Eric_03 "Не знаю, не знаю... Мне вот кажется, что брал! И предлагаю тебе их вернуть при всех, перед ужином. Теперь веришь, что я могу создавать проблемы?"
+    Eric_03 ""
+
+# game/events/eric.rpy:1904
+translate english start_eric_wallet_8132910c:
+
+    # Max_16 "Да пошёл ты..."
+    Max_16 ""
+
+# game/events/eric.rpy:1911
+translate english start_eric_wallet_7db38010:
+
+    # Max_09 "{m}Ну всё! Он меня достал! Так позорить меня перед всеми... Даже если я дам ему деньги, то все уже на 100%% будут считать меня вором и обманщиком. А значит пришло время избавляться от Эрика!{/m}"
+    Max_09 ""
+
+# game/events/eric.rpy:1912
+translate english start_eric_wallet_53c2a5c1:
+
+    # Max_07 "{m}Итак, у меня есть две фотографии, как Эрик дрочит... И на одной из них даже видно на кого! Но чтобы не облажаться, лучше никому не показывать эти фотографии, по крайней мере пока. Мои сёстры наверняка уже не на моей стороне, а потому увидев эти снимки, запросто могут меня сдать и как вы думаете кому... Да, сраному Эрику!{/m}"
+    Max_07 ""
+
+# game/events/eric.rpy:1913
+translate english start_eric_wallet_21b8e72f:
+
+    # Max_14 "{m}Для начала, мне стоит попробовать поговорить с ними, чтобы понять, насколько всё плохо и есть ли у меня шансы выправить отношения с ними...{/m}"
+    Max_14 ""
+
+translate english strings:
+
+    # game/events/eric.rpy:692
+    old "{i}затаиться на полчаса{/i}"
+    new ""
+
+    # game/events/eric.rpy:702
+    old "{i}следить за Эриком через скрытые камеры{/i}"
+    new ""
+
+    # game/events/eric.rpy:1895
+    old "{r}Отношения Макса с семьёй значительно ухудшились. Они расстроены и не доверяют ему.{/r}"
+    new ""

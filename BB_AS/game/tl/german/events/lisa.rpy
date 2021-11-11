@@ -1,34 +1,34 @@
 ﻿# TODO: Translation updated at 2021-09-01 17:03
 
-# game/events/lisa.rpy:23
-translate german lisa_shower_1532bb65:
+# game/events/lisa.rpy:26
+translate german lisa_shower_4cc15313:
 
-    # Max_00 "Лиза сейчас принимает душ..." nointeract
-    Max_00 "Lisa ist unter der Dusche..." nointeract
+    # Max_00 "{m}Лиза сейчас принимает душ...{/m}" nointeract
+    Max_00 "{m}Lisa ist unter der Dusche...{/m}" nointeract
 
-# game/events/lisa.rpy:28
-translate german lisa_shower_97ede92e:
+# game/events/lisa.rpy:30
+translate german lisa_shower_bef35b29:
 
-    # Max_14 "Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше."
-    Max_14 "Lisa hat mich schon beim Spähen erwischt. Sie drohte damit, es Mom zu erzählen. Ich will nicht riskieren, sie noch wütender zu machen."
+    # Max_14 "{m}Лиза уже поймала меня на подглядывании. Грозилась рассказать маме. Не стоит злить её ещё больше.{/m}"
+    Max_14 "{m}Lisa hat mich schon beim Spähen erwischt. Sie drohte damit, es Mom zu erzählen. Ich will nicht riskieren, sie noch wütender zu machen.{/m}"
 
-# game/events/lisa.rpy:31
-translate german lisa_shower_309d9d70:
+# game/events/lisa.rpy:33
+translate german lisa_shower_e5bfe1e2:
 
-    # Max_09 "Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз."
-    Max_09 "Lisa hat mich fast beim Spannen erwischt. Zum Glück bin ich rechtzeitig entkommen. Ich will es nicht noch einmal riskieren."
+    # Max_09 "{m}Сегодня я уже чуть не попался Лизе при подглядывании. Повезло, что успел вовремя сбежать. Не стоит рисковать ещё раз.{/m}"
+    Max_09 "{m}Lisa hat mich fast beim Spannen erwischt. Zum Glück bin ich rechtzeitig entkommen. Ich will es nicht noch einmal riskieren.{/m}"
 
-# game/events/lisa.rpy:34
-translate german lisa_shower_854c3ca9:
+# game/events/lisa.rpy:36
+translate german lisa_shower_1e033770:
 
-    # Max_01 "Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз."
-    Max_01 "Ich habe Lisa heute schon beobachtet und bin nicht erwischt worden. Ich will mein Glück nicht strapazieren."
+    # Max_01 "{m}Сегодня я уже подсматривал за Лизой. Повезло, что она меня не заметила. Не стоит рисковать ещё раз.{/m}"
+    Max_01 "{m}Ich habe Lisa heute schon beobachtet und bin nicht erwischt worden. Ich will mein Glück nicht strapazieren.{/m}"
 
-# game/events/lisa.rpy:40
-translate german lisa_shower_791d34d9:
+# game/events/lisa.rpy:43
+translate german lisa_shower_21893e03:
 
-    # Max_09 "Кажется, Лиза что-то делает в ванной..." nointeract
-    Max_09 "Sieht aus, als wäre Lisa in der Badewanne..." nointeract
+    # Max_09 "{m}Кажется, Лиза что-то делает в ванной...{/m}" nointeract
+    Max_09 "{m}Sieht aus, als wäre Lisa in der Badewanne...{/m}" nointeract
 
 # game/events/lisa.rpy:43
 translate german lisa_shower_7a2afa4f:
@@ -48,83 +48,83 @@ translate german lisa_shower_d84f6a90:
     # Lisa "{b}Лиза:{/b} Нет, Макс. Жди за дверью. Я скоро!" nointeract
     Lisa "{b}Lisa:{/b} Nein, Max. Warte noch ein bisschen, ich bin fast fertig!" nointeract
 
-# game/events/lisa.rpy:62
-translate german lisa_shower_8d94a43d:
+# game/events/lisa.rpy:64
+translate german lisa_shower_44635170:
 
-    # Max_10 "Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное..."
-    Max_10 "Ich möchte noch einen Blick auf meine nackte Schwester werfen, aber ich habe ihr noch nicht gegeben, was ich ihr versprochen habe..."
+    # Max_10 "{m}Хочется, конечно, ещё разок взглянуть на голую сестрёнку, но я ещё не отдал ей обещанное...{/m}"
+    Max_10 "{m}Ich möchte noch einen Blick auf meine nackte Schwester werfen, aber ich habe ihr noch nicht gegeben, was ich ihr versprochen habe...{/m}"
 
-# game/events/lisa.rpy:75
-translate german lisa_shower_ladder_2b325faf:
+# game/events/lisa.rpy:77
+translate german lisa_shower_ladder_76e8b72b:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Mal sehen, was wir hier haben..."
-
-# game/events/lisa.rpy:90
-translate german lisa_shower_ladder_76d51683:
-
-    # Max_03 "Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!"
-    Max_03 "Toll! Lisa sieht in diesem Morgenmantel sehr einladend aus... Vor allem, wenn man ihre Brüste so deutlich sehen kann!"
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Mal sehen, was wir hier haben...{/m}"
 
 # game/events/lisa.rpy:92
-translate german lisa_shower_ladder_86046798:
+translate german lisa_shower_ladder_370767aa:
 
-    # Max_07 "О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!"
-    Max_07 "Oh, ja! Meine charmante Schwester in Höschen... Ich will einfach nur reinkommen und es ihr von ihrem schönen Arsch ziehen!"
+    # Max_03 "{m}Класс! Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки!{/m}"
+    Max_03 "{m}Toll! Lisa sieht in diesem Morgenmantel sehr einladend aus... Vor allem, wenn man ihre Brüste so deutlich sehen kann!{/m}"
 
 # game/events/lisa.rpy:94
-translate german lisa_shower_ladder_595bd709:
+translate german lisa_shower_ladder_d5ff7920:
 
-    # Max_06 "Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает..."
-    Max_06 "Wow! Es kann ein wirklich schöner Morgen sein, wenn man Lisa bewundern kann! Ja... ihr Körper ist hypnotisierend..."
+    # Max_07 "{m}О, да! Моя обворожительная сестрёнка в одних трусиках... Так и хочется зайти и стянуть их с её прекрасной попки!{/m}"
+    Max_07 "{m}Oh, ja! Meine charmante Schwester in Höschen... Ich will einfach nur reinkommen und es ihr von ihrem schönen Arsch ziehen!{/m}"
 
-# game/events/lisa.rpy:99
-translate german lisa_shower_ladder_f790b709:
+# game/events/lisa.rpy:96
+translate german lisa_shower_ladder_d17edcf4:
 
-    # Max_07 "Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру..."
-    Max_07 "Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren..."
+    # Max_06 "{m}Ого! Утро может быть действительно очень добрым, если удаётся полюбоваться совершенно голенькой Лизой! Да... её тело завораживает...{/m}"
+    Max_06 "{m}Wow! Es kann ein wirklich schöner Morgen sein, wenn man Lisa bewundern kann! Ja... ihr Körper ist hypnotisierend...{/m}"
 
-# game/events/lisa.rpy:100
-translate german lisa_shower_ladder_90ff417e:
+# game/events/lisa.rpy:101
+translate german lisa_shower_ladder_1409147d:
 
-    # Max_00 "Хоть и не хочется, но пока меня не заметили, лучше уходить..."
-    Max_00 "Ich will nicht, aber bevor ich auffalle, sollte ich lieber..."
+    # Max_07 "{m}Мои зрители явно пропускают много всего интересного! Мне однозначно стоит установить сюда ещё одну камеру...{/m}"
+    Max_07 "{m}Meine Zuschauer verpassen eindeutig eine Menge toller Sachen! Ich sollte hier auf jeden Fall eine weitere Kamera installieren...{/m}"
 
-# game/events/lisa.rpy:114
-translate german lisa_shower_start_peeping_f30ef1eb:
+# game/events/lisa.rpy:102
+translate german lisa_shower_ladder_63c0b6bb:
 
-    # Max_07 "Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила..." nointeract
-    Max_07 "Perfekt! Meine kleine Schwester duscht gerade... es ist eine schöne Aussicht, solange sie mich nicht sieht..." nointeract
+    # Max_00 "{m}Хоть и не хочется, но пока меня не заметили, лучше уходить...{/m}"
+    Max_00 "{m}Ich will nicht, aber bevor ich auffalle, sollte ich lieber...{/m}"
 
-# game/events/lisa.rpy:141
-translate german lisa_shower_alt_peepeng_022529c8:
+# game/events/lisa.rpy:123
+translate german lisa_shower_start_peeping_babc130b:
 
-    # Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
-    Max_02 "[undetect!t]Lisa ist so nass! Ihre Figur und ihr strammer Körper sind so heiß... Ich würde so gerne mit meinen Händen darüber fahren..."
+    # Max_07 "{m}Отлично! Моя младшая сестрёнка принимает душ... Даже видно кое-что... Много кое-чего! Только бы она меня не заметила...{/m}" nointeract
+    Max_07 "{m}Perfekt! Meine kleine Schwester duscht gerade... es ist eine schöne Aussicht, solange sie mich nicht sieht...{/m}" nointeract
 
-# game/events/lisa.rpy:143
-translate german lisa_shower_alt_peepeng_42f03b58:
+# game/events/lisa.rpy:147
+translate german lisa_shower_alt_peepeng_8578463f:
 
-    # Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-    Max_03 "[undetect!t]Oh, ja! Das Wasser umspült ihren süßen Arsch, ich muss aufpassen, dass ich nichts verpasse..."
+    # Max_02 "[undetect!t]{m}Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!{/m}"
+    Max_02 "[undetect!t]{m}Lisa ist so nass! Ihre Figur und ihr strammer Körper sind so heiß... Ich würde so gerne mit meinen Händen darüber fahren...{/m}"
 
-# game/events/lisa.rpy:158
-translate german lisa_shower_closer_peepeng_022529c8:
+# game/events/lisa.rpy:149
+translate german lisa_shower_alt_peepeng_cd01369c:
 
-    # Max_02 "[undetect!t]Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!"
-    Max_02 "[undetect!t]Lisa ist so nass! Ihre Figur und ihr straffer Körper sind so heiß... Ich würde sie am liebsten mit meinen Händen überall berühren..."
+    # Max_03 "[undetect!t]{m}О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь...{/m}"
+    Max_03 "[undetect!t]{m}Oh, ja! Das Wasser umspült ihren süßen Arsch, ich muss aufpassen, dass ich nichts verpasse...{/m}"
 
-# game/events/lisa.rpy:160
-translate german lisa_shower_closer_peepeng_42f03b58:
+# game/events/lisa.rpy:162
+translate german lisa_shower_closer_peepeng_8578463f:
 
-    # Max_03 "[undetect!t]О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь..."
-    Max_03 "[undetect!t]Oh, ja! Das Wasser läuft ihr über ihren süßen Arsch, ich muss sie im Auge behalten..."
+    # Max_02 "[undetect!t]{m}Лиза вся такая мокренькая... класс! Фигурка и всё остальное у неё – что надо... Как же хочется потрогать!{/m}"
+    Max_02 "[undetect!t]{m}Lisa ist so nass! Ihre Figur und ihr straffer Körper sind so heiß... Ich würde sie am liebsten mit meinen Händen überall berühren...{/m}"
 
-# game/events/lisa.rpy:177
-translate german lisa_shower_not_luck_e8e13c34:
+# game/events/lisa.rpy:164
+translate german lisa_shower_closer_peepeng_cd01369c:
 
-    # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\nО нет! Похоже, она что-то заметила... Надо бежать!"
-    Max_12 "{color=[orange]}{i}Ich glaube, Lisa ist misstrauisch geworden!{/i}{/color}\nOh, nein! Sieht aus, als hätte sie mich bemerkt... Zeit zu verschwinden!"
+    # Max_03 "[undetect!t]{m}О, да! За тем, как вода стекает по её обворожительной попке, хочется смотреть не отрываясь...{/m}"
+    Max_03 "[undetect!t]{m}Oh, ja! Das Wasser läuft ihr über ihren süßen Arsch, ich muss sie im Auge behalten...{/m}"
+
+# game/events/lisa.rpy:179
+translate german lisa_shower_not_luck_76384340:
+
+    # Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\n{m}О нет! Похоже, она что-то заметила... Надо бежать!{/m}"
+    Max_12 "{color=[orange]}{i}Ich glaube, Lisa ist misstrauisch geworden!{/i}{/color}\n{m}Oh, nein! Sieht aus, als hätte sie mich bemerkt... Zeit zu verschwinden!{/m}"
 
 # game/events/lisa.rpy:202
 translate german lisa_shower_pinded_aded2cb3:
@@ -696,59 +696,59 @@ translate german lisa_dressed_repetitor_6d6b727b:
     # Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..." nointeract
     Max_09 "Lisa scheint irgendwo hinzugehen, denn die Tür ist geschlossen..." nointeract
 
-# game/events/lisa.rpy:748
-translate german lisa_bath_96660cea:
+# game/events/lisa.rpy:1241
+translate german lisa_bath_2d4c2fc0:
 
-    # Max_00 "В это время Лиза обычно плескается в ванне..." nointeract
-    Max_00 "Um diese Zeit ist Lisa meistens in der Badewanne..." nointeract
+    # Max_00 "{m}В это время Лиза обычно плескается в ванне...{/m}" nointeract
+    Max_00 "{m}Um diese Zeit ist Lisa meistens in der Badewanne...{/m}" nointeract
 
-# game/events/lisa.rpy:757
-translate german lisa_bath_26dcc088:
+# game/events/lisa.rpy:1249
+translate german lisa_bath_19da9af2:
 
-    # Max_00 "Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить..."
-    Max_00 "Ich glaube, Lisa nimmt ein Bad. Schade, dass ich hinter dem Milchglas nicht viel sehen kann. Noch näher ranzugehen ist zu riskant, sie kann mich bemerken..."
+    # Max_00 "{m}Кажется, Лиза и правда принимает ванну. Жаль, что из-за матового стекла почти ничего не видно. Но ближе подойти опасно - может заметить...{/m}"
+    Max_00 "{m}Ich glaube, Lisa nimmt ein Bad. Schade, dass ich hinter dem Milchglas nicht viel sehen kann. Noch näher ranzugehen ist zu riskant, sie kann mich bemerken...{/m}"
 
-# game/events/lisa.rpy:758
-translate german lisa_bath_f77c44a2:
+# game/events/lisa.rpy:1250
+translate german lisa_bath_ad0a8c77:
 
-    # Max_09 "Нужно что-нибудь придумать..."
-    Max_09 "Ich muss mir etwas einfallen lassen..."
+    # Max_09 "{m}Нужно что-нибудь придумать...{/m}"
+    Max_09 "{m}Ich muss mir etwas einfallen lassen...{/m}"
 
-# game/events/lisa.rpy:764
-translate german lisa_bath_6a58c36d:
+# game/events/lisa.rpy:1256
+translate german lisa_bath_4a929722:
 
-    # Max_01 "Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное..."
-    Max_01 "Ich hoffe, niemand stellt in Frage, warum hier eine Trittleiter steht... sie dient nur zu Ermittlungszwecken... mal sehen, womit wir es zu tun haben."
+    # Max_01 "{m}Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное...{/m}"
+    Max_01 "{m}Ich hoffe, niemand stellt in Frage, warum hier eine Trittleiter steht... sie dient nur zu Ermittlungszwecken... mal sehen, womit wir es zu tun haben.{/m}"
 
-# game/events/lisa.rpy:776
-translate german lisa_bath_ladder_2b325faf:
+# game/events/lisa.rpy:1268
+translate german lisa_bath_ladder_76e8b72b:
 
-    # Max_04 "Посмотрим, что у нас тут..."
-    Max_04 "Schauen wir mal, was wir hier haben..."
+    # Max_04 "{m}Посмотрим, что у нас тут...{/m}"
+    Max_04 "{m}Schauen wir mal, was wir hier haben...{/m}"
 
-# game/events/lisa.rpy:786
-translate german lisa_bath_ladder_e4d05fa2:
+# game/events/lisa.rpy:1279
+translate german lisa_bath_ladder_134cfe35:
 
-    # Max_03 "Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!" nointeract
-    Max_03 "Ich glaube, Lisa ist gerade dabei, ein Bad zu nehmen... Oh ja, der unschuldige Körper meiner kleinen Schwester ist so verlockend!" nointeract
+    # Max_03 "{m}Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!{/m}" nointeract
+    Max_03 "{m}Ich glaube, Lisa ist gerade dabei, ein Bad zu nehmen... Oh ja, der unschuldige Körper meiner kleinen Schwester ist so verlockend!{/m}" nointeract
 
-# game/events/lisa.rpy:792
-translate german lisa_bath_ladder_7e0784ba:
+# game/events/lisa.rpy:1285
+translate german lisa_bath_ladder_3fb74fbf:
 
-    # Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..." nointeract
-    Max_05 "Ich habe Glück! Lisa zeigt ihre nackten Brüste, als ob es Absicht wäre! Natürlich weiß sie nicht, dass ich hier bin..." nointeract
+    # Max_05 "{m}Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было...{/m}" nointeract
+    Max_05 "{m}Ich habe Glück! Lisa zeigt ihre nackten Brüste, als ob es Absicht wäre! Natürlich weiß sie nicht, dass ich hier bin...{/m}" nointeract
 
-# game/events/lisa.rpy:801
-translate german lisa_bath_ladder_7e0784ba_1:
+# game/events/lisa.rpy:1294
+translate german lisa_bath_ladder_3fb74fbf_1:
 
-    # Max_05 "Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было..." nointeract
-    Max_05 "Ich habe Glück! Lisa zeigt ihre nackten Brüste, als ob es Absicht wäre! Natürlich weiß sie nicht, dass ich hier bin..." nointeract
+    # Max_05 "{m}Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было...{/m}" nointeract
+    Max_05 "{m}Ich habe Glück! Lisa zeigt ihre nackten Brüste, als ob es Absicht wäre! Natürlich weiß sie nicht, dass ich hier bin...{/m}" nointeract
 
-# game/events/lisa.rpy:807
-translate german lisa_bath_ladder_af2181e8:
+# game/events/lisa.rpy:1300
+translate german lisa_bath_ladder_bedd90b4:
 
-    # Max_07 "Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота..." nointeract
-    Max_07 "Eh! Ich schlafe im selben Zimmer wie dieser heiße Feger! Sehr schön..." nointeract
+    # Max_07 "{m}Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота...{/m}" nointeract
+    Max_07 "{m}Eh! Ich schlafe im selben Zimmer wie dieser heiße Feger! Sehr schön...{/m}" nointeract
 
 # game/events/lisa.rpy:816
 translate german lisa_bath_knock_b1c84f9a:
@@ -1240,13 +1240,13 @@ translate german lisa_romantic_movie_r_6a31b0c6:
 translate german lisa_romantic_movie_r_53814219:
 
     # Lisa_13 "Ага, развалился тут со своим членом на всю кровать и довольный! А это вообще-то наказание!"
-    Lisa_13 "Ja, er liegt fröhlich da mit seinem Schwanz draußen! Und das ist eigentlich eine Bestrafung!"
+    Lisa_13 "Ja, du liegst fröhlich hier mit deinem Schwanz draußen! Und das ist eigentlich eine Bestrafung!"
 
 # game/events/lisa.rpy:1046
 translate german lisa_romantic_movie_r_24f4c2ff:
 
     # Max_07 "Ну а что я сделаю, если они там решили поразвлечься?!"
-    Max_07 "Nun, was soll ich tun, wenn er draußen sind und Spaß habt?!"
+    Max_07 "Nun, was soll ich tun, wenn er draußen ist und wir uns amysieren?!"
 
 # game/events/lisa.rpy:1047
 translate german lisa_romantic_movie_r_754adc77:
@@ -1942,7 +1942,7 @@ translate german lisa_sudden_dressing_3e816722:
 translate german lisa_sudden_dressing_a9de2a0b:
 
     # Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
-    Lisa_01 "Und du brauchst ihn jetzt gerade nicht? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
+    Lisa_01 "Und du brauchst ihn jetzt gerade, nicht wahr? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
 
 # game/events/lisa.rpy:1505
 translate german lisa_sudden_dressing_4671244c:
@@ -1960,7 +1960,7 @@ translate german lisa_sudden_dressing_89f1263a:
 translate german lisa_sudden_dressing_a9de2a0b_1:
 
     # Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
-    Lisa_01 "Und du brauchst ihn jetzt gerade nicht? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
+    Lisa_01 "Und du brauchst ihn jetzt gerade, nicht wahr? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
 
 # game/events/lisa.rpy:1517
 translate german lisa_sudden_dressing_4671244c_1:
@@ -2044,7 +2044,7 @@ translate german lisa_sudden_dressing_lvl_3_01edfdc0:
 translate german lisa_sudden_dressing_lvl_3_53bb992b:
 
     # Lisa_01 "Думаешь, она у меня такая, чтобы тебя постоянно радовать? А вот и нет! Дай одеться спокойно..."
-    Lisa_01 "Glaubst du, ich müsste einen die dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
+    Lisa_01 "Glaubst du, ich müsste dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
 
 # game/events/lisa.rpy:1562
 translate german lisa_sudden_dressing_lvl_3_f331a21c:
@@ -2102,7 +2102,7 @@ translate german strings:
 
     # game/events/lisa.rpy:1491
     old "Да легко! Не буду мешать..."
-    new "Ganz einfach! Ich will dich nicht stören..."
+    new "Alles klar! Ich will dich nicht stören..."
 
     # game/events/lisa.rpy:1493
     old "Не буду. Честное слово!"
@@ -2168,11 +2168,11 @@ translate german lisa_dressed_69f4873f:
     # Max_09 "{m}Сейчас Лиза должна собираться в школу...{/m}" nointeract
     Max_09 "{m}Jetzt sollte Lisa sich für die Schule fertig machen...{/m}" nointeract
 
-# game/events/lisa.rpy:789
-translate german lisa_dressed_be364192:
+# game/events/lisa.rpy:798
+translate german lisa_dressed_ad44f284:
 
-    # Max_01 "Ого, какой вид! Вот это я удачно заглянул!" nointeract
-    Max_01 "Das ist ein schöner Anblick! Ich habe mir eine gute Zeit zum Beobachten ausgesucht!" nointeract
+    # Max_01 "{m}Ого, какой вид! Вот это я удачно заглянул!{/m}" nointeract
+    Max_01 "{m}Das ist ein schöner Anblick! Ich habe mir eine gute Zeit zum Beobachten ausgesucht!{/m}" nointeract
 
 # game/events/lisa.rpy:805
 translate german lisa_dressed_get_notebook0_02a8d3e8:
@@ -2262,7 +2262,7 @@ translate german lisa_dressed_moment0_930f8d87:
 translate german lisa_dressed_moment0_a9de2a0b:
 
     # Lisa_01 "И сдался он тебе прямо сейчас? Я же не буду одеваться целый час." nointeract
-    Lisa_01 "Und du brauchst ihn jetzt gerade nicht? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
+    Lisa_01 "Und du brauchst ihn jetzt gerade, nicht wahr? Es ist ja nicht so, dass ich mich eine Stunde lang anziehen muss." nointeract
 
 # game/events/lisa.rpy:882
 translate german lisa_dressed_moment0_ce7b5650:
@@ -2376,7 +2376,7 @@ translate german lisa_dressed_lvl_3_01edfdc0:
 translate german lisa_dressed_lvl_3_53bb992b:
 
     # Lisa_01 "Думаешь, она у меня такая, чтобы тебя постоянно радовать? А вот и нет! Дай одеться спокойно..."
-    Lisa_01 "Glaubst du, ich müsste einen die dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
+    Lisa_01 "Glaubst du, ich müsste dich zufriedenstellen? Nein, das muss ich nicht! Lass mich in Ruhe anziehen..."
 
 # game/events/lisa.rpy:971
 translate german lisa_dressed_lvl_3_f331a21c:
@@ -2606,7 +2606,7 @@ translate german lisa_dressed_get_notebook1_a6bb39c7:
 translate german lisa_dressed_stay_in_room_9edd3eac:
 
     # Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..." nointeract
-    Lisa_00 "Max, ich muss mich umziehen. Würdest du so freundlich sein und einen verschwinden oder dich wenigstens umdrehen..." nointeract
+    Lisa_00 "Max, ich muss mich umziehen. Würdest du so freundlich sein zu verschwinden oder dich wenigstens umdrehen..." nointeract
 
 # game/events/lisa.rpy:906
 translate german lisa_dressed_stay_in_room_769644c1:
@@ -2786,3 +2786,22 @@ translate german strings:
     old "{i}попробовать подглядеть{/i}"
     new "{i}einen kurzen Blick riskieren{/i}"
 
+# TODO: Translation updated at 2021-11-11 14:52
+
+# game/events/lisa.rpy:114
+translate german lisa_shower_start_peeping_fc5db481:
+
+    # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+    Max_09 ""
+
+# game/events/lisa.rpy:116
+translate german lisa_shower_start_peeping_dda24c4d:
+
+    # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
+    Max_01 "" nointeract
+
+# game/events/lisa.rpy:912
+translate german lisa_dressed_stay_in_room_4d0209ac:
+
+    # Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
+    Lisa_09 "" nointeract

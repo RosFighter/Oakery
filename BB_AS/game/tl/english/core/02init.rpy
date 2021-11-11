@@ -622,3 +622,11 @@ translate english strings:
     old "У меня нет денег, чтобы ты не лез к Лизе."
     new "I don't have the money to keep you away from Lisa."
 
+# TODO: Translation updated at 2021-11-10 22:56
+
+translate english strings:
+
+    # game/core/02init.rpy:40
+    old "{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n"
+    new "{color=[orange]}{b}Warning:{/b} Your influence on your family has decreased.{/color}\n"
+

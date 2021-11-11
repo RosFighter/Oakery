@@ -1,214 +1,214 @@
 ﻿# TODO: Translation updated at 2021-09-01 17:03
 
 # game/events/ann_cam.rpy:8
-translate german cam0_ann_sleep_2e831607:
+translate german cam0_ann_sleep_97963875:
 
-    # Max_01 "Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!"
-    Max_01 "Was für ein Glück, dass ich so eine heiße Mom habe... Sie sieht fantastisch aus, da kann man seine Augen kaum von ihr lassen!"
+    # Max_01 "{m}Как же повезло, что у меня такая горячая мама... Выглядит потрясающе, аж глаза отрывать не хочется!{/m}"
+    Max_01 "{m}Was für ein Glück, dass ich so eine heiße Mom habe... Sie sieht fantastisch aus, da kann man seine Augen kaum von ihr lassen!{/m}"
 
 # game/events/ann_cam.rpy:17
-translate german cam0_ann_shower_0326dfb9:
+translate german cam0_ann_shower_16f87e0e:
 
-    # Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Ich kann Mom durch diese Kamera nicht sehen... Soll ich eine andere ausprobieren?"
+    # Max_09 "{m}Мамы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann Mom durch diese Kamera nicht sehen... Soll ich eine andere ausprobieren?{/m}"
 
 # game/events/ann_cam.rpy:19
-translate german cam0_ann_shower_d62cf6fa:
+translate german cam0_ann_shower_dcea9c75:
 
-    # Max_09 "Мамы не видно через эту камеру..."
-    Max_09 "Ich kann Mom durch diese Kamera nicht sehen..."
+    # Max_09 "{m}Мамы не видно через эту камеру...{/m}"
+    Max_09 "{m}Ich kann Mom durch diese Kamera nicht sehen...{/m}"
 
 # game/events/ann_cam.rpy:27
-translate german cam0_ann_shower_5850319e:
+translate german cam0_ann_shower_9a95b168:
 
-    # Max_04 "Зрелище просто потрясающее... У меня очень горячая мама!"
-    Max_04 "Der Anblick ist einfach fantastisch... Ich habe eine sehr heiße Mom!"
+    # Max_04 "{m}Зрелище просто потрясающее... У меня очень горячая мама!{/m}"
+    Max_04 "{m}Der Anblick ist einfach fantastisch... Ich habe eine sehr heiße Mom!{/m}"
 
 # game/events/ann_cam.rpy:49
-translate german cam1_ann_shower_b2ae0654:
+translate german cam1_ann_shower_26e73e97:
 
-    # Max_03 "Мама, перед тем, как принять душ, красуется перед зеркалом. Глядя на эту красоту, можно мечтать лишь об одном!"
-    Max_03 "Mom stellt ihren Körper vor dem Spiegel zur Schau. Ich kann sie nicht so ansehen, ohne einen Steifen zu bekommen!"
+    # Max_03 "{m}Мама, перед тем, как принять душ, красуется перед зеркалом. Глядя на эту красоту, можно мечтать лишь об одном!{/m}"
+    Max_03 "{m}Mom stellt ihren Körper vor dem Spiegel zur Schau. Ich kann sie nicht so ansehen, ohne einen Steifen zu bekommen!{/m}"
 
 # game/events/ann_cam.rpy:55
-translate german cam1_ann_shower_0326dfb9:
+translate german cam1_ann_shower_16f87e0e:
 
-    # Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Ich kann Mom durch diese Kamera nicht sehen. Soll ich eine andere ausprobieren?"
+    # Max_09 "{m}Мамы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann Mom durch diese Kamera nicht sehen. Soll ich eine andere ausprobieren?{/m}"
 
 # game/events/ann_cam.rpy:68
-translate german cam0_ann_yoga_e9ef9711:
+translate german cam0_ann_yoga_dd5fae2f:
 
-    # Max_02 "Мама, как и всегда в это время, занимается йогой. Здесь, хоть в какой позе, она выглядит очень сексуально..."
-    Max_02 "Mom macht Yoga. Ich bewundere den Aufwand, den sie betreibt, um flexibel zu bleiben. Man stelle sich nur vor, was sie mit ihrem Körper alles machen könnte..."
+    # Max_02 "{m}Мама, как и всегда в это время, занимается йогой. Здесь, хоть в какой позе, она выглядит очень сексуально...{/m}"
+    Max_02 "{m}Mom macht Yoga. Ich bewundere den Aufwand, den sie betreibt, um flexibel zu bleiben. Man stelle sich nur vor, was sie mit ihrem Körper alles machen könnte...{/m}"
 
 # game/events/ann_cam.rpy:75
-translate german cam1_ann_yoga_ce238a73:
+translate german cam1_ann_yoga_762850fc:
 
-    # Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
-    Max_09 "Ich kann durch diese Kamera nichts sehen. Kann ich eine andere ausprobieren?"
+    # Max_09 "{m}Через эту камеру ничего не видно... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann durch diese Kamera nichts sehen. Kann ich eine andere ausprobieren?{/m}"
 
 # game/events/ann_cam.rpy:85
-translate german cam0_ann_cooking_121fe332:
+translate german cam0_ann_cooking_38afbb36:
 
-    # Max_01 "Как и всегда, мама готовит завтрак. Вроде, ничего интересного, но она всё равно лучшая..."
-    Max_01 "Wie immer macht Mom das Frühstück. Es scheint nichts Interessantes zu sein, aber sie ist trotzdem die beste..."
+    # Max_01 "{m}Как и всегда, мама готовит завтрак. Вроде, ничего интересного, но она всё равно лучшая...{/m}"
+    Max_01 "{m}Wie immer macht Mom das Frühstück. Es scheint nichts Interessantes zu sein, aber sie ist trotzdem die beste...{/m}"
 
 # game/events/ann_cam.rpy:87
-translate german cam0_ann_cooking_81d5efdf:
+translate german cam0_ann_cooking_940b85e9:
 
-    # Max_01 "Мама сегодня готовит ужин. Будет очень вкусно..."
-    Max_01 "Mom kocht heute Abend das Abendessen. Es wird köstlich sein..."
+    # Max_01 "{m}Мама сегодня готовит ужин. Будет очень вкусно...{/m}"
+    Max_01 "{m}Mom kocht heute Abend das Abendessen. Es wird köstlich sein...{/m}"
 
 # game/events/ann_cam.rpy:119
-translate german cam0_ann_dressed_work_6161d2f7:
+translate german cam0_ann_dressed_work_9605c272:
 
-    # Max_09 "Ничего интересного я здесь уже не увижу, мама полностью оделась."
-    Max_09 "Hier gibt es nichts Interessantes. Mom ist vollständig angezogen."
+    # Max_09 "{m}Ничего интересного я здесь уже не увижу, мама полностью оделась.{/m}"
+    Max_09 "{m}Hier gibt es nichts Interessantes. Mom ist vollständig angezogen.{/m}"
 
-# game/events/ann_cam.rpy:131
-translate german cam0_ann_dressed_work_2a4aa6ca:
+# game/events/ann_cam.rpy:132
+translate german cam0_ann_dressed_work_cf6335de:
 
-    # Max_07 "Вот и мама наряжается, чтобы отправиться на работу..." nointeract
-    Max_07 "Mom macht sich für die Arbeit fertig. Ich frage mich, wie oft sie angemacht wird..." nointeract
+    # Max_07 "{m}Вот и мама наряжается, чтобы отправиться на работу...{/m}" nointeract
+    Max_07 "{m}Mom macht sich für die Arbeit fertig. Ich frage mich, wie oft sie angemacht wird...{/m}" nointeract
 
-# game/events/ann_cam.rpy:142
-translate german cam0_ann_dressed_work_ecd759fc:
+# game/events/ann_cam.rpy:143
+translate german cam0_ann_dressed_work_dd61cb77:
 
-    # Max_02 "Ох! Голая мама - это восхитительное зрелище..." nointeract
-    Max_02 "Oh! Der Anblick meiner nackten Mom ist einfach wunderbar..." nointeract
+    # Max_02 "{m}Ох! Голая мама - это восхитительное зрелище...{/m}" nointeract
+    Max_02 "{m}Oh! Der Anblick meiner nackten Mom ist einfach wunderbar...{/m}" nointeract
 
 # game/events/ann_cam.rpy:155
-translate german cam0_ann_dressed_work_8e5f0391:
+translate german cam0_ann_dressed_work_13752107:
 
-    # Max_04 "Да уж, её округлости равнодушным не оставят никого!"
-    Max_04 "Ja, sie hat eine Figur, die einem das Herz höher schlagen lässt!"
+    # Max_04 "{m}Да уж, её округлости равнодушным не оставят никого!{/m}"
+    Max_04 "{m}Ja, sie hat eine Figur, die einem das Herz höher schlagen lässt!{/m}"
 
 # game/events/ann_cam.rpy:166
-translate german cam0_ann_dressed_shop_6161d2f7:
+translate german cam0_ann_dressed_shop_9605c272:
 
-    # Max_09 "Ничего интересного я здесь уже не увижу, мама полностью оделась."
-    Max_09 "Mom ist angezogen. Hier gibt es nichts Interessantes."
+    # Max_09 "{m}Ничего интересного я здесь уже не увижу, мама полностью оделась.{/m}"
+    Max_09 "{m}Mom ist angezogen. Hier gibt es nichts Interessantes.{/m}"
 
-# game/events/ann_cam.rpy:178
-translate german cam0_ann_dressed_shop_5b93ed0b:
+# game/events/ann_cam.rpy:179
+translate german cam0_ann_dressed_shop_0d242c83:
 
-    # Max_07 "Вот и мама наряжается, чтобы отправиться на шопинг..." nointeract
-    Max_07 "Jetzt macht sich Mom schick, um einkaufen zu gehen..." nointeract
+    # Max_07 "{m}Вот и мама наряжается, чтобы отправиться на шопинг...{/m}" nointeract
+    Max_07 "{m}Jetzt macht sich Mom schick, um einkaufen zu gehen...{/m}" nointeract
 
-# game/events/ann_cam.rpy:189
-translate german cam0_ann_dressed_shop_ecd759fc:
+# game/events/ann_cam.rpy:190
+translate german cam0_ann_dressed_shop_dd61cb77:
 
-    # Max_02 "Ох! Голая мама - это восхитительное зрелище..." nointeract
-    Max_02 "Oh! Der Anblick meiner nackten Mom ist entzückend..." nointeract
+    # Max_02 "{m}Ох! Голая мама - это восхитительное зрелище...{/m}" nointeract
+    Max_02 "{m}Oh! Der Anblick meiner nackten Mom ist entzückend...{/m}" nointeract
 
 # game/events/ann_cam.rpy:202
-translate german cam0_ann_dressed_shop_8e5f0391:
+translate german cam0_ann_dressed_shop_13752107:
 
-    # Max_04 "Да уж, её округлости равнодушным не оставят никого!"
-    Max_04 "Ja, sie hat eine Figur, die einem das Herz höher schlagen lässt!"
+    # Max_04 "{m}Да уж, её округлости равнодушным не оставят никого!{/m}"
+    Max_04 "{m}Ja, sie hat eine Figur, die einem das Herz höher schlagen lässt!{/m}"
 
 # game/events/ann_cam.rpy:213
-translate german cam0_ann_resting_8fadb848:
+translate german cam0_ann_resting_9a0cb854:
 
-    # Max_01 "Мама даже когда отдыхает, выглядит очень сексуально..."
-    Max_01 "Sie findet immer noch einen Weg, auch beim Ausruhen sexy auszusehen..."
+    # Max_01 "{m}Мама даже когда отдыхает, выглядит очень сексуально...{/m}"
+    Max_01 "{m}Sie findet immer noch einen Weg, auch beim Ausruhen sexy auszusehen...{/m}"
 
 # game/events/ann_cam.rpy:221
-translate german cam0_ann_read_6481c328:
+translate german cam0_ann_read_2e2f9a32:
 
-    # Max_01 "Мама увлечённо читает. Вроде бы ничего особенного, а смотреть на её округлые формы всё равно приятно!"
-    Max_01 "Mom liest leidenschaftlich gerne. Es scheint nichts Besonderes zu sein, aber es ist trotzdem schön, ihre wohlgeformte Figur zu bewundern!"
+    # Max_01 "{m}Мама увлечённо читает. Вроде бы ничего особенного, а смотреть на её округлые формы всё равно приятно!{/m}"
+    Max_01 "{m}Mom liest leidenschaftlich gerne. Es scheint nichts Besonderes zu sein, aber es ist trotzdem schön, ihre wohlgeformte Figur zu bewundern!{/m}"
 
 # game/events/ann_cam.rpy:229
-translate german cam0_ann_sun_fcdcc7e0:
+translate german cam0_ann_sun_ca35bdfd:
 
-    # Max_01 "Самая горячая мама на свете загорает! Не повезло тем зрителям, которые это пропускают..."
-    Max_01 "Die schärfste Mom der Welt sonnt sich! Pech für all die Zuschauer, die das verpassen..."
+    # Max_01 "{m}Самая горячая мама на свете загорает! Не повезло тем зрителям, которые это пропускают...{/m}"
+    Max_01 "{m}Die schärfste Mom der Welt sonnt sich! Pech für all die Zuschauer, die das verpassen...{/m}"
 
 # game/events/ann_cam.rpy:236
-translate german cam1_ann_sun_ce238a73:
+translate german cam1_ann_sun_762850fc:
 
-    # Max_09 "Через эту камеру ничего не видно... Может посмотреть через другую?"
-    Max_09 "Ich kann durch diese Kamera nichts sehen... Sollte ich eine andere ausprobieren?"
+    # Max_09 "{m}Через эту камеру ничего не видно... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann durch diese Kamera nichts sehen... Sollte ich eine andere ausprobieren?{/m}"
 
 # game/events/ann_cam.rpy:244
-translate german cam0_ann_swim_39c0bef3:
+translate german cam0_ann_swim_4bc4874c:
 
-    # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
-    Max_09 "Ich kann nicht wirklich etwas sehen... Es lohnt sich, durch eine andere Kamera zu schauen..."
+    # Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
+    Max_09 "{m}Ich kann nicht wirklich etwas sehen... Es lohnt sich, durch eine andere Kamera zu schauen...{/m}"
 
 # game/events/ann_cam.rpy:246
-translate german cam0_ann_swim_06c19036:
+translate german cam0_ann_swim_14337802:
 
-    # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
-    Max_09 "Ich kann nichts sehen. Ich sollte eine Kamera installieren, die den gesamten Pool abdeckt..."
+    # Max_09 "{m}Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн...{/m}"
+    Max_09 "{m}Ich kann nichts sehen. Ich sollte eine Kamera installieren, die den gesamten Pool abdeckt...{/m}"
 
 # game/events/ann_cam.rpy:254
-translate german cam1_ann_swim_4c5bb67e:
+translate german cam1_ann_swim_e680e051:
 
-    # Max_01 "На маму во дворе всегда приятно посмотреть..."
-    Max_01 "Es ist immer schön, Mom im Garten zu sehen..."
+    # Max_01 "{m}На маму во дворе всегда приятно посмотреть...{/m}"
+    Max_01 "{m}Es ist immer schön, Mom im Garten zu sehen...{/m}"
 
 # game/events/ann_cam.rpy:264
-translate german cam0_ann_alice_sun_38f9ae7b:
+translate german cam0_ann_alice_sun_767dabd9:
 
-    # Max_01 "Две загорающих красотки - лучше чем одна..."
-    Max_01 "Zwei sonnenbadende Schönheiten - viel besser als eine..."
+    # Max_01 "{m}Две загорающих красотки - лучше чем одна...{/m}"
+    Max_01 "{m}Zwei sonnenbadende Schönheiten - viel besser als eine...{/m}"
 
 # game/events/ann_cam.rpy:271
-translate german cam1_ann_alice_sun_39c0bef3:
+translate german cam1_ann_alice_sun_4bc4874c:
 
-    # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
-    Max_09 "Ich kann nicht wirklich etwas sehen... Es lohnt sich, durch eine andere Kamera zu schauen..."
+    # Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
+    Max_09 "{m}Ich kann nicht wirklich etwas sehen... Es lohnt sich, durch eine andere Kamera zu schauen...{/m}"
 
 # game/events/ann_cam.rpy:279
-translate german cam0_ann_alice_swim_39c0bef3:
+translate german cam0_ann_alice_swim_4bc4874c:
 
-    # Max_09 "Ничего толком не видно... Стоит взглянуть через другую камеру..."
-    Max_09 "Ich kann nicht wirklich etwas sehen... Es lohnt sich, durch eine andere Kamera zu schauen..."
+    # Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
+    Max_09 "{m}Ich kann nicht wirklich etwas sehen... Es lohnt sich, durch eine andere Kamera zu schauen...{/m}"
 
 # game/events/ann_cam.rpy:281
-translate german cam0_ann_alice_swim_06c19036:
+translate german cam0_ann_alice_swim_14337802:
 
-    # Max_09 "Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн..."
-    Max_09 "Man kann nichts sehen... Ich muss eine Kamera installieren, die den gesamten Pool abdeckt..."
+    # Max_09 "{m}Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн...{/m}"
+    Max_09 "{m}Man kann nichts sehen... Ich muss eine Kamera installieren, die den gesamten Pool abdeckt...{/m}"
 
 # game/events/ann_cam.rpy:304
-translate german cam1_ann_alice_swim_ceb932d1:
+translate german cam1_ann_alice_swim_94989c11:
 
-    # Max_01 "Две соблазнительные дамочки в бассейне, что может быть лучше? Только если бы они были ещё и голые!"
-    Max_01 "Zwei verführerische Damen im Pool, was könnte besser sein? Wenn sie beide nackt wären!"
+    # Max_01 "{m}Две соблазнительные дамочки в бассейне, что может быть лучше? Только если бы они были ещё и голые!{/m}"
+    Max_01 "{m}Zwei verführerische Damen im Pool, was könnte besser sein? Wenn sie beide nackt wären!{/m}"
 
 # game/events/ann_cam.rpy:314
-translate german cam0_ann_bath_e995a3d7:
+translate german cam0_ann_bath_9a38aaa7:
 
-    # Max_01 "Такой шикарной попке, как у моей мамы, любая женщина может позавидовать..."
-    Max_01 "Sogar andere Mädchen würden Mom um ihren Arsch beneiden..."
+    # Max_01 "{m}Такой шикарной попке, как у моей мамы, любая женщина может позавидовать...{/m}"
+    Max_01 "{m}Sogar andere Mädchen würden Mom um ihren Arsch beneiden...{/m}"
 
 # game/events/ann_cam.rpy:321
-translate german cam0_ann_bath_412f2768:
+translate german cam0_ann_bath_48b41e3f:
 
-    # Max_04 "Не вытирайся, мам, ходи мокренькая..."
-    Max_04 "Trockne dich nicht ab, Mom..."
+    # Max_04 "{m}Не вытирайся, мам, ходи мокренькая...{/m}"
+    Max_04 "{m}Trockne dich nicht ab, Mom...{/m}"
 
 # game/events/ann_cam.rpy:327
-translate german cam0_ann_bath_d9f05873:
+translate german cam0_ann_bath_0a937105:
 
-    # Max_05 "И зачем нужны все эти эротические ролики в интернете, когда можно посмотреть на мою маму в ванне?!"
-    Max_05 "Was sollen all die erotischen Videos im Internet, wenn man seine Mom in der Badewanne sehen kann?!"
+    # Max_05 "{m}И зачем нужны все эти эротические ролики в интернете, когда можно посмотреть на мою маму в ванне?!{/m}"
+    Max_05 "{m}Was sollen all die erotischen Videos im Internet, wenn man seine Mom in der Badewanne sehen kann?!{/m}"
 
 # game/events/ann_cam.rpy:334
-translate german cam1_ann_bath_0326dfb9:
+translate german cam1_ann_bath_16f87e0e:
 
-    # Max_09 "Мамы не видно через эту камеру... Может посмотреть через другую?"
-    Max_09 "Ich kann Mom durch diese Kamera nicht sehen... Soll ich eine andere ausprobieren?"
+    # Max_09 "{m}Мамы не видно через эту камеру... Может посмотреть через другую?{/m}"
+    Max_09 "{m}Ich kann Mom durch diese Kamera nicht sehen... Soll ich eine andere ausprobieren?{/m}"
 
-# game/events/ann_cam.rpy:343
-translate german cam0_ann_tv_b8dd0b35:
+# game/events/ann_cam.rpy:346
+translate german cam0_ann_tv_d888f1a9:
 
-    # Max_01 "Мама, как всегда, отдыхает за просмотром сериала или фильма."
-    Max_01 "Mom, wie immer, entspannt sich, während sie eine Fernsehsendung oder einen Film ansieht."
+    # Max_01 "{m}Мама, как всегда, отдыхает за просмотром сериала или фильма.{/m}"
+    Max_01 "{m}Mom, wie immer, entspannt sich, während sie eine Fernsehsendung oder einen Film ansieht.{/m}"
 
 # TODO: Translation updated at 2021-09-14 23:25
 
@@ -217,4 +217,3 @@ translate german cam0_ann_tv_8b464610:
 
     # Max_01 "{m}Как приятно видеть маму без Эрика. Может составить ей компанию, чтобы она не скучала?{/m}"
     Max_01 "{m}Wie schön, Mum ohne Eric zu sehen. Soll ich ihr Gesellschaft leisten, damit ihr nicht langweilig wird?{/m}"
-

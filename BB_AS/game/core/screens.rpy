@@ -90,6 +90,13 @@ init: # трансформации
         on hover, selected_hover:
             yanchor 1 alpha 1.0
 
+    transform main_menu_btn:
+        size (100, 100)
+        on idle, selected_idle:
+            yanchor 0 alpha 0.8
+        on hover, selected_hover:
+            yanchor 1 alpha 1.0
+
     transform disable_menu:
         size ((100, 100) if renpy.variant('small') else (80, 80))
         yanchor 0 alpha 0.2
@@ -1962,3 +1969,149 @@ screen countdown():
             pos 645, 1020
         xysize 500, 22
         at alpha_dissolve
+
+################################################################################
+
+screen changes_menu_clot():
+    tag menu
+
+    add gui.main_menu_background
+    add 'interface phon'
+    style_prefix 'mmclot'
+
+    frame area(150, 95, 750, 50) background None:
+        text _("ОДЕЖДА ПЕРСОНАЖЕЙ В ГЛАВНОМ МЕНЮ") color gui.accent_color size 28 font 'hermes.ttf'
+
+    imagebutton pos (1740, 100) auto 'interface close %s' action Return():
+        if not renpy.variant('small'):
+            focus_mask True
+        at close_zoom
+
+    # default mm_char = sorted(menu_chars)[0]
+    default clot = menu_chars[mm_char].get_current()[0]
+    default var = menu_chars[mm_char].get_current()[1]
+    $ clot_lst = menu_chars[mm_char].get_open_clot()
+    $ mm_info = menu_chars[mm_char].get_info(clot, var)
+    $ var_lst = menu_chars[mm_char].get_open_var(clot)
+
+    hbox pos (150, 150) spacing 30:
+        hbox ypos 25 xsize 300 spacing 5:
+            viewport mousewheel 'change' draggable True id 'vp':
+                vbox spacing 5:
+                    for char in sorted(menu_chars):
+
+                        button background None action SetVariable('mm_char', char) xsize 290:
+                            textbutton menu_chars[char].name:
+                                action [SetScreenVariable('clot', menu_chars[char].get_current()[0]),
+                                    SetScreenVariable('var', menu_chars[char].get_current()[1]),
+                                    SetScreenVariable('clot_lst', menu_chars[char].get_open_clot()),
+                                    SetScreenVariable('var_lst', menu_chars[char].get_open_var(clot)),
+                                    SetScreenVariable('mm_info', menu_chars[char].get_info(menu_chars[char].get_current()[0], menu_chars[char].get_current()[1])),
+                                    SetVariable('mm_char', char),
+                                    ]
+                                selected mm_char == char
+                                text_selected_color gui.text_color
+                            foreground 'interface marker'
+            vbar value YScrollValue('vp') style 'mmclot_vscroll'
+
+        imagebutton pos (0, 200) auto 'interface prev %s':
+            # focus_mask True
+            ypadding 230
+            action [
+                SetScreenVariable('clot', clot_lst[clot_lst.index(clot) - 1]),
+                SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 0)),
+                SetScreenVariable('var_lst', menu_chars[mm_char].get_open_var(clot)),
+                SetScreenVariable('var', 0),
+                ]
+            sensitive clot in clot_lst and clot_lst.index(clot) > 0
+
+        frame xysize(650, 900) background None:
+            add mm_char + ' info ' + mm_info:
+                xalign .5
+
+        imagebutton pos (0, 200) auto 'interface next %s':
+            # focus_mask True
+            ypadding 230
+            action [
+                SetScreenVariable('clot', (clot_lst[clot_lst.index(clot) + 1] if clot_lst.index(clot) < len(clot_lst)-1 else clot_lst[len(clot_lst)-1])),
+                SetScreenVariable('var_lst', menu_chars[mm_char].get_open_var(clot)),
+                SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 0)),
+                SetScreenVariable('var', 0),
+                ]
+            sensitive clot in clot_lst and clot_lst.index(clot) < len(clot_lst)-1
+
+        # vbox:
+        #     text mm_char
+        #     text clot
+        #     text str(var)
+        #     text mm_info
+        #     text '[clot_lst]'
+        #     text '[var_lst]'
+
+    vbox xsize 300 xpos .95 ypos .9 xalign 1.0 yalign 1.0:
+        spacing 50
+        vbox:
+            style_prefix "radio"
+            if len(var_lst) > 1:
+                textbutton _("Одеть всё"):
+                    # sensitive len(var_lst) > 1
+                    action SetScreenVariable('var', 0), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 0)),
+
+            if 1 in var_lst:
+                textbutton _("Верх и трусики"):
+                    # sensitive 1 in var_lst
+                    action SetScreenVariable('var', 1), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 1)),
+
+            if 2 in var_lst:
+                textbutton _("Только верх"):
+                    # sensitive 2 in var_lst
+                    action SetScreenVariable('var', 2), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 2)),
+
+            if 3 in var_lst:
+                textbutton _("Только низ"):
+                    # sensitive 3 in var_lst
+                    action SetScreenVariable('var', 3), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 3)),
+
+            if 4 in var_lst:
+                textbutton _("Только трусики"):
+                    # sensitive 4 in var_lst
+                    action SetScreenVariable('var', 4), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 4)),
+
+        textbutton _("Сделать текущей"):
+            sensitive persistent.mm_chars[menu_chars[mm_char].id_char] != (clot, var)
+            action Set_mm_clot(mm_char, clot, var) #Function('menu_chars[mm_char].set_current', clot, var)
+
+
+style mmclot_button is default:
+    xpadding 0 ypadding 1
+    xmargin 0 ymargin 2
+    left_padding 30
+    yalign .5
+
+style mmclot_button_text is default:
+    font 'trebucbd.ttf'
+    # xpos 30
+    yalign .0
+    size 30
+    idle_color gui.accent_color
+    hover_color gui.text_color
+    insensitive_color gui.insensitive_color
+
+style mmclot_button_text:
+    variant "small"
+    font 'trebucbd.ttf'
+    yalign .0
+    size 36
+    idle_color gui.accent_color
+    hover_color gui.text_color
+    insensitive_color gui.insensitive_color
+
+style mmclot_vscroll is vscrollbar:
+    unscrollable 'hide'
+
+style radio_button:
+    properties gui.button_properties("radio_button")
+    foreground "gui/button/radio_[prefix_]foreground.png"
+
+style radio_button_text:
+    properties gui.button_text_properties("radio_button")

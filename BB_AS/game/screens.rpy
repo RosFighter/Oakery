@@ -375,9 +375,8 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        button action Start() style "nav_button":
-            textbutton _("Начать новую игру") action Start()
-
+        # button action Start() style "nav_button":
+        #     textbutton _("Начать новую игру") action Start()
         button action ShowMenu("history") style "nav_button":
             textbutton _("История") action ShowMenu("history")
 
@@ -387,14 +386,18 @@ screen navigation():
         button action ShowMenu("save") style "nav_button":
             textbutton _("Сохранить игру") action ShowMenu("save")
 
-        # button action FilePage("preferences") style "nav_button":
         button action ShowMenu("preferences") style "nav_button":
             textbutton _("Настройки") action ShowMenu("preferences")
 
-        if _in_replay:
 
+        null height 50
+
+        if _in_replay:
             button action EndReplay(confirm=True) style "nav_button":
                 textbutton _("Завершить повтор") action EndReplay(confirm=True)
+        else:
+            button action MainMenu() style "nav_button":
+                textbutton _("Главное меню") action MainMenu()
 
 
         # if renpy.variant("pc"):
@@ -404,9 +407,9 @@ screen navigation():
             textbutton _("Выйти из игры") action Quit(confirm=not main_menu)
 
         if renpy.variant("small"):
-
+            null height 150
             button action EndReplay(confirm=True) style "nav_button":
-                top_margin 200
+                # top_margin 200
                 textbutton _("Назад") action Return()
 
 style nav_button:
@@ -432,9 +435,16 @@ style navigation_button_text is gui_button_text:
 init:
     transform main_logo:
         on idle:
-            zoom 1.0
+            zoom 0.8#1.0
         on hover:
-            zoom 1.02
+            zoom 0.82#1.02
+
+    transform eye_movement:
+        alpha 1.0
+        pause 5.0
+        alpha 0.0
+        pause 3.0
+        repeat
 
 screen main_menu():
 
@@ -451,15 +461,35 @@ screen main_menu():
         key "l" action Language(None)
         key "д" action Language(None)
 
+    # строим фон заставки
     add gui.main_menu_background
+    if 'kira' in persistent.mems_var:
 
-    vbox xalign 0.5 spacing -60:
-        frame xalign 0.5 xsize 1235 background None:
-            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 178 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
-        frame xalign 0.5 xsize 1235 background None:
+        add 'images/interface/mm/family-01.webp'
+
+        add 'images/interface/mm/01/max/00.webp' at eye_movement
+
+        for char in menu_chars:
+            # получить список рендеров одежды
+            $ lst = menu_chars[char].get_render_list()
+            for rndr in lst:
+                add 'images/interface/mm/01/'+char+'/'+rndr+'.webp'
+
+    else:
+        add 'images/interface/mm/family-00.webp'
+
+    vbox xalign 0.5 spacing -70 ypos -30:
+        frame xalign 0.5 xsize 1180 background None:
+            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 170 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
+        frame xalign 0.5 xsize 1180 background None:
             text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
-            $ __short_ver = config.version[0:4]
             text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+
+    imagebutton:
+        idle "interface mm clothing"
+        action Show('changes_menu_clot')
+        pos 981, 22
+        at main_menu_btn
 
     # imagebutton:
     #     idle "interface patreon logo"
@@ -476,7 +506,7 @@ screen main_menu():
     imagebutton:
         idle "interface patreon music"
         action OpenURL("https://www.patreon.com/maffinmusicman")
-        align (0.01, 0.63)
+        align (0.01, 0.62)
         at main_logo
 
     ## Эта пустая рамка затеняет главное меню.
@@ -529,7 +559,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
         add gui.game_menu_background
 
     add "interface phon"
-    label _("ГЛАВНОЕ МЕНЮ")
+    label _("МЕНЮ")
 
     if not renpy.variant('small'):
         imagebutton pos (1740, 100) auto "interface close %s" action Return() focus_mask True at close_zoom
@@ -961,20 +991,15 @@ screen preferences():
                     vbox:
                         style_prefix "radio"
                         label _("Язык")#| Language")
-                        textbutton _("Русский") action Language(None)
-                        textbutton _("English") action Language("english")
-                        textbutton _("Deutsch") action Language("german")
+                        textbutton "Русский" action Language(None)
+                        textbutton "English" action Language("english")
+                        textbutton "Deutsch" action Language("german")
 
                 vbox:
                     spacing 20
                     vbox:
-                        style_prefix "radio"
-                        label _("Дополнительно")
-                        textbutton _("Patreon-интро") action SetVariable("persistent.orint", False)
-                        textbutton _("Оригинальное интро") action SetVariable("persistent.orint", True)
-                    vbox:
                         style_prefix "check"
-                        # label _("")
+                        label _("Дополнительно")
                         textbutton _("Запрашивать название при сохранении") action ToggleVariable("persistent.request_savename")
                         textbutton _("Прозрачное текстовое окно") action ToggleVariable("persistent.transparent_textbox")
                         textbutton _("Отображать все \"Возможности\"") action ToggleVariable("persistent.all_opportunities")

@@ -1,58 +1,58 @@
 ﻿# TODO: Translation updated at 2021-09-01 18:42
 
-# game/core/core.rpy:493
-translate english AfterWaiting_c2510a45:
+# game/core/core.rpy:504
+translate english AfterWaiting_583fe90e:
 
-    # Max_00 "Я слишком устал. Надо бы вздремнуть..."
-    Max_00 "I'm too tired. I should take a nap..."
+    # Max_00 "{m}Я слишком устал. Надо бы вздремнуть...{/m}"
+    Max_00 "{m}I'm too tired. I should take a nap...{/m}"
 
-# game/core/core.rpy:547
-translate english night_of_fun_cae91685:
+# game/core/core.rpy:675
+translate english night_of_fun_35c4c591:
 
-    # Max_19 "Теперь можно спокойно спать и ничего больше..."
-    Max_19 "Now I can sleep in peace..."
+    # Max_19 "{m}Теперь можно спокойно спать и ничего больше...{/m}"
+    Max_19 "{m}Now I can sleep in peace...{/m}"
 
-# game/core/core.rpy:578
-translate english cam_after_waiting_6058d5d4:
+# game/core/core.rpy:712
+translate english cam_after_waiting_bfada06d:
 
-    # Max_09 "Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
-    Max_09 "It's not a good idea to check the cameras right now in case Lisa gets suspicious. Maybe I should go out to the veranda while no one's there..." nointeract
+    # Max_09 "{m}Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть...{/m}" nointeract
+    Max_09 "{m}It's not a good idea to check the cameras right now in case Lisa gets suspicious. Maybe I should go out to the veranda while no one's there...{/m}" nointeract
 
-# game/core/core.rpy:586
-translate english cam_after_waiting_c283f316:
+# game/core/core.rpy:719
+translate english cam_after_waiting_44f62349:
 
-    # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
-    Max_09 "Lisa's in our room and the veranda is occupied! I'll just be patient and wait before checking the cameras."
+    # Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
+    Max_09 "{m}Lisa's in our room and the veranda is occupied! I'll just be patient and wait before checking the cameras.{/m}"
 
-# game/core/core.rpy:590
-translate english cam_after_waiting_38f46f18:
+# game/core/core.rpy:724
+translate english cam_after_waiting_935d8f7d:
 
-    # Max_09 "Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила..." nointeract
-    Max_09 "Better not check the cameras when Lisa's right here!" nointeract
+    # Max_09 "{m}Лучше просматривать камеры в другом месте! Не хватало ещё, чтобы Лиза что-то заметила...{/m}" nointeract
+    Max_09 "{m}Better not check the cameras when Lisa's right here!{/m}" nointeract
 
-# game/core/core.rpy:602
-translate english cam_after_waiting_d4f49617:
+# game/core/core.rpy:736
+translate english cam_after_waiting_af0a2821:
 
-    # Max_09 "Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть..." nointeract
-    Max_09 "I don't want to risk checking the cameras now in case Lisa wakes up. Maybe I should go out to the veranda while no one's there..." nointeract
+    # Max_09 "{m}Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть...{/m}" nointeract
+    Max_09 "{m}I don't want to risk checking the cameras now in case Lisa wakes up. Maybe I should go out to the veranda while no one's there...{/m}" nointeract
 
-# game/core/core.rpy:610
-translate english cam_after_waiting_c283f316_1:
+# game/core/core.rpy:743
+translate english cam_after_waiting_44f62349_1:
 
-    # Max_09 "Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер."
-    Max_09 "Lisa's in the room... And the verandah is occupied! I shouldn't risk viewing the cameras now."
+    # Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
+    Max_09 "{m}Lisa's in the room... And the veranda is occupied! I shouldn't risk viewing the cameras now.{/m}"
 
-# game/core/core.rpy:614
-translate english cam_after_waiting_eea92f18:
+# game/core/core.rpy:748
+translate english cam_after_waiting_24007a63:
 
-    # Max_09 "Лучше просматривать камеры в другом месте! Лиза может проснуться и заметить, что я делаю..." nointeract
-    Max_09 "Better check the cameras another time! I don't want to risk Lisa waking up and catching me..." nointeract
+    # Max_09 "{m}Лучше просматривать камеры в другом месте! Лиза может проснуться и заметить, что я делаю...{/m}" nointeract
+    Max_09 "{m}Better check the cameras another time! I don't want to risk Lisa waking up and catching me...{/m}" nointeract
 
-# game/core/core.rpy:670
-translate english cam_after_waiting_27f05bf1:
+# game/core/core.rpy:800
+translate english cam_after_waiting_b8378225:
 
-    # Max_00 "Сейчас здесь ничего не происходит."
-    Max_00 "Nothing going on right now."
+    # Max_00 "{m}Сейчас здесь ничего не происходит.{/m}"
+    Max_00 "{m}Nothing going on right now.{/m}"
 
 # game/core/core.rpy:705
 translate english after_buying_27b33f97:
