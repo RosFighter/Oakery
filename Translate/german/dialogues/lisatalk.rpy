@@ -10464,82 +10464,82 @@ translate german lisa_about_ae_sexed5_da98adae:
 translate german LisaTalkStart_e91aa3e9:
 
     # Lisa_13 "Макс, я же просила отстать! Не хочу с тобой разговаривать." nointeract
-    Lisa_13 "" nointeract
+    Lisa_13 "Max, ich habe dir gesagt, du sollst dich zurückhalten! Ich will nicht mit dir reden." nointeract
 
 # game/dialogues/lisatalk.rpy:4545
 translate german lisa_about_wallet_53c90b6e:
 
     # Lisa_12 "Что ты хотел, Макс?"
-    Lisa_12 ""
+    Lisa_12 "Was willst du, Max?"
 
 # game/dialogues/lisatalk.rpy:4546
 translate german lisa_about_wallet_fb1cb05d:
 
     # Max_10 "Надеюсь, ты не поверила Эрику?"
-    Max_10 ""
+    Max_10 "Ich hoffe, du hast Eric nicht geglaubt?"
 
 # game/dialogues/lisatalk.rpy:4547
 translate german lisa_about_wallet_cc33c7d1:
 
     # Lisa_13 "А зачем ему врать про такое?"
-    Lisa_13 ""
+    Lisa_13 "Warum sollte er bei so etwas lügen?"
 
 # game/dialogues/lisatalk.rpy:4548
 translate german lisa_about_wallet_1fe8c5d2:
 
     # Max_07 "Чтобы я побыстрее отправился в военный лагерь, а он мог без проблем к вам всем приставать."
-    Max_07 ""
+    Max_07 "Damit ich schnell ins Militärlager komme und er euch alle ohne Probleme belästigen kann."
 
 # game/dialogues/lisatalk.rpy:4549
 translate german lisa_about_wallet_7863dfe7:
 
     # Lisa_09 "Что это ещё значит, \"приставать\"?"
-    Lisa_09 ""
+    Lisa_09 "Was bedeutet das, \"belästigen\"?"
 
 # game/dialogues/lisatalk.rpy:4550
 translate german lisa_about_wallet_c596c0c7:
 
     # Max_15 "Это значит, самым грязным и непристойным образом с вами всеми развлекаться."
-    Max_15 ""
+    Max_15 "Es bedeutet, den schmutzigsten und unanständigsten Spaß mit euch allen zu haben."
 
 # game/dialogues/lisatalk.rpy:4551
 translate german lisa_about_wallet_525e0eed:
 
     # Lisa_10 "Ой, Макс, ну что за ересь! Эрик - прекрасный и честный мужчина, в отличие от тебя. И вообще, я не хочу с тобой разговаривать. Отстань."
-    Lisa_10 ""
+    Lisa_10 "Oh, Max, was für ein Unsinn! Eric ist ein guter und ehrlicher Mann, im Gegensatz zu dir. Und überhaupt, ich will nicht mit dir reden. Lass mich in Ruhe."
 
 # game/dialogues/lisatalk.rpy:4552
 translate german lisa_about_wallet_6226d61a:
 
     # Max_09 "А если бы у меня были доказательства, подтверждающие, что он не такой классный, как ты думаешь?"
-    Max_09 ""
+    Max_09 "Was wäre, wenn ich Beweise dafür hätte, dass er nicht so cool ist, wie du denkst, dass er es ist?"
 
 # game/dialogues/lisatalk.rpy:4553
 translate german lisa_about_wallet_2ebe63dc:
 
     # Lisa_12 "Думаю, если бы и были, то ты бы уже всё всем доказал. Так что повторю ещё раз... Отстань!"
-    Lisa_12 ""
+    Lisa_12 "Ich denke, wenn es so wäre, hättest du es schon längst allen bewiesen. Also noch einmal... Lass mich in Ruhe!"
 
 # game/dialogues/lisatalk.rpy:4557
 translate german lisa_about_wallet_8c152f15:
 
     # Max_07 "{m}Ясно. Доказательства у меня есть, вот только девчонки сейчас в таком состоянии, что запросто могут обвинить меня в том, что я эти фотографии нарисовал в каком-нибудь графическом редакторе.{/m}"
-    Max_07 ""
+    Max_07 "{m}Richtig. Ich habe den Beweis, aber die Mädchen sind in einem solchen Zustand, dass sie mich beschuldigen könnten, diese Bilder mit einem Grafikprogramm manipuliert zu haben.{/m}"
 
 # game/dialogues/lisatalk.rpy:4558
 translate german lisa_about_wallet_0b4cc1e7:
 
     # Max_01 "{m}Кажется, я знаю, как подкрепить эти снимки фактами... И поможет мне в этом Алиса, ведь именно на неё Эрик так усердно дрочит. Остаётся его грамотно подставить...{/m}"
-    Max_01 ""
+    Max_01 "{m}Ich glaube, ich weiß, wie ich diese Bilder mit Fakten untermauern kann... Und Alice wird mir dabei helfen, denn sie ist diejenige, auf die Eric sich so oft einen runterholt. Man muss ihm nur noch eine Falle stellen...{/m}"
 
 # game/dialogues/lisatalk.rpy:4559
 translate german lisa_about_wallet_3d4efb1f:
 
     # Max_09 "{m}Нужно будет проследить за его ночными делишками в комнате Алисы, а сразу после действовать! Главное, чтобы Алиса спала голой...{/m}"
-    Max_09 ""
+    Max_09 "{m}Jetzt muss man seine nächtlichen Aktivitäten bei Alice im Auge behalten und danach sofort handeln! Die Hauptsache ist, dass Alice nackt schläft...{/m}"
 
 translate german strings:
 
     # game/dialogues/lisatalk.rpy:4561
     old "{b}Оповещение:{/b} Лиза больше не хочет взаимодействовать с Максом"
-    new ""
+    new "{b}Achtung:{/b} Lisa will nicht mehr mit Max sprechen"

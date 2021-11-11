@@ -364,24 +364,24 @@ translate german strings:
 
     # game/core/screens.rpy:1983
     old "ОДЕЖДА ПЕРСОНАЖЕЙ В ГЛАВНОМ МЕНЮ"
-    new ""
+    new "CHARAKTER-KLEIDUNG IM HAUPTMENÜ"
 
     # game/core/screens.rpy:2056
     old "Одеть всё"
-    new ""
+    new "Alles anziehen"
 
     # game/core/screens.rpy:2061
     old "Верх и трусики"
-    new ""
+    new "Oberteil und Höschen"
 
     # game/core/screens.rpy:2066
     old "Только верх"
-    new ""
+    new "Nur das Oberteil"
 
     # game/core/screens.rpy:2071
     old "Только низ"
-    new ""
+    new "Nur das Unterteil"
 
     # game/core/screens.rpy:2076
     old "Только трусики"
-    new ""
+    new "Nur Höschen"
