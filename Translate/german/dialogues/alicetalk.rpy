@@ -11828,7 +11828,7 @@ translate german alice_about_wallet_1310eef7:
 translate german alice_about_wallet_3deff628:
 
     # Max_10 "Ладно. Всё понял. Ухожу."
-    Max_10 "Ладно. Всё понял. Ухожу."
+    Max_10 "Also gut. Du hast es verstanden. Ich haue jetzt ab."
 
 # game/dialogues/alicetalk.rpy:5792
 translate german smoke_after_wallet_aa2d0826:

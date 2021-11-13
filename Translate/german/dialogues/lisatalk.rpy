@@ -10152,7 +10152,7 @@ translate german lisa_about_ae_sexed5_9b991e15:
 translate german lisa_about_ae_sexed5_dc8c4c15:
 
     # Lisa_10 "Я... Я не знаю, Макс... Мне всё это интересно, но... без мамы..."
-    Lisa_10 "Я... Ich weiß nicht, Max... Ich bin neugierig auf all das, aber... ohne Mom..."
+    Lisa_10 "Ich... Ich weiß nicht, Max... Ich bin neugierig auf all das, aber... ohne Mom..."
 
 # game/dialogues/lisatalk.rpy:4258
 translate german lisa_about_ae_sexed5_3f9aadb5:
