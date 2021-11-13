@@ -694,7 +694,7 @@ translate german cheat_money_strateg_16b9bde6:
 translate german about_credit_3ac552dc:
 
     # Max_00 "{m}Итак, поищем, где можно простому парню разжиться деньгами...{/m}"
-    Max_00 "Also, ich muss einen Ort finden, an dem ein einfacher Kerl etwas Geld verdienen kann..."
+    Max_00 "{m}Also, ich muss einen Ort finden, an dem ein einfacher Kerl etwas Geld verdienen kann...{/m}"
 
 # game/events/max.rpy:1035
 translate german about_credit_aa91eb63:

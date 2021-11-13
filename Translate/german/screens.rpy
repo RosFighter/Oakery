@@ -206,18 +206,6 @@ translate german strings:
     old "Язык"
     new "Sprache"
 
-    # game/screens.rpy:959
-    old "Русский"
-    new "Русский"
-
-    # game/screens.rpy:960
-    old "English"
-    new "English"
-
-    # game/screens.rpy:961
-    old "Deutsch"
-    new "Deutsch"
-
     # game/screens.rpy:967
     old "Дополнительно"
     new "Zusätzlich"

@@ -2620,7 +2620,7 @@ translate german kira_photoset3_b287dbfe:
 translate german kira_photoset3_178c3eb8:
 
     # Kira_01 "О... А вот и наш фотограф... Как раз вовремя. Проходи, чувствуй себя как дома..."
-    Kira_01 "О... Da ist unser Fotograf... Gerade noch rechtzeitig. Komm rein, mach es dir gemütlich..."
+    Kira_01 "O... Da ist unser Fotograf... Gerade noch rechtzeitig. Komm rein, mach es dir gemütlich..."
 
 # game/dialogues/kiratalk.rpy:1295
 translate german kira_photoset3_5a80b1a2:
@@ -3010,7 +3010,7 @@ translate german kira_photoset3_d4c901c6:
 translate german kira_photoset3_efcf1970:
 
     # Max_10 "О! А твоя подруга что, уже ушла?! А я так хотел её увидеть..."
-    Max_10 "О! Ist deine Freundin schon weg?! Ich hatte mich so darauf gefreut, sie zu sehen..."
+    Max_10 "O! Ist deine Freundin schon weg?! Ich hatte mich so darauf gefreut, sie zu sehen..."
 
 # game/dialogues/kiratalk.rpy:1480
 translate german kira_photoset3_cfdbd3a5:
