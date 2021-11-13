@@ -108,7 +108,7 @@ translate german strings:
 
     # game/screens.rpy:527
     old "МЕНЮ"
-    new "MENUE"
+    new "MENÜ"
 
     # game/screens.rpy:661
     old "Введите описание файла сохранения:"
@@ -448,4 +448,4 @@ translate german strings:
 
     # game/screens.rpy:400
     old "Главное меню"
-    new "Hauptmenue"
+    new "Hauptmenü"
