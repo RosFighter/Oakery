@@ -11792,94 +11792,94 @@ translate english alice_private_punish_r_pun_e4f55396:
 translate english AliceTalkStart_429c2af4:
 
     # Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?" nointeract
-    Alice_17 "" nointeract
+    Alice_17 "Shall I kick you out, Max, or will you get out yourself?" nointeract
 
 # game/dialogues/alicetalk.rpy:5775
 translate english alice_about_wallet_1fc2b461:
 
     # Alice_16 "Мне это не интересно, Макс!"
-    Alice_16 ""
+    Alice_16 "I am not interested, Max!"
 
 # game/dialogues/alicetalk.rpy:5776
 translate english alice_about_wallet_7fa286a3:
 
     # Max_07 "Э-э-э... Что не интересно?"
-    Max_07 ""
+    Max_07 "Uh... Not interested in what?"
 
 # game/dialogues/alicetalk.rpy:5777
 translate english alice_about_wallet_b528c3ce:
 
     # Alice_12 "Всё, с чем бы ты не пришёл. Просто уходи... Или врежу!"
-    Alice_12 ""
+    Alice_12 "Whatever scheme you've come up. Just go away... Or I'll punch you in the face!"
 
 # game/dialogues/alicetalk.rpy:5778
 translate english alice_about_wallet_d249d4b4:
 
     # Max_09 "Ты что, поверила Эрику?!"
-    Max_09 ""
+    Max_09 "You believed Eric?!"
 
 # game/dialogues/alicetalk.rpy:5779
 translate english alice_about_wallet_1310eef7:
 
     # Alice_17 "А ты ещё здесь?!"
-    Alice_17 ""
+    Alice_17 "Are you still here?!"
 
 # game/dialogues/alicetalk.rpy:5780
 translate english alice_about_wallet_3deff628:
 
     # Max_10 "Ладно. Всё понял. Ухожу."
-    Max_10 ""
+    Max_10 "Okay. I got it. I'll go."
 
 # game/dialogues/alicetalk.rpy:5792
 translate english smoke_after_wallet_aa2d0826:
 
     # Alice_12 "Нечего на меня тут глазеть, Макс! Иди отсюда. Или тебя поджопником ускорить?"
-    Alice_12 ""
+    Alice_12 "Don't stare at me, Max! Get out of here. Or should I whip your ass?"
 
 # game/dialogues/alicetalk.rpy:5793
 translate english smoke_after_wallet_8a0bacb0:
 
     # Max_09 "Ты, конечно, можешь это сделать... Но, знаешь кто вечером узнает, что ты продолжаешь курить?"
-    Max_09 ""
+    Max_09 "You can do that, of course... But, can you guess who would find out you've been smoking?"
 
 # game/dialogues/alicetalk.rpy:5794
 translate english smoke_after_wallet_b149a7c2:
 
     # Alice_16 "Не вздумай говорить маме!"
-    Alice_16 ""
+    Alice_16 "Don't you dare tell Mom!"
 
 # game/dialogues/alicetalk.rpy:5795
 translate english smoke_after_wallet_4b38b441:
 
     # Max_07 "Запросто! Ты спишь голая, а я молчу. И всем хорошо..."
-    Max_07 ""
+    Max_07 "That's an easy one! Just sleep naked for me and I'll keep my mouth shut'..."
 
 # game/dialogues/alicetalk.rpy:5796
 translate english smoke_after_wallet_02e0beca:
 
     # Alice_17 "Говнюк ты, Макс! Не знаю, зачем тебе, извращенцу, это нужно, но лучше я соглашусь на этот пустяк... Пока ты что-нибудь ещё не попросил."
-    Alice_17 ""
+    Alice_17 "You're an asshole, Max! I don't know why you need it, you pervert, but I'd rather settle for this... Before you ask for something else."
 
 # game/dialogues/alicetalk.rpy:5797
 translate english smoke_after_wallet_b5ff10cd:
 
     # Max_01 "Вот и отлично!"
-    Max_01 ""
+    Max_01 "Well, that's great!"
 
 # game/dialogues/alicetalk.rpy:5799
 translate english smoke_after_wallet_40b817ec:
 
     # Alice_13 "А теперь вали отсюда. Дай спокойно покурить!" nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Now get out of here. Let me smoke in peace!" nointeract
 
 # game/dialogues/alicetalk.rpy:5809
 translate english smoke_after_wallet_429c2af4:
 
     # Alice_17 "Тебя выпнуть, Макс, или сам отвалишь?" nointeract
-    Alice_17 "" nointeract
+    Alice_17 "Shall I kick you out, Max, or will you get out yourself?" nointeract
 
 translate english strings:
 
     # game/dialogues/alicetalk.rpy:5782
     old "{b}Оповещение:{/b} Алиса больше не хочет взаимодействовать с Максом"
-    new ""
+    new "{b}Alert:{/b} Alice no longer wants to interact with Max"
