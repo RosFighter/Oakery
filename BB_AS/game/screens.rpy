@@ -478,18 +478,15 @@ screen main_menu():
     else:
         add 'images/interface/mm/family-00.webp'
 
-    vbox xalign 0.5 spacing -70 ypos -30:
-        frame xalign 0.5 xsize 1180 background None:
-            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 170 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
-        frame xalign 0.5 xsize 1180 background None:
-            text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
-            text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+    frame xalign 0.5 ypos 125 xsize 1180 background None:
+        text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+        text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
-    # imagebutton:
-    #     idle "interface mm clothing"
-    #     action Show('changes_menu_clot')
-    #     pos 983, 22
-    #     at main_menu_btn
+    imagebutton:
+        idle "interface mm clothing"
+        action Show('changes_menu_clot')
+        pos 983, 23
+        at main_menu_btn
 
     # imagebutton:
     #     idle "interface patreon logo"
