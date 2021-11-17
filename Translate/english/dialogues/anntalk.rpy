@@ -2258,34 +2258,34 @@ translate english strings:
 translate english AnnTalkStart_11c2aa45:
 
     # Ann_17 "Уйди, Макс. Нам не о чем говорить, пока ты не вернёшь Эрику деньги и не извинишься перед ним и всеми нами!" nointeract
-    Ann_17 "" nointeract
+    Ann_17 "Leave, Max. We have nothing to talk about until you give Eric his money back and apologize!" nointeract
 
 # game/dialogues/anntalk.rpy:1450
 translate english ann_about_wallet_90e1fc67:
 
     # Ann_16 "Ты вернул Эрику бумажник и деньги?"
-    Ann_16 ""
+    Ann_16 "Did you give Eric his wallet and money back?"
 
 # game/dialogues/anntalk.rpy:1451
 translate english ann_about_wallet_0b099756:
 
     # Max_09 "Да не крал я у него ничего! Он всех обманывает!"
-    Max_09 ""
+    Max_09 "I didn't steal anything from him! He's cheating everybody!"
 
 # game/dialogues/anntalk.rpy:1452
 translate english ann_about_wallet_33bee417:
 
     # Ann_18 "Пока не вернёшь, даже не подходи ко мне, Макс! Всё настроение от тебя только портится. А уж как мне перед Эриком стыдно..."
-    Ann_18 ""
+    Ann_18 "Until you do, don't even come near me, Max! I can't believe how much you've embarrassed me in front of Eric..."
 
 # game/dialogues/anntalk.rpy:1453
 translate english ann_about_wallet_a7053e1b:
 
     # Max_11 "Как скажешь, мам."
-    Max_11 ""
+    Max_11 "Whatever, Mom."
 
 translate english strings:
 
     # game/dialogues/anntalk.rpy:1455
     old "{b}Оповещение:{/b} Анна больше не хочет взаимодействовать с Максом"
-    new ""
+    new "{b}Alert:{/b} Ann no longer wants to interact with Max"
