@@ -10464,82 +10464,82 @@ translate english lisa_about_ae_sexed5_da98adae:
 translate english LisaTalkStart_e91aa3e9:
 
     # Lisa_13 "Макс, я же просила отстать! Не хочу с тобой разговаривать." nointeract
-    Lisa_13 "" nointeract
+    Lisa_13 "Max, I told you to leave me alone! I don't want to talk to you." nointeract
 
 # game/dialogues/lisatalk.rpy:4545
 translate english lisa_about_wallet_53c90b6e:
 
     # Lisa_12 "Что ты хотел, Макс?"
-    Lisa_12 ""
+    Lisa_12 "What do you want, Max?"
 
 # game/dialogues/lisatalk.rpy:4546
 translate english lisa_about_wallet_fb1cb05d:
 
     # Max_10 "Надеюсь, ты не поверила Эрику?"
-    Max_10 ""
+    Max_10 "I hope you didn't believe Eric."
 
 # game/dialogues/lisatalk.rpy:4547
 translate english lisa_about_wallet_cc33c7d1:
 
     # Lisa_13 "А зачем ему врать про такое?"
-    Lisa_13 ""
+    Lisa_13 "Why would he lie about that?"
 
 # game/dialogues/lisatalk.rpy:4548
 translate english lisa_about_wallet_1fe8c5d2:
 
     # Max_07 "Чтобы я побыстрее отправился в военный лагерь, а он мог без проблем к вам всем приставать."
-    Max_07 ""
+    Max_07 "So that I get sent to boot camp, and he can pester you as much as he wants."
 
 # game/dialogues/lisatalk.rpy:4549
 translate english lisa_about_wallet_7863dfe7:
 
     # Lisa_09 "Что это ещё значит, \"приставать\"?"
-    Lisa_09 ""
+    Lisa_09 "What do you mean, \"pester\"?"
 
 # game/dialogues/lisatalk.rpy:4550
 translate english lisa_about_wallet_c596c0c7:
 
     # Max_15 "Это значит, самым грязным и непристойным образом с вами всеми развлекаться."
-    Max_15 ""
+    Max_15 "It means doing obscene things with you all."
 
 # game/dialogues/lisatalk.rpy:4551
 translate english lisa_about_wallet_525e0eed:
 
     # Lisa_10 "Ой, Макс, ну что за ересь! Эрик - прекрасный и честный мужчина, в отличие от тебя. И вообще, я не хочу с тобой разговаривать. Отстань."
-    Lisa_10 ""
+    Lisa_10 "Oh, Max, what nonsense! Eric is a fine and honest man, unlike you. And anyway, I don't want to talk to you. Leave me alone."
 
 # game/dialogues/lisatalk.rpy:4552
 translate english lisa_about_wallet_6226d61a:
 
     # Max_09 "А если бы у меня были доказательства, подтверждающие, что он не такой классный, как ты думаешь?"
-    Max_09 ""
+    Max_09 "What if I had proof that he wasn't as cool as you think he is?"
 
 # game/dialogues/lisatalk.rpy:4553
 translate english lisa_about_wallet_2ebe63dc:
 
     # Lisa_12 "Думаю, если бы и были, то ты бы уже всё всем доказал. Так что повторю ещё раз... Отстань!"
-    Lisa_12 ""
+    Lisa_12 "I think if there was any proof, you would have shown it by now. So I'll say it again... Leave me alone!"
 
 # game/dialogues/lisatalk.rpy:4557
 translate english lisa_about_wallet_8c152f15:
 
     # Max_07 "{m}Ясно. Доказательства у меня есть, вот только девчонки сейчас в таком состоянии, что запросто могут обвинить меня в том, что я эти фотографии нарисовал в каком-нибудь графическом редакторе.{/m}"
-    Max_07 ""
+    Max_07 "{m}Okay. I have the proof, but the girls are in such a state that they would probably accuse me of using photoshop.{/m}"
 
 # game/dialogues/lisatalk.rpy:4558
 translate english lisa_about_wallet_0b4cc1e7:
 
     # Max_01 "{m}Кажется, я знаю, как подкрепить эти снимки фактами... И поможет мне в этом Алиса, ведь именно на неё Эрик так усердно дрочит. Остаётся его грамотно подставить...{/m}"
-    Max_01 ""
+    Max_01 "{m}I think I know how to back up these pictures with facts... And Alice will help me do it, because she's the one Eric's been jerking off over. All that's left to do is to set him up...{/m}"
 
 # game/dialogues/lisatalk.rpy:4559
 translate english lisa_about_wallet_3d4efb1f:
 
     # Max_09 "{m}Нужно будет проследить за его ночными делишками в комнате Алисы, а сразу после действовать! Главное, чтобы Алиса спала голой...{/m}"
-    Max_09 ""
+    Max_09 "{m}We'll have to keep an eye on his nocturnal activities in Alice's room, and then act right afterwards! The main thing is that Alice sleeps naked...{/m}"
 
 translate english strings:
 
     # game/dialogues/lisatalk.rpy:4561
     old "{b}Оповещение:{/b} Лиза больше не хочет взаимодействовать с Максом"
-    new ""
+    new "{b}Alert:{/b} Lisa no longer wants to interact with Max"

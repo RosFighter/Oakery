@@ -954,10 +954,10 @@ translate english strings:
 translate english punishment_lisa_5e582e44:
 
     # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 ""
+    Ann_12 "No, Max! And be thankful that I don't punish you along with her... And you, Lisa, don't just stand there, move it..."
 
 # game/dialogues/punishment.rpy:712
 translate english punishment_alice_3eaef6e3:
 
     # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... Алиса, пошевеливайся..."
-    Ann_12 ""
+    Ann_12 "No, Max! And be thankful I'm not punishing you along with her... Alice, get a move on..."

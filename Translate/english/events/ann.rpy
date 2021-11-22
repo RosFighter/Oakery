@@ -874,10 +874,10 @@ translate english strings:
 translate english ann_shower_start_peeping_fc5db481:
 
     # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
-    Max_09 ""
+    Max_09 "{m}It's better to keep the peeping to a minimum until I get rid of Eric. So as not to upset anyone else...{/m}"
 
 # game/events/ann.rpy:128
 translate english ann_shower_start_peeping_dda24c4d:
 
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}It's a good thing this doesn't apply to Kira...{/m}" nointeract
