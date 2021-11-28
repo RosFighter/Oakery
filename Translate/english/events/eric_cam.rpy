@@ -338,22 +338,22 @@ translate english cam0_eric_ann_try_fucking_5da5d134:
 translate english cam0_eric_ann_sleep_c5aa1a5f:
 
     # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. Нужно проверить...{/m}"
-    Max_07 ""
+    Max_07 "{m}Aha! Mom's alone... So Eric is almost certainly jerking off to Alice right now. We should check it out...{/m}"
 
 # game/events/eric_cam.rpy:421
 translate english cam_before_frame_eric_c6743351:
 
     # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Нужно дождаться, когда он вернётся к моей маме, и затем уже спойкойно его подставлять...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Great! Eric is exactly where I need him... I have to wait until he gets back to Mom, and then I can set him up in peace.../m}" nointeract
 
 # game/events/eric_cam.rpy:437
 translate english cam_before_frame_eric_2da5afe7:
 
     # Max_01 "{m}Отлично! Пора...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}Great! It's time...{/m}" nointeract
 
 translate english strings:
 
     # game/events/eric_cam.rpy:436
     old "{i}идти к комнате Алисы{/i}"
-    new ""
+    new "{i}Go to Alice's room{/i}"
