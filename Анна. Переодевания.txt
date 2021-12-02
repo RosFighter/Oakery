@@ -46,15 +46,17 @@ Max_09 "{m}Сейчас 10 часов, а значит, мама собирае�
 07:00 Анна переодевается после душа в одежду для йоги, далее занимается йогой
    (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
       Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01b1 => #annroom-wardrobe-mde-01-ann-dresses-03b1
 		 #annroom-wardrobe-mde-01-ann-dresses-01h  => #annroom-wardrobe-mde-01-ann-dresses-02h
-		 #annroom-wardrobe-mde-01-ann-dresses-01h1 => #annroom-wardrobe-mde-01-ann-dresses-02h1
+		 #annroom-wardrobe-mde-01-ann-dresses-01h3 => #annroom-wardrobe-mde-01-ann-dresses-03h3
 		 #annroom-wardrobe-mde-01-ann-dresses-04h  => #annroom-wardrobe-mde-01-ann-dresses-05h
-		 #annroom-wardrobe-mde-01-ann-dresses-04h1 => #annroom-wardrobe-mde-01-ann-dresses-05h1
+		 #annroom-wardrobe-mde-01-ann-dresses-04h3 => #annroom-wardrobe-mde-01-ann-dresses-06h3
 	  Не повезло (второй момент):
-	     #annroom-wardrobe-mde-01-ann-dresses-02h
-		 #annroom-wardrobe-mde-01-ann-dresses-02h1
+	     #annroom-wardrobe-mde-01-ann-dresses-03b1
+		 #annroom-wardrobe-mde-01-ann-dresses-02h
+		 #annroom-wardrobe-mde-01-ann-dresses-03h3
 		 #annroom-wardrobe-mde-01-ann-dresses-05h
-		 #annroom-wardrobe-mde-01-ann-dresses-05h1
+		 #annroom-wardrobe-mde-01-ann-dresses-06h3
 	  Рано (нулевой момент):
 	     #annroom-wardrobe-mde-01-ann-dresses-07b
 08:00 Анна может переодеться после йоги в базовую одежду / новую повседневную, далее готовит
@@ -182,6 +184,199 @@ Max_09 "{m}Сейчас 10 часов, а значит, мама собирае�
 		 #annroom-wardrobe-mde-01-ann-dresses-06e3
 	  Рано (нулевой момент):
 	     #annroom-wardrobe-mde-01-ann-dresses-07g
+=====================================================================================================
+УРОВЕНЬ РАСКРЕПОЩЕНИЯ #02 (Не для детских глаз)
+=====================================================================================================
+07:00 Анна переодевается после душа в одежду для йоги, далее занимается йогой
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01b  => #annroom-wardrobe-mde-01-ann-dresses-03b
+		 #annroom-wardrobe-mde-01-ann-dresses-01b1 => #annroom-wardrobe-mde-01-ann-dresses-02b1
+		 #annroom-wardrobe-mde-01-ann-dresses-01h1 => #annroom-wardrobe-mde-01-ann-dresses-02h1
+		 #annroom-wardrobe-mde-01-ann-dresses-01h2 => #annroom-wardrobe-mde-01-ann-dresses-03h2
+		 #annroom-wardrobe-mde-01-ann-dresses-01i1 => #annroom-wardrobe-mde-01-ann-dresses-02i1
+		 #annroom-wardrobe-mde-01-ann-dresses-01i2 => #annroom-wardrobe-mde-01-ann-dresses-03i2
+		 #annroom-wardrobe-mde-01-ann-dresses-04h1 => #annroom-wardrobe-mde-01-ann-dresses-05h1
+		 #annroom-wardrobe-mde-01-ann-dresses-04h2 => #annroom-wardrobe-mde-01-ann-dresses-06h2
+		 #annroom-wardrobe-mde-01-ann-dresses-04i1 => #annroom-wardrobe-mde-01-ann-dresses-05i1
+		 #annroom-wardrobe-mde-01-ann-dresses-04i2 => #annroom-wardrobe-mde-01-ann-dresses-06i2
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-03b
+		 #annroom-wardrobe-mde-01-ann-dresses-02b1
+		 #annroom-wardrobe-mde-01-ann-dresses-02h1
+		 #annroom-wardrobe-mde-01-ann-dresses-03h2
+		 #annroom-wardrobe-mde-01-ann-dresses-02i1
+		 #annroom-wardrobe-mde-01-ann-dresses-03i2
+		 #annroom-wardrobe-mde-01-ann-dresses-05h1
+		 #annroom-wardrobe-mde-01-ann-dresses-06h2
+		 #annroom-wardrobe-mde-01-ann-dresses-05i1
+		 #annroom-wardrobe-mde-01-ann-dresses-06i2
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07b
+		 #annroom-wardrobe-mde-01-ann-dresses-07b2
+08:00 Анна может переодеться после йоги в базовую одежду / новую повседневную, далее готовит
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01f  => #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-01e  => #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-01e2 => #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-01e3 => #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-04f  => #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-04e  => #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-04e2 => #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-04e3 => #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07h
+		 #annroom-wardrobe-mde-01-ann-dresses-07i
+10:00 Анна переодевается после завтрака в рабочую одежду, далее ?отдыхает на кровати? / ?стоит на балконе?
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01a  => #annroom-wardrobe-mde-01-ann-dresses-02a
+		 #annroom-wardrobe-mde-01-ann-dresses-01a1 => #annroom-wardrobe-mde-01-ann-dresses-07a1
+		 #annroom-wardrobe-mde-01-ann-dresses-01a2 => #annroom-wardrobe-mde-01-ann-dresses-03a2
+		 #annroom-wardrobe-mde-01-ann-dresses-01a3 => #annroom-wardrobe-mde-01-ann-dresses-02a3
+		 #annroom-wardrobe-mde-01-ann-dresses-04a  => #annroom-wardrobe-mde-01-ann-dresses-05a
+		 #annroom-wardrobe-mde-01-ann-dresses-04a1 => #annroom-wardrobe-mde-01-ann-dresses-07a1
+		 #annroom-wardrobe-mde-01-ann-dresses-04a2 => #annroom-wardrobe-mde-01-ann-dresses-06a2
+		 #annroom-wardrobe-mde-01-ann-dresses-04a3 => #annroom-wardrobe-mde-01-ann-dresses-05a3
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-02a
+		 #annroom-wardrobe-mde-01-ann-dresses-07a1
+		 #annroom-wardrobe-mde-01-ann-dresses-03a2
+		 #annroom-wardrobe-mde-01-ann-dresses-02a3
+		 #annroom-wardrobe-mde-01-ann-dresses-05a
+		 #annroom-wardrobe-mde-01-ann-dresses-06a2
+		 #annroom-wardrobe-mde-01-ann-dresses-05a3
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07h
+		 #annroom-wardrobe-mde-01-ann-dresses-07i
+		 #annroom-wardrobe-mde-01-ann-dresses-07f
+		 #annroom-wardrobe-mde-01-ann-dresses-07e
+		 #annroom-wardrobe-mde-01-ann-dresses-07e1
+10:00 Анна переодевается после завтрака в выходную одежду, далее ?отдыхает на кровати? / ?стоит на балконе?
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01c  => #annroom-wardrobe-mde-01-ann-dresses-07c
+		 #annroom-wardrobe-mde-01-ann-dresses-01c1 => #annroom-wardrobe-mde-01-ann-dresses-08c1
+		 #annroom-wardrobe-mde-01-ann-dresses-01c2 => #annroom-wardrobe-mde-01-ann-dresses-02c2
+		 #annroom-wardrobe-mde-01-ann-dresses-04c  => #annroom-wardrobe-mde-01-ann-dresses-07c
+		 #annroom-wardrobe-mde-01-ann-dresses-04c1 => #annroom-wardrobe-mde-01-ann-dresses-08c1
+		 #annroom-wardrobe-mde-01-ann-dresses-04c2 => #annroom-wardrobe-mde-01-ann-dresses-05c2
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07c
+		 #annroom-wardrobe-mde-01-ann-dresses-08c1
+		 #annroom-wardrobe-mde-01-ann-dresses-02c2
+		 #annroom-wardrobe-mde-01-ann-dresses-05c2
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07h
+		 #annroom-wardrobe-mde-01-ann-dresses-07i
+		 #annroom-wardrobe-mde-01-ann-dresses-07f
+		 #annroom-wardrobe-mde-01-ann-dresses-07e
+		 #annroom-wardrobe-mde-01-ann-dresses-07e1
+10:00 Анна может переодеться после завтрака в базовую одежду / новую повседневную, далее отдыхает в своей комнате
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01f  => #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-01e  => #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-01e2 => #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-01e3 => #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-04f  => #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-04e  => #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-04e2 => #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-04e3 => #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07h
+		 #annroom-wardrobe-mde-01-ann-dresses-07i
+14:00 Анна переодевается после похода по магазинам в бикини, далее отдыхает во дворе
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01d1 => #annroom-wardrobe-mde-01-ann-dresses-08d1
+		 #annroom-wardrobe-mde-01-ann-dresses-01d2 => #annroom-wardrobe-mde-01-ann-dresses-02d2
+		 #annroom-wardrobe-mde-01-ann-dresses-04d1 => #annroom-wardrobe-mde-01-ann-dresses-08d1
+		 #annroom-wardrobe-mde-01-ann-dresses-04d2 => #annroom-wardrobe-mde-01-ann-dresses-05d2
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-08d1
+		 #annroom-wardrobe-mde-01-ann-dresses-02d2
+		 #annroom-wardrobe-mde-01-ann-dresses-05d2
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07j
+14:00 Анна переодевается после отдыха в бикини, далее отдыхает во дворе
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01d1 => #annroom-wardrobe-mde-01-ann-dresses-08d1
+		 #annroom-wardrobe-mde-01-ann-dresses-01d2 => #annroom-wardrobe-mde-01-ann-dresses-02d2
+		 #annroom-wardrobe-mde-01-ann-dresses-04d1 => #annroom-wardrobe-mde-01-ann-dresses-08d1
+		 #annroom-wardrobe-mde-01-ann-dresses-04d2 => #annroom-wardrobe-mde-01-ann-dresses-05d2
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-08d1
+		 #annroom-wardrobe-mde-01-ann-dresses-02d2
+		 #annroom-wardrobe-mde-01-ann-dresses-05d2
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07f
+		 #annroom-wardrobe-mde-01-ann-dresses-07e
+		 #annroom-wardrobe-mde-01-ann-dresses-07e1
+18:00 Анна переодевается после отдыха во дворе в базовую одежду / новую повседневную, далее готовит
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01f  => #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-01e  => #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-01e2 => #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-01e3 => #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-04f  => #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-04e  => #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-04e2 => #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-04e3 => #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07d
+22:00 Анна может переодеться после просмотра ТВ в базовую одежду / новую повседневную, далее отдыхает в своей комнате
+   (Макс просто входит в комнату)   #annroom-wardrobe-mde-01
+      Повезло (первый и второй моменты):
+		 #annroom-wardrobe-mde-01-ann-dresses-01f  => #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-01e  => #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-01e2 => #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-01e3 => #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-04f  => #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-04e  => #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-04e2 => #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-04e3 => #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Не повезло (второй момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-02f
+		 #annroom-wardrobe-mde-01-ann-dresses-02e
+		 #annroom-wardrobe-mde-01-ann-dresses-03e2
+		 #annroom-wardrobe-mde-01-ann-dresses-02e3
+		 #annroom-wardrobe-mde-01-ann-dresses-05f
+		 #annroom-wardrobe-mde-01-ann-dresses-05e
+		 #annroom-wardrobe-mde-01-ann-dresses-06e2
+		 #annroom-wardrobe-mde-01-ann-dresses-05e3
+	  Рано (нулевой момент):
+	     #annroom-wardrobe-mde-01-ann-dresses-07g
 ===================================================================================================================
 УР#01
 
@@ -231,6 +426,74 @@ Max_09 "{m}Сейчас 10 часов, а значит, мама собирае�
       Ann_00 "Так, сынок... Ты можешь погулять? А то мне нужно переодеться..."
 	     "А я разве чем-то помешаю?"
 		    Ann_13 "Конечно! Это как-то неправильно, если мать будет переодеваться при своём ребёнке. Так что, пожалуйста, выйди ненадолго."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+		 "Да легко! Не буду мешать..."
+		    Ann_01 "Спасибо, Макс. Если ты что-то хотел, то я недолго..."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+
+(Анна просит Макса освободить её комнату)
+   #annroom-wardrobe-mde-02 + Анна
+   Ann_00 "Сынок, я собиралась переодеться. Иди пока, займись чем-нибудь..."
+   Ann_12 "Сынок, я собиралась переодеться. Не мешай маме. Займись чем-нибудь полезным..."   #если Макс на сроке за воровство
+	  подождать за дверью, пока мама переоденется
+	  уйти
+(Анна просит Макса освободить её комнату + Эрик)
+   #annroom-wardrobe-mde-02 + Эрик + Анна
+   Ann_00 "Сынок, мы с Эриком собирались переодеться. Не мешай взрослым, займись чем-нибудь..."
+   Eric_09 "Макс, не мешай взрослым! В твоём положении это просто верх наглости! Найди себе занятие..."   #если Макс на сроке за воровство
+	  подождать за дверью, пока мама переоденется
+	  уйти
+
+УР#02
+
+(Макс просто входит в комнату)
+   Повезло:
+      #первый момент
+      Ann_15 "Макс! А стучаться кто будет?!"
+	  #второй момент
+	  Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?"
+	     "Да не прикрывай такую красоту, все свои же!"   #если Анна стоит передом к Максу
+		    Ann_13 "Макс! И не стыдно тебе такое своей маме говорить, а? Ну-ка бегом за дверь, а то мешаешь."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+         "Сразу видно, что попка у тебя тренированная!"   #если Анна стоит задом к Максу
+		    Ann_13 "Даже не знаю, что на это ответить... Ну-ка бегом за дверь, а то засмущал меня."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+		 "А посмотреть нельзя?"   #если Анна прикрывает только низ
+		    Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+		 "Извнини, всё позабыл, когда тебя увидел. Ты прекрасна!"
+		    Ann_02 "Приятно слышать. Но маме нужно переодеться... Так что подожди за дверью, хорошо?"
+			   подождать за дверью, пока мама переоденется
+			   уйти
+   Не повезло:
+      #второй момент
+      Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?"
+	     "Да не прикрывай такую красоту, все свои же!"   #если Анна стоит передом к Максу
+		    Ann_13 "Макс! И не стыдно тебе такое своей маме говорить, а? Ну-ка бегом за дверь, а то мешаешь."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+         "Сразу видно, что попка у тебя тренированная!"   #если Анна стоит задом к Максу
+		    Ann_13 "Даже не знаю, что на это ответить... Ну-ка бегом за дверь, а то засмущал меня."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+		 "А посмотреть нельзя?"   #если Анна прикрывает только низ
+		    Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться."
+			   подождать за дверью, пока мама переоденется
+			   уйти
+		 "Извнини, всё позабыл, когда тебя увидел. Ты прекрасна!"
+		    Ann_02 "Приятно слышать. Но маме нужно переодеться... Так что подожди за дверью, хорошо?"
+			   подождать за дверью, пока мама переоденется
+			   уйти
+   Рано:
+      #нулевой момент
+      Ann_00 "Так, сынок... Ты можешь погулять? А то мне нужно переодеться..."
+	     "А я не помешаю. Начинай..."
+		    Ann_12 "Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться."
 			   подождать за дверью, пока мама переоденется
 			   уйти
 		 "Да легко! Не буду мешать..."
