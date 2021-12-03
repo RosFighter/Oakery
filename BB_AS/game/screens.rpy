@@ -462,31 +462,39 @@ screen main_menu():
         key "д" action Language(None)
 
     # строим фон заставки
-    add gui.main_menu_background
-    if 'kira' in persistent.mems_var:
+    # add gui.main_menu_background
+    # if 'kira' in persistent.mems_var:
+    #
+    #     add 'images/interface/mm/family-01.webp'
+    #
+    #     add 'images/interface/mm/01/max/00.webp' at eye_movement
+    #
+    #     for char in menu_chars:
+    #         # получить список рендеров одежды
+    #         $ lst = menu_chars[char].get_render_list()
+    #         for rndr in lst:
+    #             add 'images/interface/mm/01/'+char+'/'+rndr+'.webp'
+    #
+    # else:
+    #     add 'images/interface/mm/family-00.webp'
+    add 'gui/main_menu_ny.webp'
 
-        add 'images/interface/mm/family-01.webp'
+    vbox xalign 0.5 spacing -70 ypos -30:
+        frame xalign 0.5 xsize 1180 background None:
+            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 170 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
+        # frame xalign 0.5 xsize 1180 background None:
+        #     text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+        #     text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
-        add 'images/interface/mm/01/max/00.webp' at eye_movement
+    # frame xalign 0.5 ypos 125 xsize 1180 background None:
+    #     text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+    #     text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
-        for char in menu_chars:
-            # получить список рендеров одежды
-            $ lst = menu_chars[char].get_render_list()
-            for rndr in lst:
-                add 'images/interface/mm/01/'+char+'/'+rndr+'.webp'
-
-    else:
-        add 'images/interface/mm/family-00.webp'
-
-    frame xalign 0.5 ypos 125 xsize 1180 background None:
-        text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
-        text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
-
-    imagebutton:
-        idle "interface mm clothing"
-        action Show('changes_menu_clot')
-        pos 983, 23
-        at main_menu_btn
+    # imagebutton:
+    #     idle "interface mm clothing"
+    #     action Show('changes_menu_clot')
+    #     pos 983, 23
+    #     at main_menu_btn
 
     # imagebutton:
     #     idle "interface patreon logo"
@@ -494,17 +502,17 @@ screen main_menu():
     #     align (0.98, 0.63)
     #     at main_logo
 
-    imagebutton:
-        idle "interface patreon logo 2"
-        action OpenURL("https://www.patreon.com/aleksey90artimages")
-        align (0.98, 0.9)
-        at main_logo
-
-    imagebutton:
-        idle "interface patreon music"
-        action OpenURL("https://www.patreon.com/maffinmusicman")
-        align (0.01, 0.62)
-        at main_logo
+    # imagebutton:
+    #     idle "interface patreon logo 2"
+    #     action OpenURL("https://www.patreon.com/aleksey90artimages")
+    #     align (0.98, 0.9)
+    #     at main_logo
+    #
+    # imagebutton:
+    #     idle "interface patreon music"
+    #     action OpenURL("https://www.patreon.com/maffinmusicman")
+    #     align (0.01, 0.62)
+    #     at main_logo
 
     ## Эта пустая рамка затеняет главное меню.
     frame:
@@ -987,10 +995,20 @@ screen preferences():
                         textbutton _("Переходов") action InvertSelected(Preference("transitions", "toggle"))
                     vbox:
                         style_prefix "radio"
-                        label _("Язык")#| Language")
+                        label _("Язык")
                         textbutton "Русский" action Language(None)
                         textbutton "English" action Language("english")
                         textbutton "Deutsch" action Language("german")
+                        if 'french' in current_language_list:
+                            textbutton "Français" action Language("french")
+                        if 'italian' in current_language_list:
+                            textbutton "Italiano" action Language("italian")
+                        if 'polish' in current_language_list:
+                            textbutton "Polski" action Language("polish")
+                        if 'portuguese' in current_language_list:
+                            textbutton "Português" action Language("portuguese")
+                        if 'spanish' in current_language_list:
+                            textbutton "Español" action Language("spanish")
 
                 vbox:
                     spacing 20
