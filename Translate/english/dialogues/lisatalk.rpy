@@ -10543,3 +10543,24 @@ translate english strings:
     # game/dialogues/lisatalk.rpy:4561
     old "{b}Оповещение:{/b} Лиза больше не хочет взаимодействовать с Максом"
     new "{b}Alert:{/b} Lisa no longer wants to interact with Max"
+
+# TODO: Translation updated at 2021-12-12 01:54
+
+# game/dialogues/lisatalk.rpy:2327
+translate english lisa_sorry_gifts_5dc942a0:
+
+    # Lisa_02 "Правда? Ты всё-таки достал её для меня?! А какую?" nointeract
+    Lisa_02 "Really? Did you get it for me?! Which one?" nointeract
+
+# game/dialogues/lisatalk.rpy:2329
+translate english lisa_sorry_gifts_18215912:
+
+    # Lisa_02 "Правда? Ну ты даёшь! А какую на этот раз?!" nointeract
+    Lisa_02 "Really? Oh, my! What's the next one?!" nointeract
+
+# game/dialogues/lisatalk.rpy:2331
+translate english lisa_sorry_gifts_18a348cf:
+
+    # Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!" nointeract
+    Lisa_02 "Really? Come on, show me what you got this time!" nointeract
+

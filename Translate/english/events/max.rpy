@@ -1007,3 +1007,18 @@ translate english bedtime_thoughts_a9917f30:
 
     # Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
     Max_07 "{m}How do I get Eric to stop messing with my sisters, at least for a while... and Kira... and Mom too... Hmm... There's a chance I could slip something into his food before dinner if I helped Alice set the table! I should check the online store for something I could use...{/m}"
+
+# TODO: Translation updated at 2021-12-12 01:54
+
+# game/events/max.rpy:114
+translate english Nap_9f963ea2:
+
+    # Max_00 "{m}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/m}" nointeract
+    Max_00 "{m}I'm not really tired right now, but I'll take a nap so save my energy...{/m}" nointeract
+
+# game/events/max.rpy:116
+translate english Nap_5e123eb6:
+
+    # Max_00 "{m}Ох и вымотался же я сегодня, надо немного вздремнуть...{/m}" nointeract
+    Max_00 "{m}I'm exhausted today, I need a little nap...{/m}" nointeract
+
