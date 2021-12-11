@@ -2474,19 +2474,19 @@ translate french strings:
 
     # game/core/02init.rpy:235
     old "Одежда"
-    new "fringues"
+    new "Habits"
 
     # game/core/02init.rpy:235
     old "Книги"
-    new "livre"
+    new "Livres"
 
     # game/core/02init.rpy:235
     old "Продукты"
-    new "courses"
+    new "Nourriture"
 
     # game/core/02init.rpy:235
     old "Электроника"
-    new "électronique"
+    new "Électronique"
 
     # game/core/02init.rpy:235
     old "Товары 18+"
@@ -2494,15 +2494,15 @@ translate french strings:
 
     # game/core/02init.rpy:235
     old "Косметика"
-    new "cosmétique"
+    new "Cosmétique"
 
     # game/core/02init.rpy:235
     old "Украшения"
-    new "bijoux"
+    new "Bijoux"
 
     # game/core/02init.rpy:235
     old "Другое"
-    new "autre"
+    new "Autre"
 
     # game/core/02init.rpy:246
     old "А у меня есть то, о чём ты мечтала..."
@@ -5677,7 +5677,7 @@ translate french strings:
 
     # game/core/screens.rpy:1088
     old "ЖДАТЬ"
-    new "ATTENDU"
+    new "ATTENDRE"
 
     # game/core/screens.rpy:1099
     old "Зрителей: [public]"
