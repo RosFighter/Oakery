@@ -11882,4 +11882,25 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:5782
     old "{b}Оповещение:{/b} Алиса больше не хочет взаимодействовать с Максом"
-    new "{b} Achtung:{/b} Alice will nicht mehr mit Max sprechen"
+    new "{b}Achtung:{/b} Alice will nicht mehr mit Max sprechen"
+ 
+ # TODO: Translation updated at 2021-12-12 01:53
+
+# game/dialogues/alicetalk.rpy:3251
+translate german alice_sorry_gifts_fd790983:
+
+    # Alice_02 "Да ладно! Это мне нравится... И что там у тебя?" nointeract
+    Alice_02 "Na los! Das gefällt mir... Was hast du da?" nointeract
+
+# game/dialogues/alicetalk.rpy:3253
+translate german alice_sorry_gifts_567ab5fa:
+
+    # Alice_02 "Ого! И правда хочешь рискнуть... И что там у тебя на этот раз?" nointeract
+    Alice_02 "Wow! Du willst das Risiko wirklich eingehen... Also, was hast du dieses Mal?" nointeract
+
+# game/dialogues/alicetalk.rpy:3255
+translate german alice_sorry_gifts_e3d28a54:
+
+    # Alice_02 "Наконец-то! Ну давай, показывай, что у тебя на этот раз?!" nointeract
+    Alice_02 "Endlich! Los, zeig mir, was du diesmal drauf hast!" nointeract
+

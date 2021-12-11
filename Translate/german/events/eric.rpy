@@ -2779,3 +2779,78 @@ translate german strings:
     # game/events/eric.rpy:1895
     old "{r}Отношения Макса с семьёй значительно ухудшились. Они расстроены и не доверяют ему.{/r}"
     new "{r}Max' Beziehung zu seiner Familie hat sich erheblich verschlechtert. Sie sind verärgert und vertrauen ihm nicht.{/r}"
+
+# TODO: Translation updated at 2021-12-12 01:53
+
+# game/events/eric.rpy:320
+translate german eric_ann_tv_bca2c1fb:
+
+    # Max_07 "{m}Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно...{/m}" nointeract
+    Max_07 "{m}Ich glaube, Mom und Eric sehen sich einen Film an. Wahrscheinlich wieder Pornos...{/m}" nointeract
+
+# game/events/eric.rpy:322
+translate german eric_ann_tv_098f8cbb:
+
+    # Max_07 "{m}Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой...{/m}" nointeract
+    Max_07 "{m}Ich glaube, Mom und Eric sehen sich gerade eine Art Film an. Ich frage mich, was das ist...{/m}" nointeract
+
+# game/events/eric.rpy:330
+translate german eric_ann_tv_ef522b93:
+
+    # Ann_12 "Макс, мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?" nointeract
+    Ann_12 "Max, Eric und ich sehen uns einen Film an. Ich würde dich einladen, aber es ist nichts für Kinder. Kannst du irgendwo spazieren gehen? Und bitte nicht gucken. Geht das in Ordnung?" nointeract
+
+# game/events/eric.rpy:332
+translate german eric_ann_tv_0d84ad96:
+
+    # Ann_12 "Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?" nointeract
+    Ann_12 "Oh, Max... Eric und ich sehen uns einen Film an. Ich würde dich einladen, aber er ist nicht für Kinder geeignet. Könntest du uns bitte etwas Privatsphäre geben?" nointeract
+
+# game/events/eric.rpy:353
+translate german eric_ann_tv_984887be:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику...{/m}" nointeract
+    Max_08 "{m}Wow! Das ist ja interessant! Mom will Eric anscheinend einen blasen...{/m}" nointeract
+
+# game/events/eric.rpy:355
+translate german eric_ann_tv_898dcfe9:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А куда это мама так наклонилась?{/m}" nointeract
+    Max_08 "{m}Wow! Der Film wird noch interessanter! Aber wieso lehnt Mom sich so komisch an?{/m}" nointeract
+
+# game/events/eric.rpy:365
+translate german eric_ann_tv_7170a555:
+
+    # Max_07 "{m}На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}Im Fernseher laufen bereits sehr interessanteste Dinge, und Mom hat ihr Handtuch abgenommen! Ich würde diesen nackten Arsch gerne aus einem anderen Blickwinkel sehen... Soll ich näher kommen?{/m}" nointeract
+
+# game/events/eric.rpy:367
+translate german eric_ann_tv_9ce1c0be:
+
+    # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}Wow! Eric hat Mom das Handtuch weggezogen und ich sehe ihren nackten Arsch! Vielleicht sollte ich näher ran.{/m}" nointeract
+
+# game/events/eric.rpy:387
+translate german eric_ann_tv_4fa4239d:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А мама, вроде, снова начала дрочить Эрику...{/m}" nointeract
+    Max_08 "{m}Wow! Das ist ja interessant! Und als Mom wieder anfing, Eric einen runterzuholen...{/m}" nointeract
+
+# game/events/eric.rpy:389
+translate german eric_ann_tv_2dfe5fa6:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А что это мама там делает?{/m}" nointeract
+    Max_08 "{m}Wow! Der Film wurde noch interessanter! Was macht Mom da?{/m}" nointeract
+
+# game/events/eric.rpy:399
+translate german eric_ann_tv_8cace1a9:
+
+    # Max_07 "{m}На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}Es ist gerade sehr viel los! Mom hat gerade ihr Handtuch fallen gelassen. Schade, dass ich ihre Brüste nicht sehen kann... Soll ich näher kommen?{/m}" nointeract
+
+# game/events/eric.rpy:401
+translate german eric_ann_tv_2a838c07:
+
+    # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}Wow! Eric hat Mom das Handtuch abgezogen und ich kann ihre nackten Brüste sehen! Vielleicht sollte ich näher ran?{/m}" nointeract
+

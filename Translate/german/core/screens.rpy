@@ -385,3 +385,32 @@ translate german strings:
     # game/core/screens.rpy:2076
     old "Только трусики"
     new "Nur Höschen"
+
+# TODO: Translation updated at 2021-12-12 01:53
+
+translate german strings:
+
+    # game/core/screens.rpy:2046
+    old "ВНИМАНИЕ"
+    new "WARNUNG"
+
+    # game/core/screens.rpy:2047
+    old "КОНТЕНТ ДЛЯ ВЗРОСЛЫХ"
+    new "INHALTE FÜR ERWACHSENE"
+
+    # game/core/screens.rpy:2051
+    old "Эта игра содержит контент сексуального характера"
+    new "Dieses Spiel enthält Inhalte sexueller Natur"
+
+    # game/core/screens.rpy:2052
+    old "Продолжая, ты подтверждаешь, что достаточно взрослый для такого контента"
+    new "Wenn Sie fortfahren, bestätigen Sie, dass Sie alt genug sind, um solche Inhalte zu sehen"
+
+    # game/core/screens.rpy:2054
+    old "Все персонажи, изображённые в этой игре, вымышлены и старше 18 лет"
+    new "Alle in diesem Spiel dargestellten Charaktere sind fiktiv und älter als 18 Jahre"
+
+    # game/core/screens.rpy:2058
+    old "Продолжить"
+    new "Klicken Sie zum Fortfahren"
+

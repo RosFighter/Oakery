@@ -437,3 +437,12 @@ translate german strings:
     # game/screens.rpy:400
     old "Главное меню"
     new "Hauptmenü"
+
+# TODO: Translation updated at 2021-12-12 01:53
+
+translate german strings:
+
+    # game/screens.rpy:1021
+    old "Именованные сохранения"
+    new ""
+

@@ -1007,3 +1007,18 @@ translate german bedtime_thoughts_a9917f30:
 
     # Max_07 "{m}Как же напакостить Эрику, чтобы он хотя бы на время перестал лезть к моим сёстрам... и Кире... да и к маме тоже... Хм... У меня была бы отличная возможность что-нибудь подмешать в его еду за ужином, если помочь Алисе накрыть на стол! Стоит посмотреть в интернет-магазине, можно ли что-то такое купить...{/m}"
     Max_07 "{m}Wie bringe ich Eric dazu, sich eine Weile nicht mehr an meinen Schwestern zu vergreifen... und an Kira... und meine Mom ebenso... Hmm ... Wenn ich Alice beim Eindecken des Tisches helfe, habe ich eine gute Gelegenheit, ihm etwas ins Essen zu mischen! Es lohnt sich, online zu schauen, ob ich so etwas bekommen kann...{/m}"
+
+# TODO: Translation updated at 2021-12-12 01:53
+
+# game/events/max.rpy:114
+translate german Nap_9f963ea2:
+
+    # Max_00 "{m}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/m}" nointeract
+    Max_00 "{m}Ich bin im Moment nicht wirklich müde, aber ich werde ein Nickerchen machen, um meine Energie zu behalten...{/m}" nointeract
+
+# game/events/max.rpy:116
+translate german Nap_5e123eb6:
+
+    # Max_00 "{m}Ох и вымотался же я сегодня, надо немного вздремнуть...{/m}" nointeract
+    Max_00 "{m}Ich bin heute erschöpft, ich brauche ein kleines Nickerchen...{/m}" nointeract
+

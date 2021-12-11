@@ -4393,3 +4393,18 @@ translate german strings:
     # game/events/kira.rpy:1952
     old "{i}кончить в Киру{/i}"
     new "{i}in Kira abspritzen{/i}"
+
+# TODO: Translation updated at 2021-12-12 01:53
+
+# game/events/kira.rpy:930
+translate german kira_sleep_morning_1cadf6e7:
+
+    # Max_04 "{m}Тёте Кире очень идёт быть голой! Может быть, это потому что я привык видеть её голой? В такие округлости просто нельзя не влюбиться...{/m}" nointeract
+    Max_04 "{m}Tante Kira sieht nackt so gut aus! Man kann einfach nicht anders, als sich jedes Mal, wenn man sie sieht, in ihre Kurven zu verlieben...{/m}" nointeract
+
+# game/events/kira.rpy:932
+translate german kira_sleep_morning_44762823:
+
+    # Max_04 "{m}Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша...{/m}" nointeract
+    Max_04 "{m}Aha! Tante Kira ist noch am Schlafen. Gut, dass ihr Nachthemd ein wenig durchsichtig ist... Oooh, sie sieht gut aus...{/m}" nointeract
+
