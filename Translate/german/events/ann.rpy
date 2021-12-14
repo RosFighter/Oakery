@@ -942,97 +942,97 @@ translate german ann_dressed_a3f1e45d:
 translate german ann_dressed_stay_in_room_1c7b7b81:
 
     # Eric_09 "Макс, не мешай взрослым! В твоём положении это просто верх наглости! Найди себе занятие..." nointeract
-    Eric_09 "" nointeract
+    Eric_09 "Max, störe die Erwachsenen nicht! In deiner Situation ist das der Gipfel der Unverschämtheit! Such dir etwas zu tun..." nointeract
 
 # game/events/ann.rpy:333
 translate german ann_dressed_stay_in_room_ff7e7143:
 
     # Ann_00 "Сынок, мы с Эриком собирались переодеться. Не мешай взрослым, займись чем-нибудь..." nointeract
-    Ann_00 "" nointeract
+    Ann_00 "Sohn, Eric und ich wollten uns umziehen. Lass uns in Ruhe, geh und tu etwas ..." nointeract
 
 # game/events/ann.rpy:336
 translate german ann_dressed_stay_in_room_4e1690c6:
 
     # Ann_12 "Сынок, я собиралась переодеться. Не мешай маме. Займись чем-нибудь полезным..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Sohn, ich wollte mich umziehen. Störe deine Mutter nicht. Tu etwas Nützliches..." nointeract
 
 # game/events/ann.rpy:338
 translate german ann_dressed_stay_in_room_0e69876a:
 
     # Ann_00 "Сынок, я собиралась переодеться. Иди пока, займись чем-нибудь..." nointeract
-    Ann_00 "" nointeract
+    Ann_00 "Sohn, ich wollte mich umziehen. Geh und tu etwas..." nointeract
 
 # game/events/ann.rpy:358
 translate german ann_dressed_moment0_1c7b7b81:
 
     # Eric_09 "Макс, не мешай взрослым! В твоём положении это просто верх наглости! Найди себе занятие..." nointeract
-    Eric_09 "" nointeract
+    Eric_09 "Max, störe die Erwachsenen nicht! In deiner Situation ist das der Gipfel der Unverschämtheit! Such dir etwas zu tun..." nointeract
 
 # game/events/ann.rpy:360
 translate german ann_dressed_moment0_ff7e7143:
 
     # Ann_00 "Сынок, мы с Эриком собирались переодеться. Не мешай взрослым, займись чем-нибудь..." nointeract
-    Ann_00 "" nointeract
+    Ann_00 "Sohn, Eric und ich wollten uns umziehen. Lass uns in Ruhe, geh und tu etwas ..." nointeract
 
 # game/events/ann.rpy:366
 translate german ann_dressed_moment0_104e65c7:
 
     # Ann_00 "Так, сынок... Ты можешь погулять? А то мне нужно переодеться..." nointeract
-    Ann_00 "" nointeract
+    Ann_00 "Also, Sohn... Kannst du einen Spaziergang machen? Weil ich muss mich umziehen..." nointeract
 
 # game/events/ann.rpy:368
 translate german ann_dressed_moment0_ad13a757:
 
     # Ann_13 "Конечно! Это как-то неправильно, если мать будет переодеваться при своём ребёнке. Так что, пожалуйста, выйди ненадолго." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Ja, natürlich! Es ist irgendwie falsch, wenn eine Mutter sich vor ihrem Kind umzieht. Geh also bitte eine Weile raus." nointeract
 
 # game/events/ann.rpy:370
 translate german ann_dressed_moment0_42ae37fd:
 
     # Ann_12 "Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Sieh dich an! Hör mit diesem Unsinn auf und lassen deine Mutter sich in Ruhe umziehen." nointeract
 
 # game/events/ann.rpy:372
 translate german ann_dressed_moment0_19c5e329:
 
     # Ann_01 "Спасибо, Макс. Если ты что-то хотел, то я недолго..." nointeract
-    Ann_01 "" nointeract
+    Ann_01 "Vielen Dank, Max. Wenn du etwas willst, ich habe nicht lange gebraucht, um..." nointeract
 
 # game/events/ann.rpy:389
 translate german ann_dressed_moment2_a9e5c75c:
 
     # Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
-    Ann_15 ""
+    Ann_15 "Max! Ich habe dir beigebracht, wie man anklopft! {p=3}{nw}"
 
 # game/events/ann.rpy:391
 translate german ann_dressed_moment2_babcea3a:
 
     # Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
-    Ann_15 ""
+    Ann_15 "Max! Was soll das heißen, wer klopft? {p=3}{nw}"
 
 # game/events/ann.rpy:399
 translate german ann_dressed_moment2_aa9214ef:
 
     # Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
-    Ann_14 "" nointeract
+    Ann_14 "Du kannst nicht einfach so unangemeldet in ein Zimmer platzen! Ist etwas passiert?" nointeract
 
 # game/events/ann.rpy:402
 translate german ann_dressed_moment2_c391d1e4:
 
     # Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Hör auf, unangemeldet ins Zimmer zu platzen! Oder liegt ein Notfall vor?" nointeract
 
 # game/events/ann.rpy:417
 translate german ann_dressed_moment1_1f19d7dd:
 
     # Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
-    Ann_15 "" nointeract
+    Ann_15 "Max! Ich habe dir beigebracht zu klopfen! Du kannst nicht einfach so unangemeldet in ein Zimmer platzen! Stimmt etwas nicht?" nointeract
 
 # game/events/ann.rpy:420
 translate german ann_dressed_moment1_e1ca91d3:
 
     # Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
-    Ann_15 "" nointeract
+    Ann_15 "Max! Wer klopft denn da?! Hör auf, unangemeldet ins Zimmer zu platzen! Handelt es sich etwa um einen Notfall?" nointeract
 
 # game/events/ann.rpy:426
 translate german ann_dressed_lvl_1_3e8f5598:
@@ -1056,19 +1056,19 @@ translate german ann_dressed_lvl_1_a94cbdaa:
 translate german ann_dressed_lvl_1_0e39c2e7:
 
     # Ann_17 "Что?! Макс! Это что ещё за словечки такие? А ну-ка быстро выйди и закрой дверь!" nointeract
-    Ann_17 "" nointeract
+    Ann_17 "Was?! Max! Was ist das für eine Wortwahl? Raus und sofort die Tür zu!" nointeract
 
 # game/events/ann.rpy:440
 translate german ann_dressed_lvl_1_3f53b608:
 
     # Ann_17 "Что я слышу! Вряд ли я та женщина, которой стоит такое говорить, Макс. А теперь выйди и закрой дверь!" nointeract
-    Ann_17 "" nointeract
+    Ann_17 "Was höre ich denn da? Ich bin nicht die Art von Frau, die so etwas sagt, Max. Und jetzt raus mit dir und mach die Tür zu!" nointeract
 
 # game/events/ann.rpy:445
 translate german ann_dressed_lvl_1_d8e67a23:
 
     # Ann_13 "Как я переодеваюсь?! Сынок, ты что такое говоришь! Давай-ка выйди и закрой за собой дверь." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Wie soll ich mich umziehen?! Was redest du da, mein Sohn? Geh raus und schließ die Tür hinter dir." nointeract
 
 # game/events/ann.rpy:448
 translate german ann_dressed_lvl_1_bb28ab00:
@@ -1098,25 +1098,25 @@ translate german ann_dressed_lvl_2_a94cbdaa:
 translate german ann_dressed_lvl_2_d73d7740:
 
     # Ann_13 "Макс! И не стыдно тебе такое своей маме говорить, а? Ну-ка бегом за дверь, а то мешаешь." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Max! Schämst du dich nicht, so etwas zu deiner Mutter zu sagen, hm? Geh raus, du störst." nointeract
 
 # game/events/ann.rpy:470
 translate german ann_dressed_lvl_2_307c57f0:
 
     # Ann_13 "Даже не знаю, что на это ответить... Ну-ка бегом за дверь, а то засмущал меня." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Ich weiß nicht, was ich dazu sagen soll... Raus hier, du bringst mich in Verlegenheit." nointeract
 
 # game/events/ann.rpy:474
 translate german ann_dressed_lvl_2_659d5d18:
 
     # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Nein, natürlich nicht! Schau dich an! Hör mit diesem Unsinn auf und lass deine Mutter sich in Ruhe umziehen." nointeract
 
 # game/events/ann.rpy:478
 translate german ann_dressed_lvl_2_a255adec:
 
     # Ann_02 "Приятно слышать. Но маме нужно переодеться... Так что подожди за дверью, хорошо?" nointeract
-    Ann_02 "" nointeract
+    Ann_02 "Das ist gut zu hören. Aber deine Mutter muss sich umziehen... Also warte einfach vor der Tür, okay?" nointeract
 
 # game/events/ann.rpy:486
 translate german ann_dressed_gift_a14e771b:
@@ -1206,7 +1206,7 @@ translate german ann_dressed_gift_75fcb6dd:
 translate german ann_dressed_gift_d954a734:
 
     # Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
-    Ann_08 "Oh... Vielen Dank für das Kompliment, mein Liebling. Man merkt, dass mein Sohn ein richtiger Mann ist! Komm her, ich umarme dich...""
+    Ann_08 "Oh... Vielen Dank für das Kompliment, mein Liebling. Man merkt, dass mein Sohn ein richtiger Mann ist! Komm her, ich umarme dich..."
 
 # game/events/ann.rpy:506
 translate german ann_dressed_gift_26390c24:
@@ -1254,7 +1254,7 @@ translate german ann_dressed_fail_f49b0b30:
 translate german ann_dressed_fail_a9cf1e2d:
 
     # Ann_01 "[_text!t]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами." nointeract
-    Ann_01 [_text!t]Max, so schaffe ich es nicht zur Arbeit... Komm schon, Sohn, geh..."" nointeract
+    Ann_01 "[_text!t]Max, so schaffe ich es nicht zur Arbeit... Komm schon, Sohn, geh..." nointeract
 
 # game/events/ann.rpy:554
 translate german ann_dressed_loveyou_e41c68c6:
@@ -1272,37 +1272,37 @@ translate german strings:
 
     # game/events/ann.rpy:365
     old "А я не помешаю. Начинай..."
-    new ""
+    new "Ich werde nicht stören. Fang an..."
 
     # game/events/ann.rpy:424
     old "У тебя самые зачётные сиськи, которые я видел!"
-    new ""
+    new "Du hast die geilsten Titten, die ich je gesehen habe!"
 
     # game/events/ann.rpy:424
     old "У тебя самый потрясный зад на свете, мам!"
-    new ""
+    new "Du hast den tollsten Arsch der Welt, Mom!"
 
     # game/events/ann.rpy:424
     old "Я просто хотел посмотреть..."
-    new ""
+    new "Ich wollte nur sehen, ob..."
 
     # game/events/ann.rpy:424
     old "Ой, извини. Я забыл... Хорошо выглядишь, мам!"
-    new ""
+    new "Oh, das tut mir leid. Ich hab vergessen... Sieht gut aus, Mom!"
 
     # game/events/ann.rpy:454
     old "Да не прикрывай такую красоту, все свои же!"
-    new ""
+    new "Diese Schönheit darf nicht verdeckt werden, die gehört ganz dir!"
 
     # game/events/ann.rpy:454
     old "Сразу видно, что попка у тебя тренированная!"
-    new ""
+    new "Es ist offensichtlich, dass du einen trainierten Arsch hast!"
 
     # game/events/ann.rpy:454
     old "А посмотреть нельзя?"
-    new ""
+    new "Kann man nichts sehen?"
 
     # game/events/ann.rpy:454
     old "Извини, всё позабыл, когда тебя увидел. Ты прекрасна!"
-    new ""
+    new "Sorry, ich hab es vergessen, als ich dich sah. Du bist wunderschön!"
 

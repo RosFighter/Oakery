@@ -444,5 +444,5 @@ translate german strings:
 
     # game/screens.rpy:1021
     old "Именованные сохранения"
-    new ""
+    new "Speichern mit Namen"
 
