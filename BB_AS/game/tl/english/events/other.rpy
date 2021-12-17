@@ -878,448 +878,448 @@ translate english strings:
 translate english follow_cameras_eric_4a1b4511:
 
     # Max_09 "{m}Неутомимый Эрик! Вали уже обратно к маме в комнату и засыпай. А то у меня тоже есть дела у Алисы в комнате...{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Eric! Go back to Mom's room and go back to sleep. I have things to do in Alice's room, too...{/m}" nointeract
 
 # game/events/other.rpy:427
 translate english follow_cameras_eric_2da5afe7:
 
     # Max_01 "{m}Отлично! Пора...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}Great! It's time...{/m}" nointeract
 
 # game/events/other.rpy:439
 translate english frame_eric_60e127e3:
 
     # Max_07 "{m}О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её совершенно обнажённого тела хочется смотреть вечно!{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Oh, yes! My big sister looks amazing... I want to look at the curves of her totally naked body forever!{/m}" nointeract
 
 # game/events/other.rpy:441
 translate english frame_eric_58e230bc:
 
     # Max_04 "{m}Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою голенькую попку для меня во всей красе.{/m}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{m}Wow, I'm lucky Alice sleeps with her back to the window... And she has no idea that she is showing her naked ass for me in all its glory.{/m}" nointeract
 
 # game/events/other.rpy:443
 translate english frame_eric_f84d87b6:
 
     # Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}It's amazing! My sister sleeps with her back out, making her naked breasts stick out like two mounds... A seductive sight...{/m}" nointeract
 
 # game/events/other.rpy:453
 translate english frame_eric_c7dc4684:
 
     # Max_07 "{m}Уж прости, Алиса, ничего личного. Мне позарез нужно показать всем вам, а особенно маме, что Эрик собирается тут с вами всеми делать...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}I'm sorry, Alice, it's nothing personal. I really need to show all of you, and especially Mom, what Eric is going to do to you all here...{/m}" nointeract
 
 # game/events/other.rpy:460
 translate english frame_eric_40044bf4:
 
     # Max_20 "{m}Только бы Алиса не проснулась! Иначе я отправлюсь не в военный лагерь, а сразу на кладбище... Но сейчас лучше думать не об этом, а о том, как сладко я бы проникал своим членом во все её самые интересные дырочки... Д-а-а... Это было бы очень приятно...{/m}" nointeract
-    Max_20 "" nointeract
+    Max_20 "{m}I wish Alice wouldn't wake up! Otherwise I wouldn't be going to military camp, but straight to the cemetery... But right now I'd rather not think about that, but about how sweetly I would penetrate all her most interesting holes with my cock... Yeah... That would be very nice...{/m}" nointeract
 
 # game/events/other.rpy:467
 translate english frame_eric_f720febd:
 
     # Max_08 "{m}Фух! Вроде, не проснулась... Надеюсь, этого хватит, чтобы утром Алиса забила тревогу. Наверняка, она сразу подумает, что это я её чем-то испачкал. И вот тогда-то я и покажу снимки с Эриком, а уже всю картину воедино она сложит сама. Если я, конечно, смогу уйти незамеченным в свою комнату...{/m}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{m}Phew! I don't think I woke up... I hope it's enough for Alice to sound the alarm in the morning. I'm sure she'll think it was me who made her dirty. That's when I'll show her the pictures with Eric, and she'll put the whole picture together herself. If I can get away unnoticed to my room...{/m}" nointeract
 
 # game/events/other.rpy:485
 translate english showdown_with_eric_c59ea561:
 
     # Alice_17 "Макс! Ну-ка быстро просыпайся, а не то я тебе всыплю! Признавайся, чем ты меня ночью измазал?"
-    Alice_17 ""
+    Alice_17 "Shithead! Wake up or I'll beat your fucking ass! What the fuck did you cover me with last night?"
 
 # game/events/other.rpy:486
 translate english showdown_with_eric_bd921574:
 
     # Max_07 "Измазал?! А почему сразу я?!"
-    Max_07 ""
+    Max_07 "What?! Why would I have done anything?!"
 
 # game/events/other.rpy:487
 translate english showdown_with_eric_38d64641:
 
     # Alice_16 "А кто ещё это может быть?! Здесь вообще без вариантов и гадалка не нужна! Так что говори, чем измазал и пошли к маме..."
-    Alice_16 ""
+    Alice_16 "Who else could it be?! I don't need to be a detective to figure it out! So tell me what you smeared!"
 
 # game/events/other.rpy:488
 translate english showdown_with_eric_4d7a3f63:
 
     # Lisa_10 "Алиса, хватит уже кричать! Я же сплю..."
-    Lisa_10 ""
+    Lisa_10 "Alice, stop screaming already! I'm asleep..."
 
 # game/events/other.rpy:489
 translate english showdown_with_eric_5508b396:
 
     # Max_00 "Да, Алиса, ты как-то слишком возбуждена. Тебя может неслабо так шокировать то, что я тебе скажу. И даже покажу."
-    Max_00 ""
+    Max_00 "Alice you need to calm down because of what I'm about to tell you. No- what I'll show you."
 
 # game/events/other.rpy:490
 translate english showdown_with_eric_43ec76cb:
 
     # Alice_06 "Так я и знала, что это гадость какая-то! Ну так что это?"
-    Alice_06 ""
+    Alice_06 "I knew it was something gross! So what is it?"
 
 # game/events/other.rpy:491
 translate english showdown_with_eric_06f743d3:
 
     # Max_01 "Это Эрик с тобой кое-чем... поделился..."
-    Max_01 ""
+    Max_01 "It was Eric who covered you with... with..."
 
 # game/events/other.rpy:499
 translate english showdown_with_eric_fc0ce1b6:
 
     # Alice_12 "Макс, хватит уже... И что мне этот снимок должен сказать? Хотя... не поняла... Он дрочит что ли?! А где это он?"
-    Alice_12 ""
+    Alice_12 "Max, enough already... What is this picture supposed to be? I mean... I don't understand. Arey you saying he was jerking off? Where is he?"
 
 # game/events/other.rpy:500
 translate english showdown_with_eric_c64627b9:
 
     # Max_07 "А ты присмотрись и отгадаешь где."
-    Max_07 ""
+    Max_07 "Look closely and you'll see."
 
 # game/events/other.rpy:501
 translate english showdown_with_eric_e376d7c6:
 
     # Alice_14 "Ну... Это получается... Эй! Это он что, у моего окна стоит?"
-    Alice_14 ""
+    Alice_14 "Well... That would be... Hey! Is that him standing at my window?"
 
 # game/events/other.rpy:502
 translate english showdown_with_eric_d5628f21:
 
     # Max_04 "Не только..."
-    Max_04 ""
+    Max_04 "Not only that..."
 
 # game/events/other.rpy:510
 translate english showdown_with_eric_dea06daf:
 
     # Lisa_13 "Вы что тут с утра пораньше разглядываете? Ой! Эрик! Прямо у тебя в комнате, Алиса..."
-    Lisa_13 ""
+    Lisa_13 "What are you guys looking at? Oh! Eric?! Right in your room, Alice..."
 
 # game/events/other.rpy:511
 translate english showdown_with_eric_3271758d:
 
     # Alice_15 "Он что, правда в моей комнате и... дрочит... на меня?!"
-    Alice_15 ""
+    Alice_15 "Was he really in my room and... jerking off... over me?!"
 
 # game/events/other.rpy:512
 translate english showdown_with_eric_ff78a8b8:
 
     # Max_02 "Ну да. Видишь, не такой уж я и извращенец, правда?"
-    Max_02 ""
+    Max_02 "Yeah. See, I'm not such a pervert, am I?"
 
 # game/events/other.rpy:513
 translate english showdown_with_eric_db6785a5:
 
     # Alice_06 "То есть, то... что у меня было на ноге, это..."
-    Alice_06 ""
+    Alice_06 "I mean, what... what I had on my leg was..."
 
 # game/events/other.rpy:514
 translate english showdown_with_eric_80a21b22:
 
     # Max_10 "Да, Алиса. Оно самое."
-    Max_10 ""
+    Max_10 "Yes, Alice. That's right."
 
 # game/events/other.rpy:521
 translate english showdown_with_eric_9082d505:
 
     # Alice_17 "Вот же подонок озабоченный! Подожди... А ты какого хрена это всё фотографировал?!"
-    Alice_17 ""
+    Alice_17 "What a fucking bastard! Wait a minute... Why the fuck did you take all these pictures?!"
 
 # game/events/other.rpy:522
 translate english showdown_with_eric_e40e9eac:
 
     # Max_09 "Видишь ли, Эрик мне много раз угрожал проблемами и ссылкой в военный лагерь, если я буду ему мешать в подобных... делах. Вот и пришлось подстраховаться."
-    Max_09 ""
+    Max_09 "You see, Eric had threatened me many times with military camp if I interfered with him. So I had to take precautions."
 
 # game/events/other.rpy:523
 translate english showdown_with_eric_3d070281:
 
     # Alice_16 "И часто этот онанист чёртов ко мне в комнату ходит по ночам?"
-    Alice_16 ""
+    Alice_16 "How often does that damn masturbator come into my room?!"
 
 # game/events/other.rpy:524
 translate english showdown_with_eric_a26a29c6:
 
     # Max_07 "Я бы сказал, что с завидным постоянством!"
-    Max_07 ""
+    Max_07 "I would say with enviable consistency!"
 
 # game/events/other.rpy:525
 translate english showdown_with_eric_3d7646d5:
 
     # Alice_12 "Ублюдок какой! А ты чего молчал всё это время?!"
-    Alice_12 ""
+    Alice_12 "What a bastard! Why didn't you say anything all this time?!"
 
 # game/events/other.rpy:526
 translate english showdown_with_eric_60498e82:
 
     # Max_15 "Так ведь, если говорит Эрик, то это святая истина, а если я, то это чепуха какая-то."
-    Max_15 ""
+    Max_15 "Well, if Eric says it, it's gospel, and if I say it, it's nonsense."
 
 # game/events/other.rpy:528
 translate english showdown_with_eric_6d1dd214:
 
     # Alice_17 "Вот я Эрику с мамой сейчас устрою! Макс, пошли за мной!" nointeract
-    Alice_17 "" nointeract
+    Alice_17 "I'm going to give Eric and Mom and piece of my mind! Max, follow me!" nointeract
 
 # game/events/other.rpy:537
 translate english showdown_with_eric_40a33569:
 
     # Ann_13 "Алиса! Ты зачем так врываешься?! Стучаться надо..."
-    Ann_13 ""
+    Ann_13 "Alice! Why are you barging in like that?! You have to knock-"
 
 # game/events/other.rpy:538
 translate english showdown_with_eric_db864631:
 
     # Alice_16 "Не волнуйся, мам, я обязательно сейчас по кое-кому постучу! Знаешь, что твой мужчина вытворяет по ночам?"
-    Alice_16 ""
+    Alice_16 "Oh I'll be knocking alright! Do you know what your man does during the night?"
 
 # game/events/other.rpy:539
 translate english showdown_with_eric_d1c15c50:
 
     # Ann_17 "Это что за тон, Алиса! Конечно, знаю. Ой, вы все здесь! Что происходит?"
-    Ann_17 ""
+    Ann_17 "What kind of tone is that, Alice!? Of course I do. Oh, you're all here! What's going on?"
 
 # game/events/other.rpy:540
 translate english showdown_with_eric_86aba788:
 
     # Max_07 "У Алисы есть претензии к Эрику..."
-    Max_07 ""
+    Max_07 "Alice has an issue with Eric..."
 
 # game/events/other.rpy:548
 translate english showdown_with_eric_b57755ec:
 
     # Alice_17 "И ещё какие! Эрик дрочит на меня по ночам! Это как вообще называется? Я думала у нас Макс извращенец, но ты, Эрик..."
-    Alice_17 ""
+    Alice_17 "And what a bunch of them! Eric jerks off over me in my room at night! What do you even call that? I thought Max was a pervert, but you, Eric..."
 
 # game/events/other.rpy:549
 translate english showdown_with_eric_f1dc38c8:
 
     # Ann_16 "Ты что такое вообще несёшь, Алиса?! Обвинять в таком Эрика, это..."
-    Ann_16 ""
+    Ann_16 "What on Earth are you talking about, Alice?! To accuse Eric of something like that is..."
 
 # game/events/other.rpy:550
 translate english showdown_with_eric_9f3d0dd5:
 
     # Alice_18 "Мам! У Макса есть фотографии! А это животное лохматое ещё и обкончало меня этой ночью..."
-    Alice_18 ""
+    Alice_18 "Mom! Max has pictures! And that disgusting animal also passed out on me last night..."
 
 # game/events/other.rpy:551
 translate english showdown_with_eric_368c6e02:
 
     # Eric_09 "Так, Алиса, давай успокаивайся!"
-    Eric_09 ""
+    Eric_09 "All right, Alice, let's calm down!"
 
 # game/events/other.rpy:561
 translate english showdown_with_eric_9e66f9ab:
 
     # Alice_17 "Ну-ка заткнулся! Меня лучше не злить! Сейчас Макс покажет маме снимки и мы послушаем, как ты это объяснишь..."
-    Alice_17 ""
+    Alice_17 "Shut up! If I get any angrier I'll start breaking things! Now Max will show Mom the pictures and we'll hear what you have to say!"
 
 # game/events/other.rpy:562
 translate english showdown_with_eric_4f9368bb:
 
     # Ann_14 "И что вы хотите мне тут показать? Я не понимаю... Как такое вообще может быть?! Эрик, будь добр, объясни это..."
-    Ann_14 ""
+    Ann_14 "And what is this? I don't understand... How can that be?! Eric, would you be so kind as to explain this..."
 
 # game/events/other.rpy:563
 translate english showdown_with_eric_37815d99:
 
     # Eric_13 "Ань, не знаю, что там за снимки, но могу уверить тебя - это фотошоп!"
-    Eric_13 ""
+    Eric_13 "Honey, I don't know what kind of pictures there are, but I can assure you - it's fake!"
 
 # game/events/other.rpy:564
 translate english showdown_with_eric_517352a4:
 
     # Max_09 "В таком случае, я за то, чтобы провести экспертизу их подлинности!"
-    Max_09 ""
+    Max_09 "In that case, I'm in favor of conducting an examination of their authenticity!"
 
 # game/events/other.rpy:565
 translate english showdown_with_eric_54354826:
 
     # Ann_15 "Эрик! У меня в голове не укладывается то, что я вижу... Господи! Ты же дрочишь на мою дочь! Как ты мог такое делать, мерзавец... Лиза, а с тобой всё в порядке?! Эрик ничего с тобой не делал?"
-    Ann_15 ""
+    Ann_15 "Eric! I can't process what I'm seeing... Oh, my God! You're jerking off to my daughter! How could you do that, you bastard? Lisa, are you all right? Has he done anything to you?"
 
 # game/events/other.rpy:566
 translate english showdown_with_eric_6266c673:
 
     # Lisa_10 "Нет... Правда, он предлагал мне закрепить на практике те уроки сексуального воспитания, что вы для меня проводили."
-    Lisa_10 ""
+    Lisa_10 "N-No... Just that he suggested that I practice the sex-education lessons you gave me."
 
 # game/events/other.rpy:575
 translate english showdown_with_eric_ad4584a4:
 
     # Alice_18 "Ах так! Значит, ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
-    Alice_18 ""
+    Alice_18 "Oh, yeah! So you've already got your hands on our little Lisa? Here... Take that, you bastard..."
 
 # game/events/other.rpy:576
 translate english showdown_with_eric_8277ef23:
 
     # Ann_20 "Эрик, ты совсем что ли больной?! Как ты мог такое делать с моими девочками! Живо выметайся из нашего дома, пока я полицию не вызвала!"
-    Ann_20 ""
+    Ann_20 "Eric, are you out of your mind?! How could you do this to my precious girls! Get out of our house now before I call the police!"
 
 # game/events/other.rpy:579
 translate english showdown_with_eric_847ca8ec:
 
     # Eric_10 "Какую ещё полицию?! Я ничего не делал. Это всё Макс!"
-    Eric_10 ""
+    Eric_10 "Police?! I'm innocent! It's all Max!"
 
 # game/events/other.rpy:580
 translate english showdown_with_eric_8cb800af:
 
     # Lisa_13 "Не надо всё на Макса сваливать! Он хороший..."
-    Lisa_13 ""
+    Lisa_13 "Don't blame everything on Max! He's a good brother..."
 
 # game/events/other.rpy:581
 translate english showdown_with_eric_5dcf637a:
 
     # Alice_16 "Я раньше от души могла навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
-    Alice_16 ""
+    Alice_16 "I was going to kick the shit out of Max, but now I'm so pissed off that I could kick the shit out of you!"
 
 # game/events/other.rpy:590
 translate english showdown_with_eric_aece1638:
 
     # Ann_19 "Эрик, проваливай! Я не хочу тебя больше видеть!"
-    Ann_19 ""
+    Ann_19 "Eric, get out! I don't want to see you anymore!"
 
 # game/events/other.rpy:591
 translate english showdown_with_eric_4a405f54:
 
     # Eric_09 "Вижу, вы все на взводе, так что я поговорю с вами, когда успокоитесь... А сейчас я оденусь и отправлюсь на работу."
-    Eric_09 ""
+    Eric_09 "I see you're all worked up, so I'll talk to you when you calm down... Now I'm going to get dressed and go to work."
 
 # game/events/other.rpy:592
 translate english showdown_with_eric_2ec75356:
 
     # Ann_20 "Я сказала, {b}ПОШЁЛ ВОН НЕМЕДЛЕННО!!!{/b}"
-    Ann_20 ""
+    Ann_20 "{b}GET OUT NOW!!!{/b}"
 
 # game/events/other.rpy:593
 translate english showdown_with_eric_cf71befd:
 
     # Alice_17 "И полотенце можешь оставить себе, грязное животное! Убирайся!"
-    Alice_17 ""
+    Alice_17 "And you can keep your towel, you pig! Get out!"
 
 # game/events/other.rpy:603
 translate english showdown_with_eric_f3afe214:
 
     # Max_00 "Мам, ты только не расстраивайся так из-за него. Всякое бывает..."
-    Max_00 ""
+    Max_00 "Mom, don't get so upset over a scumbag like him. Things happen..."
 
 # game/events/other.rpy:604
 translate english showdown_with_eric_b377cce2:
 
     # Ann_14 "Всё никак в голове не укладывается, что Эрик тут с вами творил... И что я за мать после этого? Я в шоке..."
-    Ann_14 ""
+    Ann_14 "I still can't get my head around what Eric has been doing to you... What kind of mother am I? I'm shocked."
 
 # game/events/other.rpy:605
 translate english showdown_with_eric_90ee4fd2:
 
     # Alice_13 "Уж лучше узнать поздно, чем никогда. А у нас всё ещё лучше... Мы узнали, пока ещё не стало поздно. Так что не переживай, мам, мы все думали, что Эрик... уж точно не такой..."
-    Alice_13 ""
+    Alice_13 "Better to know late than never. Luckily we found out before it was too late. So don't worry, Mom, we all got played Eric."
 
 # game/events/other.rpy:606
 translate english showdown_with_eric_167ce82b:
 
     # Max_09 "Хорошо, что я своим мужским взглядом сразу понял, что он мутный тип!"
-    Max_09 ""
+    Max_09 "It's a good thing I knew with my male gaze that he was a murky type!"
 
 # game/events/other.rpy:607
 translate english showdown_with_eric_ca2a104b:
 
     # Lisa_09 "Так это получается, что? Про бумажник Эрик наврал?"
-    Lisa_09 ""
+    Lisa_09 "So that would be what? Eric lied about the wallet?"
 
 # game/events/other.rpy:608
 translate english showdown_with_eric_b84c6e58:
 
     # Max_08 "Конечно! Он это придумал, чтобы вы меня в военный лагерь сослали. А то я стал слишком мешаться."
-    Max_08 ""
+    Max_08 "Of course! It was his idea, so that you could exile me to a military camp. I was getting in his way."
 
 # game/events/other.rpy:609
 translate english showdown_with_eric_35096e7a:
 
     # Ann_13 "Ты прости меня, сынок, я должна была прислушиваться к тому, что ты говорил. Что же теперь делать?"
-    Ann_13 ""
+    Ann_13 "I'm so sorry, I should have listened to what you said. What do we do now?"
 
 # game/events/other.rpy:610
 translate english showdown_with_eric_e862c93b:
 
     # Max_01 "Жить, как жили до Эрика! Ничего сложного..."
-    Max_01 ""
+    Max_01 "Live like we did before Eric! Nothing complicated..."
 
 # game/events/other.rpy:611
 translate english showdown_with_eric_6ff07095:
 
     # Ann_12 "Нет, Макс, я о другом... Он же мой начальник! Как мне теперь быть? Ох, не знаю..."
-    Ann_12 ""
+    Ann_12 "No, Max, that's not what I mean... He's my boss! What am I gonna do now? Oh, I don't know."
 
 # game/events/other.rpy:612
 translate english showdown_with_eric_2621818a:
 
     # Max_07 "Д-а-а... Это проблемка. Ты главное не слушай его оправдания, а то он умеет убеждать, как ты сама убедилась прекрасно. А теперь давайте, все вместе, поддержим маму!"
-    Max_07 ""
+    Max_07 "Y-a-a... That's a problem. Don't listen to his excuses, because he's a very convincing man, as you've seen for yourself. Now come on, everybody, let's support Mom!"
 
 # game/events/other.rpy:618
 translate english showdown_with_eric_f96123e9:
 
     # Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
-    Ann_13 ""
+    Ann_13 "Oh, my darlings, you're crushing me so much! But you're still the best I've got... I'm sorry again for bringing this man into our beautiful home and ruining everything."
 
 # game/events/other.rpy:619
 translate english showdown_with_eric_5a9bcc35:
 
     # Lisa_01 "Не бери в голову, мам. Не вини себя, всё ведь хорошо. Мы с тобой."
-    Lisa_01 ""
+    Lisa_01 "Don't worry about it, Mom. Don't blame yourself, it's okay. We're with you."
 
 # game/events/other.rpy:620
 translate english showdown_with_eric_a2587239:
 
     # Alice_05 "И если он начнёт устраивать тебе проблемы на работе, то мы все так же дружно, как сейчас, соберёмся и отпинаем его!"
-    Alice_05 ""
+    Alice_05 "And if he starts giving you trouble at work, we'll all get together and kick him!"
 
 # game/events/other.rpy:621
 translate english showdown_with_eric_e1846793:
 
     # Max_09 "Думаю, Эрик не настолько туп, чтобы строить маме козни. Особенно, если она будет с ним жёстче..."
-    Max_09 ""
+    Max_09 "I don't think Eric is dumb enough to mess with Mom. Especially if she gets tough on him..."
 
 # game/events/other.rpy:622
 translate english showdown_with_eric_d14050f1:
 
     # Ann_17 "Ох, ребята, я постараюсь... Хотя, мне даже думать о нём сейчас противно, не то что видеть. Надеюсь, я не потеряю работу."
-    Ann_17 ""
+    Ann_17 "Oh, guys, I'll try... Although, it disgusts me to even think about him now, let alone see him. I hope I don't lose my job."
 
 # game/events/other.rpy:623
 translate english showdown_with_eric_72f9e7fc:
 
     # Max_08 "Может, удастся перевестись в какой-нибудь другой отдел?"
-    Max_08 ""
+    Max_08 "Maybe you could get a transfer to some other department?"
 
 # game/events/other.rpy:624
 translate english showdown_with_eric_032de050:
 
     # Ann_02 "Надеюсь... Ну всё, мне уже дышать нечем. Пора делами заниматься. Я вас очень люблю..."
-    Ann_02 ""
+    Ann_02 "I hope... That's it, I'll have to try. I love you very much..."
 
 # game/events/other.rpy:625
 translate english showdown_with_eric_90be8708:
 
     # Lisa_05 "И мы тебя!"
-    Lisa_05 ""
+    Lisa_05 "And we you!"
 
 translate english strings:
 
     # game/events/other.rpy:445
     old "{i}подставить Эрика{/i}"
-    new ""
+    new "{i}Set up Eric{/i}"
 
     # game/events/other.rpy:452
     old "{i}осторожно дрочить на Алису{/i}"
-    new ""
+    new "{i}Jerk off cautiously over Alice{/i}"
 
     # game/events/other.rpy:459
     old "{i}кончить Алисе на ноги{/i}"
-    new ""
+    new "{i}Cum on Alice's legs{/i}"
 
     # game/events/other.rpy:466
     old "{i}осторожно идти спать{/i}"
-    new ""
+    new "{i}Go to bed carefully{/i}"

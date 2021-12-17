@@ -239,8 +239,6 @@ label AddEric:
     # call ann_after_appearance_eric from _call_ann_after_appearance_eric_1
     $ infl[ann].freeze = False
 
-    $ added_mem_var('eric')
-
     $ items['hide_cam'].unblock()
     $ eric_obligation = Obligation()
     return

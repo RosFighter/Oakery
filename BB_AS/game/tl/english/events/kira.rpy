@@ -4393,3 +4393,18 @@ translate english strings:
     # game/events/kira.rpy:1952
     old "{i}кончить в Киру{/i}"
     new "{i}Cum in Kira{/i}"
+
+# TODO: Translation updated at 2021-12-12 01:54
+
+# game/events/kira.rpy:930
+translate english kira_sleep_morning_1cadf6e7:
+
+    # Max_04 "{m}Тёте Кире очень идёт быть голой! Может быть, это потому что я привык видеть её голой? В такие округлости просто нельзя не влюбиться...{/m}" nointeract
+    Max_04 "{m}Aunt Kira looks so good naked! You just can't help but fall in love with curves everytime you see them...{/m}" nointeract
+
+# game/events/kira.rpy:932
+translate english kira_sleep_morning_44762823:
+
+    # Max_04 "{m}Ага! Тётя Кира ещё спит. Хорошо, что её ночнушка слегка просвечивает... Ухх, как она хороша...{/m}" nointeract
+    Max_04 "{m}Aha! Aunt Kira is still asleep. Good thing her nightie's a little see-through... Oooh, she looks good...{/m}" nointeract
+

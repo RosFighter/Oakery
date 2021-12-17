@@ -1,4 +1,8 @@
 
+init 100 python:
+    extra_content = True
+
+
 init python:
 
     def MySet(i, x):

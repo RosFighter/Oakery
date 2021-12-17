@@ -3348,70 +3348,70 @@ translate english strings:
 translate english kira_about_wallet_6c2cb919:
 
     # Kira_14 "Как ты, Макс?"
-    Kira_14 ""
+    Kira_14 "How are you, Max?"
 
 # game/dialogues/kiratalk.rpy:1510
 translate english kira_about_wallet_597b52dd:
 
     # Max_07 "Ты уже в курсе, что Эрик заявил?"
-    Max_07 ""
+    Max_07 "Do you know what Eric said?"
 
 # game/dialogues/kiratalk.rpy:1511
 translate english kira_about_wallet_f06fac4b:
 
     # Kira_15 "Да, Макс, уже наслышана... Скажи, это же не ты взял его деньги?"
-    Kira_15 ""
+    Kira_15 "Yes, Max, I've already heard... Say, you didn't take his money, did you?"
 
 # game/dialogues/kiratalk.rpy:1512
 translate english kira_about_wallet_7353e46b:
 
     # Max_09 "Ты ещё спрашиваешь?"
-    Max_09 ""
+    Max_09 "Do you really have to ask?"
 
 # game/dialogues/kiratalk.rpy:1513
 translate english kira_about_wallet_3a51cf23:
 
     # Kira_10 "Ну, я так, для формальности. Конечно, я тебе верю... Что же делать..."
-    Kira_10 ""
+    Kira_10 "Just checking. Of course I believe you... Oh what to do..."
 
 # game/dialogues/kiratalk.rpy:1514
 translate english kira_about_wallet_58d13745:
 
     # Max_09 "Есть у меня мысль обновить газон у нас во дворе... Заодно куплю пищевую плёнку. И кажется ещё лопаты у нас нет..."
-    Max_09 ""
+    Max_09 "I have an idea to renovate the lawn in our yard... I'm going to buy some plastic wrap as well. And I don't think we have a shovel either..."
 
 # game/dialogues/kiratalk.rpy:1515
 translate english kira_about_wallet_7c0b737a:
 
     # Kira_17 "Макс, ты это серьёзно?!"
-    Kira_17 ""
+    Kira_17 "Max, are you serious?!"
 
 # game/dialogues/kiratalk.rpy:1516
 translate english kira_about_wallet_ccfc5079:
 
     # Max_11 "Увы, нет. Потому что меня это в глазах семьи не оправдает. Так что буду действовать умнее..."
-    Max_11 ""
+    Max_11 "No... There's no way my family would ever forgive me if I did that. I'll have to be smart."
 
 # game/dialogues/kiratalk.rpy:1517
 translate english kira_about_wallet_e91240fe:
 
     # Kira_00 "Может, тебе нужна моя помощь в чём-то?"
-    Kira_00 ""
+    Kira_00 "Maybe you need my help with something?"
 
 # game/dialogues/kiratalk.rpy:1518
 translate english kira_about_wallet_3acdb772:
 
     # Max_01 "Нет, тётя Кира. Мне нужно самому разобраться с Эриком. Но всё равно спасибо, за то, что ты на моей стороне!"
-    Max_01 ""
+    Max_01 "No, Aunt Kira. I have to deal with Eric on my own. But thanks for having my back!"
 
 # game/dialogues/kiratalk.rpy:1519
 translate english kira_about_wallet_cf38bd43:
 
     # Kira_10 "Ты только осторожнее, Макс! Хорошо?"
-    Kira_10 ""
+    Kira_10 "Just be careful, Max! Okay?"
 
 # game/dialogues/kiratalk.rpy:1520
 translate english kira_about_wallet_261aa15e:
 
     # Max_07 "Конечно. Что будет, то будет..."
-    Max_07 ""
+    Max_07 "Of course. What will be, will be..."

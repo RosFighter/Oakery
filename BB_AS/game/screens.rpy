@@ -462,39 +462,44 @@ screen main_menu():
         key "д" action Language(None)
 
     # строим фон заставки
-    # add gui.main_menu_background
-    # if 'kira' in persistent.mems_var:
-    #
-    #     add 'images/interface/mm/family-01.webp'
-    #
-    #     add 'images/interface/mm/01/max/00.webp' at eye_movement
-    #
-    #     for char in menu_chars:
-    #         # получить список рендеров одежды
-    #         $ lst = menu_chars[char].get_render_list()
-    #         for rndr in lst:
-    #             add 'images/interface/mm/01/'+char+'/'+rndr+'.webp'
-    #
-    # else:
-    #     add 'images/interface/mm/family-00.webp'
-    add 'gui/main_menu_ny.webp'
+    if 'kira' in persistent.mems_var:
+        # add gui.main_menu_background
+        add 'gui/main_menu_ny.webp'
 
-    vbox xalign 0.5 spacing -70 ypos -30:
-        frame xalign 0.5 xsize 1180 background None:
-            text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 170 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
-        # frame xalign 0.5 xsize 1180 background None:
-        #     text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
-        #     text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+        add 'images/interface/mm/family-01.webp'
 
-    # frame xalign 0.5 ypos 125 xsize 1180 background None:
-    #     text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
-    #     text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+        add 'images/interface/mm/01/max/00.webp' at eye_movement
 
-    # imagebutton:
-    #     idle "interface mm clothing"
-    #     action Show('changes_menu_clot')
-    #     pos 983, 23
-    #     at main_menu_btn
+        for char in menu_chars:
+            # получить список рендеров одежды
+            $ lst = menu_chars[char].get_render_list(1)
+            for rndr in lst:
+                add 'images/interface/mm/01/'+char+'/'+rndr+'.webp'
+        for char in menu_chars:
+            # получить список рендеров одежды
+            $ lst = menu_chars[char].get_render_list(2)
+            for rndr in lst:
+                add 'images/interface/mm/01/'+char+'/'+rndr+'.webp'
+    else:
+        add gui.main_menu_background
+        add 'images/interface/mm/family-00.webp'
+
+    # vbox xalign 0.5 spacing -70 ypos -30:
+    #     frame xalign 0.5 xsize 1180 background None:
+    #         text "BIG BROTHER" font "BRLNSB.ttf" color "#FFFFFF" size 170 xalign .5 outlines [( 1, "#999999", 0, 2)] # drop_shadow [(1,2)] drop_shadow_color "#7F7F7F"
+    #     frame xalign 0.5 xsize 1180 background None:
+    #         text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+    #         text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+
+    frame xalign 0.5 ypos 125 xsize 1180 background None:
+        text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+        text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+
+    imagebutton:
+        idle "interface mm clothing"
+        action Show('changes_menu_clot')
+        pos 983, 23
+        at main_menu_btn
 
     # imagebutton:
     #     idle "interface patreon logo"
@@ -502,17 +507,17 @@ screen main_menu():
     #     align (0.98, 0.63)
     #     at main_logo
 
-    # imagebutton:
-    #     idle "interface patreon logo 2"
-    #     action OpenURL("https://www.patreon.com/aleksey90artimages")
-    #     align (0.98, 0.9)
-    #     at main_logo
-    #
-    # imagebutton:
-    #     idle "interface patreon music"
-    #     action OpenURL("https://www.patreon.com/maffinmusicman")
-    #     align (0.01, 0.62)
-    #     at main_logo
+    imagebutton:
+        idle "interface patreon logo 2"
+        action OpenURL("https://www.patreon.com/aleksey90artimages")
+        align (0.98, 0.9)
+        at main_logo
+
+    imagebutton:
+        idle "interface patreon music"
+        action OpenURL("https://www.patreon.com/maffinmusicman")
+        align (0.01, 0.62)
+        at main_logo
 
     ## Эта пустая рамка затеняет главное меню.
     frame:
@@ -965,6 +970,9 @@ screen preferences():
 
     tag menu
 
+    if not current_language_list:
+        $ get_lang_list()
+
     use game_menu(_("Настройки"), scroll="viewport"):
 
         vbox xpos 100:
@@ -1015,7 +1023,7 @@ screen preferences():
                     vbox:
                         style_prefix "check"
                         label _("Дополнительно")
-                        textbutton _("Запрашивать название при сохранении") action ToggleVariable("persistent.request_savename")
+                        textbutton _("Именованные сохранения") action ToggleVariable("persistent.request_savename")
                         textbutton _("Прозрачное текстовое окно") action ToggleVariable("persistent.transparent_textbox")
                         textbutton _("Отображать все \"Возможности\"") action ToggleVariable("persistent.all_opportunities")
                         textbutton _("Переодевания Лизы пропускаются, если Макс в комнате") action ToggleVariable("persistent.skip_lisa_dressed")

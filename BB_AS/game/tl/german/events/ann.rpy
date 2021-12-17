@@ -874,10 +874,434 @@ translate german strings:
 translate german ann_shower_start_peeping_fc5db481:
 
     # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
-    Max_09 ""
+    Max_09 "{m}Es ist besser, das Peeping auf ein Minimum zu beschränken, bis ich Eric los bin. Um niemanden zu verunsichern...{/m}"
 
 # game/events/ann.rpy:128
 translate german ann_shower_start_peeping_dda24c4d:
 
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}Es ist gut, dass das nicht auf Kira zutrifft...{/m}" nointeract
+
+# TODO: Translation updated at 2021-12-12 01:53
+
+# game/events/ann.rpy:263
+translate german ann_dressed_734f1c10:
+
+    # Max_09 "{m}Сегодня суббота, день шоппинга. Видимо, мама собирается...{/m}" nointeract
+    Max_09 "{m}Sieht aus, als würde sich Mom für einen Einkaufstag fertig machen{/m}" nointeract
+
+# game/events/ann.rpy:265
+translate german ann_dressed_269233ce:
+
+    # Max_09 "{m}Сейчас 10 часов, а значит, мама собирается на работу...{/m}" nointeract
+    Max_09 "{m}Es ist 10:00 Uhr, was bedeutet, dass Mom zur Arbeit geht...{/m}" nointeract
+
+# game/events/ann.rpy:269
+translate german ann_dressed_b21abe2e:
+
+    # Ann "{b}Анна:{/b} Кто там?" nointeract
+    Ann "{b}Ann:{/b} Wer ist da?" nointeract
+
+# game/events/ann.rpy:272
+translate german ann_dressed_bf2abaef:
+
+    # Ann "{b}Анна:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
+    Ann "{b}Ann:{/b} Nein, Max. Ich ziehe mich gerade um. Warte ein wenig, Liebling."
+
+# game/events/ann.rpy:274
+translate german ann_dressed_2e55a9e3:
+
+    # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
+    Ann "{b}Ann:{/b} Max, ich bin noch nicht angezogen. Warte nur einen Moment, Schatz."
+
+# game/events/ann.rpy:275
+translate german ann_dressed_f3117b6b:
+
+    # Max_00 "Хорошо, мам."
+    Max_00 "Alles klar, Mom."
+
+# game/events/ann.rpy:278
+translate german ann_dressed_2f691176:
+
+    # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на шопинг. Подожди немного, дорогой."
+    Ann "{b}Ann:{/b} Max, ich bin nicht angezogen. Ich gehe einkaufen. Warte ein bisschen, Schatz."
+
+# game/events/ann.rpy:279
+translate german ann_dressed_f3117b6b_1:
+
+    # Max_00 "Хорошо, мам."
+    Max_00 "Alles klar, Mom."
+
+# game/events/ann.rpy:312
+translate german ann_dressed_a3f1e45d:
+
+    # Max_01 "{m}Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!{/m}"
+    Max_01 "{m}Wow, was für ein Anblick! Ich habe meinen Moment gut gewählt... Aber es ist Zeit zu gehen, sonst sieht sie mich vielleicht im Spiegel.{/m}"
+
+# game/events/ann.rpy:331
+translate german ann_dressed_stay_in_room_1c7b7b81:
+
+    # Eric_09 "Макс, не мешай взрослым! В твоём положении это просто верх наглости! Найди себе занятие..." nointeract
+    Eric_09 "Max, störe die Erwachsenen nicht! In deiner Situation ist das der Gipfel der Unverschämtheit! Such dir etwas zu tun..." nointeract
+
+# game/events/ann.rpy:333
+translate german ann_dressed_stay_in_room_ff7e7143:
+
+    # Ann_00 "Сынок, мы с Эриком собирались переодеться. Не мешай взрослым, займись чем-нибудь..." nointeract
+    Ann_00 "Sohn, Eric und ich wollten uns umziehen. Lass uns in Ruhe, geh und tu etwas ..." nointeract
+
+# game/events/ann.rpy:336
+translate german ann_dressed_stay_in_room_4e1690c6:
+
+    # Ann_12 "Сынок, я собиралась переодеться. Не мешай маме. Займись чем-нибудь полезным..." nointeract
+    Ann_12 "Sohn, ich wollte mich umziehen. Störe deine Mutter nicht. Tu etwas Nützliches..." nointeract
+
+# game/events/ann.rpy:338
+translate german ann_dressed_stay_in_room_0e69876a:
+
+    # Ann_00 "Сынок, я собиралась переодеться. Иди пока, займись чем-нибудь..." nointeract
+    Ann_00 "Sohn, ich wollte mich umziehen. Geh und tu etwas..." nointeract
+
+# game/events/ann.rpy:358
+translate german ann_dressed_moment0_1c7b7b81:
+
+    # Eric_09 "Макс, не мешай взрослым! В твоём положении это просто верх наглости! Найди себе занятие..." nointeract
+    Eric_09 "Max, störe die Erwachsenen nicht! In deiner Situation ist das der Gipfel der Unverschämtheit! Such dir etwas zu tun..." nointeract
+
+# game/events/ann.rpy:360
+translate german ann_dressed_moment0_ff7e7143:
+
+    # Ann_00 "Сынок, мы с Эриком собирались переодеться. Не мешай взрослым, займись чем-нибудь..." nointeract
+    Ann_00 "Sohn, Eric und ich wollten uns umziehen. Lass uns in Ruhe, geh und tu etwas ..." nointeract
+
+# game/events/ann.rpy:366
+translate german ann_dressed_moment0_104e65c7:
+
+    # Ann_00 "Так, сынок... Ты можешь погулять? А то мне нужно переодеться..." nointeract
+    Ann_00 "Also, Sohn... Kannst du einen Spaziergang machen? Weil ich muss mich umziehen..." nointeract
+
+# game/events/ann.rpy:368
+translate german ann_dressed_moment0_ad13a757:
+
+    # Ann_13 "Конечно! Это как-то неправильно, если мать будет переодеваться при своём ребёнке. Так что, пожалуйста, выйди ненадолго." nointeract
+    Ann_13 "Ja, natürlich! Es ist irgendwie falsch, wenn eine Mutter sich vor ihrem Kind umzieht. Geh also bitte eine Weile raus." nointeract
+
+# game/events/ann.rpy:370
+translate german ann_dressed_moment0_42ae37fd:
+
+    # Ann_12 "Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_12 "Sieh dich an! Hör mit diesem Unsinn auf und lassen deine Mutter sich in Ruhe umziehen." nointeract
+
+# game/events/ann.rpy:372
+translate german ann_dressed_moment0_19c5e329:
+
+    # Ann_01 "Спасибо, Макс. Если ты что-то хотел, то я недолго..." nointeract
+    Ann_01 "Vielen Dank, Max. Wenn du etwas willst, ich habe nicht lange gebraucht, um..." nointeract
+
+# game/events/ann.rpy:389
+translate german ann_dressed_moment2_a9e5c75c:
+
+    # Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
+    Ann_15 "Max! Ich habe dir beigebracht, wie man anklopft! {p=3}{nw}"
+
+# game/events/ann.rpy:391
+translate german ann_dressed_moment2_babcea3a:
+
+    # Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
+    Ann_15 "Max! Was soll das heißen, wer klopft? {p=3}{nw}"
+
+# game/events/ann.rpy:399
+translate german ann_dressed_moment2_aa9214ef:
+
+    # Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+    Ann_14 "Du kannst nicht einfach so unangemeldet in ein Zimmer platzen! Ist etwas passiert?" nointeract
+
+# game/events/ann.rpy:402
+translate german ann_dressed_moment2_c391d1e4:
+
+    # Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+    Ann_12 "Hör auf, unangemeldet ins Zimmer zu platzen! Oder liegt ein Notfall vor?" nointeract
+
+# game/events/ann.rpy:417
+translate german ann_dressed_moment1_1f19d7dd:
+
+    # Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+    Ann_15 "Max! Ich habe dir beigebracht zu klopfen! Du kannst nicht einfach so unangemeldet in ein Zimmer platzen! Stimmt etwas nicht?" nointeract
+
+# game/events/ann.rpy:420
+translate german ann_dressed_moment1_e1ca91d3:
+
+    # Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+    Ann_15 "Max! Wer klopft denn da?! Hör auf, unangemeldet ins Zimmer zu platzen! Handelt es sich etwa um einen Notfall?" nointeract
+
+# game/events/ann.rpy:426
+translate german ann_dressed_lvl_1_3e8f5598:
+
+    # Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
+    Ann_12 "Okay, Max! Aber erst machst du die Tür zu, dann ziehe ich mich in Ruhe um, und dann sehen wir, was so dringend ist..."
+
+# game/events/ann.rpy:427
+translate german ann_dressed_lvl_1_c8682e5b:
+
+    # Max_00 "Конечно, мам!"
+    Max_00 "Alles klar, Mom."
+
+# game/events/ann.rpy:429
+translate german ann_dressed_lvl_1_a94cbdaa:
+
+    # Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
+    Max_00 "{m}Ich hätte wahrscheinlich nicht so bei Mom reinplatzen sollen... Ich hoffe, das Geschenk wird die Wogen glätten.{/m}"
+
+# game/events/ann.rpy:435
+translate german ann_dressed_lvl_1_0e39c2e7:
+
+    # Ann_17 "Что?! Макс! Это что ещё за словечки такие? А ну-ка быстро выйди и закрой дверь!" nointeract
+    Ann_17 "Was?! Max! Was ist das für eine Wortwahl? Raus und sofort die Tür zu!" nointeract
+
+# game/events/ann.rpy:440
+translate german ann_dressed_lvl_1_3f53b608:
+
+    # Ann_17 "Что я слышу! Вряд ли я та женщина, которой стоит такое говорить, Макс. А теперь выйди и закрой дверь!" nointeract
+    Ann_17 "Was höre ich denn da? Ich bin nicht die Art von Frau, die so etwas sagt, Max. Und jetzt raus mit dir und mach die Tür zu!" nointeract
+
+# game/events/ann.rpy:445
+translate german ann_dressed_lvl_1_d8e67a23:
+
+    # Ann_13 "Как я переодеваюсь?! Сынок, ты что такое говоришь! Давай-ка выйди и закрой за собой дверь." nointeract
+    Ann_13 "Wie soll ich mich umziehen?! Was redest du da, mein Sohn? Geh raus und schließ die Tür hinter dir." nointeract
+
+# game/events/ann.rpy:448
+translate german ann_dressed_lvl_1_bb28ab00:
+
+    # Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?" nointeract
+    Ann_12 "Danke, Max, aber... Würdest du bitte vor der Tür warten?" nointeract
+
+# game/events/ann.rpy:456
+translate german ann_dressed_lvl_2_3e8f5598:
+
+    # Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
+    Ann_12 "Okay, Max! Aber erst machst du die Tür zu, dann ziehe ich mich in Ruhe um, und dann sehen wir, was so dringend ist..."
+
+# game/events/ann.rpy:457
+translate german ann_dressed_lvl_2_c8682e5b:
+
+    # Max_00 "Конечно, мам!"
+    Max_00 "Alles klar, Mom."
+
+# game/events/ann.rpy:459
+translate german ann_dressed_lvl_2_a94cbdaa:
+
+    # Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
+    Max_00 "{m}Ich hätte wahrscheinlich nicht so bei Mom reinplatzen sollen... Ich hoffe, das Geschenk wird die Wogen glätten.{/m}"
+
+# game/events/ann.rpy:465
+translate german ann_dressed_lvl_2_d73d7740:
+
+    # Ann_13 "Макс! И не стыдно тебе такое своей маме говорить, а? Ну-ка бегом за дверь, а то мешаешь." nointeract
+    Ann_13 "Max! Schämst du dich nicht, so etwas zu deiner Mutter zu sagen, hm? Geh raus, du störst." nointeract
+
+# game/events/ann.rpy:470
+translate german ann_dressed_lvl_2_307c57f0:
+
+    # Ann_13 "Даже не знаю, что на это ответить... Ну-ка бегом за дверь, а то засмущал меня." nointeract
+    Ann_13 "Ich weiß nicht, was ich dazu sagen soll... Raus hier, du bringst mich in Verlegenheit." nointeract
+
+# game/events/ann.rpy:474
+translate german ann_dressed_lvl_2_659d5d18:
+
+    # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_12 "Nein, natürlich nicht! Schau dich an! Hör mit diesem Unsinn auf und lass deine Mutter sich in Ruhe umziehen." nointeract
+
+# game/events/ann.rpy:478
+translate german ann_dressed_lvl_2_a255adec:
+
+    # Ann_02 "Приятно слышать. Но маме нужно переодеться... Так что подожди за дверью, хорошо?" nointeract
+    Ann_02 "Das ist gut zu hören. Aber deine Mutter muss sich umziehen... Also warte einfach vor der Tür, okay?" nointeract
+
+# game/events/ann.rpy:486
+translate german ann_dressed_gift_a14e771b:
+
+    # Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
+    Ann_01 "Nun, hier bin ich angezogen. Du sagtest, du hättest etwas für mich? Wovon redest du eigentlich?"
+
+# game/events/ann.rpy:487
+translate german ann_dressed_gift_efc9083b:
+
+    # Max_04 "У меня для тебя подарок! Ночнушка!"
+    Max_04 "Ich habe ein Geschenk für dich! Es ist ein Negligé!"
+
+# game/events/ann.rpy:488
+translate german ann_dressed_gift_e131ac39:
+
+    # Ann_06 "Ты это серьёзно? Но в честь чего?"
+    Ann_06 "Ist es dir ernst damit? Aber wozu?"
+
+# game/events/ann.rpy:489
+translate german ann_dressed_gift_860498c1:
+
+    # Max_05 "Просто ты - самая лучшая мама на свете!"
+    Max_05 "Es ist nur so, dass du die beste Mom aller Zeiten bist!"
+
+# game/events/ann.rpy:490
+translate german ann_dressed_gift_56ae1652:
+
+    # Ann_08 "Ох, Макс, ты мне льстишь! Это так... неожиданно! Спасибо тебе мой милый, я очень тронута!"
+    Ann_08 "Oh, Max, du schmeichelst mir! Es ist so... aus heiterem Himmel! Danke, mein Liebling, ich bin sehr gerührt!"
+
+# game/events/ann.rpy:491
+translate german ann_dressed_gift_60f1c9d7:
+
+    # Max_03 "Может, примеришь?"
+    Max_03 "Würdest du es gerne anprobieren?"
+
+# game/events/ann.rpy:492
+translate german ann_dressed_gift_f5c9d21b:
+
+    # Ann_06 "Примерить? Для тебя? Ну... ладно... Думаю, ты это заслужил. Подожди, пожалуйста, за дверью..."
+    Ann_06 "Soll ich es anprobieren? Für dich? Nun... okay, ähm... Ich denke, du hast es verdient. Warte bitte draußen vor der Tür..."
+
+# game/events/ann.rpy:493
+translate german ann_dressed_gift_cc0857da:
+
+    # Max_01 "Хорошо, мам."
+    Max_01 "Okay, Mom."
+
+# game/events/ann.rpy:495
+translate german ann_dressed_gift_dec66268:
+
+    # Ann "{b}Анна:{/b} Ничего себе, она полупрозрачная! Дорогой, ты же понимаешь, что твоя мама не может показаться в этом перед сыном..."
+    Ann "{b}Ann:{/b} Wow, es ist durchsichtig! Schatz, dir ist doch klar, dass deine Mom das nicht vor ihrem Sohn tragen sollte..."
+
+# game/events/ann.rpy:496
+translate german ann_dressed_gift_461f061a:
+
+    # Max_10 "Тебе не понравился подарок?!"
+    Max_10 "Hat dir das Geschenk nicht gefallen?!"
+
+# game/events/ann.rpy:497
+translate german ann_dressed_gift_0f666c00:
+
+    # Ann "{b}Анна:{/b} Нет, мне очень нравится! Это прекрасный подарок! Только вот, тебе не кажется, что ты ещё слишком мал, чтобы делать подобные подарки?"
+    Ann "{b}Ann:{/b} Nein, es gefällt mir wirklich! Es ist ein wunderbares Geschenk! Aber bist du nicht zu jung, um solche Geschenke zu machen?"
+
+# game/events/ann.rpy:498
+translate german ann_dressed_gift_00ed580c:
+
+    # Max_09 "Я уже большой, мам! Я же от души!"
+    Max_09 "Ich bin reif, Mom! Das meine ich von ganzem Herzen."
+
+# game/events/ann.rpy:499
+translate german ann_dressed_gift_f9e66542:
+
+    # Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
+    Ann "{b}Ann:{/b} Oh, Max, du bringst mich in Verlegenheit, so ein freizügiges Geschenk, für deine eigene Mutter... Aber trotzdem, ich weiß das wirklich zu schätzen... und noch einmal, vielen Dank."
+
+# game/events/ann.rpy:500
+translate german ann_dressed_gift_75fcb6dd:
+
+    # Max_02 "Думаю, смотрится она на тебе просто фантастически!"
+    Max_02 "Ich finde, es steht dir fantastisch!"
+
+# game/events/ann.rpy:503
+translate german ann_dressed_gift_d954a734:
+
+    # Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
+    Ann_08 "Oh... Vielen Dank für das Kompliment, mein Liebling. Man merkt, dass mein Sohn ein richtiger Mann ist! Komm her, ich umarme dich..."
+
+# game/events/ann.rpy:506
+translate german ann_dressed_gift_26390c24:
+
+    # Max_05 "{m}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/m}"
+    Max_05 "{m}Oh, Natürlich... Ich habe wirklich die beste Mom der Welt! Was für eine tolle Figur sie hat... Es ist so schön, sich an ihr festzuhalten... ...ihre weichen, geschmeidigen Brüste... Das ist ein Traum, aus dem ich nicht aufwachen möchte!{/m}"
+
+# game/events/ann.rpy:510
+translate german ann_dressed_gift_cda3b4f9:
+
+    # Ann_04 "Ну всё, мой дорогой, нам с девочками ещё нужно успеть пробежаться по магазинам сегодня..." nointeract
+    Ann_04 "Also gut, Schatz, die Mädchen und ich müssen heute noch einkaufen gehen..." nointeract
+
+# game/events/ann.rpy:512
+translate german ann_dressed_gift_b6991faf:
+
+    # Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..." nointeract
+    Ann_04 "In Ordnung, Schatz, ich muss bald zur Arbeit und habe noch einige Dinge zu erledigen..." nointeract
+
+# game/events/ann.rpy:517
+translate german ann_dressed_gift_e66adddb:
+
+    # Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
+    Ann_05 "[succes!t]Du bist heute sehr nett, Max! Dafür gebe ich dir sogar einen Kuss auf die Wange als Anreiz, mir öfter zu gefallen..."
+
+# game/events/ann.rpy:519
+translate german ann_dressed_gift_05855820:
+
+    # Max_06 "{m}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/m}"
+    Max_06 "{m}Wow! Das ist noch mehr, als ich erhofft hatte... Und es ist genauso schön, die Berührung ihrer Lippen zu spüren.{/m}"
+
+# game/events/ann.rpy:524
+translate german ann_dressed_gift_c0df5b86:
+
+    # Ann_04 "А теперь иди, сынок... Пора заниматься делами." nointeract
+    Ann_04 "Jetzt... Zeit, zur Arbeit zu gehen." nointeract
+
+# game/events/ann.rpy:544
+translate german ann_dressed_fail_f49b0b30:
+
+    # Ann_01 "[_text!t]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь." nointeract
+    Ann_01 "[_text!t]Max, ich muss noch ein paar Dinge erledigen... Komm schon, Sohn, geh ... Mach etwas anderes." nointeract
+
+# game/events/ann.rpy:546
+translate german ann_dressed_fail_a9cf1e2d:
+
+    # Ann_01 "[_text!t]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами." nointeract
+    Ann_01 "[_text!t]Max, so schaffe ich es nicht zur Arbeit... Komm schon, Sohn, geh..." nointeract
+
+# game/events/ann.rpy:554
+translate german ann_dressed_loveyou_e41c68c6:
+
+    # Ann_07 "И я тебя, Макс..."
+    Ann_07 "Und du, Max..."
+
+# game/events/ann.rpy:558
+translate german ann_dressed_goodday_1a01074c:
+
+    # Ann_02 "Спасибо, сынок! И тебе тоже..."
+    Ann_02 "Vielen Dank, mein Sohn! Und dir auch..."
+
+translate german strings:
+
+    # game/events/ann.rpy:365
+    old "А я не помешаю. Начинай..."
+    new "Ich werde nicht stören. Fang an..."
+
+    # game/events/ann.rpy:424
+    old "У тебя самые зачётные сиськи, которые я видел!"
+    new "Du hast die geilsten Titten, die ich je gesehen habe!"
+
+    # game/events/ann.rpy:424
+    old "У тебя самый потрясный зад на свете, мам!"
+    new "Du hast den tollsten Arsch der Welt, Mom!"
+
+    # game/events/ann.rpy:424
+    old "Я просто хотел посмотреть..."
+    new "Ich wollte nur sehen, ob..."
+
+    # game/events/ann.rpy:424
+    old "Ой, извини. Я забыл... Хорошо выглядишь, мам!"
+    new "Oh, das tut mir leid. Ich hab vergessen... Sieht gut aus, Mom!"
+
+    # game/events/ann.rpy:454
+    old "Да не прикрывай такую красоту, все свои же!"
+    new "Diese Schönheit darf nicht verdeckt werden, die gehört ganz dir!"
+
+    # game/events/ann.rpy:454
+    old "Сразу видно, что попка у тебя тренированная!"
+    new "Es ist offensichtlich, dass du einen trainierten Arsch hast!"
+
+    # game/events/ann.rpy:454
+    old "А посмотреть нельзя?"
+    new "Kann man nichts sehen?"
+
+    # game/events/ann.rpy:454
+    old "Извини, всё позабыл, когда тебя увидел. Ты прекрасна!"
+    new "Sorry, ich hab es vergessen, als ich dich sah. Du bist wunderschön!"

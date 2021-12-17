@@ -308,7 +308,7 @@ label ann_tv_casual_0:
         menu:
             Max_08 "{m}Вот чёрт! Зря я представлял, что там у мамы под полотенцем... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хотя, на мне майка... Может она и не заметит, но не факт.{/m}"
             "сидеть и надеяться на лучшее":
-                if random_outcome(ch):
+                if not random_outcome(ch):
                     if poss['mom-tv'].st() < 2:
                         $ poss['mom-tv'].open(2)
                 else:
@@ -344,8 +344,8 @@ label ann_tv_casual_0:
         menu:
             Max_08 "{m}Вот чёрт! Зря я представлял, что там у мамы под полотенцем... Если мама увидит мой стояк, то просмотр для меня точно закончится. В этих шортах я точно свой член сейчас не спрячу! Может, конечно, она и не заметит, но вряд ли.{/m}"
             "сидеть и надеяться на лучшее":
-                if random_outcome(ch):
-                    if poss['mom-tv'].st() < 2:
+                if not random_outcome(ch):
+                    if poss['mom-tv'].st() < 3:
                         $ poss['mom-tv'].open(3)
                 else:
                     # (Не повезло!)
@@ -884,8 +884,8 @@ label ann_gift_fit1:
     Ann "{b}Анна:{/b} Сынок, с размером всё в порядке. Вроде, сидит отлично. Только вот..."
 
     # annroom-morning-01 + ann-dresses-morning-05b
-    scene BG char Ann morning
-    show Ann dressed 05b
+    scene BG char Ann mde-01
+    show Ann dressed 07i # 05b
     with Fade(0.4, 0, 0.3)
     Max_06 "Ого, мам! Тебе очень идёт! Выглядишь обалденно! Удобно?"
     Ann_14 "Да, Макс, удобно... Просто... Не слишком ли всё открыто?"
@@ -1049,7 +1049,7 @@ label erofilm2_1:
                 #(может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
                 $ ann.flags.handmass = False
 
-        if random_outcome(40 if mgg.dress == 'b' else 60):
+        if random_outcome(60 if mgg.dress == 'b' else 40):
             # (Повезло!)
             # tv-watch-01 + ero_mov_02_05 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
             scene BG tv-watch-01
@@ -1252,7 +1252,7 @@ label erofilm2_2:
             menu:
                 Ann_04 "Давай-ка на сегодня прервёмся с массажем... и досмотрим фильм. Это не значит, что мне не понравилось! Ты молодец!"
                 "{i}закончить массаж и попытаться скрыть стояк{/i}":
-                    if random_outcome(40 if mgg.dress == 'b' else 60) or _in_replay:
+                    if random_outcome(60 if mgg.dress == 'b' else 40) or _in_replay:
                         jump .lucky
                     else:
                         jump .unlucky
@@ -1309,7 +1309,7 @@ label erofilm2_2:
                         $ ann.flags.handmass = True
                         $ AddRelMood('ann', 5, 30)
 
-                if random_outcome(40 if mgg.dress == 'b' else 60) or _in_replay:
+                if random_outcome(60 if mgg.dress == 'b' else 40) or _in_replay:
                     # (Повезло!)
                     # tv-mass-05 + tv-ero-01-max-(02a/02b) + tv-ero-01-ann-(04/05/06)
                     scene BG tv-mass-05
@@ -1348,7 +1348,7 @@ label erofilm2_2:
                     "{i}закончить массаж и попытаться скрыть стояк{/i}":
                         $ ann.flags.handmass = True
                 # (может спалиться 25% в майке и шортах / может спалиться 50% в шортах)
-                if random_outcome(40 if mgg.dress == 'b' else 60):
+                if random_outcome(60 if mgg.dress == 'b' else 40):
                     jump .lucky
                 else:
                     jump .unlucky

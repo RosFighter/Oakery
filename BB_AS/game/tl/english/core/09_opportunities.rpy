@@ -896,7 +896,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Мы с Оливией немного пошептались о Лизе. Пускай, это не очень красиво, но мы пришли к выводу, что нужно поработать над сексуальным раскрепощением моей младшей сестрёнки. Хотя бы немного... И компания Оливии идеально для этого подходит! Она девочка без комплексов, очень открытая во всех смыслах. А как говорится, с кем поведёшься, от того и наберёшься!"
-    new "Olivia and I had a little chat about Lisa. It may not be pretty, but we've come to the conclusion that we need to work on my little sister's sexual liberation. At least a little... And Olivia's company is perfect for that! She is a girl without complexes, very open in every way. And as they say, you get what you can get from who you can get from who you can get!"
+    new "Olivia and I had a little chat about Lisa. It may not be pretty, but we've come to the conclusion that we need to work on my little sister's sexual liberation. At least a little... And Olivia's company is perfect for that! She is a girl without complexes, very open in every way. And as they say, you get what you can get from who you can get!"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать общаться с Оливией, когда она бывает у нас в гостях. Теперь по вторникам и пятницам..."
@@ -1921,4 +1921,3 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы."
     new "Lisa came to me for advice, because, as it turned out, after finishing their theoretical lessons, Eric suggested that she consolidate all this in practical lessons without my mother's participation."
-

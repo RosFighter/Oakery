@@ -183,9 +183,35 @@ screen choice_lang():
     tag menu
     modal True
     style_prefix 'lang'
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 425 idle 'interface/ENG.webp' action [Language('english'), Function(renpy.full_restart)] focus_mask True at lang
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 645 idle 'interface/RUS.webp' action [Language(None), Function(renpy.full_restart)] focus_mask True at lang
-    imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 865 idle 'interface/GER.webp' action [Language('german'), Function(renpy.full_restart)] focus_mask True at lang
+    if len(current_language_list) == 3:
+        imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 425 idle 'interface/ENG.webp':
+            action [Language('english'), Return()]
+            focus_mask True at lang
+        imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 645 idle 'interface/RUS.webp':
+            action [Language(None), Return()]
+            focus_mask True at lang
+        imagebutton anchor (0.5, 0.5) xpos 0.5 ypos 865 idle 'interface/GER.webp':
+            action [Language('german'), Return()]
+            focus_mask True at lang
+    else:
+        $ y = 3 if len(current_language_list) > 6 else 2
+        $ x = 3 if len(current_language_list) > 4 else 2
+        frame background None:
+            xalign 0.5
+            ypos (315 if y > 2 else 425)
+            has vbox
+            for j in range(y):
+                hbox xalign 0.5:# xpos 0.5:
+                    for i in range(x):
+                        if j*x + i < len(current_language_list):
+                            frame xysize (220, 220) background None:
+                                imagebutton pos (0.5, 0.5) anchor (0.5, 0.5) focus_mask True at lang:
+                                    idle get_lang_flag(current_language_list[j*x + i])
+                                    if current_language_list[j*x + i] == 'русский':
+                                        action [Language(None), Return()]
+                                    else:
+                                        action [Language(current_language_list[j*x + i]), Return()]
+
 
 ################################################################################
 
@@ -1105,16 +1131,22 @@ screen room_navigation():
         if len(current_room.cams) > 0:
             text _("Зрителей: [public]") xalign(1.0) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
 
-    # $ kol = 0
-    # for ps in poss:
-    #     if poss[ps].st() >= 0: # количество открытых возможностей
-    #         $ kol += 1
     $ kol = sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict]) # количество открытых возможностей
+    $ lst = [char for char in chars if chars[char].clothes.Opens()]
+    if mgg.clothes.Opens():
+        $ lst.insert(0, 'max')
 
     hbox:  # верхнее меню
         align(0.01, 0.01)
         spacing 2
         imagebutton idle 'interface menu userinfo' focus_mask True action [Hide('wait_navigation'), Show('menu_userinfo')] at small_menu
+        imagebutton idle 'interface mm clothing' focus_mask True:
+            if lst:
+                action [Hide('wait_navigation'), SetVariable('cur_ch', lst[0]), SetVariable('cloth', mgg.clothes if lst[0] == 'max' else chars[lst[0]].clothes), Show('ClothesSelect')]
+                at small_menu
+            else:
+                action [Hide('wait_navigation'), NullAction()]
+                at disable_menu
         imagebutton idle 'interface menu inventory' focus_mask True action [Hide('wait_navigation'), Show('menu_inventory')] at small_menu
         imagebutton idle 'interface menu opportunity' focus_mask True:
             if kol > 0:
@@ -1124,9 +1156,9 @@ screen room_navigation():
                 action NullAction()
                 at disable_menu
         imagebutton idle 'interface menu help' focus_mask True action [Hide('wait_navigation'), Show('menu_my_help')] at small_menu
-        if renpy.loadable('extra/extra.webp'):
+        if extra_content:   # renpy.loadable('extra/extra.webp'):
             imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')] at small_menu
-        imagebutton idle 'interface menu main' focus_mask True action ShowMenu('save') at small_menu
+        imagebutton idle 'interface menu main' focus_mask True action [Get_Language_List(), ShowMenu('save')] at small_menu
         imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')] at small_menu
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
@@ -1736,20 +1768,6 @@ screen menu_userinfo():
                                         pass
                     vbar value YScrollValue('vp3') style 'info_vscroll'
 
-
-    frame area(1350, 1000, 450, 50) background None:
-        textbutton _("Задать одежду персонажа") xalign 1.0:
-            text_size gui.text_size
-            if CurChar == 'max':
-                action [SetVariable('cloth', mgg.clothes), Hide('menu_userinfo'), Show('ClothesSelect')]
-                sensitive mgg.clothes.Opens()
-            elif chars[CurChar].clothes.GetList():      # chars[CurChar] in clothes:
-                action [SetVariable('cloth', chars[CurChar].clothes), Hide('menu_userinfo'), Show('ClothesSelect')]
-                sensitive chars[CurChar].clothes.Opens()
-            else:
-                action NullAction()
-                sensitive False
-
     key 'K_ESCAPE' action Jump('AfterWaiting')
     key 'mouseup_3' action Jump('AfterWaiting')
 
@@ -1780,6 +1798,8 @@ style userinfo_button_text:
 style info_vscroll is vscrollbar:
     unscrollable 'hide'
 
+
+################################################################################
 screen ClothesSelect():
     tag menu
     add 'interface phon'
@@ -1787,32 +1807,79 @@ screen ClothesSelect():
     frame area(150, 95, 750, 50) background None:
         text _("ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА") color gui.accent_color size 28 font 'hermes.ttf'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action [Hide('ClothesSelect'), Show('menu_userinfo')]:
+    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
         if not renpy.variant('small'):
             focus_mask True
         at close_zoom
 
-    $ lst1 = cloth.GetList()
-    $ list = []
-    for l in lst1:
-        if eval('cloth.'+l).Opens():
-            $ list.append(l)
-    default cur_cl = list[0]
-    $ list_var = eval('cloth.'+cur_cl).GetOpen()
+    $ cloth = mgg.clothes if cur_ch == 'max' else chars[cur_ch].clothes
+
+    $ lst = [l for l in cloth.GetList() if eval('cloth.'+l).Opens()]
+
+    default cur_cl = lst[0]
     default cur_var = 0
+
+    if eval('cloth.'+cur_cl) is None:
+        $ cur_cl = lst[0]
+        $ cur_var = 0
+
+    $ list_var = eval('cloth.'+cur_cl).GetOpen()
+
     hbox pos (150, 150) spacing 30:
         hbox ypos 25 xsize 400 spacing 5:
             viewport mousewheel 'change' draggable True id 'vp':
                 vbox spacing 5:
-                    for l in list:
-                        button background None action [SetScreenVariable('cur_cl', l), SetScreenVariable('cur_var', 0)] xsize 380:
+                    if mgg.clothes.Opens():
+                        button background None xsize 180 style 'userinfo_button':
+                            action [
+                                SetVariable('cur_ch', 'max'),
+                                SetVariable('cloth', mgg.clothes),
+                                SetScreenVariable('cur_cl', [l for l in cloth.GetList() if eval('cloth.'+l).Opens()][0]),
+                                SetScreenVariable('cur_var', 0)
+                                ]
+                            textbutton _("Макс"):
+                                action [
+                                    SetVariable('cur_ch', 'max'),
+                                    SetVariable('cloth', mgg.clothes),
+                                    SetScreenVariable('cur_cl', [l for l in cloth.GetList() if eval('cloth.'+l).Opens()][0]),
+                                    SetScreenVariable('cur_var', 0)
+                                    ]
+                                selected cur_ch == 'max'
+                                text_selected_color gui.text_color
+                            foreground 'interface marker'
+                    for char in sorted(chars.keys()):
+                        if chars[char].clothes.Opens():
+                            button background None xsize 180 style 'userinfo_button':
+                                action [
+                                    SetVariable('cur_ch', char),
+                                    SetVariable('cloth', chars[char].clothes),
+                                    SetScreenVariable('cur_cl', [l for l in chars[char].clothes.GetList() if eval(char+'.clothes.'+l).Opens()][0]),
+                                    SetScreenVariable('cur_var', 0)
+                                    ]
+                                textbutton chars[char].name:
+                                    action [
+                                        SetVariable('cur_ch', char),
+                                        SetVariable('cloth', chars[char].clothes),
+                                        SetScreenVariable('cur_cl', [l for l in chars[char].clothes.GetList() if eval(char+'.clothes.'+l).Opens()][0]),
+                                        SetScreenVariable('cur_var', 0)
+                                        ]
+                                    selected cur_ch == char
+                                    text_selected_color gui.text_color
+                                foreground 'interface marker'
+
+                    null height 100
+
+                    for l in lst:
+                        button background None xsize 380:
+                            action [SetScreenVariable('cur_cl', l), SetScreenVariable('cur_var', 0)]
                             xpadding 0 ypadding 0 xmargin 0 ymargin 0
                             textbutton eval('cloth.'+l).name action [SetScreenVariable('cur_cl', l), SetScreenVariable('cur_var', 0)] selected cur_cl == l
                             foreground 'interface marker'
             vbar value YScrollValue('vp') style 'info_vscroll'
 
-        imagebutton pos (0, 360) auto 'interface prev %s':
-            focus_mask True
+        imagebutton pos (0, 200) auto 'interface prev %s':
+            ypadding 230
+            # focus_mask True
             sensitive cur_var > 0
             action SetScreenVariable('cur_var', cur_var-1)
 
@@ -1821,15 +1888,16 @@ screen ClothesSelect():
             # focus_mask True
             xysize (550, 900)
             ypos 30
-            if CurChar == 'max':
+            if cur_ch == 'max':
                 idle 'Max clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info
                 hover 'Max clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info+'a'
             else:
-                idle chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info
-                hover chars[CurChar].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info+'a'
+                idle chars[cur_ch].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info
+                hover chars[cur_ch].pref+' clot '+eval('cloth.'+cur_cl).sel[list_var[cur_var]].info+'a'
 
-        imagebutton pos (0, 360) auto 'interface next %s':
-            focus_mask True
+        imagebutton pos (0, 200) auto 'interface next %s':
+            ypadding 230
+            # focus_mask True
             sensitive cur_var < len(list_var)-1
             action SetScreenVariable('cur_var', cur_var+1)
 
@@ -1972,10 +2040,31 @@ screen countdown():
 
 ################################################################################
 
+screen age_verification():
+
+    vbox xalign .5 yalign .1:
+        spacing -5
+        text _("ВНИМАНИЕ") color red font 'hermes.ttf' size 120 xalign .5
+        text _("КОНТЕНТ ДЛЯ ВЗРОСЛЫХ") color red font 'hermes.ttf' size 70 xalign .5
+
+    vbox xalign .5 yalign .5:
+        spacing 15
+        text _("Эта игра содержит контент сексуального характера") xalign .5 size 32 color gui.accent_color
+        text _("Продолжая, ты подтверждаешь, что достаточно взрослый для такого контента") xalign .5 size 32 color gui.accent_color
+        if config.say_menu_text_filter != original_str:     # инцест-патч отключён
+            text _("Все персонажи, изображённые в этой игре, вымышлены и старше 18 лет") xalign .5 size 24 italic True color gui.accent_color
+
+    button background None action Return() style 'userinfo_button':
+        xalign .5 yalign 0.9
+        textbutton _("Продолжить") action Return()
+        foreground 'interface marker'
+
+################################################################################
+
 screen changes_menu_clot():
     tag menu
 
-    add gui.main_menu_background
+    add 'interface main menu'
     add 'interface phon'
     style_prefix 'mmclot'
 
@@ -1989,10 +2078,10 @@ screen changes_menu_clot():
 
     # default mm_char = sorted(menu_chars)[0]
     default clot = menu_chars[mm_char].get_current()[0]
-    default var = menu_chars[mm_char].get_current()[1]
+    default var = menu_chars[mm_char].get_current()[1].copy()
     $ clot_lst = menu_chars[mm_char].get_open_clot()
     $ mm_info = menu_chars[mm_char].get_info(clot, var)
-    $ var_lst = menu_chars[mm_char].get_open_var(clot)
+    $ btn_lst = menu_chars[mm_char].get_btn_list(clot)
 
     hbox pos (150, 150) spacing 30:
         hbox ypos 25 xsize 300 spacing 5:
@@ -2005,7 +2094,7 @@ screen changes_menu_clot():
                                 action [SetScreenVariable('clot', menu_chars[char].get_current()[0]),
                                     SetScreenVariable('var', menu_chars[char].get_current()[1]),
                                     SetScreenVariable('clot_lst', menu_chars[char].get_open_clot()),
-                                    SetScreenVariable('var_lst', menu_chars[char].get_open_var(clot)),
+                                    SetScreenVariable('btn_lst', menu_chars[char].get_btn_list(clot)),
                                     SetScreenVariable('mm_info', menu_chars[char].get_info(menu_chars[char].get_current()[0], menu_chars[char].get_current()[1])),
                                     SetVariable('mm_char', char),
                                     ]
@@ -2019,63 +2108,57 @@ screen changes_menu_clot():
             ypadding 230
             action [
                 SetScreenVariable('clot', clot_lst[clot_lst.index(clot) - 1]),
-                SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 0)),
-                SetScreenVariable('var_lst', menu_chars[mm_char].get_open_var(clot)),
-                SetScreenVariable('var', 0),
+                SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, {})),
+                SetScreenVariable('btn_lst', menu_chars[mm_char].get_btn_list(clot)),
+                SetScreenVariable('var', menu_chars[mm_char].get_full(clot_lst[clot_lst.index(clot) - 1])),
                 ]
             sensitive clot in clot_lst and clot_lst.index(clot) > 0
 
         frame xysize(650, 900) background None:
-            add mm_char + ' info ' + mm_info:
-                xalign .5
+            if mm_info[0]:
+                add mm_char + ' info ' + mm_info[1][0] xalign .5 zoom mm_info[2]
+            else:
+                add mm_char + ' info 00' xalign .5 zoom mm_info[2]
+                for cl_it in mm_info[1]:
+                    add mm_char + ' mm-info ' + cl_it xalign .5 zoom mm_info[2]
 
         imagebutton pos (0, 200) auto 'interface next %s':
             # focus_mask True
             ypadding 230
             action [
                 SetScreenVariable('clot', (clot_lst[clot_lst.index(clot) + 1] if clot_lst.index(clot) < len(clot_lst)-1 else clot_lst[len(clot_lst)-1])),
-                SetScreenVariable('var_lst', menu_chars[mm_char].get_open_var(clot)),
-                SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 0)),
-                SetScreenVariable('var', 0),
+                SetScreenVariable('btn_lst', menu_chars[mm_char].get_btn_list(clot)),
+                SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, {})),
+                SetScreenVariable('var', menu_chars[mm_char].get_full(clot_lst[clot_lst.index(clot) + 1] if clot_lst.index(clot) < len(clot_lst)-1 else clot_lst[len(clot_lst)-1])),
                 ]
             sensitive clot in clot_lst and clot_lst.index(clot) < len(clot_lst)-1
-
-        # vbox:
-        #     text mm_char
-        #     text clot
-        #     text str(var)
-        #     text mm_info
-        #     text '[clot_lst]'
-        #     text '[var_lst]'
 
     vbox xsize 300 xpos .95 ypos .9 xalign 1.0 yalign 1.0:
         spacing 50
         vbox:
-            style_prefix "radio"
-            if len(var_lst) > 1:
-                textbutton _("Одеть всё"):
-                    # sensitive len(var_lst) > 1
-                    action SetScreenVariable('var', 0), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 0)),
+            style_prefix "check"
 
-            if 1 in var_lst:
-                textbutton _("Верх и трусики"):
-                    # sensitive 1 in var_lst
-                    action SetScreenVariable('var', 1), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 1)),
-
-            if 2 in var_lst:
-                textbutton _("Только верх"):
-                    # sensitive 2 in var_lst
-                    action SetScreenVariable('var', 2), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 2)),
-
-            if 3 in var_lst:
-                textbutton _("Только низ"):
-                    # sensitive 3 in var_lst
-                    action SetScreenVariable('var', 3), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 3)),
-
-            if 4 in var_lst:
-                textbutton _("Только трусики"):
-                    # sensitive 4 in var_lst
-                    action SetScreenVariable('var', 4), SetScreenVariable('mm_info', menu_chars[mm_char].get_info(clot, 4)),
+            for btn in btn_lst:
+                textbutton btn[0]:
+                    if btn[1] in var:
+                        selected var[btn[1]]
+                        sensitive btn[2]
+                        if btn[3]:
+                            # есть эквивалент
+                            if var[btn[1]]:
+                                # выключаем одежду. если есть признак обязательности - включаем эквивалент
+                                if btn[4]:
+                                    action [SetDict(var, btn[1], 0), SetDict(var, btn[3], 1)]
+                                else:
+                                    action SetDict(var, btn[1], 0)
+                            else:
+                                # включаем одежду. выключаем эквивалент
+                                action [SetDict(var, btn[1], 1), SetDict(var, btn[3], 0)]
+                        else:
+                            action ToggleDict(var, btn[1], 1, 0) # SetDict(dict, key, value)
+                    else:
+                        sensitive False
+                        action NullAction()
 
         textbutton _("Сделать текущей"):
             sensitive persistent.mm_chars[menu_chars[mm_char].id_char] != (clot, var)
@@ -2109,9 +2192,16 @@ style mmclot_button_text:
 style mmclot_vscroll is vscrollbar:
     unscrollable 'hide'
 
-style radio_button:
-    properties gui.button_properties("radio_button")
-    foreground "gui/button/radio_[prefix_]foreground.png"
+# style radio_button:
+#     properties gui.button_properties("radio_button")
+#     foreground "gui/button/radio_[prefix_]foreground.png"
+#
+# style radio_button_text:
+#     properties gui.button_text_properties("radio_button")
 
-style radio_button_text:
-    properties gui.button_text_properties("radio_button")
+style check_button:
+    properties gui.button_properties("check_button")
+    foreground "gui/button/check_[prefix_]foreground.png"
+
+style check_button_text:
+    properties gui.button_text_properties("check_button")

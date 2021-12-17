@@ -364,24 +364,52 @@ translate english strings:
 
     # game/core/screens.rpy:1983
     old "ОДЕЖДА ПЕРСОНАЖЕЙ В ГЛАВНОМ МЕНЮ"
-    new ""
+    new "CHARACTERS' CLOTHES IN THE MAIN MENU"
 
     # game/core/screens.rpy:2056
     old "Одеть всё"
-    new ""
+    new "Put everything on"
 
     # game/core/screens.rpy:2061
     old "Верх и трусики"
-    new ""
+    new "Top and panties"
 
     # game/core/screens.rpy:2066
     old "Только верх"
-    new ""
+    new "Just the top."
 
     # game/core/screens.rpy:2071
     old "Только низ"
-    new ""
+    new "Only the bottom"
 
     # game/core/screens.rpy:2076
     old "Только трусики"
-    new ""
+    new "Panties only"
+# TODO: Translation updated at 2021-12-12 01:54
+
+translate english strings:
+
+    # game/core/screens.rpy:2046
+    old "ВНИМАНИЕ"
+    new "WARNING"
+
+    # game/core/screens.rpy:2047
+    old "КОНТЕНТ ДЛЯ ВЗРОСЛЫХ"
+    new "ADULT CONTENT"
+
+    # game/core/screens.rpy:2051
+    old "Эта игра содержит контент сексуального характера"
+    new "This game contains age-restricted content of a sexual nature."
+
+    # game/core/screens.rpy:2052
+    old "Продолжая, ты подтверждаешь, что достаточно взрослый для такого контента"
+    new "By continuing you confirm that you are old enough to view this content."
+
+    # game/core/screens.rpy:2054
+    old "Все персонажи, изображённые в этой игре, вымышлены и старше 18 лет"
+    new "All characters depicted in this game are fictional and over 18 years old."
+
+    # game/core/screens.rpy:2058
+    old "Продолжить"
+    new "Click to continue"
+

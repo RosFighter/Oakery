@@ -2580,204 +2580,278 @@ translate english lisa_eric_sex_ed_practice_practice_1_3ad9a6c7:
 translate english eric_ann_sleep_56167bf9:
 
     # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спойкойно его подставить...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Aha! Mom's alone... So Eric is almost certainly jerking off to Alice right now. We can wait at least half an hour for him to get Mom, and then calmly set him up...{/m}" nointeract
 
 # game/events/eric.rpy:703
 translate english eric_ann_sleep_e02970a1:
 
     # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спойкойно его подставить...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Aha! Mom's alone... So Eric is almost certainly jerking off to Alice right now. I can use the cameras to see when he goes to bed and then I can safely set him up...{/m}" nointeract
 
 # game/events/eric.rpy:884
 translate english eric_ann_shower_start_peeping_fc5db481:
 
     # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
-    Max_09 ""
+    Max_09 "{m}It's better to keep the peeping to a minimum until I get rid of Eric. So as not to upset anyone else...{/m}"
 
 # game/events/eric.rpy:886
 translate english eric_ann_shower_start_peeping_dda24c4d:
 
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}It's a good thing this doesn't apply to Kira...{/m}" nointeract
 
 # game/events/eric.rpy:1377
 translate english jerk_balkon_069d2e5a:
 
     # Max_13 "{m}Вот чёрт! Я совсем забыл, что Эрик заходит в комнату к Алисе только тогда, когда она голая... Чтобы подставить Эрика, Алиса должна быть голой, иначе будет несостыковка со снимками и мне никто не поверит!{/m}" nointeract
-    Max_13 "" nointeract
+    Max_13 "{m}Oh, crap! I had completely forgotten that Eric only comes into Alice's room when she's naked... To frame Eric, Alice had to be naked, or there would be a discrepancy with the pictures and no one would believe me!{/m}" nointeract
 
 # game/events/eric.rpy:1395
 translate english jerk_balkon_93f9155e:
 
     # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спойкойно его подставить...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Great! Eric is exactly where I need him... We can wait at least half an hour for him to get back Mom, and then calmly set him up...{/m}" nointeract
 
 # game/events/eric.rpy:1402
 translate english jerk_balkon_0492bc5e:
 
     # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спойкойно его подставить...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Great! Eric is exactly where I need him... I can use the cameras to see when he goes to sleep and then I can safely set him up...{/m}" nointeract
 
 # game/events/eric.rpy:1843
 translate english start_eric_wallet_c1ca5e1e:
 
     # Eric_00 "Было вкусно! Но прежде, чем мы разойдёмся, я бы хотел кое о чём рассказать... Это очень важно и отнеситесь к моим словам серьёзно!"
-    Eric_00 ""
+    Eric_00 "It was delicious! But before we go, there's something I'd like to tell you. It's very important that you take this seriously."
 
 # game/events/eric.rpy:1844
 translate english start_eric_wallet_a9a3d262:
 
     # Max_09 "Можно я пойду, а мне потом Лиза это расскажет?"
-    Max_09 ""
+    Max_09 "Can I go and Lisa can tell me about it later?"
 
 # game/events/eric.rpy:1845
 translate english start_eric_wallet_6a754288:
 
     # Ann_12 "Макс! Тебя это тоже касается. Точнее, именно тебя это и касается. Но пусть всё скажет Эрик..."
-    Ann_12 ""
+    Ann_12 "Max! This concerns you, too. Or rather, it concerns you. But let Eric speak..."
 
 # game/events/eric.rpy:1846
 translate english start_eric_wallet_8deadb4d:
 
     # Max_07 "Опять какую-то фигню придумали?"
-    Max_07 ""
+    Max_07 "Great, what is it this time?"
 
 # game/events/eric.rpy:1847
 translate english start_eric_wallet_630fb780:
 
     # Eric_09 "Что-то ты очень весел, Макс, для того, кто украл мой бумажник..."
-    Eric_09 ""
+    Eric_09 "You're quite chipper, for a thief."
 
 # game/events/eric.rpy:1848
 translate english start_eric_wallet_fea122b6:
 
     # Max_08 "Что? Ничего я не крал!"
-    Max_08 ""
+    Max_08 "What? I didn't steal anything!"
 
 # game/events/eric.rpy:1849
 translate english start_eric_wallet_01db12a6:
 
     # Ann_17 "Макс! У Эрика есть обоснованные подозрения и просто так такими обвинениями он бросаться не станет. Так что, давай не прикидывайся дурачком. Пока не поздно, нужно всё уладить."
-    Ann_17 ""
+    Ann_17 "Max! Eric would never just throw around accusations like that. Don't you dare play dumb about stealing his wallet! "
 
 # game/events/eric.rpy:1850
 translate english start_eric_wallet_8c91f040:
 
     # Max_10 "Что уладить? Я ничего не брал!"
-    Max_10 ""
+    Max_10 "You've got to be kidding... I've never even seen his wallet!"
 
 # game/events/eric.rpy:1851
 translate english start_eric_wallet_074415cb:
 
     # Eric_13 "Именно это и сказал бы вор! В общем, в бумажнике было $ 25 000 и теперь ты должен их вернуть. Я даю тебе неделю... Как только это время истечёт, мы повторим этот разговор на этом месте и если ты не вернёшь деньги, то точно отправишься в военный лагерь. Всё понял?"
-    Eric_13 ""
+    Eric_13 "So you're a liar, and a thief? Listen carefully, Max. I had $25,000 in that wallet and I expect to be paid back in full. You've got one week, and if you're so much as one cent short, you'll find yourself on the fastest bus straight to boot-camp. Have I made myself clear?!"
 
 # game/events/eric.rpy:1852
 translate english start_eric_wallet_bb073fbf:
 
     # Max_15 "Ты эту сумму с потолка взял?! А почему не миллион или миллиард?"
-    Max_15 ""
+    Max_15 "Did you pull that number out of your ass?! Why not make it 250,000? Or 250,000,000?!"
 
 # game/events/eric.rpy:1853
 translate english start_eric_wallet_970e5f65:
 
     # Ann_16 "Макс! Ты как со взрослыми разговариваешь? Если Эрик говорит, значит точно уверен в твоей виновности. Так что, давай без истерик!"
-    Ann_16 ""
+    Ann_16 "Max! How dare you raise your voice! I already told you that Eric would never make an accusation like that if he wasn't 100% certain. So calm down and face the consequences!"
 
 # game/events/eric.rpy:1854
 translate english start_eric_wallet_cf89d297:
 
     # Max_16 "Так, а какие у него доказательства? Он же врёт!"
-    Max_16 ""
+    Max_16 "Where's the evidence? He's full of shit!"
 
 # game/events/eric.rpy:1855
 translate english start_eric_wallet_eed33a57:
 
     # Eric_14 "Ну а кто тут у нас ещё девочек разными подарками задаривает? Если прикинуть, то сумма уже приличная набегает... Или хочешь сказать, что ты в интернете столько умудряешься зарабатывать? В таком случае покажи нам, чем ты там занимаешься!"
-    Eric_14 ""
+    Eric_14 "Maybe you can explain how an unemployed high-school dropout has been able to afford so many lavish gifts for his sisters? All that lingerie ain't cheap. Or are we supposed to believe you made all that money online? If that's true - show us how you do it!"
 
 # game/events/eric.rpy:1856
 translate english start_eric_wallet_4520c649:
 
     # Max_10 "Нет, там ничего особенного... Так, просто халтурка."
-    Max_10 ""
+    Max_10 "Tsch... It's just... Freelance work."
 
 # game/events/eric.rpy:1857
 translate english start_eric_wallet_75289435:
 
     # Eric_09 "Мой бумажник пропал ещё давно и именно здесь. Я об этом ничего не говорил, потому что хотел посмотреть, у кого и что начнёт появляться. Так что это ты, Макс! Без вариантов! И сумма, которую я прошу вернуть, названа уже с примерным вычетом того, что ты потратил."
-    Eric_09 ""
+    Eric_09 "My wallet disappeared a long time ago, back when I first started visiting. I kept quiet about it to see if the culprit would reveal himself. And low and behold - it's you! It all makes sense! I've even factored your spending spree into the amount you owe me."
 
 # game/events/eric.rpy:1858
 translate english start_eric_wallet_424e7e6c:
 
     # Max_17 "Мам!!! Меня подставляют!"
-    Max_17 ""
+    Max_17 "Mom!!! I'm being set up!"
 
 # game/events/eric.rpy:1859
 translate english start_eric_wallet_1833e925:
 
     # Ann_18 "Всё, Макс. Мне это надоело! Твоё слово против слова Эрика. И поверь, у тебя нет шансов. Так что, признайся и верни то, что он просит. Больше я ничего слышать не хочу. Закончили!"
-    Ann_18 ""
+    Ann_18 "I can't hear any more of this! It's your word against Eric's. And believe me, you don't stand a chance. Just admit what you did and and pay him back. I don't want to hear any more until this has been set right. We're done!"
 
 # game/events/eric.rpy:1860
 translate english start_eric_wallet_40074965:
 
     # Max_11 "Да как так-то?!"
-    Max_11 ""
+    Max_11 "How is this even possible?!"
 
 # game/events/eric.rpy:1901
 translate english start_eric_wallet_aaaab0c1:
 
     # Eric_01 "Ты уж извини... Такое следовало бы решить с глазу на глаз, но я решил, что твоя семья должна знать, что ты за человек."
-    Eric_01 ""
+    Eric_01 "I thought about sorting this out quietly between us, but I thought your family deserved to know what kind of a man you are."
 
 # game/events/eric.rpy:1902
 translate english start_eric_wallet_a0a5454a:
 
     # Max_15 "Я не брал твои деньги! Как это всё понимать?!"
-    Max_15 ""
+    Max_15 "I didn't take your money! Why the hell are doing this?!"
 
 # game/events/eric.rpy:1903
 translate english start_eric_wallet_11bfa182:
 
     # Eric_03 "Не знаю, не знаю... Мне вот кажется, что брал! И предлагаю тебе их вернуть при всех, перед ужином. Теперь веришь, что я могу создавать проблемы?"
-    Eric_03 ""
+    Eric_03 "Oh, I think you know! I suggest you pay me back in front of the girls, before dinner. Now do you see what happens when you try to fuck with me?"
 
 # game/events/eric.rpy:1904
 translate english start_eric_wallet_8132910c:
 
     # Max_16 "Да пошёл ты..."
-    Max_16 ""
+    Max_16 "Fuck you..."
 
 # game/events/eric.rpy:1911
 translate english start_eric_wallet_7db38010:
 
     # Max_09 "{m}Ну всё! Он меня достал! Так позорить меня перед всеми... Даже если я дам ему деньги, то все уже на 100%% будут считать меня вором и обманщиком. А значит пришло время избавляться от Эрика!{/m}"
-    Max_09 ""
+    Max_09 "{m}That's it! To humiliate me in front of everyone... Even if I give him the money, everyone will think I'm 100%% a thief and a liar. Which means it's time to get rid of Eric!{/m}"
 
 # game/events/eric.rpy:1912
 translate english start_eric_wallet_53c2a5c1:
 
     # Max_07 "{m}Итак, у меня есть две фотографии, как Эрик дрочит... И на одной из них даже видно на кого! Но чтобы не облажаться, лучше никому не показывать эти фотографии, по крайней мере пока. Мои сёстры наверняка уже не на моей стороне, а потому увидев эти снимки, запросто могут меня сдать и как вы думаете кому... Да, сраному Эрику!{/m}"
-    Max_07 ""
+    Max_07 "{m}So, I have two pictures of Eric jerking off... And you can even see over who in one of them! But in order not to screw up, I'd better not show these pictures to anyone, at least not yet. My sisters probably aren't on my side anymore, so when they see these pictures they might turn me in, and who do you think... Yeah, to fucking Eric!{/m}"
 
 # game/events/eric.rpy:1913
 translate english start_eric_wallet_21b8e72f:
 
     # Max_14 "{m}Для начала, мне стоит попробовать поговорить с ними, чтобы понять, насколько всё плохо и есть ли у меня шансы выправить отношения с ними...{/m}"
-    Max_14 ""
+    Max_14 "{m}For starters, I should try talking to them to see how bad it is and if I have any chance of straightening out my relationship with them...{/m}"
 
 translate english strings:
 
     # game/events/eric.rpy:692
     old "{i}затаиться на полчаса{/i}"
-    new ""
+    new "{i}Lay low for half an hour{/i}"
 
     # game/events/eric.rpy:702
     old "{i}следить за Эриком через скрытые камеры{/i}"
-    new ""
+    new "{i}Spy on Eric through hidden cameras{/i}"
 
     # game/events/eric.rpy:1895
     old "{r}Отношения Макса с семьёй значительно ухудшились. Они расстроены и не доверяют ему.{/r}"
-    new ""
+    new "{r}Max's relationship with his family has deteriorated considerably. They are upset and do not trust him.{/r}"
+
+# TODO: Translation updated at 2021-12-12 01:54
+
+# game/events/eric.rpy:320
+translate english eric_ann_tv_bca2c1fb:
+
+    # Max_07 "{m}Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно...{/m}" nointeract
+    Max_07 "{m}I think Mom and Eric are watching a movie. Probably porn again...{/m}" nointeract
+
+# game/events/eric.rpy:322
+translate english eric_ann_tv_098f8cbb:
+
+    # Max_07 "{m}Кажется, мама с Эриком смотрят какой-то фильм. Интересно, какой...{/m}" nointeract
+    Max_07 "{m}I think Mom and Eric are watching some kind of movie. I wonder what it is...{/m}" nointeract
+
+# game/events/eric.rpy:330
+translate english eric_ann_tv_ef522b93:
+
+    # Ann_12 "Макс, мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?" nointeract
+    Ann_12 "Max, Eric and I are watching a movie. I would invite you, but it's not for children. Could you take a walk somewhere? And please don't peek. All right?" nointeract
+
+# game/events/eric.rpy:332
+translate english eric_ann_tv_0d84ad96:
+
+    # Ann_12 "Ой, Макс... Мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?" nointeract
+    Ann_12 "Oh, Max... Eric and I are watching a movie. I would invite you, but it's not suitable for kids. Could you give us some privacy please?" nointeract
+
+# game/events/eric.rpy:353
+translate english eric_ann_tv_984887be:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А мама, видимо, снова потянулась отсасывать Эрику...{/m}" nointeract
+    Max_08 "{m}Wow! That's interesting! And Mom, apparently, is going to suck off Eric...{/m}" nointeract
+
+# game/events/eric.rpy:355
+translate english eric_ann_tv_898dcfe9:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А куда это мама так наклонилась?{/m}" nointeract
+    Max_08 "{m}Wow! The screen got more interesting! What's Mom doing leaning like that?{/m}" nointeract
+
+# game/events/eric.rpy:365
+translate english eric_ann_tv_7170a555:
+
+    # Max_07 "{m}На экране уже во всю идёт самое интересное и мама скинула полотенце! Вот бы посмотреть на эту голую попку с другого ракурса... Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}The screen is already full of the most interesting things and Mom took off her towel! I would like to see this naked ass from a different angle... Should I come closer?{/m}" nointeract
+
+# game/events/eric.rpy:367
+translate english eric_ann_tv_9ce1c0be:
+
+    # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую попку! Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}Wow! Eric pulled Mom's towel off and I see her naked ass! Maybe we should get closer.{/m}" nointeract
+
+# game/events/eric.rpy:387
+translate english eric_ann_tv_4fa4239d:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А мама, вроде, снова начала дрочить Эрику...{/m}" nointeract
+    Max_08 "{m}Wow! That's interesting! And Mom starting jerking off Eric again...{/m}" nointeract
+
+# game/events/eric.rpy:389
+translate english eric_ann_tv_2dfe5fa6:
+
+    # Max_08 "{m}Ого! На экране стало интереснее! А что это мама там делает?{/m}" nointeract
+    Max_08 "{m}Wow! The screen got more interesting! What's Mom doing there?{/m}" nointeract
+
+# game/events/eric.rpy:399
+translate english eric_ann_tv_8cace1a9:
+
+    # Max_07 "{m}На экране уже во всю идёт самое интересное и мама скинула полотенце! Жаль, что её грудь не очень хорошо видно... Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}There's a lot going on right now now! A Mom's thrown off her towel. It's a pity I can't see her breasts... Should I come closer?{/m}" nointeract
+
+# game/events/eric.rpy:401
+translate english eric_ann_tv_2a838c07:
+
+    # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?{/m}" nointeract
+    Max_07 "{m}Wow! Eric pulled off Mom's towel and I can see her naked breasts! Maybe we should get closer?{/m}" nointeract

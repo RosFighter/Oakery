@@ -584,4 +584,4 @@ translate german strings:
 translate german cam0_alice_sleep_night_f2542dc5:
 
     # Max_13 "{m}Вот чёрт! Я совсем забыл, что Эрик заходит в комнату к Алисе только тогда, когда она голая... Чтобы подставить Эрика, Алиса должна быть голой, иначе будет несостыковка со снимками и мне никто не поверит!{/m}"
-    Max_13 ""
+    Max_13 "{m}Oh, Scheiße! Ich hatte ganz vergessen, dass Eric nur in Alices Zimmer kommt, wenn sie nackt ist... Um Eric reinzulegen, muss Alice nackt sein, sonst stimmen die Bilder nicht überein und niemand wird mir glauben!{/m}"

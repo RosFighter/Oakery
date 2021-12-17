@@ -449,3 +449,12 @@ translate english strings:
     # game/screens.rpy:400
     old "Главное меню"
     new "Main menu"
+
+# TODO: Translation updated at 2021-12-12 01:54
+
+translate english strings:
+
+    # game/screens.rpy:1021
+    old "Именованные сохранения"
+    new ""
+

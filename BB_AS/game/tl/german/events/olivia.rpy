@@ -1310,432 +1310,432 @@ translate german strings:
 translate german olivia_night_visit_r_dcf86a41:
 
     # Lisa_13 "Но без Макса! Он сильно провинился, так что сегодня мы с тобой будем только вдвоём, Оливия. А ты, Макс, не мешай нам!"
-    Lisa_13 ""
+    Lisa_13 "Aber ohne Max! Er hat sich sehr schuldig gefühlt, also sind wir heute Abend allein, Olivia. Und du, Max, lass uns gefälligst in Ruhe!"
 
 # game/events/olivia.rpy:295
 translate german olivia_night_visit_r_5e8eeb58:
 
     # Max_11 "Ну вот..." nointeract
-    Max_11 "" nointeract
+    Max_11 "Jetzt geht's los..." nointeract
 
 # game/events/olivia.rpy:680
 translate german olivia_dressed_stay_in_room_186ccac5:
 
     # Olivia_05 "Привет, Макс! Такая хорошая погода стоит, а ты в комнате сидишь... И зря!"
-    Olivia_05 ""
+    Olivia_05 "Hallo, Max! Es ist so schönes Wetter und du sitzt in deinem Zimmer... Und das ganz alleine!"
 
 # game/events/olivia.rpy:682
 translate german olivia_dressed_stay_in_room_c0dccde6:
 
     # Olivia_05 "Привет, Макс! Зря в комнате сидишь, на улице чудесная погода... Мы вот с Лизой сейчас будем отдыхать во дворе, пока солнышко светит!"
-    Olivia_05 ""
+    Olivia_05 "Hallo, Max! Du solltest nicht in deinem Zimmer sein, es ist so schönes Wetter draußen... Lisa und ich gehen in den Garten, solange die Sonne scheint!"
 
 # game/events/olivia.rpy:686
 translate german olivia_dressed_stay_in_room_740cab84:
 
     # Lisa_09 "А ещё нам нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "Wir müssen uns umziehen. Würdest du so freundlich sein, den Raum für einen Moment zu verlassen..." nointeract
 
 # game/events/olivia.rpy:688
 translate german olivia_dressed_stay_in_room_132c666f:
 
     # Lisa_00 "А ещё нам нужно переодеться. Будь добр, погуляй немного или отвернись..." nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Wir müssen uns umziehen. Würdest du so freundlich sein und ein bisschen herumlaufen oder dich umdrehen..." nointeract
 
 # game/events/olivia.rpy:695
 translate german olivia_dressed_stay_in_room_08276951:
 
     # Lisa "{b}Лиза:{/b} И не вздумай подглядывать! Это не займёт много времени..." nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} Und wage es nicht zu gucken! Es wird nicht lange dauern..." nointeract
 
 # game/events/olivia.rpy:697
 translate german olivia_dressed_stay_in_room_cdba7705:
 
     # Lisa "{b}Лиза:{/b} И я бы хотела, чтобы ты постарался не подглядывать... Знаю, сложно, но пожалуйста!" nointeract
-    Lisa "" nointeract
+    Lisa "{b}Lisa:{/b} Und ich möchte, dass du versuchst, nicht zu gucken... Ich weiß, es ist schwer, aber bitte!" nointeract
 
 # game/events/olivia.rpy:723
 translate german olivia_dressed_moment0_8a87f589:
 
     # Lisa_00 "Ой, Макс! А ты можешь немного погулять? Мы собирались переодеться..." nointeract
-    Lisa_00 "" nointeract
+    Lisa_00 "Oh, Max! Kannst du nicht ein bisschen rausgehen? Wir wollten uns umziehen..." nointeract
 
 # game/events/olivia.rpy:725
 translate german olivia_dressed_moment0_b8c05569:
 
     # Lisa_09 "Откуда я знаю, что ты видел, а что ещё нет? Как бы там ни было, я стесняюсь и хочу переодеться без свидетелей."
-    Lisa_09 ""
+    Lisa_09 "Woher weiß ich, was du gesehen hast und was nicht? Wie auch immer, ich bin schüchtern und möchte mich ohne Zeugen umziehen."
 
 # game/events/olivia.rpy:726
 translate german olivia_dressed_moment0_af5d43f0:
 
     # Olivia_01 "Что сказать, Макс... Ты в пролёте!" nointeract
-    Olivia_01 "" nointeract
+    Olivia_01 "Was soll ich sagen, Max... Du bist am Arsch!" nointeract
 
 # game/events/olivia.rpy:729
 translate german olivia_dressed_moment0_c92765a1:
 
     # Lisa_01 "Спасибо, Макс. Мы быстренько!"
-    Lisa_01 ""
+    Lisa_01 "Vielen Dank, Max. Wir werden uns beeilen!"
 
 # game/events/olivia.rpy:730
 translate german olivia_dressed_moment0_87d5067e:
 
     # Olivia_01 "Лично мне Макс нисколько не мешает..." nointeract
-    Olivia_01 "" nointeract
+    Olivia_01 "Mich persönlich stört Max kein bisschen..." nointeract
 
 # game/events/olivia.rpy:745
 translate german olivia_dressed_moment2_20fd5016:
 
     # Lisa_11 "Макс! Мы же переодеваемся!!! {p=3}{nw}"
-    Lisa_11 ""
+    Lisa_11 "Max! Wir ziehen uns um!!! {p=3}{nw}"
 
 # game/events/olivia.rpy:753
 translate german olivia_dressed_moment2_c171310b:
 
     # Lisa_13 "Выйди и закрой за собой дверь!"
-    Lisa_13 ""
+    Lisa_13 "Geh raus und schließ die Tür hinter dir!"
 
 # game/events/olivia.rpy:754
 translate german olivia_dressed_moment2_7c31b019:
 
     # Olivia_03 "Да, Макс! Тебе должно быть очень стыдно за такие выходки." nointeract
-    Olivia_03 "" nointeract
+    Olivia_03 "Ja, Max! Du solltest dich für deine Eskapaden sehr schämen." nointeract
 
 # game/events/olivia.rpy:758
 translate german olivia_dressed_moment2_58aafaf5:
 
     # Lisa_10 "Пожалуйста, выйди и дверь за собой закрой!"
-    Lisa_10 ""
+    Lisa_10 "Bitte geh raus und schließ die Tür hinter dir!"
 
 # game/events/olivia.rpy:759
 translate german olivia_dressed_moment2_276f7949:
 
     # Olivia_03 "Да ладно тебе, Лиза. Мы же все всё у друг друга уже видели." nointeract
-    Olivia_03 "" nointeract
+    Olivia_03 "Komm schon, Lisa. Wir haben alle schon alles voneinander gesehen." nointeract
 
 # game/events/olivia.rpy:774
 translate german olivia_dressed_moment1_43215628:
 
     # Lisa_11 "Макс! Мы же переодеваемся!!! Выйди и закрой за собой дверь!" nointeract
-    Lisa_11 "" nointeract
+    Lisa_11 "Max! Wir ziehen uns um!!! Geh raus und schließ die Tür hinter dir!" nointeract
 
 # game/events/olivia.rpy:777
 translate german olivia_dressed_moment1_9c7c76de:
 
     # Lisa_11 "Макс! Мы же переодеваемся!!! Пожалуйста, выйди и дверь за собой закрой!" nointeract
-    Lisa_11 "" nointeract
+    Lisa_11 "Max! Wir ziehen uns um!!! Geh bitte raus und schließ die Tür hinter dir!" nointeract
 
 # game/events/olivia.rpy:783
 translate german olivia_dressed_lvl_2_7968a2a6:
 
     # Olivia_02 "Ох, нам бы твои проблемы..."
-    Olivia_02 ""
+    Olivia_02 "Oh, wir wünschten, wir hätten deine Probleme..."
 
 # game/events/olivia.rpy:784
 translate german olivia_dressed_lvl_2_91ad6784:
 
     # Lisa_10 "Ты не глазей, а жди за дверью! Или хочешь, чтобы я маме об этом рассказала?" nointeract
-    Lisa_10 "" nointeract
+    Lisa_10 "Du starrst nicht, du wartest vor der Tür! Oder willst du, dass ich Mom davon erzähle?" nointeract
 
 # game/events/olivia.rpy:787
 translate german olivia_dressed_lvl_2_32b71976:
 
     # Olivia_02 "Оу, похоже Макс хочет сказать, что мы с тобой очень соблазнительно выглядим!"
-    Olivia_02 ""
+    Olivia_02 "Oh, ich glaube, was Max sagen will, ist, dass wir beide sehr verlockend aussehen!"
 
 # game/events/olivia.rpy:788
 translate german olivia_dressed_lvl_2_81a439ed:
 
     # Lisa_10 "Ну, Макс! Я ведь и маме всё могу рассказать, если не уйдёшь." nointeract
-    Lisa_10 "" nointeract
+    Lisa_10 "Komm schon, Max! Ich kann es auch Mom sagen, wenn du nicht gehst." nointeract
 
 # game/events/olivia.rpy:791
 translate german olivia_dressed_lvl_2_eba9367a:
 
     # Olivia_02 "Спасибо. Ты тоже ничего... Только из шорт от радости не выпрыгни."
-    Olivia_02 ""
+    Olivia_02 "Ich danke dir. Du bist auch okay... Spring nur nicht vor Freude aus deinen Shorts."
 
 # game/events/olivia.rpy:793
 translate german olivia_dressed_lvl_2_c401595c:
 
     # Lisa_09 "Ну и долго ты ещё пялиться будешь?! Выйди и подожди. Мы недолго..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "Wie lange willst du mich noch anstarren?! Raus und warte. Wir werden nicht lange brauchen..." nointeract
 
 # game/events/olivia.rpy:800
 translate german olivia_dressed_lvl_3_97aa3ff0:
 
     # Lisa_01 "Ты, видимо, только об этом и мечтаешь... Но нечего глазеть, как мы одеваемся! Лучше займи себя чем-нибудь полезным..."
-    Lisa_01 ""
+    Lisa_01 "Das ist alles, wovon du zu träumen scheinst... Aber sieh dir nicht an, wie wir angezogen sind! Du solltest lieber etwas Sinnvolles tun..."
 
 # game/events/olivia.rpy:801
 translate german olivia_dressed_lvl_3_f073ff95:
 
     # Max_02 "Как раз это и делаю..."
-    Max_02 ""
+    Max_02 "Das ist genau das, was ich vorhabe..."
 
 # game/events/olivia.rpy:802
 translate german olivia_dressed_lvl_3_a21098ed:
 
     # Olivia_02 "Осторожней, Макс. Косоглазие заработаешь и все тебя начнут дурачком считать..."
-    Olivia_02 ""
+    Olivia_02 "Vorsicht, Max. Du wirst Schielaugen bekommen und jeder wird dich für einen Idioten halten..."
 
 # game/events/olivia.rpy:803
 translate german olivia_dressed_lvl_3_12bd6daa:
 
     # Lisa_02 "Да мы и так... Ладно, молчу." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Ja, das ist schon... Na gut, ich halte den Mund." nointeract
 
 # game/events/olivia.rpy:806
 translate german olivia_dressed_lvl_3_81729ace:
 
     # Lisa_01 "Вот иди и радуйся где-нибудь в другом месте. А мы хотим спокойно одеться..."
-    Lisa_01 ""
+    Lisa_01 "Also geh und amüsier dich woanders. Und wir wollen uns in Ruhe anziehen..."
 
 # game/events/olivia.rpy:807
 translate german olivia_dressed_lvl_3_34689a50:
 
     # Max_02 "Подожди! Оливия же не будет одевается. Что-то не сходится..."
-    Max_02 ""
+    Max_02 "Warte! Olivia zieht sich nicht an. Irgendetwas passt da nicht zusammen..."
 
 # game/events/olivia.rpy:808
 translate german olivia_dressed_lvl_3_01edfdc0:
 
     # Lisa_09 "Ну, Макс!" nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "Also, Max!" nointeract
 
 # game/events/olivia.rpy:811
 translate german olivia_dressed_lvl_3_61ed6671:
 
     # Lisa_13 "А ты и доволен! И хватит на меня глазеть... Выйди и подожди за дверью!"
-    Lisa_13 ""
+    Lisa_13 "Und du bist glücklich! Und hör auf, mich anzustarren... Raus und vor der Tür warten!"
 
 # game/events/olivia.rpy:812
 translate german olivia_dressed_lvl_3_a32fa991:
 
     # Olivia_02 "А может она их и вовсе не одевала?"
-    Olivia_02 ""
+    Olivia_02 "Oder hatte sie vielleicht gar nichts an?"
 
 # game/events/olivia.rpy:813
 translate german olivia_dressed_lvl_3_8d0ac507:
 
     # Max_08 "Да-а-а?!"
-    Max_08 ""
+    Max_08 "Ja-a-a?!"
 
 # game/events/olivia.rpy:814
 translate german olivia_dressed_lvl_3_3daab7f8:
 
     # Olivia_03 "Может быть. А может и нет. Но какая теперь разница? Ты же всё равно пофантазируешь на эту тему..."
-    Olivia_03 ""
+    Olivia_03 "Vielleicht. Oder vielleicht auch nicht. Aber was macht das jetzt für einen Unterschied? Du wirst sowieso darüber fantasieren..."
 
 # game/events/olivia.rpy:815
 translate german olivia_dressed_lvl_3_d7323289:
 
     # Lisa_10 "Оливия!" nointeract
-    Lisa_10 "" nointeract
+    Lisa_10 "Olivia!" nointeract
 
 # game/events/olivia.rpy:818
 translate german olivia_dressed_lvl_3_319973cf:
 
     # Lisa_01 "Спасибо. Но давай ты не будешь пялиться и подождёшь за дверью, мы недолго..."
-    Lisa_01 ""
+    Lisa_01 "Ich danke dir. Aber warum hörst du nicht auf zu starren und wartest vor der Tür, es wird nicht lange dauern..."
 
 # game/events/olivia.rpy:819
 translate german olivia_dressed_lvl_3_5c400cb2:
 
     # Olivia_02 "Смотри, Макс... Так ведь и привыкнуть можно. И станет это простой обыденностью."
-    Olivia_02 ""
+    Olivia_02 "Hör zu, Max... Man könnte sich daran gewöhnen. Und es wird zu einer einfachen Routine."
 
 # game/events/olivia.rpy:820
 translate german olivia_dressed_lvl_3_453d6107:
 
     # Max_04 "Не станет! Ты не так часто приходишь, а Лиза меня до сих пор стесняется..."
-    Max_04 ""
+    Max_04 "Das wird er nicht! Du kommst nicht so oft vorbei und Lisa schämt sich immer noch für mich..."
 
 # game/events/olivia.rpy:822
 translate german olivia_dressed_lvl_3_b98d244b:
 
     # Lisa_02 "Макс, займись чем-нибудь путным." nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Max, mach etwas Sinnvolles." nointeract
 
 # game/events/olivia.rpy:837
 translate german olivia_dressed_try_to_peek_144e8df6:
 
     # Max_05 "[lucky!t]{m}Кажется, они не заметили, что я подглядываю! Эти две аппетитные попки могут свести с ума любого... Но именно сейчас сводят меня и это так приятно!{/m}"
-    Max_05 ""
+    Max_05 "[lucky!t]{m}Sie schienen nicht zu bemerken, dass ich sie beobachtete! Diese beiden knackigen Ärsche würden jeden in den Wahnsinn treiben... Aber im Moment treiben sie mich in den Wahnsinn, und das tut so gut!{/m}"
 
 # game/events/olivia.rpy:839
 translate german olivia_dressed_try_to_peek_be20eb18:
 
     # Max_05 "[lucky!t]{m}Никто не видит, что я подглядываю... Мне даже всё равно, если они заметят. Рискнуть и увидеть, как эти девочки оголяют свои сладенькие прелести в паре метров от меня, стоит того!{/m}"
-    Max_05 ""
+    Max_05 "[lucky!t]{m}Keiner sieht mich spionieren... Es ist mir sogar egal, ob sie es bemerken. Es ist das Risiko wert, diese Mädchen zu beobachten, die nur wenige Meter von mir entfernt ihre süßen kleinen Reize zur Schau stellen!{/m}"
 
 # game/events/olivia.rpy:850
 translate german olivia_dressed_try_to_peek_24da8c0a:
 
     # Max_03 "[lucky!t]{m}Ой, Оливия увидела, что я подглядываю! Но ничего не говорит Лизе... Ну ещё бы. Она же натуристка и это её нисколько не смущает. Забавные сиськи... В смысле, забавная ситуация!{/m}"
-    Max_03 ""
+    Max_03 "[lucky!t]{m}Oh, Olivia hat mich gucken sehen! Aber sie hat nichts zu Lisa gesagt... Natürlich tut sie das nicht. Sie ist Nudistin und schämt sich nicht im Geringsten dafür. Tolle Brüste... Ich meine, es ist eine komische Situation.{/m}"
 
 # game/events/olivia.rpy:852
 translate german olivia_dressed_try_to_peek_895988b1:
 
     # Max_03 "[lucky!t]{m}Оливия заметила, что я подглядываю! Хорошо, что она натуристка, а то сейчас бы криков было... А так, можно смотреть и наслаждаться. Она так забавно пальчиком грозит...{/m}"
-    Max_03 ""
+    Max_03 "[lucky!t]{m}Olivia hat gemerkt, dass ich spioniert habe! Gut, dass sie Nudistin ist, sonst gäbe es Geschrei... Aber auf diese Weise kann man zuschauen und genießen. Sie hat eine lustige Art, mit dem Finger zu winken...{/m}"
 
 # game/events/olivia.rpy:864
 translate german olivia_dressed_try_to_peek_f458687d:
 
     # Lisa_11 "[spotted!t]Ну, Макс! Прекращай подглядывать! Если не отвернёшься или ещё раз такое выкинешь, я на тебя маме нажалуюсь... Тебе ясно?!"
-    Lisa_11 ""
+    Lisa_11 "[spotted!t]Komm schon, Max! Hör auf zu spionieren! Wenn du dich nicht umdrehst oder das noch einmal machst, werde ich dich bei Mom anschwärzen... Hast du das verstanden?!"
 
 # game/events/olivia.rpy:866
 translate german olivia_dressed_try_to_peek_585185bb:
 
     # Olivia_03 "Ай-я-яй, как нехорошо подглядывать, Макс. Ай-я-яй, какой негодник!" nointeract
-    Olivia_03 "" nointeract
+    Olivia_03 "Es ist nicht gut zu gucken, Max. Ei-yi-yi-yi, was für ein Schlingel!" nointeract
 
 # game/events/olivia.rpy:868
 translate german olivia_dressed_try_to_peek_f165e904:
 
     # Olivia_02 "Да я-то не стесняюсь. Мне наоборот, куда комфортнее без одежды..."
-    Olivia_02 ""
+    Olivia_02 "Das ist mir nicht peinlich. Im Gegenteil, ich fühle mich ohne Kleidung viel wohler..."
 
 # game/events/olivia.rpy:869
 translate german olivia_dressed_try_to_peek_e5e895f1:
 
     # Lisa_10 "А я вот стесняюсь! И перестань на меня так глазеть, Макс! А то я Алису попрошу, чтобы она тебя отпинала..."
-    Lisa_10 ""
+    Lisa_10 "Das ist mir peinlich! Und hör auf, mich so anzustarren, Max! Oder ich werde Alice bitten, dich zu töten..."
 
 # game/events/olivia.rpy:871
 translate german olivia_dressed_try_to_peek_eb8e36a6:
 
     # Max_08 "Всё, я отвернулся!" nointeract
-    Max_08 "" nointeract
+    Max_08 "It okay, ich drehe mich um!" nointeract
 
 # game/events/olivia.rpy:876
 translate german olivia_dressed_try_to_peek_eba9367a:
 
     # Olivia_02 "Спасибо. Ты тоже ничего... Только из шорт от радости не выпрыгни."
-    Olivia_02 ""
+    Olivia_02 "Ich danke dir. Du bist auch ganz okay... Spring nur nicht vor Freude aus deinen Shorts."
 
 # game/events/olivia.rpy:878
 translate german olivia_dressed_try_to_peek_5e5bea76:
 
     # Lisa_09 "Ну и долго ты ещё пялиться на меня будешь?! Отвернись. Мы недолго..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "Wie lange willst du mich noch anstarren?! Dreh dich um. Wir werden nicht lange brauchen..." nointeract
 
 # game/events/olivia.rpy:882
 translate german olivia_dressed_try_to_peek_943d13a8:
 
     # Lisa_11 "[spotted!t]Опять ты подглядываешь! И не стыдно тебе?! Делать тебе больше нечего, только глазеть, как мы переодеваемся... Прекращай!"
-    Lisa_11 ""
+    Lisa_11 "[spotted!t]Du spionierst schon wieder! Schämst du dich nicht?! Du hast nichts Besseres zu tun, als zuzusehen, wie wir uns umziehen... Schluss damit!"
 
 # game/events/olivia.rpy:884
 translate german olivia_dressed_try_to_peek_d2b966ac:
 
     # Olivia_03 "Какой же ты Макс проказник! Ни стыда, ни совести..." nointeract
-    Olivia_03 "" nointeract
+    Olivia_03 "Was für ein Spaßvogel du bist, Max! Keine Scham, kein Gewissen..." nointeract
 
 # game/events/olivia.rpy:886
 translate german olivia_dressed_try_to_peek_c1321b9d:
 
     # Olivia_02 "Ммм... А где это Макс... Только ведь тут вроде был! А теперь нет..."
-    Olivia_02 ""
+    Olivia_02 "Hmmm... Wo ist Max... Er war hier, nicht wahr? Und jetzt ist er nicht mehr..."
 
 # game/events/olivia.rpy:887
 translate german olivia_dressed_try_to_peek_66f1c3a5:
 
     # Lisa_02 "Вот представь, ну никак не могу! Стесняюсь. Можно я уже спокойно переоденусь? Без этого твоего сверлящего и озабоченного взгляда..."
-    Lisa_02 ""
+    Lisa_02 "Kannst du dir das vorstellen, ich kann es nicht! Das ist mir peinlich. Kann ich mich jetzt in Ruhe umziehen? Ohne diesen durchdringenden, besorgten Blick in deinen Augen..."
 
 # game/events/olivia.rpy:888
 translate german olivia_dressed_try_to_peek_a18c539b:
 
     # Max_02 "Можно. Только погодите пару секунд, я фотоаппарат достану..."
-    Max_02 ""
+    Max_02 "Das kann ich tun. Warte nur ein paar Sekunden, ich hole meine Kamera..."
 
 # game/events/olivia.rpy:889
 translate german olivia_dressed_try_to_peek_ab614b1d:
 
     # Lisa_09 "Ну, Макс!"
-    Lisa_09 ""
+    Lisa_09 "Also, Max!"
 
 # game/events/olivia.rpy:891
 translate german olivia_dressed_try_to_peek_48e1fee0:
 
     # Max_03 "Да шучу я... Всё, отвернулся!" nointeract
-    Max_03 "" nointeract
+    Max_03 "Nur ein Scherz... So ist es gut, dreh dich um!" nointeract
 
 # game/events/olivia.rpy:896
 translate german olivia_dressed_try_to_peek_e11ee97e:
 
     # Lisa_01 "Спасибо. Но давай ты не будешь пялиться и отвернёшься... Хорошо?"
-    Lisa_01 ""
+    Lisa_01 "Ich danke dir. Aber wie wäre es, wenn du nicht starrst und wegschaust... Ist das okay?"
 
 # game/events/olivia.rpy:897
 translate german olivia_dressed_try_to_peek_e22e7d62:
 
     # Max_04 "Мне понравилось, как ты двигалась... Не повторишь?"
-    Max_04 ""
+    Max_04 "Ich mochte es, wie du dich bewegt hast... Würdest du es wieder tun?"
 
 # game/events/olivia.rpy:898
 translate german olivia_dressed_try_to_peek_cd4c9bac:
 
     # Olivia_02 "Поддерживаю! А то я пропустила этот захватывающий момент..."
-    Olivia_02 ""
+    Olivia_02 "Ich unterstütze das! Weil ich diesen aufregenden Moment verpasst habe..."
 
 # game/events/olivia.rpy:900
 translate german olivia_dressed_try_to_peek_dbf3b763:
 
     # Lisa_02 "Ну вы меня совсем сейчас засмущаете!" nointeract
-    Lisa_02 "" nointeract
+    Lisa_02 "Du bringst mich in Verlegenheit!" nointeract
 
 translate german strings:
 
     # game/events/olivia.rpy:690
     old "{i}подождать за дверью, пока девочки переоденутся{/i}"
-    new ""
+    new "{i}Vor der Tür warten, bis Sie sich umgezogen haben{/i}"
 
     # game/events/olivia.rpy:781
     old "Аж глаза разбегаются, на кого смотреть..."
-    new ""
+    new "Es ist schwer zu entscheiden, wen man sich ansehen soll..."
 
     # game/events/olivia.rpy:781
     old "У меня встал!"
-    new ""
+    new "Alles klar!"
 
     # game/events/olivia.rpy:781
     old "Извините... Мне стыдно, но смотритесь вы красиво!"
-    new ""
+    new "Entschuldig... Es ist mir peinlich, aber du bist wunderschön!"
 
     # game/events/olivia.rpy:798
     old "Сколько округлостей красивых! Глаза разбегаются..."
-    new ""
+    new "So schöne weiche Formen! Mein Blick wandert..."
 
     # game/events/olivia.rpy:798
     old "Как-то даже в шортах тесно стало..."
-    new ""
+    new "Irgendwie sind sogar die Shorts eng geworden..."
 
     # game/events/olivia.rpy:798
     old "Кого-то угораздило, очень удачно для меня, снять трусики..."
-    new ""
+    new "Jemand hatte das Pech, zum Glück für mich, seinen Slip auszuziehen..."
 
     # game/events/olivia.rpy:798
     old "Извините... Вид, конечно, очаровательнее некуда!"
-    new ""
+    new "Entschuldig... Die Aussicht könnte nicht bezaubernder sein!"
 
     # game/events/olivia.rpy:865
     old "Да ладно вам, можете меня не стесняться!"
-    new ""
+    new "Komm schon, schäm dich nicht für mich!"
 
     # game/events/olivia.rpy:865
     old "Извините, не удержался... Хорошо выглядите, девчонки!"
-    new ""
+    new "Sorry, ich konnte nicht widerstehen... Ihr seht gut aus, Mädels!"
 
     # game/events/olivia.rpy:883
     old "А вы представьте, что меня тут на самом деле нет!"
-    new ""
+    new "Stell dir vor, dass ich nicht wirklich hier bin!"
 
     # game/events/olivia.rpy:883
     old "Извините, не удержался... Красота ведь неописуемая!"
-    new ""
+    new "Sorry, ich konnte nicht widerstehen... Eine Schönheit, nicht wahr?"

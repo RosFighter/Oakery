@@ -108,7 +108,7 @@ translate german strings:
 
     # game/screens.rpy:527
     old "МЕНЮ"
-    new "MENUE"
+    new "MENÜ"
 
     # game/screens.rpy:661
     old "Введите описание файла сохранения:"
@@ -205,18 +205,6 @@ translate german strings:
     # game/screens.rpy:958
     old "Язык"
     new "Sprache"
-
-    # game/screens.rpy:959
-    old "Русский"
-    new "Русский"
-
-    # game/screens.rpy:960
-    old "English"
-    new "English"
-
-    # game/screens.rpy:961
-    old "Deutsch"
-    new "Deutsch"
 
     # game/screens.rpy:967
     old "Дополнительно"
@@ -448,4 +436,13 @@ translate german strings:
 
     # game/screens.rpy:400
     old "Главное меню"
-    new "Hauptmenue"
+    new "Hauptmenü"
+
+# TODO: Translation updated at 2021-12-12 01:53
+
+translate german strings:
+
+    # game/screens.rpy:1021
+    old "Именованные сохранения"
+    new "Speichern mit Namen"
+

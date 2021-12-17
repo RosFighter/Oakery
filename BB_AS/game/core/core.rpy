@@ -537,10 +537,8 @@ label random_dressed:
         if any([
                 # после душа в обычную
                 all([lisa.prev_plan == 'shower', lisa.plan_name == 'read']),
-
                 # после мытья посуды в другую повседневную одежду, если игрок её поменял
                 all([lisa.prev_plan == 'dishes', lisa.plan_name == 'phone', lisa.daily.dishes < 2, lisa.prev_dress != lisa.dress]),
-
                 # после ванны в обычную, если не остаётся в полотенце
                 all([lisa.prev_plan == 'bath', lisa.plan_name in ['phone', 'homework'], lisa.dress_inf not in ['04a', '04b']]),
             ]):
@@ -549,21 +547,17 @@ label random_dressed:
                 # Макс оставался в комнате в своей комнате
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
-                    # $ print('#1')
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_1
 
             elif all([current_room != prev_room, current_room == house[0]]):
                 # Макс входит в свою комнату
-
                 call chance_dressing_roll('Lisa') from _call_chance_dressing_roll
 
         elif any([
                 # после школы в купальник (без Оливии)
                 all([lisa.prev_plan in ['in_shcool', 'on_courses'], lisa.plan_name in ['sun', 'swim'], not olivia_visits()]),
-
                 # похода по магазинам в бикини
                 all([lisa.prev_plan == 'in_shop', lisa.plan_name == 'read']),
-
                 # после репетитора в бикини
                 all([lisa.prev_plan == 'at_tutor', lisa.plan_name in ['sun', 'swim']]),
             ]):
@@ -572,11 +566,9 @@ label random_dressed:
                 # Макс оставался в комнате в своей комнате
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
-                    # $ print('#2')
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_2
 
             elif all([current_room != prev_room, current_room == house[0]]):
-
                 # Макс входит в свою комнату
                 # сегодня ещё не попадали на переодевание
                 if 'bikini' in lisa.gifts:
@@ -603,8 +595,45 @@ label random_dressed:
 
         elif all([tm=='00:00', lisa.plan_name == 'sleep', current_room == prev_room, current_room == house[0], not persistent.skip_lisa_dressed]):
             $ lisa.hourly.dressed = 1
-            # $ print('#3')
             call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room
+
+    if not ann.hourly.dressed and tm[-2:] == '00':
+        if all([ann.prev_plan == 'shower2', ann.plan_name == 'yoga']):
+            # после душа с Эриком в спортивку
+            if all([current_room == prev_room, current_room == house[2]]):
+                # Макс оставался в комнате Анны
+                $ ann.hourly.dressed = 1
+                call ann_dressed.stay_in_room
+
+            elif random_outcome(25):
+                # Макс входит в комнату Анны
+                $ ann.daily.dressed += 1
+                call ann_dressed.moment0    # "нулевой"
+
+        elif any([
+            # после душа без Эрика в спортивку
+            all([ann.prev_plan in 'shower', ann.plan_name == 'yoga']),
+            # после йоги приготовление завтрака, если одежда для готовки не спортивная
+            all([ann.prev_plan == 'yoga', ann.plan_name == 'cooking', ann.clothes.cook_morn.cur not in [0, 2]]),
+            # вс после завтрака отдыхает в своей комнате, если одежда изменена
+            all([ann.prev_plan == 'breakfast', ann.plan_name == 'resting', ann.clothes.cook_morn.GetCur().suf != {'a':'b', 'd':'d'}[ann.clothes.rest_morn.GetCur().suf]]),
+            # 14:00 сб/вс после чтения или шопинга в бикини
+            all([tm[:2] == '14', ann.prev_plan in ['in_shop', 'read'], ann.plan_name == 'swim']),
+            # из бикини в повседневку
+            all([ann.prev_plan in ['sun', 'swim'], ann.plan_name == 'cooking']),
+            # полотенце в повседневку
+            all([ann.prev_plan == 'tv', ann.plan_name == 'resting', ann.clothes.rest_eve.GetCur().suf != 'b']),
+            ]):
+
+            if all([current_room == prev_room, current_room == house[2]]):
+                # Макс оставался в комнате Анны
+                $ ann.hourly.dressed = 1
+                call ann_dressed.stay_in_room
+
+            elif all([current_room != prev_room, current_room == house[2]]):
+                # Макс входит в комнату Анны
+                call chance_dressing_roll('Ann')
+
     return
 
 label chance_dressing_roll(persone=''):
@@ -636,6 +665,23 @@ label chance_dressing_roll(persone=''):
             # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
             $ lisa.daily.dressed += 1
             call lisa_dressed.moment0 from _call_lisa_dressed_moment0_5    # "нулевой"
+
+    elif persone == 'Ann':
+        if ann.daily.dressed in [0, 1]:
+            if random_outcome(40):
+                $ ann.daily.dressed += 1
+                # call ann_dressed.moment0    # "нулевой"
+            elif random_outcome(35):
+                $ ann.daily.dressed += 2
+                # call ann_dressed.moment1    # неповезло
+            elif random_outcome(25):
+                $ ann.daily.dressed += 2
+                # call ann_dressed.moment2    # повезло
+
+        elif ann.daily.dressed in [0, 2] and random_outcome(25):
+            # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
+            $ ann.daily.dressed += 1
+            # call ann_dressed.moment0    # "нулевой"
 
     return
 
@@ -844,19 +890,20 @@ label after_buying:
 label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
     # проверяем на версию сохранения, при необходимости дописываем/исправляем переменные
-    if renpy.loadable('extra/extra.webp'):
+    if extra_content:   # renpy.loadable('extra/extra.webp'):
         $ set_extra_album()
 
     if main_menu:
         return
 
     if 'current_ver' in globals():
-        # "ver [current_ver], _ver [_version], conf.ver [config.version]"
+        # if config.developer:
+        #     "ver [current_ver], _ver [_version], conf.ver [config.version]"
 
         if _version < current_ver or current_ver < "0.06.0.999":
             call old_fix from _call_old_fix
 
-    # else:
+    # elif config.developer:
     #     "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
@@ -884,12 +931,11 @@ label after_load:
         call update_06_5_99 from _call_update_06_5_99   # фиксы после релиза
         call update_06_6_99 from _call_update_06_6_99
         call update_07_0_99 from _call_update_07_0_99
+        call update_07_p1_99 from _call_update_07_p1_99
 
         $ _version = config.version
 
     # корректировка persistent
-    if 'eric' in chars:
-        $ added_mem_var('eric')
     if 'kira' in chars:
         $ added_mem_var('kira')
     if items['max-a'].have:
@@ -919,6 +965,19 @@ label after_load:
 
     $ weekday = GetWeekday(day)
     $ checking_clothes()
+
+    if _version <= '0.07.p1.03':
+        if all([current_room == house[0], lisa.plan_name == 'sleep', tm < '06:00']):
+            call lisa_sleep_night from _call_lisa_sleep_night
+        elif all([current_room == house[0], lisa.plan_name == 'sleep', tm >= '06:00']):
+            call lisa_sleep_morning from _call_lisa_sleep_morning
+        elif all([current_room == house[0], lisa.plan_name == 'phone']):
+            call lisa_phone from _call_lisa_phone
+        elif all([current_room == house[0], lisa.plan_name == 'read']):
+            call lisa_read from _call_lisa_read
+        elif 'olivia' in chars and all([current_room == house[0], lisa.plan_name == 'sleep2']):
+            call olivia_lisa_sleep from _call_olivia_lisa_sleep
+
     return
 
 label update_06_5:
@@ -1303,7 +1362,6 @@ label update_06_5_99:
     if _version < "0.06.5.03":
         if mgg.clothes.casual.sel[1].suf == mgg.clothes.casual.sel[2].suf:
             $ mgg.clothes.casual.sel.pop(1)
-            $ checking_clothes()
 
     if _version < "0.06.5.05":
         $ renamed_clothes()
@@ -1661,14 +1719,6 @@ label update_07_p1_99:
             if not olivia.dcv.special.stage and olivia.dcv.special.lost > 5:
                 $ olivia.dcv.special.lost -= 5
         $ olivia_night_visits = olivia_nightvisits()
-
-        if all([current_room == house[0], lisa.plan_name == 'sleep', tm < '06:00']):
-            call lisa_sleep_night
-        elif all([current_room == house[0], lisa.plan_name == 'sleep', tm >= '06:00']):
-            call lisa_sleep_morning
-        elif 'olivia' in chars:
-            if all([current_room == house[0], lisa.plan_name == 'sleep2']):
-                call olivia_lisa_sleep
 
     if _version < '0.07.p1.02':
         if flags.lisa_sexed == 6 and lisa.dcv.battle.stage in [1, 4]:

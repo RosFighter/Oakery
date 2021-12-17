@@ -954,10 +954,10 @@ translate german punishment_max_pun_reson_a77a4336:
 translate german punishment_lisa_5e582e44:
 
     # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... А ты, Лиза, не стой столбом, шевелись давай..."
-    Ann_12 ""
+    Ann_12 "Nein, Max! Und sei froh, dass ich dich nicht zusammen mit ihr bestrafe... Und du, Lisa, steh nicht einfach nur so da, beweg dich..."
 
 # game/dialogues/punishment.rpy:712
 translate german punishment_alice_3eaef6e3:
 
     # Ann_12 "Нет, Макс! И скажи спасибо, что я не наказываю и тебя вместе с ней... Алиса, пошевеливайся..."
-    Ann_12 ""
+    Ann_12 "Nein, Max! Und sei froh, dass ich dich nicht zusammen mit ihr bestrafe... Alice, beweg dich..."

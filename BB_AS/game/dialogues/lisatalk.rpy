@@ -2323,13 +2323,13 @@ label lisa_sorry_gifts:
         return
 
     $ lisa.sorry.owe = False
-    $ txt = {
-        0 : _("Правда? Ты всё-таки достал её для меня?! А какую?"),
-        1 : _("Правда? Ну ты даёшь! А какую на этот раз?!"),
-        2 : _("Правда? Ну давай, показывай, что у тебя на этот раз?!"),
-        }[len(lisa.sorry.give)]
+    if not len(lisa.sorry.give):
+        Lisa_02 "Правда? Ты всё-таки достал её для меня?! А какую?" nointeract
+    elif len(lisa.sorry.give) == 1:
+        Lisa_02 "Правда? Ну ты даёшь! А какую на этот раз?!" nointeract
+    else:
+        Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!" nointeract
     menu:
-        Lisa_02 "[txt!t]"
         "Конфеты \"Raffaello\" (16 штук)" if items['raffaello-m'].have:
             $ __give = 'raffaello-m'
             jump .middle

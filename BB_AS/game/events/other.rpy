@@ -530,9 +530,9 @@ label showdown_with_eric:
             scene BG black with Fade(0.4, 0, 0.3)
 
     # annroom-morning-01 + eric-dresses-morning-01 + ann-dresses-morning-05c
-    scene BG char Ann morning
+    scene BG char Ann mde-01
     show Eric dressed 01
-    show Ann dressed 05c
+    $ renpy.show('Ann dressed 07b'+renpy.random.choice(['1', '2']))
 
     Ann_13 "Алиса! Ты зачем так врываешься?! Стучаться надо..."
     Alice_16 "Не волнуйся, мам, я обязательно сейчас по кое-кому постучу! Знаешь, что твой мужчина вытворяет по ночам?"
@@ -551,7 +551,7 @@ label showdown_with_eric:
     Eric_09 "Так, Алиса, давай успокаивайся!"
 
     # annroom-sud-01 + annroom-sud-01-eric-01 + annroom-sud-01-ann-01 + annroom-sud-01-alice-(01a/01b) + annroom-sud-01-max-01 + annroom-sud-01-lisa-01
-    scene BG char Eric annroom-sud-01
+    scene BG char Ann mde-02
     show Eric showdown 01
     show Ann showdown 01
     $ renpy.show('Alice showdown 01' + alice.dress)
@@ -581,7 +581,7 @@ label showdown_with_eric:
     Alice_16 "Я раньше от души могла навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
 
     # annroom-sud-01 + annroom-sud-01-ann-03 + annroom-sud-01-max&lisa-03 + annroom-sud-01-alice-(03a/03b) + annroom-sud-01-eric-03
-    scene BG char Eric annroom-sud-01
+    scene BG char Ann mde-02
     show Ann showdown 03
     show Max showdown 03
     $ renpy.show('Alice showdown 03' + alice.dress)
@@ -612,7 +612,7 @@ label showdown_with_eric:
     Max_07 "Д-а-а... Это проблемка. Ты главное не слушай его оправдания, а то он умеет убеждать, как ты сама убедилась прекрасно. А теперь давайте, все вместе, поддержим маму!"
 
     # annroom-morning-01 + annroom-sud-01-ann&max&lisa-alice-(05a/05b)
-    scene BG char Ann morning
+    scene BG char Ann mde-01
     $ renpy.show('Alice showdown 05' + alice.dress)
 
     Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."

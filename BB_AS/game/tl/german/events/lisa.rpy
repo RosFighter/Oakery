@@ -2792,16 +2792,16 @@ translate german strings:
 translate german lisa_shower_start_peeping_fc5db481:
 
     # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
-    Max_09 ""
+    Max_09 "{m}Es ist besser, das Peeping auf ein Minimum zu beschränken, bis ich Eric los bin. Um niemanden zu verunsichern...{/m}"
 
 # game/events/lisa.rpy:116
 translate german lisa_shower_start_peeping_dda24c4d:
 
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}Es ist gut, dass das nicht auf Kira zutrifft...{/m}" nointeract
 
 # game/events/lisa.rpy:912
 translate german lisa_dressed_stay_in_room_4d0209ac:
 
     # Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
-    Lisa_09 "" nointeract
+    Lisa_09 "Max, ich muss mich umziehen. Würden Du so freundlich sein, den Raum für einen Moment zu verlassen..." nointeract

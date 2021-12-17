@@ -2620,7 +2620,7 @@ translate german kira_photoset3_b287dbfe:
 translate german kira_photoset3_178c3eb8:
 
     # Kira_01 "О... А вот и наш фотограф... Как раз вовремя. Проходи, чувствуй себя как дома..."
-    Kira_01 "О... Da ist unser Fotograf... Gerade noch rechtzeitig. Komm rein, mach es dir gemütlich..."
+    Kira_01 "O... Da ist unser Fotograf... Gerade noch rechtzeitig. Komm rein, mach es dir gemütlich..."
 
 # game/dialogues/kiratalk.rpy:1295
 translate german kira_photoset3_5a80b1a2:
@@ -3010,7 +3010,7 @@ translate german kira_photoset3_d4c901c6:
 translate german kira_photoset3_efcf1970:
 
     # Max_10 "О! А твоя подруга что, уже ушла?! А я так хотел её увидеть..."
-    Max_10 "О! Ist deine Freundin schon weg?! Ich hatte mich so darauf gefreut, sie zu sehen..."
+    Max_10 "O! Ist deine Freundin schon weg?! Ich hatte mich so darauf gefreut, sie zu sehen..."
 
 # game/dialogues/kiratalk.rpy:1480
 translate german kira_photoset3_cfdbd3a5:
@@ -3348,70 +3348,70 @@ translate german strings:
 translate german kira_about_wallet_6c2cb919:
 
     # Kira_14 "Как ты, Макс?"
-    Kira_14 ""
+    Kira_14 "Wie geht es dir, Max?"
 
 # game/dialogues/kiratalk.rpy:1510
 translate german kira_about_wallet_597b52dd:
 
     # Max_07 "Ты уже в курсе, что Эрик заявил?"
-    Max_07 ""
+    Max_07 "Ist dir klar, was Eric bereits behauptet hat?"
 
 # game/dialogues/kiratalk.rpy:1511
 translate german kira_about_wallet_f06fac4b:
 
     # Kira_15 "Да, Макс, уже наслышана... Скажи, это же не ты взял его деньги?"
-    Kira_15 ""
+    Kira_15 "Ja, Max, ich habe schon gehört... Du hast doch nicht sein Geld genommen, oder?"
 
 # game/dialogues/kiratalk.rpy:1512
 translate german kira_about_wallet_7353e46b:
 
     # Max_09 "Ты ещё спрашиваешь?"
-    Max_09 ""
+    Max_09 "Fragst du das jetzt auch noch?"
 
 # game/dialogues/kiratalk.rpy:1513
 translate german kira_about_wallet_3a51cf23:
 
     # Kira_10 "Ну, я так, для формальности. Конечно, я тебе верю... Что же делать..."
-    Kira_10 ""
+    Kira_10 "Nun, ich bin nur höflich. Natürlich glaube ich dir... Was ist zu tun..."
 
 # game/dialogues/kiratalk.rpy:1514
 translate german kira_about_wallet_58d13745:
 
     # Max_09 "Есть у меня мысль обновить газон у нас во дворе... Заодно куплю пищевую плёнку. И кажется ещё лопаты у нас нет..."
-    Max_09 ""
+    Max_09 "Ich habe eine Idee, wie wir den Rasen in unserem Garten erneuern können... Ich werde einen Sack kaufen. Und ich glaube nicht, dass wir eine Schaufel haben..."
 
 # game/dialogues/kiratalk.rpy:1515
 translate german kira_about_wallet_7c0b737a:
 
     # Kira_17 "Макс, ты это серьёзно?!"
-    Kira_17 ""
+    Kira_17 "Max, ist das dein Ernst?!"
 
 # game/dialogues/kiratalk.rpy:1516
 translate german kira_about_wallet_ccfc5079:
 
     # Max_11 "Увы, нет. Потому что меня это в глазах семьи не оправдает. Так что буду действовать умнее..."
-    Max_11 ""
+    Max_11 "Leider nein. Denn das würde mich in den Augen meiner Familie nicht entlasten. Also werde ich schlauer sein müssen..."
 
 # game/dialogues/kiratalk.rpy:1517
 translate german kira_about_wallet_e91240fe:
 
     # Kira_00 "Может, тебе нужна моя помощь в чём-то?"
-    Kira_00 ""
+    Kira_00 "Vielleicht brauchst du meine Hilfe bei etwas?"
 
 # game/dialogues/kiratalk.rpy:1518
 translate german kira_about_wallet_3acdb772:
 
     # Max_01 "Нет, тётя Кира. Мне нужно самому разобраться с Эриком. Но всё равно спасибо, за то, что ты на моей стороне!"
-    Max_01 ""
+    Max_01 "Nein, Tante Kira. Ich muss mit Eric allein fertig werden. Aber trotzdem danke, dass wenigstens du auf meiner Seite bist!"
 
 # game/dialogues/kiratalk.rpy:1519
 translate german kira_about_wallet_cf38bd43:
 
     # Kira_10 "Ты только осторожнее, Макс! Хорошо?"
-    Kira_10 ""
+    Kira_10 "Sei einfach vorsichtig, Max! Okay?"
 
 # game/dialogues/kiratalk.rpy:1520
 translate german kira_about_wallet_261aa15e:
 
     # Max_07 "Конечно. Что будет, то будет..."
-    Max_07 ""
+    Max_07 "Ja, natürlich. Was sein muss, muss sein..."

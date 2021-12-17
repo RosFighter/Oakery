@@ -31,7 +31,8 @@ define clothes_dict = {
 
 init python:
 
-    def ChoiceClothes(): # Проверяет необходимоть смены текущей одежды
+    # Проверяет необходимоть смены текущей одежды
+    def ChoiceClothes():
         global cur_shed
         mgg.dress = mgg.clothes.casual.GetCur().suf
 
@@ -70,6 +71,18 @@ init python:
                     chars[char].dress_inf = inf
 
 
+    # устанавливает текущую одежду согласно расписанию (в том числе для инфо)
+    def ClothingNps(char, name):
+        dress, inf, clot = GetDressNps(char, name)
+        if dress != '':
+            chars[char].dress = dress
+            # print('%s - %s : %s'%(char, clot, dress))
+        if inf != '':
+            chars[char].dress_inf = inf
+        return
+
+
+    # возвращает одежду персонажа char для действия name
     def GetDressNps(char, name):
         dress, inf, clot = '', '', ''
         if name=='dressed':
@@ -244,9 +257,9 @@ init python:
             elif name == 'in_shop':
                 inf = '01'
             elif name == 'read':
-                dress = ann.clothes.casual.GetCur().suf if tm < '14:00' else 'b'
-                inf   = ann.clothes.casual.GetCur().info if tm < '14:00' else '03'
-                clot  = 'casual' if tm < '14:00' else 'купальник'
+                dress = ann.clothes.rest_morn.GetCur().suf if tm < '14:00' else 'b'
+                inf   = ann.clothes.rest_morn.GetCur().info if tm < '14:00' else '03'
+                clot  = 'rest_morn' if tm < '14:00' else 'купальник'
             elif name == 'sun':
                 inf = '03'
             elif name == 'swim':
@@ -319,16 +332,7 @@ init python:
         return dress, inf, clot
 
 
-    def ClothingNps(char, name): # устанавливает текущую одежду согласно расписанию (в том числе для инфо)
-        dress, inf, clot = GetDressNps(char, name)
-        if dress != '':
-            chars[char].dress = dress
-            # print('%s - %s : %s'%(char, clot, dress))
-        if inf != '':
-            chars[char].dress_inf = inf
-        return
-
-
+    # проверка одежды персонажей на соответствие словарю
     def checking_clothes():
         for char_id in clothes_dict:
             if char_id == 'mgg':
@@ -364,6 +368,7 @@ init python:
                     ClothingNps(char_id, plan.name) # установка текущей одежды
 
 
+    # проверяет и при необходимости переименовывает одежду перосонажа
     def renamed_clothes():
         for char_id in clothes_dict:
             if char_id == 'mgg':
@@ -378,12 +383,11 @@ init python:
                 for k in range(len(clothes_dict[char_id][clot_type])):
                     clot = clothes_dict[char_id][clot_type][k]
                     if clots.sel[k].name != clot[2]:
-                        # print 'меняем имя одежды', '('+char_id+'-'+clot_type+')', clots.sel[k].name,'|', clot[2]
                         clots.sel[k].name = clot[2]
 
 
+    # добавляет новую одежду для персонажа
     def add_new_clot_type(clots, clot_type, char_id):
-        # такой одежды у персонажа ещё не было, нужно добавить
         clot_name = {
                 'casual'    : _("Повседневная"),
                 'sleep'     : _("Для сна"),
@@ -431,8 +435,8 @@ init python:
             clots.rand_enable(def_list[1])
 
 
+    # проверяет список одежды персонажа
     def check_extend_clot_type(clots, clot_type, char_id):
-        # проверяем список одежды
         for k in range(len(clothes_dict[char_id][clot_type])):
             clot = clothes_dict[char_id][clot_type][k]
 
@@ -445,6 +449,7 @@ init python:
                 clots.sel.append(Garb(clot[0], clot[1], clot[2]))
 
 
+    # устанавливает допустимую/открытую одежду всем персонажам согласно условиям
     def setting_clothes_by_conditions():
         # Алиса
         alice.clothes.sleep.enable(0)       # обычное бельё для сна доступно всегда
@@ -528,326 +533,425 @@ init python:
             mgg.clothes.casual.disable(2)
 
 
-    class MenuClothes():
-        id_char = ''
-        name    = ''
+    # возвращает вариант одежды Лизы для переодеваний
+    def get_lisa_dress_pose(vr, pose=''):
+        var = {'boobs': False, 'ass':False, 'np':False, 'fin':False}
+        lvl = get_lisa_emancipation()
+        if vr == 0:
+            # нулевой момент
+            if lisa.prev_plan in ['shower', 'bath']:                # после душа/ванной
+                pose = '00g'                                    # полотенце
+                lisa.dress_inf = '04b'
+            elif lisa.prev_plan == 'in_shop':                       # после шопинга
+                pose = '00o'                                    # для шопинга
+                lisa.dress_inf = '01aa'
+            elif lisa.prev_plan == 'at_tutor':                      # после прогулки/репетитора
+                pose = '00' +lisa.clothes.weekend.GetCur().suf  # платье
+                lisa.dress_inf = lisa.clothes.weekend.GetCur().info
+            elif lisa.prev_plan in ['in_shcool', 'on_courses']:     # после школы
+                pose = '00h'                                    # школьная форма
+                lisa.dress_inf = '01ba'
+            elif lisa.prev_plan in ['sun', 'swim']:                 # после отдыха во дворе, если нет бикини
+                pose = '00s0' if lisa.clothes.swimsuit.GetCur().suf == 'a' else '00s1'
+                lisa.dress_inf = lisa.clothes.swimsuit.GetCur().info
+            elif lisa.plan_name in ['dressed', 'read', 'dishes']:   # после чтения, мытья посуды или одевается "на выход" (в школу, магазин или к репетитору)
+                if lvl > 1 and '11:00' > tm > '10:00':
+                    pose = '07f1' if weekday == 6 else '07e3'
+                    lisa.dress_inf = '02i' if weekday == 6 else '02h'
+                    var['fin'] = True
+                else:
+                    pose = '00'+lisa.clothes.casual.GetCur().suf    # повседневка
+                    lisa.dress_inf = lisa.clothes.casual.GetCur().info
+            elif lisa.prev_plan == 'homework':                      # перед сном
+                pose = '00'+('g' if lisa.prev_dress == 'c' else lisa.prev_dress)
+            elif lisa.prev_plan == 'phone':
+                pose = '00' + lisa.prev_dress
+            return pose, var
 
-        def __init__(self, id_char, name):
-            self.id_char    = id_char
-            self.name       = name
+        if not pose:
+            # сгенерируем позу для "повезло"
+            lst = []
+            if lvl > 2:                                 # голая
+                lst.extend(['01', '04'])
 
-        def open(self, id_clot, var):
-            # открывает вариант типа одежды персонажа для главного меню
-            if self.id_char not in menu_clothes_dict:
-                print ('Персонаж', self.name, 'отсутствует в списке одежды для меню')
-                return False
+            if lisa.plan_name in ['sun', 'swim'] and 'bikini' in lisa.gifts:       # бикини
+                lst.extend(['01c1', '04c1'])
+                if lvl > 1:
+                    lst.extend(['01c', '04c'])
+            elif lisa.prev_plan in ['shower', 'bath']:  # полотенце
+                lst.extend(['01g1', '04g1'])
+                if lvl > 2:
+                    lst.extend(['01g', '04g'])
+            else:                                       # нижнее бельё
+                lst.extend(['01h', '04h'])              # трусики
+                # if lvl < 2:
+                #     lst.extend(['01h2', '04h2'])        # маечка с трусиками
+                # elif lvl > 2:
+                #     lst.extend(['01h1', '04h1'])        # маечка без трусиков
 
-            if id_clot not in menu_clothes_dict[self.id_char]:
-                print ('тип одежды', id_clot, 'для персонажа', self.name, 'отсутствует в списке одежды для меню')
-                return False
 
-            if menu_clothes_dict[self.id_char][id_clot][var] is None:
-                print ('Вариант', var, 'недоступен для одежды', id_clot, 'персонажа', self.name)
-                return False
+            if lisa.plan_name == 'dressed':
+                if not GetWeekday(day):
+                    # воскресенье, прогулка/репетитор
+                    lst.extend(['01w', '04w'])
+                elif GetWeekday(day) == 6:
+                    # суббота, шопинг
+                    lst.extend(['01a', '01f1', '04a', '04f1'])
+                    if lvl > 2:
+                        lst.extend(['01f', '04f'])
+                else:
+                    # будни, в школу
+                    lst.extend(['01e1', '01e3', '04e1', '04e3'])
+                    if lvl > 2:
+                        lst.extend(['01e', '01e2', '04e', '04e2'])
+            elif lisa.plan_name in ['read', 'phone', 'homework']:
+                if lisa.clothes.casual.GetCur().suf == 'a':
+                    lst.extend(['01a', '04a'])
+                elif lisa.clothes.casual.GetCur().suf == 'b':
+                    lst.append('01b1')
+                    if lvl > 2:
+                        lst.append('01b')
+                else:   # lisa.clothes.casual.GetCur().suf == 'd'
+                    lst.extend(['01d1', '01d2', '04d1', '04d2'])
+                    if lvl > 2:
+                        lst.extend(['01d', '04d'])
 
-            if self.id_char not in persistent.mm_chars:
-                # добавим персонажа, создав пустой список доступной одежды
-                persistent.mm_chars[self.id_char] = []
+            pose = renpy.random.choice(lst)
 
-            if not persistent.mm_chars[self.id_char]:
-                # если список одежды персонажа пуст,
-                # в качестве текущей одежды ставим полный вариант добавляемой
-                persistent.mm_chars[self.id_char].append((id_clot, 0))
-
-                # !!! в пустой список полный комплект добавляем дважды !!!
-                persistent.mm_chars[self.id_char].append((id_clot, 0))
-
+        if vr < 2:
+            if lvl == 1 and pose in ['01b1', '01d1', '01h', '01g1',
+                        '04d1', '04h', '04g1', '01e1', '01e3',
+                        '04e1', '04e3', '01f1']:
+                pose = {
+                    '01h':'03h', '04h':'06h',       # трусики
+                    '01g1':'03g1', '04g1':'06g1',   # трусики с полотенцем
+                    '01b1':'03b1',                  # халат
+                    '01d1':'03d', '04d1':'06d',     # розовый
+                    '01e1':'03e', '01e3':'08e3',    # школьная лицом
+                    '04e1':'06e', '04e3':'08e3',    # школьная спиной
+                    '01f1':'08f1', '04f1':'08f1'    # для шопинга
+                    }[pose]
             else:
-                if var != 0 :
-                    # если добавляется не полный комплект, полный открываем автоматически
-                    if not persistent.mm_chars[self.id_char].count((id_clot, 0)):
-                        persistent.mm_chars[self.id_char].append((id_clot, 0))
+                pose = {
+                    '01':'03', '04':'06',           # голая
+                    '01c1':'02c1', '04c1':'05c1', '01c':'03c', '04c':'06c',     # бикини
+                    '01w':'02w', '04w':'06w',       # платье
+                    '01h':'02h', '04h':'05h',       # трусики
+                    '01h1':'08h1', '04h1':'08h1',   # маечка
+                    '01h2':'08h2', '04h2':'08h2',   # маечка и трусики
+                    '01f':'08f', '01f1':'07f1',  '04f':'08f', '04f1':'08f1',    # для шопинга
+                    '01a':'02a', '04a':'05a',       # базовая повседневка
+                    '01e':'03e', '01e1':'02e1', '01e2':'08e2', '01e3':'07e3',   # школьная лицом
+                    '04e':'06e', '04e1':'05e1', '04e2':'08e2', '04e3':'07e3',   # школьная спиной
+                    '01b':'03b', '01b1':'02b1',     # халат
+                    '01d':'03d', '01d1':'02d1', '01d2':'02d2',                  # розовый лицом
+                    '04d':'06d', '04d1':'05d1', '04d2':'05d2',                  # розовый спиной
+                    '01g':'03g', '01g1':'02g1', '04g':'06g', '04g1':'05g1',     # с полотенцем
+                    }[pose]
 
-            if (id_clot, var) not in persistent.mm_chars[self.id_char]:
-                # вариант одежды для персонажа в списке отсутствует
-                persistent.mm_chars[self.id_char].append((id_clot, var))
+        var['np']       = pose in ['01', '01b', '01d', '01e', '01e2', '01f',
+                                   '01g', '01h1', '03', '03b', '03g', '04',
+                                   '04d', '04e', '04e2', '04f', '04g', '04h1',
+                                   '04w', '06', '06g', '08e2', '08f', '08h1']
 
-            return True
+        var['ass']      = pose in ['06h', '06g1', '06c', '06', '05h', '05g1',
+                                   '04w', '04h', '04g1', '04g', '04f1', '04f',
+                                   '04e3', '04e2', '04e1', '04e', '04d1', '04d',
+                                   '04c1', '04c', '04', '04h1', '04h2']
 
-        def get_current(self):
-            # возвращает текущий вариант одежды персонажа для главного меню
-            if self.id_char not in persistent.mm_chars:
-                return None, None
-            return persistent.mm_chars[self.id_char][0]
+        var['boobs']    = pose in ['06w', '06h', '06g1', '06e', '06d', '06c',
+                                   '06', '05h', '05g1', '05e1', '05d2', '05d1',
+                                   '05c1', '05a', '04w', '04h', '04g1', '04g',
+                                   '04e1', '04e', '04d2', '04d1', '04d', '04c1',
+                                   '04c', '04a', '04', '03h', '03g1', '03g',
+                                   '03e', '03d', '03c', '03b1', '03b', '03',
+                                   '02w', '02h', '02g1', '02e1', '02d2', '02d1',
+                                   '02c1', '02b1', '02a', '01w', '01h', '01g1',
+                                   '01g', '01e1', '01e', '01d2', '01d1', '01d',
+                                   '01c1', '01c', '01b1', '01a', '01']
 
-        def get_open_clot(self):
-            # возвращает список открытых вариантов одежды для персонажа
-            lst0 = []
-            lst1 = []
-            for i in range(1, len(persistent.mm_chars[self.id_char])):
-                lst0.append(persistent.mm_chars[self.id_char][i][0])
+        var['fin']      = pose in ['07e3', '07f1', '08e3', '08f1', '01f1', '01e3']
 
-            for k in menu_clothes_dict[self.id_char]:
-                if k in lst0:
-                    lst1.append(k)
+        if pose in ['01', '03', '04', '06']:
+            lisa.dress_inf = '00'   # голая
+        elif pose in ['01h', '02h', '03h', '04h', '05h', '06h']:
+            lisa.dress_inf = '02c'  # трусики
+        elif pose in ['01h1', '04h1', '08h1']:
+            lisa.dress_inf = '02b'  # маечка
+        elif pose in ['01h2', '04h2', '08h2']:
+            lisa.dress_inf = '02a'  # маечка и трусики
+        elif pose in ['01a', '02a', '04a', '05a']:
+            lisa.dress_inf = '02g'  # штаны
+        elif pose in ['01e', '01e1', '02e1', '03e', '04e', '04e1', '05e1', '06e']:
+            lisa.dress_inf = '02e'  # школьная юбка
+        elif pose in ['01e2', '04e2', '08e2']:
+            lisa.dress_inf = '02d'  # школьная рубашка
+        elif pose in ['01e3', '04e3', '07e3', '08e3']:
+            lisa.dress_inf = '02h'  # школьная рубашка и трусики
+        elif pose in ['01f', '04f', '08f']:
+            lisa.dress_inf = '02f'  # выходной верх
+        elif pose in ['01f1', '04f1', '07f1', '08f1']:
+            lisa.dress_inf = '02i'  # выходной верх + трусики
+        elif pose in ['01w', '02w', '04w', '06w']:
+            lisa.dress_inf = '01ea' # платье
 
-            return lst1
+        if pose:
+            # print vr, lvl, lisa.prev_dress, lisa.plan_name, pose
+            return pose, var
+        else:
+            # print 'bag:', pose, lst, lvl, tm, weekday, lisa.prev_plan, lisa.plan_name
+            return '02h', var
 
-        def get_all_open(self):
+    # возвращает вариант одежды Лизы для переодеваний при Максе
+    def get_lisa_dress_inroom(vr, no_naked=0):
+        lvl = get_lisa_emancipation()
+
+        lst = []
+        lst.append('01h')       # трусики для всех вариантов действий
+        if lvl == 1 and lisa.plan_name == 'sleep':
+            lst.append('01h3')  # пижама для первого уровня
+
+        if lisa.prev_plan == 'in_shcool':
+            lst.append('01e')   # школьная юбка после школы
+
+        if lisa.plan_name in ['swim', 'sun'] or lisa.prev_plan in ['swim', 'sun']:
+            lst.append('01c')   # трусики от бикини перед или после отдыха во дворе
+
+        if lisa.prev_plan not in ['in_shcool', 'in_shop', 'at_tutor', 'homework']:
+            lst.append({'a':'01a', 'b':'01b1', 'd':'01d'}[lisa.clothes.casual.GetCur().suf])
+            if lisa.clothes.casual.GetCur().suf == 'b' and lvl > 2:
+                lst.append('01b')
+        elif all([lisa.prev_plan == 'homework', lisa.clothes.learn.GetCur().suf != 'c']):
+            lst.append({'a':'01a', 'b':'01b1', 'd':'01d'}[lisa.clothes.learn.GetCur().suf])
+            if lisa.clothes.learn.GetCur().suf == 'b' and lvl > 2:
+                lst.append('01b')
+
+        elif lisa.prev_plan == 'in_shop':
+            lst.append('01a')
+
+        if all([lvl > 2, lisa.plan_name != 'sleep', lisa.prev_plan != 'dishes', not no_naked]):
+            lst.append('01')
+
+        pose = renpy.random.choice(lst)
+        # print pose, lst
+
+        if not vr:  # подсмотреть не удалось
+            if lvl == 1:
+                pose = {
+                    '01a':'05a',
+                    '01b1':'03b1',
+                    '01c':'06c',
+                    '01d':'05d1',
+                    '01e':'05e1',
+                    '01h':'06h',
+                    '01h3':renpy.random.choice(['02h3', '05h3']),
+                    }[pose]
+            elif lvl == 2:
+                pose = {
+                    '01a':renpy.random.choice(['02a', '05a']),
+                    '01b1':'02b1',
+                    '01c':'03c',
+                    '01d':'02d1',
+                    '01e':'02e1',
+                    '01h':'02h',
+                    }[pose]
+            else:   #lvl == 3
+                pose = {
+                    '01':renpy.random.choice(['03', '06']),
+                    '01a':renpy.random.choice(['02a', '05a']),
+                    '01b':'03b',
+                    '01b1':'02b1',
+                    '01c':renpy.random.choice(['03c', '06c']),
+                    '01d':renpy.random.choice(['02d1', '05d1']),
+                    '01e':renpy.random.choice(['02e1', '05e1']),
+                    '01h':renpy.random.choice(['02h', '05h']),
+                    }[pose]
+        # print pose
+        return pose
+
+
+    # возвращает вариант одежды Оливии для переодеваний
+    def get_olivia_dress_pose(vr, pose=''):
+        if vr == 0:
+            return '00h'                                    # школьная форма
+
+        if not pose:
+            # сгенерируем позу для "повезло"
             lst = []
-            for i in range(1, len(persistent.mm_chars[self.id_char])):
-                lst.append(persistent.mm_chars[self.id_char][i][0])
-            return lst
+            lst.extend(['01e', '04e'])      # школьная форма (юбка)
+            lst.extend(['01e2', '04e2'])    # школьная форма (верх)
 
-        def get_open_var(self, clot):
-            lst = []
-
-            if clot == 'naked':
-                return []
-
-            for i in range(5):
-                if (clot, i) in persistent.mm_chars[self.id_char]:
-                    lst.append(i)
-
-            return lst
-
-        def render0(self, clot):
-            lst = []
-            if menu_clothes_dict[self.id_char][clot][0][0]:
-                # для полного варианта есть рендер
-                lst.append(menu_clothes_dict[self.id_char][clot][0][0])
+            if olivia.dcv.other.stage:
+                # Оливия загорает голой
+                lst.extend(['01', '04'])
             else:
-                # рендер составной
+                # Оливия загорает в купальнике
+                lst.extend(['01c', '04c'])
 
-                if 3 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][3] is not None:
-                    # низ
-                    lst.append(menu_clothes_dict[self.id_char][clot][3][0])
-                elif 4 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][4] is not None:
-                    # или трусики
-                    lst.append(menu_clothes_dict[self.id_char][clot][4][0])
+            pose = renpy.random.choice(lst)
 
-                if 2 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][2] is not None:
-                    # верх
-                    lst.append(menu_clothes_dict[self.id_char][clot][2][0])
-            return lst
+        if vr < 2:
+            pose = {'01e':'07e', '04e':'07e', '01e2':'07e2', '04e2':'07e2',
+            '01':'07', '04':'07', '01c':'07c', '04c':'07c'}[pose]
 
-        def get_render_list(self):
-            clot, cur = self.get_current()
-            if clot is None:
-                # print ('0 - нет персонажа')
-                return []
+        return pose
+
+    # возвращает вариант одежды Оливии для переодеваний при Максе
+    def get_olivia_dress_inroom(vr):
+        lst = ['01e', '01e2']
+        if olivia.dcv.other.stage:
+            lst.append('01')
+        else:
+            lst.append('01c')
+
+        pose = renpy.random.choice(lst)
+        if not vr:  # подсмотреть не удалось
+            pose = {
+                '01e':'02e', '01e2':'02e2', '01':'02', '01c':'02c'
+                }[pose]
+
+        return pose
+
+
+    # возвращает вариант одежды Анны для переодеваний
+    def get_ann_dress_pose(vr, pose=''):
+        lvl = get_ann_emancipation()
+
+        if vr == 0:
+            # нулевой момент
+            if ann.prev_plan in ['shower', 'shower2']:      # после душа
+                pose = renpy.random.choice(['07b2', '07b']) if lvl > 1 else '07b'
+                ann.dress_inf = '04'                        # халат / чуть распахнутый халат
+            elif ann.prev_plan == 'yoga':                   # после йоги
+                pose = '07h' if ann.clothes.sports.GetCur().suf == 'a' else '07i'       # спортивка
+                ann.dress_inf = ann.clothes.sports.GetCur().info
+            elif ann.prev_plan == 'breakfast':
+                pose = '07'+{'a':'h', 'b':'f', 'c':'i', 'd':'e'}[ann.clothes.cook_morn.GetCur().suf]
+                ann.dress_inf = {'a':'05a', 'b':'01b', 'd':'01e', 'c':'05с'}[ann.clothes.cook_morn.GetCur().suf]
+            elif ann.prev_plan == 'in_shop':
+                pose = '07j'
+                ann.dress_inf = '01'
+            elif ann.prev_plan in ['resting', 'read'] and tm[:2] == '14':
+                pose = '07f' if ann.clothes.rest_morn.GetCur().suf == 'a' else '07e'
+                ann.dress_inf = ann.clothes.rest_morn.GetCur().info
+            elif ann.prev_plan in ['sun', 'swim']:
+                pose = '07d'
+                ann.dress_inf = '03'
+            elif ann.prev_plan == 'tv':
+                pose = '07g'
+                ann.dress_inf = '04b'
+            return pose
+
+        if not pose:
+            # сгенерируем позу для "повезло"
             lst = []
-            if clot == 'naked' or clot not in menu_clothes_dict[self.id_char]:
-                # print ('1 - нет типа одежды или установлена обнажёнка')
-                return []
+            # предыдущая одежда
+            if ann.prev_plan in ['shower', 'shower2']:      # после душа
+                lst.append('01b1')                      # халат + трусики
+                if lvl > 1:
+                    lst.append('01b')                   # халат без трусиков
+            elif ann.prev_plan == 'yoga':                   # после йоги
+                if ann.clothes.sports.cur:
+                    lst.extend(['01i1', '04i1'])        # низ новой спортики
+                else:
+                    lst.extend(['01h1', '04h1'])        # низ спортики
+            elif ann.prev_plan in ['sun', 'swim']:          # после бассейна
+                lst.extend(['01d2', '04d2'])            # низ купальника
+            elif ann.prev_plan == 'breakfast':              # после завтрака
+                lst.extend({
+                    'a': ['01h1', '04h1'],              # низ спортики
+                    'b': ['01f', '04f'],                # шорты b
+                    'c': ['01i1', '04i1'],              # низ новой спортики
+                    'd': ['01e', '04e'],                # шорты d
+                    }[ann.clothes.cook_morn.GetCur().suf])
+            elif ann.prev_plan == 'in_shop':                # после шопинга
+                lst.extend(['01c2', '04c2'])            # трусики
+            elif ann.prev_plan == 'read':                   # после чтения
+                if ann.clothes.rest_morn.GetCur().suf == 'a':
+                    lst.extend(['01f', '04f'])                              # шорты b
+                elif ann.clothes.rest_morn.GetCur().suf == 'd':
+                    lst.extend(['01e', '04e'])                              # шорты d
 
-            if cur == 0:
-                # полный вариант
-                lst = self.render0(clot)
-
-            elif cur == 1:
-                # верх + трусики
-                if 1 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][1]:
-                    # вариант существует
-                    if menu_clothes_dict[self.id_char][clot][1][0]:
-                        # задан отдельный рендер
-                        lst.append(menu_clothes_dict[self.id_char][clot][1][0])
+            # одеваемая одежда
+            if ann.plan_name == 'yoga':                         # йога
+                if lvl == 1:
+                    lst.extend(['01h', '04h'])                              # полная спортивка
+                else:
+                    if ann.clothes.sports.cur:
+                        lst.extend(['01i1', '01i2', '04i1', '04i2'])        # низ и верх новой спортики
                     else:
-                        # рендер составной
-                        if 4 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][4] is not None:
-                            # трусики заданы
-                            lst.append(menu_clothes_dict[self.id_char][clot][4][0])
-                        else:
-                            # произошла ошибка и трусики не заданы, отображаем низ
-                            if 3 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][3] is not None:
-                                lst.append(menu_clothes_dict[self.id_char][clot][3][0])
-                        if 2 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][2] is not None:
-                            # отображаем верх
-                            lst.append(menu_clothes_dict[self.id_char][clot][2][0])
-                else:
-                    # где-то произошла ошибка и варианта (верх + трусики) несуществует
-                    # отображаем полный
-                    lst = render0(self, clot)
+                        lst.extend(['01h1', '01h2', '04h1', '04h2'])        # низ и верх спортики
+            elif ann.plan_name == 'cooking' and tm < '12:00':   # готовка утром
+                if ann.clothes.cook_morn.GetCur().suf == 'b':
+                    lst.extend(['01f', '04f'])                              # шорты b
+                elif ann.clothes.cook_morn.GetCur().suf == 'd':
+                    lst.extend(['01e', '04e'])                              # шорты d
+                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
+                    if lvl > 1:
+                        lst.extend(['01e2', '04e2'])                        # верх d
+            elif ann.plan_name == 'dressed':                    # одевается на работу/шопинг
+                lst.extend(['01c2', '04c2'])                                # трусики
+                if GetWeekday(day) != 6:
+                    # будни
+                    lst.extend(['01a3', '04a3'])                            # рабочий топ + трусики
+                    if lvl > 1:
+                        lst.extend(['01a', '01a2', '04a', '04a2'])          # рабочая юбка, рабочий топ
+            elif ann.plan_name in ['sun', 'swim']:              # купальник
+                lst.extend(['01d2', '04d2'])                                # низ купальника
+                if lvl > 1:
+                    lst.extend(['01d1', '04d1'])                            # верх купальника
+            elif ann.plan_name == 'cooking' and tm > '12:00':   # готовка вечером
+                if ann.clothes.cook_eve.GetCur().suf == 'b':
+                    lst.extend(['01f', '04f'])                              # шорты b
+                elif ann.clothes.cook_eve.GetCur().suf == 'd':
+                    lst.extend(['01e', '04e'])                              # шорты d
+                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
+                    if lvl > 1:
+                        lst.extend(['01e2', '04e2'])                        # верх d
+            elif ann.plan_name == 'resting' and tm < '12:00':   # отдых утром после завтрака
+                if ann.clothes.rest_morn.GetCur().suf == 'a':
+                    lst.extend(['01f', '04f'])                              # шорты b
+                elif ann.clothes.rest_morn.GetCur().suf == 'd':
+                    lst.extend(['01e', '04e'])                              # шорты d
+                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
+                    if lvl > 1:
+                        lst.extend(['01e2', '04e2'])                        # верх d
+            elif ann.plan_name == 'resting' and tm > '20:00':   # отдых вечером
+                if ann.clothes.rest_eve.GetCur().suf == 'a':
+                    lst.extend(['01f', '04f'])                              # шорты b
+                elif ann.clothes.rest_eve.GetCur().suf == 'd':
+                    lst.extend(['01e', '04e'])                              # шорты d
+                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
+                    if lvl > 1:
+                        lst.extend(['01e2', '04e2'])                        # верх d
 
-            elif cur == 2:
-                # только верх
-                if 2 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][2]:
-                    # вариант существует
-                    # отображаем верх
-                    lst.append(menu_clothes_dict[self.id_char][clot][2][0])
-                else:
-                    # где-то произошла ошибка и варианта (только верх) несуществует
-                    # отображаем полный
-                    lst = render0(self, clot)
-            elif cur == 3:
-                # только низ
-                if 3 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][3]:
-                    # вариант существует
-                    # отображаем низ
-                    lst.append(menu_clothes_dict[self.id_char][clot][3][0])
-                else:
-                    # где-то произошла ошибка и варианта (только низ) несуществует
-                    # отображаем полный
-                    lst = render0(self, clot)
-            elif cur == 4:
-                # только трусики
-                if 4 in menu_clothes_dict[self.id_char][clot] and menu_clothes_dict[self.id_char][clot][4]:
-                    # вариант существует
-                    # отображаем низ
-                    lst.append(menu_clothes_dict[self.id_char][clot][4][0])
-                else:
-                    # где-то произошла ошибка и варианта (только низ) несуществует
-                    # отображаем полный
-                    lst = render0(self, clot)
+            pose = renpy.random.choice(lst)
 
-            return lst
+        if vr < 2:
+            if lvl == 1 and pose in ['01b1', '01h3', '04h3', '01e3', '04e3',
+                                    '01a3', '04a3', '01c2', '04c2']:
+                pose = {
+                    '01b1':'01b3',                  # халат
+                    '01h3':'03h3', '04h3':'06h',    # верх спортивки + трусики
+                    '01e3':'03e3', '04e3':'06e3',   # верх d + трусики
+                    '01a3':'03a3', '04a3':'06a3',   # рабочий топ + трусики
+                    '01c2':'03c2', '04c2':'06c2',   # трусики
+                    }[pose]
+            else:
+                pose = {
+                    '01b':'03b', '01b1':'02b1',                                 # халат
+                    '01h':'02h', '04h':'05h',                                   # полная спортивка
+                    '01h1':'02h1', '04h1':'05h1', '01h2':'03h2', '04h2':'06h2', # низ / верх спортивки
+                    '01i1':'02i1', '04i1':'05i1', '01i2':'03i2', '04i2':'06i2', # низ / верх новой спортивки
+                    '01f':'02f', '04f':'05f', '01e':'02e', '04e':'05e',         # шорты b / d
+                    '01e2':'03e2', '04e2':'06e2', '01e3':'02e3', '04e3':'05e3', # верх d / + трусики
+                    '01a':'02a', '04a':'05a',                                   # рабочая юбка
+                    '01a2':'03a2', '04a2':'06a2', '01a3':'02a3', '04a3':'05a3', # рабочий топ / + трусики
+                    '01c2':'02c2', '04c2':'05c2',                               # трусики
+                    '01d1':'08d1', '04d1':'08d1', '01d2':'02d2', '04d2':'05d2', # верх / низ бикини
+                    }[pose]
 
-        def get_info(self, id_clot, var):
-            if self.id_char not in menu_clothes_dict:
-                # print ('Персонаж', self.name, 'отсутствует в списке одежды для меню')
-                return None
-
-            if id_clot not in menu_clothes_dict[self.id_char]:
-                # print ('тип одежды', id_clot, 'для персонажа', self.name, 'отсутствует в списке одежды для меню')
-                return None
-
-            if var not in menu_clothes_dict[self.id_char][id_clot] or menu_clothes_dict[self.id_char][id_clot][var] is None:
-                # print ('Вариант', var, 'недоступен для одежды', id_clot, 'персонажа', self.name)
-                return None
-
-            return menu_clothes_dict[self.id_char][id_clot][var][1]
-
-        def set_current(self, id_clot, var):
-            persistent.mm_chars[self.id_char][0] = (id_clot, var)
-
-    def set_mm_clot(char, clot, var):
-        menu_chars[char].set_current(clot, var)
-
-    Set_mm_clot = renpy.curry(set_mm_clot)
-
-define menu_clothes_dict = {
-    # 'персонаж' : [('id одежды' , {0 : (рендер одежды, рендер в инфо), - полный
-    #                               1 : (), - топ + трусики
-    #                               2 : (), - только топ
-    #                               3 : (), - только низ
-    #                               4 : ()  - только трусики
-    #                               }),
-    #                               ...]
-    #
-    # заготовка: ('', {0: ('', ''), 1: ('', ''), 2: ('', ''), 3: ('', ''), 4: ('', '')}),
-    'max'   : OrderedDict([
-        ('naked',    {0: (None, '00')}),
-        ('casual_c', {0: ('01c', '01c'), 1: None, 2: None, 3: None, 4: None}),
-        ]),
-    'alice' : OrderedDict([
-        ('naked',    {0: (None, '00')}),
-        ('casual_d', {0: ('01a', '01e'), 1: None, 2: ('01a1', '01e1'),
-                      3: ('01a2', '02h'), 4 : None
-                      }),
-        ('swim',     {0: (None, '03'), 1:None, 2:('01b1', '03b1'),
-                      3:('01b2', '03b'), 4:None
-                      }),
-        ('sleep0',   {0: (None, '02i1'), 1:None, 2:('01c1', '02i2'),
-                      3:None, 4:('01c2', '02i3')
-                      }),
-        ('sleep1',   {0: (None, '02j1'), 1:None, 2:('01d1', '02j2'),
-                      3:None, 4:('01d2', '02j3')
-                      }),
-        ]),
-    'ann'   : OrderedDict([
-        ('naked',    {0: (None, '00')}),
-        ('casual_d', {0: (None, '01e'), 1: (None, '02i'), 2: ('01a1', '02h'),
-                      3: ('01a2', '02g'), 4: ('01c2', '02b')}),
-        ('swim',     {0: (None, '03'), 1: None, 2: ('01b1', '03a1'),
-                      3: ('01b2', '03a2'), 4: None}),
-        ('sleep0',   {0: (None, '02'), 1: None, 2: ('01c1', '02a'),
-                      3: None, 4: ('01c2', '02b')}),
-        ]),
-    'kira'  : OrderedDict([
-        ('naked',    {0: (None, '00')}),
-        ('casual_d', {0: (None, '01a'), 1: None, 2: ('01a1', '01a1'),
-                      3: ('01a2', '01a2'), 4: None}),
-        ('swim',     {0: (None, '03'), 1: None, 2: ('01b1', '03b'),
-                      3: ('01b2', '03c'), 4: None}),
-        ('sleep0',   {0: ('01c', '02'), 1: None, 2: ('01c1', '02b'),
-                      3: None, 4: ('01c2', '02a')}),
-        ]),
-    'lisa'  : OrderedDict([
-        ('naked',    {0: (None, '00')}),
-        ('casual_d', {0: (None, '01c'), 1: (None, '01c2'), 2: ('01a1', '01c3'),
-                      3: ('01a2', '01c1'), 4: ('01c3', '02c')}),
-        ('swim',     {0: (None, '03b'), 1: None, 2: ('01b1', '03d1'),
-                      3: ('01b2', '03d'), 4: None}),
-        ('sleep0',   {0: (None, '02'), 1: None, 2: ('01c1', '02b'),
-                      3: ('01c2', '02c1'), 4: None}),
-        ('sleep1',   {0: (None, '02a'), 1: None, 2: ('01c1', '02b'),
-                      3: None, 4: ('01c3', '02c')}),
-        ]),
-    }
-
-default persistent.mm_chars = {}
-
-define menu_chars = OrderedDict([
-    ('Max'  , MenuClothes('max', _("Макс"))),
-    ('Ann'  , MenuClothes('ann', _("Анна"))),
-    ('Lisa' , MenuClothes('lisa', _("Лиза"))),
-    ('Kira' , MenuClothes('kira', _("Кира"))),
-    ('Alice', MenuClothes('alice', _("Алиса"))),
-    ])
-
-default mm_char = sorted(menu_chars)[0]
-# default clot = menu_chars[mm_char].get_current()[0]
-# default var = menu_chars[mm_char].get_current()[1]
-
-init 100 python:
-    if 'kira' in persistent.mems_var:
-        # if not 'menu_var' in persistent:
-        #     $ persistent.menu_var = '01'
-        # persistent.mm_chars.clear()
-
-        menu_chars['Max'].open('casual_c', 0)
-        menu_chars['Alice'].open('casual_d', 0)
-        menu_chars['Ann'].open('casual_d', 0)
-        menu_chars['Lisa'].open('casual_d', 0)
-        menu_chars['Kira'].open('casual_d', 0)
-
-        # open all
-        menu_chars['Alice'].open('naked', 0)
-        menu_chars['Alice'].open('casual_d', 2)
-        menu_chars['Alice'].open('casual_d', 3)
-        menu_chars['Alice'].open('swim', 2)
-        menu_chars['Alice'].open('swim', 3)
-        menu_chars['Alice'].open('sleep0', 2)
-        menu_chars['Alice'].open('sleep0', 4)
-        menu_chars['Alice'].open('sleep1', 2)
-        menu_chars['Alice'].open('sleep1', 4)
-
-        menu_chars['Ann'].open('naked', 0)
-        menu_chars['Ann'].open('casual_d', 1)
-        menu_chars['Ann'].open('casual_d', 2)
-        menu_chars['Ann'].open('casual_d', 3)
-        menu_chars['Ann'].open('casual_d', 4)
-        menu_chars['Ann'].open('swim', 2)
-        menu_chars['Ann'].open('swim', 3)
-        menu_chars['Ann'].open('sleep0', 2)
-        menu_chars['Ann'].open('sleep0', 4)
-
-        menu_chars['Kira'].open('naked', 0)
-        menu_chars['Kira'].open('casual_d', 2)
-        menu_chars['Kira'].open('casual_d', 3)
-        menu_chars['Kira'].open('swim', 2)
-        menu_chars['Kira'].open('swim', 3)
-        menu_chars['Kira'].open('sleep0', 2)
-        menu_chars['Kira'].open('sleep0', 4)
-
-        menu_chars['Lisa'].open('naked', 0)
-        menu_chars['Lisa'].open('casual_d', 1)
-        menu_chars['Lisa'].open('casual_d', 2)
-        menu_chars['Lisa'].open('casual_d', 3)
-        menu_chars['Lisa'].open('casual_d', 4)
-        menu_chars['Lisa'].open('swim', 2)
-        menu_chars['Lisa'].open('swim', 3)
-        menu_chars['Lisa'].open('sleep0', 2)
-        menu_chars['Lisa'].open('sleep0', 3)
-        menu_chars['Lisa'].open('sleep1', 2)
-        menu_chars['Lisa'].open('sleep1', 4)
+        if pose:
+            return pose
+        else:
+            return '02c2'

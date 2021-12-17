@@ -46,7 +46,6 @@ define config.autosave_slots = 30
 define config.quicksave_slots = 30
 define config.autosave_on_quit = False
 default persistent.grid_vbox = 'grid'
-# default persistent.orint = False
 default persistent.request_savename = True
 default persistent.transparent_textbox = False
 default persistent.all_opportunities = False
@@ -95,6 +94,8 @@ define events_by_tm = Events_by_time()
 
 default cam_poses = {}
 default cam_pose_blog = []
+default cur_ch = 'max'
+default current_language_list = []
 
 init:
     $ config.keymap['hide_windows'].append('`')
