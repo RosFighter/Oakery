@@ -10788,3 +10788,17 @@ translate english strings:
     old "{i}идти с Лизой и Алисой в гостиную{/i}"
     new ""
 
+# TODO: Translation updated at 2021-12-22 01:12
+
+# game/dialogues/lisatalk.rpy:4633
+translate english lisa_about_stolen_phone_2a74b2cc:
+
+    # "{color=[orange]}(Лиза слушает запись...){/color}"
+    ""
+
+# game/dialogues/lisatalk.rpy:4648
+translate english lisa_about_stolen_phone_47ad2e2d:
+
+    # Max_09 "Ага, пошли. Они сейчас должны смотреть ТВ в гостиной. Только давай Алису с собой захватим, её ведь это тоже касается..." nointeract
+    Max_09 "" nointeract
+
