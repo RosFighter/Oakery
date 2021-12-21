@@ -1323,3 +1323,287 @@ translate german strings:
     # game/events/other.rpy:466
     old "{i}осторожно идти спать{/i}"
     new "{i}Leise ins Bett gehen{/i}"
+# TODO: Translation updated at 2021-12-22 01:13
+
+# game/events/other.rpy:645
+translate german dictaphone_showdown_with_eric_ff0dd3e4:
+
+    # Ann_13 "Макс! Лиза! Алиса! Ну зачем так неожиданно влетать?! Так и заикой стать не долго..."
+    Ann_13 ""
+
+# game/events/other.rpy:646
+translate german dictaphone_showdown_with_eric_6110e6be:
+
+    # Lisa_13 "Извини, мама... Но сейчас кто-то действительно станет заикой! Ты хоть знаешь, какие планы строит Эрик?"
+    Lisa_13 ""
+
+# game/events/other.rpy:647
+translate german dictaphone_showdown_with_eric_c78bbf14:
+
+    # Ann_15 "Это что за тон, Лиза?! И что это за вопрос? Что происходит?!"
+    Ann_15 ""
+
+# game/events/other.rpy:648
+translate german dictaphone_showdown_with_eric_16776269:
+
+    # Alice_13 "Мам, я понятия не имею... Это всё они."
+    Alice_13 ""
+
+# game/events/other.rpy:649
+translate german dictaphone_showdown_with_eric_4f2b686c:
+
+    # Max_09 "Лиза тут кое-что узнала... И теперь у неё есть претензии к Эрику..."
+    Max_09 ""
+
+# game/events/other.rpy:659
+translate german dictaphone_showdown_with_eric_b894aaee:
+
+    # Lisa_12 "И ещё какие! Мам, помнишь наши совместные уроки в твоей комнате? Так вот Эрик решил расширить программу моего сексуального образования до практических занятий с ним наедине!"
+    Lisa_12 ""
+
+# game/events/other.rpy:660
+translate german dictaphone_showdown_with_eric_cf4823cd:
+
+    # Ann_17 "Я ни о чём таком не знаю. В каком смысле, практических?"
+    Ann_17 ""
+
+# game/events/other.rpy:661
+translate german dictaphone_showdown_with_eric_6a9d0065:
+
+    # Lisa_10 "В таком, чтобы я повторяла всё то, что делала ты. Это как вообще называется? Я думала у нас Макс извращенец, но ты, Эрик..."
+    Lisa_10 ""
+
+# game/events/other.rpy:662
+translate german dictaphone_showdown_with_eric_cefb4f10:
+
+    # Ann_16 "Ты что такое вообще несёшь, Лиза?! Обвинять в таком Эрика, это... Я уверена, ты просто что-то не так поняла. Верно, Эрик?"
+    Ann_16 ""
+
+# game/events/other.rpy:663
+translate german dictaphone_showdown_with_eric_26987fb2:
+
+    # Eric_13 "Однозначно!"
+    Eric_13 ""
+
+# game/events/other.rpy:664
+translate german dictaphone_showdown_with_eric_4d03abad:
+
+    # Lisa_09 "Мам, с каких пор ты мне не веришь? Макс специально ходил разговаривать с Эриком и Эрик таких мерзостей ему наговорил про всех... Особенно, про меня!"
+    Lisa_09 ""
+
+# game/events/other.rpy:665
+translate german dictaphone_showdown_with_eric_1f1b1dd8:
+
+    # Ann_19 "Что?! Это уже явный перебор, Лиза! Мне или нужны доказательства, или тебя придётся хорошенько наказать!"
+    Ann_19 ""
+
+# game/events/other.rpy:666
+translate german dictaphone_showdown_with_eric_02d9ccd0:
+
+    # Eric_09 "Так, Лиза, давай успокаивайся! Ань, я сейчас поговорю с ней наедине. Макс видимо совсем страх потерял, своей младшей сестрёнке каких-то сказок понарассказывал."
+    Eric_09 ""
+
+# game/events/other.rpy:671
+translate german dictaphone_showdown_with_eric_8684e2a4:
+
+    # Lisa_13 "Не собираюсь я с тобой наедине больше оставаться! Макс всё записал на диктофон в телефоне. Сейчас послушаем..."
+    Lisa_13 ""
+
+# game/events/other.rpy:672
+translate german dictaphone_showdown_with_eric_60fce6d7:
+
+    # "{color=[orange]}(все слушают запись...){/color}"
+    ""
+
+# game/events/other.rpy:673
+translate german dictaphone_showdown_with_eric_1c22e674:
+
+    # Ann_14 "Это же... Неужели это действительно правда?! Эрик, будь добр, объясни это..."
+    Ann_14 ""
+
+# game/events/other.rpy:674
+translate german dictaphone_showdown_with_eric_3b4d9713:
+
+    # Eric_13 "Ань, я не знаю, что и где это записано, но могу тебя уверить - это неправда! Уверен на все сто, что эта запись подделка."
+    Eric_13 ""
+
+# game/events/other.rpy:675
+translate german dictaphone_showdown_with_eric_8dffdb7a:
+
+    # Max_09 "В таком случае, я за то, чтобы провести экспертизу её подлинности!"
+    Max_09 ""
+
+# game/events/other.rpy:682
+translate german dictaphone_showdown_with_eric_c1994ec4:
+
+    # Alice_18 "Ах вот так, значит! Ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
+    Alice_18 ""
+
+# game/events/other.rpy:683
+translate german dictaphone_showdown_with_eric_8aba10b5:
+
+    # Ann_15 "Эрик! У меня просто в голове не укладывается... Как ты мог на такое решиться, мерзавец... Лиза, неужели это действительно правда?"
+    Ann_15 ""
+
+# game/events/other.rpy:684
+translate german dictaphone_showdown_with_eric_1d2fc481:
+
+    # Max_07 "Разве это не очевидно, мам? Или ты думаешь, что мы тебя так жестоко разыграть решили?"
+    Max_07 ""
+
+# game/events/other.rpy:685
+translate german dictaphone_showdown_with_eric_0d5ce9a0:
+
+    # Ann_20 "Эрик, ты совсем что ли больной?! Как ты мог, строя отношения со мной, ещё и планировать развращать моих детей! Живо выметайся из нашего дома, пока я полицию не вызвала!"
+    Ann_20 ""
+
+# game/events/other.rpy:686
+translate german dictaphone_showdown_with_eric_847ca8ec:
+
+    # Eric_10 "Какую ещё полицию?! Я ничего не делал. Это всё Макс!"
+    Eric_10 ""
+
+# game/events/other.rpy:687
+translate german dictaphone_showdown_with_eric_8cb800af:
+
+    # Lisa_13 "Не надо всё на Макса сваливать! Он хороший..."
+    Lisa_13 ""
+
+# game/events/other.rpy:697
+translate german dictaphone_showdown_with_eric_2a7e5ec0:
+
+    # Alice_16 "Совсем недавно я могла от души навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
+    Alice_16 ""
+
+# game/events/other.rpy:698
+translate german dictaphone_showdown_with_eric_aece1638:
+
+    # Ann_19 "Эрик, проваливай! Я не хочу тебя больше видеть!"
+    Ann_19 ""
+
+# game/events/other.rpy:699
+translate german dictaphone_showdown_with_eric_beb7cd04:
+
+    # Eric_09 "Вижу, вы все на взводе, так что я поговорю с вами, когда успокоитесь... А сейчас я, пожалуй, отправлюсь к себе домой."
+    Eric_09 ""
+
+# game/events/other.rpy:700
+translate german dictaphone_showdown_with_eric_2ec75356:
+
+    # Ann_20 "Я сказала, {b}ПОШЁЛ ВОН НЕМЕДЛЕННО!!!{/b}"
+    Ann_20 ""
+
+# game/events/other.rpy:701
+translate german dictaphone_showdown_with_eric_33de351b:
+
+    # Alice_17 "Убирайся из нашей жизни, грязное животное!"
+    Alice_17 ""
+
+# game/events/other.rpy:710
+translate german dictaphone_showdown_with_eric_f3afe214:
+
+    # Max_00 "Мам, ты только не расстраивайся так из-за него. Всякое бывает..."
+    Max_00 ""
+
+# game/events/other.rpy:711
+translate german dictaphone_showdown_with_eric_346fcb3b:
+
+    # Ann_14 "Всё никак в голове не укладывается, что Эрик тут с вами собирался творить... И что я за мать после этого? Я в шоке..."
+    Ann_14 ""
+
+# game/events/other.rpy:712
+translate german dictaphone_showdown_with_eric_90ee4fd2:
+
+    # Alice_13 "Уж лучше узнать поздно, чем никогда. А у нас всё ещё лучше... Мы узнали, пока ещё не стало поздно. Так что не переживай, мам, мы все думали, что Эрик... уж точно не такой..."
+    Alice_13 ""
+
+# game/events/other.rpy:713
+translate german dictaphone_showdown_with_eric_167ce82b:
+
+    # Max_09 "Хорошо, что я своим мужским взглядом сразу понял, что он мутный тип!"
+    Max_09 ""
+
+# game/events/other.rpy:714
+translate german dictaphone_showdown_with_eric_382d50ea:
+
+    # Lisa_09 "И между прочим, про бумажник Эрик наврал..."
+    Lisa_09 ""
+
+# game/events/other.rpy:715
+translate german dictaphone_showdown_with_eric_28be9f6a:
+
+    # Max_08 "Кстати, да! Он это придумал, чтобы вы меня в военный лагерь сослали. А то я стал слишком мешаться."
+    Max_08 ""
+
+# game/events/other.rpy:716
+translate german dictaphone_showdown_with_eric_35096e7a:
+
+    # Ann_13 "Ты прости меня, сынок, я должна была прислушиваться к тому, что ты говорил. Что же теперь делать?"
+    Ann_13 ""
+
+# game/events/other.rpy:717
+translate german dictaphone_showdown_with_eric_e862c93b:
+
+    # Max_01 "Жить, как жили до Эрика! Ничего сложного..."
+    Max_01 ""
+
+# game/events/other.rpy:718
+translate german dictaphone_showdown_with_eric_6ff07095:
+
+    # Ann_12 "Нет, Макс, я о другом... Он же мой начальник! Как мне теперь быть? Ох, не знаю..."
+    Ann_12 ""
+
+# game/events/other.rpy:719
+translate german dictaphone_showdown_with_eric_87eb1c15:
+
+    # Max_07 "Д-а-а... Это проблемка. Ты главное не слушай его оправдания, а то он умеет убеждать, как ты сама прекрасно убедилась. А теперь давайте, все вместе, поддержим маму!"
+    Max_07 ""
+
+# game/events/other.rpy:727
+translate german dictaphone_showdown_with_eric_f96123e9:
+
+    # Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
+    Ann_13 ""
+
+# game/events/other.rpy:728
+translate german dictaphone_showdown_with_eric_5a9bcc35:
+
+    # Lisa_01 "Не бери в голову, мам. Не вини себя, всё ведь хорошо. Мы с тобой."
+    Lisa_01 ""
+
+# game/events/other.rpy:729
+translate german dictaphone_showdown_with_eric_a2587239:
+
+    # Alice_05 "И если он начнёт устраивать тебе проблемы на работе, то мы все так же дружно, как сейчас, соберёмся и отпинаем его!"
+    Alice_05 ""
+
+# game/events/other.rpy:730
+translate german dictaphone_showdown_with_eric_e1846793:
+
+    # Max_09 "Думаю, Эрик не настолько туп, чтобы строить маме козни. Особенно, если она будет с ним жёстче..."
+    Max_09 ""
+
+# game/events/other.rpy:731
+translate german dictaphone_showdown_with_eric_d14050f1:
+
+    # Ann_17 "Ох, ребята, я постараюсь... Хотя, мне даже думать о нём сейчас противно, не то что видеть. Надеюсь, я не потеряю работу."
+    Ann_17 ""
+
+# game/events/other.rpy:732
+translate german dictaphone_showdown_with_eric_72f9e7fc:
+
+    # Max_08 "Может, удастся перевестись в какой-нибудь другой отдел?"
+    Max_08 ""
+
+# game/events/other.rpy:733
+translate german dictaphone_showdown_with_eric_032de050:
+
+    # Ann_02 "Надеюсь... Ну всё, мне уже дышать нечем. Пора делами заниматься. Я вас очень люблю..."
+    Ann_02 ""
+
+# game/events/other.rpy:734
+translate german dictaphone_showdown_with_eric_90be8708:
+
+    # Lisa_05 "И мы тебя!"
+    Lisa_05 ""
+
