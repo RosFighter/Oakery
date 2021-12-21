@@ -38,3 +38,11 @@ translate english strings:
     old "{i}массировать попку{/i}"
     new "{i}Massage her ass{/i}"
 
+# TODO: Translation updated at 2021-12-21 02:10
+
+translate english strings:
+
+    # game/core/imagemaps.rpy:107
+    old "{i}искать на кровати{/i}"
+    new ""
+

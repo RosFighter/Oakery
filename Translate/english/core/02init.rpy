@@ -630,3 +630,15 @@ translate english strings:
     old "{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n"
     new "{color=[orange]}{b}Warning:{/b} Your influence on your family has decreased.{/color}\n"
 
+# TODO: Translation updated at 2021-12-21 02:10
+
+translate english strings:
+
+    # game/core/02init.rpy:42
+    old "{color=#00FF00}{i}Успех!{/i}{/color}\n"
+    new ""
+
+    # game/core/02init.rpy:43
+    old "{color=#E59400}{i}Провал!{/i}{/color}\n"
+    new ""
+

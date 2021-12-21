@@ -1022,3 +1022,29 @@ translate english Nap_5e123eb6:
     # Max_00 "{m}Ох и вымотался же я сегодня, надо немного вздремнуть...{/m}" nointeract
     Max_00 "{m}I'm exhausted today, I need a little nap...{/m}" nointeract
 
+# TODO: Translation updated at 2021-12-21 02:10
+
+# game/events/max.rpy:1125
+translate english SearchPhone_no_9a51253a:
+
+    # Max_10 "{m}Здесь телефона Лизы нет.{/m}"
+    Max_10 ""
+
+# game/events/max.rpy:1130
+translate english SearchPhone_yes_48a26421:
+
+    # Max_07 "{m}А вот и телефон Лизы! Надеюсь, диктофон на нём есть, иначе я влип...{/m}"
+    Max_07 ""
+
+# game/events/max.rpy:1132
+translate english SearchPhone_yes_075e9758:
+
+    # Max_09 "{m}Да, диктофон есть. Теперь, пока Лиза не вернулась, нужно идти к Эрику и попробовать вывести его на чистую воду...{/m}" nointeract
+    Max_09 "" nointeract
+
+translate english strings:
+
+    # game/events/max.rpy:1131
+    old "{i}идти к Эрику с включённым диктофоном{/i}"
+    new ""
+

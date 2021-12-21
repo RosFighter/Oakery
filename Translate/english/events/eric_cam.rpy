@@ -344,7 +344,7 @@ translate english cam0_eric_ann_sleep_c5aa1a5f:
 translate english cam_before_frame_eric_c6743351:
 
     # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Нужно дождаться, когда он вернётся к моей маме, и затем уже спойкойно его подставлять...{/m}" nointeract
-    Max_07 "{m}Great! Eric is exactly where I need him... I have to wait until he gets back to Mom, and then I can set him up in peace.../m}" nointeract
+    Max_07 "{m}Great! Eric is exactly where I need him... I have to wait until he gets back to Mom, and then I can set him up in peace...{/m}" nointeract
 
 # game/events/eric_cam.rpy:437
 translate english cam_before_frame_eric_2da5afe7:

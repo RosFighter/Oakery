@@ -2754,7 +2754,7 @@ translate english start_eric_wallet_8132910c:
 translate english start_eric_wallet_7db38010:
 
     # Max_09 "{m}Ну всё! Он меня достал! Так позорить меня перед всеми... Даже если я дам ему деньги, то все уже на 100%% будут считать меня вором и обманщиком. А значит пришло время избавляться от Эрика!{/m}"
-    Max_09 "{m}That's it! To humiliate me in front of everyone... Even if I give him the money, everyone will think I'm 100% a thief and a liar. Which means it's time to get rid of Eric!{/m}"
+    Max_09 "{m}That's it! To humiliate me in front of everyone... Even if I give him the money, everyone will think I'm 100%% a thief and a liar. Which means it's time to get rid of Eric!{/m}"
 
 # game/events/eric.rpy:1912
 translate english start_eric_wallet_53c2a5c1:
@@ -2855,4 +2855,11 @@ translate english eric_ann_tv_2a838c07:
 
     # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?{/m}" nointeract
     Max_07 "{m}Wow! Eric pulled off Mom's towel and I can see her naked breasts! Maybe we should get closer?{/m}" nointeract
+# TODO: Translation updated at 2021-12-21 02:10
+
+# game/events/eric.rpy:1922
+translate english start_eric_wallet_e75cd485:
+
+    # Max_07 "{m}Вот только у меня абсолютно ничего нет против него! И сестёр я теперь вряд ли переманю на свою сторону, чтобы они меня поддержали перед мамой.{/m}"
+    Max_07 ""
 

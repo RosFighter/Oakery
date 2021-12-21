@@ -7356,10 +7356,10 @@ translate english lisa_about_ae_sexed0_5c2709c2_1:
     # Lisa_02 "Расскажу, если тебе интересно."
     Lisa_02 "I'll tell you if you're interested."
 
-# game/dialogues/lisatalk.rpy:3942
-translate english lisa_about_ae_sexed0_64d560c2:
+# game/dialogues/lisatalk.rpy:3767
+translate english lisa_about_ae_sexed0_4b2e62c5_1:
 
-    # Max_08 "Конечно интресно!"
+    # Max_08 "Конечно интересно!"
     Max_08 "Of course I'm interested!"
 
 # game/dialogues/lisatalk.rpy:3952
@@ -7440,10 +7440,10 @@ translate english lisa_about_ae_sexed1_2f7f61d4:
     # Lisa_13 "Да нет, Эрик не такой!"
     Lisa_13 "No! He's not like that!"
 
-# game/dialogues/lisatalk.rpy:3965
-translate english lisa_about_ae_sexed1_d377a6f1:
+# game/dialogues/lisatalk.rpy:3790
+translate english lisa_about_ae_sexed1_4d3bf8a8:
 
-    # Max_09 "Знаешь, про всех пойманых маньяков и педофилов тоже всегда так говорят, что они казались не такими."
+    # Max_09 "Знаешь, про всех пойманных маньяков и педофилов тоже всегда так говорят, что они казались не такими."
     Max_09 "You know, they say the same thing about serial killers up until they're caught."
 
 # game/dialogues/lisatalk.rpy:3966
@@ -10563,4 +10563,228 @@ translate english lisa_sorry_gifts_18a348cf:
 
     # Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!" nointeract
     Lisa_02 "Really? Come on, show me what you got this time!" nointeract
+
+# TODO: Translation updated at 2021-12-21 02:10
+
+# game/dialogues/lisatalk.rpy:4571
+translate english lisa_about_wallet_14a14016:
+
+    # Max_07 "{m}Ясно. Без доказательств, что Эрик тот ещё подлец, поддержки от сестёр мне точно не видать. Надо думать, на чём можно подловить Эрика.{/m}"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4572
+translate english lisa_about_wallet_15cf5dd3:
+
+    # Max_01 "{m}Возможно, у меня получится записать на диктофон наши с ним разговоры? Почему бы и нет! Главное, чтобы он разоткровенничался...{/m}"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4573
+translate english lisa_about_wallet_a2fd0f39:
+
+    # Max_09 "{m}На следующей неделе у меня ещё будет время, чтобы поговорить с Эриком, а пока нужно достать диктофон. Он наверняка должен быть у Лизы в телефоне. Правда, вряд ли она мне его даст. Нужно будет спросить у неё через пару дней...{/m}"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4586
+translate english lisa_asked_phone_2d8609a6:
+
+    # Lisa_13 "Макс, я не хочу с тобой разговаривать."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4588
+translate english lisa_asked_phone_0c81a07b:
+
+    # Max_00 "Лиза, мне нужна твоя помощь!"
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:4590
+translate english lisa_asked_phone_408a3b67:
+
+    # Lisa_13 "Ну уж нет. Я не собираюсь тебе ничего показывать."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4591
+translate english lisa_asked_phone_39ca9096:
+
+    # Max_09 "Мне нужно не это, а твой телефон."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4592
+translate english lisa_asked_phone_bd16cbb9:
+
+    # Lisa_09 "Это зачем?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4593
+translate english lisa_asked_phone_db149ac4:
+
+    # Max_07 "Хочу кое-что... записать. Поможешь? Мне ненадолго."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4594
+translate english lisa_asked_phone_add1f78c:
+
+    # Lisa_12 "У тебя же полно ворованных денег! Купи себе телефон и записывай, что хочешь."
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:4595
+translate english lisa_asked_phone_19bba754:
+
+    # Max_10 "Значит не поможешь?"
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:4597
+translate english lisa_asked_phone_483aa533:
+
+    # Lisa_13 "Нет, Макс. Помоги себе сам." nointeract
+    Lisa_13 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4602
+translate english lisa_asked_phone_5787d988:
+
+    # Max_09 "{m}Похоже, остаётся полагаться только на себя. С Эриком я могу поговорить только после ужина, пока мама принимает ванну, а Лиза как раз будет мыть посуду. Наверняка, она оставляет телефон в комнате. Нужно будет его найти и останется только разговорить Эрика...{/m}"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4613
+translate english lisa_about_stolen_phone_8b94a697:
+
+    # Lisa_12 "Вот ты где! Ты оказывается не только бумажники воруешь, но ещё и телефоны! Ну-ка отдал... Быстро! Или маме рассказать?" nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4616
+translate english lisa_about_stolen_phone_a7d84a35:
+
+    # Lisa_13 "Это в какой такой Вселенной кража телефона одного человека оправдывает кражу бумажника у другого?"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4617
+translate english lisa_about_stolen_phone_f7eb9410:
+
+    # Max_07 "В той, где я не крал ни бумажника, ни телефона! Твой телефон я взял лишь на время, к тому же, и ради тебя тоже."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4618
+translate english lisa_about_stolen_phone_f580ae7a:
+
+    # Lisa_12 "Не понимаю... Ты меня запутать что ли хочешь? Думаешь, я дурочка какая-то?!"
+    Lisa_12 ""
+
+# game/dialogues/lisatalk.rpy:4619
+translate english lisa_about_stolen_phone_87eb2488:
+
+    # Max_08 "Ни в коем случае, Лиза! Ты просто послушай, что я записал на диктофон... А уже после решай, что рассказать маме..."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:4620
+translate english lisa_about_stolen_phone_dd882f9d:
+
+    # Lisa_13 "Ну давай, включай... Так уж и быть."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4623
+translate english lisa_about_stolen_phone_d80ba8b0:
+
+    # Max_00 "Вот, пожалуйста, слушай, что говорит о тебе ваш обожаемый Эрик..."
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:4624
+translate english lisa_about_stolen_phone_92f02b38:
+
+    # "(Лиза слушает запись...)"
+    ""
+
+# game/dialogues/lisatalk.rpy:4625
+translate english lisa_about_stolen_phone_0a6862b6:
+
+    # Eric "{b}Эрик:{/b}\n{i}... она начнёт полировать мой член своими сладкими губками. Ты уже это представил? Я вот да! Сказка будет та ещё!{/i}"
+    Eric ""
+
+# game/dialogues/lisatalk.rpy:4626
+translate english lisa_about_stolen_phone_4c12b1b6:
+
+    # Lisa_10 "Всё, Макс, выключи... Это... Это просто кошмар какой-то... Да меня сейчас просто вырвет от одной мысли о том, что он говорил... Неужели это всё правда?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4627
+translate english lisa_about_stolen_phone_e7c089ae:
+
+    # Max_07 "Ты сама всё слышала. Или ты не узнала его голос? Я потому и взял твой телефон, чтобы записать разговор с ним. По-другому бы никто мне и не поверил."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4628
+translate english lisa_about_stolen_phone_76061c05:
+
+    # Lisa_09 "У меня просто нет слов... Воспитать под себя... Вот же мерзавец какой! А эта история с его бумажником?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4629
+translate english lisa_about_stolen_phone_a2781c42:
+
+    # Max_15 "Враньё это! Я стал ему слишком мешаться, вот он таким образом и решил настроить вас всех против меня и до кучи ещё в военный лагерь сослать."
+    Max_15 ""
+
+# game/dialogues/lisatalk.rpy:4632
+translate english lisa_about_stolen_phone_a0115d8b:
+
+    # Lisa_13 "А вот теперь я и правда чувствую себя дурочкой."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4633
+translate english lisa_about_stolen_phone_8c2bf242:
+
+    # Max_01 "Не переживай, теперь-то ты всё знаешь."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4634
+translate english lisa_about_stolen_phone_ee11f078:
+
+    # Lisa_11 "Слушай, нужно маме быстрее всё рассказать! А то он ей тоже все мозги запудрил, причём ещё больше, чем мне..."
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:4639
+translate english lisa_about_stolen_phone_512a7b87:
+
+    # Max_09 "Ага, пошли. Они сейчас должны смотреть ТВ в гостиной." nointeract
+    Max_09 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4646
+translate english lisa_about_stolen_phone_b3d97b8e:
+
+    # Max_09 "Ага, пошли. Они сейчас должны смотреть ТВ в гостиной. Только давай Алису с собой захватим, ей кое-что нужно увидеть..." nointeract
+    Max_09 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4649
+translate english lisa_about_stolen_phone_3900a779:
+
+    # Alice_15 "Что?! Макс! Ну-ка иди отсюда, пока в ухо не получил!"
+    Alice_15 ""
+
+# game/dialogues/lisatalk.rpy:4650
+translate english lisa_about_stolen_phone_ce1000ee:
+
+    # Max_07 "Потом извиняться устанешь... Мама всех вниз в гостиную зовёт, важное и срочное дело. Тебя это тоже касается, так что пошли..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4652
+translate english lisa_about_stolen_phone_bb2fc3cc:
+
+    # Alice_16 "Если это окажется твоим тупым розыгрышем, то тебе несдобровать!" nointeract
+    Alice_16 "" nointeract
+
+translate english strings:
+
+    # game/dialogues/lisatalk.rpy:4612
+    old "Мне пришлось его взять, чтобы себя оправдать!"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4638
+    old "{i}идти с Лизой в гостиную{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4645
+    old "{i}идти к Алисе{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4651
+    old "{i}идти с Лизой и Алисой в гостиную{/i}"
+    new ""
 

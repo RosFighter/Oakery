@@ -1478,10 +1478,10 @@ translate english Eric_tribute_6795eebc:
     # Eric_04 "Пока ты платишь, Макс, и не действуешь мне на нервы - мне до Лизы нет дела. Так что не выёживайся тут, а то накину пару сотен! Вали давай. Жду через неделю." nointeract
     Eric_04 "As long as you pay and and don't piss me off, I don't care about Lisa. So don't get your panties in a twist, or I'll throw in a couple hundred! Get out of here. I'll see you in a week." nointeract
 
-# game/dialogues/erictalk.rpy:772
-translate english Eric_tribute_no_money_2613eeb8:
+# game/dialogues/erictalk.rpy:773
+translate english Eric_tribute_no_money_e6e6f0f4:
 
-    # Eric_09 "Эх, Макс... Ну вот ни черта с тебя толку нет. Только подумал, что ты можешь принести хоть какую-то пользу... Свали с глах моих!"
+    # Eric_09 "Эх, Макс... Ну вот ни черта с тебя толку нет. Только подумал, что ты можешь принести хоть какую-то пользу... Свали с глаз моих!"
     Eric_09 "Oh, Max... You're useless as hell. Just when I thought you could do me some good... Get out of my face!"
 
 # game/dialogues/erictalk.rpy:773
@@ -1507,4 +1507,236 @@ translate english Eric_tribute_no_money_dd72ca96:
 
     # Eric_13 "Скоро узнаешь. А теперь проваливай!" nointeract
     Eric_13 "You'll find out soon enough. Now get out!" nointeract
+
+# TODO: Translation updated at 2021-12-21 02:10
+
+# game/dialogues/erictalk.rpy:793
+translate english Eric_with_dictaphone_210d83ab:
+
+    # Eric_01 "Чего хотел, Макс?" nointeract
+    Eric_01 "" nointeract
+
+# game/dialogues/erictalk.rpy:797
+translate english Eric_with_dictaphone_9dfe8aef:
+
+    # Eric_02 "И о чём таком мы с тобой можем договориться?"
+    Eric_02 ""
+
+# game/dialogues/erictalk.rpy:798
+translate english Eric_with_dictaphone_39024e04:
+
+    # Max_15 "Раз ты меня обвинил в воровстве бумажника, то и оправдать можешь..."
+    Max_15 ""
+
+# game/dialogues/erictalk.rpy:800
+translate english Eric_with_dictaphone_8f068430:
+
+    # Eric_07 "И с какой стати мне тебя оправдывать?" nointeract
+    Eric_07 "" nointeract
+
+# game/dialogues/erictalk.rpy:802
+translate english Eric_with_dictaphone_cdac9939:
+
+    # Eric_04 "Дело, Макс, не в деньгах. А в том, что такому воришке и бездельнику, как ты, здесь не место."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:803
+translate english Eric_with_dictaphone_27a885e0:
+
+    # Max_09 "А может это тебе здесь не место?"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:804
+translate english Eric_with_dictaphone_71008328:
+
+    # Eric_05 "Сам подумай... Твоя семья меня любит и уважает, да и обеспечить я их смогу без проблем. А вот ты - большое разочарование для них."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:805
+translate english Eric_with_dictaphone_e9c20a7f:
+
+    # Max_16 "Это только потому, что ты меня подставил!"
+    Max_16 ""
+
+# game/dialogues/erictalk.rpy:806
+translate english Eric_with_dictaphone_bbaeb3f4:
+
+    # Eric_06 "Ну, Макс... Надо было не мешать мне с планами по развращению твоей семьи. И был бы ты сейчас в шоколаде. А так..." nointeract
+    Eric_06 "" nointeract
+
+# game/dialogues/erictalk.rpy:809
+translate english Eric_with_dictaphone_da084f59:
+
+    # Eric_04 "Шантажировать меня решил? Твой блеф ничего не изменит и тебе придётся вернуть мне деньги. Или же бюджетный вариант - военный лагерь."
+    Eric_04 ""
+
+# game/dialogues/erictalk.rpy:810
+translate english Eric_with_dictaphone_a6187998:
+
+    # Max_07 "А как же то, что ты любишь потереть шишку на Алису?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:811
+translate english Eric_with_dictaphone_fadbb170:
+
+    # Eric_05 "Понятия не имею о чём ты говоришь. А тебя эти извращенские и влажные фантазии только ещё больше не красят."
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:812
+translate english Eric_with_dictaphone_7754fb83:
+
+    # Max_09 "Фантазии фантазиями, а вот фотоснимки - это уже совершенно другое."
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:813
+translate english Eric_with_dictaphone_824ffff7:
+
+    # Eric_06 "Нет у тебя, Макс, никаких фотоснимков. И если ты даже что-то там нафотошопил, правдой это не станет."
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:814
+translate english Eric_with_dictaphone_4c2c47ee:
+
+    # Max_07 "Думаешь, у мамы и Алисы не появятся сомнения на счёт тебя, после того, как они увидят эти снимки?"
+    Max_07 ""
+
+# game/dialogues/erictalk.rpy:815
+translate english Eric_with_dictaphone_fef296d0:
+
+    # Eric_07 "Макс, ты может не в курсе, но для твоей мамы я самый любимый мужчина. И сёстры твои от меня в восторге. А ты тот, кто её очень сильно разочаровал и за кого ей сейчас стыдно." nointeract
+    Eric_07 "" nointeract
+
+# game/dialogues/erictalk.rpy:819
+translate english Eric_with_dictaphone_42a46437:
+
+    # Eric_03 "О, не переживай, у твоей мамы будет всё самое лучшее. И давай маму не расстраивай, шуруй сапоги чисти, скоро в лагерь."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:820
+translate english Eric_with_dictaphone_26629fad:
+
+    # Max_17 "Да пошёл ты..."
+    Max_17 ""
+
+# game/dialogues/erictalk.rpy:825
+translate english Eric_with_dictaphone_3a815690:
+
+    # Max_14 "[bad_mission!t]{m}Вот блин! Ничего толкового я из него не вытянул. Этого явно будет мало, чтобы на него начали хотя бы подозрительно смотреть. Похоже, это конец...{/m}" nointeract
+    Max_14 "" nointeract
+
+# game/dialogues/erictalk.rpy:831
+translate english Eric_with_dictaphone_8b94a697:
+
+    # Lisa_12 "Вот ты где! Ты оказывается не только бумажники воруешь, но ещё и телефоны! Ну-ка отдал... Быстро! Или маме рассказать?" nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/erictalk.rpy:835
+translate english Eric_with_dictaphone_5e5e5db9:
+
+    # Lisa_13 "Больше даже близко не подходи к моему телефону! И ко мне тоже." nointeract
+    Lisa_13 "" nointeract
+
+# game/dialogues/erictalk.rpy:840
+translate english Eric_with_dictaphone_b4b1461d:
+
+    # Eric_03 "Уже получил, Макс! И если ты ещё до сих пор не осознал, то для тебя уже всё потеряно и на днях ты отправишься маршировать, а я наконец получу всё, что хотел."
+    Eric_03 ""
+
+# game/dialogues/erictalk.rpy:841
+translate english Eric_with_dictaphone_f5b8245a:
+
+    # Max_10 "Не трогай хотя бы Лизу! Она ведь ещё младше меня."
+    Max_10 ""
+
+# game/dialogues/erictalk.rpy:842
+translate english Eric_with_dictaphone_84c7d60f:
+
+    # Eric_08 "Ты что, на Лизу у меня самые... особые планы. Ведь она в таком возрасте, когда её легко можно воспитать под себя на такой разврат и утехи, на которые не удастся развести ни твою маму, ни Алису."
+    Eric_08 ""
+
+# game/dialogues/erictalk.rpy:843
+translate english Eric_with_dictaphone_c1653118:
+
+    # Max_09 "Воспитать Лизу под себя? У тебя это ни за что не получится. Лиза не такая!"
+    Max_09 ""
+
+# game/dialogues/erictalk.rpy:844
+translate english Eric_with_dictaphone_0f17c3cf:
+
+    # Eric_05 "Вот свалишь ты в лагерь и без твоих вмешательств у меня всё наладится! Я уже предвкушаю, как старательно Лиза будет надрачивать мне своими нежными ручками... А затем мы перейдём к следующему шагу. То ли ещё будет!"
+    Eric_05 ""
+
+# game/dialogues/erictalk.rpy:845
+translate english Eric_with_dictaphone_9b4d53c3:
+
+    # Max_08 "К какому ещё шагу?"
+    Max_08 ""
+
+# game/dialogues/erictalk.rpy:846
+translate english Eric_with_dictaphone_2c100bd9:
+
+    # Eric_06 "При котором она начнёт полировать мой член своими сладкими губками. Ты уже это представил? Я вот да! Сказка будет та ещё!"
+    Eric_06 ""
+
+# game/dialogues/erictalk.rpy:847
+translate english Eric_with_dictaphone_67186cad:
+
+    # Max_15 "Вот ты больной ублюдок!"
+    Max_15 ""
+
+# game/dialogues/erictalk.rpy:848
+translate english Eric_with_dictaphone_9740bacb:
+
+    # Eric_01 "Старшим грубить - нехорошо. Давай-ка проваливай и подумай над своим поведением хорошенько."
+    Eric_01 ""
+
+# game/dialogues/erictalk.rpy:849
+translate english Eric_with_dictaphone_26629fad_1:
+
+    # Max_17 "Да пошёл ты..."
+    Max_17 ""
+
+# game/dialogues/erictalk.rpy:854
+translate english Eric_with_dictaphone_9ddf8dae:
+
+    # Max_03 "[good_mission!t]{m}Отлично! Самое главное я записал, а именно его планы относительно нашей маленькой Лизы. Этого должно хватить, чтобы на него начали не просто подозрительно смотреть, а выгнали ко всем чертям...{/m}" nointeract
+    Max_03 "" nointeract
+
+translate english strings:
+
+    # game/dialogues/erictalk.rpy:792
+    old "Может, договоримся? {i}(добыть компромат){/i}"
+    new ""
+
+    # game/dialogues/erictalk.rpy:799
+    old "С той, что я могу заплатить тебе больше, чем якобы должен."
+    new ""
+
+    # game/dialogues/erictalk.rpy:799
+    old "С той, что у меня есть кое-что на тебя."
+    new ""
+
+    # game/dialogues/erictalk.rpy:817
+    old "Ты мутный тип, а моя мама заслуживает лучшего!"
+    new ""
+
+    # game/dialogues/erictalk.rpy:817
+    old "Сестрёнок моих ты не получишь!"
+    new ""
+
+    # game/dialogues/erictalk.rpy:823
+    old "{i}вернуться в свою комнату{/i}"
+    new ""
+
+    # game/dialogues/erictalk.rpy:830
+    old "Не шуми. Держи, всё равно не пригодился..."
+    new ""
+
+    # game/dialogues/erictalk.rpy:834
+    old "{i}смириться{/i}"
+    new ""
+
+    # game/dialogues/erictalk.rpy:852
+    old "вернуться в свою комнату"
+    new ""
 
