@@ -2854,3 +2854,11 @@ translate german eric_ann_tv_2a838c07:
     # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?{/m}" nointeract
     Max_07 "{m}Wow! Eric hat Mom das Handtuch abgezogen und ich kann ihre nackten Brüste sehen! Vielleicht sollte ich näher ran?{/m}" nointeract
 
+# TODO: Translation updated at 2021-12-21 02:03
+
+# game/events/eric.rpy:1922
+translate german start_eric_wallet_e75cd485:
+
+    # Max_07 "{m}Вот только у меня абсолютно ничего нет против него! И сестёр я теперь вряд ли переманю на свою сторону, чтобы они меня поддержали перед мамой.{/m}"
+    Max_07 ""
+

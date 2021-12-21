@@ -1305,4 +1305,3 @@ translate german strings:
     # game/events/ann.rpy:454
     old "Извини, всё позабыл, когда тебя увидел. Ты прекрасна!"
     new "Sorry, ich hab es vergessen, als ich dich sah. Du bist wunderschön!"
-
