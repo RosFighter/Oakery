@@ -10570,221 +10570,221 @@ translate german lisa_sorry_gifts_18a348cf:
 translate german lisa_about_wallet_14a14016:
 
     # Max_07 "{m}Ясно. Без доказательств, что Эрик тот ещё подлец, поддержки от сестёр мне точно не видать. Надо думать, на чём можно подловить Эрика.{/m}"
-    Max_07 ""
+    Max_07 "{m}Ich verstehe. Ohne den Beweis, dass Eric ein Betrüger ist, werde ich keine Unterstützung von den Schwestern bekommen. Ich muss mir überlegen, was ich tun kann, um Eric zu erwischen.{/m}"
 
 # game/dialogues/lisatalk.rpy:4572
 translate german lisa_about_wallet_15cf5dd3:
 
     # Max_01 "{m}Возможно, у меня получится записать на диктофон наши с ним разговоры? Почему бы и нет! Главное, чтобы он разоткровенничался...{/m}"
-    Max_01 ""
+    Max_01 "{m}Vielleicht kann ich unser Gespräch aufzeichnen? Ich wüsste nicht, warum nicht. Solange er offen damit umgeht...{/m}"
 
 # game/dialogues/lisatalk.rpy:4573
 translate german lisa_about_wallet_a2fd0f39:
 
     # Max_09 "{m}На следующей неделе у меня ещё будет время, чтобы поговорить с Эриком, а пока нужно достать диктофон. Он наверняка должен быть у Лизы в телефоне. Правда, вряд ли она мне его даст. Нужно будет спросить у неё через пару дней...{/m}"
-    Max_09 ""
+    Max_09 "{m}Ich werde nächste Woche Zeit haben, mit Eric zu sprechen, aber bis dahin muss ich mir ein Diktiergerät besorgen. Lisa sollte es wahrscheinlich in ihrem Handy eines haben. Ich glaube aber nicht, dass sie es mir geben wird. Ich werde sie in ein paar Tagen fragen müssen...{/m}"
 
 # game/dialogues/lisatalk.rpy:4586
 translate german lisa_asked_phone_2d8609a6:
 
     # Lisa_13 "Макс, я не хочу с тобой разговаривать."
-    Lisa_13 ""
+    Lisa_13 "Max, ich will nicht mit dir reden."
 
 # game/dialogues/lisatalk.rpy:4588
 translate german lisa_asked_phone_0c81a07b:
 
     # Max_00 "Лиза, мне нужна твоя помощь!"
-    Max_00 ""
+    Max_00 "Lisa, ich brauche deine Hilfe!"
 
 # game/dialogues/lisatalk.rpy:4590
 translate german lisa_asked_phone_408a3b67:
 
     # Lisa_13 "Ну уж нет. Я не собираюсь тебе ничего показывать."
-    Lisa_13 ""
+    Lisa_13 "Oh, nein. Ich werde dir nicht helfen."
 
 # game/dialogues/lisatalk.rpy:4591
 translate german lisa_asked_phone_39ca9096:
 
     # Max_09 "Мне нужно не это, а твой телефон."
-    Max_09 ""
+    Max_09 "Das brauche ich nicht, ich möchte dein Telefon borgen."
 
 # game/dialogues/lisatalk.rpy:4592
 translate german lisa_asked_phone_bd16cbb9:
 
     # Lisa_09 "Это зачем?"
-    Lisa_09 ""
+    Lisa_09 "Wozu ist das gut?"
 
 # game/dialogues/lisatalk.rpy:4593
 translate german lisa_asked_phone_db149ac4:
 
     # Max_07 "Хочу кое-что... записать. Поможешь? Мне ненадолго."
-    Max_07 ""
+    Max_07 "Es gibt da etwas, das ich... aufzeichnen möchte. Kannst du mir helfen? Es wird nicht lange dauern."
 
 # game/dialogues/lisatalk.rpy:4594
 translate german lisa_asked_phone_add1f78c:
 
     # Lisa_12 "У тебя же полно ворованных денег! Купи себе телефон и записывай, что хочешь."
-    Lisa_12 ""
+    Lisa_12 "Du hast eine Menge gestohlenes Geld! Kauf Dir ein Telefon und nimm auf, was Du willst."
 
 # game/dialogues/lisatalk.rpy:4595
 translate german lisa_asked_phone_19bba754:
 
     # Max_10 "Значит не поможешь?"
-    Max_10 ""
+    Max_10 "Du wirst also nicht helfen?"
 
 # game/dialogues/lisatalk.rpy:4597
 translate german lisa_asked_phone_483aa533:
 
     # Lisa_13 "Нет, Макс. Помоги себе сам." nointeract
-    Lisa_13 "" nointeract
+    Lisa_13 "Nein, Max. Verschwinde." nointeract
 
 # game/dialogues/lisatalk.rpy:4602
 translate german lisa_asked_phone_5787d988:
 
     # Max_09 "{m}Похоже, остаётся полагаться только на себя. С Эриком я могу поговорить только после ужина, пока мама принимает ванну, а Лиза как раз будет мыть посуду. Наверняка, она оставляет телефон в комнате. Нужно будет его найти и останется только разговорить Эрика...{/m}"
-    Max_09 ""
+    Max_09 "{m}Ich werde mich wohl auf mich selbst verlassen müssen. Ich kann erst nach dem Abendessen mit Eric sprechen, während Mom ein Bad nimmt und Lisa gerade abwäscht. Ich bin sicher, dass sie ihr Telefon im Zimmer lässt. Ich muss es nur finden und dann mit Eric reden...{/m}"
 
 # game/dialogues/lisatalk.rpy:4613
 translate german lisa_about_stolen_phone_8b94a697:
 
     # Lisa_12 "Вот ты где! Ты оказывается не только бумажники воруешь, но ещё и телефоны! Ну-ка отдал... Быстро! Или маме рассказать?" nointeract
-    Lisa_12 "" nointeract
+    Lisa_12 "Da bist du ja! Du stiehlst nicht nur Geldbörsen, sondern auch Telefone! Gib es zurück... Sofort! Oder soll ich es Mom sagen?" nointeract
 
 # game/dialogues/lisatalk.rpy:4616
 translate german lisa_about_stolen_phone_a7d84a35:
 
     # Lisa_13 "Это в какой такой Вселенной кража телефона одного человека оправдывает кражу бумажника у другого?"
-    Lisa_13 ""
+    Lisa_13 "In welchem Universum rechtfertigt der Diebstahl des Telefons einer Person den Diebstahl der Brieftasche einer anderen Person?"
 
 # game/dialogues/lisatalk.rpy:4617
 translate german lisa_about_stolen_phone_f7eb9410:
 
     # Max_07 "В той, где я не крал ни бумажника, ни телефона! Твой телефон я взял лишь на время, к тому же, и ради тебя тоже."
-    Max_07 ""
+    Max_07 "Das, in dem ich weder mein Portemonnaie noch dein Telefon gestohlen habe! Ich habe dein Telefon nur ausgeliehen, und das auch nur dir zuliebe."
 
 # game/dialogues/lisatalk.rpy:4618
 translate german lisa_about_stolen_phone_f580ae7a:
 
     # Lisa_12 "Не понимаю... Ты меня запутать что ли хочешь? Думаешь, я дурочка какая-то?!"
-    Lisa_12 ""
+    Lisa_12 "Ich verstehe das nicht... Versuchst du, mich zu verarschen? Hältst du mich für dumm?!"
 
 # game/dialogues/lisatalk.rpy:4619
 translate german lisa_about_stolen_phone_87eb2488:
 
     # Max_08 "Ни в коем случае, Лиза! Ты просто послушай, что я записал на диктофон... А уже после решай, что рассказать маме..."
-    Max_08 ""
+    Max_08 "Auf keinen Fall, Lisa! Hör dir einfach an, was ich aufgenommen habe... Und dann entscheide, was du Mom sagst..."
 
 # game/dialogues/lisatalk.rpy:4620
 translate german lisa_about_stolen_phone_dd882f9d:
 
     # Lisa_13 "Ну давай, включай... Так уж и быть."
-    Lisa_13 ""
+    Lisa_13 "Also gut.... Dann schalte es ein."
 
 # game/dialogues/lisatalk.rpy:4623
 translate german lisa_about_stolen_phone_d80ba8b0:
 
     # Max_00 "Вот, пожалуйста, слушай, что говорит о тебе ваш обожаемый Эрик..."
-    Max_00 ""
+    Max_00 "Höre dir bitte an, was dein geliebter Eric über dich sagt..."
 
 # game/dialogues/lisatalk.rpy:4624
 translate german lisa_about_stolen_phone_92f02b38:
 
     # "(Лиза слушает запись...)"
-    ""
+    "(Lisa hört sich die Aufzeichnung an...)"
 
 # game/dialogues/lisatalk.rpy:4625
 translate german lisa_about_stolen_phone_0a6862b6:
 
     # Eric "{b}Эрик:{/b}\n{i}... она начнёт полировать мой член своими сладкими губками. Ты уже это представил? Я вот да! Сказка будет та ещё!{/i}"
-    Eric ""
+    Eric "{b}Erik:{/b}\n{i}... beginnt sie, meinen Schwanz mit ihren süßen Lippen zu verwöhnen. Hast du es dir schon vorgestellt? Ich habe es! Es wird ein Märchen sein!{/i}"
 
 # game/dialogues/lisatalk.rpy:4626
 translate german lisa_about_stolen_phone_4c12b1b6:
 
     # Lisa_10 "Всё, Макс, выключи... Это... Это просто кошмар какой-то... Да меня сейчас просто вырвет от одной мысли о том, что он говорил... Неужели это всё правда?"
-    Lisa_10 ""
+    Lisa_10 "Das reicht, Max, schalte es aus... Das ist... Das ist ein Alptraum... Mir wird übel, wenn ich nur daran denke, was er gesagt hat. Ist das wirklich wahr?"
 
 # game/dialogues/lisatalk.rpy:4627
 translate german lisa_about_stolen_phone_e7c089ae:
 
     # Max_07 "Ты сама всё слышала. Или ты не узнала его голос? Я потому и взял твой телефон, чтобы записать разговор с ним. По-другому бы никто мне и не поверил."
-    Max_07 ""
+    Max_07 "Du hast es selbst gehört. Oder hast du seine Stimme nicht erkannt? Deshalb habe ich dein Telefon genommen, um ein Gespräch mit ihm aufzunehmen. Niemand würde mir sonst glauben."
 
 # game/dialogues/lisatalk.rpy:4628
 translate german lisa_about_stolen_phone_76061c05:
 
     # Lisa_09 "У меня просто нет слов... Воспитать под себя... Вот же мерзавец какой! А эта история с его бумажником?"
-    Lisa_09 ""
+    Lisa_09 "Ich bin sprachlos... mich zu seinem persönlichen Favoriten zu erziehen... So ein Scheißkerl! Und die Geschichte mit seiner Brieftasche?"
 
 # game/dialogues/lisatalk.rpy:4629
 translate german lisa_about_stolen_phone_a2781c42:
 
     # Max_15 "Враньё это! Я стал ему слишком мешаться, вот он таким образом и решил настроить вас всех против меня и до кучи ещё в военный лагерь сослать."
-    Max_15 ""
+    Max_15 "Das ist eine Lüge! Ich wurde ihm zu lästig, und so hat er beschlossen, euch alle gegen mich aufzubringen und mich endlich in ein Militärlager zu schicken."
 
 # game/dialogues/lisatalk.rpy:4632
 translate german lisa_about_stolen_phone_a0115d8b:
 
     # Lisa_13 "А вот теперь я и правда чувствую себя дурочкой."
-    Lisa_13 ""
+    Lisa_13 "Jetzt komme ich mir wirklich wie ein Idiot vor."
 
 # game/dialogues/lisatalk.rpy:4633
 translate german lisa_about_stolen_phone_8c2bf242:
 
     # Max_01 "Не переживай, теперь-то ты всё знаешь."
-    Max_01 ""
+    Max_01 "Keine Sorge, jetzt weißt du alles."
 
 # game/dialogues/lisatalk.rpy:4634
 translate german lisa_about_stolen_phone_ee11f078:
 
     # Lisa_11 "Слушай, нужно маме быстрее всё рассказать! А то он ей тоже все мозги запудрил, причём ещё больше, чем мне..."
-    Lisa_11 ""
+    Lisa_11 "Wir müssen es Mom so schnell wie möglich erzählen! Er hat sie auch verdorben, mehr noch als mich..."
 
 # game/dialogues/lisatalk.rpy:4639
 translate german lisa_about_stolen_phone_512a7b87:
 
     # Max_09 "Ага, пошли. Они сейчас должны смотреть ТВ в гостиной." nointeract
-    Max_09 "" nointeract
+    Max_09 "Ja, los geht's. Sie sollten jetzt im Wohnzimmer fernsehen." nointeract
 
 # game/dialogues/lisatalk.rpy:4646
 translate german lisa_about_stolen_phone_b3d97b8e:
 
     # Max_09 "Ага, пошли. Они сейчас должны смотреть ТВ в гостиной. Только давай Алису с собой захватим, ей кое-что нужно увидеть..." nointeract
-    Max_09 "" nointeract
+    Max_09 "Ja, los geht's. Sie sollten jetzt im Wohnzimmer fernsehen. Aber lasst uns Alice gleich noch holen, sie sollte noch etwas sehen..." nointeract
 
 # game/dialogues/lisatalk.rpy:4649
 translate german lisa_about_stolen_phone_3900a779:
 
     # Alice_15 "Что?! Макс! Ну-ка иди отсюда, пока в ухо не получил!"
-    Alice_15 ""
+    Alice_15 "Was?! Max! Verschwinde, bevor du eine Ohrfeige bekommst!"
 
 # game/dialogues/lisatalk.rpy:4650
 translate german lisa_about_stolen_phone_ce1000ee:
 
     # Max_07 "Потом извиняться устанешь... Мама всех вниз в гостиную зовёт, важное и срочное дело. Тебя это тоже касается, так что пошли..."
-    Max_07 ""
+    Max_07 "Du wirst dich später entschuldigen müssen... Mom ruft alle ins Wohnzimmer, es ist wichtig und dringend. Es betrifft auch dich, also lass uns gehen..."
 
 # game/dialogues/lisatalk.rpy:4652
 translate german lisa_about_stolen_phone_bb2fc3cc:
 
     # Alice_16 "Если это окажется твоим тупым розыгрышем, то тебе несдобровать!" nointeract
-    Alice_16 "" nointeract
+    Alice_16 "Wenn sich herausstellt, dass es sich um einen dummen Streich von dir handelt, bist du in Schwierigkeiten!" nointeract
 
 translate german strings:
 
     # game/dialogues/lisatalk.rpy:4612
     old "Мне пришлось его взять, чтобы себя оправдать!"
-    new ""
+    new "Ich musste es nehmen, um mich zu entlasten!"
 
     # game/dialogues/lisatalk.rpy:4638
     old "{i}идти с Лизой в гостиную{/i}"
-    new ""
+    new "{i}mit Lisa ins Wohnzimmer gehen{/i}"
 
     # game/dialogues/lisatalk.rpy:4645
     old "{i}идти к Алисе{/i}"
-    new ""
+    new "{i}zu Alice gehen{/i}"
 
     # game/dialogues/lisatalk.rpy:4651
     old "{i}идти с Лизой и Алисой в гостиную{/i}"
-    new ""
+    new "{i}mit Lisa und Alice ins Wohnzimmer gehen{/i}"
 
