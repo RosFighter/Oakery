@@ -44,5 +44,5 @@ translate german strings:
 
     # game/core/imagemaps.rpy:107
     old "{i}искать на кровати{/i}"
-    new ""
+    new "{i}auf das Bett schauen{/i}"
 

@@ -2860,5 +2860,5 @@ translate german eric_ann_tv_2a838c07:
 translate german start_eric_wallet_e75cd485:
 
     # Max_07 "{m}Вот только у меня абсолютно ничего нет против него! И сестёр я теперь вряд ли переманю на свою сторону, чтобы они меня поддержали перед мамой.{/m}"
-    Max_07 ""
+    Max_07 "{m}Aber ich habe absolut nichts gegen ihn! Und es ist unwahrscheinlich, dass ich meine Schwestern dazu bringen kann, sich auf meine Seite zu stellen und mich bei Mom zu unterstützen.{/m}"
 

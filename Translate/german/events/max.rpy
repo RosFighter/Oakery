@@ -1028,23 +1028,23 @@ translate german Nap_5e123eb6:
 translate german SearchPhone_no_9a51253a:
 
     # Max_10 "{m}Здесь телефона Лизы нет.{/m}"
-    Max_10 ""
+    Max_10 "{m}Lisas Handy ist nicht da.{/m}"
 
 # game/events/max.rpy:1130
 translate german SearchPhone_yes_48a26421:
 
     # Max_07 "{m}А вот и телефон Лизы! Надеюсь, диктофон на нём есть, иначе я влип...{/m}"
-    Max_07 ""
+    Max_07 "{m}Da ist Lisas Telefon! Ich hoffe, es hat ein Diktiergerät, sonst bin ich aufgeschmissen...{/m}"
 
 # game/events/max.rpy:1132
 translate german SearchPhone_yes_075e9758:
 
     # Max_09 "{m}Да, диктофон есть. Теперь, пока Лиза не вернулась, нужно идти к Эрику и попробовать вывести его на чистую воду...{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Ja, es hat ein Diktiergerät. Jetzt muss ich, bevor Lisa zurückkommt, zu Eric gehen und versuchen, ihn zu entlarven...{/m}" nointeract
 
 translate german strings:
 
     # game/events/max.rpy:1131
     old "{i}идти к Эрику с включённым диктофоном{/i}"
-    new ""
+    new "{i}zu Eric zu gehen, wenn das Diktiergerät läuft{/i}"
 

@@ -332,5 +332,5 @@ translate german strings:
 
     # game/core/03variables.rpy:149
     old "ИСКАТЬ\nТЕЛЕФОН"
-    new ""
+    new "TELEFON\nSUCHEN"
 

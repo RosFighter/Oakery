@@ -4,129 +4,129 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Шорты"
-    new ""
+    new "Kurze Hose"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы"
-    new ""
+    new "Höschen"
 
     # game/core/10_main_menu.rpy:360
     old "Шапка"
-    new ""
+    new "Mütze"
 
     # game/core/10_main_menu.rpy:360
     old "Борода"
-    new ""
+    new "Bart"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #1"
-    new ""
+    new "Höschen #1"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #2"
-    new ""
+    new "Höschen #2"
 
     # game/core/10_main_menu.rpy:360
     old "Маечка"
-    new ""
+    new "Маечка"
 
     # game/core/10_main_menu.rpy:360
     old "Минишортики"
-    new ""
+    new "Minishorts"
 
     # game/core/10_main_menu.rpy:360
     old "Лиф"
-    new ""
+    new "Oberteil"
 
     # game/core/10_main_menu.rpy:360
     old "Плавки"
-    new ""
+    new "Bademode"
 
     # game/core/10_main_menu.rpy:360
     old "Лифчик"
-    new ""
+    new "BH"
 
     # game/core/10_main_menu.rpy:360
     old "Трусики"
-    new ""
+    new "Höschen"
 
     # game/core/10_main_menu.rpy:360
     old "Шапочка"
-    new ""
+    new "Hut"
 
     # game/core/10_main_menu.rpy:360
     old "Бант на шею"
-    new ""
+    new "Nackenbügel"
 
     # game/core/10_main_menu.rpy:360
     old "Кружевное платье"
-    new ""
+    new "Spitzenkleid"
 
     # game/core/10_main_menu.rpy:360
     old "Чулочки"
-    new ""
+    new "Strümpfe"
 
     # game/core/10_main_menu.rpy:360
     old "Топик"
-    new ""
+    new "Sport-BH"
 
     # game/core/10_main_menu.rpy:360
     old "Шортики"
-    new ""
+    new "Shorts"
 
     # game/core/10_main_menu.rpy:360
     old "Шляпка"
-    new ""
+    new "Hut"
 
     # game/core/10_main_menu.rpy:360
     old "Бабочка на шею"
-    new ""
+    new "Fliege"
 
     # game/core/10_main_menu.rpy:360
     old "Мишура на груди"
-    new ""
+    new "Brust-Flitter"
 
     # game/core/10_main_menu.rpy:360
     old "Минилиф"
-    new ""
+    new "Wagenheber"
 
     # game/core/10_main_menu.rpy:360
     old "Миниплавки"
-    new ""
+    new "Minislip"
 
     # game/core/10_main_menu.rpy:360
     old "Сорочка"
-    new ""
+    new "T-Shirt"
 
     # game/core/10_main_menu.rpy:360
     old "Свитер без рукавов"
-    new ""
+    new "Pulli ohne Ärmel"
 
     # game/core/10_main_menu.rpy:360
     old "Откровенный корсет"
-    new ""
+    new "Freizügiges Korsett"
 
     # game/core/10_main_menu.rpy:360
     old "Браслетики на запястья"
-    new ""
+    new "Handgelenk-Armbänder"
 
     # game/core/10_main_menu.rpy:360
     old "Юбочка"
-    new ""
+    new "Rock"
 
     # game/core/10_main_menu.rpy:360
     old "Штанишки"
-    new ""
+    new "Hosen"
 
     # game/core/10_main_menu.rpy:360
     old "Леденец на шею"
-    new ""
+    new "Lolli-Halsband"
 
     # game/core/10_main_menu.rpy:360
     old "Свитер с рукавами"
-    new ""
+    new "Pullover mit Ärmeln"
 
     # game/core/10_main_menu.rpy:360
     old "Колготки"
-    new ""
+    new "Strumpfhose"
 
