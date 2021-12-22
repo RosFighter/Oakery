@@ -10794,11 +10794,11 @@ translate german strings:
 translate german lisa_about_stolen_phone_2a74b2cc:
 
     # "{color=[orange]}(Лиза слушает запись...){/color}"
-    ""
+    "{color=[orange]}(Lisa hört sich die Aufzeichnung an...){/color}"
 
 # game/dialogues/lisatalk.rpy:4648
 translate german lisa_about_stolen_phone_47ad2e2d:
 
     # Max_09 "Ага, пошли. Они сейчас должны смотреть ТВ в гостиной. Только давай Алису с собой захватим, её ведь это тоже касается..." nointeract
-    Max_09 "" nointeract
+    Max_09 "Ja, los geht's. Sie sollen jetzt im Wohnzimmer fernsehen. Aber lass uns Alice mitnehmen, sie ist auch betroffen..." nointeract
 

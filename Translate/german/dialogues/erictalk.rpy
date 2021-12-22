@@ -1706,7 +1706,7 @@ translate german strings:
 
     # game/dialogues/erictalk.rpy:792
     old "Может, договоримся? {i}(добыть компромат){/i}"
-    new "Wie wär's mit einem Deal? {i}(Kompromiss){/i}"
+    new "Wie war das mit dem Deal? {i}(Druckmittel){/i}"
 
     # game/dialogues/erictalk.rpy:799
     old "С той, что я могу заплатить тебе больше, чем якобы должен."
