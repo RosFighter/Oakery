@@ -636,9 +636,8 @@ translate english strings:
 
     # game/core/02init.rpy:42
     old "{color=#00FF00}{i}Успех!{/i}{/color}\n"
-    new ""
+    new "{color=#00FF00}{i}Success!{/i}{/color}\n"
 
     # game/core/02init.rpy:43
     old "{color=#E59400}{i}Провал!{/i}{/color}\n"
-    new ""
-
+    new "{color=#E59400}{i}Failure!{/i}{/color}\n"

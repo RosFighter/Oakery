@@ -1028,23 +1028,22 @@ translate english Nap_5e123eb6:
 translate english SearchPhone_no_9a51253a:
 
     # Max_10 "{m}Здесь телефона Лизы нет.{/m}"
-    Max_10 ""
+    Max_10 "{m}Lisa's phone is not here.{/m}"
 
 # game/events/max.rpy:1130
 translate english SearchPhone_yes_48a26421:
 
     # Max_07 "{m}А вот и телефон Лизы! Надеюсь, диктофон на нём есть, иначе я влип...{/m}"
-    Max_07 ""
+    Max_07 "{m}Here's Lisa's phone! I hope there's a recorder on it, otherwise I'm in trouble...{/m}"
 
 # game/events/max.rpy:1132
 translate english SearchPhone_yes_075e9758:
 
     # Max_09 "{m}Да, диктофон есть. Теперь, пока Лиза не вернулась, нужно идти к Эрику и попробовать вывести его на чистую воду...{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Yes, I have a tape recorder. Now, before Lisa comes back, we have to go to Eric and try to expose him...{/m}" nointeract
 
 translate english strings:
 
     # game/events/max.rpy:1131
     old "{i}идти к Эрику с включённым диктофоном{/i}"
-    new ""
-
+    new "{i}Go see Eric with the recorder on{/i}"

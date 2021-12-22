@@ -4,129 +4,128 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Шорты"
-    new ""
+    new "Shorts"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы"
-    new ""
+    new "Panties"
 
     # game/core/10_main_menu.rpy:360
     old "Шапка"
-    new ""
+    new "Hat"
 
     # game/core/10_main_menu.rpy:360
     old "Борода"
-    new ""
+    new "Beard"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #1"
-    new ""
+    new "Panties #1"
 
     # game/core/10_main_menu.rpy:360
-    old "Трусы #2"
-    new ""
+    old "Panties #2"
+    new "Underpants #2"
 
     # game/core/10_main_menu.rpy:360
     old "Маечка"
-    new ""
+    new "Shirt"
 
     # game/core/10_main_menu.rpy:360
     old "Минишортики"
-    new ""
+    new "Miniskirts"
 
     # game/core/10_main_menu.rpy:360
     old "Лиф"
-    new ""
+    new "Leaf"
 
     # game/core/10_main_menu.rpy:360
     old "Плавки"
-    new ""
+    new "Swimwear"
 
     # game/core/10_main_menu.rpy:360
     old "Лифчик"
-    new ""
+    new "Bra"
 
     # game/core/10_main_menu.rpy:360
     old "Трусики"
-    new ""
+    new "Panties"
 
     # game/core/10_main_menu.rpy:360
     old "Шапочка"
-    new ""
+    new "Hat"
 
     # game/core/10_main_menu.rpy:360
     old "Бант на шею"
-    new ""
+    new "Neck bow"
 
     # game/core/10_main_menu.rpy:360
     old "Кружевное платье"
-    new ""
+    new "Lace Dress"
 
     # game/core/10_main_menu.rpy:360
     old "Чулочки"
-    new ""
+    new "Stockings"
 
     # game/core/10_main_menu.rpy:360
     old "Топик"
-    new ""
+    new "Topic"
 
     # game/core/10_main_menu.rpy:360
     old "Шортики"
-    new ""
+    new "Shorts"
 
     # game/core/10_main_menu.rpy:360
     old "Шляпка"
-    new ""
+    new "Hat"
 
     # game/core/10_main_menu.rpy:360
     old "Бабочка на шею"
-    new ""
+    new "Butterfly neck"
 
     # game/core/10_main_menu.rpy:360
     old "Мишура на груди"
-    new ""
+    new "Tinsel on the chest"
 
     # game/core/10_main_menu.rpy:360
     old "Минилиф"
-    new ""
+    new "Minilife"
 
     # game/core/10_main_menu.rpy:360
     old "Миниплавки"
-    new ""
+    new "Mini-melts"
 
     # game/core/10_main_menu.rpy:360
     old "Сорочка"
-    new ""
+    new "Shirt"
 
     # game/core/10_main_menu.rpy:360
     old "Свитер без рукавов"
-    new ""
+    new "Sleeveless Sweater"
 
     # game/core/10_main_menu.rpy:360
     old "Откровенный корсет"
-    new ""
+    new "Open corset"
 
     # game/core/10_main_menu.rpy:360
     old "Браслетики на запястья"
-    new ""
+    new "Wrist bracelets"
 
     # game/core/10_main_menu.rpy:360
     old "Юбочка"
-    new ""
+    new "Skirt"
 
     # game/core/10_main_menu.rpy:360
     old "Штанишки"
-    new ""
+    new "Pants"
 
     # game/core/10_main_menu.rpy:360
     old "Леденец на шею"
-    new ""
+    new "Lollipop neck"
 
     # game/core/10_main_menu.rpy:360
     old "Свитер с рукавами"
-    new ""
+    new "Sweater with sleeves"
 
     # game/core/10_main_menu.rpy:360
     old "Колготки"
-    new ""
-
+    new "Tights"
