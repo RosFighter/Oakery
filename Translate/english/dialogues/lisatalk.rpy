@@ -10686,12 +10686,6 @@ translate english lisa_about_stolen_phone_d80ba8b0:
     # Max_00 "Вот, пожалуйста, слушай, что говорит о тебе ваш обожаемый Эрик..."
     Max_00 "Here, please, listen to what your beloved Eric says about you..."
 
-# game/dialogues/lisatalk.rpy:4624
-translate english lisa_about_stolen_phone_92f02b38:
-
-    # "(Лиза слушает запись...)"
-    "(Lisa listens to the recording...)"
-
 # game/dialogues/lisatalk.rpy:4625
 translate english lisa_about_stolen_phone_0a6862b6:
 
@@ -10801,3 +10795,143 @@ translate english lisa_about_stolen_phone_47ad2e2d:
 
     # Max_09 "Ага, пошли. Они сейчас должны смотреть ТВ в гостиной. Только давай Алису с собой захватим, её ведь это тоже касается..." nointeract
     Max_09 "Yeah, let's go. They should be watching TV in the living room right now. But let's take Alice with us, because it's about her, too..." nointeract
+# TODO: Translation updated at 2021-12-25 01:46
+
+# game/dialogues/lisatalk.rpy:4575
+translate english lisa_about_wallet_2a4e3fae:
+
+    # Max_07 "{m}Ясно. Хоть у меня и есть снимок, на котором Эрик дрочит у окна в комнату Алисы, но девчонки сейчас в таком состоянии, что запросто могут обвинить меня в том, что я нарисовал этот снимок в каком-нибудь графическом редакторе.{/m}"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4576
+translate english lisa_about_wallet_7940bf27:
+
+    # Max_01 "{m}Надо думать, на чём можно подловить Эрика. Возможно, у меня получится записать на диктофон наши с ним разговоры? Почему бы и нет! Главное, чтобы он разоткровенничался...{/m}"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4582
+translate english lisa_about_wallet_a2fd0f39_1:
+
+    # Max_09 "{m}На следующей неделе у меня ещё будет время, чтобы поговорить с Эриком, а пока нужно достать диктофон. Он наверняка должен быть у Лизы в телефоне. Правда, вряд ли она мне его даст. Нужно будет спросить у неё через пару дней...{/m}"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4678
+translate english lisa_about_showdown_894e381f:
+
+    # Lisa_09 "Я пока не могу прийти в себя. Всплыла вся эта правда об Эрике..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4679
+translate english lisa_about_showdown_fcccc3b6:
+
+    # Max_07 "Всё уже в прошлом, просто забудь о нём, словно о приснившемся кошмаре!"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4680
+translate english lisa_about_showdown_84ec0003:
+
+    # Lisa_10 "Я знаю, что так и стоит сделать... Правда, это довольно сложно."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4681
+translate english lisa_about_showdown_b6a1eb3b:
+
+    # Max_08 "Почему? Ничего ведь страшного не случилось!"
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:4682
+translate english lisa_about_showdown_2692c788:
+
+    # Lisa_01 "Но могло... Спасибо тебе, что не случилось."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4683
+translate english lisa_about_showdown_a9134173:
+
+    # Max_09 "Так ты же сама хотела, разве нет?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4684
+translate english lisa_about_showdown_a1e3f3c6:
+
+    # Lisa_13 "Да, сама... Но он это для собственного удовольствия придумал. А моё сексуальное образование - просто отличный повод."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4685
+translate english lisa_about_showdown_5bf43e9b:
+
+    # Max_07 "Хоть Эрик явно и испортил твой настрой на сексуальное образование, но у меня есть некоторые идеи на этот счёт. Можно смотреть обучающие фильмы."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4686
+translate english lisa_about_showdown_88187e24:
+
+    # Lisa_11 "А такие фильмы действительно есть?! Почему я тогда смотрела не их, а на маму с Эриком?"
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:4687
+translate english lisa_about_showdown_cb5389f3:
+
+    # Max_00 "На это ты сама уже ответила. Потому что Эрик это для собственного удовольствия и дальнейших перспектив придумал."
+    Max_00 ""
+
+# game/dialogues/lisatalk.rpy:4688
+translate english lisa_about_showdown_4c3cdb13:
+
+    # Lisa_02 "И что, ты мне покажешь эти фильмы?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4689
+translate english lisa_about_showdown_b4051f36:
+
+    # Max_03 "Запросто! Как-нибудь перед сном обязательно посмотрим. Если захочешь..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4690
+translate english lisa_about_showdown_f97ae655:
+
+    # Lisa_10 "А может я хочу одна их посмотреть?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4691
+translate english lisa_about_showdown_8b04c4e1:
+
+    # Max_09 "Ага, потом начнёшь, то одно спрашивать или уточнять, то другое. Не надо мне этого, лучше вместе посмотрим и сразу спросишь всё, что тебя озадачит."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4692
+translate english lisa_about_showdown_e94b939c:
+
+    # Lisa_03 "Это же обучающие фильмы, Макс. После них не должно быть вопросов."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:4693
+translate english lisa_about_showdown_240c6212:
+
+    # Max_07 "То есть, если ты прочитаешь какой-нибудь учебник - он тебе все таинства и опыт передаст? Нет конечно."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4694
+translate english lisa_about_showdown_20d6306c:
+
+    # Lisa_02 "Ага, ты у нас прямо великий учитель. Всё-всё знаешь."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4695
+translate english lisa_about_showdown_01084b90:
+
+    # Max_04 "Может и не всё, но лишним я точно не буду."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4696
+translate english lisa_about_showdown_00bf67cf:
+
+    # Lisa_01 "Ладно, тогда посмотрим..."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4697
+translate english lisa_about_showdown_e05d6220:
+
+    # Max_01 "Договорились, сестрёнка."
+    Max_01 ""
+

@@ -3415,3 +3415,41 @@ translate english kira_about_wallet_261aa15e:
 
     # Max_07 "Конечно. Что будет, то будет..."
     Max_07 "Of course. What will be, will be..."
+# TODO: Translation updated at 2021-12-25 01:46
+
+# game/dialogues/kiratalk.rpy:1530
+translate english kira_about_showdown_73e9cbcb:
+
+    # Kira_00 "Про Эрика? Слышала..."
+    Kira_00 ""
+
+# game/dialogues/kiratalk.rpy:1531
+translate english kira_about_showdown_f8f9dd01:
+
+    # Max_00 "Ну и как настроение?"
+    Max_00 ""
+
+# game/dialogues/kiratalk.rpy:1532
+translate english kira_about_showdown_026e800d:
+
+    # Kira_00 "Настроение? Потрясающее! Такое ощущение, что в доме даже стало легче дышать! Как там девочки? Наверно, опустошены или шокированы..."
+    Kira_00 ""
+
+# game/dialogues/kiratalk.rpy:1533
+translate english kira_about_showdown_81762133:
+
+    # Max_00 "Ну да, это же Эрик во всей своей красе."
+    Max_00 ""
+
+# game/dialogues/kiratalk.rpy:1537
+translate english kira_about_showdown_7aadc7ab:
+
+    # Kira_00 "Понимаю. Все в нём души не чаяли и вдруг такой облом... А я радуюсь! Радуюсь тому, что ты, наконец-то, избавил меня от этого шантажиста. Ты просто не представляешь, что приходилось делать для этого мерзавца. Спасибо тебе огромное!"
+    Kira_00 ""
+
+# game/dialogues/kiratalk.rpy:1538
+translate english kira_about_showdown_023a77c7:
+
+    # Max_00 "Уж извини, что тебе так досталось."
+    Max_00 ""
+

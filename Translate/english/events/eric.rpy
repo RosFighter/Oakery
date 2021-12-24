@@ -2862,3 +2862,4 @@ translate english start_eric_wallet_e75cd485:
 
     # Max_07 "{m}Вот только у меня абсолютно ничего нет против него! И сестёр я теперь вряд ли переманю на свою сторону, чтобы они меня поддержали перед мамой.{/m}"
     Max_07 "{m}Except I have absolutely nothing against him! And I can hardly get my sisters to take my side now, to support me in front of Mom.{/m}"
+

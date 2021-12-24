@@ -1047,3 +1047,4 @@ translate english strings:
     # game/events/max.rpy:1131
     old "{i}идти к Эрику с включённым диктофоном{/i}"
     new "{i}Go see Eric with the recorder on{/i}"
+
