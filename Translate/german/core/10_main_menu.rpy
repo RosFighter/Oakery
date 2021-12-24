@@ -130,3 +130,15 @@ translate german strings:
     old "Колготки"
     new "Strumpfhose"
 
+# TODO: Translation updated at 2021-12-25 01:42
+
+translate german strings:
+
+    # game/core/10_main_menu.rpy:50
+    old "{color=[lime]}Открыта детальная настройка для одного из костюмов %s в главном меню{/color}"
+    new ""
+
+    # game/core/10_main_menu.rpy:285
+    old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
+    new ""
+
