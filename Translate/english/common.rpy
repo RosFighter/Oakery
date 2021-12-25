@@ -1180,9 +1180,9 @@ translate english strings:
 
     # renpy/common/00accessibility.rpy:180
     old "High Contrast Text"
-    new "Высококонтрастный текст"
+    new "High Contrast Text"
 
     # renpy/common/00preferences.rpy:493
     old "high contrast text"
-    new "высококонтрастный текст"
+    new "high contrast text"
 

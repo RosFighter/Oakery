@@ -23,7 +23,7 @@ translate english strings:
     new "Panties #1"
 
     # game/core/10_main_menu.rpy:360
-    old "Panties #2"
+    old "Трусы #2"
     new "Panties #2"
 
     # game/core/10_main_menu.rpy:360
@@ -136,13 +136,13 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:50
     old "{color=[lime]}Открыта детальная настройка для одного из костюмов %s в главном меню{/color}"
-    new ""
+    new "{color=[lime]}The detailed setup for one of the costumes %s in the main menu is open{/color}"
 
     # game/core/10_main_menu.rpy:285
     old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
-    new ""
+    new "{color=[lime]}New costume %s for the main menu is opened{/color}"
 
     # game/core/10_main_menu.rpy:410
     old "Трусы #2"
-    new ""
+    new "Panties #2"
 

@@ -648,13 +648,13 @@ translate english strings:
 
     # game/core/02init.rpy:134
     old "Как ты после случившегося?"
-    new ""
+    new "How are you after what happened?"
 
     # game/core/02init.rpy:134
     old "Уже слышала новость, тётя Кира?"
-    new ""
+    new "Have you heard the news yet, Aunt Kira?"
 
     # game/core/02init.rpy:134
     old "Лиза, ты чего нос повесила?"
-    new ""
+    new "Lisa, why are you hanging your nose?"
 
