@@ -647,13 +647,13 @@ translate german strings:
 
     # game/core/02init.rpy:134
     old "Как ты после случившегося?"
-    new ""
+    new "Wie geht es dir nach dem, was passiert ist?"
 
     # game/core/02init.rpy:134
     old "Уже слышала новость, тётя Кира?"
-    new ""
+    new "Hast du die Neuigkeiten schon gehört, Tante Kira?"
 
     # game/core/02init.rpy:134
     old "Лиза, ты чего нос повесила?"
-    new ""
+    new "Lisa, warum rümpfst du die Nase?"
 

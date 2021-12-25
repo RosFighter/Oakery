@@ -1741,5 +1741,5 @@ translate german strings:
 translate german Eric_with_dictaphone_fde14d10:
 
     # "{color=[orange]}( Затем наступил тот самый ужин, когда все решилось... ){/color}"
-    ""
+    "{color=[orange]}( Dann kam das Abendessen, bei dem alles entschieden wurde... ){/color}"
 

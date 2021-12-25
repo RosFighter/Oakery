@@ -136,9 +136,9 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:50
     old "{color=[lime]}Открыта детальная настройка для одного из костюмов %s в главном меню{/color}"
-    new ""
+    new "{color=[lime]}Detaileinstellung für das Outfit %s im Hauptmenü ist aktiviert.{/color}"
 
     # game/core/10_main_menu.rpy:285
     old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
-    new ""
+    new "{color=[lime]}Neues Outfit %s für das Hauptmenü aktiviert{/color}"
 

@@ -1613,121 +1613,121 @@ translate german dictaphone_showdown_with_eric_90be8708:
 translate german failed_dinner_b8e2672f:
 
     # Eric_00 "Итак, настал момент истины. Я дал тебе, Макс, достаточно времени, чтобы ты вернул мне мои деньги при всех. Ну что, ты готов покаяться и исправить свою ошибку?"
-    Eric_00 ""
+    Eric_00 "Die Stunde der Wahrheit ist also gekommen. Max, ich habe dir genug Zeit gegeben, um mir vor allen Leuten mein Geld zurückzugeben. Also, bist du bereit, Buße zu tun und deinen Fehler wiedergutzumachen?"
 
 # game/events/other.rpy:811
 translate german failed_dinner_d3811ad8:
 
     # Max_15 "Да пошёл ты... Нет у меня твоих денег, и ты это прекрасно знаешь!"
-    Max_15 ""
+    Max_15 "Du kannst mich mal... Ich habe dein Geld nicht und du weißt es!"
 
 # game/events/other.rpy:814
 translate german failed_dinner_851dce21:
 
     # Max_15 "Да пошёл ты... Я ни за что не стану возвращать тебе то, чего не брал! И признавать себя вором тоже не стану!"
-    Max_15 ""
+    Max_15 "Du kannst mich mal... Ich werde dir auf keinen Fall geben, was ich dir nicht genommen habe! Und ich werde auch nicht zugeben, dass ich ein Dieb bin!"
 
 # game/events/other.rpy:816
 translate german failed_dinner_2c4314ba:
 
     # Eric_09 "Что ж, значит продолжаем отпираться... Ладно... Как ты видишь, Ань, я сделал всё, что было в моих силах, но это твой сын и тебе принимать решение."
-    Eric_09 ""
+    Eric_09 "Nun, wir leugnen also weiter... Na ja... Wie du siehst, Ann, habe ich alles getan, was ich konnte, aber er ist dein Sohn und es ist deine Entscheidung."
 
 # game/events/other.rpy:817
 translate german failed_dinner_e02fe136:
 
     # Ann_14 "Да-да... Прости, Макс, но ты очень меня разочаровал и... нам не остаётся другого выбора, кроме как отправить тебя в военный лагерь. Надеюсь, там из тебя сделают ответственного человека."
-    Ann_14 ""
+    Ann_14 "Ja, ja... Es tut mir leid, Max, aber du hast mich wirklich enttäuscht und... haben wir keine andere Wahl, als dich in ein Militärlager zu schicken. Hoffentlich machen sie einen verantwortungsvollen Mann aus dir."
 
 # game/events/other.rpy:818
 translate german failed_dinner_bf7c5385:
 
     # Max_13 "Что?! Кому это, «нам»? Вам с Эриком? Это же не ты сейчас говоришь, а он! Как ты можешь выгонять из дома родного сына?"
-    Max_13 ""
+    Max_13 "Was?! Wer ist «wir»? Du und Eric? Du redest jetzt schon, genau wie er! Wie kann man seinen eigenen Sohn aus dem Haus werfen?"
 
 # game/events/other.rpy:819
 translate german failed_dinner_d29fb4a6:
 
     # Ann_17 "Прекрати, Макс! Я устала слушать твои оправдания. Ты даже не представляешь, до какой степени мне стыдно, что мой единственный сын - вор!"
-    Ann_17 ""
+    Ann_17 "Hör auf, Max! Ich habe es satt, mir deine Ausreden anzuhören. Du hast keine Ahnung, wie sehr ich mich schäme, dass mein einziger Sohn ein Dieb ist!"
 
 # game/events/other.rpy:820
 translate german failed_dinner_c43f223d:
 
     # Max_14 "Но мам, это всё неправда! Не говори так! Это же Эрик всё подстроил!"
-    Max_14 ""
+    Max_14 "Aber Mom, das ist nicht wahr! Sag das nicht! Eric hat diese ganze Sache eingefädelt!"
 
 # game/events/other.rpy:821
 translate german failed_dinner_5a9be7a6:
 
     # Eric_13 "Да, стыдно за тебя, Макс, ты разбиваешь сердце собственной матери... Какой позор..."
-    Eric_13 ""
+    Eric_13 "Ja, schäm dich, Max, du brichst deiner Mom das Herz... Was für eine Schande..."
 
 # game/events/other.rpy:822
 translate german failed_dinner_c7cc51b7:
 
     # Max_16 "Заткнись, Эрик! Мам, неужели ты не видишь, что он тобой манипулирует?!"
-    Max_16 ""
+    Max_16 "Halt die Klappe, Eric! Mom, siehst du nicht, dass er dich manipuliert?!"
 
 # game/events/other.rpy:823
 translate german failed_dinner_81894a93:
 
     # Ann_18 "Не хочу ничего слышать про это. Всё. Собираешь вещи и едешь. Давно надо было это сделать, но я тебя всё жалела. В результате докатились, воруешь в собственном доме! А что будет дальше?"
-    Ann_18 ""
+    Ann_18 "Ich möchte nichts darüber hören. Das war's. Pack deine Sachen und verschwinde. Ich hätte das schon lange tun sollen, aber ich hatte ständig Mitleid mit dir. Und jetzt klaust du auch noch in unserem eigenen Haus! Was wird als nächstes passieren?"
 
 # game/events/other.rpy:824
 translate german failed_dinner_ffb1b7ea:
 
     # Max_11 "Но мам..."
-    Max_11 ""
+    Max_11 "Aber Mom..."
 
 # game/events/other.rpy:825
 translate german failed_dinner_b3c54058:
 
     # Ann_16 "Всё, Макс, разговор окончен!"
-    Ann_16 ""
+    Ann_16 "Das war's, Max, das Gespräch ist beendet!"
 
 # game/events/other.rpy:827
 translate german failed_dinner_4d7ce5c3:
 
     # Eric_01 "Не переживай, Макс, я позабочусь обо всех, пока ты будешь тянуть лямку в армии..." nointeract
-    Eric_01 "" nointeract
+    Eric_01 "Keine Sorge, Max, ich kümmere mich um alle, während du beim Militär bleibst..." nointeract
 
 # game/events/other.rpy:830
 translate german failed_dinner_fe32100d:
 
     # Max_14 "{m}Вот так и закончилась моя история. Больше мне не верили и не хотели меня видеть. Конечно, если бы не Эрик, всё было бы хорошо, но этот гад... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
-    Max_14 "" nointeract
+    Max_14 "{m}So endete meine Geschichte. Sie haben mir nicht geglaubt und wollten mich nicht mehr sehen. Wenn Eric nicht gewesen wäre, wäre natürlich alles in Ordnung gewesen, aber dieser Bastard... Jetzt kann ihn nichts mehr davon abhalten, mit meiner Familie zu machen, was er will... Wenn ich in der Zeit zurückgehen könnte... Aber würde das Sinn machen?{/m}" nointeract
 
 # game/events/other.rpy:833
 translate german failed_dinner_79acb07c:
 
     # Max_14 "{m}Вот так и закончилась моя история. От всей этой несправедливости я немного слетел с катушек и почти размазал Эрика по балкону... Почти... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
-    Max_14 "" nointeract
+    Max_14 "{m}So endete meine Geschichte. Diese ganze Ungerechtigkeit hat mich ein bisschen verrückt gemacht und ich hätte Eric fast auf dem Balkon erwischt... Fast... Jetzt kann ihn nichts mehr davon abhalten, mit meiner Familie zu machen, was er will... Wenn ich in der Zeit zurückgehen könnte... Aber würde das Sinn machen?{/m}" nointeract
 
 translate german strings:
 
     # game/events/other.rpy:801
     old "{g}Отношения Макса с семьёй значительно улучшились.{/g}"
-    new ""
+    new "{g}Max' Beziehung zu seiner Familie hat sich erheblich verbessert.{/g}"
 
     # game/events/other.rpy:826
     old "{i}собираться в военный лагерь{/i}"
-    new ""
+    new "{i}fürs Militärlager packen{/i}"
 
     # game/events/other.rpy:826
     old "{i}накинуться на Эрика{/i}"
-    new ""
+    new "{i}auf Eric losgehen{/i}"
 
     # game/events/other.rpy:835
     old "{i}загрузить игру{/i}"
-    new ""
+    new "{i}Spielstand laden{/i}"
 
     # game/events/other.rpy:835
     old "{i}вернуться в главное меню{/i}"
-    new ""
+    new "{i}zurück zum Hauptmenü{/i}"
 
     # game/events/other.rpy:835
     old "{i}выйти из игры{/i}"
-    new ""
+    new "{i}Spiel verlassen{/i}"
 

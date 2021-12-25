@@ -10801,137 +10801,137 @@ translate german lisa_about_stolen_phone_47ad2e2d:
 translate german lisa_about_wallet_2a4e3fae:
 
     # Max_07 "{m}Ясно. Хоть у меня и есть снимок, на котором Эрик дрочит у окна в комнату Алисы, но девчонки сейчас в таком состоянии, что запросто могут обвинить меня в том, что я нарисовал этот снимок в каком-нибудь графическом редакторе.{/m}"
-    Max_07 ""
+    Max_07 "{m}Verstehe. Obwohl ich ein Bild von Eric habe, der sich am Fenster von Alices Zimmer einen runterholt, sind die Mädchen in einem solchen Zustand, dass sie mir vorwerfen, ich hätte es mit einem Grafikprogramm bearbeitet.{/m}"
 
 # game/dialogues/lisatalk.rpy:4576
 translate german lisa_about_wallet_7940bf27:
 
     # Max_01 "{m}Надо думать, на чём можно подловить Эрика. Возможно, у меня получится записать на диктофон наши с ним разговоры? Почему бы и нет! Главное, чтобы он разоткровенничался...{/m}"
-    Max_01 ""
+    Max_01 "{m}Ich muss mir etwas einfallen lassen, womit ich Eric aufhalten kann. Vielleicht kann ich ihn und mich auf Band aufnehmen, wenn ich mit ihm rede? Ich wüsste nicht, warum nicht. Solange er offen alles ausspricht...{/m}"
 
 # game/dialogues/lisatalk.rpy:4582
 translate german lisa_about_wallet_a2fd0f39_1:
 
     # Max_09 "{m}На следующей неделе у меня ещё будет время, чтобы поговорить с Эриком, а пока нужно достать диктофон. Он наверняка должен быть у Лизы в телефоне. Правда, вряд ли она мне его даст. Нужно будет спросить у неё через пару дней...{/m}"
-    Max_09 ""
+    Max_09 "{m}Ich werde nächste Woche Zeit haben, mit Eric zu sprechen, aber bis dahin muss ich mir ein Diktiergerät besorgen. Lisa sollte es wahrscheinlich auf ihrem Handy haben. Ich glaube aber nicht, dass sie es mir geben wird. Ich werde sie in ein paar Tagen einmal fragen...{/m}"
 
 # game/dialogues/lisatalk.rpy:4678
 translate german lisa_about_showdown_894e381f:
 
     # Lisa_09 "Я пока не могу прийти в себя. Всплыла вся эта правда об Эрике..."
-    Lisa_09 ""
+    Lisa_09 "Ich bin noch nicht zur Ruhe gekommen. Die ganze Wahrheit über Eric ist ans Licht gekommen..."
 
 # game/dialogues/lisatalk.rpy:4679
 translate german lisa_about_showdown_fcccc3b6:
 
     # Max_07 "Всё уже в прошлом, просто забудь о нём, словно о приснившемся кошмаре!"
-    Max_07 ""
+    Max_07 "Das ist alles Vergangenheit, vergiss es einfach wie einen schlimmen Traum!"
 
 # game/dialogues/lisatalk.rpy:4680
 translate german lisa_about_showdown_84ec0003:
 
     # Lisa_10 "Я знаю, что так и стоит сделать... Правда, это довольно сложно."
-    Lisa_10 ""
+    Lisa_10 "Ich weiß, dass sollte ich echt tun... Es ist wirklich ziemlich kompliziert."
 
 # game/dialogues/lisatalk.rpy:4681
 translate german lisa_about_showdown_b6a1eb3b:
 
     # Max_08 "Почему? Ничего ведь страшного не случилось!"
-    Max_08 ""
+    Max_08 "Warum? Das ist doch keine große Sache!"
 
 # game/dialogues/lisatalk.rpy:4682
 translate german lisa_about_showdown_2692c788:
 
     # Lisa_01 "Но могло... Спасибо тебе, что не случилось."
-    Lisa_01 ""
+    Lisa_01 "Aber es hätte auch... Danke, dass du das nicht getan hast."
 
 # game/dialogues/lisatalk.rpy:4683
 translate german lisa_about_showdown_a9134173:
 
     # Max_09 "Так ты же сама хотела, разве нет?"
-    Max_09 ""
+    Max_09 "Du wolltest es also, oder?"
 
 # game/dialogues/lisatalk.rpy:4684
 translate german lisa_about_showdown_a1e3f3c6:
 
     # Lisa_13 "Да, сама... Но он это для собственного удовольствия придумал. А моё сексуальное образование - просто отличный повод."
-    Lisa_13 ""
+    Lisa_13 "Ja, genau... Aber er hat es sich zu seinem eigenen Vergnügen ausgedacht. Und meine Sexualerziehung ist einfach die perfekte Rechtfertigung."
 
 # game/dialogues/lisatalk.rpy:4685
 translate german lisa_about_showdown_5bf43e9b:
 
     # Max_07 "Хоть Эрик явно и испортил твой настрой на сексуальное образование, но у меня есть некоторые идеи на этот счёт. Можно смотреть обучающие фильмы."
-    Max_07 ""
+    Max_07 "Obwohl Eric deine Einstellung zur Sexualität eindeutig ruiniert hat, habe ich einige Ideen dazu. Du könntest dir Lehrfilme ansehen."
 
 # game/dialogues/lisatalk.rpy:4686
 translate german lisa_about_showdown_88187e24:
 
     # Lisa_11 "А такие фильмы действительно есть?! Почему я тогда смотрела не их, а на маму с Эриком?"
-    Lisa_11 ""
+    Lisa_11 "Gibt es wirklich solche Filme?! Warum habe ich dann nicht die, sondern Mom und Eric angeschaut?"
 
 # game/dialogues/lisatalk.rpy:4687
 translate german lisa_about_showdown_cb5389f3:
 
     # Max_00 "На это ты сама уже ответила. Потому что Эрик это для собственного удовольствия и дальнейших перспектив придумал."
-    Max_00 ""
+    Max_00 "Diese Frage hast du bereits selbst beantwortet. Denn Eric hat sich dies zu seinem eigenen Vergnügen und für seine eigene Zukunft ausgedacht."
 
 # game/dialogues/lisatalk.rpy:4688
 translate german lisa_about_showdown_4c3cdb13:
 
     # Lisa_02 "И что, ты мне покажешь эти фильмы?"
-    Lisa_02 ""
+    Lisa_02 "Du willst mir also diese Filme zeigen?"
 
 # game/dialogues/lisatalk.rpy:4689
 translate german lisa_about_showdown_b4051f36:
 
     # Max_03 "Запросто! Как-нибудь перед сном обязательно посмотрим. Если захочешь..."
-    Max_03 ""
+    Max_03 "Klar! Wir werden uns das irgendwann vor dem Schlafengehen ansehen. Wenn du willst..."
 
 # game/dialogues/lisatalk.rpy:4690
 translate german lisa_about_showdown_f97ae655:
 
     # Lisa_10 "А может я хочу одна их посмотреть?"
-    Lisa_10 ""
+    Lisa_10 "Oder vielleicht will ich sie allein sehen?"
 
 # game/dialogues/lisatalk.rpy:4691
 translate german lisa_about_showdown_8b04c4e1:
 
     # Max_09 "Ага, потом начнёшь, то одно спрашивать или уточнять, то другое. Не надо мне этого, лучше вместе посмотрим и сразу спросишь всё, что тебя озадачит."
-    Max_09 ""
+    Max_09 "Ja, und dann fragst du erst das eine und dann das andere. Komm mir nicht damit, wir sollten uns die Filme gemeinsam ansehen und du kannst mich alles fragen, was dich beschäftigt."
 
 # game/dialogues/lisatalk.rpy:4692
 translate german lisa_about_showdown_e94b939c:
 
     # Lisa_03 "Это же обучающие фильмы, Макс. После них не должно быть вопросов."
-    Lisa_03 ""
+    Lisa_03 "Das sind Lehrfilme, Max. Danach sollte es keine Fragen mehr geben."
 
 # game/dialogues/lisatalk.rpy:4693
 translate german lisa_about_showdown_240c6212:
 
     # Max_07 "То есть, если ты прочитаешь какой-нибудь учебник - он тебе все таинства и опыт передаст? Нет конечно."
-    Max_07 ""
+    Max_07 "Wenn du also ein Schulbuch liest - wird es dir alle Erkenntnisse und Erfahrungen vermitteln? Nein, natürlich nicht."
 
 # game/dialogues/lisatalk.rpy:4694
 translate german lisa_about_showdown_20d6306c:
 
     # Lisa_02 "Ага, ты у нас прямо великий учитель. Всё-всё знаешь."
-    Lisa_02 ""
+    Lisa_02 "Ja, du bist ein großartiger Lehrer. Du weißt alles."
 
 # game/dialogues/lisatalk.rpy:4695
 translate german lisa_about_showdown_01084b90:
 
     # Max_04 "Может и не всё, но лишним я точно не буду."
-    Max_04 ""
+    Max_04 "Vielleicht nicht alles, aber ich werde sicher nicht überflüssig sein."
 
 # game/dialogues/lisatalk.rpy:4696
 translate german lisa_about_showdown_00bf67cf:
 
     # Lisa_01 "Ладно, тогда посмотрим..."
-    Lisa_01 ""
+    Lisa_01 "OK, das wollen wir erstmal sehen..."
 
 # game/dialogues/lisatalk.rpy:4697
 translate german lisa_about_showdown_e05d6220:
 
     # Max_01 "Договорились, сестрёнка."
-    Max_01 ""
+    Max_01 "Einverstanden, Schwesterherz."
 
