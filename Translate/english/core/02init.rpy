@@ -641,3 +641,20 @@ translate english strings:
     # game/core/02init.rpy:43
     old "{color=#E59400}{i}Провал!{/i}{/color}\n"
     new "{color=#E59400}{i}Failure!{/i}{/color}\n"
+
+# TODO: Translation updated at 2021-12-25 01:46
+
+translate english strings:
+
+    # game/core/02init.rpy:134
+    old "Как ты после случившегося?"
+    new ""
+
+    # game/core/02init.rpy:134
+    old "Уже слышала новость, тётя Кира?"
+    new ""
+
+    # game/core/02init.rpy:134
+    old "Лиза, ты чего нос повесила?"
+    new ""
+

@@ -24,7 +24,7 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Panties #2"
-    new "Underpants #2"
+    new "Panties #2"
 
     # game/core/10_main_menu.rpy:360
     old "Маечка"
@@ -129,3 +129,20 @@ translate english strings:
     # game/core/10_main_menu.rpy:360
     old "Колготки"
     new "Tights"
+
+# TODO: Translation updated at 2021-12-25 01:46
+
+translate english strings:
+
+    # game/core/10_main_menu.rpy:50
+    old "{color=[lime]}Открыта детальная настройка для одного из костюмов %s в главном меню{/color}"
+    new ""
+
+    # game/core/10_main_menu.rpy:285
+    old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
+    new ""
+
+    # game/core/10_main_menu.rpy:410
+    old "Трусы #2"
+    new ""
+
