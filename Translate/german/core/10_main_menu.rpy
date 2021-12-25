@@ -12,7 +12,7 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Шапка"
-    new "Mütze"
+    new "Fellmütze"
 
     # game/core/10_main_menu.rpy:360
     old "Борода"
@@ -28,19 +28,19 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Маечка"
-    new "Маечка"
+    new "Träger-Shirt"
 
     # game/core/10_main_menu.rpy:360
     old "Минишортики"
-    new "Minishorts"
+    new "Hotpants"
 
     # game/core/10_main_menu.rpy:360
     old "Лиф"
-    new "Oberteil"
+    new "Spitzen-BH"
 
     # game/core/10_main_menu.rpy:360
     old "Плавки"
-    new "Bademode"
+    new "Badehose"
 
     # game/core/10_main_menu.rpy:360
     old "Лифчик"
@@ -48,15 +48,15 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Трусики"
-    new "Höschen"
+    new "Slip"
 
     # game/core/10_main_menu.rpy:360
     old "Шапочка"
-    new "Hut"
+    new "Kappe"
 
     # game/core/10_main_menu.rpy:360
     old "Бант на шею"
-    new "Nackenbügel"
+    new "Halsschleife"
 
     # game/core/10_main_menu.rpy:360
     old "Кружевное платье"
@@ -64,7 +64,7 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Чулочки"
-    new "Strümpfe"
+    new "Halterlose Strümpfe"
 
     # game/core/10_main_menu.rpy:360
     old "Топик"
