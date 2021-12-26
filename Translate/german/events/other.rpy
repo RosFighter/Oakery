@@ -1640,10 +1640,10 @@ translate german failed_dinner_e02fe136:
     Ann_14 "Ja, ja... Es tut mir leid, Max, aber du hast mich wirklich enttäuscht und... haben wir keine andere Wahl, als dich in ein Militärlager zu schicken. Hoffentlich machen sie einen verantwortungsvollen Mann aus dir."
 
 # game/events/other.rpy:818
-translate german failed_dinner_bf7c5385:
+translate german failed_dinner_03357d46:
 
-    # Max_13 "Что?! Кому это, «нам»? Вам с Эриком? Это же не ты сейчас говоришь, а он! Как ты можешь выгонять из дома родного сына?"
-    Max_13 "Was?! Wer ist «wir»? Du und Eric? Du redest jetzt schon, genau wie er! Wie kann man seinen eigenen Sohn aus dem Haus werfen?"
+    # Max_13 "Что?! Кому это, \"нам\"? Вам с Эриком? Это же не ты сейчас говоришь, а он! Как ты можешь выгонять из дома родного сына?"
+    Max_13 "Was?! Wer ist \"wir\"? Du und Eric? Du redest jetzt schon, genau wie er! Wie kann man seinen eigenen Sohn aus dem Haus werfen?"
 
 # game/events/other.rpy:819
 translate german failed_dinner_d29fb4a6:
@@ -1730,4 +1730,3 @@ translate german strings:
     # game/events/other.rpy:835
     old "{i}выйти из игры{/i}"
     new "{i}Spiel verlassen{/i}"
-

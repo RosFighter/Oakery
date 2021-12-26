@@ -8692,7 +8692,7 @@ translate german about_horror_toples_41628922:
 translate german about_horror_toples_256f7f17:
 
     # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь \"спасибо\"."
-    Max_07 "Nein, aber ich erspare dir die Demütigung vor der ganzen Familie, und alles, was ich als Gegenleistung bekomme, ist ein «Danke schön»."
+    Max_07 "Nein, aber ich erspare dir die Demütigung vor der ganzen Familie, und alles, was ich als Gegenleistung bekomme, ist ein \"Danke schön\"."
 
 # game/dialogues/lisatalk.rpy:4368
 translate german about_horror_toples_6ae67ce0:
@@ -10023,9 +10023,9 @@ translate german lisa_about_ae_sexed5_a3d4d2b6:
     Max_01 "Nun, man muss die Theorie in die Praxis umsetzen, denn etwas zu sehen oder darüber zu lesen ist eine Sache, es selbst zu tun eine andere."
 
 # game/dialogues/lisatalk.rpy:4218
-translate german lisa_about_ae_sexed5_108a6b51:
+translate german lisa_about_ae_sexed5_ac17f18b:
 
-    # Lisa_01 "Тогда я соглашаюсь на продолжение уроков с Эриком. Только тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
+    # Lisa_01 "Тогда я соглашаюсь на продолжение уроков с Эриком. Только тебе придётся теперь по понедельникам, после ужина, где-нибудь \"погулять\"... минимум полчасика."
     Lisa_01 "Dann stimme ich zu, den Unterricht mit Eric weiter zu führen. Du musst nur Montags nach dem Essen \"verschwinden\"... Mindestens eine halbe Stunde lang."
 
 # game/dialogues/lisatalk.rpy:4219
@@ -10101,9 +10101,9 @@ translate german lisa_about_ae_sexed5_0616845d:
     Max_09 "Was für ein Blödsinn! Ich weiß Bescheid und habe viele Dinge ausprobiert..."
 
 # game/dialogues/lisatalk.rpy:4243
-translate german lisa_about_ae_sexed5_166344de:
+translate german lisa_about_ae_sexed5_113cc8b0:
 
-    # Lisa_01 "Ну да, конечно, не смеши. Так, что думаешь, Макс? Только если я соглашусь, тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
+    # Lisa_01 "Ну да, конечно, не смеши. Так, что думаешь, Макс? Только если я соглашусь, тебе придётся теперь по понедельникам, после ужина, где-нибудь \"погулять\"... минимум полчасика."
     Lisa_01 "Ja, klar, mach dich nicht lächerlich. Also, was meinst du, Max? Nur wenn ich ja sage, musst du Montags nach dem Essen \"verschwindenẞ\"... mindestens eine halbe Stunde lang."
 
 # game/dialogues/lisatalk.rpy:4244
@@ -10934,4 +10934,3 @@ translate german lisa_about_showdown_e05d6220:
 
     # Max_01 "Договорились, сестрёнка."
     Max_01 "Einverstanden, Schwesterherz."
-

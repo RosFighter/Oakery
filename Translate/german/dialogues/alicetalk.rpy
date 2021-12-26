@@ -11258,12 +11258,6 @@ translate german alice_domine_drink_39940f2d:
     # Alice_05 "Неужели такому мелкому извращенцу, как ты, стало страшно поворачиваться ко мне задом? Это хорошо... Но раздеться тебе придётся всё равно! Или есть возражения?!" nointeract
     Alice_05 "Ist es für einen kleinen Perversen wie dich mittlerweile gefährlich, mir den Rücken zuzudrehen? Das ist gut... Aber du musst dich trotzdem ausziehen! Oder hast du ein Problem damit?!" nointeract
 
-# game/dialogues/alicetalk.rpy:5445
-translate german alice_domine_drink_8c0a3d49:
-
-    # Alice_12 "Хм... А я смотрю, Макс, тебе нравится то, что я делаю. Задницу подставлять боишься, а вот демонстрировать, насколько ты «большой» извращенец и близко не стесняешься!"
-    Alice_12 "Hmm ... Ich sehe, dir gefällt, was ich tue, Max. Du hast Angst, dass ich dir den Arsch aufreiße, aber du bist nicht zu zimperlich, um mir zu zeigen, was für ein \"großer\" Perverser du bist!"
-
 # game/dialogues/alicetalk.rpy:5446
 translate german alice_domine_drink_809834fe:
 
@@ -11883,7 +11877,7 @@ translate german strings:
     # game/dialogues/alicetalk.rpy:5782
     old "{b}Оповещение:{/b} Алиса больше не хочет взаимодействовать с Максом"
     new "{b}Achtung:{/b} Alice will nicht mehr mit Max sprechen"
- 
+
  # TODO: Translation updated at 2021-12-12 01:53
 
 # game/dialogues/alicetalk.rpy:3251
@@ -12109,4 +12103,3 @@ translate german alice_about_showdown_fd54e914:
 
     # Max_01 "Конечно. Если что, зови."
     Max_01 "Ja, klar. Falls du etwas brauchst, sag Bescheid."
-

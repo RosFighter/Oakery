@@ -357,3 +357,23 @@ translate german strings:
     # game/events/eric_cam.rpy:436
     old "{i}идти к комнате Алисы{/i}"
     new "{i}in Alices Zimmer gehen{/i}"
+# TODO: Translation updated at 2021-12-27 01:36
+
+# game/events/eric_cam.rpy:447
+translate german cam0_eric_kira_night_swim_4bc4874c:
+
+    # Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
+    Max_09 ""
+
+# game/events/eric_cam.rpy:449
+translate german cam0_eric_kira_night_swim_14337802:
+
+    # Max_09 "{m}Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн...{/m}"
+    Max_09 ""
+
+# game/events/eric_cam.rpy:459
+translate german cam1_eric_kira_night_swim_45123771:
+
+    # Max_10 "{m}Вот чёрт! Похоже, Кира ублажает Эрика, чтобы он нас не заложил маме...{/m}"
+    Max_10 ""
+

@@ -2465,3 +2465,155 @@ translate german strings:
     # game/dialogues/breakfast.rpy:797
     old "Ну, не настолько хороший..."
     new "Nun, nicht so gut..."
+# TODO: Translation updated at 2021-12-27 01:36
+
+# game/dialogues/breakfast.rpy:870
+translate german breakfast_after_showdown_with_eric_d26cf396:
+
+    # Ann_00 "Всем приятного аппетита! Давайте просто помолчим и поедим."
+    Ann_00 ""
+
+# game/dialogues/breakfast.rpy:871
+translate german breakfast_after_showdown_with_eric_8a681cc1:
+
+    # Max_00 "Конечно..."
+    Max_00 ""
+
+# game/dialogues/breakfast.rpy:872
+translate german breakfast_after_showdown_with_eric_fcdb0431:
+
+    # Lisa_10 "Подожди, мам, ты почему такая грустная? Неужели до сих пор грустишь из-за Эрика?"
+    Lisa_10 ""
+
+# game/dialogues/breakfast.rpy:873
+translate german breakfast_after_showdown_with_eric_59835e43:
+
+    # Alice_05 "Мама, да не переживай ты так! Мужиков этих, как грязи, а ты у нас красавица! Они к тебе сами слетаться будут, как пчёлы на мёд, только выбирай!"
+    Alice_05 ""
+
+# game/dialogues/breakfast.rpy:874
+translate german breakfast_after_showdown_with_eric_64589ce5:
+
+    # Max_07 "Вот не надо... Что-то случилось?"
+    Max_07 ""
+
+# game/dialogues/breakfast.rpy:875
+translate german breakfast_after_showdown_with_eric_523c4edf:
+
+    # Ann_12 "Эээ... В некотором смысле, да... Это всё из-за работы..."
+    Ann_12 ""
+
+# game/dialogues/breakfast.rpy:876
+translate german breakfast_after_showdown_with_eric_aa6a0925:
+
+    # Kira_14 "Аня, что опять стряслось?! На тебе лица нет!"
+    Kira_14 ""
+
+# game/dialogues/breakfast.rpy:877
+translate german breakfast_after_showdown_with_eric_c53523b1:
+
+    # Max_09 "Да, мам... в чём дело?"
+    Max_09 ""
+
+# game/dialogues/breakfast.rpy:878
+translate german breakfast_after_showdown_with_eric_d19c6569:
+
+    # Ann_14 "Нуу... Если вы помните, то Эрик мой начальник и, как вы все прекрасно понимаете, теперь у нас с ним складываются весьма натянутые отношения."
+    Ann_14 ""
+
+# game/dialogues/breakfast.rpy:879
+translate german breakfast_after_showdown_with_eric_e556daca:
+
+    # Alice_06 "Ничего себе... Я и забыла, что вы работаете вместе. Так может это и к лучшему? Может тебе уволиться, чтобы нервы не трепать? Устроишься в другое место! Лучше прежнего!"
+    Alice_06 ""
+
+# game/dialogues/breakfast.rpy:880
+translate german breakfast_after_showdown_with_eric_8b47b3d2:
+
+    # Max_00 "Согласен с Алисой!"
+    Max_00 ""
+
+# game/dialogues/breakfast.rpy:881
+translate german breakfast_after_showdown_with_eric_6cb65c7a:
+
+    # Kira_15 "Слушай, Ань, а может тебе и правда уйти? Как можно терпеть каждый день человека, который сделал тебе столько гадостей?"
+    Kira_15 ""
+
+# game/dialogues/breakfast.rpy:882
+translate german breakfast_after_showdown_with_eric_d661b13d:
+
+    # Ann_13 "Боюсь, что с этим могут быть проблемы..."
+    Ann_13 ""
+
+# game/dialogues/breakfast.rpy:883
+translate german breakfast_after_showdown_with_eric_024b2013:
+
+    # Max_09 "В каком смысле, мам?"
+    Max_09 ""
+
+# game/dialogues/breakfast.rpy:884
+translate german breakfast_after_showdown_with_eric_f91c5150:
+
+    # Ann_14 "В общем, он очень злопамятным оказался. Пообещал, что постарается, чтобы я никогда не смогла найти приличную работу в этом городе. Злорадствует, гад!"
+    Ann_14 ""
+
+# game/dialogues/breakfast.rpy:885
+translate german breakfast_after_showdown_with_eric_bfdeb3ee:
+
+    # Max_16 "Вот подонок! И это после всего, что он тут устроил?!"
+    Max_16 ""
+
+# game/dialogues/breakfast.rpy:886
+translate german breakfast_after_showdown_with_eric_5b0614af:
+
+    # Ann_17 "Наверное, я поступила слишком резко, выставив его за дверь..."
+    Ann_17 ""
+
+# game/dialogues/breakfast.rpy:887
+translate german breakfast_after_showdown_with_eric_1dd25179:
+
+    # Lisa_13 "Мам, что ты такое говоришь? Неужели ты готова смириться с тем, чтобы тебя и нас развращал этот мерзавец? Вдруг он действительно... маньяк!"
+    Lisa_13 ""
+
+# game/dialogues/breakfast.rpy:888
+translate german breakfast_after_showdown_with_eric_62c62745:
+
+    # Ann_13 "Ага! То хвостом вертели, крутились вокруг него, подарочки принимали. Эрик хороший! Эрик добрый! Мама с Эриком так счастлива! А теперь маньяк?!"
+    Ann_13 ""
+
+# game/dialogues/breakfast.rpy:889
+translate german breakfast_after_showdown_with_eric_ee4c327b:
+
+    # Alice_16 "А тех доказательств, что предоставил Макс, тебе недостаточно? Может будет убедительнее, когда Эрик устроит оргию со всеми нами прямо у тебя на глазах?"
+    Alice_16 ""
+
+# game/dialogues/breakfast.rpy:890
+translate german breakfast_after_showdown_with_eric_6ff1ea73:
+
+    # Kira_01 "Прекрати, Аня, мы что-нибудь обязательно придумаем!"
+    Kira_01 ""
+
+# game/dialogues/breakfast.rpy:891
+translate german breakfast_after_showdown_with_eric_66e7da4f:
+
+    # Max_07 "Да, мам. Что-нибудь придумаем!"
+    Max_07 ""
+
+# game/dialogues/breakfast.rpy:892
+translate german breakfast_after_showdown_with_eric_e1136eba:
+
+    # Ann_00 "Спасибо вам за поддержку, мои родные! Я постараюсь поменьше контактировать с Эриком. Если уже в конец достанет, то уйду с работы."
+    Ann_00 ""
+
+# game/dialogues/breakfast.rpy:893
+translate german breakfast_after_showdown_with_eric_81418ab0:
+
+    # Max_01 "Мы рядом, мам, это главное."
+    Max_01 ""
+
+# game/dialogues/breakfast.rpy:894
+translate german breakfast_after_showdown_with_eric_8d40d181:
+
+    # Ann_01 "Спасибо всем за завтрак... Я пойду, побуду со своими мыслями наедине."
+    Ann_01 ""
+
