@@ -142,7 +142,3 @@ translate english strings:
     old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
     new "{color=[lime]}New costume %s for the main menu is opened{/color}"
 
-    # game/core/10_main_menu.rpy:410
-    old "Трусы #2"
-    new "Panties #2"
-

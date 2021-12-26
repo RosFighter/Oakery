@@ -8692,7 +8692,7 @@ translate english about_horror_toples_41628922:
 translate english about_horror_toples_256f7f17:
 
     # Max_07 "Нет, но я спасаю тебя от унижения перед всей семьёй, а в ответ только одно лишь \"спасибо\"."
-    Max_07 "No, but I save you from humiliation in front of the whole family, and all I get in return is one «thank you»."
+    Max_07 "No, but I save you from humiliation in front of the whole family, and all I get in return is one \"thank you\"."
 
 # game/dialogues/lisatalk.rpy:4368
 translate english about_horror_toples_6ae67ce0:
@@ -10023,9 +10023,9 @@ translate english lisa_about_ae_sexed5_a3d4d2b6:
     Max_01 "Well, theoretical knowledge should be consolidated in practice, because to see or read something is one thing, but to do it yourself is another."
 
 # game/dialogues/lisatalk.rpy:4218
-translate english lisa_about_ae_sexed5_108a6b51:
+translate english lisa_about_ae_sexed5_ac17f18b:
 
-    # Lisa_01 "Тогда я соглашаюсь на продолжение уроков с Эриком. Только тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
+    # Lisa_01 "Тогда я соглашаюсь на продолжение уроков с Эриком. Только тебе придётся теперь по понедельникам, после ужина, где-нибудь \"погулять\"... минимум полчасика."
     Lisa_01 "Then I'll continue my lessons with Eric. You'll just have to go out on Mondays after dinner... For at least half an hour."
 
 # game/dialogues/lisatalk.rpy:4219
@@ -10101,9 +10101,9 @@ translate english lisa_about_ae_sexed5_0616845d:
     Max_09 "What nonsense! I know and have tried many things..."
 
 # game/dialogues/lisatalk.rpy:4243
-translate english lisa_about_ae_sexed5_166344de:
+translate english lisa_about_ae_sexed5_113cc8b0:
 
-    # Lisa_01 "Ну да, конечно, не смеши. Так, что думаешь, Макс? Только если я соглашусь, тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
+    # Lisa_01 "Ну да, конечно, не смеши. Так, что думаешь, Макс? Только если я соглашусь, тебе придётся теперь по понедельникам, после ужина, где-нибудь \"погулять\"... минимум полчасика."
     Lisa_01 "Yeah, sure, don't be ridiculous. So, what do you think, Max? Only if I say yes, you'll have to go out on Mondays after dinner... for at least half an hour."
 
 # game/dialogues/lisatalk.rpy:4244
@@ -10934,4 +10934,3 @@ translate english lisa_about_showdown_e05d6220:
 
     # Max_01 "Договорились, сестрёнка."
     Max_01 "It's a deal, sis."
-

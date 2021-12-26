@@ -1640,10 +1640,10 @@ translate english failed_dinner_e02fe136:
     Ann_14 "Yeah, yeah... I'm sorry, Max, but you've really disappointed me and... we have no choice but to send you to military camp. Hopefully, they'll make a responsible man out of you."
 
 # game/events/other.rpy:818
-translate english failed_dinner_bf7c5385:
+translate english failed_dinner_03357d46:
 
-    # Max_13 "Что?! Кому это, «нам»? Вам с Эриком? Это же не ты сейчас говоришь, а он! Как ты можешь выгонять из дома родного сына?"
-    Max_13 "What?! Who's "us"? You and Eric? That's not you talking, that's him! How can you kick your own son out of the house?"
+    # Max_13 "Что?! Кому это, \"нам\"? Вам с Эриком? Это же не ты сейчас говоришь, а он! Как ты можешь выгонять из дома родного сына?"
+    Max_13 "What?! Who's \"us\"? You and Eric? That's not you talking, that's him! How can you kick your own son out of the house?"
 
 # game/events/other.rpy:819
 translate english failed_dinner_d29fb4a6:
@@ -1730,4 +1730,3 @@ translate english strings:
     # game/events/other.rpy:835
     old "{i}выйти из игры{/i}"
     new "{i}quit the game{/i}"
-

@@ -11258,12 +11258,6 @@ translate english alice_domine_drink_39940f2d:
     # Alice_05 "Неужели такому мелкому извращенцу, как ты, стало страшно поворачиваться ко мне задом? Это хорошо... Но раздеться тебе придётся всё равно! Или есть возражения?!" nointeract
     Alice_05 "Has it become scary for a little pervert like you to turn your back on me? That's good... But you still have to get naked! Or do you have a problem with that?!" nointeract
 
-# game/dialogues/alicetalk.rpy:5445
-translate english alice_domine_drink_8c0a3d49:
-
-    # Alice_12 "Хм... А я смотрю, Макс, тебе нравится то, что я делаю. Задницу подставлять боишься, а вот демонстрировать, насколько ты «большой» извращенец и близко не стесняешься!"
-    Alice_12 "Hmm... I see you like what I do. You're afraid to getting hit, but you're not too shy to show me how big of a pervert you are!"
-
 # game/dialogues/alicetalk.rpy:5446
 translate english alice_domine_drink_809834fe:
 
@@ -12109,4 +12103,3 @@ translate english alice_about_showdown_fd54e914:
 
     # Max_01 "Конечно. Если что, зови."
     Max_01 "Sure. Call me if you need anything."
-
