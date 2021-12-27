@@ -4414,169 +4414,168 @@ translate english kira_sleep_morning_44762823:
 translate english kira_shower_sex_daa07887:
 
     # Kira_02 "А, Макс, конечно не помешаешь! Лишь бы никто нас не увидел. Присоединяйся..." nointeract
-    Kira_02 "" nointeract
+    Kira_02 "Ah, Max, of course you will! As long as no one sees us. Come and join us..." nointeract
 
 # game/events/kira.rpy:2454
 translate english kira_shower_sex_48c799ee:
 
     # Kira_05 "А я тут стою, вся такая мокренькая и думаю - забыл обо мне мой племянничек или нет. И ночью тебя не было."
-    Kira_05 ""
+    Kira_05 "And I'm standing here, all wet and wondering if my nephew forgot about me or not. And you weren't there last night."
 
 # game/events/kira.rpy:2455
 translate english kira_shower_sex_460cc511:
 
     # Max_03 "Как о тебе можно забыть, тётя Кира? А ночью я вымотался. Зато сейчас во мне полно сил..."
-    Max_03 ""
+    Max_03 "How could I forget about you, Aunt Kira? I was exhausted last night. But now I'm full of energy..."
 
 # game/events/kira.rpy:2456
 translate english kira_shower_sex_86196ff7:
 
     # Kira_07 "И что, мой дорогой племянник потратит немного сил на свою обожаемую тётю?"
-    Kira_07 ""
+    Kira_07 "And what, my dear nephew will spend a little effort on his adoring aunt?"
 
 # game/events/kira.rpy:2458
 translate english kira_shower_sex_e941b8a6:
 
     # Max_02 "За этим я и пришёл, тётя Кира!" nointeract
-    Max_02 "" nointeract
+    Max_02 "That's what I came for, Aunt Kira!" nointeract
 
 # game/events/kira.rpy:2469
 translate english kira_shower_sex_b8948e92:
 
     # Kira_04 "Ох... Ты тот ещё шалунишка! Я обожаю, когда твои ловкие пальчики ласкают меня там внизу... Ммм... Да-а-а! Делай это ещё быстрее..." nointeract
-    Kira_04 "" nointeract
+    Kira_04 "Oh... You're such a naughty boy! I love it when your nimble fingers caress me down there... Mmm... Yeah, do it faster." nointeract
 
 # game/events/kira.rpy:2474
 translate english kira_shower_sex_7ca5775c:
 
     # Kira_11 "О да... Ещё, Макс... Я уже близко... Так приятно..." nointeract
-    Kira_11 "" nointeract
+    Kira_11 "Oh yes... More, Max... I'm close... So nice..." nointeract
 
 # game/events/kira.rpy:2482
 translate english kira_shower_sex_76f12159:
 
     # Kira_12 "Ухх... Да, ещё... быстрее и глубже... Ммм, ещё чуть-чуть и я кончу... Ах! Да-а-а! Как же хорошо!"
-    Kira_12 ""
+    Kira_12 "Ugh... Yeah, also... faster and deeper... Mmm, just a little bit more and I'll come... Ah! Yeah! That feels so good!"
 
 # game/events/kira.rpy:2483
 translate english kira_shower_sex_e61b7117:
 
     # Max_04 "Ну как, тётя Кира? Я приподнял твоё настроение на сегодня?"
-    Max_04 ""
+    Max_04 "How was it, Aunt Kira? Did I lift your spirits for today?"
 
 # game/events/kira.rpy:2489
 translate english kira_shower_sex_287411ce:
 
     # Kira_08 "Однозначно! А у тебя-то какое приподнятое настроение! Давай-ка я тебе помогу приподнять его ещё сильнее... Нравится?"
-    Kira_08 ""
+    Kira_08 "Definitely! And you're in such a good mood! Let me help you lift it up even more... Do you like it?"
 
 # game/events/kira.rpy:2490
 translate english kira_shower_sex_4448b24f:
 
     # Max_05 "О да! Продолжай..."
-    Max_05 ""
+    Max_05 "Oh yes! Go on..."
 
 # game/events/kira.rpy:2491
 translate english kira_shower_sex_2b4065e5:
 
     # Kira_10 "Ты хоть представляешь, Макс, что будет, если нас застукают за таким?"
-    Kira_10 ""
+    Kira_10 "Do you have any idea, Max, what would happen if we were caught doing that?"
 
 # game/events/kira.rpy:2492
 translate english kira_shower_sex_f1756a61:
 
     # Max_07 "Боюсь даже представить... Может, сделать всё по-быстрому?"
-    Max_07 ""
+    Max_07 "I'm afraid to even imagine... How about a quick fix?"
 
 # game/events/kira.rpy:2498
 translate english kira_shower_sex_87d047c4:
 
     # Kira_02 "И смотри по сторонам, чтобы никто не увидел, что мы делаем! Мы ведь с тобой такими плохими делишками занимаемся..."
-    Kira_02 ""
+    Kira_02 "And keep your eyes open so no one sees what we're doing! You and I are doing such bad things..."
 
 # game/events/kira.rpy:2499
 translate english kira_shower_sex_fe79864c:
 
     # Max_02 "Само собой, тётя Кира!"
-    Max_02 ""
+    Max_02 "Of course, Aunt Kira!"
 
 # game/events/kira.rpy:2506
 translate english kira_shower_sex_6a8246c5:
 
     # Max_20 "{m}Ох, как она сосёт... Да так глубоко... Даже не знаю, что я буду говорить, если нас кто-нибудь увидит. Когда тётя Кира берётся за чувственный минет, становится всё рано, что там будет дальше. Блин, я уже на грани... Вот-вот и кончу... Отпадно!{/m}" nointeract
-    Max_20 "" nointeract
+    Max_20 "{m}Oh, how she sucks... So deep... I don't know what I'd say if anyone saw us. When Aunt Kira takes a sensual blow job, it doesn't matter what happens next. Shit, I'm on the verge of... I'm about to come... This is awesome!{/m}" nointeract
 
 # game/events/kira.rpy:2514
 translate english kira_shower_sex_f17ba8ca:
 
     # Max_22 "{m}Да... Я кончаю... Прямо ей в рот! О боже... Она так смачно посасывает головку моего члена... Вот это отсос, так отсос! Кажется, это самое офигенное развлечение в мире!{/m}"
-    Max_22 ""
+    Max_22 "{m}Yes... I'm coming... Right in her mouth! Oh, my God, she's... She's sucking the head of my dick so hard. That's some sucking. That's some sucking. I think that's the most fucking fun I've ever had in my life.{/m}"
 
 # game/events/kira.rpy:2519
 translate english kira_shower_sex_a3bdee18:
 
     # Kira_11 "Ухх... Макс! Хватит уже дразнить мою киску... В такие моменты я сразу начинаю скучать по твоему твёрдому и большому члену!"
-    Kira_11 ""
+    Kira_11 "Ugh... Max! Stop teasing my pussy already... It's times like this that I immediately miss your hard, big dick!"
 
 # game/events/kira.rpy:2526
 translate english kira_shower_sex_dba6cc23:
 
     # Max_07 "Так зачем скучать? Вот же он... Разве не чувствуешь?" nointeract
-    Max_07 "" nointeract
+    Max_07 "So why be bored? There he is... Can't you feel it?" nointeract
 
 # game/events/kira.rpy:2534
 translate english kira_shower_sex_b81555c3:
 
     # Kira_12 "Д-а-а... Ещё... Ох, Макс, не останавливайся! Сожми мою попку покрепче! Вгоняй его в меня сильнее... Ещё! Трахни свою тётю пожёстче... Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..." nointeract
-    Kira_12 "" nointeract
+    Kira_12 "Y-a-a... More... Oh, Max, don't stop! Squeeze my ass harder. Push it into me harder... More! Fuck your aunt harder... I can hardly keep it in... Oh, that feels good. More! Yes, I'm coming... Ahhh..." nointeract
 
 # game/events/kira.rpy:2542
 translate english kira_shower_sex_533c7f7f:
 
     # Kira_07 "Фух! Неплохо развлеклись, Макс. Надеюсь, никто не услышал мои стоны. Вроде, нет. Тогда я ещё успею кое-что сделать..."
-    Kira_07 ""
+    Kira_07 "Whew! That was good fun, Max. I hope no one heard me moaning. I guess not. Then there's still time for me to do something..."
 
 # game/events/kira.rpy:2548
 translate english kira_shower_sex_fafcb6cb:
 
     # Max_22 "{m}Ах! О боже... Она так смачно посасывает головку моего члена... Вот это отсос, так отсос! Кажется, это самое офигенное развлечение в мире!{/m}"
-    Max_22 ""
+    Max_22 "{m}Ah! Oh, my... She's sucking the head of my cock so hard... That's some sucking, that's some sucking. I think that's the most awesome thing in the world!{/m}"
 
 # game/events/kira.rpy:2552
 translate english kira_shower_sex_74184a9e:
 
     # Kira_05 "Ну вот. Понравилось? И ни капли мимо..."
-    Kira_05 ""
+    Kira_05 "There you go. Did you like it? And not a bit past..."
 
 # game/events/kira.rpy:2553
 translate english kira_shower_sex_deee8dbc:
 
     # Max_05 "Ты потрясающая! Это было классно!"
-    Max_05 ""
+    Max_05 "You are amazing! That was awesome!"
 
 # game/events/kira.rpy:2554
 translate english kira_shower_sex_8eeb46c7:
 
     # Kira_01 "Я рада, что ты зашёл ко мне. А теперь, давай разбегаться, пока нас кто-нибудь не увидел..."
-    Kira_01 ""
+    Kira_01 "I'm glad you stopped by. Now, let's run away before someone sees us..."
 
 # game/events/kira.rpy:2555
 translate english kira_shower_sex_9b836c58:
 
     # Max_04 "Конечно!"
-    Max_04 ""
+    Max_04 "Of course!"
 
 translate english strings:
 
     # game/events/kira.rpy:2307
     old "Я не помешаю?"
-    new ""
+    new "Am I interrupting?"
 
     # game/events/kira.rpy:2468
     old "{i}ласкать быстрее{/i}"
-    new ""
+    new "{i}Fondle faster{/i}"
 
     # game/events/kira.rpy:2468
     old "{i}ласкать медленнее{/i}"
-    new ""
-
+    new "{i}Fondle more slowly{/i}"
