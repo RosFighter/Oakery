@@ -2869,5 +2869,4 @@ translate english start_eric_wallet_e75cd485:
 translate english eric_kira_night_swim_a236de17:
 
     # Eric_13 "Ты зачем подкрадываешься, Макс?! Ночь на дворе. Заканчивай шататься и спать иди. Не мешай нам отдыхать." nointeract
-    Eric_13 "" nointeract
-
+    Eric_13 "What are you sneaking up on me for, Max?! It's the middle of the night. Quit staggering around and go to bed." nointeract
