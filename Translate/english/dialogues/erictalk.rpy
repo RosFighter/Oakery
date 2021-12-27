@@ -1735,6 +1735,7 @@ translate english strings:
     # game/dialogues/erictalk.rpy:834
     old "{i}смириться{/i}"
     new "{i}Get over it{/i}"
+
 # TODO: Translation updated at 2021-12-25 01:46
 
 # game/dialogues/erictalk.rpy:850
@@ -1742,4 +1743,3 @@ translate english Eric_with_dictaphone_fde14d10:
 
     # "{color=[orange]}( Затем наступил тот самый ужин, когда все решилось... ){/color}"
     "{color=[orange]}( Then came the dinner, when everything was decided... ){/color}"
-

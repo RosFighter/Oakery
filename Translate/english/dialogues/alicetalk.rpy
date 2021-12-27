@@ -11114,11 +11114,11 @@ translate english strings:
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}приступить к ужину{/i}"
-    new "Proceed with dinner"
+    new "{i}Proceed with dinner{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку слабительное{/i}"
-    new "Slip a laxative into Eric's plate"
+    new "{i}Slip a laxative into Eric's plate{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}подмешать Эрику в тарелку успокоительное{/i}"
@@ -11970,7 +11970,7 @@ translate english alice_about_showdown_a6730d12:
 translate english alice_about_showdown_2c04e40c:
 
     # Max_03 "О! Хорошую мысль ты подкинула, спасибо."
-    Max_03 "О! That's a good idea, thank you."
+    Max_03 "O! That's a good idea, thank you."
 
 # game/dialogues/alicetalk.rpy:5840
 translate english alice_about_showdown_a07f89f9:
@@ -12024,7 +12024,7 @@ translate english alice_about_showdown_a83bcdd4:
 translate english alice_about_showdown_ae73099f:
 
     # Alice_14 "Макс, ты сейчас серьёзно?!"
-    Alice_14 "Макс, ты сейчас серьёзно?!"
+    Alice_14 "Max, are you serious now?!"
 
 # game/dialogues/alicetalk.rpy:5855
 translate english alice_about_showdown_52b43e07:

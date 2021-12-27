@@ -2617,3 +2617,4 @@ translate english breakfast_after_showdown_with_eric_8d40d181:
 
     # Ann_01 "Спасибо всем за завтрак... Я пойду, побуду со своими мыслями наедине."
     Ann_01 "Thank you all for breakfast... I'm going to go and be alone with my thoughts."
+

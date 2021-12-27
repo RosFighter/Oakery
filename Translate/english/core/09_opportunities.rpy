@@ -908,7 +908,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Ещё не знаю, достаточно ли я сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании, но лучше бы мне подстраховаться и добиться успехов в возможности \"Кнут или пряник?\"..."
-    new "I don't know if I'm close enough to Lisa that she and Olivia won't mind my company on a Friday-Saturday night, but I'd better make sure I make progress in \"carrot or stick?\..."
+    new "I don't know if I'm close enough to Lisa that she and Olivia won't mind my company on a Friday-Saturday night, but I'd better make sure I make progress in \"carrot or stick?\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого..."
@@ -1997,4 +1997,3 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Эрик повержен! Мне удалось вывести его на чистую воду и теперь мы наконец-то заживём, как раньше. Даже ещё лучше! Но для начала всем нужно время, чтобы отойти от правды о нём."
     new "Eric is defeated! I managed to bring him out in the open and now we're finally going to live like we used to. Even better! But first, everyone needs time to move on from the truth about him."
-

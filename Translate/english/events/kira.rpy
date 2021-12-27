@@ -4579,3 +4579,4 @@ translate english strings:
     # game/events/kira.rpy:2468
     old "{i}ласкать медленнее{/i}"
     new "{i}Fondle more slowly{/i}"
+
