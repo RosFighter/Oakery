@@ -11258,12 +11258,6 @@ translate english alice_domine_drink_39940f2d:
     # Alice_05 "Неужели такому мелкому извращенцу, как ты, стало страшно поворачиваться ко мне задом? Это хорошо... Но раздеться тебе придётся всё равно! Или есть возражения?!" nointeract
     Alice_05 "Has it become scary for a little pervert like you to turn your back on me? That's good... But you still have to get naked! Or do you have a problem with that?!" nointeract
 
-# game/dialogues/alicetalk.rpy:5445
-translate english alice_domine_drink_8c0a3d49:
-
-    # Alice_12 "Хм... А я смотрю, Макс, тебе нравится то, что я делаю. Задницу подставлять боишься, а вот демонстрировать, насколько ты «большой» извращенец и близко не стесняешься!"
-    Alice_12 "Hmm... I see you like what I do. You're afraid to getting hit, but you're not too shy to show me how big of a pervert you are!"
-
 # game/dialogues/alicetalk.rpy:5446
 translate english alice_domine_drink_809834fe:
 
@@ -11904,3 +11898,208 @@ translate english alice_sorry_gifts_e3d28a54:
     # Alice_02 "Наконец-то! Ну давай, показывай, что у тебя на этот раз?!" nointeract
     Alice_02 "Finally! Come on, show me what you got this time!" nointeract
 
+# TODO: Translation updated at 2021-12-25 01:46
+
+# game/dialogues/alicetalk.rpy:5828
+translate english alice_about_showdown_b4204cf5:
+
+    # Alice_12 "Даже не знаю, как тебе сказать... Узнать, что кто-то приходит ночью и дрочит на тебя - довольно мерзко!"
+    Alice_12 "I don't even know how to tell you... Finding out someone comes in at night and jerks off on you is pretty disgusting!"
+
+# game/dialogues/alicetalk.rpy:5829
+translate english alice_about_showdown_ec63fe69:
+
+    # Max_07 "Я как раз хотел поговорить с тобой об этом."
+    Max_07 "I just wanted to talk to you about that."
+
+# game/dialogues/alicetalk.rpy:5830
+translate english alice_about_showdown_aa4e88a7:
+
+    # Alice_13 "Макс, ты меня прости, но сейчас я не настроена для разговора по-душам."
+    Alice_13 "Max, I'm sorry, but I'm not in the mood for a heart-to-heart talk right now."
+
+# game/dialogues/alicetalk.rpy:5831
+translate english alice_about_showdown_26d0557c:
+
+    # Max_10 "Понимаю. Но ты ведь не злишься за эти снимки?"
+    Max_10 "I understand. But you're not mad about these pictures, are you?"
+
+# game/dialogues/alicetalk.rpy:5832
+translate english alice_about_showdown_a7037251:
+
+    # Alice_16 "Во-первых, удали их! А то я там голая... А во-вторых, злюсь. Я так понимаю, ты поэтому уговорил меня спать голой? Чтобы Эрика было на чём подловить..."
+    Alice_16 "First of all, delete them! Otherwise, I'm naked there... And second of all, I'm mad. I take it that's why you talked me into sleeping naked? So Eric would have something to catch me at..."
+
+# game/dialogues/alicetalk.rpy:5833
+translate english alice_about_showdown_dfaf5e9e:
+
+    # Max_09 "Да, всё верно. Вы же меня не слушали. Вот и приходилось его заманивать к тебе в комнату."
+    Max_09 "Yeah, that's right. You weren't listening to me. So I had to lure him into your room."
+
+# game/dialogues/alicetalk.rpy:5834
+translate english alice_about_showdown_19cc68f2:
+
+    # Alice_06 "А если бы он меня взял и... сделал бы что-нибудь со мной?"
+    Alice_06 "What if he took me and... did something to me?"
+
+# game/dialogues/alicetalk.rpy:5835
+translate english alice_about_showdown_5fce1d0b:
+
+    # Max_02 "Так он и сделал. Из-за этого ты ко мне и прибежала."
+    Max_02 "That's what he did. That's why you came running to me."
+
+# game/dialogues/alicetalk.rpy:5836
+translate english alice_about_showdown_9a5ab198:
+
+    # Alice_17 "Макс! Ещё раз так пошутишь и я тебе врежу!"
+    Alice_17 "Max! Make one more joke like that and I'll punch you in the face!"
+
+# game/dialogues/alicetalk.rpy:5837
+translate english alice_about_showdown_30688f5a:
+
+    # Max_04 "Да ничего бы он такого дерзкого не сделал. Он же не в конец придурок. К тому же, если бы он распоясался, то я бы вмешался."
+    Max_04 "He wouldn't do anything that bold. It's not like he's a total jerk. Besides, if he'd gotten cocky, I'd have intervened."
+
+# game/dialogues/alicetalk.rpy:5838
+translate english alice_about_showdown_a6730d12:
+
+    # Alice_12 "И Макс, узнаю, что ты фотографируешь меня в душе или когда я сплю... Ты покойник..."
+    Alice_12 "And Max, I recognize that you take pictures of me in the shower or when I'm asleep... You're a dead man..."
+
+# game/dialogues/alicetalk.rpy:5839
+translate english alice_about_showdown_2c04e40c:
+
+    # Max_03 "О! Хорошую мысль ты подкинула, спасибо."
+    Max_03 "О! That's a good idea, thank you."
+
+# game/dialogues/alicetalk.rpy:5840
+translate english alice_about_showdown_a07f89f9:
+
+    # Alice_17 "Макс, я не шутила!"
+    Alice_17 "Max, I wasn't kidding!"
+
+# game/dialogues/alicetalk.rpy:5841
+translate english alice_about_showdown_7ae816d6:
+
+    # Max_07 "Да ладно тебе. Какая-то ты напряжённая, моих шуток не понимаешь. Давай я тебя отвлеку чем-нибудь? Например, сходим и выберем тебе какое-нибудь нижнее бельё новенькое. Да и фоточки с ним можно будет красивые сделать. Как тебе?"
+    Max_07 "Oh, come on. You seem tense, you don't get my jokes. How about I distract you with something? For example, let's go and pick out some new underwear. And we can take nice pictures with it. What do you think?"
+
+# game/dialogues/alicetalk.rpy:5845
+translate english alice_about_showdown_33337c7f:
+
+    # Alice_12 "Даже не знаю, как тебе сказать... Узнать, что Эрик хотел сделать с нашей Лизой - довольно мерзко!"
+    Alice_12 "I don't even know how to tell you... Finding out what Eric wanted to do to our Lisa is pretty disgusting!"
+
+# game/dialogues/alicetalk.rpy:5846
+translate english alice_about_showdown_ec63fe69_1:
+
+    # Max_07 "Я как раз хотел поговорить с тобой об этом."
+    Max_07 "I just wanted to talk to you about that."
+
+# game/dialogues/alicetalk.rpy:5847
+translate english alice_about_showdown_8bb1d706:
+
+    # Alice_06 "Ты молодец, Макс, что показал, как мы ошибались в Эрике. Уж не знаю, что бы тут без тебя произошло."
+    Alice_06 "Well done, Max, for showing us how wrong we were about Eric. I don't know what would have happened without you."
+
+# game/dialogues/alicetalk.rpy:5851
+translate english alice_about_showdown_c3bbc5ac:
+
+    # Max_09 "Нууу... Я вот не знаю, показать тебе кое-что или нет."
+    Max_09 "Well... I don't know whether to show you something or not."
+
+# game/dialogues/alicetalk.rpy:5852
+translate english alice_about_showdown_f055e52d:
+
+    # Alice_17 "Если ты сейчас высунешь свою пипирку, то я тебе врежу!"
+    Alice_17 "If you stick your pee-pee out now, I'll hit you!"
+
+# game/dialogues/alicetalk.rpy:5853
+translate english alice_about_showdown_a83bcdd4:
+
+    # Max_00 "Не это. Дело в том, что аудиозапись разговора с Эриком, это не всё, что у меня есть. У меня ещё есть фотография, как он дрочит на тебя, пока ты спишь."
+    Max_00 "Not that. The thing is, the audio recording of the conversation with Eric is not all I have. I also have a picture of him jerking off on you while you sleep."
+
+# game/dialogues/alicetalk.rpy:5854
+translate english alice_about_showdown_ae73099f:
+
+    # Alice_14 "Макс, ты сейчас серьёзно?!"
+    Alice_14 "Макс, ты сейчас серьёзно?!"
+
+# game/dialogues/alicetalk.rpy:5855
+translate english alice_about_showdown_52b43e07:
+
+    # Max_15 "Ага. Я как-то заметил его случайно со двора, ночью. Поближе подобрался и сфотографировал, как он стоит у твоего окна и шишку свою натирает."
+    Max_15 "Yeah. I spotted him by chance from the yard at night. I got close and took a picture of him standing at your window, rubbing his lump."
+
+# game/dialogues/alicetalk.rpy:5856
+translate english alice_about_showdown_95f24655:
+
+    # Alice_12 "Фу, Макс! Ты зачем мне это обрисовал. У меня теперь эта картина перед глазами стоит!"
+    Alice_12 "Ugh, Max! Why did you draw that picture for me? I can't stop thinking about it now!"
+
+# game/dialogues/alicetalk.rpy:5857
+translate english alice_about_showdown_3e6bc570:
+
+    # Max_09 "Посмотреть снимок хочешь?"
+    Max_09 "Would you like to see a picture?"
+
+# game/dialogues/alicetalk.rpy:5858
+translate english alice_about_showdown_ebf19ff3:
+
+    # Alice_15 "Нет, конечно, сдурел что ли! Нашёл, что предлагать."
+    Alice_15 "No, of course, you're crazy! You've got something to offer."
+
+# game/dialogues/alicetalk.rpy:5862
+translate english alice_about_showdown_54999ed3:
+
+    # Max_09 "Ничего хорошего. Ты знаешь не всё. Я например видел, как Эрик дрочит на тебя, пока ты спишь."
+    Max_09 "It's no good. You don't know everything. I, for instance, saw Eric jerking off on you while you were sleeping."
+
+# game/dialogues/alicetalk.rpy:5863
+translate english alice_about_showdown_ae73099f_1:
+
+    # Alice_14 "Макс, ты сейчас серьёзно?!"
+    Alice_14 "Max, are you serious right now?!"
+
+# game/dialogues/alicetalk.rpy:5864
+translate english alice_about_showdown_02bbd577:
+
+    # Max_15 "Ага. Я как-то заметил его случайно со двора, ночью. Хотел сфотографировать, но не успел. Он прямо у твоего окна стоял и шишку свою натирал."
+    Max_15 "Yeah. I spotted it once by chance from the yard, at night. I wanted to take a picture, but I didn't get a chance. He was standing right outside your window, rubbing his bump."
+
+# game/dialogues/alicetalk.rpy:5865
+translate english alice_about_showdown_95f24655_1:
+
+    # Alice_12 "Фу, Макс! Ты зачем мне это обрисовал. У меня теперь эта картина перед глазами стоит!"
+    Alice_12 "Ugh, Max! Why did you draw that picture for me? I can't stop thinking about it now!"
+
+# game/dialogues/alicetalk.rpy:5866
+translate english alice_about_showdown_d48585fb:
+
+    # Max_09 "Был бы снимок - показал бы."
+    Max_09 "If I had a picture, I would have shown you."
+
+# game/dialogues/alicetalk.rpy:5867
+translate english alice_about_showdown_db96b47f:
+
+    # Alice_15 "Оно мне надо, такое видеть?! Сдурел что ли!"
+    Alice_15 "I don't want to see that! Are you out of your mind?"
+
+# game/dialogues/alicetalk.rpy:5869
+translate english alice_about_showdown_4125882f:
+
+    # Max_07 "Да ладно тебе. Какая-то ты напряжённая. Давай я тебя отвлеку чем-нибудь? Например, сходим и выберем тебе какое-нибудь нижнее бельё новенькое. Да и фоточки с ним можно будет красивые сделать. Как тебе?"
+    Max_07 "Oh, come on. You seem a little tense. How about I distract you with something? For example, let's go and pick out some new underwear. And we can take some nice pictures with it. What do you think?"
+
+# game/dialogues/alicetalk.rpy:5871
+translate english alice_about_showdown_fce06d05:
+
+    # Alice_06 "Звучит очень заманчиво, но я пока ещё не готова. Мне нужно время, чтобы отойти от того, что делал Эрик. Фууу..."
+    Alice_06 "It sounds very tempting, but I'm not ready yet. I need time to move on from what Eric was doing. Whew..."
+
+# game/dialogues/alicetalk.rpy:5872
+translate english alice_about_showdown_fd54e914:
+
+    # Max_01 "Конечно. Если что, зови."
+    Max_01 "Sure. Call me if you need anything."

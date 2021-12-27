@@ -437,3 +437,24 @@ label cam_before_frame_eric:
         Max_01 "{m}Отлично! Пора...{/m}"
         "{i}идти к комнате Алисы{/i}":
             jump frame_eric
+
+
+label cam0_eric_kira_night_swim:
+    show FG cam-shum-noact at laptop_screen
+    if 'kira_swim0' not in cam_flag:
+        $ cam_flag.append('kira_swim0')
+        if len(house[6].cams)>1:
+            Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
+        else:
+            Max_09 "{m}Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн...{/m}"
+    return
+
+label cam1_eric_kira_night_swim:
+    $ renpy.show('Kira cams swim night '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
+    show FG cam-shum-act at laptop_screen
+    if 'kira_swim1' not in cam_flag:
+        $ cam_flag.append('kira_swim1')
+        if GetRelMax('eric')[0] < 0:
+            # война с Эриком
+            Max_10 "{m}Вот чёрт! Похоже, Кира ублажает Эрика, чтобы он нас не заложил маме...{/m}"
+    return

@@ -1,6 +1,7 @@
 init python:
     from itertools import izip, cycle
     from collections import namedtuple, OrderedDict
+    from datetime import datetime
     import hashlib, base64, copy
 
     # ключ для сортировки списка с расписанием - время начала действия
@@ -40,13 +41,21 @@ init python:
 
     def red_tag(tag, argument, contents):
         return [
-            (renpy.TEXT_TAG, u"color=#f00"), #88ddff
+            (renpy.TEXT_TAG, u"color=#f00"),
+        ] + contents + [
+            (renpy.TEXT_TAG, u"/color"),
+        ]
+
+    def green_tag(tag, argument, contents):
+        return [
+            (renpy.TEXT_TAG, u"color=#0f0"), #00FF00
         ] + contents + [
             (renpy.TEXT_TAG, u"/color"),
         ]
 
     config.custom_text_tags["m"] = mind_tag
     config.custom_text_tags["r"] = red_tag
+    config.custom_text_tags["g"] = green_tag
 
     ############################################################################
 
@@ -480,6 +489,7 @@ init python:
         crush       = 0         # стадии разговора об увлечении (для Эрика - стадии начального отношения)
         incident    = 0         # стадии разговора об инцеденте
         talkblock   = 0         # диалог с персонажем блокирован (Эрик запустил кошелёк, первый разговор об этом состоялся)
+        showdown_e  = 0         # состоялся разговор об изгнании Эрика
 
         # счетчики
         defend      = 0         # счетчик спасений от наказания голышом
@@ -514,6 +524,7 @@ init python:
             self.crush          = 0
             self.incident       = 0
             self.talkblock      = 0
+            self.showdown_e     = 0
 
             #счетчики
             self.defend         = 0
@@ -755,7 +766,7 @@ init python:
 
         # Возвращает запись с текущим действием персонажа
         def get_plan(self, d='', t=''):
-            global day, tm
+            # global day, tm
             d1 = d if d!='' else day
             tm1 = t if t!='' else tm
             h, m = tm1.split(':')  # нормализуем время на всякий случай
@@ -1016,10 +1027,6 @@ init python:
         def money(self):
             return self.__tange
 
-        # @money.setter
-        # def money(self, val):
-        #     self.__tange = val
-
         @property
         def account(self):
             return self.__account
@@ -1132,6 +1139,7 @@ init python:
         eric_wallet     = 0         # стадия события с кошельком Эрика
         block_peeping   = 0         # блокированы подглядывания после запуска кошелька
         eric_banished   = 0         # Эрик изгнан
+        asked_phone     = 0         # просил у Лизы телефон
 
         # счетчики
         breakfast       = 0         # завтраков
@@ -1169,6 +1177,7 @@ init python:
             self.eric_wallet        = 0
             self.block_peeping      = 0
             self.eric_banished      = 0
+            self.asked_phone        = 0
 
             self.breakfast          = 0
             self.dinner             = 0

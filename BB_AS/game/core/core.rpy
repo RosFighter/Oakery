@@ -45,6 +45,7 @@ label Waiting:
     if prevtime[:2] != tm[:2]:
         # почасовой сброс
         python:
+            # print 'reset', prevtime, tm
             for char in chars:
                 chars[char].hourly.reset()
 
@@ -112,6 +113,13 @@ label Waiting:
 
 label eric_time_settings:
 
+    if flags.eric_banished:
+        if prevtime < '17:00' <= tm:
+            if weekday in [1, 2, 3, 4, 5]:
+                $ infl[ann].add_e(10)  # Ане начисляем каждый день, когда она на работе
+
+        return
+
     if prevtime < '14:00' <= tm:
         if all([weekday==6, 'sexbody2' not in alice.gifts, alice.dcv.intrusion.enabled, alice.dcv.intrusion.done, alice.dcv.intrusion.stage<7]):
             # Макс не успел вовремя подарить Алисе кружевное бельё
@@ -161,8 +169,10 @@ label eric_time_settings:
                 # Эрик дрочит на спящую Алису
                 $ flags.eric_jerk = True
             elif all([flags.eric_wallet == 2, not eric.daily.sweets, weekday!=5]):
-                # после запуска кошелька дрочке Эрика могут помешать лишь таблетки
-                $ flags.eric_jerk = True
+                # после запуска кошелька дрочке Эрика могут помешать лишь таблетки ###
+                if flags.eric_photo2:
+                    # но только, если у Макса есть обе фотографии, иначе Эрик "терпит")
+                    $ flags.eric_jerk = True
 
     if day != prevday:
         # полночь
@@ -484,6 +494,30 @@ label AfterWaiting:
             $ cam_flag.remove('notebook_on_terrace')
     $ SetAvailableActions()
 
+    ## проверяем, не пора ли открыть костюмы для главного меню
+    if 'kira' in chars and 'swim' not in menu_chars['Kira'].get_open_clot():
+        # купальники
+        if all(['casual_d' in persistent.mm_cookies['lisa'],
+                'casual_d' in persistent.mm_cookies['alice'],
+                'casual_d' in persistent.mm_cookies['ann'],
+                'casual_d' in persistent.mm_cookies['kira']]):
+            $ menu_chars['Lisa'].open('swim')
+            $ menu_chars['Alice'].open('swim')
+            $ menu_chars['Ann'].open('swim')
+            $ menu_chars['Kira'].open('swim')
+
+    if 'kira' in chars and 'sleep0' not in menu_chars['Kira'].get_open_clot():
+        # нижнее бельё
+        if all(['swim' in persistent.mm_cookies['lisa'],
+                'swim' in persistent.mm_cookies['alice'],
+                'swim' in persistent.mm_cookies['ann'],
+                'swim' in persistent.mm_cookies['kira']]):
+            $ menu_chars['Lisa'].open('sleep0')
+            $ menu_chars['Alice'].open('sleep0')
+            $ menu_chars['Alice'].open('sleep1')
+            $ menu_chars['Ann'].open('sleep0')
+            $ menu_chars['Kira'].open('sleep0')
+
     ## случайное попадание на переодевания
     call random_dressed from _call_random_dressed
 
@@ -518,7 +552,6 @@ label AfterWaiting:
         elif all([current_room == house[6], flags.eric_jerk, '02:00'<=tm<'02:30', flags.eric_noticed, eric.stat.mast]):
             $ renpy.show('Eric jerk off fg-'+current_room.cur_bg[-1:])
 
-
     ## если в комнате есть персонаж, отмечаем, что видели его
     python:
         for char in current_room.cur_char:
@@ -534,6 +567,7 @@ label random_dressed:
 
     if not lisa.hourly.dressed and tm[-2:] == '00':
         #  Лиза ещё не переодевалась
+        # $ print 'test 1', lisa.prev_plan, lisa.plan_name, olivia_visits()
         if any([
                 # после душа в обычную
                 all([lisa.prev_plan == 'shower', lisa.plan_name == 'read']),
@@ -545,6 +579,7 @@ label random_dressed:
 
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
+                # $ print 't-2'
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_1
@@ -564,6 +599,7 @@ label random_dressed:
 
             if all([current_room == prev_room, current_room == house[0]]):
                 # Макс оставался в комнате в своей комнате
+                # $ print 't-3'
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
                     call lisa_dressed.stay_in_room from _call_lisa_dressed_stay_in_room_2
@@ -583,15 +619,16 @@ label random_dressed:
         elif all([lisa.prev_plan in ['in_shcool', 'on_courses'], lisa.plan_name in ['sun', 'swim'], olivia_visits()]):
             # после школы в купальник (Оливия в гостях)
             if all([current_room == prev_room, current_room == house[0]]):
+                # $ print 't-4'
                 # Макс оставался в комнате в своей комнате
                 if not persistent.skip_lisa_dressed:
                     $ lisa.hourly.dressed = 1
-                    call olivia_dressed.stay_in_room
+                    call olivia_dressed.stay_in_room from _call_olivia_dressed_stay_in_room
 
             elif all([current_room != prev_room, current_room == house[0]]):
                 # Макс входит в свою комнату
                 $ lisa.hourly.dressed = 1
-                call chance_dressing_roll('Olivia')
+                call chance_dressing_roll('Olivia') from _call_chance_dressing_roll_2
 
         elif all([tm=='00:00', lisa.plan_name == 'sleep', current_room == prev_room, current_room == house[0], not persistent.skip_lisa_dressed]):
             $ lisa.hourly.dressed = 1
@@ -603,16 +640,16 @@ label random_dressed:
             if all([current_room == prev_room, current_room == house[2]]):
                 # Макс оставался в комнате Анны
                 $ ann.hourly.dressed = 1
-                call ann_dressed.stay_in_room
+                call ann_dressed.stay_in_room from _call_ann_dressed_stay_in_room
 
             elif random_outcome(25):
                 # Макс входит в комнату Анны
                 $ ann.daily.dressed += 1
-                call ann_dressed.moment0    # "нулевой"
+                call ann_dressed.moment0 from _call_ann_dressed_moment0    # "нулевой"
 
         elif any([
             # после душа без Эрика в спортивку
-            all([ann.prev_plan in 'shower', ann.plan_name == 'yoga']),
+            all([ann.prev_plan == 'shower', ann.plan_name == 'yoga']),
             # после йоги приготовление завтрака, если одежда для готовки не спортивная
             all([ann.prev_plan == 'yoga', ann.plan_name == 'cooking', ann.clothes.cook_morn.cur not in [0, 2]]),
             # вс после завтрака отдыхает в своей комнате, если одежда изменена
@@ -628,11 +665,11 @@ label random_dressed:
             if all([current_room == prev_room, current_room == house[2]]):
                 # Макс оставался в комнате Анны
                 $ ann.hourly.dressed = 1
-                call ann_dressed.stay_in_room
+                call ann_dressed.stay_in_room from _call_ann_dressed_stay_in_room_1
 
             elif all([current_room != prev_room, current_room == house[2]]):
                 # Макс входит в комнату Анны
-                call chance_dressing_roll('Ann')
+                call chance_dressing_roll('Ann') from _call_chance_dressing_roll_3
 
     return
 
@@ -641,13 +678,13 @@ label chance_dressing_roll(persone=''):
         # Оливия в гостях
         if random_outcome(40):
             # $ olivia.daily.dressed += 1
-            call olivia_dressed.moment0    # "нулевой"
+            call olivia_dressed.moment0 from _call_olivia_dressed_moment0    # "нулевой"
         elif random_outcome(35):
             # $ olivia.daily.dressed += 2
-            call olivia_dressed.moment1    # неповезло
+            call olivia_dressed.moment1 from _call_olivia_dressed_moment1    # неповезло
         elif random_outcome(25):
             # $ olivia.daily.dressed += 2
-            call olivia_dressed.moment2    # повезло
+            call olivia_dressed.moment2 from _call_olivia_dressed_moment2    # повезло
 
     elif persone == 'Lisa':
         if lisa.daily.dressed in [0, 1]:
@@ -1736,3 +1773,7 @@ label update_07_p1_99:
         python:
             for st in range(14, len(poss['SoC'].stages)):
                 poss['SoC'].stages[st] = 0
+
+    if _version < '0.07.p1.32':
+        call InitActions from _call_InitActions_1
+        $ SetAvailableActions()

@@ -404,8 +404,8 @@ label cam0_kira_night_swim:
 label cam1_kira_night_swim:
     $ renpy.show('Kira cams swim night '+cam_poses_manager(kira, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    if 'ann_swim1' not in cam_flag:
-        $ cam_flag.append('ann_swim1')
+    if 'kira_swim1' not in cam_flag:
+        $ cam_flag.append('kira_swim1')
         Max_05 "{m}Класс! Тётя Кира решила ночью поплавать без купальника... пока никто не видит... Ну да, никто!{/m}"
     return
 

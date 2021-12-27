@@ -1,29 +1,65 @@
+# f - полный комплект одежды
+# t - топ (блузка, футболка и т.п.)
+# b - низ (юбка, джинсы, шорты и т.п)
+# lt - верх нижнего белья/купальника
+# lb - низ белья/купальника или нижнее бельё, если оно цельное
+# h - головной убор
+# st - чулки/колготки
+# sh - обувь
+# a1 - аксессуар 1
+# a2 - аксессуар 2
+
+# tb - топ + низ в случае их перекрытия
+# tlb - топ + трусики
 
 init python:
 
-    # f - полный комплект одежды
-    # t - топ (блузка, футболка и т.п.)
-    # b - низ (юбка, джинсы, шорты и т.п)
-    # lt - верх нижнего белья/купальника
-    # lb - низ белья/купальника или нижнее бельё, если оно цельное
-    # h - головной убор
-    # st - чулки/колготки
-    # sh - обувь
-    # a1 - аксессуар 1
-    # a2 - аксессуар 2
+    # класс описания "печенек"
+    class MM_Cookies():
 
-    # tb - топ + низ в случае их перекрытия
-    # tlb - топ + трусики
+        def __init__(self, char, clot, room, lod, tm1, tm2, xy, sc=1.0, al=1.0, num=1, req='True'):
+            self.char   = char
+            self.clot   = clot
+            self.room   = room
+            self.xy     = xy
+            self.sc     = sc
+            self.al     = al
+            self.num    = num
+            self.req    = req
 
-    # # класс описания элементов одежды мглавного меню
+            if type(lod) == str:
+                self.lod = tuple([int(x) for x in lod.replace(', ', ',').split(',')])
+            elif type(lod) == int:
+                self.lod = (lod, )
+            else:
+                self.lod = lod
+            h, m = tm1.split(':') if str(tm1).find(':') > 0 else str(float(tm1)).replace('.', ':').split(':')
+            self.tm1 = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
+
+            h, m = tm2.split(':') if str(tm2).find(':') > 0 else str(float(tm2)).replace('.', ':').split(':')
+            self.tm2 = ('0' + str(int(h)))[-2:] + ':' + ('0' + str(int((m + '0')[:2])))[-2:]
+
+
+        def mark_found(self):
+            if self.num == 1:
+                if self.char not in persistent.mm_cookies:
+                    persistent.mm_cookies[self.char] = {}
+                persistent.mm_cookies[self.char][self.clot] = set()
+            persistent.mm_cookies[self.char][self.clot].add('cookie_'+str(self.num))
+
+            notify_list.append(__("{color=[lime]}Открыта детальная настройка для одного из костюмов %s в главном меню{/color}") % renpy.translate_string(chars[self.char].name_1))
+
+
+    # класс описания элементов одежды главного меню
     class MMIoC():
         # main menu item of clothing
-        def __init__(self, i, p, r=None, n='', f=0, ex=0, over=None, eq=None, idlst=None):
+        def __init__(self, i, p, r=None, n='', f=0, ex=0, nc=1, over=None, eq=None, idlst=None):
             self.ind    = i     # индекс элемента одежды
             self.p      = p     # рендер настроек
             self.r      = r     # рендер главного меню
             self.name   = n     # наименование элемента одежды для кнопки настроек
             self.ex     = ex    # снимать можно только для экстра
+            self.nc     = nc    # требуется "печенек" для снятия
             self.full   = f     # рендер настроек полный (включая тело)
             if type(over) == str:
                 self.over = over.replace(', ', ',').split(',')
@@ -33,7 +69,7 @@ init python:
             self.id_lst = idlst # список ключей заменяемых элементов одежды (для составных)
 
         def __repr__(self):
-            return '{self.ind}, {self.p}, {self.r}, {self.name}, {self.full}, {self.over}'.format(self=self)
+            return '{self.ind}, p:{self.p}, r:{self.r}, name:{self.name}, f:{self.full}, over:{self.over}, eq:{self.eq}, ex:{self.ex}, nc:{self.nc}'.format(self=self)
 
 
     # класс справочника одежды персонажей главного меню
@@ -65,16 +101,25 @@ init python:
 
         # возвращает словарь отдельных элементов одежды (активированных)
         # и список кортежей кнопок (наименование, id в словаре, доступность)
-        def get_btn_list(self):
+        def get_btn_list(self, char_id, clot_id):
             dict_item = {}
             btn = []
             equv = []
+            find_cookies = 0
+            if char_id in persistent.mm_cookies:
+                if clot_id in persistent.mm_cookies[char_id]:
+                    find_cookies = len(persistent.mm_cookies[char_id][clot_id])
+
             for item in self.clothes:
                 if '+' not in item:
                     # это отдельный элемент
                     dict_item[item] = 1 if item not in equv else 0
-                    # кнопка доступна, если есть экстра, одежда без ограничений или у одежды есть эквивалент (тогда они переключаются)
-                    access = any([extra_content, not self.clothes[item].ex, self.clothes[item].eq])
+
+                    cookies = self.clothes[item].nc <= find_cookies
+
+                    # кнопка доступна, если есть экстра, одежда без ограничений
+                    # выполнено требование по печенькам или у одежды есть эквивалент (тогда они переключаются)
+                    access = cookies and any([extra_content, not self.clothes[item].ex, self.clothes[item].eq])
 
                     # один из эквивалентов обязательно должен быть активирован
                     required = self.clothes[item].ex and not extra_content
@@ -232,18 +277,66 @@ init python:
             if not persistent.mm_chars[self.id_char]:
                 # если список одежды персонажа пуст, добавляемый вариант
                 # устанавливаем в качестве текущего
-                persistent.mm_chars[self.id_char].append((id_clot, mm_clot_dict[self.id_char][id_clot].get_btn_list()[0]))
+                persistent.mm_chars[self.id_char].append((id_clot, mm_clot_dict[self.id_char][id_clot].get_btn_list(self.id_char, id_clot)[0]))
 
             if id_clot not in persistent.mm_chars[self.id_char]:
                 persistent.mm_chars[self.id_char].append(id_clot)
+                if 'chars' in globals():
+                    notify_list.append(__("{color=[lime]}Открыт новый костюм %s для главного меню{/color}") % renpy.translate_string(chars[self.id_char].name_1))
 
             return True
+
+        # закрывает тип одежды персонажа для главного меню
+        def close(self, id_clot):
+            if self.id_char not in mm_clot_dict:
+                print ('Персонаж', self.name, 'отсутствует в списке одежды для меню')
+                return False
+
+            if id_clot not in mm_clot_dict[self.id_char]:
+                print ('тип одежды', id_clot, 'для персонажа', self.name, 'отсутствует в списке одежды для меню')
+                return False
+
+            if self.id_char not in persistent.mm_chars:
+                # добавим персонажа, создав пустой список доступной одежды
+                persistent.mm_chars[self.id_char] = []
+                return False
+
+            if id_clot in persistent.mm_chars[self.id_char]:
+                if len(persistent.mm_chars[self.id_char]) == 2:
+                    # открыт только удаляемый костюм
+                    # очищаем список и выходим
+                    persistent.mm_chars[self.id_char].clear()
+                    return True
+                else:
+                    persistent.mm_chars[self.id_char].remove(id_clot)
+
+            if persistent.mm_chars[self.id_char][0][0] == id_clot:
+                # в качестве текущей одежды установлена удаляемая
+                persistent.mm_chars[self.id_char][0] = tuple([
+                    persistent.mm_chars[self.id_char][1],
+                    mm_clot_dict[self.id_char][persistent.mm_chars[self.id_char][1]].get_btn_list(self.id_char, persistent.mm_chars[self.id_char][1])[0]
+                    ])
+                return True
 
         def get_current(self):
             # возвращает текущий вариант одежды персонажа для главного меню
             if self.id_char not in persistent.mm_chars:
                 return None, None
-            return persistent.mm_chars[self.id_char][0]
+            clot, var = persistent.mm_chars[self.id_char][0]
+
+            if not extra_content:
+                # активируем "неснимаемые" одёжки для не-экстра
+                for k in var:
+                    if not var[k] and mm_clot_dict[self.id_char][clot].clothes[k].ex:
+                        # элемент одежды не активирован, но обязателен в не-экстра
+                        if not mm_clot_dict[self.id_char][clot].clothes[k].eq:
+                            # нет эквивалента
+                            var[k] = 1
+                        elif not var[mm_clot_dict[self.id_char][clot].clothes[k].eq]:
+                            # есть эквивалент и он не активен
+                            var[k] = 1
+
+            return clot, var
 
         def get_open_clot(self):
             # возвращает список открытых вариантов одежды для персонажа
@@ -265,7 +358,7 @@ init python:
                 # print ('0 - нет персонажа')
                 return []
 
-            full = mm_clot_dict[self.id_char][clot].get_btn_list()[0]
+            full = mm_clot_dict[self.id_char][clot].get_btn_list(self.id_char, clot)[0]
 
             # print set(full.keys()) - set(cur.keys()), set(cur.keys()) - set(full.keys())
 
@@ -283,7 +376,7 @@ init python:
                 # print ('тип одежды', id_clot, 'для персонажа', self.name, 'отсутствует в списке одежды для меню')
                 return None
 
-            full = mm_clot_dict[self.id_char][clot].get_btn_list()[0]
+            full = mm_clot_dict[self.id_char][clot].get_btn_list(self.id_char, clot)[0]
 
             # print set(full.keys()) - set(cur.keys()), set(cur.keys()) - set(full.keys())
 
@@ -304,10 +397,10 @@ init python:
                 # print ('тип одежды', id_clot, 'для персонажа', self.name, 'отсутствует в списке одежды для меню')
                 return []
 
-            return mm_clot_dict[self.id_char][clot].get_btn_list()[1]
+            return mm_clot_dict[self.id_char][clot].get_btn_list(self.id_char, clot)[1]
 
         def get_full(self, clot):
-            return mm_clot_dict[self.id_char][clot].get_btn_list()[0]
+            return mm_clot_dict[self.id_char][clot].get_btn_list(self.id_char, clot)[0]
 
     def set_mm_clot(char, clot, var):
         menu_chars[char].set_current(clot, var)
@@ -316,12 +409,12 @@ init python:
 
     mm_clot_dict = {
         'max'   : OrderedDict([
-            ('casual_c', MMClot([('b', MMIoC(1, '01c', '01c', _("Шорты"), 1, over='lb')),
-                                 ('lb', MMIoC(1, '02', '01d', _("Трусы"), 1, 1))])),
-            ('new_year', MMClot([('h', MMIoC(11, '05a', '01x1', _("Шапка"), 0,)),
-                                 ('a1', MMIoC(12, '05b', '01x2', _("Борода"), 0,)),
-                                 ('b1', MMIoC(1, '05c', '01x3', _("Трусы #1"), ex=1, eq='b2')),
-                                 ('b2', MMIoC(1, '05d', '01x4', _("Трусы #2"), ex=1, eq='b1'))])),
+            ('casual_c', MMClot([('b', MMIoC(1, '01c', '01c', _("Шорты"), 1, over='lb', nc=0)),
+                                 ('lb', MMIoC(1, '02', '01d', _("Трусы"), 1, 1, nc=0))])),
+            ('new_year', MMClot([('h', MMIoC(2, '05a', '01x1', _("Шапка"), nc=0)),
+                                 ('a1', MMIoC(12, '05b', '01x2', _("Борода"), nc=0)),
+                                 ('b1', MMIoC(1, '05c', '01x3', _("Трусы #1"), ex=1, eq='b2', nc=0)),
+                                 ('b2', MMIoC(1, '05d', '01x4', _("Трусы #2"), ex=1, eq='b1', nc=0))])),
             ]),
         'alice' : OrderedDict([
             ('casual_d', MMClot([('t', MMIoC(2, '01e1', '01a1', _("Маечка"), 1)),
@@ -336,10 +429,10 @@ init python:
             ('sleep1',   MMClot([('lt', MMIoC(2, '02j2', '01d1', _("Лифчик"), 1)),
                                  ('lb', MMIoC(1, '02j3', '01d2', _("Трусики"), 1, 1)),
                                  ('lt+lb', MMIoC(0, '02j1', f=1))])),
-            ('new_year', MMClot([('h', MMIoC(1, '05a', '01x1', _("Шапочка"))),
-                                 ('a1', MMIoC(2, '05b', '01x2', _("Бант на шею"))),
+            ('new_year', MMClot([('h', MMIoC(1, '05a', '01x1', _("Шапочка"), nc=0)),
+                                 ('a1', MMIoC(2, '05b', '01x2', _("Бант на шею"), nc=0)),
                                  ('dr', MMIoC(4, '05d', '01x4', _("Кружевное платье"))),
-                                 ('lb', MMIoC(3, '05e', '01x5', _("Трусики"))),
+                                 ('lb', MMIoC(3, '05e', '01x5', _("Трусики"), ex=1)),
                                  ('st', MMIoC(5, '05f', '01x6', _("Чулочки"))),
                                  ('dr+lb', MMIoC(4, '05c', '01x3'))])),
             ]),
@@ -355,8 +448,8 @@ init python:
             ('sleep0',   MMClot([('lt', MMIoC(1, '02a', '01c1', _("Лифчик"), 1)),
                                  ('lb', MMIoC(2, '02b', '01c2', _("Трусики"), 1, 1)),
                                  ('lt+lb', MMIoC(0, '02', f=1))])),
-            ('new_year', MMClot([('h', MMIoC(1, '00x1', '01x1', _("Шляпка"))),
-                                 ('a1', MMIoC(6, '00x2', '01x2', _("Бабочка на шею"))),
+            ('new_year', MMClot([('h', MMIoC(1, '00x1', '01x1', _("Шляпка"), nc=0)),
+                                 ('a1', MMIoC(6, '00x2', '01x2', _("Бабочка на шею"), nc=0)),
                                  ('dr', MMIoC(5, '00x3', '01x3', _("Кружевное платье"), over='b, a2')),
                                  ('a2', MMIoC(4, '00x4', '01x4', _("Мишура на груди"))),
                                  ('b', MMIoC(3, '00x5', '01x5', _("Шортики"), ex=1))])),
@@ -371,11 +464,11 @@ init python:
             ('sleep0',   MMClot([('lt', MMIoC(2, '02b', '01c1', _("Сорочка"), 1)),
                                  ('lb', MMIoC(1, '02a', '01c2', _("Трусики"), 1, 1)),
                                  ('lt+lb', MMIoC(0, '02', '01c', f=1))])),
-            ('new_year', MMClot([('h', MMIoC(1, '05a', '01x1', _("Шапочка"))),
+            ('new_year', MMClot([('h', MMIoC(1, '05a', '01x1', _("Шапочка"), nc=0)),
                                  ('dr', MMIoC(2, '05b', '01x2', _("Свитер без рукавов"), eq='br', over='lb')),
                                  ('br', MMIoC(2, '05c', '01x3', _("Откровенный корсет"), eq='dr')),
                                  ('lb', MMIoC(3, '05d', '01x4', _("Трусики"), ex=1)),
-                                 ('a1', MMIoC(4, '05e', '01x5', _("Браслетики на запястья")))])),
+                                 ('a1', MMIoC(4, '05e', '01x5', _("Браслетики на запястья"), nc=0))])),
             ]),
         'lisa'  : OrderedDict([
             ('casual_d', MMClot([('t', MMIoC(3, '01c3', '01a1', _("Топик"), 1)),
@@ -391,15 +484,44 @@ init python:
                                  ('lb', MMIoC(1, '02c', '01c3', _("Трусики"), 1, 1, eq='b')),
                                  ('t+b', MMIoC(0, '02', f=1)),
                                  ('t+lb', MMIoC(0, '02a', f=1))])),
-            ('new_year', MMClot([('h', MMIoC(5, '05a', '01x1', _("Шапочка"))),
-                                 ('a1', MMIoC(4, '05b', '01x5', _("Леденец на шею"))),
+            ('new_year', MMClot([('h', MMIoC(5, '05a', '01x1', _("Шапочка"), nc=0)),
+                                 ('a1', MMIoC(4, '05b', '01x5', _("Леденец на шею"), nc=0)),
                                  ('t', MMIoC(1, '05c', '01x2', _("Свитер с рукавами"))),
                                  ('b', MMIoC(3, '05d', '01x4', _("Колготки"), over='lb')),
                                  ('lb', MMIoC(2, '05e', '01x3', _("Трусики"), ex=1))])),
             ]),
         }
 
+    mm_cookies = [
+        # персонаж, одежда, комната, дни недели, время от и до, координаты печеньки, масштаб печеньки, прозрачность печеньки, номер печеньки костюма, доп.условие
+        MM_Cookies('ann', 'swim', 'house[6]', '0', '14:00', '14:59', (1150, 40), 0.75, 0.6),
+        MM_Cookies('kira', 'swim', 'house[6]', '5', '11:00', '12:59', (1753, 723), 0.75, 0.6),
+        ]
+
+    mm_cookies_events = [
+        # персонаж, одежда, комната, дни недели, время от и до, координаты печеньки, масштаб печеньки, прозрачность печеньки, номер печеньки костюма, доп.условие
+        MM_Cookies('lisa', 'casual_d', 'house[0]', '4', '23:00', '23:59', (310, 0), 0.8, req="lisa.dress=='d'"),
+        MM_Cookies('lisa', 'swim', 'house[0]', '0,1,2,3,4,5,6', '15:00', '17:30', (1820, 470), 0.8, 0.8, req="'c' in pose"),
+        MM_Cookies('lisa', 'sleep0', 'house[0]', '0,1,2,3,4,5,6', '00:00', '01:00', (518, 7), 0.6, 0.8, req="renpy.showing('BG char Lisa horror-myroom 01a')"),
+        MM_Cookies('lisa', 'new_year', 'house[0]', '2,5', '20:30', '21:59', (60, 13), 0.75, 0.5),
+
+        MM_Cookies('alice', 'casual_d', 'house[4]', '3', '22:00', '23:59', (457, 206), 0.5, 0.8, req="alice.dress=='d'"),
+        MM_Cookies('alice', 'swim', 'house[6]', '4', '15:00', '15:59', (165, 614), 0.75, 0.8, req="renpy.showing('BG char Alice sun-alone 05')"),
+        MM_Cookies('alice', 'sleep0', 'house[0]', '0,1,2,3,4,6', '02:00', '04:00', (1793, 501), 0.5, 0.35, req="alice.dress=='a'"),
+        MM_Cookies('alice', 'sleep1', 'house[0]', '0,1,2,3,4,6', '02:00', '04:00', (1820, 30), 0.5, 0.35, req="alice.dress=='b'"),
+        MM_Cookies('alice', 'new_year', 'house[6]', '1,2,3,4,5', '13:00', '15:59', (1827, 367), 0.75, 0.5, req="renpy.showing('BG punish-sun 03')"),
+
+        MM_Cookies('ann', 'casual_d', 'house[5]', '0,1,2,3,4,5,6', '19:00', '19:59', (754, 596), 0.75, req="ann.dress=='d' and not check_is_home('eric')"),
+        MM_Cookies('ann', 'sleep0', 'house[6]', '1,3', '7:0', '7:59', (5, 730), 0.6, 0.4, req="renpy.showing('BG char Ann yoga 02')"),
+        MM_Cookies('ann', 'new_year', 'house[4]', '0', '21:00', '21:59', (25, 207), 0.75, 0.3, req="renpy.showing('BG tv-mass-03')"),
+
+        MM_Cookies('kira', 'casual_d', 'house[5]', '6', '09:00', '09:59', (960, 587), 0.75),
+        MM_Cookies('kira', 'sleep0', 'house[4]', '0,3', '03:00', '03:59', (119, 423), 0.75, 0.3, req="renpy.showing('BG tv-kiss-03')"),
+        MM_Cookies('kira', 'new_year', 'house[6]', '6', '03:00', '03:59', (95, 390), 0.75, 0.7, req="renpy.showing('BG char Kira after-club-s02-f')"), #(126, 561)
+        ]
+
 default persistent.mm_chars = {}
+default persistent.mm_cookies = {}
 
 define menu_chars = OrderedDict([
     ('Max'  , MenuClothes('max', _("Макс"))),
@@ -418,12 +540,19 @@ init 100:
             $ persistent.menu_var = '01'
             $ persistent.mm_chars.clear()
 
-        # open New_Year
-        $ menu_chars['Max'].open('new_year')
-        $ menu_chars['Alice'].open('new_year')
-        $ menu_chars['Ann'].open('new_year')
-        $ menu_chars['Kira'].open('new_year')
-        $ menu_chars['Lisa'].open('new_year')
+        if datetime.today().month in [1, 2, 12]:
+            # open New_Year
+            $ menu_chars['Max'].open('new_year')
+            $ menu_chars['Alice'].open('new_year')
+            $ menu_chars['Ann'].open('new_year')
+            $ menu_chars['Kira'].open('new_year')
+            $ menu_chars['Lisa'].open('new_year')
+        else:
+            $ menu_chars['Max'].close('new_year')
+            $ menu_chars['Alice'].close('new_year')
+            $ menu_chars['Ann'].close('new_year')
+            $ menu_chars['Kira'].close('new_year')
+            $ menu_chars['Lisa'].close('new_year')
 
         # open casual
         $ menu_chars['Max'].open('casual_c')
@@ -433,15 +562,15 @@ init 100:
         $ menu_chars['Lisa'].open('casual_d')
 
         # open all other
-        $ menu_chars['Alice'].open('swim')
-        $ menu_chars['Alice'].open('sleep0')
-        $ menu_chars['Alice'].open('sleep1')
+        # $ menu_chars['Alice'].open('swim')
+        # $ menu_chars['Alice'].open('sleep0')
+        # $ menu_chars['Alice'].open('sleep1')
 
-        $ menu_chars['Ann'].open('swim')
-        $ menu_chars['Ann'].open('sleep0')
+        # $ menu_chars['Ann'].open('swim')
+        # $ menu_chars['Ann'].open('sleep0')
 
-        $ menu_chars['Kira'].open('swim')
-        $ menu_chars['Kira'].open('sleep0')
+        # $ menu_chars['Kira'].open('swim')
+        # $ menu_chars['Kira'].open('sleep0')
 
-        $ menu_chars['Lisa'].open('swim')
-        $ menu_chars['Lisa'].open('sleep0')
+        # $ menu_chars['Lisa'].open('swim')
+        # $ menu_chars['Lisa'].open('sleep0')

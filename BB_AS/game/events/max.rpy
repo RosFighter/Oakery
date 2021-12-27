@@ -1101,3 +1101,38 @@ label bedtime_thoughts:
         $ items['sedative'].unblock()
 
     return
+
+
+label SearchPhone:
+
+    scene location house myroom evening-b
+
+    call screen search_phone
+
+    label .bed:
+        if random_sigloc == 'n':
+            jump .yes
+        else:
+            jump .no
+
+    label .table:
+        if random_sigloc == 't':
+            jump .yes
+        else:
+            jump .no
+
+    label .no:
+        Max_10 "{m}Здесь телефона Лизы нет.{/m}"
+        jump SearchPhone
+
+    label .yes:
+        # myroom-wardrobe-mde-02a + lisaphone-max-(01b/01c)
+        scene BG char Lisa hugging-02a
+        $ renpy.show('Max stolen-phone 00-01' + mgg.dress)
+
+        Max_07 "{m}А вот и телефон Лизы! Надеюсь, диктофон на нём есть, иначе я влип...{/m}"
+        menu:
+            Max_09 "{m}Да, диктофон есть. Теперь, пока Лиза не вернулась, нужно идти к Эрику и попробовать вывести его на чистую воду...{/m}"
+            "{i}идти к Эрику с включённым диктофоном{/i}":
+                $ flags.asked_phone = 2
+                jump Eric_with_dictaphone

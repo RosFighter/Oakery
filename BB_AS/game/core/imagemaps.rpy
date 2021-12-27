@@ -90,3 +90,26 @@ screen choice_zone_sunscreen():
     key 'mouseup_3' action NullAction()
     key 'K_ESCAPE' action NullAction()
     key 'K_MENU' action NullAction()
+
+
+screen search_phone():
+    tag menu
+
+    use show_dynamic_tooltip
+    imagemap:
+        ground 'location house myroom evening-b'
+
+        hotspot (268, 586, 579, 343) action [Hide('dynamic_tooltip'), Jump('SearchPhone.table')]:
+            mouse 'find'
+            tooltip _("{i}искать в столе{/i}")
+
+        hotspot (650, 518, 198, 92) action [Hide('dynamic_tooltip'), Jump('SearchPhone.bed')]:
+            mouse 'find'
+            tooltip _("{i}искать на кровати{/i}")
+        hotspot (848, 518, 166, 220) action [Hide('dynamic_tooltip'), Jump('SearchPhone.bed')]:
+            mouse 'find'
+            tooltip _("{i}искать на кровати{/i}")
+
+    key 'mouseup_3' action NullAction()
+    key 'K_ESCAPE' action NullAction()
+    key 'K_MENU' action NullAction()

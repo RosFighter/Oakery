@@ -38,3 +38,11 @@ translate german strings:
     old "{i}массировать попку{/i}"
     new "{i}ihren Arsch massieren{/i}"
 
+# TODO: Translation updated at 2021-12-21 02:03
+
+translate german strings:
+
+    # game/core/imagemaps.rpy:107
+    old "{i}искать на кровати{/i}"
+    new "{i}auf das Bett schauen{/i}"
+

@@ -1921,3 +1921,80 @@ translate german strings:
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы."
     new "Lisa kam zu mir, um sich beraten zu lassen, denn es stellte sich heraus, dass Eric nach dem theoretischen Unterricht vorgeschlagen hatte, all dies im praktischen Unterricht ohne die Anwesenheit von Mom zu vertiefen."
+
+# TODO: Translation updated at 2021-12-27 16:12
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь Эрика нет и я могу спокойно помогать Алисе дальше. Я уже предложил ей сходить куда-нибудь и развеяться, а то Эрик своими планами произвёл на моих сестёр и маму не самые лучшие впечатления. Но Алиса хочет сперва опомниться, а уже потом как-то развлекаться. Остаётся ждать..."
+    new "Jetzt, da Eric weg ist, kann ich Alice ungestört helfen. Ich habe ihr bereits vorgeschlagen, auszugehen und sich zu amüsieren, denn Erics Pläne haben bei meinen Schwestern und meiner Mutter nicht die besten Eindrücke hinterlassen. Aber Alice will erst zur Ruhe kommen und dann Spaß haben. Man muss abwarten..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно помешать Эрику и Лизе во время практических занятий..."
+    new "Erick und Lisa müssen davon abgehalten werden, zu üben..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Компромат на Эрика\"..."
+    new "Es sind Fortschritte bei der \"Eric im Dreck\"-Gelegenheit nötig..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик предупредил меня, что так просто он это не оставит и у меня будут огромные проблемы. Ну посмотрим, что такого он может сделать..."
+    new "Ich habe in Lisas Übungsstunde eingegriffen, bevor sie einen großen Fehler begeht... Eric hat mich natürlich gewarnt, dass er es nicht auf sich beruhen lassen würde und ich in großen Schwierigkeiten stecken würde. Nun, mal sehen, was kommt..."
+
+    # game/core/09_opportunities.rpy:4
+    old "После того, как с Эриком всё разрешилось, я поговорил с Лизой. Она после того, что затевал Эрик, не горит большим желанием активно продолжать своё сексуальное образование. Поэтому я предложил ей смотреть обучающие фильмы и она не против. Теперь нужно будет подыскать что-нибудь такое для неё, не порно, но добротные эротические фильмы. А там глядишь и до порно фильмов недалеко..."
+    new "Nachdem alles mit Eric geklärt war, habe ich mit Lisa gesprochen. Nach dem, was Eric vorhatte, war sie nicht sehr erpicht darauf, ihre Sexualerziehung aktiv voranzutreiben. Also schlug ich ihr vor, Lehrfilme anzuschauen, und sie ist damit einverstanden. Jetzt muss man etwas für sie finden, keine Pornos, sondern gute erotische Filme. Und dann werden wir sehen, ob wir nicht in Pornofilme reinkommen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эта сволочь Эрик, взял и обвинил меня в воровстве его бумажника с деньгами! И якобы именно на эти сворованные деньги я и покупаю все подарки для моей семьи. Дал мне неделю, чтобы я всё ему вернул, иначе меня отправят в военный лагерь. А как обидно, что верят именно Эрику, а не мне.\nЭрик так же дал понять, что \"уладить\" это у меня не получится, так что дело за компроматом на него. Но сначала нужно поговорить с сёстрами, чтобы понять, насколько они верят Эрику."
+    new "Dieser Scheißkerl Eric hat mich beschuldigt, seine Brieftasche mit Geld gestohlen zu haben! Und angeblich habe ich mit diesem gestohlenen Geld alle Geschenke für meine Familie gekauft. Er gab mir eine Woche Zeit, um es ihm zurückzuzahlen, sonst würde ich in ein Militärlager geschickt werden.\nEs ist eine Schande, dass sie Eric \"glauben\" und nicht mir. Eric hat auch klar gemacht, dass ich das nicht ändern kann, also liegt es an mir, ihn zu belasten. Aber zuerst muss ich mit meinen Schwestern reden, um herauszufinden, wie sehr sie Eric vertrauen."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно торопиться! Лучше поговорить с Лизой и Алисой как можно быстрее..."
+    new "Es ist äußerste Eile geboten! Ich sollte so schnell wie möglich mit Lisa und Alice sprechen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Спрашиваете меня об Эрике? Эрик... Эрик... Какой такой Эрик? Не слышал ни о каком Эрике... Кажется, его и не было никогда. Даже вспоминать не буду! Но что мне запомнилось, так это Алиса в гневе. У меня даже привстал на такое..."
+    new "Fragst du mich nach Eric? Eric... Eric... Eric wer? Ich habe noch nie von einem Eric gehört... Ich glaube nicht, dass er jemals existiert hat. Ich werde mich nicht einmal daran erinnern! Aber ich erinnere mich an die wütende Alice. Ich habe sogar einen Ständer deswegen bekommen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Или же Эрик ещё может вернуться? Как знать..."
+    new "Könnte Eric trotzdem zurückkommen? Wer weiß..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Спрашиваете меня об Эрике? Эрик... Эрик... Какой такой Эрик? Не слышал ни о каком Эрике... Кажется, его и не было никогда. Даже вспоминать не буду! Но что мне запомнилось, так это Лиза в гневе. Вроде хотела порвать Эрика, а сама за меня в итоге пряталась..."
+    new "Fragst du mich nach Eric? Eric... Eric... Eric wer? Ich habe noch nie von einem Eric gehört... Ich glaube nicht, dass er jemals existiert hat. Ich kann mich nicht mal mehr erinnern! Aber ich erinnere mich an eine wütende Lisa. Als ob sie Eric zerfleischen wollte, aber sie hat sich hinter mir versteckt..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Пришло время действовать! Одного снимка мало, чтобы убедить всех в том, что Эрик тот ещё мудак, а заманивать его его в комнату к Алисе нет времени. Вот бы мне разговорить Эрика и записать его мерзкие признания на диктофон! У Лизы на телефоне наверняка должен быть диктофон, но нужно подождать пару дней, чтобы она остыла. Тогда я его и попрошу на время..."
+    new "Es ist Zeit zu handeln! Es reicht nicht aus, alle davon zu überzeugen, dass Eric ein Arschloch ist, und es bleibt keine Zeit, ihn in Alices Zimmer zu locken. Ich wünschte, ich könnte Eric zum Reden bringen und seine fiesen Geständnisse auf Band aufnehmen! Lisa muss ein Diktiergerät in ihrem Telefon haben, aber das muss noch ein paar Tage warten, bis sie sich beruhigt hat. Dann werde ich mal fragen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно будет подождать и попросить у Лизы на время её телефон. Стоит попробовать начиная с субботы..."
+    new "Ich muss noch eine Weile warten und Lisa dann nach ihrem Telefon fragen. Es ist einen Versuch wert, am Samstag..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Пришло время действовать! Без доказательств я никак не смогу убедить всех в том, что Эрик тот ещё мудак. Вот бы мне разговорить его... и записать его мерзкие признания на диктофон! У Лизы на телефоне наверняка должен быть диктофон, но нужно подождать пару дней, чтобы она остыла. Тогда я его и попрошу на время..."
+    new "Es ist Zeit zu handeln! Ohne Beweise kann ich niemanden davon überzeugen, dass Eric ein Arschloch ist. Ich wünschte, ich könnte ihn zum Reden bringen... und sein ekelhaftes Geständnis auf Band bekommen! Lisa sollte wahrscheinlich ein Diktiergerät in ihrem Telefon haben, aber ich muss ein paar Tage warten, bis sie sich beruhigt hat. Dann werde ich Sie bitten..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Пришло время действовать! Снимки у меня есть, но хорошо бы перетянуть кого-нибудь из сестёр на свою сторону. Раз Эрик любит подрочить на Алису, то я знаю, как усилить эффект от компромата.\n\nНужно проследить за Эриком и убедиться, что он сделал все свои мерзкие ночные дела, а после немного \"испачкать\" Алису, будто бы это Эрик. С учётом обстоятельств, она точно прибежит с утра именно ко мне. Надеюсь, я успею показать ей снимки до того, как она меня убьёт!"
+    new "Es ist Zeit zu handeln! Ich habe die Bilder, aber es wäre gut, wenn ich eine meiner Schwestern auf meiner Seite hätte. Da Eric sich gerne auf Alice einen runterholt, weiß ich, wie man den Anschein einer Vergewaltigung verstärken kann:\n\nMan sollte Eric folgen und dafür sorgen, dass er nachts all seine gruseligen Sachen macht, und dann Alice ein wenig \"schmutzig\" machen, als ob es Eric gewesen wäre. In Anbetracht der Umstände bin ich sicher, dass sie morgen früh zu mir kommen wird. Ich hoffe, ich kann ihr die Bilder zeigen, bevor sie mich umbringt!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно убедиться, что Эрик вернулся в комнату мамы после ночных похождений и подставить его, зайдя к спящей Алисе в комнату..."
+    new "Man muss sicherstellen, dass Eric nach seinem nächtlichen Ausflug wieder im Zimmer von Mom ist, und ihn in die Falle locken, indem man danach Alices Schlafzimmer geht..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза ни за что не хочет давать мне свой телефон! Придётся взять его, пока она будет мыть посуду после ужина. Думаю, у меня получится найти её телефон в комнате и быстренько разговорить Эрика, пока она не обнаружила пропажу и подняла шум."
+    new "Lisa will mir auf keinen Fall ihr Handy geben! Ich muss es holen, während sie nach dem Essen abwäscht. Ich denke, ich kann ihr Telefon im Zimmer finden und Eric schnell zum Reden bringen, bevor sie merkt, dass es fehlt und einen Aufstand macht."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно найти телефон Лизы в комнате, пока она моет посуду и сразу же идти к Эрику. Другой возможности больше может не представиться..."
+    new "Ich muss Lisas Telefon im Zimmer finden, während sie das Geschirr abwäscht, und direkt zu Erics gehen. Es gibt wohl keine andere Möglichkeit..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эрик повержен! Мне удалось вывести его на чистую воду и теперь мы наконец-то заживём, как раньше. Даже ещё лучше! Но для начала всем нужно время, чтобы отойти от правды о нём."
+    new "Eric ist besiegt! Ich habe es geschafft, ihn aus der Reserve zu locken, und jetzt werden wir endlich wieder so leben wie früher. Noch besser! Aber zunächst brauchen alle Zeit, um die Wahrheit über ihn zu verarbeiten."
+

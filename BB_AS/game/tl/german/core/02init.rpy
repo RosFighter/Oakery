@@ -629,3 +629,31 @@ translate german strings:
     # game/core/02init.rpy:40
     old "{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n"
     new "{color=[orange]}{b}Warnung:{/b} Dein Einfluss in deiner Familie hat abgenommen.{/color}\n"
+# TODO: Translation updated at 2021-12-21 02:03
+
+translate german strings:
+
+    # game/core/02init.rpy:42
+    old "{color=#00FF00}{i}Успех!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Erfolg!{/i}{/color}\n"
+
+    # game/core/02init.rpy:43
+    old "{color=#E59400}{i}Провал!{/i}{/color}\n"
+    new "{color=#E59400}{i}Fehlschlag!{/i}{/color}\n"
+
+# TODO: Translation updated at 2021-12-25 01:42
+
+translate german strings:
+
+    # game/core/02init.rpy:134
+    old "Как ты после случившегося?"
+    new "Wie geht es dir nach dem, was passiert ist?"
+
+    # game/core/02init.rpy:134
+    old "Уже слышала новость, тётя Кира?"
+    new "Hast du die Neuigkeiten schon gehört, Tante Kira?"
+
+    # game/core/02init.rpy:134
+    old "Лиза, ты чего нос повесила?"
+    new "Lisa, warum rümpfst du die Nase?"
+

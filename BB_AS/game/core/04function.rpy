@@ -621,6 +621,9 @@ init python:
                     if all([items[key].have, items[key].need_read > items[key].read, ItsTime(cooldown['learn'])]):
                         AvailableActions['readbook'].active = True
 
+            if 'eric' in chars and all([lisa.plan_name == 'dishes', eric.plan_name == 'rest', flags.asked_phone==1, not lisa.hourly.talkblock]):
+                AvailableActions['searchphone'].active = True
+
         # комната Алисы
         if current_room == house[1] and len(current_room.cur_char) == 0:
             AvailableActions['usb'].active = True
@@ -778,6 +781,9 @@ init python:
             renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])) # стол
         renpy.show('Max breakfast 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
 
+        if 'kira' in chars:
+            renpy.show_screen('Cookies_Button')
+
 
     def seat_Dinner(): # рассаживает семью за ужином
         renpy.scene()
@@ -807,6 +813,8 @@ init python:
             renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])) # стол
 
         renpy.show('Max dinner 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
+        if 'kira' in chars:
+            renpy.show_screen('Cookies_Button')
 
 
     def GetLisaPunChance():  # вероятность наказания Лизы
@@ -1338,6 +1346,7 @@ init python:
             'polish'    : 'interface/POL.webp',
             'portuguese': 'interface/POR.webp',
             'spanish'   : 'interface/SPA.webp',
+            'slovak'    : 'interface/RUS.webp',         # заменить
             }[lang]
 
     def get_lang_list():
@@ -1384,6 +1393,13 @@ init python:
                 if 'spanish' not in persistent.list_language:
                     new_lang = True
                     persistent.list_language.append('spanish')
+
+            if 'slovak/script.rpy' in fn or 'slovak.rpy' in fn:
+                if 'slovak' not in current_language_list:
+                    current_language_list.append('slovak')
+                if 'slovak' not in persistent.list_language:
+                    new_lang = True
+                    persistent.list_language.append('slovak')
 
         return new_lang
 

@@ -2854,3 +2854,27 @@ translate german eric_ann_tv_2a838c07:
     # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?{/m}" nointeract
     Max_07 "{m}Wow! Eric hat Mom das Handtuch abgezogen und ich kann ihre nackten Brüste sehen! Vielleicht sollte ich näher ran?{/m}" nointeract
 
+# TODO: Translation updated at 2021-12-21 02:03
+
+# game/events/eric.rpy:1922
+translate german start_eric_wallet_e75cd485:
+
+    # Max_07 "{m}Вот только у меня абсолютно ничего нет против него! И сестёр я теперь вряд ли переманю на свою сторону, чтобы они меня поддержали перед мамой.{/m}"
+    Max_07 "{m}Aber ich habe absolut nichts gegen ihn! Und es ist unwahrscheinlich, dass ich meine Schwestern dazu bringen kann, sich auf meine Seite zu stellen und mich bei Mom zu unterstützen.{/m}"
+
+# TODO: Translation updated at 2021-12-27 01:36
+
+# game/events/eric.rpy:1934
+translate german eric_kira_night_swim_a236de17:
+
+    # Eric_13 "Ты зачем подкрадываешься, Макс?! Ночь на дворе. Заканчивай шататься и спать иди. Не мешай нам отдыхать." nointeract
+    Eric_13 "Warum schleichst du dich so an, Max?! Es ist mitten in der Nacht. Hör auf, herumzuschleichen und geh ins Bett. Störe unsere Nachtruhe nicht." nointeract
+
+# TODO: Translation updated at 2021-12-27 16:30
+
+# game/events/eric.rpy:1917
+translate german start_eric_wallet_93fe8bc0:
+
+    # Max_07 "{m}И так, у меня есть фотография, как Эрик дрочит... Но вряд ли этот снимок поможет переманить сестёр на мою сторону. Уж слишком там всё сомнительно на снимке.{/m}"
+    Max_07 "{m}Also, ich habe ein Bild von Eric, wie er sich einen runterholt... Aber ich glaube nicht, dass dieses Bild meine Schwestern auf meine Seite bringen wird. Es ist einfach zu fragwürdig auf dem Bild.{/m}"
+

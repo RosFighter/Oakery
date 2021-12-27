@@ -161,6 +161,7 @@ label InitActions: # кнопки действий
             ('clearpool'   , ActionsButton(_("ЧИСТИТЬ\nБАССЕЙН"), 'interface clearpool', 'ClearPool')),
             ('readbook'    , ActionsButton(_("ЧИТАТЬ"), 'interface book', 'BookRead', True)),
             ('searchcam'   , ActionsButton(_("ИСКАТЬ\nКАМЕРУ"), 'interface search', 'SearchCam')),
+            ('searchphone' , ActionsButton(_("ИСКАТЬ\nТЕЛЕФОН"), 'interface search', 'SearchPhone')),
             ('unbox'       , ActionsButton(_("РАЗОБРАТЬ\nКОРОБКИ"), 'interface box', 'Box')),
             ('notebook'    , ActionsButton(_("ВКЛЮЧИТЬ\nНОУТБУК"), 'interface notebook', 'Notebook', True)),
             ('sleep'       , ActionsButton(_("СПАТЬ"), 'interface sleep', 'Sleep', True)),

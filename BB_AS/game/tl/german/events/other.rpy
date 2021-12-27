@@ -1323,3 +1323,410 @@ translate german strings:
     # game/events/other.rpy:466
     old "{i}осторожно идти спать{/i}"
     new "{i}Leise ins Bett gehen{/i}"
+# TODO: Translation updated at 2021-12-22 01:13
+
+# game/events/other.rpy:645
+translate german dictaphone_showdown_with_eric_ff0dd3e4:
+
+    # Ann_13 "Макс! Лиза! Алиса! Ну зачем так неожиданно влетать?! Так и заикой стать не долго..."
+    Ann_13 "Max! Lisa! Alice! Warum seid ihr so plötzlich hier?! Und du fängst an zu stottern..."
+
+# game/events/other.rpy:646
+translate german dictaphone_showdown_with_eric_6110e6be:
+
+    # Lisa_13 "Извини, мама... Но сейчас кто-то действительно станет заикой! Ты хоть знаешь, какие планы строит Эрик?"
+    Lisa_13 "Es tut uns leid, Mom... Aber jetzt gerät wirklich jemand in Schwierigkeiten! Hast du eine Ahnung, was Erics Pläne sind?"
+
+# game/events/other.rpy:647
+translate german dictaphone_showdown_with_eric_c78bbf14:
+
+    # Ann_15 "Это что за тон, Лиза?! И что это за вопрос? Что происходит?!"
+    Ann_15 "Was ist das für ein Ton, Lisa?! Und was ist das für eine Frage? Was ist denn hier los?!"
+
+# game/events/other.rpy:648
+translate german dictaphone_showdown_with_eric_16776269:
+
+    # Alice_13 "Мам, я понятия не имею... Это всё они."
+    Alice_13 "Mom, ich habe keine Ahnung... Das betrifft uns alle."
+
+# game/events/other.rpy:649
+translate german dictaphone_showdown_with_eric_4f2b686c:
+
+    # Max_09 "Лиза тут кое-что узнала... И теперь у неё есть претензии к Эрику..."
+    Max_09 "Lisa hat etwas herausgefunden... Und jetzt hat sie Stress mit Eric..."
+
+# game/events/other.rpy:659
+translate german dictaphone_showdown_with_eric_b894aaee:
+
+    # Lisa_12 "И ещё какие! Мам, помнишь наши совместные уроки в твоей комнате? Так вот Эрик решил расширить программу моего сексуального образования до практических занятий с ним наедине!"
+    Lisa_12 "Und was welchen! Mom, erinnerst du dich an unsere gemeinsamen Stunden in deinem Zimmer? Nun, Eric hat beschlossen, mein Aufklärungsprogramm auf praktische Privatstunden nur mit uns beiden zu erweitern!"
+
+# game/events/other.rpy:660
+translate german dictaphone_showdown_with_eric_cf4823cd:
+
+    # Ann_17 "Я ни о чём таком не знаю. В каком смысле, практических?"
+    Ann_17 "Davon weiß ich nichts. Was meinst du mit \"praktisch\"?"
+
+# game/events/other.rpy:661
+translate german dictaphone_showdown_with_eric_6a9d0065:
+
+    # Lisa_10 "В таком, чтобы я повторяла всё то, что делала ты. Это как вообще называется? Я думала у нас Макс извращенец, но ты, Эрик..."
+    Lisa_10 "Die Art, bei der ich alles wiederhole, was du getan hast. Wie nennt man das überhaupt? Ich dachte, Max wäre ein Perverser, aber du, Eric..."
+
+# game/events/other.rpy:662
+translate german dictaphone_showdown_with_eric_cefb4f10:
+
+    # Ann_16 "Ты что такое вообще несёшь, Лиза?! Обвинять в таком Эрика, это... Я уверена, ты просто что-то не так поняла. Верно, Эрик?"
+    Ann_16 "Wovon zum Teufel redest du, Lisa?! Eric so etwas zu unterstellen, ist... Ich bin sicher, dass du nur etwas missverstanden hast. Stimmt's, Eric?"
+
+# game/events/other.rpy:663
+translate german dictaphone_showdown_with_eric_26987fb2:
+
+    # Eric_13 "Однозначно!"
+    Eric_13 "Ganz bestimmt!"
+
+# game/events/other.rpy:664
+translate german dictaphone_showdown_with_eric_4d03abad:
+
+    # Lisa_09 "Мам, с каких пор ты мне не веришь? Макс специально ходил разговаривать с Эриком и Эрик таких мерзостей ему наговорил про всех... Особенно, про меня!"
+    Lisa_09 "Mom, seit wann glaubst du mir nicht mehr? Max ging absichtlich zu Erik, um mit ihm zu reden, und Erik erzählte ihm so gemeine Dinge über alle... Vor allem über mich!"
+
+# game/events/other.rpy:665
+translate german dictaphone_showdown_with_eric_1f1b1dd8:
+
+    # Ann_19 "Что?! Это уже явный перебор, Лиза! Мне или нужны доказательства, или тебя придётся хорошенько наказать!"
+    Ann_19 "Das reicht jetzt, Lisa! Entweder du lieferst mir Beweise oder du wirst bestraft!"
+
+# game/events/other.rpy:666
+translate german dictaphone_showdown_with_eric_02d9ccd0:
+
+    # Eric_09 "Так, Лиза, давай успокаивайся! Ань, я сейчас поговорю с ней наедине. Макс видимо совсем страх потерял, своей младшей сестрёнке каких-то сказок понарассказывал."
+    Eric_09 "Okay, Lisa, beruhigen wir uns! Ann, ich werde jetzt allein mit dir reden. Max muss seinen Anstand verloren haben, als er seiner kleinen Schwester diese Märchen erzählt hat."
+
+# game/events/other.rpy:671
+translate german dictaphone_showdown_with_eric_8684e2a4:
+
+    # Lisa_13 "Не собираюсь я с тобой наедине больше оставаться! Макс всё записал на диктофон в телефоне. Сейчас послушаем..."
+    Lisa_13 "Ich will nicht mehr mit dir allein sein! Max hat alles mit dem Diktiergerät auf dem Handy aufgenommen. Lasst es uns anhören..."
+
+# game/events/other.rpy:672
+translate german dictaphone_showdown_with_eric_60fce6d7:
+
+    # "{color=[orange]}(все слушают запись...){/color}"
+    "{color=[orange]}(alle hören sich die Aufnahme an...){/color}"
+
+# game/events/other.rpy:673
+translate german dictaphone_showdown_with_eric_1c22e674:
+
+    # Ann_14 "Это же... Неужели это действительно правда?! Эрик, будь добр, объясни это..."
+    Ann_14 "Das ist... Ist das wirklich wahr?! Eric, würdest du so freundlich sein und mir das erklären..."
+
+# game/events/other.rpy:674
+translate german dictaphone_showdown_with_eric_3b4d9713:
+
+    # Eric_13 "Ань, я не знаю, что и где это записано, но могу тебя уверить - это неправда! Уверен на все сто, что эта запись подделка."
+    Eric_13 "Ann, ich weiß nicht, was oder wo das aufgenommen wurde, aber ich kann dir versichern, dass es nicht wahr ist! Ich bin mir ziemlich sicher, dass es eine Fälschung ist."
+
+# game/events/other.rpy:675
+translate german dictaphone_showdown_with_eric_8dffdb7a:
+
+    # Max_09 "В таком случае, я за то, чтобы провести экспертизу её подлинности!"
+    Max_09 "In diesem Fall bin ich dafür, es überprüfen zu lassen!"
+
+# game/events/other.rpy:682
+translate german dictaphone_showdown_with_eric_c1994ec4:
+
+    # Alice_18 "Ах вот так, значит! Ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
+    Alice_18 "Oh, so ist das also! Hast du deine Hände schon überall an unserer kleinen Lisa? Hier... Nimm das, du Bastard..."
+
+# game/events/other.rpy:683
+translate german dictaphone_showdown_with_eric_8aba10b5:
+
+    # Ann_15 "Эрик! У меня просто в голове не укладывается... Как ты мог на такое решиться, мерзавец... Лиза, неужели это действительно правда?"
+    Ann_15 "Eric! Ich kann es einfach nicht fassen... Wie konntest du so etwas tun, du Bastard... Lisa, ist das wirklich wahr?"
+
+# game/events/other.rpy:684
+translate german dictaphone_showdown_with_eric_1d2fc481:
+
+    # Max_07 "Разве это не очевидно, мам? Или ты думаешь, что мы тебя так жестоко разыграть решили?"
+    Max_07 "Ist das nicht offensichtlich, Mom? Oder glaubst du, wir spielen dir einen blöden Streich?"
+
+# game/events/other.rpy:685
+translate german dictaphone_showdown_with_eric_0d5ce9a0:
+
+    # Ann_20 "Эрик, ты совсем что ли больной?! Как ты мог, строя отношения со мной, ещё и планировать развращать моих детей! Живо выметайся из нашего дома, пока я полицию не вызвала!"
+    Ann_20 "Eric, hast du den Verstand verloren?! Wie kannst du eine Beziehung mit mir eingehen und planen, meine Kinder zu missbrauchen! Verschwinde sofort aus unserem Haus, bevor ich die Polizei rufe!"
+
+# game/events/other.rpy:686
+translate german dictaphone_showdown_with_eric_847ca8ec:
+
+    # Eric_10 "Какую ещё полицию?! Я ничего не делал. Это всё Макс!"
+    Eric_10 "Welche Polizei?! Ich habe nichts getan. Es war Max!"
+
+# game/events/other.rpy:687
+translate german dictaphone_showdown_with_eric_8cb800af:
+
+    # Lisa_13 "Не надо всё на Макса сваливать! Он хороший..."
+    Lisa_13 "Gib nicht Max die Schuld an allem! Er ist ein guter..."
+
+# game/events/other.rpy:697
+translate german dictaphone_showdown_with_eric_2a7e5ec0:
+
+    # Alice_16 "Совсем недавно я могла от души навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
+    Alice_16 "Es ist noch nicht lange her, da wollte ich Max verprügeln, aber jetzt bin ich so wütend, dass ich einen Perversen wie dich zusammenschlagen könnte!"
+
+# game/events/other.rpy:698
+translate german dictaphone_showdown_with_eric_aece1638:
+
+    # Ann_19 "Эрик, проваливай! Я не хочу тебя больше видеть!"
+    Ann_19 "Eric, verschwinde! Ich will dich nicht mehr sehen!"
+
+# game/events/other.rpy:699
+translate german dictaphone_showdown_with_eric_beb7cd04:
+
+    # Eric_09 "Вижу, вы все на взводе, так что я поговорю с вами, когда успокоитесь... А сейчас я, пожалуй, отправлюсь к себе домой."
+    Eric_09 "Ich sehe, dass du aufgeregt bist, also werde ich mit dir reden, wenn du dich beruhigt hast... Ich glaube, ich werde jetzt einfach nach Hause gehen."
+
+# game/events/other.rpy:700
+translate german dictaphone_showdown_with_eric_2ec75356:
+
+    # Ann_20 "Я сказала, {b}ПОШЁЛ ВОН НЕМЕДЛЕННО!!!{/b}"
+    Ann_20 "Ich sagte: {b}SOFORT RAUS!!!{/b}"
+
+# game/events/other.rpy:701
+translate german dictaphone_showdown_with_eric_33de351b:
+
+    # Alice_17 "Убирайся из нашей жизни, грязное животное!"
+    Alice_17 "Verschwinde aus unserem Leben, du widerliches Schwein!"
+
+# game/events/other.rpy:710
+translate german dictaphone_showdown_with_eric_f3afe214:
+
+    # Max_00 "Мам, ты только не расстраивайся так из-за него. Всякое бывает..."
+    Max_00 "Mom, reg dich nicht so auf wegen ihm. Dinge passieren..."
+
+# game/events/other.rpy:711
+translate german dictaphone_showdown_with_eric_346fcb3b:
+
+    # Ann_14 "Всё никак в голове не укладывается, что Эрик тут с вами собирался творить... И что я за мать после этого? Я в шоке..."
+    Ann_14 "Ich kann immer noch nicht begreifen, was Eric dir antun wollte... Was für eine Mutter bin ich? Ich bin schockiert..."
+
+# game/events/other.rpy:712
+translate german dictaphone_showdown_with_eric_90ee4fd2:
+
+    # Alice_13 "Уж лучше узнать поздно, чем никогда. А у нас всё ещё лучше... Мы узнали, пока ещё не стало поздно. Так что не переживай, мам, мы все думали, что Эрик... уж точно не такой..."
+    Alice_13 "Besser spät als nie. Es ist sogar besser für uns... Wir haben es herausgefunden, bevor es zu spät war. Keine Sorge, Mom, wir dachten alle, dass Eric... sicherlich nicht die Art von..."
+
+# game/events/other.rpy:713
+translate german dictaphone_showdown_with_eric_167ce82b:
+
+    # Max_09 "Хорошо, что я своим мужским взглядом сразу понял, что он мутный тип!"
+    Max_09 "Gut, dass ich mit meinem männlichen Verstand wusste, dass er ein finsterer Typ ist!"
+
+# game/events/other.rpy:714
+translate german dictaphone_showdown_with_eric_382d50ea:
+
+    # Lisa_09 "И между прочим, про бумажник Эрик наврал..."
+    Lisa_09 "Und übrigens, Eric hat wegen der Brieftasche gelogen..."
+
+# game/events/other.rpy:715
+translate german dictaphone_showdown_with_eric_28be9f6a:
+
+    # Max_08 "Кстати, да! Он это придумал, чтобы вы меня в военный лагерь сослали. А то я стал слишком мешаться."
+    Max_08 "Übrigens, ja, es war seine Idee, mich in ein Militärlager zu verbannen. Ich war zu sehr im Weg."
+
+# game/events/other.rpy:716
+translate german dictaphone_showdown_with_eric_35096e7a:
+
+    # Ann_13 "Ты прости меня, сынок, я должна была прислушиваться к тому, что ты говорил. Что же теперь делать?"
+    Ann_13 "Es tut mir leid, mein Sohn, ich hätte auf das hören sollen, was du gesagt hast. Was sollen wir jetzt tun?"
+
+# game/events/other.rpy:717
+translate german dictaphone_showdown_with_eric_e862c93b:
+
+    # Max_01 "Жить, как жили до Эрика! Ничего сложного..."
+    Max_01 "Leben wie vor Eric! Nichts Besonderes..."
+
+# game/events/other.rpy:718
+translate german dictaphone_showdown_with_eric_6ff07095:
+
+    # Ann_12 "Нет, Макс, я о другом... Он же мой начальник! Как мне теперь быть? Ох, не знаю..."
+    Ann_12 "Nein, Max, das ist nicht das, was ich meine... Er ist mein Chef! Was soll ich jetzt tun? Oh, ich weiß es nicht."
+
+# game/events/other.rpy:719
+translate german dictaphone_showdown_with_eric_87eb1c15:
+
+    # Max_07 "Д-а-а... Это проблемка. Ты главное не слушай его оправдания, а то он умеет убеждать, как ты сама прекрасно убедилась. А теперь давайте, все вместе, поддержим маму!"
+    Max_07 "Ja, ja, ja... Das ist ein Problem. Lass dich nur nicht von seinen Ausreden beeindrucken, denn er ist ein überzeugender Mann, wie du siehst. Also los, unterstützen wir unsere Mom!"
+
+# game/events/other.rpy:727
+translate german dictaphone_showdown_with_eric_f96123e9:
+
+    # Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
+    Ann_13 "Oh, meine Lieblinge, ihr erdrückt mich so sehr! Aber du bist immer doch der Beste, den ich habe... Es tut mir noch einmal leid, dass ich diesen Mann in unser schönes Haus gebracht und alles ruinieren wollte."
+
+# game/events/other.rpy:728
+translate german dictaphone_showdown_with_eric_5a9bcc35:
+
+    # Lisa_01 "Не бери в голову, мам. Не вини себя, всё ведь хорошо. Мы с тобой."
+    Lisa_01 "Mach dir keine Sorgen, Mum. Gib dir nicht die Schuld, es ist okay. Wir sind bei dir."
+
+# game/events/other.rpy:729
+translate german dictaphone_showdown_with_eric_a2587239:
+
+    # Alice_05 "И если он начнёт устраивать тебе проблемы на работе, то мы все так же дружно, как сейчас, соберёмся и отпинаем его!"
+    Alice_05 "Und wenn er dir bei der Arbeit Ärger macht, werden wir uns alle zusammentun und ihm in den Arsch treten, genau wie jetzt!"
+
+# game/events/other.rpy:730
+translate german dictaphone_showdown_with_eric_e1846793:
+
+    # Max_09 "Думаю, Эрик не настолько туп, чтобы строить маме козни. Особенно, если она будет с ним жёстче..."
+    Max_09 "Ich glaube nicht, dass Eric so blöd ist, mit Mom Blödsinn zu machen. Vor allem, wenn sie hart mit ihm ins Gericht geht..."
+
+# game/events/other.rpy:731
+translate german dictaphone_showdown_with_eric_d14050f1:
+
+    # Ann_17 "Ох, ребята, я постараюсь... Хотя, мне даже думать о нём сейчас противно, не то что видеть. Надеюсь, я не потеряю работу."
+    Ann_17 "Oh, ich werde es versuchen... Obwohl es mich anwidert, jetzt überhaupt an ihn zu denken, geschweige denn ihn zu sehen. Ich hoffe, ich verliere meinen Job nicht."
+
+# game/events/other.rpy:732
+translate german dictaphone_showdown_with_eric_72f9e7fc:
+
+    # Max_08 "Может, удастся перевестись в какой-нибудь другой отдел?"
+    Max_08 "Vielleicht kann man dich in eine andere Abteilung versetzen?"
+
+# game/events/other.rpy:733
+translate german dictaphone_showdown_with_eric_032de050:
+
+    # Ann_02 "Надеюсь... Ну всё, мне уже дышать нечем. Пора делами заниматься. Я вас очень люблю..."
+    Ann_02 "Ich hoffe es... Das war's, ich kann nicht mehr klar denken. Es ist an der Zeit, zum Wesentlichen zu kommen. Ich liebe dich sehr..."
+
+# game/events/other.rpy:734
+translate german dictaphone_showdown_with_eric_90be8708:
+
+    # Lisa_05 "И мы тебя!"
+    Lisa_05 "Ja, Wir dich auch!"
+
+# TODO: Translation updated at 2021-12-25 01:42
+
+# game/events/other.rpy:807
+translate german failed_dinner_b8e2672f:
+
+    # Eric_00 "Итак, настал момент истины. Я дал тебе, Макс, достаточно времени, чтобы ты вернул мне мои деньги при всех. Ну что, ты готов покаяться и исправить свою ошибку?"
+    Eric_00 "Die Stunde der Wahrheit ist also gekommen. Max, ich habe dir genug Zeit gegeben, um mir vor allen Leuten mein Geld zurückzugeben. Also, bist du bereit, Buße zu tun und deinen Fehler wiedergutzumachen?"
+
+# game/events/other.rpy:811
+translate german failed_dinner_d3811ad8:
+
+    # Max_15 "Да пошёл ты... Нет у меня твоих денег, и ты это прекрасно знаешь!"
+    Max_15 "Du kannst mich mal... Ich habe dein Geld nicht und du weißt es!"
+
+# game/events/other.rpy:814
+translate german failed_dinner_851dce21:
+
+    # Max_15 "Да пошёл ты... Я ни за что не стану возвращать тебе то, чего не брал! И признавать себя вором тоже не стану!"
+    Max_15 "Du kannst mich mal... Ich werde dir auf keinen Fall geben, was ich dir nicht genommen habe! Und ich werde auch nicht zugeben, dass ich ein Dieb bin!"
+
+# game/events/other.rpy:816
+translate german failed_dinner_2c4314ba:
+
+    # Eric_09 "Что ж, значит продолжаем отпираться... Ладно... Как ты видишь, Ань, я сделал всё, что было в моих силах, но это твой сын и тебе принимать решение."
+    Eric_09 "Nun, wir leugnen also weiter... Na ja... Wie du siehst, Ann, habe ich alles getan, was ich konnte, aber er ist dein Sohn und es ist deine Entscheidung."
+
+# game/events/other.rpy:817
+translate german failed_dinner_e02fe136:
+
+    # Ann_14 "Да-да... Прости, Макс, но ты очень меня разочаровал и... нам не остаётся другого выбора, кроме как отправить тебя в военный лагерь. Надеюсь, там из тебя сделают ответственного человека."
+    Ann_14 "Ja, ja... Es tut mir leid, Max, aber du hast mich wirklich enttäuscht und... haben wir keine andere Wahl, als dich in ein Militärlager zu schicken. Hoffentlich machen sie einen verantwortungsvollen Mann aus dir."
+
+# game/events/other.rpy:818
+translate german failed_dinner_03357d46:
+
+    # Max_13 "Что?! Кому это, \"нам\"? Вам с Эриком? Это же не ты сейчас говоришь, а он! Как ты можешь выгонять из дома родного сына?"
+    Max_13 "Was?! Wer ist \"wir\"? Du und Eric? Du redest jetzt schon, genau wie er! Wie kann man seinen eigenen Sohn aus dem Haus werfen?"
+
+# game/events/other.rpy:819
+translate german failed_dinner_d29fb4a6:
+
+    # Ann_17 "Прекрати, Макс! Я устала слушать твои оправдания. Ты даже не представляешь, до какой степени мне стыдно, что мой единственный сын - вор!"
+    Ann_17 "Hör auf, Max! Ich habe es satt, mir deine Ausreden anzuhören. Du hast keine Ahnung, wie sehr ich mich schäme, dass mein einziger Sohn ein Dieb ist!"
+
+# game/events/other.rpy:820
+translate german failed_dinner_c43f223d:
+
+    # Max_14 "Но мам, это всё неправда! Не говори так! Это же Эрик всё подстроил!"
+    Max_14 "Aber Mom, das ist nicht wahr! Sag das nicht! Eric hat diese ganze Sache eingefädelt!"
+
+# game/events/other.rpy:821
+translate german failed_dinner_5a9be7a6:
+
+    # Eric_13 "Да, стыдно за тебя, Макс, ты разбиваешь сердце собственной матери... Какой позор..."
+    Eric_13 "Ja, schäm dich, Max, du brichst deiner Mom das Herz... Was für eine Schande..."
+
+# game/events/other.rpy:822
+translate german failed_dinner_c7cc51b7:
+
+    # Max_16 "Заткнись, Эрик! Мам, неужели ты не видишь, что он тобой манипулирует?!"
+    Max_16 "Halt die Klappe, Eric! Mom, siehst du nicht, dass er dich manipuliert?!"
+
+# game/events/other.rpy:823
+translate german failed_dinner_81894a93:
+
+    # Ann_18 "Не хочу ничего слышать про это. Всё. Собираешь вещи и едешь. Давно надо было это сделать, но я тебя всё жалела. В результате докатились, воруешь в собственном доме! А что будет дальше?"
+    Ann_18 "Ich möchte nichts darüber hören. Das war's. Pack deine Sachen und verschwinde. Ich hätte das schon lange tun sollen, aber ich hatte ständig Mitleid mit dir. Und jetzt klaust du auch noch in unserem eigenen Haus! Was wird als nächstes passieren?"
+
+# game/events/other.rpy:824
+translate german failed_dinner_ffb1b7ea:
+
+    # Max_11 "Но мам..."
+    Max_11 "Aber Mom..."
+
+# game/events/other.rpy:825
+translate german failed_dinner_b3c54058:
+
+    # Ann_16 "Всё, Макс, разговор окончен!"
+    Ann_16 "Das war's, Max, das Gespräch ist beendet!"
+
+# game/events/other.rpy:827
+translate german failed_dinner_4d7ce5c3:
+
+    # Eric_01 "Не переживай, Макс, я позабочусь обо всех, пока ты будешь тянуть лямку в армии..." nointeract
+    Eric_01 "Keine Sorge, Max, ich kümmere mich um alle, während du beim Militär bleibst..." nointeract
+
+# game/events/other.rpy:830
+translate german failed_dinner_fe32100d:
+
+    # Max_14 "{m}Вот так и закончилась моя история. Больше мне не верили и не хотели меня видеть. Конечно, если бы не Эрик, всё было бы хорошо, но этот гад... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
+    Max_14 "{m}So endete meine Geschichte. Sie haben mir nicht geglaubt und wollten mich nicht mehr sehen. Wenn Eric nicht gewesen wäre, wäre natürlich alles in Ordnung gewesen, aber dieser Bastard... Jetzt kann ihn nichts mehr davon abhalten, mit meiner Familie zu machen, was er will... Wenn ich in der Zeit zurückgehen könnte... Aber würde das Sinn machen?{/m}" nointeract
+
+# game/events/other.rpy:833
+translate german failed_dinner_79acb07c:
+
+    # Max_14 "{m}Вот так и закончилась моя история. От всей этой несправедливости я немного слетел с катушек и почти размазал Эрика по балкону... Почти... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
+    Max_14 "{m}So endete meine Geschichte. Diese ganze Ungerechtigkeit hat mich ein bisschen verrückt gemacht und ich hätte Eric fast auf dem Balkon erwischt... Fast... Jetzt kann ihn nichts mehr davon abhalten, mit meiner Familie zu machen, was er will... Wenn ich in der Zeit zurückgehen könnte... Aber würde das Sinn machen?{/m}" nointeract
+
+translate german strings:
+
+    # game/events/other.rpy:801
+    old "{g}Отношения Макса с семьёй значительно улучшились.{/g}"
+    new "{g}Max' Beziehung zu seiner Familie hat sich erheblich verbessert.{/g}"
+
+    # game/events/other.rpy:826
+    old "{i}собираться в военный лагерь{/i}"
+    new "{i}fürs Militärlager packen{/i}"
+
+    # game/events/other.rpy:826
+    old "{i}накинуться на Эрика{/i}"
+    new "{i}auf Eric losgehen{/i}"
+
+    # game/events/other.rpy:835
+    old "{i}загрузить игру{/i}"
+    new "{i}Spielstand laden{/i}"
+
+    # game/events/other.rpy:835
+    old "{i}вернуться в главное меню{/i}"
+    new "{i}zurück zum Hauptmenü{/i}"
+
+    # game/events/other.rpy:835
+    old "{i}выйти из игры{/i}"
+    new "{i}Spiel verlassen{/i}"

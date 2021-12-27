@@ -2855,3 +2855,27 @@ translate english eric_ann_tv_2a838c07:
 
     # Max_07 "{m}Ничего себе! Эрик стянул с мамы полотенце и я вижу её голую грудь! Может быть, подойти ближе?{/m}" nointeract
     Max_07 "{m}Wow! Eric pulled off Mom's towel and I can see her naked breasts! Maybe we should get closer?{/m}" nointeract
+# TODO: Translation updated at 2021-12-21 02:10
+
+# game/events/eric.rpy:1922
+translate english start_eric_wallet_e75cd485:
+
+    # Max_07 "{m}Вот только у меня абсолютно ничего нет против него! И сестёр я теперь вряд ли переманю на свою сторону, чтобы они меня поддержали перед мамой.{/m}"
+    Max_07 "{m}Except I have absolutely nothing against him! And I can hardly get my sisters to take my side now, to support me in front of Mom.{/m}"
+
+# TODO: Translation updated at 2021-12-27 01:35
+
+# game/events/eric.rpy:1934
+translate english eric_kira_night_swim_a236de17:
+
+    # Eric_13 "Ты зачем подкрадываешься, Макс?! Ночь на дворе. Заканчивай шататься и спать иди. Не мешай нам отдыхать." nointeract
+    Eric_13 "What are you sneaking up on me for, Max?! It's the middle of the night. Quit staggering around and go to bed." nointeract
+
+# TODO: Translation updated at 2021-12-27 16:26
+
+# game/events/eric.rpy:1917
+translate english start_eric_wallet_93fe8bc0:
+
+    # Max_07 "{m}И так, у меня есть фотография, как Эрик дрочит... Но вряд ли этот снимок поможет переманить сестёр на мою сторону. Уж слишком там всё сомнительно на снимке.{/m}"
+    Max_07 "{m}So I have a picture of Eric jerking off... But I don't think that picture is going to get my sisters on my side. It's too questionable in that picture.{/m}"
+

@@ -469,10 +469,11 @@ label alice_talk_tv_massage:
     ### сцена массажа 01 или 02
     scene BG tv-mass-01
     $ renpy.show('Alice tv-mass ' + _pose + mgg.dress+alice.dress)
+    show screen Cookies_Button
     menu:
         Max_03 "{m}Какая у Алисы нежная кожа... Интересно, о чём она сейчас думает?{/m}"
         "{i}продолжить{/i}" ('mass', mgg.massage * (10 if alice.daily.drink else 7)):   # с конфетой шанс успеха чуть-чуть выше
-            pass
+            hide screen Cookies_Button
     if rand_result:  ### {i}Алисе понравился массаж!{/i}
         $ alice.flags.m_foot += 1
         # _pose - 01/02
@@ -2666,7 +2667,9 @@ label Alice_solar:
             $ kol_cream -= 3
             scene BG char Alice sun-alone 05
             $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
+            show screen Cookies_Button
             Max_01 "{m}Так, хорошенько намажем эти стройные ножки...{/m}"
+            hide screen Cookies_Button
             scene BG char Alice sun-alone 04
             $ renpy.show('Alice sun-alone 04'+_suf+mgg.dress)
             menu:
@@ -2794,6 +2797,7 @@ label massage_sunscreen:
     label .shin:
         scene BG char Alice sun-alone 05
         $ renpy.show('Alice sun-alone 05'+_suf+mgg.dress)
+        show screen Cookies_Button
         Max_02 "{m}Помассируем эти стройные ножки, вот так...{/m}"
         if 'shin' in _massaged:
             # голени уже массировались
@@ -2811,6 +2815,7 @@ label massage_sunscreen:
             else:
                 jump .fail
         $ _massaged.append('shin')
+        hide screen Cookies_Button
         jump massage_sunscreen
 
     label .shoulders:
@@ -2956,11 +2961,13 @@ label massage_sunscreen:
         jump massage_sunscreen
 
     label .double:
+        hide screen Cookies_Button
         Alice_13 "Взялся делать массаж, а сам не знаешь что делать! Хватит, иди отсюда, дай позагорать спокойно."
         Max_11 "Эх... Ладно..."
         jump .end
 
     label .fail:
+        hide screen Cookies_Button
         if len(_massaged) > 0:  # есть успешно помассированные участки
             Alice_06 "Хватит, Макс... Что-то у тебя не так пошло... А ведь так хорошо начал..."
         else:  # первый же массаж
@@ -4732,8 +4739,10 @@ label alice_private_punish_0:
             # punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
             scene BG punish-sun 03
             $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
+            show screen Cookies_Button
             Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
             Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
+            hide screen Cookies_Button
             # punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
             scene BG punish-sun 04
             $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
@@ -4806,10 +4815,12 @@ label alice_private_punish_r:
             # punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
             scene BG punish-sun 03
             $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
+            show screen Cookies_Button
             play sound [slap3, "<silence .5>", slap3, "<silence .5>", slap3, "<silence 1.5>"] loop
             menu:
                 Alice_05 "Ты там уже начал? А то мне показалось, что это больше тянет на поглаживания, а не на шлепки..."
                 "И как, тебе нравится?":
+                    hide screen Cookies_Button
                     # punish-sun-02 + punish-sun-02-max-(05a/05b)-alice-05
                     scene BG punish-sun 02
                     $ renpy.show("Alice punish-sun 02-05"+mgg.dress)
@@ -4853,9 +4864,11 @@ label alice_private_punish_r:
             # punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
             scene BG punish-sun 03
             $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
+            show screen Cookies_Button
             Alice_18 "Ай, ай, ай! Больно же! Ну ты чего, Макс? Меня и мама могла также отшлёпать. Всё, хватит!"
             Max_07 "Это же наказание всё-таки, Алиса. Должно быть немножко больно."
             stop sound
+            hide screen Cookies_Button
             # punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
             scene BG punish-sun 04
             $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
@@ -5810,4 +5823,61 @@ label smoke_after_wallet:
             "{i}уйти{/i}":
                 $ alice.hourly.talkblock = 1
     $ spent_time += 10
+    jump Waiting
+
+
+label alice_about_showdown:
+    # "Как ты после случившегося?"
+
+    if eric.dcv.battle.stage == 1:
+        # была подстава через Алису
+        Alice_12 "Даже не знаю, как тебе сказать... Узнать, что кто-то приходит ночью и дрочит на тебя - довольно мерзко!"
+        Max_07 "Я как раз хотел поговорить с тобой об этом."
+        Alice_13 "Макс, ты меня прости, но сейчас я не настроена для разговора по-душам."
+        Max_10 "Понимаю. Но ты ведь не злишься за эти снимки?"
+        Alice_16 "Во-первых, удали их! А то я там голая... А во-вторых, злюсь. Я так понимаю, ты поэтому уговорил меня спать голой? Чтобы Эрика было на чём подловить..."
+        Max_09 "Да, всё верно. Вы же меня не слушали. Вот и приходилось его заманивать к тебе в комнату."
+        Alice_06 "А если бы он меня взял и... сделал бы что-нибудь со мной?"
+        Max_02 "Так он и сделал. Из-за этого ты ко мне и прибежала."
+        Alice_17 "Макс! Ещё раз так пошутишь и я тебе врежу!"
+        Max_04 "Да ничего бы он такого дерзкого не сделал. Он же не в конец придурок. К тому же, если бы он распоясался, то я бы вмешался."
+        Alice_12 "И Макс, узнаю, что ты фотографируешь меня в душе или когда я сплю... Ты покойник..."
+        Max_03 "О! Хорошую мысль ты подкинула, спасибо."
+        Alice_17 "Макс, я не шутила!"
+        Max_07 "Да ладно тебе. Какая-то ты напряжённая, моих шуток не понимаешь. Давай я тебя отвлеку чем-нибудь? Например, сходим и выберем тебе какое-нибудь нижнее бельё новенькое. Да и фоточки с ним можно будет красивые сделать. Как тебе?"
+
+    else:
+        # была подстава через Лизу
+        Alice_12 "Даже не знаю, как тебе сказать... Узнать, что Эрик хотел сделать с нашей Лизой - довольно мерзко!"
+        Max_07 "Я как раз хотел поговорить с тобой об этом."
+        Alice_06 "Ты молодец, Макс, что показал, как мы ошибались в Эрике. Уж не знаю, что бы тут без тебя произошло."
+
+        if flags.eric_photo1:
+            # был 1 снимок
+            Max_09 "Нууу... Я вот не знаю, показать тебе кое-что или нет."
+            Alice_17 "Если ты сейчас высунешь свою пипирку, то я тебе врежу!"
+            Max_00 "Не это. Дело в том, что аудиозапись разговора с Эриком, это не всё, что у меня есть. У меня ещё есть фотография, как он дрочит на тебя, пока ты спишь."
+            Alice_14 "Макс, ты сейчас серьёзно?!"
+            Max_15 "Ага. Я как-то заметил его случайно со двора, ночью. Поближе подобрался и сфотографировал, как он стоит у твоего окна и шишку свою натирает."
+            Alice_12 "Фу, Макс! Ты зачем мне это обрисовал. У меня теперь эта картина перед глазами стоит!"
+            Max_09 "Посмотреть снимок хочешь?"
+            Alice_15 "Нет, конечно, сдурел что ли! Нашёл, что предлагать."
+
+        elif not eric.stat.mast:
+            # не было снимков, но видел Эрика на балконе
+            Max_09 "Ничего хорошего. Ты знаешь не всё. Я например видел, как Эрик дрочит на тебя, пока ты спишь."
+            Alice_14 "Макс, ты сейчас серьёзно?!"
+            Max_15 "Ага. Я как-то заметил его случайно со двора, ночью. Хотел сфотографировать, но не успел. Он прямо у твоего окна стоял и шишку свою натирал."
+            Alice_12 "Фу, Макс! Ты зачем мне это обрисовал. У меня теперь эта картина перед глазами стоит!"
+            Max_09 "Был бы снимок - показал бы."
+            Alice_15 "Оно мне надо, такое видеть?! Сдурел что ли!"
+
+        Max_07 "Да ладно тебе. Какая-то ты напряжённая. Давай я тебя отвлеку чем-нибудь? Например, сходим и выберем тебе какое-нибудь нижнее бельё новенькое. Да и фоточки с ним можно будет красивые сделать. Как тебе?"
+
+    Alice_06 "Звучит очень заманчиво, но я пока ещё не готова. Мне нужно время, чтобы отойти от того, что делал Эрик. Фууу..."
+    Max_01 "Конечно. Если что, зови."
+
+    $ spent_time = 20
+    $ alice.flags.showdown_e = 1
+    $ poss['blog'].open(11)
     jump Waiting

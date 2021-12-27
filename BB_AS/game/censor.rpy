@@ -1,5 +1,4 @@
-init python:
-    import re
+init -100 python:
     from collections import OrderedDict
     replace_dict_ru = OrderedDict([
         ("родную сестру"    , "лучшую сожительницу"),
@@ -96,7 +95,6 @@ init python:
         ("отец"             , "бывший муж Анны"),
         ("я папу"           , "я твоего бывшего мужа"),
     ])
-
     replace_dict_en = OrderedDict([
         ("own sister"       , "best friend"),
         ("own aunt"         , "best neighbor"),
@@ -159,7 +157,21 @@ init python:
         ("vater"                , "vermieter"),
         ("hatte dad"            , "hatte Annas Ex-Mann"),
     ])
+    replace_dict_fr = OrderedDict([
+    ])
+    replace_dict_it = OrderedDict([
+    ])
+    replace_dict_pl = OrderedDict([
+    ])
+    replace_dict_pr = OrderedDict([
+    ])
+    replace_dict_sp = OrderedDict([
+    ])
+    replace_dict_sl = OrderedDict([
+    ])
 
+init python:
+    import re
     def game_text_mod(st0):
         if _preferences.language is None:
             replace_dict = replace_dict_ru
@@ -167,6 +179,18 @@ init python:
             replace_dict = replace_dict_en
         elif _preferences.language=='german':
             replace_dict = replace_dict_de
+        elif _preferences.language=='french':
+            replace_dict = replace_dict_fr
+        elif _preferences.language=='italian':
+            replace_dict = replace_dict_it
+        elif _preferences.language=='polish':
+            replace_dict = replace_dict_pl
+        elif _preferences.language=='portuguese':
+            replace_dict = replace_dict_pr
+        elif _preferences.language=='spanish':
+            replace_dict = replace_dict_sp
+        elif _preferences.language=='slovak':
+            replace_dict = replace_dict_sl
         else:
             return st0
         rc = re.compile('\\b|\\b'.join(map(re.escape, replace_dict)), re.U+re.I)

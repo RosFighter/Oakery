@@ -369,3 +369,79 @@ image AnimMaxKira1:
     'Kira shower-Max 05 17'
     0.036
     repeat
+
+image AnimMaxKiraSex03:
+    'Kira tv-sex 03 00'
+    0.036
+    'Kira tv-sex 03 01'
+    0.036
+    'Kira tv-sex 03 02'
+    0.036
+    'Kira tv-sex 03 03'
+    0.036
+    'Kira tv-sex 03 04'
+    0.036
+    'Kira tv-sex 03 05'
+    0.036
+    'Kira tv-sex 03 06'
+    0.036
+    'Kira tv-sex 03 07'
+    0.036
+    'Kira tv-sex 03 08'
+    0.036
+    'Kira tv-sex 03 09'
+    0.036
+    'Kira tv-sex 03 10'
+    0.036
+    'Kira tv-sex 03 11'
+    0.036
+    'Kira tv-sex 03 12'
+    0.036
+    'Kira tv-sex 03 13'
+    0.036
+    'Kira tv-sex 03 14'
+    0.036
+    'Kira tv-sex 03 15'
+    0.036
+    repeat
+
+image AnimMaxKiraSex04:
+    'Kira tv-sex 04 00'
+    0.036
+    'Kira tv-sex 04 01'
+    0.036
+    'Kira tv-sex 04 02'
+    0.036
+    'Kira tv-sex 04 03'
+    0.036
+    'Kira tv-sex 04 04'
+    0.036
+    'Kira tv-sex 04 05'
+    0.036
+    'Kira tv-sex 04 06'
+    0.036
+    'Kira tv-sex 04 07'
+    0.036
+    'Kira tv-sex 04 08'
+    0.036
+    'Kira tv-sex 04 09'
+    0.036
+    'Kira tv-sex 04 10'
+    0.036
+    'Kira tv-sex 04 11'
+    0.036
+    'Kira tv-sex 04 12'
+    0.036
+    'Kira tv-sex 04 13'
+    0.036
+    'Kira tv-sex 04 14'
+    0.036
+    'Kira tv-sex 04 15'
+    0.036
+    'Kira tv-sex 04 16'
+    0.036
+    'Kira tv-sex 04 17'
+    0.036
+    'Kira tv-sex 04 18'
+    0.036
+    repeat

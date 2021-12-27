@@ -326,3 +326,11 @@ translate english strings:
     old "Оливия, одноклассница моей младшей сестрёнки Лизы. Довольно милая девчонка. А главное с изюминкой... Ходит по школе без трусиков, а у себя по дому вообще голая, как и её родители, они ведь натуристы. Это классно, что у Лизы появилась такая интересная подружка!"
     new "Olivia, a classmate of my little sister Lisa. She's a pretty sweet girl. And most importantly with a twist... She walks around school without panties, and she's completely naked in her house, just like her parents, because they are naturists. It's great that Lisa has such an interesting girlfriend!"
 
+# TODO: Translation updated at 2021-12-21 02:10
+
+translate english strings:
+
+    # game/core/03variables.rpy:149
+    old "ИСКАТЬ\nТЕЛЕФОН"
+    new "SEARCH\nPHONE"
+

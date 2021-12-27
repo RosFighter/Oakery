@@ -1037,6 +1037,8 @@ label spider_in_bed:
     scene BG char Alice spider-night-02
     $ renpy.show('Max spider-night 02-'+renpy.random.choice(['01', '02', '03']))
     $ renpy.show('Alice spider-night 02-01'+suf)
+    if alice.dress == 'b':
+        show screen Cookies_Button
     menu:
         Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!"
         "Что случилось?":
@@ -1048,11 +1050,13 @@ label spider_in_bed:
     menu:
         Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!"
         "Ну, пойдём посмотрим...":
+            hide screen Cookies_Button
             jump .help
         "Паук? Ерунда какая. Сама разбирайся с ним..." if not _in_replay:
             jump .goaway
 
     label .goaway:
+        hide screen Cookies_Button
         scene BG char Max bed-night-01
         $ renpy.show('Max sleep-night '+pose3_3)
         $ renpy.show('FG Max sleep-night '+pose3_3)
@@ -1266,6 +1270,8 @@ label spider_in_bed:
             $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['04', '05', '06'])+suf)
         else:
             $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03'])+suf)
+        if alice.dress == 'a':
+            show screen Cookies_Button
         menu:
             Max_07 "Ага, попался! Пожалуй, вот что я сделаю..."
             "{i}оставлю этого паука себе{/i}":
@@ -1275,6 +1281,7 @@ label spider_in_bed:
                         menu:
                             Alice_17 "Ах так... Ну, тогда я обижусь на тебя! Всё, вали отсюда!"
                             "{i}вернуться в кровать{/i}":
+                                hide screen Cookies_Button
                                 $ renpy.end_replay()
                                 $ mood -= 100
                                 $ spent_time = 30
@@ -1290,6 +1297,7 @@ label spider_in_bed:
                             menu:
                                 Alice_13 "Всё, хватит уже сидеть на моей кровати, иди отсюда. Я хочу спать!"
                                 "{i}вернуться в кровать{/i}":
+                                    hide screen Cookies_Button
                                     $ renpy.end_replay()
                                     $ mood += 50
                                     $ spent_time = 30
@@ -1312,6 +1320,7 @@ label spider_in_bed:
             "{i}убью этого паука{/i}":
                 jump .kill
     label .let_go:
+        hide screen Cookies_Button
         scene BG char Alice spider-balcony
         menu:
             Alice_13 "Макс! Я тебя просила убить его, а не отпускать! Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?.. Всё, иди отсюда. Я хочу спать!"
@@ -1325,6 +1334,7 @@ label spider_in_bed:
                 return
 
     label .kill:
+        hide screen Cookies_Button
         show Max spider-night 04-03
         menu:
             Alice_01 "Так ему! Спасибо, Макс! Ты мой спаситель. А теперь иди отсюда, я спать хочу!"

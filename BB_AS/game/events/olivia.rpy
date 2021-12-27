@@ -3,6 +3,7 @@ label olivia_lisa_sun:
     scene BG char Lisa Olivia 2sun-01
     $ renpy.show('Lisa 2sun '+pose3_1+lisa.dress)
     $ renpy.show('Olivia 2sun '+pose3_3+olivia.dress)
+    $ lisa.hourly.dressed = 1
     return
 
 
@@ -11,6 +12,7 @@ label olivia_lisa_swim:
     $ renpy.show('BG char Lisa Olivia 2swim-'+pose3_3)
     if olivia.dress=='a':
         $ renpy.show('FG Lisa Olivia 2swim-'+pose3_3)
+    $ lisa.hourly.dressed = 1
     return
 
 
@@ -701,9 +703,9 @@ label olivia_dressed:
                         $ mood += 20
                         jump .wait_in_room
                     "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth, 80, lisa.daily.in_room+1) if lisa.daily.in_room < 2 and not lisa.daily.gotcha:
-                        call .try_to_peek
+                        call .try_to_peek from _call_olivia_dressed_try_to_peek
                     "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth/2, 80, lisa.daily.in_room+1) if lisa.daily.in_room == 2 and not lisa.daily.gotcha:
-                        call .try_to_peek
+                        call .try_to_peek from _call_olivia_dressed_try_to_peek_1
 
             "{i}подождать за дверью, пока девочки переоденутся{/i}":
                 jump .wait_outside
@@ -729,7 +731,7 @@ label olivia_dressed:
                 Lisa_01 "Спасибо, Макс. Мы быстренько!"
                 Olivia_01 "Лично мне Макс нисколько не мешает..." nointeract
 
-        call .wait_or_leave
+        call .wait_or_leave from _call_olivia_dressed_wait_or_leave
 
     label .moment2:     # повезло
         $ renpy.dynamic('mood', 'pl', 'po', 'var', 'np', 'face')
@@ -752,12 +754,12 @@ label olivia_dressed:
         if lvl == 2:
             Lisa_13 "Выйди и закрой за собой дверь!"
             Olivia_03 "Да, Макс! Тебе должно быть очень стыдно за такие выходки." nointeract
-            call .lvl_2
+            call .lvl_2 from _call_olivia_dressed_lvl_2
 
         else:
             Lisa_10 "Пожалуйста, выйди и дверь за собой закрой!"
             Olivia_03 "Да ладно тебе, Лиза. Мы же все всё у друг друга уже видели." nointeract
-            call .lvl_3
+            call .lvl_3 from _call_olivia_dressed_lvl_3
 
     label .moment1:     # неповезло
         $ renpy.dynamic('mood', 'pl', 'po', 'var', 'np', 'face')
@@ -772,10 +774,10 @@ label olivia_dressed:
 
         if lvl == 2:
             Lisa_11 "Макс! Мы же переодеваемся!!! Выйди и закрой за собой дверь!" nointeract
-            call .lvl_2
+            call .lvl_2 from _call_olivia_dressed_lvl_2_1
         else:
             Lisa_11 "Макс! Мы же переодеваемся!!! Пожалуйста, выйди и дверь за собой закрой!" nointeract
-            call .lvl_3
+            call .lvl_3 from _call_olivia_dressed_lvl_3_1
 
     label .lvl_2:
         menu:
@@ -792,7 +794,7 @@ label olivia_dressed:
                 $ mood += 20
                 Lisa_09 "Ну и долго ты ещё пялиться будешь?! Выйди и подожди. Мы недолго..." nointeract
 
-        call .wait_or_leave
+        call .wait_or_leave from _call_olivia_dressed_wait_or_leave_1
 
     label .lvl_3:
         menu:
@@ -821,7 +823,7 @@ label olivia_dressed:
                 $ mood += 30
                 Lisa_02 "Макс, займись чем-нибудь путным." nointeract
 
-        call .wait_or_leave
+        call .wait_or_leave from _call_olivia_dressed_wait_or_leave_2
 
     label .try_to_peek:
         $ lisa.daily.in_room += 1
@@ -918,6 +920,8 @@ label olivia_dressed:
         $ ClothingNps('lisa', lisa.plan_name)
         $ ClothingNps('olivia', olivia.plan_name)
         $ AddRelMood('lisa', 0, mood)
+        $ lisa.prev_plan = lisa.plan_name
+        $ olivia.prev_plan = olivia.plan_name
 
         $ renpy.block_rollback()
         scene BG black with dissolve
@@ -931,6 +935,8 @@ label olivia_dressed:
         $ ClothingNps('lisa', lisa.plan_name)
         $ ClothingNps('olivia', olivia.plan_name)
         $ AddRelMood('lisa', 0, mood)
+        $ lisa.prev_plan = lisa.plan_name
+        $ olivia.prev_plan = olivia.plan_name
         $ renpy.block_rollback()
         scene BG black with dissolve
         jump AfterWaiting
@@ -952,10 +958,14 @@ label olivia_dressed:
         $ ClothingNps('lisa', lisa.plan_name)
         $ ClothingNps('olivia', olivia.plan_name)
         $ AddRelMood('lisa', 0, mood)
+        $ lisa.prev_plan = lisa.plan_name
+        $ olivia.prev_plan = olivia.plan_name
 
         $ renpy.block_rollback()
         call screen room_navigation
 
     label .end:
+        $ lisa.prev_plan = lisa.plan_name
+        $ olivia.prev_plan = olivia.plan_name
         $ AddRelMood('lisa', 0, mood)
         jump Waiting

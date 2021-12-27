@@ -247,3 +247,43 @@ init python:
             return 2
         else:
             return 1
+
+
+    # проверяет выполнение условий для отображения печеньки
+    def cookie_verification(cookie):
+        # количество найденых печенек на одну меньше текущего номера
+        # определим количество уже найденных печенек данной одежды персонажа
+        # и прибавим единичку
+        try:
+            fc = len(persistent.mm_cookies[cookie.char][cookie.clot]) + 1
+        except:
+            fc = 1
+
+        try:
+            rez = eval(cookie.req)
+        except:
+            rez = True  # если условие ошибочно прописано, считаем, что оно выполняется
+
+        if all([
+                #  открыт тип одежду у персонажа
+                cookie.clot in menu_chars[cookie.char.title()].get_open_clot(),
+                cookie.num == fc,                   # правильное количество уже найденных
+                current_room == eval(cookie.room),  # нужная комната
+                weekday in cookie.lod,              # нужный день недели
+                cookie.tm1 <= tm < cookie.tm2,      # нужное время
+                rez,                                # выполняется дополнительное условие
+            ]):
+            return True
+        else:
+            return False
+
+
+    # можно ли заняться сексом с Кирой в душе
+    def can_kira_sex_shower():
+
+        return all([
+            wcv.catch_Kira.stage not in [1, 2], # Эрик не палил Макса с Кирой в ванной, или уже изгнан
+            kira.dcv.photo.stage > 2,           # состоялась третья фотосессия
+            kira.stat.handjob > 1,              # получена периодическая дрочка в бассейне
+            not kira.flags.promise,             # за Максом нет долга по куни
+            ])

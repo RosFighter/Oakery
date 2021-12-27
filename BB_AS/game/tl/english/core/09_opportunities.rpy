@@ -1921,3 +1921,80 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы."
     new "Lisa came to me for advice, because, as it turned out, after finishing their theoretical lessons, Eric suggested that she consolidate all this in practical lessons without my mother's participation."
+
+# TODO: Translation updated at 2021-12-27 16:14
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь Эрика нет и я могу спокойно помогать Алисе дальше. Я уже предложил ей сходить куда-нибудь и развеяться, а то Эрик своими планами произвёл на моих сестёр и маму не самые лучшие впечатления. Но Алиса хочет сперва опомниться, а уже потом как-то развлекаться. Остаётся ждать..."
+    new "Now that Eric was gone, I could help Alice get on with her life. I've already suggested that she go out and have some fun, because Eric's plans haven't made the best impression on my sisters and my mother. But Alice wants to come to her senses first and then have some fun. We just have to wait..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно помешать Эрику и Лизе во время практических занятий..."
+    new "We need to interfere with Eric and Lisa during practice sessions..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Компромат на Эрика\"..."
+    new "It's going to take some success in the \"Blackmail material on Eric\" opportunity..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик предупредил меня, что так просто он это не оставит и у меня будут огромные проблемы. Ну посмотрим, что такого он может сделать..."
+    new "I intervened in Lisa's practice session before she made a big mistake... Naturally, Eric warned me that he wasn't going to let it go and I was going to be in a lot of trouble. Well, let's see what he can do..."
+
+    # game/core/09_opportunities.rpy:4
+    old "После того, как с Эриком всё разрешилось, я поговорил с Лизой. Она после того, что затевал Эрик, не горит большим желанием активно продолжать своё сексуальное образование. Поэтому я предложил ей смотреть обучающие фильмы и она не против. Теперь нужно будет подыскать что-нибудь такое для неё, не порно, но добротные эротические фильмы. А там глядишь и до порно фильмов недалеко..."
+    new "After everything with Eric was resolved, I talked to Lisa. After what Eric was up to, she wasn't very eager to actively pursue her sex education. So I suggested she watch educational movies and she's okay with that. Now we have to find something for her, not porn, but good erotic movies. And then we'll see if we can get into porn movies..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эта сволочь Эрик, взял и обвинил меня в воровстве его бумажника с деньгами! И якобы именно на эти сворованные деньги я и покупаю все подарки для моей семьи. Дал мне неделю, чтобы я всё ему вернул, иначе меня отправят в военный лагерь. А как обидно, что верят именно Эрику, а не мне.\nЭрик так же дал понять, что \"уладить\" это у меня не получится, так что дело за компроматом на него. Но сначала нужно поговорить с сёстрами, чтобы понять, насколько они верят Эрику."
+    new "That bastard Eric, he accused me of stealing his wallet of money! And supposedly it was with this stolen money that I was buying all the presents for my family. He gave me a week to pay him back, or else I would be sent to a military camp. And it's a shame that they believe Eric and not me.\nEric also made it clear that I can't fix this, so it's up to me to \"get dirt\" on him. But first we need to talk to the sisters to find out how much they trust Eric."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно торопиться! Лучше поговорить с Лизой и Алисой как можно быстрее..."
+    new "We must hurry! It's better to talk to Lisa and Alice as soon as possible..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Спрашиваете меня об Эрике? Эрик... Эрик... Какой такой Эрик? Не слышал ни о каком Эрике... Кажется, его и не было никогда. Даже вспоминать не буду! Но что мне запомнилось, так это Алиса в гневе. У меня даже привстал на такое..."
+    new "Are you asking me about Eric? Eric... Eric... Eric who? I've never heard of any Eric... I don't think he ever existed. I won't even remember! But what I do remember is Alice in anger. I even had a hard-on for that..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Или же Эрик ещё может вернуться? Как знать..."
+    new "Or could Eric still come back? Who knows..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Спрашиваете меня об Эрике? Эрик... Эрик... Какой такой Эрик? Не слышал ни о каком Эрике... Кажется, его и не было никогда. Даже вспоминать не буду! Но что мне запомнилось, так это Лиза в гневе. Вроде хотела порвать Эрика, а сама за меня в итоге пряталась..."
+    new "Are you asking me about Eric? Eric... Eric... Eric who? I've never heard of any Eric... I don't think he ever existed. I won't even remember! But what I do remember is Lisa in a rage. Like she wanted to tear Eric up, but she ended up hiding behind me..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Пришло время действовать! Одного снимка мало, чтобы убедить всех в том, что Эрик тот ещё мудак, а заманивать его его в комнату к Алисе нет времени. Вот бы мне разговорить Эрика и записать его мерзкие признания на диктофон! У Лизы на телефоне наверняка должен быть диктофон, но нужно подождать пару дней, чтобы она остыла. Тогда я его и попрошу на время..."
+    new "It was time to act! It wasn't enough to convince everyone that Eric was an asshole, and there was no time to lure him into Alice's room. I wish I could get Eric to talk and record his disgusting confessions! Lisa must have a tape recorder on her phone, but we have to wait a couple of days for her to cool down. Then I'll ask him for a while..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно будет подождать и попросить у Лизы на время её телефон. Стоит попробовать начиная с субботы..."
+    new "We'll have to wait and ask Lisa for her phone number for a while. It's worth trying starting on Saturday..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Пришло время действовать! Без доказательств я никак не смогу убедить всех в том, что Эрик тот ещё мудак. Вот бы мне разговорить его... и записать его мерзкие признания на диктофон! У Лизы на телефоне наверняка должен быть диктофон, но нужно подождать пару дней, чтобы она остыла. Тогда я его и попрошу на время..."
+    new "It's time to act! Without proof, there's no way I can convince everyone that Eric is an asshole. I wish I could get him to talk... and get his disgusting confessions on tape! Lisa must have a tape recorder on her phone, but it'll have to wait a couple of days for her to cool down. Then I'll ask him for a while..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Пришло время действовать! Снимки у меня есть, но хорошо бы перетянуть кого-нибудь из сестёр на свою сторону. Раз Эрик любит подрочить на Алису, то я знаю, как усилить эффект от компромата.\n\nНужно проследить за Эриком и убедиться, что он сделал все свои мерзкие ночные дела, а после немного \"испачкать\" Алису, будто бы это Эрик. С учётом обстоятельств, она точно прибежит с утра именно ко мне. Надеюсь, я успею показать ей снимки до того, как она меня убьёт!"
+    new "It's time for action! I have the pictures, but it would be good to get one of the sisters on my side. Since Eric likes to jerk off to Alice, I know how to enhance the effect of the dirt. I need to follow Eric and make sure he's done all his creepy nighttime stuff, and then make Alice look a little \"dirty\" as if it were Eric. Given the circumstances, I'm sure I'm the one she'll be running to in the morning. I hope I get to show her the pictures before she kills me!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно убедиться, что Эрик вернулся в комнату мамы после ночных похождений и подставить его, зайдя к спящей Алисе в комнату..."
+    new "We need to make sure Eric is back in his mom's room after his nightly adventures and set him up by walking into Alice's sleeping room..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза ни за что не хочет давать мне свой телефон! Придётся взять его, пока она будет мыть посуду после ужина. Думаю, у меня получится найти её телефон в комнате и быстренько разговорить Эрика, пока она не обнаружила пропажу и подняла шум."
+    new "There's no way Lisa wants to give me her phone! I'll have to get it while she does the dishes after dinner. I think I might be able to find her phone in her room and get Eric to talk quickly before she finds it missing and makes a fuss."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно найти телефон Лизы в комнате, пока она моет посуду и сразу же идти к Эрику. Другой возможности больше может не представиться..."
+    new "We need to find Lisa's phone in her room while she's washing the dishes and go straight to Eric's house. There might not be another opportunity..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эрик повержен! Мне удалось вывести его на чистую воду и теперь мы наконец-то заживём, как раньше. Даже ещё лучше! Но для начала всем нужно время, чтобы отойти от правды о нём."
+    new "Eric is defeated! I managed to bring him out in the open and now we're finally going to live like we used to. Even better! But first, everyone needs time to move on from the truth about him."
+

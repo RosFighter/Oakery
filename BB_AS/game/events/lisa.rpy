@@ -982,34 +982,28 @@ label lisa_dressed:
             "А у тебя сиськи подросли!" if var['boobs']:  # Лиза прикрывает грудь
                 $ mood -= 20
                 Lisa_12 "Что?! Если не уйдёшь, то я всё маме расскажу!" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave
             "Отличный зад, я тебе скажу!" if var['ass']:    # Лиза прикрывает попу
                 $ mood -= 20
                 Lisa_12 "Что?! Если не уйдёшь, то я всё маме расскажу!" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_1
             "А если я хочу на это посмотреть?" if var['fin']:   # Лиза с верхом и в трусиках
                 Lisa_12 "Макс! Я ведь маме на тебя нажалуюсь, если не уйдёшь!" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_2
             "Извини, я не знал... Красиво смотришься!":
                 Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!"
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_3
+        call .wait_or_leave from _call_lisa_dressed_wait_or_leave
 
     label .lvl_2:
         menu:
             "У тебя красивая грудь, Лиза. Не стесняйся..." if var['boobs']:  # Лиза прикрывает грудь
                 Lisa_10 "Не надо меня тут комплиментами одаривать, чтобы подольше поглазеть! Или хочешь, чтобы я маме об этом рассказала?" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_4
             "Какая соблазнительная попка у тебя..." if var['ass']:    # Лиза прикрывает попу
                 Lisa_10 "А вот не надо на неё так глазеть! Я ведь и маме всё могу рассказать, если не уйдёшь." nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_5
             "А где же волшебное слово?" if var['fin']:   # Лиза с верхом и в трусиках
                 Lisa_10 "Ну, Макс! Дай переодеться спокойно... Пожалуйста! Или мне маме пожаловаться?" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_6
             "Извини, я не знал... Красиво смотришься!":
                 if lisa.plan_name != 'dressed':
                     $ mood += 20
                 Lisa_09 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди. Я недолго..." nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_7
+        call .wait_or_leave from _call_lisa_dressed_wait_or_leave_4
 
     label .lvl_3:
         menu:
@@ -1018,28 +1012,24 @@ label lisa_dressed:
                 Lisa_01 "Ты, видимо, только об этом и мечтаешь...  Но нечего глазеть, как я одеваюсь! Лучше займи себя чем-нибудь полезным..."
                 Max_02 "Как раз это и делаю..."
                 Lisa_09 "Ну, Макс!" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_8
             "Какая соблазнительная попка у тебя..." if var['ass']:    # Лиза прикрывает попу
                 $ mood += 20
                 Lisa_01 "Думаешь, она у меня такая, чтобы тебя постоянно радовать? А вот и нет! Дай одеться спокойно..."
                 Max_02 "Ага, сейчас. Только ещё немного полюбуюсь..."
                 Lisa_09 "Ну, Макс!" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_9
             "Эх, не повезло! Я надеялся, что ты будешь раздета..." if var['fin']:   # Лиза с верхом и в трусиках
                 Lisa_01 "Ну ничего, Макс, ничего... Я скоро уйду и ты сможешь вдоволь поплакать. Сильно расстроился?"
                 Max_02 "Нет. Как представляю, что я тут пропустил - сразу приятно становится."
                 Lisa_09 "Ну, Макс!"
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_10
             "Кто-то у нас тут трусики не успел надеть..." if np:        # Лиза без трусиков
                 Lisa_13 "Ты! Ничего! Не видел! Понял? И хватит на меня глазеть с таким довольным лицом... Выйди и подожди за дверью!" nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_11
             "Извини, я не знал... Ты такая очаровательная!":
                 if lisa.plan_name != 'dressed':
                     $ mood += 30
                 Lisa_01 "Спасибо. Но давай ты не будешь пялиться и подождёшь за дверью, я недолго... Хорошо?"
                 Max_04 "А может повторим? Мне понравилось..."
                 Lisa_02 "Макс, займись чем-нибудь путным." nointeract
-                call .wait_or_leave from _call_lisa_dressed_wait_or_leave_12
+        call .wait_or_leave from _call_lisa_dressed_wait_or_leave_8
 
     label .try_to_peek:
         $ lisa.daily.in_room += 1
@@ -1047,6 +1037,7 @@ label lisa_dressed:
             scene BG char Lisa dressing-02
             $ pose = get_lisa_dress_inroom(1)
             $ renpy.show('Lisa dressing inroom '+pose)
+            show screen Cookies_Button
             if lvl == 1:
                 Max_05 "[lucky!t]{m}Повезло! Лиза не видит, что я подглядываю... Ещё совсем юная, но уже такая сексуальная! Обожаю её...{/m}"
             elif lvl == 2:
@@ -1058,6 +1049,7 @@ label lisa_dressed:
             scene BG char Lisa dressing-02
             $ pose = get_lisa_dress_inroom(0)
             $ renpy.show('Lisa dressing '+pose, at_list=[stay_in_room,])  # добавить увеличение и положение
+            show screen Cookies_Button
             if lvl == 1:
                 $ mood -= 50
                 Lisa_11 "[spotted!t]Макс! Я же просила не подглядывать! Ну-ка быстро отвернись... Ещё раз так сделаешь и я всё маме расскажу! Понял?!" nointeract
@@ -1104,12 +1096,14 @@ label lisa_dressed:
                 jump .leave
 
     label .wait_in_room:
+        hide screen Cookies_Button
         window hide
         $ hide_say()
         scene BG char Max bed-mde-01 with dissolve
         pause(1)
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
+        $ lisa.prev_plan = lisa.plan_name
         $ renpy.block_rollback()
         scene BG black with dissolve
         jump AfterWaiting
@@ -1124,6 +1118,7 @@ label lisa_dressed:
 
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
+        $ lisa.prev_plan = lisa.plan_name
 
         $ renpy.block_rollback()
         scene BG black with dissolve
@@ -1152,6 +1147,7 @@ label lisa_dressed:
 
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
+        $ lisa.prev_plan = lisa.plan_name
 
         $ renpy.block_rollback()
         call screen room_navigation
@@ -1163,12 +1159,13 @@ label lisa_dressed:
         $ at_comp = True
         $ current_room = house[5]
         $ cam_flag.append('notebook_on_terrace')
+        $ lisa.prev_plan = lisa.plan_name
         jump Laptop
 
     label .end:
+        $ lisa.prev_plan = lisa.plan_name
         $ AddRelMood('lisa', 0, mood)
         jump Waiting
-
 
 
 # label lisa_dressed_repetitor:
@@ -1190,6 +1187,7 @@ label lisa_dressed:
 label lisa_swim:
     scene image 'Lisa swim '+pose3_1+lisa.dress
     $ persone_button1 = 'Lisa swim '+pose3_1+lisa.dress+'b'
+    $ lisa.hourly.dressed = 1
     return
 
 
@@ -1197,6 +1195,7 @@ label lisa_sun:
     scene image 'BG char Lisa sun-'+pose3_1
     $ renpy.show('Lisa sun '+pose3_1+lisa.dress)
     $ persone_button1 = 'Lisa sun '+pose3_1+lisa.dress+'b'
+    $ lisa.hourly.dressed = 1
     return
 
 
@@ -1435,6 +1434,7 @@ label lisa_romantic_movie_0:
 
     scene BG char Lisa horror-myroom 01a
     $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+    show screen Cookies_Button
     Max_02 "{m}Я бы тоже с огромным удовольствием попихал в тебя чем-нибудь! А если бы она ещё и уснула со мной в обнимку это было бы...{/m}"
     Lisa_10 "Ой-ёй-ёй! У фильма же вроде семейный рейтинг?! Почему они раздеваются?"
     Max_03 "А вот это уже будет поинтереснее смотреть! Хороший момент, мне нравится..."
@@ -1457,6 +1457,7 @@ label lisa_romantic_movie_0:
     Lisa_09 "Да ну тебя!"
     Max_01 "Ладно. Доброй ночи тогда."
 
+    hide screen Cookies_Button
     $ lisa.dcv.special.stage = 1
     $ lisa.dcv.special.disable()
     $ poss['SoC'].open(12)
@@ -1497,6 +1498,7 @@ label lisa_romantic_movie_r:
     else:
         scene BG char Lisa horror-myroom 01a
         $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+        show screen Cookies_Button
 
     Max_07 "{m}Легко говорить, чтобы ничего не шевелилось! Достаточно просто представить, как Лиза лежит рядом со мной, совсем обнажённая... Ой, лучше не думать!{/m}"
     Lisa_03 "Что, Макс, заскучал? Будешь знать, как за мной подглядывать! И не вздумай спать, а то я начну тебя щипать..."
@@ -1553,6 +1555,7 @@ label lisa_romantic_movie_r:
     if lisa.dcv.special.stage < 3:
         $ lisa.dcv.special.stage += 1
 
+    hide screen Cookies_Button
     $ lisa.dcv.special.disable()
     $ infl[lisa].add_m(12)
     $ spent_time += 60
@@ -1592,6 +1595,7 @@ label lisa_horor_movie_0:
 
     scene BG char Lisa horror-myroom 01a
     show Lisa horror-myroom 01a-01b
+    show screen Cookies_Button
     Lisa_00 "Хорошая попытка, но меня этим не напугаешь, наверно... Вот молчал бы и я об этом сейчас не думала бы!"
     Max_02 "Но если тебе всё же начнёт казаться, как что-то тянется из темноты к твоей ноге, то сразу скажи. И мы сразу всё выключим!"
 
@@ -1625,6 +1629,7 @@ label lisa_horor_movie_0:
     Max_01 "Ладно. И попку давай береги по пути, а то монстры любят хватать за что-нибудь такое!"
     Lisa_11 "Ой ой ой!"
 
+    hide screen Cookies_Button
     $ spent_time += 60
     $ lisa.dcv.special.stage = 5
     $ lisa.dcv.special.disable()
@@ -1747,6 +1752,7 @@ label lisa_horor_movie_r:
     else:
         scene BG char Lisa horror-myroom 01a
         $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+        show screen Cookies_Button
 
     Lisa_09 "Может хоть для приличия испугаешься? А то иначе я уже не знаю, как тебя наказать, разве что маме тебя сдать..."
     Max_14 "Я боюсь! Теперь стало намного страшнее после твоих слов."
@@ -1788,6 +1794,7 @@ label lisa_horor_movie_r:
             # horror-myroom-01a + horror-myroom-01a-max&lisa-02
             scene BG char Lisa horror-myroom 01a
             $ renpy.show('Lisa horror-myroom 01a-02'+lisa.dress)
+            show screen Cookies_Button
             Lisa_10 "Мне только страшно до своей кровати идти теперь..."
             Max_03 "Так не иди. Спи со мной. Я очень даже не против!"
             menu:
@@ -1813,6 +1820,7 @@ label lisa_horor_movie_r:
 
                     scene BG char Lisa horror-myroom 01a
                     $ renpy.show("Lisa horror-myroom 01a-01"+lisa.dress)
+                    show screen Cookies_Button
                     Lisa_02 "Да, так уже совсем не страшно. Я пойду... Спокойной ночи, Макс."
                     Max_01 "Ага. Приятных снов."
                     if not _in_replay:
@@ -1859,6 +1867,7 @@ label lisa_horor_movie_r:
         jump .end
 
     label .end:
+        hide screen Cookies_Button
         $ renpy.end_replay()
         $ spent_time += 60
         $ infl[lisa].add_m(12)

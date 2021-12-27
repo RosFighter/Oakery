@@ -717,7 +717,7 @@ init python:
         if lisa.plan_name in ['swim', 'sun'] or lisa.prev_plan in ['swim', 'sun']:
             lst.append('01c')   # трусики от бикини перед или после отдыха во дворе
 
-        if lisa.prev_plan not in ['in_shcool', 'in_shop', 'at_tutor', 'homework']:
+        if lisa.prev_plan not in ['in_shcool', 'in_shop', 'at_tutor', 'homework', 'on_courses']:
             lst.append({'a':'01a', 'b':'01b1', 'd':'01d'}[lisa.clothes.casual.GetCur().suf])
             if lisa.clothes.casual.GetCur().suf == 'b' and lvl > 2:
                 lst.append('01b')

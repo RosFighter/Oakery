@@ -39,6 +39,9 @@ define ann_bad_mass     = renpy.config.say_menu_text_filter(renpy.translate_stri
 define lisa_bad_kiss    = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
 define impact_reduced   = _("{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n")
 
+define good_mission     = _("{color=#00FF00}{i}Успех!{/i}{/color}\n")
+define bad_mission      = _("{color=#E59400}{i}Провал!{/i}{/color}\n")
+
 define config.has_autosave = False
 define config.has_quicksave = False
 
@@ -154,6 +157,7 @@ define talks = {
     'a.privpunr'    : TalkTheme('alice', _("Пора отшлёпать одну милую попку!"), 'alice_private_punish_r', "all([alice.plan_name == 'sun', alice.dcv.private.stage==5, not alice.dcv.private.done, not alice.spanked])"),
     'a.carry'       : TalkTheme('alice', _("Тебе помочь накрыть на стол?"), 'alice_help_carry_plates', "all([alice.plan_name == 'cooking', alice.dcv.battle.stage])"),
     'a.wallet'      : TalkTheme('alice', "Э-э-э... Что не интересно?", 'alice_about_wallet', "all([flags.eric_wallet == 2, not alice.flags.talkblock])"),
+    'a.showdown'    : TalkTheme('alice', _("Как ты после случившегося?"), 'alice_about_showdown', "all([flags.eric_wallet==4, not alice.flags.showdown_e])"),
 
     'a.domine0'     : TalkTheme('alice', _("Я пришёл извиниться за то, что было утром. Я больше не буду."), 'alice_mistress_0', "all([not alice.dcv.mistress.stage, alice.plan_name == 'tv', not alice.dcv.mistress.done, not alice.daily.mistress])"),
     'a.domine1'     : TalkTheme('alice', _("Я снова подглядывал. Извини."), 'alice_mistress_1', "all([alice.dcv.mistress.stage == 1, alice.plan_name == 'tv', not alice.dcv.mistress.done, not alice.daily.mistress])"),
@@ -170,6 +174,7 @@ define talks = {
     'ann.yoga0'     : TalkTheme('ann', _("С тобой можно?"), 'ann_yoga_with_max0', "all([ann.plan_name=='yoga', ann.dcv.feature.stage==4, ann.dcv.feature.done])"),
     'ann.yoga1'     : TalkTheme('ann', _("Я присоединюсь?"), 'ann_yoga_with_maxr', "all([ann.plan_name=='yoga', ann.dcv.feature.stage>4, ann.dcv.feature.done])"),
     'm.wallet'      : TalkTheme('ann', "Да не крал я у него ничего! Он всех обманывает!", 'ann_about_wallet', "all([flags.eric_wallet == 2, not ann.flags.talkblock])"),
+    # 'm.showdown'    : TalkTheme('ann', _(""), 'ann_about_showdown', "all([flags.eric_wallet==4, not ann.flags.showdown_e])"),
 
     'eric.money'    : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([not eric.daily.ask_money, GetRelMax('eric')[0]>3, 'money' in flags.bonus_from_eric])"),
     'eric.wtf'      : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "all([flags.voy_stage==1, GetRelMax('eric')[0]>0])"),
@@ -195,6 +200,7 @@ define talks = {
     'ann.secr_r'    : TalkTheme('kira', _("Расскажи уже про тот случай из детства мамы..."), 'kira_about_ann_secret_r', "all([kira.plan_name=='sun', ann.dcv.feature.stage==3, ann.dcv.feature.done])"),
     'kt_ft3_0'      : TalkTheme('kira', _("Когда будет новая фотосессия, тётя Кира?"), 'kira_about_photo3_0', "all([kira.dcv.feature.stage==8, ann.dcv.feature.stage>3, kira.dcv.feature.done])"),
     'k.wallet'      : TalkTheme('kira', "Ты уже в курсе, что Эрик заявил?", 'kira_about_wallet', "all([flags.eric_wallet == 2, not kira.flags.talkblock])"),
+    'k.showdown'    : TalkTheme('kira', _("Уже слышала новость, тётя Кира?"), 'kira_about_showdown', "all([flags.eric_wallet==4, not kira.flags.showdown_e])"),
 
     'lisa_fd'       : TalkTheme('lisa', _("О школе..."), 'about_school', "day==1 and tm>='16:00' and flags.lisa_fd==0 and lisa.flags.crush==0"),
     'lisa_swim'     : TalkTheme('lisa', _("А ты чего так загораешь?"), 'talk_swim', "poss['Swimsuit'].st()<0 and lisa.plan_name == 'sun'"),
@@ -235,6 +241,8 @@ define talks = {
     'ol.l.t4'       : TalkTheme(['lisa', 'olivia'], _("Рад тебя видеть, Оливия!"), 'olivia_talk4', "all([olivia.plan_name=='sun', weekday in[2, 5], olivia.dcv.feature.stage==4, olivia.dcv.feature.done, olivia.dcv.special.stage])"),
     'l.take_school' : TalkTheme('lisa', _("Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"), 'take_to_school', "all([lisa.flags.help, lisa.plan_name == 'repeats'])", 1),
     'l.wallet'      : TalkTheme('lisa', "Надеюсь, ты не поверила Эрику?", 'lisa_about_wallet', "all([flags.eric_wallet == 2, not lisa.flags.talkblock])"),
+    'l.need_phone'  : TalkTheme('lisa', "Мне нужна твоя помощь!", 'lisa_asked_phone', "all([flags.eric_wallet == 2, lisa.flags.talkblock, not any([flags.asked_phone, flags.eric_photo2, lisa.hourly.talkblock, weekday in [4, 5]])])"),
+    'l.showdown'    : TalkTheme('lisa', _("Лиза, ты чего нос повесила?"), 'lisa_about_showdown', "all([flags.eric_wallet==4, not lisa.flags.showdown_e])"),
     }
 
 

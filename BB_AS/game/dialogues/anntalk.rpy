@@ -409,6 +409,7 @@ label ann_tv_casual_1:
     scene BG tv-mass-03
     $ renpy.show('Max tv-ero 01'+mgg.dress)
     $ renpy.show('Ann tv-ero 01-'+pose3_3)
+    show screen Cookies_Button
 
     if mgg.dress == 'b':
         # Макс в майке и шортах
@@ -422,6 +423,7 @@ label ann_tv_casual_1:
             Max_07 "Мам, а зачем без дела, сидеть и смотреть в экран... Хочешь, я тебе массаж сделаю?"
     Ann_02 "Я слышала от твоих сестёр, что ты начал этим увлекаться и делаешь успехи... Неужели этому можно научиться на интернет-курсах?"
 
+    hide screen Cookies_Button
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_02 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
     scene BG tv-watch-01
     $ renpy.show('tv serial '+film+'-02', at_list=[tv_screen,]) # tv_screen
@@ -481,10 +483,12 @@ label ann_tv_casual_r:
     scene BG tv-mass-03
     $ renpy.show('Max tv-ero 01'+mgg.dress)
     $ renpy.show('Ann tv-ero 01-'+pose3_3)
+    show screen Cookies_Button
 
     menu:
         Max_08 "{m}Зря я это представил... Надеюсь, она не заметит, что у меня стоит... Но не факт, может стоит подстраховаться и предложить ей массаж?{/m}"
         "Мам, хочешь массаж?":
+            hide screen Cookies_Button
             if ann.flags.handmass:
                 # предыдущий массаж был успешным
                 # tv-mass-07 + tv-ero-01-max-(03a/03b) + tv-ero-01-ann-(07/08/09)
@@ -722,6 +726,7 @@ label ann_yoga_with_max0:       # первая совместная йога
     scene BG char Ann yoga 02
     $ renpy.show('Max yoga 02'+mgg.dress)
     show Ann yoga 02-01a
+    show screen Cookies_Button
     Ann_07 "Ну, для начала, то что я делаю нельзя назвать йогой. Это скорее растяжка, в которой есть некоторые позы из упражнений по йоге."
     Max_04 "Для укрепления здоровья?"
     Ann_08 "Да. Здесь тебе и развитие гибкости, и оздоровление организма в целом, а так же выносливость и умиротворение. В моём возрасте это всё имеет очень важное значение, сынок."
@@ -729,6 +734,7 @@ label ann_yoga_with_max0:       # первая совместная йога
     Ann_05 "Спасибо, Макс! Приятно такое слышать. Значит, я не зря этим занимаюсь и это работает..."
     Max_02 "Ещё как работает! Может, я чем-то могу помочь?"
 
+    hide screen Cookies_Button
     # yoga-03 + yoga-03-max-(01a/01b)-ann-01
     scene BG char Ann yoga 03
     $ renpy.show('Ann yoga 03-01a'+mgg.dress)
@@ -822,11 +828,13 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
     scene BG char Ann yoga 02
     $ renpy.show('Max yoga 02'+mgg.dress)
     $ renpy.show('Ann yoga 02-0'+str(renpy.random.randint(1, 3))+ann.dress)
+    show screen Cookies_Button
     Ann_04 "Макс, будь повнимательнее... Я ведь хочу, чтобы ты хоть чему-то научился от меня."
     Max_02 "О, мам, поверь, я сейчас очень внимателен!"
     Ann_06 "Тогда подержишь меня немножко, чтобы я всё правильно сделала?"
     Max_01 "Да, мам. Сейчас..."
 
+    hide screen Cookies_Button
     # yoga-03 + yoga-03-max-(a/b)-ann-(01/01a или 02/02a или 03/03a)
     scene BG char Ann yoga 03
     $ renpy.show('Ann yoga 03-0'+str(renpy.random.randint(1, 3))+ann.dress+mgg.dress)
@@ -964,9 +972,11 @@ label erofilm2_1:
     scene BG tv-mass-03
     $ renpy.show('Max tv-ero 01'+mgg.dress)
     $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
+    show screen Cookies_Button
     menu:
         Max_08 "{m}Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хорошо, что есть проверенный и приятный способ его скрыть...{/m}"
         "Мам, хочешь массаж?":
+            hide screen Cookies_Button
             if ann.flags.handmass:
                 # предыдущий массаж был успешным
                 # tv-mass-07 + tv-ero-01-max-(03a/03b) + tv-ero-01-ann-(07/08/09)
@@ -1115,12 +1125,14 @@ label erofilm2_1:
         scene BG tv-mass-03
         $ renpy.show('Max tv-ero 01'+mgg.dress)
         $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
+        show screen Cookies_Button
     else:
         pass
 
     Ann_14 "Мне всё кажется, что ты ещё недостаточно взрослый, для таких вещей."
     Max_09 "Мам, а если у меня девушка появится, ты что, думаешь мы только за ручку будем гулять и розового единорога почёсывать?"
 
+    hide screen Cookies_Button
     scene BG tv-watch-01
     show tv ero2 07 at tv_screen
     if pose == 'good':
@@ -1194,10 +1206,12 @@ label erofilm2_2:
     scene BG tv-mass-03
     $ renpy.show('Max tv-ero 01'+mgg.dress)
     $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
+    show screen Cookies_Button
     Ann_17 "Так, Макс... В этот раз представим, что я ничего не слышала, но за подобные мысли я и наказать могу. И даже представлять меня не вздумай в одном лишь фартуке!"
     menu:
         Max_08 "{m}Эх, мам... Уже поздно. И о таком зрелище я точно в ближайшее время не смогу забыть! Надеюсь, она не заметит, что у меня стоит...{/m}"
         "Мам, хочешь массаж?":
+            hide screen Cookies_Button
             if ann.flags.handmass:
                 # предыдущий массаж был успешным
                 # tv-mass-07 + tv-ero-01-max-(03a/03b) + tv-ero-01-ann-(07/08/09)
@@ -1379,8 +1393,10 @@ label erofilm2_2:
         scene BG tv-mass-03
         $ renpy.show('Max tv-ero 01'+mgg.dress)
         $ renpy.show('Ann tv-ero 01-'+pose3_3)
+        show screen Cookies_Button
         Max_04 "Да, намёки для зрителей были местами очень жирные."
 
+        hide screen Cookies_Button
         # tv-watch-01 + ero_mov_02_13 + tv-watch-01-ann-01 + tv-watch-01-max-(01a/01b)
         scene BG tv-watch-01
         show tv ero2 13 at tv_screen

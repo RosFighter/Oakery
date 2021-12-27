@@ -472,7 +472,7 @@ label frame_eric:
 
 
 label showdown_with_eric:
-    #Алиса утром будит Макса
+    # Алиса утром будит Макса
 
     scene BG black with Fade(0.4, 0, 0.3)
     $ alice.dress = alice.clothes.sleep.GetCur().suf
@@ -541,9 +541,9 @@ label showdown_with_eric:
 
     # hugging-annroom-00 + sud-01-ann-01-eric-01 + sud-01-alice-(01a/01b) + sud-01-max-01
     scene BG char Ann hugging-annroom-00
-    show Eric showdown 00
-    $ renpy.show('Alice showdown 00' + alice.dress)
-    show Max showdown 00
+    show Eric showdown annroom 00
+    $ renpy.show('Alice showdown annroom 00' + alice.dress)
+    show Max showdown annroom 00
 
     Alice_17 "И ещё какие! Эрик дрочит на меня по ночам! Это как вообще называется? Я думала у нас Макс извращенец, но ты, Эрик..."
     Ann_16 "Ты что такое вообще несёшь, Алиса?! Обвинять в таком Эрика, это..."
@@ -552,11 +552,11 @@ label showdown_with_eric:
 
     # annroom-sud-01 + annroom-sud-01-eric-01 + annroom-sud-01-ann-01 + annroom-sud-01-alice-(01a/01b) + annroom-sud-01-max-01 + annroom-sud-01-lisa-01
     scene BG char Ann mde-02
-    show Eric showdown 01
-    show Ann showdown 01
-    $ renpy.show('Alice showdown 01' + alice.dress)
-    show Max showdown 01
-    show Lisa showdown 01
+    show Eric showdown annroom 01
+    show Ann showdown annroom 01
+    $ renpy.show('Alice showdown annroom 01' + alice.dress)
+    show Max showdown annroom 01
+    show Lisa showdown annroom 01
 
     Alice_17 "Ну-ка заткнулся! Меня лучше не злить! Сейчас Макс покажет маме снимки и мы послушаем, как ты это объяснишь..."
     Ann_14 "И что вы хотите мне тут показать? Я не понимаю... Как такое вообще может быть?! Эрик, будь добр, объясни это..."
@@ -566,26 +566,26 @@ label showdown_with_eric:
     Lisa_10 "Нет... Правда, он предлагал мне закрепить на практике те уроки сексуального воспитания, что вы для меня проводили."
 
     # annroom-sud-01 + annroom-sud-01-eric-02 + annroom-sud-01-ann-02 + annroom-sud-01-alice-(02a/02b) + annroom-sud-01-max&lisa-02
-    show Eric showdown 02
-    show Ann showdown 02
-    $ renpy.show('Alice showdown 02' + alice.dress)
-    show Max showdown 02
+    show Eric showdown annroom 02
+    show Ann showdown annroom 02
+    $ renpy.show('Alice showdown annroom 02' + alice.dress)
+    show Max showdown annroom 02
     hide Lisa
 
     Alice_18 "Ах так! Значит, ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
     Ann_20 "Эрик, ты совсем что ли больной?! Как ты мог такое делать с моими девочками! Живо выметайся из нашего дома, пока я полицию не вызвала!"
-    show Eric showdown 01
-    $ renpy.show('Alice showdown 01' + alice.dress)
+    show Eric showdown annroom 01
+    $ renpy.show('Alice showdown annroom 01' + alice.dress)
     Eric_10 "Какую ещё полицию?! Я ничего не делал. Это всё Макс!"
     Lisa_13 "Не надо всё на Макса сваливать! Он хороший..."
     Alice_16 "Я раньше от души могла навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
 
     # annroom-sud-01 + annroom-sud-01-ann-03 + annroom-sud-01-max&lisa-03 + annroom-sud-01-alice-(03a/03b) + annroom-sud-01-eric-03
     scene BG char Ann mde-02
-    show Ann showdown 03
-    show Max showdown 03
-    $ renpy.show('Alice showdown 03' + alice.dress)
-    show Eric showdown 03
+    show Ann showdown annroom 03
+    show Max showdown annroom 03
+    $ renpy.show('Alice showdown annroom 03' + alice.dress)
+    show Eric showdown annroom 03
 
     Ann_19 "Эрик, проваливай! Я не хочу тебя больше видеть!"
     Eric_09 "Вижу, вы все на взводе, так что я поговорю с вами, когда успокоитесь... А сейчас я оденусь и отправлюсь на работу."
@@ -595,10 +595,10 @@ label showdown_with_eric:
     scene BG black with dissolve # Fade(0.2, 0, 0.2)
     # sexed-hj + annroom-sud-01-alice-(04a/04b) + annroom-sud-01-ann-04 + annroom-sud-01-lisa-04 + annroom-sud-01-max-04
     scene BG char Eric sexed-hj
-    $ renpy.show('Alice showdown 04' + alice.dress)
-    show Ann showdown 04
-    show Lisa showdown 04
-    show Max showdown 04
+    $ renpy.show('Alice showdown annroom 04' + alice.dress)
+    show Ann showdown annroom 04
+    show Lisa showdown annroom 04
+    show Max showdown annroom 04
 
     Max_00 "Мам, ты только не расстраивайся так из-за него. Всякое бывает..."
     Ann_14 "Всё никак в голове не укладывается, что Эрик тут с вами творил... И что я за мать после этого? Я в шоке..."
@@ -613,7 +613,7 @@ label showdown_with_eric:
 
     # annroom-morning-01 + annroom-sud-01-ann&max&lisa-alice-(05a/05b)
     scene BG char Ann mde-01
-    $ renpy.show('Alice showdown 05' + alice.dress)
+    $ renpy.show('Alice showdown annroom 05' + alice.dress)
 
     Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
     Lisa_01 "Не бери в голову, мам. Не вини себя, всё ведь хорошо. Мы с тобой."
@@ -627,8 +627,236 @@ label showdown_with_eric:
     $ spent_time = 40
     $ flags.eric_banished = 1       # Эрик изгнан
     $ eric.dcv.battle.stage = 1     # подстава с фотографиями
-    $ eric.dcv.battle.set_lost(61)  # откат 2 месяца
+    $ poss['alpha'].open(5)         # Макс подставил Эрика через Алису и того прогоняют
+    $ poss['discrediting'].open(8)
     $ current_room = house[2]
     $ SetCamsGrow(house[2], 150)
 
+    call restore_relations from _call_restore_relations
+
     jump Waiting
+
+
+label dictaphone_showdown_with_eric:
+    # разборки с Эриком используя диктофон
+    scene BG black with dissolve
+
+    # lounge-tv-00 + lounge-tv-ann&eric-hjbj(01/01a)
+    scene BG lounge-tv-00
+    $ renpy.show('Eric tv 01' + eric.dress)
+    # with Fade(0.4, 0, 0.3)
+    Ann_13 "Макс! Лиза! Алиса! Ну зачем так неожиданно влетать?! Так и заикой стать не долго..."
+    Lisa_13 "Извини, мама... Но сейчас кто-то действительно станет заикой! Ты хоть знаешь, какие планы строит Эрик?"
+    Ann_15 "Это что за тон, Лиза?! И что это за вопрос? Что происходит?!"
+    Alice_13 "Мам, я понятия не имею... Это всё они."
+    Max_09 "Лиза тут кое-что узнала... И теперь у неё есть претензии к Эрику..."
+
+    # tv-mass-05 + lounge-sud-01-alice-01 + lounge-sud-01-ann-01 + lounge-sud-01-eric-(01/01a) + lounge-sud-01-max-(01a/01b) + lounge-sud-01-lisa-(01a/01b)
+    scene BG tv-mass-05
+    show Alice showdown lounge 01
+    show Ann showdown lounge 01
+    $ renpy.show('Eric showdown lounge 01' + eric.dress)
+    $ renpy.show('Max showdown lounge 01' + mgg.dress)
+    $ renpy.show('Lisa showdown lounge 01' + lisa.dress)
+
+    Lisa_12 "И ещё какие! Мам, помнишь наши совместные уроки в твоей комнате? Так вот Эрик решил расширить программу моего сексуального образования до практических занятий с ним наедине!"
+    Ann_17 "Я ни о чём таком не знаю. В каком смысле, практических?"
+    Lisa_10 "В таком, чтобы я повторяла всё то, что делала ты. Это как вообще называется? Я думала у нас Макс извращенец, но ты, Эрик..."
+    Ann_16 "Ты что такое вообще несёшь, Лиза?! Обвинять в таком Эрика, это... Я уверена, ты просто что-то не так поняла. Верно, Эрик?"
+    Eric_13 "Однозначно!"
+    Lisa_09 "Мам, с каких пор ты мне не веришь? Макс специально ходил разговаривать с Эриком и Эрик таких мерзостей ему наговорил про всех... Особенно, про меня!"
+    Ann_19 "Что?! Это уже явный перебор, Лиза! Мне или нужны доказательства, или тебя придётся хорошенько наказать!"
+    Eric_09 "Так, Лиза, давай успокаивайся! Ань, я сейчас поговорю с ней наедине. Макс видимо совсем страх потерял, своей младшей сестрёнке каких-то сказок понарассказывал."
+
+    # tv-mass-05 + lounge-sud-01-alice-01 + lounge-sud-01-ann-01 + lounge-sud-01-eric-(01/01a) + lounge-sud-01-max-(01a/01b) + lounge-sud-01-lisa-(02a/02b)
+    $ renpy.show('Lisa showdown lounge 02' + lisa.dress)
+
+    Lisa_13 "Не собираюсь я с тобой наедине больше оставаться! Макс всё записал на диктофон в телефоне. Сейчас послушаем..."
+    "{color=[orange]}(все слушают запись...){/color}"
+    Ann_14 "Это же... Неужели это действительно правда?! Эрик, будь добр, объясни это..."
+    Eric_13 "Ань, я не знаю, что и где это записано, но могу тебя уверить - это неправда! Уверен на все сто, что эта запись подделка."
+    Max_09 "В таком случае, я за то, чтобы провести экспертизу её подлинности!"
+
+    # tv-max&kira-sex01-01-f + lounge-sud-01-alice-03-ann-03 + lounge-sud-01-eric-(03/03a)
+    scene BG char Kira tv-sex01-01-f
+    show Alice showdown lounge 03
+    $ renpy.show('Eric showdown lounge 03' + eric.dress)
+
+    Alice_18 "Ах вот так, значит! Ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
+    Ann_15 "Эрик! У меня просто в голове не укладывается... Как ты мог на такое решиться, мерзавец... Лиза, неужели это действительно правда?"
+    Max_07 "Разве это не очевидно, мам? Или ты думаешь, что мы тебя так жестоко разыграть решили?"
+    Ann_20 "Эрик, ты совсем что ли больной?! Как ты мог, строя отношения со мной, ещё и планировать развращать моих детей! Живо выметайся из нашего дома, пока я полицию не вызвала!"
+    Eric_10 "Какую ещё полицию?! Я ничего не делал. Это всё Макс!"
+    Lisa_13 "Не надо всё на Макса сваливать! Он хороший..."
+
+    # after-club-s03-f + lounge-sud-01-eric-(04/04a) + lounge-sud-01-ann-04 + lounge-sud-01-alice-04 + lounge-sud-01-max-(04a/04b) + lounge-sud-01-lisa-(04a/04b)
+    scene BG char Kira after-club-s03-f
+    $ renpy.show('Eric showdown lounge 04' + eric.dress)
+    show Ann showdown lounge 04
+    show Alice showdown lounge 04
+    $ renpy.show('Max showdown lounge 04' + mgg.dress)
+    $ renpy.show('Lisa showdown lounge 04' + lisa.dress)
+
+    Alice_16 "Совсем недавно я могла от души навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
+    Ann_19 "Эрик, проваливай! Я не хочу тебя больше видеть!"
+    Eric_09 "Вижу, вы все на взводе, так что я поговорю с вами, когда успокоитесь... А сейчас я, пожалуй, отправлюсь к себе домой."
+    Ann_20 "Я сказала, {b}ПОШЁЛ ВОН НЕМЕДЛЕННО!!!{/b}"
+    Alice_17 "Убирайся из нашей жизни, грязное животное!"
+
+    # tv-max&kira-sex03-01-f + lounge-sud-01-alice-05-ann-05 + lounge-sud-01-lisa-(05a/05b) + lounge-sud-01-max-(05a/05b)
+    scene BG tv-sex03-01
+    show Alice showdown lounge 05
+    $ renpy.show('Lisa showdown lounge 05' + lisa.dress)
+    $ renpy.show('Max showdown lounge 05' + mgg.dress)
+    with dissolve
+
+    Max_00 "Мам, ты только не расстраивайся так из-за него. Всякое бывает..."
+    Ann_14 "Всё никак в голове не укладывается, что Эрик тут с вами собирался творить... И что я за мать после этого? Я в шоке..."
+    Alice_13 "Уж лучше узнать поздно, чем никогда. А у нас всё ещё лучше... Мы узнали, пока ещё не стало поздно. Так что не переживай, мам, мы все думали, что Эрик... уж точно не такой..."
+    Max_09 "Хорошо, что я своим мужским взглядом сразу понял, что он мутный тип!"
+    Lisa_09 "И между прочим, про бумажник Эрик наврал..."
+    Max_08 "Кстати, да! Он это придумал, чтобы вы меня в военный лагерь сослали. А то я стал слишком мешаться."
+    Ann_13 "Ты прости меня, сынок, я должна была прислушиваться к тому, что ты говорил. Что же теперь делать?"
+    Max_01 "Жить, как жили до Эрика! Ничего сложного..."
+    Ann_12 "Нет, Макс, я о другом... Он же мой начальник! Как мне теперь быть? Ох, не знаю..."
+    Max_07 "Д-а-а... Это проблемка. Ты главное не слушай его оправдания, а то он умеет убеждать, как ты сама прекрасно убедилась. А теперь давайте, все вместе, поддержим маму!"
+
+    # tv-ero-04 + lounge-sud-01-lisa-(06a/06b) + lounge-sud-01-alice-06-ann-06-max-(06a/06b)
+    scene BG tv-ero-04
+    $ renpy.show('Lisa showdown lounge 06' + lisa.dress)
+    $ renpy.show('Max showdown lounge 06' + mgg.dress)
+    with dissolve
+
+    Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
+    Lisa_01 "Не бери в голову, мам. Не вини себя, всё ведь хорошо. Мы с тобой."
+    Alice_05 "И если он начнёт устраивать тебе проблемы на работе, то мы все так же дружно, как сейчас, соберёмся и отпинаем его!"
+    Max_09 "Думаю, Эрик не настолько туп, чтобы строить маме козни. Особенно, если она будет с ним жёстче..."
+    Ann_17 "Ох, ребята, я постараюсь... Хотя, мне даже думать о нём сейчас противно, не то что видеть. Надеюсь, я не потеряю работу."
+    Max_08 "Может, удастся перевестись в какой-нибудь другой отдел?"
+    Ann_02 "Надеюсь... Ну всё, мне уже дышать нечем. Пора делами заниматься. Я вас очень люблю..."
+    Lisa_05 "И мы тебя!"
+
+    scene BG black with dissolve
+    $ spent_time = 0
+    $ tm = '22:00'
+    $ flags.asked_phone = 4
+    $ flags.eric_banished = 2       # Эрик изгнан
+    $ eric.dcv.battle.stage = 2     # подстава через звукозапись
+    $ poss['alpha'].open(6)         # Макс подставил Эрика через Лизу и того прогоняют
+    $ poss['discrediting'].open(9)
+    $ current_room = house[4]
+    $ SetCamsGrow(house[4], 150)
+
+    call restore_relations from _call_restore_relations_1
+
+    jump Waiting
+
+
+label restore_relations:
+    $ flags.eric_wallet = 4
+
+    # восстанавливаем отношения/настроение/влияние Макса.
+    $ ann.relmax    = rmi['m_r']
+    $ ann.mood      = rmi['m_m']
+    $ alice.relmax  = rmi['a_r']
+    $ alice.mood    = rmi['a_m']
+    $ lisa.relmax   = rmi['l_r']
+    $ lisa.mood     = rmi['l_m']
+
+    $ infl[ann].add_m(rmi['m_i'])
+    $ infl[alice].add_m(rmi['a_i'])
+    $ infl[lisa].add_m(rmi['l_i'])
+
+    $ rmi.clear()
+
+    # снимаем блокировку разговоров
+    $ ann.flags.talkblock   = 0
+    $ alice.flags.talkblock = 0
+    $ lisa.flags.talkblock  = 0
+    $ kira.flags.talkblock  = 0
+
+    # Обнуляем отношения и влияние Эрика
+
+    $ ann.releric   = 0
+    $ alice.releric = 0
+    $ lisa.releric  = 0
+
+    $ infl[ann].sud_e(infl[ann].e[0])
+    $ infl[alice].sud_e(infl[alice].e[0])
+    $ infl[lisa].sud_e(infl[lisa].e[0])
+
+    # в дальнейшем влияние Эрика никогда не поднимется выше 50%
+    $ infl[ann].lim_e = Influence.LIM // 2
+    $ infl[alice].lim_e = Influence.LIM // 2
+    $ infl[lisa].lim_e = Influence.LIM // 2
+
+    # обнуляем текущие "долги" и договорённости с сёстрами
+    $ alice.sorry.owe = False           # вкусняшки
+    $ lisa.sorry.owe = False            # вкусняшки
+    $ alice.dcv.mistress.disable()      # доминирование
+    $ lisa.dcv.special.enabled = False  # ужастики
+    $ alice.req.reset()                 # договорённости за сигареты
+
+    $ flags.block_peeping = 0           # можно снова подглядывать в душе
+
+    $ eric.dcv.battle.set_lost(61)      # откат Эрика 2 месяца
+
+    if wcv.catch_Kira.stage:
+        $ wcv.catch_Kira.stage = 3      # Если Эрик "палил" Макса с Лизой
+
+    $ notify_list.append(__("{g}Отношения Макса с семьёй значительно улучшились.{/g}"))
+
+    return
+
+
+label failed_dinner:
+    # terrace-punish-evening-00 + after-dinner-eric-(01/01a) + after-dinner-ann-(01/01a/01b)
+    scene BG punish-evening 00
+    $ renpy.show('Eric talk-terrace 03'+eric.dress)
+    $ renpy.show('Ann talk-terrace 03'+ann.dress)
+    Eric_00 "Итак, настал момент истины. Я дал тебе, Макс, достаточно времени, чтобы ты вернул мне мои деньги при всех. Ну что, ты готов покаяться и исправить свою ошибку?"
+
+    if mgg.money < 25000:
+        # у Макса нет суммы в 25000$
+        Max_15 "Да пошёл ты... Нет у меня твоих денег, и ты это прекрасно знаешь!"
+    else:
+        # у Макса есть сумма в 25000$
+        Max_15 "Да пошёл ты... Я ни за что не стану возвращать тебе то, чего не брал! И признавать себя вором тоже не стану!"
+
+    Eric_09 "Что ж, значит продолжаем отпираться... Ладно... Как ты видишь, Ань, я сделал всё, что было в моих силах, но это твой сын и тебе принимать решение."
+    Ann_14 "Да-да... Прости, Макс, но ты очень меня разочаровал и... нам не остаётся другого выбора, кроме как отправить тебя в военный лагерь. Надеюсь, там из тебя сделают ответственного человека."
+    Max_13 "Что?! Кому это, \"нам\"? Вам с Эриком? Это же не ты сейчас говоришь, а он! Как ты можешь выгонять из дома родного сына?"
+    Ann_17 "Прекрати, Макс! Я устала слушать твои оправдания. Ты даже не представляешь, до какой степени мне стыдно, что мой единственный сын - вор!"
+    Max_14 "Но мам, это всё неправда! Не говори так! Это же Эрик всё подстроил!"
+    Eric_13 "Да, стыдно за тебя, Макс, ты разбиваешь сердце собственной матери... Какой позор..."
+    Max_16 "Заткнись, Эрик! Мам, неужели ты не видишь, что он тобой манипулирует?!"
+    Ann_18 "Не хочу ничего слышать про это. Всё. Собираешь вещи и едешь. Давно надо было это сделать, но я тебя всё жалела. В результате докатились, воруешь в собственном доме! А что будет дальше?"
+    Max_11 "Но мам..."
+    Ann_16 "Всё, Макс, разговор окончен!"
+    menu:
+        Eric_01 "Не переживай, Макс, я позабочусь обо всех, пока ты будешь тянуть лямку в армии..."
+        "{i}собираться в военный лагерь{/i}":
+            scene BG black with dissolve
+            # villa-delivery-01 + max-badend-01
+            scene BG delivery-01
+            show Max bad-end 01a
+            with dissolve
+            Max_14 "{m}Вот так и закончилась моя история. Больше мне не верили и не хотели меня видеть. Конечно, если бы не Эрик, всё было бы хорошо, но этот гад... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
+        "{i}накинуться на Эрика{/i}":
+            scene BG black with dissolve
+            # villa-delivery-e-01 + max-badend-01a
+            scene BG delivery-01
+            show Max bad-end 01b
+            with dissolve
+            Max_14 "{m}Вот так и закончилась моя история. От всей этой несправедливости я немного слетел с катушек и почти размазал Эрика по балкону... Почти... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
+
+    menu:
+        "{i}загрузить игру{/i}":
+            $ ShowMenu("load")()
+
+        "{i}вернуться в главное меню{/i}":
+            pass
+        "{i}выйти из игры{/i}":
+            $ renpy.quit()
+
+    $ renpy.full_restart()

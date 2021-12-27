@@ -463,8 +463,10 @@ screen main_menu():
 
     # строим фон заставки
     if 'kira' in persistent.mems_var:
-        # add gui.main_menu_background
-        add 'gui/main_menu_ny.webp'
+        if datetime.today().month in [1, 2, 12]:
+            add 'gui/main_menu_ny.webp'
+        else:
+            add gui.main_menu_background
 
         add 'images/interface/mm/family-01.webp'
 
@@ -1017,6 +1019,8 @@ screen preferences():
                             textbutton "Português" action Language("portuguese")
                         if 'spanish' in current_language_list:
                             textbutton "Español" action Language("spanish")
+                        if 'slovak' in current_language_list:
+                            textbutton "Slovenský" action Language("slovak")
 
                 vbox:
                     spacing 20

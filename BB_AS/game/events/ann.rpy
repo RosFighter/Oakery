@@ -283,11 +283,11 @@ label ann_dressed:
         "{i}открыть дверь{/i}":
             if all([random_outcome(40), tm[-2:]=='00', not (items['nightie'].have and ann.plan_name == 'dressed')]):
                 # не срабатывает в час переодевания, если в сумке ночнушка
-                call .moment0   # "нулевой"
+                call .moment0 from _call_ann_dressed_moment0_1   # "нулевой"
             elif random_outcome(45):
-                call .moment1   # неповезло
+                call .moment1 from _call_ann_dressed_moment1   # неповезло
             else:
-                call .moment2   # повезло
+                call .moment2 from _call_ann_dressed_moment2   # повезло
             jump .end
         "{i}заглянуть в окно{/i}":
             if GetWeekday(day) == 6:
@@ -567,6 +567,7 @@ label ann_dressed:
         jump .end
 
     label .end:
+        $ ann.prev_plan = ann.plan_name
         $ AddRelMood('ann', 0, mood)
         jump Waiting
 

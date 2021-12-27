@@ -177,6 +177,21 @@ init: # трансформации
         zoom 1.1
         align (.5, 0)
 
+    transform cookies(sc=1.0, al=1.0):
+        on idle, selected_idle:
+            alpha 0.8 * al zoom sc * 1.0
+
+        on hover, selected_hover:
+            alpha 1.0 zoom sc * 1.0
+
+    transform cookies_events(sc=1.0, al=1.0):
+        on idle, selected_idle:
+            alpha al * 1.0 zoom sc * 1.0
+
+        on hover, selected_hover:
+            alpha 1.0 zoom sc * 1.1
+
+
 ################################################################################
 
 screen choice_lang():
@@ -1000,6 +1015,21 @@ screen room_navigation():
                     action Jump('StartDialog')
                 else:
                     action NullAction()
+
+    ### здесь покажем печеньки ###
+
+    for cookie in mm_cookies:
+        if cookie_verification(cookie):
+            imagebutton:
+                if '06:00' <= tm < '22:00':
+                    idle 'interface button cookies'
+                else:
+                    idle 'interface button cookies-n'
+                pos cookie.xy
+                action Function(cookie.mark_found)
+                at cookies(cookie.sc, cookie.al)
+
+    ##############################
 
     $ wait = 60 - int(tm[-2:])
     key 'K_SPACE' action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')]
@@ -2205,3 +2235,16 @@ style check_button:
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
+
+
+screen Cookies_Button():
+    for cookie in mm_cookies_events:
+        if cookie_verification(cookie) and not _in_replay:
+            imagebutton:
+                if '06:00' <= tm < '22:00':
+                    idle 'interface button cookies'
+                else:
+                    idle 'interface button cookies-n'
+                pos cookie.xy
+                action Function(cookie.mark_found)
+                at cookies_events(cookie.sc, cookie.al)

@@ -785,6 +785,10 @@ label dinner:
     if poss['smoke'].st() == 0:
         jump talk_about_smoking
 
+    if weekday == 4 and flags.eric_wallet == 2:
+        # прошла неделя с момента запуска Эриком кошелька
+        jump failed_dinner
+
     jump StartPunishment
 
 
