@@ -2876,5 +2876,5 @@ translate german eric_kira_night_swim_a236de17:
 translate german start_eric_wallet_93fe8bc0:
 
     # Max_07 "{m}И так, у меня есть фотография, как Эрик дрочит... Но вряд ли этот снимок поможет переманить сестёр на мою сторону. Уж слишком там всё сомнительно на снимке.{/m}"
-    Max_07 ""
+    Max_07 "{m}Also, ich habe ein Bild von Eric, wie er sich einen runterholt... Aber ich glaube nicht, dass dieses Bild meine Schwestern auf meine Seite bringen wird. Es ist einfach zu fragwürdig auf dem Bild.{/m}"
 
