@@ -2752,7 +2752,7 @@ translate german start_eric_wallet_8132910c:
 translate german start_eric_wallet_7db38010:
 
     # Max_09 "{m}Ну всё! Он меня достал! Так позорить меня перед всеми... Даже если я дам ему деньги, то все уже на 100%% будут считать меня вором и обманщиком. А значит пришло время избавляться от Эрика!{/m}"
-    Max_09 "{m}Das war's! Ich habe die Nase voll von ihm! Mich vor allen Leuten so zu demütigen... Selbst wenn ich ihm das Geld gebe, werden alle denken, dass ich zu 100 % ein Dieb und Betrüger bin. Das bedeutet, dass es an der Zeit ist, Eric loszuwerden!{/m}"
+    Max_09 "{m}Das war's! Ich habe die Nase voll von ihm! Mich vor allen Leuten so zu demütigen... Selbst wenn ich ihm das Geld gebe, werden alle denken, dass ich zu 100%% ein Dieb und Betrüger bin. Das bedeutet, dass es an der Zeit ist, Eric loszuwerden!{/m}"
 
 # game/events/eric.rpy:1912
 translate german start_eric_wallet_53c2a5c1:
@@ -2877,4 +2877,3 @@ translate german start_eric_wallet_93fe8bc0:
 
     # Max_07 "{m}И так, у меня есть фотография, как Эрик дрочит... Но вряд ли этот снимок поможет переманить сестёр на мою сторону. Уж слишком там всё сомнительно на снимке.{/m}"
     Max_07 "{m}Also, ich habe ein Bild von Eric, wie er sich einen runterholt... Aber ich glaube nicht, dass dieses Bild meine Schwestern auf meine Seite bringen wird. Es ist einfach zu fragwürdig auf dem Bild.{/m}"
-
