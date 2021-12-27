@@ -363,17 +363,17 @@ translate german strings:
 translate german cam0_eric_kira_night_swim_4bc4874c:
 
     # Max_09 "{m}Ничего толком не видно... Стоит взглянуть через другую камеру...{/m}"
-    Max_09 ""
+    Max_09 "{m}Man kann nicht wirklich etwas sehen... Es lohnt sich, einen Blick in die andere Kamera zu werfen...{/m}"
 
 # game/events/eric_cam.rpy:449
 translate german cam0_eric_kira_night_swim_14337802:
 
     # Max_09 "{m}Ничего не разглядеть... Нужно установить камеру, которая охватила бы весь бассейн...{/m}"
-    Max_09 ""
+    Max_09 "{m}Man kann nichts sehen... Man muss eine Kamera installieren, die den gesamten Pool erfasst...{/m}"
 
 # game/events/eric_cam.rpy:459
 translate german cam1_eric_kira_night_swim_45123771:
 
     # Max_10 "{m}Вот чёрт! Похоже, Кира ублажает Эрика, чтобы он нас не заложил маме...{/m}"
-    Max_10 ""
+    Max_10 "{m}Oh, Scheiße! Kira scheint Eric zu befriedigen, damit der uns nicht an Mom verpfeift...{/m}"
 

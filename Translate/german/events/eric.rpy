@@ -2868,5 +2868,5 @@ translate german start_eric_wallet_e75cd485:
 translate german eric_kira_night_swim_a236de17:
 
     # Eric_13 "Ты зачем подкрадываешься, Макс?! Ночь на дворе. Заканчивай шататься и спать иди. Не мешай нам отдыхать." nointeract
-    Eric_13 "" nointeract
+    Eric_13 "Warum schleichst du dich so an, Max?! Es ist mitten in der Nacht. Hör auf, herumzuschleichen und geh ins Bett. Störe unsere Nachtruhe nicht." nointeract
 
