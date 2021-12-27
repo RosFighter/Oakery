@@ -495,28 +495,29 @@ label AfterWaiting:
     $ SetAvailableActions()
 
     ## проверяем, не пора ли открыть костюмы для главного меню
-    if 'kira' in chars and 'swim' not in menu_chars['Kira'].get_open_clot():
-        # купальники
-        if all(['casual_d' in persistent.mm_cookies['lisa'],
-                'casual_d' in persistent.mm_cookies['alice'],
-                'casual_d' in persistent.mm_cookies['ann'],
-                'casual_d' in persistent.mm_cookies['kira']]):
-            $ menu_chars['Lisa'].open('swim')
-            $ menu_chars['Alice'].open('swim')
-            $ menu_chars['Ann'].open('swim')
-            $ menu_chars['Kira'].open('swim')
+    if len(persistent.mm_cookies) >= 4: 
+        if 'kira' in chars and 'swim' not in menu_chars['Kira'].get_open_clot():
+            # купальники
+            if all(['casual_d' in persistent.mm_cookies['lisa'],
+                    'casual_d' in persistent.mm_cookies['alice'],
+                    'casual_d' in persistent.mm_cookies['ann'],
+                    'casual_d' in persistent.mm_cookies['kira']]):
+                $ menu_chars['Lisa'].open('swim')
+                $ menu_chars['Alice'].open('swim')
+                $ menu_chars['Ann'].open('swim')
+                $ menu_chars['Kira'].open('swim')
 
-    if 'kira' in chars and 'sleep0' not in menu_chars['Kira'].get_open_clot():
-        # нижнее бельё
-        if all(['swim' in persistent.mm_cookies['lisa'],
-                'swim' in persistent.mm_cookies['alice'],
-                'swim' in persistent.mm_cookies['ann'],
-                'swim' in persistent.mm_cookies['kira']]):
-            $ menu_chars['Lisa'].open('sleep0')
-            $ menu_chars['Alice'].open('sleep0')
-            $ menu_chars['Alice'].open('sleep1')
-            $ menu_chars['Ann'].open('sleep0')
-            $ menu_chars['Kira'].open('sleep0')
+        if 'kira' in chars and 'sleep0' not in menu_chars['Kira'].get_open_clot():
+            # нижнее бельё
+            if all(['swim' in persistent.mm_cookies['lisa'],
+                    'swim' in persistent.mm_cookies['alice'],
+                    'swim' in persistent.mm_cookies['ann'],
+                    'swim' in persistent.mm_cookies['kira']]):
+                $ menu_chars['Lisa'].open('sleep0')
+                $ menu_chars['Alice'].open('sleep0')
+                $ menu_chars['Alice'].open('sleep1')
+                $ menu_chars['Ann'].open('sleep0')
+                $ menu_chars['Kira'].open('sleep0')
 
     ## случайное попадание на переодевания
     call random_dressed from _call_random_dressed

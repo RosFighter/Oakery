@@ -2620,7 +2620,7 @@ translate english kira_photoset3_b287dbfe:
 translate english kira_photoset3_178c3eb8:
 
     # Kira_01 "О... А вот и наш фотограф... Как раз вовремя. Проходи, чувствуй себя как дома..."
-    Kira_01 "О... There's our photographer... Just in time. Come on in, make yourself at home..."
+    Kira_01 "O... There's our photographer... Just in time. Come on in, make yourself at home..."
 
 # game/dialogues/kiratalk.rpy:1295
 translate english kira_photoset3_5a80b1a2:
@@ -3010,7 +3010,7 @@ translate english kira_photoset3_d4c901c6:
 translate english kira_photoset3_efcf1970:
 
     # Max_10 "О! А твоя подруга что, уже ушла?! А я так хотел её увидеть..."
-    Max_10 "Оh! Did your friend leave already?! I was looking forward to seeing her..."
+    Max_10 "Oh! Did your friend leave already?! I was looking forward to seeing her..."
 
 # game/dialogues/kiratalk.rpy:1480
 translate english kira_photoset3_cfdbd3a5:
@@ -3452,4 +3452,3 @@ translate english kira_about_showdown_023a77c7:
 
     # Max_00 "Уж извини, что тебе так досталось."
     Max_00 "I'm sorry you had to go through that."
-

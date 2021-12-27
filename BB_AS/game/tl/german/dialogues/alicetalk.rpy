@@ -11970,7 +11970,7 @@ translate german alice_about_showdown_a6730d12:
 translate german alice_about_showdown_2c04e40c:
 
     # Max_03 "О! Хорошую мысль ты подкинула, спасибо."
-    Max_03 "О! Das ist eine gute Idee, danke."
+    Max_03 "O! Das ist eine gute Idee, danke."
 
 # game/dialogues/alicetalk.rpy:5840
 translate german alice_about_showdown_a07f89f9:

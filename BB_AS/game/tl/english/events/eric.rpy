@@ -2682,7 +2682,7 @@ translate english start_eric_wallet_bb073fbf:
 translate english start_eric_wallet_970e5f65:
 
     # Ann_16 "Макс! Ты как со взрослыми разговариваешь? Если Эрик говорит, значит точно уверен в твоей виновности. Так что, давай без истерик!"
-    Ann_16 "Max! How dare you raise your voice! I already told you that Eric would never make an accusation like that if he wasn't 100% certain. So calm down and face the consequences!"
+    Ann_16 "Max! How dare you raise your voice! I already told you that Eric would never make an accusation like that if he wasn't 100%% certain. So calm down and face the consequences!"
 
 # game/events/eric.rpy:1854
 translate english start_eric_wallet_cf89d297:
@@ -2878,4 +2878,3 @@ translate english start_eric_wallet_93fe8bc0:
 
     # Max_07 "{m}И так, у меня есть фотография, как Эрик дрочит... Но вряд ли этот снимок поможет переманить сестёр на мою сторону. Уж слишком там всё сомнительно на снимке.{/m}"
     Max_07 "{m}So I have a picture of Eric jerking off... But I don't think that picture is going to get my sisters on my side. It's too questionable in that picture.{/m}"
-
