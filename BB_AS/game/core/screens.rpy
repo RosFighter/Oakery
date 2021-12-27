@@ -996,7 +996,7 @@ screen room_navigation():
     $ public = int(public)
 
     if type(persone_button1) == list:
-        if persone_button1[0] and exist_btn_image(persone_button1[0]):
+        if persone_button1[0] and exist_btn_image(persone_button1[0]) and not chars[current_room.cur_char[0]].hourly.talkblock:
             imagebutton idle persone_button1[0]:
                 if persone_button1[1] and exist_btn_image(persone_button1[1]):
                     foreground persone_button1[1]
@@ -1007,7 +1007,7 @@ screen room_navigation():
                 else:
                     action NullAction()
     else:
-        if persone_button1 and exist_btn_image(persone_button1):
+        if persone_button1 and exist_btn_image(persone_button1) and not chars[current_room.cur_char[0]].hourly.talkblock:
             imagebutton idle persone_button1:
                 focus_mask True
                 if have_dialog():

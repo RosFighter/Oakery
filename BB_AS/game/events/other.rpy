@@ -781,9 +781,9 @@ label restore_relations:
     $ alice.releric = 0
     $ lisa.releric  = 0
 
-    $ infl[ann].sud_e(infl[ann].e[0])
-    $ infl[alice].sud_e(infl[alice].e[0])
-    $ infl[lisa].sud_e(infl[lisa].e[0])
+    $ infl[ann].sub_e(infl[ann].e[0])
+    $ infl[alice].sub_e(infl[alice].e[0])
+    $ infl[lisa].sub_e(infl[lisa].e[0])
 
     # в дальнейшем влияние Эрика никогда не поднимется выше 50%
     $ infl[ann].lim_e = Influence.LIM // 2

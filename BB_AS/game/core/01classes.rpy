@@ -1503,16 +1503,16 @@ init python:
         Lisa_ab_Alex2   = CutEvent('20:00', (5, ), 'about_alex2', "2-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==13, lisa.dcv.feature.done])")
         Lisa_ab_Alex3   = CutEvent('20:00', (1, ), 'about_alex3', "3-й разговор с Лизой о подкате Алекса", "all([lisa.flags.crush==14, lisa.dcv.feature.done])")
 
-        Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3]])")
+        Lisa_ab_horror  = CutEvent('20:00', label='Lisa_wear_Tshirt', desc="Лизу наказали и она носит майку", variable="all([lisa.dcv.other.stage, punlisa[0][3], not flags.eric_wallet == 2])")
 
         Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])")
 
         # в ближайший четверг, если закончились все уроки Лизы у АиЭ по дрочке + решилась ходовка с кружевным боди
         Lisa_ab_Eric0   = CutEvent('20:00', (4, ), 'lisa_about_ae_sexed5', "Диалог с Лизой о практике у Эрика", "all([flags.lisa_sexed == 5, alice.dcv.intrusion.stage>5])")
         # состоялся разговор с Лизой о практике, война с Эриком, таблетки не подсыпаны, влияние Эрика было выше
-        Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage==3])")
+        Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage==3, not flags.eric_wallet])")
         # состоялся разговор с Лизой о практике, война с Эриком, влияние Эрика было ниже
-        Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, lisa.dcv.intrusion.stage==4])")
+        Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, lisa.dcv.intrusion.stage==4, not flags.eric_wallet])")
         Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", 'flags.eric_wallet == 1')
         Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable='flags.eric_wallet == 3', sleep=True, extend=True)
 

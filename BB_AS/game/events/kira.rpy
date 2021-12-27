@@ -2576,7 +2576,7 @@ label kira_lisa_shower:
     $ lisa.daily.shower = 1
     menu:
         Max_01 "{m}Интересно, кто сейчас в душе?{/m}"
-        "{i}заглянуть со двора{/i}":
+        "{i}заглянуть со двора{/i}" if not flags.block_peeping:
             jump .start_peeping
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
@@ -2675,6 +2675,14 @@ label kira_lisa_shower:
 
         scene Kira shower-Lisa 01
         $ renpy.show('FG shower 00'+mgg.dress)
+        if flags.eric_wallet == 2:
+            Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+            menu:
+                Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}"
+                "{i}уйти{/i}":
+                    $ flags.block_peeping = 1
+                    jump .end
+
         play music spying
         menu:
             Max_07 "{m}Отлично! Лиза вместе с тётей Кирой сегодня оказались в одно и то же время в душе... Очень соблазнительно!{/m}"
@@ -2729,7 +2737,7 @@ label kira_alice_shower:
     $ alice.daily.shower = 1
     menu:
         Max_01 "{m}Интересно, кто сейчас в душе?{/m}"
-        "{i}заглянуть со двора{/i}":
+        "{i}заглянуть со двора{/i}" if not flags.block_peeping:
             jump .start_peeping
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
@@ -2826,6 +2834,14 @@ label kira_alice_shower:
 
         scene Kira shower-Alice 01
         $ renpy.show('FG shower 00'+mgg.dress)
+        if flags.eric_wallet == 2:
+            Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+            menu:
+                Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}"
+                "{i}уйти{/i}":
+                    $ flags.block_peeping = 1
+                    jump .end
+
         play music spying
         menu:
             Max_07 "{m}Ого... Две очень плохие девочки сегодня моются вместе... тётя Кира и Алиса! Как же они хороши...{/m}"

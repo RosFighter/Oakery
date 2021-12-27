@@ -4580,3 +4580,28 @@ translate german strings:
     old "{i}ласкать медленнее{/i}"
     new "{i}langsamer streicheln{/i}"
 
+# TODO: Translation updated at 2021-12-27 22:40
+
+# game/events/kira.rpy:2679
+translate german kira_lisa_shower_start_peeping_fc5db481:
+
+    # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+    Max_09 "{m}Es ist besser, das Peeping auf ein Minimum zu beschränken, bis ich Eric los bin. Um niemanden zu verunsichern...{/m}"
+
+# game/events/kira.rpy:2681
+translate german kira_lisa_shower_start_peeping_dda24c4d:
+
+    # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
+    Max_01 "{m}Es ist gut, dass das nicht auf Kira zutrifft...{/m}" nointeract
+
+# game/events/kira.rpy:2838
+translate german kira_alice_shower_start_peeping_fc5db481:
+
+    # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+    Max_09 "{m}Es ist besser, das Peeping auf ein Minimum zu beschränken, bis ich Eric los bin. Um niemanden zu verunsichern...{/m}"
+
+# game/events/kira.rpy:2840
+translate german kira_alice_shower_start_peeping_dda24c4d:
+
+    # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
+    Max_01 "{m}Es ist gut, dass das nicht auf Kira zutrifft...{/m}" nointeract

@@ -361,6 +361,9 @@ init python:
         if _in_replay:
             return
 
+        if flags.eric_wallet == 2:
+            return
+
         # если лимит отношений есть, нуно определить, на сколько поднимать отношения и поднимать ли их вообще
         limit = {1 : 300, 2 : 600, 3 : 1000,  4 : 1500, 5 : 2000}[rel_limit] if rel_limit is not None else 2000
         if chars[char].relmax<0 and rel>0:
@@ -628,9 +631,9 @@ init python:
         if current_room == house[1] and len(current_room.cur_char) == 0:
             AvailableActions['usb'].active = True
             AvailableActions['searchbook'].active = all([alice.plan_name != 'read', '08:00' <= tm < '22:00'])
-            if items['spider'].have and poss['spider'].used(3):
+            if items['spider'].have and poss['spider'].used(3) and not flags.eric_wallet == 2:
                 AvailableActions['hidespider'].active = True
-            AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00', (not alice.flags.privpunish or 0 < GetWeekday(day) < 6)])
+            AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00', (not alice.flags.privpunish or 0 < GetWeekday(day) < 6), not flags.eric_wallet == 2])
 
         # ванная комната
         if current_room == house[3]:

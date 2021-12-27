@@ -9,6 +9,7 @@ label alice_bath:
         return
 
     $ alice.daily.bath = 1
+
     menu:
         Max_00 "{m}Если полночь, значит Алиса отмокает в ванне... Входить без стука - опасно для жизни.{/m}"
         "{i}постучаться{/i}":
@@ -867,7 +868,7 @@ label alice_dressed_club:
     $ alice.hourly.dressed = 1
     menu:
         Max_00 "{m}Кажется, Алиса собирается в ночной клуб...{/m}"
-        "{i}постучаться{/i}":
+        "{i}постучаться{/i}" if not flags.eric_wallet == 2:
             jump .knock
         "{i}заглянуть в окно{/i}":
             ## показываем фон и спрайт в зависимости от ношения трусиков
@@ -1901,7 +1902,7 @@ label alice_lisa_shower:
     $ lisa.daily.shower = 1
     menu:
         Max_01 "{m}Интересно, кто сейчас в душе?{/m}"
-        "{i}заглянуть со двора{/i}":
+        "{i}заглянуть со двора{/i}" if not flags.block_peeping:
             jump .start_peeping
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
@@ -1994,6 +1995,15 @@ label alice_lisa_shower:
 
         scene Alice shower-Lisa 01
         $ renpy.show('FG shower 00'+mgg.dress)
+
+        if flags.eric_wallet == 2:
+            Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+            menu:
+                Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}"
+                "{i}уйти{/i}":
+                    $ flags.block_peeping = 1
+                    jump .end
+
         menu:
             Max_07 "{m}Класс! Сегодня мои прекрасные сестрёнки принимают душ вместе... Красота!{/m}"
             "{i}продолжить смотреть{/i}":
@@ -2047,7 +2057,7 @@ label alice_blog_lingerie:
     $ alice.daily.blog = 1
     menu:
         Max_00 "{m}Обычно в это время Алиса занимается своим блогом, но сейчас её дверь закрыта...{/m}"
-        "{i}заглянуть в окно{/i}":
+        "{i}заглянуть в окно{/i}" if not flags.eric_wallet == 2:
             $ spent_time += 20
             scene BG char Alice blog-desk-01
             $ alice.dress_inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[alice.dress]

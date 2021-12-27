@@ -4580,3 +4580,29 @@ translate english strings:
     old "{i}ласкать медленнее{/i}"
     new "{i}Fondle more slowly{/i}"
 
+# TODO: Translation updated at 2021-12-27 22:42
+
+# game/events/kira.rpy:2679
+translate english kira_lisa_shower_start_peeping_fc5db481:
+
+    # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+    Max_09 "{m}It's better to keep the peeping to a minimum until I get rid of Eric. So as not to upset anyone else...{/m}"
+
+# game/events/kira.rpy:2681
+translate english kira_lisa_shower_start_peeping_dda24c4d:
+
+    # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
+    Max_01 "{m}It's a good thing this doesn't apply to Kira...{/m}" nointeract
+
+# game/events/kira.rpy:2838
+translate english kira_alice_shower_start_peeping_fc5db481:
+
+    # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
+    Max_09 "{m}It's better to keep the peeping to a minimum until I get rid of Eric. So as not to upset anyone else...{/m}"
+
+# game/events/kira.rpy:2840
+translate english kira_alice_shower_start_peeping_dda24c4d:
+
+    # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
+    Max_01 "{m}It's a good thing this doesn't apply to Kira...{/m}" nointeract
+

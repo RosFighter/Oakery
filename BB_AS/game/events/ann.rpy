@@ -950,7 +950,7 @@ label ann_bath:
     $ ann.daily.bath = 1
     menu:
         Max_00 "{m}Видимо, мама принимает ванну...{/m}"
-        "{i}постучаться{/i}":
+        "{i}постучаться{/i}" if not flags.block_peeping:
             menu:
                 Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
                 "Это я, Макс.":
