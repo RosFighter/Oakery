@@ -8,7 +8,7 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Трусы"
-    new "Panties"
+    new "Bottom"
 
     # game/core/10_main_menu.rpy:360
     old "Шапка"
@@ -20,11 +20,11 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #1"
-    new "Panties #1"
+    new "Bottom #1"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #2"
-    new "Panties #2"
+    new "Bottom #2"
 
     # game/core/10_main_menu.rpy:360
     old "Маечка"
@@ -68,7 +68,7 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Топик"
-    new "Topic"
+    new "Top"
 
     # game/core/10_main_menu.rpy:360
     old "Шортики"
@@ -141,4 +141,3 @@ translate english strings:
     # game/core/10_main_menu.rpy:285
     old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
     new "{color=[lime]}New costume %s for the main menu is opened{/color}"
-
