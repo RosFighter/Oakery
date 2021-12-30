@@ -4,11 +4,11 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Шорты"
-    new "Shorts"
+    new "Short Pants"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы"
-    new "Bottom"
+    new "Underwear"
 
     # game/core/10_main_menu.rpy:360
     old "Шапка"
@@ -16,15 +16,15 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Борода"
-    new "Beard"
+    new "The Beard"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #1"
-    new "Bottom #1"
+    new "Underwear #1"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #2"
-    new "Bottom #2"
+    new "Underwear #2"
 
     # game/core/10_main_menu.rpy:360
     old "Маечка"
@@ -32,15 +32,15 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Минишортики"
-    new "Miniskirts"
+    new "Hot pants"
 
     # game/core/10_main_menu.rpy:360
     old "Лиф"
-    new "Leaf"
+    new "Bikini Top"
 
     # game/core/10_main_menu.rpy:360
     old "Плавки"
-    new "Swimwear"
+    new "Trunks"
 
     # game/core/10_main_menu.rpy:360
     old "Лифчик"
@@ -52,11 +52,11 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Шапочка"
-    new "Hat"
+    new "Shower Cap"
 
     # game/core/10_main_menu.rpy:360
     old "Бант на шею"
-    new "Neck bow"
+    new "Bow Tie"
 
     # game/core/10_main_menu.rpy:360
     old "Кружевное платье"
@@ -80,27 +80,27 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Бабочка на шею"
-    new "Butterfly neck"
+    new "Bow Tie"
 
     # game/core/10_main_menu.rpy:360
     old "Мишура на груди"
-    new "Tinsel on the chest"
+    new "Kind of cord"
 
     # game/core/10_main_menu.rpy:360
     old "Минилиф"
-    new "Minilife"
+    new "Bikini top"
 
     # game/core/10_main_menu.rpy:360
     old "Миниплавки"
-    new "Mini-melts"
+    new "String for men"
 
     # game/core/10_main_menu.rpy:360
     old "Сорочка"
-    new "Shirt"
+    new "Sleepwear"
 
     # game/core/10_main_menu.rpy:360
     old "Свитер без рукавов"
-    new "Sleeveless Sweater"
+    new "Sweater Vest"
 
     # game/core/10_main_menu.rpy:360
     old "Откровенный корсет"
@@ -120,11 +120,11 @@ translate english strings:
 
     # game/core/10_main_menu.rpy:360
     old "Леденец на шею"
-    new "Lollipop neck"
+    new "Lollipop neckless"
 
     # game/core/10_main_menu.rpy:360
     old "Свитер с рукавами"
-    new "Sweater with sleeves"
+    new "Sweater top"
 
     # game/core/10_main_menu.rpy:360
     old "Колготки"
