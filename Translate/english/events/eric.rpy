@@ -2577,15 +2577,15 @@ translate english lisa_eric_sex_ed_practice_practice_1_3ad9a6c7:
 # TODO: Translation updated at 2021-11-11 13:38
 
 # game/events/eric.rpy:693
-translate english eric_ann_sleep_56167bf9:
+translate english eric_ann_sleep_3127d6ee:
 
-    # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спойкойно его подставить...{/m}" nointeract
+    # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спокойно его подставить...{/m}" nointeract
     Max_07 "{m}Aha! Mom's alone... So Eric is almost certainly jerking off to Alice right now. We can wait at least half an hour for him to get Mom, and then calmly set him up...{/m}" nointeract
 
 # game/events/eric.rpy:703
-translate english eric_ann_sleep_e02970a1:
+translate english eric_ann_sleep_51c79016:
 
-    # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спойкойно его подставить...{/m}" nointeract
+    # Max_07 "{m}Ага! Мама одна... Значит, Эрик почти наверняка сейчас дрочит на Алису. С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спокойно его подставить...{/m}" nointeract
     Max_07 "{m}Aha! Mom's alone... So Eric is almost certainly jerking off to Alice right now. I can use the cameras to see when he goes to bed and then I can safely set him up...{/m}" nointeract
 
 # game/events/eric.rpy:884
@@ -2607,15 +2607,15 @@ translate english jerk_balkon_069d2e5a:
     Max_13 "{m}Oh, crap! I had completely forgotten that Eric only comes into Alice's room when she's naked... To frame Eric, Alice had to be naked, or there would be a discrepancy with the pictures and no one would believe me!{/m}" nointeract
 
 # game/events/eric.rpy:1395
-translate english jerk_balkon_93f9155e:
+translate english jerk_balkon_d6c245f1:
 
-    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спойкойно его подставить...{/m}" nointeract
+    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Можно подождать хотя бы полчаса, чтобы он вернулся к моей маме, и затем уже спокойно его подставить...{/m}" nointeract
     Max_07 "{m}Great! Eric is exactly where I need him... We can wait at least half an hour for him to get back Mom, and then calmly set him up...{/m}" nointeract
 
 # game/events/eric.rpy:1402
-translate english jerk_balkon_0492bc5e:
+translate english jerk_balkon_64a35bbd:
 
-    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спойкойно его подставить...{/m}" nointeract
+    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... С помощью камер я смогу проследить, когда он пойдёт спать и затем уже можно будет спокойно его подставить...{/m}" nointeract
     Max_07 "{m}Great! Eric is exactly where I need him... I can use the cameras to see when he goes to sleep and then I can safely set him up...{/m}" nointeract
 
 # game/events/eric.rpy:1843

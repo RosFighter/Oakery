@@ -341,9 +341,9 @@ translate german cam0_eric_ann_sleep_c5aa1a5f:
     Max_07 "{m}Aha! Mom ist allein... Eric holt sich also mit ziemlicher Sicherheit gerade auf Alice einen runter. Das sollten man sich ansehen...{/m}"
 
 # game/events/eric_cam.rpy:421
-translate german cam_before_frame_eric_c6743351:
+translate german cam_before_frame_eric_cb1c7bf7:
 
-    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Нужно дождаться, когда он вернётся к моей маме, и затем уже спойкойно его подставлять...{/m}" nointeract
+    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Нужно дождаться, когда он вернётся к моей маме, и затем уже спокойно его подставлять...{/m}" nointeract
     Max_07 "{m}Das ist großartig! Eric ist genau da, wo ich ihn brauche... Ich muss warten, bis er zu meiner Mutter zurückgeht, und dann kann ich ihn in Ruhe bloßstellen...{/m}" nointeract
 
 # game/events/eric_cam.rpy:437

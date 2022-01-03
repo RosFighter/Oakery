@@ -11964,7 +11964,7 @@ translate english alice_about_showdown_30688f5a:
 translate english alice_about_showdown_a6730d12:
 
     # Alice_12 "И Макс, узнаю, что ты фотографируешь меня в душе или когда я сплю... Ты покойник..."
-    Alice_12 "And Max, I recognize that you take pictures of me in the shower or when I'm asleep... You're a dead man..."
+    Alice_12 "And Max, If I find out that you have taken pictures of me in the shower or when I'm asleep... You're a dead man..."
 
 # game/dialogues/alicetalk.rpy:5839
 translate english alice_about_showdown_2c04e40c:

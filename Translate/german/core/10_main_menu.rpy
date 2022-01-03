@@ -142,3 +142,11 @@ translate german strings:
     old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
     new "{color=[lime]}Neues Outfit %s für das Hauptmenü aktiviert{/color}"
 
+# TODO: Translation updated at 2022-01-04 00:24
+
+translate german strings:
+
+    # game/core/10_main_menu.rpy:287
+    old "{color=#00FF00}Открыт новый костюм %s для главного меню{/color}"
+    new "{color=#00FF00}Neues Outfit %s für das Hauptmenü aktiviert{/color}"
+
