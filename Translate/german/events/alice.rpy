@@ -4078,7 +4078,7 @@ translate german strings:
 translate german alice_shower_start_peeping_fc5db481:
 
     # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
-    Max_09 "{m}Es ist besser, das Peeping auf ein Minimum zu beschränken, bis ich Eric los bin. Um niemanden zu verunsichern...{/m}"
+    Max_09 "{m}Es ist besser, das Spionieren auf ein Minimum zu reduzieren, bis ich Eric los bin. Damit ich niemanden verärgere...{/m}"
 
 # game/events/alice.rpy:344
 translate german alice_shower_start_peeping_dda24c4d:
@@ -4092,7 +4092,7 @@ translate german alice_shower_start_peeping_dda24c4d:
 translate german alice_lisa_shower_start_peeping_fc5db481:
 
     # Max_09 "{m}Лучше вообще свести подглядывания к минимуму, пока я не избавлюсь от Эрика. Чтобы никого ещё больше не расстраивать...{/m}"
-    Max_09 "{m}Es ist besser, das Peeping auf ein Minimum zu beschränken, bis ich Eric los bin. Um niemanden zu verunsichern...{/m}"
+    Max_09 "{m}Es ist besser, das Spionieren auf ein Minimum zu reduzieren, bis ich Eric los bin. Damit ich niemanden verärgere...{/m}"
 
 # game/events/alice.rpy:2002
 translate german alice_lisa_shower_start_peeping_dda24c4d:
