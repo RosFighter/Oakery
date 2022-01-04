@@ -3459,77 +3459,76 @@ translate english kira_about_showdown_023a77c7:
 translate english kira_about_showdown_ba6880b8:
 
     # Kira_01 "Про Эрика? Слышала..."
-    Kira_01 ""
+    Kira_01 "About Eric? I heard..."
 
 # game/dialogues/kiratalk.rpy:1532
 translate english kira_about_showdown_a4fc2839:
 
     # Max_04 "Ну и как настроение?"
-    Max_04 ""
+    Max_04 "So how's the mood?"
 
 # game/dialogues/kiratalk.rpy:1533
 translate english kira_about_showdown_4a2ecab1:
 
     # Kira_05 "Настроение? Потрясающее! Такое ощущение, что в доме даже стало легче дышать! Правда все девочки ходят ещё немного опустошённые..."
-    Kira_05 ""
+    Kira_05 "The mood? It's amazing! It feels like the house is even easier to breathe! But all the girls are still walking around a little empty..."
 
 # game/dialogues/kiratalk.rpy:1534
 translate english kira_about_showdown_8ff8e9b7:
 
     # Max_07 "Ну да, это всё из-за правды об Эрике."
-    Max_07 ""
+    Max_07 "Well, yeah, it's all about the truth about Eric."
 
 # game/dialogues/kiratalk.rpy:1538
 translate english kira_about_showdown_27d35e53:
 
     # Kira_03 "Понимаю. Все в нём души не чаяли и вдруг такой облом... А я радуюсь! Радуюсь тому, что ты, наконец-то, избавил меня от этого шантажиста. Ты просто не представляешь, что приходилось делать для этого мерзавца. Спасибо тебе огромное!"
-    Kira_03 ""
+    Kira_03 "I understand. Everyone was crazy about him, and suddenly it's a bummer... And I'm glad! I'm glad you finally got me rid of that blackmailer. You have no idea what I had to do for that bastard. Thank you very much!"
 
 # game/dialogues/kiratalk.rpy:1539
 translate english kira_about_showdown_15d3b212:
 
     # Max_10 "Уж извини, что тебе так досталось."
-    Max_10 ""
+    Max_10 "I'm sorry you had to go through that."
 
 # game/dialogues/kiratalk.rpy:1540
 translate english kira_about_showdown_d25e8b6a:
 
     # Kira_15 "Я переживу, Макс. Не знаю, каким чудом он ещё не узнал, что я порно-актриса! Наверняка бы сразу все свои наигрязнейшие фантазии стал воплощать в жизнь..."
-    Kira_15 ""
+    Kira_15 "I'll get over it, Max. I don't know how he didn't find out I was a porn actress! I'm sure he would have started acting out all of his dirty fantasies right away..."
 
 # game/dialogues/kiratalk.rpy:1543
 translate english kira_about_showdown_27400ec2:
 
     # Kira_03 "Понимаю. Все в нём души не чаяли и вдруг такой облом - пригрели под своей крышей матёрого извращенца! А я радуюсь! Радуюсь тому, что моя сестра наконец-то послала этого ублюдка. Спасибо огромное, Макс, это всё благодаря тебе!"
-    Kira_03 ""
+    Kira_03 "I understand. Everybody was crazy about him, and suddenly it was a bummer to have a pervert under their roof! And I'm glad! I'm glad my sister finally sent the bastard away. Thanks a lot, Max, it's all thanks to you!"
 
 # game/dialogues/kiratalk.rpy:1544
 translate english kira_about_showdown_dce05986:
 
     # Max_10 "Не за что. Обращайтесь, если что. А, вообще, меня это тоже касалось, как никого другого. Он меня и вором выставил перед всеми... и в лагерь хотел сослать..."
-    Max_10 ""
+    Max_10 "You're welcome. You're welcome if you need anything. In fact, it concerned me as much as anyone else. He made me look like a thief in front of everybody... and wanted to send me to a camp..."
 
 # game/dialogues/kiratalk.rpy:1545
 translate english kira_about_showdown_955714a1:
 
     # Kira_14 "Да, это всё было бы крайне печально... То, что здесь началось бы без тебя."
-    Kira_14 ""
+    Kira_14 "Yes, it would all have been extremely sad... What would have started here without you."
 
 # game/dialogues/kiratalk.rpy:1547
 translate english kira_about_showdown_3728113c:
 
     # Max_03 "Нашла о чём думать! Всё уже в прошлом."
-    Max_03 ""
+    Max_03 "You've got something to think about! It's all in the past now."
 
 # game/dialogues/kiratalk.rpy:1548
 translate english kira_about_showdown_51718959:
 
     # Kira_07 "Мне нравится, как это звучит! Надеюсь, девочки совсем скоро придут в себя и всё будет, как раньше!"
-    Kira_07 ""
+    Kira_07 "I love the sound of that! I hope the girls come to their senses very soon and everything is back to normal!"
 
 # game/dialogues/kiratalk.rpy:1549
 translate english kira_about_showdown_95a9e818:
 
     # Max_01 "Я тоже на это надеюсь!"
-    Max_01 ""
-
+    Max_01 "I hope so too!"
