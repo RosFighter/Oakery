@@ -2554,13 +2554,13 @@ translate german alice_blog_lingerie_94654992_2:
 translate german alice_blog_lingerie_16484159_2:
 
     # Alice_01 "Хорошо, Макс. Спасибо."
-    Alice_01 "Ok, das werde ich auf jeden Fall."
+    Alice_01 "Okay, Max. Ich danke dir."
 
 # game/events/alice.rpy:2208
 translate german alice_blog_lingerie_2625a223:
 
     # Alice_07 "Ты знаешь, отлично! С раскруткой и размещением рекламы от Эрика по другому и быть не может."
-    Alice_07 "Wirklich gut! Dank Erics Hilfe bei Prmomoting und Werbung konnte es gar nicht anders laufen."
+    Alice_07 "Großartig! Mit Erics Unterstützung und Werbung konnte es gar nicht anders laufen."
 
 # game/events/alice.rpy:2209
 translate german alice_blog_lingerie_dcaa06cd:
