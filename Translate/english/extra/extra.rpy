@@ -261,3 +261,12 @@ translate english strings:
     # game/extra/extra.rpy:56
     old "Кто нас фотографирует?"
     new "Who's taking our picture?"
+
+# TODO: Translation updated at 2022-01-06 09:43
+
+translate english strings:
+
+    # game/extra/extra.rpy:60
+    old "Вместо ночного плаванья"
+    new "Instead of night swimming"
+
