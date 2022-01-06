@@ -261,3 +261,12 @@ translate german strings:
     # game/extra/extra.rpy:56
     old "Кто нас фотографирует?"
     new "Wer macht unser Foto?"
+
+# TODO: Translation updated at 2022-01-06 09:46
+
+translate german strings:
+
+    # game/extra/extra.rpy:60
+    old "Вместо ночного плаванья"
+    new "Statt Nachtschwimmen"
+

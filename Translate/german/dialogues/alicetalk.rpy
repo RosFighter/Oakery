@@ -8616,10 +8616,10 @@ translate german alice_private_punish_0_smoke_5f4eb3c1:
     # Max_03 "Хорошо. Я подожду..." nointeract
     Max_03 "Also gut. Ich werde warten..." nointeract
 
-# game/dialogues/alicetalk.rpy:4809
-translate german alice_private_punish_0_smoke_45633ee6:
+# game/dialogues/alicetalk.rpy:4663
+translate german alice_private_punish_0_smoke_2259f05c:
 
-    # Alice_03 "Всё, я готова. Где это сделам?"
+    # Alice_03 "Всё, я готова. Где это сделаем?"
     Alice_03 "Okay, ich bin bereit. Wo machen wir das?"
 
 # game/dialogues/alicetalk.rpy:4813
