@@ -8,7 +8,7 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Трусы"
-    new "Höschen"
+    new "Unterhose"
 
     # game/core/10_main_menu.rpy:360
     old "Шапка"
@@ -20,11 +20,11 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #1"
-    new "Höschen #1"
+    new "Unterhose #1"
 
     # game/core/10_main_menu.rpy:360
     old "Трусы #2"
-    new "Höschen #2"
+    new "Unterhose #2"
 
     # game/core/10_main_menu.rpy:360
     old "Маечка"
@@ -88,7 +88,7 @@ translate german strings:
 
     # game/core/10_main_menu.rpy:360
     old "Минилиф"
-    new "Wagenheber"
+    new "Bikini-Oberteil"
 
     # game/core/10_main_menu.rpy:360
     old "Миниплавки"
@@ -141,4 +141,12 @@ translate german strings:
     # game/core/10_main_menu.rpy:285
     old "{color=[lime]}Открыт новый костюм %s для главного меню{/color}"
     new "{color=[lime]}Neues Outfit %s für das Hauptmenü aktiviert{/color}"
+
+# TODO: Translation updated at 2022-01-04 00:24
+
+translate german strings:
+
+    # game/core/10_main_menu.rpy:287
+    old "{color=#00FF00}Открыт новый костюм %s для главного меню{/color}"
+    new "{color=#00FF00}Neues Outfit %s für das Hauptmenü aktiviert{/color}"
 

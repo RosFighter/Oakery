@@ -657,3 +657,11 @@ translate german strings:
     old "Лиза, ты чего нос повесила?"
     new "Lisa, warum rümpfst du die Nase?"
 
+# TODO: Translation updated at 2022-01-04 00:24
+
+translate german strings:
+
+    # game/core/02init.rpy:40
+    old "{color=#FFBE00}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n"
+    new "{color=#FFBE00}{b}Warnung:{/b} Dein Einfluss auf deine Familie hat abgenommen!{/color}\n"
+

@@ -9,6 +9,7 @@ label lisa_sleep_night:
     $ AvailableActions['touch'].active = True
     $ renpy.show('Lisa sleep-night ' + pose3_1)
     $ renpy.show('FG Lisa sleep-night ' + pose3_1+lisa.dress)
+    $ lisa.prev_plan = lisa.plan_name
     return
 
 
@@ -16,6 +17,7 @@ label lisa_sleep_morning:
     scene BG char Lisa bed-m-01
     $ renpy.show('Lisa sleep-morning '+pose3_1)
     $ renpy.show('FG Lisa sleep-morning '+pose3_1+lisa.dress)
+    $ lisa.prev_plan = lisa.plan_name
     return
 
 
@@ -39,6 +41,7 @@ label lisa_shower:
     $ renpy.block_rollback()
     $ renpy.dynamic('r1')
     $ lisa.daily.shower = 4
+    $ lisa.prev_plan = lisa.plan_name
     menu:
         Max_09 "{m}Кажется, Лиза что-то делает в ванной...{/m}"
         "{i}постучаться{/i}":
@@ -242,6 +245,7 @@ label lisa_read:
     $ renpy.show('Lisa reading ' + pose3_1)
     $ renpy.show('FG Lisa reading ' + pose3_1 + lisa.dress)
     $ persone_button1 = ['Lisa reading ' + pose3_1, 'FG Lisa reading ' + pose3_1 + lisa.dress]
+    $ lisa.prev_plan = lisa.plan_name
 
     return
 
@@ -733,6 +737,8 @@ label lisa_dressed:
     $ lvl = get_lisa_emancipation()
     $ np = False
     $ var = {'bobs':False, 'ass':False, 'np':False, 'fin':False}
+    $ spent_time = 10
+    $ lisa.prev_plan = lisa.plan_name
 
     if 6 > GetWeekday(day) > 0:
         # будний день, Лиза собирается в школу
@@ -762,7 +768,7 @@ label lisa_dressed:
                 Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
                 "{i}войти в комнату{/i}":
                     call .moment1 from _call_lisa_dressed_moment1_1
-                "Можно войти на секунду? Я только ноутбук возьму...":
+                "Можно войти на секунду? Я только ноутбук возьму..." if flags.warning:
                     if r1 or (tm > '10:00' and lvl < 2):
                         menu:
                             Lisa "{b}Лиза:{/b} Макс, дай одеться спокойно! Потом свой ноутбук заберёшь..."
@@ -776,7 +782,6 @@ label lisa_dressed:
                     jump .end
         "{i}заглянуть в окно{/i}" if GetWeekday(day):
             # в любой день, кроме воскресенья
-            $ spent_time = 10
             if GetWeekday(day) == 6:
                 $ r1 = renpy.random.choice(['03', '04', '05', '06'])
                 $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[r1]
@@ -865,6 +870,7 @@ label lisa_dressed:
 
     label .moment0:     # рано (или уже поздно)
         $ lisa.hourly.dressed = 1
+        $ mood = 0
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pose, var = get_lisa_dress_pose(0)
@@ -899,7 +905,6 @@ label lisa_dressed:
                 jump .wait_or_leave
 
     label .stay_in_room:    # Макс оставался в комнате
-        $ renpy.dynamic('mood')
         $ mood = 0
         $ lvl = get_lisa_emancipation()
         # $ print(lvl, lisa.dress, lisa.prev_dress, lisa.prev_plan, lisa.plan_name)
@@ -939,6 +944,7 @@ label lisa_dressed:
     label .moment2:     # повезло
 
         $ lisa.hourly.dressed = 1
+        $ mood = 0
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pose, var = get_lisa_dress_pose(2)
@@ -962,6 +968,7 @@ label lisa_dressed:
 
     label .moment1:     # неповезло
         $ lisa.hourly.dressed = 1
+        $ mood = 0
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pose, var = get_lisa_dress_pose(1)
@@ -1155,7 +1162,6 @@ label lisa_dressed:
     label .get_laptop:
         window hide
         $ hide_say()
-        $ spent_time += 10
         $ at_comp = True
         $ current_room = house[5]
         $ cam_flag.append('notebook_on_terrace')
@@ -1187,7 +1193,7 @@ label lisa_dressed:
 label lisa_swim:
     scene image 'Lisa swim '+pose3_1+lisa.dress
     $ persone_button1 = 'Lisa swim '+pose3_1+lisa.dress+'b'
-    $ lisa.hourly.dressed = 1
+    $ lisa.prev_plan = lisa.plan_name
     return
 
 
@@ -1195,7 +1201,7 @@ label lisa_sun:
     scene image 'BG char Lisa sun-'+pose3_1
     $ renpy.show('Lisa sun '+pose3_1+lisa.dress)
     $ persone_button1 = 'Lisa sun '+pose3_1+lisa.dress+'b'
-    $ lisa.hourly.dressed = 1
+    $ lisa.prev_plan = lisa.plan_name
     return
 
 
@@ -1203,6 +1209,7 @@ label lisa_dishes:
     scene BG crockery-evening-00
     $ renpy.show('Lisa crockery-evening 01'+lisa.dress)
     $ persone_button1 = 'Lisa crockery-evening 01'+lisa.dress+'b'
+    $ lisa.prev_plan = lisa.plan_name
     return
 
 
@@ -1217,6 +1224,7 @@ label lisa_phone:
     $ renpy.show('Lisa phone-evening ' + pose3_1)
     $ renpy.show('FG Lisa phone-evening ' + pose3_1 + lisa.dress)
     $ persone_button1 = ['Lisa phone-evening ' + pose3_1, 'FG Lisa phone-evening ' + pose3_1 + lisa.dress]
+    $ lisa.prev_plan = lisa.plan_name
     return
 
 
@@ -1234,6 +1242,7 @@ label lisa_bath:
 
     $ renpy.dynamic('mood', 'rel', 'r1')
     $ lisa.daily.bath = 1
+    $ lisa.prev_plan = lisa.plan_name
     $ mood = 0
     $ rel = 0
     menu:
@@ -1376,6 +1385,7 @@ label lisa_homework:
     scene BG char Lisa lessons
     $ renpy.show('Lisa lessons '+pose3_1+lisa.dress)
     $ persone_button1 = 'Lisa lessons '+pose3_1+lisa.dress
+    $ lisa.prev_plan = lisa.plan_name
     return
 
 

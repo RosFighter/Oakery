@@ -580,6 +580,18 @@ init python:
         for key in AvailableActions:
             AvailableActions[key].active = False
 
+        if poss['secretbook'].used(0) and not poss['secretbook'].used(1):
+            AvailableActions['searchbook'].enabled = True
+        if items['cigarettes'].InShop:
+            AvailableActions['searchciga'].enabled = True
+        if not poss['cams'].used(0):
+            AvailableActions['unbox'].enabled = True
+        elif poss['cams'].used(0) and not poss['cams'].used(1):
+            AvailableActions['searchcam'].enabled = True
+        if poss['spider'].used(1):
+            AvailableActions['catchspider'].enabled = True
+            AvailableActions['hidespider'].enabled = True
+
         # активируем поиск камеры, если в комнате никого и комната не проверена
         if current_room not in InspectedRooms and len(current_room.cur_char) == 0:
             AvailableActions['searchcam'].active = True
@@ -1149,6 +1161,15 @@ init python:
         expected_photo.clear()
 
 
+    def append_album(album, lst):
+        if album not in persistent.photos:
+            # если коллекция отсутствует, ее нужно создать
+            persistent.photos[album] = [False for x in range(len(lst))]
+
+        for x in lst:
+            persistent.photos[album][int(x)-1] = x
+
+
     def music_starter():
         if renpy.music.get_playing():
             return
@@ -1349,7 +1370,7 @@ init python:
             'polish'    : 'interface/POL.webp',
             'portuguese': 'interface/POR.webp',
             'spanish'   : 'interface/SPA.webp',
-            'slovak'    : 'interface/RUS.webp',         # заменить
+            'slovak'    : 'interface/SLO.webp',         # заменить
             }[lang]
 
     def get_lang_list():

@@ -2560,7 +2560,7 @@ translate english alice_blog_lingerie_16484159_2:
 translate english alice_blog_lingerie_2625a223:
 
     # Alice_07 "Ты знаешь, отлично! С раскруткой и размещением рекламы от Эрика по другому и быть не может."
-    Alice_07 "Really well! Thanks to Eric's help with prmomoting and advertising, it couldn't go any other way."
+    Alice_07 "Really well! Thanks to Eric's help with promoting and advertising, it couldn't go any other way."
 
 # game/events/alice.rpy:2209
 translate english alice_blog_lingerie_dcaa06cd:
@@ -4099,4 +4099,3 @@ translate english alice_lisa_shower_start_peeping_dda24c4d:
 
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
     Max_01 "{m}It's a good thing this doesn't apply to Kira...{/m}" nointeract
-

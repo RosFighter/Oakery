@@ -4,11 +4,12 @@ label after_dinner:
     $ lisa.daily.dishes = 0
     $ spent_time = 60
 
-    # проверим, не пора ли начинать блог с Эриком
-    if alice.dcv.battle.stage in [1, 3]:
+    # первый блог Алисы с Эриком начинается в среду
+    # запускаем неделю до покупки Эриком кружевного боди
+    if not weekday and alice.dcv.battle.stage in [1, 3]:
         $ alice.dcv.battle.stage += 3
         $ alice.dcv.intrusion.set_lost(6)
-    elif alice.dcv.battle.stage==5 and not alice.dcv.intrusion.enabled:
+    elif not weekday and alice.dcv.battle.stage==5 and not alice.dcv.intrusion.enabled:
         $ alice.dcv.intrusion.set_lost(6)
 
     if len(punlisa)>1 and punlisa[0][1] == 1:

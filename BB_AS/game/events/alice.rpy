@@ -9,6 +9,7 @@ label alice_bath:
         return
 
     $ alice.daily.bath = 1
+    $ alice.prev_plan = alice.plan_name
 
     menu:
         Max_00 "{m}Если полночь, значит Алиса отмокает в ванне... Входить без стука - опасно для жизни.{/m}"
@@ -97,6 +98,7 @@ label alice_sleep_night:
         return
 
     $ alice.hourly.sleep = 1
+    $ alice.prev_plan = alice.plan_name
     menu:
         Max_00 "{m}Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья...{/m}"
         "{i}заглянуть в окно{/i}":
@@ -201,6 +203,7 @@ label alice_sleep_morning:
     if alice.hourly.sleep != 0:
         return
     $ alice.hourly.sleep = 1
+    $ alice.prev_plan = alice.plan_name
     menu:
         Max_00 "{m}Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья...{/m}"
         "{i}заглянуть в окно{/i}":
@@ -317,6 +320,7 @@ label alice_shower:
                 return
     else:
         $ alice.daily.shower = 4
+        $ alice.prev_plan = alice.plan_name
         menu:
             Max_00 "{m}Похоже, Алиса принимает душ...{/m}"
             "{i}заглянуть со двора{/i}" if not flags.block_peeping:
@@ -688,6 +692,7 @@ label alice_rest_morning:
     scene BG char Alice morning
     $ renpy.show('Alice morning 01'+alice.dress)
     $ persone_button1 = 'Alice morning 01'+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
@@ -696,6 +701,7 @@ label alice_rest_evening:
     scene BG char Alice evening
     $ renpy.show('Alice evening 01'+alice.dress)
     $ persone_button1 = 'Alice evening 01'+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
@@ -704,6 +710,7 @@ label alice_dressed_shop:
     scene location house aliceroom door-morning
     if alice.hourly.dressed == 0:
         $ alice.hourly.dressed = 1
+        $ alice.prev_plan = alice.plan_name
         menu:
             Max_09 "{m}Кажется, все собираются на шоппинг и Алиса сейчас переодевается...{/m}"
             "{i}постучаться{/i}":
@@ -769,6 +776,7 @@ label alice_dishes:
     scene BG crockery-morning-00
     $ renpy.show('Alice crockery-morning 01'+alice.dress)
     $ persone_button1 = 'Alice crockery-morning 01'+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
@@ -782,6 +790,7 @@ label alice_read:
     scene BG reading
     $ renpy.show('Alice reading '+pose3_2+alice.dress)
     $ persone_button1 = 'Alice reading '+pose3_2+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
@@ -796,6 +805,7 @@ label alice_dressed_friend:
     scene location house aliceroom door-day
     if alice.hourly.dressed == 0:
         $ alice.hourly.dressed = 1
+        $ alice.prev_plan = alice.plan_name
         menu:
             Max_09 "{m}Кажется, Алиса куда-то собирается...{/m}"
             "{i}постучаться{/i}":
@@ -866,6 +876,7 @@ label alice_dressed_club:
         return
 
     $ alice.hourly.dressed = 1
+    $ alice.prev_plan = alice.plan_name
     menu:
         Max_00 "{m}Кажется, Алиса собирается в ночной клуб...{/m}"
         "{i}постучаться{/i}" if not flags.eric_wallet == 2:
@@ -956,7 +967,7 @@ label alice_dressed_club:
 label alice_sun:
     if alice.daily.oiled:
         scene BG char Alice sun-alone 01
-        if alice.daily.oiled == 2:
+        if alice.daily.oiled in [2, 4]:
             show Alice sun-alone 01a
             $ persone_button1 = 'Alice sun-alone 01a'
         else:
@@ -966,12 +977,14 @@ label alice_sun:
         scene BG char Alice sun
         $ renpy.show('Alice sun '+pose2_2+alice.dress)
         $ persone_button1 = 'Alice sun '+pose2_2+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
 label alice_swim:
     scene image 'Alice swim '+pose3_2+alice.dress
     $ persone_button1 = 'Alice swim '+pose3_2+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
@@ -979,6 +992,7 @@ label alice_cooking_dinner:
     scene BG cooking-00
     $ renpy.show('Alice cooking 01'+alice.dress)
     $ persone_button1 = 'Alice cooking 01'+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
@@ -992,6 +1006,7 @@ label alice_tv:
     scene BG lounge-tv-00
     $ renpy.show('Alice tv '+pose3_2+alice.dress)
     $ persone_button1 = 'Alice tv '+pose3_2+alice.dress+'b'
+    $ alice.prev_plan = alice.plan_name
     return
 
 
@@ -1362,6 +1377,7 @@ label alice_smoke:
         with Fade(0.4, 0, 0.3)
 
     $ alice.daily.smoke = 1
+    $ alice.prev_plan = alice.plan_name
 
     if alice.dcv.special.done:
         if alice.dcv.special.stage == 0:
@@ -1900,6 +1916,8 @@ label alice_lisa_shower:
             "{i}уйти{/i}":
                 return
     $ lisa.daily.shower = 1
+    $ alice.prev_plan = alice.plan_name
+    $ lisa.prev_plan = lisa.plan_name
     menu:
         Max_01 "{m}Интересно, кто сейчас в душе?{/m}"
         "{i}заглянуть со двора{/i}" if not flags.block_peeping:
@@ -2055,14 +2073,18 @@ label alice_blog_lingerie:
         return
 
     $ alice.daily.blog = 1
+    $ alice.prev_plan = alice.plan_name
     menu:
         Max_00 "{m}Обычно в это время Алиса занимается своим блогом, но сейчас её дверь закрыта...{/m}"
         "{i}заглянуть в окно{/i}" if not flags.eric_wallet == 2:
             $ spent_time += 20
             scene BG char Alice blog-desk-01
             $ alice.dress_inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[alice.dress]
-            if (renpy.random.randint(1, 2) < 2 or (_in_replay and items['sexbody1'].have)
-                or all([not alice.dcv.intrusion.done, alice.dcv.intrusion.lost<5, alice.dcv.intrusion.stage>2, items['sexbody2'].have])):
+            if any([
+                    renpy.random.randint(1, 2) < 2,             # поза за столом
+                    (_in_replay and items['sexbody1'].have),    # повтор и в сумке сексбоди
+                    can_give_sexbody2(),                        # или можно подарить гружевное боди (не дожидаясь, когда выпадет поза за столом)
+                ]):
                 # Алиса сидит и спаливает Макса
                 if alice.dcv.photo.stage > 0:
                     # blog-desk-01 + alice 02 + max 02
@@ -2072,10 +2094,11 @@ label alice_blog_lingerie:
                         Alice_02 "О, Макс! Что-то хотел или просто проведать меня решил?"
                         "Я твои фотки принёс..." if all([alice.dcv.photo.stage==1, alice.dcv.photo.done]):
                             jump give_photos1
-                        "Я тут не удержался и купил тебе боди раньше Эрика!" if all([not alice.dcv.intrusion.done, alice.dcv.intrusion.stage>2, alice.dcv.intrusion.lost<5, items['sexbody2'].have]):
+                        "Я тут не удержался и купил тебе боди раньше Эрика!" if can_give_sexbody2():
                             jump gift_lace_lingerie
-                        "Отлично смотришься в этом белье!" if not _in_replay and alice.dcv.intrusion.enabled and not all([not alice.dcv.intrusion.done, alice.dcv.intrusion.lost<5, items['sexbody2'].have]):
-                            if alice.dcv.intrusion.lost<4 and alice.dcv.intrusion.stage<1:
+                        "Отлично смотришься в этом белье!" if all([not _in_replay, alice.dcv.intrusion.enabled, not can_give_sexbody2()]):
+                            # if alice.dcv.intrusion.lost<4 and alice.dcv.intrusion.stage<1:
+                            if get_stage_sexbody2() == 2:
                                 # Макс еще не знает о том, что Эрик собирается купить бельё Алисе
                                 Alice_03 "Знаю, а в новом кружевном боди буду смотреться ещё лучше!"
                                 Max_04 "Намёк понял. Купить на мой вкус?"
@@ -2091,11 +2114,12 @@ label alice_blog_lingerie:
                                     Alice_01 "Ага, хорошо бы."
                                     "{i}уйти{/i}":
                                         pass
-                        "Как идут дела с блогом?" if not _in_replay and alice.dcv.other.done and not all([not alice.dcv.intrusion.done, alice.dcv.intrusion.lost<5, items['sexbody2'].have]):  #после 1-ой фотосессии / откат 3 дня
+                        "Как идут дела с блогом?" if all([not _in_replay, alice.dcv.other.done, alice.dcv.photo.stage>1, not can_give_sexbody2()]):  #после 1-ой фотосессии / откат 3 дня
                             $ alice.dcv.other.set_lost(3)
 
-                            if alice.dcv.battle.stage in [0, 2] and (alice.dcv.intrusion.lost>3 or not alice.dcv.intrusion.enabled):
-                                # Эрик ещё не помогает Алисе с блогом
+                            # if alice.dcv.battle.stage in [0, 2] and (alice.dcv.intrusion.lost>3 or not alice.dcv.intrusion.enabled):
+                            if get_stage_sexbody2() < 2:
+                                # Эрик ещё не помогает Алисе с блогом или уже изгнан
                                 if renpy.random.randint(1, 2) < 2:
                                     Alice_03 "Неплохо. Развиваюсь понемногу. Подаренное тобой бельё зачастую сильно выручает!"
                                     Max_04 "Рад помочь своей сестрёнке! Если что, обращайся."
@@ -2110,14 +2134,14 @@ label alice_blog_lingerie:
                                         Alice_01 "Спасибо, Макс!"
                                         "{i}уйти{/i}":
                                             pass
-                            elif alice.dcv.battle.stage in [4, 5, 7, 8] and alice.dcv.intrusion.lost<4:
+                            elif alice.dcv.battle.stage in [4, 5, 7, 8]:
                                 #если Эрик начал помогать Алисе с блогом, направление дружбы (легкие меры)
                                 if alice.dcv.battle.stage in [4, 5]:
                                     #первый раз
                                     $ alice.dcv.battle.stage += 3  # 7 или 8
                                     Alice_03 "Ты знаешь, хорошо! Но это в основном заслуга Эрика. Он помогает с раскруткой по моему блогу."
                                     Max_07 "Какой он молодец! Реальные вещи делает. А моя помощь нужна?"
-                                    if alice.dcv.intrusion.stage<1:
+                                    if get_stage_sexbody2() < 2:
                                         # Макс еще не знает о том, что Эрик собирается купить бельё Алисе
                                         Alice_02 "Можешь не париться, Макс. Эрик купит то, что мне нужно."
                                         Max_08 "Эрик купит тебе новое нижнее бельё?"
@@ -2146,7 +2170,7 @@ label alice_blog_lingerie:
                                     Max_09 "Я говорю, вот молодчина какой..."
                                     Alice_05 "Ну да. А то мне послышалось что-то... В общем, всё идёт хорошо у меня. Я довольна!"
                                     Max_08 "А я могу чем-то помочь?"
-                                    if alice.dcv.intrusion.stage<1:
+                                    if get_stage_sexbody2() < 2:
                                         # Макс еще не знает о том, что Эрик собирается купить бельё Алисе
                                         Alice_02 "Можешь не париться, Макс. Эрик купит то, что мне нужно."
                                         Max_08 "Эрик купит тебе новое нижнее бельё?"
@@ -2164,9 +2188,9 @@ label alice_blog_lingerie:
                                     Alice_02 "Пока что нет, Макс. Эрик обо всём позаботится, можешь расслабиться."
                                     Max_01 "Но если что, всё равно обращайся."
                                     Alice_01 "Хорошо, Макс. Спасибо."
-                        "Я слышал, Эрик тебе новое бельё собирается купить?" if alice.dcv.intrusion.stage==1:
+                        "Я слышал, Эрик тебе новое бельё собирается купить?" if get_stage_sexbody2() == 3:
                             jump alice_about_lingerie0
-                        "Покажешь боди, которое тебе Эрик купит?" if alice.dcv.intrusion.stage==2:
+                        "Покажешь боди, которое тебе Эрик купит?" if get_stage_sexbody2() == 4:
                             jump alice_showing_lingerie1
                 else:
                     $ renpy.show('Alice blog 01'+alice.dress)
@@ -2260,9 +2284,9 @@ label alice_blog_lingerie:
                     $ renpy.show('Max blog 02'+mgg.dress)
                     menu:
                         Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?"
-                        "Я слышал, Эрик тебе новое бельё собирается купить?" if alice.dcv.intrusion.stage==1:
+                        "Я слышал, Эрик тебе новое бельё собирается купить?" if get_stage_sexbody2() == 3:
                             jump alice_about_lingerie0
-                        "Покажешь боди, которое тебе Эрик купит?" if alice.dcv.intrusion.stage==2:
+                        "Покажешь боди, которое тебе Эрик купит?" if get_stage_sexbody2() == 4:
                             jump alice_showing_lingerie1
                 else:
                     $ renpy.show('Alice blog '+renpy.random.choice(['03', '04'])+alice.dress)
@@ -2305,7 +2329,7 @@ label alice_body_photoset1:
         Alice_03 "Будешь щёлкать меня прямо здесь, у стены или у зеркала?"
         Max_04 "Давай, я думаю, на кровати. Будет больше ярких цветов."
 
-    $ expected_photo.append('01')
+    # $ expected_photo.append('01')
     scene photoshot 01-Alice 01
     Alice_02 "На кровати, так на кровати. А теперь давай признавайся, Макс, когда успел фотоаппарат научиться держать? Не на своих же любимых онлайн-курсах?"
     show FG photocamera
@@ -2314,7 +2338,7 @@ label alice_body_photoset1:
     hide FG
     extend "Снимок готов! Залазь теперь на кровать, снимем твою прелестную попку..."
 
-    $ expected_photo.append('02')
+    # $ expected_photo.append('02')
     scene photoshot 01-Alice 02
     Alice_03 "Смотри, чтобы красиво получалось, но не слишком откровенно! Я всё-таки бельё рекламирую, а не свои прелести. Хотя, и свои прелести тоже, но хоть немного скрытые бельём!"
     show FG photocamera
@@ -2323,7 +2347,7 @@ label alice_body_photoset1:
     hide FG
     extend "Получилось хорошо! Ложись на кровать, раз уж рекламируем бельё, то надо во всей красе показать, как оно на тебе сидит."
 
-    $ expected_photo.append('03')
+    # $ expected_photo.append('03')
     scene photoshot 01-Alice 03
     Alice_04 "Мог бы просто сказать, что ты извращенец, который обожает глазеть на полуголый зад своей сестры! А то, что это якобы для развития блога - просто удобный предлог."
     show FG photocamera
@@ -2332,7 +2356,7 @@ label alice_body_photoset1:
     hide FG
     extend "Отличный кадр! Тебе только остаётся принять этот факт, повернуться ко мне и быть погорячее..."   #открывает снимок 04
 
-    $ expected_photo.append('04')
+    # $ expected_photo.append('04')
     scene photoshot 01-Alice 04
     Alice_05 "Вот так погорячее сойдёт или ты хочешь, чтобы я показала ещё больше?"
     show FG photocamera
@@ -2361,7 +2385,7 @@ label alice_body_photoset1:
     Alice_04 "Ты же хоть примерно понимаешь, что с тобой будет, если дальнейшие фотографии окажутся в интеренете?"   #с конфетой
     Max_01 "Там окажутся только те фотографии, которые тебе пригодятся для блога. За остальные можешь не переживать, они только для меня."   #открывает снимок 05
 
-    $ expected_photo.append('05')
+    # $ expected_photo.append('05')
     scene photoshot 01-Alice 05
     Alice_08 "Ох, как-то жарковато стало моим арбузикам, да и тебе я вижу тоже. Ого, а что это у нас тут такое большое и твёрдое? Похоже, будет интересный кадр!"
     Max_07 "Хоть это и очень приятно, но мне будет не просто сосредоточиться на съёмке, если ты продолжишь тереться ногой об мой член! Может продолжишь это делать после того, как я тебя отщёлкаю?"
@@ -2372,7 +2396,7 @@ label alice_body_photoset1:
     extend "Люблю исследовать что-нибудь интересное своими ножками! Это меня очень заводит..."
     Max_02 "А тем временем я заснял твои шалости и готов к новым... Что твои ножки ещё любят делать?"   #открывает снимок 06
 
-    $ expected_photo.append('06')
+    # $ expected_photo.append('06')
     scene photoshot 01-Alice 06
     Alice_03 "Я могу их немножко раздвинуть, чтобы этот кадр стал твоим любимым... Какая же я плохая сестрёнка! В хорошем смысле..."
     play sound "<from 1>audio/PhotoshootSound.ogg"
@@ -2381,7 +2405,7 @@ label alice_body_photoset1:
     hide FG
     extend "Готово. Кадр и правда очень хорош!"   #открывает снимок 07
 
-    $ expected_photo.append('07')
+    # $ expected_photo.append('07')
     scene photoshot 01-Alice 07
     Alice_02 "Или всё-таки снимок моей попки будет твоим любимым, а Макс? Тебе же нравится, когда я делаю так?"
     play sound "<from 1>audio/PhotoshootSound.ogg"
@@ -2390,7 +2414,7 @@ label alice_body_photoset1:
     hide FG
     extend "Да, кадр получился что надо! Может, теперь фото без белья?"   #открывает снимок 08
 
-    $ expected_photo.append('08')
+    # $ expected_photo.append('08')
     scene photoshot 01-Alice 08
     Alice_01 "Конечно, уже раздеваюсь... Закатай губу, Макс! Ты ещё маленький для такого, хоть у тебя и есть кое-что большое..."
     play sound "<from 1>audio/PhotoshootSound.ogg"
@@ -2729,7 +2753,14 @@ label give_photos1:
     Alice_01 "Спасибо, Макс!"
 
     $ alice.dcv.photo.stage = 2
-    $ append_photo('01-Alice', 8)
+    # $ append_photo('01-Alice', 8)
+    if poss['blog'].used(8):
+        $ append_album('01-Alice', ['01', '02', '03', '04', '05', '06', '07', '08'])
+    elif poss['blog'].open(7):
+        $ append_album('01-Alice', ['01', '02', '03', '04'])
+
+    if expected_photo == ['01', '02', '03', '04'] or expected_photo == ['01', '02', '03', '04', '05', '06', '07', '08']:
+        $ expected_photo.clear()
     jump Waiting
 
 
@@ -2744,6 +2775,7 @@ label blog_with_Eric:
         else:
             $ alice.daily.blog = 1
 
+    $ alice.prev_plan = alice.plan_name
     menu:
         Max_09 "{m}Кажется, в комнате Алиса с Эриком... Хорошо бы узнать, что они там делают. А то мало ли...{/m}"
         "{i}заглянуть в окно{/i}":

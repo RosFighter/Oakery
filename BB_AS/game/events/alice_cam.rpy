@@ -516,7 +516,7 @@ label cam1_alice_smoke:
     return
 
 label cam0_alice_sun:
-    if alice.daily.oiled == 2:
+    if alice.daily.oiled in [2, 4]:
         show Alice cams sun-alone 00a at laptop_screen
     elif alice.daily.oiled > 0:
         show Alice cams sun-alone 00 at laptop_screen
@@ -529,7 +529,7 @@ label cam0_alice_sun:
     return
 
 label cam1_alice_sun:
-    if alice.daily.oiled == 2:
+    if alice.daily.oiled in [2, 4]:
         show Alice cams sun-alone 01a at laptop_screen
     elif alice.daily.oiled > 0:
         show Alice cams sun-alone 01 at laptop_screen

@@ -47,7 +47,8 @@ init python:
                 persistent.mm_cookies[self.char][self.clot] = set()
             persistent.mm_cookies[self.char][self.clot].add('cookie_'+str(self.num))
 
-            notify_list.append(__("{color=[lime]}Открыта детальная настройка для одного из костюмов %s в главном меню{/color}") % renpy.translate_string(chars[self.char].name_1))
+            if self.char in chars:
+                notify_list.append(__("{color=[lime]}Открыта детальная настройка для одного из костюмов %s в главном меню{/color}") % renpy.translate_string(chars[self.char].name_1))
 
 
     # класс описания элементов одежды главного меню
@@ -282,7 +283,10 @@ init python:
             if id_clot not in persistent.mm_chars[self.id_char]:
                 persistent.mm_chars[self.id_char].append(id_clot)
                 if 'chars' in globals():
-                    notify_list.append(__("{color=[lime]}Открыт новый костюм %s для главного меню{/color}") % renpy.translate_string(chars[self.id_char].name_1))
+                    if self.id_char != 'max':
+                        notify_list.append(__("{color=#00FF00}Открыт новый костюм %s для главного меню{/color}") % renpy.translate_string(chars[self.id_char].name_1))
+                    else:
+                        notify_list.append(__("{color=#00FF00}Открыт новый костюм %s для главного меню{/color}") % renpy.translate_string(mgg.name_1))
 
             return True
 
@@ -342,6 +346,8 @@ init python:
             # возвращает список открытых вариантов одежды для персонажа
             lst0 = []
             lst1 = []
+            if self.id_char not in persistent.mm_chars:
+                return []
             for i in range(1, len(persistent.mm_chars[self.id_char])):
                 lst0.append(persistent.mm_chars[self.id_char][i])
 
@@ -520,6 +526,56 @@ init python:
         MM_Cookies('kira', 'new_year', 'house[6]', '6', '03:00', '03:59', (95, 390), 0.75, 0.7, req="renpy.showing('BG char Kira after-club-s02-f')"), #(126, 561)
         ]
 
+    def open_cookies():
+
+        if datetime.today().month in [1, 2, 12]:
+            # open New_Year
+            menu_chars['Max'].open('new_year')
+            menu_chars['Alice'].open('new_year')
+            menu_chars['Ann'].open('new_year')
+            menu_chars['Kira'].open('new_year')
+            menu_chars['Lisa'].open('new_year')
+        else:
+            menu_chars['Max'].close('new_year')
+            menu_chars['Alice'].close('new_year')
+            menu_chars['Ann'].close('new_year')
+            menu_chars['Kira'].close('new_year')
+            menu_chars['Lisa'].close('new_year')
+
+        # open casual
+        menu_chars['Max'].open('casual_c')
+        menu_chars['Alice'].open('casual_d')
+        menu_chars['Ann'].open('casual_d')
+        menu_chars['Kira'].open('casual_d')
+        menu_chars['Lisa'].open('casual_d')
+
+        if len(persistent.mm_cookies) < 4:
+            return
+
+        if 'kira' in persistent.mems_var and 'swim' not in menu_chars['Kira'].get_open_clot():
+            # купальники
+            if all(['casual_d' in persistent.mm_cookies['lisa'],
+                    'casual_d' in persistent.mm_cookies['alice'],
+                    'casual_d' in persistent.mm_cookies['ann'],
+                    'casual_d' in persistent.mm_cookies['kira']]):
+                menu_chars['Lisa'].open('swim')
+                menu_chars['Alice'].open('swim')
+                menu_chars['Ann'].open('swim')
+                menu_chars['Kira'].open('swim')
+
+        if 'kira' in persistent.mems_var and 'sleep0' not in menu_chars['Kira'].get_open_clot():
+            # нижнее бельё
+            if all(['swim' in persistent.mm_cookies['lisa'],
+                    'swim' in persistent.mm_cookies['alice'],
+                    'swim' in persistent.mm_cookies['ann'],
+                    'swim' in persistent.mm_cookies['kira']]):
+                menu_chars['Lisa'].open('sleep0')
+                menu_chars['Alice'].open('sleep0')
+                menu_chars['Alice'].open('sleep1')
+                menu_chars['Ann'].open('sleep0')
+                menu_chars['Kira'].open('sleep0')
+
+
 default persistent.mm_chars = {}
 default persistent.mm_cookies = {}
 
@@ -534,43 +590,29 @@ define menu_chars = OrderedDict([
 default mm_char = sorted(menu_chars)[0]
 
 # установка "открытия" одежды главного меню
-init 100:
+init 100 python:
     if 'kira' in persistent.mems_var:
         if not persistent.menu_var:
-            $ persistent.menu_var = '01'
-            $ persistent.mm_chars.clear()
+            persistent.menu_var = '01'
+            persistent.mm_chars.clear()
 
         if datetime.today().month in [1, 2, 12]:
             # open New_Year
-            $ menu_chars['Max'].open('new_year')
-            $ menu_chars['Alice'].open('new_year')
-            $ menu_chars['Ann'].open('new_year')
-            $ menu_chars['Kira'].open('new_year')
-            $ menu_chars['Lisa'].open('new_year')
+            menu_chars['Max'].open('new_year')
+            menu_chars['Alice'].open('new_year')
+            menu_chars['Ann'].open('new_year')
+            menu_chars['Kira'].open('new_year')
+            menu_chars['Lisa'].open('new_year')
         else:
-            $ menu_chars['Max'].close('new_year')
-            $ menu_chars['Alice'].close('new_year')
-            $ menu_chars['Ann'].close('new_year')
-            $ menu_chars['Kira'].close('new_year')
-            $ menu_chars['Lisa'].close('new_year')
+            menu_chars['Max'].close('new_year')
+            menu_chars['Alice'].close('new_year')
+            menu_chars['Ann'].close('new_year')
+            menu_chars['Kira'].close('new_year')
+            menu_chars['Lisa'].close('new_year')
 
         # open casual
-        $ menu_chars['Max'].open('casual_c')
-        $ menu_chars['Alice'].open('casual_d')
-        $ menu_chars['Ann'].open('casual_d')
-        $ menu_chars['Kira'].open('casual_d')
-        $ menu_chars['Lisa'].open('casual_d')
-
-        # open all other
-        # $ menu_chars['Alice'].open('swim')
-        # $ menu_chars['Alice'].open('sleep0')
-        # $ menu_chars['Alice'].open('sleep1')
-
-        # $ menu_chars['Ann'].open('swim')
-        # $ menu_chars['Ann'].open('sleep0')
-
-        # $ menu_chars['Kira'].open('swim')
-        # $ menu_chars['Kira'].open('sleep0')
-
-        # $ menu_chars['Lisa'].open('swim')
-        # $ menu_chars['Lisa'].open('sleep0')
+        menu_chars['Max'].open('casual_c')
+        menu_chars['Alice'].open('casual_d')
+        menu_chars['Ann'].open('casual_d')
+        menu_chars['Kira'].open('casual_d')
+        menu_chars['Lisa'].open('casual_d')

@@ -109,6 +109,12 @@ label ann_cam_dress_inf(r1):
         }[r1]
     return
 
+label cam0_ann_dressed:
+    if GetWeekday < 6:
+        call cam0_ann_dressed_work from _call_cam0_ann_dressed_work
+    else:
+        call cam0_ann_dressed_shop from _call_cam0_ann_dressed_shop
+
 label cam0_ann_dressed_work:
     if 'ann_dressed' in cam_flag:
         $ renpy.show('Ann cams dressed 11', at_list=[laptop_screen])

@@ -657,3 +657,11 @@ translate english strings:
     # game/core/02init.rpy:134
     old "Лиза, ты чего нос повесила?"
     new "Lisa, why are you hanging your nose?"
+# TODO: Translation updated at 2022-01-04 00:27
+
+translate english strings:
+
+    # game/core/02init.rpy:40
+    old "{color=#FFBE00}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n"
+    new "{color=#FFBE00}{b}Warning:{/b} Your influence on your family has decreased.{/color}\n"
+

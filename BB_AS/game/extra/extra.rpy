@@ -105,6 +105,7 @@ define mems = [
             Memories('kira_night_tv.teach_cuni', 'kira-tvsex-04', 'set_porn_tv3', _("Хватит мять сиськи"), var="renpy.seen_label('kira_night_tv.tv_sex1') or renpy.seen_label('kira_night_tv.tv_sex2')"),
             Memories('kira_bath.cuni_bj', 'kira-bathsex-04', 'set_kira_batxsex1', _("И помылись, и порезвились"), var="renpy.seen_label('kira_bath.horsewoman') or renpy.seen_label('kira_bath.dogstyle')"),
             Memories('kira_photoset3', 'kira-photoset-03', 'set_kira_photoset3', _("Кто нас фотографирует?")),
+            Memories('kira_shower.sex', 'kira-shower-03', '', _("Вместо ночного плаванья")),
         ],
         [
             Memories('lisa_advanced_kiss_lesson', 'lisa-kisslesson-01', 'set_lisa_advanced_kiss_lesson', _("Вкусные уроки с сестрёнкой")),

@@ -344,6 +344,7 @@ label alice_talk_tv:
             jump alice_talk_tv_end
 
         "Тебе сделать массаж ног?" if _in_replay or all([not alice.daily.massage, learned_foot_massage()]):
+            $ alice.daily.drink = 0
             jump alice_tv_massage_starter
 
 # окончание просмотра ТВ
@@ -2617,10 +2618,10 @@ label Alice_solar:
     ## Загораешь?
     menu:
         Alice_02 "Как ты догадался, Шерлок?"
-        "Может быть, тебя намазать кремом для загара?" if alice.daily.oiled == 3:
+        "Может быть, тебя намазать кремом для загара?" if 3 > alice.daily.oiled > 0:
             Alice_04 "Достаточно на сегодня, Макс..."
             Max_00 "Ясно. Ну, тогда, может, завтра..."
-            $ alice.daily.oiled = 4
+            $ alice.daily.oiled += 2
             jump AfterWaiting
         "Может быть, тебя намазать кремом для загара?" if not items['solar'].have:  # нет крема
                 Alice_13 "Может быть. Вот только у меня его нет..."
@@ -2632,10 +2633,11 @@ label Alice_solar:
                     $ notify_list.append(_("В интернет-магазине доступен новый товар."))
                     $ poss['massage'].open(0)
                 jump AfterWaiting
-        "{i}Предложить Алисе намазать её кремом{/i}" if items['solar'].have and any([mgg.dress == 'a', kol_cream < 3]):
+        "{i}Предложить Алисе намазать её кремом{/i}" if items['solar'].have and alice.daily.oiled==0 and any([mgg.dress == 'a', kol_cream < 3]):
             if mgg.dress == 'a':  # Максу нужна одежда
                 if items['max-a'].have:
                     $ mgg.dress = 'b'
+                    $ alice.daily.oiled = 1
                 else:
                     Max_07 "{m}Прежде чем пытаться поприставать к сестрёнке таким образом, стоит обзавестись одеждой полегче.{/m}"
                     $ items['max-a'].unblock()
@@ -2727,7 +2729,7 @@ label Alice_solar:
             jump .type_choice
         "{i}Блин, крем практически закончился... Давай в другой раз тогда...{/i}" if kol_cream < 3:
             Alice_00 "Ну что же ты, Макс... Эх, только настроилась..."
-            $ alice.daily.oiled = 4
+            $ alice.daily.oiled = 3
             jump AfterWaiting
 
     jump Waiting
@@ -4658,32 +4660,42 @@ label alice_private_punish_0:
             scene BG punish-sun 01
             show Alice punish-sun 01-01
             $ renpy.show("Max punish-sun 01-01"+mgg.dress)
-            Alice_03 "Всё, я готова. Где это сделам?"
+            Alice_03 "Всё, я готова. Где это сделаем?"
             jump .pun
 
     label .pun:
         Max_01 "Да прямо тут, во дворе."
 
-    # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
-    scene BG punish-sun 02
-    $ renpy.show("Alice punish-sun 02-01"+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    if alice_sun_topless():
+        # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01a
+        scene BG punish-sun 02
+        $ renpy.show('Alice punish-sun 02-01'+mgg.dress+'a')
+        with Fade(0.4, 0, 0.3)
+    else:
+        # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
+        scene BG punish-sun 02
+        $ renpy.show('Alice punish-sun 02-01'+mgg.dress)
+        with Fade(0.4, 0, 0.3)
     Alice_05 "Ладно, давай здесь. Только не больно, хорошо? И не приставать!"
     Max_02 "Ага, раздевайся давай..."
 
-    # punish-sun-02 + punish-sun-02-max-(02a/02b)-alice-02
-    $ renpy.show("Alice punish-sun 02-02"+mgg.dress)
+    if alice_sun_topless():
+        # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01a
+        $ renpy.show('Alice punish-sun 02-02'+mgg.dress+'a')
+    else:
+        # punish-sun-02 + punish-sun-02-max-(02a/02b)-alice-02
+        $ renpy.show('Alice punish-sun 02-02'+mgg.dress)
     Alice_14 "Чего?! В смысле, раздевайся? О таком мы не договаривались!"
     Max_07 "Это само собой разумеющееся, Алиса. Со всеми претензиями обращайся к маме, это ведь она установила такой порядок наказаний."
+    Alice_13 "Если ты думаешь, что я стану тут перед тобой раздеваться..." nointeract
+    if not alice_sun_topless():
+        menu:
+            "{i}стянуть верх купальника{/i}":
+                # punish-sun-02 + punish-sun-02-max-(03a/03b)-alice-03
+                $ renpy.show("Alice punish-sun 02-03"+mgg.dress)
+                Alice_15 "Макс!!! Ты офигел так делать?! Я же тебе сейчас уши оторву..."
+                Max_09 "Сколько от тебя шума, Алиса! Да ещё и по такому пустяку. Надоели уже твои угрозы." nointeract
     menu:
-        Alice_13 "Если ты думаешь, что я стану тут перед тобой раздеваться..."
-        "{i}стянуть верх купальника{/i}":
-            pass
-    # punish-sun-02 + punish-sun-02-max-(03a/03b)-alice-03
-    $ renpy.show("Alice punish-sun 02-03"+mgg.dress)
-    Alice_15 "Макс!!! Ты офигел так делать?! Я же тебе сейчас уши оторву..."
-    menu:
-        Max_09 "Сколько от тебя шума, Алиса! Да ещё и по такому пустяку. Надоели уже твои угрозы."
         "{i}стянуть низ купальника{/i}":
             pass
     # punish-sun-02 + punish-sun-02-max-(04a/04b)-alice-04
@@ -4692,48 +4704,6 @@ label alice_private_punish_0:
     Max_01 "Ага, обязательно. Только давай сперва тебя накажем."
     menu:
         Alice_12 "Только не вздумай глазеть на меня при этом!"
-        # "{i}шлёпать нежно{/i}":
-        #     # punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
-        #     scene BG punish-sun 03
-        #     $ renpy.show("Alice punish-sun 03-01"+mgg.dress)
-        #     menu:
-        #         Alice_05 "А это однозначно лучше, чем когда мама шлёпает! После того, чему моя попка подвергалась, твои шлепки даже приятны..."
-        #         "Ну вот, а ты не хотела!":
-        #             # punish-sun-02 + punish-sun-02-max-(05a/05b)-alice-05
-        #             scene BG punish-sun 02
-        #             $ renpy.show("Alice punish-sun 02-05"+mgg.dress)
-        #             Alice_06 "Ну всё, хватит. А то ты уже не шлёпаешь, а просто лапаешь мою попку. И так раздел меня бесцеремонно..."
-        #             Max_03 "Просто хотел ускорить процесс."
-        #             # punish-sun-02 + punish-sun-02-max-(04a/04b)-alice-04
-        #             $ renpy.show("Alice punish-sun 02-04"+mgg.dress)
-        #             Alice_03 "Ты меня своим озабоченным взглядом не смущай. Вали уже, оденусь я без твоей помощи..."
-        #
-        #         "Могу сильнее, а то это уже не наказание!":
-        #             $ __r1 = renpy.random.randint(1, 2)
-        #             # punish-sun-04 + punish-sun-04-max-(01a/01b)-alice-01 или punish-sun-04-max-(02a/02b)-alice-02
-        #             scene BG punish-sun 04
-        #             $ renpy.show("Alice punish-sun 04-0"+str(__r1)+mgg.dress)
-        #             Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
-        #             Max_04 "А если я немного потру, чтобы не болело... Так легче?"
-        #             # punish-sun-05 + punish-sun-05-max-(01a/01b)-alice-01 или punish-sun-05-max-(02a/02b)-alice-02
-        #             scene BG punish-sun 05
-        #             $ renpy.show("Alice punish-sun 05-0"+str(__r1)+mgg.dress)
-        #             Alice_12 "Да... Но этого не пришлось бы делать, если бы ты шлёпал легонько!"
-        #             Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
-        #             Alice_13 "А мне кажется, что это больше похоже на извращение! Давай прекращай..."
-        #             Max_05 "Но приятное ведь?"
-        #             # punish-sun-04 + punish-sun-04-max-(03a/03b)-alice-03
-        #             scene BG punish-sun 04
-        #             $ renpy.show("Alice punish-sun 04-03"+mgg.dress)
-        #             Alice_05 "Ага, сложно не заметить, сколько радости от этого в твоих шортах."
-        #             Max_03 "На такую красотку, как ты, у любого встанет!"
-        #             Alice_03 "Ах... Вот это комплимент! Не ожидала я такого от тебя, Макс. Так, всё, повеселились и хватит. Убери эту свою штуку и не появляйся в таком виде рядом со мной!"
-        #             $ alice.flags.privpunish += 1
-        #     menu:
-        #         Max_02 "Хорошо, до следующего раза. А попка у тебя славная!"
-        #         "{i}уйти{/i}":
-        #             jump .end
-
         "{i}шлёпать сильно{/i}":
             play sound [slap1, "<silence .5>", slap1, "<silence .5>", slap1, "<silence 1.5>"] loop
             # punish-sun-03 + punish-sun-03-max-(01a/01b)-alice-01
@@ -4789,22 +4759,32 @@ label alice_private_punish_r:
     label .pun:
         Max_01 "А ты куда-то торопишься разве?"
 
-    # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
-    scene BG punish-sun 02
-    $ renpy.show("Alice punish-sun 02-01"+mgg.dress)
-    # with Fade(0.4, 0, 0.3)
+    if alice_sun_topless():
+        # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01a
+        scene BG punish-sun 02
+        $ renpy.show('Alice punish-sun 02-01'+mgg.dress+'a')
+        # with Fade(0.4, 0, 0.3)
+    else:
+        # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
+        scene BG punish-sun 02
+        $ renpy.show('Alice punish-sun 02-01'+mgg.dress)
+        # with Fade(0.4, 0, 0.3)
     Alice_05 "Мне же больше делать нечего, только и жду с самого утра, когда ты придёшь и накажешь меня!"
     Max_02 "Сама разденешься или помочь?"
-    # punish-sun-02 + punish-sun-02-max-(02a/02b)-alice-02
-    $ renpy.show("Alice punish-sun 02-02"+mgg.dress)
+    if alice_sun_topless():
+        # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01a
+        $ renpy.show('Alice punish-sun 02-02'+mgg.dress+'a')
+    else:
+        # punish-sun-02 + punish-sun-02-max-(02a/02b)-alice-02
+        $ renpy.show('Alice punish-sun 02-02'+mgg.dress)
+    Alice_04 "Вот тебе надо, чтобы я была голая, так сам и раздевай! Не облегчать же тебе работу..." nointeract
+    if not alice_sun_topless():
+        menu:
+            "{i}стянуть верх купальника{/i}":
+                # punish-sun-02 + punish-sun-02-max-(03a/03b)-alice-03
+                $ renpy.show("Alice punish-sun 02-03"+mgg.dress)
+                Alice_15 "Ну не так же резко, Макс! Смотри, если порвёшь мой купальник, я тебе тоже мигом что-нибудь порву..." nointeract
     menu:
-        Alice_04 "Вот тебе надо, чтобы я была голая, так сам и раздевай! Не облегчать же тебе работу..."
-        "{i}стянуть верх купальника{/i}":
-            pass
-    # punish-sun-02 + punish-sun-02-max-(03a/03b)-alice-03
-    $ renpy.show("Alice punish-sun 02-03"+mgg.dress)
-    menu:
-        Alice_15 "Ну не так же резко, Макс! Смотри, если порвёшь мой купальник, я тебе тоже мигом что-нибудь порву..."
         "{i}стянуть низ купальника{/i}":
             pass
     # punish-sun-02 + punish-sun-02-max-(04a/04b)-alice-04
@@ -5879,5 +5859,5 @@ label alice_about_showdown:
 
     $ spent_time = 20
     $ alice.flags.showdown_e = 1
-    $ poss['blog'].open(11)
+    $ poss['blog'].open(21)
     jump Waiting

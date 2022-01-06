@@ -88,3 +88,17 @@ translate english strings:
     old "Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось...\nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней.\n\nИ теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше..."
     new "It really is a fascinating sight! Not many people have ever managed to undress and spank their big sister... Even though she's capricious and threatening, my persistence seems to have taken over. It's a pleasure to admire her naked and firm ass, as well as to slap her. Now I know how not to overdo it, so I can enjoy this private punishment as long as possible..."
 
+# TODO: Translation updated at 2022-01-04 00:27
+
+# game/core/core.rpy:945
+translate english after_load_84f87582:
+
+    # "ver [current_ver], _ver [_version], conf.ver [config.version]"
+    "ver [current_ver], _ver [_version], conf.ver [config.version]"
+
+# game/core/core.rpy:951
+translate english after_load_e53fbeb7:
+
+    # "_ver [_version], conf.ver [config.version]"
+    "_ver [_version], conf.ver [config.version]"
+

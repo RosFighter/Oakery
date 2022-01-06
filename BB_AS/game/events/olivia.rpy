@@ -3,7 +3,8 @@ label olivia_lisa_sun:
     scene BG char Lisa Olivia 2sun-01
     $ renpy.show('Lisa 2sun '+pose3_1+lisa.dress)
     $ renpy.show('Olivia 2sun '+pose3_3+olivia.dress)
-    $ lisa.hourly.dressed = 1
+    $ lisa.prev_plan = lisa.plan_name
+    $ olivia.prev_plan = olivia.plan_name
     return
 
 
@@ -12,7 +13,8 @@ label olivia_lisa_swim:
     $ renpy.show('BG char Lisa Olivia 2swim-'+pose3_3)
     if olivia.dress=='a':
         $ renpy.show('FG Lisa Olivia 2swim-'+pose3_3)
-    $ lisa.hourly.dressed = 1
+    $ lisa.prev_plan = lisa.plan_name
+    $ olivia.prev_plan = olivia.plan_name
     return
 
 
@@ -72,6 +74,8 @@ label olivia_lisa_sleep:
     scene BG char Lisa bed-n-01
     $ renpy.show('Olivia sleep ' + pose3_1)
     $ renpy.show('FG Olivia sleep ' + pose3_1 + lisa.dress)
+    $ lisa.prev_plan = lisa.plan_name
+    $ olivia.prev_plan = olivia.plan_name
     return
 
 
@@ -713,13 +717,14 @@ label olivia_dressed:
                 jump .leave
 
     label .moment0:     # рано (или уже поздно)
-        $ renpy.dynamic('mood', 'pl', 'po', 'var', 'np')
+        $ renpy.dynamic('pl', 'po', 'var', 'np')
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pl, var = get_lisa_dress_pose(0)
         $ po = get_olivia_dress_pose(0)
         $ renpy.show('Olivia dressing '+po)
         $ renpy.show('Lisa dressing '+pl)
+        $ mood = 0
 
         menu:
             Lisa_00 "Ой, Макс! А ты можешь немного погулять? Мы собирались переодеться..."
@@ -734,7 +739,7 @@ label olivia_dressed:
         call .wait_or_leave from _call_olivia_dressed_wait_or_leave
 
     label .moment2:     # повезло
-        $ renpy.dynamic('mood', 'pl', 'po', 'var', 'np', 'face')
+        $ renpy.dynamic('pl', 'po', 'var', 'np', 'face')
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pl, var = get_lisa_dress_pose(2)
@@ -743,6 +748,7 @@ label olivia_dressed:
         $ face = int(pl[:2]) < 4
         $ renpy.show('Olivia dressing '+po)
         $ renpy.show('Lisa dressing '+pl)
+        $ mood = 0
 
         Lisa_11 "Макс! Мы же переодеваемся!!! {p=3}{nw}"
 
@@ -762,7 +768,7 @@ label olivia_dressed:
             call .lvl_3 from _call_olivia_dressed_lvl_3
 
     label .moment1:     # неповезло
-        $ renpy.dynamic('mood', 'pl', 'po', 'var', 'np', 'face')
+        $ renpy.dynamic('pl', 'po', 'var', 'np', 'face')
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pl, var = get_lisa_dress_pose(1)
@@ -771,6 +777,7 @@ label olivia_dressed:
         $ face = int(pl[:2]) < 4
         $ renpy.show('Olivia dressing '+po)
         $ renpy.show('Lisa dressing '+pl)
+        $ mood = 0
 
         if lvl == 2:
             Lisa_11 "Макс! Мы же переодеваемся!!! Выйди и закрой за собой дверь!" nointeract

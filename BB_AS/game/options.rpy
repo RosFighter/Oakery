@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.07.p2.00"
+define config.version = "0.07.p2.05"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -229,16 +229,10 @@ init python:
     build.classify('game/extra/**.rpyc', 'extra')
     # build.classify('game/tl/**/extra/**.rpyc', 'extra')
 
-    # build.archive("img_fix", "all")
+    build.archive("img_fix", "all")
     # # убрать перед сборкой!
-    # build.classify('game/images/interface/poss/partygirl/ep08.webp', 'img_fix')
-    # build.classify('game/images/interface/poss/naughty/ep07.webp', 'img_fix')
-    # build.classify('game/images/Olivia/cams/night-tv/*.webp', 'img_fix')
-    # build.classify('game/images/Eric/jerk_off/fg-*.webp', 'img_fix')
-    # build.classify('game/images/interface/patreon_logo_2.webp', 'img_fix')
-    # build.classify('game/images/interface/patreon_music.webp', 'img_fix')
-    # #
-    # build.classify('game/images/Lisa/cams/reading/0*p.webp', 'img_fix')
+    build.classify('game/images/interface/SLO.webp', 'img_fix')
+    build.classify('game/images/Alice/punish-sun/02-0*a.webp', 'img_fix')
     # build.classify('game/images/Lisa/cams/reading/0*p1.webp', 'img_fix')
     # build.classify('game/images/Lisa/cams/reading/0*s.webp', 'img_fix')
 
