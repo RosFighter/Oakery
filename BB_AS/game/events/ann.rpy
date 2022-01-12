@@ -259,6 +259,9 @@ label ann_dressed:
     $ ann.hourly.dressed = 1
     $ renpy.dynamic('open', 'lst', 'r1')
     $ open = False
+    $ mood = 0
+    $ spent_time = 10
+
     if GetWeekday(day) == 6:
         Max_09 "{m}Сегодня суббота, день шоппинга. Видимо, мама собирается...{/m}" nointeract
     else:
@@ -290,6 +293,7 @@ label ann_dressed:
                 call .moment2 from _call_ann_dressed_moment2   # повезло
             jump .end
         "{i}заглянуть в окно{/i}":
+            $ mood = 0
             if GetWeekday(day) == 6:
                 $ lst = ['03', '03a', '04']
             else:
@@ -422,7 +426,7 @@ label ann_dressed:
 
     label .lvl_1:
         menu:
-            "У меня для тебя кое-что есть." if items['nightie'].have:
+            "У меня для тебя кое-что есть." if items['nightie'].have and ann.plan_name=='dressed':
                 Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
                 Max_00 "Конечно, мам!"
                 scene location house annroom door-morning
@@ -452,7 +456,7 @@ label ann_dressed:
 
     label .lvl_2:
         menu:
-            "У меня для тебя кое-что есть." if items['nightie'].have:
+            "У меня для тебя кое-что есть." if items['nightie'].have and ann.plan_name=='dressed':
                 Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
                 Max_00 "Конечно, мам!"
                 scene location house annroom door-morning
@@ -482,7 +486,7 @@ label ann_dressed:
 
     label .gift:
         scene BG char Ann mde-01
-        $ renpy.show('Ann dressed 07' + 'j' if GetWeekday(day) == 6 else 'a')
+        $ renpy.show('Ann dressed 07' + ('j' if GetWeekday(day) == 6 else 'a'))
         Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
         Max_04 "У меня для тебя подарок! Ночнушка!"
         Ann_06 "Ты это серьёзно? Но в честь чего?"
@@ -499,7 +503,7 @@ label ann_dressed:
         Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
         Max_02 "Думаю, смотрится она на тебе просто фантастически!"
         scene BG char Ann mde-01
-        $ renpy.show('Ann dressed 07' + 'j' if GetWeekday(day) == 6 else 'a')
+        $ renpy.show('Ann dressed 07' + ('j' if GetWeekday(day) == 6 else 'a'))
         Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
         $ r1 = renpy.random.choice(['01', '02'])
         $ renpy.show('Ann hugging morning-annroom '+r1+'-1'+('b' if GetWeekday(day) == 6 else 'a')+mgg.dress)
@@ -539,7 +543,7 @@ label ann_dressed:
                 jump .goodday
 
     label .fail:
-        $ _text = failed if __open else ""
+        $ _text = failed if open else ""
         if GetWeekday(day) == 6:
             Ann_01 "[_text!t]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь." nointeract
         else:

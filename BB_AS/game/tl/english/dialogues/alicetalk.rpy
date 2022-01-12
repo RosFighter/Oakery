@@ -8616,10 +8616,10 @@ translate english alice_private_punish_0_smoke_5f4eb3c1:
     # Max_03 "Хорошо. Я подожду..." nointeract
     Max_03 "Okay. I'll wait..." nointeract
 
-# game/dialogues/alicetalk.rpy:4809
-translate english alice_private_punish_0_smoke_45633ee6:
+# game/dialogues/alicetalk.rpy:4663
+translate english alice_private_punish_0_smoke_2259f05c:
 
-    # Alice_03 "Всё, я готова. Где это сделам?"
+    # Alice_03 "Всё, я готова. Где это сделаем?"
     Alice_03 "That's it, I'm ready. Where do we do it?"
 
 # game/dialogues/alicetalk.rpy:4813
@@ -11964,7 +11964,7 @@ translate english alice_about_showdown_30688f5a:
 translate english alice_about_showdown_a6730d12:
 
     # Alice_12 "И Макс, узнаю, что ты фотографируешь меня в душе или когда я сплю... Ты покойник..."
-    Alice_12 "And Max, I recognize that you take pictures of me in the shower or when I'm asleep... You're a dead man..."
+    Alice_12 "And Max, If I find out that you have taken pictures of me in the shower or when I'm asleep... You're a dead man..."
 
 # game/dialogues/alicetalk.rpy:5839
 translate english alice_about_showdown_2c04e40c:

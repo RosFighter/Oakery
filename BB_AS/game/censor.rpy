@@ -193,6 +193,10 @@ init python:
             replace_dict = replace_dict_sl
         else:
             return st0
+
+        if not len(replace_dict):
+            return st0
+            
         rc = re.compile('\\b|\\b'.join(map(re.escape, replace_dict)), re.U+re.I)
         def transplate(match):
             key = match.group(0).lower()

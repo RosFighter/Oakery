@@ -341,9 +341,9 @@ translate english cam0_eric_ann_sleep_c5aa1a5f:
     Max_07 "{m}Aha! Mom's alone... So Eric is almost certainly jerking off to Alice right now. We should check it out...{/m}"
 
 # game/events/eric_cam.rpy:421
-translate english cam_before_frame_eric_c6743351:
+translate english cam_before_frame_eric_cb1c7bf7:
 
-    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Нужно дождаться, когда он вернётся к моей маме, и затем уже спойкойно его подставлять...{/m}" nointeract
+    # Max_07 "{m}Отлично! Эрик именно там, где мне и нужно... Нужно дождаться, когда он вернётся к моей маме, и затем уже спокойно его подставлять...{/m}" nointeract
     Max_07 "{m}Great! Eric is exactly where I need him... I have to wait until he gets back to Mom, and then I can set him up in peace...{/m}" nointeract
 
 # game/events/eric_cam.rpy:437

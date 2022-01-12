@@ -26,18 +26,19 @@ default lisa_good_mass  = _("{color=#00FF00}{i}Лизе понравился м�
 default lisa_good_kiss  = _("{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n")
 default ann_good_mass   = renpy.config.say_menu_text_filter(renpy.translate_string(_("{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n")))
 
-define failed           = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
-define spotted          = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
-define risky            = _("{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n")
-define failed_hide      = _("{color=#E59400}{i}Не получилось!{/i}{/color}\n")
-define norestrain       = _("{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n")
-define dont_like        = _("{color=#E59400}{i}Ей не нравится!{/i}{/color}\n")
-define unlucky          = _("{color=#E59400}{i}Не повезло!{/i}{/color}\n")
-define alice_bad_mass   = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
-define lisa_bad_mass    = _("{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n")
-define ann_bad_mass     = renpy.config.say_menu_text_filter(renpy.translate_string(_("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")))
-define lisa_bad_kiss    = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
-define impact_reduced   = _("{color=[orange]}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n")
+init 110:
+    $ failed           = _("{color=#E59400}{i}Убеждение не удалось!{/i}{/color}\n")
+    $ spotted          = _("{color=#E59400}{i}Вас заметили!{/i}{/color}\n")
+    $ risky            = _("{color=#E59400}{i}Слишком рискованно!{/i}{/color}\n")
+    $ failed_hide      = _("{color=#E59400}{i}Не получилось!{/i}{/color}\n")
+    $ norestrain       = _("{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n")
+    $ dont_like        = _("{color=#E59400}{i}Ей не нравится!{/i}{/color}\n")
+    $ unlucky          = _("{color=#E59400}{i}Не повезло!{/i}{/color}\n")
+    $ alice_bad_mass   = _("{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n")
+    $ lisa_bad_mass    = _("{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n")
+    $ lisa_bad_kiss    = _("{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n")
+    $ impact_reduced   = _("{color=#FFBE00}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n")
+    $ ann_bad_mass     = renpy.config.say_menu_text_filter(renpy.translate_string(_("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")))
 
 define good_mission     = _("{color=#00FF00}{i}Успех!{/i}{/color}\n")
 define bad_mission      = _("{color=#E59400}{i}Провал!{/i}{/color}\n")
@@ -147,8 +148,8 @@ define talks = {
     'alice_gift2'   : TalkTheme('alice', _("У меня для тебя обещанная вкусняшка!"), 'alice_gift_sweets', "all([len(alice.sorry.give)>2, alice.sorry.owe, alice.sorry.there_in_stock(), alice.plan_name in ['sun', 'read', 'resting', 'blog'], (alice.daily.oiled!=2 or alice.flags.touched)])"),
     'aboutbath'     : TalkTheme('alice', _("Насчёт ванны ночью..."), 'alice_about_bath', "alice.flags.incident in [1, 3]"),
     'alice.kiss'    : TalkTheme('alice', _("А ты умеешь целоваться?"), 'alice_about_kiss', "all([lisa.dcv.seduce.stage==1, 'alice' not in flags.how_to_kiss])"),
-    'eric.ling0'    : TalkTheme('alice', _("Я слышал, Эрик тебе новое бельё собирается купить?"), 'alice_about_lingerie0', "alice.dcv.intrusion.stage==1"),
-    'eric.ling1'    : TalkTheme('alice', _("Покажешь боди, которое тебе Эрик купит?"), 'alice_showing_lingerie1', "all([alice.dcv.intrusion.stage==2, current_room==house[1]])"),
+    'eric.ling0'    : TalkTheme('alice', _("Я слышал, Эрик тебе новое бельё собирается купить?"), 'alice_about_lingerie0', "get_stage_sexbody2()==3"),
+    'eric.ling1'    : TalkTheme('alice', _("Покажешь боди, которое тебе Эрик купит?"), 'alice_showing_lingerie1', "all([get_stage_sexbody2()==4, current_room==house[1]])"),
     'a.privpun0'    : TalkTheme('alice', _("Хотел узнать, хорошо ли тебе сидится?"), 'alice_about_defend_punish0', "all([alice.dcv.private.enabled, alice.dcv.private.stage==0, alice.dcv.private.lost>1])"),
     'a.privpun1'    : TalkTheme('alice', _("Не слабо тебя отшлёпали!"), 'alice_about_defend_punish1', "all([alice.dcv.private.stage==2, alice.dcv.private.lost>1])"),
     'a.privpun2'    : TalkTheme('alice', _("Ты не передумала о наказаниях?"), 'alice_about_defend_punish1.cont', "all([alice.dcv.private.stage==3, alice.dcv.private.lost>1])"),
@@ -174,7 +175,6 @@ define talks = {
     'ann.yoga0'     : TalkTheme('ann', _("С тобой можно?"), 'ann_yoga_with_max0', "all([ann.plan_name=='yoga', ann.dcv.feature.stage==4, ann.dcv.feature.done])"),
     'ann.yoga1'     : TalkTheme('ann', _("Я присоединюсь?"), 'ann_yoga_with_maxr', "all([ann.plan_name=='yoga', ann.dcv.feature.stage>4, ann.dcv.feature.done])"),
     'm.wallet'      : TalkTheme('ann', "Да не крал я у него ничего! Он всех обманывает!", 'ann_about_wallet', "all([flags.eric_wallet == 2, not ann.flags.talkblock])"),
-    # 'm.showdown'    : TalkTheme('ann', _(""), 'ann_about_showdown', "all([flags.eric_wallet==4, not ann.flags.showdown_e])"),
 
     'eric.money'    : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([not eric.daily.ask_money, GetRelMax('eric')[0]>3, 'money' in flags.bonus_from_eric])"),
     'eric.wtf'      : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "all([flags.voy_stage==1, GetRelMax('eric')[0]>0])"),
@@ -194,7 +194,6 @@ define talks = {
     'kt_ft1'        : TalkTheme('kira', _("Понравились фотографии?"), 'kira_about_photo1', "all([kira.dcv.feature.done, kira.dcv.feature.stage==6, kira.plan_name=='sun'])"),
     'kt_cuni'       : TalkTheme('kira', _("Не злишься на меня, тётя Кира?"), 'kira_about_cuni', "all([kira.dcv.sweets.done, kira.flags.promise, kira.plan_name=='sun'])"),
     'kt.ft2'        : TalkTheme('kira', _("Так когда будем снова фотографироваться, тётя Кира?"), 'kira_about_photo2', "all([kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"),
-    # 'ann.secr0'     : TalkTheme('kira', _("Тётя Кира, когда ты уже с мамой поговоришь?!"), 'kira_about_ann_secret0', "all([kira.plan_name=='sun', not ann.dcv.feature.stage, flags.lisa_sexed>=2])"),
     'ann.secr0'     : TalkTheme('kira', _("Тётя Кира, когда ты уже с мамой поговоришь?!"), 'kira_about_ann_secret0', "all([kira.plan_name=='sun', not ann.dcv.feature.stage, flags.lisa_sexed>=1, alice.dcv.intrusion.enabled, alice.dcv.intrusion.lost<3, kira.dcv.photo.stage>1])"),
     'ann.secr2'     : TalkTheme('kira', _("Я хотел спросить про тот случай из детства мамы..."), 'kira_about_ann_secret2', "all([kira.plan_name=='sun', ann.dcv.feature.stage==2, ann.dcv.feature.done])"),
     'ann.secr_r'    : TalkTheme('kira', _("Расскажи уже про тот случай из детства мамы..."), 'kira_about_ann_secret_r', "all([kira.plan_name=='sun', ann.dcv.feature.stage==3, ann.dcv.feature.done])"),
@@ -211,7 +210,6 @@ define talks = {
     'lisa_mw2'      : TalkTheme('lisa', _("Хотел поговорить о Большом Максе..."), 'Lisa_MorningWoodCont', "dcv.mw.stage==3 and current_room==house[0]"),
     'lisa_mw3'      : TalkTheme('lisa', _("А ты у нас шалунья, оказывается..."), 'Lisa_MorningWoodCont', "dcv.mw.stage==5 and current_room==house[0]"),
     'lisa_sg1'      : TalkTheme('lisa', _("Насчёт успеваемости..."), 'Lisa_sg1', "poss['sg'].st() == 0"),
-    # 'lisa_sg2'      : TalkTheme('lisa', _("Ну как, ты подумала о моих условиях?"), 'Lisa_sg2', "poss['sg'].st() == 1 and lisa.flags.pun > 0"),
     'lisa_hw'       : TalkTheme('lisa', _("Помочь с уроками?"), 'Lisa_HomeWork', "poss['sg'].st() > 1 and not lisa.daily.homework and lisa.plan_name == 'homework'"),
     'lisa_peep'     : TalkTheme('lisa', _("Хотел извиниться за утренний инцидент..."), 'Lisa_sorry', "lisa.daily.shower==3 and lisa.dcv.shower.done"),
     'lisa_gift'     : TalkTheme('lisa', _("У меня для тебя обещанная вкусняшка!"), 'lisa_sorry_gifts', "all([lisa.sorry.owe, lisa.sorry.there_in_stock(), lisa.plan_name in ['sun', 'read', 'phone']])"),

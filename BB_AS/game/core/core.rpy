@@ -88,6 +88,8 @@ label Waiting:
     if not at_comp:
         call after_buying from _call_after_buying
 
+    $ mood = 0
+
     if name_label != '' and renpy.has_label(name_label):
         # "запуск [name_label]"
         # если есть кат-событие - запускаем его
@@ -114,6 +116,7 @@ label Waiting:
 label eric_time_settings:
 
     if flags.eric_banished:
+        $ flags.eric_jerk = False
         if prevtime < '17:00' <= tm:
             if weekday in [1, 2, 3, 4, 5]:
                 $ infl[ann].add_e(10)  # Ане начисляем каждый день, когда она на работе
@@ -399,7 +402,7 @@ label NewWeek:
     $ flags.noclub = False
     $ flags.trick = False
 
-    if 'eric' in chars and eric_obligation.get_debt():
+    if 'eric' in chars and eric_obligation.get_debt() and flags.eric_wallet == 0:
         # Макс не заплатил Эрику дань, запускается кошелёк
         $ eric_obligation.volume = 0
         $ flags.eric_wallet = 1
@@ -430,6 +433,8 @@ label AfterWaiting:
     $ CamShow()
 
     $ MoodNeutralize()
+
+    $ mood = 0
 
     if any([prevday != day, prevtime != tm]):
         python:
@@ -495,29 +500,30 @@ label AfterWaiting:
     $ SetAvailableActions()
 
     ## проверяем, не пора ли открыть костюмы для главного меню
-    if len(persistent.mm_cookies) >= 4: 
-        if 'kira' in chars and 'swim' not in menu_chars['Kira'].get_open_clot():
-            # купальники
-            if all(['casual_d' in persistent.mm_cookies['lisa'],
-                    'casual_d' in persistent.mm_cookies['alice'],
-                    'casual_d' in persistent.mm_cookies['ann'],
-                    'casual_d' in persistent.mm_cookies['kira']]):
-                $ menu_chars['Lisa'].open('swim')
-                $ menu_chars['Alice'].open('swim')
-                $ menu_chars['Ann'].open('swim')
-                $ menu_chars['Kira'].open('swim')
-
-        if 'kira' in chars and 'sleep0' not in menu_chars['Kira'].get_open_clot():
-            # нижнее бельё
-            if all(['swim' in persistent.mm_cookies['lisa'],
-                    'swim' in persistent.mm_cookies['alice'],
-                    'swim' in persistent.mm_cookies['ann'],
-                    'swim' in persistent.mm_cookies['kira']]):
-                $ menu_chars['Lisa'].open('sleep0')
-                $ menu_chars['Alice'].open('sleep0')
-                $ menu_chars['Alice'].open('sleep1')
-                $ menu_chars['Ann'].open('sleep0')
-                $ menu_chars['Kira'].open('sleep0')
+    if 'kira' in persistent.mems_var:
+        $ open_cookies()
+        # if 'kira' in chars and 'swim' not in menu_chars['Kira'].get_open_clot():
+        #     # купальники
+        #     if all(['casual_d' in persistent.mm_cookies['lisa'],
+        #             'casual_d' in persistent.mm_cookies['alice'],
+        #             'casual_d' in persistent.mm_cookies['ann'],
+        #             'casual_d' in persistent.mm_cookies['kira']]):
+        #         $ menu_chars['Lisa'].open('swim')
+        #         $ menu_chars['Alice'].open('swim')
+        #         $ menu_chars['Ann'].open('swim')
+        #         $ menu_chars['Kira'].open('swim')
+        #
+        # if 'kira' in chars and 'sleep0' not in menu_chars['Kira'].get_open_clot():
+        #     # нижнее бельё
+        #     if all(['swim' in persistent.mm_cookies['lisa'],
+        #             'swim' in persistent.mm_cookies['alice'],
+        #             'swim' in persistent.mm_cookies['ann'],
+        #             'swim' in persistent.mm_cookies['kira']]):
+        #         $ menu_chars['Lisa'].open('sleep0')
+        #         $ menu_chars['Alice'].open('sleep0')
+        #         $ menu_chars['Alice'].open('sleep1')
+        #         $ menu_chars['Ann'].open('sleep0')
+        #         $ menu_chars['Kira'].open('sleep0')
 
     ## случайное попадание на переодевания
     call random_dressed from _call_random_dressed
@@ -643,7 +649,7 @@ label random_dressed:
                 $ ann.hourly.dressed = 1
                 call ann_dressed.stay_in_room from _call_ann_dressed_stay_in_room
 
-            elif random_outcome(25):
+            elif all([current_room != prev_room, current_room == house[2], random_outcome(25)]):
                 # Макс входит в комнату Анны
                 $ ann.daily.dressed += 1
                 call ann_dressed.moment0 from _call_ann_dressed_moment0    # "нулевой"
@@ -708,18 +714,18 @@ label chance_dressing_roll(persone=''):
         if ann.daily.dressed in [0, 1]:
             if random_outcome(40):
                 $ ann.daily.dressed += 1
-                # call ann_dressed.moment0    # "нулевой"
+                call ann_dressed.moment0 from _call_ann_dressed_moment0_2    # "нулевой"
             elif random_outcome(35):
                 $ ann.daily.dressed += 2
-                # call ann_dressed.moment1    # неповезло
+                call ann_dressed.moment1 from _call_ann_dressed_moment1_1    # неповезло
             elif random_outcome(25):
                 $ ann.daily.dressed += 2
-                # call ann_dressed.moment2    # повезло
+                call ann_dressed.moment2 from _call_ann_dressed_moment2_1    # повезло
 
         elif ann.daily.dressed in [0, 2] and random_outcome(25):
             # уже попадали на переодевание, с шансом в 30% можем попасть на "нулевой момент"
             $ ann.daily.dressed += 1
-            # call ann_dressed.moment0    # "нулевой"
+            call ann_dressed.moment0 from _call_ann_dressed_moment0_3    # "нулевой"
 
     return
 
@@ -935,14 +941,14 @@ label after_load:
         return
 
     if 'current_ver' in globals():
-        # if config.developer:
-        #     "ver [current_ver], _ver [_version], conf.ver [config.version]"
+        if config.developer:
+            "ver [current_ver], _ver [_version], conf.ver [config.version]"
 
         if _version < current_ver or current_ver < "0.06.0.999":
             call old_fix from _call_old_fix
 
-    # elif config.developer:
-    #     "_ver [_version], conf.ver [config.version]"
+    elif config.developer:
+        "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
 
@@ -970,6 +976,7 @@ label after_load:
         call update_06_6_99 from _call_update_06_6_99
         call update_07_0_99 from _call_update_07_0_99
         call update_07_p1_99 from _call_update_07_p1_99
+        call update_07_p2_99 from _call_update_07_p2_99
 
         $ _version = config.version
 
@@ -1015,6 +1022,28 @@ label after_load:
             call lisa_read from _call_lisa_read
         elif 'olivia' in chars and all([current_room == house[0], lisa.plan_name == 'sleep2']):
             call olivia_lisa_sleep from _call_olivia_lisa_sleep
+
+    if alice.flags.showdown_e and not poss['blog'].used(21):
+        $ poss['blog'].open(21)
+
+    if GetKolCams(house)>6 and not poss['cams'].used(5):
+        $ poss['cams'].open(5)
+
+    if alice.dcv.photo.stage > 1:
+        if poss['blog'].open(7):
+            if '01-Alice' not in persistent.photos or not persistent.photos['01-Alice'][0]:
+                $ append_album('01-Alice', ['01', '02', '03', '04'])
+                if expected_photo == ['01', '02', '03', '04']:
+                    $ expected_photo.clear()
+
+        elif poss['blog'].used(8):
+            if '01-Alice' not in persistent.photos or not persistent.photos['01-Alice'][5]:
+                $ append_album('01-Alice', ['01', '02', '03', '04', '05', '06', '07', '08'])
+                if expected_photo == ['01', '02', '03', '04', '05', '06', '07', '08']:
+                    $ expected_photo.clear()
+
+    if 'kira' in persistent.mems_var:
+        $ open_cookies()
 
     return
 
@@ -1767,7 +1796,7 @@ label update_07_p1_99:
                 $ poss['seduction'].open(26)
             ########
 
-        if kira.dcv.feature.stage == 11 and len(expected_photo) == 10:
+        if 'kira' in chars and kira.dcv.feature.stage == 11 and len(expected_photo) == 10:
             $ expected_photo.clear()
 
     if all([poss['SoC'].used(16), not lisa.flags.topless, lisa.dcv.special.stage < 5]):
@@ -1778,3 +1807,6 @@ label update_07_p1_99:
     if _version < '0.07.p1.32':
         call InitActions from _call_InitActions_1
         $ SetAvailableActions()
+
+label update_07_p2_99:
+    pass

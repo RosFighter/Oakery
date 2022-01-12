@@ -103,6 +103,9 @@ init python:
         elif all([weekday==5, olivia.dcv.special.stage==1, olivia.dcv.feature.stage<5]):
             # пятница, после первых ночных посиделок, разговора с Оливией после ночного визита ещё не было
             rez = 5
+        elif all([weekday==5, olivia.dcv.feature.stage>4, olivia.dcv.special.done, flags.eric_banished]):
+            # пятница, после изгнания Эрика Оливия приходит днём
+            rez = 6
 
         return rez
 
@@ -110,6 +113,10 @@ init python:
     # Оливия приходит на ночные посиделки
     def olivia_nightvisits():
         if 'olivia' not in chars:
+            return 0
+
+        if flags.eric_banished:
+            # после изгнания Эрика Оливия приходит только днём
             return 0
 
         rez = 0
@@ -254,6 +261,10 @@ init python:
         # количество найденых печенек на одну меньше текущего номера
         # определим количество уже найденных печенек данной одежды персонажа
         # и прибавим единичку
+
+        if _in_replay:
+            return False
+
         try:
             fc = len(persistent.mm_cookies[cookie.char][cookie.clot]) + 1
         except:
@@ -263,6 +274,9 @@ init python:
             rez = eval(cookie.req)
         except:
             rez = True  # если условие ошибочно прописано, считаем, что оно выполняется
+
+        if 'kira' not in chars:
+            return False
 
         if all([
                 #  открыт тип одежду у персонажа
@@ -286,4 +300,59 @@ init python:
             kira.dcv.photo.stage > 2,           # состоялась третья фотосессия
             kira.stat.handjob > 1,              # получена периодическая дрочка в бассейне
             not kira.flags.promise,             # за Максом нет долга по куни
+            ])
+
+
+    # Алиса загорает топлес после нанесения крема
+    def alice_sun_topless():
+        return alice.plan_name == 'sun' and alice.daily.oiled in [2, 4]
+
+
+    # возвращает стадию событий по вручению кружевного белья Алисе
+    def get_stage_sexbody2():
+        if not alice.dcv.intrusion.enabled:
+            # Эрик ещё не вмешивался в блог Алисы
+            return 0
+        elif flags.eric_banished:
+            #  Эрик изгнан
+            return 1
+        elif all([alice.dcv.intrusion.enabled, 4 > alice.dcv.intrusion.lost > 1, alice.dcv.intrusion.stage < 1]):
+            # Эрик прорвёл первый совместный блог с Алисой, Макс ещё не знает о покупке Эриком белья
+            return 2
+        elif all([alice.dcv.intrusion.enabled, 4 > alice.dcv.intrusion.lost > 1, alice.dcv.intrusion.stage == 1]):
+            # Макс знает о покупке Эриком белья, но ещё не говорил об этом с Алисой
+            return 3
+        elif all([alice.dcv.intrusion.enabled, 4 > alice.dcv.intrusion.lost > 1, alice.dcv.intrusion.stage == 2]):
+            # Макс знает о покупке Эриком белья, но подошёл к Алисе не вовремя
+            return 4
+        elif all([alice.dcv.intrusion.enabled, 4 > alice.dcv.intrusion.lost > 1, alice.dcv.intrusion.stage == 3]):
+            # Макс знает о покупке Эриком белья и знает, какое именно нужно, т.е. может купить
+            return 5
+        elif all([alice.dcv.intrusion.enabled, alice.dcv.intrusion.stage == 5]):
+            # Макс подарил Алисе кружевное боди, но ещё не разговаривал после этого с Эриком
+            return 6
+        elif all([alice.dcv.intrusion.enabled, alice.dcv.intrusion.stage == 7]):
+            # Макс подарил Алисе кружевное боди, и поговорил после этого с Эриком
+            return 7
+        elif all([alice.dcv.intrusion.enabled, alice.dcv.intrusion.done, alice.dcv.intrusion.stage < 5]):
+            # срок вышел и теперь боди Алисе купит Эрик
+            return 8
+        elif all([alice.dcv.intrusion.enabled, alice.dcv.intrusion.done, alice.dcv.intrusion.stage == 8]):
+            # срок вышел и Эрик купил боди Алисе (но она его ещё не примеряла при нём)
+            return 9
+        elif all([alice.dcv.intrusion.enabled, alice.dcv.intrusion.done, alice.dcv.intrusion.stage == 9]):
+            # Эрик купил боди Алисе и она примеряла боди при нём
+            return 10
+
+        return 'bag'
+
+
+    # Макс может подарить Алисе кружевное боди
+    def can_give_sexbody2():
+        return all([
+            not alice.dcv.intrusion.done,       # срок, когда Эрик купит боди, ещё не пришёл
+            alice.dcv.intrusion.stage > 2,      # Макс знает, какое именно боди нужно Алисе
+            weekday in [4, 5],                  # боди можно подарить в четверг или пятницу
+            alice.dcv.intrusion.lost in [1, 2], # когда откату осталось 1-2 дня
+            items['sexbody2'].have,             # у Макса есть кружевное боди
             ])

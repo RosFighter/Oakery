@@ -3445,11 +3445,91 @@ translate german kira_about_showdown_81762133:
 translate german kira_about_showdown_7aadc7ab:
 
     # Kira_00 "Понимаю. Все в нём души не чаяли и вдруг такой облом... А я радуюсь! Радуюсь тому, что ты, наконец-то, избавил меня от этого шантажиста. Ты просто не представляешь, что приходилось делать для этого мерзавца. Спасибо тебе огромное!"
-    Kira_00 "Ich weiß. Alle hatten ihn so gern, und plötzlich ist er ein Mistkerl... Das freut mich! Ich bin froh, dass du mich endlich von diesem Erpresser befreit hast. Du hast keine Ahnung, was ich für diesen Bastard tun musste. Ich danke dir vielmals."
+    Kira_00 "Ich weiß. Alle hatten ihn so gern, und plötzlich ist er ein Mistkerl... Das freut mich! Ich bin froh, dass du mich endlich von diesem Erpresser befreit hast. Du hast keine Ahnung, was ich für diesen Bastard tun musste. Ich danke dir vielmals!"
 
 # game/dialogues/kiratalk.rpy:1538
 translate german kira_about_showdown_023a77c7:
 
     # Max_00 "Уж извини, что тебе так досталось."
     Max_00 "Es tut mir leid, dass du das durchmachen musstest."
+
+# TODO: Translation updated at 2022-01-04 00:24
+
+# game/dialogues/kiratalk.rpy:1531
+translate german kira_about_showdown_ba6880b8:
+
+    # Kira_01 "Про Эрика? Слышала..."
+    Kira_01 "Wegen Eric? Ich habe gehört..."
+
+# game/dialogues/kiratalk.rpy:1532
+translate german kira_about_showdown_a4fc2839:
+
+    # Max_04 "Ну и как настроение?"
+    Max_04 "Und wie ist die Stimmung?"
+
+# game/dialogues/kiratalk.rpy:1533
+translate german kira_about_showdown_4a2ecab1:
+
+    # Kira_05 "Настроение? Потрясающее! Такое ощущение, что в доме даже стало легче дышать! Правда все девочки ходят ещё немного опустошённые..."
+    Kira_05 "Die Stimmung? Es ist fantastisch! Es fühlt sich an, als würde das Haus sogar leichter atmen! Wie geht es den Mädchen? Wahrscheinlich am Boden zerstört oder schockiert..."
+
+# game/dialogues/kiratalk.rpy:1534
+translate german kira_about_showdown_8ff8e9b7:
+
+    # Max_07 "Ну да, это всё из-за правды об Эрике."
+    Max_07 "Nun ja, es geht um die Wahrheit über Eric."
+
+# game/dialogues/kiratalk.rpy:1538
+translate german kira_about_showdown_27d35e53:
+
+    # Kira_03 "Понимаю. Все в нём души не чаяли и вдруг такой облом... А я радуюсь! Радуюсь тому, что ты, наконец-то, избавил меня от этого шантажиста. Ты просто не представляешь, что приходилось делать для этого мерзавца. Спасибо тебе огромное!"
+    Kira_03 "Ich weiß. Alle hatten ihn so gern, und plötzlich ist er ein Mistkerl... Das freut mich! Ich bin froh, dass du mich endlich von diesem Erpresser befreit hast. Du hast keine Ahnung, was ich für diesen Bastard tun musste. Ich danke dir vielmals!"
+
+# game/dialogues/kiratalk.rpy:1539
+translate german kira_about_showdown_15d3b212:
+
+    # Max_10 "Уж извини, что тебе так досталось."
+    Max_10 "Es tut mir leid, dass du das durchmachen musstest."
+
+# game/dialogues/kiratalk.rpy:1540
+translate german kira_about_showdown_d25e8b6a:
+
+    # Kira_15 "Я переживу, Макс. Не знаю, каким чудом он ещё не узнал, что я порно-актриса! Наверняка бы сразу все свои наигрязнейшие фантазии стал воплощать в жизнь..."
+    Kira_15 "Ich werde darüber hinwegkommen, Max. Ich verstehe nicht, wie er nicht erfahren hat, dass ich eine Pornodarstellerin bin! Ich bin sicher, er hätte sofort angefangen, seine schmutzigen Fantasien auszuleben..."
+
+# game/dialogues/kiratalk.rpy:1543
+translate german kira_about_showdown_27400ec2:
+
+    # Kira_03 "Понимаю. Все в нём души не чаяли и вдруг такой облом - пригрели под своей крышей матёрого извращенца! А я радуюсь! Радуюсь тому, что моя сестра наконец-то послала этого ублюдка. Спасибо огромное, Макс, это всё благодаря тебе!"
+    Kira_03 "Ich verstehe. Alle waren verrückt nach ihm, und plötzlich ist es furchtbar, einen Perversen unter dem eigenen Dach zu haben. Und ich bin froh darüber! Ich bin froh, dass meine Schwester den Mistkerl endlich rausgeworfen hat. Vielen Dank, Max, das ist alles dein Verdienst!"
+
+# game/dialogues/kiratalk.rpy:1544
+translate german kira_about_showdown_dce05986:
+
+    # Max_10 "Не за что. Обращайтесь, если что. А, вообще, меня это тоже касалось, как никого другого. Он меня и вором выставил перед всеми... и в лагерь хотел сослать..."
+    Max_10 "Gern geschehen. Wenn du etwas brauchst, sag Bescheid. Tatsächlich hat es mich auch mehr getroffen als alle anderen. Er hat mich vor allen wie einen Dieb aussehen lassen... und wollte mich in ein Erziehungslager schicken..."
+
+# game/dialogues/kiratalk.rpy:1545
+translate german kira_about_showdown_955714a1:
+
+    # Kira_14 "Да, это всё было бы крайне печально... То, что здесь началось бы без тебя."
+    Kira_14 "Ja, das wäre alles sehr furchtbar gewesen... Was hätte ich hier ohne dich nur angefangen."
+
+# game/dialogues/kiratalk.rpy:1547
+translate german kira_about_showdown_3728113c:
+
+    # Max_03 "Нашла о чём думать! Всё уже в прошлом."
+    Max_03 "Du hast eine Menge um die Ohren! Das ist jetzt alles Vergangenheit."
+
+# game/dialogues/kiratalk.rpy:1548
+translate german kira_about_showdown_51718959:
+
+    # Kira_07 "Мне нравится, как это звучит! Надеюсь, девочки совсем скоро придут в себя и всё будет, как раньше!"
+    Kira_07 "Das hört sich gut an! Hoffentlich finden die Mädchen bald wieder zu sich und die Dinge werden wieder normal!"
+
+# game/dialogues/kiratalk.rpy:1549
+translate german kira_about_showdown_95a9e818:
+
+    # Max_01 "Я тоже на это надеюсь!"
+    Max_01 "Ich hoffe es auch!"
 

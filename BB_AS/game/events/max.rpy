@@ -821,7 +821,7 @@ label InstallCam:
     $ items['hide_cam'].use()
     $ cur_ratio = 1.5
     $ spent_time = 30
-    if GetKolCams(house)>7:
+    if GetKolCams(house)>6:
         $ poss['cams'].open(5)
         if house[3].max_cam < 2:
             $ items['hide_cam'].block()

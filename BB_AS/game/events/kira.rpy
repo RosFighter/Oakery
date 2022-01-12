@@ -17,7 +17,7 @@ label kira_bath:
     scene location house bathroom door-evening
     if kira.daily.bath != 0:
         return
-    if all([wcv.catch_Kira.stage, not flags.eric_jerk, not eric.daily.sweets]):
+    if wcv.catch_Kira.stage and not any([flags.eric_jerk, eric.daily.sweets, flags.eric_banished]):
         return
 
     $ renpy.dynamic('ch_catch', 'catch', 'r1')
@@ -181,6 +181,8 @@ label kira_bath:
         elif flags.eric_jerk:                           # Эрик дрочит на Алису
             $ ch_catch = 0
         elif eric.daily.sweets:                         # Эрик под таблетками
+            $ ch_catch = 0
+        elif flags.eric_banished:                       # Эрик изгнан
             $ ch_catch = 0
         elif wcv.catch_Kira.stage > 2:
             $ ch_catch = 0
@@ -635,6 +637,8 @@ label kira_bath:
         elif flags.eric_jerk:                           # Эрик дрочит на Алису
             $ ch_catch = 0
         elif eric.daily.sweets:                         # Эрик под таблетками
+            $ ch_catch = 0
+        elif flags.eric_banished:                       # Эрик изгнан
             $ ch_catch = 0
         elif wcv.catch_Kira.stage > 2:
             $ ch_catch = 0

@@ -497,11 +497,12 @@ screen main_menu():
         text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
         text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
-    imagebutton:
-        idle "interface mm clothing"
-        action Show('changes_menu_clot')
-        pos 983, 23
-        at main_menu_btn
+    if 'kira' in persistent.mems_var:
+        imagebutton:
+            idle "interface mm clothing"
+            action Show('changes_menu_clot')
+            pos 983, 23
+            at main_menu_btn
 
     # imagebutton:
     #     idle "interface patreon logo"
