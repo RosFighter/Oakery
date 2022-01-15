@@ -801,7 +801,7 @@ label restore_relations:
 
     $ eric.dcv.battle.set_lost(61)      # откат Эрика 2 месяца
 
-    if wcv.catch_Kira.stage:
+    if wcv.catch_Kira.stage > 0:
         $ wcv.catch_Kira.stage = 3      # Если Эрик "палил" Макса с Лизой
 
     $ notify_list.append(__("{g}Отношения Макса с семьёй значительно улучшились.{/g}"))

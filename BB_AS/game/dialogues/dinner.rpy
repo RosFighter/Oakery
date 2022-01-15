@@ -12,7 +12,7 @@ label after_dinner:
     elif not weekday and alice.dcv.battle.stage==5 and not alice.dcv.intrusion.enabled:
         $ alice.dcv.intrusion.set_lost(6)
 
-    if len(punlisa)>1 and punlisa[0][1] == 1:
+    if all([len(punlisa) > 1, punlisa[0][1] == 1, lisa.relmax >= 0]):
         # Лиза получила двойку
         if poss['sg'].st() == 1:
             # "плохой" путь

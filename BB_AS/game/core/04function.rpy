@@ -206,7 +206,7 @@ init python:
         talkslist = []
 
         for i in talks:
-            if len(current_room.cur_char) == 1 and type(talks[i].char)==str:
+            if len(current_room.cur_char) == 1 and isinstance(talks[i].char, (str, basestring)):
                 # один персонаж
                 if talks[i].char == current_room.cur_char[0]:
                     try:
@@ -220,7 +220,7 @@ init python:
 
                     if rez:
                         talkslist.append(i)
-            elif type(talks[i].char)==list:
+            elif isinstance(talks[i].char, list):
                 # несколько персонажей
                 if sorted(current_room.cur_char) == sorted(talks[i].char):
                     try:
@@ -248,7 +248,7 @@ init python:
 
         if len(current_room.cur_char) == 1 and current_room.cur_char[0] in gifts:
             for gift in gifts[current_room.cur_char[0]]:
-                if type(gift.item) == list:
+                if isinstance(gift.item, list):
                     have = False
                     for it in gift.item:
                         if items[it].have:
@@ -1428,3 +1428,9 @@ init python:
         return new_lang
 
     Get_Language_List = renpy.curry(get_lang_list)
+
+    def get_pose(pose_dict, pose_var):
+        if pose_var in pose_dict:
+            return pose_dict[pose_var]
+        else:
+            return pose_dict.values()[0]

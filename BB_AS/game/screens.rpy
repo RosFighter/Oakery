@@ -727,7 +727,7 @@ init python:
             load_wd = ''
             load_tm = ''
             load_day = ''
-            s_desc =_('(Нет описания)')
+            s_desc = renpy.translate_string(_('(Нет описания)'))
 
 
         return (s_desc, load_wd, load_tm, load_day)

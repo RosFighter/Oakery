@@ -302,11 +302,14 @@ label set_lisa_schedule:
         Schedule((0, 6), '17:0', '18:59', 'read', "читает", 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
         Schedule((0, 1, 2, 3, 4, 5, 6), '19:0', '19:59', 'dinner', "семейный ужин", 'house', 5, 'dinner', enabletalk=False, glow=105),
         Schedule((0, 2, 3, 4, 5, 6), '20:0', '20:59', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', talklabel='lisa_dishes_closer'),
+
         Schedule((1, ), '20:00', '20:29', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable="flags.lisa_sexed < 7", talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:00', '20:29', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable="'eric' in chars and flags.lisa_sexed > 6 and any([lisa.dcv.intrusion.stage > 3, eric.daily.sweets, flags.eric_wallet, GetRelMax('eric')[0] > 0])", talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:00', '20:29', 'practice', 'практика с Эриком', 'house', 0, 'lisa_eric_sex_ed_practice', variable="'eric' in chars and all([flags.lisa_sexed > 6, lisa.dcv.intrusion.stage==3, not flags.eric_wallet, not eric.daily.sweets, GetRelMax('eric')[0] < 0])", enabletalk=False, glow=150),
+
         Schedule((1, ), '20:30', '20:59', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable='not dishes_washed', talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:30', '20:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', variable='dishes_washed', talklabel='lisa_phone_closer', glow=105),
+
         Schedule((0, 1, 2, 3, 4, 5, 6), '21:0', '21:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', talklabel='lisa_phone_closer', glow=105),
         Schedule((1, ), '22:0', '22:29', 'bath', "принимает ванну", 'house', 3, 'lisa_bath', variable="not lisa.dcv.intrusion.stage", enabletalk=False, glow=120),
         Schedule((1, ), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="lisa.dcv.intrusion.stage and flags.lisa_sexed<0", enabletalk=False, glow=120),

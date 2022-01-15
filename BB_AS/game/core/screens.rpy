@@ -995,7 +995,7 @@ screen room_navigation():
         $ public += cam.public
     $ public = int(public)
 
-    if type(persone_button1) == list:
+    if isinstance(persone_button1, list):
         if persone_button1[0] and exist_btn_image(persone_button1[0]) and not chars[current_room.cur_char[0]].hourly.talkblock:
             imagebutton idle persone_button1[0]:
                 if persone_button1[1] and exist_btn_image(persone_button1[1]):
@@ -1386,7 +1386,7 @@ screen menu_opportunity():
                                 vbar value YScrollValue('vp2') style 'poss_vscroll'
                     else:
                         if ShowHint:
-                            if type(zero_hints[CurPoss]) == str:
+                            if isinstance(zero_hints[CurPoss], (str, basestring)):
                                 frame area (0, 0, 1190, 400) background None:
                                     hbox:
                                         viewport mousewheel 'change' draggable True id 'vp2':

@@ -155,11 +155,11 @@ init python:
         # активирует одежду для смены вручную (конкретную или список)
         def enable(self, nums, cur=None):
             added = False
-            if type(nums) == int:
+            if isinstance(nums, int):
                 if not self.sel[nums].rand:
                     added = True
                 self.sel[nums].enable()
-            elif type(nums) in [tuple, list]:
+            elif isinstance(nums, (tuple, list)):
                 for k in nums:
                     if not self.sel[k].rand:
                         added = True
@@ -169,20 +169,20 @@ init python:
             elif added:
                 self.rand = True
                 self.left = 1 + self.days*2
-                if type(nums) == int:
+                if isinstance(nums, int):
                     self.cur = nums
-                elif type(nums) in [tuple, list]:
+                elif isinstance(nums, (tuple, list)):
                     self.cur = max(nums)
                     self.rand   = True
 
         # активирует одежду для рандомной смены (конкретную или список)
         def rand_enable(self, nums=[]):
             added = False
-            if type(nums) == int:
+            if isinstance(nums, int):
                 if not self.sel[nums].rand:
                     self.sel[nums].rand_enable()
                     added = True
-            elif type(nums) in [tuple, list]:
+            elif isinstance(nums, (tuple, list)):
                 for k in nums:
                     if not self.sel[k].rand:
                         self.sel[k].rand_enable()
@@ -191,18 +191,18 @@ init python:
             if added:
                 self.rand = True
                 self.left = 1 + self.days * 2
-                if type(nums) == int:
+                if isinstance(nums, int):
                     self.cur = nums
-                elif type(nums) in [tuple, list]:
+                elif isinstance(nums, (tuple, list)):
                     self.cur    = max(nums)
 
         # закрывает доступ
         def disable(self, nums):
-            if type(nums) == int:
+            if isinstance(nums, int):
                 self.sel[nums].disable()
                 if self.cur == nums:
                     self.SetRand()
-            elif type(nums) in [tuple, list]:
+            elif isinstance(nums, (tuple, list)):
                 for k in nums:
                     self.sel[k].disable()
                 if self.cur in nums:
@@ -592,7 +592,7 @@ init python:
                     continue
 
                 dcv = getattr(self, attr)
-                if type(dcv) != Daily:
+                if not isinstance(dcv, Daily):
                     continue
 
                 if dcv.enabled and dcv.lost>0:
@@ -697,7 +697,7 @@ init python:
         # добавляет в расписание запись или блок связанных записей
         def add_sched_rec(self, *add_rec):
             new_plan = []
-            if type(add_rec[0]) == list:
+            if isinstance(add_rec[0], list):
                 zap = add_rec[0][0]
             else:
                 zap = add_rec[0]
@@ -728,7 +728,7 @@ init python:
                     new_plan.append(rec)
 
             for rec in add_rec:
-                if type(rec) == list:
+                if isinstance(rec, list):
                     new_plan.extend(rec)
                 else:
                     new_plan.append(rec)
@@ -1322,7 +1322,7 @@ init python:
             self.stages[stage] = 1
 
         def used(self, stage):      # проверяет, задействован ли этап возможности
-            if type(self.stages[stage]) == PossStage:
+            if isinstance(self.stages[stage], PossStage):
                 return self.stages[stage].used
             else:
                 return self.stages[stage]   #.used
@@ -1392,7 +1392,7 @@ init python:
                     continue
 
                 dcv = getattr(self, attr)
-                if type(dcv) != Daily:
+                if not isinstance(dcv, Daily):
                     continue
 
                 if dcv.enabled and dcv.lost>0:
@@ -1439,7 +1439,7 @@ init python:
                     continue
 
                 dcv = getattr(self, attr)
-                if type(dcv) != Weekly:
+                if not isinstance(dcv, Weekly):
                     continue
 
                 if dcv.enabled and dcv.lost>0:
@@ -1521,7 +1521,7 @@ init python:
             lst = []
             for attr in Events_by_time.__dict__:
                 cut = getattr(Events_by_time, attr)
-                if type(cut) != CutEvent:
+                if not isinstance(cut, CutEvent):
                     continue
 
                 resp = False
@@ -2058,9 +2058,9 @@ init python:
     #         return dop(tday, ttm, ctm, ll, ul, ddop)
     #
     #     def to_str(self, val):
-    #         if type(val)==float:
+    #         if isinstance(val, float):
     #             return self.alg3_0('f_'+str(val))
-    #         elif type(val)==int:
+    #         elif isinstance(val, int):
     #             return self.alg3_0('i_'+str(val))
     #         else:
     #             # в остальных случаях на выходе дешифровки будет строка

@@ -3844,7 +3844,7 @@ label lisa_about_ae_sexed2:
     Lisa_01 "Ой, всё, отстань."
 
     $ flags.l_ab_sexed = True
-    $ spent_time += 10
+    $ spent_time += 20
     jump Waiting
 
 
@@ -3937,7 +3937,7 @@ label about_boy3:
     Lisa_01 "Значит, так и сделаю. Спасибо за совет, Макс!"
     Max_01 "Обращайся, если что... И удачи тебе."
 
-    $ spent_time += 30
+    $ spent_time += 10
     $ poss['Schoolmate'].open(1)
     $ lisa.flags.crush = 7
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
@@ -3962,7 +3962,7 @@ label about_olivia_1:
     Lisa_01 "Спасибо. Ладно, попробую..."
     Max_01 "Держи меня в курсе..."
 
-    $ spent_time += 30
+    $ spent_time += 10
     $ poss['Schoolmate'].open(2)
     $ lisa.flags.crush = 8
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
@@ -3992,7 +3992,7 @@ label about_olivia_2:
     Lisa_00 "Ну ладно. Может и получится... В любом случае, других идей нет. Я попробую спросить."
     Max_01 "Вот и молодчинка!"
 
-    $ spent_time += 30
+    $ spent_time += 10
     $ poss['Schoolmate'].open(3)
     $ lisa.flags.crush = 9
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
@@ -4030,7 +4030,7 @@ label about_olivia_3:
     Max_04 "Знаешь, одно другому не мешает. Да и кто я такой, чтобы запрещать ей раздеваться, если ей так это нравится!"
     Lisa_02 "Какие вы мальчики озабоченные! Ну да ладно... Я позову её в гости, а ты смотри не спугни мою подружку своим... озабоченным дружком..."
 
-    $ spent_time += 30
+    $ spent_time += 20
     $ poss['Schoolmate'].open(4)
     $ lisa.flags.crush = 10
     $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
@@ -4057,7 +4057,7 @@ label about_olivia_4:
     Lisa_01 "Спасибо, надеюсь так и будет..."
     Max_01 "Конечно."
 
-    $ spent_time += 30
+    $ spent_time += 10
     $ lisa.flags.crush = 11
     $ lisa.dcv.feature.set_lost(1)
     return
@@ -4092,7 +4092,7 @@ label about_alex1:
     Max_07 "Главное - разговаривай с Оливией, чтобы знать, что да как, а не додумывай сама."
     Lisa_01 "Ладно, так и сделаю. Спасибо!"
 
-    $ spent_time += 30
+    $ spent_time += 20
     $ lisa.flags.crush = 13
     if not olivia.dcv.other.stage:
         $ lisa.dcv.feature.set_lost(7)
@@ -4133,7 +4133,7 @@ label about_alex2:
     Max_08 "Понимаю. Надеюсь, всё разрешится само собой."
     Lisa_09 "Я тоже надеюсь."
 
-    $ spent_time += 30
+    $ spent_time += 20
     $ lisa.flags.crush = 14
     if not olivia.dcv.special.lost:     # Оливия должна была придти этой ночью
         $ olivia.dcv.special.set_lost(5)
@@ -4175,7 +4175,7 @@ label about_alex3:
     Lisa_02 "Да, ты прав. Утро вечера мудренее..."
     Max_01 "А то!"
 
-    $ spent_time += 30
+    $ spent_time += 20
     $ lisa.flags.crush = 15
     jump Waiting
 
@@ -4218,7 +4218,7 @@ label about_horror_toples:
     Lisa_01 "Извращенец ты."
     Max_01 "Сама-то."
     $ lisa.dcv.other.stage = 1
-    $ spent_time += 20
+    $ spent_time += 10
     return
 
 
@@ -4588,7 +4588,7 @@ label lisa_about_wallet:
 
     $ notify_list.append(__("{b}Оповещение:{/b} Лиза больше не хочет взаимодействовать с Максом"))
 
-    $ spent_time = 10
+    $ spent_time = 20
     $ lisa.hourly.talkblock = 1
     $ lisa.flags.talkblock = 1
     jump Waiting

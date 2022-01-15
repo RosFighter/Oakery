@@ -27,9 +27,9 @@ init python:
             self.num    = num
             self.req    = req
 
-            if type(lod) == str:
+            if isinstance(lod, (str, basestring)):
                 self.lod = tuple([int(x) for x in lod.replace(', ', ',').split(',')])
-            elif type(lod) == int:
+            elif isinstance(lod, int):
                 self.lod = (lod, )
             else:
                 self.lod = lod
@@ -62,9 +62,11 @@ init python:
             self.ex     = ex    # снимать можно только для экстра
             self.nc     = nc    # требуется "печенек" для снятия
             self.full   = f     # рендер настроек полный (включая тело)
-            if type(over) == str:
+            if isinstance(over, (str, basestring)):
                 self.over = over.replace(', ', ',').split(',')
             else:
+                # if over:
+                #     print n, over, type(over), isinstance(over, (str, basestring))
                 self.over = over # список игнорируемых идентификаторов (при надетых шортах кнопка трусиков неактивна)
             self.eq     = eq    # id одежды-эквивалента (при активации эквивалент деактивируется)
             self.id_lst = idlst # список ключей заменяемых элементов одежды (для составных)
@@ -169,7 +171,7 @@ init python:
                     # все элементы составного рендера содержаться в списке используемых
 
                     # пополним список рендеров
-                    if type(self.clothes[k].r) == str:
+                    if isinstance(self.clothes[k].r, (str, basestring)):
                         rdr_lst.append((self.clothes[k].ind, self.clothes[k].r))
                     else:
                         for i in self.clothes[k].id_lst:
@@ -331,6 +333,9 @@ init python:
             if not extra_content:
                 # активируем "неснимаемые" одёжки для не-экстра
                 for k in var:
+                    if k not in mm_clot_dict[self.id_char][clot].clothes:
+                        print 'bag clothes mm', self.id_char, clot, k
+                        continue
                     if not var[k] and mm_clot_dict[self.id_char][clot].clothes[k].ex:
                         # элемент одежды не активирован, но обязателен в не-экстра
                         if not mm_clot_dict[self.id_char][clot].clothes[k].eq:
@@ -574,7 +579,6 @@ init python:
                 menu_chars['Alice'].open('sleep1')
                 menu_chars['Ann'].open('sleep0')
                 menu_chars['Kira'].open('sleep0')
-
 
 default persistent.mm_chars = {}
 default persistent.mm_cookies = {}

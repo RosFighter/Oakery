@@ -121,6 +121,17 @@ label eric_time_settings:
             if weekday in [1, 2, 3, 4, 5]:
                 $ infl[ann].add_e(10)  # Ане начисляем каждый день, когда она на работе
 
+    # 0.07.p2.06?
+        if day != prevday:
+            # полночь
+            if check_is_home('eric'):
+                # после секса с Эриком
+                $ infl[ann].add_e(20)
+
+            if not check_is_home('ann'):
+                # Аня ночует у Эрика
+                $ infl[ann].add_e(20)
+
         return
 
     if prevtime < '14:00' <= tm:
@@ -464,9 +475,9 @@ label AfterWaiting:
 
     # отключение возможности помыть посуду, если её вымыли Лиза или Алиса
     if not dishes_washed:
-        if tm > '21:00':
+        if tm > '20:30':
             $ dishes_washed = True
-        elif weekday != 6:
+        elif weekday != 6 and tm < '19:00':
             $ name_label = ''
             if not weekday:
                 $ cur_plan = alice.get_plan(day, '10:00')
@@ -1303,7 +1314,7 @@ label update_06_5:
     if _version < "0.06.4.07":
         python:
             if 'kira' in chars:
-                if type(kira.dcv.photo)!=Daily:
+                if not isinstance(kira.dcv.photo, Daily):
                     kira.dcv.photo = Daily()
                     if kira.dcv.feature.stage > 7:
                         kira.dcv.photo.stage = 2
@@ -1809,4 +1820,6 @@ label update_07_p1_99:
         $ SetAvailableActions()
 
 label update_07_p2_99:
-    pass
+
+    if flags.eric_banished and 3 > wcv.catch_Kira.stage > 0:
+        $ wcv.catch_Kira.stage = 3

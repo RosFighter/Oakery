@@ -478,7 +478,7 @@ label alice_talk_tv_massage:
     if rand_result:  ### {i}Алисе понравился массаж!{/i}
         $ alice.flags.m_foot += 1
         # _pose - 01/02
-        $ _pose = {'01':'03', '02':'04'}[_pose]
+        $ _pose = get_pose({'01':'03', '02':'04'}, _pose)
         scene BG tv-mass-03
         $ renpy.show('Alice tv-mass ' + _pose + mgg.dress+alice.dress)
         Alice_04 "[alice_good_mass!t]А ты неплох сегодня в этом деле... Хорошо, что ты никакой не работяга. Руки у тебя нежные. Приятно очень..." nointeract
@@ -698,7 +698,7 @@ label alice_nopants_massage:
         pass
 
     # _pose - 03/04
-    $ _pose = {'03':'05', '04':'06'}[_pose]
+    $ _pose = get_pose({'03':'05', '04':'06'}, _pose)
 
     # tv-mass-05 + tv-mass-(05/06)-max-(01a/01b) + tv-mass-(05/06)-alice-01b + tv-mass-(05/06)-alice-01bn
     scene BG tv-mass-05
@@ -709,7 +709,7 @@ label alice_nopants_massage:
     Max_02 "Не будет."
 
     # _pose - 05/06
-    $ _pose = {'05':'07', '06':'08'}[_pose]
+    $ _pose = get_pose({'05':'07', '06':'08'}, _pose)
 
     # tv-mass-07 + tv-mass-(07/08)-max-(01a/01b) + tv-mass-(07/08)-alice-01b + tv-mass-(07/08)-alice-01bn
     scene BG tv-mass-07
@@ -722,7 +722,7 @@ label alice_nopants_massage:
             pass
 
     # _pose - 07/08
-    $ _pose = {'07':'09', '08':'10'}[_pose]
+    $ _pose = get_pose({'07':'09', '08':'10'}, _pose)
 
     # tv-mass-03 + tv-mass-(09/10)-max-(01a/01b) + tv-mass-(09/10)-alice-01b + tv-mass-(09/10)-alice-01bn
     scene BG tv-mass-03
@@ -737,7 +737,7 @@ label alice_nopants_massage:
             pass
 
     # _pose - 09/10
-    $ _pose = {'09':'11', '10':'12'}[_pose]
+    $ _pose = get_pose({'09':'11', '10':'12'}, _pose)
 
     # tv-mass-11 + tv-mass-(11/12)-max-alice + tv-mass-(11/12)-alice-01bn
     scene BG char Alice tv-mass-11
@@ -749,7 +749,7 @@ label alice_nopants_massage:
             pass
 
     # _pose - 11/12
-    $ _pose = {'11':'13', '12':'14'}[_pose]
+    $ _pose = get_pose({'11':'13', '12':'14'}, _pose)
 
     # tv-mass-07 + tv-mass-(13/14)-max-(01a/01b) + tv-mass-(13/14)-alice-01b + tv-mass-(13/14)-alice-01bn
     scene BG tv-mass-07
@@ -762,7 +762,7 @@ label alice_nopants_massage:
         Alice_11 "Мне так тепло... там внизу... Кажется, я уже близко... Как хорошо... Да..."
         "{i}ласкать её киску быстрее{/i}":
             # _pose - 13/14
-            $ _pose = {'13':'15', '14':'16'}[_pose]
+            $ _pose = get_pose({'13':'15', '14':'16'}, _pose)
 
             # tv-mass-15 + tv-mass-(15/16)-max-alice + tv-mass-(15/16)-alice-01bn
             scene BG char Alice tv-mass-15
@@ -773,7 +773,7 @@ label alice_nopants_massage:
             Max_06 "{m}Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила!{/m}"
 
             # _pose - 15/16
-            $ _pose = {'15':'09', '16':'10'}[_pose]
+            $ _pose = get_pose({'15':'09', '16':'10'}, _pose)
 
             # tv-mass-03 + tv-mass-(09/10)-max-(01a/01b) + tv-mass-(09/10)-alice-01b + tv-mass-(09/10)-alice-01bn
             scene BG tv-mass-03
@@ -789,7 +789,7 @@ label alice_nopants_massage:
 
         "{i}не торопиться{/i}":
             # _pose - 13/14
-            $ _pose = {'13':'17', '14':'18'}[_pose]
+            $ _pose = get_pose({'13':'17', '14':'18'}, _pose)
 
             # tv-cun-01 + tv-mass-17-max-(01a/01b) + tv-mass-17-alice-01b + tv-mass-17-alice-01bn
             # tv-mass-07 + tv-mass-18-max-(01a/01b) + tv-mass-18-alice-01b + tv-mass-18-alice-01bn
@@ -807,7 +807,7 @@ label alice_nopants_massage:
             Max_02 "Ты правда хочешь, чтобы это было быстро?"
 
             # _pose - 17/18
-            $ _pose = {'17':'19', '18':'20'}[_pose]
+            $ _pose = get_pose({'17':'19', '18':'20'}, _pose)
 
             if _pose == '19':
                 scene tv-mass-01
@@ -914,7 +914,7 @@ label alice_talk_tv_massage_next:
     # массаж понравился
 
     # _pose - 03/04
-    $ _pose = {'03':'05', '04':'06'}[_pose]
+    $ _pose = get_pose({'03':'05', '04':'06'}, _pose)
     scene BG tv-mass-05
     $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
     $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
@@ -964,7 +964,7 @@ label alice_talk_tv_massage_next:
 
     # пьяный fj получен
     # _pose - 05/06
-    $ _pose = {'05':'07', '06':'08'}[_pose]
+    $ _pose = get_pose({'05':'07', '06':'08'}, _pose)
     scene BG tv-mass-07
     $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
     $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
@@ -989,7 +989,7 @@ label alice_talk_tv_massage_next:
 # 1-3 этапы пути к получению трезвого fj
 label alice_talk_tv_sober_mass:
     # _pose - 03/04
-    $ _pose = {'03':'05', '04':'06'}[_pose]
+    $ _pose = get_pose({'03':'05', '04':'06'}, _pose)
 
     # tv-mass-05 + tv-mass-(05/06)-max-(01a/01b) + tv-mass-(05/06)-alice-(01a/01b/01c)
     scene BG tv-mass-05
@@ -1052,7 +1052,7 @@ label alice_talk_tv_sober_mass:
         Max_02 "Не будет."
 
         # _pose - 05/06
-        $ _pose = {'05':'07', '06':'08'}[_pose]
+        $ _pose = get_pose({'05':'07', '06':'08'}, _pose)
 
         # tv-mass-07 + tv-mass-(07/08)-max-(01a/01b) + tv-mass-(07/08)-alice-(01a/01b/01c)
         scene BG tv-mass-07
@@ -1081,7 +1081,7 @@ label alice_talk_tv_sober_mass:
 # периодический трезвый массаж после получения трезвого fj
 label alice_talk_tv_sober_mass_r:
     # _pose - 03/04
-    $ _pose = {'03':'05', '04':'06'}[_pose]
+    $ _pose = get_pose({'03':'05', '04':'06'}, _pose)
 
     # tv-mass-05 + tv-mass-(05/06)-max-(01a/01b) + tv-mass-(05/06)-alice-(01a/01b/01c)
     scene BG tv-mass-05
@@ -1091,7 +1091,7 @@ label alice_talk_tv_sober_mass_r:
     Max_02 "Не будет."
 
     # _pose - 05/06
-    $ _pose = {'05':'07', '06':'08'}[_pose]
+    $ _pose = get_pose({'05':'07', '06':'08'}, _pose)
 
     # tv-mass-07 + tv-mass-(07/08)-max-(01a/01b) + tv-mass-(07/08)-alice-(01a/01b/01c)
     scene BG tv-mass-07
@@ -1111,7 +1111,7 @@ label alice_talk_tv_sober_mass_r:
             if rand_result:
                 # (Ей нравится!)
                 # _pose - 07/08
-                $ _pose = {'07':'09', '08':'10'}[_pose]
+                $ _pose = get_pose({'07':'09', '08':'10'}, _pose)
 
                 # tv-mass-03 + tv-mass-(09/10)-max-(01a/01b) + tv-mass-(09/10)-alice-(01a/01b/01c)
                 scene BG tv-mass-03
@@ -1153,7 +1153,7 @@ label advanced_massage1:
     $ added_mem_var('advanced_massage1')
 
     # _pose - 05/06
-    $ _pose = {'05':'09', '06':'10'}[_pose]
+    $ _pose = get_pose({'05':'09', '06':'10'}, _pose)
 
     # tv-mass-09-10
     scene BG tv-mass-03
@@ -1181,7 +1181,7 @@ label advanced_massage1:
             pass
 
     # _pose - 09/10
-    $ _pose = {'09':'11', '10':'12'}[_pose]
+    $ _pose = get_pose({'09':'11', '10':'12'}, _pose)
 
     # tv-mass-11-12
     scene BG char Alice tv-mass-11
@@ -1193,7 +1193,7 @@ label advanced_massage1:
     scene BG tv-mass-07
 
     # _pose - 11/12
-    $ _pose = {'11':'13', '12':'14'}[_pose]
+    $ _pose = get_pose({'11':'13', '12':'14'}, _pose)
 
     # tv-mass-13-14
     $ renpy.show('Alice tv-mass ' + _pose + alice.dress)
@@ -1222,7 +1222,7 @@ label advanced_massage1_end:
 label advanced_massage1_faster:
 
     # _pose - 13/14
-    $ _pose = {'13':'15', '14':'16'}[_pose]
+    $ _pose = get_pose({'13':'15', '14':'16'}, _pose)
 
     # tv-mass-15-16
     scene BG char Alice tv-mass-15
@@ -1232,7 +1232,7 @@ label advanced_massage1_faster:
     Max_06 "{m}Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила!{/m}"
 
     # _pose - 15/16
-    $ _pose = {'15':'09', '16':'10'}[_pose]
+    $ _pose = get_pose({'15':'09', '16':'10'}, _pose)
 
     # tv-mass-09-10
     scene BG tv-mass-03
@@ -1249,7 +1249,7 @@ label advanced_massage1_faster:
 label advanced_massage1_no_rush:
 
     # _pose - 13/14
-    $ _pose = {'13':'17', '14':'18'}[_pose]
+    $ _pose = get_pose({'13':'17', '14':'18'}, _pose)
 
     # tv-mass-17-18
     if _pose == '17':
@@ -1269,7 +1269,7 @@ label advanced_massage1_no_rush:
             pass
 
     # _pose - 17/18
-    $ _pose = {'17':'19', '18':'20'}[_pose]
+    $ _pose = get_pose({'17':'19', '18':'20'}, _pose)
 
     # tv-mass-19-20
     if _pose == '19':
@@ -1291,7 +1291,7 @@ label advanced_massage1_cuni:
     if rand_result:
         # (Ей нравится!)
         # _pose - 19/20
-        $ _pose = {'19':'21', '20':'22'}[_pose]
+        $ _pose = get_pose({'19':'21', '20':'22'}, _pose)
 
         # tv-mass-21-22
         if _pose == '21':
@@ -1307,7 +1307,7 @@ label advanced_massage1_cuni:
                 pass
 
         # _pose - 20/21
-        $ _pose = {'21':'23', '22':'24'}[_pose]
+        $ _pose = get_pose({'21':'23', '22':'24'}, _pose)
 
         # tv-mass-23-24
         if _pose == '23':
@@ -1320,7 +1320,7 @@ label advanced_massage1_cuni:
         Max_02 "Будешь ещё сомневаться в моих навыках?"
 
         # _pose - 23/24
-        $ _pose = {'23':'19', '24':'20'}[_pose]
+        $ _pose = get_pose({'23':'19', '24':'20'}, _pose)
 
         # tv-mass-19-20
         if _pose == '20':

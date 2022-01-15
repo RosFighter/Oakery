@@ -12,7 +12,7 @@ init python:
             dr_l.append('b')
 
         if st!='':
-            if type(st)==list:
+            if isinstance(st, list):
                 dr_l.extend(st)
             else:
                 dr_l.append(st)
@@ -27,14 +27,14 @@ init python:
         if 'max-a' in persistent.mems_var:
             dr_m.append('b')
         if st!='':
-            if type(st)==list:
+            if isinstance(st, list):
                 dr_m.extend(st)
             else:
                 dr_m.append(st)
         # print dr_m
         dr_m = list(set(dr_m))
         if ex!='':
-            if type(ex)==list:
+            if isinstance(ex, list):
                 for j in ex:
                     if j in dr_m:
                         dr_m.remove(j)

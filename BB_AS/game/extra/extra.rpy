@@ -234,7 +234,7 @@ screen menu_gallery():
                                 for id_alb, desc in photo_album:
                                     if id_alb in persistent.photos:
                                         if 'cur_album' not in globals() or cur_album is None or cur_album not in persistent.photos:
-                                            $ cur_album = id_alb
+                                            $ set_extra_album()
                                         button background None action SetVariable('cur_album', id_alb) xsize 290 style 'alb_button':
                                             textbutton desc action SetVariable('cur_album', id_alb) selected cur_album == id_alb style 'album_button'
 
