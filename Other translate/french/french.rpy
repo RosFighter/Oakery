@@ -66,11 +66,11 @@ translate french strings:
 
     # renpy/common/00accessibility.rpy:39
     old "increase"
-    new "augmenté"
+    new "augmentée"
 
     # renpy/common/00accessibility.rpy:40
     old "decrease"
-    new "diminué"
+    new "diminuée"
 
     # renpy/common/00accessibility.rpy:138
     old "Font Override"
@@ -2180,7 +2180,7 @@ translate french strings:
 
     # game/core/02init.rpy:128
     old "Не возражаешь против компании?"
-    new "La compagnie te dérange ?"
+    new "Tu n'as rien contre de la compagnie ?"
 
     # game/core/02init.rpy:128
     old "Что читаешь?"
@@ -2200,7 +2200,7 @@ translate french strings:
 
     # game/core/02init.rpy:128
     old "Загораешь?"
-    new "Bronzage"
+    new "Je parie que tu te fais bronzer."
 
     # game/core/02init.rpy:128
     old "У меня для тебя обещанная вкусняшка!"
@@ -2640,7 +2640,7 @@ translate french strings:
 
     # game/core/03variables.rpy:37
     old "ВЕРАНДА"
-    new "VERANDA"
+    new "TERRASSE"
 
     # game/core/03variables.rpy:37
     old "ДВОР"
@@ -2968,27 +2968,27 @@ translate french strings:
 
     # game/core/04function.rpy:341
     old "{color=[red]}значительно ухудшилось{/color}"
-    new "{color=[red]}s'est considérablement aggravé{/color}"
+    new "{color=[red]}s'est considérablement aggravée{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[red]}ухудшилось{/color}"
-    new "{color=[red]}aggravé{/color}"
+    new "{color=[red]}aggravée{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[red]}немного ухудшилось{/color}"
-    new "{color=[red]}s'est légèrement détérioré{/color}"
+    new "{color=[red]}s'est légèrement détériorée{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[lime]}немного улучшилось{/color}"
-    new "{color=[lime]}légèrement amélioré{/color}"
+    new "{color=[lime]}légèrement améliorée{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[lime]}улучшилось{/color}"
-    new "{color=[lime]}amélioré{/color}"
+    new "{color=[lime]}améliorée{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[lime]}значительно улучшилось{/color}"
-    new "{color=[lime]}s'est considérablement amélioré{/color}"
+    new "{color=[lime]}s'est considérablement améliorée{/color}"
 
     # game/core/04function.rpy:352
     old "{color=[red]}снизилось{/color}"
@@ -2996,7 +2996,7 @@ translate french strings:
 
     # game/core/04function.rpy:352
     old "{color=[lime]}повысилось{/color}"
-    new "{color=[lime]}augmenté{/color}"
+    new "{color=[lime]}améliorée{/color}"
 
     # game/core/04function.rpy:380
     old "Настроение %s %s \nЕё отношение к Максу %s"
@@ -5350,7 +5350,7 @@ translate french cam_after_waiting_bfada06d:
 translate french cam_after_waiting_44f62349:
 
     # Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
-    Max_09 "{m}Lisa est dans la chambre... Et la véranda est occupée ! Mieux vaut ne pas prendre de risques et attendre pour regarder les caméras.{/m}"
+    Max_09 "{m}Lisa est dans la chambre... Et la terrasse est occupée ! Mieux vaut ne pas prendre de risques et attendre pour regarder les caméras.{/m}"
 
 # game/core/core.rpy:809
 translate french cam_after_waiting_935d8f7d:
@@ -5368,7 +5368,7 @@ translate french cam_after_waiting_af0a2821:
 translate french cam_after_waiting_44f62349_1:
 
     # Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
-    Max_09 "{m}Lisa est dans la chambre maintenant... Et la véranda est occupée ! Mieux vaut ne pas prendre de risques et attendre de regarder les caméras.{/m}"
+    Max_09 "{m}Lisa est dans la chambre maintenant... Et la terrasse est occupée ! Mieux vaut ne pas prendre de risques et attendre de regarder les caméras.{/m}"
 
 # game/core/core.rpy:833
 translate french cam_after_waiting_24007a63:
@@ -5402,7 +5402,7 @@ translate french strings:
 
     # game/core/core.rpy:677
     old "{i}идти на веранду{/i}"
-    new "{i}aller dans la véranda{/i}"
+    new "{i}aller sur la terrasse{/i}"
 
     # game/core/core.rpy:677
     old "{i}не сейчас{/i}"
@@ -5898,11 +5898,11 @@ translate french strings:
 
     # game/core/screens.rpy:1716
     old "- Не может вспомнить всё, что происходило, пока она была пьяна"
-    new "- Elle ne se souvient de rien de ce qui s'est passé quand elle est ivre."
+    new "- Elle ne se souvient de rien dès qu'elle ingère une goutte d'alcool."
 
     # game/core/screens.rpy:1722
     old "- Если начинать массаж для Алисы во дворе со ступней, то вероятность помассировать остальное больше"
-    new "- A la piscine, si vous commencez pa lui masser les pieds, vous avez plus de chances de masser... le reste."
+    new "- A la piscine, si vous commencez par lui masser les pieds, vous avez plus de chances de masser... le reste."
 
     # game/core/screens.rpy:1724
     old "- При помощи конфет с ликёром можно получить фут-джоб (и не только) от Алисы при массаже у ТВ"
@@ -5910,7 +5910,7 @@ translate french strings:
 
     # game/core/screens.rpy:1726
     old "- Получив фут-джоб от Алисы при массаже у ТВ, есть шанс увидеть через камеру, как она мастурбирует перед сном"
-    new "- SI Alice vous fait un \"foot-job\" lors d'un massage télé, vous pourrez la voir se masturber à travers la caméra avant qu'elle s'endorme."
+    new "- SI Alice vous fait un \"foot-job\" lors d'un massage télé, vous pourrez la voir se masturber à travers la caméra avant qu'elle ne s'endorme."
 
     # game/core/screens.rpy:1734
     old "Задать одежду персонажа"
@@ -6302,13 +6302,13 @@ translate french alice_talk_tv_4bea1b3e:
 translate french alice_talk_tv_01add315:
 
     # Alice_00 "Нет, садись. Тут места много..."
-    Alice_00 "Non, assied-toi. Il y a plein de place"
+    Alice_00 "Non, assied-toi. Il y a plein de place."
 
 # game/dialogues/alicetalk.rpy:326
 translate french alice_talk_tv_31159ca0:
 
     # Max_00 "Хорошо. Что смотришь?"
-    Max_00 "D’accord. Qu’est-ce que tu regardes?"
+    Max_00 "D’accord. Qu’est-ce que tu regardes ?"
 
 # game/dialogues/alicetalk.rpy:329
 translate french alice_talk_tv_a38da904:
@@ -6332,7 +6332,7 @@ translate french alice_talk_tv_55b37ec4:
 translate french alice_tv_massage_starter_4cd36d8c:
 
     # Alice_07 "Дай-ка подумаю... Да! Я готова..." nointeract
-    Alice_07 "Attends j'ai bien tout... c'est bon. Je suis prête..." nointeract
+    Alice_07 "Laisse-moi réfléchir... Oui ! Je suis prête..." nointeract
 
 # game/dialogues/alicetalk.rpy:365
 translate french alice_tv_massage_starter_8b5ba6bc:
@@ -6452,7 +6452,7 @@ translate french alice_talk_tv_choco_dd214a08:
 translate french alice_talk_tv_choco_df78af2c:
 
     # Alice_07 "[succes!t]Эх.. Уболтал, чертяка языкастый! Давай сюда конфетку. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
-    Alice_07 "[succes!t]Ahh. Tais toi et donne-moi un bonbon. Mais un seul... Mmm, j'adore... C'est bon, j'suis prête... Tu peux y aller !" nointeract
+    Alice_07 "[succes!t]Ahh. Tais toi et donne-moi une bonbon. Mais un seul... Mmm, j'adore... C'est bon, j'suis prête... Tu peux y aller !" nointeract
 
 # game/dialogues/alicetalk.rpy:451
 translate french alice_talk_tv_choco_0383591b:
@@ -6482,7 +6482,7 @@ translate french alice_talk_tv_massage_67ad610f:
 translate french alice_talk_tv_choice_mass_create_menu_264b44e4:
 
     # Alice_02 "[succes!t]Макс, ну какой же ты... А, ладно, давай ещё одну... Но это последняя, больше не предлагай, а то пну сам знаешь куда! А эта конфета, кажется, ещё вкуснее той! От них стало так жарко..."
-    Alice_02 "[succes!t]Max, qu’est-ce que tu... bon Ok, donne-m’en un autre... mais c’est le dernier... je sais l'effet que ça me fait ! Et pis, celui là est encore meilleur que l'autre ! Et j'ai encore plus chaud... Maaaax !"
+    Alice_02 "[succes!t]Max, qu’est-ce que tu... bon Ok, donne m’en un autre... mais c’est le dernier... je sais l'effet que ça me fait ! Et puis, celui-là est encore meilleur que l'autre ! Et j'ai encore plus chaud... Maaaax !"
 
 # game/dialogues/alicetalk.rpy:559
 translate french alice_talk_tv_choice_mass_create_menu_6b3e8ab2:
@@ -6908,13 +6908,13 @@ translate french alice_talk_tv_massage_next_e263d7d3:
 translate french alice_talk_tv_massage_next_db75bb50:
 
     # Alice_07 "[alice_good_mass!t]Макс... Сегодня твои ручки творят чудеса... А во что это моя нога упёрлась? Это часть программы или как?" nointeract
-    Alice_07 "[alice_good_mass!t]Max... aujourd’hui tes mains font des merveilles... Y'a quoi là sous mon pied ? T'es sûr que ça fait partie du programme ou quoi ?" nointeract
+    Alice_07 "[alice_good_mass!t]Max... aujourd’hui tes mains font des merveilles... Y'a quoi là sous mes pieds ? T'es sûr que ça fait partie du programme ?" nointeract
 
 # game/dialogues/alicetalk.rpy:912
 translate french alice_talk_tv_massage_next_3837de84:
 
     # Alice_08 "Ты так в себе уверен, Макс... Забыл, что я твоя сестра? Не говори глупости... Просто продолжай массировать мои ножки. Если ты ещё не в курсе, они у меня целиком - эрогенная зона..." nointeract
-    Alice_08 "T'es vraiment sûr de toi, Max... oublie que je suis ta soeur ? ne sois pas idiot... continue à me masser les pieds. Au cas où tu n’aurais pas compris, c’est une de mes principales zone érogènes..." nointeract
+    Alice_08 "T'es vraiment sûr de toi Max... Tu n'as pas oublié que je suis ta soeur ? Ne sois pas idiot... continue à me masser les pieds. Au cas où tu n’aurais pas compris, c’est une de mes principales zone érogènes..." nointeract
 
 # game/dialogues/alicetalk.rpy:930
 translate french alice_talk_tv_massage_next_6a3e6bc9:
@@ -6926,13 +6926,13 @@ translate french alice_talk_tv_massage_next_6a3e6bc9:
 translate french alice_talk_tv_massage_next_116b5205:
 
     # Alice_05 "На сколько захочу? На секунду! Ой. Она прошла... Всё, Макс, твоё время вышло... Ладно, засовывай свою штуку обратно. Что-то голова кружится... Макс, уйди по хорошему, а..." nointeract
-    Alice_05 "Aussi longtemps que je le veux? Une seconde ! Ca y est, c’est fini... C’est fini, Max, ton temps est écoulé... Et remballe moi ton matos. Belle bète... Max, vas-y doucement, euh..." nointeract
+    Alice_05 "Aussi longtemps que je le veux ? Une seconde ! Ca y est, c’est fini... C’est fini, Max, ton temps est écoulé... Et remballe moi ton matos. Belle bète... Max, vas-y doucement, euh..." nointeract
 
 # game/dialogues/alicetalk.rpy:958
 translate french alice_talk_tv_massage_next_a14e48fe:
 
     # Alice_04 "Ну всё, кажется хватит. Во всяком случае, тебе. А то мне ногу испачкаешь... Но ручки у тебя - что надо. Даже не ожидала такого от тебя..."
-    Alice_04 "Bon, ça suffit. En tous cas pour moi. Tu vas me salir la jambe... Par contre tes mains, nickel. J'en attendais pas moins de toi..."
+    Alice_04 "Bon, ça suffit. En tous cas pour moi. Tu vas finir par me salir la jambe... Par contre tes mains : nickel. Je n'en attendais pas moins de toi..."
 
 # game/dialogues/alicetalk.rpy:959
 translate french alice_talk_tv_massage_next_864ca86f:
@@ -7250,13 +7250,13 @@ translate french advanced_massage1_e9bffa3c:
 translate french advanced_massage1_e8f2dc82:
 
     # Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... И они очень тебе благодарны. Чувствуешь, насколько?"
-    Alice_07 "Oui, mes jambes sont toujours Ok pour que tu en prennes soin... Et elles sont reconnaissantes. Tu la sens là... la reconnaissance ?"
+    Alice_07 "Oui, mes jambes sont toujours d'accord pour quand on en prend soin... Et elles savent être reconnaissantes. Tu la sens bien là... la reconnaissance ?"
 
 # game/dialogues/alicetalk.rpy:1159
 translate french advanced_massage1_b6f56f02:
 
     # Max_03 "А как же... Они у тебя шаловливые..."
-    Max_03 "Mais en fait... Ils sont coquins..."
+    Max_03 "Mais dis moi... Elles sont entreprenantes ?"
 
 # game/dialogues/alicetalk.rpy:1162
 translate french advanced_massage1_9d9c55f8:
@@ -7274,7 +7274,7 @@ translate french advanced_massage1_bb8e7c16:
 translate french advanced_massage1_73f29683:
 
     # Alice_04 "Они у меня такие... Любят помассировать кое-что большое и твёрдое..." nointeract
-    Alice_04 "Ils sont comme ça... Ils aiment masser quelque chose de gros et de dur..." nointeract
+    Alice_04 "Elles sont comme ça... elles aiment masser des trucs gros et de durs..." nointeract
 
 # game/dialogues/alicetalk.rpy:1177
 translate french advanced_massage1_c07bcd66:
@@ -7310,13 +7310,13 @@ translate french advanced_massage1_faster_a9850eeb:
 translate french advanced_massage1_faster_d19db20f:
 
     # Alice_10 "Ох, чёрт... Макс... я больше не могу! Только не убирай свою руку оттуда... Я уже кончаю... Ахх!"
-    Alice_10 "Oh merde... Max... J'en peux plus! Ne sors pas ta main de là... je viens... GEYEUARHHH!!!!!!"
+    Alice_10 "Oh putain... Max... Je ne peux plus me retenir ! N'enlève pas ta main... Oh oui... oui... ui... GEYEUARHHH!!!!!!"
 
 # game/dialogues/alicetalk.rpy:1219
 translate french advanced_massage1_faster_d3da814d:
 
     # Max_06 "{m}Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила!{/m}"
-    Max_06 "{m}Ma grande soeur est devenue complètement folle... ses jambes tremblent de plaisir !{/m}"
+    Max_06 "{m}Ma grande soeur s'est pris un pied d'enfer... ses jambes tremblent de plaisir !{/m}"
 
 # game/dialogues/alicetalk.rpy:1228
 translate french advanced_massage1_faster_95058917:
@@ -7346,7 +7346,7 @@ translate french advanced_massage1_faster_ef15cedf:
 translate french advanced_massage1_no_rush_2a840d78:
 
     # Alice_06 "Макс, ты почему замедлился? Я хочу ещё, не останавливайся!"
-    Alice_06 "Max, pourquoi tu ralentis ? j'en veux encore, continue !"
+    Alice_06 "Max, pourquoi tu ralentis ? Encore par pitié... continue !"
 
 # game/dialogues/alicetalk.rpy:1249
 translate french advanced_massage1_no_rush_9141846d:
@@ -7358,7 +7358,7 @@ translate french advanced_massage1_no_rush_9141846d:
 translate french advanced_massage1_no_rush_070d587a:
 
     # Alice_08 "Ммм... Макс... Я же твоя сестра, а ты... ведёшь себя со мной... как будто я твоя девушка... Но я могу это представить, ненадолго... Так что успевай." nointeract
-    Alice_08 "Um... Max... je suis ta soeur, et tu... tu agis comme si... j'étais ta petite amie... mais je peux l’imaginer, pour un temps... pour que tu puisses le faire." nointeract
+    Alice_08 "Um... Max... je suis ta soeur, et tu... tu agis comme si... j'étais ta petite amie... mais je veux bien l’accepter, pour un temps... pour que tu puisses le faire." nointeract
 
 # game/dialogues/alicetalk.rpy:1271
 translate french advanced_massage1_cuni_c8afbf4c:
@@ -7382,7 +7382,7 @@ translate french advanced_massage1_cuni_a4a1d9f6:
 translate french advanced_massage1_cuni_32373cd7:
 
     # Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм... Как хорошо!"
-    Alice_09 "[like!t]Oui, Max, oui! J'y suis presque... ne t’arrête pas... ta langue c'est une formule-un, Max... Mmm... putain que c’est bon!"
+    Alice_09 "[like!t]Oui Max, oui ! J'y suis presque... ne t’arrête pas... ta langue c'est une formule-un, Max... Mmm... putain que c’est bon !"
 
 # game/dialogues/alicetalk.rpy:1292
 translate french advanced_massage1_cuni_1faf42c9:
@@ -7394,19 +7394,19 @@ translate french advanced_massage1_cuni_1faf42c9:
 translate french advanced_massage1_cuni_b40ae767:
 
     # Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да... Как же это было классно! Ох... Это было потрясающе..."
-    Alice_11 "Ah ! Je ne peux plus m'retenir Max... je viGEYEUARHHH!!!!!!... C’était trop génial ! Oh... c’était incroyable..."
+    Alice_11 "Ah ! Je ne peux plus me retenir Max... je vie... GEYEUARHHH!!!!!!... Oh mon dieu, c’était trop bon ! Incroyable..."
 
 # game/dialogues/alicetalk.rpy:1307
 translate french advanced_massage1_cuni_4ca76960:
 
     # Max_02 "Будешь ещё сомневаться в моих навыках?"
-    Max_02 "Douteras-tu un jour de mes compétences ?"
+    Max_02 "Alors ? Tu doute encore de mes compétences ?"
 
 # game/dialogues/alicetalk.rpy:1317
 translate french advanced_massage1_cuni_d0cd8b5f:
 
     # Alice_07 "Ах, Макс! И где ты такому научился?! Неужто, просмотр порнушки может такому научить?"
-    Alice_07 "Oh Max! Où t'as appris ça? Comment peux-on apprendre ça en regardant du porno ?"
+    Alice_07 "Oh Max! Où t'as appris tout ça ? Comment peux-on apprendre ça en regardant du porno ?"
 
 # game/dialogues/alicetalk.rpy:1318
 translate french advanced_massage1_cuni_51e45fcc:
@@ -7448,7 +7448,7 @@ translate french advanced_massage1_cuni_bfdd5c01:
 translate french advanced_massage1_cuni_7d367cd2:
 
     # Alice_05 "Слишком много болтал. Вот и передумала. Но за массаж, спасибо! Давай, засовывай свой член обратно и гуляй..."
-    Alice_05 "J’ai trop parlé. J’ai changé d’avis. Mais pour le massage, merci! Allez, range ton attirail et vas-y..."
+    Alice_05 "J’ai trop parlé. J’ai changé d’avis. Mais pour le massage, merci! Allez, range ton attirail et vas voir ailleurs..."
 
 # game/dialogues/alicetalk.rpy:1342
 translate french advanced_massage1_cuni_7e6ff7bf:
@@ -7460,7 +7460,7 @@ translate french advanced_massage1_cuni_7e6ff7bf:
 translate french advanced_massage1_reciprocity_194015b5:
 
     # Alice_02 "Ты даришь мне столько удовольствия, что я просто вынуждена ответить тебе взаимностью."
-    Alice_02 "Tu me donnes tant de plaisir, c'est normal que je renvoie l'ascenseur."
+    Alice_02 "Tu m'as donné tant de plaisir, c'est la moindre des choses que je renvoie l'ascenseur."
 
 # game/dialogues/alicetalk.rpy:1356
 translate french advanced_massage1_reciprocity_2405c908:
@@ -7508,19 +7508,19 @@ translate french advanced_massage1_reciprocity_1272725b:
 translate french advanced_massage1_reciprocity_da5f55a1:
 
     # Alice_07 "Давай! Кончи мне на грудь... Я бы удивилась, если бы ты продержался ещё дольше. Массаж получился классный, Макс... и я не только про сам массаж. А сейчас, давай-ка засовывай свой член обратно, а мне нужно скорее привести себя в порядок."
-    Alice_07 "Allez! Allez sur mes seins... Ça m'aurait surpris si ça avez duré plus longtemps. Ton massage : énorme Max... et y'a pas que le massage. Range moi ton attirail maintenant,  je dois me nettoyer."
+    Alice_07 "Allez! Allez sur mes seins... Ça m'aurait surpris si ça avait duré plus longtemps. Ton massage : énorme Max... et y'a pas que le massage. Range moi ton attirail maintenant,  je dois me nettoyer."
 
 # game/dialogues/alicetalk.rpy:1416
 translate french advanced_massage1_reciprocity_7fef34b9:
 
     # Max_03 "Да, повеселились от души."
-    Max_03 "Ouais, on s’est bien amusé."
+    Max_03 "Ouais, on en a bien profité."
 
 # game/dialogues/alicetalk.rpy:1424
 translate french advanced_massage1_no_restrain_1bb78087:
 
     # Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
-    Max_20 "[norestrain!t]Oh Alice... non, je ne peux pas... oh... ça-y-est j’vais tirer mon coup !"
+    Max_20 "[norestrain!t]Oh Alice... non, je ne peux pas... oh... ça-y-est... chaud devant !"
 
 # game/dialogues/alicetalk.rpy:1431
 translate french advanced_massage1_no_restrain_da5f55a1:
@@ -7532,7 +7532,7 @@ translate french advanced_massage1_no_restrain_da5f55a1:
 translate french advanced_massage1_no_restrain_7fef34b9:
 
     # Max_03 "Да, повеселились от души."
-    Max_03 "Ouais, on s’est bien amusé."
+    Max_03 "Ouais, on en a bien profité."
 
 # game/dialogues/alicetalk.rpy:1440
 translate french alice_aboutbooks_5cb6ebb3:
@@ -7544,7 +7544,7 @@ translate french alice_aboutbooks_5cb6ebb3:
 translate french alice_aboutbooks_17c8adf3:
 
     # Alice_01 "Так чего хотел, Макс?"
-    Alice_01 "Qu’est-ce que tu veux, Max ?"
+    Alice_01 "Qu’est-ce que tu veux Max ?"
 
 # game/dialogues/alicetalk.rpy:1443
 translate french alice_aboutbooks_d236f5ef:
@@ -7556,7 +7556,7 @@ translate french alice_aboutbooks_d236f5ef:
 translate french alice_aboutbooks_17c8adf3_1:
 
     # Alice_01 "Так чего хотел, Макс?"
-    Alice_01 "Qu’est-ce que tu veux, Max ?"
+    Alice_01 "Qu’est-ce que tu veux Max ?"
 
 # game/dialogues/alicetalk.rpy:1446
 translate french alice_aboutbooks_d236f5ef_1:
@@ -7568,7 +7568,7 @@ translate french alice_aboutbooks_d236f5ef_1:
 translate french alice_aboutbooks_656d98ae:
 
     # Alice_01 "Ну вот... Хотела пошутить, и ты так меня обломал... А если серьёзно, то чего хотел?"
-    Alice_01 "Alors... j’allais faire une blague, et t’as tout fait foirer... bon sérieusement, qu’est-ce que tu voulais ?"
+    Alice_01 "Alors... j’allais faire une blague, et t’as tout fait foirer... bon sérieux, tu voulais quoi ?"
 
 # game/dialogues/alicetalk.rpy:1449
 translate french alice_aboutbooks_de0f6bd9:
@@ -7580,13 +7580,13 @@ translate french alice_aboutbooks_de0f6bd9:
 translate french alice_aboutbooks_6405d1b7:
 
     # Alice_02 "Забавно. А тебе не всё равно? Или делать нечего?" nointeract
-    Alice_02 "C’est drôle. Qu’est-ce que ça peut te foutre ? T'as rien à faire ?" nointeract
+    Alice_02 "C’est drôle. En quoi ça te regarde ? T'as rien à faire ?" nointeract
 
 # game/dialogues/alicetalk.rpy:1457
 translate french alice_aboutbooks_af00f0d1:
 
     # Alice_00 "Не скажу. Сиди теперь и гадай! \n\n{i}Алиса прикрыла обложку рукой{/i}" nointeract
-    Alice_00 "Je le ferai pas. Assieds-toi maintenant et devine ! \n\n{i}Alice a caché la couverture avec sa main{/i}" nointeract
+    Alice_00 "Je ne le dirai pas. Assieds-toi maintenant et devine ! \n\n{i}Alice a caché la couverture avec sa main{/i}" nointeract
 
 # game/dialogues/alicetalk.rpy:1466
 translate french alice_aboutbooks_2eac1a27:
@@ -7658,7 +7658,7 @@ translate french first_talk_smoke_talk_b5a5e27d:
 translate french first_talk_smoke_talk_ee9ba89b:
 
     # Alice_13 "Сейчас сбегаю за деньгами...\nВот, держи $10, и теперь-то уж точно ты ничего не видел. Так?" nointeract
-    Alice_13 "Je vais aller chercher l’argent... \nVoici 10 $, et maintenant t'es sûr de n’avoir rien vu. Ok ?" nointeract
+    Alice_13 "Je vais aller chercher l’argent... \nVoici 10 $, et maintenant tu n'as absolument rien vu. Ok ?" nointeract
 
 # game/dialogues/alicetalk.rpy:1535
 translate french first_talk_smoke_talk_86687067:
@@ -9890,7 +9890,7 @@ translate french Alice_solar_a419850a:
 translate french Alice_solar_22c9ef31:
 
     # Alice_03 "Если у тебя есть крем, то давай, раз тебе делать нечего."
-    Alice_03 "Si t'as de la crème, vas-y, si t’as rien d'autre à faire."
+    Alice_03 "Si t'as de la crème, vas-y... si t’as rien de mieux à faire."
 
 # game/dialogues/alicetalk.rpy:2639
 translate french Alice_solar_93baf4d9:
@@ -9980,7 +9980,7 @@ translate french massage_sunscreen_2b064227:
 translate french massage_sunscreen_e885dc43:
 
     # Max_03 "Да пустяки, обращайся!"
-    Max_03 "C’est pas grave !"
+    Max_03 "Il n'y a pas de problèmes !"
 
 # game/dialogues/alicetalk.rpy:2735
 translate french massage_sunscreen_ea601673:
@@ -10022,7 +10022,7 @@ translate french massage_sunscreen_3f529b58:
 translate french massage_sunscreen_left_foot_d6f62d5a:
 
     # Max_01 "{m}Начнём сегодня с левой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/m}"
-    Max_01 "{m}Commençons par le talon gauche aujourd’hui... C’est tout. Et pendant que je le masse, j'ai une vue parfaite sur le magnifique cul d’Alice !{/m}"
+    Max_01 "{m}Commençons par le pied gauche aujourd’hui... C’est tout. Et pendant que je le masse, j'ai une vue parfaite sur le magnifique cul d’Alice !{/m}"
 
 # game/dialogues/alicetalk.rpy:2771
 translate french massage_sunscreen_left_foot_70acc529:
@@ -10034,25 +10034,25 @@ translate french massage_sunscreen_left_foot_70acc529:
 translate french massage_sunscreen_right_foot_0b2794d1:
 
     # Max_01 "{m}Начнём сегодня с правой пяточки... Вот так. И, пока я хорошенько её массирую, можно заодно поглазеть на аппетитную Алисину попку!{/m}"
-    Max_01 "{m}Commençons par le bon talon aujourd’hui... C’est tout. Et pendant que je le masse, j'ai une vue parfaite sur le magnifique cul d’Alice !{/m}"
+    Max_01 "{m}Commençons par le bon pied aujourd’hui... C’est tout. Et pendant que je le masse, j'ai une vue parfaite sur le magnifique cul d’Alice !{/m}"
 
 # game/dialogues/alicetalk.rpy:2780
 translate french massage_sunscreen_right_foot_66f3ce74:
 
     # Max_03 "{m}А теперь левую... Вот так. Да уж, глаз не оторвать, попка - что надо!{/m}"
-    Max_03 "{m}Et maintenant la gauche... c’est ça. Ouais, tu ne peux pas enlever tes yeux de son cul - c’est ça!{/m}"
+    Max_03 "{m}Et maintenant le gauche... c’est ça. Ouais, tu ne peux pas enlever tes yeux de son cul - c’est ça!{/m}"
 
 # game/dialogues/alicetalk.rpy:2786
 translate french massage_sunscreen_shin_94f57cc5:
 
     # Max_02 "{m}Помассируем эти стройные ножки, вот так...{/m}"
-    Max_02 "{m}Massons ces petits pieds comme ça...{/m}"
+    Max_02 "{m}Massons ces beaux mollets comme ça...{/m}"
 
 # game/dialogues/alicetalk.rpy:2798
 translate french massage_sunscreen_shin_35e52f27:
 
     # Alice_07 "Ух, как приятно... Ты молодец, Макс! Моим ножкам это понравилось... Не останавливайся, продолжай..."
-    Alice_07 "Wow, c’est sympa... tu t’en sors bien Max ! mes jambes ont adoré... ne t’arrête pas, continue..."
+    Alice_07 "Wow, c’est sympa... tu t’en sors bien Max ! mes jambes adorent ça... ne t’arrête pas, continue..."
 
 # game/dialogues/alicetalk.rpy:2810
 translate french massage_sunscreen_shoulders_65819867:
@@ -10124,7 +10124,7 @@ translate french massage_sunscreen_hips_7823526e:
 translate french massage_sunscreen_hips_09110d99:
 
     # Alice_04 "Хоть это и приятно, но ощущение, будто ты не знаешь, как правильно массировать там... Лучше сосредоточься на том, что ты умеешь..."
-    Alice_04 "Aussi agréable que cela puisse être, on sent que tu ne sais pas comment le masser correctement... concentre toi mieux sur ce que tu peux faire..."
+    Alice_04 "Aussi agréable que cela puisse être, on sent que tu ne sais pas comment les masser correctement... concentre toi mieux sur ce que tu dois faire..."
 
 # game/dialogues/alicetalk.rpy:2923
 translate french massage_sunscreen_hips_7439f935:
@@ -10142,7 +10142,7 @@ translate french massage_sunscreen_hips_7b0d0b5d:
 translate french massage_sunscreen_foot_ab2015ff:
 
     # Alice_07 "Ух, как же моим пяточкам приятно... Не останавливайся, продолжай..."
-    Alice_07 "Wow, Ça fait beaucoup de bien à mes talons... continue..."
+    Alice_07 "Wow, Ça fait beaucoup de bien à mes pieds... continue..."
 
 # game/dialogues/alicetalk.rpy:2948
 translate french massage_sunscreen_double_b0f3e1ef:
@@ -10184,7 +10184,7 @@ translate french massage_sunscreen_talk_topless_55e545b8:
 translate french massage_sunscreen_talk_topless_9ba641bd:
 
     # Alice_07 "[succes!t]Нет, но... Ладно, всё равно тебе ничего не видно..."
-    Alice_07 "[succes!t]Non, mais... OK, on ne voit rien..."
+    Alice_07 "[succes!t]Non, mais... En fait, on ne peut rien voir du tout..."
 
 # game/dialogues/alicetalk.rpy:2966
 translate french massage_sunscreen_talk_topless_3f9e6cf2:
@@ -10214,19 +10214,19 @@ translate french massage_sunscreen_spider_8eae9d17:
 translate french massage_sunscreen_spider_17d5705b:
 
     # Alice_13 "А чего мне пугаться, Макс? Сейчас что, будешь больно массировать?"
-    Alice_13 "Pourquoi aurais-je peur, Max ? Tu vas me faire mal ?"
+    Alice_13 "Pourquoi aurais-je peur, Max ? Tu as l'intension de me faire mal ?"
 
 # game/dialogues/alicetalk.rpy:2995
 translate french massage_sunscreen_spider_e9f5ecc0:
 
     # Max_00 "Нет, просто у нас тут одна проблемка подкралась..."
-    Max_00 "Non, c’est juste qu’on a un petit problème ici..."
+    Max_00 "Non, c’est juste qu’on a un petit problème qui se faufile par ici..."
 
 # game/dialogues/alicetalk.rpy:2999
 translate french massage_sunscreen_spider_1738f9d1:
 
     # Alice_12 "Что?! Подкралась?! Ты же говоришь не о том, о чём я подумала?"
-    Alice_12 "Quoi? ! Qu'est ce qui se faufile ? Tu parle pas de ce que je pense que tu parles ?"
+    Alice_12 "Quoi ? Qu'est ce qui se faufile ? Tu parle pas de ce que je pense que tu parles ?"
 
 # game/dialogues/alicetalk.rpy:3000
 translate french massage_sunscreen_spider_c6caa3b2:
@@ -15919,7 +15919,7 @@ translate french alice_mistress_3_domine_no_drink_07b7d700:
 translate french alice_domine_drink_2879aca1:
 
     # Alice_02 "Ну же, Макс, не тормози. Хватит на меня так пялиться и проходи! Раздевайся давай..."
-    Alice_02 "Allez, Max, ne t’arrête pas. arrête de me déshabiller du regard et viens ! déshabille-toi..."
+    Alice_02 "Allez Max, ne reste pas planté là. Arrête de me déshabiller du regard et viens ! déshabille-toi..."
 
 # game/dialogues/alicetalk.rpy:5438
 translate french alice_domine_drink_dd706ac2:
@@ -15949,7 +15949,7 @@ translate french alice_domine_drink_809834fe:
 translate french alice_domine_drink_df544769:
 
     # Alice_16 "Ах, вот так, да?! Вообще-то, тебя должен настораживать мой внешний вид!"
-    Alice_16 "Oh c’est ça, non ? En fait, tu devrais être très inquiet de mon apparence !"
+    Alice_16 "Mais oui, mais oui ! En fait, tu devrais être terrorisé par mon apparence !"
 
 # game/dialogues/alicetalk.rpy:5450
 translate french alice_domine_drink_0ed5c76a:
@@ -15991,7 +15991,7 @@ translate french alice_domine_drink_be80be0c:
 translate french alice_domine_drink_f8bdc8dd:
 
     # Max_05 "Ого! Эти офигенные сисечки всегда радуют мои глаза!"
-    Max_05 "Whoa ! Avec ces gros nichons ce ne sont plus yeux que j'ai, mais des soucoupes!"
+    Max_05 "Whoa ! Avec ces gros nichons ce ne sont plus des yeux que j'ai, mais des soucoupes!"
 
 # game/dialogues/alicetalk.rpy:5464
 translate french alice_domine_drink_796711e9:
@@ -16339,13 +16339,13 @@ translate french alice_domine_drink_how_should_b1b05964:
 translate french alice_help_carry_plates_170dcbe9:
 
     # Alice_07 "На это я, на самом деле, и надеялась. Пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "C’est ce que j’espérais vraiment. J’aurais besoin d’une paire de mains supplémentaire... Pendant que je finis de ranger, tu peux emmener les assiettes à la véranda ?" nointeract
+    Alice_07 "C’est ce que j’espérais vraiment. J’aurais besoin d’une paire de mains supplémentaire... Pendant que je finis de ranger, tu peux emmener les assiettes sur la terrasse ?" nointeract
 
 # game/dialogues/alicetalk.rpy:5707
 translate french alice_help_carry_plates_78889183:
 
     # Alice_07 "Помочь?! Чего это ты, Макс, такой добрый? Хотя, пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "M'aider ? Pourquoi t'es si gentil Max ? Mais une paire de mains supplémentaires n'est vraiment pas superflue... Pendant que je finis de ranger, tu peux emmener les assiettes à la véranda ?" nointeract
+    Alice_07 "M'aider ? Pourquoi t'es si gentil Max ? Mais une paire de mains supplémentaires n'est vraiment pas superflue... Pendant que je finis de ranger, tu peux emmener les assiettes sur la terrasse ?" nointeract
 
 # game/dialogues/alicetalk.rpy:5715
 translate french alice_help_carry_plates_9489751c:
@@ -16643,7 +16643,7 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:355
     old "Может конфетку перед массажем?"
-    new "Une petite friandise avant de les masser ?"
+    new "Un petit bonbon avant de commencer ?"
 
     # game/dialogues/alicetalk.rpy:369
     old "Почему ютуб? Это платные курсы..."
@@ -16687,7 +16687,7 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:492
     old "Может, ещё конфетку?"
-    new "Encore des friandises ?"
+    new "Encore un bonbon ?"
 
     # game/dialogues/alicetalk.rpy:492
     old "Тебе джинсы не мешают?"
@@ -16783,11 +16783,11 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:1250
     old "{i}снять с Алисы трусики{/i}"
-    new "{i}Enleve la culotte d’Alice{/i}"
+    new "{i}Enlève la culotte d’Alice{/i}"
 
     # game/dialogues/alicetalk.rpy:1250
     old "{i}снять с Алисы шортики{/i}"
-    new "{i}Enleve le short d’Alice{/i}"
+    new "{i}Enlève le short d’Alice{/i}"
 
     # game/dialogues/alicetalk.rpy:1274
     old "{i}ласкать её киску языком{/i}"
@@ -16795,7 +16795,7 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:1291
     old "{i}ещё быстрее работать языком{/i}"
-    new "{i}Allez encore plus vite{/i}"
+    new "{i}Aller encore plus vite{/i}"
 
     # game/dialogues/alicetalk.rpy:1380
     old "{i}сдерживаться{/i}"
@@ -17215,7 +17215,7 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:2606
     old "Может быть, тебя намазать кремом для загара?"
-    new "Tu veux de la crème solaire ?"
+    new "Un petit massage à la crème solaire ?"
 
     # game/dialogues/alicetalk.rpy:2606
     old "{i}Предложить Алисе намазать её кремом{/i}"
@@ -17231,7 +17231,7 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:2647
     old "{i}сделать массаж с кремом{/i}"
-    new "{i}massage à la crème{/i}"
+    new "{i}Commencer le massage{/i}"
 
     # game/dialogues/alicetalk.rpy:2647
     old "{i}{color=[gray]}сделать массаж с кремом{/color}{color=[red]}\nкрема недостаточно{/color}{/i}"
@@ -17359,7 +17359,7 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:4660
     old "{i}стянуть верх купальника{/i}"
-    new "{i}, tire sur le haut du maillot de bain{/i}"
+    new "{i}, Tire sur le haut du maillot de bain{/i}"
 
     # game/dialogues/alicetalk.rpy:4667
     old "{i}стянуть низ купальника{/i}"
@@ -17383,11 +17383,11 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:4941
     old "{i}идти за Алисой{/i}"
-    new "{i}s’en prendre à Alice{/i}"
+    new "{i}S’en remettre à Alice{/i}"
 
     # game/dialogues/alicetalk.rpy:4953
     old "{i}войти в комнату{/i}"
-    new "{i}entrer dans la chambre{/i}"
+    new "{i}Entrer dans la chambre{/i}"
 
     # game/dialogues/alicetalk.rpy:5073
     old "Конфетка, я полагаю, тоже не спасёт. Но я всё равно предложу..."
@@ -17499,7 +17499,7 @@ translate french strings:
 
     # game/dialogues/alicetalk.rpy:5714
     old "{i}отнести тарелки на веранду{/i}"
-    new "{i}Transporte les assiettes dans la véranda{/i}"
+    new "{i}Transporte les assiettes sur la terrasse{/i}"
 
     # game/dialogues/alicetalk.rpy:5729
     old "{i}приступить к ужину{/i}"
@@ -17647,7 +17647,7 @@ translate french ann_talk_tv_3f2cda46:
 translate french ann_talk_tv_39730cd3:
 
     # Ann_05 "Да вот, по кабельному какой-то фильм сейчас начнётся... Да и сериалов полно..."
-    Ann_05 "Oui, il y a un film qui passe sur le câble... Et sinon il y a plein de séries..."
+    Ann_05 "Eh bien, il y a un film qui passe sur le câble... Et sinon il y a plein de séries..."
 
 # game/dialogues/anntalk.rpy:193
 translate french ann_talk_tv_f84710e8:
@@ -18013,7 +18013,7 @@ translate french ann_tv_casual_r_2828cae2:
 translate french ann_tv_casual_r_a4da47d1:
 
     # Ann_04 "Ой, я думала, ты и не предложишь. В прошлый раз ты так хорошо мне плечи и шею помассировал, что я буду очень рада, если ты это повторишь..."
-    Ann_04 "Oh, je pensais que tu n'allais pas le proposer. Tu as si bien massé mes épaules et mon cou la dernière fois, je serais ravie que tu le refasses..."
+    Ann_04 "Ah, je pensais que tu n'allais pas le proposer. Tu as si bien massé mes épaules et mon cou la dernière fois, je serais ravie que tu recommences..."
 
 # game/dialogues/anntalk.rpy:485
 translate french ann_tv_casual_r_b210320a:
@@ -18025,7 +18025,7 @@ translate french ann_tv_casual_r_b210320a:
 translate french ann_tv_casual_r_37c5e269:
 
     # Ann_02 "Ой, я думала, ты и не предложишь. Надеюсь, сегодня ты отнесёшься к массажу с большим вниманием, чем в прошлый раз?"
-    Ann_02 "Oh, je pensais que tu n'allais pas proposer. J'espère que tu seras plus attentif au massage aujourd'hui que la dernière fois."
+    Ann_02 "Ah, je pensais que tu n'allais pas le proposer. J'espère que tu seras plus attentif au massage aujourd'hui que la dernière fois."
 
 # game/dialogues/anntalk.rpy:493
 translate french ann_tv_casual_r_38413f74:
@@ -18037,13 +18037,13 @@ translate french ann_tv_casual_r_38413f74:
 translate french ann_tv_casual_r_46d4b822:
 
     # Ann_05 "Ой, Макс! Как же чудесно... Как хорошо, что ты у меня есть... Твои руки просто нереально расслабляют!"
-    Ann_05 "Oh, Max ! C'est merveilleux... C'est si bon de t'avoir... Tes mains sont incroyablement douces."
+    Ann_05 "Oh, Max ! C'est merveilleux... Heureusement que tu es là... Tes mains sont d'une douceur incroyable."
 
 # game/dialogues/anntalk.rpy:499
 translate french ann_tv_casual_r_f4b189c3:
 
     # Max_03 "Спасибо! Я рад, что тебе нравится."
-    Max_03 "Merci ! Je suis heureux que tu ais aimé."
+    Max_03 "Merci ! Je suis heureux que tu aies aimé."
 
 # game/dialogues/anntalk.rpy:505
 translate french ann_tv_casual_r_eefcf53a:
@@ -18439,7 +18439,7 @@ translate french ann_yoga_with_max0_873d6aa0:
 translate french ann_yoga_with_max0_5b94cd49:
 
     # Ann_05 "Спасибо, Макс! Приятно такое слышать. Значит, я не зря этим занимаюсь и это работает..."
-    Ann_05 "Merci, Max ! C'est bon à entendre. Ça veut dire que je ne le fais pas pour rien et que ça fonctionne..."
+    Ann_05 "Merci Max ! C'est bon d'entendre ça. Ça veut dire que je ne le fais pas pour rien et que ça fonctionne..."
 
 # game/dialogues/anntalk.rpy:720
 translate french ann_yoga_with_max0_892ccf62:
@@ -18661,19 +18661,19 @@ translate french ann_yoga_with_maxr_c8a1933c:
 translate french ann_yoga_with_maxr_9dc43457:
 
     # Ann_12 "Это в смысле - да, будешь сидеть?"
-    Ann_12 "Que veux-tu dire, oh, tu m'écoutes ?"
+    Ann_12 "Que veux t... Oh ! Tu m'écoutes quand je te parle ?"
 
 # game/dialogues/anntalk.rpy:809
 translate french ann_yoga_with_maxr_b6c184b0:
 
     # Max_03 "А, что? Я просто засмотрелся и немного прослушал, что ты говорила..."
-    Max_03 "Oh quoi ? Je te regardais juste mais j'écoutais aussi ce que tu disais..."
+    Max_03 "Oh quoi ? Je te regardais juste mais j'écoutais aussi ce que tu me disais..."
 
 # game/dialogues/anntalk.rpy:815
 translate french ann_yoga_with_maxr_a8e83c1d:
 
     # Ann_04 "Макс, будь повнимательнее... Я ведь хочу, чтобы ты хоть чему-то научился от меня."
-    Ann_04 "Max, écoute bien... Je veux que tu mémorises ce que je t'explique."
+    Ann_04 "Max, écoute moi... Je veux que tu enregistres bien ce que je t'explique."
 
 # game/dialogues/anntalk.rpy:816
 translate french ann_yoga_with_maxr_8e1d1dc1:
@@ -19261,19 +19261,19 @@ translate french erofilm2_2_37c5e269:
 translate french erofilm2_2_38413f74:
 
     # Max_01 "Да, мам, я постараюсь..."
-    Max_01 "Oui, m'man, je vais essayer..."
+    Max_01 "Oui m'man. Je vais m'y atteler..."
 
 # game/dialogues/anntalk.rpy:1211
 translate french erofilm2_2_46d4b822:
 
     # Ann_05 "Ой, Макс! Как же чудесно... Как хорошо, что ты у меня есть... Твои руки просто нереально расслабляют!"
-    Ann_05 "Oh, Max ! C'est merveilleux... C'est si bon de t'avoir... Tes mains sont incroyablement douces."
+    Ann_05 "Oh, Max ! C'est merveilleux... Heureusement que tu es là... Tes mains sont incroyablement douces."
 
 # game/dialogues/anntalk.rpy:1212
 translate french erofilm2_2_f4b189c3:
 
     # Max_03 "Спасибо! Я рад, что тебе нравится."
-    Max_03 "Merci ! Je suis heureux que tu l'apprécies."
+    Max_03 "Merci ! Je suis heureux que tu apprécies."
 
 # game/dialogues/anntalk.rpy:1218
 translate french erofilm2_2_a59077b6:
@@ -27523,7 +27523,7 @@ translate french kira_about_photo1_9b836c58:
 translate french kira_about_cuni_8cc8ec4f:
 
     # Kira_13 "А что, Макс, должна?"
-    Kira_13 "Pourquoi devrais-je Max ?"
+    Kira_13 "Pourquoi ? Je devrais Max ?"
 
 # game/dialogues/kiratalk.rpy:707
 translate french kira_about_cuni_063924e5:
@@ -27553,7 +27553,7 @@ translate french kira_about_cuni_7ea229cb:
 translate french kira_about_cuni_17b9a3e8:
 
     # Kira_04 "Если только ночью, Макс. Когда я вернусь с работы. Если, конечно, ты не завалишься спать до моего возвращения..."
-    Kira_04 "Si, seulement la nuit Max. Quand je rentre du travail. A moins, bien sûr, que tu ne t'endormes avant mon retour..."
+    Kira_04 "Oui, mais seulement la nuit Max. Quand je rentre du travail. A moins, bien sûr, que tu ne t'endormes avant mon retour..."
 
 # game/dialogues/kiratalk.rpy:720
 translate french kira_about_cuni_92d34ad2:
@@ -30669,13 +30669,13 @@ translate french about_boy_reason_4afab932:
 translate french wash_dishes_lisa_825dd03a:
 
     # Lisa_09 "А что насчёт посуды?" nointeract
-    Lisa_09 "Et la vaisselle ?" nointeract
+    Lisa_09 "De la vaisselle ?" nointeract
 
 # game/dialogues/lisatalk.rpy:758
 translate french wash_dishes_lisa_9a2b70d3:
 
     # Lisa_01 "А вот знаешь... хочу! Да, спасибо, Макс!" nointeract
-    Lisa_01 "Tu sais... je dois la faire ! Mais oui, merci Max !" nointeract
+    Lisa_01 "Tu sais que je devrais la faire ! Alors je veux bien. Merci Max !" nointeract
 
 # game/dialogues/lisatalk.rpy:784
 translate french wash_dishes_lisa_d6fa3950:
@@ -38859,13 +38859,13 @@ translate french take_to_school_093ccce0:
 translate french take_to_school_626862b4:
 
     # Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, но сперва немного обнимашек..."
-    Lisa_01 "Encore une fois, merci, Max. Je vais partir au lycée, mais d'abord un petit câlin..."
+    Lisa_01 "Encore une fois, merci, Max. Je suis prête à partir, mais d'abord un petit câlin..."
 
 # game/dialogues/lisatalk.rpy:4434
 translate french take_to_school_470d0a5e:
 
     # Max_03 "На дорожку самое то!"
-    Max_03 "C'est parfait pour la route !"
+    Max_03 "Rien de tel avant la route !"
 
 # game/dialogues/lisatalk.rpy:4437
 translate french take_to_school_c9d35dcf:
@@ -38883,19 +38883,19 @@ translate french take_to_school_cc3367df:
 translate french take_to_school_46de9a7a:
 
     # Max_01 "Конечно, можешь! За такие-то объятия... Успехов тебе!"
-    Max_01 "Bien sûr que tu peux ! Pour un câlin comme ça... Bonne chance à toi !"
+    Max_01 "Bien sûr que tu peux ! Après un câlin comme ça... Passe une bonne journée !"
 
 # game/dialogues/lisatalk.rpy:4455
 translate french take_to_school_66f9eb7c:
 
     # Lisa_02 "Ну всё, мне уже пора идти... Я же могу и дальше рассчитывать на твою помощь с учёбой?" nointeract
-    Lisa_02 "C'est ça, je dois y aller maintenant... Je peux toujours compter sur toi pour m'aider à étudier, n'est-ce pas ?" nointeract
+    Lisa_02 "Allez, je dois y aller maintenant... Je peux toujours compter sur toi pour m'aider à étudier, n'est-ce pas ?" nointeract
 
 # game/dialogues/lisatalk.rpy:4459
 translate french take_to_school_63df00be:
 
     # Lisa_05 "[succes!t]Это я могу. Но только немножко и в щёчку! Пожалуй, ты это заслужил..."
-    Lisa_05 "[succes!t]Tu peux le faire. Mais juste sur la joue ! Je pense que tu l'as mérité..."
+    Lisa_05 "[succes!t]T'as le droit. Mais juste sur la joue ! Je pense que tu l'as mérité..."
 
 # game/dialogues/lisatalk.rpy:4463
 translate french take_to_school_79292d02:
@@ -38907,7 +38907,7 @@ translate french take_to_school_79292d02:
 translate french take_to_school_954367ef:
 
     # Lisa_13 "Я сказала, что ты заслужил поцелуй, а не лапать меня за зад, Макс!"
-    Lisa_13 "J'ai dit que tu méritais un baiser, pas que tu me tripoter les fesses, Max !"
+    Lisa_13 "J'ai dit que tu méritais un baiser, pas que tu me tripotes les fesses, Max !"
 
 # game/dialogues/lisatalk.rpy:4469
 translate french take_to_school_ab03ea9e:
@@ -38931,7 +38931,7 @@ translate french take_to_school_9d1cdba9:
 translate french take_to_school_c2d552ae:
 
     # Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
-    Lisa_02 "C'est tout, un peu des bonnes choses. Je m'en vais, ne t'ennuie pas..."
+    Lisa_02 "Ce sera tout, plein des bonnes sensations. Je m'en vais, amuse-toi bien..."
 
 # game/dialogues/lisatalk.rpy:4483
 translate french take_to_school_93e24500:
@@ -38949,25 +38949,25 @@ translate french take_to_school_bb885618:
 translate french take_to_school_2946fe9e:
 
     # Lisa_05 "[succes!t]Ты в последнее время хорошо мне помогал, так что можно... Но не в губы! Просто в щёчку и всё..."
-    Lisa_05 "[succes!t]Tu as été gentil avec moi dernièrement, alors tu peux... Mais pas sur les lèvres ! Juste sur la joue, c'est tout..."
+    Lisa_05 "[succes!t]Tu as été gentil avec moi ces temps-ci, alors tu peux... Mais pas sur les lèvres ! Juste sur la joue, c'est tout..."
 
 # game/dialogues/lisatalk.rpy:4495
 translate french take_to_school_50a3f276:
 
     # Max_07 "{m}Это пока что в щёчку... Но твои сладенькие губки рано или поздно не устоят и захотят встретиться с моими!{/m}" nointeract
-    Max_07 "{m}C'est sur la joue pour le moment... Mais tes douces petites lèvres ne résisteront pas et voudront rencontrer les miennes tôt ou tard !{/m}" nointeract
+    Max_07 "{m}C'est sur la joue pour le moment... Mais tes douces lèvres ne résisteront indéfiniment et rencontreront les miennes tôt ou tard !{/m}" nointeract
 
 # game/dialogues/lisatalk.rpy:4499
 translate french take_to_school_c2d552ae_1:
 
     # Lisa_02 "Ну всё, хорошего понемногу. Я побежала, не скучай..."
-    Lisa_02 "C'est tout, un peu des bonnes choses. Je m'en vais, ne t'ennuie pas..."
+    Lisa_02 "C'est tout, plein de bonnes sensations. Je m'en vais, amuse-toi bien..."
 
 # game/dialogues/lisatalk.rpy:4502
 translate french take_to_school_fb1c6e25:
 
     # Lisa_01 "[failed!t]Эй... Вот разбежался! Если бы ты почаще помогал с уроками, то я бы разрешила, а так... больше старайся. Я побежала в школу, не скучай!"
-    Lisa_01 "[failed!t]Hé... Quel écervelé ! Si tu m'aidais plus souvent à faire mes devoirs, je te laisserais faire, mais... essayez plus fort. Je pars à l'école, amuse-toi bien !"
+    Lisa_01 "[failed!t]Hé... Quel écervelé ! Si tu m'aidais plus souvent à faire mes devoirs, je te laisserais faire, mais... sois plus assidu. Je pars à l'école, amuse-toi bien !"
 
 # game/dialogues/lisatalk.rpy:4504
 translate french take_to_school_bb885618_1:
@@ -38979,19 +38979,19 @@ translate french take_to_school_bb885618_1:
 translate french take_to_school_598d67c3:
 
     # Lisa_01 "Ещё раз, спасибо тебе, Макс. Я побегу в школу, так что не скучай..."
-    Lisa_01 "Encore une fois, merci, Max. Je dois partir au lycée, alors ne t'ennuie pas..."
+    Lisa_01 "Encore une fois, merci, Max. Je dois partir au lycée, alors amuse-toi bien..."
 
 # game/dialogues/lisatalk.rpy:4508
 translate french take_to_school_bb885618_2:
 
     # Max_01 "А я буду. Успехов тебе!"
-    Max_01 "Pas de soucis. Bonne chance à toi"
+    Max_01 "Pas de soucis. Bonne journée."
 
 # game/dialogues/lisatalk.rpy:4513
 translate french take_to_school_af56c02f:
 
     # Lisa_09 "Вроде да... Но не знаю, я как-то не уверена. Сейчас побегу в школу, может вместе с одноклассниками разберусь в некоторых моментах."
-    Lisa_09 "Je pense que oui... Mais je ne sais pas, je ne suis pas sûre. Je vais courir au lycée maintenant, peut-être qu'avec mes camarades de classe, je trouverai des solutions."
+    Lisa_09 "Je pense que oui... Mais je ne sais pas, je ne suis pas sereine. Je vais partir maintenant, peut-être qu'avec mes camarades de classe, je trouverai des solutions."
 
 # game/dialogues/lisatalk.rpy:4514
 translate french take_to_school_29693a9f:
@@ -39003,25 +39003,25 @@ translate french take_to_school_29693a9f:
 translate french take_to_school_a6bd3f00:
 
     # Lisa_02 "Да! Я готова пойти в школу и получать пятёрки! Со мной ведь занимаются, Макс."
-    Lisa_02 "Oui ! Je suis prête à conquérir la classe et à avoir de bonnes notes ! Je pars au lycée, Max."
+    Lisa_02 "Oui ! Je suis prête à affronter la classe et à avoir de bonnes notes ! J'ai fini de réviser Max."
 
 # game/dialogues/lisatalk.rpy:4520
 translate french take_to_school_b56ae6aa:
 
     # Max_07 "А я просто уточнил. Но если что, я всегда помогу."
-    Max_07 "Et je ne faisais que clarifier. Mais s'il y a quelque chose, je suis toujours là pour aider."
+    Max_07 "C'est juste pour clarifier. Et si besoin, je suis là pour aider."
 
 # game/dialogues/lisatalk.rpy:4521
 translate french take_to_school_f7d87922:
 
     # Lisa_01 "Ага. Я побегу в школу, так что не скучай..."
-    Lisa_01 "Oui. Je vais courir au lycée, alors ne t'ennuie pas..."
+    Lisa_01 "Oui. Je vais devoir te laisser. Il ne te manque rien ?"
 
 # game/dialogues/lisatalk.rpy:4522
 translate french take_to_school_bb885618_3:
 
     # Max_01 "А я буду. Успехов тебе!"
-    Max_01 "Et je le ferai. Bonne chance à toi"
+    Max_01 "Non t'inquiète. Bosse bien alors."
 
 translate french strings:
 
@@ -39583,7 +39583,7 @@ translate french strings:
 
     # game/dialogues/lisatalk.rpy:754
     old "Хочешь, я помогу тебе домыть остальное?"
-    new "Tu veux que je t'aide à finir le reste ?"
+    new "Tu ne veux pas que je termine pour toi ?"
 
     # game/dialogues/lisatalk.rpy:774
     old "Хорошо, пойду займусь"
@@ -39935,11 +39935,11 @@ translate french strings:
 
     # game/dialogues/lisatalk.rpy:4454
     old "Если поцелуешь, то вполне можешь!"
-    new "Ah il faut que tu m'embrasses alors !"
+    new "Si tu m'embrasses, tu pourras y compter !"
 
     # game/dialogues/lisatalk.rpy:4454
     old "Только если дашь поцеловать!"
-    new "Si tu me laisses te donner un baiser !"
+    new "Ok, mais tu me laisses te donner un baiser alors !"
 
     # game/dialogues/lisatalk.rpy:4462
     old "{i}прикоснуться к попке Лизы{/i}"
@@ -42006,7 +42006,7 @@ translate french alice_sleep_morning_5de3529b:
 translate french alice_sleep_morning_8552aea7:
 
     # Max_07 "{m}Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, почти голую фигурку как следует... А если бы она снимала с себя то, что должна, то было бы просто шикарно! Нарушительница...{/m}"
-    Max_07 "{m}Ugh ! Alice dort encore, ce qui me rend heureux... Parce que ça veut dire que je peux avoir un bon aperçu de sa silhouette cool, presque nue... Et si elle a enlevé ce qu'elle devait, ce serait génial...{/m}"
+    Max_07 "{m}Ugh ! Alice dort encore, ce qui me rend heureux... Parce que ça veut dire que je peux avoir un bon aperçu de sa silhouette cool, presque nue... Et si elle avait enlevé ce qu'elle aurait dû, c'eût été génial...{/m}"
 
 # game/events/alice.rpy:248
 translate french alice_sleep_morning_b9b99f76:
@@ -42636,7 +42636,7 @@ translate french alice_shower_ladder_5478c4d6:
 translate french alice_dressed_shop_b2ccdc4e:
 
     # Max_09 "{m}Кажется, все собираются на шоппинг и Алиса сейчас переодевается...{/m}" nointeract
-    Max_09 "{m}Tout le monde semble faire du shopping et Alice est en train de se changer...{/m}" nointeract
+    Max_09 "{m}Tout le monde semble vouloir aller faire du shopping et Alice est en train de se changer...{/m}" nointeract
 
 # game/events/alice.rpy:719
 translate french alice_dressed_shop_f5380b66:
@@ -42684,7 +42684,7 @@ translate french alice_dressed_shop_1b7b43c8:
 translate french alice_dressed_friend_bb0f5056:
 
     # Max_09 "{m}Кажется, Алиса куда-то собирается...{/m}" nointeract
-    Max_09 "{m}Alice semble aller quelque part...{/m}" nointeract
+    Max_09 "{m}Alice semble se préparer pour aller quelque part...{/m}" nointeract
 
 # game/events/alice.rpy:811
 translate french alice_dressed_friend_f5380b66:
@@ -42804,7 +42804,7 @@ translate french alice_dressed_club_choco_8e118316:
 translate french alice_dressed_club_choco_0852a688:
 
     # Alice_02 "Может быть, мне их ещё и снять для тебя? Давай, вали уже, извращенец. А за конфетку спасибо..."
-    Alice_02 "T'aimerais que je l'enlève pour toi hein ? Allez, va-t'en, petit pervers. Et merci pour les friandises..."
+    Alice_02 "T'aimerais que je l'enlève pour toi hein ? Allez, va-t'en, petit pervers. Et merci pour les chocolats..."
 
 # game/events/alice.rpy:952
 translate french alice_dressed_club_choco_9346b73f:
@@ -43002,7 +43002,7 @@ translate french spider_in_bed_help_adbdf35e:
 translate french spider_in_bed_help_4a5e6693:
 
     # Alice_06 "Ну вот... разделась... И не говори, что этого мало... Я и так перед тобой тут голая стою, рук всё прикрыть не хватает... Доволен?" nointeract
-    Alice_06 "C'est parti... déshabillé... Ne me dis pas que ce n'est pas assez... Je suis là, nue devant toi, je ne peux pas me couvrir... Satisfait ?" nointeract
+    Alice_06 "Et voilà... déshabillée... Ne me dis pas que ce n'est pas assez... Je suis là, nue devant toi, je ne peux pas me couvrir... Satisfait ?" nointeract
 
 # game/events/alice.rpy:1185
 translate french spider_in_bed_help_bb493632:
@@ -43224,7 +43224,7 @@ translate french spider_in_bed_spider_d5b490ac:
 translate french spider_in_bed_let_go_e79006af:
 
     # Alice_13 "Макс! Я тебя просила убить его, а не отпускать! Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?.. Всё, иди отсюда. Я хочу спать!" nointeract
-    Alice_13 "Max ! Je t'ai dit de la tuer, pas de la laisser partir ! Merci de l'avoir fait sortir de la pièce, mais elle revient Vas-y, sors d'ici. Je veux aller dormir." nointeract
+    Alice_13 "Max ! Je t'ai dit de la tuer, pas de la laisser partir ! Merci de l'avoir fait sortir de la pièce, mais si elle revient ? Allez, sors d'ici. Je veux aller dormir." nointeract
 
 # game/events/alice.rpy:1339
 translate french spider_in_bed_kill_7019a935:
@@ -45376,7 +45376,7 @@ translate french strings:
 
     # game/events/alice.rpy:12
     old "{i}заглянуть со двора{/i}"
-    new "{i}vue de l'arrière-cour{/i}"
+    new "{i}vue du balcon{/i}"
 
     # game/events/alice.rpy:12
     old "{i}установить стремянку{/i}"
@@ -45400,7 +45400,7 @@ translate french strings:
 
     # game/events/alice.rpy:173
     old "{i}прокрасться в комнату{/i}"
-    new "{i}se faufiler dans la pièce{/i}"
+    new "{i}se faufiler dans la chambre{/i}"
 
     # game/events/alice.rpy:364
     old "{i}продолжить смотреть{/i}"
@@ -45488,11 +45488,11 @@ translate french strings:
 
     # game/events/alice.rpy:943
     old "{i}дать одну конфету{/i}"
-    new "{i}donnez une friandise{/i}"
+    new "{i}donnez un chocolat à la liqueur{/i}"
 
     # game/events/alice.rpy:947
     old "Ну, можешь трусы показать..."
-    new "Eh bien, tu peux montrer ton pantalon..."
+    new "Eh bien, tu peux montrer ta culotte..."
 
     # game/events/alice.rpy:947
     old "Да, никакого подвоха!"
@@ -46360,7 +46360,7 @@ translate french strings:
 translate french ann_sleep_6173ff68:
 
     # Max_00 "{m}В это время мама обычно спит.\nМне кажется, не стоит её будить...{/m}" nointeract
-    Max_00 "{m}En général, m'man dort à cette heure. Je ne pense pas que vous devriez la réveiller...{/m}" nointeract
+    Max_00 "{m}En général, m'man dort à cette heure. Je ne pense pas que je devrais la réveiller...{/m}" nointeract
 
 # game/events/ann.rpy:18
 translate french ann_sleep_2e3b88bc:
@@ -46618,7 +46618,7 @@ translate french ann_dressed_b21abe2e:
 translate french ann_dressed_2e55a9e3:
 
     # Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
-    Ann "{b}Anna : {/b}Max, je ne suis pas habillée. Je vais travailler. Attends un peu, chéri."
+    Ann "{b}Ann : {/b}Max, je ne suis pas habillée. Je vais travailler. Attends un peu chéri."
 
 # game/events/ann.rpy:276
 translate french ann_dressed_f3117b6b:
@@ -49688,7 +49688,7 @@ translate french strings:
 
     # game/events/eric.rpy:358
     old "{i}подойти ближе{/i}"
-    new "{i}pas plus près{/i}"
+    new "{i}vas plus près{/i}"
 
     # game/events/eric.rpy:358
     old "{i}тихо уйти{/i}"
@@ -49811,12 +49811,6 @@ translate french strings:
     new "{i}plus rapide pour regarder ce que font Lisa et Eric{/i}"
 
 # TODO: Translation updated at 2021-12-01 01:12
-
-# game/events/eric.rpy:320
-translate french eric_ann_tv_556c7fbe:
-
-    # Max_07 "{m}Кажется, мама с Эриком смотрят какой-то фильм. Наверняка, снова порно...{m}" nointeract
-    Max_07 "{m}Je pense que maman et Eric regardent une sorte de film. Probablement encore du porno...{/m}" nointeract
 
 # game/events/eric.rpy:322
 translate french eric_ann_tv_098f8cbb:
@@ -51596,7 +51590,7 @@ translate french kira_night_swim_cbc33816:
 translate french kira_night_swim_61e5f4b9:
 
     # Kira_05 "Понравилось, Макс? Как же я увлеклась... Надеюсь, мы никого не разбудили!"
-    Kira_05 "Tu as aimé, Max ? Comment je me suis laissé emporter... J'espère que nous n'avons réveillé personne !"
+    Kira_05 "Tu as aimé ? Je me suis bien laissée emporter... J'espère qu'on a réveillé personne !"
 
 # game/events/kira.rpy:853
 translate french kira_night_swim_4521e956:
@@ -51842,7 +51836,7 @@ translate french kira_night_tv_3d3fd53e:
 translate french kira_night_tv_413b9a2c_1:
 
     # Kira_04 "Ну что ты, Макс. Я просто не ожидала, что кто-то увидит. Так неловко... Мы ведь сохраним этот инцидент в тайне?"
-    Kira_04 "Allez, Max. Je ne m'attendais pas à ce que quelqu'un le remarque. C'est très embarrassant. On va garder l'incident secret, d'accord ?"
+    Kira_04 "Allez, Max. Je ne m'attendais pas à ce que quelqu'un me remarque. C'est très embarrassant. On va garder l'incident secret, d'accord ?"
 
 # game/events/kira.rpy:1075
 translate french kira_night_tv_3d3fd53e_1:
@@ -52100,7 +52094,7 @@ translate french kira_night_tv_promise_cuni_b6af5762:
 translate french kira_night_tv_promise_cuni_ee5fc1a0:
 
     # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Да! Я кончаю... Ахх..."
-    Kira_12 "Oh, Max, ne t'arrête pas ! Serrez mon cul plus fort ! Je suis si proche... Oui ! Je viens... HEH ... EAAHRRRGHHH!!!"
+    Kira_12 "Oh Max, ne t'arrête pas ! Serre mon cul plus fort ! Je suis si proche... Oui ! Je viens... HEH ... EAAHRRRGHHH!!!"
 
 # game/events/kira.rpy:1254
 translate french kira_night_tv_promise_cuni_99d10a9a:
@@ -52478,7 +52472,7 @@ translate french kira_night_tv_repeat_lesson_aa588da8:
 translate french kira_night_tv_repeat_lesson_3412b7f7:
 
     # Max_02 "Не отвлекайся!" nointeract
-    Max_02 "Reste concentré !" nointeract
+    Max_02 "Restons concentrés !" nointeract
 
 # game/events/kira.rpy:1477
 translate french kira_night_tv_repeat_lesson_4d9fd55a:
@@ -52508,7 +52502,7 @@ translate french kira_night_tv_repeat_lesson_8b5ea5ae:
 translate french kira_night_tv_repeat_lesson_c479e48c:
 
     # Max_05 "{m}У неё такая большая и шелковистая грудь, а сосочки твёрдые и набухшие... И ей это всё очень нравится, она дышит так жарко... Её рука так приятно и легко поглаживает головку моего члена!{/m}"
-    Max_05 "{m}Ses seins sont si gros et soyeux et ses tétons sont durs et gonflés... Et elle aime tellement tout ça, elle respire si fort... Sa main caresse la tête de ma bite si gentiment et si légèrement !{/m}"
+    Max_05 "{m}Ses seins sont si gros et soyeux et ses tétons sont durs et gonflés... Et elle aime tellement tout ça, elle respire si fort... Sa main caresse mon gland si gentiment et si légèrement !{/m}"
 
 # game/events/kira.rpy:1495
 translate french kira_night_tv_repeat_lesson_34c56996:
@@ -52550,7 +52544,7 @@ translate french kira_night_tv_repeat_lesson_2df27d30:
 translate french kira_night_tv_repeat_lesson_c494b70e:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
-    Kira_02 "Max... Si ma culotte te gêne, je vais l'enlever... Ou enleve-la toi-même."
+    Kira_02 "Max... Si ma culotte te gêne, je vais l'enlever... Ou enlève-la toi-même."
 
 # game/events/kira.rpy:1524
 translate french kira_night_tv_repeat_lesson_7d5bc607:
@@ -52802,13 +52796,13 @@ translate french kira_night_tv_cuni_var2_b6af5762:
 translate french kira_night_tv_cuni_var2_ea18dd2c:
 
     # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!"
-    Kira_12 "Oh, Max, ne t'arrête pas ! Serrez mon cul plus fort ! Je suis si proche... Ma chatte veut quelque chose de gros et de dur !"
+    Kira_12 "Oh, Max, ne t'arrête pas ! Serre mon cul plus fort ! Je suis si proche... Ma chatte veut quelque chose de gros et de dur !"
 
 # game/events/kira.rpy:1731
 translate french kira_night_tv_cuni_var2_ee5fc1a0:
 
     # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Да! Я кончаю... Ахх..."
-    Kira_12 "Oh, Max, ne t'arrête pas ! Serrez mon cul plus fort ! Je suis si proche... Oui ! Je viens... HEH ... EAAHRRRGHHH!!!"
+    Kira_12 "Oh Max, ne t'arrête pas ! Serre mon cul plus fort ! Je suis si proche... Oui ! Je viens... HEH ... EAAHRRRGHHH!!!"
 
 # game/events/kira.rpy:1732
 translate french kira_night_tv_cuni_var2_99d10a9a:
@@ -52940,7 +52934,7 @@ translate french kira_night_tv_tv_sex1_6a99226d:
 translate french kira_night_tv_tv_sex2_dfb388ae:
 
     # Kira_12 "Ох, Макс, не останавливайся! Сожми мою попку покрепче! Я уже так близко... Моя киска так хочет кое-чего большого и твёрдого!" nointeract
-    Kira_12 "Oh, Max, ne t'arrête pas ! Serrez mon cul plus fort ! Je suis si proche... Ma chatte veut quelque chose de gros et de dur !" nointeract
+    Kira_12 "Oh Max, ne t'arrête pas ! Serre mon cul plus fort ! Je suis si proche... Ma chatte veut quelque chose de gros et de dur !" nointeract
 
 # game/events/kira.rpy:1883
 translate french kira_night_tv_tv_sex2_69d27069:
@@ -53210,7 +53204,7 @@ translate french kira_night_tv_cum_in_mouth_2d0d8f41:
 translate french kira_night_tv_cum_in_mouth_2f0c8e1d:
 
     # Kira_07 "Ну вот. Понравилось? И ни капли мимо... ну, почти."
-    Kira_07 "Et voilà. Tu as aimé ? Et pas une seule goutte de passé... Enfin, presque."
+    Kira_07 "Et voilà. Tu as aimé ? Et pas une seule goutte à côté... Enfin, presque."
 
 # game/events/kira.rpy:2128
 translate french kira_night_tv_cum_in_mouth_a2bb381b:
@@ -54236,7 +54230,7 @@ translate french return_from_club_ass_a38e6fb8:
 translate french return_from_club_ass_0abe858e:
 
     # Max_01 "{m}Надеюсь, мама не будет сильно её ругать за то, что она легла спать голая... Со всеми может случиться! А хороша тётя, так и гипнотизирует своей красотой. Но пора и мне спать...{/m}" nointeract
-    Max_01 "{m}J'espère que sa sœur ne la gronde pas trop pour s'être couchée nue... Cela peut arriver à tout le monde ! C'est une jolie tatie, elle est si hypnotique avec sa beauté. Mais il est temps pour moi d'aller me coucher...{/m}" nointeract
+    Max_01 "{m}J'espère que m'man ne la grondera pas trop pour s'être couchée nue... Cela peut arriver à tout le monde ! C'est une jolie tatie, sa beauté est hypnotisante. Mais il est temps pour moi d'aller me coucher...{/m}" nointeract
 
 # game/events/kira.rpy:3221
 translate french kira_bath_with_eric_a64599ce:
@@ -54284,7 +54278,7 @@ translate french strings:
 
     # game/events/kira.rpy:25
     old "{i}войти{/i}"
-    new "{i}connexion{/i}"
+    new "{i}Entrer{/i}"
 
     # game/events/kira.rpy:87
     old "{i}идти к Кире{/i}"
@@ -54420,7 +54414,7 @@ translate french strings:
 
     # game/events/kira.rpy:1013
     old "Ни капли!"
-    new "Pas une seule goutte !"
+    new "Pas une seule seconde !"
 
     # game/events/kira.rpy:1013
     old "Да ты продолжай, я посижу, посмотрю..."
@@ -55126,13 +55120,13 @@ translate french lisa_shower_pinded_7428c407:
 translate french lisa_shower_pinded_cc880acd:
 
     # Lisa_09 "[spotted!t]Ну, Макс! Опять ты подглядываешь... Если так неймётся ужастики смотреть со мной, то считай ты попал! А сейчас, кыш отсюда..." nointeract
-    Lisa_09 "[spotted!t]Eh bien, Max ! Tu recommences à épier... Si tu veux tellement regarder des films d'horreur avec moi, ça tombe à l'eau ! Maintenant, sors d'ici..." nointeract
+    Lisa_09 "[spotted!t]Eh bien, Max ! Tu recommences à épier... Si tu veux tellement regarder des films d'horreur avec moi, ça tombe bien ! Maintenant, sors d'ici..." nointeract
 
 # game/events/lisa.rpy:208
 translate french lisa_shower_pinded_e7c30df4:
 
     # Lisa_13 "[spotted!t]Ай, Макс!!! Ты в конец бессовестный что ли?! Отвернись немедленно и иди куда шёл!"
-    Lisa_13 "[spotted!t]Aïe, Max ! !! T'es complètement inconscient ou quoi ? ! Fais demi-tour immédiatement et va voir là bas si j'y suis !"
+    Lisa_13 "[spotted!t]Aïe, Max ! !! T'es inconscient ou quoi ? Fais demi-tour immédiatement et va voir là bas si j'y suis !"
 
 # game/events/lisa.rpy:209
 translate french lisa_shower_pinded_6f1ab50c:
@@ -55168,7 +55162,7 @@ translate french lisa_dressed_69f4873f:
 translate french lisa_dressed_dad74527:
 
     # Max_09 "{m}Сейчас Лиза должна переодеваться, чтобы отправиться вместе со всеми по магазинам...{/m}" nointeract
-    Max_09 "{m}Maintenant, Lisa doit s'habiller pour aller faire du shopping avec tous les autres...{/m}" nointeract
+    Max_09 "{m}Maintenant, Lisa doit s'habiller pour aller aussi faire du shopping avec tous les autres...{/m}" nointeract
 
 # game/events/lisa.rpy:737
 translate french lisa_dressed_aaeb2a78:
@@ -55180,7 +55174,7 @@ translate french lisa_dressed_aaeb2a78:
 translate french lisa_dressed_c83f0902:
 
     # Max_09 "{m}Сейчас Лиза обычно переодевается, чтобы пойти погулять. Ну, или что она там ещё делает...{/m}" nointeract
-    Max_09 "{m}Maintenant, Lisa change habituellement de vêtements pour aller se promener. Ou quoi que ce soit d'autre qu'elle fasse...{/m}" nointeract
+    Max_09 "{m}Maintenant, Lisa change habituellement de vêtements pour aller se balader. Ou je ne sais quoi...{/m}" nointeract
 
 # game/events/lisa.rpy:754
 translate french lisa_dressed_869e0bce:
@@ -55192,7 +55186,7 @@ translate french lisa_dressed_869e0bce:
 translate french lisa_dressed_3c9093ff:
 
     # Lisa "{b}Лиза:{/b} Макс, дай одеться спокойно! Потом свой ноутбук заберёшь..." nointeract
-    Lisa "{b}Lisa :{/b} Max, laisse-moi m'habiller en paix ! Tu pourras récupérer ton ordinateur plus tard..." nointeract
+    Lisa "{b}Lisa :{/b} Max, laisse-moi m'habiller en paix ! Tu récupéreras ton ordi plus tard..." nointeract
 
 # game/events/lisa.rpy:798
 translate french lisa_dressed_ad44f284:
@@ -55204,7 +55198,7 @@ translate french lisa_dressed_ad44f284:
 translate french lisa_dressed_get_notebook0_02a8d3e8:
 
     # Lisa_11 "Макс! Я не одета!!! Быстро закрой дверь с той стороны и не входи, пока я не переоденусь!"
-    Lisa_11 "Max ! Je ne suis pas habillée ! !! Ferme moi cette porte et attend que j'ai fini de me changer !"
+    Lisa_11 "Max ! Je ne suis pas prête !!! Ferme moi cette porte et attend que j'ai fini de me changer !"
 
 # game/events/lisa.rpy:806
 translate french lisa_dressed_get_notebook0_43ba5f09:
@@ -55222,13 +55216,13 @@ translate french lisa_dressed_get_notebook0_4d87ccb7:
 translate french lisa_dressed_get_notebook0_0677ddc2:
 
     # Lisa_12 "Ладно, неважно... Забирай свой ноутбук и уходи. Дай мне уже переодеться..." nointeract
-    Lisa_12 "OK, laisse tomber... Prends ton ordinateur et vas-y. Laissez-moi juste me changer..." nointeract
+    Lisa_12 "OK, laisse tomber... Prends ton ordinateur et dégage. Laissez-moi juste me changer..." nointeract
 
 # game/events/lisa.rpy:810
 translate french lisa_dressed_get_notebook0_fb4e2ab0:
 
     # Lisa_11 "Макс! Я не одета!!! Выйди и закрой за собой дверь! Мне нужно переодеться!"
-    Lisa_11 "Max ! Je ne suis pas habillé ! !! Sors et ferme la porte derrière toi ! J'ai besoin de me changer !"
+    Lisa_11 "Max ! Je ne suis pas habillée !!! Sors et ferme la porte ! J'ai besoin de me changer !"
 
 # game/events/lisa.rpy:811
 translate french lisa_dressed_get_notebook0_43ba5f09_1:
@@ -55240,7 +55234,7 @@ translate french lisa_dressed_get_notebook0_43ba5f09_1:
 translate french lisa_dressed_get_notebook0_d66e147c:
 
     # Lisa_09 "Деловой, куда деваться! Сказал бы хоть, что заходишь..."
-    Lisa_09 "Toi Homme d'affaires ? Quel chemin à parcourir ! Tu pourrais au moins prévenir que tu rentres..."
+    Lisa_09 "Toi Homme d'affaires ? Quel chemin parcouru ! Tu pourrais au moins prévenir que tu rentres..."
 
 # game/events/lisa.rpy:813
 translate french lisa_dressed_get_notebook0_2d30e546:
@@ -55252,25 +55246,25 @@ translate french lisa_dressed_get_notebook0_2d30e546:
 translate french lisa_dressed_get_notebook0_6588bce8:
 
     # Lisa_11 "Макс! Я не одета!!! Выйди, пожалуйста, чтобы я могла переодеться! И дверь за собой закрой!"
-    Lisa_11 "Max ! Je ne suis pas habillée ! !! S'il te plaît, sors que je puisse me changer ! Et ferme la porte derrière toi !"
+    Lisa_11 "Max ! Je ne suis pas habillée !!! S'il te plaît, sors que je puisse me changer ! Et ferme cette porte !"
 
 # game/events/lisa.rpy:816
 translate french lisa_dressed_get_notebook0_43ba5f09_2:
 
     # Max_09 "Лиза, мне ноутбук нужен для дела!"
-    Max_09 "Lisa, j'ai besoin de l'ordinateur pour une affaire !"
+    Max_09 "Lisa, j'ai besoin de l'ordinateur pour affaire !"
 
 # game/events/lisa.rpy:819
 translate french lisa_dressed_get_notebook0_d66e147c_1:
 
     # Lisa_09 "Деловой, куда деваться! Сказал бы хоть, что заходишь..."
-    Lisa_09 "Toi Homme d'affaires ? Quel chemin à parcourir ! Tu pourrais au moins prévenir que tu rentres..."
+    Lisa_09 "Toi Homme d'affaires ? Quel chemin parcouru ! Tu pourrais au moins prévenir que tu rentres..."
 
 # game/events/lisa.rpy:820
 translate french lisa_dressed_get_notebook0_2d30e546_1:
 
     # Lisa_10 "Ты не глазей, а ноутбук быстрее забирай и уходи. Дай мне уже переодеться..." nointeract
-    Lisa_10 "Ne regarde pas, prends ton ordinateur et vas-y. Laisse-moi me changer..." nointeract
+    Lisa_10 "Ne regarde pas, prends ton ordinateur et sors. Laisse-moi me changer..." nointeract
 
 # game/events/lisa.rpy:823
 translate french lisa_dressed_get_notebook0_eb706326:
@@ -55282,13 +55276,13 @@ translate french lisa_dressed_get_notebook0_eb706326:
 translate french lisa_dressed_get_notebook1_657f8291:
 
     # Lisa "{b}Лиза:{/b} Ладно, так уж и быть, забирай быстрее..." nointeract
-    Lisa "{b}Lisa :{/b} Très bien, tu as intérêt à te dépêcher de récupérer." nointeract
+    Lisa "{b}Lisa :{/b} Très bien, tu as intérêt à te grouiller de le récupérer." nointeract
 
 # game/events/lisa.rpy:837
 translate french lisa_dressed_get_notebook1_77805a20:
 
     # Lisa_01 "Ты что, без ноутбука и часа прожить не можешь? Подождать никак не мог?"
-    Lisa_01 "Tu ne peux pas passer une heure sans ton ordinateur ? Tu ne pouvais pas attendre ?"
+    Lisa_01 "Tu ne peux pas passer une heure sans ton ordinateur ? Ça ne pouvais pas attendre ?"
 
 # game/events/lisa.rpy:838
 translate french lisa_dressed_get_notebook1_968d6553:
@@ -55300,7 +55294,7 @@ translate french lisa_dressed_get_notebook1_968d6553:
 translate french lisa_dressed_get_notebook1_6388868d:
 
     # Lisa_02 "Сомневаюсь, что у тебя там могут быть какие-то сверхважные дела..."
-    Lisa_02 "Je doute que tu aies des choses super importantes à faire avec..."
+    Lisa_02 "Je doute que tu aies des choses siii importantes à faire avec..."
 
 # game/events/lisa.rpy:840
 translate french lisa_dressed_get_notebook1_8649258d:
@@ -55312,7 +55306,7 @@ translate french lisa_dressed_get_notebook1_8649258d:
 translate french lisa_dressed_get_notebook1_a85f1f9c:
 
     # Lisa_01 "Вот именно сейчас он тебе обязательно понадобился, да? Подождать никак не мог?"
-    Lisa_01 "Il fallait que tu l'aies maintenant, n'est-ce pas ? Ça n'aurait pas pu attendre ?"
+    Lisa_01 "Il fallait que tu l'aies maintenant hein ? Ça n'aurait pas pu attendre ?"
 
 # game/events/lisa.rpy:843
 translate french lisa_dressed_get_notebook1_968d6553_1:
@@ -55438,7 +55432,7 @@ translate french lisa_dressed_stay_in_room_cdba7705:
 translate french lisa_dressed_moment2_8183fb49:
 
     # Lisa_11 "Макс! Я не одета!!! {p=3}{nw}"
-    Lisa_11 "Max ! Je ne suis pas habillé !!! {p=3}{nw}"
+    Lisa_11 "Max ! Je ne suis pas habillée !!! {p=3}{nw}"
 
 # game/events/lisa.rpy:942
 translate french lisa_dressed_moment2_0caabb4b:
@@ -56410,7 +56404,7 @@ translate french lisa_horor_movie_0_d3ed354f:
 translate french lisa_horor_movie_0_223fddda:
 
     # Lisa_12 "Ага, ноутбук, как же! Сейчас-то у тебя от чего встал?!"
-    Lisa_12 "Ouais, l'ordinateur portable, mon cul ! Qu'est-ce qui te fait bander maintenant ?"
+    Lisa_12 "Ouais, l'ordinateur portable, mon cul ! Pourquoi tu bandes là ?"
 
 # game/events/lisa.rpy:1604
 translate french lisa_horor_movie_0_a1d4a1fc:
@@ -56422,13 +56416,13 @@ translate french lisa_horor_movie_0_a1d4a1fc:
 translate french lisa_horor_movie_0_bda43f4d:
 
     # Lisa_09 "Да как тут внимание не обращать, ты же меня своим членом сейчас трогал?!"
-    Lisa_09 "Comment je ne peux pas faire attention, tu viens de me toucher avec ta bite ? !"
+    Lisa_09 "Comment je ne peux ne pas faire attention, tu viens de me toucher avec ta bite ? !"
 
 # game/events/lisa.rpy:1606
 translate french lisa_horor_movie_0_2ba42890:
 
     # Max_09 "Во-первых, не трогал, а ты просто положила на него свою ногу, а во-вторых, ты же к моей ноге своей киской тоже прижалась... Так что всё честно!"
-    Max_09 "Tout d'abord, je ne l'ai pas fait, et tu as juste mis ton pied dessus, et ensuite, tu as pressé ta chatte contre mon pied aussi... Donc tout est normal !"
+    Max_09 "Tout d'abord, je ne l'ai pas fait, et tu as juste mis ta jambe dessus. Et ensuite, tu as pressé ta chatte contre ma jambe aussi... Donc tout est normal !"
 
 # game/events/lisa.rpy:1611
 translate french lisa_horor_movie_0_42cba858:
@@ -56512,7 +56506,7 @@ translate french lisa_horor_movie_r_10373a9d:
 translate french lisa_horor_movie_r_5ed34e7c:
 
     # Max_14 "Я боюсь! Теперь стало намного страшнее после твоих слов."
-    Max_14 "J'ai peur ! C'est beaucoup plus effrayant maintenant que tu as dit ça."
+    Max_14 "Là j'ai peur ! C'est beaucoup plus effrayant maintenant que tu as dit ça."
 
 # game/events/lisa.rpy:1744
 translate french lisa_horor_movie_r_6f2e38dc:
@@ -56548,13 +56542,13 @@ translate french lisa_horor_movie_r_d21ad010:
 translate french lisa_horor_movie_r_11d3ed3b:
 
     # Lisa_13 "[norestrain!t]Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
-    Lisa_13 "[norestrain!t]Max, c'est moi ou il y a quelque chose qui pousse sous mon pied en ce moment ?"
+    Lisa_13 "[norestrain!t]Max, c'est moi ou il y a quelque chose qui pousse sous ma cuisse en ce moment ?"
 
 # game/events/lisa.rpy:1768
 translate french lisa_horor_movie_r_12b43dd4:
 
     # Lisa_09 "[restrain!t]Макс, я уже спать хочу. Давай закругляться. Да и набоялась я уже слишком..."
-    Lisa_09 "[restrain!t]Max, j'ai déjà sommeil. Concluons. Et j'ai trop bu..."
+    Lisa_09 "[restrain!t]Max, j'ai déjà sommeil. Concluons. Et j'en ai trop vu..."
 
 # game/events/lisa.rpy:1771
 translate french lisa_horor_movie_r_a3b4a2f9:
@@ -56602,7 +56596,7 @@ translate french lisa_horor_movie_r_12129bd6:
 translate french lisa_horor_movie_r_5aae11b2:
 
     # Lisa_02 "Да, так уже совсем не страшно. Я пойду... Спокойной ночи, Макс."
-    Lisa_02 "Ouais, ce n'est pas du tout effrayant. J'y vais... Bonne nuit, Max."
+    Lisa_02 "Ouais, je ne suis plus du tout effrayée. J'y vais... Bonne nuit, Max."
 
 # game/events/lisa.rpy:1805
 translate french lisa_horor_movie_r_5c2cac39:
@@ -56614,7 +56608,7 @@ translate french lisa_horor_movie_r_5c2cac39:
 translate french lisa_horor_movie_r_62242552:
 
     # Lisa_13 "Ну ага, просто иди! А вдруг меня что-то схватит?!"
-    Lisa_13 "Oui, vas-y ! Et si quelque chose m'attrape ?"
+    Lisa_13 "C'est ça, vas-y ! Et si quelque chose m'attrape ?"
 
 # game/events/lisa.rpy:1816
 translate french lisa_horor_movie_r_4217f727:
@@ -56626,7 +56620,7 @@ translate french lisa_horor_movie_r_4217f727:
 translate french lisa_horor_movie_r_08782138:
 
     # Lisa_01 "Ой, с тобой и правда страшно спать будет! Я пошла к себе..."
-    Lisa_01 "Oh, ça va vraiment être effrayant de dormir avec toi ! J'y vais..."
+    Lisa_01 "Oh, ça doit vraiment être effrayant de dormir avec toi ! J'y vais..."
 
 # game/events/lisa.rpy:1821
 translate french lisa_horor_movie_r_1dc372f8:
@@ -56638,43 +56632,43 @@ translate french lisa_horor_movie_r_1dc372f8:
 translate french lisa_horor_movie_r_26ebf379:
 
     # Lisa_13 "Макс, мне кажется или у меня под ногой сейчас что-то увеличивается?"
-    Lisa_13 "Max, c'est moi ou il y a quelque chose qui pousse sous mon pied en ce moment ?"
+    Lisa_13 "Max, c'est moi ou il y a quelque chose qui grossit sous ma jambe en ce moment ?"
 
 # game/events/lisa.rpy:1829
 translate french lisa_horor_movie_r_not_restrain_e9260b73:
 
     # Max_07 "Однозначно кажется..."
-    Max_07 "Il semble vraiment..."
+    Max_07 "Ça m'en a tout l'air..."
 
 # game/events/lisa.rpy:1835
 translate french lisa_horor_movie_r_not_restrain_04d9f431:
 
     # Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Хотя, ничего удивительного, я была почти уверена, что так и будет."
-    Lisa_12 "Oui, je le pense ! Tu es à nouveau excité... Ce n'est pas une surprise, j'étais presque sûre que ce serait le cas."
+    Lisa_12 "Oui, c'est bien ce que je pense ! Tu es à nouveau excité... Ce n'est pas une surprise, j'étais presque sûre que ce serait le cas."
 
 # game/events/lisa.rpy:1836
 translate french lisa_horor_movie_r_not_restrain_c4107b2d:
 
     # Max_09 "Ну встал и встал, подумаешь. Спрячу под ноутбуком."
-    Max_09 "Alors je me suis levé, la belle affaire. Je vais le cacher sous mon ordinateur."
+    Max_09 "Et alors elle s'est relevée ? La belle affaire. Je vais la cacher sous mon ordinateur."
 
 # game/events/lisa.rpy:1838
 translate french lisa_horor_movie_r_not_restrain_afe91d1a:
 
     # Lisa_12 "Ага, кажется, как же! Опять ты возбудился... Я же твоя сестра, тебе стыдно должно быть!"
-    Lisa_12 "Oui, je le pense ! Tu es à nouveau excité... Je suis ta sœur, tu devrais avoir honte de toi !"
+    Lisa_12 "Oui, c'est bien ce que je pense ! Tu es à nouveau excité... Je suis ta sœur, t'a pas honte ?"
 
 # game/events/lisa.rpy:1839
 translate french lisa_horor_movie_r_not_restrain_5876b4d3:
 
     # Max_09 "Стыдно?! Ну встал и встал, подумаешь."
-    Max_09 "Honteux ? ! Alors \"il se levit et il s'en allut\", la belle affaire."
+    Max_09 "Honte ? Alors \"Elle se levit... et elle s'en allut\", la belle affaire."
 
 # game/events/lisa.rpy:1844
 translate french lisa_horor_movie_r_not_restrain_8ab024b6:
 
     # Lisa_10 "Хватит уже похабно думать обо мне! Я ушла спать... Ой! Как страшно..."
-    Lisa_10 "Arrête d'être méchant avec moi ! Je me suis couchée... Aïe ! Si effrayant..."
+    Lisa_10 "Arrête d'être ironique avec moi ! Je me suis couchée dessus... Aïe ! C'est effrayant..."
 
 # game/events/lisa.rpy:1845
 translate french lisa_horor_movie_r_not_restrain_75e90268:
@@ -56716,7 +56710,7 @@ translate french strings:
 
     # game/events/lisa.rpy:824
     old "{i}уйти с ноутбуком на веранду{/i}"
-    new "{i}sortir l'ordinateur dans la véranda{/i}"
+    new "{i}sortir l'ordinateur sur la terrasse{/i}"
 
     # game/events/lisa.rpy:833
     old "{i}забрать ноутбук{/i}"
@@ -57138,7 +57132,7 @@ translate french Alarm_9878a7fd:
 translate french Alarm_06b9714c:
 
     # Max_19 "{m}Как же в этом доме хорошо...{/m}"
-    Max_19 "{m}Comme cette maison est belle...{/m}"
+    Max_19 "{m}Comme cette maison est charmante...{/m}"
 
 # game/events/max.rpy:168
 translate french Shower_691d4581:
@@ -57420,7 +57414,7 @@ translate french ClearPool_f95b5748:
 translate french ClearPool_26cb581b:
 
     # Max_01 "{m}Эх... Работа нудная, но важно, чтобы мои девочки плескались в чистой водичке. И теперь, я слежу за этим сам.{/m}"
-    Max_01 "{m}Eh... C'est un boulot chiant, mais il est important que mes filles barbotent dans de l'eau propre. Du coup, je n'peux m'en prendre qu'à moi-même.{/m}"
+    Max_01 "{m}Eh... C'est un boulot chiant, mais il est important que mes filles barbottent dans de l'eau propre. Du coup, je ne peux m'en prendre qu'à moi-même.{/m}"
 
 # game/events/max.rpy:556
 translate french DishesWashed_62001d7c:
@@ -57786,7 +57780,7 @@ translate french about_credit_90bb447c:
 translate french about_credit_73692d65:
 
     # Max_04 "{m}Подытожим условия: \n{b}В течение месяца нужно вернуть всю сумму займа + 10%% \nВ случае не погашения в срок, сумма долга утраивается каждые 30 дней, а с моего сайта будут ежедневно изымать половину прибыли. И занять ещё раз уже не получится...{/b} \n\nЛучше, конечно же, до такого не доводить.{/m}"
-    Max_04 "{m}Récapitulons les conditions :\n{i}Vous devez rembourser le montant total du prêt + 10%% \nSi je ne rembourse pas à temps, la dette est triplée tous les 30 jours, et la moitié des bénéfices sera retirée de mon site chaque jour. De plus vous ne pourrez pas emprunter à nouveau...{/i} \n\nIl vaut mieux ne pas en arriver là.{/m}"
+    Max_04 "{m}Récapitulons les conditions :\n{b}Vous devez rembourser le montant total du prêt + 10%% \nSi je ne rembourse pas à temps, la dette est triplée tous les 30 jours, et la moitié des bénéfices sera retirée de mon site chaque jour. De plus vous ne pourrez pas emprunter à nouveau...{/b} \n\nIl vaut mieux ne pas en arriver là.{/m}"
 
 # game/events/max.rpy:1039
 translate french about_credit_5011fb20:
@@ -58518,13 +58512,13 @@ translate french olivia_second_night_visit_a6603bc7:
 translate french olivia_night_visit_r_c0291a99:
 
     # Olivia_01 "Привет, Макс. А вот и я! Дома никого?"
-    Olivia_01 "Hé Max ! Je suis là ! Personne à la maison ?"
+    Olivia_01 "Bonsoir Max ! Je suis là ! Personne à la maison ?"
 
 # game/events/olivia.rpy:285
 translate french olivia_night_visit_r_04f7e51a:
 
     # Max_04 "Привет! Рад тебя видеть. Дома только я и Лиза. Проходи..."
-    Max_04 "Bonjour ! C'est bon de te revoir. Il y a juste Lisa et moi à la maison. Entre..."
+    Max_04 "Bonsoir ! C'est bon de te revoir. Non, il y a juste Lisa et moi ici. Entre..."
 
 # game/events/olivia.rpy:290
 translate french olivia_night_visit_r_b6a957f2:
@@ -58536,13 +58530,13 @@ translate french olivia_night_visit_r_b6a957f2:
 translate french olivia_night_visit_r_9b51ac68:
 
     # Lisa_02 "Я тоже рада поваляться вместе с вами хоть один поздний вечерок." nointeract
-    Lisa_02 "Moi aussi, je suis ravie de faire du cocooning télé avec vous pour cette fin de soirée." nointeract
+    Lisa_02 "Moi aussi, je suis ravie de faire du cocooning télé avec toi en cette fin de soirée." nointeract
 
 # game/events/olivia.rpy:303
 translate french olivia_night_visit_r_8574b567:
 
     # Max_05 "Ого! Лиза у нас сегодня тоже почти голенькая будет! Рад, что не стесняешься..."
-    Max_05 "Wow ! Nous aurons même une Lisa presque nue aujourd'hui ! Content que tu aies réussi à te libérer de ta timidité..."
+    Max_05 "Wow ! Même Lisa est d'humeur à se lâcher et se mettre à nu ce soir ! Content que tu aies réussie à te libérer de ta timidité..."
 
 # game/events/olivia.rpy:304
 translate french olivia_night_visit_r_a21cc315:
@@ -58560,7 +58554,7 @@ translate french olivia_night_visit_r_43994455:
 translate french olivia_night_visit_r_d351d1a1:
 
     # Lisa_01 "Только не засматривайся на меня так сильно! Я ведь и одеться могу."
-    Lisa_01 "Ne me regarde pas tout le temps ! Je pourrais être tentée de me rhabiller."
+    Lisa_01 "Mais tu me dévore pas des yeux sans arrêts Ok ? Sinon je pourrais être tentée de me rhabiller."
 
 # game/events/olivia.rpy:313
 translate french olivia_night_visit_r_252b0246:
@@ -58572,7 +58566,7 @@ translate french olivia_night_visit_r_252b0246:
 translate french olivia_night_visit_r_a6b1ccae:
 
     # Lisa_00 "Нет. У нас с Максом было... одно соглашение и он его нарушил. Поэтому радости у него сегодня будет поменьше."
-    Lisa_00 "Non. Max et moi avons... un accord, et il l'a rompu. Donc il va être un peu moins content aujourd'hui."
+    Lisa_00 "Non. Max et moi avions... un accord, et il l'a rompu. Donc il va être un peu moins content aujourd'hui."
 
 # game/events/olivia.rpy:316
 translate french olivia_night_visit_r_f773bcda:
@@ -58596,13 +58590,13 @@ translate french olivia_night_visit_r_24763cdf:
 translate french olivia_night_visit_r_c53d4c7a:
 
     # Lisa_10 "Вот помогал бы мне на этой неделе хоть немного с домашним заданием, ручки бы мои пожалел, с посудой помог... Или ты думаешь, защитил меня от маминого наказания разок и всё? Голую грудь в студию?!"
-    Lisa_10 "Tu aurais pu m'aider à faire mes devoirs cette semaine, tu aurais pu masser mes mains, m'aider à faire la vaisselle... Et tu penses que  me protéger de la punition de m'man une seule fois serait suffisant ? s'il te plaît !"
+    Lisa_10 "Tu aurais pu m'aider à faire mes devoirs cette semaine, tu aurais pu masser mes mains, ou m'aider à faire la vaisselle... Et tu penses que m'avoir protégée de la punition de m'man une seule fois serait suffisant ? s'il te plaît !"
 
 # game/events/olivia.rpy:322
 translate french olivia_night_visit_r_1c92ddb9:
 
     # Lisa_10 "Вот помогал бы мне на этой неделе хоть немного с домашним заданием, ручки бы мои пожалел, с посудой помог... С таким Максом я бы ещё рядом посидела без маечки, а так..."
-    Lisa_10 "J'aurais aimé qu'il m'aide à faire mes devoirs cette semaine, qu'il masse mes mains, qu'il m'aide à faire la vaisselle... Avec un Max comme ça, je me serais volontier assise à côté de lui sans chemise, mais là..."
+    Lisa_10 "J'aurais aimé qu'il m'aide à faire mes devoirs cette semaine, qu'il masse mes mains, qu'il m'aide à faire la vaisselle... Avec un Max comme ça, je me serais volontier assise à côté de lui sans haut, mais là..."
 
 # game/events/olivia.rpy:324
 translate french olivia_night_visit_r_414a4238:
@@ -58632,7 +58626,7 @@ translate french olivia_night_visit_r_2fa10a26:
 translate french olivia_night_visit_r_a6603bc7:
 
     # Olivia_04 "Такими темпами мы ничего не посмотрим. Пойдёмте уже..." nointeract
-    Olivia_04 "A ce rythme, nous ne pourrons plus rien voir. Alors allons-y..." nointeract
+    Olivia_04 "Arrêtons de papoter, ou nous ne pourrons plus rien voir. Alors allons-y..." nointeract
 
 # game/events/olivia.rpy:375
 translate french olivia_first_night_out_with_67a0d9d9:
@@ -58644,13 +58638,13 @@ translate french olivia_first_night_out_with_67a0d9d9:
 translate french olivia_first_night_out_with_1f749322:
 
     # Olivia_03 "Так садись, Макс... Потом вспомнишь!"
-    Olivia_03 "Alors, assieds-toi, Max... Tu t'en souviendras plus tard !"
+    Olivia_03 "Alors, assieds-toi, Max... Ça te reviendra plus tard !"
 
 # game/events/olivia.rpy:377
 translate french olivia_first_night_out_with_292d59ce:
 
     # Max_02 "Ах, вот... Я тоже буду сидеть голышом! Вы же не против?"
-    Max_02 "Ah, si... Je m'assiérai nu, moi aussi ! Ça ne vous dérange pas, n'est-ce pas ?"
+    Max_02 "Ah, si... Je vais m'assoir nu moi aussi. Ça ne vous dérange pas, j'espère ?"
 
 # game/events/olivia.rpy:378
 translate french olivia_first_night_out_with_922025e6:
@@ -59100,25 +59094,25 @@ translate french olivia_second_night_out_with_9b2e7333:
 translate french olivia_repeatable_night_out_with_01d47c87:
 
     # Lisa_02 "Ты чего завис, Макс? Давай садись быстрее..."
-    Lisa_02 "Pourquoi tu traînes dans le coin Max ? Entre vite..."
+    Lisa_02 "Pourquoi tu traînes dans le coin Max ? Viens t'assoir aller !"
 
 # game/events/olivia.rpy:544
 translate french olivia_repeatable_night_out_with_35ff1b35:
 
     # Max_02 "Знаешь, бывают моменты, когда засмотришься на что-то и потом никак оторваться не можешь..."
-    Max_02 "Tu sais, il y a des fois où tu regardes quelque chose et où tu ne peux pas détourner le regard..."
+    Max_02 "Tu sais, il y a des fois où tu es obnubilé par quelque chose et où tu ne peux pas détourner le regard..."
 
 # game/events/olivia.rpy:545
 translate french olivia_repeatable_night_out_with_3e8c189f:
 
     # Lisa_01 "Может, мне тогда стоит одеться, чтобы ты над душой не стоял?"
-    Lisa_01 "Peut-être que je devrais rester habillée alors, pour que tu me lâches un peu."
+    Lisa_01 "Peut-être que je devrais rester habillée alors, pour que tu m'oublies un peu ?"
 
 # game/events/olivia.rpy:546
 translate french olivia_repeatable_night_out_with_d5bd5179:
 
     # Max_04 "Нет, нет, нет... Я уже раздеваюсь!"
-    Max_04 "Non, non, non... Je me déshabille déjà !"
+    Max_04 "Non, non, non... Je me déshabille, c'est bon."
 
 # game/events/olivia.rpy:550
 translate french olivia_repeatable_night_out_with_01d47c87_1:
@@ -59172,13 +59166,13 @@ translate french olivia_repeatable_night_out_with_07085c52:
 translate french olivia_repeatable_night_out_with_797a3326:
 
     # Lisa_02 "Ты поосторожнее, Макс, запрыгивай на диван, а то этой своей штукой ещё по мне попадёшь! Я не хочу потом с фингалом ходить и придумывать историю, в которой не фигурирует твой член."
-    Lisa_02 "Attention Max, saute sur ce canapé, ou tu vas me percuter avec ce truc ! Je ne veux pas me retrouver avec un coquard et devoir expliquer comment c'est arrivé."
+    Lisa_02 "Attention quand tu sautes sur ce canapé Max, ou tu vas me percuter avec ton truc ! Je ne veux pas me retrouver avec un coquard et devoir expliquer comment c'est arrivé."
 
 # game/events/olivia.rpy:568
 translate french olivia_repeatable_night_out_with_79cd0f1c:
 
     # Max_03 "Со мной лучше быть начеку! Тогда и фингалов никаких не будет."
-    Max_03 "Tu ferais mieux de faire attention à moi ! Sinon tu vas avoir un oeil au beurre noir."
+    Max_03 "Alors effectivement, fais attention à moi ! Sinon tu vas avoir un oeil au beurre noir."
 
 # game/events/olivia.rpy:569
 translate french olivia_repeatable_night_out_with_dfd0b5de:
@@ -59190,7 +59184,7 @@ translate french olivia_repeatable_night_out_with_dfd0b5de:
 translate french olivia_repeatable_night_out_with_1c4fe2d2:
 
     # Max_05 "Спасибо! Я, конечно, не против этого внимания, прикованного к моему члену, но вы и на экран поглядывайте тоже."
-    Max_05 "Merci ! Je comprends très bien toute cette attention liée à ma queue, mais tu gardes aussi un œil sur l'écran."
+    Max_05 "Merci ! Je suis très flatté de toute cette attention liée à mon bâton de maréchal , mais gardes aussi un œil sur l'écran."
 
 # game/events/olivia.rpy:579
 translate french olivia_repeatable_night_out_with_965e183f:
@@ -59208,13 +59202,13 @@ translate french olivia_repeatable_night_out_with_72187a45:
 translate french olivia_repeatable_night_out_with_00b10636:
 
     # Max_04 "{m}А вот мне нет разницы, что происходит в сериале... Ведь на этом диване есть то, что в сериалах не каждый день увидишь!{/m}"
-    Max_04 "{m}Mais je me fiche de ce qui se passe dans la série... Après tout, il y a des choses sur ce canapé que l'on ne pourra jamais voir dans des feuilletons !{/m}"
+    Max_04 "{m}Quant à moi, je me contre fiche de ce qui se passe à la télé... Il y a des choses sur ce canapé que l'on ne pourra jamais voir dans une série !{/m}"
 
 # game/events/olivia.rpy:584
 translate french olivia_repeatable_night_out_with_22d3a585:
 
     # Olivia_04 "Вот, можем этот сериал посмотреть... Вроде, что-то интересное происходит у них там. Надо вникать..."
-    Olivia_04 "Voyons voir cette émission... Apparemment, il s'y passe des choses intéressantes. Nous devons nous pencher sur la question..."
+    Olivia_04 "Voyons voir cette série... Apparemment, il s'y passe des choses intéressantes. Nous devons nous pencher sur la question..."
 
 # game/events/olivia.rpy:585
 translate french olivia_repeatable_night_out_with_00c76c93:
@@ -59232,7 +59226,7 @@ translate french olivia_repeatable_night_out_with_f51c8651:
 translate french olivia_repeatable_night_out_with_f6fc3e47:
 
     # Olivia_02 "Здорово, что можно просто вот так, побездельничать в пустом и шикарном доме... Да ещё и с такими классными ребятами, как вы!"
-    Olivia_02 "C'est génial de pouvoir traîner dans une maison vide et chic comme celle-ci... Et avec des gens formidables comme vous !"
+    Olivia_02 "C'est génial de pouvoir flâner dans une maison vide et chique comme celle-ci... En compagnie de gens formidables comme vous !"
 
 # game/events/olivia.rpy:595
 translate french olivia_repeatable_night_out_with_c95bc97f:
@@ -59256,7 +59250,7 @@ translate french olivia_repeatable_night_out_with_45fbf759:
 translate french olivia_repeatable_night_out_with_0a4c9412:
 
     # Max_02 "Не только о таком. Но и то, что сейчас - тоже круто!"
-    Max_02 "Il ne s'agit pas que de ça. Mais c'est quand même très bien !"
+    Max_02 "Il ne s'agit pas que de ça. Mais c'est quand même super !"
 
 # game/events/olivia.rpy:606
 translate french olivia_repeatable_night_out_with_05e08a2a:
@@ -59292,7 +59286,7 @@ translate french olivia_repeatable_night_out_with_268c1645:
 translate french olivia_repeatable_night_out_with_925a0535:
 
     # Lisa_09 "Эй, ты испортил всю интригу! Как мы теперь дальше будем смотреть, зная, что у них всё получится?"
-    Lisa_09 "Hé, tu as gâché tout le suspense ! Comment on va regarder maintenant, en sachant qu'ils vont s'en sortir ?"
+    Lisa_09 "Hé, tu gâches tout le suspense ! Comment on va regarder maintenant, en sachant qu'ils vont s'en sortir ?"
 
 # game/events/olivia.rpy:622
 translate french olivia_repeatable_night_out_with_74291412:
@@ -59340,7 +59334,7 @@ translate french olivia_repeatable_night_out_with_e56be7a5:
 translate french olivia_repeatable_night_out_with_6538cfc3:
 
     # Lisa_02 "И с чего ты взял, что нам надоест?"
-    Lisa_02 "Et qu'est-ce qui te fait penser qu'on va s'ennuyer ?"
+    Lisa_02 "Et d'abord, qu'est-ce qui te fait penser qu'on va s'ennuyer ?"
 
 # game/events/olivia.rpy:643
 translate french olivia_repeatable_night_out_with_893cf053:
@@ -59790,7 +59784,7 @@ translate french MeetingEric_68dfdf17:
 translate french MeetingEric_good_53d048fe:
 
     # Ann_07 "Ну, я рада, что вы познакомились и, вроде бы, нашли общий язык. Прошу, Эрик, к столу. Мы завтракаем и ужинаем на свежем воздухе, на веранде, пойдём покажу." nointeract
-    Ann_07 "Je suis content que vous ayez appris à vous connaître et que vous vous soyez entendus. S'il te plaît Eric, à table. Nous prenons le petit déjeuner et le dîner au frais dans la véranda, je vais te montrer." nointeract
+    Ann_07 "Je suis content que vous ayez appris à vous connaître et que vous vous soyez entendus. S'il te plaît Eric, à table. Nous prenons le petit déjeuner et le dîner au frais sur la terrasse, je vais te montrer." nointeract
 
 # game/events/other.rpy:209
 translate french MeetingEric_middle_6e04cd04:
@@ -60132,7 +60126,7 @@ translate french strings:
 
     # game/events/other.rpy:10
     old "Удачи"
-    new "Bonne chance"
+    new "Bonnes emplettes"
 
     # game/events/other.rpy:40
     old "Да, жаль, что не купили его..."
@@ -60708,7 +60702,7 @@ translate french strings:
 
     # game/core/10_main_menu.rpy:415
     old "Трусы"
-    new "Culotte"
+    new "Boxer"
 
     # game/core/10_main_menu.rpy:415
     old "Шапка"
@@ -60720,27 +60714,27 @@ translate french strings:
 
     # game/core/10_main_menu.rpy:415
     old "Трусы #1"
-    new "Culotte #1"
+    new "Boxer #1"
 
     # game/core/10_main_menu.rpy:415
     old "Трусы #2"
-    new "Culotte #2"
+    new "Boxer #2"
 
     # game/core/10_main_menu.rpy:415
     old "Маечка"
-    new "T-shirt"
+    new "Débardeur"
 
     # game/core/10_main_menu.rpy:415
     old "Минишортики"
-    new "Minishort"
+    new "Petite culotte"
 
     # game/core/10_main_menu.rpy:415
     old "Лиф"
-    new "Corsage"
+    new "Haut du maillot"
 
     # game/core/10_main_menu.rpy:415
     old "Плавки"
-    new "Maillot de bain"
+    new "Bas du maillot"
 
     # game/core/10_main_menu.rpy:415
     old "Лифчик"
@@ -60748,7 +60742,7 @@ translate french strings:
 
     # game/core/10_main_menu.rpy:415
     old "Трусики"
-    new "Slip"
+    new "String"
 
     # game/core/10_main_menu.rpy:415
     old "Шапочка"
@@ -60764,11 +60758,11 @@ translate french strings:
 
     # game/core/10_main_menu.rpy:415
     old "Чулочки"
-    new "Bas"
+    new "Bas nylon"
 
     # game/core/10_main_menu.rpy:415
     old "Топик"
-    new "Sujet"
+    new "Top"
 
     # game/core/10_main_menu.rpy:415
     old "Шортики"
@@ -60784,7 +60778,7 @@ translate french strings:
 
     # game/core/10_main_menu.rpy:415
     old "Мишура на груди"
-    new "Guirlandes sur la poitrine"
+    new "Guirlande de poitrine"
 
     # game/core/10_main_menu.rpy:415
     old "Минилиф"
@@ -60812,7 +60806,7 @@ translate french strings:
 
     # game/core/10_main_menu.rpy:415
     old "Юбочка"
-    new "Jupe"
+    new "Jupette"
 
     # game/core/10_main_menu.rpy:415
     old "Штанишки"
@@ -60824,7 +60818,7 @@ translate french strings:
 
     # game/core/10_main_menu.rpy:415
     old "Свитер с рукавами"
-    new "Pull avec manches"
+    new "Pull à manches longues"
 
     # game/core/10_main_menu.rpy:415
     old "Колготки"
@@ -62406,7 +62400,7 @@ translate french ann_dressed_lvl_2_659d5d18:
 translate french ann_dressed_lvl_2_a255adec:
 
     # Ann_02 "Приятно слышать. Но маме нужно переодеться... Так что подожди за дверью, хорошо?" nointeract
-    Ann_02 "C'est bon à entendre. Mais je doit me changer... Alors attends derrière la porte, d'accord ?" nointeract
+    Ann_02 "C'est bon d'entendre ça. Mais je doit me changer... Alors attends derrière la porte, d'accord ?" nointeract
 
 # game/events/ann.rpy:488
 translate french ann_dressed_gift_a14e771b:
@@ -62985,7 +62979,7 @@ translate french kira_shower_sex_dba6cc23:
 translate french kira_shower_sex_b81555c3:
 
     # Kira_12 "Д-а-а... Ещё... Ох, Макс, не останавливайся! Сожми мою попку покрепче! Вгоняй его в меня сильнее... Ещё! Трахни свою тётю пожёстче... Я еле сдерживаюсь... Ох, как хорошо! Ещё! Да, я кончаю... Ахх..." nointeract
-    Kira_12 "A-a-a... Plus... Oh, Max, ne t'arrête pas ! Serre mon cul plus fort. Pousse-la en moi plus fort... Encore ! Baise ta tatie à fond... Je peux à peine la garder en... Oh, ça fait du bien. Plus ! Oui, j'arrive... Ahhh..." nointeract
+    Kira_12 "A-a-a... Plus... Oh Max, ne t'arrête pas ! Serre mon cul plus fort. Pousse-la en moi plus fort... Encore ! Baise ta tatie à fond... Je peux à peine la garder en... Oh, ça fait du bien. Plus ! Oui, j'arrive... Ahhh..." nointeract
 
 # game/events/kira.rpy:2542
 translate french kira_shower_sex_533c7f7f:
@@ -63651,7 +63645,7 @@ translate french showdown_with_eric_d5628f21:
 translate french showdown_with_eric_dea06daf:
 
     # Lisa_13 "Вы что тут с утра пораньше разглядываете? Ой! Эрик! Прямо у тебя в комнате, Алиса..."
-    Lisa_13 "Qu'est-ce que tu regardes ià ? Ooh ! Eric ! Dans ta chambre, Alice..."
+    Lisa_13 "Qu'est-ce que tu regardes là ? Ooh ! Eric ! Dans ta chambre, Alice..."
 
 # game/events/other.rpy:511
 translate french showdown_with_eric_3271758d:
@@ -64472,4 +64466,3 @@ translate french strings:
     # game/extra/extra.rpy:60
     old "Вместо ночного плаванья"
     new "Au lieu de nager la nuit"
-
