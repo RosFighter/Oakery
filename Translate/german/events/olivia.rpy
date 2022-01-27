@@ -1746,335 +1746,335 @@ translate german strings:
 translate german olivia_ann_meeting_72a9dc2e:
 
     # Ann_00 "Что-то случилось, дорогой?"
-    Ann_00 ""
+    Ann_00 "Stimmt etwas nicht, mein Schatz?"
 
 # game/events/olivia.rpy:987
 translate german olivia_ann_meeting_61ee095e:
 
     # Max_01 "Пока что нет, но к нам в гости сейчас должна прийти одноклассница Лизы."
-    Max_01 ""
+    Max_01 "Noch nicht, aber eine Klassenkameradin von Lisa kommt zu Besuch."
 
 # game/events/olivia.rpy:988
 translate german olivia_ann_meeting_12ec5499:
 
     # Ann_04 "Ой! У Лизы подружка появилась? Это очень хорошо."
-    Ann_04 ""
+    Ann_04 "Oh! Lisa hat eine Freundin? Das ist sehr gut."
 
 # game/events/olivia.rpy:989
 translate german olivia_ann_meeting_a910fad5:
 
     # Max_04 "Да и она уже была у нас в гостях. Днём после школы..."
-    Max_04 ""
+    Max_04 "Ja, und sie war bereits bei uns zu Besuch gewesen. Am Nachmittag nach der Schule..."
 
 # game/events/olivia.rpy:995
 translate german olivia_ann_meeting_0eda89f8:
 
     # Lisa_01 "Мама, знакомься, это Оливия, моя одноклассница!"
-    Lisa_01 ""
+    Lisa_01 "Mom, das ist Olivia, meine Klassenkameradin!"
 
 # game/events/olivia.rpy:996
 translate german olivia_ann_meeting_fb8ee967:
 
     # Olivia_04 "Здравствуйте! Мне очень приятно с вами познакомиться. У вас потрясающая дочь!"
-    Olivia_04 ""
+    Olivia_04 "Hallo! Es ist mir ein Vergnügen, Sie kennenzulernen. Sie haben eine erstaunliche Tochter!"
 
 # game/events/olivia.rpy:1004
 translate german olivia_ann_meeting_3cbfb1ec:
 
     # Ann_08 "Здравствуй, Оливия. Мне тоже приятно. А ещё я очень рада, что Лиза наконец-то нашла себе подругу. А то новое место, сама понимаешь..."
-    Ann_08 ""
+    Ann_08 "Hallo, Olivia. Ich freue mich auch, dich kennenzulernen. Ich bin auch sehr froh, dass Lisa endlich eine Freundin gefunden hat. Der neue Ort, du weißt schon..."
 
 # game/events/olivia.rpy:1005
 translate german olivia_ann_meeting_e555d37c:
 
     # Olivia_05 "Я тоже рада. У вас такой большой, красивый и стильный дом... И такой классный бассейн!"
-    Olivia_05 ""
+    Olivia_05 "Ich bin auch froh darüber. Sie haben ein so großes, schönes und elegantes Haus... Und so ein toller Pool!"
 
 # game/events/olivia.rpy:1006
 translate german olivia_ann_meeting_7ba98055:
 
     # Lisa_02 "Мам, мы с Оливией сейчас переоденемся и будем в бассейне плескаться, ты не против?"
-    Lisa_02 ""
+    Lisa_02 "Mom, Olivia und ich wollen uns umziehen und im Pool schwimmen, macht es dir was aus?"
 
 # game/events/olivia.rpy:1007
 translate german olivia_ann_meeting_ed750a19:
 
     # Ann_02 "Конечно, девочки, развлекайтесь сколько угодно."
-    Ann_02 ""
+    Ann_02 "Klar, Mädels, habt so viel Spaß, wie ihr wollt."
 
 # game/events/olivia.rpy:1008
 translate german olivia_ann_meeting_bf2b83f9:
 
     # Olivia_03 "Привет, Макс! Рада тебя видеть."
-    Olivia_03 ""
+    Olivia_03 "Hallo, Max! Es ist schön, dich zu sehen."
 
 # game/events/olivia.rpy:1009
 translate german olivia_ann_meeting_0b901396:
 
     # Max_02 "Привет, Оливия! Хорошо, что заглянула."
-    Max_02 ""
+    Max_02 "Hey, Olivia! Schön, dass du vorbeigekommen bist."
 
 # game/events/olivia.rpy:1016
 translate german olivia_ann_meeting_2bb1adf1:
 
     # Ann_05 "Девочка, вроде, хорошая. Ладно, пусть развлекаются, а я пойду отдохну к себе."
-    Ann_05 ""
+    Ann_05 "Das Mädchen scheint nett zu sein. Lass ihnen ihren Spaß, und ich gehe in mein Zimmer und ruhe mich aus."
 
 # game/events/olivia.rpy:1017
 translate german olivia_ann_meeting_8a119134:
 
     # Max_07 "Не торопись, мам. Подожди немного. Тебе нужно кое-что увидеть."
-    Max_07 ""
+    Max_07 "Lass dir Zeit, Mom. Moment mal. Es gibt etwas, das du sehen musst."
 
 # game/events/olivia.rpy:1018
 translate german olivia_ann_meeting_6de9e9c0:
 
     # Ann_07 "Хорошо. Ну, а тебе, Макс, как Оливия, нравится?"
-    Ann_07 ""
+    Ann_07 "Okay. Also, wie gefällt dir Olivia, Max?"
 
 # game/events/olivia.rpy:1019
 translate german olivia_ann_meeting_87a80392:
 
     # Max_01 "Да, она ничего такая. Правда, у неё есть... некоторая особенность... Она натуристка. Знаешь, кто это такие?"
-    Max_01 ""
+    Max_01 "Ja, sie ist in Ordnung. Sie hat eine... eine gewisse Besonderheit... Sie ist eine Naturistin. Weißt du, was das ist?"
 
 # game/events/olivia.rpy:1020
 translate german olivia_ann_meeting_e53b9053:
 
     # Ann_02 "Хм... Звучит, как уклон во что-то натуральное. Может, это связано с питанием?"
-    Ann_02 ""
+    Ann_02 "Hmm ... Das klingt nach einer Vorliebe für etwas Natürliches. Vielleicht hat es etwas mit der Ernährung zu tun?"
 
 # game/events/olivia.rpy:1021
 translate german olivia_ann_meeting_ecc99f9b:
 
     # Max_04 "Сейчас Оливия вернётся и объяснит, кто это такие. А вот как раз и они..."
-    Max_04 ""
+    Max_04 "Olivia wird gleich zurückkommen und erklären, worum es sich dabei handelt. Und hier sind sie..."
 
 # game/events/olivia.rpy:1029
 translate german olivia_ann_meeting_2245b664:
 
     # Ann_15 "Оливия, а где твой купальник? Лиза, ты почему не дала своей подруге купальник, хотя бы тот, чёрный?"
-    Ann_15 ""
+    Ann_15 "Olivia, wo ist dein Badeanzug? Lisa, warum hast du deiner Freundin nicht deinen Badeanzug gegeben, zumindest den schwarzen?"
 
 # game/events/olivia.rpy:1030
 translate german olivia_ann_meeting_7eac38fc:
 
     # Olivia_02 "Да вы не переживайте на этот счёт! Я совсем не стесняюсь. У меня родители натуристы и мы дома все ходим голые, я привыкла!"
-    Olivia_02 ""
+    Olivia_02 "Machen Sie sich darüber keine Sorgen! Ich bin überhaupt nicht schüchtern. Meine Eltern sind Naturisten und wir laufen alle nackt im Haus herum, ich bin das gewöhnt!"
 
 # game/events/olivia.rpy:1031
 translate german olivia_ann_meeting_8dfdf625:
 
     # Max_03 "У них не семья, а праздник какой-то!"
-    Max_03 ""
+    Max_03 "Es ist keine Familie, es ist ein Urlaub!"
 
 # game/events/olivia.rpy:1039
 translate german olivia_ann_meeting_2bb03421:
 
     # Ann_14 "Ну, я рада, что ты не стесняешься, но вот я стесняюсь за Макса... Кажется, он уже отреагировал в своём стиле... У нас он единственный мужчина в доме, поэтому может временами... напрягаться."
-    Ann_14 ""
+    Ann_14 "Ich bin froh, dass es dir nicht peinlich ist, aber mir ist es peinlich für Max. Ich glaube, er hat bereits auf seine Weise geantwortet... Er ist der einzige Mann im Haus, also ist er manchmal... Belastend."
 
 # game/events/olivia.rpy:1040
 translate german olivia_ann_meeting_71cb94fe:
 
     # Olivia_03 "Да это нормально! У папы такая же реакция была, когда мы вместе с ним купались или загорали, пока он ещё был с нами... Так что, для меня это обычное дело!"
-    Olivia_03 ""
+    Olivia_03 "Das ist normal! Mein Vater reagierte genauso, wenn wir mit ihm schwimmen gegangen sind oder ein Sonnenbad genommen haben, als er noch bei uns war... Für mich ist das also normal!"
 
 # game/events/olivia.rpy:1041
 translate german olivia_ann_meeting_e64f98f3:
 
     # Ann_13 "Это так... странно, Оливия... А где твой папа сейчас?"
-    Ann_13 ""
+    Ann_13 "Das ist so... seltsam, Olivia... Wo ist dein Vater jetzt?"
 
 # game/events/olivia.rpy:1042
 translate german olivia_ann_meeting_65d93586:
 
     # Olivia_01 "Ну... Они с мамой поругались уже давненько и сейчас он с нами не живёт. А ещё у нас сломался бассейн и его некому чинить... Можно я к вам буду приходить купаться?"
-    Olivia_01 ""
+    Olivia_01 "Na ja... Er und meine Mutter haben sich vor langer Zeit gestritten, und jetzt lebt er nicht mehr bei uns. Außerdem ist unser Pool defekt und es gibt niemanden, der ihn repariert... Darf ich mit euch schwimmen gehen?"
 
 # game/events/olivia.rpy:1043
 translate german olivia_ann_meeting_0b55a823:
 
     # Lisa_03 "Мам, скажи да, скажи да!"
-    Lisa_03 ""
+    Lisa_03 "Mom, sag ja, sag ja!"
 
 # game/events/olivia.rpy:1044
 translate german olivia_ann_meeting_902a71d5:
 
     # Ann_01 "Конечно, Оливия. Если тебя не смущает Макс, который только на тебя и пялится, то я не против. Можешь приходить в любое время! Ну а я пойду по делам, а то уже достаточно позагорала. Развлекайтесь!"
-    Ann_01 ""
+    Ann_01 "Sicher, Olivia. Wenn es dich nicht stört, dass Max dich anstarrt, ist das für mich in Ordnung. Du kannst jederzeit gerne vorbeikommen. Nun, ich werde ein paar Besorgungen machen, denn ich hatte genug Sonne. Viel Spaß!"
 
 # game/events/olivia.rpy:1052
 translate german olivia_ann_meeting_3d9d7b14:
 
     # Max_02 "Как мне кажется, всё прошло довольно хорошо."
-    Max_02 ""
+    Max_02 "Was mich betrifft, ist es ziemlich gut gelaufen."
 
 # game/events/olivia.rpy:1053
 translate german olivia_ann_meeting_11a6a1b3:
 
     # Olivia_06 "Думаешь, твоя мама разрешит нам собираться вместе по ночам?"
-    Olivia_06 ""
+    Olivia_06 "Meinst du, deine Mom lässt uns nachts zusammen sein?"
 
 # game/events/olivia.rpy:1054
 translate german olivia_ann_meeting_02812b71:
 
     # Max_07 "Даже если и нет, то я смогу её уговорить. Ну, или как минимум, очень постараюсь уговорить."
-    Max_07 ""
+    Max_07 "Selbst wenn sie es nicht tut, kann ich sie dazu überreden. Oder zumindest werde ich mich sehr bemühen, sie zu überzeugen."
 
 # game/events/olivia.rpy:1055
 translate german olivia_ann_meeting_512f166a:
 
     # Lisa_13 "Ты, главное, про меня не забудь в этих уговорах. А то мама запросто может сказать, что я ещё маленькая, хотя с Оливией мы ровесницы."
-    Lisa_13 ""
+    Lisa_13 "Vergiss mich bei dieser Überzeugungsarbeit nicht. Ich bin ein kleines Mädchen, aber Olivia und ich sind gleich alt."
 
 # game/events/olivia.rpy:1056
 translate german olivia_ann_meeting_1a2cd1ba:
 
     # Max_09 "Не знаю, не знаю, Лиза... Это уже будет непросто. Вот если бы вы с Оливией намазали друг друга кремом для загара, то я бы мог и тебя отстоять перед мамой."
-    Max_09 ""
+    Max_09 "Ich weiß nicht, ich weiß nicht, Lisa... Es wird nicht einfach sein. Wenn du und Olivia euch gegenseitig mit Sonnencreme eincremt, kann ich euch vielleicht auch vor Mom verteidigen."
 
 # game/events/olivia.rpy:1057
 translate german olivia_ann_meeting_d996de1a:
 
     # Olivia_03 "Ах вот как, да? Это мы запросто!"
-    Olivia_03 ""
+    Olivia_03 "Ach, ja? Das können wir tun!"
 
 # game/events/olivia.rpy:1058
 translate german olivia_ann_meeting_41617c79:
 
     # Lisa_02 "У тебя-то этот самый крем хоть есть?"
-    Lisa_02 ""
+    Lisa_02 "Hast du überhaupt Creme?"
 
 # game/events/olivia.rpy:1064
 translate german olivia_ann_meeting_76e86aa6:
 
     # Max_10 "Сейчас, к сожалению нет, но я обязательно его куплю."
-    Max_10 ""
+    Max_10 "Im Moment leider nicht, aber ich werde auf jeden Fall welche kaufen."
 
 # game/events/olivia.rpy:1065
 translate german olivia_ann_meeting_77380e2d:
 
     # Lisa_01 "Очень жаль, Макс. Вот будет крем - мы и намажемся специально для тебя."
-    Lisa_01 ""
+    Lisa_01 "Das ist schade, Max. Wir besorgen etwas Creme und tragen sie für dich auf."
 
 # game/events/olivia.rpy:1072
 translate german olivia_ann_meeting_4d4507bf:
 
     # Max_11 "{m}Эх... Такой момент упустил... Теперь только до следующего раза.{/m}"
-    Max_11 ""
+    Max_11 "{m}Äh... Einen solchen Moment verpasst... Jetzt nur noch bis zum nächsten Mal.{/m}"
 
 # game/events/olivia.rpy:1076
 translate german olivia_ann_meeting_32d70104:
 
     # Max_05 "Разумеется есть! Могу даже сам вас намазать, руки у меня почти не заняты."
-    Max_05 ""
+    Max_05 "Natürlich ist das so! Ich kann dich sogar selbst damit einreiben, meine Hände sind kaum beschäftigt."
 
 # game/events/olivia.rpy:1077
 translate german olivia_ann_meeting_c7b26a60:
 
     # Lisa_01 "О нет... За крем, конечно, спасибо, но от твоей помощи мы как-нибудь воздержимся, правда Оливия? Не хватало, чтобы ты свои озабоченные ручонки распускал."
-    Lisa_01 ""
+    Lisa_01 "Oh, nein... Danke für die Creme, aber wir werden auf deine Hilfe verzichten, nicht wahr, Olivia? Ich will nicht, dass du deine geilen kleinen Hände überallhin bewegst."
 
 # game/events/olivia.rpy:1079
 translate german olivia_ann_meeting_2aec5f80:
 
     # Olivia_05 "Ага, мы и сами прекрасно справимся. Давай крем. Чур гостей мажут первыми!" nointeract
-    Olivia_05 "" nointeract
+    Olivia_05 "Ja, wir kommen gut allein zurecht. Hol die Creme. Die Gäste sind zuerst dran!" nointeract
 
 # game/events/olivia.rpy:1098
 translate german olivia_lisa_sunscreen_0_916ccd9a:
 
     # Lisa_05 "Я же ведь помажу только спину, Оливия? Остальное ты сама..."
-    Lisa_05 ""
+    Lisa_05 "Ich werde nur den Rücken machen, nicht wahr, Olivia? Den Rest machst du..."
 
 # game/events/olivia.rpy:1099
 translate german olivia_lisa_sunscreen_0_4b7517eb:
 
     # Max_08 "Э-э-э! Какую только спину?! Тебе нужно натереть кремом всё её тело, Лиза."
-    Max_08 ""
+    Max_08 "Wie nur den Rücken?! Du musst sie am ganzen Körper einreiben, Lisa."
 
 # game/events/olivia.rpy:1100
 translate german olivia_lisa_sunscreen_0_9a51e79c:
 
     # Olivia_03 "Ой, Макс, вот ты разбежался. Может ты тогда за фотоаппаратом или видеокамерой по такому случаю сразу сбегаешь?"
-    Olivia_03 ""
+    Olivia_03 "Oh, Max, dir gehen die Ideen aus, die du tun kannst. Warum gehst du bei einer solchen Gelegenheit nicht los und holst dir eine Kamera oder einen Camcorder?"
 
 # game/events/olivia.rpy:1101
 translate german olivia_lisa_sunscreen_0_63f097d0:
 
     # Max_03 "Что-то мне подсказывает, что пока я буду бегать, вы уже закончите. Я лучше останусь здесь, чтобы ничего не пропустить."
-    Max_03 ""
+    Max_03 "Irgendetwas sagt mir, dass ihr fertig sein werdet, wenn ich gehe. Ich bleibe besser hier, damit ich nichts verpasse."
 
 # game/events/olivia.rpy:1102
 translate german olivia_lisa_sunscreen_0_62a4a929:
 
     # Lisa_02 "Эх, а мы ведь могли бы и подождать."
-    Lisa_02 ""
+    Lisa_02 "Wir hätten doch noch warten können, oder?"
 
 # game/events/olivia.rpy:1103
 translate german olivia_lisa_sunscreen_0_963a3477:
 
     # Max_09 "Нет, меня не проведёшь! Эй, ты ей попку совсем не натёрла, не говоря уже обо всём остальном... Это не дело!"
-    Max_09 ""
+    Max_09 "Nein, ich lasse mich nicht täuschen! Hey, du hast ihren Hintern noch gar nicht gerieben, geschweige denn alles andere... Das ist nicht der Punkt!"
 
 # game/events/olivia.rpy:1104
 translate german olivia_lisa_sunscreen_0_58ca6b5e:
 
     # Olivia_05 "Со всем остальным я прекрасно справлюсь сама. Поворачивайся ко мне, Лиза, я тебя тоже намажу."
-    Olivia_05 ""
+    Olivia_05 "Den Rest kann ich ganz gut alleine machen. Dreh dich zu mir, Lisa, und ich werde dich auch eincremen."
 
 # game/events/olivia.rpy:1115
 translate german olivia_lisa_sunscreen_0_a00e937b:
 
     # Max_02 "Оливия, ты бы ей купальник развязала. Так будет удобнее..."
-    Max_02 ""
+    Max_02 "Olivia, du solltest ihr den Badeanzug aufmachen. Es wäre bequemer, wenn..."
 
 # game/events/olivia.rpy:1116
 translate german olivia_lisa_sunscreen_0_1b5600b7:
 
     # Lisa_01 "В твоих похотливых идеях, Макс, здесь никто не нуждается! Мы сами разберёмся."
-    Lisa_01 ""
+    Lisa_01 "Niemand hier braucht deine lüsternen Ideen, Max! Wir werden das selbst regeln."
 
 # game/events/olivia.rpy:1117
 translate german olivia_lisa_sunscreen_0_c5a55342:
 
     # Max_07 "Лиза, я же за тебя переживаю. Вдруг Оливия из-за твоего купальника намажет не всё."
-    Max_07 ""
+    Max_07 "Lisa, ich mache mir Sorgen um dich. Vielleicht will Olivia wegen deines Badeanzugs nicht alles anziehen."
 
 # game/events/olivia.rpy:1118
 translate german olivia_lisa_sunscreen_0_5e735faf:
 
     # Olivia_02 "Не переживай, я ничего не упущу. Или, может, всё-таки развязать купальник?"
-    Olivia_02 ""
+    Olivia_02 "Keine Sorge, ich werde nichts übersehen. Oder soll ich den Badeanzug doch noch öffnen?"
 
 # game/events/olivia.rpy:1119
 translate german olivia_lisa_sunscreen_0_ea8671f3:
 
     # Max_05 "Никаких «может». Снимай с неё всё!"
-    Max_05 ""
+    Max_05 "Kein «könnte». Zieh ihr alles aus!"
 
 # game/events/olivia.rpy:1120
 translate german olivia_lisa_sunscreen_0_7e394240:
 
     # Lisa_11 "Нет, ребята, вы чего?! Не надо меня раздевать, мне и так хорошо."
-    Lisa_11 ""
+    Lisa_11 "Nein, was soll das?!  Du musst mich nicht ausziehen, mir geht es gut, so wie ich bin."
 
 # game/events/olivia.rpy:1121
 translate german olivia_lisa_sunscreen_0_2c278307:
 
     # Olivia_01 "Тогда всё, Лиза, я закончила. А тебе, Макс, спасибо за крем."
-    Olivia_01 ""
+    Olivia_01 "Das war's dann, Lisa, ich bin fertig. Und dir, Max, danke für die Creme."
 
 # game/events/olivia.rpy:1122
 translate german olivia_lisa_sunscreen_0_ffc96ca2:
 
     # Max_01 "Не за что, девчонки. Мне всё понравилось, но можно было это делать и более страстно."
-    Max_01 ""
+    Max_01 "Gern geschehen, Mädels. Ich habe das alles genossen, aber es hätte leidenschaftlicher sein können."
 
 # game/events/olivia.rpy:1123
 translate german olivia_lisa_sunscreen_0_c7bb4508:
 
     # Lisa_03 "Других пожеланий я и не ожидала."
-    Lisa_03 ""
+    Lisa_03 "Ich habe nichts anderes erwartet."
 
