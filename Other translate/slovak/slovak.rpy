@@ -1209,7 +1209,7 @@ translate slovak strings:
 
     # game/screens.rpy:244
     old "скрытность, "
-    new "tajnosť, "
+    new "utajenie, "
 
     # game/screens.rpy:271
     old "[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}"
@@ -1281,7 +1281,7 @@ translate slovak strings:
 
     # game/screens.rpy:499
     old "ЗАГРУЗИТЬ"
-    new "STIAHNUŤ"
+    new "NAČÍTAŤ"
 
     # game/screens.rpy:503
     old "НАСТРОЙКИ"
@@ -1889,7 +1889,7 @@ translate slovak strings:
 
     # game/core/01classes.rpy:1292
     old "{color=[lime]}{i}{b}Внимание:{/b} Получена новая \"возможность\"!{/i}{/color}"
-    new "{color=[lime]}{i}{b}Upozornenie:{/b} Prijatá nová \"možnosť\"!{/i}{/color}"
+    new "{color=[lime]}{i}{b}Upozornenie:{/b} Prijatá nová \"príležitosť\"!{/i}{/color}"
 
 # TODO: Translation updated at 2021-12-07 11:26
 
@@ -2073,11 +2073,11 @@ translate slovak strings:
 
     # game/core/02init.rpy:130
     old "Слушай, насчёт блога..."
-    new "Počúvajte, o blogu..."
+    new "Počúvaj, o blogu..."
 
     # game/core/02init.rpy:130
     old "Насчёт твоего блога... А если не особо раздеваться?"
-    new "A čo váš blog... Ak sa naozaj nevyzlečiete?"
+    new "A čo tvoj blog... Naozaj sa nevyzlečieš?"
 
     # game/core/02init.rpy:130
     old "Насчёт посуды..."
@@ -2085,7 +2085,7 @@ translate slovak strings:
 
     # game/core/02init.rpy:130
     old "Не возражаешь против компании?"
-    new "Nevadí vám spoločnosť?"
+    new "Nevadí ti spoločnosť?"
 
     # game/core/02init.rpy:130
     old "Что читаешь?"
@@ -2133,7 +2133,7 @@ translate slovak strings:
 
     # game/core/02init.rpy:130
     old "Не слабо тебя отшлёпали!"
-    new "Nedostal si slabý výprask!"
+    new "Nedostala si slabý výprask!"
 
     # game/core/02init.rpy:130
     old "Ты не передумала о наказаниях?"
@@ -2201,7 +2201,7 @@ translate slovak strings:
 
     # game/core/02init.rpy:130
     old "Я присоединюсь?"
-    new "Som v?"
+    new "Smiem sa pridať?"
 
     # game/core/02init.rpy:130
     old "Мне нужны деньги..."
@@ -2245,7 +2245,7 @@ translate slovak strings:
 
     # game/core/02init.rpy:130
     old "Ну как, ты с мамой-то поговорила?"
-    new "Dobre, hovoril si s mamou?"
+    new "Dobre, hovorila si s mamou?"
 
     # game/core/02init.rpy:130
     old "Как отдыхается, тётя Кира?"
@@ -2409,7 +2409,7 @@ translate slovak strings:
 
     # game/core/02init.rpy:130
     old "Ну как, всё повторила? \n{i}(проводить Лизу в школу){/i}"
-    new "No zopakoval si všetko? \n{i}(vezmi Lízu do školy){/i}"
+    new "No zopakovala si všetko? \n{i}(vyprevadiť Lízu do školy){/i}"
 
     # game/core/02init.rpy:237
     old "Одежда"
@@ -2661,31 +2661,31 @@ translate slovak strings:
 
     # game/core/03variables.rpy:147
     old "УСТАНОВИТЬ\nКАМЕРУ"
-    new "INŠTALÁCIA\nKAMERA"
+    new "INŠTALÁCIA\nKAMERY"
 
     # game/core/03variables.rpy:147
     old "СПРЯТАТЬ\nПАУКА"
-    new "SKRYŤ\nPAVÚK"
+    new "SKRYŤ\nPAVÚKA"
 
     # game/core/03variables.rpy:147
     old "БРОСИТЬ\nПАУКА"
-    new "HODIŤ\nPAVÚK"
+    new "HODIŤ\nPAVÚKA"
 
     # game/core/03variables.rpy:147
     old "ИСКАТЬ\nПАУКОВ"
-    new "VYHĽADÁVANIE\nPAVÚKY"
+    new "VYHĽADAŤ\nPAVÚKY"
 
     # game/core/03variables.rpy:147
     old "ИСКАТЬ\nСИГАРЕТЫ"
-    new "VYHĽADÁVANIE\nCIGARETY"
+    new "VYHĽADAŤ\nCIGARETY"
 
     # game/core/03variables.rpy:147
     old "ИСКАТЬ\nКНИГУ"
-    new "VYHĽADÁVANIE\nKNIHA"
+    new "VYHĽADAŤ\nKNIHU"
 
     # game/core/03variables.rpy:147
     old "ЧИСТИТЬ\nБАССЕЙН"
-    new "ČISTÝ\nJAZIERKO"
+    new "ČISTIŤ\nBAZÉN"
 
     # game/core/03variables.rpy:147
     old "ЧИТАТЬ"
@@ -2709,7 +2709,7 @@ translate slovak strings:
 
     # game/core/03variables.rpy:147
     old "УСТАНОВИТЬ\nБУДИЛЬНИК"
-    new "INŠTALÁCIA\nALARM"
+    new "NASTAVIŤ\nALARM"
 
     # game/core/03variables.rpy:147
     old "ВЗДРЕМНУТЬ"
@@ -2869,43 +2869,43 @@ translate slovak strings:
 
     # game/core/04function.rpy:341
     old "{color=[red]}значительно ухудшилось{/color}"
-    new "{color=[red]}výrazne zhoršilo{/color}"
+    new "{color=[red]}výrazne zhoršil{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[red]}ухудшилось{/color}"
-    new "{color=[red]}zhoršilo{/color}"
+    new "{color=[red]}zhoršil{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[red]}немного ухудшилось{/color}"
-    new "{color=[red]}sa trochu zhoršilo{/color}"
+    new "{color=[red]}sa trochu zhoršil{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[lime]}немного улучшилось{/color}"
-    new "{color=[lime]}trochu zlepšilo{/color}"
+    new "{color=[lime]}trochu zlepšil{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[lime]}улучшилось{/color}"
-    new "{color=[lime]}zlepšilo{/color}"
+    new "{color=[lime]}zlepšil{/color}"
 
     # game/core/04function.rpy:341
     old "{color=[lime]}значительно улучшилось{/color}"
-    new "{color=[lime]}výrazne zlepšilo{/color}"
+    new "{color=[lime]}výrazne zlepšil{/color}"
 
     # game/core/04function.rpy:352
     old "{color=[red]}снизилось{/color}"
-    new "{color=[red]}Pokleslo{/color}"
+    new "{color=[red]}Poklesla{/color}"
 
     # game/core/04function.rpy:352
     old "{color=[lime]}повысилось{/color}"
-    new "{color=[lime]}Zvýšilo{/color}"
+    new "{color=[lime]}Sa zvýšila{/color}"
 
     # game/core/04function.rpy:380
     old "Настроение %s %s \nЕё отношение к Максу %s"
-    new "Naláda %s %s \nPostoj k Maxovi %s"
+    new "Naláda %s %s \nPostoj k Maxovi sa %s"
 
     # game/core/04function.rpy:382
     old "Отношение %s к Максу %s"
-    new "Postoj %s k Maxovi %s"
+    new "Postoj %s k Maxovi sa %s"
 
     # game/core/04function.rpy:384
     old "Настроение %s %s"
@@ -3369,7 +3369,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Стоит понаблюдать, чем обычно все занимаются у зеркала в ванной комнате..."
-    new "Stojí za to sledovať, čo každý zvyčajne robí pred zrkadlom v kúpeľni..."
+    new "Stojí za to sledovať, čo každí zvyčajne robí pred zrkadlom v kúpeľni..."
 
     # game/core/09_opportunities.rpy:4
     old "Не забыть установить вторую камеру во дворе и в ванной комнате"
@@ -3469,7 +3469,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new "Možno, že riešenie tohto problému príde prirodzene. S príležitosťou \"Hravé nohy\" to urobí pokrok..."
+    new "Možno, že riešenie tohto problému príde prirodzene. S príležitosťou \"Neposlušné nohy\" to urobí pokrok..."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Школьница\"..."
@@ -3561,7 +3561,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Алиса настойчиво просит маму купить ей вечернее платье для посещения ночных клубов. Та ей регулярно отказывала, пока Эрик не предложил подарить ей платье во время следующего шопинга. Нужно поспешить, если я хочу сделать это первым!"
-    new "Alica nástojčivo žiada matku, aby jej kúpila večerné šaty na návštevu nočných klubov. Pravidelne ju odmietala, až kým jej EriK neponúkol, že jej kúpy šaty pri ďalšom nákupe. Musím sa poponáhľať, ak to chcem urobiť prvý!"
+    new "Alica nástojčivo žiada matku, aby jej kúpila večerné šaty na návštevu nočných klubov. Pravidelne ju odmietala, až kým jej Erik neponúkol, že jej kúpy šaty pri ďalšom nákupe. Musím sa poponáhľať, ak to chcem urobiť prvý!"
 
     # game/core/09_opportunities.rpy:4
     old "Мне удалось скопить приличную сумму и купить платье для Алисы. Теперь, нужно успеть его подарить ей, пока это не сделал кое-кто другой..."
@@ -3645,7 +3645,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы получить большее от Алисы, мне нужно сближаться с ней без помощи конфет с ликёром. Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new "Aby som z Alici dostal viac, potrebujem sa k nej priblížiť bez pomoci likérového cukríka. S príležitosťou \"Hravé nohy\" to urobí krok..."
+    new "Aby som z Alici dostal viac, potrebujem sa k nej priblížiť bez pomoci likérového cukríka. S príležitosťou \"Neposlušné nohy\" to urobí krok..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь я вполне могу рассчитывать на что-то большее, чем то, что Алиса вытворяет своим языком после клуба. Главное, чтобы конфет с ликёром хватало..."
@@ -3841,7 +3841,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Я, без особых надежд, предложил Алисе намазать её кремом для загара... Которого ни у неё, ни у меня не было. Но, она не против! Я уже предвкушаю, как буду растирать этот крем по её телу... Только его сперва нужно купить. Как и одежду полегче, ведь во дворе будет жарко!"
-    new "Bez veľkej nádeje som Alici navrhol natrieť ju opaľovacím krémom... ktorý bohužiaľ ani ona, ani ja nemal. Ale jej to nevadí! Už sa teším ako jej natriem týmto krémom celé telo... Ale treba ho najskôr kúpiť. Rovnako ako ľahšie oblečenie, pretože na dvore bude horúco!"
+    new "Bez veľkej nádeje som Alici navrhol natrieť ju opaľovacím krémom... ktorý bohužiaľ ani ona, ani ja som nemal. Ale jej to nevadí! Už sa teším ako jej natriem týmto krémom celé telo... Ale treba ho najskôr kúpiť. Rovnako ako ľahšie oblečenie, pretože na dvore bude horúco!"
 
     # game/core/09_opportunities.rpy:4
     old "Вот теперь у меня есть всё, чтобы подарить Алисе равномерный и безопасный загар. Только бы всё не испортить своими руками... Надеюсь, они у меня не слишком корявые. Так или иначе, скоро я это пойму."
@@ -3913,7 +3913,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Стоит последить за Алисой через скрытые камеры. Как знать, что она ещё может отчудить, пока будет на веселе после фут-джоба до того, как ляжет спать..."
-    new "Stojí za to sledovať Alicu cez skryté kamery. Kto vie, čo ešte môže robiť, keď sa baví po práci s nohou predtým, ako ide spať..."
+    new "Stojí za to sledovať Alicu cez skryté kamery. Kto vie, čo ešte môže robiť, keď sa baví po masáži nôh predtým, ako ide spať..."
 
     # game/core/09_opportunities.rpy:4
     old "Ухх... А моя сестрёнка ловко управляется со своей розовой игрушкой! Неужели это мой массаж её так завёл? Похоже на то. А конфеты её только раззадорили и она хочет ещё... Не означает ли это, что я могу зайти куда дальше во время массажа её ног?"
@@ -4173,7 +4173,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Одноклассник"
-    new "Spolužiak"
+    new "Spolužiaci"
 
     # game/core/09_opportunities.rpy:4
     old "Очевидно, Лиза по уши влюблена в какого-то своего одноклассника по имени Алекс. Как она рассказала, у него есть подруга Оливия, самая красивая девочка в школе. Лиза ждёт от меня помощи в виде совета - как ей быть дальше.\n\nИ это хороший вопрос! С одной стороны хочется ей помочь дельным советом, а с другой, не хочется отдавать младшую сестрёнку в руки какому-то там Алексу. Нужно не торопиться и какое-то время хорошенько подумать над всем этим."
@@ -4189,7 +4189,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Хорошенько подумав, какой совет дать Лизе относительно Алекса, я решил поступить хитро и предложил ей подружиться с Оливией. Таким образом Лиза сможет узнать от неё, действительно ли Алекс так хорош, как ей кажется. Наверняка ведь, он не слишком идеален... А может и ещё хуже... Не знаю, сколько времени понадобиться, чтобы у Лизы получилось ненавязчиво подружиться с Оливией. Пожалуй, мне стоит интересоваться её успехами время от времени..."
-    new "Dôkladne som premýšľal, akú radu dať Líze o Alexovi, rozhodol som sa konať prefíkane a vyzval som ju, aby sa skamarátila s Oliviou. Líza tak od nej bude môcť zistiť, či je Alex naozaj taký dobrý, ako si myslí. Iste, napokon nie je príliš dokonalý... Alebo možno ešte horšie... Neviem, ako dlho bude Líze trvať, kým sa bude môcť nenápadne spriateliť s Oliviou. Možno by som sa mal z času na čas zaujímať o jej pokrok..."
+    new "Dôkladne som premýšľal, akú radu dať Líze o Alexovi, rozhodol som sa konať prefíkane a vyzval som ju, aby sa skamarátila s Olíviou. Líza tak od nej bude môcť zistiť, či je Alex naozaj taký dobrý, ako si myslí. Iste, napokon nie je príliš dokonalý... Alebo možno ešte horšie... Neviem, ako dlho bude Líze trvať, kým sa bude môcť nenápadne spriateliť s Olíviou. Možno by som sa mal z času na čas zaujímať o jej pokrok..."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, через 5-7 дней у Лизы можно будет что-нибудь узнать..."
@@ -4197,7 +4197,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лиза пытается понять, как ей подружиться с Оливией, девушкой Алекса. Для этого Лиза попытается подружиться с кем-то, кому ещё нравится Оливия, чтобы выпытать у него побольше информации об этой девушке... Подожду немного и узнаю, что Лизе удастся выяснить."
-    new "Líza sa snaží prísť na to, ako sa spriateliť s Oliviou, Alexovou priateľkou. Za týmto účelom sa Líza pokúsi spriateliť s niekým, kto má Oliviu stále rád, aby od neho získala viac informácií o tomto dievčati... Chvíľu počkám a zistím, či sa to Líze podarí zistiť."
+    new "Líza sa snaží prísť na to, ako sa spriateliť s Olíviou, Alexovou priateľkou. Za týmto účelom sa Líza pokúsi spriateliť s niekým, kto má Oliviu stále rád, aby od neho získala viac informácií o tomto dievčati... Chvíľu počkám a zistím, či sa to Líze podarí zistiť."
 
     # game/core/09_opportunities.rpy:4
     old "Лизе удалось выяснить одну любопытную особенность Оливии: она не носит нижнее бельё! Конечно, это не очень много, но это может оказаться хорошей темой для обсуждения... Глядишь и разболтаются, а там и до дружбы недалеко..."
@@ -4221,15 +4221,15 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Будет совсем не лишним пообщаться с Оливией, пока они с Лизой загорают. Чтобы быть в курсе того, чем она живёт и как у них с Лизой дела..."
-    new "Porozprávať sa s Oliviou, kým sa ona a Líza opaľujú, nebude zbytočné. Zistím ako sa ona a Lisa majú..."
+    new "Porozprávať sa s Olíviou, kým sa ona a Líza opaľujú, nebude zbytočné. Zistím ako sa ona a Lisa majú..."
 
     # game/core/09_opportunities.rpy:4
     old "Мне удалось немного поболтать с Оливией. Она оказалась не такой глупой, как я думал. Она весёлая, жизнерадостная, острая на язычок... Ох, попробовать бы его... Но я отвлёкся от дела. Как я понял, их отношения с Алексом не идеальны. Вопрос только в том, кто в этом больше виноват, она или он? Думаю, со временем нам с Лизой удастся узнать больше о них. А пока, я могу, как минимум раз в неделю, совершенно без последствий наблюдать голую грудь Оливии у нас во дворе!"
-    new "Musím sa trochu porozprávať s Oliviou. Nebola taká hlúpa, ako som si myslel. Je veselá, hravá a ostrá na jazyku... Ach, mal by som to skúsiť... Ale to odbočujem od veci. Ako som pochopil, ich vzťah s Alexom nie je dokonalý. Jedinou otázkou je, kto za to môže viac, ona alebo on? Myslím, že časom sa o nich s Lízou budeme môcť dozvedieť viac. Medzitým môžem aspoň raz do týždňa úplne bez následkov pozorovať Oliviine obnažené prsia na našom dvore!"
+    new "Musím sa trochu porozprávať s Olíviou. Nebola taká hlúpa, ako som si myslel. Je veselá, hravá a ostrá na jazyku... Ach, mal by som to skúsiť... Ale to odbočujem od veci. Ako som pochopil, ich vzťah s Alexom nie je dokonalý. Jedinou otázkou je, kto za to môže viac, ona alebo on? Myslím, že časom sa o nich s Lízou budeme môcť dozvedieť viac. Medzitým môžem aspoň raz do týždňa úplne bez následkov pozorovať Oliviine obnažené prsia na našom dvore!"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать общаться с Оливией, когда она бывает у нас в гостях по средам..."
-    new "Musím zostať v kontakte s Oliviou, keď nás v stredu navštívi..."
+    new "Musím zostať v kontakte s Olíviou, keď nás v stredu navštívi..."
 
     # game/core/09_opportunities.rpy:4
     old "Мы с Оливией немного пошептались о Лизе. Пускай, это не очень красиво, но мы пришли к выводу, что нужно поработать над сексуальным раскрепощением моей младшей сестрёнки. Хотя бы немного... И компания Оливии идеально для этого подходит! Она девочка без комплексов, очень открытая во всех смыслах. А как говорится, с кем поведёшься, от того и наберёшься!"
@@ -4269,7 +4269,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать общаться с Оливией, когда она бывает у нас в гостях. По вторникам и пятницам..."
-    new "Musím pokračovať v komunikácii s Oliviou, keď je u nás na návšteve. Utorky a piatky..."
+    new "Musím pokračovať v komunikácii s Olíviou, keď je u nás na návšteve. Utorky a piatky..."
 
     # game/core/09_opportunities.rpy:4
     old "Оливия рассказала мне о кое-каких своих опасениях... После того, как Алекс узнал от неё, какой у нас классный и дорогой дом, он быстренько переобулся и начал проявлять к Лизе большой интерес. Похоже, это Алекс тот ещё альфонс... Теперь главное, ненавязчиво донести этот факт до Лизы! Думаю, она рано или поздно обратиться ко мне за советом... И даже не раз..."
@@ -4801,7 +4801,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Как хорошо, что я предложил Лизе сдружиться с Оливией! Благодаря ей, Лиза уже не та стеснительная девочка, которая разве что на периодические поцелуйчики соглашалась... Теперь её реально можно уговорить смотреть ужастики в одних лишь трусиках! Всё, что для этого нужно, не давать маме её наказывать... Если до этого дойдёт."
-    new "Je to také fajn, že som Líze navrhol, aby sa spriatelila s Oliviou! Vďaka nej už Líza nie je tým hanblivým dievčaťom, ktoré len súhlasilo s občasným bozkávaním... Teraz sa dá naozaj presvedčiť, aby pozerala horory len v nohavičkách! Všetko, čo k tomu treba, je nenechať mamu, aby ju potrestala... Ak na to príde."
+    new "Je to také fajn, že som Líze navrhol, aby sa spriatelila s Olíviou! Vďaka nej už Líza nie je tým hanblivým dievčaťom, ktoré len súhlasilo s občasným bozkávaním... Teraz sa dá naozaj presvedčiť, aby pozerala horory len v nohavičkách! Všetko, čo k tomu treba, je nenechať mamu, aby ju potrestala... Ak na to príde."
 
     # game/core/09_opportunities.rpy:4
     old "Кто не рискует..."
@@ -5597,7 +5597,7 @@ translate slovak strings:
 
     # game/core/screens.rpy:812
     old "Уникальное предложение только для вас! Наша баннерная сеть предназначена для клиентов с особыми запросами и готова донести вашу рекламу до целевой аудитории.\n\nЗа каждый пакет, который вы оплачиваете сейчас, мы гарантируем 10000 показов рекламы вашего сайта в ближайшем будущем!"
-    new "Jedinečná ponuka len pre vás! Naša bannerová sieť je navrhnutá pre klientov so špeciálnymi potrebami a je pripravená priniesť vašu reklamu cieľovému publiku. \n\nZa každý balíček, za ktorý teraz zaplatíte, garantujeme 10 000 zobrazení reklám na vašej stránke v blízkej budúcnosti!"
+    new "Jedinečná ponuka len pre vás! Naša bannerová sieť je navrhnutá pre klientov so špeciálnymi potrebami a je pripravená priniesť vašu reklamu cieľovému publiku. \n\nZa každý balíček, za ktorý teraz zaplatíte, garantujeme 10 000 zobrazení reklám Vašej stránky v blízkej budúcnosti!"
 
     # game/core/screens.rpy:814
     old "КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"
@@ -5693,11 +5693,11 @@ translate slovak strings:
 
     # game/core/screens.rpy:1587
     old "Тренированность:"
-    new "Fitness:"
+    new "Kondícia:"
 
     # game/core/screens.rpy:1592
     old "Чистота:"
-    new "Čistota:"
+    new "Hygiena:"
 
     # game/core/screens.rpy:1599
     old "Навыки:"
@@ -6295,7 +6295,7 @@ translate slovak alice_tv_massage_starter_2905e621:
 translate slovak alice_talk_tv_choco_b23dcf5f:
 
     # Alice_02 "Как же без неё. Но только одну... Вкусно... Теперь я готова, начинай массаж!" nointeract
-    Alice_02 "Bez nej sa nezaobídem. Ale len jeden... Vynikajúce... Teraz som pripravená, začni s masážou!" nointeract
+    Alice_02 "Bez neho sa nezaobídem. Ale len jeden... Vynikajúce... Teraz som pripravená, začni s masážou!" nointeract
 
 # game/dialogues/alicetalk.rpy:418
 translate slovak alice_talk_tv_choco_52e75f8d:
@@ -6367,7 +6367,7 @@ translate slovak alice_talk_tv_massage_953afbb3:
 translate slovak alice_talk_tv_massage_67ad610f:
 
     # Alice_12 "[alice_bad_mass!t]Ой, Макс, больно! Не надо так. Ты чуть лодыжку не вывихнул мне... Иди ещё потренируйся там на кошках или в ютубе поучись!" nointeract
-    Alice_12 "[alice_bad_mass!t]Ach, Max, to bolí! Nebuďt takí. Takmer si mi vyvrtol členok... Choď cvičiť na mačky alebo na YouTube!" nointeract
+    Alice_12 "[alice_bad_mass!t]Ach, Max, to bolí! Nebuď taký. Takmer si mi vyvrtol členok... Choď cvičiť na mačky alebo na YouTube!" nointeract
 
 # game/dialogues/alicetalk.rpy:554
 translate slovak alice_talk_tv_choice_mass_create_menu_264b44e4:
@@ -6469,7 +6469,7 @@ translate slovak alice_talk_tv_jeans_848c8c8f:
 translate slovak alice_talk_tv_jeans_b3bba188:
 
     # Alice_03 "Сам догадался, или кто подсказал? Ну всё, теперь ты всё обо мне знаешь, иди и фантазируй о чём хочешь..."
-    Alice_03 "Uhádlol si to sám, alebo ti to niekto povedal? To je všetko, teraz o mne vieš všetko, choď a fantazíruj o čomkoľvek chceš..."
+    Alice_03 "Uhádol si to sám, alebo ti to niekto povedal? To je všetko, teraz o mne vieš všetko, choď a fantazíruj o čomkoľvek chceš..."
 
 # game/dialogues/alicetalk.rpy:614
 translate slovak alice_talk_tv_jeans_61204728:
@@ -6499,7 +6499,7 @@ translate slovak alice_talk_tv_jeans_off_dc834006:
 translate slovak alice_talk_tv_jeans_off_0540eb12:
 
     # Alice_07 "Я немного приподнимусь, чтобы тебе было проще их стянуть..."
-    Alice_07 "Trochu ich nadvihnem, aby sa ti ľahšie sťahovali..."
+    Alice_07 "Trochu sa nadvihnem, aby sa ti ľahšie sťahovali..."
 
 # game/dialogues/alicetalk.rpy:636
 translate slovak alice_talk_tv_jeans_off_f91fe3a0:
@@ -6517,7 +6517,7 @@ translate slovak alice_talk_tv_jeans_off_a8206508:
 translate slovak alice_talk_tv_jeans_off_2d2c8558:
 
     # Alice_05 "Ты только там сильно не заглядывайся, куда не нужно! Лучше скорее продолжай массаж, пока я не расхотела..."
-    Alice_05 "Len sa nepozerajte príliš zblízka tam, kam by si nemal! Radšej by si mal pokračovať v masáži, než sa mi nebude chcieť..."
+    Alice_05 "Len sa nepozeraj príliš zblízka tam, kam by si nemal! Radšej by si mal pokračovať v masáži, než sa mi nebude chcieť..."
 
 # game/dialogues/alicetalk.rpy:652
 translate slovak alice_talk_tv_jeans_off_a6d60220:
@@ -6529,7 +6529,7 @@ translate slovak alice_talk_tv_jeans_off_a6d60220:
 translate slovak alice_talk_tv_jeans_off_78a36e19:
 
     # Alice_03 "Ты чего там так тормозишь? Как будто в трусиках меня никогда не видел..." nointeract
-    Alice_03 "Prečo si takí pomalí? Akoby si ma nikdy nevidel v nohavičkách..." nointeract
+    Alice_03 "Prečo si taký pomalý? Akoby si ma nikdy nevidel v nohavičkách..." nointeract
 
 # game/dialogues/alicetalk.rpy:660
 translate slovak alice_talk_tv_jeans_off_6b6d69b9:
@@ -6805,7 +6805,7 @@ translate slovak alice_talk_tv_massage_next_db75bb50:
 translate slovak alice_talk_tv_massage_next_3837de84:
 
     # Alice_08 "Ты так в себе уверен, Макс... Забыл, что я твоя сестра? Не говори глупости... Просто продолжай массировать мои ножки. Если ты ещё не в курсе, они у меня целиком - эрогенная зона..." nointeract
-    Alice_08 "Si si taký sebaistý, Max... Zabudol si, že som tvoja sestra? Nebuď hlúpi... Len mi masíruj nohy. Ak si to ešte nepočul, sú celou mojou erotogénnou zónou..." nointeract
+    Alice_08 "Si si taký sebaistý, Max... Zabudol si, že som tvoja sestra? Nebuď hlúpy... Len mi masíruj nohy. Ak si to ešte nepočul, sú celou mojou erotogénnou zónou..." nointeract
 
 # game/dialogues/alicetalk.rpy:930
 translate slovak alice_talk_tv_massage_next_6a3e6bc9:
@@ -7297,7 +7297,7 @@ translate slovak advanced_massage1_cuni_4ca76960:
 translate slovak advanced_massage1_cuni_d0cd8b5f:
 
     # Alice_07 "Ах, Макс! И где ты такому научился?! Неужто, просмотр порнушки может такому научить?"
-    Alice_07 "Ach, Max! Kde si sa to naučili?! Môžeš sa to naučiť len sledovaním porna?"
+    Alice_07 "Ach, Max! Kde si sa to naučil?! Môžeš sa to naučiť len sledovaním porna?"
 
 # game/dialogues/alicetalk.rpy:1318
 translate slovak advanced_massage1_cuni_51e45fcc:
@@ -7327,7 +7327,7 @@ translate slovak advanced_massage1_cuni_94dbdbbd:
 translate slovak advanced_massage1_cuni_79e35b5c:
 
     # Alice_03 "[dont_like!t]Всё, Макс! Я передумала! Массаж был неплохой, но на этом мы закончим..."
-    Alice_03 "[dont_like!t]To je ono, Max! Rozmyslel som si to! Masáž nebola zlá, ale tam sme aj skončili..."
+    Alice_03 "[dont_like!t]To je ono, Max! Rozmyslela som si to! Masáž nebola zlá, ale tam sme aj skončili..."
 
 # game/dialogues/alicetalk.rpy:1340
 translate slovak advanced_massage1_cuni_bfdd5c01:
@@ -8089,7 +8089,7 @@ translate slovak smoke_fear_money_21c2303f:
 translate slovak smoke_fear_money_69538574:
 
     # Alice_12 "Держи свои деньги... И больше меня не шантажируй. Я очень это не люблю... А теперь вали отсюда!" nointeract
-    Alice_12 "Nechám si svoje peniaze... A už ma nevydieraj. Naozaj sa mi to nepáči... Teraz vypadni odtiaľto!" nointeract
+    Alice_12 "Necháj si moje peniaze... A už ma nevydieraj. Naozaj sa mi to nepáči... Teraz vypadni odtiaľto!" nointeract
 
 # game/dialogues/alicetalk.rpy:1926
 translate slovak smoke_fear_fail_1bbfb6e5:
@@ -8275,7 +8275,7 @@ translate slovak smoke_nopants_b38d8562:
 translate slovak smoke_nopants_d219c498:
 
     # Alice_01 "Ты совсем идиот, Макс? Я в купальнике. Это не трусы. А трусы я и так не ношу под джинсами. Можешь себе фантазировать теперь сколько хочешь... Всё, уйди с глаз моих долой!"
-    Alice_01 "Si úplný idiot, Max? Som v plavkách. Toto nie sú nohavice. A pod džínsy si aj tak nedávam nohavičky. Teraz si môžeš fantazírovať, ako len chceš... To je ono, zmizni mi z očí!"
+    Alice_01 "Si úplný idiot, Max? Som v plavkách. Toto nie sú nohavičky. A pod džínsy si aj tak nedávam nohavičky. Teraz si môžeš fantazírovať, ako len chceš... To je ono, zmizni mi z očí!"
 
 # game/dialogues/alicetalk.rpy:2033
 translate slovak smoke_nopants_2485171a:
@@ -8971,13 +8971,13 @@ translate slovak Alice_sorry_b89844da:
 translate slovak Alice_sorry_a6094fa7:
 
     # Alice_12 "А то, что подглядывать за голой сестрой это грех! Или ты этого не знал? В общем собирайся и пошли к маме... Очень хочется посмотреть, что она с тобой сделает, когда об этом узнает..."
-    Alice_12 "A vieš že pozerať sa na nahotu svojej sestry je hriech! Alebo si to nevedel? Tak či onak, zbaľ sa a poďme k tvojej mame... Chcela by som vidieť, čo ti urobí, keď sa to dozvie..."
+    Alice_12 "A vieš že pozerať sa na nahotu svojej sestry je hriech! Alebo si to nevedel? Tak či onak, zbaľ sa a poďme k našej mame... Chcela by som vidieť, čo ti urobí, keď sa to dozvie..."
 
 # game/dialogues/alicetalk.rpy:2244
 translate slovak Alice_sorry_b695a1ae:
 
     # Max_01 "Так может мы договоримся, как раньше? Может быть тебе что-то надо?"
-    Max_01 "Prečo sa teda nedhodneme ako kedysi? Možno niečo potrebuješ?"
+    Max_01 "Prečo sa teda nedohodneme ako kedysi? Možno niečo potrebuješ?"
 
 # game/dialogues/alicetalk.rpy:2245
 translate slovak Alice_sorry_f1a7cc2c:
@@ -9151,7 +9151,7 @@ translate slovak gift_dress_newdress_show_71e49abd:
 translate slovak gift_book_7f96d0fa:
 
     # Alice_02 "У тебя для меня подарок? У ТЕБЯ... для МЕНЯ? Какая прелесть. Давай, показывай, что за книжка?"
-    Alice_02 "Máš pre mňa darček? MÁŚ... pre MŇA? Aké krásne. No tak, ukáž mi, čo je to za knihu?"
+    Alice_02 "Máš pre mňa darček? MÁŠ... pre MŇA? Aké krásne. No tak, ukáž mi, čo je to za knihu?"
 
 # game/dialogues/alicetalk.rpy:2354
 translate slovak gift_book_9652c3b9:
@@ -12739,7 +12739,7 @@ translate slovak alice_sorry_gifts_good_a174e7cf_2:
 translate slovak alice_sorry_gifts_good_b2da0dd8:
 
     # Alice_05 "В этот раз конфет даже больше, так что я не припоминаю, чтобы утром за мной кто-то подглядывал! Всё было в порядке..."
-    Alice_05 "Tentoraz je tam ešte viac sladkostí, takže si nepamätám, že by ma dnes ráno niekto okukoval! Všetko je v poriadku..."
+    Alice_05 "Tentoraz je tam ešte viac sladkostí, takže si nepamätám, že by ma včera ráno niekto okukoval! Všetko je v poriadku..."
 
 # game/dialogues/alicetalk.rpy:3876
 translate slovak alice_sorry_gifts_good_ddda64bf:
@@ -12919,7 +12919,7 @@ translate slovak alice_sorry_gifts_good_c9c4f595:
 translate slovak alice_sorry_gifts_good_b47b0634:
 
     # Alice_02 "Подглядывать за мной или дарить мне сладости?!"
-    Alice_02 "Šmíruješ ma alebo mi dáš sladkosti?!"
+    Alice_02 "Šmírovať ma alebo mi dať sladkosti?!"
 
 # game/dialogues/alicetalk.rpy:3937
 translate slovak alice_sorry_gifts_good_201ce590:
@@ -13495,7 +13495,7 @@ translate slovak talkblog3_66db8c63:
 translate slovak talkblog3_0817ffd6:
 
     # Max_07 "Ну а если я тебе его подарю?"
-    Max_07 "Čo keby som ti ho dal?"
+    Max_07 "Čo keby som ti ju dal?"
 
 # game/dialogues/alicetalk.rpy:4143
 translate slovak talkblog3_1f84979c:
@@ -13585,7 +13585,7 @@ translate slovak gift_black_lingerie_acf40ff4:
 translate slovak gift_black_lingerie_0f94a426:
 
     # Alice_05 "Примерю при тебе? Об этом мы не договаривались. Я покажусь в нём, но... Хотя, ладно. Примерю при тебе, но ты не подглядывай! Увижу, что смотришь, получишь и пойдёшь в бассейн. Вниз головой."
-    Alice_05 "Mám si ho pred tebou vyskúšať? Na tom sme sa nedohodli. Ukážem sa v ňom, ale... V poriadku. Vyskúšam si ho pred tebou, ale nepozeraj! Uvidím, či sa pozeráš, dostanem ťa a pôjdeš do bazéna. Obrátený hore nohami."
+    Alice_05 "Mám si ju pred tebou vyskúšať? Na tom sme sa nedohodli. Ukážem sa v ňom, ale... V poriadku. Vyskúšam si ju pred tebou, ale nepozeraj! Uvidím, či sa pozeráš, dostanem ťa a pôjdeš do bazéna. Obrátený hore nohami."
 
 # game/dialogues/alicetalk.rpy:4186
 translate slovak gift_black_lingerie_d8f3eecd:
@@ -14059,7 +14059,7 @@ translate slovak alice_about_lingerie0_2a44705b:
 translate slovak alice_about_lingerie0_43b3d5bb:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 "Áno, potrebujem ďalšie sexy body. A presne som mu ukázala, ktorý chcem. Rozhodli sme sa, že ho kúpime, keď pôjdeme v sobotu nakupovať. Prečo?"
+    Alice_05 "Áno, potrebujem ďalšie sexy body. A presne som mu ukázala, ktoré chcem. Rozhodli sme sa, že ho kúpime, keď pôjdeme v sobotu nakupovať. Prečo?"
 
 # game/dialogues/alicetalk.rpy:4420
 translate slovak alice_about_lingerie0_f8fd533a:
@@ -14287,7 +14287,7 @@ translate slovak gift_lace_lingerie_311d8c21:
 translate slovak alice_about_defend_punish0_38177009:
 
     # Alice_12 "Эээ... Прекрасно сидится, как видишь."
-    Alice_12 "Ehm... Ako vidíš, sedí dobre."
+    Alice_12 "Ehm... Ako vidíš, sedím dobre."
 
 # game/dialogues/alicetalk.rpy:4553
 translate slovak alice_about_defend_punish0_a7c4989a:
@@ -15811,7 +15811,7 @@ translate slovak alice_domine_drink_dd706ac2:
 translate slovak alice_domine_drink_39940f2d:
 
     # Alice_05 "Неужели такому мелкому извращенцу, как ты, стало страшно поворачиваться ко мне задом? Это хорошо... Но раздеться тебе придётся всё равно! Или есть возражения?!" nointeract
-    Alice_05 "Malý zvrhlík ako ty si sa zľakol, že sa mi otočí chrbtom? To je dobré... Ale aj tak sa musím vyzliecť! Alebo je tu námietka?!" nointeract
+    Alice_05 "Malý zvrhlík ako ty si sa zľakol, že sa mi otočí chrbtom? To je dobré... Ale aj tak sa musíš vyzliecť! Alebo je tu námietka?!" nointeract
 
 # game/dialogues/alicetalk.rpy:5447
 translate slovak alice_domine_drink_c8a300e9:
@@ -15829,7 +15829,7 @@ translate slovak alice_domine_drink_809834fe:
 translate slovak alice_domine_drink_df544769:
 
     # Alice_16 "Ах, вот так, да?! Вообще-то, тебя должен настораживать мой внешний вид!"
-    Alice_16 "Aha, to je ono?! Vlastne by si mal byť znepokojení mojím vzhľadom!"
+    Alice_16 "Aha, to je ono?! Vlastne by si mal byť znepokojený mojím vzhľadom!"
 
 # game/dialogues/alicetalk.rpy:5450
 translate slovak alice_domine_drink_0ed5c76a:
@@ -15865,7 +15865,7 @@ translate slovak alice_domine_drink_ba4b2a5d:
 translate slovak alice_domine_drink_be80be0c:
 
     # Alice_03 "Ха! В таком случае, теперь я знаю, как тебя нужно наказывать... Как тебе это!"
-    Alice_03 "Ha! V tom prípade už viem, ako by si mal byť potrestaní... Čo povieš na to?"
+    Alice_03 "Ha! V tom prípade už viem, ako by si mal byť potrestaný... Čo povieš na to?"
 
 # game/dialogues/alicetalk.rpy:5463
 translate slovak alice_domine_drink_f8bdc8dd:
@@ -16027,7 +16027,7 @@ translate slovak alice_domine_drink_afraid_to_say_d572dd23:
 translate slovak alice_domine_drink_afraid_to_say_b47c30be:
 
     # Alice_03 "Ха-ха... Боишься? Это хорошо... Так и должно быть, ты должен меня бояться!"
-    Alice_03 "Ha-ha... Bojíš sa? To je dobré... Tak by to malo byť, mali by si sa ma báť!"
+    Alice_03 "Ha-ha... Bojíš sa? To je dobré... Tak by to malo byť, mal by si sa ma báť!"
 
 # game/dialogues/alicetalk.rpy:5539
 translate slovak alice_domine_drink_afraid_to_say_992e79da:
@@ -16887,7 +16887,7 @@ translate slovak strings:
 
     # game/dialogues/alicetalk.rpy:1700
     old "Если днём ты будешь ходить без трусов, буду молчать"
-    new "Ak budeš cez deň chodiť bez nohavíc, budem ticho"
+    new "Ak budeš cez deň chodiť bez nohavičiek, budem ticho"
 
     # game/dialogues/alicetalk.rpy:1700
     old "Если будешь курить без верха, буду молчать"
@@ -17019,15 +17019,15 @@ translate slovak strings:
 
     # game/dialogues/alicetalk.rpy:2023
     old "А ты чего в трусах?"
-    new "Prečo máš na sebe nohavice?"
+    new "Prečo máš na sebe nohavičky?"
 
     # game/dialogues/alicetalk.rpy:2023
     old "Я передумал. Можешь носить трусы..."
-    new "Rozmyslel som si to. Môžeš nosiť nohavice..."
+    new "Rozmyslel som si to. Môžeš nosiť nohavičky..."
 
     # game/dialogues/alicetalk.rpy:2029
     old "Мы же договорились - без трусов!"
-    new "Povedal som žiadne nohavice!"
+    new "Povedal som žiadne nohavičky!"
 
     # game/dialogues/alicetalk.rpy:2029
     old "Да шучу я..."
@@ -17175,7 +17175,7 @@ translate slovak strings:
 
     # game/dialogues/alicetalk.rpy:3167
     old "{i}убрать руки{/i}"
-    new "{i}pohybovať rukami{/i}"
+    new "{i}odložiť ruky preč{/i}"
 
     # game/dialogues/alicetalk.rpy:3167
     old "{i}тискать дальше...{/i}"
@@ -17223,7 +17223,7 @@ translate slovak strings:
 
     # game/dialogues/alicetalk.rpy:4178
     old "Ну что, примеришь при мне?"
-    new "Vyskúšaš si ho predo mnou?"
+    new "Vyskúšaš si ju predo mnou?"
 
     # game/dialogues/alicetalk.rpy:4478
     old "{i}подглядывать{/i}"
@@ -17367,7 +17367,7 @@ translate slovak strings:
 
     # game/dialogues/alicetalk.rpy:5641
     old "{i}дать Алисе кончить{/i}"
-    new "{i}nechajte Alicu vyvrcholiť{/i}"
+    new "{i}nechaj Alicu vyvrcholiť{/i}"
 
     # game/dialogues/alicetalk.rpy:5709
     old "Ага, не вопрос. Сделаю."
@@ -17675,7 +17675,7 @@ translate slovak ann_tv_casual_0_a12834eb:
 translate slovak ann_tv_casual_0_058e265f:
 
     # Ann_15 "[unlucky!t]Макс! Это мне кажется или у тебя... Я не поняла! Ты почему такой возбуждённый? Я конечно всё понимаю, ты подросток и такое бывает, но сейчас-то в честь чего?"
-    Ann_15 "[unlucky!t]Max! Zdá sa to len mne, alebo máš... Nechápem to! Prečo si takí vzrušení? Chápem, si tínedžer a takéto veci sa stávajú, ale pri akej príležitosti?"
+    Ann_15 "[unlucky!t]Max! Zdá sa to len mne, alebo máš... Nechápem to! Prečo si taký vzrušený? Chápem, si tínedžer a takéto veci sa stávajú, ale pri akej príležitosti?"
 
 # game/dialogues/anntalk.rpy:312
 translate slovak ann_tv_casual_0_11b175c9:
@@ -17705,7 +17705,7 @@ translate slovak ann_tv_casual_0_db7f2794:
 translate slovak ann_tv_casual_0_1e50258d:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Я не поняла! Ты почему такой возбуждённый? Я конечно всё понимаю, ты подросток и такое бывает, но сейчас-то в честь чего?"
-    Ann_15 "[unlucky!t]Max! Čo je to?! Nechápem to! Prečo si takí vzrušení? Chápem, si tínedžer a takéto veci sa stávajú, ale pri akej príležitosti?"
+    Ann_15 "[unlucky!t]Max! Čo je to?! Nechápem to! Prečo si taký vzrušení? Chápem, si tínedžer a takéto veci sa stávajú, ale pri akej príležitosti?"
 
 # game/dialogues/anntalk.rpy:354
 translate slovak ann_tv_casual_0_11b175c9_1:
@@ -17777,7 +17777,7 @@ translate slovak ann_tv_casual_0_980cb3ea:
 translate slovak ann_tv_casual_1_dfadd689:
 
     # Max_02 "{m}Мама так близко... В одном полотенце... Какая разница, что там на экране происходит, когда рядом ТАКАЯ женщина! Не могу перестать представлять то, что скрыто под её полотенцем...{/m}"
-    Max_02 "{m}Mama je tak blízko... V jľahkom uteráku... Koho by zaujímalo, čo je na obrazovke, keď je tu TÁTO žena! Nemôžem si prestať predstavovať, čo sa skrýva pod jej uterákom...{/m}"
+    Max_02 "{m}Mama je tak blízko... V ľahkom uteráku... Koho by zaujímalo, čo je na obrazovke, keď je tu TÁTO žena! Nemôžem si prestať predstavovať, čo sa skrýva pod jej uterákom...{/m}"
 
 # game/dialogues/anntalk.rpy:405
 translate slovak ann_tv_casual_1_da7fec66:
@@ -18143,7 +18143,7 @@ translate slovak ann_about_kiss_9cfb9a3d:
 translate slovak ann_about_kiss_3ef7d7c6:
 
     # Ann_02 "Понятно. Ну что я могу тебе сказать. Буть естественным, будь самим собой. Девушки это ценят. Если ты попытаешься выдавать себя за ловеласа, она это раскусит и бросит тебя..."
-    Ann_02 "Chápem. Čo ti mám povedať. Buď prirodzení, buď sám sebou. Dievčatá to oceňujú. Ak sa budeš snažiť vydávať za muža pre ženy, príde na to a dá ti kopačky..."
+    Ann_02 "Chápem. Čo ti mám povedať. Buď prirodzený, buď sám sebou. Dievčatá to oceňujú. Ak sa budeš snažiť vydávať za muža pre ženy, príde na to a dá ti kopačky..."
 
 # game/dialogues/anntalk.rpy:653
 translate slovak ann_about_kiss_f7d895a9:
@@ -18311,7 +18311,7 @@ translate slovak ann_yoga_with_max0_892ccf62:
 translate slovak ann_yoga_with_max0_4b285dc9:
 
     # Ann_02 "Тебе со стороны должно быть хорошо видно, всё ли я делаю правильно. У меня должна быть прямая спина и прямые ноги..."
-    Ann_02 "Mali by si zvonku vidieť, či robím všetko správne. Mala by som mať rovný chrbát a rovné nohy..."
+    Ann_02 "Mal by si zvonku vidieť, či robím všetko správne. Mala by som mať rovný chrbát a rovné nohy..."
 
 # game/dialogues/anntalk.rpy:726
 translate slovak ann_yoga_with_max0_9ca4a1b0:
@@ -18929,7 +18929,7 @@ translate slovak erofilm2_1_db9e8a82_1:
 translate slovak erofilm2_1_7cb8cd3e:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
-    Ann_15 "[unlucky!t]Max! Čo je to?! Prečo si takí vzrušení? Kvôli filmu? Aha, samozrejme, že sa pýtam..."
+    Ann_15 "[unlucky!t]Max! Čo je to?! Prečo si taký vzrušení? Kvôli filmu? Aha, samozrejme, že sa pýtam..."
 
 # game/dialogues/anntalk.rpy:1066
 translate slovak erofilm2_1_3b3108de:
@@ -19271,7 +19271,7 @@ translate slovak erofilm2_2_e77ee6ca:
 translate slovak erofilm2_2_9d0711b1:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? В фильме же откровенные сцены давно были..."
-    Ann_15 "[unlucky!t]Max! Čo je to?! Prečo si takí vzrušení? Vo filme sú však explicitné scény už dlho..."
+    Ann_15 "[unlucky!t]Max! Čo je to?! Prečo si taký vzrušení? Vo filme sú však explicitné scény už dlho..."
 
 # game/dialogues/anntalk.rpy:1318
 translate slovak erofilm2_2_2e2a702d:
@@ -19361,7 +19361,7 @@ translate slovak erofilm2_2_lucky_684e55df:
 translate slovak erofilm2_2_unlucky_7cb8cd3e:
 
     # Ann_15 "[unlucky!t]Макс! Это что такое?! Ты почему такой возбуждённый? Из-за фильма? А, ну да, конечно, я ещё спрашиваю..."
-    Ann_15 "[unlucky!t]Max! Čo je to?! Prečo si takí vzrušení? Kvôli filmu? Aha, samozrejme, že sa pýtam..."
+    Ann_15 "[unlucky!t]Max! Čo je to?! Prečo si taký vzrušení? Kvôli filmu? Aha, samozrejme, že sa pýtam..."
 
 # game/dialogues/anntalk.rpy:1396
 translate slovak erofilm2_2_unlucky_54519691:
@@ -19513,7 +19513,7 @@ translate slovak strings:
 
     # game/dialogues/anntalk.rpy:246
     old "Я не смотрю, а что там?"
-    new "Nehľadám, čo to je?"
+    new "Nepozerám, čo to je?"
 
     # game/dialogues/anntalk.rpy:246
     old "Я уже взрослый!"
@@ -19573,7 +19573,7 @@ translate slovak strings:
 
     # game/dialogues/anntalk.rpy:582
     old "Нет, никого не было..."
-    new "Nie, nebol tam nikto..."
+    new "Nie, nebol tu nikto..."
 
     # game/dialogues/anntalk.rpy:582
     old "Может быть, показалось?"
@@ -19659,7 +19659,7 @@ translate slovak typical_breakfast_32286f7d:
 translate slovak typical_breakfast_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Vďaka za informácie, Max! Tak, a je to tu..."
+    Ann_05 "Vďaka za pochopenie, Max! Tak, a je to tu..."
 
 # game/dialogues/breakfast.rpy:17
 translate slovak typical_breakfast_4a7da202:
@@ -20121,7 +20121,7 @@ translate slovak breakfast_2_69423f59:
 translate slovak breakfast_2_827a03ce:
 
     # Ann_05 "Ну, если вы так говорите... Я сначала хотела их снять, чтобы не смущать никого. Ваш отец, видимо, холостяцкий дом строил и оформлял соответственно... Но если никого не смущает, то и меня всё устраивает."
-    Ann_05 "No, keď to hovoríte... Najskôr som si ich chcel dať dole, aby som nikoho neuviedla do rozpakov. Váš otec si musel postaviť a zariadiť svoj mládenecký dom podľa toho... Ale ak to nikoho neuvádza do rozpakov, nevadí mi to."
+    Ann_05 "No, keď to hovoríte... Najskôr som ich chcela dať dole, aby som nikoho neuviedla do rozpakov. Váš otec si musel postaviť a zariadiť svoj mládenecký dom podľa toho... Ale ak to nikoho neuvádza do rozpakov, nevadí mi to."
 
 # game/dialogues/breakfast.rpy:408
 translate slovak breakfast_2_e684f7c7:
@@ -20211,7 +20211,7 @@ translate slovak breakfast_3_b2276362:
 translate slovak breakfast_3_29d5cb7f:
 
     # Alice_13 "Мам! Я молодая, красивая, мне надо развлекаться. Ты сама рассказывала, как раньше зажигала, а мне не даёшь?"
-    Alice_13 "Mami! Som mladá, krásna, potrebujem sa baviť. Povedala si mi, ako si sa kedysi žiarila, a nedovolíš mi to?"
+    Alice_13 "Mami! Som mladá, krásna, potrebujem sa baviť. Povedala si mi, ako si kedysi žiarila, a nedovolíš mi to?"
 
 # game/dialogues/breakfast.rpy:457
 translate slovak breakfast_3_469954dc:
@@ -20235,19 +20235,19 @@ translate slovak breakfast_3_8902731d:
 translate slovak breakfast_3_e76df351:
 
     # Alice_06 "Мам, да мне не обязательно дорогое. Главное, чтобы стильное, красивое, короткое..."
-    Alice_06 "Mami, nemusí byť drahá. Hlavná vec je, že bude štýlová, krásna, krátka..."
+    Alice_06 "Mami, nemusia byť drahé. Hlavná vec je, že budú štýlové, krásne, krátke..."
 
 # game/dialogues/breakfast.rpy:464
 translate slovak breakfast_3_fc7e8a5a:
 
     # Ann_01 "Что значит короткое? Ты там чем собралась заниматься в своём клубе? Я не хочу, чтобы моя дочь в таком виде разгуливала по ночным клубам!"
-    Ann_01 "Čo znamená krátka? Čo budeš robiť v klube? Nechcem, aby moja dcéra takto chodila po nočných kluboch!"
+    Ann_01 "Čo znamená krátke? Čo budeš robiť v klube? Nechcem, aby moja dcéra takto chodila po nočných kluboch!"
 
 # game/dialogues/breakfast.rpy:465
 translate slovak breakfast_3_b7ff85a4:
 
     # Alice_13 "Мам, ну не слишком короткое... В общем, любое. Главное, чтобы можно было пойти! Ну ма-ам..."
-    Alice_13 "Mami, no, nie príliš krátka... Všeobecne platí, že akékoľvek. Hlavná vec je, že môžem ísť! No, madam..."
+    Alice_13 "Mami, no, nie príliš krátke... Všeobecne platí, že akékoľvek. Hlavná vec je, že môžem ísť! Dobre, mama..."
 
 # game/dialogues/breakfast.rpy:467
 translate slovak breakfast_3_713275ed:
@@ -20481,7 +20481,7 @@ translate slovak breakfast_4_38b7f8b4:
 translate slovak breakfast_4_05cc408b:
 
     # Alice_02 "Да ты не переживать должен, а радоваться, что у мамы налаживается её личная жизнь! К тому же, ещё и с работой так повезло и даже повышение в первую неделю светит..." nointeract
-    Alice_02 "Áno, nemali by ste sa obávať, ale buďte radi, že naša matka zlepšuje svoj osobný život! Okrem toho mala také šťastie v práci a dokonca aj povýšenie v prvom týždni..." nointeract
+    Alice_02 "Áno, nemal by si sa obávať, ale buď rád, že naša matka zlepšuje svoj osobný život! Okrem toho mala také šťastie v práci a dokonca aj povýšenie v prvom týždni..." nointeract
 
 # game/dialogues/breakfast.rpy:585
 translate slovak breakfast_4_71328ac0:
@@ -21801,7 +21801,7 @@ translate slovak strings:
 
     # game/dialogues/breakfast.rpy:279
     old "Да моей купилке любой позавидует!"
-    new "Áno, každý mi bude závidieť nákup!"
+    new "Áno, každí mi bude závidieť nákup!"
 
     # game/dialogues/breakfast.rpy:279
     old "А у самой то денег куры не клюют, да?"
@@ -22065,7 +22065,7 @@ translate slovak strings:
 
     # game/dialogues/breakfast.rpy:754
     old "Секретаршей"
-    new "Tajomník"
+    new "Sekretárka"
 
     # game/dialogues/breakfast.rpy:754
     old "{i}промолчать{/i}"
@@ -22130,7 +22130,7 @@ translate slovak christina_first_talk_a003babc:
 translate slovak christina_first_talk_343a63e4:
 
     # Christine_04 "Ого! А ты ещё не слишком мал, чтобы такое покупать? Хотя, ты не единственный паренёк в нашем районе, кто любит натягивать женскую одежду..."
-    Christine_04 "Wow! Nie si príliš mladí na to, aby si si ho kúpil? Hoci nie si jediné dieťa v našom okolí, ktoré si rado oblieka ženské šaty..."
+    Christine_04 "Wow! Nie si príliš mladý na to, aby si si ho kúpil? Hoci nie si jediné dieťa v našom okolí, ktoré si rado oblieka ženské šaty..."
 
 # game/dialogues/christina.rpy:10
 translate slovak christina_first_talk_655d6f1e:
@@ -22334,7 +22334,7 @@ translate slovak typical_dinner_ba465243:
 translate slovak typical_dinner_1211a2f4:
 
     # Ann_05 "Спасибо за понимание, Макс! Ну, приступим..."
-    Ann_05 "Vďaka za informácie, Max! Tak, a je to tu..."
+    Ann_05 "Vďaka za pochopenie, Max! Tak, a je to tu..."
 
 # game/dialogues/dinner.rpy:77
 translate slovak typical_dinner_4a7da202:
@@ -22346,7 +22346,7 @@ translate slovak typical_dinner_4a7da202:
 translate slovak typical_dinner_e7b121b0:
 
     # Ann_05 "Да, всё в порядке, Макс. Спасибо, что спросил. Просто за день столько всего, что пора бы уже и отдохнуть..."
-    Ann_05 "Áno, to je v poriadku, Max. Ďakujem za otázku. Za deň sa toho dá stihnúť toľko, že je načase, aby ste si oddýchli..."
+    Ann_05 "Áno, som v poriadku, Max. Ďakujem za otázku. Za deň sa toho dá stihnúť toľko, že je načase, aby ste si oddýchli..."
 
 # game/dialogues/dinner.rpy:80
 translate slovak typical_dinner_63f629c8:
@@ -22370,7 +22370,7 @@ translate slovak dinner_first_ed236883:
 translate slovak dinner_first_54cbe6e6:
 
     # Ann_00 "Вы знаете, довольно неплохо. Такой офис! Такие все важные. Но я смогу там работать и даже планирую подняться по карьерной лестнице..." nointeract
-    Ann_00 "Viete, celkom dobré. Taká kancelária! Každý je taký dôležitý. Ale môžem tam pracovať a dokonca plánujem postúpiť na kariérnom rebríčku..." nointeract
+    Ann_00 "Viete, celkom dobré. Taká kancelária! Každí je takí dôležití. Ale môžem tam pracovať a dokonca plánujem postúpiť na kariérnom rebríčku..." nointeract
 
 # game/dialogues/dinner.rpy:92
 translate slovak dinner_first_7344f574:
@@ -22784,7 +22784,7 @@ translate slovak dinner_3_161450c7:
 translate slovak dinner_3_889c8278:
 
     # Max_04 "У нас всё как всегда. У тебя какие новости?"
-    Max_04 "Je to pre nás bežná záležitosť. Aké sú vaše novinky?"
+    Max_04 "Bola to pre mňa bežná záležitosť. Aké sú vaše novinky?"
 
 # game/dialogues/dinner.rpy:313
 translate slovak dinner_3_1f4a6464:
@@ -22796,13 +22796,13 @@ translate slovak dinner_3_1f4a6464:
 translate slovak dinner_3_42737a5d:
 
     # Alice_13 "Макс, ну вот опять ты в своём репертуаре! Порадуйся за маму. Кроме того, наверняка, это ещё и прибавка к зарплате! Да, мам?"
-    Alice_13 "Max, už zase! Buď šťastní za našu mamu. Okrem toho je to pravdepodobne aj zvýšenie platu! Áno, mami?"
+    Alice_13 "Max, už zase! Buď šťastný za našu mamu. Okrem toho je to pravdepodobne aj zvýšenie platu! Áno, mami?"
 
 # game/dialogues/dinner.rpy:318
 translate slovak dinner_3_c6838fa0:
 
     # Alice_07 "Ух-ты! Это же здорово! Наверняка, тебе и зарплату повысят и теперь не придётся беспокоиться о доме. Да, мам?"
-    Alice_07 "Wow! To je skvelé! Pravdepodobne sa ti zvýši aj plat a teraz sa nebudete musieť starať o dom. Áno, mami?"
+    Alice_07 "Wow! To je skvelé! Pravdepodobne sa ti zvýši aj plat a teraz sa nebudeš musieť starať o dom. Áno, mami?"
 
 # game/dialogues/dinner.rpy:319
 translate slovak dinner_3_7dfd9a93:
@@ -22928,13 +22928,13 @@ translate slovak dinner_4_6d0031c1:
 translate slovak dinner_4_70506d70:
 
     # Lisa_02 "Ну тот, дизайнерский какой-то. Он так хорошо на мне сидел. Эрик сказал, что идеально!"
-    Lisa_02 "Vieš, ten dizajnérsky. Tak dobre mi padly. Erik hovorí, že sú perfektné!"
+    Lisa_02 "Vieš, tie dizajnérske. Tak dobre mi padly. Erik hovorí, že sú perfektné!"
 
 # game/dialogues/dinner.rpy:364
 translate slovak dinner_4_f7058ec9:
 
     # Eric_01 "Да, купальник был отличный, но я уважаю решение Ани и понимаю, почему не стали покупать. Ну, нет, так нет..."
-    Eric_01 "Áno, plavky boli skvelé, ale rešpektujem Annino rozhodnutie a chápem, prečo ich nekúpilia Keď nie, tak nie..."
+    Eric_01 "Áno, plavky boli skvelé, ale rešpektujem Annino rozhodnutie a chápem, prečo ich nekúpila. Keď nie, tak nie..."
 
 # game/dialogues/dinner.rpy:366
 translate slovak dinner_4_f390e9d0:
@@ -23168,7 +23168,7 @@ translate slovak dinner_5_c03b73a5:
 translate slovak dinner_5_e38b8880:
 
     # Ann_07 "Спасибо, Алиса, что ты так обо мне заботишься. Да, я тоже думаю, что именно Эрика я и ждала всё это время. Честно говоря, не ожидала даже, что такие мужчины бывают... Но давайте сменим тему. Лизе завтра в школу. Ты готова?"
-    Ann_07 "Ďakujem ti, Alica, že sa o mňa tak dobre staráš. Áno, myslím, že Erik je ten, na ktorého som celý čas čakala. Úprimne povedané, ani som nečakala, že sa nájdu takíto muži... Zmeňme však tému. Líza má zajtra školu. Si pripravení?"
+    Ann_07 "Ďakujem ti, Alica, že sa o mňa tak dobre staráš. Áno, myslím, že Erik je ten, na ktorého som celý čas čakala. Úprimne povedané, ani som nečakala, že sa nájdu takíto muži... Zmeňme však tému. Líza má zajtra školu. Si pripravená?"
 
 # game/dialogues/dinner.rpy:468
 translate slovak dinner_5_9563c56b:
@@ -23234,7 +23234,7 @@ translate slovak dinner_6_f3fba9dc:
 translate slovak dinner_6_1af1f49a:
 
     # Ann_05 "Вот в чём дело! Да, я тебя понимаю, Макс. Но ты не переживай и лучше порадуйся за меня. Я очень рада, что встретила Эрика, настоящего мужчину и очень хотела бы, чтобы вы его приняли в семью..."
-    Ann_05 "Ide o toto! Áno, viem, čo máš na mysli, Max. Ale neboj sa a buď šťastní za mňa. Som veľmi rada, že som stretla Erika, skutočného muža, a veľmi si želám, aby si ho prijal do našej rodiny..."
+    Ann_05 "Ide o toto! Áno, viem, čo máš na mysli, Max. Ale neboj sa a buď šťastný za mňa. Som veľmi rada, že som stretla Erika, skutočného muža, a veľmi si želám, aby si ho prijal do našej rodiny..."
 
 # game/dialogues/dinner.rpy:492
 translate slovak dinner_6_d66e2468:
@@ -23276,7 +23276,7 @@ translate slovak dinner_6_95b14205:
 translate slovak dinner_6_1af1f49a_1:
 
     # Ann_05 "Вот в чём дело! Да, я тебя понимаю, Макс. Но ты не переживай и лучше порадуйся за меня. Я очень рада, что встретила Эрика, настоящего мужчину и очень хотела бы, чтобы вы его приняли в семью..."
-    Ann_05 "Ide o toto! Áno, viem, čo máš na mysli, Max. Ale neboj sa a buď šťastní za mňa. Som veľmi rada, že som spoznala Erika, skutočného muža, a veľmi si želám, aby si ho prijal do našej rodiny..."
+    Ann_05 "Ide o toto! Áno, viem, čo máš na mysli, Max. Ale neboj sa a buď šťastný za mňa. Som veľmi rada, že som spoznala Erika, skutočného muža, a veľmi si želám, aby si ho prijal do našej rodiny..."
 
 # game/dialogues/dinner.rpy:504
 translate slovak dinner_6_d66e2468_1:
@@ -23300,7 +23300,7 @@ translate slovak dinner_6_80f63239_1:
 translate slovak dinner_6_2dc57b31:
 
     # Ann_07 "Вот и замечательно. Теперь я хотела бы рассказать об одной идее Эрика. Я и сама о подобном задумывалась, но он озвучил мои мысли. Эрик, может быть ты и расскажешь?"
-    Ann_07 "To je skvelé. Teraz by som chcela hovoriť o jednom Erikovom nápade. Sama som o tom uvažovala, ale on vyjadril moje myšlienky. Eric, možno nám to môžeš povedať."
+    Ann_07 "To je skvelé. Teraz by som chcela hovoriť o jednom Erikovom nápade. Sama som o tom uvažovala, ale on vyjadril moje myšlienky. Erik, možno nám to môžeš povedať."
 
 # game/dialogues/dinner.rpy:509
 translate slovak dinner_6_edd8ab5c:
@@ -23324,13 +23324,13 @@ translate slovak dinner_6_317a2271:
 translate slovak dinner_6_5356c4a4:
 
     # Eric_01 "Военного. В этом лагере подготавливают детей твоего возраста к службе в армии. Это не значит, что ты обязан будешь идти служить, но тебя к этом подготовят и ты сам решишь, нравится тебе этот путь или нет..."
-    Eric_01 "Vojenská oblasť. Tento tábor pripravuje deti v tvojom veku na vojenskú službu. To neznamená, že budeš musieť slúžiť, ale budeš na to vyškolení a sám sa rozhodneš, či sa ti to páči alebo nie..."
+    Eric_01 "Vojenská oblasť. Tento tábor pripravuje deti v tvojom veku na vojenskú službu. To neznamená, že budeš musieť slúžiť, ale budeš na to vyškolený a sám sa rozhodneš, či sa ti to páči alebo nie..."
 
 # game/dialogues/dinner.rpy:513
 translate slovak dinner_6_019674e5:
 
     # Max_08 "Стоп. А если я уже знаю, что не хочу?"
-    Max_08 "Zastavte. Čo ak už viem, že to nechcem?"
+    Max_08 "Zastav. Čo ak už viem, že to nechcem?"
 
 # game/dialogues/dinner.rpy:514
 translate slovak dinner_6_5167a21f:
@@ -23348,7 +23348,7 @@ translate slovak dinner_6_457b166b:
 translate slovak dinner_6_0603d673:
 
     # Eric_02 "А зря. Хотя ваша мама и воспитала вас очень хорошо, ну некоторых точно. Но она воспитывала одна, а для того, чтобы мальчик стал настоящим мужчиной, нужно строгое, мужское воспитание. Вот в этом лагере его можно получить."
-    Eric_02 "A zbytočne. Hoci ťa tovja matka vychovala veľmi dobre, no niektorých z vás určite áno. Ale vyrastala sama, a aby sa z chlapca stal skutočný muž, potrebuje prísnu, mužnú výchovu. V tomto tábore ju môžeš získať."
+    Eric_02 "A zbytočne. Hoci ťa tvoja matka vychovala veľmi dobre, no niektorých z Vás určite áno. Ale vyrastala sama, a aby sa z chlapca stal skutočný muž, potrebuje prísnu, mužnú výchovu. V tomto tábore ju môžeš získať."
 
 # game/dialogues/dinner.rpy:517
 translate slovak dinner_6_2f9d222e:
@@ -23414,7 +23414,7 @@ translate slovak dinner_6_be309633:
 translate slovak dinner_6_d8863d05:
 
     # Eric_09 "Да? Странно. Обычно она всегда помогает. Хотя, мне кажется, что ты делаешь это не так. Вот скажи, ты же стараешься просто шлёпать как можно сильнее, думая, что это всё что требуется, верно?"
-    Eric_09 "Áno? Čudne. Zvyčajne to vždy pomôže. Aj keď si nemyslím, že to robíš takto. Povedz mi, snažíš sa tak silno fackovať, ako sa len dá, mysliac si, že to je všetko, čo je potrebné, však?"
+    Eric_09 "Áno? Čudné. Zvyčajne to vždy pomôže. Aj keď si nemyslím, že to robíš takto. Povedz mi, snažíš sa tak silno fackovať, ako sa len dá, mysliac si, že to je všetko, čo je potrebné, však?"
 
 # game/dialogues/dinner.rpy:531
 translate slovak dinner_6_f8fb6fec:
@@ -23426,7 +23426,7 @@ translate slovak dinner_6_f8fb6fec:
 translate slovak dinner_6_73868a8c:
 
     # Ann_14 "Ну, да... Потом вся ладошка болит... А разве я делаю это не так? Или в чём хитрость?"
-    Ann_14 "Premýšľaj o tom... Potom celá dlaň bolí... Robím to? Alebo aký je trik?"
+    Ann_14 "Premýšľaj o tom... Potom celá dlaň bolí... Robím to správne? Alebo aký je trik?"
 
 # game/dialogues/dinner.rpy:533
 translate slovak dinner_6_c85861e6:
@@ -23522,7 +23522,7 @@ translate slovak dinner_11_ba0efa34:
 translate slovak dinner_11_e2d2f91c:
 
     # Ann_04 "Лучше бы делом занялась. На курсы подготовительные пошла бы, может быть, и поступить смогла бы куда-то..."
-    Ann_04 "Radšej by si sa mali pustiť do práce. Ja by som si urobila prípravný kurz, možno by som sa na niečo dostala..."
+    Ann_04 "Radšej by si sa mala pustiť do práce. Ja by som si urobila prípravný kurz, možno by som sa na niečo dostala..."
 
 # game/dialogues/dinner.rpy:555
 translate slovak dinner_11_e5f051d6:
@@ -23552,13 +23552,13 @@ translate slovak dinner_11_e2de9231:
 translate slovak dinner_11_d501685a:
 
     # Ann_01 "Да, Эрик полностью прав. А ты, Макс, даже школу бросил. Прежде, чем думать о высшем образовании, неплохо было бы закончить среднее. Как считаешь?" nointeract
-    Ann_01 "Áno, Erik má úplnú pravdu. A ty, Max, si dokonca odišiel zo školy. Skôr ako začneš uvažovať o vysokoškolskom štúdiu, je dobré dokončiť strednú školu. Čo si myslíte?" nointeract
+    Ann_01 "Áno, Erik má úplnú pravdu. A ty, Max, si dokonca odišiel zo školy. Skôr ako začneš uvažovať o vysokoškolskom štúdiu, je dobré dokončiť strednú školu. Čo si myslíš?" nointeract
 
 # game/dialogues/dinner.rpy:567
 translate slovak dinner_11_559e8fa1:
 
     # Eric_01 "Ну, тогда у тебя одна дорога. В тот самый военный лагерь. Ну или какой-то другой. И это хорошо. Тебя подготовят, натренируют, научат дисциплине и субординации. Станешь настоящим мужиком!"
-    Eric_01 "V tom prípade má jedinú cestu. Do toho istého vojenského tábora. Alebo nejaký iný druh. A to je dobre. Budeš školení, trénovaní, disciplinovaní a podriadení. Staneš sa skutočným mužom!"
+    Eric_01 "V tom prípade má jedinú cestu. Do toho istého vojenského tábora. Alebo nejaký iný druh. A to je dobre. Budeš školený, trénovaný, disciplinovaný a podriadený. Staneš sa skutočným mužom!"
 
 # game/dialogues/dinner.rpy:569
 translate slovak dinner_11_b3ece1cc:
@@ -23576,7 +23576,7 @@ translate slovak dinner_11_bf1cc148:
 translate slovak dinner_11_de1a56d1:
 
     # Eric_01 "Ну, они не очень. Хотя, тебя подготовят, натренеруют. А главное - научат дисциплине и субординации. Мама за тебя порадуется, когда увидит, что мужиком стал!"
-    Eric_01 "No, nie sú skvelé. Budeš však vyškolení, budeš trénovaní. Najdôležitejšie je, že ťa naučia disciplíne a podriadenosti. Mama bude mať z teba radosť, keď uvidí, že si sa stal mužom!"
+    Eric_01 "No, nie sú skvelé. Budeš však vyškolený, budeš trénovaný. Najdôležitejšie je, že ťa naučia disciplíne a podriadenosti. Mama bude mať z teba radosť, keď uvidí, že si sa stal mužom!"
 
 # game/dialogues/dinner.rpy:572
 translate slovak dinner_11_7037837f:
@@ -23672,7 +23672,7 @@ translate slovak dinner_12_3ce393a3:
 translate slovak dinner_12_dba3788a:
 
     # Lisa_03 "Да ладно?! А на долго? Просто в гости или по делам? Мам, ну расскажи!"
-    Lisa_03 "Naozaj?! Ako dlho? Len na návšteve alebo na služobnej ceste? Mami, povedz mi to!"
+    Lisa_03 "Naozaj?! Ako dlho? Len na návštevu alebo na služobnú cestu? Mami, povedz mi to!"
 
 # game/dialogues/dinner.rpy:608
 translate slovak dinner_12_588b4955:
@@ -23708,7 +23708,7 @@ translate slovak dinner_12_2ab6504b:
 translate slovak dinner_12_d8703e43:
 
     # Alice_07 "В каком, в каком... В голом, конечно! Если бы наш провайдер не блокировал всё подряд, я бы показала то видео..."
-    Alice_07 "V ktorom, v ktorom... Samozrejme, nahá! Keby náš poskytovateľ internetu nebránil všetkému, ukázala by som to video..."
+    Alice_07 "Akým, akým... Samozrejme, nahá! Keby náš poskytovateľ internetu nebránil všetkému, ukázala by som to video..."
 
 # game/dialogues/dinner.rpy:623
 translate slovak dinner_12_ae3ea8ad:
@@ -24272,7 +24272,7 @@ translate slovak strings:
 
     # game/dialogues/dinner.rpy:189
     old "А ты прямо уработалась, да?"
-    new "A ty si sa poriadne narobil, však?"
+    new "A ty si sa poriadne narobila, však?"
 
     # game/dialogues/dinner.rpy:189
     old "А ты чем занимаешься?"
@@ -24356,7 +24356,7 @@ translate slovak strings:
 
     # game/dialogues/dinner.rpy:330
     old "Ладно, не будем мучать Лизу вопросами..."
-    new "Dobre, nebudem Lízu mučiť otázkami..."
+    new "Dobre, nebudeme Lízu mučiť otázkami..."
 
     # game/dialogues/dinner.rpy:341
     old "Бери меня с собой!"
@@ -24456,7 +24456,7 @@ translate slovak strings:
 
     # game/dialogues/dinner.rpy:564
     old "Сдалось оно мне..."
-    new "Nepotrebujeme ho..."
+    new "Nepotrebujem ju..."
 
     # game/dialogues/dinner.rpy:564
     old "Я подумаю..."
@@ -24566,7 +24566,7 @@ translate slovak eric_needmoney_4a3382d7:
 translate slovak eric_needmoney_b2da0d5e:
 
     # Eric_03 "Да? Ну, ладно... Держи. Только на глаза не попадайся..."
-    Eric_03 "Áno? No, dobre... Tu máš. Len sa držte mimo dohľadu..."
+    Eric_03 "Áno? No, dobre... Tu máš. Len sa drž mimo dohľadu..."
 
 # game/dialogues/erictalk.rpy:38
 translate slovak eric_needmoney_82324783:
@@ -25004,7 +25004,7 @@ translate slovak lessons_from_Eric_third_bj_4dd9d9b2:
 translate slovak lessons_from_Eric_third_bj_1375b6d8:
 
     # Eric_03 "А то! В дополнение, можешь массировать её грудь и вообще всё, до чего дотянешься. Видишь, с какой страстью она от этого сосёт!?"
-    Eric_03 "Vskutku! Okrem toho jej môžete masírovať prsia a všetko ostatné, na čo dosiahneš. Vidíš, ako vášnivo ho nasáva?!"
+    Eric_03 "Vskutku! Okrem toho jej môžeš masírovať prsia a všetko ostatné, na čo dosiahneš. Vidíš, ako vášnivo ho nasáva?!"
 
 # game/dialogues/erictalk.rpy:310
 translate slovak lessons_from_Eric_third_bj_ebdc05cd:
@@ -25118,7 +25118,7 @@ translate slovak Eric_talk_about_Lisa_0_108fbf0f:
 translate slovak Eric_talk_about_Lisa_0_c8565167:
 
     # Eric_02 "Ну если тебе интересно, то да. Ты можешь подглядывать за нашими с Лизой... уроками. В комнате Ани... Я так и быть, позабочусь, чтобы тебя не заметили."
-    Eric_02 "Ak máš záujem, tak áno. Môžete sa pozrieť na mňa a Lízu... lekcie. V Aninej izbe... Postarám sa, aby si ťa nikto nevšimol."
+    Eric_02 "Ak máš záujem, tak áno. Môžeš sa pozrieť na mňa a Lízu... lekcie. V Aninej izbe... Postarám sa, aby si ťa nikto nevšimol."
 
 # game/dialogues/erictalk.rpy:357
 translate slovak Eric_talk_about_Lisa_0_00a3aa0c:
@@ -26014,7 +26014,7 @@ translate slovak strings:
 
     # game/dialogues/erictalk.rpy:339
     old "Нет, можешь обучать... (продолжение дружбы)"
-    new "Nie, môžeš ma učiť... (pokračovanie priateľstva)"
+    new "Nie, môžeš ju učiť... (pokračovanie priateľstva)"
 
     # game/dialogues/erictalk.rpy:339
     old "А ей не рановато? (попытка выиграть время)"
@@ -26102,7 +26102,7 @@ translate slovak kira_firsttalk_527eb426:
 translate slovak kira_firsttalk_16797a1b:
 
     # Kira_05 "Ого... Да я смотрю твой рост пошёл куда надо! И давно ты такое сокровище скрываешь?" nointeract
-    Kira_05 "Wow... Vidím, že váš rast je na dobrej ceste! Ako dlho si ukrýval takýto poklad?" nointeract
+    Kira_05 "Wow... Vidím, že tvoj rast je na dobrej ceste! Ako dlho si ukrýval takýto poklad?" nointeract
 
 # game/dialogues/kiratalk.rpy:65
 translate slovak kira_firsttalk_562bf199:
@@ -26306,7 +26306,7 @@ translate slovak kira_talk2_f9ff1c6f:
 translate slovak kira_talk2_1f8d1009:
 
     # Kira_07 "Макс... Кажется, тебе снова пора в душ. Может быть, мне как-то прикрываться, когда ты рядом, раз у тебя все мысли где-то в другом месте?" nointeract
-    Kira_07 "Max... Myslím, že je opäť čas na sprchu. Možno by siom sa mala nejako kryť, keď si nablízku, keďže máš všetky svoje myšlienky inde?" nointeract
+    Kira_07 "Max... Myslím, že je opäť čas na sprchu. Možno by som sa mala nejako kryť, keď si nablízku, keďže máš všetky svoje myšlienky inde?" nointeract
 
 # game/dialogues/kiratalk.rpy:143
 translate slovak kira_talk2_00d0240b:
@@ -26396,7 +26396,7 @@ translate slovak kira_talk3_4fe1e9be:
 translate slovak kira_talk3_8905a3cf:
 
     # Kira_14 "Значит, не мне одной это показалось? Ну, в чём дело, рассказывай..." nointeract
-    Kira_14 "Takže nie som jediný, kto si to myslel? No, čo je to, povedz mi..." nointeract
+    Kira_14 "Takže nie som jediná, kto si to myslel? No, čo je to, povedz mi..." nointeract
 
 # game/dialogues/kiratalk.rpy:189
 translate slovak kira_talk3_f9226615:
@@ -26492,7 +26492,7 @@ translate slovak kira_about_kiss_848411ec:
 translate slovak kira_about_kiss_ca020699:
 
     # Kira_01 "Неудивительно. Наверняка, полез целоваться и получил... по... Хотя, нет. Видимо, тебе повезло. Ну я бы не стала к Алисе с такими вопросами обращаться на твоём месте..."
-    Kira_01 "Niet sa čomu čudovať. Iste, vyšplhal si sa pobozkať a dostal...by... Hoci, nie. Zrejme máš šťastie. No, na tvojom mieste by som sa s takýmito otázkami neobracal na Alicu..."
+    Kira_01 "Niet sa čomu čudovať. Iste, vyšplhal si sa pobozkať a dostal...by... Hoci, nie. Zrejme máš šťastie. No, na tvojom mieste by som sa s takýmito otázkami neobracala na Alicu..."
 
 # game/dialogues/kiratalk.rpy:229
 translate slovak kira_about_kiss_efd591e7:
@@ -26594,7 +26594,7 @@ translate slovak kira_talk4_4acdf68b:
 translate slovak kira_talk4_5ee83267:
 
     # Kira_13 "Точно? В общем, я снимаюсь в одном фильме... И форма горничной как раз из него. Я её случайно испачкала и брала постирать, а твоя мама заметила..."
-    Kira_13 "To je pravda? Každopádne, robím jeden film... A uniforma slúžky je  jednoducho z toho. Omylom som ho zašpinila a vzala na umývanie a tvoja matka si všimla..."
+    Kira_13 "To je pravda? Každopádne, robím jeden film... A uniforma slúžky je  jednoducho z toho. Omylom som ju zašpinila a vzala na umývanie a tvoja matka si všimla..."
 
 # game/dialogues/kiratalk.rpy:277
 translate slovak kira_talk4_634c769c:
@@ -26606,7 +26606,7 @@ translate slovak kira_talk4_634c769c:
 translate slovak kira_talk4_abeddefc:
 
     # Kira_08 "Да, почти звезда! Но никому не говори. Это большой секрет от всех!" nointeract
-    Kira_08 "Áno, takmer hviezda! Ale nikomu to nehovor. Je to veľké tajomstvo od všetkých!" nointeract
+    Kira_08 "Áno, takmer hviezda! Ale nikomu to nehovor. Je to veľké tajomstvo pre všetkých!" nointeract
 
 # game/dialogues/kiratalk.rpy:284
 translate slovak kira_talk4_5c93772d:
@@ -26792,7 +26792,7 @@ translate slovak kira_talk5_f8afef08:
 translate slovak kira_talk5_1195595b:
 
     # Max_02 "Так у нас же Алиса блог свой ведёт. Вот я ей и помогал с его развитием. Хорошие фотографии нужны всем!"
-    Max_02 "Alica má svoj vlastný blog. Tak som jej pomohol s jeho vývojom. Každý potrebuje dobré fotky!"
+    Max_02 "Alica má svoj vlastný blog. Tak som jej pomohol s jeho vývojom. Každí potrebuje dobré fotky!"
 
 # game/dialogues/kiratalk.rpy:351
 translate slovak kira_talk5_8431a94b:
@@ -26852,7 +26852,7 @@ translate slovak kira_talk5_59b8a856:
 translate slovak kira_talk5_be66e8de:
 
     # Kira_06 "Уж не знаю, Макс, что ты уже нафантазировал насчёт фотосессии, но тебе опять пора в душ. Что же ты такой впечатлительный? Эх..."
-    Kira_06 "Neviem, čo si si už predstavoval o fotení, Max, ale je čas, aby si sa opäť osprchoval. Prečo si takí vnímaví? Eh..."
+    Kira_06 "Neviem, čo si si už predstavoval o fotení, Max, ale je čas, aby si sa opäť osprchoval. Prečo si taký vnímavý? Eh..."
 
 # game/dialogues/kiratalk.rpy:370
 translate slovak kira_talk5_45d25fb1:
@@ -27074,7 +27074,7 @@ translate slovak first_photoset_set4_00af3fa8:
 translate slovak first_photoset_set4_c305aae6:
 
     # Max_03 "Да... Покажем твою сочную попку во всей красе! {p=1.5}{nw}"
-    Max_03 "Áno... Ukážme mi šťavnatý zadok v celej jeho kráse! {p=1.5}{nw}"
+    Max_03 "Áno... Ukážme im šťavnatý zadok v celej jeho kráse! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:526
 translate slovak first_photoset_set4_947687dd:
@@ -27098,7 +27098,7 @@ translate slovak first_photoset_set6_04c93189:
 translate slovak first_photoset_set6_9e415db6:
 
     # extend "Снимок готов. Давай, покажи мне что-нибудь погорячее..."
-    extend "Obraz je pripravený. No tak, ukáž mi niečo horúcejšie..."
+    extend "Záber je pripravený. No tak, ukáž mi niečo horúcejšie..."
 
 # game/dialogues/kiratalk.rpy:540
 translate slovak first_photoset_set6_d74aef50:
@@ -27110,7 +27110,7 @@ translate slovak first_photoset_set6_d74aef50:
 translate slovak first_photoset_set6_1f7ddded:
 
     # Max_04 "Ага, замри... Сейчас я тебя щёлкну. {p=1.5}{nw}"
-    Max_04 "Áno, zmraziť... Teraz ťa cvaknem. {p=1.5}{nw}"
+    Max_04 "Áno, nehýb sa... Teraz ťa cvaknem. {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:547
 translate slovak first_photoset_set6_ff3a2d28:
@@ -27314,7 +27314,7 @@ translate slovak kira_about_photo1_33a9ff94:
 translate slovak kira_about_photo1_e5e21458:
 
     # Kira_07 "Я подумала, фотосессия фотосессией, а за сорочку нужно поблагодарить отдельно. Как считаешь?"
-    Kira_07 "Myslel som si, že fotenie je fotenie a za košeľu musíš poďakovať samostatne. Čo myslíš?"
+    Kira_07 "Myslel som si, že fotenie je fotenie a za košeľu musím poďakovať samostatne. Čo myslíš?"
 
 # game/dialogues/kiratalk.rpy:661
 translate slovak kira_about_photo1_ecccc582:
@@ -27350,7 +27350,7 @@ translate slovak kira_about_photo1_fe79864c:
 translate slovak kira_about_photo1_cc5f81d9:
 
     # Max_20 "{m}Ох, как она сосёт... Да так глубоко... Похоже, у неё чёрный пояс по минету! Блин, я уже на грани... Вот-вот и кончу... Отпадно!{/m}" nointeract
-    Max_20 "{m}Ach, ako ho nasáva... Áno, tak hlboko... Vyzerá to, že má čierny opasok na fajčenie! Sakra, som na pokraji... Chystám sa dokončiť... Je to hanba!{/m}" nointeract
+    Max_20 "{m}Ach, ako ho nasáva... Áno, tak hlboko... Vyzerá to, že má čierny opasok za fajčenie! Sakra, som na pokraji... Chystám sa dokončiť... Je to hanba!{/m}" nointeract
 
 # game/dialogues/kiratalk.rpy:683
 translate slovak kira_about_photo1_f17ba8ca:
@@ -27674,7 +27674,7 @@ translate slovak kira_about_photo2_eb14f139:
 translate slovak kira_about_photo2_e9b5eb7d:
 
     # Kira_05 "Отлично, Макс. Теперь нам нужно сделать несколько снимков, на которых я должна выглядеть очень развратно! Я знаю, что тебе уже неймётся..." nointeract
-    Kira_05 "Výborne, Max. Teraz musím urobiť nejaké fotky, v ktorých by si mala vyzerať veľmi skazená! Viem, že už máš na sebe..." nointeract
+    Kira_05 "Výborne, Max. Teraz musím urobiť nejaké fotky, v ktorých by som mala vyzerať veľmi skazená! Viem, že už máš na sebe..." nointeract
 
 # game/dialogues/kiratalk.rpy:857
 translate slovak kira_about_photo2_d43cbc87:
@@ -27854,13 +27854,13 @@ translate slovak kira_about_ann_secret0_11df571a:
 translate slovak kira_about_ann_secret0_475d1a3d:
 
     # Max_07 "Она вытворяет вещи, которые до Эрика, никогда не стала бы делать! Ты видимо не знаешь, но Эрик напрямую мне заявил, что намерен трахать не только маму, но и моих сестёр!"
-    Max_07 "Robí veci, ktoré by pred Erikom nikdy neurobila! Pravdepodobne to nevieš, ale Erik mi priamo povedal, že má v úmysle jebať nielen s mojou matkou, ale aj s tvojimi sestrami!"
+    Max_07 "Robí veci, ktoré by pred Erikom nikdy neurobila! Pravdepodobne to nevieš, ale Erik mi priamo povedal, že má v úmysle jebať nielen s mojou matkou, ale aj s mojimi sestrami!"
 
 # game/dialogues/kiratalk.rpy:1020
 translate slovak kira_about_ann_secret0_0767af53:
 
     # Kira_13 "О как! Этого я действительно не знала... Тогда дела и правда плохи!"
-    Kira_13 "Ach, áno! To som naozaj nevedel... Potom je to naozaj zlé!"
+    Kira_13 "Ach, áno! To som naozaj nevedela... Potom je to naozaj zlé!"
 
 # game/dialogues/kiratalk.rpy:1021
 translate slovak kira_about_ann_secret0_d8eb099b:
@@ -27932,7 +27932,7 @@ translate slovak story_from_childhood_ann_9b09dcde:
 translate slovak story_from_childhood_ann_d4fc0814:
 
     # Kira_01 "Наверняка, тебе мама рассказывала, что когда мы были совсем юные, мы жили в небольшом городке, где все друг друга знали. Двери не закрывали, не было никакой сигнализации, ничего."
-    Kira_01 "Tvoja mama ti určite povedala, že keď sme boli veľmi mladí, žili sme v malom meste, kde sa všetci navzájom poznali. Dvere neboli zamknuté, nebol tam žiadny alarm, nič."
+    Kira_01 "Tvoja mama ti určite povedala, že keď sme boli veľmi mladé, žili sme v malom meste, kde sa všetci navzájom poznali. Dvere neboli zamknuté, nebol tam žiadny alarm, nič."
 
 # game/dialogues/kiratalk.rpy:1069
 translate slovak story_from_childhood_ann_2946f7b5:
@@ -28028,7 +28028,7 @@ translate slovak story_from_childhood_ann_90a4d5fe:
 translate slovak story_from_childhood_ann_1a0e195b:
 
     # Kira_14 "Потом начались поиски. Аню вышли искать почти все жители нашего городка. Многие её знали и любили... Поиски продолжались почти неделю..."
-    Kira_14 "Potom sa začalo pátranie. Takmer každý v našom meste vyšiel von a hľadal Annu. Mnohí ľudia ju poznali a milovali... Hľadanie trvalo takmer týždeň..."
+    Kira_14 "Potom sa začalo pátranie. Takmer každí v našom meste vyšiel von a hľadal Annu. Mnohí ľudia ju poznali a milovali... Hľadanie trvalo takmer týždeň..."
 
 # game/dialogues/kiratalk.rpy:1089
 translate slovak story_from_childhood_ann_8989f4f4:
@@ -28100,7 +28100,7 @@ translate slovak story_from_childhood_ann_8812f1ba:
 translate slovak story_from_childhood_ann_8cfbb2b1:
 
     # Kira_03 "А после... Мы как-то поссорились и я потребовала, чтобы она сделала за меня домашнюю работу... И представляешь, она покорно согласилась! Я тогда подумала, что просто повезло."
-    Kira_03 "A potom... Raz sme sa pohádali a ja som od nej žiadala, aby za mňa urobila domáce úlohy... A hádaj čo, poslušne súhlasila! Vtedy som si mysleal, že som mala len šťastie."
+    Kira_03 "A potom... Raz sme sa pohádali a ja som od nej žiadala, aby za mňa urobila domáce úlohy... A hádaj čo, poslušne súhlasila! Vtedy som si myslela, že som mala len šťastie."
 
 # game/dialogues/kiratalk.rpy:1101
 translate slovak story_from_childhood_ann_18445936:
@@ -28358,7 +28358,7 @@ translate slovak kira_about_photo3_1_f2b1d88f:
 translate slovak kira_about_photo3_1_5778913c:
 
     # Kira_07 "Тише-тише... Не так же громко! Похвально, что ты относишься к этому с таким энтузиазмом, но эти новости всем остальным слышать не стоит."
-    Kira_07 "Ticho, ticho... Nie tak hlasno! Je chvályhodné, že si z toho takí nadšení, ale túto novinku nemôžu počuť všetci ostatní."
+    Kira_07 "Ticho, ticho... Nie tak hlasno! Je chvályhodné, že si z toho taký nadšený, ale túto novinku nemôžu počuť všetci ostatní."
 
 # game/dialogues/kiratalk.rpy:1175
 translate slovak kira_about_photo3_1_55963275:
@@ -28940,7 +28940,7 @@ translate slovak kira_photoset3_51fed713:
 translate slovak kira_photoset3_66f2bbc9:
 
     # Kira_11 "О Боже, Макс... Я так сладко кончила! {p=1.5}{nw}"
-    Kira_11 "Panebože, Max... Mal si taký sladký orgazmus! {p=1.5}{nw}"
+    Kira_11 "Panebože, Max... Mala som taký sladký orgazmus! {p=1.5}{nw}"
 
 # game/dialogues/kiratalk.rpy:1423
 translate slovak kira_photoset3_8c30c98f:
@@ -28964,7 +28964,7 @@ translate slovak kira_photoset3_20208222:
 translate slovak kira_photoset3_30482127:
 
     # Max_07 "С подругой? То есть прямо вместе с ней?!"
-    Max_07 "S priateľkou? To , hneď spolu s ňou?!"
+    Max_07 "S priateľkou? To, hneď spolu s ňou?!"
 
 # game/dialogues/kiratalk.rpy:1431
 translate slovak kira_photoset3_63d15de1:
@@ -29298,7 +29298,7 @@ translate slovak strings:
 
     # game/dialogues/kiratalk.rpy:750
     old "Особая? Это какая?"
-    new "Špeciálne? Ktorý to je?"
+    new "Špeciálne? Aké to bude?"
 
     # game/dialogues/kiratalk.rpy:774
     old "{i}подсмотреть за Кирой{/i}"
@@ -29310,7 +29310,7 @@ translate slovak strings:
 
     # game/dialogues/kiratalk.rpy:851
     old "{i}раздеться и поиграть с её грудью{/i}"
-    new "{i}vyzliecť jej šaty a hrať sa s jej prsiami{/i}"
+    new "{i}vyzliecť šaty a hrať sa s jej prsiami{/i}"
 
     # game/dialogues/kiratalk.rpy:851
     old "{i}раздеться и дать ей пососать свой член{/i}"
@@ -29446,7 +29446,7 @@ translate slovak MorningWood_c0152bb5:
 translate slovak MorningWood_328a9a51:
 
     # Lisa_13 "Ма-ам! Иди сюда, скорее!" nointeract
-    Lisa_13 "Ma-am! Poď sem, rýchlo!" nointeract
+    Lisa_13 "Mamáááá! Poď sem, rýchlo!" nointeract
 
 # game/dialogues/lisatalk.rpy:101
 translate slovak MorningWood_42595202:
@@ -29704,7 +29704,7 @@ translate slovak MorningWoodCont_268c104a:
 translate slovak MorningWoodCont_3f17b637:
 
     # Max_01 "Судя по тому, что даже мама была удивлена его размерами, то не у всех."
-    Max_01 "Súdiac podľa toho, že aj moja mama bola prekvapená jeho veľkosťou, nie každi."
+    Max_01 "Súdiac podľa toho, že aj moja mama bola prekvapená jeho veľkosťou, nie každí."
 
 # game/dialogues/lisatalk.rpy:213
 translate slovak MorningWoodCont_695852b6:
@@ -29800,7 +29800,7 @@ translate slovak AfterSchoolFD_0b7a3f27:
 translate slovak AfterSchoolFD_f1bd3c85:
 
     # Max_04 "Хорошо, здесь и поговорим"
-    Max_04 "Dobre, teraz sa porozprávame"
+    Max_04 "Dobre, potom sa tu porozprávame"
 
 # game/dialogues/lisatalk.rpy:252
 translate slovak about_school_8ba1524a:
@@ -30634,7 +30634,7 @@ translate slovak about_boy2_2788fd95:
 translate slovak about_boy2_9a967d00:
 
     # Lisa_03 "Ха! Ты меня хорошо знаешь. Но ты как-то необычайно настойчиво интересуешься..."
-    Lisa_03 "Ha! Dobre ma poznáš. Ale bol sii vo svojom záujme nezvyčajne vytrvalý..."
+    Lisa_03 "Ha! Dobre ma poznáš. Ale bol si vo svojom záujme nezvyčajne vytrvalý..."
 
 # game/dialogues/lisatalk.rpy:807
 translate slovak about_boy2_6cf4347c:
@@ -30652,7 +30652,7 @@ translate slovak about_boy2_4fc1e11f:
 translate slovak about_boy2_97a3b79e:
 
     # Max_00 "Да всё! Что тебе удалось выяснить?"
-    Max_00 "To je všetko! Čo si zistila?"
+    Max_00 "Predsa všetko! Čo si zistila?"
 
 # game/dialogues/lisatalk.rpy:812
 translate slovak about_boy2_a42d3e89:
@@ -31288,7 +31288,7 @@ translate slovak Lisa_HomeWork_7fc42348:
 translate slovak Lisa_HomeWork_6342fdfe:
 
     # Lisa_00 "Ну, если ты не занят и правда знаешь что-то по этой теме..." nointeract
-    Lisa_00 "No, ak nie si zaneprázdnení a naozaj vieš niečo o tejto téme..." nointeract
+    Lisa_00 "No, ak nie si zaneprázdnený a naozaj vieš niečo o tejto téme..." nointeract
 
 # game/dialogues/lisatalk.rpy:1072
 translate slovak Lisa_HomeWork_2e4b11ca:
@@ -31330,7 +31330,7 @@ translate slovak Lisa_HomeWork_ecb8da1b:
 translate slovak Lisa_HomeWork_1d62a6d4:
 
     # Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
-    Lisa_02 "Pozrime sa... Samozrejme, že je! Aj tak by som to odmietla."
+    Lisa_02 "Pozrime sa... Samozrejme, že áno! Aj tak by som to neodmietla."
 
 # game/dialogues/lisatalk.rpy:1101
 translate slovak Lisa_HomeWork_82957346:
@@ -31360,7 +31360,7 @@ translate slovak Lisa_HomeWork_6a92765c:
 translate slovak Lisa_HomeWork_88dd5285:
 
     # Max_05 "Будет. Обещаю!"
-    Max_05 "Bude. Sľubujem!"
+    Max_05 "Budú. Sľubujem!"
 
 # game/dialogues/lisatalk.rpy:1127
 translate slovak Lisa_HomeWork_show_breast_9405b190:
@@ -31396,7 +31396,7 @@ translate slovak Lisa_HomeWork_show_breast_5bbf7fe6:
 translate slovak Lisa_HomeWork_show_breast_eb1cb0cd:
 
     # Max_05 "Вот теперь убедила!"
-    Max_05 "Teraz si presvedčená!"
+    Max_05 "Teraz som presvedčený!"
 
 # game/dialogues/lisatalk.rpy:1152
 translate slovak Lisa_HomeWork_show_breast_a1b246d0:
@@ -31414,7 +31414,7 @@ translate slovak Lisa_HomeWork_show_breast_4a5d69ef:
 translate slovak Lisa_HomeWork_show_breast_cfc7fabd:
 
     # Lisa_02 "Хорошо, Макс. Теперь мы в рассчёте, да? И надеюсь, что получу только пять, не меньше, верно?"
-    Lisa_02 "Dobre, Max. Teraz počítame, čo? A dúfaš, že dostanem len päťku, nie menej, však?"
+    Lisa_02 "Dobre, Max. Teraz počítame, čo? A dúfaš, že dostanem len jednotku, nie menej, však?"
 
 # game/dialogues/lisatalk.rpy:1155
 translate slovak Lisa_HomeWork_show_breast_1e78def9:
@@ -31492,7 +31492,7 @@ translate slovak Lisa_HomeWork_self_4a5d69ef:
 translate slovak Lisa_HomeWork_self_7cd07f88:
 
     # Lisa_03 "О, супер! Макс! Ты такой молодец! Всё время меня выручаешь... Я бы сама долго возилась и, наверняка, ошибок бы наделала... Спасибо тебе!"
-    Lisa_03 "Skvelé! Max! Si takí dobrí! Vždy mi pomáhaš... Trvalo by mi to dlho a určite by som urobila chyby... Ďakujem!"
+    Lisa_03 "Skvelé! Max! Si taký dobrý! Vždy mi pomáhaš... Trvalo by mi to dlho a určite by som urobila chyby... Ďakujem!"
 
 # game/dialogues/lisatalk.rpy:1210
 translate slovak Lisa_HomeWork_self_b48863b4:
@@ -31606,7 +31606,7 @@ translate slovak Lisa_HomeWork_first_foot_mass_5d3faf25:
 translate slovak Lisa_HomeWork_first_foot_mass_d2d86c45:
 
     # Lisa_09 "[lisa_bad_mass!t]Ай, всё... Прекращай, Макс! Щекотно же... Я не могу на домашнем задании сосредоточиться... Не так уж ты и хорош в этом деле."
-    Lisa_09 "[lisa_bad_mass!t]Au, to je ono... Prestaň, Max! Lechtá to... Nemôžem sa sústrediť na domáce úlohy... Nie si v tom až takí dobrí."
+    Lisa_09 "[lisa_bad_mass!t]Au, to je ono... Prestaň, Max! Lechtá to... Nemôžem sa sústrediť na domáce úlohy... Nie si v tom až taký dobrý."
 
 # game/dialogues/lisatalk.rpy:1285
 translate slovak Lisa_HomeWork_first_foot_mass_235a9d11:
@@ -32446,7 +32446,7 @@ translate slovak liza_hand_mass_3320f06d_2:
 translate slovak liza_hand_mass_c99051f1_1:
 
     # Max_01 "Мне только в радость, сестрёнка. Обращайся."
-    Max_01 "Je mi potešením, sestra. Kontaktuj nás."
+    Max_01 "Je mi potešením, sestra. Kontaktuj ma."
 
 # game/dialogues/lisatalk.rpy:1815
 translate slovak Lisa_sorry_e096100b:
@@ -32560,7 +32560,7 @@ translate slovak Lisa_sorry_142cdece:
 translate slovak Lisa_sorry_915d92f1:
 
     # Lisa_01 "Интересно, что скажет на это мама, когда я ей всё расскажу..."
-    Lisa_01 "Som zvedavý, čo na to povie naša mama, keď jej to poviem..."
+    Lisa_01 "Som zvedavá, čo na to povie naša mama, keď jej to poviem..."
 
 # game/dialogues/lisatalk.rpy:1844
 translate slovak Lisa_sorry_60491eab:
@@ -32590,7 +32590,7 @@ translate slovak Lisa_sorry_acd6f09a:
 translate slovak Lisa_sorry_efae3463:
 
     # Max_01 "Ага. Зачем тревожить маму нашими с тобой... недоразумениями..."
-    Max_01 "Áno. Prečo by si mala trápiť našu matku s nami... nedorozumeniami..."
+    Max_01 "Áno. Prečo by si mala trápiť našu matku s našimi... nedorozumeniami..."
 
 # game/dialogues/lisatalk.rpy:1850
 translate slovak Lisa_sorry_3954f39a:
@@ -32650,7 +32650,7 @@ translate slovak Lisa_sorry_f154d4e4:
 translate slovak Lisa_sorry_0f1bd400:
 
     # Lisa_03 "А я бы и не стала оправдываться, и если бы ты даже рассказал об этом маме, уверена, она бы не стала меня за это наказывать! И даже ругать..."
-    Lisa_03 "A ja by som sa neospravedlňovala, a ak by si o tom dokonca povedal našej mame, som si istá, že by ma za to nepotrestala!"
+    Lisa_03 "A ja by som sa neospravedlňovala, a ak by som o tom dokonca povedala našej mame, som si istá, že by ma za to nepotrestala!"
 
 # game/dialogues/lisatalk.rpy:1862
 translate slovak Lisa_sorry_b64d1d9a:
@@ -32782,7 +32782,7 @@ translate slovak Lisa_sorry_54bf2830:
 translate slovak Lisa_sorry_c51aaed8:
 
     # Lisa_13 "Как знать, Макс, может для тебя это будет так невыносимо, что ты отдашь предпочтение наказаниям от мамы. Или, на что я надеюсь, перестанешь подглядывать за мной!"
-    Lisa_13 "Kto vie, Max, možno to bude pre teba také neznesiteľné, že budeš uprednostňovať tresty od našejmatky. Alebo, dúfam, prestaneš ma špehovať!"
+    Lisa_13 "Kto vie, Max, možno to bude pre teba také neznesiteľné, že budeš uprednostňovať tresty od našej matky. Alebo, dúfam, prestaneš ma špehovať!"
 
 # game/dialogues/lisatalk.rpy:1894
 translate slovak Lisa_sorry_8f9944c0:
@@ -33052,7 +33052,7 @@ translate slovak gift_bathrobe_5abb8579:
 translate slovak gift_bathrobe_22c11adb:
 
     # Lisa_05 "И в щёчку ещё чмокну! Ммм..."
-    Lisa_05 "A päsť na líce! Mmm..."
+    Lisa_05 "A bozk na líce! Mmm..."
 
 # game/dialogues/lisatalk.rpy:2041
 translate slovak gift_bathrobe_84c6ceb6:
@@ -33064,7 +33064,7 @@ translate slovak gift_bathrobe_84c6ceb6:
 translate slovak gift_bathrobe_ea518f6e:
 
     # Lisa_02 "Ага, прямо при тебе сейчас разденусь до гола и примерю, да? Нет уж. Потерпи. После душа буду его надевать, перед тем как сесть делать уроки... А может и вообще всё время буду его на себе носить... Он же такой классный!"
-    Lisa_02 "Áno, vyzlečiem sa pred tebou donaha a vyskúšam si to, však? Nie. Buď trpezliví. Dám si ho po sprche, než si sadnem k domácim úlohám... Možno ho budem nosiť stále... Je taký skvelý!"
+    Lisa_02 "Áno, vyzlečiem sa pred tebou donaha a vyskúšam si to, však? Nie. Buď trpezlivý. Dám si ho po sprche, než si sadnem k domácim úlohám... Možno ho budem nosiť stále... Je taký skvelý!"
 
 # game/dialogues/lisatalk.rpy:2055
 translate slovak gift_bathrobe_4b7ec1a8:
@@ -33160,7 +33160,7 @@ translate slovak conversation_after_dinner_87ddea69:
 translate slovak conversation_after_dinner_0385244c:
 
     # Max_00 "Да, Лиза, что такое?"
-    Max_00 "Áno, Líza, čo je to?"
+    Max_00 "Áno, Líza, čo sa deje?"
 
 # game/dialogues/lisatalk.rpy:2158
 translate slovak conversation_after_dinner_97ef0497:
@@ -33214,7 +33214,7 @@ translate slovak conversation_after_dinner_9b2bb001:
 translate slovak conversation_after_dinner_9315363a:
 
     # Max_01 "Как о чём? О том, каким образом я буду помогать тебе с уроками. Ты мне - я тебе. Ну или мама будет тебя и дальше наказывать..."
-    Max_01 "O čom? O tom, ako vám pomôžem pri výučbe. Ty mi niečo dáš, ja ti niečo dám. Alebo ťa naša matka bude naďalej trestať..."
+    Max_01 "O čom? O tom, ako ti pomôžem pri výučbe. Ty mi niečo dáš, ja ti niečo dám. Alebo ťa naša matka bude naďalej trestať..."
 
 # game/dialogues/lisatalk.rpy:2180
 translate slovak conversation_after_dinner_d20cc8fb:
@@ -33250,7 +33250,7 @@ translate slovak conversation_after_dinner_c90b454f:
 translate slovak conversation_after_dinner_157c3cd3:
 
     # Lisa_10 "Ну у меня не очень большой выбор... Да и жарко в штанах спать... Да, я согласна. Но ты будешь мне помогать с уроками!"
-    Lisa_10 "No, nemám veľmi na výber... A v nohaviciach je horúco na spanie... Áno, súhlasím. Alety mi pomôžeš s mojimi lekciami!"
+    Lisa_10 "No, nemám veľmi na výber... A v nohaviciach je horúco na spanie... Áno, súhlasím. Ale ty mi pomôžeš s mojimi lekciami!"
 
 # game/dialogues/lisatalk.rpy:2193
 translate slovak conversation_after_dinner_4de7c9e3:
@@ -33286,7 +33286,7 @@ translate slovak conversation_after_dinner_43bc73f6:
 translate slovak conversation_after_dinner_b3f2e820:
 
     # Lisa_09 "Макс, что с тобой такое? Ты же так хорошо помогал мне с уроками... А теперь я получила двойку..."
-    Lisa_09 "Max, čo je s tebou? Bol si takí dobrí, že si mi pomáhal s mojimi lekciami... A teraz mám..."
+    Lisa_09 "Max, čo je s tebou? Bol si taký dobrý, že si mi pomáhal s mojimi lekciami... A teraz mám..."
 
 # game/dialogues/lisatalk.rpy:2223
 translate slovak conversation_after_dinner_6aec55e6:
@@ -33424,7 +33424,7 @@ translate slovak conversation_after_dinner_789f6df2:
 translate slovak conversation_after_dinner_07d48404:
 
     # Lisa_10 "Вот именно! Раз уж обещал помогать, так помогай. А то это не честно! Я ведь, как дура, свою часть уговора выполняю, а меня все равно наказывают..."
-    Lisa_10 "Presne tak! Ak si sľúbili pomoc, tak pomôž. Inak to nie je fér! Som hlupák, že som dodržala svoju časť dohody a ešte ma za to potrestali..."
+    Lisa_10 "Presne tak! Ak si sľúbil pomoc, tak pomôž. Inak to nie je fér! Som hlupák, že som dodržala svoju časť dohody a ešte ma za to potrestali..."
 
 # game/dialogues/lisatalk.rpy:2299
 translate slovak conversation_after_dinner_3696a28c:
@@ -33448,13 +33448,13 @@ translate slovak lisa_sorry_gifts_21b81128:
 translate slovak lisa_sorry_gifts_5dc942a0:
 
     # Lisa_02 "Правда? Ты всё-таки достал её для меня?! А какую?" nointeract
-    Lisa_02 "Naozaj? Máš to predsa pre mňa?! Ktorý?" nointeract
+    Lisa_02 "Naozaj? Máš to predsa pre mňa?! Ktorú?" nointeract
 
 # game/dialogues/lisatalk.rpy:2318
 translate slovak lisa_sorry_gifts_18215912:
 
     # Lisa_02 "Правда? Ну ты даёшь! А какую на этот раз?!" nointeract
-    Lisa_02 "Naozaj? Ty si taký hlupák! Ktorý je to tentoraz?!" nointeract
+    Lisa_02 "Naozaj? Ty si taký hlupák! Ktorá je to tentoraz?!" nointeract
 
 # game/dialogues/lisatalk.rpy:2320
 translate slovak lisa_sorry_gifts_18a348cf:
@@ -34492,7 +34492,7 @@ translate slovak lisa_sorry_gifts_good_938d39d5:
 translate slovak lisa_sorry_gifts_good_b56f155b:
 
     # Max_01 "А уж я-то как рад, сестрёнка!"
-    Max_01 "Som veľmi rada, sestra!"
+    Max_01 "Som veľmi rád, sestra!"
 
 # game/dialogues/lisatalk.rpy:2737
 translate slovak lisa_sorry_gifts_good_13f5bda9:
@@ -37300,13 +37300,13 @@ translate slovak about_boy3_7df1d7f0:
 translate slovak about_boy3_157d8a4e:
 
     # Max_07 "Думаю, тебе стоит подружиться с Оливией."
-    Max_07 "Myslím, že by si sa mala spriateliť s Oliviou."
+    Max_07 "Myslím, že by si sa mala spriateliť s Olíviou."
 
 # game/dialogues/lisatalk.rpy:3899
 translate slovak about_boy3_c933d2ee:
 
     # Lisa_09 "С Оливией?! Дружить? По-моему, дружить с девочкой, которая встречается с парнем, который мне интересен, не самая лучшая идея."
-    Lisa_09 "S Oliviou?! Priateľstvo? Podľa môjho názoru to nie je dobrý nápad kamarátiť sa s dievčaťom, ktoré chodí s chlapcom, o ktorého mám záujem."
+    Lisa_09 "S Olíviou?! Priateľstvo? Podľa môjho názoru to nie je dobrý nápad kamarátiť sa s dievčaťom, ktoré chodí s chlapcom, o ktorého mám záujem."
 
 # game/dialogues/lisatalk.rpy:3900
 translate slovak about_boy3_44f9090c:
@@ -37324,7 +37324,7 @@ translate slovak about_boy3_59f8b5d7:
 translate slovak about_boy3_de4ad589:
 
     # Max_03 "В том и смысл! Если ты будешь общаться с Алексом сама, то ещё не известно, каким он себя покажет. А вот через дружбу с Оливией ты сможешь узнать, действительно ли он так хорош, как тебе кажется."
-    Max_03 "O to ide! Ak budeš s Alexom komunikovať sama, nedá sa povedať, aký bude. Vďaka priateľstvu s Oliviou však môžete zistiť, či je naozaj taký dobrý, ako si myslíš."
+    Max_03 "O to ide! Ak budeš s Alexom komunikovať sama, nedá sa povedať, aký bude. Vďaka priateľstvu s Olíviou však môžete zistiť, či je naozaj taký dobrý, ako si myslíš."
 
 # game/dialogues/lisatalk.rpy:3903
 translate slovak about_boy3_a8df8b20:
@@ -37348,7 +37348,7 @@ translate slovak about_boy3_e62a48a2:
 translate slovak about_boy3_39374c7a:
 
     # Max_04 "Тогда наберись терпения и попробуй подружиться с Оливией. И если всё выйдет, то и об Алексе сможешь узнать всякого... А там и поймёшь, надо ли оно тебе..."
-    Max_04 "Potom buď trpezlivá a skús sa s Oliviou spriateliť. A ak to všetko vyjde, môžeš sa dozvedieť aj rôzne veci o Alexovi... A potom uvidíš, či ho budeš potrebovať..."
+    Max_04 "Potom buď trpezlivá a skús sa s Olíviou spriateliť. A ak to všetko vyjde, môžeš sa dozvedieť aj rôzne veci o Alexovi... A potom uvidíš, či ho budeš potrebovať..."
 
 # game/dialogues/lisatalk.rpy:3907
 translate slovak about_boy3_d680efb0:
@@ -37450,7 +37450,7 @@ translate slovak about_olivia_2_45d6f1c7:
 translate slovak about_olivia_2_866da865:
 
     # Lisa_01 "В общем, я подружилась с одним мальчиком, который просто бегает за этой самой Оливией..."
-    Lisa_01 "Každopádne som sa spriatelila s chlapcom, ktorý práve beží za touto Oliviou..."
+    Lisa_01 "Každopádne som sa spriatelila s chlapcom, ktorý práve beží za touto Olíviou..."
 
 # game/dialogues/lisatalk.rpy:3949
 translate slovak about_olivia_2_6fab788d:
@@ -37486,7 +37486,7 @@ translate slovak about_olivia_2_98c2c9ae:
 translate slovak about_olivia_2_6a089c6b:
 
     # Lisa_10 "В том плане, что теперь ясно, почему все мальчики бегают за Оливией? Ну да... Но что с этим знанием делать?"
-    Lisa_10 "V tom zmysle, že je teraz jasné, prečo všetci chlapci bežia za Oliviou? Správne... Ale čo s týmito vedomosťami robiť?"
+    Lisa_10 "V tom zmysle, že je teraz jasné, prečo všetci chlapci bežia za Olíviou? Správne... Ale čo s týmito vedomosťami robiť?"
 
 # game/dialogues/lisatalk.rpy:3955
 translate slovak about_olivia_2_c559c6ad:
@@ -37510,13 +37510,13 @@ translate slovak about_olivia_2_53126813:
 translate slovak about_olivia_2_bb497a79:
 
     # Lisa_12 "Не собираюсь я ходить в школу без трусов! Подозреваю, что ты был бы очень доволен, но нет. Даже не мечтай..."
-    Lisa_12 "Nebudem chodiť do školy bez nohavičiek! Predpokladám, že by si bol veľmi spokojní, ale nie. Ani vo sne by ma to nenapadlo..."
+    Lisa_12 "Nebudem chodiť do školy bez nohavičiek! Predpokladám, že by si bol veľmi spokojný, ale nie. Ani vo sne by ma to nenapadlo..."
 
 # game/dialogues/lisatalk.rpy:3959
 translate slovak about_olivia_2_2558f747:
 
     # Max_04 "Тогда просто поинтересуйся у Оливии, почему она не носит нижнее бельё!"
-    Max_04 "Potom sa spýtaj Olivie, prečo nenosí spodnú bielizeň!"
+    Max_04 "Potom sa spýtaj Olívie, prečo nenosí spodnú bielizeň!"
 
 # game/dialogues/lisatalk.rpy:3960
 translate slovak about_olivia_2_ac090428:
@@ -37564,7 +37564,7 @@ translate slovak about_olivia_3_6c31e1af:
 translate slovak about_olivia_3_323b6e88:
 
     # Max_09 "Это кто такие?"
-    Max_09 "čože sú?"
+    Max_09 "Čože sú?"
 
 # game/dialogues/lisatalk.rpy:3981
 translate slovak about_olivia_3_4158502d:
@@ -38260,7 +38260,7 @@ translate slovak lisa_about_ae_sexed5_4c53f0f6:
 translate slovak lisa_about_ae_sexed5_e04657de:
 
     # Lisa_01 "В общем, я хотела бы, чтобы по понедельникам, после ужина, ты теперь где-нибудь \"погулял\"... минимум полчасика."
-    Lisa_01 "Každopádne by som bol rada, keby si v pondelok po večeri išiel von... najmenej na pol hodiny."
+    Lisa_01 "Každopádne by som bola rada, keby si v pondelok po večeri išiel von... najmenej na pol hodiny."
 
 # game/dialogues/lisatalk.rpy:4237
 translate slovak lisa_about_ae_sexed5_cb28e33b:
@@ -38836,7 +38836,7 @@ translate slovak take_to_school_c2d552ae_1:
 translate slovak take_to_school_fb1c6e25:
 
     # Lisa_01 "[failed!t]Эй... Вот разбежался! Если бы ты почаще помогал с уроками, то я бы разрешила, а так... больше старайся. Я побежала в школу, не скучай!"
-    Lisa_01 "[failed!t]Hej... To je útek! Ak by si mi častejšie pomáhali s lekciami, dovolila by som to, a tak... Snaž sa viac. Bežím do školy, nenuď sa!"
+    Lisa_01 "[failed!t]Hej... To je útek! Ak by si mi častejšie pomáhal s lekciami, dovolila by som to, a tak... Snaž sa viac. Bežím do školy, nenuď sa!"
 
 # game/dialogues/lisatalk.rpy:4504
 translate slovak take_to_school_bb885618_1:
@@ -39520,7 +39520,7 @@ translate slovak strings:
 
     # game/dialogues/lisatalk.rpy:934
     old "Помочь, конечно!"
-    new "Pomoc, samozrejme!"
+    new "Pomôcť, samozrejme!"
 
     # game/dialogues/lisatalk.rpy:934
     old "Для начала хотел узнать, как у тебя дела?"
@@ -39528,11 +39528,11 @@ translate slovak strings:
 
     # game/dialogues/lisatalk.rpy:937
     old "Тебе повезло, у меня всё хорошо с этими предметами!"
-    new "Máš šťastie, s týmito položkami si poradím!"
+    new "Máš šťastie, s týmito predmetmi si poradím!"
 
     # game/dialogues/lisatalk.rpy:937
     old "Может быть, я тебе и смогу помочь..."
-    new "Možno vám budem môcť pomôcť..."
+    new "Možno ti budem môcť pomôcť..."
 
     # game/dialogues/lisatalk.rpy:951
     old "Конечно, сестрёнка!"
@@ -39612,11 +39612,11 @@ translate slovak strings:
 
     # game/dialogues/lisatalk.rpy:1126
     old "Тебе напомнить как мама больно наказывает?"
-    new "Musím ti pripomínať, ako veľmi ťa tvoja mama trestá?"
+    new "Musím ti pripomínať, ako veľmi ťa naša mama trestá?"
 
     # game/dialogues/lisatalk.rpy:1126
     old "Как хочешь. Но мама тебя накажет!"
-    new "Je to na tebe. Ale tvoja matka ťa potrestá!"
+    new "Je to na tebe. Ale naša matka ťa potrestá!"
 
     # game/dialogues/lisatalk.rpy:1169
     old "Да, Лиза, ты права..."
@@ -39672,7 +39672,7 @@ translate slovak strings:
 
     # game/dialogues/lisatalk.rpy:1920
     old "Я тебе его подарю, если разрешишь посмотреть, как ты его примеряешь..."
-    new "Dám ti ho, ak ma necháš pozerať, ako si ho skúšaš..."
+    new "Dám ti ich, ak ma necháš pozerať, ako si ich skúšaš..."
 
     # game/dialogues/lisatalk.rpy:1920
     old "Я передумал. Ничего не хочу!"
@@ -39700,7 +39700,7 @@ translate slovak strings:
 
     # game/dialogues/lisatalk.rpy:2182
     old "Нет, не говорила..."
-    new "Nie, nepovedal..."
+    new "Nie, nepovedala..."
 
     # game/dialogues/lisatalk.rpy:2200
     old "Лиза не любит признавать, что ей нужна помощь Макса. Её отношение к Максу ухудшилось."
@@ -39816,7 +39816,7 @@ translate slovak strings:
 
     # game/dialogues/lisatalk.rpy:4462
     old "{i}отпустить Лизу в школу{/i}"
-    new "{i}nechaj Lízu chodiť do školy{/i}"
+    new "{i}nechať Lízu odísť do školy{/i}"
 
 # TODO: Translation updated at 2021-12-07 11:26
 
@@ -39872,7 +39872,7 @@ translate slovak olivia_talk1_999f47e3:
 translate slovak olivia_talk1_45fe207a:
 
     # Max_02 "Я сниму, если вы снимите!"
-    Max_02 "Dám ti to dole, ak si to dáš dole!"
+    Max_02 "Dám to dole, ak si to dáš dole!"
 
 # game/dialogues/oliviatalk.rpy:48
 translate slovak olivia_talk1_bdc93c90:
@@ -40660,7 +40660,7 @@ translate slovak punishment_dd38597c:
 translate slovak first_new_punishment_9e045600:
 
     # Ann_12 "Да, напоминаю всем. С сегодняшнего дня все наказания будут в обнажённом виде. Да, я понимаю, что это непедагогично, но очень эффективно."
-    Ann_12 "Áno, pripomienka pre všetkých. Od dnešného dňa budú všetky tresty bez oblečenia - budete nahý. Áno, uvedomujem si, že to nie je pedagogické, ale je to veľmi účinné."
+    Ann_12 "Áno, pripomienka pre všetkých. Od dnešného dňa budú všetky tresty bez oblečenia - budete nahí. Áno, uvedomujem si, že to nie je pedagogické, ale je to veľmi účinné."
 
 # game/dialogues/punishment.rpy:160
 translate slovak first_new_punishment_8bbfe5b5:
@@ -40732,7 +40732,7 @@ translate slovak first_new_punishment_9285451a:
 translate slovak first_naked_punishment_3f2e2a3f:
 
     # Ann_12 "А так как месяц прошёл, а вы всё так же не взялись за ум, то с этого момента наказывать я вас буду полностью голых! Как и обещала..."
-    Ann_12 "A keďže uplynul mesiac a ty si sa ešte stále nevzchopil, odteraz ťa budem trestať úplne nahého! Ako som sľúbila..."
+    Ann_12 "A keďže uplynul mesiac a vy ste sa ešte stále nevzchopili, odteraz Vás budem trestať úplne nahých! Ako som sľúbila..."
 
 # game/dialogues/punishment.rpy:179
 translate slovak first_naked_punishment_c1e4e97a:
@@ -40888,7 +40888,7 @@ translate slovak punishment_max_pun_reson_d9391b60:
 translate slovak punishment_max_pun_reson_c9c8162f:
 
     # Ann_12 "В общем, на этот раз вопрос уладили. Все сделали выводы, а кое-кто и серьёзно задумается. Да, Макс? Можешь не отвечать."
-    Ann_12 "Každopádne, tentoraz bola záležitosť vyriešená. Každý si urobil závery a niektorí sa nad tým vážne zamyslia. Áno, Max? Na to nemusíš odpovedať."
+    Ann_12 "Každopádne, tentoraz bola záležitosť vyriešená. Každí si urobil závery a niektorí sa nad tým vážne zamyslia. Áno, Max? Na to nemusíš odpovedať."
 
 # game/dialogues/punishment.rpy:252
 translate slovak punishment_max_pun_reson_bf38fe93:
@@ -41044,7 +41044,7 @@ translate slovak punishment_lisa_8b6bc93a:
 translate slovak punishment_lisa_68fc5c88:
 
     # Ann_14 "Сложное? У тебя была куча времени, чтобы подготовиться! Сидишь в своём телефоне вечно вместо того, чтобы учиться. [_text!t]"
-    Ann_14 "Komplikované? Mali si dostatok času na prípravu! Večné sedenie na telefóne namiesto štúdia. [_text!t]"
+    Ann_14 "Komplikované? Mala si dostatok času na prípravu! Večné sedenie na telefóne namiesto štúdia. [_text!t]"
 
 # game/dialogues/punishment.rpy:488
 translate slovak punishment_lisa_cc22447a:
@@ -41230,7 +41230,7 @@ translate slovak punishment_alice_2a128a29:
 translate slovak punishment_alice_c8f8e3ea:
 
     # Ann_16 "[failed!t]Нет, Макс, твои уговоры ей не помогут. Получит в любом случае, не за себя, так за подружку. Не будет водится с такими, до добра они не доведут..."
-    Ann_16 "[failed!t]Nie, Max, tvoje presviedčanie jej nepomôže. Aj tak trest dostane, ak nie kvôli seba, tak pre svoju priateľku. Nechoď s nimi von, nič dobré ťa nenaučia..."
+    Ann_16 "[failed!t]Nie, Max, tvoje presviedčanie jej nepomôže. Aj tak trest dostane, ak nie kvôli sebe, tak pre svoju priateľku. Nechoď s nimi von, nič dobré ťa nenaučia..."
 
 # game/dialogues/punishment.rpy:648
 translate slovak punishment_alice_055a6121:
@@ -41416,7 +41416,7 @@ translate slovak punishment_alice_06c1e8de:
 translate slovak punishment_alice_3006a77e:
 
     # Ann_12 "Ну что, получила урок? Стыдно? Правильно. Должно быть стыдно. Надеюсь, это больше не повторится. А теперь, одевайся..."
-    Ann_12 "Dostala si lekciu? Hanbíš sa? Vpravo. Mala by si sa hanbiť. Dúfam, že sa to už nestane. Teraz sa obleč..."
+    Ann_12 "Dostala si lekciu? Hanbíš sa? Pravda. Mala by si sa hanbiť. Dúfam, že sa to už nestane. Teraz sa obleč..."
 
 translate slovak strings:
 
@@ -41510,7 +41510,7 @@ translate slovak strings:
 
     # game/dialogues/punishment.rpy:499
     old "Теперь ложись, и побыстрее, все есть хотят..."
-    new "Teraz si ľahni a rýchlo,  každý chce..."
+    new "Teraz si ľahni a rýchlo,  každí chce..."
 
     # game/dialogues/punishment.rpy:502
     old "Что прикрываешься, Лиза? Стесняешься? Стыдно? Вот и хорошо... А теперь ложись на мои колени. Быстро!"
@@ -41538,7 +41538,7 @@ translate slovak strings:
 
     # game/dialogues/punishment.rpy:686
     old "Теперь ложись побыстрее, ужин стынет..."
-    new "Teraz choď rýchlo späť, večera už chladne..."
+    new "Teraz choď rýchlo sem, večera už chladne..."
 
     # game/dialogues/punishment.rpy:689
     old "Ну как, Алиса, стыдно тебе? Молчишь? Вот подумай о своём поступке, пока я буду наказывать тебя на глазах у всех... Ложись на мои колени!"
@@ -42654,7 +42654,7 @@ translate slovak alice_dressed_club_choco_8e118316:
 translate slovak alice_dressed_club_choco_0852a688:
 
     # Alice_02 "Может быть, мне их ещё и снять для тебя? Давай, вали уже, извращенец. А за конфетку спасибо..."
-    Alice_02 "Možno by som si ich mal vyzliecť pre teba. Choď, vypadni, ty zvrhlík. A vďaka za sladkosti..."
+    Alice_02 "Možno by som si ich mala vyzliecť pre teba. Choď, vypadni, ty zvrhlík. A vďaka za sladkosti..."
 
 # game/events/alice.rpy:936
 translate slovak alice_dressed_club_choco_9346b73f:
@@ -42690,7 +42690,7 @@ translate slovak spider_in_bed_4e92be20:
 translate slovak spider_in_bed_goaway_9bf961dd:
 
     # Max_09 "Бегает ещё, кричит что-то... Совсем сдурела..." nointeract
-    Max_09 "Stále pobehuješ okolo a niečo kričíš... Úplne si sa zbláznila..." nointeract
+    Max_09 "Stále pobehuje okolo a niečo kričí... Úplne sa zbláznila..." nointeract
 
 # game/events/alice.rpy:1069
 translate slovak spider_in_bed_help_979e99f5:
@@ -42768,7 +42768,7 @@ translate slovak spider_in_bed_help_9c7305a3:
 translate slovak spider_in_bed_help_68df7bcb:
 
     # Alice_17 "Да я сама тебя сейчас без рук оставлю! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
-    Alice_17 "Sama ti odrežem ruky! Nebojím sa ťa! Rýchlo ho zabil! Buď on, alebo ty. Jeden z vás dnes zomrie!"
+    Alice_17 "Sama ti odrežem ruky! Nebojím sa ťa! Rýchlo ho zabi! Buď on, alebo ty. Jeden z vás dnes zomrie!"
 
 # game/events/alice.rpy:1130
 translate slovak spider_in_bed_help_11231cfc:
@@ -43134,7 +43134,7 @@ translate slovak alice_after_club_knock_04993f02:
 translate slovak alice_after_club_knock_57f89bda:
 
     # Max_01 "Да... Я вот... Умыться перед сном хотел!"
-    Max_01 "Áno... Som... Chcela som sa umyť, než pôjdem spať!"
+    Max_01 "Áno... Som... Chcel som sa umyť, než pôjdem spať!"
 
 # game/events/alice.rpy:1448
 translate slovak alice_after_club_knock_f293090b:
@@ -43278,7 +43278,7 @@ translate slovak alice_after_club_next1_94ee6ac1:
 translate slovak alice_after_club_next1_4614c192:
 
     # Alice_08 "Сейчас их может стать на один больше! Что ты хочешь, чтобы я сделала?" nointeract
-    Alice_08 "Teraz by mohol byť ešte jeden! Čo chceš, aby som urobila?" nointeract
+    Alice_08 "Teraz by mohla byť ešte jedna! Čo chceš, aby som urobila?" nointeract
 
 # game/events/alice.rpy:1521
 translate slovak alice_after_club_next1_b4e4420b:
@@ -44244,7 +44244,7 @@ translate slovak alice_blog_lingerie_31bb7956:
 translate slovak alice_blog_lingerie_2691e894:
 
     # Alice_05 "Ага, ну конечно, для блога... Здесь кому угодно будет понятно, что у тебя на самом деле на уме!"
-    Alice_05 "Áno, samozrejme, pre blog... Tu každý pochopí, čo mám skutočne na mysli!"
+    Alice_05 "Áno, samozrejme, pre blog... Tu každí pochopí, čo mám skutočne na mysli!"
 
 # game/events/alice.rpy:2194
 translate slovak alice_blog_lingerie_ffeb7ac0:
@@ -44400,13 +44400,13 @@ translate slovak alice_blog_lingerie_a937857e_1:
 translate slovak alice_body_photoset1_3b98c4ab:
 
     # Alice_03 "Смотри, чтобы красиво получалось, но не слишком откровенно! Я всё-таки бельё рекламирую, а не свои прелести. Хотя, и свои прелести тоже, но хоть немного скрытые бельём!"
-    Alice_03 "Pozri sa poriadne, aby to vyzeralo pekne, ale nie príliš úprimne! Stále inzerujem spodnú bielizeň, nie moje vnady. Aj keď, ich kúzlo tiež, ale aspoň trochu skryté spodnou bielizňou!"
+    Alice_03 "Pozri sa poriadne, aby to vyzeralo pekne, ale nie príliš intímne! Stále inzerujem spodnú bielizeň, nie moje vnady. Aj keď, ich kúzlo tiež, ale aspoň trochu skryté spodnou bielizňou!"
 
 # game/events/alice.rpy:2292
 translate slovak alice_body_photoset1_cfc08eb7:
 
     # Max_02 "На тебе ведь сексуальное полупрозрачное бельё, Алиса! Думаешь могут получится не откровенные снимки? {p=1.5}{nw}"
-    Max_02 "Máš na sebe sexy priesvitnú spodnú bielizeň, Alica! Myslíš si, že možno nebudeš mať úprimné obrázky? {p=1.5}{nw}"
+    Max_02 "Máš na sebe sexy priesvitnú spodnú bielizeň, Alica! Myslíš si, že možno nebudeš mať intímne obrázky? {p=1.5}{nw}"
 
 # game/events/alice.rpy:2294
 translate slovak alice_body_photoset1_19c7aaa6:
@@ -44586,7 +44586,7 @@ translate slovak alice_body_photoset1_26ab28a4:
 translate slovak alice_body_photoset1_976b418f:
 
     # Alice_07 "Классное боди ты купил! Спасибо тебе, Макс! Ты же скоро обработаешь снимки?"
-    Alice_07 "Pekné telo si kúpili! Ďakujem, Max! Čoskoro spracuješ obrázky, však?"
+    Alice_07 "Pekné telo si kúpil! Ďakujem, Max! Čoskoro spracuješ obrázky, však?"
 
 # game/events/alice.rpy:2375
 translate slovak alice_body_photoset1_5e4db7be:
@@ -44772,7 +44772,7 @@ translate slovak alice_towel_after_club_845ca42f:
 translate slovak alice_towel_after_club_488205cf:
 
     # Alice_09 "Хочу... ухх... чтобы ты продолжал... Как же хорошо... Ты этому на своих курсах массажа научился?!"
-    Alice_09 "Chcem... Uh... Aby si mohlol pokračovať... Aké pekné... To si sa naučili na hodinách masáže?!"
+    Alice_09 "Chcem... Uh... Aby si mohlol pokračovať... Aké pekné... To si sa naučil na hodinách masáže?!"
 
 # game/events/alice.rpy:2482
 translate slovak alice_towel_after_club_c6245e2a:
@@ -44904,7 +44904,7 @@ translate slovak alice_towel_after_club_max_turn_552bf71c:
 translate slovak alice_towel_after_club_max_turn_e856da6c:
 
     # Alice_08 "Честно говоря, я еле сдерживалась, чтобы не начать именно так! Но раз ты настаиваешь..."
-    Alice_08 "Úprimne povedané, len ťažko by som sa ovládol, keby som začal takto! Ale keďže na tom trváš..."
+    Alice_08 "Úprimne povedané, len ťažko by som sa ovládla, keby som začala takto! Ale keďže na tom trváš..."
 
 # game/events/alice.rpy:2581
 translate slovak alice_towel_after_club_max_turn_572c8e73:
@@ -45324,7 +45324,7 @@ translate slovak strings:
 
     # game/events/alice.rpy:627
     old "{i}Бежать{/i}"
-    new "{i}spustiť{/i}"
+    new "{i}bežať{/i}"
 
     # game/events/alice.rpy:702
     old "Хорошо, я подожду..."
@@ -46062,7 +46062,7 @@ translate slovak cam0_alice_rest_evening_29ebe6ec:
 translate slovak cam0_alice_tv_6c3872e9:
 
     # Max_01 "{m}Алиса смотрит ТВ. Наверняка залипла в какие-нибудь сериалы...{/m}"
-    Max_01 "{m}Alica pozerá televíziu. Som si istý, že som uviazol v niektorých televíznych reláciách...{/m}"
+    Max_01 "{m}Alica pozerá televíziu. Som si istý, že uviazola v niektorých televíznych reláciách...{/m}"
 
 # game/events/alice_cam.rpy:640
 translate slovak cam0_alice_bath_d3d737e8:
@@ -47394,7 +47394,7 @@ translate slovak Eric_talk_afterdinner_get_d9312f73:
 translate slovak Eric_talk_afterdinner_get_773ff7d1:
 
     # Eric_06 "Любопытно? Ну я намекну... Сможешь не только подглядывать, но и принимать участие..."
-    Eric_06 "Si zvedaví? Napoviem ti... Môžeš nielen nahliadnuť, ale aj sa zúčastniť..."
+    Eric_06 "Si zvedavý? Napoviem ti... Môžeš nielen nahliadnuť, ale aj sa zúčastniť..."
 
 # game/events/eric.rpy:275
 translate slovak Eric_talk_afterdinner_get_15087e37:
@@ -47418,7 +47418,7 @@ translate slovak Eric_talk_afterdinner_get_67b5c25f:
 translate slovak Eric_talk_afterdinner_get_3d7ac95b:
 
     # Eric_01 "Ну всё, Макс. Я рад, что мы разобрались и, так сказать, поделили территорию. Теперь всё в твоих руках. Ну и в моих тоже... О, твоя мама идёт. Ну всё, пока!"
-    Eric_01 "To je všetko, Max. Som rád, že sme to vyriešili a takpovediac si rozdelili územie. Všetko je teraz v tvojích rukách. No, môj tiež... Oh, tvoja mama už príde. Dobre, dovidenia!"
+    Eric_01 "To je všetko, Max. Som rád, že sme to vyriešili a takpovediac si rozdelili územie. Všetko je teraz v tvojích rukách. No, v mojích tiež... Oh, tvoja mama už príde. Dobre, dovidenia!"
 
 # game/events/eric.rpy:320
 translate slovak eric_ann_tv_bca2c1fb:
@@ -47574,7 +47574,7 @@ translate slovak eric_ann_tv_closer1_1cc34756:
 translate slovak eric_ann_tv_closer1_282eb1bf:
 
     # Ann_04 "Я рада, Макс, что ты всё понимаешь. Сделаем вид, что ничего не было и ты ничего не видел, хорошо?"
-    Ann_04 "Som rád, že to chápeš, Max. Predstierajme, že sa nič nestalo a že si nič nevidel, dobre?"
+    Ann_04 "Som rada, že to chápeš, Max. Predstierajme, že sa nič nestalo a že si nič nevidel, dobre?"
 
 # game/events/eric.rpy:497
 translate slovak eric_ann_tv_closer1_acd22c78:
@@ -47778,7 +47778,7 @@ translate slovak eric_ann_fucking_voyeur_03bc9f25:
 translate slovak eric_ann_fucking_voyeur_732dbbeb:
 
     # Max_10 "{m}Ох, чёрт... наконец-то Эрик кончил и... хорошо, что не в маму... Вот же счастливый сукин сын... залил ей своей спермой всю спину... Пожалуй, не стоит здесь задерживаться, они могут меня увидеть.{/m}"
-    Max_10 "{m}Do prdele... Erik konečne prišiel a... Je dobré, že nie je u mojej matky... To je ale šťastný hajzel... vylial jej svoje semeno na chrbát... Asi by som sa tu nemal zdržiavať, mohli by ma vidieť.{/m}"
+    Max_10 "{m}Do prdele... Erik konečne prišiel a... Je dobré, že nie do mojej matky... To je ale šťastný hajzel... vylial jej svoje semeno na chrbát... Asi by som sa tu nemal zdržiavať, mohli by ma vidieť.{/m}"
 
 # game/events/eric.rpy:659
 translate slovak eric_ann_fucking_voyeur_46cd8c20:
@@ -49308,7 +49308,7 @@ translate slovak strings:
 
     # game/events/eric.rpy:223
     old "Да я не собираюсь рассказывать, просто спросил..."
-    new "Nebudem ti to hovoriť, len sa pýtam..."
+    new "Nebudem jej to hovoriť, len sa pýtam..."
 
     # game/events/eric.rpy:223
     old "Вот и проверим..."
@@ -49404,7 +49404,7 @@ translate slovak strings:
 
     # game/events/eric.rpy:489
     old "Хорошо. А вы тут продолжайте... Не стесняйтесь."
-    new "Ok. A vy ideš ďalej a ďalej... Nehanbiš sa."
+    new "Ok. A ty ideš ďalej a ďalej... Nehanbiš sa."
 
     # game/events/eric.rpy:489
     old "Извини, мам. Я просто не ожидал ТАКОЕ увидеть..."
@@ -50076,7 +50076,7 @@ translate slovak kira_bath_kira_mass_bath_first_00ca4913:
 translate slovak kira_bath_kira_mass_bath_first_d2d2822b:
 
     # Max_03 "Конечно, да! Я сейчас понял, насколько это классно, делать массаж голой женщине!"
-    Max_03 "Samozrejme, že áni! Práve som si uvedomil, aké skvelé je masírovať nahú ženu!"
+    Max_03 "Samozrejme, že áno! Práve som si uvedomil, aké skvelé je masírovať nahú ženu!"
 
 # game/events/kira.rpy:146
 translate slovak kira_bath_kira_mass_bath_first_b23d3900:
@@ -51390,7 +51390,7 @@ translate slovak kira_night_tv_a7abcb85:
 translate slovak kira_night_tv_a0ee876d:
 
     # Kira_07 "А? Макс? Как ты подкрался незаметно... Я думала, уже все спят давно... А я тут... отдыхаю, как видишь. Я тебя не смущаю таким своим видом?" nointeract
-    Kira_07 "A? Max? Ako sa ku mne zakrádaš... Myslela som, že už všetci spia... A som tu... ako vidíš, odpočívam. Uvádzam vťa do rozpakov, keď vyzerám takto?" nointeract
+    Kira_07 "A? Max? Ako sa ku mne zakrádaš... Myslela som, že už všetci spia... A som tu... ako vidíš, odpočívam. Uvádzam ťa do rozpakov, keď vyzerám takto?" nointeract
 
 # game/events/kira.rpy:1016
 translate slovak kira_night_tv_9353de64:
@@ -51630,7 +51630,7 @@ translate slovak kira_night_tv_porn_view_fa813222:
 translate slovak kira_night_tv_porn_view_7ed5b3d1:
 
     # Kira_02 "Как же без этого, Макс. Но только немножко... чтобы ты не кончил уж очень быстро..." nointeract
-    Kira_02 "Bez nej sa nezaobídeš, Max. Ale len trochu... aby si sa nevystriekal príliš rýchlo..." nointeract
+    Kira_02 "Bez toho sa nezaobídeš, Max. Ale iba trochu... aby si sa nevystriekal príliš rýchlo..." nointeract
 
 # game/events/kira.rpy:1191
 translate slovak kira_night_tv_porn_view_1165d2ce:
@@ -51798,7 +51798,7 @@ translate slovak kira_night_tv_first_lesson_659d8563:
 translate slovak kira_night_tv_first_lesson_c592fe34:
 
     # Kira_01 "Ну всё, на сегодня хватит. Конечно, получается у тебя пока не очень, но это нормально. И ты знаешь, где меня найти, если захочешь потренироваться ещё... А теперь марш спать!"
-    Kira_01 "Dobre, pre dnešok to stačí. Samozrejme, ešte v tom nie si veľmi dobrí, ale to nevadí. A vieš, kde ma nájdeš, ak si budeš chcieť ešte trochu zacvičiť... Teraz choď spať!"
+    Kira_01 "Dobre, pre dnešok to stačí. Samozrejme, ešte v tom nie si veľmi dobrý, ale to nevadí. A vieš, kde ma nájdeš, ak si budeš chcieť ešte trochu zacvičiť... Teraz choď spať!"
 
 # game/events/kira.rpy:1308
 translate slovak kira_night_tv_first_lesson_49b86e1c:
@@ -52266,7 +52266,7 @@ translate slovak kira_night_tv_repeat_lesson_bf0e8227:
 translate slovak kira_night_tv_repeat_lesson_c9f858e0:
 
     # Max_03 "Ни капли!"
-    Max_03 "Ani kvapka!"
+    Max_03 "Ani trošku!"
 
 # game/events/kira.rpy:1595
 translate slovak kira_night_tv_repeat_lesson_d4beb3ab:
@@ -52314,7 +52314,7 @@ translate slovak kira_night_tv_not_restrain_e3061273:
 translate slovak kira_night_tv_not_restrain_286a5398:
 
     # Max_05 "Ни капли!"
-    Max_05 "Ani kvapka!"
+    Max_05 "Ani trochu!"
 
 # game/events/kira.rpy:1614
 translate slovak kira_night_tv_not_restrain_c826c37c:
@@ -53202,7 +53202,7 @@ translate slovak kira_lisa_shower_ladder_008ee6d0:
 translate slovak kira_lisa_shower_ladder_a9e4d73e:
 
     # Max_06 "{m}Ухх, невероятно горячие и голенькие тётя с моей младшей сестрёнкой! Любовался бы бесконечно, как они красуются перед зеркалом...{/m}"
-    Max_06 "{m}Uf, neuveriteľne horúca a nahá teta a moja malá sestra! Obdivoval by som ich donekonečna, ako vyzerajú krásne pred zrkadlom...{/m}"
+    Max_06 "{m}Uf, neuveriteľne horúce a nahá teta a moja malá sestra! Obdivoval by som ich donekonečna, ako vyzerajú krásne pred zrkadlom...{/m}"
 
 # game/events/kira.rpy:2673
 translate slovak kira_lisa_shower_ladder_1409147d:
@@ -53328,7 +53328,7 @@ translate slovak kira_alice_shower_start_peeping_c51c6352:
 translate slovak kira_alice_shower_alt_peepeng_a2b77766:
 
     # Max_03 "{m}Да-а-а... Вот бы оказаться между двумя этими мокрыми попками... Я бы уж их помылил!{/m}"
-    Max_03 "{m}Áno... Chcel by som sa dostať medzi tie dva mokré zadky... Umyla by som ich!{/m}"
+    Max_03 "{m}Áno... Chcel by som sa dostať medzi tie dva mokré zadky... Umyl by som ich!{/m}"
 
 # game/events/kira.rpy:2730
 translate slovak return_from_club_ad7639d7:
@@ -53568,7 +53568,7 @@ translate slovak return_from_club_165edfa1_1:
 translate slovak return_from_club_ca48013f_1:
 
     # Kira_05 "Да, я его обожаю... Оно так классно облегает мои формы! Никто не остаётся равнодушным... к моей попке... за которую ты меня так мило придерживаешь."
-    Kira_05 "Áno, zbožňujem ho... Tak dokonale mi sedí! Nikto nezostane ľahostajný... na moje dno... že si taký milý, že sa ťa držím."
+    Kira_05 "Áno, zbožňujem ich... Tak dokonale mi sedí! Nikto nezostane ľahostajný... na moje dno... že si taký milý, že sa ťa držím."
 
 # game/events/kira.rpy:2810
 translate slovak return_from_club_d85c0008_1:
@@ -54034,7 +54034,7 @@ translate slovak strings:
 
     # game/events/kira.rpy:1012
     old "Ни капли!"
-    new "Ani kvapka!"
+    new "Ani trochu!"
 
     # game/events/kira.rpy:1012
     old "Да ты продолжай, я посижу, посмотрю..."
@@ -54042,7 +54042,7 @@ translate slovak strings:
 
     # game/events/kira.rpy:1055
     old "Конечно, да!"
-    new "Samozrejme, že je!"
+    new "Samozrejme, že áno!"
 
     # game/events/kira.rpy:1090
     old "Вообще-то, с лучшей тётей на свете!"
@@ -54078,7 +54078,7 @@ translate slovak strings:
 
     # game/events/kira.rpy:1295
     old "{i}продолжить целоваться{/i}"
-    new "{i}pokračovať v milovaní{/i}"
+    new "{i}pokračovať v bozkávaní{/i}"
 
     # game/events/kira.rpy:1357
     old "{i}прикоснуться к её попке{/i}"
@@ -54138,7 +54138,7 @@ translate slovak strings:
 
     # game/events/kira.rpy:1874
     old "{i}трахнуть тётю Киру (догги-стайл){/i}"
-    new "{i}ebať tetu Kiru (štýl na psíka){/i}"
+    new "{i}jebať tetu Kiru (štýl na psíka){/i}"
 
     # game/events/kira.rpy:1904
     old "Порадуешь меня минетом, тётя Кира?"
@@ -55014,7 +55014,7 @@ translate slovak lisa_dressed_moment0_4671244c:
 translate slovak lisa_dressed_stay_in_room_9edd3eac:
 
     # Lisa_00 "Макс, мне нужно переодеться. Будь добр, погуляй немного или отвернись..." nointeract
-    Lisa_00 "Max, musím sa zmeniť. Boli by si taký láskavý a prešiel sa na chvíľu okolo alebo sa otočili chrbtom..." nointeract
+    Lisa_00 "Max, musím sa zmeniť. Bol by si taký láskavý a prešiel sa na chvíľu okolo alebo sa otočili chrbtom..." nointeract
 
 # game/events/lisa.rpy:908
 translate slovak lisa_dressed_stay_in_room_769644c1:
@@ -55368,7 +55368,7 @@ translate slovak lisa_bath_ladder_3fb74fbf_1:
 translate slovak lisa_bath_ladder_bedd90b4:
 
     # Max_07 "{m}Эх! Вот и закончились водные процедуры... Ухх... И с этой обворожительной киской я живу в одной комнате! Красота...{/m}" nointeract
-    Max_07 "{m}Eh! Prichádza koniec úpravy vody... Uf... A ja mám spoločnú izbu s touto rozkošnou mačičkou! Krásne...{/m}" nointeract
+    Max_07 "{m}Eh! Prichádza koniec kúpania... Uf... A ja mám spoločnú izbu s touto rozkošnou mačičkou! Krásne...{/m}" nointeract
 
 # game/events/lisa.rpy:1297
 translate slovak lisa_bath_knock_b1c84f9a:
@@ -55476,7 +55476,7 @@ translate slovak lisa_romantic_movie_0_c52165ea:
 translate slovak lisa_romantic_movie_0_dc0d9e48:
 
     # Lisa_10 "Я думала каждый со своей кровати будет смотреть!"
-    Lisa_10 "Myslela som si, že každý sa bude pozerať zo svojej postele!"
+    Lisa_10 "Myslela som si, že každí sa bude pozerať zo svojej postele!"
 
 # game/events/lisa.rpy:1411
 translate slovak lisa_romantic_movie_0_907e98f3:
@@ -55962,7 +55962,7 @@ translate slovak lisa_horor_movie_0_a139b038:
 translate slovak lisa_horor_movie_0_793be321:
 
     # Lisa_09 "Не пугай меня, Макс! И так фильм страшный, так ты тут ещё жути нагоняешь!"
-    Lisa_09 "Neboj sa ma, Max! Už teraz je to strašidelný film a ty ho robíte strašidelným!"
+    Lisa_09 "Neboj sa ma, Max! Už teraz je to strašidelný film a ty ho robíš strašidelnejším!"
 
 # game/events/lisa.rpy:1589
 translate slovak lisa_horor_movie_0_9243c41a:
@@ -57152,7 +57152,7 @@ translate slovak BookRead_sex_ed_cdf53c7a:
 translate slovak BookRead_sex_ed_58528ae0:
 
     # Max_04 "Вот и последние главы... Всё-таки прикосновения очень важны! Да я и на практике уже это понял... Эх, надо было раньше эту книжку купить! Но лучше поздно, чем никогда. Материал усвоен и теперь можно дарить её Лизе."
-    Max_04 "Prichádzajú posledné kapitoly... Dotyk je predsa veľmi dôležitý! To som sa naučil aj v praxi... Eh, mal som si túto knihu kúpiť skôr! Ale lepšie neskoro ako nikdy. Materiál je naučený a teraz ho môžem odovzdať Lise."
+    Max_04 "Prichádzajú posledné kapitoly... Dotyk je predsa veľmi dôležitý! To som sa naučil aj v praxi... Eh, mal som si túto knihu kúpiť skôr! Ale lepšie neskoro ako nikdy. Materiál je naučený a teraz ho môžem odovzdať Líze."
 
 # game/events/max.rpy:694
 translate slovak SearchSecretBook_4d6b282e:
@@ -57638,11 +57638,11 @@ translate slovak strings:
 
     # game/events/max.rpy:956
     old "{i}подставить Алису{/i}"
-    new "{i}náhradníčka Alice{/i}"
+    new "{i}nástražiť na Alicu{/i}"
 
     # game/events/max.rpy:956
     old "{i}не подставлять Алису{/i}"
-    new "{i}nevystavovať Alicu{/i}"
+    new "{i}nenastražiť na Alicu{/i}"
 
     # game/events/max.rpy:1051
     old "$500"
@@ -57714,7 +57714,7 @@ translate slovak olivia_lisa_tv_ed5cbb38:
 translate slovak olivia_first_meeting_7515fc87:
 
     # Lisa_01 "Вот и мой старший брат, знакомьтесь, это Оливия, моя одноклассница!"
-    Lisa_01 "Tu je môj starší brat, zoznám sa s Oliviou, mojou spolužiačkou!"
+    Lisa_01 "Tu je môj starší brat, zoznám sa s Olíviou, mojou spolužiačkou!"
 
 # game/events/olivia.rpy:84
 translate slovak olivia_first_meeting_f436f9ae:
@@ -57852,7 +57852,7 @@ translate slovak olivia_first_meeting_0100401a:
 translate slovak olivia_first_meeting_04039790:
 
     # Olivia_03 "Да ладно тебе прикрываться... Меня это нисколько не смущает! Честно говоря, я не видела таких больших ещё ни разу... У моего папы меньше раза в два, если не в три, да и у моего парня... Ой. Это я вслух сказала сейчас?!"
-    Olivia_03 "No tak, zakryješ... Vôbec mi to neprekáža! Aby som bol úprimný, nikdy predtým som nevidela takého veľkého... Môj otec ho má menšieho dva, ak nie trikrát, a môj priateľ... Au. Povedala som to teraz nahlas?!"
+    Olivia_03 "No tak, zakryješ... Vôbec mi to neprekáža! Aby som bola úprimný, nikdy predtým som nevidela takého veľkého... Môj otec ho má menšieho dva, ak nie trikrát, a môj priateľ... Au. Povedala som to teraz nahlas?!"
 
 # game/events/olivia.rpy:126
 translate slovak olivia_first_meeting_45794192:
@@ -58026,7 +58026,7 @@ translate slovak olivia_second_night_visit_389682e0:
 translate slovak olivia_second_night_visit_ce53ea19:
 
     # Olivia_02 "С радостью бы искупалась, но так устала, что хочу только валяться и смотреть сериалы. Пойдём, Лиза... Макс, ты как, с нами?" nointeract
-    Olivia_02 "Rád by som si išla zaplávať, ale som taká unavená, že chcem len ležať a pozerať telenovely. No tak, Líza... Max, si s nami?" nointeract
+    Olivia_02 "Rada by som si išla zaplávať, ale som taká unavená, že chcem len ležať a pozerať telenovely. No tak, Líza... Max, si s nami?" nointeract
 
 # game/events/olivia.rpy:246
 translate slovak olivia_second_night_visit_10c0fcb2:
@@ -58650,7 +58650,7 @@ translate slovak olivia_second_night_out_with_1718f5fe:
 translate slovak olivia_second_night_out_with_be029ca0:
 
     # Lisa_03 "По тебе и так прекрасно видно, как сильно ты доволен. Уверена, надеешься, что я забуду маечку надеть и прямо так и лягу..."
-    Lisa_03 "Podľa toho, ako vyzeráte, je vidieť, ako si to užívate. Určite dúfaš, že si zabudnem obliecť tričko a len tak si ľahnem..."
+    Lisa_03 "Podľa toho, ako vyzeráš, je vidieť, ako si to užívatš Určite dúfaš, že si zabudnem obliecť tričko a len tak si ľahnem..."
 
 # game/events/olivia.rpy:520
 translate slovak olivia_second_night_out_with_0d262a66:
@@ -58752,7 +58752,7 @@ translate slovak olivia_repeatable_night_out_with_f33032d6:
 translate slovak olivia_repeatable_night_out_with_323f301e:
 
     # Lisa_02 "Что правда, то правда! Я видела Макса голым уже столько раз, а всё ещё удивляюсь."
-    Lisa_02 "Čo je pravda, to je pravda! Videl som Maxa nahého už toľkokrát a stále sa čudujem."
+    Lisa_02 "Čo je pravda, to je pravda! Videla som Maxa nahého už toľkokrát a stále sa čudujem."
 
 # game/events/olivia.rpy:564
 translate slovak olivia_repeatable_night_out_with_07085c52:
@@ -58794,7 +58794,7 @@ translate slovak olivia_repeatable_night_out_with_965e183f:
 translate slovak olivia_repeatable_night_out_with_72187a45:
 
     # Lisa_01 "Непонятно, но лично меня заинтриговало... Мне интересно, что дальше будет."
-    Lisa_01 "Nejasné, ale mňa osobne to zaujalo... Som zvedavý, čo bude nasledovať."
+    Lisa_01 "Nejasné, ale mňa osobne to zaujalo... Som zvedavá, čo bude nasledovať."
 
 # game/events/olivia.rpy:581
 translate slovak olivia_repeatable_night_out_with_00b10636:
@@ -58890,7 +58890,7 @@ translate slovak olivia_repeatable_night_out_with_925a0535:
 translate slovak olivia_repeatable_night_out_with_74291412:
 
     # Max_07 "Так не всем же может повезти! Кто-нибудь да огребёт... возможно..."
-    Max_07 "Takže nie každý môže mať šťastie! Niekto ho dostane... možno..."
+    Max_07 "Takže nie každí môže mať šťastie! Niekto ho dostane... možno..."
 
 # game/events/olivia.rpy:623
 translate slovak olivia_repeatable_night_out_with_72c801d9:
@@ -59034,7 +59034,7 @@ translate slovak back_shoping_3945eada:
 translate slovak back_shoping_d40343f5:
 
     # Max_07 "А почему не купили?"
-    Max_07 "Prečo si si ho nekúpila?"
+    Max_07 "Prečo si si ich nekúpila?"
 
 # game/events/other.rpy:38
 translate slovak back_shoping_8ac1e4ec:
@@ -59070,7 +59070,7 @@ translate slovak back_shoping_e23a2e06:
 translate slovak back_shoping_dbb7dd3e:
 
     # Lisa_09 "Нет. Мама сказала, что тот который я хотела, слишком дорогой, а остальные слишком открытые..." nointeract
-    Lisa_09 "Nie. Mama povedala, že ten, ktoré som chcela, sú príliš drahé a ostatné sú príliš otvorené..." nointeract
+    Lisa_09 "Nie. Mama povedala, že tie, ktoré som chcela, sú príliš drahé a ostatné sú príliš otvorené..." nointeract
 
 # game/events/other.rpy:51
 translate slovak back_shoping_4ac118f9:
@@ -59178,7 +59178,7 @@ translate slovak back_shoping_f936ff3c:
 translate slovak back_shoping_45a6e528:
 
     # Lisa_02 "Что? Ты за меня не рад? Я же теперь смогу загорать в нормальном виде!"
-    Lisa_02 "Čo? Nie si za mňa šťastní? Teraz sa budem môcť normálne opaľovať!"
+    Lisa_02 "Čo? Nie si za mňa šťastný? Teraz sa budem môcť normálne opaľovať!"
 
 # game/events/other.rpy:88
 translate slovak back_shoping_c856577b:
@@ -59406,7 +59406,7 @@ translate slovak MeetingEric_bad_341bbd07:
 translate slovak MeetingEric_bad_9101ec96:
 
     # Ann_01 "Нет, Макс, это точно не нормально. Спишем на то, что ты голодный... Пойдём, Эрик, покажу где мы ужинаем, да и завтракаем. Макс, ты тоже иди ужинать."
-    Ann_01 "Nie, Max, určite to nie je normálne. Pripíšme to tomu, že si hladní... Poď, Erik, ukážem ti, kde budeme mať večeru a raňajky. Max, ty tiež pôjdeš na večeru."
+    Ann_01 "Nie, Max, určite to nie je normálne. Pripíšme to tomu, že si hladný... Poď, Erik, ukážem ti, kde budeme mať večeru a raňajky. Max, ty tiež pôjdeš na večeru."
 
 # game/events/other.rpy:230
 translate slovak MeetingEric_bad_c246e424:
@@ -59728,7 +59728,7 @@ translate slovak strings:
 
     # game/events/other.rpy:40
     old "Да, жаль, что не купили его..."
-    new "Áno, je škoda, že si ho nekúpila..."
+    new "Áno, je škoda, že si ich nekúpila..."
 
     # game/events/other.rpy:40
     old "Я бы с удовольствием на это посмотрел..."
@@ -60256,7 +60256,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Эрик повержен! Мне удалось вывести его на чистую воду и теперь мы наконец-то заживём, как раньше. Даже ещё лучше! Но для начала всем нужно время, чтобы отойти от правды о нём."
-    new "Erik je porazený! Podarilo sa mi ho vyviesť na povrch a teraz konečne budeme žiť ako kedysi. Ešte lepšie! Najprv však každí potrebuje čas, aby sa od pravdy o ňom odpútal."
+    new "Erik je porazený! Podarilo sa mi ho vyviesť na povrch a teraz konečne budeme žiť ako kedysi. Ešte lepšie! Najprv však každý potrebuje čas, aby sa od pravdy o ňom odpútal."
 
 # TODO: Translation updated at 2022-01-10 02:02
 
@@ -60276,7 +60276,7 @@ translate slovak strings:
 
     # game/core/10_main_menu.rpy:416
     old "Трусы"
-    new "Nohavičky"
+    new "Trenírky"
 
     # game/core/10_main_menu.rpy:416
     old "Шапка"
@@ -60288,11 +60288,11 @@ translate slovak strings:
 
     # game/core/10_main_menu.rpy:416
     old "Трусы #1"
-    new "Nohavičky #1"
+    new "Trenírky #1"
 
     # game/core/10_main_menu.rpy:416
     old "Трусы #2"
-    new "Nohavičky #2"
+    new "Trenírky #2"
 
     # game/core/10_main_menu.rpy:416
     old "Маечка"
@@ -60304,11 +60304,11 @@ translate slovak strings:
 
     # game/core/10_main_menu.rpy:416
     old "Лиф"
-    new "Vestička"
+    new "Vrchný diel plaviek"
 
     # game/core/10_main_menu.rpy:416
     old "Плавки"
-    new "Plavky"
+    new "Spodný diel plaviek"
 
     # game/core/10_main_menu.rpy:416
     old "Лифчик"
@@ -60360,7 +60360,7 @@ translate slovak strings:
 
     # game/core/10_main_menu.rpy:416
     old "Миниплавки"
-    new "Mini-topánky"
+    new "Mini-plavky"
 
     # game/core/10_main_menu.rpy:416
     old "Сорочка"
@@ -62132,7 +62132,7 @@ translate slovak start_eric_wallet_fea122b6:
 translate slovak start_eric_wallet_01db12a6:
 
     # Ann_17 "Макс! У Эрика есть обоснованные подозрения и просто так такими обвинениями он бросаться не станет. Так что, давай не прикидывайся дурачком. Пока не поздно, нужно всё уладить."
-    Ann_17 "Max! Erik má dôvodné podozrenie a nebude hádzať takéto obvinenia. Takže sa nehraj na hlupákq. Musíme to vyriešiť skôr, ako bude neskoro."
+    Ann_17 "Max! Erik má dôvodné podozrenie a nebude hádzať takéto obvinenia. Takže sa nehraj na hlupáka. Musíme to vyriešiť skôr, ako bude neskoro."
 
 # game/events/eric.rpy:1853
 translate slovak start_eric_wallet_8c91f040:
@@ -63518,7 +63518,7 @@ translate slovak dictaphone_showdown_with_eric_8684e2a4:
 translate slovak dictaphone_showdown_with_eric_60fce6d7:
 
     # "{color=[orange]}(все слушают запись...){/color}"
-    "{color=[orange]}(každý si vypočuje nahrávku...){/color}"
+    "{color=[orange]}(každí si vypočuje nahrávku...){/color}"
 
 # game/events/other.rpy:676
 translate slovak dictaphone_showdown_with_eric_1c22e674:
