@@ -671,13 +671,13 @@ translate german strings:
 
     # game/core/02init.rpy:135
     old "А у меня есть крем для загара. Хотите?"
-    new ""
+    new "Und ich habe Sonnencreme dabei. Willst du etwas davon?"
 
     # game/core/02init.rpy:135
     old "Давайте, я намажу вас кремом для загара?"
-    new ""
+    new "Warum reibe ich dich nicht mit Sonnencreme ein?"
 
     # game/core/02init.rpy:135
     old "Вам дать крем для загара?"
-    new ""
+    new "Willst du etwas Sonnencreme?"
 

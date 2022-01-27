@@ -10941,71 +10941,71 @@ translate german lisa_about_showdown_e05d6220:
 translate german lisa_about_olivia_5_805315c8:
 
     # Lisa_11 "Макс, слушай... Знаешь, что я сейчас сообразила?"
-    Lisa_11 ""
+    Lisa_11 "Max, hör zu... Weißt du, was mir gerade klar geworden ist?"
 
 # game/dialogues/lisatalk.rpy:4721
 translate german lisa_about_olivia_5_42eae722:
 
     # Max_07 "Нет. Давай рассказывай..."
-    Max_07 ""
+    Max_07 "Nein. Sag es mir..."
 
 # game/dialogues/lisatalk.rpy:4722
 translate german lisa_about_olivia_5_5914c219:
 
     # Lisa_10 "К нам же теперь Оливия не сможет по ночам приходить! Мама теперь всё время будет дома ночевать."
-    Lisa_10 ""
+    Lisa_10 "Olivia kann jetzt nachts nicht mehr vorbeikommen! Mum wird jetzt die ganze Zeit zu Hause sein."
 
 # game/dialogues/lisatalk.rpy:4723
 translate german lisa_about_olivia_5_cf4a656a:
 
     # Max_09 "Вот блин! Это плохо... В смысле, хорошо, что она дома, но плохо..."
-    Max_09 ""
+    Max_09 "Oh, Scheiße! Das ist mies... Ich meine, es ist gut, dass sie zu Hause ist, aber es ist auch schlecht..."
 
 # game/dialogues/lisatalk.rpy:4728
 translate german lisa_about_olivia_5_d7a9ae54:
 
     # Lisa_09 "Что будем делать?"
-    Lisa_09 ""
+    Lisa_09 "Was sollen wir tun?"
 
 # game/dialogues/lisatalk.rpy:4729
 translate german lisa_about_olivia_5_ab36e9a3:
 
     # Max_08 "Знакомить их скорее! Правда, не знаю, как мама отреагирует на... особенность Оливии, но нужно сперва посмотреть на реакцию, а уже потом делать выводы."
-    Max_08 ""
+    Max_08 "Stellen wir Sie einader vor! Ich weiß aber nicht, wie Mom auf Olivias... Keine Ahnung, wie Mom auf Olivias Besonderheit reagieren wird, aber wir müssen abwarten, wie sie reagiert, bevor wir Rückschlüsse ziehen."
 
 # game/dialogues/lisatalk.rpy:4730
 translate german lisa_about_olivia_5_37f257a7:
 
     # Lisa_13 "Думаешь, она будет не против наших полуголых ночных посиделок? Я вот как-то сомневаюсь. Хотя..."
-    Lisa_13 ""
+    Lisa_13 "Meinst du, sie hat etwas gegen unsere halbnackten Abende? Das bezweifle ich irgendwie. Obwohl..."
 
 # game/dialogues/lisatalk.rpy:4731
 translate german lisa_about_olivia_5_2704fdca:
 
     # Max_04 "Ну, \"полуголых\" - это слабо сказано, потому что из полуголых у нас только ты, а все остальные СОВСЕМ голые."
-    Max_04 ""
+    Max_04 "Nun, \"halbnackt\" ist eine Untertreibung, denn du bist der einzige Halbnackte hier, und alle anderen sind VOLLkommen nackt."
 
 # game/dialogues/lisatalk.rpy:4737
 translate german lisa_about_olivia_5_50191b16:
 
     # Lisa_10 "И мне кажется, что кому-кому, а мне она запретит по ночам тусоваться с вами. Да и не факт, что и тебе с Оливией разрешит."
-    Lisa_10 ""
+    Lisa_10 "Und ich glaube, ich bin der Einzige, den sie nachts nicht mit euch abhängen lässt. Ich weiß auch nicht, ob sie dich und Olivia alleine lassen wird."
 
 # game/dialogues/lisatalk.rpy:4738
 translate german lisa_about_olivia_5_52089248:
 
     # Max_03 "Как бы там ни было, но зови её к нам завтра. А маму я уж как-нибудь уговорю. К тому же, ей не обязательно сообщать, в каком виде мы тусуемся."
-    Max_03 ""
+    Max_03 "Wie auch immer, frag sie, ob sie morgen zu uns kommt. Ich bringe Mom irgendwie dazu, es zuzulassen. Außerdem muss sie ja nicht wissen, was für Aktivitäten wir machen."
 
 # game/dialogues/lisatalk.rpy:4739
 translate german lisa_about_olivia_5_ec426758:
 
     # Lisa_01 "Да, подробности лучше опустить. Ох и удивится завтра мама."
-    Lisa_01 ""
+    Lisa_01 "Ja, es ist sinnvoller, die Details wegzulassen. Mom wird ohnehin morgen überrascht sein."
 
 # game/dialogues/lisatalk.rpy:4744
 translate german lisa_about_olivia_5_080cf4d3:
 
     # Max_09 "{m}Лиза может быть права. После подлянки от Эрика, мама может начать снова оберегать Лизу от всего на свете. Надеюсь, мне удастся её завтра убедить, что контактирование с голой Оливией - это безобидное занятие, что для меня, что для Лизы.{/m}"
-    Max_09 ""
+    Max_09 "{m}Lisa könnte Recht haben. Nach dem Misst mit Eric wird Mom vielleicht wieder anfangen, Lisa vor allem und jedem zu beschützen. Hoffentlich kann ich sie morgen davon überzeugen, dass der Kontakt zu einer nackten Olivia eine harmlose Aktivität ist, sowohl für mich als auch für Lisa.{/m}"
 
