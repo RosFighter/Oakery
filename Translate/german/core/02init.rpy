@@ -665,3 +665,19 @@ translate german strings:
     old "{color=#FFBE00}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n"
     new "{color=#FFBE00}{b}Warnung:{/b} Dein Einfluss auf deine Familie hat abgenommen!{/color}\n"
 
+# TODO: Translation updated at 2022-01-27 20:23
+
+translate german strings:
+
+    # game/core/02init.rpy:135
+    old "А у меня есть крем для загара. Хотите?"
+    new ""
+
+    # game/core/02init.rpy:135
+    old "Давайте, я намажу вас кремом для загара?"
+    new ""
+
+    # game/core/02init.rpy:135
+    old "Вам дать крем для загара?"
+    new ""
+
