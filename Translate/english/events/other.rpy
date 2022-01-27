@@ -1730,3 +1730,18 @@ translate english strings:
     # game/events/other.rpy:835
     old "{i}выйти из игры{/i}"
     new "{i}quit the game{/i}"
+
+# TODO: Translation updated at 2022-01-27 20:19
+
+# game/events/other.rpy:868
+translate english left_cream_68a6f9b5:
+
+    # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
+    Max_10 ""
+
+# game/events/other.rpy:874
+translate english left_cream_61f00467:
+
+    # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
+    Max_08 ""
+

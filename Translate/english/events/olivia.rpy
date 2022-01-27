@@ -1739,3 +1739,342 @@ translate english strings:
     # game/events/olivia.rpy:883
     old "Извините, не удержался... Красота ведь неописуемая!"
     new "Sorry, I couldn't resist... It's beautiful, isn't it?"
+
+# TODO: Translation updated at 2022-01-27 20:19
+
+# game/events/olivia.rpy:986
+translate english olivia_ann_meeting_72a9dc2e:
+
+    # Ann_00 "Что-то случилось, дорогой?"
+    Ann_00 ""
+
+# game/events/olivia.rpy:987
+translate english olivia_ann_meeting_61ee095e:
+
+    # Max_01 "Пока что нет, но к нам в гости сейчас должна прийти одноклассница Лизы."
+    Max_01 ""
+
+# game/events/olivia.rpy:988
+translate english olivia_ann_meeting_12ec5499:
+
+    # Ann_04 "Ой! У Лизы подружка появилась? Это очень хорошо."
+    Ann_04 ""
+
+# game/events/olivia.rpy:989
+translate english olivia_ann_meeting_a910fad5:
+
+    # Max_04 "Да и она уже была у нас в гостях. Днём после школы..."
+    Max_04 ""
+
+# game/events/olivia.rpy:995
+translate english olivia_ann_meeting_0eda89f8:
+
+    # Lisa_01 "Мама, знакомься, это Оливия, моя одноклассница!"
+    Lisa_01 ""
+
+# game/events/olivia.rpy:996
+translate english olivia_ann_meeting_fb8ee967:
+
+    # Olivia_04 "Здравствуйте! Мне очень приятно с вами познакомиться. У вас потрясающая дочь!"
+    Olivia_04 ""
+
+# game/events/olivia.rpy:1004
+translate english olivia_ann_meeting_3cbfb1ec:
+
+    # Ann_08 "Здравствуй, Оливия. Мне тоже приятно. А ещё я очень рада, что Лиза наконец-то нашла себе подругу. А то новое место, сама понимаешь..."
+    Ann_08 ""
+
+# game/events/olivia.rpy:1005
+translate english olivia_ann_meeting_e555d37c:
+
+    # Olivia_05 "Я тоже рада. У вас такой большой, красивый и стильный дом... И такой классный бассейн!"
+    Olivia_05 ""
+
+# game/events/olivia.rpy:1006
+translate english olivia_ann_meeting_7ba98055:
+
+    # Lisa_02 "Мам, мы с Оливией сейчас переоденемся и будем в бассейне плескаться, ты не против?"
+    Lisa_02 ""
+
+# game/events/olivia.rpy:1007
+translate english olivia_ann_meeting_ed750a19:
+
+    # Ann_02 "Конечно, девочки, развлекайтесь сколько угодно."
+    Ann_02 ""
+
+# game/events/olivia.rpy:1008
+translate english olivia_ann_meeting_bf2b83f9:
+
+    # Olivia_03 "Привет, Макс! Рада тебя видеть."
+    Olivia_03 ""
+
+# game/events/olivia.rpy:1009
+translate english olivia_ann_meeting_0b901396:
+
+    # Max_02 "Привет, Оливия! Хорошо, что заглянула."
+    Max_02 ""
+
+# game/events/olivia.rpy:1016
+translate english olivia_ann_meeting_2bb1adf1:
+
+    # Ann_05 "Девочка, вроде, хорошая. Ладно, пусть развлекаются, а я пойду отдохну к себе."
+    Ann_05 ""
+
+# game/events/olivia.rpy:1017
+translate english olivia_ann_meeting_8a119134:
+
+    # Max_07 "Не торопись, мам. Подожди немного. Тебе нужно кое-что увидеть."
+    Max_07 ""
+
+# game/events/olivia.rpy:1018
+translate english olivia_ann_meeting_6de9e9c0:
+
+    # Ann_07 "Хорошо. Ну, а тебе, Макс, как Оливия, нравится?"
+    Ann_07 ""
+
+# game/events/olivia.rpy:1019
+translate english olivia_ann_meeting_87a80392:
+
+    # Max_01 "Да, она ничего такая. Правда, у неё есть... некоторая особенность... Она натуристка. Знаешь, кто это такие?"
+    Max_01 ""
+
+# game/events/olivia.rpy:1020
+translate english olivia_ann_meeting_e53b9053:
+
+    # Ann_02 "Хм... Звучит, как уклон во что-то натуральное. Может, это связано с питанием?"
+    Ann_02 ""
+
+# game/events/olivia.rpy:1021
+translate english olivia_ann_meeting_ecc99f9b:
+
+    # Max_04 "Сейчас Оливия вернётся и объяснит, кто это такие. А вот как раз и они..."
+    Max_04 ""
+
+# game/events/olivia.rpy:1029
+translate english olivia_ann_meeting_2245b664:
+
+    # Ann_15 "Оливия, а где твой купальник? Лиза, ты почему не дала своей подруге купальник, хотя бы тот, чёрный?"
+    Ann_15 ""
+
+# game/events/olivia.rpy:1030
+translate english olivia_ann_meeting_7eac38fc:
+
+    # Olivia_02 "Да вы не переживайте на этот счёт! Я совсем не стесняюсь. У меня родители натуристы и мы дома все ходим голые, я привыкла!"
+    Olivia_02 ""
+
+# game/events/olivia.rpy:1031
+translate english olivia_ann_meeting_8dfdf625:
+
+    # Max_03 "У них не семья, а праздник какой-то!"
+    Max_03 ""
+
+# game/events/olivia.rpy:1039
+translate english olivia_ann_meeting_2bb03421:
+
+    # Ann_14 "Ну, я рада, что ты не стесняешься, но вот я стесняюсь за Макса... Кажется, он уже отреагировал в своём стиле... У нас он единственный мужчина в доме, поэтому может временами... напрягаться."
+    Ann_14 ""
+
+# game/events/olivia.rpy:1040
+translate english olivia_ann_meeting_71cb94fe:
+
+    # Olivia_03 "Да это нормально! У папы такая же реакция была, когда мы вместе с ним купались или загорали, пока он ещё был с нами... Так что, для меня это обычное дело!"
+    Olivia_03 ""
+
+# game/events/olivia.rpy:1041
+translate english olivia_ann_meeting_e64f98f3:
+
+    # Ann_13 "Это так... странно, Оливия... А где твой папа сейчас?"
+    Ann_13 ""
+
+# game/events/olivia.rpy:1042
+translate english olivia_ann_meeting_65d93586:
+
+    # Olivia_01 "Ну... Они с мамой поругались уже давненько и сейчас он с нами не живёт. А ещё у нас сломался бассейн и его некому чинить... Можно я к вам буду приходить купаться?"
+    Olivia_01 ""
+
+# game/events/olivia.rpy:1043
+translate english olivia_ann_meeting_0b55a823:
+
+    # Lisa_03 "Мам, скажи да, скажи да!"
+    Lisa_03 ""
+
+# game/events/olivia.rpy:1044
+translate english olivia_ann_meeting_902a71d5:
+
+    # Ann_01 "Конечно, Оливия. Если тебя не смущает Макс, который только на тебя и пялится, то я не против. Можешь приходить в любое время! Ну а я пойду по делам, а то уже достаточно позагорала. Развлекайтесь!"
+    Ann_01 ""
+
+# game/events/olivia.rpy:1052
+translate english olivia_ann_meeting_3d9d7b14:
+
+    # Max_02 "Как мне кажется, всё прошло довольно хорошо."
+    Max_02 ""
+
+# game/events/olivia.rpy:1053
+translate english olivia_ann_meeting_11a6a1b3:
+
+    # Olivia_06 "Думаешь, твоя мама разрешит нам собираться вместе по ночам?"
+    Olivia_06 ""
+
+# game/events/olivia.rpy:1054
+translate english olivia_ann_meeting_02812b71:
+
+    # Max_07 "Даже если и нет, то я смогу её уговорить. Ну, или как минимум, очень постараюсь уговорить."
+    Max_07 ""
+
+# game/events/olivia.rpy:1055
+translate english olivia_ann_meeting_512f166a:
+
+    # Lisa_13 "Ты, главное, про меня не забудь в этих уговорах. А то мама запросто может сказать, что я ещё маленькая, хотя с Оливией мы ровесницы."
+    Lisa_13 ""
+
+# game/events/olivia.rpy:1056
+translate english olivia_ann_meeting_1a2cd1ba:
+
+    # Max_09 "Не знаю, не знаю, Лиза... Это уже будет непросто. Вот если бы вы с Оливией намазали друг друга кремом для загара, то я бы мог и тебя отстоять перед мамой."
+    Max_09 ""
+
+# game/events/olivia.rpy:1057
+translate english olivia_ann_meeting_d996de1a:
+
+    # Olivia_03 "Ах вот как, да? Это мы запросто!"
+    Olivia_03 ""
+
+# game/events/olivia.rpy:1058
+translate english olivia_ann_meeting_41617c79:
+
+    # Lisa_02 "У тебя-то этот самый крем хоть есть?"
+    Lisa_02 ""
+
+# game/events/olivia.rpy:1064
+translate english olivia_ann_meeting_76e86aa6:
+
+    # Max_10 "Сейчас, к сожалению нет, но я обязательно его куплю."
+    Max_10 ""
+
+# game/events/olivia.rpy:1065
+translate english olivia_ann_meeting_77380e2d:
+
+    # Lisa_01 "Очень жаль, Макс. Вот будет крем - мы и намажемся специально для тебя."
+    Lisa_01 ""
+
+# game/events/olivia.rpy:1072
+translate english olivia_ann_meeting_4d4507bf:
+
+    # Max_11 "{m}Эх... Такой момент упустил... Теперь только до следующего раза.{/m}"
+    Max_11 ""
+
+# game/events/olivia.rpy:1076
+translate english olivia_ann_meeting_32d70104:
+
+    # Max_05 "Разумеется есть! Могу даже сам вас намазать, руки у меня почти не заняты."
+    Max_05 ""
+
+# game/events/olivia.rpy:1077
+translate english olivia_ann_meeting_c7b26a60:
+
+    # Lisa_01 "О нет... За крем, конечно, спасибо, но от твоей помощи мы как-нибудь воздержимся, правда Оливия? Не хватало, чтобы ты свои озабоченные ручонки распускал."
+    Lisa_01 ""
+
+# game/events/olivia.rpy:1079
+translate english olivia_ann_meeting_2aec5f80:
+
+    # Olivia_05 "Ага, мы и сами прекрасно справимся. Давай крем. Чур гостей мажут первыми!" nointeract
+    Olivia_05 "" nointeract
+
+# game/events/olivia.rpy:1098
+translate english olivia_lisa_sunscreen_0_916ccd9a:
+
+    # Lisa_05 "Я же ведь помажу только спину, Оливия? Остальное ты сама..."
+    Lisa_05 ""
+
+# game/events/olivia.rpy:1099
+translate english olivia_lisa_sunscreen_0_4b7517eb:
+
+    # Max_08 "Э-э-э! Какую только спину?! Тебе нужно натереть кремом всё её тело, Лиза."
+    Max_08 ""
+
+# game/events/olivia.rpy:1100
+translate english olivia_lisa_sunscreen_0_9a51e79c:
+
+    # Olivia_03 "Ой, Макс, вот ты разбежался. Может ты тогда за фотоаппаратом или видеокамерой по такому случаю сразу сбегаешь?"
+    Olivia_03 ""
+
+# game/events/olivia.rpy:1101
+translate english olivia_lisa_sunscreen_0_63f097d0:
+
+    # Max_03 "Что-то мне подсказывает, что пока я буду бегать, вы уже закончите. Я лучше останусь здесь, чтобы ничего не пропустить."
+    Max_03 ""
+
+# game/events/olivia.rpy:1102
+translate english olivia_lisa_sunscreen_0_62a4a929:
+
+    # Lisa_02 "Эх, а мы ведь могли бы и подождать."
+    Lisa_02 ""
+
+# game/events/olivia.rpy:1103
+translate english olivia_lisa_sunscreen_0_963a3477:
+
+    # Max_09 "Нет, меня не проведёшь! Эй, ты ей попку совсем не натёрла, не говоря уже обо всём остальном... Это не дело!"
+    Max_09 ""
+
+# game/events/olivia.rpy:1104
+translate english olivia_lisa_sunscreen_0_58ca6b5e:
+
+    # Olivia_05 "Со всем остальным я прекрасно справлюсь сама. Поворачивайся ко мне, Лиза, я тебя тоже намажу."
+    Olivia_05 ""
+
+# game/events/olivia.rpy:1115
+translate english olivia_lisa_sunscreen_0_a00e937b:
+
+    # Max_02 "Оливия, ты бы ей купальник развязала. Так будет удобнее..."
+    Max_02 ""
+
+# game/events/olivia.rpy:1116
+translate english olivia_lisa_sunscreen_0_1b5600b7:
+
+    # Lisa_01 "В твоих похотливых идеях, Макс, здесь никто не нуждается! Мы сами разберёмся."
+    Lisa_01 ""
+
+# game/events/olivia.rpy:1117
+translate english olivia_lisa_sunscreen_0_c5a55342:
+
+    # Max_07 "Лиза, я же за тебя переживаю. Вдруг Оливия из-за твоего купальника намажет не всё."
+    Max_07 ""
+
+# game/events/olivia.rpy:1118
+translate english olivia_lisa_sunscreen_0_5e735faf:
+
+    # Olivia_02 "Не переживай, я ничего не упущу. Или, может, всё-таки развязать купальник?"
+    Olivia_02 ""
+
+# game/events/olivia.rpy:1119
+translate english olivia_lisa_sunscreen_0_ea8671f3:
+
+    # Max_05 "Никаких «может». Снимай с неё всё!"
+    Max_05 ""
+
+# game/events/olivia.rpy:1120
+translate english olivia_lisa_sunscreen_0_7e394240:
+
+    # Lisa_11 "Нет, ребята, вы чего?! Не надо меня раздевать, мне и так хорошо."
+    Lisa_11 ""
+
+# game/events/olivia.rpy:1121
+translate english olivia_lisa_sunscreen_0_2c278307:
+
+    # Olivia_01 "Тогда всё, Лиза, я закончила. А тебе, Макс, спасибо за крем."
+    Olivia_01 ""
+
+# game/events/olivia.rpy:1122
+translate english olivia_lisa_sunscreen_0_ffc96ca2:
+
+    # Max_01 "Не за что, девчонки. Мне всё понравилось, но можно было это делать и более страстно."
+    Max_01 ""
+
+# game/events/olivia.rpy:1123
+translate english olivia_lisa_sunscreen_0_c7bb4508:
+
+    # Lisa_03 "Других пожеланий я и не ожидала."
+    Lisa_03 ""
+

@@ -774,3 +774,763 @@ translate english strings:
     old "{i}идти в гостиную{/i}"
     new "{i}Go to the living room{/i}"
 
+# TODO: Translation updated at 2022-01-27 20:19
+
+# game/dialogues/oliviatalk.rpy:314
+translate english about_first_sunscreen_020f43c6:
+
+    # Olivia_03 "Ах, да. Ты же предлагал нам в тот раз. Но у нас, вроде, и так всё в порядке."
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:315
+translate english about_first_sunscreen_543be174:
+
+    # Max_07 "Но лишний ультрафиолет здоровья никому не прибавляет. Так что кожу лучше защитить."
+    Max_07 ""
+
+# game/dialogues/oliviatalk.rpy:316
+translate english about_first_sunscreen_2ecc1627:
+
+    # Lisa_03 "Ну, раз в ход пошли слова, вроде ультрафиолета, то лучше намазаться кремом!"
+    Lisa_03 ""
+
+# game/dialogues/oliviatalk.rpy:318
+translate english about_first_sunscreen_f0e1429e:
+
+    # Olivia_05 "Ага, давай крем. Чур гостей мажут первыми!" nointeract
+    Olivia_05 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:327
+translate english ran_out_sunscreen_1f5b4651:
+
+    # Max_11 "{m}А крема-то нет! Теперь только до следующего раза...{/m}"
+    Max_11 ""
+
+# game/dialogues/oliviatalk.rpy:343
+translate english olivia_second_sunscreen_e8fc43ad:
+
+    # Olivia_03 "Давай крем и мы сами намажемся. Или ты думаешь, что мы сделаем это так себе?"
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:344
+translate english olivia_second_sunscreen_a6ad108b:
+
+    # Max_02 "Я бы точно сделал это приятнее."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:345
+translate english olivia_second_sunscreen_55b7cb05:
+
+    # Lisa_02 "Да что ты. Поводить руками по спине - большого ума не нужно."
+    Lisa_02 ""
+
+# game/dialogues/oliviatalk.rpy:346
+translate english olivia_second_sunscreen_9d0bc0c4:
+
+    # Max_09 "Ну как знаете. Моё дело предложить."
+    Max_09 ""
+
+# game/dialogues/oliviatalk.rpy:356
+translate english olivia_second_sunscreen_1e2ac5b8:
+
+    # Lisa_01 "Сейчас я намажу Оливии спинку, чтобы она была защищена от этого яркого солнышка."
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:357
+translate english olivia_second_sunscreen_e65ca6c0:
+
+    # Olivia_04 "Ммм... Неплохо, Лиза... У тебя приятные ручки. Мне очень нравится."
+    Olivia_04 ""
+
+# game/dialogues/oliviatalk.rpy:358
+translate english olivia_second_sunscreen_c5040609:
+
+    # Max_07 "Решили надо мной поиздеваться, да? Переигрываете..."
+    Max_07 ""
+
+# game/dialogues/oliviatalk.rpy:359
+translate english olivia_second_sunscreen_b99ccfbb:
+
+    # Lisa_03 "А вдруг нет! Может, я просто стараюсь и из-за этого Оливии так приятно..."
+    Lisa_03 ""
+
+# game/dialogues/oliviatalk.rpy:360
+translate english olivia_second_sunscreen_f9c6e8ee:
+
+    # Olivia_05 "А ты, Макс, хотя бы пока на пальму слазил за веткой и стоял ветерок ей создавал. Жарковато..."
+    Olivia_05 ""
+
+# game/dialogues/oliviatalk.rpy:361
+translate english olivia_second_sunscreen_35b6a8df:
+
+    # Max_01 "Я бы мог. Да вот только с моим приподнятым настроением лазить по пальмам будет неудобно. Да и поцарапаюсь наверняка."
+    Max_01 ""
+
+# game/dialogues/oliviatalk.rpy:371
+translate english olivia_second_sunscreen_815fee87:
+
+    # Lisa_01 "Моя очередь подставлять спинку! На меня плохо загар ложиться, может хоть этот крем как-то поможет."
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:372
+translate english olivia_second_sunscreen_1ef708c1:
+
+    # Olivia_02 "У меня и без загара красивая подружка! Но я всё равно хорошенько тебя намажу."
+    Olivia_02 ""
+
+# game/dialogues/oliviatalk.rpy:373
+translate english olivia_second_sunscreen_06bfee44:
+
+    # Max_07 "Вы бы хоть разок попробовали для сравнения то, как это делаю я. Я сколько раз натирал Алису кремом и ей нравилось. А ты, Лиза, знаешь какая она привереда."
+    Max_07 ""
+
+# game/dialogues/oliviatalk.rpy:374
+translate english olivia_second_sunscreen_4518947a:
+
+    # Lisa_05 "Ну... Врать не буду, мне тоже нравится, как Макс делает мне массаж ног."
+    Lisa_05 ""
+
+# game/dialogues/oliviatalk.rpy:375
+translate english olivia_second_sunscreen_d1514b89:
+
+    # Olivia_06 "А почему я узнаю об этом только сейчас??? Когда мы уже намазались..."
+    Olivia_06 ""
+
+# game/dialogues/oliviatalk.rpy:376
+translate english olivia_second_sunscreen_eeb3fe5d:
+
+    # Max_03 "Тогда решено. В следующий раз я натру вас кремом. Уверяю, недовольных не будет!"
+    Max_03 ""
+
+# game/dialogues/oliviatalk.rpy:384
+translate english olivia_second_sunscreen_963f890a:
+
+    # Olivia_03 "Ой, я буду очень ждать следующего раза. Только на пальму слазь заранее."
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:386
+translate english olivia_second_sunscreen_ffe6d206:
+
+    # Max_04 "Вот мне делать больше нечего, только по пальмам лазать. Фух, жарко. Пойду я. Отдыхайте, девчонки." nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:413
+translate english olivia_third_sunscreen_7cb27aba:
+
+    # Olivia_04 "Да, давай... На таком солнцепёке запросто можно сгореть. Чур гостей мажут первыми!" nointeract
+    Olivia_04 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:422
+translate english olivia_third_sunscreen_091802d2:
+
+    # Olivia_08 "О да! А у тебя, Макс, руки сильнее, чем может показаться. Можно даже представить, что мы на пляже и с нами персональный массажист."
+    Olivia_08 ""
+
+# game/dialogues/oliviatalk.rpy:423
+translate english olivia_third_sunscreen_4c78d340:
+
+    # Max_02 "Ну, если тебя это заводит..."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:424
+translate english olivia_third_sunscreen_18491192:
+
+    # Lisa_01 "О, ну всё... Точно тебе говорю, скоро Макс начнёт распускать руки."
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:425
+translate english olivia_third_sunscreen_46122a97:
+
+    # Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты Макс уже оживился."
+    Olivia_07 ""
+
+# game/dialogues/oliviatalk.rpy:426
+translate english olivia_third_sunscreen_fe76f73a:
+
+    # Max_04 "Это потому что у тебя такая нежная кожа... Я же не сильно давлю?"
+    Max_04 ""
+
+# game/dialogues/oliviatalk.rpy:434
+translate english olivia_third_sunscreen_8cf7b533:
+
+    # Olivia_08 "Охх... Нет... Продолжай, у тебя прекрасно получается. Даже не хочется, чтобы это заканчивалось..."
+    Olivia_08 ""
+
+# game/dialogues/oliviatalk.rpy:435
+translate english olivia_third_sunscreen_023b7317:
+
+    # Max_01 "Это можно устроить."
+    Max_01 ""
+
+# game/dialogues/oliviatalk.rpy:436
+translate english olivia_third_sunscreen_72d0ca86:
+
+    # Lisa_09 "Эй, голубки, хватит там ворковать, вы здесь не одни! Не забудьте, что меня тоже нужно защитить от солнышка."
+    Lisa_09 ""
+
+# game/dialogues/oliviatalk.rpy:438
+translate english olivia_third_sunscreen_3d44832b:
+
+    # Max_03 "Не забыли. Уже иду!" nointeract
+    Max_03 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:449
+translate english olivia_third_sunscreen_8fb6801f:
+
+    # Olivia_05 "Спасибо тебе, Макс! Позаботься там о своей сестрёнке. А я теперь, с ещё большим наслаждением, буду загорать."
+    Olivia_05 ""
+
+# game/dialogues/oliviatalk.rpy:450
+translate english olivia_third_sunscreen_205a5644:
+
+    # Max_07 "Правильно, Оливия, отдыхай. Ухх... А ты, Лиза, горячая штучка!"
+    Max_07 ""
+
+# game/dialogues/oliviatalk.rpy:451
+translate english olivia_third_sunscreen_cd49ed9f:
+
+    # Lisa_10 "Только давай без этих вот приставаний. Просто натри мне спинку кремом."
+    Lisa_10 ""
+
+# game/dialogues/oliviatalk.rpy:452
+translate english olivia_third_sunscreen_8ea166d5:
+
+    # Max_09 "Я вообще-то говорил о том, что у тебя кожа горячая от солнца. А ты всё озабоченный, озабоченный..."
+    Max_09 ""
+
+# game/dialogues/oliviatalk.rpy:453
+translate english olivia_third_sunscreen_7b97c09a:
+
+    # Olivia_02 "Мне кажется, Макс как раз таки ведёт себя профессионально, хотя мы и ожидаем от него подвоха. У меня к нему нареканий никаких, он молодец."
+    Olivia_02 ""
+
+# game/dialogues/oliviatalk.rpy:454
+translate english olivia_third_sunscreen_377ad985:
+
+    # Lisa_02 "Хм... И правда. Ммм... Хорошо-то как становится после его рук!"
+    Lisa_02 ""
+
+# game/dialogues/oliviatalk.rpy:463
+translate english olivia_third_sunscreen_1a8811c9:
+
+    # Max_07 "А я не знаю, почему вы меня сразу в штыки поставили."
+    Max_07 ""
+
+# game/dialogues/oliviatalk.rpy:464
+translate english olivia_third_sunscreen_b59a07e7:
+
+    # Olivia_03 "Тебе, Макс, надо становиться массажистом. Будет повод лапать девушек на законных основаниях. Хи-хи... Шутка! Хотя, под такой классный массаж я бы разрешила трогать что угодно."
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:465
+translate english olivia_third_sunscreen_6d2943af:
+
+    # Max_05 "Да?! Всё, ловлю на слове!"
+    Max_05 ""
+
+# game/dialogues/oliviatalk.rpy:466
+translate english olivia_third_sunscreen_09b14a55:
+
+    # Lisa_05 "Оливия, ты осторожнее такое говори, а то он возьмёт и убежит к тебе. Правда, я бы сказала, что он уже заканчивает..."
+    Lisa_05 ""
+
+# game/dialogues/oliviatalk.rpy:467
+translate english olivia_third_sunscreen_616823a1:
+
+    # Max_01 "Верно. Я мог бы пошутить про то, что у тебя ещё много чего можно намазать кремом, но не буду. Отдыхайте, девчонки."
+    Max_01 ""
+
+# game/dialogues/oliviatalk.rpy:468
+translate english olivia_third_sunscreen_bb90cc35:
+
+    # Lisa_01 "Спасибо, Макс."
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:498
+translate english olivia_repeat_sunscreen_1ea14ad7:
+
+    # Olivia_04 "Да, давай... На таком солнцепёке запросто можно сгореть."
+    Olivia_04 ""
+
+# game/dialogues/oliviatalk.rpy:499
+translate english olivia_repeat_sunscreen_a4b2409d:
+
+    # Lisa_01 "Только с лёгким массажем! Потому что просто намазаться кремом я и сама могу."
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:501
+translate english olivia_repeat_sunscreen_6975ead3:
+
+    # Max_04 "Значит, массаж всем! Но по очереди..." nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:513
+translate english olivia_repeat_sunscreen_olivia_first_b7464d3b:
+
+    # Max_01 "Думаю, в этот раз я начну с Оливии, она всё таки наша гостья!"
+    Max_01 ""
+
+# game/dialogues/oliviatalk.rpy:514
+translate english olivia_repeat_sunscreen_olivia_first_101ffe02:
+
+    # Lisa_09 "Ну вот... Младшая сестрёнка сразу перестала что-то значить..."
+    Lisa_09 ""
+
+# game/dialogues/oliviatalk.rpy:515
+translate english olivia_repeat_sunscreen_olivia_first_8a157314:
+
+    # Olivia_03 "Брось, Лиза, тебя твой любимый братик тоже намажет кремом с таким же усердием, как и меня. Правда, Макс?"
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:516
+translate english olivia_repeat_sunscreen_olivia_first_59e67e18:
+
+    # Max_03 "Конечно намажу! Хорошо будет всем. Не переживайте."
+    Max_03 ""
+
+# game/dialogues/oliviatalk.rpy:517
+translate english olivia_repeat_sunscreen_olivia_first_ae1f6587:
+
+    # Lisa_10 "Тогда я жду... Главное, надолго не задерживайся."
+    Lisa_10 ""
+
+# game/dialogues/oliviatalk.rpy:519
+translate english olivia_repeat_sunscreen_olivia_first_55dcef70:
+
+    # Olivia_07 "У тебя просто бесподобно получается это делать, Макс... Я сейчас начну мурлыкать, как киска. Ммм..."
+    Olivia_07 ""
+
+# game/dialogues/oliviatalk.rpy:520
+translate english olivia_repeat_sunscreen_olivia_first_7db7515c:
+
+    # Max_02 "Так сильно нравится?"
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:521
+translate english olivia_repeat_sunscreen_olivia_first_ec78591c:
+
+    # Olivia_08 "О да! Ещё как. Если бы у меня был такой старший брат, я бы постоянно млела в его руках совершенно голенькая, как сейчас. Повезло тебе, Лиза..."
+    Olivia_08 ""
+
+# game/dialogues/oliviatalk.rpy:522
+translate english olivia_repeat_sunscreen_olivia_first_a0bc94b9:
+
+    # Lisa_13 "Не сильно-то мне и везёт, я вот лежу тут совсем без внимания и вся горю... Макс, иди уже ко мне!"
+    Lisa_13 ""
+
+# game/dialogues/oliviatalk.rpy:524
+translate english olivia_repeat_sunscreen_olivia_first_a0e75b6f:
+
+    # Max_01 "Я почти закончил. Уже иду..." nointeract
+    Max_01 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:527
+translate english olivia_repeat_sunscreen_olivia_first_e79e19b5:
+
+    # Olivia_04 "Ой, Макс... Не то, чтобы я была против этого, но попку я и сама могу натереть кремом, а вот Лиза уже совсем тебя заждалась."
+    Olivia_04 ""
+
+# game/dialogues/oliviatalk.rpy:528
+translate english olivia_repeat_sunscreen_olivia_first_13913e65:
+
+    # Max_02 "Да мне не трудно."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:530
+translate english olivia_repeat_sunscreen_olivia_first_1ef925d6:
+
+    # Lisa_12 "Эй! Я тут жду, вообще-то..." nointeract
+    Lisa_12 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:536
+translate english olivia_repeat_sunscreen_olivia_first_afebe292:
+
+    # Lisa_01 "Давай, Макс, начинай... Моя спинка полностью в твоём распоряжении!"
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:537
+translate english olivia_repeat_sunscreen_olivia_first_8fb6801f:
+
+    # Olivia_05 "Спасибо тебе, Макс! Позаботься там о своей сестрёнке. А я теперь, с ещё большим наслаждением, буду загорать."
+    Olivia_05 ""
+
+# game/dialogues/oliviatalk.rpy:538
+translate english olivia_repeat_sunscreen_olivia_first_4029b1fb:
+
+    # Max_02 "Массажист к вашим услугам."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:539
+translate english olivia_repeat_sunscreen_olivia_first_ae446843:
+
+    # Lisa_05 "Ах, как классно! Под этими руками можно с лёгкостью растаять... Ммм..."
+    Lisa_05 ""
+
+# game/dialogues/oliviatalk.rpy:540
+translate english olivia_repeat_sunscreen_olivia_first_affa6724:
+
+    # Max_04 "Только растекайся после того, как я закончу."
+    Max_04 ""
+
+# game/dialogues/oliviatalk.rpy:542
+translate english olivia_repeat_sunscreen_olivia_first_d7c0c6a4:
+
+    # Olivia_03 "Как я тебя понимаю, подруга! Лично мне очень нравится вот так вот отдыхать с вами."
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:543
+translate english olivia_repeat_sunscreen_olivia_first_6ccd663c:
+
+    # Lisa_02 "Если бы Макс при этом постоянно не пялился, куда не нужно, я бы смогла расслабиться на все сто."
+    Lisa_02 ""
+
+# game/dialogues/oliviatalk.rpy:544
+translate english olivia_repeat_sunscreen_olivia_first_0e089261:
+
+    # Max_02 "Тебе кажется."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:549
+translate english olivia_repeat_sunscreen_olivia_first_4b3f92d2:
+
+    # Lisa_01 "А ладно, будем считать, что убедил. Давай заканчивай. А то знаю я тебя, скоро начнёшь руки распускать, как с Оливией." nointeract
+    Lisa_01 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:555
+translate english olivia_repeat_sunscreen_olivia_first_328f29ef:
+
+    # Lisa_01 "А ладно, будем считать, что убедил. Можно уже и заканчивать, Макс. Хоть мне и не хочется." nointeract
+    Lisa_01 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:558
+translate english olivia_repeat_sunscreen_olivia_first_6219e64f:
+
+    # Lisa_10 "Макс, ну ты что делаешь, а? Зачем без предупреждения мой купальник развязываешь?"
+    Lisa_10 ""
+
+# game/dialogues/oliviatalk.rpy:559
+translate english olivia_repeat_sunscreen_olivia_first_dbd83af0:
+
+    # Max_03 "Надо было. Твои завязки мешались."
+    Max_03 ""
+
+# game/dialogues/oliviatalk.rpy:561
+translate english olivia_repeat_sunscreen_olivia_first_9062395a:
+
+    # Lisa_09 "Да ну тебя! На грудь мою поглазеть захотел, как всегда... Всё, отстань!" nointeract
+    Lisa_09 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:571
+translate english olivia_repeat_sunscreen_lisa_first_daff6af3:
+
+    # Max_01 "Думаю, в этот раз я начну с Лизы. Мне хочется побыстрее защитить её белоснежную спинку от солнца!"
+    Max_01 ""
+
+# game/dialogues/oliviatalk.rpy:572
+translate english olivia_repeat_sunscreen_lisa_first_afebe292:
+
+    # Lisa_01 "Давай, Макс, начинай... Моя спинка полностью в твоём распоряжении!"
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:573
+translate english olivia_repeat_sunscreen_lisa_first_f66767c3:
+
+    # Olivia_03 "Я совсем не против, тем более, что я всё равно буду следующей. Ты ведь намажешь меня кремом так же усердно, как и свою любимую сестрёнку, да, Макс?"
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:574
+translate english olivia_repeat_sunscreen_lisa_first_59e67e18:
+
+    # Max_03 "Конечно намажу! Хорошо будет всем. Не переживайте."
+    Max_03 ""
+
+# game/dialogues/oliviatalk.rpy:575
+translate english olivia_repeat_sunscreen_lisa_first_82a306cc:
+
+    # Olivia_06 "Ох, как жарко! Я жду не дождусь тебя, Макс..."
+    Olivia_06 ""
+
+# game/dialogues/oliviatalk.rpy:577
+translate english olivia_repeat_sunscreen_lisa_first_ae446843:
+
+    # Lisa_05 "Ах, как классно! Под этими руками можно с лёгкостью растаять... Ммм..."
+    Lisa_05 ""
+
+# game/dialogues/oliviatalk.rpy:578
+translate english olivia_repeat_sunscreen_lisa_first_affa6724:
+
+    # Max_04 "Только растекайся после того, как я закончу."
+    Max_04 ""
+
+# game/dialogues/oliviatalk.rpy:579
+translate english olivia_repeat_sunscreen_lisa_first_29095313:
+
+    # Lisa_02 "Если бы ты при этом постоянно не пялился, куда не нужно, я бы смогла расслабиться на все сто."
+    Lisa_02 ""
+
+# game/dialogues/oliviatalk.rpy:580
+translate english olivia_repeat_sunscreen_lisa_first_cc38c0c0:
+
+    # Olivia_02 "Как я тебя понимаю, подруга! Макс, ты там скоро освободишься? Я уже не могу..."
+    Olivia_02 ""
+
+# game/dialogues/oliviatalk.rpy:582
+translate english olivia_repeat_sunscreen_lisa_first_a0e75b6f:
+
+    # Max_01 "Я почти закончил. Уже иду..." nointeract
+    Max_01 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:585
+translate english olivia_repeat_sunscreen_lisa_first_6219e64f:
+
+    # Lisa_10 "Макс, ну ты что делаешь, а? Зачем без предупреждения мой купальник развязываешь?"
+    Lisa_10 ""
+
+# game/dialogues/oliviatalk.rpy:586
+translate english olivia_repeat_sunscreen_lisa_first_dbd83af0:
+
+    # Max_03 "Надо было. Твои завязки мешались."
+    Max_03 ""
+
+# game/dialogues/oliviatalk.rpy:588
+translate english olivia_repeat_sunscreen_lisa_first_9062395a:
+
+    # Lisa_09 "Да ну тебя! На грудь мою поглазеть захотел, как всегда... Всё, отстань!" nointeract
+    Lisa_09 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:597
+translate english olivia_repeat_sunscreen_lisa_first_cca31528:
+
+    # Olivia_04 "Вот я и дождалась! Делай с моей спинкой всё, что потребуется... Лиза, тебе понравился массаж?"
+    Olivia_04 ""
+
+# game/dialogues/oliviatalk.rpy:601
+translate english olivia_repeat_sunscreen_lisa_first_3df7378b:
+
+    # Lisa_01 "Если бы Макс мне купальник не развязал, было бы шикарно. Хотя, не буду обманывать, это было потрясно! Спасибо, Макс!"
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:604
+translate english olivia_repeat_sunscreen_lisa_first_3d396ff9:
+
+    # Lisa_05 "Это было потрясно! Теперь я могу загорать без всякой опаски сгореть на солнце... Спасибо, Макс!"
+    Lisa_05 ""
+
+# game/dialogues/oliviatalk.rpy:606
+translate english olivia_repeat_sunscreen_lisa_first_4029b1fb:
+
+    # Max_02 "Массажист к вашим услугам."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:607
+translate english olivia_repeat_sunscreen_lisa_first_55dcef70:
+
+    # Olivia_07 "У тебя просто бесподобно получается это делать, Макс... Я сейчас начну мурлыкать, как киска. Ммм..."
+    Olivia_07 ""
+
+# game/dialogues/oliviatalk.rpy:608
+translate english olivia_repeat_sunscreen_lisa_first_7db7515c:
+
+    # Max_02 "Так сильно нравится?"
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:610
+translate english olivia_repeat_sunscreen_lisa_first_ec78591c:
+
+    # Olivia_08 "О да! Ещё как. Если бы у меня был такой старший брат, я бы постоянно млела в его руках совершенно голенькая, как сейчас. Повезло тебе, Лиза..."
+    Olivia_08 ""
+
+# game/dialogues/oliviatalk.rpy:611
+translate english olivia_repeat_sunscreen_lisa_first_c33a4c18:
+
+    # Lisa_02 "Когда везёт, когда нет... Макс у нас любит попроказничать. Хоть бы немножко меру знал."
+    Lisa_02 ""
+
+# game/dialogues/oliviatalk.rpy:612
+translate english olivia_repeat_sunscreen_lisa_first_31fd4e12:
+
+    # Max_03 "Зато не скучаем!"
+    Max_03 ""
+
+# game/dialogues/oliviatalk.rpy:617
+translate english olivia_repeat_sunscreen_lisa_first_5291ca1f:
+
+    # Olivia_05 "И здорово, что не скучаете! Пора заканчивать, Макс. Руки у тебя приятные, но, как я увидела по Лизе, любят попроказничать, а мне сейчас так хорошо, что со мной можно делать всё, что захочется." nointeract
+    Olivia_05 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:624
+translate english olivia_repeat_sunscreen_lisa_first_b6f5e255:
+
+    # Olivia_05 "И здорово, что не скучаете! Пора заканчивать, Макс. Руки у тебя приятные, а мне сейчас так хорошо, что со мной можно делать всё, что захочется. Я себя знаю..." nointeract
+    Olivia_05 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:627
+translate english olivia_repeat_sunscreen_lisa_first_a5fc1b9b:
+
+    # Olivia_04 "Ой, Макс... Не то, чтобы я была против этого, но попку я и сама могу натереть кремом."
+    Olivia_04 ""
+
+# game/dialogues/oliviatalk.rpy:628
+translate english olivia_repeat_sunscreen_lisa_first_13913e65:
+
+    # Max_02 "Да мне не трудно."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:630
+translate english olivia_repeat_sunscreen_lisa_first_9241cea4:
+
+    # Olivia_03 "Я заметила. Но хорошего - понемножку. А то при Лизе как-то неудобно." nointeract
+    Olivia_03 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:641
+translate english olivia_repeat_sunscreen_end_be248b37:
+
+    # Lisa_02 "Мы тебе очень благодарны, Макс. Прекрасный массаж!"
+    Lisa_02 ""
+
+# game/dialogues/oliviatalk.rpy:642
+translate english olivia_repeat_sunscreen_end_2909abdc:
+
+    # Olivia_02 "Да, спасибо тебе!"
+    Olivia_02 ""
+
+# game/dialogues/oliviatalk.rpy:644
+translate english olivia_repeat_sunscreen_end_22bbc860:
+
+    # Max_01 "Не за что. Отдыхайте, девчонки." nointeract
+    Max_01 "" nointeract
+
+# game/dialogues/oliviatalk.rpy:671
+translate english olivia_give_sunscreen_5948b939:
+
+    # Olivia_03 "Да, давай... На таком солнцепёке запросто можно сгореть. А ты нас разве не намажешь?"
+    Olivia_03 ""
+
+# game/dialogues/oliviatalk.rpy:672
+translate english olivia_give_sunscreen_33f283e4:
+
+    # Max_04 "Сегодня давайте сами... А то у меня руки устали. Им тоже нужно отдыхать."
+    Max_04 ""
+
+# game/dialogues/oliviatalk.rpy:673
+translate english olivia_give_sunscreen_243c5d9b:
+
+    # Lisa_02 "Если это и правда, то я не хочу знать, отчего они у тебя устали. Мы и сами прекрасно можем намазаться."
+    Lisa_02 ""
+
+# game/dialogues/oliviatalk.rpy:674
+translate english olivia_give_sunscreen_972fe205:
+
+    # Max_02 "Вот и хорошо. Но я за вами смотрю, а то начнёте тут натирать что-нибудь интересное..."
+    Max_02 ""
+
+# game/dialogues/oliviatalk.rpy:676
+translate english olivia_give_sunscreen_a4e5e197:
+
+    # Lisa_01 "Мечтай, Макс! Сейчас я намажу Оливии спинку, чтобы она была защищена от этого яркого солнышка."
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:677
+translate english olivia_give_sunscreen_ee0e933f:
+
+    # Olivia_04 "Ммм... Неплохо, Лиза... У тебя приятные ручки. Мне очень нравится. Не такие сильные, как у твоего брата, но массируешь ты ими прекрасно."
+    Olivia_04 ""
+
+# game/dialogues/oliviatalk.rpy:678
+translate english olivia_give_sunscreen_c5040609:
+
+    # Max_07 "Решили надо мной поиздеваться, да? Переигрываете..."
+    Max_07 ""
+
+# game/dialogues/oliviatalk.rpy:679
+translate english olivia_give_sunscreen_b99ccfbb:
+
+    # Lisa_03 "А вдруг нет! Может, я просто стараюсь и из-за этого Оливии так приятно..."
+    Lisa_03 ""
+
+# game/dialogues/oliviatalk.rpy:680
+translate english olivia_give_sunscreen_5356ae3f:
+
+    # Olivia_05 "Но я всё равно не отказалась бы от массажа в исполнении Макса. Остаётся надеяться, что в следующий раз он не откажется нас намазать."
+    Olivia_05 ""
+
+# game/dialogues/oliviatalk.rpy:681
+translate english olivia_give_sunscreen_8192759f:
+
+    # Max_03 "Очень может быть. Говоря по-правде, наблюдать за вами со стороны тоже классно."
+    Max_03 ""
+
+# game/dialogues/oliviatalk.rpy:683
+translate english olivia_give_sunscreen_bb885b95:
+
+    # Lisa_01 "Моя очередь подставлять спинку! На меня плохо загар ложиться, но благодаря этому крему я могу не переживать, что сгорю на солнце."
+    Lisa_01 ""
+
+# game/dialogues/oliviatalk.rpy:684
+translate english olivia_give_sunscreen_1ef708c1:
+
+    # Olivia_02 "У меня и без загара красивая подружка! Но я всё равно хорошенько тебя намажу."
+    Olivia_02 ""
+
+# game/dialogues/oliviatalk.rpy:685
+translate english olivia_give_sunscreen_82b536c4:
+
+    # Max_05 "Без Лизиного купальника это было бы невероятное шоу! Я бы для этого даже научился двойному массажу. По руке на каждую."
+    Max_05 ""
+
+# game/dialogues/oliviatalk.rpy:686
+translate english olivia_give_sunscreen_fc489638:
+
+    # Lisa_05 "Какой у меня братик фантазёр. Как будто нам будет достаточно только одной твоей руки... Мы хотим, чтобы нас массировали двумя руками. Так ведь, Оливия?"
+    Lisa_05 ""
+
+# game/dialogues/oliviatalk.rpy:687
+translate english olivia_give_sunscreen_07d730de:
+
+    # Olivia_06 "Конечно! Если назвался массажистом, то будь добр, массируй, как надо. А то устал он..."
+    Olivia_06 ""
+
+# game/dialogues/oliviatalk.rpy:689
+translate english olivia_give_sunscreen_0860fa68:
+
+    # Max_01 "Тогда, до следующего раза, девчонки." nointeract
+    Max_01 "" nointeract
+
+translate english strings:
+
+    # game/dialogues/oliviatalk.rpy:317
+    old "{i}устроиться поудобнее и наблюдать{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:412
+    old "{i}массировать Оливию кремом для загара{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:437
+    old "{i}массировать Лизу кремом для загара{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:500
+    old "{i}сначала делать массаж Оливии{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:500
+    old "{i}сначала делать массаж Лизе{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:523
+    old "{i}обнаглеть и массировать Оливии попку{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:523
+    old "{i}делать массаж Лизе{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:554
+    old "{i}развязать Лизе купальник{/i}"
+    new ""
+
+    # game/dialogues/oliviatalk.rpy:581
+    old "{i}делать массаж Оливии{/i}"
+    new ""
+

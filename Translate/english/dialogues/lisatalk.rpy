@@ -10934,3 +10934,78 @@ translate english lisa_about_showdown_e05d6220:
 
     # Max_01 "Договорились, сестрёнка."
     Max_01 "It's a deal, sis."
+
+# TODO: Translation updated at 2022-01-27 20:19
+
+# game/dialogues/lisatalk.rpy:4720
+translate english lisa_about_olivia_5_805315c8:
+
+    # Lisa_11 "Макс, слушай... Знаешь, что я сейчас сообразила?"
+    Lisa_11 ""
+
+# game/dialogues/lisatalk.rpy:4721
+translate english lisa_about_olivia_5_42eae722:
+
+    # Max_07 "Нет. Давай рассказывай..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4722
+translate english lisa_about_olivia_5_5914c219:
+
+    # Lisa_10 "К нам же теперь Оливия не сможет по ночам приходить! Мама теперь всё время будет дома ночевать."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4723
+translate english lisa_about_olivia_5_cf4a656a:
+
+    # Max_09 "Вот блин! Это плохо... В смысле, хорошо, что она дома, но плохо..."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4728
+translate english lisa_about_olivia_5_d7a9ae54:
+
+    # Lisa_09 "Что будем делать?"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4729
+translate english lisa_about_olivia_5_ab36e9a3:
+
+    # Max_08 "Знакомить их скорее! Правда, не знаю, как мама отреагирует на... особенность Оливии, но нужно сперва посмотреть на реакцию, а уже потом делать выводы."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:4730
+translate english lisa_about_olivia_5_37f257a7:
+
+    # Lisa_13 "Думаешь, она будет не против наших полуголых ночных посиделок? Я вот как-то сомневаюсь. Хотя..."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4731
+translate english lisa_about_olivia_5_2704fdca:
+
+    # Max_04 "Ну, \"полуголых\" - это слабо сказано, потому что из полуголых у нас только ты, а все остальные СОВСЕМ голые."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4737
+translate english lisa_about_olivia_5_50191b16:
+
+    # Lisa_10 "И мне кажется, что кому-кому, а мне она запретит по ночам тусоваться с вами. Да и не факт, что и тебе с Оливией разрешит."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4738
+translate english lisa_about_olivia_5_52089248:
+
+    # Max_03 "Как бы там ни было, но зови её к нам завтра. А маму я уж как-нибудь уговорю. К тому же, ей не обязательно сообщать, в каком виде мы тусуемся."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4739
+translate english lisa_about_olivia_5_ec426758:
+
+    # Lisa_01 "Да, подробности лучше опустить. Ох и удивится завтра мама."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4744
+translate english lisa_about_olivia_5_080cf4d3:
+
+    # Max_09 "{m}Лиза может быть права. После подлянки от Эрика, мама может начать снова оберегать Лизу от всего на свете. Надеюсь, мне удастся её завтра убедить, что контактирование с голой Оливией - это безобидное занятие, что для меня, что для Лизы.{/m}"
+    Max_09 ""
+
