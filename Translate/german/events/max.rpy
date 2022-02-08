@@ -1048,3 +1048,11 @@ translate german strings:
     old "{i}идти к Эрику с включённым диктофоном{/i}"
     new "{i}zu Eric zu gehen, wenn das Diktiergerät läuft{/i}"
 
+# TODO: Translation updated at 2022-02-09 00:03
+
+# game/events/max.rpy:685
+translate german BookRead_sex_ed_37326ac9:
+
+    # Max_04 "Вот и последние главы... Кажется, я понял о чём говорила Лиза. Эх, надо было раньше эту книжку прочитать, сейчас бы не тратил на это время! Но лучше поздно, чем никогда. Материал усвоен и теперь можно снова приставать к Лизе."
+    Max_04 ""
+

@@ -11009,3 +11009,599 @@ translate german lisa_about_olivia_5_080cf4d3:
     # Max_09 "{m}Лиза может быть права. После подлянки от Эрика, мама может начать снова оберегать Лизу от всего на свете. Надеюсь, мне удастся её завтра убедить, что контактирование с голой Оливией - это безобидное занятие, что для меня, что для Лизы.{/m}"
     Max_09 "{m}Lisa könnte Recht haben. Nach dem Misst mit Eric wird Mom vielleicht wieder anfangen, Lisa vor allem und jedem zu beschützen. Hoffentlich kann ich sie morgen davon überzeugen, dass der Kontakt zu einer nackten Olivia eine harmlose Aktivität ist, sowohl für mich als auch für Lisa.{/m}"
 
+# TODO: Translation updated at 2022-02-09 00:03
+
+# game/dialogues/lisatalk.rpy:3521
+translate german lisa_advanced_kiss_lesson_31a01586:
+
+    # Max_06 "[like!t]{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4736
+translate german lisa_about_olivia_6_4625ce5e:
+
+    # Lisa_03 "Ты про Оливию? И мне с вами можно?"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:4737
+translate german lisa_about_olivia_6_b6006830:
+
+    # Max_07 "Да, я получил добро на всё. Но мама намекнула, что если мы будем шуметь, то она вполне может прийти и проверить, чем мы занимаемся."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4738
+translate german lisa_about_olivia_6_17e47234:
+
+    # Lisa_10 "Ой! Но мы же вроде не собираемся сильно шуметь, да?"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4739
+translate german lisa_about_olivia_6_791f2d69:
+
+    # Max_02 "Да, но как знать."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:4740
+translate german lisa_about_olivia_6_0d89823a:
+
+    # Lisa_02 "Не знаю, что ты там себе уже нафантазировал, но мы с Оливией шуметь не собираемся."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4741
+translate german lisa_about_olivia_6_9ff6f03c:
+
+    # Max_08 "Я тоже. Надеюсь, если мама придёт нас проверять, то не станет подходить слишком близко."
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:4742
+translate german lisa_about_olivia_6_3c37e115:
+
+    # Lisa_13 "Да, в таком случае у нас будут проблемы из-за кое-кого."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4743
+translate german lisa_about_olivia_6_d648b0fe:
+
+    # Max_03 "Давай только пальцами не показывать."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4744
+translate german lisa_about_olivia_6_cc4386fa:
+
+    # Lisa_01 "Спасибо, что уговорил маму. Видимо, это было не особо сложно."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4745
+translate german lisa_about_olivia_6_61461d8f:
+
+    # Max_02 "Просто я могу быть очень убедителен, если захочу."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:4746
+translate german lisa_about_olivia_6_e1a37a49:
+
+    # Lisa_02 "И правда, чему я удивляюсь. Это же из-за голой Оливии."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4747
+translate german lisa_about_olivia_6_0a7bae5a:
+
+    # Max_05 "Не только. Когда-нибудь мы все будем резвиться ночью голышом!"
+    Max_05 ""
+
+# game/dialogues/lisatalk.rpy:4748
+translate german lisa_about_olivia_6_023ebf67:
+
+    # Lisa_01 "Ага, мечтай."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4762
+translate german lisa_about_sex_book0_351a8dec:
+
+    # Lisa_02 "Ты про ту с забавными картинками? Интересная. Я и правда многое узнала. Думаю, что теперь и сама могу учить кого угодно..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4763
+translate german lisa_about_sex_book0_7b00466f:
+
+    # Max_08 "Эй, книжка учителя не заменит!"
+    Max_08 ""
+
+# game/dialogues/lisatalk.rpy:4764
+translate german lisa_about_sex_book0_862d72d5:
+
+    # Lisa_03 "Что, испугался, учитель?"
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:4765
+translate german lisa_about_sex_book0_8e5b6c38:
+
+    # Max_03 "Ещё как. Так значит, возобновим уроки поцелуев?"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4766
+translate german lisa_about_sex_book0_fdec10eb:
+
+    # Lisa_13 "Хм... А зачем? Я же теперь умею целоваться. Если это всё, чему ты собрался меня учить, то дальше я сама разберусь..."
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4770
+translate german lisa_about_sex_book0_bc716f9b:
+
+    # Max_07 "Конечно не всё. Мы пойдём дальше. Ты же уже не стесняешься моих прикосновений?"
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4771
+translate german lisa_about_sex_book0_dc029ff0:
+
+    # Lisa_01 "Ты имеешь в виду, во время поцелуев? Нет, не стесняюсь. Они делают поцелуи куда приятнее. А что?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4772
+translate german lisa_about_sex_book0_c68a94ec:
+
+    # Max_04 "А то, что тебе пора учиться принимать поцелуи не только в губы. Я буду целовать тебя в шею и грудь, а ты не должна стесняться."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4773
+translate german lisa_about_sex_book0_2c2f9970:
+
+    # Lisa_10 "Ой, ну... В шею ещё можно попробовать, но вот грудь... Не уверена..."
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4774
+translate german lisa_about_sex_book0_cceec119:
+
+    # Max_01 "Это же всё будет происходить плавно. Начнём с обычных поцелуев в губы, а затем я двинусь ниже."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4775
+translate german lisa_about_sex_book0_6876e809:
+
+    # Lisa_02 "Это если мне понравится. А это не факт, Макс! Но давай попробуем..." nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4783
+translate german lisa_about_sex_book0_1092223e:
+
+    # Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим! Посмотрим, что будет дальше...{/m}" nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4789
+translate german lisa_about_sex_book0_afa17d8b:
+
+    # Max_05 "{m}Классно... Её ножки такие гладкие, а попка очень упругая! Без таких прикосновений наши поцелуи уже не обходятся, а значит можно спокойно двигаться дальше...{/m}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4795
+translate german lisa_about_sex_book0_d262e2cc:
+
+    # Max_06 "{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4801
+translate german lisa_about_sex_book0_bba74f75:
+
+    # Max_19 "{m}Обалдеть! Её кожа такая нежная... Интересно, её это заводит так же сильно, как и меня? Ощущения от того, что я тискаю её обнажённую грудь и целую её восхитительную шейку, бесподобны!{/m}"
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:4802
+translate german lisa_about_sex_book0_b4655fea:
+
+    # Lisa_04 "Ммм... Макс... Всё, остановись. Давай не будем..."
+    Lisa_04 ""
+
+# game/dialogues/lisatalk.rpy:4806
+translate german lisa_about_sex_book0_de1bedf6:
+
+    # Max_10 "Почему? Тебе не понравилось?"
+    Max_10 ""
+
+# game/dialogues/lisatalk.rpy:4807
+translate german lisa_about_sex_book0_a3368a42:
+
+    # Lisa_05 "Понравились... Просто это уже слишком... интимно. Не уверена, что таким следует заниматься с братом."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:4808
+translate german lisa_about_sex_book0_d607c9c9:
+
+    # Max_07 "Ну, знаешь... Другие могут и не деликатничать с тобой."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4809
+translate german lisa_about_sex_book0_66f59451:
+
+    # Lisa_09 "Мне нравится, как ты это делаешь, но я стесняюсь."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4810
+translate german lisa_about_sex_book0_963f8bda:
+
+    # Max_01 "Ладно, может быть ты ещё передумаешь..."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4811
+translate german lisa_about_sex_book0_92b12f4a:
+
+    # Lisa_01 "Не знаю, может быть."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4823
+translate german lisa_read_with_Max0_612a816a:
+
+    # Lisa_01 "Тебе заняться больше нечем?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4824
+translate german lisa_read_with_Max0_80b95965:
+
+    # Max_01 "Просто с тобой хочу побыть."
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4825
+translate german lisa_read_with_Max0_88576ab2:
+
+    # Lisa_02 "Ну, хорошо... Присоединяйся. Только если мешаться не будешь!" nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4831
+translate german lisa_read_with_Max0_90e899b5:
+
+    # Lisa_01 "Осторожнее, Макс! Если начнёшь приставать, то я и обидеться могу."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4832
+translate german lisa_read_with_Max0_3db23ad8:
+
+    # Max_04 "Да ладно тебе. Я же ничего не делаю. Ты как, не передумала?"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4833
+translate german lisa_read_with_Max0_9b51ee12:
+
+    # Lisa_00 "Насчёт чего? Уроков поцелуев?"
+    Lisa_00 ""
+
+# game/dialogues/lisatalk.rpy:4834
+translate german lisa_read_with_Max0_f5881c27:
+
+    # Max_07 "Ага. Не хочешь снова попробовать? Я ведь могу целовать ещё нежнее..."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4835
+translate german lisa_read_with_Max0_f6f35474:
+
+    # Lisa_09 "Дело не в нежности. С этим всё в порядке. Просто ты ко мне так прикасаешься, а мы брат и сестра. Это ведь как-то неправильно!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4841
+translate german lisa_read_with_Max0_e3bd0cdf:
+
+    # Max_03 "Ты моя любимая сестрёнка и ВОТ ТАК я к тебе прикасаюсь, потому что хочу сделать тебе приятно."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4842
+translate german lisa_read_with_Max0_26f40943:
+
+    # Lisa_02 "Ах вот оно что! А я думала ВОТ ТАК ты ко мне прикасаешься, чтобы свои ручки шаловливые порадовать..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4843
+translate german lisa_read_with_Max0_39ae90b5:
+
+    # Max_02 "Не без этого. Тебе приятно, мне приятно, а остальное как-то неважно."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:4844
+translate german lisa_read_with_Max0_ad30bc58:
+
+    # Lisa_10 "А вдруг кто-то узнает, чем мы с тобой занимаемся? Знаешь как нам прилетит!"
+    Lisa_10 ""
+
+# game/dialogues/lisatalk.rpy:4845
+translate german lisa_read_with_Max0_b43f08a3:
+
+    # Max_09 "Да никто не узнает, если ты сама не проболтаешься."
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4846
+translate german lisa_read_with_Max0_a89d5233:
+
+    # Lisa_01 "Ну ладно, давай попробуем... Но если я попрошу остановиться, мы остановимся, ясно?" nointeract
+    Lisa_01 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4852
+translate german lisa_read_with_Max0_c3cb9e88:
+
+    # Max_06 "{m}Ммм... Теперь я могу мять эту упругую попку так, как захочу! А дальше... Дальше мои руки смогут обласкать всё её нежное тело...{/m}"
+    Max_06 ""
+
+# game/dialogues/lisatalk.rpy:4860
+translate german lisa_read_with_Max0_32ffbb2f:
+
+    # Lisa_13 "Знаешь, Макс... Мы вот это делаем и я чувствую, что сам ты эту книгу по сексуальному образованию не читал. А ещё учителем называешься!"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4861
+translate german lisa_read_with_Max0_288ff111:
+
+    # Max_09 "Ты каким таким образом это могла почувствовать?"
+    Max_09 ""
+
+# game/dialogues/lisatalk.rpy:4864
+translate german lisa_read_with_Max0_ba792759:
+
+    # Lisa_01 "А ты вот прочитай сначала, тогда и поймёшь, а уже потом приставай."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4866
+translate german lisa_read_with_Max0_06d96872:
+
+    # Max_11 "Ну ладно... Прочту." nointeract
+    Max_11 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4876
+translate german lisa_read_with_Max0_8e745304:
+
+    # Lisa_05 "Знаешь, Макс... Если и дальше будешь довольно галантно и чутко себя вести, то у тебя вполне может получиться завлечь меня на поцелуи."
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:4877
+translate german lisa_read_with_Max0_5f34a1ae:
+
+    # Max_03 "Правда? Тогда я обязательно попробую..."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4880
+translate german lisa_read_with_Max0_6fde9b0d:
+
+    # Lisa_02 "Но только уже в следующий раз. А сейчас дай почитать."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4882
+translate german lisa_read_with_Max0_0f10a4f5:
+
+    # Max_01 "Хорошо, не буду мешать." nointeract
+    Max_01 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4901
+translate german lisa_read_with_Max_r_4c0c670e:
+
+    # Lisa_09 "Макс, дай сегодня почитать. У меня нет настроения для твоих приставаний..."
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4902
+translate german lisa_read_with_Max_r_cabc4c76:
+
+    # Max_07 "Хорошо, не буду мешать."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4906
+translate german lisa_read_with_Max_r_209f6521:
+
+    # Lisa_02 "Да, ложись рядом... Только сильно не приставай!" nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4915
+translate german lisa_read_with_Max_r_7fad580e:
+
+    # Lisa_01 "Не успел лечь, уже ручонки начинаешь распускать?"
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4916
+translate german lisa_read_with_Max_r_c93bf94a:
+
+    # Max_03 "Ты что! И в мыслях не было. Просто с тобой хочу побыть."
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:4917
+translate german lisa_read_with_Max_r_33458038:
+
+    # Lisa_02 "Ну конечно... Всё я знаю. Целоваться опять полезешь..."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4918
+translate german lisa_read_with_Max_r_25b1ed08:
+
+    # Max_02 "Как будто ты меня на кровать пустила, чтобы мы оба книжку читали. Ну-ну."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:4925
+translate german lisa_read_with_Max_r_8ae6aace:
+
+    # Lisa_03 "А зачем ещё? Не знаю, на что ты надеешься, но я девочка приличная и ничего такого себе не позволяю."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:4926
+translate german lisa_read_with_Max_r_3d1f409c:
+
+    # Max_04 "А я вот себе в удовольствии не отказываю. И тебе советую..."
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:4929
+translate german lisa_read_with_Max_r_9f7605bb:
+
+    # Lisa_13 "Ты так уверенно пристаёшь... Книжку что ли прочитал наконец-то?"
+    Lisa_13 ""
+
+# game/dialogues/lisatalk.rpy:4930
+translate german lisa_read_with_Max_r_4c11b74c:
+
+    # Max_02 "Да, прочитал. И готов показать, что я из неё почерпнул."
+    Max_02 ""
+
+# game/dialogues/lisatalk.rpy:4933
+translate german lisa_read_with_Max_r_086ab079:
+
+    # Lisa_02 "Ну, не знаю... Думаю, один разочек можно попробовать немного пошалить. Вдруг понравится, да?"
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:4934
+translate german lisa_read_with_Max_r_6a0241e4:
+
+    # Max_01 "Конечно, да!" nointeract
+    Max_01 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4941
+translate german lisa_read_with_Max_r_4a523cd1:
+
+    # Max_02 "{m}Надеюсь, этих разочков, на самом деле, будет бесконечное множество. Лиза хоть для приличия и изображает недотрогу, но я уже достаточно её расшевелил, чтобы она не захотела останавливаться. Пора хитрить...{/m}" nointeract
+    Max_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4948
+translate german lisa_read_with_Max_r_3a83b3a0:
+
+    # Max_01 "Всё, Лиза. Немного пошалили и хватит. Как ты там раньше говорила, хорошего помаленьку?"
+    Max_01 ""
+
+# game/dialogues/lisatalk.rpy:4949
+translate german lisa_read_with_Max_r_d0cd9ad4:
+
+    # Lisa_10 "В смысле, всё?! Раззадорил меня и уходишь что ли? Я хочу ещё!" nointeract
+    Lisa_10 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4958
+translate german lisa_read_with_Max_r_1092223e:
+
+    # Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим! Посмотрим, что будет дальше...{/m}" nointeract
+    Max_04 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4963
+translate german lisa_read_with_Max_r_afa17d8b:
+
+    # Max_05 "{m}Классно... Её ножки такие гладкие, а попка очень упругая! Без таких прикосновений наши поцелуи уже не обходятся, а значит можно спокойно двигаться дальше...{/m}" nointeract
+    Max_05 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4970
+translate german lisa_read_with_Max_r_d262e2cc:
+
+    # Max_06 "{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4980
+translate german lisa_read_with_Max_r_31a01586:
+
+    # Max_06 "[like!t]{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4988
+translate german lisa_read_with_Max_r_783629e4:
+
+    # Lisa_09 "[dont_like!t]Эй, Макс! Ты куда так торопишься? Лишь бы облапать побыстрее!"
+    Lisa_09 ""
+
+# game/dialogues/lisatalk.rpy:4989
+translate german lisa_read_with_Max_r_68658364:
+
+    # Max_07 "Я думал, что уже достаточно увлёк тебя поцелуями для этого."
+    Max_07 ""
+
+# game/dialogues/lisatalk.rpy:4990
+translate german lisa_read_with_Max_r_7b367055:
+
+    # Lisa_01 "Неправильно ты думал. Может быть, в другой раз, ты будешь умнее."
+    Lisa_01 ""
+
+# game/dialogues/lisatalk.rpy:4991
+translate german lisa_read_with_Max_r_a5d5a0b3:
+
+    # Max_10 "Да, возможно..." nointeract
+    Max_10 "" nointeract
+
+# game/dialogues/lisatalk.rpy:4999
+translate german lisa_read_with_Max_r_bba74f75:
+
+    # Max_19 "{m}Обалдеть! Её кожа такая нежная... Интересно, её это заводит так же сильно, как и меня? Ощущения от того, что я тискаю её обнажённую грудь и целую её восхитительную шейку, бесподобны!{/m}"
+    Max_19 ""
+
+# game/dialogues/lisatalk.rpy:5000
+translate german lisa_read_with_Max_r_20d02ca2:
+
+    # Lisa_04 "Ммм... Макс, это так приятно! Мне кажется, я совсем сейчас потеряю голову от удовольствия... Может, нам лучше остановиться?" nointeract
+    Lisa_04 "" nointeract
+
+# game/dialogues/lisatalk.rpy:5005
+translate german lisa_read_with_Max_r_6bc9d722:
+
+    # Lisa_03 "Ухх... Было приятно, настолько, что даже отрываться не хотелось... Но хорошего помаленьку."
+    Lisa_03 ""
+
+# game/dialogues/lisatalk.rpy:5006
+translate german lisa_read_with_Max_r_1517d0bc:
+
+    # Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..." nointeract
+    Max_03 "" nointeract
+
+# game/dialogues/lisatalk.rpy:5016
+translate german lisa_read_with_Max_r_6afe97b7:
+
+    # Lisa_06 "[lisa_good_kiss!t]Ах, Макс... Мои сосочки... Как хорошо! Ты так нежно это делаешь, что мне хочется начать громко стонать..."
+    Lisa_06 ""
+
+# game/dialogues/lisatalk.rpy:5017
+translate german lisa_read_with_Max_r_af705223:
+
+    # Max_04 "{m}Да, Лиза! Наверняка твои шелковистые и сладкие сисечки не хотят, чтобы эти ласки прекращались. Ммм! А мне не хочется от них отрываться, но пора...{/m}"
+    Max_04 ""
+
+# game/dialogues/lisatalk.rpy:5020
+translate german lisa_read_with_Max_r_9f51292e:
+
+    # Lisa_05 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось... Шалость удалась!"
+    Lisa_05 ""
+
+# game/dialogues/lisatalk.rpy:5024
+translate german lisa_read_with_Max_r_08c1057f:
+
+    # Max_03 "Рад, что тебе понравилось... Ты очень классная, Лиза! И сисечки у тебя прелестные!"
+    Max_03 ""
+
+# game/dialogues/lisatalk.rpy:5025
+translate german lisa_read_with_Max_r_f72901e5:
+
+    # Lisa_02 "Ой, Макс, не смущай меня так... Но спасибо за комплимент." nointeract
+    Lisa_02 "" nointeract
+
+# game/dialogues/lisatalk.rpy:5030
+translate german lisa_read_with_Max_r_7539a0ef:
+
+    # Lisa_02 "[lisa_bad_kiss!t]Ухх... Было приятно, настолько, что даже отрываться не хотелось... Но ты немножко торопишься, так что хорошего помаленьку."
+    Lisa_02 ""
+
+# game/dialogues/lisatalk.rpy:5031
+translate german lisa_read_with_Max_r_29e49474:
+
+    # Max_01 "Рад, что тебе понравилось... В следующий раз я постараюсь не торопиться." nointeract
+    Max_01 "" nointeract
+
+translate german strings:
+
+    # game/dialogues/lisatalk.rpy:4784
+    old "{i}нежно прикасаться к её попке{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4796
+    old "{i}целовать её шею{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4826
+    old "{i}лечь рядом с Лизой{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4942
+    old "{i}закончить поцелуй{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:4950
+    old "{i}снова целовать Лизу{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:5001
+    old "{i}остановиться{/i}"
+    new ""
+
+    # game/dialogues/lisatalk.rpy:5001
+    old "{i}целовать её грудь{/i}"
+    new ""
+

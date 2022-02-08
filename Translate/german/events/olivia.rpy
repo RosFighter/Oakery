@@ -2048,11 +2048,11 @@ translate german olivia_lisa_sunscreen_0_5e735faf:
     # Olivia_02 "Не переживай, я ничего не упущу. Или, может, всё-таки развязать купальник?"
     Olivia_02 "Keine Sorge, ich werde nichts übersehen. Oder soll ich den Badeanzug doch noch öffnen?"
 
-# game/events/olivia.rpy:1119
-translate german olivia_lisa_sunscreen_0_ea8671f3:
+# game/events/olivia.rpy:1137
+translate german olivia_lisa_sunscreen_0_95df47e9:
 
-    # Max_05 "Никаких «может». Снимай с неё всё!"
-    Max_05 "Kein «könnte». Zieh ihr alles aus!"
+    # Max_05 "Никаких \"может\". Снимай с неё всё!"
+    Max_05 "Kein \"könnte\". Zieh ihr alles aus!"
 
 # game/events/olivia.rpy:1120
 translate german olivia_lisa_sunscreen_0_7e394240:
@@ -2078,3 +2078,40 @@ translate german olivia_lisa_sunscreen_0_c7bb4508:
     # Lisa_03 "Других пожеланий я и не ожидала."
     Lisa_03 "Ich habe nichts anderes erwartet."
 
+# TODO: Translation updated at 2022-02-09 00:03
+
+# game/events/olivia.rpy:184
+translate german olivia_first_night_visit_af6afb32:
+
+    # Olivia_02 "Значит, кроме нас и Лизы дома только ваша мама?"
+    Olivia_02 ""
+
+# game/events/olivia.rpy:185
+translate german olivia_first_night_visit_40050d52:
+
+    # Max_03 "Да... Алиса с тётей Кирой как всегда в это время тусят где-то допоздна. Мама у себя в комнате, но может прийти нас проверить. Главное сильно не шуметь."
+    Max_03 ""
+
+# game/events/olivia.rpy:265
+translate german olivia_second_night_visit_4bfe6ec9:
+
+    # Olivia_03 "Лиза, а ты так и будешь в маечке и трусиках? Мы ведь шуметь не собираемся, так что твоя мама ничего не увидит. А даже если и придёт, то мы тебя прикроем."
+    Olivia_03 ""
+
+# game/events/olivia.rpy:266
+translate german olivia_second_night_visit_96357a48:
+
+    # Lisa_09 "Да я больше не из-за мамы, а из-за Макса. Только и будет делать, что пялиться."
+    Lisa_09 ""
+
+# game/events/olivia.rpy:309
+translate german olivia_night_visit_r_11acffe5:
+
+    # Olivia_01 "Привет, Макс. А вот и я! Как дома обстановка?"
+    Olivia_01 ""
+
+# game/events/olivia.rpy:310
+translate german olivia_night_visit_r_e85cfe71:
+
+    # Max_04 "Привет! Рад тебя видеть. Дома только я, Лиза и мама. Проходи..."
+    Max_04 ""
