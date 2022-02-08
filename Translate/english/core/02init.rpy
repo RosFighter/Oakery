@@ -681,3 +681,32 @@ translate english strings:
     # game/core/02init.rpy:135
     old "Вам дать крем для загара?"
     new ""
+
+# TODO: Translation updated at 2022-02-09 00:00
+
+translate english strings:
+
+    # game/core/02init.rpy:136
+    old "Мам, нужно поговорить об Оливии."
+    new ""
+
+    # game/core/02init.rpy:136
+    old "Мам, ты подумала об Оливии?"
+    new ""
+
+    # game/core/02init.rpy:136
+    old "Мама разрешила!"
+    new ""
+
+    # game/core/02init.rpy:136
+    old "Кстати, а как тебе та книжка, которую я дарил?"
+    new ""
+
+    # game/core/02init.rpy:136
+    old "Можно вместе с тобой книжку почитать?"
+    new ""
+
+    # game/core/02init.rpy:136
+    old "Можно к тебе присоединиться?"
+    new ""
+
