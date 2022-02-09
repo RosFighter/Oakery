@@ -2296,143 +2296,142 @@ translate english strings:
 translate english ann_about_olivia0_2931469c:
 
     # Ann_00 "Да, Макс, что такое?"
-    Ann_00 ""
+    Ann_00 "Yes, Max, what is it?"
 
 # game/dialogues/anntalk.rpy:1484
 translate english ann_about_olivia0_0fb43d08:
 
     # Max_07 "Можно она будет приходить к нам с ночёвкой по пятницам?"
-    Max_07 ""
+    Max_07 "Can she come to our sleepovers on Fridays?"
 
 # game/dialogues/anntalk.rpy:1485
 translate english ann_about_olivia0_ca484fbb:
 
     # Ann_13 "С ночёвкой? Ну, не знаю, сынок. А её родители, что скажут? И кто за вами будет присматривать?"
-    Ann_13 ""
+    Ann_13 "An overnight stay? I don't know, son. What would her parents say? And who's going to look after you?"
 
 # game/dialogues/anntalk.rpy:1486
 translate english ann_about_olivia0_7526967f:
 
     # Max_09 "За нами не нужно присматривать, мы уже взрослые. И раз это для тебя так важно, то я присмотрю за Оливией и Лизой."
-    Max_09 ""
+    Max_09 "We don't need to be looked after, we're adults. And since it's so important to you, I'll look after Olivia and Lisa."
 
 # game/dialogues/anntalk.rpy:1487
 translate english ann_about_olivia0_070aa522:
 
     # Ann_17 "А заниматься вы чем планируете? С натуризмом Оливии даже боюсь представить..."
-    Ann_17 ""
+    Ann_17 "And what do you plan to do? With Olivia's naturism, I'm afraid to even imagine..."
 
 # game/dialogues/anntalk.rpy:1488
 translate english ann_about_olivia0_ee58332d:
 
     # Max_01 "Мы может ТВ посмотрим или в бассейне поплаваем. Может в комнате поиграем."
-    Max_01 ""
+    Max_01 "We might watch TV or go swimming in the pool. Maybe hang out in our room."
 
 # game/dialogues/anntalk.rpy:1489
 translate english ann_about_olivia0_993f301a:
 
     # Ann_14 "Ох, вот насчёт бассейна я сильно сомневаюсь. Придётся не ложиться спать и караулить, как бы чего не произошло..."
-    Ann_14 ""
+    Ann_14 "Oh, I have my doubts about the pool. I'll have to stay up and watch out for anything that might happen..."
 
 # game/dialogues/anntalk.rpy:1490
 translate english ann_about_olivia0_eefee8b2:
 
     # Max_08 "Мам, я же сказал, я за ними присмотрю. К тому же, хоть Оливия и натуристка, но во всём остальном она девочка целомудренная. Днём ты же нас не караулишь."
-    Max_08 ""
+    Max_08 "Mom, I told you, I'll keep an eye on them. Besides, Olivia may be a nudist, but she's otherwise a chaste girl. It's not like you're watching us during the day."
 
 # game/dialogues/anntalk.rpy:1491
 translate english ann_about_olivia0_51952594:
 
     # Ann_12 "Одно дело днём, Макс, и совсем другое - ночью... Ох, не знаю..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "It's one thing during the day, Max, and quite another at night... Oh, I don't know..." nointeract
 
 # game/dialogues/anntalk.rpy:1497
 translate english ann_about_olivia0_b2ba75f7:
 
     # Ann_14 "[succes!t]Вроде и запретить вам хочу, но не известно, как на это может Лиза отреагировать. Ещё начнёт в отместку из дома убегать..."
-    Ann_14 ""
+    Ann_14 "[succes!t]I think I want to forbid you, but I don't know how Lisa might react. She might start running away from home in retaliation..."
 
 # game/dialogues/anntalk.rpy:1503
 translate english ann_about_olivia0_902cc700:
 
     # Ann_17 "[failed!t]Извини, Макс, но мне нужно подумать. Мне кажется, я вся изведусь, зная, что вы там ночью у бассейна играете."
-    Ann_17 ""
+    Ann_17 "[failed!t]I'm sorry, Max, but I need to think. I feel like I'm going to be exhausted, knowing that you're out there playing pool at night."
 
 # game/dialogues/anntalk.rpy:1504
 translate english ann_about_olivia0_a744479d:
 
     # Max_09 "Ладно, подумай пару дней." nointeract
-    Max_09 "" nointeract
+    Max_09 "Okay, think about it for a couple of days." nointeract
 
 # game/dialogues/anntalk.rpy:1512
 translate english ann_about_olivia0_succes_a46cecf5:
 
     # Max_10 "Ну да, это ещё хуже."
-    Max_10 ""
+    Max_10 "Well, yes, that's even worse."
 
 # game/dialogues/anntalk.rpy:1513
 translate english ann_about_olivia0_succes_b91eb0ff:
 
     # Ann_12 "Но меня здесь смущает даже больше не Оливия со своим натуризмом, а то, как ты на это реагируешь. Ладно она к этому у себя дома привыкла. А Лиза?"
-    Ann_12 ""
+    Ann_12 "But it's not even Olivia and her naturism that bothers me, it's the way you react to it. Okay, she's used to it at home. What about Lisa?"
 
 # game/dialogues/anntalk.rpy:1514
 translate english ann_about_olivia0_succes_1c48074f:
 
     # Max_09 "А что Лиза? Ты вспомни, чему вы с Эриком её учили..."
-    Max_09 ""
+    Max_09 "What about Lisa? Remember what you and Eric taught her..."
 
 # game/dialogues/anntalk.rpy:1515
 translate english ann_about_olivia0_succes_bb86700b:
 
     # Ann_15 "Ой! Лучше не напоминай, Макс. Что я тогда творила, ужас..."
-    Ann_15 ""
+    Ann_15 "Oh! You'd better not remind me, Max. What I did then, the horror..."
 
 # game/dialogues/anntalk.rpy:1516
 translate english ann_about_olivia0_succes_b0bdbf1c:
 
     # Max_07 "Вот-вот. Лизу теперь это тоже, как и Оливию, совершенно не смущает."
-    Max_07 ""
+    Max_07 "That's right. Lisa now, too, like Olivia, is not at all embarrassed by this."
 
 # game/dialogues/anntalk.rpy:1517
 translate english ann_about_olivia0_succes_48663582:
 
     # Ann_14 "Видимо, из-за Эрика я стала слишком подозрительной. Пытаюсь снова уберечь Лизу от всего на свете, хотя сама же такое ей показала..."
-    Ann_14 ""
+    Ann_14 "Apparently, Eric made me too suspicious. I'm trying to protect Lisa from everything in the world again, even though I've shown her this..."
 
 # game/dialogues/anntalk.rpy:1518
 translate english ann_about_olivia0_succes_a1e2dec6:
 
     # Max_09 "И вспомни, кто вывел Эрика на чистую воду? Я! И я же тебе говорю, что присмотрю за Лизой и Оливией."
-    Max_09 ""
+    Max_09 "And remember, who brought Eric out into the open? Я! And I told you that I would look after Lisa and Olivia."
 
 # game/dialogues/anntalk.rpy:1519
 translate english ann_about_olivia0_succes_e99695fc:
 
     # Ann_17 "Хорошо, я разрешу вам собираться по ночам, но! Если мне будет слишком неспокойно, я могу взять и проверить, чем вы занимаетесь."
-    Ann_17 ""
+    Ann_17 "All right, I'll let you get together at night, but! If I get too restless, I can go and check out what you're doing."
 
 # game/dialogues/anntalk.rpy:1520
 translate english ann_about_olivia0_succes_a7934c48:
 
     # Max_01 "Не проблема, мам. Приходи в любое время."
-    Max_01 ""
+    Max_01 "No problem, Mom. Come anytime."
 
 # game/dialogues/anntalk.rpy:1521
 translate english ann_about_olivia0_succes_573881bf:
 
     # Ann_04 "Договорились. Ведите себя хорошо." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "It's a deal. Behave yourselves." nointeract
 
 # game/dialogues/anntalk.rpy:1532
 translate english ann_about_olivia1_282cd97e:
 
     # Ann_14 "Подумала... Вроде и запретить вам хочу, но не известно, как на это может Лиза отреагировать. Ещё начнёт в отместку из дома убегать..."
-    Ann_14 ""
+    Ann_14 "I thought... I think I want to forbid you, but I don't know how Lisa might react. She might start running away from home in retaliation..."
 
 translate english strings:
 
     # game/dialogues/anntalk.rpy:1492
     old "Ну пожалуйста! Всё будет хорошо."
-    new ""
-
+    new "You're welcome! It's going to be okay."
