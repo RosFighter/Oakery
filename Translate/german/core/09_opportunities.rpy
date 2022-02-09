@@ -2040,37 +2040,37 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Кстати, с этим Эриком совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
-    new ""
+    new "Übrigens habe ich völlig vergessen, sie zu fragen, ob sie das Buch über Sexualkunde gelesen hat! Da muss ich mal nachfragen..."
 
     # game/core/09_opportunities.rpy:4
     old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я ещё предложил её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. Но ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
-    new ""
+    new "Von Lisa habe ich erfahren, dass sie das Buch über Sexualkunde gelesen hat. Ich habe ihr auch angeboten, ihr das Küssen beizubringen, aber auf eine intimere Art und Weise. Sie hat mir noch erlaubt, ihren Hals zu küssen, aber sie wollte nicht, dass ich ihre Brüste berühre, weil es ihr peinlich war. Aber es ist okay, sie wird mich lassen. Ich denke, wenn ich versuche, mich ihr unaufdringlich zu nähern, während sie liest, kann der Kussunterricht mit voller Energie fortgesetzt werden."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит попробовать составить компанию Лизе, когда она читает..."
-    new ""
+    new "Es lohnt sich, Lisa Gesellschaft zu leisten, wenn sie liest"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать приставать к Лизе, когда она читает. Но не исключено, что для успеха в этих приставаниях у неё должно быть очень хорошее настроение..."
-    new ""
+    new "Man muss Lisa beim Lesen immer wieder stören. Aber es ist möglich, wenn sie sehr gut gelaunt ist, dass diese Versuche erfolgreich sind..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот чёрт! Во время моих приставаний, Лиза каким-то образом почувствовала, что я не читал книгу по сексуальному образованию. Она намекнула, что к ней можно даже не пытаться приставать, пока я её не прочитаю. Эх, надо было прочитать её сразу, как купил, а потом уже дарить."
-    new ""
+    new "Oh, Scheiße! Während meiner Annäherungsversuche spürte Lisa irgendwie, dass ich das Aufklärungsbuch nicht gelesen hatte. Sie deutete an, ich solle gar nicht erst versuchen, sie anzubaggern, bevor ich es gelesen habe. Ach, ich hätte es gleich nach dem Kauf lesen und ihr dann geben sollen."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно сперва прочитать книгу по сексуальному образованию, а уже после продолжить приставать к Лизе, когда она читает..."
-    new ""
+    new "Zuerst sollte man das Aufklärungsbuch lesen und dann Lisa beim Lesen stören..."
 
     # game/core/09_opportunities.rpy:4
     old "от это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
-    new ""
+    new "Das ist großartig! Endlich durfte ich Lisas Brüste küssen! Und wie viele Möglichkeiten dies eröffnen kann... Das Wichtigste ist, dass man sich Zeit nimmt und diese Momente genießt."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого и не портить Лизе настроение..."
-    new ""
+    new "Ich glaube, ich habe mich Lisa schon so weit angenähert, dass sie und Olivia am Freitagabend nichts gegen meine Gesellschaft haben werden. Ich musste nur darauf warten, um Lisa nicht die Laune zu verderben..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь Оливия может приходить к нам с ночёвкой, как и раньше. Эрик мне больше ничем не угрожает, а это значит я могу попытать удачу с Лизой и Оливией по ночам... Правда, здесь есть другой напряг - мама может проверить, чем мы занимаемся."
-    new ""
+    new "Jetzt kann Olivia zu uns kommen und bei uns übernachten, genau wie früher. Eric stört nicht mehr, was bedeutet, dass ich nachts mein Glück bei Lisa und Olivia versuchen kann... Es gibt aber noch eine anderes Problem, denn Mom könnte jederzeit nachsehen, was wir tun."
 
