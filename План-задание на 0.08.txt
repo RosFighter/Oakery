@@ -34,3 +34,11 @@
  - Макс уговаривает Анну разрешить Оливии ночевать на вилле (после избавления от Эрика);
  - Макс пытается возобновить уроки поцелуев с Лизой (после избавления от Эрика);
  - обновлены начальные изображения помощи с домашним заданием Лизы;
+
+
+
+ - Ann meets Olivia (after getting rid of Eric);
+ - Max's new interaction with Olivia and Lisa in the yard during the day (after getting rid of Eric);
+ - Max convinces Ann to let Olivia stay the night at their house (after getting rid of Eric);
+ - Max tries to resume kissing lessons with Lisa (after getting rid of Eric);
+ - updated the initial images of Lisa's homework help;
