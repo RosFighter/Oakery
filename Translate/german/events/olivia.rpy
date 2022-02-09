@@ -2084,34 +2084,34 @@ translate german olivia_lisa_sunscreen_0_c7bb4508:
 translate german olivia_first_night_visit_af6afb32:
 
     # Olivia_02 "Значит, кроме нас и Лизы дома только ваша мама?"
-    Olivia_02 ""
+    Olivia_02 "Abgesehen von uns und Lisa ist also nur deine Mom zu Hause?"
 
 # game/events/olivia.rpy:185
 translate german olivia_first_night_visit_40050d52:
 
     # Max_03 "Да... Алиса с тётей Кирой как всегда в это время тусят где-то допоздна. Мама у себя в комнате, но может прийти нас проверить. Главное сильно не шуметь."
-    Max_03 ""
+    Max_03 "Ja... Alice und Tante Kira sind wie immer bis spät unterwegs. Mom ist in ihrem Zimmer, aber sie kann jederziet kommen und nach uns sehen. Aber mach nicht zu viel Lärm."
 
 # game/events/olivia.rpy:265
 translate german olivia_second_night_visit_4bfe6ec9:
 
     # Olivia_03 "Лиза, а ты так и будешь в маечке и трусиках? Мы ведь шуметь не собираемся, так что твоя мама ничего не увидит. А даже если и придёт, то мы тебя прикроем."
-    Olivia_03 ""
+    Olivia_03 "Lisa, bleibst du in deinem Top und deinem Slip? Wir werden keinen Lärm machen, damit deine Mom nichts mitbekommt. Und selbst wenn, werden wir für dich eintreten."
 
 # game/events/olivia.rpy:266
 translate german olivia_second_night_visit_96357a48:
 
     # Lisa_09 "Да я больше не из-за мамы, а из-за Макса. Только и будет делать, что пялиться."
-    Lisa_09 ""
+    Lisa_09 "Es ist nicht wegen Mom, es ist Max. Er wird mich nur anstarren."
 
 # game/events/olivia.rpy:309
 translate german olivia_night_visit_r_11acffe5:
 
     # Olivia_01 "Привет, Макс. А вот и я! Как дома обстановка?"
-    Olivia_01 ""
+    Olivia_01 "Hey, Max. Da bin ich! Wer ist alles im Haus?"
 
 # game/events/olivia.rpy:310
 translate german olivia_night_visit_r_e85cfe71:
 
     # Max_04 "Привет! Рад тебя видеть. Дома только я, Лиза и мама. Проходи..."
-    Max_04 ""
+    Max_04 "Hallo! Schön, dich zu sehen. Zu Hause sind nur ich, Lisa und Mom. Komm rein..."

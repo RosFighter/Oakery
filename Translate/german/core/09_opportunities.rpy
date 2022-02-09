@@ -2004,33 +2004,33 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Пока Эрик представляет для меня угрозу, нет смысла что-то планировать насчёт Лизы и Оливии, поэтому мне потребуются успехи в возможности \"Альфа\"..."
-    new ""
+    new "Solange Eric eine Bedrohung für mich ist, hat es keinen Sinn, irgendetwas mit Lisa und Olivia zu planen, also brauche ich Fortschritte bei der \"Alphatier-Möglichkeit\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Хорошо было бы поинтересоваться, сильно ли Лиза переживает всю эту историю с Эриком..."
-    new ""
+    new "Es wäre gut, zu wissen, wie Lisa die ganze Sache mit Eric verarbeitet..."
 
     # game/core/09_opportunities.rpy:4
     old "Эх, Эрика прогнали, а проблемы всё равно есть. Лиза сообразила, что мама теперь не будет уезжать на ночь к Эрику, а значит ночёвка Оливии под {b}БОЛЬШИМ{/b} вопросом. Теперь, чтобы не было никаких неожиданностей, нужно скорее их познакомить и уже исходя из того, как мама отнесётся к \"особенности\" Оливии, решать эту проблему."
-    new ""
+    new "Ähm, Eric ist weg und es gibt immer noch ein Problem. Lisa wurde klar, dass Mom nicht mehr bei Eric übernachten würde, was bedeutete, dass Olivias Übernachtung bei uns in Frage gestellt waren. Um Überraschungen zu vermeiden, müssen die beiden so schnell wie möglich zusammengebracht werden, und je nachdem, wie Mom über Olivias \"Besonderheit\" denkt, muss sie sich für das Problem entscheiden."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно немного подождать и Оливия придёт знакомиться с мамой..."
-    new ""
+    new "Wir müssen nur noch ein bisschen warten, dann kommt Olivia, um Mom kennenzulernen..."
 
     # game/core/09_opportunities.rpy:4
     old "На мой взгляд, знакомство мамы и Оливии прошло хорошо. Конечно, маму слегка шокировал натуризм Оливии, но в целом, она не против их дружбы с Лизой. Теперь мне нужно получить одобрение мамы на ночёвку Оливии и я понятия не имею, насколько это будет просто или сложно. А ещё девочкам можно дать крем для загара, вдруг это приведёт рано или поздно к чему-нибудь очень интересному..."
-    new ""
+    new "Meiner Meinung nach ist das Kennenlernen von Mum und Olivia gut gelungen. Natürlich war Mom ein wenig schockiert über Olivias Freikörperkultur, aber im Großen und Ganzen ist sie mit der Freundschaft zwischen ihr und Lisa einverstanden. Jetzt muss ich die Zustimmung von Mom für Olivias Übernachtung bekommen, und ich habe keine Ahnung, wie einfach oder schwierig das sein wird. Außerdem sollten die Mädchen mit Sonnencreme eingecremt werden, für den Fall, dass es früher oder später zu etwas sehr Interessantem kommt..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно поговорить с мамой, чтобы она разрешила приходить Оливии к нам с ночёвкой..."
-    new ""
+    new "Ich muss mit Mom darüber reden, Olivia bei uns übernachten zu lassen..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно дать маме несколько дней на раздумья о ночёвке Оливии и снова поговорить с ней..."
-    new ""
+    new "Ich muss Mum ein paar Tage Zeit geben, um über Olivias Übernachtung nachzudenken und noch einmal mit ihr zu reden..."
 
     # game/core/09_opportunities.rpy:4
     old "Осталось сказать Лизе, что мама разрешила ночевать Оливии у нас дома..."
-    new ""
+    new "Ich muss Lisa nur sagen, dass Mom gesagt hat, sie würde Olivia bei uns schlafen lassen..."
 

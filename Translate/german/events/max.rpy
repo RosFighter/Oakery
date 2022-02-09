@@ -1054,5 +1054,5 @@ translate german strings:
 translate german BookRead_sex_ed_37326ac9:
 
     # Max_04 "Вот и последние главы... Кажется, я понял о чём говорила Лиза. Эх, надо было раньше эту книжку прочитать, сейчас бы не тратил на это время! Но лучше поздно, чем никогда. Материал усвоен и теперь можно снова приставать к Лизе."
-    Max_04 ""
+    Max_04 "Hier sind die letzten Kapitel... Ich glaube, ich weiß, wovon Lisa gesprochen hat. Eh, ich hätte dieses Buch schon früher lesen sollen, dann hätte ich jetzt nicht meine Zeit damit verschwendet! Aber besser spät als nie. Der Stoff war gelernt und nun konnte ich Lisa wieder damit nerven."
 

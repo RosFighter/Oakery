@@ -687,25 +687,25 @@ translate german strings:
 
     # game/core/02init.rpy:136
     old "Мам, нужно поговорить об Оливии."
-    new ""
+    new "Mom, wir müssen über Olivia reden."
 
     # game/core/02init.rpy:136
     old "Мам, ты подумала об Оливии?"
-    new ""
+    new "Mom, hast du an Olivia gedacht?"
 
     # game/core/02init.rpy:136
     old "Мама разрешила!"
-    new ""
+    new "Mom hat gesagt, ich darf das!"
 
     # game/core/02init.rpy:136
     old "Кстати, а как тебе та книжка, которую я дарил?"
-    new ""
+    new "Übrigens, wie fandest du das Buch, das ich dir geschenkt habe?"
 
     # game/core/02init.rpy:136
     old "Можно вместе с тобой книжку почитать?"
-    new ""
+    new "Kann ich mit dir ein Buch lesen?"
 
     # game/core/02init.rpy:136
     old "Можно к тебе присоединиться?"
-    new ""
+    new "Darf ich mich zu dir gesellen?"
 
