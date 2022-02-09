@@ -672,15 +672,15 @@ translate english strings:
 
     # game/core/02init.rpy:135
     old "А у меня есть крем для загара. Хотите?"
-    new ""
+    new "And I have sunscreen. Would you like some?"
 
     # game/core/02init.rpy:135
     old "Давайте, я намажу вас кремом для загара?"
-    new ""
+    new "Why don't I put some sunscreen on you?"
 
     # game/core/02init.rpy:135
     old "Вам дать крем для загара?"
-    new ""
+    new "Would you like some sunscreen?"
 
 # TODO: Translation updated at 2022-02-09 00:00
 
@@ -688,25 +688,24 @@ translate english strings:
 
     # game/core/02init.rpy:136
     old "Мам, нужно поговорить об Оливии."
-    new ""
+    new "Mom, we need to talk about Olivia."
 
     # game/core/02init.rpy:136
     old "Мам, ты подумала об Оливии?"
-    new ""
+    new "Mom, have you thought about Olivia?"
 
     # game/core/02init.rpy:136
     old "Мама разрешила!"
-    new ""
+    new "Mom said it was okay!"
 
     # game/core/02init.rpy:136
     old "Кстати, а как тебе та книжка, которую я дарил?"
-    new ""
+    new "By the way, what did you think of that book I gave you?"
 
     # game/core/02init.rpy:136
     old "Можно вместе с тобой книжку почитать?"
-    new ""
+    new "Can I read the book with you?"
 
     # game/core/02init.rpy:136
     old "Можно к тебе присоединиться?"
-    new ""
-
+    new "May I join you?"
