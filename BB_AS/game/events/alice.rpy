@@ -109,7 +109,7 @@ label alice_sleep_night:
             scene BG char Alice bed-night-01
             $ renpy.show('Alice sleep-night '+pose3_2)
             if not alice.sleepnaked:
-                $ renpy.show('other Alice sleep-night '+pose3_2+alice.dress)
+                $ renpy.show('cloth1 Alice sleep-night '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
             if alice.req.result == 'sleep':
                 #  условие выполняется
@@ -166,7 +166,7 @@ label alice_sleep_night:
             scene BG char Alice bed-night-02
             $ renpy.show('Alice sleep-night-closer '+pose3_2)
             if not alice.sleepnaked:
-                $ renpy.show('other Alice sleep-night-closer '+pose3_2+alice.dress)
+                $ renpy.show('cloth1 Alice sleep-night-closer '+pose3_2+alice.dress)
             if alice.req.result == 'sleep':
                 if pose3_2 == '01':
                     Max_03 "{m}Да уж... Жаль только, что грудь не видно так, как хотелось бы, но её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить...{/m}" nointeract
@@ -211,7 +211,7 @@ label alice_sleep_morning:
             scene BG char Alice bed-morning-01
             $ renpy.show('Alice sleep-morning '+pose3_2)
             if not alice.sleepnaked:
-                $ renpy.show('other Alice sleep-morning '+pose3_2+alice.dress)
+                $ renpy.show('cloth1 Alice sleep-morning '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-morning-00'+mgg.dress)
             if alice.req.result == 'sleep':
                 $ alice.dress_inf = '02ga'
@@ -270,7 +270,7 @@ label alice_sleep_morning:
             scene BG char Alice bed-morning-02
             $ renpy.show('Alice sleep-morning-closer '+pose3_2)
             if not (alice.sleepnaked or alice.dress==''):
-                $ renpy.show('other Alice sleep-morning-closer '+pose3_2+alice.dress)
+                $ renpy.show('cloth1 Alice sleep-morning-closer '+pose3_2+alice.dress)
             if alice.req.result == 'sleep':
                 if pose3_2 == '01':
                     Max_05 "{m}Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эти сиськи! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти.{/m}" nointeract
@@ -1047,7 +1047,7 @@ label spider_in_bed:
 
     scene BG char Alice spider-night-01
     $ renpy.show('Alice spider-night 01-'+renpy.random.choice(['01', '02', '03'])+suf)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
@@ -1075,7 +1075,7 @@ label spider_in_bed:
         hide screen Cookies_Button
         scene BG char Max bed-night-01
         $ renpy.show('Max sleep-night '+pose3_3)
-        $ renpy.show('FG Max sleep-night '+pose3_3)
+        $ renpy.show('cloth1 Max sleep-night '+pose3_3)
         menu:
             Max_09 "Бегает ещё, кричит что-то... Совсем сдурела..."
             "{i}спать до утра{/i}":
@@ -1374,7 +1374,7 @@ label alice_smoke:
         return
     else:
         $ renpy.show('Alice smoke '+pose3_3+alice.dress)
-        with Fade(0.4, 0, 0.3)
+        with fade4
 
     $ alice.daily.smoke = 1
     $ alice.prev_plan = alice.plan_name
@@ -1479,7 +1479,7 @@ label alice_after_club:
         scene BG char Alice bath-after-club 01
         $ renpy.show('Alice bath-after-club 01-'+r1+suf)
         show Max bath-after-club 01
-        with Fade(0.4, 0, 0.3)
+        with fade4
         Alice_05 "А, Макс... Не спится? Чего хотел?"
         Max_01 "Да... Я вот... Умыться перед сном хотел!"
         Alice_03 "Ну, проходи. Я собиралась ванну принять, но ещё вода набирается..."
@@ -1832,7 +1832,7 @@ label alice_after_club:
         # after-club-08 + after-club-08-max&alice-cum02 + after-club-08-max&alice-(cum02a/cum02b)
         scene BG char Alice bath-after-club 08
         show Alice bath-after-club 08-cum02
-        $ renpy.show("FG bath-after-club 08-cum02"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
+        $ renpy.show("FG Alice bath-after-club 08-cum02"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
 
         Alice_09 "Ого, сколько в тебе было... потенциала... Ты заляпал мне всю грудь! Теперь мыться надо..."
         Max_03 "А ты разве не для этого ванну собиралась принять?"
@@ -1847,7 +1847,7 @@ label alice_after_club:
         # after-club-09 + after-club-09-max&alice-cum01 + after-club-09-max&alice-(cum01a/cum01b)
         scene BG char Alice bath-after-club 09
         show Alice bath-after-club 09-cum01
-        $ renpy.show("FG bath-after-club 09-cum01"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
+        $ renpy.show("FG Alice bath-after-club 09-cum01"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
 
         Alice_06 "Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"
@@ -1864,7 +1864,7 @@ label alice_after_club:
         # after-club-09 + after-club-09-max&alice-cum01 + after-club-09-max&alice-(cum01a/cum01b)
         scene BG char Alice bath-after-club 09
         show Alice bath-after-club 09-cum01
-        $ renpy.show("FG bath-after-club 09-cum01"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
+        $ renpy.show("FG Alice bath-after-club 09-cum01"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
 
         Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"
@@ -2467,7 +2467,7 @@ label alice_towel_after_club:
     # bath-open-00 + bath-open-alice-01
     scene BG bath-open-00
     show Alice bath-talk 01
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Alice_15 "Макс, я тут вообще-то голая лежу в ванне! Оу, ты всё же принёс мне полотенце..."
     Max_02 "Да, я тут как раз нашёл, на что его можно повесить..."
 
@@ -2653,7 +2653,7 @@ label alice_towel_after_club:
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-06 + after-club-bathbj01-max&alice-06a
         scene BG char Alice after-club-bath bj-03
         show Alice after-club-bath bj-06
-        show FG after-club-bath bj-06
+        show FG Alice after-club-bath bj-06
 
         Alice_09 "Ого, сколько спермы... Ты заляпал мне всю грудь! Теперь мыться надо..."
         Max_03 "А ты разве не для этого ванну решила принять?"
@@ -2671,7 +2671,7 @@ label alice_towel_after_club:
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-05 + after-club-bathbj01-max&alice-05a
         scene BG char Alice after-club-bath bj-03
         show Alice after-club-bath bj-05
-        show FG after-club-bath bj-05
+        show FG Alice after-club-bath bj-05
 
         Alice_06 "Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"
@@ -2718,7 +2718,7 @@ label alice_towel_after_club:
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-05 + after-club-bathbj01-max&alice-05a
         scene BG char Alice after-club-bath bj-03
         show Alice after-club-bath bj-05
-        show FG after-club-bath bj-05
+        show FG Alice after-club-bath bj-05
 
         Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"

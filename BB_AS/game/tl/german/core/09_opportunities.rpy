@@ -1998,3 +1998,79 @@ translate german strings:
     old "Эрик повержен! Мне удалось вывести его на чистую воду и теперь мы наконец-то заживём, как раньше. Даже ещё лучше! Но для начала всем нужно время, чтобы отойти от правды о нём."
     new "Eric ist besiegt! Ich habe es geschafft, ihn aus der Reserve zu locken, und jetzt werden wir endlich wieder so leben wie früher. Noch besser! Aber zunächst brauchen alle Zeit, um die Wahrheit über ihn zu verarbeiten."
 
+# TODO: Translation updated at 2022-02-09 00:03
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Пока Эрик представляет для меня угрозу, нет смысла что-то планировать насчёт Лизы и Оливии, поэтому мне потребуются успехи в возможности \"Альфа\"..."
+    new "Solange Eric eine Bedrohung für mich ist, hat es keinen Sinn, irgendetwas mit Lisa und Olivia zu planen, also brauche ich Fortschritte bei der \"Alphatier-Möglichkeit\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Хорошо было бы поинтересоваться, сильно ли Лиза переживает всю эту историю с Эриком..."
+    new "Es wäre gut, zu wissen, wie Lisa die ganze Sache mit Eric verarbeitet..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эх, Эрика прогнали, а проблемы всё равно есть. Лиза сообразила, что мама теперь не будет уезжать на ночь к Эрику, а значит ночёвка Оливии под {b}БОЛЬШИМ{/b} вопросом. Теперь, чтобы не было никаких неожиданностей, нужно скорее их познакомить и уже исходя из того, как мама отнесётся к \"особенности\" Оливии, решать эту проблему."
+    new "Ähm, Eric ist weg und es gibt immer noch ein Problem. Lisa wurde klar, dass Mom nicht mehr bei Eric übernachten würde, was bedeutete, dass Olivias Übernachtung bei uns in Frage gestellt waren. Um Überraschungen zu vermeiden, müssen die beiden so schnell wie möglich zusammengebracht werden, und je nachdem, wie Mom über Olivias \"Besonderheit\" denkt, muss sie sich für das Problem entscheiden."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно немного подождать и Оливия придёт знакомиться с мамой..."
+    new "Wir müssen nur noch ein bisschen warten, dann kommt Olivia, um Mom kennenzulernen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "На мой взгляд, знакомство мамы и Оливии прошло хорошо. Конечно, маму слегка шокировал натуризм Оливии, но в целом, она не против их дружбы с Лизой. Теперь мне нужно получить одобрение мамы на ночёвку Оливии и я понятия не имею, насколько это будет просто или сложно. А ещё девочкам можно дать крем для загара, вдруг это приведёт рано или поздно к чему-нибудь очень интересному..."
+    new "Meiner Meinung nach ist das Kennenlernen von Mum und Olivia gut gelungen. Natürlich war Mom ein wenig schockiert über Olivias Freikörperkultur, aber im Großen und Ganzen ist sie mit der Freundschaft zwischen ihr und Lisa einverstanden. Jetzt muss ich die Zustimmung von Mom für Olivias Übernachtung bekommen, und ich habe keine Ahnung, wie einfach oder schwierig das sein wird. Außerdem sollten die Mädchen mit Sonnencreme eingecremt werden, für den Fall, dass es früher oder später zu etwas sehr Interessantem kommt..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно поговорить с мамой, чтобы она разрешила приходить Оливии к нам с ночёвкой..."
+    new "Ich muss mit Mom darüber reden, Olivia bei uns übernachten zu lassen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно дать маме несколько дней на раздумья о ночёвке Оливии и снова поговорить с ней..."
+    new "Ich muss Mum ein paar Tage Zeit geben, um über Olivias Übernachtung nachzudenken und noch einmal mit ihr zu reden..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Осталось сказать Лизе, что мама разрешила ночевать Оливии у нас дома..."
+    new "Ich muss Lisa nur sagen, dass Mom gesagt hat, sie würde Olivia bei uns schlafen lassen..."
+
+# TODO: Translation updated at 2022-02-09 18:43
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Кстати, с этим Эриком совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
+    new "Übrigens habe ich völlig vergessen, sie zu fragen, ob sie das Buch über Sexualkunde gelesen hat! Da muss ich mal nachfragen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я ещё предложил её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. Но ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
+    new "Von Lisa habe ich erfahren, dass sie das Buch über Sexualkunde gelesen hat. Ich habe ihr auch angeboten, ihr das Küssen beizubringen, aber auf eine intimere Art und Weise. Sie hat mir noch erlaubt, ihren Hals zu küssen, aber sie wollte nicht, dass ich ihre Brüste berühre, weil es ihr peinlich war. Aber es ist okay, sie wird mich lassen. Ich denke, wenn ich versuche, mich ihr unaufdringlich zu nähern, während sie liest, kann der Kussunterricht mit voller Energie fortgesetzt werden."
+
+    # game/core/09_opportunities.rpy:4
+    old "Стоит попробовать составить компанию Лизе, когда она читает..."
+    new "Es lohnt sich, Lisa Gesellschaft zu leisten, wenn sie liest"
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать приставать к Лизе, когда она читает. Но не исключено, что для успеха в этих приставаниях у неё должно быть очень хорошее настроение..."
+    new "Man muss Lisa beim Lesen immer wieder stören. Aber es ist möglich, wenn sie sehr gut gelaunt ist, dass diese Versuche erfolgreich sind..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот чёрт! Во время моих приставаний, Лиза каким-то образом почувствовала, что я не читал книгу по сексуальному образованию. Она намекнула, что к ней можно даже не пытаться приставать, пока я её не прочитаю. Эх, надо было прочитать её сразу, как купил, а потом уже дарить."
+    new "Oh, Scheiße! Während meiner Annäherungsversuche spürte Lisa irgendwie, dass ich das Aufklärungsbuch nicht gelesen hatte. Sie deutete an, ich solle gar nicht erst versuchen, sie anzubaggern, bevor ich es gelesen habe. Ach, ich hätte es gleich nach dem Kauf lesen und ihr dann geben sollen."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно сперва прочитать книгу по сексуальному образованию, а уже после продолжить приставать к Лизе, когда она читает..."
+    new "Zuerst sollte man das Aufklärungsbuch lesen und dann Lisa beim Lesen stören..."
+
+    # game/core/09_opportunities.rpy:4
+    old "от это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
+    new "Das ist großartig! Endlich durfte ich Lisas Brüste küssen! Und wie viele Möglichkeiten dies eröffnen kann... Das Wichtigste ist, dass man sich Zeit nimmt und diese Momente genießt."
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого и не портить Лизе настроение..."
+    new "Ich glaube, ich habe mich Lisa schon so weit angenähert, dass sie und Olivia am Freitagabend nichts gegen meine Gesellschaft haben werden. Ich musste nur darauf warten, um Lisa nicht die Laune zu verderben..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь Оливия может приходить к нам с ночёвкой, как и раньше. Эрик мне больше ничем не угрожает, а это значит я могу попытать удачу с Лизой и Оливией по ночам... Правда, здесь есть другой напряг - мама может проверить, чем мы занимаемся."
+    new "Jetzt kann Olivia zu uns kommen und bei uns übernachten, genau wie früher. Eric stört nicht mehr, was bedeutet, dass ich nachts mein Glück bei Lisa und Olivia versuchen kann... Es gibt aber noch eine anderes Problem, denn Mom könnte jederzeit nachsehen, was wir tun."
+

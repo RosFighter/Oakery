@@ -704,7 +704,7 @@ label alice_nopants_massage:
     scene BG tv-mass-05
     $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
     $ renpy.show('Alice tv-mass ' + _pose + 'c')
-    $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+    $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
     Alice_07 "Макс... Обожаю то, какие чудеса творят твои руки... Но будь осторожен, высовывая свой член... Мне не должно быть слишком щекотно..."
     Max_02 "Не будет."
 
@@ -715,7 +715,7 @@ label alice_nopants_massage:
     scene BG tv-mass-07
     $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
     $ renpy.show('Alice tv-mass ' + _pose + 'c')
-    $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+    $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
     menu:
         Alice_08 "Ты так в себе уверен, Макс... Ну посмотрим... Просто продолжай массировать мои ножки. Они у меня любят твой твёрдый... настрой."
         "{i}массировать её ноги выше{/i}":
@@ -728,7 +728,7 @@ label alice_nopants_massage:
     scene BG tv-mass-03
     $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
     $ renpy.show('Alice tv-mass ' + _pose + 'c')
-    $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+    $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
     Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... И они очень тебе благодарны. Чувствуешь, насколько?"
     Max_03 "А как же... Они у тебя шаловливые..."
     menu:
@@ -742,7 +742,7 @@ label alice_nopants_massage:
     # tv-mass-11 + tv-mass-(11/12)-max-alice + tv-mass-(11/12)-alice-01bn
     scene BG char Alice tv-mass-11
     $ renpy.show('Alice tv-mass ' + _pose + mgg.dress + 'c')
-    $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+    $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
     menu:
         Max_04 "{m}Похоже, Алиса не на шутку завелась! Она всё активнее дрочит мне своими ножками... Почему бы и мне не поласкать её киску, она ведь так близко и ничем на этот раз не прикрыта...{/m}"
         "{i}ласкать её киску пальцами{/i}":
@@ -755,7 +755,7 @@ label alice_nopants_massage:
     scene BG tv-mass-07
     $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
     $ renpy.show('Alice tv-mass ' + _pose + 'c')
-    $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+    $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
     Alice_09 "Ммм, Макс... Да... Какой же у меня похотливый брат! Как приятно!"
     Max_02 "{m}Ухх... Алиса начала сама тереться об мои пальцы! Теперь, она уже не хочет останавливаться...{/m}"
     menu:
@@ -767,7 +767,7 @@ label alice_nopants_massage:
             # tv-mass-15 + tv-mass-(15/16)-max-alice + tv-mass-(15/16)-alice-01bn
             scene BG char Alice tv-mass-15
             $ renpy.show('Alice tv-mass ' + _pose + mgg.dress + 'c')
-            $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+            $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
             Max_05 "{m}Алиса так жарко и классно трётся об мои пальцы своей киской! Её киска такая мокренькая от возбуждения, что никакого масла для массажа не надо...{/m}"
             Alice_10 "Ох, чёрт... Макс... Я больше не могу! Только не убирай свою руку оттуда... Я уже кончаю... Ахх!"
             Max_06 "{m}Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила!{/m}"
@@ -779,7 +779,7 @@ label alice_nopants_massage:
             scene BG tv-mass-03
             $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
             $ renpy.show('Alice tv-mass ' + _pose + 'c')
-            $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+            $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
             Alice_07 "Да... Такой массаж мне нравится... Вот бы всё время так!"
             Max_01 "Это запросто, Алиса! Наверно, хочешь теперь побыть одна и отдохнуть?"
             Alice_05 "Ага. Давай, засовывай свой член обратно, а то все ноги мне испачкаешь... Массаж классный, Макс... Спасибо!"
@@ -799,7 +799,7 @@ label alice_nopants_massage:
                 scene BG tv-mass-07
             $ renpy.show('Alice tv-mass ' + _pose + 'c')
             $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
-            $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+            $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
 
             Alice_06 "Макс, ты почему замедлился? Я хочу ещё, не останавливайся!"
             Max_03 "Хочешь узнать, что я умею делать языком?"
@@ -818,7 +818,7 @@ label alice_nopants_massage:
             $ renpy.show('Alice tv-mass ' + _pose + 'c')
             $ renpy.show('Max tv-mass ' + _pose + mgg.dress)
 
-            # $ renpy.show('FG Alice tv-mass ' + _pose + 'n')
+            # $ renpy.show('cloth1 Alice tv-mass ' + _pose + 'n')
 
             jump advanced_massage1_cuni
 
@@ -2330,7 +2330,7 @@ label gift_dress:
         else:
             scene BG char Alice spider-night-05
         $ renpy.show("Alice newdress 01"+__suf)
-        with Fade(0.4, 0, 0.3)
+        with fade4
         Alice_05 "Ну как, Макс? Мне идёт?"
         Max_05 "Выглядишь... шикарно!"
         $ renpy.show("Alice newdress 02"+__suf)
@@ -2466,7 +2466,7 @@ label gift_pajamas:
         if not ('09:00' <= tm < '20:00'):
             $ __suf += 'e'
         $ renpy.show('Alice newpajamas 01'+__suf)
-        with Fade(0.4, 0, 0.3)
+        with fade4
         if not _in_replay:
             $ SetCamsGrow(house[1], 150)
         menu:
@@ -2711,14 +2711,17 @@ label Alice_solar:
                 show Alice sun-alone 01a
             else:
                 show Alice sun-alone 01
+
             if kol_cream < 2:
-                Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
-                if kol_cream == 0:
-                    $ items['solar'].use()
-                    $ items['solar'].unblock()
+                call left_cream
+                # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
+                # if kol_cream == 0:
+                #     $ items['solar'].use()
+                #     $ items['solar'].unblock()
             elif kol_cream < 7:
-                Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
-                $ items['solar'].unblock()
+                call left_cream(1)
+                # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
+                # $ items['solar'].unblock()
             $ AddRelMood('alice', 5, 50, 2)
         "{i}сделать массаж с кремом{/i}" if all([kol_cream >= 7, learned_foot_massage()]):  # попытка сделать массаж с кремом
             $ _massaged = []
@@ -3240,13 +3243,15 @@ label massage_sunscreen:
             show Alice sun-alone 01
         $ spent_time += 10 + clip(int(round(5*len(_massaged), -1)), 0, 30)
         if kol_cream < 3 and mgg.massage < 2.0:
-            Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
-            if kol_cream == 0:
-                $ items['solar'].use()
-                $ items['solar'].unblock()
+            call left_cream
+            # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
+            # if kol_cream == 0:
+            #     $ items['solar'].use()
+            #     $ items['solar'].unblock()
         elif kol_cream < 7:
-            Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
-            $ items['solar'].unblock()
+            call left_cream(1)
+            # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
+            # $ items['solar'].unblock()
 
         jump Waiting
 
@@ -4215,7 +4220,7 @@ label gift_black_lingerie:
                 ###Алиса стоит в новом белье
                 scene BG char Alice newpajamas
                 $ renpy.show('Alice newlingerie '+'08' if '09:00' <= tm < '20:00' else '08e')
-                with Fade(0.4, 0, 0.3)
+                with fade4
                 Alice_01 "Ну, как тебе? Хорошо сидит? Вроде бы немного лифчик не того размера... Или нет... Ну, Макс, чего молчишь?"
                 Max_05 "Ну, я... э..."
                 Alice_05 "Контуженый что ли? Я тебя спрашиваю хорошо сидит или нет... Хотя... по тебе же всё сразу видно. Значит, всё в порядке..."
@@ -4232,7 +4237,7 @@ label gift_black_lingerie:
         $ __suf += 'e'
     scene BG char Alice newpajamas
     $ renpy.show('Alice newpajamas 01'+__suf)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Alice_03 "Макс, у тебя же есть инстинкт самосохранения, верно? Не вздумай подглядывать!"
     Max_01 "Ага..."
     if not _in_replay:
@@ -4483,7 +4488,7 @@ label gift_lace_lingerie:
     scene BG char Alice spider-night-04
     $ renpy.show('Max newbody2 01'+mgg.dress)
     $ renpy.show('Alice newbody2 '+renpy.random.choice(['01', '02', '03'])+alice.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Alice_12 "Неплохо это ты уселся в первых рядах, Макс! Отвернись хоть для приличия или живо пойдёшь гулять..."
     Max_02 "Я глаза закрою..."
 
@@ -4670,12 +4675,12 @@ label alice_private_punish_0:
         # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01a
         scene BG punish-sun 02
         $ renpy.show('Alice punish-sun 02-01'+mgg.dress+'a')
-        with Fade(0.4, 0, 0.3)
+        with fade4
     else:
         # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
         scene BG punish-sun 02
         $ renpy.show('Alice punish-sun 02-01'+mgg.dress)
-        with Fade(0.4, 0, 0.3)
+        with fade4
     Alice_05 "Ладно, давай здесь. Только не больно, хорошо? И не приставать!"
     Max_02 "Ага, раздевайся давай..."
 
@@ -4763,12 +4768,12 @@ label alice_private_punish_r:
         # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01a
         scene BG punish-sun 02
         $ renpy.show('Alice punish-sun 02-01'+mgg.dress+'a')
-        # with Fade(0.4, 0, 0.3)
+        # with fade4
     else:
         # punish-sun-02 + punish-sun-02-max-(01a/01b)-alice-01
         scene BG punish-sun 02
         $ renpy.show('Alice punish-sun 02-01'+mgg.dress)
-        # with Fade(0.4, 0, 0.3)
+        # with fade4
     Alice_05 "Мне же больше делать нечего, только и жду с самого утра, когда ты придёшь и накажешь меня!"
     Max_02 "Сама разденешься или помочь?"
     if alice_sun_topless():

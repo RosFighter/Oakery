@@ -9,7 +9,7 @@ label Eric_talk_afterdinner:
     scene BG talk-terrace-00
     show Eric meet 01a
     show Max talk-terrace 01a
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Eric_00 "Макс, пока твоя мама переодевается, я бы хотел с тобой поговорить. С глазу на глаз, так сказать..."
     if eric.flags.crush > 1:
         Max_01 "Конечно..."
@@ -695,7 +695,7 @@ label eric_ann_sleep:
                                 scene BG char Alice bed-night-01
                                 $ renpy.show('Alice sleep-night '+pose3_2)
                                 show Eric jerk off 02
-                                with Fade(0.4, 0, 0.3)
+                                with fade4
                                 jump frame_eric
                     if all([flags.eric_wallet == 2, flags.eric_photo2, len(house[1].cams)]):
                         # Макс шёл подглядывать за комнатой Анны
@@ -1328,7 +1328,7 @@ label sexed_lisa:
 
 label first_jerk_balkon:
     scene Eric jerk off 01
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Max_09 "{m}Опа, Эрик! Что это он там делает, дрочит что ли? Да... Ого! Эрик стоит посреди ночи и дрочит на спящую Алису! А я и не знал, что Эрик любитель такого...{/m}"
     menu:
         Max_03 "{m}Может, мне стоит сфотографировать его по-тихому в следующий раз?! Так, на всякий случай...{/m}"
@@ -1343,7 +1343,7 @@ label first_jerk_balkon:
 label first_jerk_yard:
     # eric-voyeur-yard-01
     scene Eric jerk off 00
-    with Fade(0.4, 0, 0.3)
+    with fade4
     menu:
         Max_07 "{m}Опа, Эрик! Что это он делает среди ночи у окна Алисы?!{/m}"
         "{i}Осторожно подсмотреть за ним с балкона{/i}":
@@ -1371,7 +1371,7 @@ label jerk_balkon:
     if not alice.sleepnaked:
         $ flags.eric_noticed = True
         scene Eric jerk off 01
-        with Fade(0.4, 0, 0.3)
+        with fade4
         if all([flags.eric_wallet == 2, flags.eric_photo1 == 1]):
             # запущен кошелёк, у Макса есть фото Эрика на балконе
             Max_13 "{m}Вот чёрт! Я совсем забыл, что Эрик заходит в комнату к Алисе только тогда, когда она голая... Чтобы подставить Эрика, Алиса должна быть голой, иначе будет несостыковка со снимками и мне никто не поверит!{/m}" nointeract
@@ -1388,7 +1388,7 @@ label jerk_balkon:
         scene BG char Alice bed-night-01
         $ renpy.show('Alice sleep-night '+pose3_2)
         show Eric jerk off 02
-        with Fade(0.4, 0, 0.3)
+        with fade4
         if all([flags.eric_wallet == 2, flags.eric_photo2, not len(house[1].cams)]):
             # Макс шёл подглядывать за комнатой Алисы, но у него не установленны скрытые камеры
             menu:
@@ -1416,7 +1416,7 @@ label jerk_yard:
         jump first_jerk_yard
 
     scene Eric jerk off 00
-    with Fade(0.4, 0, 0.3)
+    with fade4
     $ flags.eric_noticed = True
     $ eric.stat.mast += 1
     menu:
@@ -1434,7 +1434,7 @@ label jerk_photohant1:
         # (успел)
         # eric-voyeur-alice-01
         scene Eric jerk off 01
-        with Fade(0.4, 0, 0.3)
+        with fade4
         menu:
             Max_09 "{m}Вот и он! Всё ещё дрочит... Да так жёско! Смотри, шышку не сотри... Хотя нет, лучше стирай!{/m}"
             "{i}сфотографировать его{/i}":
@@ -1456,9 +1456,9 @@ label jerk_photohant1:
         scene BG char Alice bed-night-01
         $ renpy.show('Alice sleep-night '+pose3_2)
         if not alice.sleepnaked:
-            $ renpy.show('other Alice sleep-night '+pose3_2+alice.dress)
+            $ renpy.show('cloth1 Alice sleep-night '+pose3_2+alice.dress)
         $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
-        with Fade(0.4, 0, 0.3)
+        with fade4
         menu:
             Max_10 "{m}Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз...{/m}"
             "{i}уйти{/i}":
@@ -1477,7 +1477,7 @@ label jerk_photohant2:
         $ renpy.show('Alice sleep-night '+pose3_2)
         show Eric jerk off 02
         show FG photocamera
-        with Fade(0.4, 0, 0.3)
+        with fade4
         play sound "<from 1>audio/PhotoshootSound.ogg"
         menu:
             Max_05 "{m}Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!{/m}"
@@ -1492,7 +1492,7 @@ label jerk_photohant2:
         scene BG char Alice bed-night-01
         $ renpy.show('Alice sleep-night '+pose3_2)
         $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
-        with Fade(0.4, 0, 0.3)
+        with fade4
         menu:
             Max_10 "{m}Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз...{/m}"
             "{i}уйти{/i}":
@@ -1640,7 +1640,7 @@ label lisa_eric_sex_ed_practice:
                 scene BG talk-terrace-00
                 $ renpy.show('Eric talk-terrace 01'+eric.dress)
                 $ renpy.show('Max talk-terrace 01'+mgg.dress)
-                with dissolve #Fade(0.4, 0, 0.3)
+                with diss3 #fade4
 
                 Eric_13 "Я вижу, что ты точно не уймёшься и будешь мне только мешать. До меня дошли некоторые слухи, Макс... О твоей \"хозяйственности\"... И я сделаю так, что это выйдет тебе боком."
                 Max_15 "Надоели уже твои угрозы. Может отвалишь?"
@@ -1716,7 +1716,7 @@ label eric_about_practice_war:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
-    with dissolve #Fade(0.4, 0, 0.3)
+    with diss3 #fade4
     Eric_13 "Ну-ка стой, Макс. Ты совсем страх потерял?"
     Max_09 "Я тебя и не боялся!"
     Eric_09 "Признаюсь, я даже похлопать могу тому, что ты смог убедить Лизу отказаться от практических занятий, которые я хотел провернуть."
@@ -1810,7 +1810,7 @@ label lisa_eric_zero_practice_war:
             $ dishes_washed = True
             scene BG crockery-evening-00
             $ renpy.show("Max crockery-evening 01"+mgg.dress)
-            with dissolve
+            with diss3
             $ lisa.weekly.dishes += 1
             $ lisa.daily.dishes = 2
 
@@ -1826,7 +1826,7 @@ label lisa_eric_zero_practice_war:
 
             scene BG crockery-evening-00
             $ renpy.show("Max crockery-evening 01"+mgg.dress)
-            with dissolve
+            with diss3
 
             Max_11 "{m}Посуду лучше всё-таки помыть, а то Лиза вообще со мной ещё не скоро начнёт разговаривать...{/m}"
             $ dishes_washed = True

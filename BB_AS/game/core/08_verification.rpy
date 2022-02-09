@@ -103,10 +103,17 @@ init python:
         elif all([weekday==5, olivia.dcv.special.stage==1, olivia.dcv.feature.stage<5]):
             # пятница, после первых ночных посиделок, разговора с Оливией после ночного визита ещё не было
             rez = 5
-        elif all([weekday==5, olivia.dcv.feature.stage>4, olivia.dcv.special.done, flags.eric_banished]):
-            # пятница, после изгнания Эрика Оливия приходит днём
+        elif all([weekday==5, olivia.dcv.feature.stage>4, olivia.dcv.special.done, flags.eric_banished, lisa.flags.showdown_e<2]):
+            # пятница, после изгнания Эрика Оливия приходит днём, ещё не было
+            # разговора с Лизой о ночных визитах Оливии
             rez = 6
-
+        elif all([weekday in [0, 6], 6 > lisa.flags.showdown_e > 1]):
+            # состоялся разговор с Лизой о ночных визитах Оливии,
+            # Оливия ещё не может приходить при Анне ночью
+            rez = 7
+        elif all([weekday == 0, lisa.flags.showdown_e > 5]):
+            # Оливия может приходить ночью, поэтому днём приходит во вторник и воскресенье
+            rez = 8
         return rez
 
 
@@ -115,18 +122,19 @@ init python:
         if 'olivia' not in chars:
             return 0
 
-        if flags.eric_banished:
-            # после изгнания Эрика Оливия приходит только днём
-            return 0
-
         rez = 0
 
         if  all([GetWeekday(day)==6, olivia.dcv.feature.stage>3, olivia.dcv.special.done, not olivia.dcv.special.stage]):
             # ночь с пятницы на субботу, состоялась беседа о ночных посиделках, ночных посиделок ещё не было
             rez = 1
-        elif all([GetWeekday(day)==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done]):
+        elif all([GetWeekday(day)==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done, not flags.eric_banished]):
             # ночь с пятницы на субботу, состоялась беседа после первых ночных посиделках, прошел откат ночных посиделок
+            # Эрик ещё не изгнан
             rez = 2
+        elif all([GetWeekday(day)==6, olivia.dcv.feature.stage>4, olivia.dcv.special.done, lisa.flags.showdown_e > 5]):
+            # ночь с пятницы на субботу, состоялась беседа после первых ночных посиделках, прошел откат ночных посиделок
+            # Анна дала разрешение на ночные визиты Оливии
+            rez = 3
 
         return rez
 
@@ -147,10 +155,6 @@ init python:
             # 2 с пн-пт Лизу не наказывали, то: 2 помощи с уроками + 1 массаж рук + 2 мытья посуды
             # 3 с пн-пт Лизу наказывали и не было защиты или не поучилось защитить, то: 3 помощи с уроками + 2 массажа рук + 3 мытья посуды
             # 4 уговор с Лизой на ужастики-топлесс, но Макс больше 2х раз за неделю влез в душ, идёт 2хнедельный откат
-
-            if flags.eric_wallet == 2:
-                # 5 Эрик запустил кошелёк, девчонки смотрят кино без Макса
-                return 5
 
             lw = lisa.weekly
             if not lisa.dcv.shower.done:

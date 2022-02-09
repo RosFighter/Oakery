@@ -912,7 +912,7 @@ label breakfast_after_punishment:
     $ renpy.block_rollback()
 
     $ seat_Breakfast()
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     if day == 1:
         jump breakfast_first

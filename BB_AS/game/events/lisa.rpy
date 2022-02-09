@@ -8,7 +8,7 @@ label lisa_sleep_night:
     scene BG char Lisa bed-n-01
     $ AvailableActions['touch'].active = True
     $ renpy.show('Lisa sleep-night ' + pose3_1)
-    $ renpy.show('FG Lisa sleep-night ' + pose3_1+lisa.dress)
+    $ renpy.show('cloth1 Lisa sleep-night ' + pose3_1+lisa.dress)
     $ lisa.prev_plan = lisa.plan_name
     return
 
@@ -16,7 +16,7 @@ label lisa_sleep_night:
 label lisa_sleep_morning:
     scene BG char Lisa bed-m-01
     $ renpy.show('Lisa sleep-morning '+pose3_1)
-    $ renpy.show('FG Lisa sleep-morning '+pose3_1+lisa.dress)
+    $ renpy.show('cloth1 Lisa sleep-morning '+pose3_1+lisa.dress)
     $ lisa.prev_plan = lisa.plan_name
     return
 
@@ -241,486 +241,15 @@ label lisa_shower:
 
 
 label lisa_read:
-    scene BG char Lisa bed-mde-01
-    $ renpy.show('Lisa reading ' + pose3_1)
-    $ renpy.show('FG Lisa reading ' + pose3_1 + lisa.dress)
-    $ persone_button1 = ['Lisa reading ' + pose3_1, 'FG Lisa reading ' + pose3_1 + lisa.dress]
+    scene Lisa_read_phone read
+    $ persone_button1 = ['Lisa read myroom-bedlisa-mde-01-lisa-read-' +pose3_1, 'Lisa read myroom-bedlisa-mde-01-lisa-read-'+pose3_1+lisa.dress]
     $ lisa.prev_plan = lisa.plan_name
-
     return
 
 
 label lisa_read_closer:
-    scene BG char Lisa bed-mde-01
-    show Lisa reading 00
-    $ renpy.show('FG Lisa reading 00' + lisa.dress)
+    scene Lisa_read_phone talk_read
     return
-
-
-# label lisa_dressed_school:
-#     scene location house myroom door-morning
-#
-#     $ renpy.dynamic('r1', 'mood', 'suf')
-#     $ mood = 0
-#     if lisa.hourly.dressed:
-#         return
-#
-#     $ lisa.hourly.dressed = 1
-#     menu:
-#         Max_09 "{m}Сейчас Лиза должна собираться в школу...{/m}"        #Max_09 "{m}Похоже, Лиза собирается в школу...{/m}"
-#         "{i}войти в комнату{/i}":
-#             if random_outcome(40) and tm[-2:]=='00':
-#                 call lisa_sudden_dressing(0, -10) from _call_lisa_sudden_dressing    # "нулевой"
-#             elif random_outcome(45):
-#                 call lisa_sudden_dressing(1, -20) from _call_lisa_sudden_dressing_1    # неповезло
-#             else:
-#                 call lisa_sudden_dressing(2, -30) from _call_lisa_sudden_dressing_2    # повезло
-#             jump .end
-#         "{i}постучаться{/i}":
-#             menu:
-#                 Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
-#                 "{i}войти в комнату{/i}":
-#                     call lisa_sudden_dressing(1, -20) from _call_lisa_sudden_dressing_3
-#                 "Можно войти на секунду? Я только ноутбук возьму..." if flags.warning:
-#                     menu:
-#                         Lisa "{b}Лиза:{/b} Макс, дай одеться спокойно! Потом свой ноутбук заберёшь..."
-#                         "{i}забрать ноутбук{/i}":
-#                             $ lvl = get_lisa_emancipation()
-#                             $ mood = {
-#                                 1 : -50,
-#                                 2 : -30,
-#                                 3 : 0,
-#                                 }[lvl]
-#                             scene BG char Lisa dressing-02
-#                             call lisa_dress_first_second(renpy.random.choice(['h', 'h', 'p']),
-#                                                          lvl,
-#                                                          0,
-#                                                          renpy.random.randint(0, 1),
-#                                                          renpy.random.randint(0, 1),
-#                                                          0 if lvl < 3 else renpy.random.randint(0, 1)) from _call_lisa_dress_first_second
-#                             Lisa_11 "Макс! Я не одета!!! Быстро закрой дверь с той стороны и не входи, пока я не переоденусь!"
-#                             Max_09 "Лиза, мне ноутбук нужен для дела!"
-#                             Lisa_13 "Какого дела? Ты дома сидишь целыми днями и ничего не делаешь..."
-#                             menu:
-#                                 Lisa_12 "Ладно, неважно... Забирай свой ноутбук и уходи. Дай мне уже переодеться..."
-#                                 "{i}уйти с ноутбуком на веранду{/i}":
-#                                     $ spent_time += 10
-#                                     $ at_comp = True
-#                                     $ current_room = house[5]
-#                                     $ cam_flag.append('notebook_on_terrace')
-#                                     $ AddRelMood('lisa', 0, mood)
-#                                     jump Laptop
-#                         "Хорошо, я подожду...":
-#                             pass
-#                 "Хорошо, я подожду...":
-#                     pass
-#             $ spent_time = 10
-#             jump .end
-#         "{i}заглянуть в окно{/i}":
-#             jump .look_window
-#         "{i}уйти{/i}":
-#             $ spent_time = 10
-#             jump .end
-#
-#     label .look_window:
-#         $ spent_time = 10
-#         $ r1 = renpy.random.choice(['01', '02', '03', '04'])
-#         $ lisa.dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[r1]
-#
-#         if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
-#             scene BG char Lisa voyeur-01
-#             $ renpy.show('Lisa voyeur alt-'+r1)
-#             $ renpy.show('FG voyeur-lisa-01'+mgg.dress)
-#         else:
-#             scene BG char Lisa voyeur-00
-#             $ renpy.show('Lisa voyeur '+r1)
-#             $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
-#
-#         $ Skill('hide', 0.03, 10)
-#         menu:
-#             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
-#             "{i}уйти{/i}":
-#                 $ renpy.block_rollback()
-#                 $ alt_wait()
-#                 scene location house myroom door-morning
-#                 call screen room_navigation
-#                 # jump .end
-#
-#     # label .come_in:
-#     #     scene BG char Lisa morning
-#     #
-#     #     $ spent_time = 60 - int(tm.split(":")[1])
-#     #     if not lisa_was_topless():
-#     #         $ lisa.dress_inf = '01b'
-#     #         $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
-#     #         $ renpy.show('Lisa school-dressed 01'+suf)
-#     #         menu:
-#     #             Lisa_00 "Макс, ну чего ломишься? Ты же знаешь, что мне в школу пора...\n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
-#     #             "Это и моя комната!":
-#     #                 if lisa.GetMood()[0] < 0: # настроение не очень и ниже
-#     #                     show Lisa school-dressed 01
-#     #                     Lisa_12 "Так и знала, что тебя надо было на диванчики в гостиную отправлять... Ладно, я уже оделась, входи уж... А я в школу побежала."
-#     #                     Max_00 "Удачи"
-#     #                     $ rel  -= 5 # при плохом настроении отношения и настроение снижаются
-#     #                     $ mood -= 25
-#     #                 else: # нейтральное настроение
-#     #                     Lisa_02 "В любом случае, я уже оделась, так что, входи. А я побежала в школу."
-#     #                     Max_00 "Удачи"
-#     #             "Да чего я там не видел...":
-#     #                 if GetRelMax('lisa')[0] < 1: # отношения прохладные и ниже
-#     #                     Lisa_12 "Что бы ты там не видел, но подождать немного за дверью можно было? Так или иначе, я уже оделась и побежала в школу. Вернусь часа в четыре."
-#     #                     Max_00 "Пока, Лиза!"
-#     #                     $ rel  -= 5 # при низком отношении отношения и настроение снижаются
-#     #                     $ mood -= 25
-#     #                 elif GetRelMax('lisa')[0] < 2: # Неплохие отношения
-#     #                     Lisa_01 "А за дверью постоять не мог? А ладно, входи... Я уже оделась и побежала в школу."
-#     #                     Max_00 "Пока, Лиза!"
-#     #                 else: # хорошие и выше отношения
-#     #                     Lisa_02 "Но за дверью подождать немного ты всё равно мог! Хотя бы для приличия..."
-#     #                     show Lisa school-dressed 01a
-#     #                     Lisa_01 "Как бы там ни было, проходи... Я уже оделась и побежала в школу. Вернусь часа в четыре."
-#     #                     Max_00 "Пока, Лиза!"
-#     #                     $ mood += 25 # при хорошем отношении настроение повышается
-#     #             "Извини":
-#     #                 if GetRelMax('lisa')[0] < 2: # Неплохие отношения
-#     #                     Lisa_03 "Да ты у нас джентльмен! В общем, я тут закончила и побежала в школу. Пока!"
-#     #                 else:
-#     #                     Lisa_03 "Да ты у нас, оказывается, джентльмен!"
-#     #                     show Lisa school-dressed 01a
-#     #                     Lisa_01 "В общем, я тут закончила и побежала в школу. Пока!"
-#     #                 Max_00 "Пока, Лиза!"
-#     #                 $ mood += 25 # при извинении настроение повышается
-#     #     else:
-#     #         $ r1 = '0'+str(renpy.random.randint(3, 4))
-#     #         $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
-#     #         $ renpy.show('Lisa school-dressed '+r1+suf)
-#     #         menu:
-#     #             Lisa_09 "Макс, я в школу одеваюсь! И ты прекрасно это знал..."
-#     #             "Могла бы и не прикрываться...":
-#     #                 #спрайт в блузке и трусиках
-#     #                 show Lisa school-dressed 01b
-#     #                 if GetRelMax('lisa')[0] < 0:
-#     #                     # настроение не очень и ниже отношения и настроение снижаются
-#     #                     $ rel  -= 5
-#     #                     $ mood -= 25
-#     #                     Lisa_12 "А ты бы мог и за дверью подождать немного! Хотя бы для приличия..."
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01
-#     #                     Lisa_00 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-#     #                     Max_01 "Удачи!"
-#     #                 else:
-#     #                     # настроение нейтральное и выше
-#     #                     Lisa_02 "Могла бы... Но не буду, пока тут такие любознательные личности, как ты, лазят!"
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01a
-#     #                     Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-#     #                     Max_01 "Удачи!"
-#     #             "У тебя классная грудь, не стесняйся..." if r1==3:   # Лиза без верха
-#     #                 #спрайт в блузке и трусиках
-#     #                 show Lisa school-dressed 01b
-#     #                 if GetRelMax('lisa')[0] < 1:
-#     #                     # отношения прохладные и ниже отношения и настроение снижаются
-#     #                     $ rel  -= 5
-#     #                     $ mood -= 25
-#     #                     Lisa_12 "И что теперь, тебе можно на неё глазеть, когда захочешь?! Нет уж, не угадал!"
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01
-#     #                     Lisa_00 "Так или иначе, я уже оделась и побежала в школу."
-#     #                     Max_01 "Удачи!"
-#     #                 elif GetRelMax('lisa')[0] < 2:
-#     #                     # неплохие отношения
-#     #                     Lisa_00 "Ага, красивая... Но это не значит, что из-за этого я должна её тебе показывать!"
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01
-#     #                     Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-#     #                     Max_01 "Удачи!"
-#     #                 else:
-#     #                     # при хорошем (и выше) отношении настроение повышается
-#     #                     $ mood += 25
-#     #                     Lisa_02 "Спасибо! Но ты и так слишком часто её видишь... Хорошего должно быть понемножку!"
-#     #                     Max_03 "Не так часто, как хотелось бы."
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01a
-#     #                     Lisa_01 "Ладно, я уже оделась, входи уж... А я в школу побежала."
-#     #                     Max_01 "Удачи!"
-#     #             "Подумаешь, твою очаровательную попку без трусиков увижу..." if r1==4:   # Лиза без низа
-#     #                 #спрайт в маечке и трусиках
-#     #                 $ renpy.show('Lisa school-dressed 02'+suf)
-#     #                 if GetRelMax('lisa')[0] < 1:
-#     #                     # отношения прохладные и ниже отношения и настроение снижаются
-#     #                     $ rel  -= 5
-#     #                     $ mood -= 25
-#     #                     Lisa_12 "Мог бы и за дверью подождать немного! Хотя бы для приличия..."
-#     #                     #спрайт в юбке
-#     #                     show Lisa school-dressed 01c
-#     #                     Lisa_09 "Прекращай пялиться! Припёрся ни раньше и ни позже..."
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01
-#     #                     Lisa_00 "Можешь входить... А я в школу побежала."
-#     #                     Max_01 "Удачи!"
-#     #                 elif GetRelMax('lisa')[0] < 2:
-#     #                     # неплохие отношения
-#     #                     Lisa_00 "Так, на мою попку сильно не глазеть! Я тут переодеваюсь не для того, чтобы тебя порадовать."
-#     #                     #спрайт в юбке
-#     #                     show Lisa school-dressed 01c
-#     #                     Lisa_09 "Отвернись, Макс! Я чувствую, как ты пялишься на меня..."
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01
-#     #                     Lisa_01 "Можешь входить... А я в школу побежала."
-#     #                     Max_01 "Удачи!"
-#     #                 else:
-#     #                     #при хорошем (и выше) отношении настроение повышается
-#     #                     $ mood += 25
-#     #                     Lisa_02 "А вот и не увидишь! Когда надо, я могу их так быстренько одеть, как тебе и не снилось!"
-#     #                     Max_03 "Это правда! В моих снах ты делаешь это очень медленно..."
-#     #                     #спрайт в юбке
-#     #                     show Lisa school-dressed 01c
-#     #                     Lisa_05 "Так же медленно, как и эту юбку?"
-#     #                     Max_05 "О да! Примерно так же..."
-#     #                     #одетая
-#     #                     show Lisa school-dressed 01a
-#     #                     Lisa_01 "Так, представим, что я ничего не слышала! Можешь входить... А я в школу побежала."
-#     #                     Max_01 "Удачи!"
-#     #
-#     #     jump .rel_mood
-#     #
-#     # label .open_door2:
-#     #     # Лиза уже снимала майку во время ТВ
-#     #     $ spent_time = 20
-#     #     $ r1 = renpy.random.randint(3, 5)
-#     #     $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
-#     #     $ lisa.dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[r1]
-#     #     scene BG char Lisa morning
-#     #     $ renpy.show('Lisa school-dressed 0'+str(r1)+suf)
-#     #
-#     #     if r1 < 5:
-#     #         # Лиза без верха или без низа
-#     #         menu:
-#     #             Lisa_12 "Макс! Ты почему без стука входишь? Я не одета..."
-#     #             "У тебя классная грудь, не стесняйся..." if r1==3:
-#     #                 if GetRelMax('lisa')[0] < 1:
-#     #                     # отношения прохладные и ниже отношения и настроение снижаются
-#     #                     $ rel  -= 5
-#     #                     $ mood -= 25
-#     #                     Lisa_12 "И что теперь, тебе можно на неё глазеть, когда захочешь?! Нет уж, не угадал! Выйди быстро, пока маму не позвала!" nointeract
-#     #                 elif GetRelMax('lisa')[0] < 2:
-#     #                     # неплохие отношения
-#     #                     Lisa_00 "Ага, красивая... Но это не значит, что из-за этого я должна её тебе показывать! Выйди, пожалуйста..." nointeract
-#     #                 else:
-#     #                     # при хорошем (и выше) отношении настроение повышается
-#     #                     $ mood += 25
-#     #                     Lisa_02 "Спасибо! Но ты и так слишком часто её видишь... Хорошего должно быть понемножку! А теперь выйди, дай переодеться..." nointeract
-#     #             "Подумаешь, твою очаровательную попку без трусиков увижу..." if r1==4:
-#     #                 if GetRelMax('lisa')[0] < 1:
-#     #                     # отношения прохладные и ниже отношения и настроение снижаются
-#     #                     $ rel  -= 5
-#     #                     $ mood -= 25
-#     #                     Lisa_12 "Так, быстро выйди и жди за дверью! Хотя бы для приличия... Или мне маму позвать?" nointeract
-#     #                 elif GetRelMax('lisa')[0] < 2:
-#     #                     # неплохие отношения
-#     #                     Lisa_00 "Так, на мою попку сильно не глазеть! Будь добр, выйди и дверь закрой..." nointeract
-#     #                 else:
-#     #                     # при хорошем (и выше) отношении настроение повышается
-#     #                     $ mood += 25
-#     #                     Lisa_02 "А вот и не увидишь! Дай переодеться спокойно, нечего тут всяким любопытным личностям лазить..." nointeract
-#     #     else:
-#     #         # Лиза голая
-#     #         menu:
-#     #             Lisa_12 "Макс! Я не одета! Быстро закрой дверь с той стороны!"
-#     #             "Извини, я думал, что ты уже оделась. Хотя бы немного...":
-#     #                 pass
-#     #         if GetRelMax('lisa')[0] < 1:
-#     #             # отношения прохладные и ниже отношения и настроение снижаются
-#     #             $ rel  -= 5
-#     #             $ mood -= 25
-#     #             Lisa_12 "И что теперь, можно заходить когда вздумается и без стука?! Нет уж, не угадал! Выйди быстро, пока маму не позвала!" nointeract
-#     #         elif GetRelMax('lisa')[0] < 2:
-#     #             # неплохие отношения
-#     #             Lisa_00 "Не оделась... Но это не значит, что ты можешь вот просто так заходить без стука! Выйди, пожалуйста..." nointeract
-#     #         else:
-#     #             # при хорошем (и выше) отношении настроение повышается
-#     #             $ mood += 25
-#     #             Lisa_02 "Ещё нет! Считай, тебе повезло, но дай мне пожалуйста переодеться..." nointeract
-#     #     menu:
-#     #         "{i}уйти{/i}":
-#     #             scene location house myroom door-morning
-#     #             jump .rel_mood
-#     #
-#     # label .open_door:
-#     #     # Лиза ещё не снимала майку во время ТВ
-#     #     $ spent_time = 20
-#     #     $ r1 = renpy.random.randint(2, 5)
-#     #     $ suf = 'b' if GetRelMax('lisa')[0]>1 else 'a' if GetRelMax('lisa')[0]>=0 else ''
-#     #     $ lisa.dress_inf = {2:'02a', 3:'02c', 4:'02b', 5:'00'}[r1]
-#     #     scene BG char Lisa morning
-#     #     $ renpy.show('Lisa school-dressed 0'+str(r1)+suf)
-#     #
-#     #     $ mood -= 50 # настроение портится в любом случае
-#     #     if r1 < 3: # Лиза практически одета
-#     #         menu:
-#     #             Lisa_12 "Макс! Стучаться надо! А вдруг я была бы голая?! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
-#     #             "Ну, тогда мне бы повезло":
-#     #                 $ rel -= 5
-#     #                 Lisa_13 "Ну ты хам! Быстро закрой дверь с той стороны!"
-#     #                 Max_00 "Хорошо..."
-#     #             "Извини, я забыл...":
-#     #                 Lisa_01 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
-#     #                 Max_00 "Хорошо..."
-#     #                 $ mood += 50
-#     #     elif r1 < 5: # Лиза частично одета
-#     #         menu:
-#     #             Lisa_12 "Макс! Не видишь, я собираюсь в школу! Быстро закрой дверь! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
-#     #             "Извини... Кстати, отличный зад!" if r1 < 3:
-#     #                 if GetRelMax('lisa')[0] < 2:
-#     #                     $ rel -= 5
-#     #             "Извини..." if r1 > 2:
-#     #                 $ mood += 50
-#     #     else: # Лиза полностью голая
-#     #         menu:
-#     #             Lisa_12 "Макс! Я не одета! Быстро закрой дверь с той стороны! \n\n{color=[orange]}{i}{b}Подсказка:{/b} Клавиша [[ h ] или [[ ` ] - вкл/выкл интерфейс.{/i}{/color}"
-#     #             "А у тебя сиськи подросли!":
-#     #                 $ rel -= 5
-#     #                 menu:
-#     #                     Lisa_11 "Что?! Я всё маме расскажу!"
-#     #                     "Всё, всё, ухожу!":
-#     #                         pass
-#     #                     "Уже ухожу, но сиськи - супер!":
-#     #                         $ rel -= 5
-#     #                         menu:
-#     #                             Lisa_12 "..."
-#     #                             "{i}Бежать{/i}":
-#     #                                 pass
-#     #             "Извини, я не хотел...":
-#     #                 Lisa_12 "Установил бы замки на двери, не было бы таких проблем. А теперь выйди и подожди за дверью. Пожалуйста."
-#     #                 Max_00 "Хорошо..."
-#     #                 if GetRelMax('lisa')[0] > 1:
-#     #                     $ mood += 50
-#     #
-#     #     scene location house myroom door-morning
-#     #
-#     # label .rel_mood:
-#     #     $ AddRelMood('lisa', rel, mood)
-#
-#     label .end:
-#         jump Waiting
-#
-#
-# label lisa_dressed_shop:
-#     scene location house myroom door-morning
-#
-#     if lisa.hourly.dressed:
-#         return
-#
-#     $ renpy.dynamic('mood', 'rel', 'warned', 'r1')
-#
-#     $ mood = 0
-#     $ rel = 0
-#     $ warned = False
-#     $ lisa.hourly.dressed = 1
-#     $ spent_time = 10 # 60 - int(tm[-2:])
-#     menu .lisa_dressed:
-#         Max_09 "Кажется, все собираются на шоппинг и Лиза сейчас переодевается..."
-#         "{i}постучаться{/i}":
-#             jump .knock
-#         "{i}открыть дверь{/i}":
-#             jump .open_door
-#         "{i}заглянуть в окно{/i}":
-#             jump .look_window
-#         "{i}уйти{/i}":
-#             $ spent_time = 10
-#             jump .rel_mood
-#
-#     menu .knock:
-#         Lisa "{b}Лиза:{/b} Кто там? Я переодеваюсь!"
-#         "Это я, Макс. Можно войти?":
-#             menu:
-#                 Lisa "{b}Лиза:{/b} Нет, Макс, нельзя! Я переодеваюсь. Жди там."
-#                 "{i}открыть дверь{/i}":
-#                     $ warned = True
-#                     jump .open_door
-#                 "Хорошо...":
-#                     jump .rel_mood
-#         "Можно войти на секунду? Я только ноутбук возьму..." if flags.warning:
-#             jump get_laptop
-#         "Хорошо, я подожду...":
-#             jump .rel_mood
-#
-#     label .open_door:
-#         $ spent_time = 20
-#         $ r1 = renpy.random.randint(3, 5)
-#         $ lisa.dress_inf = {3:'02c',4:'02b',5:'00'}[r1]
-#         scene BG char Lisa morning
-#         if GetRelMax('lisa')[0] < 0:
-#             $ renpy.show('Lisa school-dressed 0'+str(r1))
-#         elif GetRelMax('lisa')[0] < 2:
-#             $ renpy.show('Lisa school-dressed 0'+str(r1)+'a')
-#         else:
-#             $ renpy.show('Lisa school-dressed 0'+str(r1)+'b')
-#
-#         if warned:
-#             $ mood -= 150
-#             $ rel -= 15
-#             $ phrase = _("Я же сказала, что я не одета! ")
-#         else:
-#             $ mood -= 50 # настроение портится в любом случае
-#             $ phrase = _("Я не одета! ")
-#
-#         menu:
-#             Lisa_12 "Макс! [phrase!t]Быстро закрой дверь с той стороны!"
-#             "Извини... Кстати, отличный зад!" if r1 == 2:
-#                 if GetRelMax('lisa')[0] < 2:
-#                     $ rel -= 5
-#             "А у тебя сиськи подросли!":
-#                 menu:
-#                     Lisa_11 "Что?! Я всё маме расскажу!"
-#                     "Всё, всё, ухожу!":
-#                         jump .rel_mood
-#                     "Уже ухожу, но сиськи - супер!":
-#                         $ mood -= 50
-#                         $ rel -= 5
-#                         menu:
-#                             Lisa_12 "..."
-#                             "{i}Бежать{/i}":
-#                                 jump .rel_mood
-#             "Извини, я не хотел...":
-#                 $ mood += 50
-#                 $ rel += 5
-#                 jump .rel_mood
-#
-#     label .look_window:
-#         $ spent_time = 10
-#         $ r1 = renpy.random.choice(['03', '04', '05', '06'])
-#         $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[r1]
-#         scene BG char Lisa voyeur-00
-#         $ renpy.show('Lisa voyeur '+r1)
-#         $ renpy.show('FG voyeur-lisa-00'+mgg.dress)
-#         $ Skill('hide', 0.03, 10)
-#         menu:
-#             Max_01 "Ого, какой вид! Вот это я удачно заглянул!"
-#             "{i}уйти{/i}":
-#                 jump .rel_mood
-#
-#     scene location house myroom door-morning
-#
-#     label .rel_mood:
-#         $ AddRelMood('lisa', rel, mood)
-#
-#     jump Waiting
-#
-#
-# label get_laptop:
-#     scene BG char Lisa morning
-#     show Lisa school-dressed 02b
-#     Lisa_00 "Мог бы и подождать немного. Ты что, без ноутбука и часа прожить не можешь?"
-#     Max_00 "Лиза, мне ноутбук нужен для дела."
-#     Lisa_00 "Какого дела? Ты дома сидишь целыми днями и ничего не делаешь..."
-#     Lisa_00 "Ладно, неважно... Забирай свой ноутбук и уходи. Дай мне уже переодеться..."
-#     $ spent_time += 10
-#     $ at_comp = True
-#     $ current_room = house[5]
-#     $ cam_flag.append('notebook_on_terrace')
-#     jump Laptop
-#
 
 
 label lisa_dressed:
@@ -911,7 +440,7 @@ label lisa_dressed:
         $ pose, var = get_lisa_dress_pose(0)
         scene BG char Lisa dressing-02
         $ renpy.show('Lisa dressing '+pose, at_list=[stay_in_room,])    # добавить увеличение и положение
-        with dissolve
+        with diss3
         if flags.eric_wallet == 2:
             # Макс на сроке за воровство
             Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
@@ -1106,13 +635,13 @@ label lisa_dressed:
         hide screen Cookies_Button
         window hide
         $ hide_say()
-        scene BG char Max bed-mde-01 with dissolve
+        scene BG char Max bed-mde-01 with diss3
         pause(1)
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
         $ lisa.prev_plan = lisa.plan_name
         $ renpy.block_rollback()
-        scene BG black with dissolve
+        scene BG black with diss3
         jump AfterWaiting
 
     label .wait_outside:
@@ -1128,7 +657,7 @@ label lisa_dressed:
         $ lisa.prev_plan = lisa.plan_name
 
         $ renpy.block_rollback()
-        scene BG black with dissolve
+        scene BG black with diss3
         if lisa.plan_name == 'dressed':
             if weekday in [0, 6]:
                 $ spent_time = 40 - int(tm[-2:])
@@ -1174,22 +703,6 @@ label lisa_dressed:
         jump Waiting
 
 
-# label lisa_dressed_repetitor:
-#     scene location house myroom door-morning
-#
-#     if lisa.hourly.dressed:
-#         return
-#
-#     # добавить возможность подглядываать после начала секс.обучения Лизы у АиЭ
-#     menu:
-#         Max_09 "Кажется, Лиза куда-то собирается, но дверь закрыта..."
-#         "{i}уйти{/i}":
-#             $ lisa.hourly.dressed = 1
-#
-#     label .end:
-#         jump Waiting
-
-
 label lisa_swim:
     scene image 'Lisa swim '+pose3_1+lisa.dress
     $ persone_button1 = 'Lisa swim '+pose3_1+lisa.dress+'b'
@@ -1220,18 +733,14 @@ label lisa_dishes_closer:
 
 
 label lisa_phone:
-    scene BG char Lisa bed-mde-01
-    $ renpy.show('Lisa phone-evening ' + pose3_1)
-    $ renpy.show('FG Lisa phone-evening ' + pose3_1 + lisa.dress)
-    $ persone_button1 = ['Lisa phone-evening ' + pose3_1, 'FG Lisa phone-evening ' + pose3_1 + lisa.dress]
+    scene Lisa_read_phone phone
+    $ persone_button1 = ['Lisa read myroom-bedlisa-mde-01-lisa-phone-'+pose3_1, 'Lisa read myroom-bedlisa-mde-01-lisa-phone-'+pose3_1+lisa.dress]
     $ lisa.prev_plan = lisa.plan_name
     return
 
 
 label lisa_phone_closer:
-    scene BG char Lisa bed-mde-01
-    show Lisa phone-evening 00
-    $ renpy.show('FG Lisa phone-evening 00' + lisa.dress)
+    scene Lisa_read_phone talk_phone
     return
 
 
@@ -1408,7 +917,7 @@ label lisa_select_movie:
         # первый просмотр ужастика
         jump lisa_horor_movie_0
 
-    elif lisa.dcv.special.stage < 8:
+    elif lisa.dcv.special.stage < 15:
         # периодический просмотр ужастика
         jump lisa_horor_movie_r
 
@@ -1417,7 +926,7 @@ label lisa_romantic_movie_0:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
     Lisa_02 "А я пока свет выключу."
@@ -1481,7 +990,7 @@ label lisa_romantic_movie_r:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
     Lisa_02 "А я пока свет выключу."
@@ -1577,7 +1086,7 @@ label lisa_horor_movie_0:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     Max_01 "Да, смотрим. Сейчас всё подготовлю..."
     Lisa_02 "А я пока свет выключу. Тебе уже страшно?"
@@ -1658,7 +1167,7 @@ label lisa_horor_movie_r:
 
     scene BG myroom-night-talk-01
     $ renpy.show("Lisa myroom-night-talk 01"+lisa.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Lisa_01 "Ну что, Макс, смотрим кино или как?"
     if all([lisa.dcv.other.stage==1, lisa.dcv.other.done, lisa.dcv.shower.done]):
         Max_01 "Да, смотрим. Сейчас всё подготовлю... Не стесняйся, снимай маечку."

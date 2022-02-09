@@ -41,7 +41,7 @@ label Sleep:
         "{i}спать до утра{/i}":
             $ alarm_time = '08:00'
     $ renpy.show('Max sleep-night '+pose3_3)
-    $ renpy.show('FG Max sleep-night '+pose3_3)
+    $ renpy.show('cloth1 Max sleep-night '+pose3_3)
 
     call bedtime_thoughts from _call_bedtime_thoughts
 
@@ -60,7 +60,7 @@ label Wearied:
     # прождали все доступное время - спим до восьми
     scene BG char Max bed-night-01
     $ renpy.show('Max sleep-night '+pose3_1)
-    $ renpy.show('FG Max sleep-night '+pose3_1)
+    $ renpy.show('cloth1 Max sleep-night '+pose3_1)
     menu:
         Max_10 "{m}Моя голова уже совсем не соображает, нужно ложиться спать...{/m}"
         "{i}спать до утра{/i}":
@@ -88,7 +88,7 @@ label LittleEnergy:
                 $ renpy.show('Max nap '+pose3_1+mgg.dress)
             else:
                 $ renpy.show('Max sleep-night '+pose3_1)
-                $ renpy.show('FG Max sleep-night '+pose3_1)
+                $ renpy.show('cloth1 Max sleep-night '+pose3_1)
                 call bedtime_thoughts from _call_bedtime_thoughts_1
 
             Max_19 "{m}Как же в этом доме хорошо...{/m}"
@@ -128,7 +128,7 @@ label Nap:
             jump AfterWaiting
 
     $ renpy.show('Max nap ' + pose3_1)
-    $ renpy.show('FG Max nap ' + pose3_1 + mgg.dress)
+    $ renpy.show('cloth1 Max nap ' + pose3_1 + mgg.dress)
     Max_19 "{m}Как же в этом доме хорошо...{/m}"
     $ status_sleep = True
     jump Waiting
@@ -146,7 +146,7 @@ label Alarm:
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
     $ renpy.show('Max sleep-night '+pose3_2)
-    $ renpy.show('FG Max sleep-night '+pose3_2)
+    $ renpy.show('cloth1 Max sleep-night '+pose3_2)
 
     call bedtime_thoughts from _call_bedtime_thoughts_2
 
@@ -667,18 +667,23 @@ label BookRead:
     label .sex_ed:
         $ items['sex.ed'].read += 1
         if items['sex.ed'].read < 2:
-            # выбрали читать книгу
-            $ poss['seduction'].open(13)
-            $ items['sex.ed'].block()
+            if not poss['seduction'].used(16):
+                # выбрали читать книгу
+                $ poss['seduction'].open(13)
+                $ items['sex.ed'].block()
             Max_01 "Ага. У каждого есть свои особенности, а то я не знал! Вот, строение половых органов девочки-подростка, то что надо... Будем читать и разглядывать.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
         elif items['sex.ed'].read < 3:
-            Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
+            Max_03 "Так, это не особо интересно... А вот сексуальное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}" id BookRead_sex_ed_2c2e756a
         elif items['sex.ed'].read < 4:
             Max_07 "Ого, здесь даже есть краткий исторический очерк о сексуальном воспитании детей и подростков... Как только голову не дурили за всё это время!\n\n{color=[orange]}{i}(Книга изучена на 75%%){/i}{/color}"
         else:
-            # чтение завершено, можно дарить
-            $ poss['seduction'].open(14)
-            Max_04 "Вот и последние главы... Всё-таки прикосновения очень важны! Да я и на практике уже это понял... Эх, надо было раньше эту книжку купить! Но лучше поздно, чем никогда. Материал усвоен и теперь можно дарить её Лизе."
+            if not poss['seduction'].used(16):
+                # чтение завершено, можно дарить
+                $ poss['seduction'].open(14)
+                Max_04 "Вот и последние главы... Всё-таки прикосновения очень важны! Да я и на практике уже это понял... Эх, надо было раньше эту книжку купить! Но лучше поздно, чем никогда. Материал усвоен и теперь можно дарить её Лизе."
+            else:
+                Max_04 "Вот и последние главы... Кажется, я понял о чём говорила Лиза. Эх, надо было раньше эту книжку прочитать, сейчас бы не тратил на это время! Но лучше поздно, чем никогда. Материал усвоен и теперь можно снова приставать к Лизе."
+                $ lisa.dcv.seduce.stage = 8
         jump .end
 
     label .end:

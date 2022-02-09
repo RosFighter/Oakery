@@ -84,11 +84,11 @@ label StartPunishment:
         if tm < "14:00":
             scene BG punish-morning 00
             $ renpy.show("Ann punish-morning 00"+ann.dress)
-            with Fade(0.4, 0, 0.3)
+            with fade4
         else:
             scene BG punish-evening 00
             $ renpy.show("Ann punish-evening 00"+ann.dress)
-            with Fade(0.4, 0, 0.3)
+            with fade4
 
         if newpunishment == 0 and flags.dinner>=12:
             jump first_new_punishment

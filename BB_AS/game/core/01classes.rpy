@@ -1516,6 +1516,10 @@ init python:
         Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", 'flags.eric_wallet == 1')
         Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable='flags.eric_wallet == 3', sleep=True, extend=True)
 
+        # в ближайшую пятницук, после разговора с Лизой об изгнании Эрика
+        Lisa_ab_Olivia  = CutEvent('10:00', (5,), 'lisa_about_olivia_5', "разговор с Лизой о посиделках с Оливией", "all([flags.eric_wallet>3, lisa.flags.showdown_e==1])", cut=True)
+        Meet_Olivia_Ann = CutEvent('15:00', (6,), 'olivia_ann_meeting', "знакомство Оливии с Анной", "all([lisa.flags.showdown_e==2, not olivia.flags.incident])", cut=True)
+
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки
             lst = []

@@ -433,7 +433,7 @@ label first_photoset:
 
     scene BG char Kira dresses
     show Kira dresses 01
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Kira_01 "А что, отличная идея! Только немного подожди, я переоденусь в свою ночнушку... Она ведь довольно сексуальная, как ты считаешь?"
     Max_02 "Да, но у меня есть идея получше."
 
@@ -766,7 +766,7 @@ label kira_about_photo2:
     # annroom-morning-01 + dresses-kira-04a
     scene BG annroom-morning-01
     show Kira dresses 04a
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Kira_06 "В общем, на этот раз мне нужна серия снимков в стиле... БДСМ... Верёвки, кожа, вот это всё..."
     Max_03 "Ого, круто!"
     Kira_07 "А чего ты так радуешься, я же не сказала кого привязывать будем..."
@@ -1213,7 +1213,7 @@ label kira_photoset3:
     $ renpy.dynamic('ch')
 
     if not _in_replay:
-        scene BG black with Fade(0.4, 0, 0.3)
+        scene BG black with fade4
 
     #фоновая картинка с загорающей Кирой
     call kira_sun from _call_kira_sun
@@ -1232,7 +1232,7 @@ label kira_photoset3:
     # annroom-morning-01 + dresses-kira-04a
     scene BG annroom-morning-01
     show Kira dresses 04a
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Kira_05 "Немного подожди за дверью. Я подготовлюсь. Только не подглядывай, Макс! Хорошо?"
     Max_11 "Ладно, не буду."
 

@@ -5,7 +5,7 @@ label shoping:
     scene BG shopping-go-00
     show other shopping-go-01
     show FG shopping-go-00
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     menu:
         Ann_05 "Макс! Мы ушли на шоппинг. Не скучай тут без нас, хорошо? Вернёмся часа через 3..."
@@ -27,7 +27,7 @@ label back_shoping:
     $ current_room = house[6]
     scene BG incoming-00
     show other shopping-go-02
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     if flags.back_shop == 1:
         ## --- Девчонки возвращаются с первого шоппинга
@@ -117,7 +117,7 @@ label MeetingEric:
     scene BG char Max meet-eric-villa-00
     show Ann meet-Eric 01a
     show Eric meet 01a
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Ann_00 "Макс, подойди пожалуйста. К нам приехал Эрик. Знакомься..."
     show Max meet-Eric 01a
     menu:
@@ -239,7 +239,7 @@ label Kira_arrival:
     $ renpy.block_rollback()
     scene BG delivery-01
     $ renpy.show("Kira arrival 01"+ann.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Ann_05 "Ну что, дети, дождались? Встречайте, к нам приехала тётя Кира!"
     Max_05 "Супер!"
     menu:
@@ -288,7 +288,7 @@ label Kira_arrival:
     $ renpy.show("Ann Kira-arrival 03"+ann.dress)
     $ renpy.show("Lisa Kira-arrival 03"+lisa.dress)
     show Alice Kira-arrival 03
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     Kira_01 "Так как у меня было время подготовиться к встрече с вами, я приехала не с пустыми руками и привезла вам кое-что..."
     Max_03 "Ух-ты!"
@@ -305,7 +305,7 @@ label Kira_arrival:
             pass
 
     scene BG punish-morning 00
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Max_11 "{m}Ну где они все?! Если я начну завтракать без них, то потом все только и будут говорить о моей невоспитанности. Давайте уже быстрее!{/m}"
 
     ## Примерка Лизы
@@ -380,12 +380,12 @@ label follow_cameras_eric:
     scene BG char Lisa bed-n-01
     $ AvailableActions['touch'].active = True
     $ renpy.show('Lisa sleep-night ' + pose3_1)
-    $ renpy.show('FG Lisa sleep-night ' + pose3_1+lisa.dress)
-    with Fade(0.4, 0, 0.3)
+    $ renpy.show('cloth1 Lisa sleep-night ' + pose3_1+lisa.dress)
+    with fade4
     pause 1.5
     # веранда
     scene location house terrace night-b
-    with Fade(0.4, 0, 0.3)
+    with fade4
     pause .5
     # экран ноутбука
     scene BG char Max laptop-night-01t
@@ -402,7 +402,7 @@ label follow_cameras_eric:
         $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
         show Eric cams Alice-room 02 at laptop_screen
         show FG cam-shum-act at laptop_screen
-        with dissolve
+        with diss3
         menu:
             Max_09 "{m}Неутомимый Эрик! Вали уже обратно к маме в комнату и засыпай. А то у меня тоже есть дела у Алисы в комнате...{/m}"
             "{i}подождать{/i}":
@@ -414,14 +414,14 @@ label follow_cameras_eric:
     $ renpy.show('BG-cam house aliceroom-0 night', at_list=[laptop_screen,])
     $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    with dissolve
+    with diss3
     pause 1
     # комната Анны с Эриком
     scene BG char Max laptop-night-01t
     $ renpy.show('BG-cam house annroom-0 night', at_list=[laptop_screen,])
     $ renpy.show('Eric cams sleep2 '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    with dissolve
+    with diss3
     # Эрик покинул комнату Алисы
     menu:
         Max_01 "{m}Отлично! Пора...{/m}"
@@ -433,7 +433,7 @@ label frame_eric:
     scene BG char Alice bed-night-01
     $ renpy.show('Alice sleep-night '+pose3_2)
     $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     if pose3_2 == '01':
         Max_07 "{m}О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её совершенно обнажённого тела хочется смотреть вечно!{/m}" nointeract
@@ -462,7 +462,7 @@ label frame_eric:
             pass
 
     # aliceroom-bedalice-night-02 + alice-sleep-night-(04/05/06) + max-night-(04b/04c) + alice-sleep-night-(04cum/05cum/06cum)
-    $ renpy.show('other Max frame-eric '+pose3_2)
+    $ renpy.show('FG Max frame-eric '+pose3_2)
     menu:
         Max_08 "{m}Фух! Вроде, не проснулась... Надеюсь, этого хватит, чтобы утром Алиса забила тревогу. Наверняка, она сразу подумает, что это я её чем-то испачкал. И вот тогда-то я и покажу снимки с Эриком, а уже всю картину воедино она сложит сама. Если я, конечно, смогу уйти незамеченным в свою комнату...{/m}"
         "{i}осторожно идти спать{/i}":
@@ -474,7 +474,7 @@ label frame_eric:
 label showdown_with_eric:
     # Алиса утром будит Макса
 
-    scene BG black with Fade(0.4, 0, 0.3)
+    scene BG black with fade4
     $ alice.dress = alice.clothes.sleep.GetCur().suf
 
     # morning-oops-01 + morning-oops-01-lisa-02a + morning-oops-01-alice-(01a/01b)
@@ -490,7 +490,7 @@ label showdown_with_eric:
     Alice_06 "Так я и знала, что это гадость какая-то! Ну так что это?"
     Max_01 "Это Эрик с тобой кое-чем... поделился..."
 
-    scene BG black with dissolve # Fade(0.2, 0, 0.2)
+    scene BG black with diss3 # Fade(0.2, 0, 0.2)
     # morning-oops-04-05 + morning-oops-04-alice-(01a/01b) + morning-oops-04-max-01
     scene BG char Lisa morning-oops 04-05
     $ renpy.show('Alice wake up 04' + alice.dress)
@@ -527,7 +527,7 @@ label showdown_with_eric:
     menu:
         Alice_17 "Вот я Эрику с мамой сейчас устрою! Макс, пошли за мной!"
         "{i}идти за Алисой{/i}":
-            scene BG black with Fade(0.4, 0, 0.3)
+            scene BG black with fade4
 
     # annroom-morning-01 + eric-dresses-morning-01 + ann-dresses-morning-05c
     scene BG char Ann mde-01
@@ -592,7 +592,7 @@ label showdown_with_eric:
     Ann_20 "Я сказала, {b}ПОШЁЛ ВОН НЕМЕДЛЕННО!!!{/b}"
     Alice_17 "И полотенце можешь оставить себе, грязное животное! Убирайся!"
 
-    scene BG black with dissolve # Fade(0.2, 0, 0.2)
+    scene BG black with diss3 # Fade(0.2, 0, 0.2)
     # sexed-hj + annroom-sud-01-alice-(04a/04b) + annroom-sud-01-ann-04 + annroom-sud-01-lisa-04 + annroom-sud-01-max-04
     scene BG char Eric sexed-hj
     $ renpy.show('Alice showdown annroom 04' + alice.dress)
@@ -639,12 +639,12 @@ label showdown_with_eric:
 
 label dictaphone_showdown_with_eric:
     # разборки с Эриком используя диктофон
-    scene BG black with dissolve
+    scene BG black with diss3
 
     # lounge-tv-00 + lounge-tv-ann&eric-hjbj(01/01a)
     scene BG lounge-tv-00
     $ renpy.show('Eric tv 01' + eric.dress)
-    # with Fade(0.4, 0, 0.3)
+    # with fade4
     Ann_13 "Макс! Лиза! Алиса! Ну зачем так неожиданно влетать?! Так и заикой стать не долго..."
     Lisa_13 "Извини, мама... Но сейчас кто-то действительно станет заикой! Ты хоть знаешь, какие планы строит Эрик?"
     Ann_15 "Это что за тон, Лиза?! И что это за вопрос? Что происходит?!"
@@ -708,7 +708,7 @@ label dictaphone_showdown_with_eric:
     show Alice showdown lounge 05
     $ renpy.show('Lisa showdown lounge 05' + lisa.dress)
     $ renpy.show('Max showdown lounge 05' + mgg.dress)
-    with dissolve
+    with diss3
 
     Max_00 "Мам, ты только не расстраивайся так из-за него. Всякое бывает..."
     Ann_14 "Всё никак в голове не укладывается, что Эрик тут с вами собирался творить... И что я за мать после этого? Я в шоке..."
@@ -725,7 +725,7 @@ label dictaphone_showdown_with_eric:
     scene BG tv-ero-04
     $ renpy.show('Lisa showdown lounge 06' + lisa.dress)
     $ renpy.show('Max showdown lounge 06' + mgg.dress)
-    with dissolve
+    with diss3
 
     Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
     Lisa_01 "Не бери в голову, мам. Не вини себя, всё ведь хорошо. Мы с тобой."
@@ -736,7 +736,7 @@ label dictaphone_showdown_with_eric:
     Ann_02 "Надеюсь... Ну всё, мне уже дышать нечем. Пора делами заниматься. Я вас очень люблю..."
     Lisa_05 "И мы тебя!"
 
-    scene BG black with dissolve
+    scene BG black with diss3
     $ spent_time = 0
     $ tm = '22:00'
     $ flags.asked_phone = 4
@@ -836,18 +836,18 @@ label failed_dinner:
     menu:
         Eric_01 "Не переживай, Макс, я позабочусь обо всех, пока ты будешь тянуть лямку в армии..."
         "{i}собираться в военный лагерь{/i}":
-            scene BG black with dissolve
+            scene BG black with diss3
             # villa-delivery-01 + max-badend-01
             scene BG delivery-01
             show Max bad-end 01a
-            with dissolve
+            with diss3
             Max_14 "{m}Вот так и закончилась моя история. Больше мне не верили и не хотели меня видеть. Конечно, если бы не Эрик, всё было бы хорошо, но этот гад... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
         "{i}накинуться на Эрика{/i}":
-            scene BG black with dissolve
+            scene BG black with diss3
             # villa-delivery-e-01 + max-badend-01a
             scene BG delivery-01
             show Max bad-end 01b
-            with dissolve
+            with diss3
             Max_14 "{m}Вот так и закончилась моя история. От всей этой несправедливости я немного слетел с катушек и почти размазал Эрика по балкону... Почти... Теперь ему ничто не помешает сделать с моей семьёй всё, что он задумал... Вот если бы я мог вернуться в прошлое... Но есть ли в этом смысл?{/m}" nointeract
 
     menu:
@@ -860,3 +860,18 @@ label failed_dinner:
             $ renpy.quit()
 
     $ renpy.full_restart()
+
+
+label left_cream(vr=0):
+
+    if vr == 0:
+        Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
+        if kol_cream == 0:
+            $ items['solar'].use()
+            $ items['solar'].unblock()
+
+    elif vr == 1:
+        Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
+        $ items['solar'].unblock()
+
+    return

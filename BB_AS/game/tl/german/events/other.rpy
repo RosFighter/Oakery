@@ -1730,3 +1730,18 @@ translate german strings:
     # game/events/other.rpy:835
     old "{i}выйти из игры{/i}"
     new "{i}Spiel verlassen{/i}"
+
+# TODO: Translation updated at 2022-01-27 20:23
+
+# game/events/other.rpy:868
+translate german left_cream_68a6f9b5:
+
+    # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
+    Max_10 "{m}Nun, wir haben keine Creme mehr. Ich muss noch mehr davon kaufen.{/m}"
+
+# game/events/other.rpy:874
+translate german left_cream_61f00467:
+
+    # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
+    Max_08 "{m}Es ist nicht mehr viel Creme übrig, das nächste Mal wird es vielleicht nicht mehr reichen, also lieber vorher kaufen.{/m}"
+

@@ -5,7 +5,7 @@ label cam0_alice_sleep_night:
 
     $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
     if not alice.sleepnaked:
-        $ renpy.show('other Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+        $ renpy.show('cloth1 Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
 
     if flags.eric_jerk and '02:00'<=tm<'02:30':
         # показываем дрочащего Эрика
@@ -107,7 +107,7 @@ label cam0_alice_sleep_night:
 label cam0_alice_sleep_morning:
     $ renpy.show('Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
     if not alice.sleepnaked:
-        $ renpy.show('other Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
+        $ renpy.show('cloth1 Alice cams sleep morning '+cam_poses_manager(alice, ['01', '02', '03'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_sleep' not in cam_flag:
         $ cam_flag.append('alice_sleep')

@@ -465,7 +465,7 @@ translate german BookRead_sex_ed_e2e2e4d9:
 # game/events/max.rpy:664
 translate german BookRead_sex_ed_2c2e756a:
 
-    # Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
+    # Max_03 "Так, это не особо интересно... А вот сексуальное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
     Max_03 "Das ist nicht besonders interessant, aber das Sexualverhalten von Teenagern ist extrem relevant! Wenn es nur einen Abschnitt gäbe, der meine Morgenlatte erklären würde...\n\n{color=[orange]}{i}(Das Buch ist zu 50%% fertig){/i}{/color}"
 
 # game/events/max.rpy:666
@@ -1047,4 +1047,12 @@ translate german strings:
     # game/events/max.rpy:1131
     old "{i}идти к Эрику с включённым диктофоном{/i}"
     new "{i}zu Eric zu gehen, wenn das Diktiergerät läuft{/i}"
+
+# TODO: Translation updated at 2022-02-09 00:03
+
+# game/events/max.rpy:685
+translate german BookRead_sex_ed_37326ac9:
+
+    # Max_04 "Вот и последние главы... Кажется, я понял о чём говорила Лиза. Эх, надо было раньше эту книжку прочитать, сейчас бы не тратил на это время! Но лучше поздно, чем никогда. Материал усвоен и теперь можно снова приставать к Лизе."
+    Max_04 "Hier sind die letzten Kapitel... Ich glaube, ich weiß, wovon Lisa gesprochen hat. Eh, ich hätte dieses Buch schon früher lesen sollen, dann hätte ich jetzt nicht meine Zeit damit verschwendet! Aber besser spät als nie. Der Stoff war gelernt und nun konnte ich Lisa wieder damit nerven."
 

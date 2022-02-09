@@ -332,8 +332,15 @@ label NewDay:
         if olivia_nightvisits():
             # установим откат для ночных визитов Оливии.
             if not olivia.dcv.special.stage:
+                # первого ночного визита Оливии ещё не было
                 olivia.dcv.special.set_lost(5)
+
+            elif lisa.flags.showdown_e > 1:
+                # после изгнания Эрика откат 1 неделя
+                olivia.dcv.special.set_lost(5)
+
             else:
+                # если Эрик вмешался до прихода Оливии, откат неделя, иначе две недели
                 olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
 
         for ch in chars:
@@ -680,12 +687,12 @@ label random_dressed:
             all([ann.prev_plan == 'tv', ann.plan_name == 'resting', ann.clothes.rest_eve.GetCur().suf != 'b']),
             ]):
 
-            if all([current_room == prev_room, current_room == house[2]]):
+            if all([current_room == prev_room, current_room == house[2], len(current_room.cur_char)==1]):
                 # Макс оставался в комнате Анны
                 $ ann.hourly.dressed = 1
                 call ann_dressed.stay_in_room from _call_ann_dressed_stay_in_room_1
 
-            elif all([current_room != prev_room, current_room == house[2]]):
+            elif all([current_room != prev_room, current_room == house[2], len(current_room.cur_char)==1]):
                 # Макс входит в комнату Анны
                 call chance_dressing_roll('Ann') from _call_chance_dressing_roll_3
 
@@ -772,7 +779,7 @@ label night_of_fun:
     $ spent_time = clip_time(int(round((100. - mgg.energy)/10, 0)) * 60, '06:00', '08:00')
     scene BG char Max bed-night-01
     $ renpy.show('Max sleep-night '+pose3_3)
-    $ renpy.show('FG Max sleep-night '+pose3_3)
+    $ renpy.show('cloth1 Max sleep-night '+pose3_3)
     Max_19 "{m}Теперь можно спокойно спать и ничего больше...{/m}"
     jump Waiting
 
@@ -1022,7 +1029,7 @@ label after_load:
     $ weekday = GetWeekday(day)
     $ checking_clothes()
 
-    if _version <= '0.07.p1.03':
+    if _version <= '0.07.p2.50':
         if all([current_room == house[0], lisa.plan_name == 'sleep', tm < '06:00']):
             call lisa_sleep_night from _call_lisa_sleep_night
         elif all([current_room == house[0], lisa.plan_name == 'sleep', tm >= '06:00']):
@@ -1361,7 +1368,7 @@ label update_06_5:
             if olivia.dcv.special.stage>0:
                 if GetRelMax('olivia')[0]<2:
                     $ AttitudeChange('olivia', 1)   # Хорошие
-                if lisa.dcv.special.stage < 4:
+                if lisa.dcv.special.stage < 5:
                     $ poss['Schoolmate'].open(9)
                 else:
                     $ poss['Schoolmate'].open(10)

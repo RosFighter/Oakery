@@ -1,4 +1,10 @@
-﻿################################################################################
+style mm_t_style:
+    color "#ff000070"
+    font "BRLNSB.ttf"
+    size 48
+    outlines [( 1, "#99999960", 1, 2)]
+
+################################################################################
 ## Инициализация
 ################################################################################
 
@@ -432,20 +438,6 @@ style navigation_button_text is gui_button_text:
 ## Используется, чтобы показать главное меню после запуска игры.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
-init:
-    transform main_logo:
-        on idle:
-            zoom 0.8#1.0
-        on hover:
-            zoom 0.82#1.02
-
-    transform eye_movement:
-        alpha 1.0
-        pause 5.0
-        alpha 0.0
-        pause 3.0
-        repeat
-
 screen main_menu():
 
     $ recent_save = renpy.newest_slot()#("[^_]")
@@ -470,8 +462,6 @@ screen main_menu():
 
         add 'images/interface/mm/family-01.webp'
 
-        add 'images/interface/mm/01/max/00.webp' at eye_movement
-
         for char in menu_chars:
             # получить список рендеров одежды
             $ lst = menu_chars[char].get_render_list(1)
@@ -482,6 +472,9 @@ screen main_menu():
             $ lst = menu_chars[char].get_render_list(2)
             for rndr in lst:
                 add 'images/interface/mm/01/'+char+'/'+rndr+'.webp'
+
+        add 'images/interface/mm/01/max/00.webp' at eye_movement
+
     else:
         add gui.main_menu_background
         add 'images/interface/mm/family-00.webp'
@@ -495,6 +488,9 @@ screen main_menu():
 
     frame xalign 0.5 ypos 125 xsize 1180 background None:
         text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+
+        if extra_content:
+            text "{bt=18}{=mm_t_style}EXTRA{/=mm_t_style}{/bt}" xpos .5
         text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
     if 'kira' in persistent.mems_var:
@@ -554,6 +550,7 @@ style main_menu_button_text:
     idle_color "#FFFFFF"
     size 48
     xalign 0.5
+
 
 ## Экран игрового меню #########################################################
 ##

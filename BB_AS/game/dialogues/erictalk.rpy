@@ -114,7 +114,7 @@ label lessons_from_Eric:
         scene BG annroom-watch-01
         show Eric watch 01-bj01
         if _stockings:
-            show other Eric watch 01-bj01a
+            show cloth1 Ann watch 01-bj01a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         # annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
 
@@ -124,9 +124,9 @@ label lessons_from_Eric:
         scene BG char Eric annroom-watch-02-bj01
         show Eric watch 02-bj01
         if _stockings:
-            show other Eric watch 02-bj01a
+            show cloth1 Ann watch 02-bj01a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
-        with Fade(0.4, 0, 0.3)
+        with fade4
         # annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
         Ann_14 "Эрик! Ты правда хочешь, чтобы он смотрел, как мы с тобой... здесь..."
@@ -138,7 +138,7 @@ label lessons_from_Eric:
         scene BG annroom-watch-01
         show Eric watch 01-bj01
         if _stockings:
-            show other Eric watch 01-bj01a
+            show cloth1 Ann watch 01-bj01a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         # annroom-watch-01 + annroom-watch-01-ann&eric-bj(01-01a) + annroom-watch-01-max-(01-01b)
 
@@ -149,7 +149,7 @@ label lessons_from_Eric:
         scene BG char Eric annroom-watch-02-bj01
         show Eric watch 02-bj01
         if _stockings:
-            show other Eric watch 02-bj01a
+            show cloth1 Ann watch 02-bj01a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
         # annroom-watch-02-bj01 + annroom-watch-02-bj01-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
@@ -163,7 +163,7 @@ label lessons_from_Eric:
         scene BG char Eric annroom-watch-03-bj01
         show Eric watch 03-bj01
         if _stockings:
-            show other Eric watch 03-bj01a
+            show cloth1 Ann watch 03-bj01a
         $ renpy.show('Max annroom-watch 03-bj01'+mgg.dress)
         # annroom-watch-03-bj01 + annroom-watch-03-bj01-ann&eric-(01-01a) + annroom-watch-03-bj01-max-(01-01b)
 
@@ -178,7 +178,7 @@ label lessons_from_Eric:
         scene BG annroom-watch-04-bj01
         show Eric watch 04-bj01
         if _stockings:
-            show other Eric watch 04-bj01a
+            show cloth1 Ann watch 04-bj01a
         $ renpy.show('Max annroom-watch 04-bj01'+mgg.dress)
         # annroom-watch-04-bj01 + annroom-watch-04-bj01-ann&eric-(01-01a) + annroom-watch-04-bj01-max-(01-01b)
 
@@ -194,7 +194,7 @@ label lessons_from_Eric:
         scene BG annroom-watch-01
         show Eric watch 01-bj02
         if _stockings:
-            show other Eric watch 01-bj02a
+            show cloth1 Ann watch 01-bj02a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         # annroom-watch-01 + annroom-watch-01-ann&eric-bj(02-02a) + annroom-watch-01-max-(01-01b)
 
@@ -204,9 +204,9 @@ label lessons_from_Eric:
         scene BG annroom-watch-02-bj02
         show Eric watch 02-bj02
         if _stockings:
-            show other Eric watch 02-bj02a
+            show cloth1 Ann watch 02-bj02a
         $ renpy.show('Max annroom-watch 02-bj01'+mgg.dress)
-        with Fade(0.4, 0, 0.3)
+        with fade4
         # annroom-watch-02-bj02 + annroom-watch-02-bj02-ann&eric-(01-01a) + annroom-watch-02-bj01-max-(01-01b)
 
         Ann_13 "А вам не кажется, что это уже слишком!?"
@@ -224,7 +224,7 @@ label lessons_from_Eric:
         scene BG annroom-watch-03-bj02
         show Eric watch 03-bj02
         if _stockings:
-            show other Eric watch 03-bj02a
+            show cloth1 Ann watch 03-bj02a
         $ renpy.show('Max annroom-watch 03-bj02'+mgg.dress)
         # annroom-watch-03-bj02 + annroom-watch-03-bj02-ann&eric-(01-01a) + annroom-watch-03-bj02-max-(01-01b)
 
@@ -239,7 +239,7 @@ label lessons_from_Eric:
         scene BG annroom-watch-04-bj02
         show Eric watch 04-bj02
         if _stockings:
-            show other Eric watch 04-bj02a
+            show cloth1 Ann watch 04-bj02a
         $ renpy.show('Max annroom-watch 04-bj02'+mgg.dress)
         # annroom-watch-04-bj02 + annroom-watch-04-bj02-ann&eric-(01-01a) + annroom-watch-04-bj02-max-(01-01b)
 
@@ -255,7 +255,7 @@ label lessons_from_Eric:
         scene BG annroom-watch-01
         show Eric watch 01-bj03
         if _stockings:
-            show other Eric watch 01-bj03a
+            show cloth1 Ann watch 01-bj03a
         $ renpy.show('Max annroom-watch 01'+mgg.dress)
         # annroom-watch-01 + annroom-watch-01-ann&eric-bj(03-03a) + annroom-watch-01-max-(01-01b)
 
@@ -265,9 +265,9 @@ label lessons_from_Eric:
         scene BG annroom-watch-02-bj03
         show Eric watch 02-bj03
         if _stockings:
-            show other Eric watch 02-bj03a
+            show cloth1 Ann watch 02-bj03a
         $ renpy.show('Max annroom-watch 02-bj03'+mgg.dress)
-        with Fade(0.4, 0, 0.3)
+        with fade4
         # annroom-watch-02-bj03 + annroom-watch-02-bj03-ann&eric-(01-01a) + annroom-watch-02-bj03-max-(01-01b)
 
         Ann_12 "Ты правда думаешь, что ему нужно такое показывать?"
@@ -282,7 +282,7 @@ label lessons_from_Eric:
         $ renpy.show('Max annroom-watch 03-bj03'+mgg.dress)
         show Eric watch 03-bj03
         if _stockings:
-            show other Eric watch 03-bj03a
+            show cloth1 Ann watch 03-bj03a
         # annroom-watch-03-bj03 + annroom-watch-03-bj03-ann&eric-(01-01a) + annroom-watch-03-bj03-max-(01-01b)
 
         Max_08 "{m}Ого! Мама уже так спокойно стала сосать его член при мне, вот это да... Реально поражаюсь тому, как Эрик манипулирует и обрабатывает людей!{/m}"
@@ -298,7 +298,7 @@ label lessons_from_Eric:
         scene BG char Eric annroom-watch-04-bj03
         show Eric watch 04-bj03
         if _stockings:
-            show other Eric watch 04-bj03a
+            show cloth1 Ann watch 04-bj03a
         $ renpy.show('Max annroom-watch 04-bj03'+mgg.dress)
         # annroom-watch-04-bj03 + annroom-watch-04-bj03-ann&eric-(01-01a) + annroom-watch-04-bj03-max-(01-01b)
 
@@ -328,7 +328,7 @@ label Eric_talk_about_Lisa_0:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     # # max&eric-terrace-00 + max + eric
     Eric_00 "Макс, нам нужно поговорить наедине."
@@ -441,7 +441,7 @@ label Eric_talk_about_Lisa_1:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     Eric_00 "Макс, нам нужно поговорить наедине."
     Max_07 "Я слушаю... Что такое?"
@@ -466,7 +466,7 @@ label Eric_talk_about_Alice_0:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Eric_01 "Не торопись уходить, Макс. Нужно поговорить наедине."
     Max_07 "О чём?"
     menu:
@@ -529,7 +529,7 @@ label Eric_talk_about_Alice_1:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 01'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     Eric_00 "Макс, нам нужно поговорить наедине."
     Max_07 "Я слушаю... Что такое?"
@@ -553,7 +553,7 @@ label Eric_talk_about_lace_lingerie:
     scene BG talk-terrace-00
     $ renpy.show('Eric talk-terrace 01'+eric.dress)
     $ renpy.show('Max talk-terrace 02'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     Eric_01 "Задержись, Макс. Нужно поговорить наедине."
 
@@ -751,11 +751,11 @@ label Eric_tribute_no_money:
 
 label Eric_with_dictaphone:
 
-    scene BG black with dissolve
+    scene BG black with diss3
 
     scene BG char Ann relax-evening-01
     $ renpy.show('Eric relax '+pose3_1+eric.dress)
-    # with Fade(0.4, 0, 0.3)
+    # with fade4
 
     menu:
         Eric_01 "Чего хотел, Макс?"
@@ -787,22 +787,22 @@ label Eric_with_dictaphone:
             Eric_03 "О, не переживай, у твоей мамы будет всё самое лучшее. И давай маму не расстраивай, шуруй сапоги чисти, скоро в лагерь."
             Max_17 "Да пошёл ты..."
 
-            scene BG black with dissolve
+            scene BG black with diss3
             # max&eric-terrace-00 + lisaphone-max-(01b/01c)
             scene BG talk-terrace-00
             $ renpy.show('Max stolen-phone 00-01' + mgg.dress)
-            # with Fade(0.4, 0, 0.3)
+            # with fade4
             menu:
                 # провал
                 Max_14 "[bad_mission!t]{m}Вот блин! Ничего толкового я из него не вытянул. Этого явно будет мало, чтобы на него начали хотя бы подозрительно смотреть. Похоже, это конец...{/m}"
                 "{i}вернуться в свою комнату{/i}":
                     pass
 
-            scene BG black with dissolve
+            scene BG black with diss3
             # myroom-wardrobe-mde-01 + myroom-wardrobe-mde-01-lisa-angry-(01b/01d)
             scene BG char Lisa dressing-01
             $ renpy.show('Lisa stolen-phone 00-01'+lisa.dress)
-            # with Fade(0.4, 0, 0.3)
+            # with fade4
             menu:
                 Lisa_12 "Вот ты где! Ты оказывается не только бумажники воруешь, но ещё и телефоны! Ну-ка отдал... Быстро! Или маме рассказать?"
                 "Не шуми. Держи, всё равно не пригодился...":
@@ -811,7 +811,7 @@ label Eric_with_dictaphone:
                 Lisa_13 "Больше даже близко не подходи к моему телефону! И ко мне тоже."
                 "{i}смириться{/i}":
                     $ flags.asked_phone = -3 ### переход на четверг через промежуточное сообщение "И вот пришло время..."
-                    scene BG black with Fade(0.4, 0, 0.3)
+                    scene BG black with fade4
                     "{color=[orange]}( Затем наступил тот самый ужин, когда все решилось... ){/color}"
                     jump failed_dinner
 
@@ -827,11 +827,11 @@ label Eric_with_dictaphone:
             Eric_01 "Старшим грубить - нехорошо. Давай-ка проваливай и подумай над своим поведением хорошенько."
             Max_17 "Да пошёл ты..."
 
-            scene BG black with dissolve
+            scene BG black with diss3
             # max&eric-terrace-00 + lisaphone-max-(01b/01c)
             scene BG talk-terrace-00
             $ renpy.show('Max stolen-phone 00-01' + mgg.dress)
-            # with Fade(0.4, 0, 0.3)
+            # with fade4
 
             menu:
                 #успех

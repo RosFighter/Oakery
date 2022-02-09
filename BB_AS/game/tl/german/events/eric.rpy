@@ -2338,7 +2338,7 @@ translate german eric_about_practice_war_02ffd2cd:
 translate german eric_about_practice_war_30fc7577:
 
     # Eric_03 "Я, как это от неё услышал, сразу понял, что ты точно не уймёшься и будешь мне только мешать. Но до меня дошли некоторые слухи, Макс... О твоей \"хозяйственности\"... И я сделаю так, что это выйдет тебе боком."
-    Eric_03 "Ich wusste sofort, als ich sie das sagen hörte, dass du nicht aufgeben würdest und mir nur im Weg stehen würdest. Aber ich habe ein paar Gerüchte gehört, Max... über Ihre \"Haushaltsführung\"... Und ich werde dafür sorgen, dass du nicht ungestraft davonkommst."
+    Eric_03 "Ich wusste sofort, als ich sie das sagen hörte, dass du nicht aufgeben würdest und mir nur im Weg stehen würdest. Aber ich habe ein paar Gerüchte gehört, über ... Deine \"Haushaltsführung\" Max... Und ich werde dafür sorgen, dass du nicht ungestraft davonkommst."
 
 # game/events/eric.rpy:1701
 translate german eric_about_practice_war_3d8756c9:

@@ -766,7 +766,7 @@ label kira_night_swim:
                     Kira_02 "Какой же ты испорченный мальчик! Но не переживай, бассейн мы не испачкаем. Я чувствую, ты уже совсем близко... Давай..."
                     "{i}кончить ей в рот!{/i}":
                         scene Kira pool-night 08
-                        show other Kira pool-night 08
+                        show FG Kira pool-night 08
 
                 Max_05 "Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
                 Kira_05 "Это разве испачкал, Макс? Конечно нет... Главное, что в воду ничего не попало."
@@ -829,7 +829,7 @@ label kira_night_swim:
                     Kira_02 "Какой же ты испорченный мальчик! Всё время называешь меня тётей... Это так пикантно! Давай, кончи мне в рот, я этого очень хочу..."
                     "{i}кончить!{/i}":
                         #какой ракурс выпал до этого, к такому и добавляются следы
-                        $ renpy.show('other Kira pool-night '+r1)
+                        $ renpy.show('FG Kira pool-night '+r1)
 
                         Max_05 "Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
                         Kira_05 "Это разве испачкал, Макс? Конечно нет... Главное, что в воду ничего не попало."
@@ -858,7 +858,7 @@ label kira_night_swim:
                                         $ r1 = renpy.random.choice(['08', '09'])
                                         $ renpy.scene()
                                         $ renpy.show('Kira pool-night '+r1)
-                                        $ renpy.show('other Kira pool-night '+r1)
+                                        $ renpy.show('FG Kira pool-night '+r1)
                                         Max_05 "{m}О да... Прямо ей в рот! Хотя, нет, и мимо немного попало... О боже... Как же это приятно!{/m}"
                                         Kira_05 "Понравилось, Макс? Как же я увлеклась... Надеюсь, мы никого не разбудили!"
                                         Max_03 "Вроде, нет... Всё тихо. Ты лучшая, тётя Кира!"
@@ -879,7 +879,7 @@ label kira_night_swim:
     label .no_restrain:
         $ renpy.scene()
         $ renpy.show('Kira pool-night '+r1)
-        $ renpy.show('other Kira pool-night '+r1)
+        $ renpy.show('FG Kira pool-night '+r1)
 
         Max_05 "[norestrain!t]Ух, тётя Кира, как хорошо... Тебя я всё же немного испачкал."
         Kira_05 "Это разве испачкал, Макс? Конечно нет... Главное, что в воду ничего не попало."
@@ -2541,7 +2541,7 @@ label kira_shower:
                 # bathroom-shower-08 + shower-08-m&k-sex01-03 + shower-08-m&k-sex01-cum01
                 scene BG char Kira shower-08
                 show Kira shower-Max sex01-03
-                show other Kira shower-Max sex01-cum01
+                show FG Kira shower-Max sex01-cum01
                 show FG shower-water
                 Kira_07 "Фух! Неплохо развлеклись, Макс. Надеюсь, никто не услышал мои стоны. Вроде, нет. Тогда я ещё успею кое-что сделать..."
 
@@ -2893,7 +2893,7 @@ label return_from_club:
     # after-club-alice&kira-00-f + after-club-alice&kira-00
     scene BG char Kira after-club-pull
     show Kira after-club 00
-    with Fade(0.4, 0, 0.3)
+    with fade4
 
     Kira_03 "Алиса, тише... Все уже спят! Нужно тихо, тихо, тихо... О... Макс? А ты почему не спишь?!"
     Max_02 "Да что-то не спится..."
@@ -2927,7 +2927,7 @@ label return_from_club:
                 # after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
-                with Fade(0.4, 0, 0.3)
+                with fade4
 
                 Kira_02 "Должна сказать, Макс, я довольно неплохо иду... если учесть, сколько я выпила..."
                 Max_02 "Да, но я тебя всё равно немного придержу, чтобы никаких казусов не вышло. Приятное платьице... на ощупь."
@@ -2952,7 +2952,7 @@ label return_from_club:
 
         # after-club-alice&kira-00-f + after-club-alice&kira-00a
         show Kira after-club 00a
-        with Fade(0.4, 0, 0.3)
+        with fade4
 
         Kira_07 "Скажу по секрету... Это касается трусиков Алисы! Но это секрет, так ведь?"
         Alice_05 "Именно! И Макса мы в это посвящать не будем... К тому же даже сама тётя Кира сейчас без трусиков!"
@@ -2971,7 +2971,7 @@ label return_from_club:
                 # after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
-                with Fade(0.4, 0, 0.3)
+                with fade4
 
                 Kira_02 "Должна сказать, Макс, я довольно неплохо иду... если учесть, сколько я выпила..."
                 Max_02 "Да, но я тебя всё равно немного придержу, чтобы никаких казусов не вышло. Приятное платьице... на ощупь."
@@ -2996,7 +2996,7 @@ label return_from_club:
                 # after-club-s01-f + after-club-s01-max&kira-01
                 scene BG char Kira after-club-s01-f
                 show Kira after-club s01
-                with Fade(0.4, 0, 0.3)
+                with fade4
 
                 Kira_02 "Должна сказать, Макс, я довольно неплохо иду... если учесть, сколько я выпила..."
                 Max_02 "Да, но я тебя всё равно немного придержу, чтобы никаких казусов не вышло. Приятное платьице... на ощупь."

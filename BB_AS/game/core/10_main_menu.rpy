@@ -285,10 +285,10 @@ init python:
             if id_clot not in persistent.mm_chars[self.id_char]:
                 persistent.mm_chars[self.id_char].append(id_clot)
                 if 'chars' in globals():
-                    if self.id_char != 'max':
-                        notify_list.append(__("{color=#00FF00}Открыт новый костюм %s для главного меню{/color}") % renpy.translate_string(chars[self.id_char].name_1))
-                    else:
+                    if self.id_char == 'max':
                         notify_list.append(__("{color=#00FF00}Открыт новый костюм %s для главного меню{/color}") % renpy.translate_string(mgg.name_1))
+                    elif self.id_char in chars:
+                        notify_list.append(__("{color=#00FF00}Открыт новый костюм %s для главного меню{/color}") % renpy.translate_string(chars[self.id_char].name_1))
 
             return True
 

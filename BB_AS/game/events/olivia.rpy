@@ -12,7 +12,7 @@ label olivia_lisa_swim:
     $ renpy.scene()
     $ renpy.show('BG char Lisa Olivia 2swim-'+pose3_3)
     if olivia.dress=='a':
-        $ renpy.show('FG Lisa Olivia 2swim-'+pose3_3)
+        $ renpy.show('cloth1 Olivia 2swim '+pose3_3)
     $ lisa.prev_plan = lisa.plan_name
     $ olivia.prev_plan = olivia.plan_name
     return
@@ -73,7 +73,7 @@ label olivia_lisa_tv:
 label olivia_lisa_sleep:
     scene BG char Lisa bed-n-01
     $ renpy.show('Olivia sleep ' + pose3_1)
-    $ renpy.show('FG Olivia sleep ' + pose3_1 + lisa.dress)
+    $ renpy.show('cloth1 Lisa sleep2 ' + pose3_1 + lisa.dress)
     $ lisa.prev_plan = lisa.plan_name
     $ olivia.prev_plan = olivia.plan_name
     return
@@ -85,7 +85,7 @@ label olivia_first_meeting:
     # lisa-incoming-00 + lisa&olivia-incoming-01
     scene BG incoming-00
     show Olivia incoming 00
-    with Fade(0.4, 0, 0.3)
+    with fade4
     play music olivia
     Lisa_01 "Вот и мой старший брат, знакомьтесь, это Оливия, моя одноклассница!"
     Max_04 "Привет, я Макс!"
@@ -171,12 +171,18 @@ label olivia_first_night_visit:
     # villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     play music olivia
     Olivia_01 "Приветик! А вот и я... Спасибо, что встретил, Макс."
     Max_04 "Да без проблем. Проходи..."
-    Olivia_02 "Значит, кроме нас и Лизы дома больше никого нет?"
-    Max_03 "Да... Мама ушла к Эрику, а Алиса с тётей Кирой как всегда в это время тусят где-то. Вернутся поздно, так что у нас полно времени!"
+    if not lisa.flags.showdown_e:
+        # Эрик не изгнан
+        Olivia_02 "Значит, кроме нас и Лизы дома больше никого нет?"
+        Max_03 "Да... Мама ушла к Эрику, а Алиса с тётей Кирой как всегда в это время тусят где-то. Вернутся поздно, так что у нас полно времени!"
+    else:
+        # Эрик изгнан и Макс уговорил Анну на ночёвку Оливии
+        Olivia_02 "Значит, кроме нас и Лизы дома только ваша мама?"
+        Max_03 "Да... Алиса с тётей Кирой как всегда в это время тусят где-то допоздна. Мама у себя в комнате, но может прийти нас проверить. Главное сильно не шуметь."
 
     # after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
     scene BG char Kira after-club-pull
@@ -211,7 +217,10 @@ label olivia_first_night_visit:
         Olivia_04 "Ну и отлично! Пойдёмте уже..."
         "{i}идти в гостиную{/i}":
             if not _in_replay:
-                $ poss['Schoolmate'].open(10)
+                if lisa.flags.showdown_e and not poss['Schoolmate'].used(10):
+                    $ poss['Schoolmate'].open(17)   # Макс наконец-то попал на диван к девчонкам (после изгнания Эрика)
+                else:
+                    $ poss['Schoolmate'].open(10)
             jump night_tv_with_olivia
 
     label .failure:
@@ -237,7 +246,7 @@ label olivia_second_night_visit:
     # villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     play music olivia
     Olivia_01 "Привет, Макс. Вот я и снова к вам пришла... Как домашние? Никому не помешаю?"
     Max_04 "Нет, всё в порядке... Проходи, чувствуй себя как дома."
@@ -250,8 +259,14 @@ label olivia_second_night_visit:
         Olivia_02 "С радостью бы искупалась, но так устала, что хочу только валяться и смотреть сериалы. Пойдём, Лиза... Макс, ты как, с нами?"
         "Конечно с вами!":
             pass
-    Olivia_03 "Лиза, а ты так и будешь в маечке и трусиках? Дома же никого нет."
-    Lisa_09 "Никого, ага... Ладно ты, а Макс как же?"
+    if not lisa.flags.showdown_e:
+        # Эрик не изгнан
+        Olivia_03 "Лиза, а ты так и будешь в маечке и трусиках? Дома же никого нет."
+        Lisa_09 "Никого, ага... Ладно ты, а Макс как же?"
+    else:
+        # Эрик изгнан и Макс уговорил Анну на ночёвку Оливии
+        Olivia_03 "Лиза, а ты так и будешь в маечке и трусиках? Мы ведь шуметь не собираемся, так что твоя мама ничего не увидит. А даже если и придёт, то мы тебя прикроем."
+        Lisa_09 "Да я больше не из-за мамы, а из-за Макса. Только и будет делать, что пялиться."
 
     if lisa.dcv.special.stage < 5: # не было просмотров ужастиков с Лизой
         Max_07 "Ты настолько меня стесняешься?"
@@ -286,10 +301,17 @@ label olivia_night_visit_r:
     # villa-door-night-01 + villa-olivia-(01/01a)
     scene villa-door-night-01
     $ renpy.show('Olivia night-visit 01'+olivia.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     play music olivia
-    Olivia_01 "Привет, Макс. А вот и я! Дома никого?"
-    Max_04 "Привет! Рад тебя видеть. Дома только я и Лиза. Проходи..."
+    if not lisa.flags.showdown_e:
+        # Эрик не изгнан
+        Olivia_01 "Привет, Макс. А вот и я! Дома никого?"
+        Max_04 "Привет! Рад тебя видеть. Дома только я и Лиза. Проходи..."
+    else:
+        # Эрик изгнан и Макс уговорил Анну на ночёвку Оливии
+        Olivia_01 "Привет, Макс. А вот и я! Как дома обстановка?"
+        Max_04 "Привет! Рад тебя видеть. Дома только я, Лиза и мама. Проходи..."
+
     # after-club-alice&kira-00-f + villa-lisa-02 + villa-olivia-(02/02a)
     scene BG char Kira after-club-pull
     show Lisa night-visit 02
@@ -388,7 +410,7 @@ label olivia_first_night_out_with:
     scene BG lounge-tv-01
     show Olivia night-tv 03-01b
     $ renpy.show('Max tv 00'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Max_05 "Ух ты! Ничего себе! Я даже забыл, что хотел спросить..."
     Olivia_03 "Так садись, Макс... Потом вспомнишь!"
     Max_02 "Ах, вот... Я тоже буду сидеть голышом! Вы же не против?"
@@ -446,7 +468,7 @@ label olivia_first_night_out_with:
     scene BG myroom-night-talk-01
     show Lisa myroom-night-talk 02b
     show Olivia myroom-night-talk 01
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Max_04 "Кто куда ляжет?"
     Lisa_02 "Естественно, Оливия ляжет со мной, а ты как всегда... сам по себе."
     Max_02 "Оливия же в гостях... Может определим её на твою кровать, а ты со мной?"
@@ -467,7 +489,7 @@ label olivia_second_night_out_with:
     scene BG lounge-tv-01
     show Olivia night-tv 03-02b
     show Max night-tv 03-01
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Lisa_11 "А вы ещё мне предлагаете раздеться! Это Макс только на тебя одну, Оливия, так реагирует... А представь, что будет, если разденусь и я? Его штука вообще, наверно, взорвётся!"
     Max_03 "Ничего не взорвётся, не переживай."
     Olivia_03 "Лучше радуйся за брата, Лиза. Далеко не каждому мальчику настолько везёт с размерами... Не каждый день такое можно увидеть в живую. Вернее... ты-то как раз и можешь видеть!"
@@ -531,7 +553,7 @@ label olivia_second_night_out_with:
     scene BG myroom-night-talk-01
     show Lisa myroom-night-talk 02c
     show Olivia myroom-night-talk 01
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Max_04 "Спокойной ночи, девчонки. Я в восторге от наших с вами ночных посиделок!"
     Lisa_03 "По тебе и так прекрасно видно, как сильно ты доволен. Уверена, надеешься, что я забуду маечку надеть и прямо так и лягу..."
     Max_02 "Ага. Зря, да?"
@@ -542,7 +564,10 @@ label olivia_second_night_out_with:
     Max_01 "Да, я тоже. Сладких снов, девчонки."
 
     $ renpy.end_replay()
-    $ poss['Schoolmate'].open(12)
+    if lisa.flags.showdown_e:
+        $ poss['Schoolmate'].open(19)
+    else:
+        $ poss['Schoolmate'].open(12)
     $ lisa.dcv.other.disable()
     $ spent_time = TimeDifference(tm, '02:00')
     stop music
@@ -553,7 +578,7 @@ label olivia_repeatable_night_out_with:
     scene BG lounge-tv-01
     $ renpy.show('Olivia night-tv 03-01'+lisa.dress)
     $ renpy.show('Max tv 00'+mgg.dress)
-    with Fade(0.4, 0, 0.3)
+    with fade4
     if lisa_will_be_topless()>0:
         #Лиза без майки
         # lounge-tv-01 + tv-watch-03-lisa&olivia-01a + tv-max-(00a/00b)
@@ -653,7 +678,7 @@ label olivia_repeatable_night_out_with:
     scene BG myroom-night-talk-01
     $ renpy.show('Lisa myroom-night-talk 02'+lisa.dress)
     show Olivia myroom-night-talk 01
-    with Fade(0.4, 0, 0.3)
+    with fade4
     Max_04 "Если вдруг вам надоест спать вместе, я всегда рад приютить любую из вас на своей кровати."
     Olivia_03 "Спасибо, Макс! Трусы хоть одень, чтобы было не так заметно, насколько ты рад этим фантазиям."
     Lisa_02 "И с чего ты взял, что нам надоест?"
@@ -665,7 +690,10 @@ label olivia_repeatable_night_out_with:
         $ lisa.dress = 'b'
 
     $ renpy.end_replay()
-    $ poss['Schoolmate'].open(13)
+    if lisa.flags.showdown_e and not poss['Schoolmate'].used(10):
+        $ poss['Schoolmate'].open(20)
+    else:
+        $ poss['Schoolmate'].open(13)
     $ spent_time = TimeDifference(tm, '02:00')
     stop music
     jump Waiting
@@ -681,7 +709,7 @@ label olivia_dressed:
         scene BG char Lisa dressing-02
         show Olivia dressing inroom 00
         $ renpy.show('Lisa dressing '+pl, at_list=[stay_in_room,])    # добавить увеличение и положение
-        with dissolve
+        with diss3
         if lvl == 2:
             Olivia_05 "Привет, Макс! Такая хорошая погода стоит, а ты в комнате сидишь... И зря!"
         else:
@@ -931,13 +959,13 @@ label olivia_dressed:
         $ olivia.prev_plan = olivia.plan_name
 
         $ renpy.block_rollback()
-        scene BG black with dissolve
+        scene BG black with diss3
         jump AfterWaiting
 
     label .wait_in_room:
         window hide
         $ hide_say()
-        scene BG char Max bed-mde-01 with dissolve
+        scene BG char Max bed-mde-01 with diss3
         pause(1)
         $ ClothingNps('lisa', lisa.plan_name)
         $ ClothingNps('olivia', olivia.plan_name)
@@ -945,7 +973,7 @@ label olivia_dressed:
         $ lisa.prev_plan = lisa.plan_name
         $ olivia.prev_plan = olivia.plan_name
         $ renpy.block_rollback()
-        scene BG black with dissolve
+        scene BG black with diss3
         jump AfterWaiting
 
     label .leave:
@@ -976,3 +1004,158 @@ label olivia_dressed:
         $ olivia.prev_plan = olivia.plan_name
         $ AddRelMood('lisa', 0, mood)
         jump Waiting
+
+
+label olivia_ann_meeting:
+
+    # ann-sun-00 + ann-sun-(01/02/03)
+    scene BG char Ann sun
+    $ renpy.show('Ann sun '+pose3_3+'a')
+    Ann_00 "Что-то случилось, дорогой?"
+    Max_01 "Пока что нет, но к нам в гости сейчас должна прийти одноклассница Лизы."
+    Ann_04 "Ой! У Лизы подружка появилась? Это очень хорошо."
+    Max_04 "Да и она уже была у нас в гостях. Днём после школы..."
+
+    # lisa-incoming-00 + lisa&olivia-incoming-01a
+    scene BG incoming-00
+    show Olivia incoming 00a
+    with dis4
+    Lisa_01 "Мама, знакомься, это Оливия, моя одноклассница!"
+    Olivia_04 "Здравствуйте! Мне очень приятно с вами познакомиться. У вас потрясающая дочь!"
+
+    # punish-sun-01 + sun-incoming-01-lisa&olivia-02 + sun-incoming-01-max-(01a/01b) + sun-incoming-01-ann-01
+    scene BG punish-sun 01
+    show Olivia incoming 01a
+    $ renpy.show('Max incoming 00'+mgg.dress)
+    show Ann incoming 01
+    with dis2
+    Ann_08 "Здравствуй, Оливия. Мне тоже приятно. А ещё я очень рада, что Лиза наконец-то нашла себе подругу. А то новое место, сама понимаешь..."
+    Olivia_05 "Я тоже рада. У вас такой большой, красивый и стильный дом... И такой классный бассейн!"
+    Lisa_02 "Мам, мы с Оливией сейчас переоденемся и будем в бассейне плескаться, ты не против?"
+    Ann_02 "Конечно, девочки, развлекайтесь сколько угодно."
+    Olivia_03 "Привет, Макс! Рада тебя видеть."
+    Max_02 "Привет, Оливия! Хорошо, что заглянула."
+
+    # punish-sun-02 + sun-incoming-01-max-(02a/02b) + sun-incoming-01-ann-02
+    scene BG punish-sun 02
+    $ renpy.show('Max incoming 02'+mgg.dress)
+    show Ann incoming 02
+    with diss6
+    Ann_05 "Девочка, вроде, хорошая. Ладно, пусть развлекаются, а я пойду отдохну к себе."
+    Max_07 "Не торопись, мам. Подожди немного. Тебе нужно кое-что увидеть."
+    Ann_07 "Хорошо. Ну, а тебе, Макс, как Оливия, нравится?"
+    Max_01 "Да, она ничего такая. Правда, у неё есть... некоторая особенность... Она натуристка. Знаешь, кто это такие?"
+    Ann_02 "Хм... Звучит, как уклон во что-то натуральное. Может, это связано с питанием?"
+    Max_04 "Сейчас Оливия вернётся и объяснит, кто это такие. А вот как раз и они..."
+
+    # punish-sun-01 + sun-incoming-01-lisa&olivia-01a + sun-incoming-01-max-(01a/01b) + sun-incoming-01-ann-03
+    scene BG punish-sun 01
+    show Olivia incoming 03a
+    $ renpy.show('Max incoming 00'+mgg.dress, at_list=[trans_zoom_vibr])
+    show Ann incoming 03
+    with diss2
+    Ann_15 "Оливия, а где твой купальник? Лиза, ты почему не дала своей подруге купальник, хотя бы тот, чёрный?"
+    Olivia_02 "Да вы не переживайте на этот счёт! Я совсем не стесняюсь. У меня родители натуристы и мы дома все ходим голые, я привыкла!"
+    Max_03 "У них не семья, а праздник какой-то!"
+
+    # hugging-sun-01 + sun-incoming-03-ann-01 + sun-incoming-03-lisa&olivia-02 + sun-incoming-03-max-(01a/01b)
+    scene BG char Alice hugging sun-01
+    show Ann incoming 04
+    show Olivia incoming 04a
+    $ renpy.show('Max incoming 01'+mgg.dress)
+    with dis4
+    Ann_14 "Ну, я рада, что ты не стесняешься, но вот я стесняюсь за Макса... Кажется, он уже отреагировал в своём стиле... У нас он единственный мужчина в доме, поэтому может временами... напрягаться."
+    Olivia_03 "Да это нормально! У папы такая же реакция была, когда мы вместе с ним купались или загорали, пока он ещё был с нами... Так что, для меня это обычное дело!"
+    Ann_13 "Это так... странно, Оливия... А где твой папа сейчас?"
+    Olivia_01 "Ну... Они с мамой поругались уже давненько и сейчас он с нами не живёт. А ещё у нас сломался бассейн и его некому чинить... Можно я к вам буду приходить купаться?"
+    Lisa_03 "Мам, скажи да, скажи да!"
+    Ann_01 "Конечно, Оливия. Если тебя не смущает Макс, который только на тебя и пялится, то я не против. Можешь приходить в любое время! Ну а я пойду по делам, а то уже достаточно позагорала. Развлекайтесь!"
+
+    # hugging-sun-01 + sun-incoming-03-lisa&olivia-02 + sun-incoming-03-max-(01a/01b)
+    # scene BG char Alice hugging sun-01
+    # show Olivia incoming 04a
+    # $ renpy.show('Max incoming 01'+mgg.dress)
+    hide Ann with diss6
+
+    Max_02 "Как мне кажется, всё прошло довольно хорошо."
+    Olivia_06 "Думаешь, твоя мама разрешит нам собираться вместе по ночам?"
+    Max_07 "Даже если и нет, то я смогу её уговорить. Ну, или как минимум, очень постараюсь уговорить."
+    Lisa_13 "Ты, главное, про меня не забудь в этих уговорах. А то мама запросто может сказать, что я ещё маленькая, хотя с Оливией мы ровесницы."
+    Max_09 "Не знаю, не знаю, Лиза... Это уже будет непросто. Вот если бы вы с Оливией намазали друг друга кремом для загара, то я бы мог и тебя отстоять перед мамой."
+    Olivia_03 "Ах вот как, да? Это мы запросто!"
+    Lisa_02 "У тебя-то этот самый крем хоть есть?"
+    $ spent_time = 20
+    $ olivia.flags.incident = 1
+    $ lisa.flags.showdown_e = 3
+    $ poss['Schoolmate'].open(15)
+    if kol_cream < 2:
+        # крема нет или его не хватит на 2 порции
+        Max_10 "Сейчас, к сожалению нет, но я обязательно его куплю."
+        Lisa_01 "Очень жаль, Макс. Вот будет крем - мы и намажемся специально для тебя."
+
+        # на фоне загорающих Оливии и Лизы
+        scene BG char Lisa Olivia 2sun-01
+        $ renpy.show('Lisa 2sun '+pose3_1+'b')
+        $ renpy.show('Olivia 2sun '+pose3_3+'b')
+        with diss4
+        Max_11 "{m}Эх... Такой момент упустил... Теперь только до следующего раза.{/m}"
+
+    else:
+        # крем есть и его хватит на 2 порции
+        Max_05 "Разумеется есть! Могу даже сам вас намазать, руки у меня почти не заняты."
+        Lisa_01 "О нет... За крем, конечно, спасибо, но от твоей помощи мы как-нибудь воздержимся, правда Оливия? Не хватало, чтобы ты свои озабоченные ручонки распускал."
+        menu:
+            Olivia_05 "Ага, мы и сами прекрасно справимся. Давай крем. Чур гостей мажут первыми!"
+            "{i}устроиться поудобнее и наблюдать{/i}":
+                call olivia_lisa_sunscreen_0 from _call_olivia_lisa_sunscreen_0
+
+    jump Waiting
+
+
+label olivia_lisa_sunscreen_0:
+    # устроиться поудобнее и наблюдать
+
+    # sun2-01 + sun2-01-lisa&olivia-01 + одежда + sun2-01-max-01 + одежда
+    scene BG char Lisa Olivia sun2-01
+    show Olivia sun2 01-01
+    show Lisa sun2 01-01a        # бикини
+    show Max sun2 01-01
+    show cloth1 Max sun2 01-01    # плавки
+    # with dis2
+
+    Lisa_05 "Я же ведь помажу только спину, Оливия? Остальное ты сама..."
+    Max_08 "Э-э-э! Какую только спину?! Тебе нужно натереть кремом всё её тело, Лиза."
+    Olivia_03 "Ой, Макс, вот ты разбежался. Может ты тогда за фотоаппаратом или видеокамерой по такому случаю сразу сбегаешь?"
+    Max_03 "Что-то мне подсказывает, что пока я буду бегать, вы уже закончите. Я лучше останусь здесь, чтобы ничего не пропустить."
+    Lisa_02 "Эх, а мы ведь могли бы и подождать."
+    Max_09 "Нет, меня не проведёшь! Эй, ты ей попку совсем не натёрла, не говоря уже обо всём остальном... Это не дело!"
+    Olivia_05 "Со всем остальным я прекрасно справлюсь сама. Поворачивайся ко мне, Лиза, я тебя тоже намажу."
+
+    # sun2-02 + sun2-02-max-01 + одежда + sun2-02-lisa&olivia-01 + одежда
+    scene BG char Lisa Olivia sun2-02
+    show Max sun2 02-01
+    show cloth1 Max sun2 02-01    # плавки
+    show Olivia sun2 02-01
+    show Lisa sun2 02-01a        # бикини
+    # with dis2
+
+    Max_02 "Оливия, ты бы ей купальник развязала. Так будет удобнее..."
+    Lisa_01 "В твоих похотливых идеях, Макс, здесь никто не нуждается! Мы сами разберёмся."
+    Max_07 "Лиза, я же за тебя переживаю. Вдруг Оливия из-за твоего купальника намажет не всё."
+    Olivia_02 "Не переживай, я ничего не упущу. Или, может, всё-таки развязать купальник?"
+    Max_05 "Никаких \"может\". Снимай с неё всё!"
+    Lisa_11 "Нет, ребята, вы чего?! Не надо меня раздевать, мне и так хорошо."
+    Olivia_01 "Тогда всё, Лиза, я закончила. А тебе, Макс, спасибо за крем."
+    Max_01 "Не за что, девчонки. Мне всё понравилось, но можно было это делать и более страстно."
+    Lisa_03 "Других пожеланий я и не ожидала."
+
+    $ kol_cream -= 2
+    if kol_cream < 2:
+        call left_cream         ## солнцезащитный крем закончился
+    elif kol_cream < 4:
+        call left_cream(1)      ## осталось мало крема
+
+    $ olivia.flags.incident = 2
+    $ olivia.daily.oiled = 1
+    $ spent_time += 20
+    return

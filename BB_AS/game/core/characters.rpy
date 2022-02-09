@@ -489,3 +489,9 @@ image side olivia_05 = 'Olivia emo-05'
 
 define Olivia_06 = Character(kind=Olivia, image='olivia_06')
 image side olivia_06 = 'Olivia emo-06'
+
+define Olivia_07 = Character(kind=Olivia, image='olivia_07')
+image side olivia_07 = 'Olivia emo-07'
+
+define Olivia_08 = Character(kind=Olivia, image='olivia_08')
+image side olivia_08 = 'Olivia emo-08'

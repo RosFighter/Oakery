@@ -77,6 +77,7 @@ default persistent.photos = {}
 default expected_photo = []
 
 default purchased_items = []
+default var_pose = '02'
 
 define cam_flag = []
 define cam_list = []
@@ -166,7 +167,7 @@ define talks = {
     'a.domine3'     : TalkTheme('alice', _("Я выбираю наказание от тебя..."), 'alice_mistress_3', "all([alice.dcv.mistress.stage > 2, alice.plan_name == 'tv', not alice.dcv.mistress.done, not alice.daily.mistress])"),
 
     'ask_money'     : TalkTheme('ann', _("Мам, дай денег, пожалуйста..."), 'ann_ask_money', "all([ann.daily.ask_money==0, not flags.about_earn])"),
-    'aboutfood'     : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv.buyfood.stage==2 and not dcv.buyfood.done"), # dcv.buyfood.lost==2"),
+    'aboutfood'     : TalkTheme('ann', _("Я продукты заказал!"), 'ann_aboutfood', "dcv.buyfood.stage==2 and not dcv.buyfood.done"),
     'aboutpool'     : TalkTheme('ann', _("Мам, бассейн чист!"), 'ann_aboutpool', "dcv.clearpool.stage==2 and dcv.clearpool.lost>3"),
     'ann_tv'        : TalkTheme('ann', _("Что смотришь?"), 'ann_talk_tv', "not ann.daily.tvwatch and ann.plan_name == 'tv'"),
     'ann_mw'        : TalkTheme('ann', _("Насчёт случая с Лизой..."), 'Ann_MorningWood', "dcv.mw.stage == 1"),
@@ -175,6 +176,8 @@ define talks = {
     'ann.yoga0'     : TalkTheme('ann', _("С тобой можно?"), 'ann_yoga_with_max0', "all([ann.plan_name=='yoga', ann.dcv.feature.stage==4, ann.dcv.feature.done])"),
     'ann.yoga1'     : TalkTheme('ann', _("Я присоединюсь?"), 'ann_yoga_with_maxr', "all([ann.plan_name=='yoga', ann.dcv.feature.stage>4, ann.dcv.feature.done])"),
     'm.wallet'      : TalkTheme('ann', "Да не крал я у него ничего! Он всех обманывает!", 'ann_about_wallet', "all([flags.eric_wallet == 2, not ann.flags.talkblock])"),
+    'm.olivia.0'    : TalkTheme('ann', _("Мам, нужно поговорить об Оливии."), 'ann_about_olivia0', "all([olivia.flags.incident > 1, lisa.flags.showdown_e == 3, ann.plan_name != 'yoga'])"),     # девчонки хотя бы раз намазывались кремом
+    'm.olivia.1'    : TalkTheme('ann', _("Мам, ты подумала об Оливии?"), 'ann_about_olivia1', "all([lisa.flags.showdown_e == 4, ann.dcv.special.done, ann.plan_name != 'yoga'])"),     # первая попытка убедить Анну провалилась
 
     'eric.money'    : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([not eric.daily.ask_money, GetRelMax('eric')[0]>3, 'money' in flags.bonus_from_eric])"),
     'eric.wtf'      : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "all([flags.voy_stage==1, GetRelMax('eric')[0]>0])"),
@@ -217,7 +220,7 @@ define talks = {
     'l.ab.sec2'     : TalkTheme('lisa', _("Может всё-таки поделишься своими переживаниями по поводу Алисы?"), 'liza_secret_alisa', "all([poss['nightclub'].st() < 5, 'dress' in alice.gifts, GetRelMax('lisa')[0]>2, lisa.GetMood()[0]>1, alice.dcv.feature.stage>0, alice.dcv.feature.done])"),
     'lisa.hand'     : TalkTheme('lisa', _("Массаж рук заказывала?"), 'liza_hand_mass', "weekday in [2, 5] and all([learned_hand_massage(), lisa.flags.handmass, not lisa.daily.massage, lisa.plan_name == 'phone'])"),
     'l.firstkiss'   : TalkTheme('lisa', _("Ну что, Лиза, готова?"), 'lisa_ment_kiss1', "all([GetRelMax('lisa')[0]>1, lisa.plan_name=='read', lisa.dcv.seduce.stage>3, 'lisa' not in flags.how_to_kiss])"),
-    'l.nextkiss'    : TalkTheme('lisa', _("Ну что, готова?"), 'lisa_ment_kiss', "all([lisa.plan_name=='read', lisa.dcv.seduce.done, poss['seduction'].st()>8, flags.stopkiss<1])"),
+    'l.nextkiss'    : TalkTheme('lisa', _("Ну что, готова?"), 'lisa_ment_kiss', "all([lisa.plan_name=='read', lisa.dcv.seduce.done, poss['seduction'].st()>8, flags.stopkiss<1, lisa.dcv.seduce.stage < 5])"),
     'l.sex-ed1'     : TalkTheme('lisa', _("Лиза, ты же любишь читать?"), 'lisa_sexbook1', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].st()<13])"),
     'l.sex-ed2'     : TalkTheme('lisa', _("Лиза, у меня для тебя особая книжка..."), 'lisa_sexbook2', "all([lisa.plan_name in ['sun', 'read', 'phone'], items['sex.ed'].have, poss['seduction'].st()>13])"),
     'l.ab_aeed0'    : TalkTheme('lisa', _("Рассказывай, что делали?"), 'lisa_about_ae_sexed0', "not flags.l_ab_sexed and flags.lisa_sexed==0"),
@@ -241,6 +244,17 @@ define talks = {
     'l.wallet'      : TalkTheme('lisa', "Надеюсь, ты не поверила Эрику?", 'lisa_about_wallet', "all([flags.eric_wallet == 2, not lisa.flags.talkblock])"),
     'l.need_phone'  : TalkTheme('lisa', "Мне нужна твоя помощь!", 'lisa_asked_phone', "all([flags.eric_wallet == 2, lisa.flags.talkblock, not any([flags.asked_phone, flags.eric_photo2, lisa.hourly.talkblock, weekday in [4, 5]])])"),
     'l.showdown'    : TalkTheme('lisa', _("Лиза, ты чего нос повесила?"), 'lisa_about_showdown', "all([flags.eric_wallet==4, not lisa.flags.showdown_e])"),
+    'l.olivia_6'    : TalkTheme('lisa', _("Мама разрешила!"), 'lisa_about_olivia_6', "lisa.flags.showdown_e == 5"),
+    'l.cont_kiss0'  : TalkTheme('lisa', _("Кстати, а как тебе та книжка, которую я дарил?"), 'lisa_about_sex_book0', "all([lisa.plan_name == 'read', lisa.dcv.seduce.stage == 5, lisa.dcv.seduce.done])"),
+    'l.read.w.mc'   : TalkTheme('lisa', _("Можно вместе с тобой книжку почитать?"), 'lisa_read_with_Max0', "all([lisa.plan_name == 'read', lisa.dcv.seduce.stage == 6, lisa.dcv.seduce.done, lisa.dcv.special.stage==7])"),
+    'l.read.w.mc.r' : TalkTheme('lisa', _("Можно к тебе присоединиться?"), 'lisa_read_with_Max_r', "all([lisa.plan_name == 'read', lisa.dcv.seduce.stage > 7, lisa.dcv.seduce.done])"),
+
+    'ol.l.sun_cr0'  : TalkTheme(['lisa', 'olivia'], _("А у меня есть крем для загара. Хотите?"), 'about_first_sunscreen', "all([olivia.plan_name=='sun', olivia.flags.incident==1])"),
+    'ol.l.sun_cr1'  : TalkTheme(['lisa', 'olivia'], _("Давайте, я намажу вас кремом для загара?"), 'olivia_second_sunscreen', "all([olivia.plan_name=='sun', not olivia.daily.oiled, olivia.flags.incident==2])"),
+    'ol.l.sun_cr2'  : TalkTheme(['lisa', 'olivia'], _("Давайте, я намажу вас кремом для загара?"), 'olivia_third_sunscreen',  "all([olivia.plan_name=='sun', not olivia.daily.oiled, olivia.flags.incident==3])"),
+    'ol.l.sun_crR'  : TalkTheme(['lisa', 'olivia'], _("Давайте, я намажу вас кремом для загара?"), 'olivia_repeat_sunscreen',  "all([olivia.plan_name=='sun', not olivia.daily.oiled, olivia.flags.incident>3])"),
+    'ol.l.sun_crG'  : TalkTheme(['lisa', 'olivia'], _("Вам дать крем для загара?"), 'olivia_give_sunscreen',  "all([olivia.plan_name=='sun', not olivia.daily.oiled, olivia.flags.incident>3, olivia.flags.handmass])"),
+
     }
 
 

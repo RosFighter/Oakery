@@ -20,7 +20,7 @@ label cam0_eric_ann_sleep:
                 $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
                 show Eric cams Alice-room 02 at laptop_screen
                 show FG cam-shum-act at laptop_screen
-                with dissolve
+                with diss3
                 pause 1
 
                 jump cam_before_frame_eric
@@ -425,14 +425,14 @@ label cam_before_frame_eric:
     $ renpy.show('BG-cam house aliceroom-0 night', at_list=[laptop_screen,])
     $ renpy.show('Alice cams sleep night '+cam_poses_manager(alice, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    with dissolve
+    with diss3
     pause 1
     # комната Анны с Эриком
     scene BG char Max laptop-night-01t
     $ renpy.show('BG-cam house annroom-0 night', at_list=[laptop_screen,])
     $ renpy.show('Eric cams sleep2 '+cam_poses_manager(eric, ['01', '02', '03']), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
-    with dissolve
+    with diss3
     menu:
         Max_01 "{m}Отлично! Пора...{/m}"
         "{i}идти к комнате Алисы{/i}":

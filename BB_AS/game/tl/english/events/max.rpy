@@ -465,7 +465,7 @@ translate english BookRead_sex_ed_e2e2e4d9:
 # game/events/max.rpy:664
 translate english BookRead_sex_ed_2c2e756a:
 
-    # Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
+    # Max_03 "Так, это не особо интересно... А вот сексуальное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
     Max_03 "This isn't particularly interesting, but the sexual behaviour of teenagers is extremely relevant! If only there was a section dedicated to explaining my morning wood...\n\n{color=[orange]}{i}(The book is 50%% studied){/i}{/color}"
 
 # game/events/max.rpy:666
@@ -1047,4 +1047,12 @@ translate english strings:
     # game/events/max.rpy:1131
     old "{i}идти к Эрику с включённым диктофоном{/i}"
     new "{i}Go see Eric with the recorder on{/i}"
+
+# TODO: Translation updated at 2022-02-09 00:00
+
+# game/events/max.rpy:685
+translate english BookRead_sex_ed_37326ac9:
+
+    # Max_04 "Вот и последние главы... Кажется, я понял о чём говорила Лиза. Эх, надо было раньше эту книжку прочитать, сейчас бы не тратил на это время! Но лучше поздно, чем никогда. Материал усвоен и теперь можно снова приставать к Лизе."
+    Max_04 ""
 

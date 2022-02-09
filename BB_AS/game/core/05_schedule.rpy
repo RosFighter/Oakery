@@ -288,28 +288,32 @@ label set_lisa_schedule:
         Schedule((1, 2, 3, 4, 5), '10:40', '15:59', 'in_shcool', "в школе"),
         Schedule((6, ), '11:0', '13:59', 'in_shop', "в магазине"),
         Schedule((6, ), '14:0', '14:59', 'read', "читает", 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
-        Schedule((0, 6), '15:0', '15:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', glow=105),
+
+        Schedule((0, 6), '15:0', '15:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="not olivia_visits()", glow=105),
+        Schedule((0, 6), '15:0', '15:59', 'sun', "загорает с Оливией", 'house', 6, 'olivia_lisa_sun', variable="olivia_visits()", glow=130),
+
+        Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'on_courses', "на курсах", variable="lisa.dcv.battle.stage in [3, 6]"),
         Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage not in [3, 6] and not olivia_visits()", glow=105),
         Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'sun', "загорает с Оливией", 'house', 6, 'olivia_lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and olivia_visits()", glow=130),
-        Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'on_courses', "на курсах", variable="lisa.dcv.battle.stage in [3, 6]"),
-        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and not olivia_visits()", glow=110),
+
         Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'sun', "загорает с Оливией", 'house', 6, 'olivia_lisa_sun', variable="olivia_visits()", glow=130),
+        Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and not olivia_visits()", glow=110),
         Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'swim', "в бассейне", 'house', 6, 'lisa_swim', variable="lisa.dcv.battle.stage in [3, 6] and not olivia_visits()", glow=105),
-        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'swim', "в бассейне с Оливией", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=130),
-        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and not olivia_visits()", glow=110),
-        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="lisa.dcv.battle.stage in [3, 6] and not olivia_visits()", glow=110),
-        Schedule((6, 0), '16:0', '16:59', 'sun', "загорает", 'house', 6, 'lisa_sun', glow=110),
+
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'swim', "в бассейне с Оливией", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=120),
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="not olivia_visits()", glow=110),
+
+        Schedule((6, 0), '16:0', '16:59', 'sun', "загорает", 'house', 6, 'lisa_sun', variable="not olivia_visits()", glow=110),
+        Schedule((6, 0), '16:0', '16:59', 'swim', "в бассейне с Оливией", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=120),
+
         Schedule((0, 6), '17:0', '18:59', 'read', "читает", 'house', 0, 'lisa_read', talklabel='lisa_read_closer', glow=105),
         Schedule((0, 1, 2, 3, 4, 5, 6), '19:0', '19:59', 'dinner', "семейный ужин", 'house', 5, 'dinner', enabletalk=False, glow=105),
         Schedule((0, 2, 3, 4, 5, 6), '20:0', '20:59', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', talklabel='lisa_dishes_closer'),
-
         Schedule((1, ), '20:00', '20:29', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable="flags.lisa_sexed < 7", talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:00', '20:29', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable="'eric' in chars and flags.lisa_sexed > 6 and any([lisa.dcv.intrusion.stage > 3, eric.daily.sweets, flags.eric_wallet, GetRelMax('eric')[0] > 0])", talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:00', '20:29', 'practice', 'практика с Эриком', 'house', 0, 'lisa_eric_sex_ed_practice', variable="'eric' in chars and all([flags.lisa_sexed > 6, lisa.dcv.intrusion.stage==3, not flags.eric_wallet, not eric.daily.sweets, GetRelMax('eric')[0] < 0])", enabletalk=False, glow=150),
-
         Schedule((1, ), '20:30', '20:59', 'dishes', "моет посуду", 'house', 4, 'lisa_dishes', variable='not dishes_washed', talklabel='lisa_dishes_closer'),
         Schedule((1, ), '20:30', '20:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', variable='dishes_washed', talklabel='lisa_phone_closer', glow=105),
-
         Schedule((0, 1, 2, 3, 4, 5, 6), '21:0', '21:59', 'phone', "лежит с телефоном", 'house', 0, 'lisa_phone', talklabel='lisa_phone_closer', glow=105),
         Schedule((1, ), '22:0', '22:29', 'bath', "принимает ванну", 'house', 3, 'lisa_bath', variable="not lisa.dcv.intrusion.stage", enabletalk=False, glow=120),
         Schedule((1, ), '22:00', '22:29', 'sexed_lisa', 'АиЭ учат Лизу. Вводный урок', 'house', 2, 'sexed_lisa', variable="lisa.dcv.intrusion.stage and flags.lisa_sexed<0", enabletalk=False, glow=120),
@@ -337,15 +341,18 @@ label set_olivia_shedule:
         Schedule((6,), '2:00', '5:59', 'sleep2', "спит с Оливией", 'house', 0, 'olivia_lisa_sleep',  variable="olivia_night_visits", enabletalk=False, glow=130),
         Schedule((6,), '0:00', '1:59', 'sleep', "спит y себя дома",  variable="not olivia_night_visits"),
         Schedule((6,), '2:00', '5:59', 'sleep', "спит y себя дома",  variable="not olivia_night_visits"),
-
         Schedule((1, 2, 3, 4, 5), '11:0', '15:59', 'in_shcool', "в школе"),
-
+        Schedule((0, 6), '15:0', '15:59', 'sun', "загорает с Лизой", 'house', 6, 'olivia_lisa_sun', variable="olivia_visits()", glow=130),
+        Schedule((0, 6), '15:0', '15:59', 'at_home', "у себя дома", variable="not olivia_visits()"),
         Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'sun', "загорает с Лизой", 'house', 6, 'olivia_lisa_sun', variable="lisa.dcv.battle.stage not in [3, 6] and olivia_visits()", glow=130),
         Schedule((1, 2, 3, 4, 5), '16:0', '16:59', 'at_home', "у себя дома", variable="lisa.dcv.battle.stage in [3, 6] or not olivia_visits()"),
+        Schedule((6, 0), '16:0', '16:59', 'swim', "в бассейне с Лизой", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=120),
+        Schedule((6, 0), '16:0', '16:59', 'at_home', "у себя дома", variable="not olivia_visits()"),
         Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'sun', "загорает с Лизой", 'house', 6, 'olivia_lisa_sun', variable="olivia_visits()", glow=130),
         Schedule((1, 2, 3, 4, 5), '17:0', '17:59', 'at_home', "у себя дома", variable="not olivia_visits()"),
-        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'swim', "в бассейне с Оливией", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=130),
+        Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'swim', "в бассейне с Лизой", 'house', 6, 'olivia_lisa_swim', variable="olivia_visits()", glow=120),
         Schedule((1, 2, 3, 4, 5), '18:0', '18:59', 'at_home', "у себя дома", variable="not olivia_visits()"),
+
         )
 
     return

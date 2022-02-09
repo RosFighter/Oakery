@@ -1997,3 +1997,80 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Эрик повержен! Мне удалось вывести его на чистую воду и теперь мы наконец-то заживём, как раньше. Даже ещё лучше! Но для начала всем нужно время, чтобы отойти от правды о нём."
     new "Eric is defeated! I managed to bring him out in the open and now we're finally going to live like we used to. Even better! But first, everyone needs time to move on from the truth about him."
+
+# TODO: Translation updated at 2022-02-09 00:00
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Пока Эрик представляет для меня угрозу, нет смысла что-то планировать насчёт Лизы и Оливии, поэтому мне потребуются успехи в возможности \"Альфа\"..."
+    new "As long as Eric is a threat to me, there is no point in planning anything about Lisa and Olivia, so I will need advances in opportunity \"Alpha\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Хорошо было бы поинтересоваться, сильно ли Лиза переживает всю эту историю с Эриком..."
+    new "It would be good to wonder if Lisa feels strongly about this whole thing with Eric..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эх, Эрика прогнали, а проблемы всё равно есть. Лиза сообразила, что мама теперь не будет уезжать на ночь к Эрику, а значит ночёвка Оливии под {b}БОЛЬШИМ{/b} вопросом. Теперь, чтобы не было никаких неожиданностей, нужно скорее их познакомить и уже исходя из того, как мама отнесётся к \"особенности\" Оливии, решать эту проблему."
+    new "Eh, Eric's gone, but there's still a problem. Lisa realized that Mom would not be spending the night at Eric's, which meant that Olivia's sleepover was a big question. Now, to avoid any surprises, it is necessary to introduce them to each other as soon as possible, and based on how Mom will treat Olivia's \"peculiarities\", to solve this problem."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно немного подождать и Оливия придёт знакомиться с мамой..."
+    new "We have to wait a little longer and Olivia will come to meet her mother..."
+
+    # game/core/09_opportunities.rpy:4
+    old "На мой взгляд, знакомство мамы и Оливии прошло хорошо. Конечно, маму слегка шокировал натуризм Оливии, но в целом, она не против их дружбы с Лизой. Теперь мне нужно получить одобрение мамы на ночёвку Оливии и я понятия не имею, насколько это будет просто или сложно. А ещё девочкам можно дать крем для загара, вдруг это приведёт рано или поздно к чему-нибудь очень интересному..."
+    new "In my opinion, the introduction of Mom and Olivia went well. Of course, Mom was a little shocked by Olivia's naturism, but overall, she's okay with her friendship with Lisa. Now I need to get Mom's approval for Olivia's sleepover and I have no idea how easy or difficult that will be. Also, the girls can be given sunscreen, in case it leads to something very interesting sooner or later..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно поговорить с мамой, чтобы она разрешила приходить Оливии к нам с ночёвкой..."
+    new "We need to talk to my mom to get her to let Olivia come over to our place for sleepovers..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно дать маме несколько дней на раздумья о ночёвке Оливии и снова поговорить с ней..."
+    new "We need to give Mom a few days to think about Olivia's sleepover and talk to her again..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Осталось сказать Лизе, что мама разрешила ночевать Оливии у нас дома..."
+    new "I just have to tell Lisa that Mom let Olivia spend the night at our house..."
+
+# TODO: Translation updated at 2022-02-09 18:42
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Кстати, с этим Эриком совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я ещё предложил её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. Но ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Стоит попробовать составить компанию Лизе, когда она читает..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать приставать к Лизе, когда она читает. Но не исключено, что для успеха в этих приставаниях у неё должно быть очень хорошее настроение..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот чёрт! Во время моих приставаний, Лиза каким-то образом почувствовала, что я не читал книгу по сексуальному образованию. Она намекнула, что к ней можно даже не пытаться приставать, пока я её не прочитаю. Эх, надо было прочитать её сразу, как купил, а потом уже дарить."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно сперва прочитать книгу по сексуальному образованию, а уже после продолжить приставать к Лизе, когда она читает..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "от это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого и не портить Лизе настроение..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь Оливия может приходить к нам с ночёвкой, как и раньше. Эрик мне больше ничем не угрожает, а это значит я могу попытать удачу с Лизой и Оливией по ночам... Правда, здесь есть другой напряг - мама может проверить, чем мы занимаемся."
+    new ""
+
