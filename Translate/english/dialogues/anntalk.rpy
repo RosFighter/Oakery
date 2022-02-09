@@ -2404,7 +2404,7 @@ translate english ann_about_olivia0_succes_48663582:
 translate english ann_about_olivia0_succes_a1e2dec6:
 
     # Max_09 "И вспомни, кто вывел Эрика на чистую воду? Я! И я же тебе говорю, что присмотрю за Лизой и Оливией."
-    Max_09 "And remember, who brought Eric out into the open? Я! And I told you that I would look after Lisa and Olivia."
+    Max_09 "And remember, who brought Eric out into the open? I am! And I told you that I would look after Lisa and Olivia."
 
 # game/dialogues/anntalk.rpy:1519
 translate english ann_about_olivia0_succes_e99695fc:
