@@ -2040,37 +2040,36 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Кстати, с этим Эриком совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
-    new ""
+    new "By the way, with that Eric, I completely forgot to ask if she had read the book on sex education! I'll have to ask..."
 
     # game/core/09_opportunities.rpy:4
     old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я ещё предложил её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. Но ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
-    new ""
+    new "I found out from Lisa that she had read the book on sex education. At the same time, I suggested that she study kissing further, but in a more intimate way. She still let me kiss her neck, but she would not let me touch her breasts, she was embarrassed. But that's okay, she will. I think that if you try to make unobtrusive advances to her when she reads, then the kissing lessons can be fully resumed."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит попробовать составить компанию Лизе, когда она читает..."
-    new ""
+    new "It's worth trying to keep Lisa company when she reads..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать приставать к Лизе, когда она читает. Но не исключено, что для успеха в этих приставаниях у неё должно быть очень хорошее настроение..."
-    new ""
+    new "We have to keep pestering Lisa when she reads. But it is possible that she must be in a very good mood to succeed in these pesterings..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот чёрт! Во время моих приставаний, Лиза каким-то образом почувствовала, что я не читал книгу по сексуальному образованию. Она намекнула, что к ней можно даже не пытаться приставать, пока я её не прочитаю. Эх, надо было прочитать её сразу, как купил, а потом уже дарить."
-    new ""
+    new "Holy crap! During my advances, Lisa somehow sensed that I hadn't read the sex-education book. She hinted that I shouldn't even try to hit on her until I'd read it. Eh, I should have read it as soon as I bought it and then given it to her."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно сперва прочитать книгу по сексуальному образованию, а уже после продолжить приставать к Лизе, когда она читает..."
-    new ""
+    new "You have to read the sex-education book first, and then keep pestering Lisa as she reads..."
 
     # game/core/09_opportunities.rpy:4
     old "от это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
-    new ""
+    new "That's great! I finally got to fondle Lisa's boobs with my kisses! And how many perspectives this can open up... The main thing is to take your time and enjoy these moments."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого и не портить Лизе настроение..."
-    new ""
+    new "I think I've already gotten close enough to Lisa that she and Olivia won't mind my company on Friday night. All that was left to do was to wait for that and not spoil Lisa's mood..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь Оливия может приходить к нам с ночёвкой, как и раньше. Эрик мне больше ничем не угрожает, а это значит я могу попытать удачу с Лизой и Оливией по ночам... Правда, здесь есть другой напряг - мама может проверить, чем мы занимаемся."
-    new ""
-
+    new "Now Olivia can come to our place for sleepovers, just like before. Eric isn't threatening me anymore, which means I can try my luck with Lisa and Olivia at night... There's another tension, though-Mom might check on what we're doing."
