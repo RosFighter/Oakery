@@ -10983,13 +10983,13 @@ translate german lisa_about_olivia_5_37f257a7:
 translate german lisa_about_olivia_5_2704fdca:
 
     # Max_04 "Ну, \"полуголых\" - это слабо сказано, потому что из полуголых у нас только ты, а все остальные СОВСЕМ голые."
-    Max_04 "Nun, \"halbnackt\" ist eine Untertreibung, denn du bist der einzige Halbnackte hier, und alle anderen sind VOLLkommen nackt."
+    Max_04 "Nun, \"halbnackt\" ist eine Untertreibung, denn du bist die einzige Halbnackte hier, und alle anderen sind VOLLKOMMEN nackt."
 
 # game/dialogues/lisatalk.rpy:4737
 translate german lisa_about_olivia_5_50191b16:
 
     # Lisa_10 "И мне кажется, что кому-кому, а мне она запретит по ночам тусоваться с вами. Да и не факт, что и тебе с Оливией разрешит."
-    Lisa_10 "Und ich glaube, ich bin der Einzige, den sie nachts nicht mit euch abhängen lässt. Ich weiß auch nicht, ob sie dich und Olivia alleine lassen wird."
+    Lisa_10 "Und ich glaube, ich bin die Einzige, den sie nachts nicht mit euch abhängen lässt. Ich weiß auch nicht, ob sie dich und Olivia alleine lassen wird."
 
 # game/dialogues/lisatalk.rpy:4738
 translate german lisa_about_olivia_5_52089248:
