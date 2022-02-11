@@ -1737,11 +1737,11 @@ translate english strings:
 translate english left_cream_68a6f9b5:
 
     # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
-    Max_10 ""
+    Max_10 "{m}Well, we're out of cream. I have to buy some more.{/m}"
 
 # game/events/other.rpy:874
 translate english left_cream_61f00467:
 
     # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
-    Max_08 ""
+    Max_08 "{m}There is not enough cream left, next time you may not have enough, it is better to buy in advance.{/m}"
 
