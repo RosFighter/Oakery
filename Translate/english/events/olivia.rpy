@@ -154,7 +154,7 @@ translate english olivia_first_meeting_d35082b4:
 translate english olivia_first_meeting_a3a21fd8:
 
     # Olivia_06 "Ну... Они с мамой поругались некоторое время назад и сейчас он с нами не живёт. А ещё у нас сломался бассейн и его некому чинить... Можно я к вам буду приходить купаться?"
-    Olivia_06 "Well... He and my Mom had a fight some time ago and now he doesn't live with us. Also, our pool is broken and there's no one to fix it... Can I come and use yours?"
+    Olivia_06 "Well... He and my Mom had a fight some time ago and now he doesn't live with us. Also, our pool is broken and there's no one to fix it... Can I come here and use your pool?"
 
 # game/events/olivia.rpy:120
 translate english olivia_first_meeting_7db6c66b:
@@ -1890,7 +1890,7 @@ translate english olivia_ann_meeting_e64f98f3:
 translate english olivia_ann_meeting_65d93586:
 
     # Olivia_01 "Ну... Они с мамой поругались уже давненько и сейчас он с нами не живёт. А ещё у нас сломался бассейн и его некому чинить... Можно я к вам буду приходить купаться?"
-    Olivia_01 "Well... He and my mom had a fight a long time ago and now he doesn't live with us. Also, our pool is broken and there's no one to fix it... Can I come and bathe with you?"
+    Olivia_01 "Well... He and my mom had a fight a long time ago and now he doesn't live with us. Also, our pool is broken and there's no one to fix it... Can I come here and use your pool?"
 
 # game/events/olivia.rpy:1043
 translate english olivia_ann_meeting_0b55a823:
