@@ -954,7 +954,7 @@ translate german strings:
 
     # game/events/max.rpy:828
     old "{i}искать...{/i}"
-    new "{i}Hinsehen...{/i}"
+    new "{i}Suchen...{/i}"
 
     # game/events/max.rpy:854
     old "{i}Подложить сейчас{/i}"

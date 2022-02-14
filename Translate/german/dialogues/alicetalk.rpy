@@ -2602,7 +2602,7 @@ translate german Alice_sorry_fb165afa:
 translate german Alice_sorry_ee958c85:
 
     # Max_10 "Да, знаю, в такое очень трудно поверить, но я просто шёл мимо, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
-    Max_10 "Ja, ich weiß, es ist wirklich schwer zu glauben, aber ich kam gerade vorbei, als du geduscht hast... Ich bog um die Ecke, als du mich bemerkt hast... Das war's, ich habe nicht mal etwas Intimes gesehen!"
+    Max_10 "Ja, ich weiß, es ist schwer zu glauben, aber ich bin gerade vorbeigekommen und du hast geduscht... Also ging ich rüber zur Wand... wo du mich gesehen hast... Das war's, ich habe nichts gesehen!"
 
 # game/dialogues/alicetalk.rpy:2189
 translate german Alice_sorry_c7c9da47:
@@ -10838,7 +10838,7 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:3109
     old "Давай лучше ещё так посидим, подождём. Вон он, уползает..."
-    new "Lass uns einfach ruhig warten. Da ist sie, krabbelt weg..."
+    new "Lass uns einfach ruhig warten. Sieh selbst, sie krabbelt weg..."
 
     # game/dialogues/alicetalk.rpy:3109
     old "Спрячься за меня, хотя бы..."

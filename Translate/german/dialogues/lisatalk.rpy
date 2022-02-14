@@ -3106,7 +3106,7 @@ translate german Lisa_sorry_88ece42c:
 translate german Lisa_sorry_cf9250b3:
 
     # Max_10 "Не виноват я! Просто шёл, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
-    Max_10 "Es ist nicht meine Schuld! Ich bin nur spazieren gegangen, und du warst gerade unter der Dusche... Also schaute ich, ohne nachzudenken... ...als du mich bemerkt hast... Das war's, ich habe nicht mal was gesehen!"
+    Max_10 "Es war nicht meine Schuld! Ich war gerade unterwegs und du warst unter der Dusche... Also ging ich rüber zur Wand... wo du mich gesehen hast... Das ist alles, ich habe nicht einmal was gesehen!"
 
 # game/dialogues/lisatalk.rpy:1912
 translate german Lisa_sorry_7e2e1148:
@@ -3148,7 +3148,7 @@ translate german Lisa_sorry_a79e8934:
 translate german Lisa_sorry_0132e90e:
 
     # Max_01 "Хорошо. Завтра всё будет..."
-    Max_01 "Okay. Morgen wird alles vorbereitet sein..."
+    Max_01 "Gut. Für morgen wird alles..."
 
 # game/dialogues/lisatalk.rpy:1921
 translate german Lisa_sorry_449604df:
