@@ -34,25 +34,25 @@ translate german ann_sleep_78b3f9d0:
 translate german ann_sleep_19a34828:
 
     # Max_04 "{m}О, да! Какая у мамы попка! Всё-таки хорошо, что здесь так жарко и все спят не укрываясь... Её попку даже немного видно через ночнушку!{/m}" nointeract
-    Max_04 "{m}Oh, ja! Was für einen Arsch Mom hat! Gut, dass es hier drin so heiß ist und alle ohne Decke schlafen... Man kann ihren Hintern sogar ein bisschen durch ihr Nachthemd sehen!{/m}" nointeract
+    Max_04 "{m}Oh ja! Was für ein toller Arsch von meiner Mutter! Gut, dass es hier so heiß ist und alle ohne Decke schlafen... Man kann sogar ihren Arsch durch ihr Nachthemd sehen!{/m}" nointeract
 
 # game/events/ann.rpy:29
 translate german ann_sleep_1cc5b28f:
 
     # Max_07 "{m}Обалденно! Как же повезло, что у меня такая горячая мама... В этой ночнушке она выглядит потрясающе, аж глаза отрывать не хочется!{/m}" nointeract
-    Max_07 "{m}Fantastisch! Ich habe so ein Glück, dass ich so eine heiße Mom habe... Sie sieht fantastisch aus in diesem Nachthemd, und ich will meine Augen nicht von ihr nehmen!{/m}" nointeract
+    Max_07 "{m}Fantastisch! Was für ein Glück, dass ich so eine heiße Mutter habe... Sie sieht in diesem Nachthemd umwerfend aus, man kann die Augen nicht von ihr lassen!{/m}" nointeract
 
 # game/events/ann.rpy:38
 translate german ann_sleep_d64da859:
 
     # Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Вот бы снять с неё всё белье и пристроиться сзади... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
-    Max_03 "{m}Verdammt, ich habe die verführerischste Mutter der Welt! Ich wünschte, ich könnte ihr die ganze Unterwäsche ausziehen und ... Aber es ist besser, leise zu gehen, bevor sie aufwacht.{/m}" nointeract
+    Max_03 "{m}Verdammt, ich habe die schärfste Mutti der Welt! Ich wünschte, ich könnte ihr die gesamte Wäsche ausziehen und mich an sie kuscheln... Aber ich gehe lieber leise, bevor sie aufwacht.{/m}" nointeract
 
 # game/events/ann.rpy:40
 translate german ann_sleep_eedcea80:
 
     # Max_02 "{m}Ухх! Так и хочется прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться.{/m}" nointeract
-    Max_02 "{m}Uhh! Ich will einfach nur an diesem Arsch hängen und die ganze Nacht bleiben... Aber es ist Zeit zu gehen, bevor sie aufwacht.{/m}" nointeract
+    Max_02 "{m}Wow! Ich würde mich am liebsten an diesen hübschen Arsch kuscheln und die ganze Nacht rummachen... Aber es ist Zeit zu gehen, sonst wacht sie vielleicht auf.{/m}" nointeract
 
 # game/events/ann.rpy:42
 translate german ann_sleep_abe8ecd4:
@@ -64,25 +64,25 @@ translate german ann_sleep_abe8ecd4:
 translate german ann_sleep_249e8b49:
 
     # Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Вот бы пристроиться сзади и запустить руки под эту сорочку... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
-    Max_03 "{m}Verdammt, ich habe die appetitlichste Mutter der Welt! Ich wünschte, ich könnte hinten sitzen und meine Hände unter dieses Hemd stecken... Aber wir gehen besser leise, bevor sie aufwacht.{/m}" nointeract
+    Max_03 "{mVerdammt, ich habe die schärfste Mutti der Welt! Ich wünschte, ich könnte ihr von hinten unter das Oberteil fahren... Aber ich gehe besser leise, bevor sie aufwacht.{/m}" nointeract
 
 # game/events/ann.rpy:47
 translate german ann_sleep_3eaf0f95:
 
     # Max_02 "{m}Ухх! Так и хочется задрать её сорочку, прижаться к этой обворожительной попке и шалить всю ночь... Но пора уходить, а то она может проснуться.{/m}" nointeract
-    Max_02 "{m}Uhh! Ich will ihr nur das Nachthemd ausziehen, mich an diesen bezaubernden Arsch kuscheln und die Nacht so verbringen... Aber es ist Zeit zu gehen, bevor sie noch aufwacht.{/m}" nointeract
+    Max_02 "{m}Ooh! Ich möchte ihr einfach nur das Oberteil hochschieben, mich an diesen hübschen Arsch kuscheln und die ganze Nacht daran rummachen... Aber es ist Zeit zu gehen, sonst wacht sie vielleicht auf.{/m}" nointeract
 
 # game/events/ann.rpy:49
 translate german ann_sleep_80d64f9d:
 
     # Max_05 "{m}Вот это да! От вида этих раздвинутых ножек становится всё равно, что она моя мама... Слишком уж соблазнительно она выглядит в этой сорочке! Только бы она сейчас не проснулась...{/m}" nointeract
-    Max_05 "{m}Wow! Der Anblick dieser schlanken Beine... Sie schauen zu verlockend aus in diesem Hemd! Solange sie jetzt nicht aufwacht...{/m}" nointeract
+    Max_05 "{m}Wow! Beim Anblick dieser gespreizten Schenkel ist es mir egal, ob sie meine Mutter ist... Sie sieht zu verführerisch aus in diesem Oberteil! Ich hoffe, sie wacht jetzt nicht auf...{/m}" nointeract
 
 # game/events/ann.rpy:64
 translate german ann_shower_71ff78e8:
 
     # Max_00 "{m}Я уже попался сегодня на подглядывании за мамой. Не стоит злить её ещё больше.{/m}"
-    Max_00 "{m}Ich wurde heute schon dabei erwischt, wie ich meine Mutter angeguckt habe. Das sollte sie nicht noch wütender machen.{/m}"
+    Max_00 "{m}Ich bin heute schon dabei erwischt worden, wie ich meine Mutter beobachtet habe. Es gibt keinen Grund, sie noch mehr zu verärgern.{/m}"
 
 # game/events/ann.rpy:67
 translate german ann_shower_f74760e1:
