@@ -9664,7 +9664,7 @@ translate german strings:
 
     # game/dialogues/lisatalk.rpy:2516
     old "Правда? Ну ты даёшь! А какую на этот раз?!"
-    new "Wirklich? Oje! Was ist das nächste?!"
+    new "Wirklich? Oh, du bist super! Was ist es denn diesmal?!"
 
     # game/dialogues/lisatalk.rpy:2516
     old "Правда? Ну давай, показывай, что у тебя на этот раз?!"
@@ -10556,7 +10556,7 @@ translate german lisa_sorry_gifts_5dc942a0:
 translate german lisa_sorry_gifts_18215912:
 
     # Lisa_02 "Правда? Ну ты даёшь! А какую на этот раз?!" nointeract
-    Lisa_02 "Wirklich? Oje! Was ist das nächste?!" nointeract
+    Lisa_02 "Wirklich? Oh, du bist super! Was ist es denn diesmal?!" nointeract
 
 # game/dialogues/lisatalk.rpy:2331
 translate german lisa_sorry_gifts_18a348cf:
