@@ -64,7 +64,7 @@ translate german ann_sleep_abe8ecd4:
 translate german ann_sleep_249e8b49:
 
     # Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Вот бы пристроиться сзади и запустить руки под эту сорочку... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
-    Max_03 "{mVerdammt, ich habe die schärfste Mutti der Welt! Ich wünschte, ich könnte ihr von hinten unter das Oberteil fahren... Aber ich gehe besser leise, bevor sie aufwacht.{/m}" nointeract
+    Max_03 "{m}Verdammt, ich habe die schärfste Mutti der Welt! Ich wünschte, ich könnte ihr von hinten unter das Oberteil fahren... Aber ich gehe besser leise, bevor sie aufwacht.{/m}" nointeract
 
 # game/events/ann.rpy:47
 translate german ann_sleep_3eaf0f95:
