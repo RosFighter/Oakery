@@ -248,7 +248,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Тусовщица"
-    new "Partygirl"
+    new "Party-Girl"
 
     # game/core/09_opportunities.rpy:4
     old "Алиса настойчиво просит маму купить ей вечернее платье для посещения ночных клубов. Та ей регулярно отказывала, пока Эрик не предложил подарить ей платье во время следующего шопинга. Нужно поспешить, если я хочу сделать это первым!"
@@ -588,7 +588,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Было бы неплохо побольше сблизиться со своими сёстрами. Тогда наши совместные занятия с ними станут более естественными и перспективными. \nС Алисой же особое внимание стоит уделить успехам в возможности \"Тусовщица\"..."
-    new "Es wäre schön, meinen Schwestern näher zu kommen. Dann werden meine Aktivitäten mit ihnen natürlicher und erfolgsversprechender werden.\nBei Alice sollte ich ein besonderes Augenmerk auf den Erfolg der \"Party-Girl\"-Möglichkeit legen..."
+    new "Es wäre schön, meinen Schwestern näher zu kommen. Dann werden unsere Aktivitäten mit ihnen natürlicher und vielversprechender sein.\nBei Alice hingegen sollte man besonders auf den Erfolg der \"Party-Girl\"-Möglichkeit achten..."
 
     # game/core/09_opportunities.rpy:4
     old "А ведь конфеты с ликёром делают своё дело и очень быстро! Алиса явно становится более податливой и открытой в моих руках. Её трусики скрывают так мало, что у меня каждый раз слегка привстаёт. Чувствую, рано или поздно её ножки упрутся в мой член и будет много криков! И как замечательно, что она об этом потом не вспомнит."
