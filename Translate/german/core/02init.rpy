@@ -12,7 +12,7 @@ translate german strings:
 
     # game/core/02init.rpy:21
     old "{color=#00FF00}{i}Вы остались незамеченным!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Du bist unentdeckt!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Du bleibst unentdeckt!{/i}{/color}\n"
 
     # game/core/02init.rpy:22
     old "{color=#E59400}{i}Вас заметили!{/i}{/color}\n"
@@ -24,27 +24,27 @@ translate german strings:
 
     # game/core/02init.rpy:25
     old "{color=#00FF00}{i}Алисе понравился массаж!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Alice gefiel die Massage!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Alice hat die Massage gefallen!{/i}{/color}\n"
 
     # game/core/02init.rpy:26
     old "{color=#E59400}{i}Алисе не понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}Alice gefiel die Massage nicht!{/i}{/color}\n"
+    new "{color=#E59400}{i}Alice hat die Massage nicht gefallen!{/i}{/color}\n"
 
     # game/core/02init.rpy:28
     old "{color=#00FF00}{i}Лизе понравился массаж!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Lisa liebt die Massage!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Lisa hat die Massage gefallen!{/i}{/color}\n"
 
     # game/core/02init.rpy:29
     old "{color=#E59400}{i}Лизе не понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}Lisa mochte die Massage nicht!{/i}{/color}\n"
+    new "{color=#E59400}{i}Lisa hat die Massage nicht gefallen!{/i}{/color}\n"
 
     # game/core/02init.rpy:31
     old "{color=#00FF00}{i}Маме понравился массаж!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Mom liebt die Massage!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Mom hat die Massage gefallen!{/i}{/color}\n"
 
     # game/core/02init.rpy:32
     old "{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n"
-    new "{color=#E59400}{i}Mom mochte die Massage nicht!{/i}{/color}\n"
+    new "{color=#E59400}{i}Mom hat die Massage nicht gefallen!{/i}{/color}\n"
 
     # game/core/02init.rpy:33
     old "{color=#00FF00}{i}Получилось!{/i}{/color}\n"
@@ -60,15 +60,15 @@ translate german strings:
 
     # game/core/02init.rpy:37
     old "{color=#E59400}{i}Сдержаться не удалось{/i}{/color}\n"
-    new "{color=#E59400}{i}Ich konnte mich nicht zurückhalten{/i}{/color}\n"
+    new "{color=#E59400}{i}Ich konnte mich nicht beherrschen{/i}{/color}\n"
 
     # game/core/02init.rpy:39
     old "{color=#00FF00}{i}Лизе понравился поцелуй!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Lisa liebt den Kuss!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Lisa hat den Kuss geliebt!{/i}{/color}\n"
 
     # game/core/02init.rpy:40
     old "{color=#E59400}{i}Лизе не понравился поцелуй!{/i}{/color}\n"
-    new "{color=#E59400}{i}Lisa gefiel der Kuss nicht!{/i}{/color}\n"
+    new "{color=#E59400}{i}Lisa hat der Kuss nicht gefallen!{/i}{/color}\n"
 
     # game/core/02init.rpy:42
     old "{color=#00FF00}{i}Ей нравится!{/i}{/color}\n"
@@ -80,11 +80,11 @@ translate german strings:
 
     # game/core/02init.rpy:45
     old "{color=#00FF00}{i}Повезло!{/i}{/color}\n"
-    new "{color=#00FF00}{i}Glücklich!{/i}{/color}\n"
+    new "{color=#00FF00}{i}Glück gehabt!{/i}{/color}\n"
 
     # game/core/02init.rpy:46
     old "{color=#E59400}{i}Не повезло!{/i}{/color}\n"
-    new "{color=#E59400}{i}Pech!{/i}{/color}\n"
+    new "{color=#E59400}{i}Pech gehabt!{/i}{/color}\n"
 
     # game/core/02init.rpy:84
     old "ВС"
