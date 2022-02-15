@@ -2009,7 +2009,7 @@ translate english olivia_lisa_sunscreen_0_63f097d0:
 # game/events/olivia.rpy:1102
 translate english olivia_lisa_sunscreen_0_62a4a929:
 
-    # Lisa_02 "Eh, and we could have waited."
+    # Lisa_02 "Эх, а мы ведь могли бы и подождать."
     Lisa_02 "Eh, and we could have waited."
 
 # game/events/olivia.rpy:1103
@@ -2115,3 +2115,24 @@ translate english olivia_night_visit_r_e85cfe71:
 
     # Max_04 "Привет! Рад тебя видеть. Дома только я, Лиза и мама. Проходи..."
     Max_04 "Hi! Good to see you. It's just me, Lisa, and Mom at home. Come on in..."
+    
+# TODO: Translation updated at 2022-02-16 00:40
+
+# game/events/olivia.rpy:683
+translate english olivia_repeatable_night_out_with_eab840c0:
+
+    # Lisa_02 "И с чего ты взял, что нам надоест? Я даже маечку одевать не буду. Макс уже всё видел, а без неё удобнее..."
+    Lisa_02 ""
+
+# game/events/olivia.rpy:684
+translate english olivia_repeatable_night_out_with_ba36eeb5:
+
+    # Max_02 "Ох, что за дивный вечерок!"
+    Max_02 ""
+
+# game/events/olivia.rpy:685
+translate english olivia_repeatable_night_out_with_0a6cf6a4:
+
+    # Olivia_01 "Ночь вообще-то, Макс. Укладываемся спать..."
+    Olivia_01 ""
+

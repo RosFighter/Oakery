@@ -939,9 +939,9 @@ translate english olivia_third_sunscreen_18491192:
     Lisa_01 "Oh, well... I'm telling you, Max is about to start getting his hands dirty."
 
 # game/dialogues/oliviatalk.rpy:425
-translate english olivia_third_sunscreen_46122a97:
+translate english olivia_third_sunscreen_6f26c3bd:
 
-    # Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты Макс уже оживился."
+    # Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты, Макс, уже оживился."
     Olivia_07 "Mmm... Just what I need... I mean, a little massage, not a lot of hand-rolling. Cause I can see out of the corner of my eye that you're already livening up, Max."
 
 # game/dialogues/oliviatalk.rpy:426

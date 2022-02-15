@@ -463,9 +463,9 @@ translate english BookRead_sex_ed_e2e2e4d9:
     Max_01 "Aha. So it looks like everyone has the same anatomy, but with slightly different preferences and characteristics. This is explaining female genitalia, I should read and take notes.\n\n{color=[orange]}{i}(The book is 25%% studied){/i}{/color}"
 
 # game/events/max.rpy:664
-translate english BookRead_sex_ed_2c2e756a:
+translate english BookRead_sex_ed_5dc0d1da:
 
-    # Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
+    # Max_03 "Так, это не особо интересно... А вот сексуальное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
     Max_03 "This isn't particularly interesting, but the sexual behaviour of teenagers is extremely relevant! If only there was a section dedicated to explaining my morning wood...\n\n{color=[orange]}{i}(The book is 50%% studied){/i}{/color}"
 
 # game/events/max.rpy:666
