@@ -1305,3 +1305,220 @@ translate german strings:
     # game/events/ann.rpy:454
     old "Извини, всё позабыл, когда тебя увидел. Ты прекрасна!"
     new "Sorry, ich hab es vergessen, als ich dich sah. Du bist wunderschön!"
+
+# TODO: Translation updated at 2022-02-16 00:40
+
+# game/events/ann.rpy:587
+translate german ann_dressed_balcony_919b6a05:
+
+    # Max_07 "{m}Хм... Должно быть мама на балконе...{/m}"
+    Max_07 ""
+
+# game/events/ann.rpy:595
+translate german ann_dressed_balcony_34f4b4a9:
+
+    # Max_09 "{m}То ли мама просто задумалась, то ли грустит...{/m}" nointeract
+    Max_09 "" nointeract
+
+# game/events/ann.rpy:601
+translate german ann_dressed_balcony_2fd8332a:
+
+    # Ann_12 "Ой, Макс! Ты слишком тихо ходишь. А я так, ничего, просто задумалась немного..."
+    Ann_12 ""
+
+# game/events/ann.rpy:602
+translate german ann_dressed_balcony_d6e397b3:
+
+    # Max_07 "Расскажешь, о чём?"
+    Max_07 ""
+
+# game/events/ann.rpy:612
+translate german ann_dressed_balcony_2e72dc0c:
+
+    # Max_05 "{m}Оу! Мама ещё не оделась... Это я вовремя зашёл. Она шикарно смотрится...{/m}" nointeract
+    Max_05 "" nointeract
+
+# game/events/ann.rpy:621
+translate german ann_dressed_balcony_1f19d7dd:
+
+    # Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+    Ann_15 "" nointeract
+
+# game/events/ann.rpy:624
+translate german ann_dressed_balcony_e1ca91d3:
+
+    # Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+    Ann_15 "" nointeract
+
+# game/events/ann.rpy:633
+translate german ann_dressed_balcony_a9e5c75c:
+
+    # Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
+    Ann_15 ""
+
+# game/events/ann.rpy:635
+translate german ann_dressed_balcony_babcea3a:
+
+    # Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
+    Ann_15 ""
+
+# game/events/ann.rpy:638
+translate german ann_dressed_balcony_aa9214ef:
+
+    # Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+    Ann_14 "" nointeract
+
+# game/events/ann.rpy:641
+translate german ann_dressed_balcony_c391d1e4:
+
+    # Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+    Ann_12 "" nointeract
+
+# game/events/ann.rpy:650
+translate german ann_dressed_balkon_talk1_b906cb2e:
+
+    # Ann_14 "У меня сейчас такое состояние, что я не знаю, как мне жить дальше... Я... Я ужасная мать..."
+    Ann_14 ""
+
+# game/events/ann.rpy:651
+translate german ann_dressed_balkon_talk1_b034aec8:
+
+    # Max_08 "Что?! Как ты можешь такое говорить?"
+    Max_08 ""
+
+# game/events/ann.rpy:652
+translate german ann_dressed_balkon_talk1_79bc09d7:
+
+    # Ann_13 "А разве нет? Я... Я была так глупа, что привела в дом проходимца, который не только воспользовался мной, но и чуть не совратил моих девочек!"
+    Ann_13 ""
+
+# game/events/ann.rpy:653
+translate german ann_dressed_balkon_talk1_de50c165:
+
+    # Max_09 "Мам, прекрати, это уже всё в прошлом... Забудь..."
+    Max_09 ""
+
+# game/events/ann.rpy:654
+translate german ann_dressed_balkon_talk1_c7c7442f:
+
+    # Ann_14 "Забыть? Забыть, как я чуть не отправила единственного сына в военный лагерь и... который один оказался настолько умным и благородным, что не только не разозлился на меня, а наоборот, спас всю семью от этого ублюдка Эрика."
+    Ann_14 ""
+
+# game/events/ann.rpy:655
+translate german ann_dressed_balkon_talk1_efb41ecc:
+
+    # Max_07 "Ну хватит... Было и было. Прими и сделай выводы. Нельзя же всё время теперь ходить такой печальной и заниматься самобичеванием. Ты ни в чём не виновата!"
+    Max_07 ""
+
+# game/events/ann.rpy:656
+translate german ann_dressed_balkon_talk1_e8140f63:
+
+    # Ann_17 "Возможно ты прав, но... присутствие Эрика на работе постоянно мне напоминает о тех событиях и мне это ужасно неприятно."
+    Ann_17 ""
+
+# game/events/ann.rpy:657
+translate german ann_dressed_balkon_talk1_63d3ad78:
+
+    # Max_15 "Да и чёрт с ним! Просто игнорируй его. К тому же, у тебя есть мы, и мы все тебя очень любим!"
+    Max_15 ""
+
+# game/events/ann.rpy:658
+translate german ann_dressed_balkon_talk1_6335970c:
+
+    # Ann_02 "Спасибо, мой хороший, за твои тёплые слова и поддержку, мне очень приятно это слышать."
+    Ann_02 ""
+
+# game/events/ann.rpy:659
+translate german ann_dressed_balkon_talk1_59e5166a:
+
+    # Max_04 "Не стоит благодарить, мам. Я очень тебя люблю! Ты самая замечательная мама на свете! Самая добрая и самая красивая!"
+    Max_04 ""
+
+# game/events/ann.rpy:661
+translate german ann_dressed_balkon_talk1_d77c6ad5:
+
+    # Ann_04 "Ой! Вот же ты маленький льстец, Макс!"
+    Ann_04 ""
+
+# game/events/ann.rpy:662
+translate german ann_dressed_balkon_talk1_5e9b1161:
+
+    # Max_07 "Это я-то маленький?"
+    Max_07 ""
+
+# game/events/ann.rpy:663
+translate german ann_dressed_balkon_talk1_5eb0124c:
+
+    # Ann_05 "Ну, конечно, ты большой, Макс! Совсем взрослый, почти мужчина."
+    Ann_05 ""
+
+# game/events/ann.rpy:664
+translate german ann_dressed_balkon_talk1_f86a1ee3:
+
+    # Max_09 "Что значит почти?"
+    Max_09 ""
+
+# game/events/ann.rpy:665
+translate german ann_dressed_balkon_talk1_2e6b2825:
+
+    # Ann_07 "Ну... То и значит, что полноценным мужчиной ты станешь только после того, как у тебя появится девушка."
+    Ann_07 ""
+
+# game/events/ann.rpy:666
+translate german ann_dressed_balkon_talk1_a8851b6c:
+
+    # Max_08 "Серьёзно? А поподробнее можно узнать, как и что делать с ней, чтобы стать мужчиной?"
+    Max_08 ""
+
+# game/events/ann.rpy:667
+translate german ann_dressed_balkon_talk1_f041c776:
+
+    # Ann_02 "Макс, что за вопросы? Как будто ты до сих пор не знаешь."
+    Ann_02 ""
+
+# game/events/ann.rpy:668
+translate german ann_dressed_balkon_talk1_d7d0349c:
+
+    # Max_02 "Да это я просто так спросил... Теперь ты уже не такая печальная и задумчивая, как до моего прихода."
+    Max_02 ""
+
+# game/events/ann.rpy:669
+translate german ann_dressed_balkon_talk1_1c8db60a:
+
+    # Ann_05 "Вот же ты хитрец! Нашёл чем меня отвлечь..."
+    Ann_05 ""
+
+# game/events/ann.rpy:670
+translate german ann_dressed_balkon_talk1_3696543d:
+
+    # Max_03 "Могу отвлечь чем-нибудь приятным. Например, массажем спины. Думаю, это тебе бы сейчас помогло. Хочешь?"
+    Max_03 ""
+
+# game/events/ann.rpy:671
+translate german ann_dressed_balkon_talk1_eb82677e:
+
+    # Ann_04 "Нет, Макс, сейчас мне некогда. Давай вечерком, сынок, у ТВ."
+    Ann_04 ""
+
+# game/events/ann.rpy:672
+translate german ann_dressed_balkon_talk1_a3767c9d:
+
+    # Max_01 "Договорились, мам. И не забывай, если что, я всегда рядом. Обращайся!"
+    Max_01 ""
+
+# game/events/ann.rpy:673
+translate german ann_dressed_balkon_talk1_59d69cc0:
+
+    # Ann_01 "Обязательно!" nointeract
+    Ann_01 "" nointeract
+
+translate german strings:
+
+    # game/events/ann.rpy:596
+    old "Мам, всё нормально?"
+    new ""
+
+    # game/events/ann.rpy:613
+    old "Мам?"
+    new ""
+

@@ -2115,3 +2115,24 @@ translate german olivia_night_visit_r_e85cfe71:
 
     # Max_04 "Привет! Рад тебя видеть. Дома только я, Лиза и мама. Проходи..."
     Max_04 "Hallo! Schön, dich zu sehen. Zu Hause sind nur ich, Lisa und Mom. Komm rein..."
+    
+# TODO: Translation updated at 2022-02-16 00:40
+
+# game/events/olivia.rpy:683
+translate german olivia_repeatable_night_out_with_eab840c0:
+
+    # Lisa_02 "И с чего ты взял, что нам надоест? Я даже маечку одевать не буду. Макс уже всё видел, а без неё удобнее..."
+    Lisa_02 ""
+
+# game/events/olivia.rpy:684
+translate german olivia_repeatable_night_out_with_ba36eeb5:
+
+    # Max_02 "Ох, что за дивный вечерок!"
+    Max_02 ""
+
+# game/events/olivia.rpy:685
+translate german olivia_repeatable_night_out_with_0a6cf6a4:
+
+    # Olivia_01 "Ночь вообще-то, Макс. Укладываемся спать..."
+    Olivia_01 ""
+

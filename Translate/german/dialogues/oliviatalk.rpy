@@ -939,9 +939,9 @@ translate german olivia_third_sunscreen_18491192:
     Lisa_01 "Oh, nun... Ich sage dir, Max wird sich bald die Hände schmutzig machen."
 
 # game/dialogues/oliviatalk.rpy:425
-translate german olivia_third_sunscreen_46122a97:
+translate german olivia_third_sunscreen_6f26c3bd:
 
-    # Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты Макс уже оживился."
+    # Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты, Макс, уже оживился."
     Olivia_07 "Hmmm... Genau das, was ich brauche... Ich meine, eine sanfte Massage, keinen Handjob. Denn ich sehe im Augenwinkeln, dass du schon wieder in Stimmung kommst, Max."
 
 # game/dialogues/oliviatalk.rpy:426
