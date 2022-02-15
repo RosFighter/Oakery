@@ -6106,7 +6106,7 @@ translate german lisa_sorry_gifts_good_7a981228_13:
 translate german lisa_sorry_gifts_good_5e16fb60_12:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 "Schon gut, schon gut, du brauchst nicht weiter zu erzählen, ich glaube dir."
+    Lisa_03 "Schon gut, schon gut, du musst nicht weiterreden, ich glaube dir."
 
 # game/dialogues/lisatalk.rpy:3312
 translate german lisa_sorry_gifts_good_f5f8687c_12:
@@ -6118,13 +6118,13 @@ translate german lisa_sorry_gifts_good_f5f8687c_12:
 translate german liza_secret_alisa_8969254c:
 
     # Lisa_02 "Странный? Скорее, беспокойный. Переживаю насчёт Алисы..."
-    Lisa_02 "Merkwürdig? Eher unruhig. Ich mache mir Sorgen um Alice..."
+    Lisa_02 "Seltsam? Eher ängstlich. Besorgt um Alice..."
 
 # game/dialogues/lisatalk.rpy:3330
 translate german liza_secret_alisa_130b65fe:
 
     # Max_09 "А что такое?"
-    Max_09 "Was ist es?"
+    Max_09 "Was ist los?"
 
 # game/dialogues/lisatalk.rpy:3331
 translate german liza_secret_alisa_c2c06334:
@@ -6148,7 +6148,7 @@ translate german liza_secret_alisa_b629dab1:
 translate german liza_secret_alisa_56fa1346:
 
     # Lisa_09 "[failed!t]Нет, Макс, не расскажу. Я обещала. Ты же не хочешь, чтобы твои секреты кто-то узнал, верно?"
-    Lisa_09 "[failed!t]Nein, Max, das werde ich nicht. Ich habe es versprochen. Du würdest nicht wollen, dass jemand deine Geheimnisse kennt, oder?"
+    Lisa_09 "[failed!t]Nein, Max, das werde ich nicht. Ich habe es versprochen. Du willst doch nicht, dass jemand deine Geheimnisse erfährt, oder?"
 
 # game/dialogues/lisatalk.rpy:3348
 translate german liza_secret_alisa_1e8b77df:
@@ -6160,7 +6160,7 @@ translate german liza_secret_alisa_1e8b77df:
 translate german liza_secret_alisa_9297cda4:
 
     # Lisa_00 "[succes!t]Ну ладно, расскажу... В общем, год назад Алиса тоже как-то пошла в ночной клуб..."
-    Lisa_00 "[succes!t]Na gut, ich erzähle es dir... Vor einem Jahr ging Alice in einen Club..."
+    Lisa_00 "[succes!t]Na gut, ich sage es dir... Wie auch immer, vor einem Jahr ging Alice auch eines Abends in einen Nachtclub..."
 
 # game/dialogues/lisatalk.rpy:3358
 translate german liza_secret_alisa_52ee407e:
@@ -6172,7 +6172,7 @@ translate german liza_secret_alisa_52ee407e:
 translate german liza_secret_alisa_e332fb06:
 
     # Lisa_01 "Видимо, там она первый раз и попробовала алкоголь. Как рассказывала её лучшая подружка, Алиса выпила буквально один глоток шампанского, но её как подменили!"
-    Lisa_01 "Anscheinend hat sie damals zum ersten Mal Alkohol probiert. Wie auch immer, ihre besten Freunde sagten, dass Alice buchstäblich einen Schluck Champagner getrunken hatte, und sie war völlig betrunken!"
+    Lisa_01 "Offenbar hat sie dort zum ersten Mal Alkohol getrunken. Laut ihrer besten Freundin hatte Alice buchstäblich nur einen Schluck Champagner getrunken, aber es war, als wäre sie ausgetauscht worden!"
 
 # game/dialogues/lisatalk.rpy:3360
 translate german liza_secret_alisa_460dca20:
@@ -6184,7 +6184,7 @@ translate german liza_secret_alisa_460dca20:
 translate german liza_secret_alisa_7927017b:
 
     # Lisa_02 "Похоже, когда она выпивает любое количество алкоголя, даже каплю, у неё отключаются какие-то внутренние ограничители и Алиса начинает делать что попало. Причём, она не выглядит пьяной, но ведёт себя... странно. И на утро ничего не помнит, представляешь!"
-    Lisa_02 "Anscheinend verliert Alice, wenn sie auch nur die kleinste Menge Alkohol trinkt, komplett ihre Hemmungen und fängt an zu tun, was sie will. Und sie sieht nicht immer betrunken aus, sondern verhält sich ... seltsam. Und am Morgen kann sie sich an nichts mehr erinnern!"
+    Lisa_02 "Es scheint so, als ob Alice, sobald sie auch nur einen Tropfen Alkohol trinkt, ihre inneren Hemmungen ablegt und alles tut, was sie will. Und sie sieht nicht betrunken aus, aber sie verhält sich... seltsam. Und am Morgen danach kann sie sich an nichts mehr erinnern, kannst du dir das vorstellen!"
 
 # game/dialogues/lisatalk.rpy:3362
 translate german liza_secret_alisa_f0a72923:
@@ -6202,7 +6202,7 @@ translate german liza_secret_alisa_bdd0db49:
 translate german liza_secret_alisa_ff8b5804:
 
     # Max_01 "Конечно! Я тебя не выдам..."
-    Max_01 "Auf jeden Fall! Ich werde nichts verraten."
+    Max_01 "Ja, natürlich! Ich werde nichts verraten..."
 
 # game/dialogues/lisatalk.rpy:3374
 translate german lisa_gift_sweets_094878f0:
@@ -6214,7 +6214,7 @@ translate german lisa_gift_sweets_094878f0:
 translate german lisa_gift_sweets_18a348cf:
 
     # Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!" nointeract
-    Lisa_02 "Wirklich? Komm schon, zeig mir, dass du dieses Mal wirklich alles hälst!" nointeract
+    Lisa_02 "Wirklich? Komm schon, zeig mal, was du diesmal hast?!" nointeract
 
 # game/dialogues/lisatalk.rpy:3386
 translate german lisa_gift_sweets_ac3f0acd:
