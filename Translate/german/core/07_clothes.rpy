@@ -12,7 +12,7 @@ translate german strings:
 
     # game/core/07_clothes.rpy:86
     old "Для йоги"
-    new "Für Yoga"
+    new "beim Yoga"
 
     # game/core/07_clothes.rpy:86
     old "Блог в нижнем белье"
@@ -40,7 +40,7 @@ translate german strings:
 
     # game/core/07_clothes.rpy:86
     old "За уроками"
-    new "Im Unterricht"
+    new "beim Lernen"
 
     # game/core/07_clothes.rpy:160
     old "Влияние Макса недостаточно"
@@ -52,5 +52,5 @@ translate german strings:
 
     # game/core/07_clothes.rpy:87
     old "Для прогулок"
-    new "Für Spaziergänge"
+    new "beim Ausgehen"
 
