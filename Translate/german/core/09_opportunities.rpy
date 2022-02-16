@@ -872,11 +872,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Как бы там у Лизы всё не сложилось с Алексом, но это хорошая возможность сблизиться со своей младшей сестрёнкой, помогая ей узнать побольше о взрослой жизни. Потребуются успехи в возможности \"Наставник\"..."
-    new "Auch wenn es mit Alex nicht geklappt hat, ist es eine gute Gelegenheit sich weiter mit meiner kleinen Schwester Lisa zu befassen, indem ich ihr hilfe, mehr über das Erwachsenenleben zu lernen. Es wird einige Fortschritte bei der \"Mentor-Gelegenheit\" brauchen..."
+    new "Auch wenn es mit Alex nicht geklappt hat, ist es eine gute Gelegenheit sich weiter mit meiner kleinen Schwester Lisa zu befassen, indem ich ihr hilfe, mehr über das Erwachsenenleben zu lernen. Es wird einige Fortschritte bei der Möglichkeit \"Lehrer\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Благодаря моему наставничеству Лиза хорошо осведомлена о том, ЧЕМ думают мальчики и чего хотят. Надеюсь, эти знания защитят её от Алекса. Теперь лишь нужно немного подождать и узнать, позвала ли Лиза Оливию к нам в гости..."
-    new "Dank meines Mentorings weiß Lisa genau, WAS Jungs denken und wollen. Hoffentlich wird dieses Wissen sie vor Alex schützen. Jetzt muss ich nur noch abwarten, ob Lisa Olivia wirklich eingeladen hat, uns zu besuchen..."
+    new "Dank meines Unterrichts weiß Lisa genau, WAS Jungs denken und wollen. Hoffentlich wird dieses Wissen sie vor Alex schützen. Jetzt muss ich nur noch abwarten, ob Lisa Olivia wirklich eingeladen hat, uns zu besuchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Я познакомился с Оливией! Да, реальность даже немного превзошла все мои ожидания! Оливия абсолютно не стесняется своей наготы... На что я соответствующе отреагировал. Ну ничего, главное, что я произвел впечатление..."
@@ -1056,7 +1056,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Наставник\"..."
-    new "Es wird Fortschritte in der \"Mentor-Möglichkeit\" brauchen..."
+    new "Es wird Fortschritte in der Möglichkeit \"Lehrer\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Если я буду уделять Лизе достаточно внимания во всём, что только можно, то после массажа плеч могу попробовать зайти ещё дальше. Вернее, ниже..."
@@ -1424,7 +1424,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы нам с Лизой было более комфортно с друг другом, понадобятся успехи в возможности \"Наставник\"..."
-    new "Damit Lisa und ich uns wohler fühlen, brauchen wir Fortschritte bei der \"Mentor-Gelegenheit\"..."
+    new "Damit Lisa und ich uns wohler fühlen, brauchen wir Fortschritte bei der Möglichkeit \"Lehrer\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать эти ночные просмотры дальше. Может, Лиза ко мне и привыкнет, а я к ней..."

@@ -1546,7 +1546,7 @@ translate german Lisa_MorningWood_d246544c:
 translate german Lisa_MorningWood_6116b3e3:
 
     # Lisa_02 "Ну да, ну да... В общем, я подумаю. Только вот не уверена, что ты всё-таки подходишь на роль такого... наставника, если ты меня понимаешь..."
-    Lisa_02 "Richtig, richtig... Wie auch immer, ich werde darüber nachdenken. Ich bin mir immer noch nicht sicher, wie du in diese... Mentoren... Sache passt."
+    Lisa_02 "Richtig, richtig... Wie auch immer, ich werde darüber nachdenken. Ich bin mir immer noch nicht sicher, wie du in diese... Lehrer... Sache passt."
 
 # game/dialogues/lisatalk.rpy:889
 translate german Lisa_MorningWood_1b8bc4b2:
