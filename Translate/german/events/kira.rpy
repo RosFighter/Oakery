@@ -238,7 +238,7 @@ translate german kira_bath_kira_mass_bath_first_1095bd15:
 translate german kira_bath_kira_mass_bath_first_00ca4913:
 
     # Kira_01 "У меня здесь есть одна бывшая одноклассница и, как я помню, она с мужем как раз занимается массажем и йогой. Я попробую с ней встретиться и договориться, чтобы они тебя поднатаскали в этом... Если, конечно, хочешь?"
-    Kira_01 "Ich habe eine alte Freundin hier. Sie und ihr Mann sind Spezialisten auf Massage und Yoga. Ich werde versuchen, mich mit ihr zu treffen und dafür sorgen, dass sie dich ausbilden... Natürlich nur, wenn du das möchtest."
+    Kira_01 "Ich habe eine alte Freundin hier. Sie und ihr Mann sind Spezialisten für Massage und Yoga. Ich werde versuchen, mich mit ihr zu treffen und dafür sorgen, dass sie dich ausbilden... Natürlich nur, wenn du das möchtest."
 
 # game/events/kira.rpy:142
 translate german kira_bath_kira_mass_bath_first_d2d2822b:

@@ -328,7 +328,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно больше подарков для Алисы, а значит потребуются успехи в возможности \"Блог\"..."
-    new "Ich glaube, ich brauche mehr Geschenke für Alice, was bedeutet, dass es einen Fortschritt in den \"Möglichkeiten\" gibt..."
+    new "Ich glaube, ich brauche mehr Geschenke für Alice, was bedeutet, dass es einen Fortschritt bei der Möglichkeit \"Blog\" braucht..."
 
     # game/core/09_opportunities.rpy:4
     old "Такие игры с Алисой в ванной комнате уже куда интереснее... Вот бы она ещё помнила, что вытворяет, хотя бы немного. Ну, а пока, у меня есть всё, чтобы оттачивать на Алисе свой сексуальный опыт. Нужно лишь не забывать давать ей ещё одну конфету с ликёром по возвращению из клуба. А уже где я её застану, у зеркала или в ванне, зависит от того, сколько времени я потрачу на тётю Киру."
