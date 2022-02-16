@@ -3580,25 +3580,25 @@ translate german return_from_club_5145f6a5:
 translate german return_from_club_1215df56:
 
     # Alice_06 "Эй, а как же я?! Я хочу принять ванну перед сном, а у меня полотенце наверху! Вдруг я упаду, пока буду подниматься..."
-    Alice_06 "Hey, was ist mit mir?! Ich will vor dem Schlafengehen ein Bad nehmen und ich habe oben ein Handtuch! Ich könnte auf dem Weg nach oben umfallen..."
+    Alice_06 "Hey, was ist mit mir?! Ich möchte vor dem Schlafengehen ein Bad nehmen, und das Handtuch liegt oben! Ich könnte auf dem Weg nach oben hinfallen..."
 
 # game/events/kira.rpy:2767
 translate german return_from_club_ba66703f:
 
     # Max_07 "Я принесу тебе полотенце, как только уложу тётю Киру спать. Идёт?"
-    Max_07 "Ich werde dir dein Handtuch holen, sobald ich Tante Kira ins Bett gebracht habe. In Ordnung?"
+    Max_07 "Ich bringe dir ein Handtuch, sobald ich Tante Kira aufs Sofa gebracht habe. Ist das in Ordnung?"
 
 # game/events/kira.rpy:2768
 translate german return_from_club_fde1b591:
 
     # Alice_12 "Только давай быстрее!" nointeract
-    Alice_12 "Mach es einfach schnell!" nointeract
+    Alice_12 "Beeile dich einfach!" nointeract
 
 # game/events/kira.rpy:2773
 translate german return_from_club_f9df4462:
 
     # Max_01 "Вот, держи конфетку, чтобы не скучать, пока я с тётей..."
-    Max_01 "Hier, nimm ein paar Süßigkeiten, damit du dich nicht langweilst, während ich bei ihr bin..."
+    Max_01 "Hier, iss ein paar Süßigkeiten, damit du dich nicht langweilst, während ich bei unserer Tante bin..."
 
 # game/events/kira.rpy:2774
 translate german return_from_club_babe3fd1:
