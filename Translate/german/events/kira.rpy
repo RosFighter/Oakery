@@ -64,31 +64,31 @@ translate german kira_bath_ladder_76e8b72b:
 translate german kira_bath_ladder_ad4cb718:
 
     # Max_02 "{m}Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой...{/m}"
-    Max_02 "{m}Oh! Was für einen prächtigen Arsch sie hat... Gut, dass ich auf ihre Rückkehr gewartet habe! Komm schon, Tante Kira, es wird Zeit, dass der Hintern nass wird...{/m}"
+    Max_02 "{m}Oh, Scheiße! Was für einen leckeren Arsch sie hat... Ich konnte glücklicherweise warten, bis sie zurückkommt! Komm schon, Tante Kira, es wird Zeit, dass dein Arsch nass wird...{/m}"
 
 # game/events/kira.rpy:83
 translate german kira_bath_ladder_cd6aa247:
 
     # Max_05 "{m}Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально...{/m}"
-    Max_05 "{m}Wow! Sie hat beschlossen, mit ihrer Muschi zu spielen... Oh, das ist fantastisch. Warum macht sie es nicht einfach im Liegen im Badezimmer? Es fühlt sich an, als hätte sie es mit Absicht gemacht...{/m}"
+    Max_05 "{m}Wow! Sie hat beschlossen, zuerst mit ihrer Pussy zu spielen... Das ist cool! Aber warum nicht auch in der Badewanne liegend? Es ist, als würde sie es absichtlich tun...{/m}"
 
 # game/events/kira.rpy:85
 translate german kira_bath_ladder_2e94138e:
 
     # Max_10 "{m}Блин! Она меня видела! Вот это уже не круто... Хотя, это же тётя Кира... она же не станет меня сдавать маме? Или нет?!{/m}"
-    Max_10 "{m}Scheiße! Sie hat mich gesehen! Das ist kein Quatsch... Es ist aber Tante Kira... sie wird mich doch nicht an Mom ausliefern, oder?{/m}"
+    Max_10 "{m}Scheiße! Sie hat mich gesehen! Das ist aber nicht cool... Obwohl, es ist Tante Kira... Sie wird mich doch nicht an Mom verraten? Oder doch?!{/m}"
 
 # game/events/kira.rpy:88
 translate german kira_bath_ladder_d1389531:
 
     # Max_08 "{m}Что? Она зовёт меня к себе?! Да ладно! Как-то мне это не очень нравится...{/m}" nointeract
-    Max_08 "{m}Was? Ruft sie mich rüber?! Ich bin nervös, mir gefällt nicht, wohin das führt...{/m}" nointeract
+    Max_08 "{m}Was? Sie ruft mich zu sich?! Ach, komm schon! Irgendwie mag ich das nicht so sehr...{/m}" nointeract
 
 # game/events/kira.rpy:98
 translate german kira_bath_ladder_947ff46b:
 
     # Max_04 "{m}Да-а-а, у неё просто обалденная грудь! Сосочки прямо там, где надо... Ох, я бы с ней ванну попринимал! Надеюсь, мне это приснится. Пора идти спать...{/m}"
-    Max_04 "{m}Ja, sie hat tolle Titten! Ihre Brustwarzen sind genau da, wo sie sein sollten... Oh, ich würde ein Bad mit ihr nehmen! Ich hoffe, es passiert wenigstens in meinen Träumen.{/m}"
+    Max_04 "{m}Ja-a-a, sie hat die tollsten Brüste. Nippel genau da, wo sie sein sollten... Oh, ich würde so gerne mit ihr baden gehen! Ich hoffe, ich träume. Zeit, ins Bett zu gehen...{/m}"
 
 # game/events/kira.rpy:102
 translate german kira_bath_kira_mass_bath_first_7398c496:
