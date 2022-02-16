@@ -64,7 +64,7 @@ translate german cam0_eric_ann_shower_709adb56:
 translate german cam0_eric_ann_shower_4746ba6b:
 
     # Max_05 "{m}Ого! Эрик трахает маму сзади, да так активно... И... кажется, ей это очень нравится, она даже двигается ему навстречу... и изнывает от страсти!{/m}"
-    Max_05 "{m}Wow! Eric schlägt Mom mit so viel Kraft auf ihren Hintern... sie drückt sogar ihren Arsch am Ende jedes Stoßes gegen ihn!{/m}"
+    Max_05 "{m}Wow! Eric nimmt Mom mit so viel Kraft von hinten... sie drückt sogar ihren Arsch am Ende jedes Stoßes gegen ihn!{/m}"
 
 # game/events/eric_cam.rpy:94
 translate german cam0_eric_ann_shower_4d366672:
