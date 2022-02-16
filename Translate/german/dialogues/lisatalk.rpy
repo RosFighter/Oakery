@@ -5266,7 +5266,7 @@ translate german lisa_sorry_gifts_good_f5f8687c:
 translate german lisa_sorry_gifts_good_610255c7:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3013
 translate german lisa_sorry_gifts_good_ae854677:
@@ -5548,7 +5548,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_4:
 translate german lisa_sorry_gifts_good_610255c7_1:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3107
 translate german lisa_sorry_gifts_good_ae854677_1:
@@ -5764,7 +5764,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_7:
 translate german lisa_sorry_gifts_good_610255c7_2:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3183
 translate german lisa_sorry_gifts_good_ae854677_2:
@@ -5842,7 +5842,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_8:
 translate german lisa_sorry_gifts_good_610255c7_3:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3213
 translate german lisa_sorry_gifts_good_ae854677_3:
@@ -5920,7 +5920,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_9:
 translate german lisa_sorry_gifts_good_610255c7_4:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3243
 translate german lisa_sorry_gifts_good_ae854677_4:
@@ -5998,7 +5998,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_10:
 translate german lisa_sorry_gifts_good_610255c7_5:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3273
 translate german lisa_sorry_gifts_good_ae854677_5:
