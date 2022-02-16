@@ -760,7 +760,7 @@ translate german alice_nopants_massage_not_nopants_6a2a08bc:
 translate german alice_nopants_massage_not_nopants_f09cc31b:
 
     # Alice_09 "Ммм, Макс... Да... Какой же у меня похотливый брат! Как приятно!"
-    Alice_09 "Hmmm, Max... Ich hab' so einen geilen kleinen Bruder! Bist du nicht mutiger..."
+    Alice_09 "Mmm, Max... Ja... Was habe ich für einen geilen Bruder! Oh, das tut gut!"
 
 # game/dialogues/alicetalk.rpy:768
 translate german alice_nopants_massage_not_nopants_e7556b2b:
@@ -790,7 +790,7 @@ translate german alice_nopants_massage_not_nopants_48efcab8:
 translate german alice_nopants_massage_not_nopants_d3da814d:
 
     # Max_06 "{m}Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила!{/m}"
-    Max_06 "{m}Schwesterherz hat komplett aufgegeben... Ihre Beine sind zitternd davon wie hart sie gekommen ist!{/m}"
+    Max_06 "{m}Meine große Schwester ist völlig abwesend... Ihre Beine zittern, wie süß sie gekommen ist!{/m}"
 
 # game/dialogues/alicetalk.rpy:790
 translate german alice_nopants_massage_not_nopants_91ea12d6:
@@ -1270,13 +1270,13 @@ translate german alice_talk_tv_sober_mass_r_e263d7d3:
 translate german advanced_massage1_e9bffa3c:
 
     # Max_08 "{m}Я раньше и внимания не обращал, а ведь Алиса всегда намекала на то, что мне можно массировать не только её ступни! Вот я олух...{/m}"
-    Max_08 "{m}Ich habe wohl vorher nicht aufgepasst, aber Alice hat angedeutet, dass ich mehr als nur ihre Füße massieren kann! Ich bin ein Narr...{/m}"
+    Max_08 "{m}Das war mir vorher nicht aufgefallen, und Alice hatte immer angedeutet, dass ich mehr als nur ihre Füße massieren durfte! Ich bin so ein Idiot...{/m}"
 
 # game/dialogues/alicetalk.rpy:1178
 translate german advanced_massage1_e8f2dc82:
 
     # Alice_07 "Да, моим ножкам становится так легко от твоих прикосновений... И они очень тебе благодарны. Чувствуешь, насколько?"
-    Alice_07 "Ja, deine Berührung lässt meine Füße sich so gut anfühlen... Und sie sind sehr dankbar dafür. Kannst du spüren, wie sehr?"
+    Alice_07 "Ja, meine Füße fühlen sich so schön an, wenn man sie berührt... Und sie sind dir sehr dankbar dafür. Kannst du spüren, wie sehr?"
 
 # game/dialogues/alicetalk.rpy:1179
 translate german advanced_massage1_b6f56f02:
@@ -1312,7 +1312,7 @@ translate german advanced_massage1_c07bcd66:
 translate german advanced_massage1_f09cc31b:
 
     # Alice_09 "Ммм, Макс... Да... Какой же у меня похотливый брат! Как приятно!"
-    Alice_09 "Hmmm, Max... Ich hab' so einen geilen kleinen Bruder! Bist du nicht mutiger..."
+    Alice_09 "Mmm, Max... Ja... Was habe ich für einen geilen Bruder! Oh, das tut gut!"
 
 # game/dialogues/alicetalk.rpy:1209
 translate german advanced_massage1_255f3e33:
@@ -1342,7 +1342,7 @@ translate german advanced_massage1_faster_d19db20f:
 translate german advanced_massage1_faster_d3da814d:
 
     # Max_06 "{m}Моя старшая сестрёнка совсем сошла с ума... Её ноги дрожат от того, как сладко она кончила!{/m}"
-    Max_06 "{m}Schwesterherz hat komplett aufgegeben... Ihre Beine sind zitternd davon wie hart sie gekommen ist!{/m}"
+    Max_06 "{m}Meine große Schwester ist völlig abwesend... Ihre Beine zittern, wie süß sie gekommen ist!{/m}"
 
 # game/dialogues/alicetalk.rpy:1248
 translate german advanced_massage1_faster_95058917:
@@ -10282,7 +10282,7 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:678
     old "{i}стянуть джинсы до конца{/i}"
-    new "{i}die Jeans komplett herunterziehen{/i}"
+    new "{i}die Jeans komplett ausziehen{/i}"
 
     # game/dialogues/alicetalk.rpy:704
     old "{i}продолжить массаж{/i}"
@@ -10290,11 +10290,11 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:727
     old "{i}массировать её ноги выше{/i}"
-    new "{i}ihre Beine oben massieren{/i}"
+    new "{i}ihre Oberschenkel massieren{/i}"
 
     # game/dialogues/alicetalk.rpy:742
     old "{i}массировать ещё выше{/i}"
-    new "{i}Massage noch höher{/i}"
+    new "{i}Massiere noch höher{/i}"
 
     # game/dialogues/alicetalk.rpy:754
     old "{i}ласкать её киску пальцами{/i}"
@@ -10314,7 +10314,7 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:920
     old "Да, это будет на десерт..."
-    new "Ja, zum Nachtisch..."
+    new "Ja, das gibt es zum Nachtisch..."
 
     # game/dialogues/alicetalk.rpy:920
     old "{i}продолжать молча{/i}"

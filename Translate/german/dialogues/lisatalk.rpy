@@ -2176,7 +2176,7 @@ translate german Lisa_HomeWork_first_foot_mass_def08673:
 translate german Lisa_HomeWork_first_foot_mass_3f00b33e:
 
     # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
-    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig! Lassen wir das lieber, ich könnte ja keinen Fehler machen..." nointeract
+    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig!Das sollten wir nicht tun, ich könnte schließlich Fehler machen..." nointeract
 
 # game/dialogues/lisatalk.rpy:1309
 translate german Lisa_HomeWork_first_foot_mass_31c88882:
@@ -2212,7 +2212,7 @@ translate german Lisa_HomeWork_first_foot_mass_f0ba5c19:
 translate german Lisa_HomeWork_first_foot_mass_b975c16c:
 
     # Max_05 "Рад, что тебе понравилось. Могу делать тебе массаж всякий раз, когда занимаемся уроками? Мне не сложно."
-    Max_05 "Ich bin froh, dass es dir gefallen hat. Kann ich dich massieren, wenn wir lernen? Das ist nicht schwer für mich."
+    Max_05 "Freut mich, dass es dir gefällt. Kann ich dir eine Massage geben, wenn wir gemeinsam lernen? Das stört mich nicht."
 
 # game/dialogues/lisatalk.rpy:1322
 translate german Lisa_HomeWork_first_foot_mass_5d3faf25:
@@ -2230,13 +2230,13 @@ translate german Lisa_HomeWork_first_foot_mass_d2d86c45:
 translate german Lisa_HomeWork_first_foot_mass_235a9d11:
 
     # Max_07 "К тебе просто другой подход нужен. Не как с Алисой. В следующий раз у меня получится лучше..."
-    Max_07 "Du magst es eben anders. Nicht wie Alice. Das nächste Mal kann ich es besser machen..."
+    Max_07 "Ich versuche, es richtig zu machen, also sei nachsichtig mit mir. Nächstes Mal werde ich es besser machen..."
 
 # game/dialogues/lisatalk.rpy:1332
 translate german Lisa_HomeWork_first_foot_mass_7ecaa66b:
 
     # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
-    Lisa_02 "Ja, ich wünschte, ich könnte. Und bitte stell sicher, dass ich alles richtig gemacht habe..."
+    Lisa_02 "Ja, das würde ich gerne. Und bitte stell sicher, dass ich keine Fehler gemacht habe..."
 
 # game/dialogues/lisatalk.rpy:1335
 translate german Lisa_HomeWork_first_foot_mass_09997fa1:
@@ -2290,7 +2290,7 @@ translate german Lisa_HomeWork_next_foot_mass_9ba963d4:
 translate german Lisa_HomeWork_next_foot_mass_3f00b33e:
 
     # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
-    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig! Lassen wir das lieber, ich könnte sonst einen Fehler machen..." nointeract
+    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig!Das sollten wir nicht tun, ich könnte schließlich Fehler machen..." nointeract
 
 # game/dialogues/lisatalk.rpy:1387
 translate german Lisa_HomeWork_next_foot_mass_ecec7f41:
@@ -2344,13 +2344,13 @@ translate german Lisa_HomeWork_next_foot_mass_af5ff8cf:
 translate german Lisa_HomeWork_next_foot_mass_3cd1b957:
 
     # Max_07 "Я всё делаю, как надо, так что терпи. В следующий раз у меня получится лучше..."
-    Max_07 "Ich mache es richtig, also hab bitte Geduld mit mir. Nächstes Mal werde ich es besser machen..."
+    Max_07 "Ich versuche, es richtig zu machen, also sei nachsichtig mit mir. Nächstes Mal werde ich es besser machen..."
 
 # game/dialogues/lisatalk.rpy:1425
 translate german Lisa_HomeWork_next_foot_mass_7ecaa66b:
 
     # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
-    Lisa_02 "Ja, ich wünschte, ich könnte. Und bitte stell sicher, dass ich alles richtig gemacht habe..."
+    Lisa_02 "Ja, das würde ich gerne. Und bitte stell sicher, dass ich keine Fehler gemacht habe..."
 
 # game/dialogues/lisatalk.rpy:1446
 translate german Lisa_HomeWork_shoulders_aa180a92:
