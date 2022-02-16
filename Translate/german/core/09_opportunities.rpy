@@ -564,7 +564,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно будет продемонстрировать тёте Кире мои умения в массаже. А для этого потребуются успехи в возможности \"Любимая тётя\"..."
-    new "Ich werde Tante Kira meine Massagekünste demonstrieren müssen. Und das erfordert Erfolg bei der \"Geliebte Tante\"-Möglichkeit..."
+    new "Ich werde Tante Kira meine Massagekünste demonstrieren müssen. Und das erfordert Erfolg bei der \"Lieblingstante\"-Möglichkeit..."
 
     # game/core/09_opportunities.rpy:4
     old "Отличная новость! Тётя Кира сказала, что встретится со своей одноклассницей, которая занимается массажем, и возможна та, возьмёт меня к себе на обучение. Надеюсь, и правда возьмёт, потому что там я научусь ещё большему, чем тут. Буду с нетерпением этого ждать..."
