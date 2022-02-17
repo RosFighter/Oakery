@@ -2435,202 +2435,201 @@ translate english strings:
     # game/dialogues/anntalk.rpy:1492
     old "Ну пожалуйста! Всё будет хорошо."
     new "You're welcome! It's going to be okay."
-    
+
 # TODO: Translation updated at 2022-02-16 00:40
 
 # game/dialogues/anntalk.rpy:559
 translate english ann_tv_continuation_massage_513fb7a2:
 
     # Max_06 "{m}Неплохой у меня вид открывается! Под полотенцем слегка виднеются её аппетитные сосочки... Это возбуждает ещё сильнее. Вот бы её полотенце начало сползать... Возможно, она бы даже не сразу это поняла, особенно, если ей очень понравился массаж.{/m}"
-    Max_06 ""
+    Max_06 "{m}It's not a bad view! Under the towel you can slightly see her appetizing nipples... It's even more exciting. I wish her towel would start to slip... She might not even realize it right away, especially if she really enjoyed the massage.{/m}"
 
 # game/dialogues/anntalk.rpy:561
 translate english ann_tv_continuation_massage_4a0638de:
 
     # Ann_07 "Ой, Макс! Это чудесно... Ты знаешь как сделать приятно. Мне очень понравилось... Ты большой молодец у меня!" nointeract
-    Ann_07 "" nointeract
+    Ann_07 "Oh, Max! That's wonderful... You know how to make me feel good. I really enjoyed it... You're very good at it!" nointeract
 
 # game/dialogues/anntalk.rpy:565
 translate english ann_tv_continuation_massage_3a615788:
 
     # Ann_05 "Обожаю массаж спины... Не знаю, хватит ли у тебя для этого силы, но давай попробуем. Может у тебя уже было достаточно практики и ты со мной справишься..."
-    Ann_05 ""
+    Ann_05 "I love back rubs... I don't know if you have the strength for it, but let's give it a try. Maybe you've had enough practice and you can handle me..."
 
 # game/dialogues/anntalk.rpy:566
 translate english ann_tv_continuation_massage_fb2c93bc:
 
     # Max_04 "Ты не пожалеешь!"
-    Max_04 ""
+    Max_04 "You won't regret it!"
 
 # game/dialogues/anntalk.rpy:568
 translate english ann_tv_continuation_massage_5bae27a4:
 
     # Ann_14 "Ох, даже не знаю, как лучше развернуть это полотенце, чтобы ты мог до моей спины спокойно добраться. Ты лучше глаза закрой, а то мало ли у меня не получится..."
-    Ann_14 ""
+    Ann_14 "Oh, I don't even know how to turn this towel around so you can get to my back in peace. You'd better close your eyes, or I might not be able to..."
 
 # game/dialogues/anntalk.rpy:569
 translate english ann_tv_continuation_massage_be58c6be:
 
     # Max_02 "{m}Как же здорово будет, если не получится! У меня только от одних мыслей об этом член стоит, как гора, а уж если она что-нибудь засветит...{/m}"
-    Max_02 ""
+    Max_02 "{m}How great would it be if it didn't work out! Just thinking about it makes my dick stand like a mountain, and if she lights something up...{/m}"
 
 # game/dialogues/anntalk.rpy:571
 translate english ann_tv_continuation_massage_561a8483:
 
     # Ann_02 "Вот так, мне кажется, будет нормально... Только хочу тебя сразу предупредить, я совсем голая под полотенцем. Я там не сильно... открыта?"
-    Ann_02 ""
+    Ann_02 "That's the way I think it's going to be okay... I just want to warn you right away, I'm completely naked under the towel. I'm not too... exposed?"
 
 # game/dialogues/anntalk.rpy:572
 translate english ann_tv_continuation_massage_87f09816:
 
     # Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
-    Max_03 "" nointeract
+    Max_03 "No. It's exactly what I want!" nointeract
 
 # game/dialogues/anntalk.rpy:578
 translate english ann_tv_continuation_massage_42d57509:
 
     # Max_01 "Спасибо за похвалу! Жду не дождусь следующего раза, мам. Отдыхай." nointeract
-    Max_01 "" nointeract
+    Max_01 "Thanks for the praise! I can't wait for the next time, Mom. Get some rest." nointeract
 
 # game/dialogues/anntalk.rpy:586
 translate english ann_tv_continuation_massage_massage_f3601d08:
 
     # Ann_03 "[ann_good_mass!t]Да, Макс... Твои руки приносят мне огромное удовольствие. В смысле, у тебя получается очень хорошо... Как будто сходила к профессионалу..."
-    Ann_03 ""
+    Ann_03 "[ann_good_mass!t]Yes, Max... Your hands give me great pleasure. I mean, you're doing really well... It's like going to a professional..."
 
 # game/dialogues/anntalk.rpy:587
 translate english ann_tv_continuation_massage_massage_49ee9ac5:
 
     # Max_06 "{m}Вау... Какая у неё шикарная и почти голая попка! Блин, как же хочется прижаться к ней членом, прямо по серединке, и тереться... Но лучше не отвлекаться, а то запросто можно массаж запороть!{/m}" nointeract
-    Max_06 "" nointeract
+    Max_06 "{m}Wow... What a gorgeous and almost naked ass she has! Man, I really want to press my dick against her, right in the middle, and rub it... But it's better not to get distracted, or you could just ruin the massage!{/m}" nointeract
 
 # game/dialogues/anntalk.rpy:593
 translate english ann_tv_continuation_massage_massage_ffdec8ce:
 
     # Ann_09 "[ann_good_mass!t]Ох, как здорово, сынок... Такие нежные, но сильные руки у тебя! Но они уже опустились так низко, а я не чувствую по полотенцу, что оно тебе хоть как-то мешает. Оно там не сползло слишком низко?" nointeract
-    Ann_09 "" nointeract
+    Ann_09 "[ann_good_mass!t]Oh, that's great, son... Such gentle but strong hands you have! But they're already so low, and I can't tell by the towel that it's bothering you in any way. Has it slipped too low in there?" nointeract
 
 # game/dialogues/anntalk.rpy:598
 translate english ann_tv_continuation_massage_massage_e212b960:
 
     # Ann_08 "[succes!t]Фух... А то я сижу, наслаждаюсь массажем и про всё остальное забыла. Такая лёгкость. Мне очень понравилось!" nointeract
-    Ann_08 "" nointeract
+    Ann_08 "[succes!t]Phew... Because I was sitting there, enjoying the massage and forgetting everything else. Such a lightness. I really enjoyed it!" nointeract
 
 # game/dialogues/anntalk.rpy:603
 translate english ann_tv_continuation_massage_massage_727fe7fb:
 
     # Ann_07 "Я обязательно буду ждать следующего раза, сынок!"
-    Ann_07 ""
+    Ann_07 "I'll definitely look forward to the next time, Son!"
 
 # game/dialogues/anntalk.rpy:604
 translate english ann_tv_continuation_massage_massage_535758bb:
 
     # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
-    Max_01 "" nointeract
+    Max_01 "Great! I'll be waiting too, Mom. Get some rest." nointeract
 
 # game/dialogues/anntalk.rpy:608
 translate english ann_tv_continuation_massage_massage_d390c1ed:
 
     # Ann_17 "[failed!t]Обманщик ты, Макс! Это что такое?! Как тебе не стыдно! У тебя встал на собственную маму! Что у тебя в голове творится... Почему ты не сказал, что я тут голая сижу?"
-    Ann_17 ""
+    Ann_17 "[failed!t]You're a liar, Max! What is this?! Shame on you! You've got a hard-on for your own mother! What's going on in your head... Why didn't you tell me I was sitting here naked?"
 
 # game/dialogues/anntalk.rpy:609
 translate english ann_tv_continuation_massage_massage_c7019911:
 
     # Max_07 "Просто засмотрелся на тебя по ходу дела. А не сказал, потому что хотел массаж закончить. Хорошо же получилось?"
-    Max_07 ""
+    Max_07 "I was just staring at you as I went along. I didn't tell you because I wanted to finish the massage. It was good, wasn't it?"
 
 # game/dialogues/anntalk.rpy:610
 translate english ann_tv_continuation_massage_massage_d53168cf:
 
     # Ann_12 "Получилось-то хорошо, вот только... не должно так быть..."
-    Ann_12 ""
+    Ann_12 "It's good, but... It shouldn't be like that..."
 
 # game/dialogues/anntalk.rpy:611
 translate english ann_tv_continuation_massage_massage_e1072954:
 
     # Max_10 "Ну мам, ты же красивая! Вот я и это... возбудился... слегка..."
-    Max_10 ""
+    Max_10 "Well, Mom, you're beautiful! So I'm... I got turned on... a little..."
 
 # game/dialogues/anntalk.rpy:612
 translate english ann_tv_continuation_massage_massage_1371a9dd:
 
     # Ann_13 "Ничего себе, слегка! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Wow, a little bit! Okay, let's pretend nothing happened. Go out, have a good time..." nointeract
 
 # game/dialogues/anntalk.rpy:615
 translate english ann_tv_continuation_massage_massage_21542021:
 
     # Ann_15 "Ничего себе! Ты почему сидишь и молчишь об этом, а, Макс?! Я же предупредила, что голая под ним..."
-    Ann_15 ""
+    Ann_15 "Wow! Why are you sitting there not talking about it, Max? I told you I was naked under it..."
 
 # game/dialogues/anntalk.rpy:616
 translate english ann_tv_continuation_massage_massage_c532b93a:
 
     # Max_07 "Так оно под самый конец только сползло, а я хотел массаж закончить. Хорошо же получилось?"
-    Max_07 ""
+    Max_07 "So it just slipped off at the very end, and I wanted to finish the massage. It was good, wasn't it?"
 
 # game/dialogues/anntalk.rpy:618
 translate english ann_tv_continuation_massage_massage_f1a52f3f:
 
     # Ann_14 "Очень! Но в следующий раз, лучше не молчи об этом... Хорошо?"
-    Ann_14 ""
+    Ann_14 "Very much! But next time, you'd better not keep quiet about it... Okay?"
 
 # game/dialogues/anntalk.rpy:619
 translate english ann_tv_continuation_massage_massage_5a863e60:
 
     # Max_11 "Ладно, скажу."
-    Max_11 ""
+    Max_11 "Okay, I'll tell you."
 
 # game/dialogues/anntalk.rpy:620
 translate english ann_tv_continuation_massage_massage_3c049e1b:
 
     # Ann_07 "А за массаж огромное тебе спасибо, мне очень понравилось! Обязательно буду ждать следующего раза!"
-    Ann_07 ""
+    Ann_07 "And thank you so much for the massage, I really enjoyed it! I will definitely look forward to the next time!"
 
 # game/dialogues/anntalk.rpy:621
 translate english ann_tv_continuation_massage_massage_535758bb_1:
 
     # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
-    Max_01 "" nointeract
+    Max_01 "Great! I'll be waiting too, Mom. Get some rest." nointeract
 
 # game/dialogues/anntalk.rpy:631
 translate english ann_tv_continuation_massage_bad_massage_fb4ffbcf:
 
     # Ann_14 "[ann_bad_mass!t]Ой, нет, Макс... Твой хвалёный массаж не так хорош, как ты рекламировал... Думаю, надо прекратить. Давай в другой раз продолжим... Но всё равно, спасибо!"
-    Ann_14 ""
+    Ann_14 "[ann_bad_mass!t]Oh, no, Max... Your famous massage isn't as good as you advertised... I think we should stop. Let's do it another time. But thanks anyway."
 
 # game/dialogues/anntalk.rpy:633
 translate english ann_tv_continuation_massage_bad_massage_1545505c:
 
     # Max_10 "Извини. Наверно, на сериал засмотрелся... В следующий раз я буду лучше стараться." nointeract
-    Max_10 "" nointeract
+    Max_10 "I'm sorry. I must have been watching the show... I'll try harder next time." nointeract
 
 # game/dialogues/anntalk.rpy:1605
 translate english ann_about_olivia0_succes_54a6a696:
 
     # Ann_14 "Видимо, из-за Эрика я стала слишком подозрительной. Пытаюсь снова уберечь Лизу от всего на свете. Хотя, прямо перед этим, сама же такое ей показывала..."
-    Ann_14 ""
+    Ann_14 "Apparently, Eric made me too suspicious. I'm trying to protect Lisa from everything in the world again. Although, just before that, I showed her these things myself..."
 
 translate english strings:
 
     # game/dialogues/anntalk.rpy:562
     old "Массаж спины?"
-    new ""
+    new "Back massage?"
 
     # game/dialogues/anntalk.rpy:562
     old "Полотенце приспустишь?"
-    new ""
+    new "Can you pull down your towel?"
 
     # game/dialogues/anntalk.rpy:581
     old "{i}массировать маме спину{/i}"
-    new ""
+    new "{i}Massage Mom's back{/i}"
 
     # game/dialogues/anntalk.rpy:594
     old "Нет, мам. Не переживай."
-    new ""
+    new "No, Mom. Don't worry about it."
 
     # game/dialogues/anntalk.rpy:594
     old "Есть немного..."
-    new ""
-
+    new "There's a little..."
