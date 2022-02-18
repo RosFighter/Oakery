@@ -2758,13 +2758,13 @@ translate german alice_blog_lingerie_85e795c3:
 translate german alice_blog_lingerie_a937857e:
 
     # Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?" nointeract
-    Alice_05 "Max, du hast deine Schamgefühl jetzt komplett verloren! Du guckst nicht mehr nur, du kommst nur noch und glotzen?" nointeract
+    Alice_05 "Max, du hast deine Schamgefühl jetzt komplett verloren! Du guckst nicht mehr nur, du kommst nur noch um zu glotzen?" nointeract
 
 # game/events/alice.rpy:2307
 translate german alice_blog_lingerie_a937857e_1:
 
     # Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?" nointeract
-    Alice_05 "Max, du hast deine Schamgefühl jetzt komplett verloren! Du guckst nicht mehr nur, du kommst nur noch und glotzen?" nointeract
+    Alice_05 "Max, du hast deine Schamgefühl jetzt komplett verloren! Du guckst nicht mehr nur, du kommst nur noch um zu glotzen?" nointeract
 
 # game/events/alice.rpy:2316
 translate german alice_blog_lingerie_2b108a1a:
