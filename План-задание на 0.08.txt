@@ -29,25 +29,31 @@
 
 Что сделано по v0.08:
 
- - Анна знакомится с Оливией (после избавления от Эрика);
- - новое взаимодействие Макса с Оливией и Лизой во дворе днём (после избавления от Эрика);
- - Макс уговаривает Анну разрешить Оливии ночевать на вилле (после избавления от Эрика);
- - Оливия может прийти в воскресенье днём в гости (после избавления от Эрика);
- - Лиза может спать без майки, когда Оливия остаётся ночевать (после избавления от Эрика);
- - Макс пытается возобновить уроки поцелуев с Лизой (после избавления от Эрика);
  - обновлены начальные изображения помощи с домашним заданием Лизы;
- - новая Возможность и событие, относящиеся к Анне (после избавления от Эрика);
- - Анне можно массировать спину за просмотром ТВ (после избавления от Эрика);
- - новые моменты в помощи Анне с йогой (после избавления от Эрика);
+ - обновлены изображения спящей Анны.
+
+После избавления от Эрика...
+ - Анна знакомится с Оливией;
+ - новое взаимодействие Макса с Оливией и Лизой во дворе днём;
+ - Макс уговаривает Анну разрешить Оливии ночевать на вилле;
+ - Оливия может прийти в воскресенье днём в гости;
+ - Лиза может спать без майки, когда Оливия остаётся ночевать;
+ - Макс пытается возобновить уроки поцелуев с Лизой;
+ - новая Возможность и событие, относящиеся к Анне;
+ - Анне можно массировать спину за просмотром ТВ;
+ - новые моменты в помощи Анне с йогой.
 
 
- - Ann meets Olivia (after getting rid of Eric);
- - Max's new interaction with Olivia and Lisa in the yard during the day (after getting rid of Eric);
- - Max convinces Ann to let Olivia stay the night at their house (after getting rid of Eric);
- - Olivia can come over Sunday afternoon for a visit (after getting rid of Eric);
- - Lisa can sleep without her shirt when Olivia stays the night (after getting rid of Eric);
- - Max tries to resume kissing lessons with Lisa (after getting rid of Eric);
  - updated the initial images of Lisa's homework help;
- - a new Opportunity and event related to Ann (after getting rid of Eric);
- - Ann can have her back massaged while watching TV (after getting rid of Eric);
- - new moments in helping Ann with yoga (after getting rid of Eric);
+ - updated images of Ann sleeping.
+
+After getting rid of Eric...
+ - Ann meets Olivia;
+ - Max's new interaction with Olivia and Lisa in the yard during the day;
+ - Max convinces Ann to let Olivia stay the night at their house;
+ - Olivia can come over Sunday afternoon for a visit;
+ - Lisa can sleep without her shirt when Olivia stays the night;
+ - Max tries to resume kissing lessons with Lisa;
+ - a new Opportunity and event related to Ann;
+ - Ann can have her back massaged while watching TV;
+ - new moments in helping Ann with yoga.
