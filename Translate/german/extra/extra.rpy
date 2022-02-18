@@ -124,7 +124,7 @@ translate german strings:
 
     # game/extra/extra.rpy:56
     old "Небольшое приключение перед сном"
-    new "ein kleines ABbenteuer vorm Schlafen"
+    new "ein kleines Abenteuer vorm Schlafen"
 
     # game/extra/extra.rpy:56
     old "Не зря купил сорочку"
