@@ -4032,7 +4032,7 @@ translate german strings:
 
     # game/events/kira.rpy:738
     old "Да, что-то не спится... К тебе можно?"
-    new "Ja, ich kann nicht schlafen... Darf ich mich zu Dir setzen?"
+    new "Ja, ich kann nicht einschlafen... Kann ich zu dir kommen?"
 
     # game/events/kira.rpy:738
     old "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}"
