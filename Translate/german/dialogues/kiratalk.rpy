@@ -790,7 +790,7 @@ translate german kira_talk5_2d538912:
 translate german kira_talk5_c73f7880:
 
     # Max_05 "Ага. Вот прямо недавно купил!"
-    Max_05 "Ja. Ich habe es gerade gekauft!"
+    Max_05 "Ja, ich habe sie erst kürzlich gekauft!"
 
 # game/dialogues/kiratalk.rpy:362
 translate german kira_talk5_b6188756:
@@ -802,7 +802,7 @@ translate german kira_talk5_b6188756:
 translate german kira_talk5_fb23b87b:
 
     # Kira_08 "Ну, тогда не вижу причин для отказа такому целеустремлённому мальчику..."
-    Kira_08 "Dann habe ich keinen Grund, deine Hilfe abzulehnen, wenn du so entschlossen bist."
+    Kira_08 "Nun, dann sehe ich keinen Grund, einen so entschlossenen Jungen abzulehnen..."
 
 # game/dialogues/kiratalk.rpy:368
 translate german kira_talk5_59b8a856:
@@ -814,7 +814,7 @@ translate german kira_talk5_59b8a856:
 translate german kira_talk5_be66e8de:
 
     # Kira_06 "Уж не знаю, Макс, что ты уже нафантазировал насчёт фотосессии, но тебе опять пора в душ. Что же ты такой впечатлительный? Эх..."
-    Kira_06 "Ich weiß nicht, was du schon alles über das Fotoshooting im Kopf hast, aber es ist Zeit für dich, wieder zu duschen. Warum bist du so leicht zu erregen?"
+    Kira_06 "Ich weiß nicht, worüber du fantasierst, Max, aber du musst wieder duschen. Warum bist du so leicht zu beeindrucken? Äh... (seufzt)"
 
 # game/dialogues/kiratalk.rpy:370
 translate german kira_talk5_45d25fb1:
@@ -826,37 +826,37 @@ translate german kira_talk5_45d25fb1:
 translate german kira_talk5_6ed85272:
 
     # Max_04 "{m}Вот это удача! Порно-звезда будет мне позировать для фотосессии! Я где-то слышал, что порно-модели всегда дают фотографам в качестве оплаты за съёмку... Или нет? Но вдруг!{/m}"
-    Max_04 "{m}Welch ein Glück! Ich werde ein Fotoshooting mit einem Pornostar machen! Ich habe Geschichten über Fotografen gehört, die alle möglichen Belohnungen für ihre Dienste bekommen... vielleicht bekomme ich auch etwas?{/m}"
+    Max_04 "{m}WWas für ein Glücksfall! Ein Pornostar wird für mich für ein Fotoshooting posieren! Ich habe irgendwo gehört, dass Pornomodelle dem Fotografen als Bezahlung für das Shooting immer... Oder nicht? Aber dann!{/m}"
 
 # game/dialogues/kiratalk.rpy:382
 translate german kira_talk5_cea37e86:
 
     # Max_20 "{m}Фотоаппарат у меня уже есть. Дело за тем, чтобы повысить мои шансы на что-нибудь особенное от тёти Киры за эту фотосессию. Не прикупить ли для неё какую-нибудь очень сексуальную сорочку?! Я думаю, это будет совсем не лишним... О да...{/m}" nointeract
-    Max_20 "{m}Ich habe bereits eine Kamera. Es geht nur darum, meine Chancen zu erhöhen, etwas Besonderes für dieses Fotoshooting mit Tante Kira zu erreichen. Sollte ich ihr vielleicht ein wirklich sexy Nachthemd besorgen?! Ich denke, das wäre wirklich schön... Oh, ja...{/m}" nointeract
+    Max_20 "{m}Ich habe die Kamera bereits. Es geht nur darum, meine Chancen zu erhöhen, von Tante Kira etwas Besonderes für dieses Fotoshooting zu bekommen. Sollte ich ihr nicht ein wirklich sexy Kleidungsstück schenken?! Ich denke nicht, dass das eine Verschwendung wäre... Oh, ja...{/m}" nointeract
 
 # game/dialogues/kiratalk.rpy:384
 translate german kira_talk5_fe9ad210:
 
     # Max_20 "{m}Дело за малым. Осталось где-то взять фотоаппарат и тогда... Да... Интересно, сколько они стоят? А, не важно. Важно, что мне может дать сама тётя Кира! Ради этого стоит попотеть... О да...{/m}" nointeract
-    Max_20 "{m}Da ist nur die Kleinigkeit, eine Kamera zu besorgen. Wie viel sie wohl kostet? Ach, egal. Wichtig ist, was ich von Tante Kira bekommen kann! Ich bin sicher, es wird die Mühe wert sein.{/m}" nointeract
+    Max_20 "{m}Es ist nur eine Frage der Zeit. Jetzt muss ich nur noch irgendwo eine Kamera besorgen und dann... Ja... Ich frage mich, wie viel sie kosten? Ach, vergiss es. Was zählt, ist das, was Tante Kira selbst mir geben kann! Es ist den Schweiß wert... Oh, ja...{/m}" nointeract
 
 # game/dialogues/kiratalk.rpy:384
 translate german kira_talk5_7a7cc18f:
 
     # Max_09 "{m}Эх, с тётей Кирой кончать поинтереснее... и намного!{/m}"
-    Max_09 "{m}Es ist immer interessant, zu sehen, was ich mit Tante Kira auf die Beine stellen kann!{/m}"
+    Max_09 "{m}Es macht mehr Spaß, bei Tante Kira zu landen... und vieles mehr!{/m}"
 
 # game/dialogues/kiratalk.rpy:405
 translate german kira_talk6_a9812af2:
 
     # Kira_01 "Ты уже нашёл фотоаппарат?" nointeract
-    Kira_01 "Hast du schon eine Kamera zur Verfügung?" nointeract
+    Kira_01 "Hast du schon eine Kamera?" nointeract
 
 # game/dialogues/kiratalk.rpy:408
 translate german kira_talk6_12fde23b:
 
     # Kira_02 "Понятно. Ну, как найдёшь, дай знать. Я почти всегда готова фотографироваться, но нужно, чтобы ещё и дома никого не было... А то нас не поймут..." nointeract
-    Kira_02 "Ich verstehe. Sag mir Bescheid, wenn du einen hast. Ich bin fast immer bereit für ein Foto-Shooting, aber wir müssen sicherstellen, dass es nur wir zu Hause sind. Ich möchte nicht,... das wir... gestört werden." nointeract
+    Kira_02 "Ich verstehe. Gib mir Bescheid, wenn du es hast. Ich bin fast immer bereit, Fotos zu machen, aber wir müssen sicherstellen, dass niemand zu Hause ist... Sonst versteht man uns nicht..." nointeract
 
 # game/dialogues/kiratalk.rpy:413
 translate german kira_talk6_75ec74c9:

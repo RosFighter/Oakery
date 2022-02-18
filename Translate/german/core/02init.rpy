@@ -344,7 +344,7 @@ translate german strings:
 
     # game/core/02init.rpy:133
     old "Как отдыхается, тётя Кира?"
-    new "Wie ist dein Urlaub, Tante Kira?"
+    new "Wie geht es dir, Tante Kira?"
 
     # game/core/02init.rpy:133
     old "Насчёт фотосессии..."
