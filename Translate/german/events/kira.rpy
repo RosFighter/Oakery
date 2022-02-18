@@ -1858,7 +1858,7 @@ translate german kira_night_tv_promise_cuni_48f0e333:
 translate german kira_night_tv_promise_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1259
 translate german kira_night_tv_promise_cuni_0b64a46b:
@@ -2326,7 +2326,7 @@ translate german kira_night_tv_repeat_lesson_2df27d30:
 translate german kira_night_tv_repeat_lesson_c494b70e:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus."
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus."
 
 # game/events/kira.rpy:1558
 translate german kira_night_tv_repeat_lesson_7d5bc607:
@@ -2530,7 +2530,7 @@ translate german kira_night_tv_teach_cuni_2df27d30:
 translate german kira_night_tv_teach_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1702
 translate german kira_night_tv_teach_cuni_fe50801f:
@@ -2668,7 +2668,7 @@ translate german kira_night_tv_tv_cuni_2c995eaa:
 translate german kira_night_tv_tv_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1869
 translate german kira_night_tv_tv_cuni_fe50801f:
@@ -4244,7 +4244,7 @@ translate german strings:
 
     # game/events/kira.rpy:2790
     old "Такого поворота событий я не ожидал! Можно и задержаться..."
-    new "Das habe ich nicht erwartet ! Ich bleibe länger..."
+    new "Das habe ich nicht erwartet! Ich bleibe länger..."
 
     # game/events/kira.rpy:2790
     old "Я бы задержался, но нужно проверить, как там Алиса..."
