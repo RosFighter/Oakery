@@ -1312,215 +1312,215 @@ translate english strings:
 translate english ann_dressed_balcony_919b6a05:
 
     # Max_07 "{m}Хм... Должно быть мама на балконе...{/m}"
-    Max_07 ""
+    Max_07 "{m}Hmm... Mom must be on the balcony...{/m}"
 
 # game/events/ann.rpy:595
 translate english ann_dressed_balcony_34f4b4a9:
 
     # Max_09 "{m}То ли мама просто задумалась, то ли грустит...{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Either my mother was just thinking, or she was sad...{/m}" nointeract
 
 # game/events/ann.rpy:601
 translate english ann_dressed_balcony_2fd8332a:
 
     # Ann_12 "Ой, Макс! Ты слишком тихо ходишь. А я так, ничего, просто задумалась немного..."
-    Ann_12 ""
+    Ann_12 "Oh, Max! You walk too quietly. I was just thinking a little bit..."
 
 # game/events/ann.rpy:602
 translate english ann_dressed_balcony_d6e397b3:
 
     # Max_07 "Расскажешь, о чём?"
-    Max_07 ""
+    Max_07 "Will you tell me what it's about?"
 
 # game/events/ann.rpy:612
 translate english ann_dressed_balcony_2e72dc0c:
 
     # Max_05 "{m}Оу! Мама ещё не оделась... Это я вовремя зашёл. Она шикарно смотрится...{/m}" nointeract
-    Max_05 "" nointeract
+    Max_05 "{m}Oh! Mom's not dressed yet... It's about time I stopped by. She looks great...{/m}" nointeract
 
 # game/events/ann.rpy:621
 translate english ann_dressed_balcony_1f19d7dd:
 
     # Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
-    Ann_15 "" nointeract
+    Ann_15 "Max! I taught you to knock! You can't just barge into a room unannounced like that! Did something happen?" nointeract
 
 # game/events/ann.rpy:624
 translate english ann_dressed_balcony_e1ca91d3:
 
     # Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
-    Ann_15 "" nointeract
+    Ann_15 "Max! Who's going to knock?! Will you stop barging into the room unannounced? Or is it something urgent?" nointeract
 
 # game/events/ann.rpy:633
 translate english ann_dressed_balcony_a9e5c75c:
 
     # Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
-    Ann_15 ""
+    Ann_15 "Max! I taught you how to knock! {p=3}{nw}"
 
 # game/events/ann.rpy:635
 translate english ann_dressed_balcony_babcea3a:
 
     # Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
-    Ann_15 ""
+    Ann_15 "Max! Who's going to knock?! {p=3}{nw}"
 
 # game/events/ann.rpy:638
 translate english ann_dressed_balcony_aa9214ef:
 
     # Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
-    Ann_14 "" nointeract
+    Ann_14 "You can't just barge into a room unannounced like that! Did something happen?" nointeract
 
 # game/events/ann.rpy:641
 translate english ann_dressed_balcony_c391d1e4:
 
     # Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Stop barging into the room unannounced! Or is there an emergency?" nointeract
 
 # game/events/ann.rpy:650
 translate english ann_dressed_balkon_talk1_b906cb2e:
 
     # Ann_14 "У меня сейчас такое состояние, что я не знаю, как мне жить дальше... Я... Я ужасная мать..."
-    Ann_14 ""
+    Ann_14 "I'm in such a state right now that I don't know how I'm going to live... Я... I'm a terrible mother..."
 
 # game/events/ann.rpy:651
 translate english ann_dressed_balkon_talk1_b034aec8:
 
     # Max_08 "Что?! Как ты можешь такое говорить?"
-    Max_08 ""
+    Max_08 "What?! How can you say that?"
 
 # game/events/ann.rpy:652
 translate english ann_dressed_balkon_talk1_79bc09d7:
 
     # Ann_13 "А разве нет? Я... Я была так глупа, что привела в дом проходимца, который не только воспользовался мной, но и чуть не совратил моих девочек!"
-    Ann_13 ""
+    Ann_13 "Isn't it? I... I was so stupid as to bring a tramp into the house who not only took advantage of me, but almost molested my girls!"
 
 # game/events/ann.rpy:653
 translate english ann_dressed_balkon_talk1_de50c165:
 
     # Max_09 "Мам, прекрати, это уже всё в прошлом... Забудь..."
-    Max_09 ""
+    Max_09 "Mom, stop it, it's all in the past... Forget it..."
 
 # game/events/ann.rpy:654
 translate english ann_dressed_balkon_talk1_c7c7442f:
 
     # Ann_14 "Забыть? Забыть, как я чуть не отправила единственного сына в военный лагерь и... который один оказался настолько умным и благородным, что не только не разозлился на меня, а наоборот, спас всю семью от этого ублюдка Эрика."
-    Ann_14 ""
+    Ann_14 "Forget? Forget how I almost sent my only son to an army camp and... who alone turned out to be so clever and noble that not only did he not get mad at me, but on the contrary, he saved the whole family from that bastard Eric."
 
 # game/events/ann.rpy:655
 translate english ann_dressed_balkon_talk1_efb41ecc:
 
     # Max_07 "Ну хватит... Было и было. Прими и сделай выводы. Нельзя же всё время теперь ходить такой печальной и заниматься самобичеванием. Ты ни в чём не виновата!"
-    Max_07 ""
+    Max_07 "That's enough... It was and it was. Accept it and come to your own conclusions. You can't go around being sad and beating yourself up all the time. It's not your fault!"
 
 # game/events/ann.rpy:656
 translate english ann_dressed_balkon_talk1_e8140f63:
 
     # Ann_17 "Возможно ты прав, но... присутствие Эрика на работе постоянно мне напоминает о тех событиях и мне это ужасно неприятно."
-    Ann_17 ""
+    Ann_17 "You may be right, but... Eric's presence at work constantly reminds me of those events, and I feel terrible about it."
 
 # game/events/ann.rpy:657
 translate english ann_dressed_balkon_talk1_63d3ad78:
 
     # Max_15 "Да и чёрт с ним! Просто игнорируй его. К тому же, у тебя есть мы, и мы все тебя очень любим!"
-    Max_15 ""
+    Max_15 "The hell with it! Just ignore him. Besides, you have us, and we all love you very much!"
 
 # game/events/ann.rpy:658
 translate english ann_dressed_balkon_talk1_6335970c:
 
     # Ann_02 "Спасибо, мой хороший, за твои тёплые слова и поддержку, мне очень приятно это слышать."
-    Ann_02 ""
+    Ann_02 "Thank you, my good man, for your kind words and support, I am very pleased to hear it."
 
 # game/events/ann.rpy:659
 translate english ann_dressed_balkon_talk1_59e5166a:
 
     # Max_04 "Не стоит благодарить, мам. Я очень тебя люблю! Ты самая замечательная мама на свете! Самая добрая и самая красивая!"
-    Max_04 ""
+    Max_04 "No need to thank me, Mom. I love you so much! You are the most wonderful mom in the world! The kindest and most beautiful!"
 
 # game/events/ann.rpy:661
 translate english ann_dressed_balkon_talk1_d77c6ad5:
 
     # Ann_04 "Ой! Вот же ты маленький льстец, Макс!"
-    Ann_04 ""
+    Ann_04 "Oh! You little flatterer, Max!"
 
 # game/events/ann.rpy:662
 translate english ann_dressed_balkon_talk1_5e9b1161:
 
     # Max_07 "Это я-то маленький?"
-    Max_07 ""
+    Max_07 "Am I the little one?"
 
 # game/events/ann.rpy:663
 translate english ann_dressed_balkon_talk1_5eb0124c:
 
     # Ann_05 "Ну, конечно, ты большой, Макс! Совсем взрослый, почти мужчина."
-    Ann_05 ""
+    Ann_05 "Well, of course you're big, Max! You're all grown up, almost a man."
 
 # game/events/ann.rpy:664
 translate english ann_dressed_balkon_talk1_f86a1ee3:
 
     # Max_09 "Что значит почти?"
-    Max_09 ""
+    Max_09 "What do you mean almost?"
 
 # game/events/ann.rpy:665
 translate english ann_dressed_balkon_talk1_2e6b2825:
 
     # Ann_07 "Ну... То и значит, что полноценным мужчиной ты станешь только после того, как у тебя появится девушка."
-    Ann_07 ""
+    Ann_07 "Well... That means that you will become a full-fledged man only after you have a girlfriend."
 
 # game/events/ann.rpy:666
 translate english ann_dressed_balkon_talk1_a8851b6c:
 
     # Max_08 "Серьёзно? А поподробнее можно узнать, как и что делать с ней, чтобы стать мужчиной?"
-    Max_08 ""
+    Max_08 "Really? And can we learn more about how and what to do with it to become a man?"
 
 # game/events/ann.rpy:667
 translate english ann_dressed_balkon_talk1_f041c776:
 
     # Ann_02 "Макс, что за вопросы? Как будто ты до сих пор не знаешь."
-    Ann_02 ""
+    Ann_02 "Max, what kind of questions are you asking? It's like you still don't know."
 
 # game/events/ann.rpy:668
 translate english ann_dressed_balkon_talk1_d7d0349c:
 
     # Max_02 "Да это я просто так спросил... Теперь ты уже не такая печальная и задумчивая, как до моего прихода."
-    Max_02 ""
+    Max_02 "I was just asking... Now you're not as sad and thoughtful as you were before I came."
 
 # game/events/ann.rpy:669
 translate english ann_dressed_balkon_talk1_1c8db60a:
 
     # Ann_05 "Вот же ты хитрец! Нашёл чем меня отвлечь..."
-    Ann_05 ""
+    Ann_05 "You're such a sly one! You found something to distract me..."
 
 # game/events/ann.rpy:670
 translate english ann_dressed_balkon_talk1_3696543d:
 
     # Max_03 "Могу отвлечь чем-нибудь приятным. Например, массажем спины. Думаю, это тебе бы сейчас помогло. Хочешь?"
-    Max_03 ""
+    Max_03 "I can distract you with something pleasant. Like a back massage. I think that would help you right now. Would you like one?"
 
 # game/events/ann.rpy:671
 translate english ann_dressed_balkon_talk1_eb82677e:
 
     # Ann_04 "Нет, Макс, сейчас мне некогда. Давай вечерком, сынок, у ТВ."
-    Ann_04 ""
+    Ann_04 "No, Max, I don't have time now. Let's do it tonight, son, by the TV."
 
 # game/events/ann.rpy:672
 translate english ann_dressed_balkon_talk1_a3767c9d:
 
     # Max_01 "Договорились, мам. И не забывай, если что, я всегда рядом. Обращайся!"
-    Max_01 ""
+    Max_01 "It's a deal, Mom. And don't forget, I'm always here if you need me. Anytime!"
 
 # game/events/ann.rpy:673
 translate english ann_dressed_balkon_talk1_59d69cc0:
 
     # Ann_01 "Обязательно!" nointeract
-    Ann_01 "" nointeract
+    Ann_01 "Absolutely!" nointeract
 
 translate english strings:
 
     # game/events/ann.rpy:596
     old "Мам, всё нормально?"
-    new ""
+    new "Mom, is everything okay?"
 
     # game/events/ann.rpy:613
     old "Мам?"
-    new ""
+    new "Mom?"
 
 # TODO: Translation updated at 2022-02-19 02:35
 
@@ -1528,143 +1528,143 @@ translate english strings:
 translate english ann_dressed_balkon_talk2_640d08ea:
 
     # Ann_14 "Это всё моя работа... Присутствие Эрика делает её просто невыносимой."
-    Ann_14 ""
+    Ann_14 "It's my job... Eric's presence makes it unbearable."
 
 # game/events/ann.rpy:685
 translate english ann_dressed_balkon_talk2_799ed018:
 
     # Max_15 "Он пристаёт к тебе?"
-    Max_15 ""
+    Max_15 "Is he hitting on you?"
 
 # game/events/ann.rpy:686
 translate english ann_dressed_balkon_talk2_624bc582:
 
     # Ann_18 "Нет, но его ехидная ухмылочка и постоянные намёки о возможных неприятностях, если я вдруг попытаюсь уволиться, сводят меня с ума."
-    Ann_18 ""
+    Ann_18 "No, but his snide smirk and the constant hints about possible trouble if I suddenly tried to quit are driving me crazy."
 
 # game/events/ann.rpy:687
 translate english ann_dressed_balkon_talk2_0ce3e59e:
 
     # Max_09 "Просто постарайся не обращать на него внимание."
-    Max_09 ""
+    Max_09 "Just try not to pay attention to him."
 
 # game/events/ann.rpy:688
 translate english ann_dressed_balkon_talk2_a8ecc8ef:
 
     # Ann_12 "Вряд ли это возможно, сынок, он же мой начальник." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "I don't think that's possible, son, he's my boss." nointeract
 
 # game/events/ann.rpy:693
 translate english ann_dressed_balkon_talk2_9803998b:
 
     # Ann_13 "Макс, ты что это делаешь? За зад меня обнимаешь?!"
-    Ann_13 ""
+    Ann_13 "Max, what are you doing? Are you hugging my ass?!"
 
 # game/events/ann.rpy:694
 translate english ann_dressed_balkon_talk2_f912aa8d:
 
     # Max_07 "Ну да. Это я так приободрить тебя решил. Если бы он действительно хотел тебе что-то сделать, то он бы уже давно это сделал."
-    Max_07 ""
+    Max_07 "Yeah. That's my way of cheering you up. If he really wanted to do something to you, he would have done it a long time ago."
 
 # game/events/ann.rpy:695
 translate english ann_dressed_balkon_talk2_769cdc0b:
 
     # Ann_17 "Сынок, такое вот твое приободрение не работает. Оно меня скорее смущает..."
-    Ann_17 ""
+    Ann_17 "Son, that kind of encouragement doesn't work. It rather embarrasses me..."
 
 # game/events/ann.rpy:697
 translate english ann_dressed_balkon_talk2_0167e576:
 
     # Max_09 "Ладно, уберу... Просто Эрику нравится играть на нервах, вот и всё, что он может сделать."
-    Max_09 ""
+    Max_09 "Okay, I'll put it away... Eric just likes to play hard to get, that's all he can do."
 
 # game/events/ann.rpy:698
 translate english ann_dressed_balkon_talk2_273fc7d0:
 
     # Ann_12 "Возможно так и есть, но... мне бы очень не хотелось искушать судьбу... это ведь может отразиться и на вас, моих детях, а вы для меня самое дорогое."
-    Ann_12 ""
+    Ann_12 "Maybe so, but... I wouldn't want to tempt fate... it might affect you, my children, and you are the most precious thing to me."
 
 # game/events/ann.rpy:699
 translate english ann_dressed_balkon_talk2_682e32bc:
 
     # Max_10 "Ты тоже самое дорогое для меня... для нас... И нам бы не хотелось видеть тебя такой печальной, мам."
-    Max_10 ""
+    Max_10 "You are also the dearest thing to me... for us... And we wouldn't want to see you so sad, Mom."
 
 # game/events/ann.rpy:700
 translate english ann_dressed_balkon_talk2_261a6f2e:
 
     # Ann_02 "Спасибо, Макс. Мне очень приятно это слышать. Как хорошо, что у меня есть такой внимательный и заботливый сын."
-    Ann_02 ""
+    Ann_02 "Thank you, Max. I'm very happy to hear that. It's nice to have such an attentive and caring son."
 
 # game/events/ann.rpy:701
 translate english ann_dressed_balkon_talk2_23203ebd:
 
     # Max_07 "В любом случае, если ты захочешь сменить место работы и у нас, вдруг, появятся сложности с деньгами, мы все тебя поймём и поддержим."
-    Max_07 ""
+    Max_07 "Anyway, if you want to change jobs and we suddenly have money problems, we all understand and support you."
 
 # game/events/ann.rpy:702
 translate english ann_dressed_balkon_talk2_bed6c909:
 
     # Ann_04 "Спасибо, мой хороший, я подумаю об этом..."
-    Ann_04 ""
+    Ann_04 "Thank you, my good man, I will think about it...."
 
 # game/events/ann.rpy:703
 translate english ann_dressed_balkon_talk2_d9948e58:
 
     # Max_09 "Обязательно подумай. Нужно покончить с этим прошлым раз и навсегда!"
-    Max_09 ""
+    Max_09 "Make sure you think about it. We need to end this past once and for all!"
 
 # game/events/ann.rpy:704
 translate english ann_dressed_balkon_talk2_09e80fa0:
 
     # Ann_05 "Хм... Глядя на тебя в последнее время, я вижу, что ты очень повзрослел."
-    Ann_05 ""
+    Ann_05 "Hmm... Looking at you lately, I see that you have matured a lot."
 
 # game/events/ann.rpy:705
 translate english ann_dressed_balkon_talk2_cdbf49b6:
 
     # Max_04 "Ну, тебе виднее."
-    Max_04 ""
+    Max_04 "Well, you know best."
 
 # game/events/ann.rpy:706
 translate english ann_dressed_balkon_talk2_650e344f:
 
     # Ann_08 "Так и есть. И мне нравится то, что я вижу..."
-    Ann_08 ""
+    Ann_08 "That's the way it is. And I like what I see..."
 
 # game/events/ann.rpy:707
 translate english ann_dressed_balkon_talk2_40bdc5b1:
 
     # Max_03 "Главное не унывай, мам. Всё образуется."
-    Max_03 ""
+    Max_03 "The main thing is not to be discouraged, Mom. Everything will work out."
 
 # game/events/ann.rpy:708
 translate english ann_dressed_balkon_talk2_ed9bd79e:
 
     # Ann_07 "Хорошо! Спасибо, что поддержал меня и развеял тоску."
-    Ann_07 ""
+    Ann_07 "Good! Thank you for supporting me and dispelling my ennui."
 
 # game/events/ann.rpy:709
 translate english ann_dressed_balkon_talk2_1c195d26:
 
     # Max_01 "Пожалуйста! Если что, я всегда рядом. Обращайся!"
-    Max_01 ""
+    Max_01 "You're welcome! I'm always around if you need me. You're welcome!"
 
 # game/events/ann.rpy:710
 translate english ann_dressed_balkon_talk2_59d69cc0:
 
     # Ann_01 "Обязательно!" nointeract
-    Ann_01 "" nointeract
+    Ann_01 "Absolutely!" nointeract
 
 # game/events/ann.rpy:719
 translate english ann_dressed_balkon_talk2_1f418bf5:
 
     # Max_09 "{m}Смущают её мои прикосновения... Ясно. Значит, нужно больше прикасаться тогда, когда это максимально естественно, чтобы она привыкла. Пожалуй, йога - то, что нужно! Стоит попробовать...{/m}"
-    Max_09 ""
+    Max_09 "{m}She's embarrassed by my touch... I see. So I need to touch her more when it's as natural as possible, so that she gets used to it. I guess yoga's the way to go! It's worth trying...{/m}"
 
 translate english strings:
 
     # game/events/ann.rpy:689
     old "{i}приобнять маму за попку{/i}"
-    new ""
+    new "{i}hug my mom's ass{/i}"
 

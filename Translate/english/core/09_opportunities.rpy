@@ -2080,85 +2080,85 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Самое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ. Нужно сперва избавиться от Эрика, а уже потом покупать эротические фильмы. Пока только массаж время от времени..."
-    new ""
+    new "The most frustrating thing is that we too rarely get to watch TV with my mother. We need to get rid of Eric first, and then buy erotic movies. So far, only massages from time to time..."
 
     # game/core/09_opportunities.rpy:4
     old "Можно довольствоваться редкими моментами у ТВ с мамой и делать ей лёгкий массаж, а можно попробовать избавиться от Эрика. Для этого потребуются успехи в возможности \"Альфа\"..."
-    new ""
+    new "You can be content with the occasional TV moment with your mom and give her a light massage, or you can try to get rid of Eric. That would require success in the \"Alpha\" capability..."
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Во главе семьи!\"..."
-    new ""
+    new "It's going to take success in the possibility of \"Head of the family!\""
 
     # game/core/09_opportunities.rpy:4
     old "Нужно попробовать сделать маме массаж спины, пока она смотрит ТВ..."
-    new ""
+    new "I should try giving my mom a back massage while she's watching TV..."
 
     # game/core/09_opportunities.rpy:4
     old "Похоже, мама обожает массаж спины, а это значит, что мне будет не так-то и просто сделать его на отлично. Но, если хотя бы иногда будет получаться, то уже хорошо и я смогу, например, обнимать её сзади, когда она будет грустить на балконе."
-    new ""
+    new "Mom seems to adore back rubs, which means that it won't be easy for me to do it perfectly. But, if I can do it at least occasionally, it's already good and I can, for example, cuddle her from behind when she's sad on the balcony."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back - 1] из 3"
-    new ""
+    new "I think that's enough for me to hug my mom from behind and it would make her feel comfortable... Successfully performed a back massage on my mom at the TV: [ann.flags.m_back - 1] of 3"
 
     # game/core/09_opportunities.rpy:4
     old "Вот это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
-    new ""
+    new "This is great! I finally got to fondle Lisa's boobs with my kisses! And how many perspectives this can open up... The main thing is to take your time and enjoy these moments."
 
     # game/core/09_opportunities.rpy:4
     old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды... \nХотя, пока я не избавлюсь от Эрика, все мои старания будут почти напрасными."
-    new ""
+    new "It's already so much better! Mom now has a new tracksuit that will give her and me a lot of warmth. She wasn't even too vocal about it being very open. It depends on what it's for. \nFor me, if she did yoga completely naked, it would be the bomb! Eh, dreams... But who knows, maybe one day... \nUnless I get rid of Eric, all my efforts will be almost in vain."
 
     # game/core/09_opportunities.rpy:4
     old "Можно проводить время с мамой, как сейчас, помогая ей с йогой, а можно попробовать избавиться от Эрика и посмотреть, что будет без него. Для этого потребуются успехи в возможности \"Альфа\"..."
-    new ""
+    new "You could spend time with your mom, like now, helping her with yoga, or you could try to get rid of Eric and see what happens without him. That would require progress in the \"Alpha\" opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно и дальше продолжать помогать маме с йогой. Теперь она должна стать ещё интереснее..."
-    new ""
+    new "We need to keep helping my mom with yoga. It should get even more interesting now..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет и утешать её станет куда приятнее. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
-    new ""
+    new "This is the kind of yoga I like better! My mom is still confused by my restless hands, but I think she will get used to them and it will become much more pleasant to comfort her. \nIt's just impossible not to get hard, so it's better to come to my mom's yoga in a T-shirt and shorts. It's so much easier to hide a boner if you have one. \n\nToo bad she wants me to help at least every other day because of my activity... But I don't mind, it just makes me want to join her again."
 
     # game/core/09_opportunities.rpy:4
     old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, то и утешать я её смогу так же... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
-    new ""
+    new "Once my mom gets used to being touched so unceremoniously for the sacred at yoga, then I can comfort her the same way... I was able to successfully help my mother with yoga: [ann.flags.truehelp] of 5"
 
     # game/core/09_opportunities.rpy:4
     old "Во главе семьи!"
-    new ""
+    new "Head of the family!"
 
     # game/core/09_opportunities.rpy:4
     old "После того, как я вывел Эрика на чистую воду, мама однозначно будет переживать, грустить, заниматься самобичеванием... Я обязательно должен быть рядом и, как смогу, утешать и ободрять её. Правда, перед всеми нами она скорее всего будет стараться этого не показывать, поэтому нужно будет периодически заглядывать к ней в комнату и если она будет грустить, побыть с ней."
-    new ""
+    new "After I exposed Eric to the truth, Mom would definitely be worried, sad, and self-deprecating... I should definitely be there to comfort and encourage her as much as I can. She'll probably try not to show it in front of the rest of us, though, so I'll need to look in her room periodically and be with her if she's sad."
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы не попадать на мамины переодевания, заходя к ней в комнату, лучше заглядывать во второй половине часа перед её работой..."
-    new ""
+    new "To avoid getting caught up in Mom's changing clothes, going into her room, it's better to look in the second half of the hour before her work..."
 
     # game/core/09_opportunities.rpy:4
     old "Я был прав. Хоть это и было очевидно, мама переживает из-за всей этой истории с Эриком. Она слишком сильно винит себя в том, что привела к нам домой такого уёб... Эрика, короче. К тому же, он напрягает её на работе. \nЯ успокоил её, на этот раз, и заодно предложил ей массаж спины, чтобы она хоть как-то смогла расслабиться. \nТеперь Эрик не мешает и мама по вечерам всегда в моём распоряжении у ТВ. Мои руки помогут ей расслабиться, а я смогу полюбоваться её шелковистой спинкой... Правда, массаж - это не панацея от всех душевных проблем, поэтому мама и дальше будет переживать."
-    new ""
+    new "I was right. Even though it was obvious, Mom is worried about the whole Eric thing. She blames herself too much for bringing a motherfucker like... Eric, anyway. Plus, he's stressing her out at work. \nSo I calmed her down, this time, and I offered her a back rub so she could at least relax. \nNow Eric is out of the way and I always have my mom by the TV in the evenings. My hands help her relax and I can admire her silky back... True, massage is not a cure-all for all mental problems, so Mom will continue to worry."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать заглядывать к маме перед работой и в воскресенье, чтобы успокоить её, если она будет грустить..."
-    new ""
+    new "You have to keep dropping in on Mom before work and on Sunday to comfort her if she gets sad..."
 
     # game/core/09_opportunities.rpy:4
     old "Я снова застал маму всю расстроенную и грустную. Ей тяжело видеть его ехидную рожу на работе и от этого никуда не деться. Только если уволиться, но не известно, какие проблемы он может устроить в этом случае маме. \nЯ решил приободрить её, помимо обычных утешений, приобняв за попку, но она сказала, что её это скорее смущает, чем ободряет. \nНадо это дело исправлять... И чтобы такие прикосновения стали более естественными, надо чаще прикасаться к её попке. \nПожалуй, самый приемлемый вариант таких контактов, где меня не посчитают озабоченным - это йога. Так что нужно пробовать..."
-    new ""
+    new "I found my mother all upset and sad again. It's hard for her to see his snide face at work, and there's no getting away from it. Only if I quit, but I don't know what kind of trouble he could get my mother into if I did. \nI decided to cheer her up, in addition to the usual reassurance, by hugging her ass, but she said it was more embarrassing than encouraging. \nWe need to fix this... And to make this kind of touching more natural, we should touch her ass more often. \nBut I think yoga is probably the most acceptable way to have that kind of contact without being seen as horny. So you have to try it..."
 
     # game/core/09_opportunities.rpy:4
     old "Эх, придётся пораньше вставать, чтобы помогать маме с йогой..."
-    new ""
+    new "Eh, I'll have to get up early to help my mom with yoga..."
 
     # game/core/09_opportunities.rpy:4
     old "Как только мама перестанет смущаться моих прикосновений к её сочной попке во время йоги, то и утешать я смогу её куда эффективнее. Для этого потребуются успехи в возможности \"Волнующие изгибы\"..."
-    new ""
+    new "Once Mom stops being embarrassed by my touching her juicy ass during yoga, I'll be able to comfort her much more effectively. That's going to take some progress on the \"Exciting Curves\" opportunity..."
 
     # game/core/09_opportunities.rpy:908
     old "Пока мама встречается с Эриком, мне не занять главное место в нашей семье, а значит потребуются успехи в возможности \"Альфа\"..."
-    new ""
+    new "As long as my mom is dating Eric, I can't take the top spot in our family, which means it's going to take progress in the \"Alpha\" opportunity..."
 

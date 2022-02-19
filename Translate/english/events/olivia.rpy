@@ -2122,17 +2122,17 @@ translate english olivia_night_visit_r_e85cfe71:
 translate english olivia_repeatable_night_out_with_eab840c0:
 
     # Lisa_02 "И с чего ты взял, что нам надоест? Я даже маечку одевать не буду. Макс уже всё видел, а без неё удобнее..."
-    Lisa_02 ""
+    Lisa_02 "And what makes you think we'll get bored? I'm not even going to wear a tank top. Max has already seen everything, and it's more comfortable without it..."
 
 # game/events/olivia.rpy:684
 translate english olivia_repeatable_night_out_with_ba36eeb5:
 
     # Max_02 "Ох, что за дивный вечерок!"
-    Max_02 ""
+    Max_02 "Oh, what a lovely evening!"
 
 # game/events/olivia.rpy:685
 translate english olivia_repeatable_night_out_with_0a6cf6a4:
 
     # Olivia_01 "Ночь вообще-то, Макс. Укладываемся спать..."
-    Olivia_01 ""
+    Olivia_01 "It's the middle of the night, Max. Let's go to bed..."
 
