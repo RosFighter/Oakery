@@ -1378,7 +1378,7 @@ translate english ann_dressed_balcony_c391d1e4:
 translate english ann_dressed_balkon_talk1_b906cb2e:
 
     # Ann_14 "У меня сейчас такое состояние, что я не знаю, как мне жить дальше... Я... Я ужасная мать..."
-    Ann_14 "I'm in such a state right now that I don't know how I'm going to live... Я... I'm a terrible mother..."
+    Ann_14 "I'm in such a state right now that I don't know how I'm going to live... I... I'm a terrible mother..."
 
 # game/events/ann.rpy:651
 translate english ann_dressed_balkon_talk1_b034aec8:
@@ -1390,7 +1390,7 @@ translate english ann_dressed_balkon_talk1_b034aec8:
 translate english ann_dressed_balkon_talk1_79bc09d7:
 
     # Ann_13 "А разве нет? Я... Я была так глупа, что привела в дом проходимца, который не только воспользовался мной, но и чуть не совратил моих девочек!"
-    Ann_13 "Isn't it? I... I was so stupid as to bring a tramp into the house who not only took advantage of me, but almost molested my girls!"
+    Ann_13 "Isn't it? I... I was so stupid as to bring a Dickhead into the house who not only took advantage of me, but also almost molested my girls!"
 
 # game/events/ann.rpy:653
 translate english ann_dressed_balkon_talk1_de50c165:

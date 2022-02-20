@@ -1932,7 +1932,7 @@ translate english olivia_ann_meeting_512f166a:
 translate english olivia_ann_meeting_1a2cd1ba:
 
     # Max_09 "Не знаю, не знаю, Лиза... Это уже будет непросто. Вот если бы вы с Оливией намазали друг друга кремом для загара, то я бы мог и тебя отстоять перед мамой."
-    Max_09 "I don't know, I don't know, Lisa... It's not going to be easy. If you and Olivia put sunscreen on each other, I could stand up to your mother."
+    Max_09 "I don't know, I don't know, Lisa... It's not going to be easy. If you and Olivia put sunscreen on each other, I could stand up to our mother."
 
 # game/events/olivia.rpy:1057
 translate english olivia_ann_meeting_d996de1a:
