@@ -389,9 +389,9 @@ label olivia_second_sunscreen:
             pass
 
     $ kol_cream -= 2
-    if kol_cream < 2:
+    if kol_cream < 3:
         call left_cream from _call_left_cream_6         ## солнцезащитный крем закончился
-    elif kol_cream < 4:
+    elif kol_cream < 7:
         call left_cream(1) from _call_left_cream_7      ## осталось мало крема
 
     $ olivia.flags.incident = 3
@@ -467,9 +467,9 @@ label olivia_third_sunscreen:
     Lisa_01 "Спасибо, Макс."
 
     $ kol_cream -= 2
-    if kol_cream < 2:
+    if kol_cream < 3:
         call left_cream from _call_left_cream_8         ## солнцезащитный крем закончился
-    elif kol_cream < 4:
+    elif kol_cream < 7:
         call left_cream(1) from _call_left_cream_9      ## осталось мало крема
 
     $ olivia.flags.incident = 4
@@ -742,9 +742,9 @@ label olivia_repeat_sunscreen:
             pass
 
     $ kol_cream -= 2
-    if kol_cream < 2:
+    if kol_cream < 3:
         call left_cream from _call_left_cream_10         ## солнцезащитный крем закончился
-    elif kol_cream < 4:
+    elif kol_cream < 7:
         call left_cream(1) from _call_left_cream_11      ## осталось мало крема
 
     $ olivia.flags.m_back += 1
@@ -811,9 +811,9 @@ label olivia_give_sunscreen:
             pass
 
     $ kol_cream -= 2
-    if kol_cream < 2:
+    if kol_cream < 3:
         call left_cream from _call_left_cream_12         ## солнцезащитный крем закончился
-    elif kol_cream < 4:
+    elif kol_cream < 7:
         call left_cream(1) from _call_left_cream_13      ## осталось мало крема
 
     $ olivia.flags.handmass = 0     # недоступно, пока Макс снова не намажет девушек

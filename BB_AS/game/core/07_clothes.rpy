@@ -994,7 +994,7 @@ init python:
             if lvl > 1:
                 lst.append('')    # голая
         elif vr == 'b0':    # на балконе одетая
-            lst.extend(['a'] if 6 > weekday > 0 else ['e', 'f'])
+            lst.extend(['a'] if 6 > weekday > 0 else 'f' if ann.clothes.rest_morn.GetCur().suf == 'a' else 'e')
         elif vr == 'g':
             lst.append('j' if weekday == 6 else 'a')
         elif vr == 0:
@@ -1029,11 +1029,7 @@ init python:
             elif ann.prev_plan == 'in_shop':                # после шопинга
                 lst.append('c2')                                            # трусики
             elif ann.prev_plan == 'read':                   # после чтения
-                if ann.clothes.rest_morn.GetCur().suf == 'a':
-                    lst.append('f')                                         # шорты b
-                elif ann.clothes.rest_morn.GetCur().suf == 'd':
-                    lst.append('e')                                         # шорты d
-
+                lst.append('f' if ann.clothes.rest_morn.GetCur().suf == 'a' else 'e')
             if ann.plan_name == 'yoga':                         # йога
                 if lvl == 1:
                     lst.append('h')                              # полная спортивка

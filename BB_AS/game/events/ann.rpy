@@ -593,6 +593,8 @@ label ann_dressed:
             all([tm>='10:30', 6 > weekday > 0, not ann.flags.showdown_e]),   # 1-ый разговор (только в рабочие дни)
             all([tm>='10:30', 6 > weekday > 0, ann.flags.showdown_e == 1, ann.dcv.other.done]),   # 2-ой разговор (в рабочие дни или воскресенье), не раньше, чем через 5 дней после 1-ого разговора на балконе
             all(['11:00'>tm>='10:00', weekday == 0, ann.flags.showdown_e == 1, ann.dcv.other.done]),   # 2-ой разговор (в рабочие дни или воскресенье), не раньше, чем через 5 дней после 1-ого разговора на балконе
+            all([tm>='10:30', 6 > weekday > 0, ann.flags.showdown_e > 1]),   # периодический разговор (в рабочие дни или воскресенье), доступен через день
+            all(['11:00'>tm>='10:00', weekday == 0, ann.flags.showdown_e > 1]),   # периодический разговор (в рабочие дни или воскресенье), доступен через день
                                                             ]):
             # если рабочий день и Анна одета
             # annroom-balcony-md-01 + annroom-balcony-md-01-ann-dresses-01a
@@ -600,15 +602,17 @@ label ann_dressed:
             scene Ann_dressing balcony zero
             Max_09 "{m}То ли мама просто задумалась, то ли грустит...{/m}" nointeract
             menu:
-                "Мам, всё нормально?":
+                "Мам, всё нормально?" if ann.flags.showdown_e < 2:
                     # annroom-balcony-md-01 + annroom-wardrobe-mde-01-ann-dresses-07a
                     scene Ann_dressing balcony
                     Ann_12 "Ой, Макс! Ты слишком тихо ходишь. А я так, ничего, просто задумалась немного..."
                     Max_07 "Расскажешь, о чём?"
                     if not ann.flags.showdown_e:
                         jump .balkon_talk1
-                    elif ann.flags.showdown_e == 1:
+                    else:   # elif ann.flags.showdown_e == 1:
                         jump .balkon_talk2
+                "Видами любуешься, мам?"  if ann.flags.showdown_e > 1:
+                    jump .balkon_r
 
                 "{i}уйти{/i}":
                     jump .end
@@ -733,10 +737,10 @@ label ann_dressed:
             "{i}уйти{/i}":
                 $ spent_time = 20
                 $ ann.flags.showdown_e = 2
-                $ ann.dcv.other.set_lost(6)
-                $ infl[ann].add_m(20, True)
+                $ ann.dcv.other.set_lost(3)
+                $ infl[ann].add_m(15, True)
                 $ poss['boss'].open(3)
-                $ mood = 100
+                $ mood = 75
 
         # after-breakfast + ad-max-(00a/00b)
         scene BG after-breakfast
@@ -747,6 +751,69 @@ label ann_dressed:
         $ current_room = house[5]  # Макс выходит на веранду
         jump .end
 
+    label .balkon_r:
+        # annroom-balcony-md-01 + annroom-wardrobe-mde-01-ann-dresses-(07a/07e/07f)
+        scene Ann_dressing balcony
+        Ann_02 "Ой, Макс! Как ты так тихо подкрадываешься? Да, любуюсь... А ты почему без дела слоняешься?" nointeract
+        menu:
+            "А что, я мешаю?" if not ann.dcv.other.done:
+                Ann_01 "Не то, чтобы мешаешь... Иди лучше чем-нибудь продуктивным займись. Маме пока некогда."
+                Max_00 "Ладно, не буду мешать." nointeract
+                menu:
+                    "{i}уйти{/i}":
+                        jump .end
+            "С тобой хотел побыть. Или я мешаю?" if ann.dcv.other.done:
+                pass
+        Ann_04 "Нет. Побудь, если хочется. Я не против." nointeract
+        menu:
+            "{i}приобнять маму{/i}":
+                pass
+        # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-01 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+        $ var_pose = '01'
+        scene Ann_dressing talk
+        Ann_02 "Как у тебя дела, Макс? Всё хорошо?"
+        Max_04 "Да, порядок. А ты как? Не скучаешь?"
+        Ann_05 "Ох, сынок, с вами разве заскучаешь. Да и на работе дел хватает." nointeract
+        menu:
+            "{i}продолжить обнимать{/i}":
+                # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-02 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+                $ var_pose = '02'
+                Max_07 "Ты, мам, побольше отдыхать не забывай."
+                Ann_07 "Это я и делаю сейчас. А ты давай беги, займись чем-нибудь полезным."
+
+                if ann.flags.m_back > 2:
+                    # было 3 успешных массажа спины Анны у ТВ
+                    #annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-05 + Одежда (Макс перекрывает Анну) + annroom-balcony-md-02a
+                    $ var_pose = '05'
+
+            "{i}приобнять маму за попку{/i}" if ann.flags.truehelp > 4:
+                # было 5 успешных расширенных йог
+                # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-03 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+                $ var_pose = '03'
+                Max_07 "Ты, мам, побольше отдыхать не забывай. У нас слишком прекрасный дом, чтобы грустить."
+                Ann_08 "Да, здесь здорово! Маленький рай. Ты зашёл меня просто вот так подбодрить?"
+
+                # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-04 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+                $ var_pose = '04'
+                Max_02 "Ну, да. Хотел напомнить, что я всегда рядом."
+                Ann_07 "Спасибо, но лучше беги, займись чем-нибудь полезным. У меня всё в порядке."
+
+                if ann.flags.m_back > 2:
+                    # было 3 успешных массажа спины Анны у ТВ
+                    # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-05 + Одежда (Макс перекрывает Анну) + annroom-balcony-md-02a
+                    $ var_pose = '05'
+
+        Max_03 "Ладно, не буду отвлекать. Я тебя люблю, мам!"
+        Ann_06 "Я тебя тоже, сынок." nointeract
+        menu:
+            "{i}уйти{/i}":
+                $ spent_time = 20
+                $ ann.dcv.other.set_lost(2)
+                $ infl[ann].add_m(5, True)
+                $ mood = 30
+                $ prev_room = house[2]
+                $ current_room = house[5]  # Макс выходит на веранду
+
     label .end:
         $ ann.hourly.dressed = 1
         $ ann.prev_plan = ann.plan_name
@@ -756,7 +823,10 @@ label ann_dressed:
 
 label ann_resting:
 
-    if all([not ann.hourly.dressed, '11:00' > tm >= '10:00', ann.flags.showdown_e == 1, ann.dcv.other.done]): # 2-ой разговор (в рабочие дни или воскресенье), не раньше, чем через 5 дней после 1-ого разговора на балконе
+    if any([
+        all([not ann.hourly.dressed, '11:00' > tm >= '10:00', ann.flags.showdown_e == 1, ann.dcv.other.done]),  # 2-ой разговор (в рабочие дни или воскресенье), не раньше, чем через 5 дней после 1-ого разговора на балконе
+        all([not ann.hourly.dressed, '11:00' > tm >= '10:00', ann.flags.showdown_e > 1]),                       # периодический разговор (в рабочие дни или воскресенье), доступен через день
+        ]):
         jump ann_dressed.balcony
 
     if tm < '19:00':
