@@ -1668,3 +1668,117 @@ translate english strings:
     old "{i}приобнять маму за попку{/i}"
     new "{i}hug my mom's ass{/i}"
 
+# TODO: Translation updated at 2022-02-20 20:06
+
+# game/events/ann.rpy:757
+translate english ann_dressed_balkon_r_4897a021:
+
+    # Ann_02 "Ой, Макс! Как ты так тихо подкрадываешься? Да, любуюсь... А ты почему без дела слоняешься?" nointeract
+    Ann_02 "" nointeract
+
+# game/events/ann.rpy:760
+translate english ann_dressed_balkon_r_0a883de4:
+
+    # Ann_01 "Не то, чтобы мешаешь... Иди лучше чем-нибудь продуктивным займись. Маме пока некогда."
+    Ann_01 ""
+
+# game/events/ann.rpy:761
+translate english ann_dressed_balkon_r_58738e49:
+
+    # Max_00 "Ладно, не буду мешать." nointeract
+    Max_00 "" nointeract
+
+# game/events/ann.rpy:767
+translate english ann_dressed_balkon_r_2280510e:
+
+    # Ann_04 "Нет. Побудь, если хочется. Я не против." nointeract
+    Ann_04 "" nointeract
+
+# game/events/ann.rpy:774
+translate english ann_dressed_balkon_r_119f09c9:
+
+    # Ann_02 "Как у тебя дела, Макс? Всё хорошо?"
+    Ann_02 ""
+
+# game/events/ann.rpy:775
+translate english ann_dressed_balkon_r_ca3ee871:
+
+    # Max_04 "Да, порядок. А ты как? Не скучаешь?"
+    Max_04 ""
+
+# game/events/ann.rpy:776
+translate english ann_dressed_balkon_r_7fdac7ed:
+
+    # Ann_05 "Ох, сынок, с вами разве заскучаешь. Да и на работе дел хватает." nointeract
+    Ann_05 "" nointeract
+
+# game/events/ann.rpy:781
+translate english ann_dressed_balkon_r_55550510:
+
+    # Max_07 "Ты, мам, побольше отдыхать не забывай."
+    Max_07 ""
+
+# game/events/ann.rpy:782
+translate english ann_dressed_balkon_r_081cb55f:
+
+    # Ann_07 "Это я и делаю сейчас. А ты давай беги, займись чем-нибудь полезным."
+    Ann_07 ""
+
+# game/events/ann.rpy:793
+translate english ann_dressed_balkon_r_a9420db7:
+
+    # Max_07 "Ты, мам, побольше отдыхать не забывай. У нас слишком прекрасный дом, чтобы грустить."
+    Max_07 ""
+
+# game/events/ann.rpy:794
+translate english ann_dressed_balkon_r_874166e7:
+
+    # Ann_08 "Да, здесь здорово! Маленький рай. Ты зашёл меня просто вот так подбодрить?"
+    Ann_08 ""
+
+# game/events/ann.rpy:798
+translate english ann_dressed_balkon_r_6b6b7f92:
+
+    # Max_02 "Ну, да. Хотел напомнить, что я всегда рядом."
+    Max_02 ""
+
+# game/events/ann.rpy:799
+translate english ann_dressed_balkon_r_680063a0:
+
+    # Ann_07 "Спасибо, но лучше беги, займись чем-нибудь полезным. У меня всё в порядке."
+    Ann_07 ""
+
+# game/events/ann.rpy:806
+translate english ann_dressed_balkon_r_0cc8bfb1:
+
+    # Max_03 "Ладно, не буду отвлекать. Я тебя люблю, мам!"
+    Max_03 ""
+
+# game/events/ann.rpy:807
+translate english ann_dressed_balkon_r_dfe00014:
+
+    # Ann_06 "Я тебя тоже, сынок." nointeract
+    Ann_06 "" nointeract
+
+translate english strings:
+
+    # game/events/ann.rpy:604
+    old "Видами любуешься, мам?"
+    new ""
+
+    # game/events/ann.rpy:758
+    old "А что, я мешаю?"
+    new ""
+
+    # game/events/ann.rpy:758
+    old "С тобой хотел побыть. Или я мешаю?"
+    new ""
+
+    # game/events/ann.rpy:768
+    old "{i}приобнять маму{/i}"
+    new ""
+
+    # game/events/ann.rpy:777
+    old "{i}продолжить обнимать{/i}"
+    new ""
+
