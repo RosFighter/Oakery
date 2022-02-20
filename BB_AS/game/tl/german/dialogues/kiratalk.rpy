@@ -484,13 +484,13 @@ translate german kira_about_kiss_25aa812b:
 translate german kira_talk4_ae571178:
 
     # Kira_10 "Вот так вот! Сразу к делу, да? Нет, Макс, мне не удалось поговорить. Но я обязательно во всём разберусь и выясню что происходит."
-    Kira_10 "Das ist genau der Punkt, oder? Nein, Max, ich hatte noch keine Gelegenheit. Aber ich werde es auf jeden Fall herausfinden und herausfinden, was hier los ist."
+    Kira_10 "Genau das! Direkt auf den Punkt gebracht, was? Nein, Max, ich hatte keine Gelegenheit zu einem Gespräch. Aber ich werde mich auf jeden Fall darum kümmern und herausfinden, was hier los ist."
 
 # game/dialogues/kiratalk.rpy:253
 translate german kira_talk4_9f389adc:
 
     # Max_00 "Ну ладно. Значит, ты работаешь горничной?"
-    Max_00 "In Ordnung. Also... du bist ein Dienstmädchen?"
+    Max_00 "Also gut. Du arbeitest also als Dienstmädchen?"
 
 # game/dialogues/kiratalk.rpy:254
 translate german kira_talk4_8013cd48:
@@ -508,43 +508,43 @@ translate german kira_talk4_a1691294:
 translate german kira_talk4_9f00eadd:
 
     # Kira_07 "Что же тебя смущает? Я разве не могу работать горничной?" nointeract
-    Kira_07 "Was? Darf ich etwa nicht als Dienstmädchen arbeiten?" nointeract
+    Kira_07 "Warum ist dir das peinlich? Darf ich nicht als Dienstmädchen arbeiten?" nointeract
 
 # game/dialogues/kiratalk.rpy:260
 translate german kira_talk4_00a37ecd:
 
     # Kira_04 "Может быть, они любят поспать и только вечером не бывают дома?"
-    Kira_04 "Vielleicht willst du lieber ein paar Nächte nicht im Haus sein?"
+    Kira_04 "Vielleicht schlafen sie gerne aus und gehen nur abends raus?"
 
 # game/dialogues/kiratalk.rpy:261
 translate german kira_talk4_3280e304:
 
     # Max_07 "У тебя слишком нежные руки для такой работы..."
-    Max_07 "Deine Hände sehen zu weich aus für diese Art von Arbeit..."
+    Max_07 "Deine Hände sind zu zart für diese Art von Arbeit..."
 
 # game/dialogues/kiratalk.rpy:264
 translate german kira_talk4_a260fdd8:
 
     # Kira_04 "Ну ты совсем как твоя мама. Всё подозреваешь... Может быть, я в перчатках работаю. Берегу кожу..."
-    Kira_04 "Du kommst wirklich ganz nach Ann. Hast du daran gedacht, dass ich vielleicht einfach nur Handschuhe trage? Das kann eine Menge helfen, die Haut zu schützen."
+    Kira_04 "Du bist genau wie deine Mom. Du bist misstrauisch... Vielleicht trage ich Handschuhe. Ich schone meine Haut..."
 
 # game/dialogues/kiratalk.rpy:265
 translate german kira_talk4_f99b18bd:
 
     # Max_07 "Кто же вечером порядок наводит?"
-    Max_07 "Wer bringt heute Abend die Dinge in Ordnung?"
+    Max_07 "Wer macht schon Abends sauber?"
 
 # game/dialogues/kiratalk.rpy:267
 translate german kira_talk4_32ed8e84:
 
     # Kira_08 "Ну ладно, ладно, ты меня раскусил, Макс. Я не совсем горничной работаю..." nointeract
-    Kira_08 "Autsch. Du hast mich durchschaut. Na gut, ich bin eigentlich kein Dienstmädchen..." nointeract
+    Kira_08 "Okay, okay, du hast mich erwischt, Max. Ich arbeite nicht gerade als Dienstmädchen..." nointeract
 
 # game/dialogues/kiratalk.rpy:274
 translate german kira_talk4_7ccd734d:
 
     # Kira_14 "Если ты расскажешь своей маме, она меня убьёт и выгонит в гостиницу... В лучшем случае..."
-    Kira_14 "Wenn du es deiner Mom erzählst, würde sie mich sicher entweder umbringen oder auf die Straße werfen."
+    Kira_14 "Wenn du das deiner Mutter erzählst, bringt sie mich um und wirft mich raus auf die Straße. Im besten Fall..."
 
 # game/dialogues/kiratalk.rpy:275
 translate german kira_talk4_4acdf68b:
@@ -556,157 +556,157 @@ translate german kira_talk4_4acdf68b:
 translate german kira_talk4_5ee83267:
 
     # Kira_13 "Точно? В общем, я снимаюсь в одном фильме... И форма горничной как раз из него. Я её случайно испачкала и брала постирать, а твоя мама заметила..."
-    Kira_13 "Ich hoffe es. Im Grunde spiele ich ein Dienstmädchen in einem Film. Ich habe aus Versehen mein Kostüm schmutzig gemacht und wollte es waschen lassen, als deine Mutter bemerkte..."
+    Kira_13 "Bist du sicher? Wie auch immer, ich spiele in einem Film mit... Und die Uniform des Dienstmädchens passt genau zum Thema. Ich habe es aus Versehen schmutzig gemacht und es zum Waschen mitgenommen, und deine Mom hat es bemerkt..."
 
 # game/dialogues/kiratalk.rpy:277
 translate german kira_talk4_634c769c:
 
     # Max_07 "Так ты теперь актриса?!"
-    Max_07 "Du bist jetzt also Schauspielerin?!"
+    Max_07 "Du bist also Schauspielerin?!"
 
 # game/dialogues/kiratalk.rpy:278
 translate german kira_talk4_abeddefc:
 
     # Kira_08 "Да, почти звезда! Но никому не говори. Это большой секрет от всех!" nointeract
-    Kira_08 "Ja, und ich bin wirklich kurz davor, groß rauszukommen! Aber ich behalte ein großes Geheimnis für mich, deshalb darfst du kein Wort sagen!" nointeract
+    Kira_08 "Ja, fast ein Star! Aber sag es nicht weiter. Es ist ein großes Geheimnis vor dem Rest der Welt!" nointeract
 
 # game/dialogues/kiratalk.rpy:284
 translate german kira_talk4_5c93772d:
 
     # Kira_05 "Ну, это не совсем те фильмы, которыми хвастаются среди своей семьи, если ты меня понимаешь..."
-    Kira_05 "Nun, diese Filme sind nicht gerade Mainstream. Und sie bieten nicht die Art von Rollen, von denen du willst, dass deine Familie davon erfährt..."
+    Kira_05 "Nun, das sind nicht gerade die Art von Filmen, mit denen man in der Familie prahlt, wenn du verstehst, was ich meine..."
 
 # game/dialogues/kiratalk.rpy:285
 translate german kira_talk4_d3b3b86a:
 
     # Max_08 "Это порно?!"
-    Max_08 "Das ist ein Porno, nicht wahr!?"
+    Max_08 "Es sidn Pornos!?"
 
 # game/dialogues/kiratalk.rpy:286
 translate german kira_talk4_2dea5ed4:
 
     # Kira_03 "Макс, ну почему сразу порно? Может быть, это утончённая эротика с интересным сюжетом и отличной игрой актёров..."
-    Kira_03 "Warum muss es darauf hinauslaufen, einfach nur Porno zu sein? Vielleicht ist es eine anspruchsvolle Erotik mit reifen Themen und großartigem Schauspiel..."
+    Kira_03 "Max, warum soll es ein Porno sein? Vielleicht ist es anspruchsvolle Erotik mit einer interessanten Handlung und tollen Schauspielern..."
 
 # game/dialogues/kiratalk.rpy:287
 translate german kira_talk4_0e40a20a:
 
     # Max_07 "Значит, правда порно..."
-    Max_07 "So... Pornos."
+    Max_07 "Also, doch, Porno..."
 
 # game/dialogues/kiratalk.rpy:288
 translate german kira_talk4_d23403c0:
 
     # Kira_14 "Ну да. Нужно же девушке как-то зарабатывать. Правда, платят не очень, но продюсер обещал мне главную роль..."
-    Kira_14 "In Ordnung, ja. Eine Frau muss irgendwie Geld verdienen. Es wird nicht viel bezahlt, aber der Produzent verspricht mir eine Hauptrolle."
+    Kira_14 "Na gut. Ein Mädchen muss ja auch Geld verdienen. Die Bezahlung ist nicht toll, aber der Produzent hat mir die Hauptrolle versprochen..."
 
 # game/dialogues/kiratalk.rpy:289
 translate german kira_talk4_ac124599:
 
     # Max_09 "Они всем это обещают"
-    Max_09 "Das versprechen sie alle."
+    Max_09 "Sie versprechen es jedem"
 
 # game/dialogues/kiratalk.rpy:290
 translate german kira_talk4_803e8921:
 
     # Kira_07 "Думаешь, я этого не знаю? Ну а что делать. Там мне хотя бы стабильно платят, хоть и копейки..."
-    Kira_07 "Glaubst du etwa, ich wüsste das nicht? So funktioniert das nun mal. Ich bekomme wenigstens ein festes Gehalt, auch wenn es sich nur um ein paar Cent handelt..."
+    Kira_07 "Glaubst du, ich wüsste das nicht? Und was soll ich tun? Wenigstens bekomme ich dort ein festes Gehalt, auch wenn es nur wenig ist..."
 
 # game/dialogues/kiratalk.rpy:295
 translate german kira_talk4_069f6948:
 
     # Max_03 "Моя тётя снимается в порно... С ума сойти!"
-    Max_03 "Meine Tante macht Pornos... das ist irgendwie verrückt!"
+    Max_03 "Meine Tante dreht Pornos... Das ist Wahnsinn!"
 
 # game/dialogues/kiratalk.rpy:296
 translate german kira_talk4_21d679b2:
 
     # Kira_08 "Макс, ты опять слишком перевозбудился. Боюсь представить что будет, если ты увидишь какой-нибудь фильм с моим участием! Хотя, мы и так с тобой почти как в порно развлекаемся..."
-    Kira_08 "Sieht aus, als würdest du dich wieder erregen. Es wäre interessant zu sehen, wie du reagieren würdest, wenn du mich in einem Film siehst! Obwohl, das ist nicht weit entfernt von der Geschichte eines..."
+    Kira_08 "Max, du bist schon wieder überreizt. Ich habe Angst davor, mir vorzustellen, was passieren würde, wenn du einen Film mit mir darin sehen würdest! Obwohl, du und ich haben schon eine Menge Spaß mit einem Porno..."
 
 # game/dialogues/kiratalk.rpy:297
 translate german kira_talk4_95af88df:
 
     # Max_05 "А что, можно увидеть?"
-    Max_05 "Warum, kannst du etwas sehen?"
+    Max_05 "Warum, kann ich sie sehen?"
 
 # game/dialogues/kiratalk.rpy:298
 translate german kira_talk4_956de982:
 
     # Kira_04 "Думаю, на сегодня с тебя и так хватит. Бегом в душ, а то меня начинает возбуждать твой стоящий член..."
-    Kira_04 "Wie ich sehe, hattest du für heute genug Spaß. Los, geh duschen, bevor du mich auf dumme Gedanken bringst..."
+    Kira_04 "Ich denke, du hattest genug für einen Tag. Geh unter die Dusche, dein harter Schwanz erregt mich langsam..."
 
 # game/dialogues/kiratalk.rpy:299
 translate german kira_talk4_fe013028:
 
     # Max_02 "Не поможешь мне с этим?"
-    Max_02 "Bist du sicher, dass du mir dabei nicht helfen willst?"
+    Max_02 "Kannst du mir dabei helfen?"
 
 # game/dialogues/kiratalk.rpy:300
 translate german kira_talk4_b082f0c1:
 
     # Kira_06 "Макс! Что ты такое своей тёте предлагаешь! Как тебе не стыдно..."
-    Kira_06 "Max! Was sagst du zu deiner Tante? Schäm dich..."
+    Kira_06 "Max! Was erwartest du von deiner Tante? Schande über dich..."
 
 # game/dialogues/kiratalk.rpy:301
 translate german kira_talk4_9a8f75a9:
 
     # Max_09 "Ладно, смейся..."
-    Max_09 "Okay, lacht ruhig..."
+    Max_09 "Okay, lach mal..."
 
 # game/dialogues/kiratalk.rpy:311
 translate german kira_talk4_4f8e6ef4:
 
     # Max_04 "Моя тётя снимается в порно! О таком лучше вообще никому не рассказывать. Ох... вот это мне повезло!"
-    Max_04 "Meine Tante macht Pornos! Ich sollte das geheim halten. Oh ... was für ein Glück für mich!"
+    Max_04 "Meine Tante macht Pornos! Davon sollte man niemandem etwas erzählen. Oh... (kichert) Das ist mein Glückstag!"
 
 # game/dialogues/kiratalk.rpy:315
 translate german kira_talk4_1b11ce0f:
 
     # Max_19 "О да, Кира, мы с тобой ещё снимемся в фильме... и даже не в одном. Я сделаю тебя звездой и не только!"
-    Max_19 "Oh ja, Kira, du und ich werden in einem Film sein... und nicht nur in einem. Ich mache Sie zu einem Star und mehr!"
+    Max_19 "Oh ja, Kira, du und ich werden in einem Film mitspielen... und mehr als eine. Ich mache aus dir einen Star und mehr!"
 
 # game/dialogues/kiratalk.rpy:312
 translate german kira_talk4_ed62975f:
 
     # Kira_05 "Что, прости? Я не расслышала последнее..."
-    Kira_05 "Verzeihung? Ich habe das nicht verstanden..."
+    Kira_05 "Wie bitte? Das letzte habe ich nicht gehört..."
 
 # game/dialogues/kiratalk.rpy:316
 translate german kira_talk4_fabb36af:
 
     # Max_08 "Но... Ты же была там... Я..."
-    Max_08 "Aber... Du warst da ... Ich ..."
+    Max_08 "Aber... Du warst hier... Ich..."
 
 # game/dialogues/kiratalk.rpy:317
 translate german kira_talk4_92ee4f4a:
 
     # Kira_08 "Просто немного пофантазировал о своей тёте?"
-    Kira_08 "Phantasierst Du nur über Deine Tante?"
+    Kira_08 "Hast du nur ein bisschen über deine Tante fantasiert?"
 
 # game/dialogues/kiratalk.rpy:318
 translate german kira_talk4_dbc4f220:
 
     # Max_09 "Ну а как ты думала? Приходится, раз уж ты не помогаешь..."
-    Max_09 "Was denkst du? Ich muss ja, da du mir nicht hilfst..."
+    Max_09 "Nun, was meinst du? Ich muss, da du mir nicht hilfst..."
 
 # game/dialogues/kiratalk.rpy:319
 translate german kira_talk4_89a335de:
 
     # Kira_01 "Ладно, ты тут заканчивай, я позже в душ схожу. Не подскользнись!" nointeract
-    Kira_01 "Okay! Lass dir Zeit, ich dusche später. Rutsch nicht aus!" nointeract
+    Kira_01 "Also gut, mach das hier fertig, ich werde später duschen gehen. Pass auf, dass du nicht stolperst!" nointeract
 
 # game/dialogues/kiratalk.rpy:323
 translate german kira_talk4_e05be6c3:
 
     # Max_07 "{m}Ну, тётя Кира, ты доприкалываешься! Я ещё реализую свои фантазии с тобой...{/m}"
-    Max_07 "{m}Tja, Tante Kira, das ist alles deine Schuld! Ich werde einen Weg finden, meine Fantasien zu verwirklichen...{/m}"
+    Max_07 "{m}Tja, Tante Kira, das ist mir ganz gewaltig schnuppe! Ich werde meine Fantasien mit dir ausleben...{/m}"
 
 # game/dialogues/kiratalk.rpy:339
 translate german kira_talk5_088b1488:
 
     # Kira_01 "Прекрасно, Макс! Я, кстати, ждала, что ты подойдёшь. Мне нужна помощь в одном деле и твой энтузиазм и энергия, могут мне помочь с этим."
-    Kira_01 "Großartig, Max! Ich hatte gehofft, du würdest herkommen. Ich brauche Hilfe bei etwas, das deine Energie und deinen Enthusiasmus wirklich nötig hat."
+    Kira_01 "Großartig, Max! Ich habe übrigens darauf gewartet, dass du vorbeikommst. Ich brauche Hilfe in einer Sache und deine Begeisterung und Energie könnten mir dabei helfen."
 
 # game/dialogues/kiratalk.rpy:340
 translate german kira_talk5_db0426c3:
@@ -790,7 +790,7 @@ translate german kira_talk5_2d538912:
 translate german kira_talk5_c73f7880:
 
     # Max_05 "Ага. Вот прямо недавно купил!"
-    Max_05 "Ja. Ich habe es gerade gekauft!"
+    Max_05 "Ja, ich habe sie erst kürzlich gekauft!"
 
 # game/dialogues/kiratalk.rpy:362
 translate german kira_talk5_b6188756:
@@ -802,7 +802,7 @@ translate german kira_talk5_b6188756:
 translate german kira_talk5_fb23b87b:
 
     # Kira_08 "Ну, тогда не вижу причин для отказа такому целеустремлённому мальчику..."
-    Kira_08 "Dann habe ich keinen Grund, deine Hilfe abzulehnen, wenn du so entschlossen bist."
+    Kira_08 "Nun, dann sehe ich keinen Grund, einen so entschlossenen Jungen abzulehnen..."
 
 # game/dialogues/kiratalk.rpy:368
 translate german kira_talk5_59b8a856:
@@ -814,7 +814,7 @@ translate german kira_talk5_59b8a856:
 translate german kira_talk5_be66e8de:
 
     # Kira_06 "Уж не знаю, Макс, что ты уже нафантазировал насчёт фотосессии, но тебе опять пора в душ. Что же ты такой впечатлительный? Эх..."
-    Kira_06 "Ich weiß nicht, was du schon alles über das Fotoshooting im Kopf hast, aber es ist Zeit für dich, wieder zu duschen. Warum bist du so leicht zu erregen?"
+    Kira_06 "Ich weiß nicht, worüber du fantasierst, Max, aber du musst wieder duschen. Warum bist du so leicht zu beeindrucken? Äh... (seufzt)"
 
 # game/dialogues/kiratalk.rpy:370
 translate german kira_talk5_45d25fb1:
@@ -826,37 +826,37 @@ translate german kira_talk5_45d25fb1:
 translate german kira_talk5_6ed85272:
 
     # Max_04 "{m}Вот это удача! Порно-звезда будет мне позировать для фотосессии! Я где-то слышал, что порно-модели всегда дают фотографам в качестве оплаты за съёмку... Или нет? Но вдруг!{/m}"
-    Max_04 "{m}Welch ein Glück! Ich werde ein Fotoshooting mit einem Pornostar machen! Ich habe Geschichten über Fotografen gehört, die alle möglichen Belohnungen für ihre Dienste bekommen... vielleicht bekomme ich auch etwas?{/m}"
+    Max_04 "{m}WWas für ein Glücksfall! Ein Pornostar wird für mich für ein Fotoshooting posieren! Ich habe irgendwo gehört, dass Pornomodelle dem Fotografen als Bezahlung für das Shooting immer... Oder nicht? Aber dann!{/m}"
 
 # game/dialogues/kiratalk.rpy:382
 translate german kira_talk5_cea37e86:
 
     # Max_20 "{m}Фотоаппарат у меня уже есть. Дело за тем, чтобы повысить мои шансы на что-нибудь особенное от тёти Киры за эту фотосессию. Не прикупить ли для неё какую-нибудь очень сексуальную сорочку?! Я думаю, это будет совсем не лишним... О да...{/m}" nointeract
-    Max_20 "{m}Ich habe bereits eine Kamera. Es geht nur darum, meine Chancen zu erhöhen, etwas Besonderes für dieses Fotoshooting mit Tante Kira zu erreichen. Sollte ich ihr vielleicht ein wirklich sexy Nachthemd besorgen?! Ich denke, das wäre wirklich schön... Oh, ja...{/m}" nointeract
+    Max_20 "{m}Ich habe die Kamera bereits. Es geht nur darum, meine Chancen zu erhöhen, von Tante Kira etwas Besonderes für dieses Fotoshooting zu bekommen. Sollte ich ihr nicht ein wirklich sexy Kleidungsstück schenken?! Ich denke nicht, dass das eine Verschwendung wäre... Oh, ja...{/m}" nointeract
 
 # game/dialogues/kiratalk.rpy:384
 translate german kira_talk5_fe9ad210:
 
     # Max_20 "{m}Дело за малым. Осталось где-то взять фотоаппарат и тогда... Да... Интересно, сколько они стоят? А, не важно. Важно, что мне может дать сама тётя Кира! Ради этого стоит попотеть... О да...{/m}" nointeract
-    Max_20 "{m}Da ist nur die Kleinigkeit, eine Kamera zu besorgen. Wie viel sie wohl kostet? Ach, egal. Wichtig ist, was ich von Tante Kira bekommen kann! Ich bin sicher, es wird die Mühe wert sein.{/m}" nointeract
+    Max_20 "{m}Es ist nur eine Frage der Zeit. Jetzt muss ich nur noch irgendwo eine Kamera besorgen und dann... Ja... Ich frage mich, wie viel sie kosten? Ach, vergiss es. Was zählt, ist das, was Tante Kira selbst mir geben kann! Es ist den Schweiß wert... Oh, ja...{/m}" nointeract
 
 # game/dialogues/kiratalk.rpy:384
 translate german kira_talk5_7a7cc18f:
 
     # Max_09 "{m}Эх, с тётей Кирой кончать поинтереснее... и намного!{/m}"
-    Max_09 "{m}Es ist immer interessant, zu sehen, was ich mit Tante Kira auf die Beine stellen kann!{/m}"
+    Max_09 "{m}Es macht mehr Spaß, bei Tante Kira zu landen... und vieles mehr!{/m}"
 
 # game/dialogues/kiratalk.rpy:405
 translate german kira_talk6_a9812af2:
 
     # Kira_01 "Ты уже нашёл фотоаппарат?" nointeract
-    Kira_01 "Hast du schon eine Kamera zur Verfügung?" nointeract
+    Kira_01 "Hast du schon eine Kamera?" nointeract
 
 # game/dialogues/kiratalk.rpy:408
 translate german kira_talk6_12fde23b:
 
     # Kira_02 "Понятно. Ну, как найдёшь, дай знать. Я почти всегда готова фотографироваться, но нужно, чтобы ещё и дома никого не было... А то нас не поймут..." nointeract
-    Kira_02 "Ich verstehe. Sag mir Bescheid, wenn du einen hast. Ich bin fast immer bereit für ein Foto-Shooting, aber wir müssen sicherstellen, dass es nur wir zu Hause sind. Ich möchte nicht,... das wir... gestört werden." nointeract
+    Kira_02 "Ich verstehe. Gib mir Bescheid, wenn du es hast. Ich bin fast immer bereit, Fotos zu machen, aber wir müssen sicherstellen, dass niemand zu Hause ist... Sonst versteht man uns nicht..." nointeract
 
 # game/dialogues/kiratalk.rpy:413
 translate german kira_talk6_75ec74c9:

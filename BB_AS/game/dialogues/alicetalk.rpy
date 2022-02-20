@@ -2713,13 +2713,13 @@ label Alice_solar:
                 show Alice sun-alone 01
 
             if kol_cream < 2:
-                call left_cream
+                call left_cream from _call_left_cream_2
                 # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
                 # if kol_cream == 0:
                 #     $ items['solar'].use()
                 #     $ items['solar'].unblock()
             elif kol_cream < 7:
-                call left_cream(1)
+                call left_cream(1) from _call_left_cream_3
                 # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
                 # $ items['solar'].unblock()
             $ AddRelMood('alice', 5, 50, 2)
@@ -3243,13 +3243,13 @@ label massage_sunscreen:
             show Alice sun-alone 01
         $ spent_time += 10 + clip(int(round(5*len(_massaged), -1)), 0, 30)
         if kol_cream < 3 and mgg.massage < 2.0:
-            call left_cream
+            call left_cream from _call_left_cream_4
             # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
             # if kol_cream == 0:
             #     $ items['solar'].use()
             #     $ items['solar'].unblock()
         elif kol_cream < 7:
-            call left_cream(1)
+            call left_cream(1) from _call_left_cream_5
             # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
             # $ items['solar'].unblock()
 

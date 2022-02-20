@@ -92,7 +92,7 @@ translate german strings:
 
     # game/extra/extra.rpy:56
     old "Я обошёл Эрика с подарком для Алисы"
-    new "Ich gab Eric ein Geschenk für Alice"
+    new "Ich ging zu Eric mit dem Geschenk für Alice"
 
     # game/extra/extra.rpy:56
     old "Попка, которую я теперь могу отшлёпать"
@@ -124,7 +124,7 @@ translate german strings:
 
     # game/extra/extra.rpy:56
     old "Небольшое приключение перед сном"
-    new "ein kleines ABbenteuer vorm Schlafen"
+    new "ein kleines Abenteuer vorm Schlafen"
 
     # game/extra/extra.rpy:56
     old "Не зря купил сорочку"

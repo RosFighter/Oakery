@@ -492,7 +492,7 @@ init python:
         showdown_e  = 0         # состоялся разговор об изгнании Эрика
 
         # счетчики
-        defend      = 0         # счетчик спасений от наказания голышом
+        defend      = 0         # счетчик спасений от наказания голышом, счётчик йоги с прикосновениями для Анны
         privpunish  = 0         # счетчик успешных приватных наказаний
         hugs        = 0         # счетчик обнимашек(поцелуев) за периодические сладости
         pun         = 0         # всего наказаний
@@ -503,6 +503,7 @@ init python:
         m_pussy     = 0         # счетчик масажей киски
         kiss_lesson = 0         # счетчик уроков поцелуев
         kiss_touch  = 0         # счетчик поцелуев с прикосновениями
+        kiss_breast = 0         # счетчик поцелуев груди
         porno       = 0         # счетчик совместно просмотренных порнофильмов
         erofilms    = 0         # счетчик совместно просмотренных эротических фильмов
         help        = 0         # счетчик помощи девушке (с домашкой, йогой или чем-то подобным)
@@ -538,6 +539,7 @@ init python:
             self.m_pussy        = 0
             self.kiss_lesson    = 0
             self.kiss_touch     = 0
+            self.kiss_breast    = 0
             self.porno          = 0
             self.erofilms       = 0
             self.help           = 0
@@ -788,12 +790,23 @@ init python:
                 if d=='' and t=='':
                     if rez[0].name:
                         if self.plan_name != rez[0].name:
-                            self.prev_plan  = self.plan_name
+                            if self.prev_plan != rez[0].name:
+                                if rez[0].ts == '00:00':
+                                    pp = self.get_plan(day-1, '23:50')
+                                else:
+                                    pp = self.get_plan(day, add_time(rez[0].ts, -10))
+                                self.prev_plan = pp.name if pp else None
+                            # self.prev_plan = self.plan_name
                             self.prev_dress = self.dress
                             self.plan_name  = rez[0].name
                             self.loc        = eval(rez[0].loc+'['+str(rez[0].room)+']')
                     else:
-                        self.prev_plan = self.plan_name
+                        if rez[0].ts == '00:00':
+                            pp = self.get_plan(day-1, '23:50')
+                        else:
+                            pp = self.get_plan(day, add_time(rez[0].ts, -10))
+                        self.prev_plan = pp.name if pp else None
+                        # self.prev_plan = self.plan_name
                         self.plan_name = None
                         self.loc       = None
                 return rez[0]

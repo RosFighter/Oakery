@@ -4,7 +4,7 @@
 translate german AnnTalkStart_452e8666:
 
     # Ann_00 "Что-то случилось, дорогой?" nointeract
-    Ann_00 "Ja, Max?" nointeract
+    Ann_00 "Stimmt etwas nicht, Liebling?" nointeract
 
 # game/dialogues/anntalk.rpy:43
 translate german Ann_badbadmood_321edff9:
@@ -535,10 +535,10 @@ translate german ann_tv_casual_r_4ccbb069:
     Ann_07 "Oh, Max! Es ist wunderbar... Eine solche Leichtigkeit. Du weißt, wie man es gut macht. Ich habe es wirklich genossen... Ich freue mich auf jeden Fall auf das nächste Mal!"
 
 # game/dialogues/anntalk.rpy:524
-translate german ann_tv_casual_r_ea1ff6fc:
+translate german ann_tv_casual_r_3f435f31:
 
-    # Max_00 "Класс! Я тоже буду ждать, мам. Отдыхай."
-    Max_00 "Großartig! Ich warte auch auf dich, Mom. Ruh dich aus."
+    # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай."
+    Max_01 "Großartig! Ich warte auch auf dich, Mom. Ruh dich aus."
 
 # game/dialogues/anntalk.rpy:535
 translate german ann_tv_casual_r_4969c11a:
@@ -547,10 +547,10 @@ translate german ann_tv_casual_r_4969c11a:
     Ann_14 "[ann_bad_mass!t]Oh, Max... Nein, jetzt nicht mehr so gut... Die Muskeln tun mir sogar ein bisschen weh. Lassen wir es auf ein andermal ankommen... Aber trotzdem danke!"
 
 # game/dialogues/anntalk.rpy:536
-translate german ann_tv_casual_r_a30f1880:
+translate german ann_tv_casual_r_40d1e45e:
 
-    # Max_00 "Извини. Наверно, на сериал засмотрелся... Я пойду."
-    Max_00 "Es tut mir leid. Ich muss wohl eine Seifenoper gesehen haben... Ich werde gehen."
+    # Max_10 "Извини. Наверно, на сериал засмотрелся... Я пойду."
+    Max_10 "Es tut mir leid. Ich muss wohl eine Seifenoper gesehen haben... Ich werde gehen."
 
 # game/dialogues/anntalk.rpy:545
 translate german Ann_MorningWood_bb881ec2:
@@ -1216,7 +1216,7 @@ translate german ann_yoga_with_maxr_df4f32db:
 translate german ann_yoga_with_maxr_4e133757:
 
     # Max_01 "С радостью, мам! Обязательно..." nointeract
-    Max_01 "Sehr gerne, Mom! Ich werde..." nointeract
+    Max_01 "Gerne, Mom! Ich bin bereit..." nointeract
 
 # game/dialogues/anntalk.rpy:861
 translate german ann_gift_fit1_d73a8076:
@@ -2435,4 +2435,468 @@ translate german strings:
     # game/dialogues/anntalk.rpy:1492
     old "Ну пожалуйста! Всё будет хорошо."
     new "Oh, bitte! Es wird alles gut werden."
+
+# TODO: Translation updated at 2022-02-16 00:40
+
+# game/dialogues/anntalk.rpy:559
+translate german ann_tv_continuation_massage_513fb7a2:
+
+    # Max_06 "{m}Неплохой у меня вид открывается! Под полотенцем слегка виднеются её аппетитные сосочки... Это возбуждает ещё сильнее. Вот бы её полотенце начало сползать... Возможно, она бы даже не сразу это поняла, особенно, если ей очень понравился массаж.{/m}"
+    Max_06 "{m}Das ist keine schlechte Aussicht! Unter dem Handtuch kann man leicht ihre herrlichen Nippel erkennen... Es ist sogar noch aufregender. Ich wünschte, ihr Handtuch würde anfangen zu rutschen... Vielleicht merkt sie es nicht einmal sofort, vor allem, wenn sie die Massage wirklich genießt.{/m}"
+
+# game/dialogues/anntalk.rpy:561
+translate german ann_tv_continuation_massage_4a0638de:
+
+    # Ann_07 "Ой, Макс! Это чудесно... Ты знаешь как сделать приятно. Мне очень понравилось... Ты большой молодец у меня!" nointeract
+    Ann_07 "Oh, Max! Das ist ja wunderbar... Du weißt, wie man es schön macht. Ich habe es wirklich genossen... Du bist sehr gut!" nointeract
+
+# game/dialogues/anntalk.rpy:565
+translate german ann_tv_continuation_massage_3a615788:
+
+    # Ann_05 "Обожаю массаж спины... Не знаю, хватит ли у тебя для этого силы, но давай попробуем. Может у тебя уже было достаточно практики и ты со мной справишься..."
+    Ann_05 "Ich liebe Rückenmassagen... Ich weiß nicht, ob du die Kraft dazu hast, aber lass es uns versuchen. Vielleicht hast du ja genug Übung und kommst mit mir klar..."
+
+# game/dialogues/anntalk.rpy:566
+translate german ann_tv_continuation_massage_fb2c93bc:
+
+    # Max_04 "Ты не пожалеешь!"
+    Max_04 "Du wirst es nicht bereuen!"
+
+# game/dialogues/anntalk.rpy:568
+translate german ann_tv_continuation_massage_5bae27a4:
+
+    # Ann_14 "Ох, даже не знаю, как лучше развернуть это полотенце, чтобы ты мог до моей спины спокойно добраться. Ты лучше глаза закрой, а то мало ли у меня не получится..."
+    Ann_14 "Oh, ich weiß nicht, wie ich das Handtuch so wickeln kann, dass du an meinen Rücken kommst. Mach lieber die Augen zu, sonst kann ich vielleicht nicht..."
+
+# game/dialogues/anntalk.rpy:569
+translate german ann_tv_continuation_massage_be58c6be:
+
+    # Max_02 "{m}Как же здорово будет, если не получится! У меня только от одних мыслей об этом член стоит, как гора, а уж если она что-нибудь засветит...{/m}"
+    Max_02 "{m}Wie toll wäre es, wenn es nicht klappen würde! Wenn ich nur daran denke, steht mein Schwanz wie ein Turm, und wenn sie etwas zeigt...{/m}"
+
+# game/dialogues/anntalk.rpy:571
+translate german ann_tv_continuation_massage_561a8483:
+
+    # Ann_02 "Вот так, мне кажется, будет нормально... Только хочу тебя сразу предупредить, я совсем голая под полотенцем. Я там не сильно... открыта?"
+    Ann_02 "Na bitte, ich denke, das geht in Ordnung... Ich will dich nur gleich warnen, ich bin unter dem Handtuch völlig nackt. Bin ich nicht zu... entblößt?"
+
+# game/dialogues/anntalk.rpy:572
+translate german ann_tv_continuation_massage_87f09816:
+
+    # Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
+    Max_03 "Nein. Es ist genau das, was ich brauche!" nointeract
+
+# game/dialogues/anntalk.rpy:578
+translate german ann_tv_continuation_massage_42d57509:
+
+    # Max_01 "Спасибо за похвалу! Жду не дождусь следующего раза, мам. Отдыхай." nointeract
+    Max_01 "Vielen Dank für das Kompliment! Ich freue mich schon auf das nächste Mal, Mom. Entspanne dich." nointeract
+
+# game/dialogues/anntalk.rpy:586
+translate german ann_tv_continuation_massage_massage_f3601d08:
+
+    # Ann_03 "[ann_good_mass!t]Да, Макс... Твои руки приносят мне огромное удовольствие. В смысле, у тебя получается очень хорошо... Как будто сходила к профессионалу..."
+    Ann_03 "[ann_good_mass!t]Ja, Max... Deine Hände bereiten mir große Freude. Ich finde, du machst dich wirklich gut... Es ist, wie bei einem Profi..."
+
+# game/dialogues/anntalk.rpy:587
+translate german ann_tv_continuation_massage_massage_49ee9ac5:
+
+    # Max_06 "{m}Вау... Какая у неё шикарная и почти голая попка! Блин, как же хочется прижаться к ней членом, прямо по серединке, и тереться... Но лучше не отвлекаться, а то запросто можно массаж запороть!{/m}" nointeract
+    Max_06 "{m}Wow... Was für einen herrlichen und fast nackten Arsch sie hat! Mann, ich möchte meinen Schwanz gegen sie drücken, genau in der Mitte, und ihn reiben... Aber ich sollte mich nicht ablenken, ansonsten ruiniert es die Massage.{/m}" nointeract
+
+# game/dialogues/anntalk.rpy:593
+translate german ann_tv_continuation_massage_massage_ffdec8ce:
+
+    # Ann_09 "[ann_good_mass!t]Ох, как здорово, сынок... Такие нежные, но сильные руки у тебя! Но они уже опустились так низко, а я не чувствую по полотенцу, что оно тебе хоть как-то мешает. Оно там не сползло слишком низко?" nointeract
+    Ann_09 "[ann_good_mass!t]Oh, das ist großartig, Sohn... Was für sanfte, aber starke Hände du hast! Aber du bist schon ziemlich weit unten, und ich kann am Handtuch nicht erkennen, ob es dich irgendwie beunruhigt. Ist es dort schon zu weit runter?" nointeract
+
+# game/dialogues/anntalk.rpy:598
+translate german ann_tv_continuation_massage_massage_e212b960:
+
+    # Ann_08 "[succes!t]Фух... А то я сижу, наслаждаюсь массажем и про всё остальное забыла. Такая лёгкость. Мне очень понравилось!" nointeract
+    Ann_08 "[succes!t]Puh... Ich genieße gerade voll und ganz die Massage und vergesse alles andere. Eine solche Erleichterung. Ich habe es wirklich genossen!" nointeract
+
+# game/dialogues/anntalk.rpy:603
+translate german ann_tv_continuation_massage_massage_727fe7fb:
+
+    # Ann_07 "Я обязательно буду ждать следующего раза, сынок!"
+    Ann_07 "Ich freue mich schon auf das nächste Mal, mein Sohn!"
+
+# game/dialogues/anntalk.rpy:604
+translate german ann_tv_continuation_massage_massage_535758bb:
+
+    # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
+    Max_01 "Großartig! Ich warte auch auf dich, Mom. Ruh dich aus." nointeract
+
+# game/dialogues/anntalk.rpy:608
+translate german ann_tv_continuation_massage_massage_d390c1ed:
+
+    # Ann_17 "[failed!t]Обманщик ты, Макс! Это что такое?! Как тебе не стыдно! У тебя встал на собственную маму! Что у тебя в голове творится... Почему ты не сказал, что я тут голая сижу?"
+    Ann_17 "[failed!t]Das ist doch ein Scherz, Max! Was soll das?! Schande über dich! Du hast einen Ständer bei deiner eigenen Mutter! Was geht in deinem Kopf vor... Warum hast du mir nicht gesagt, dass ich hier nackt sitze?"
+
+# game/dialogues/anntalk.rpy:609
+translate german ann_tv_continuation_massage_massage_c7019911:
+
+    # Max_07 "Просто засмотрелся на тебя по ходу дела. А не сказал, потому что хотел массаж закончить. Хорошо же получилось?"
+    Max_07 "Ich habe dich nur angesehen, während ich weitergemacht habe. Ich habe es dir nicht gesagt, weil ich die Massage beenden wollte. Es war gut, oder?"
+
+# game/dialogues/anntalk.rpy:610
+translate german ann_tv_continuation_massage_massage_d53168cf:
+
+    # Ann_12 "Получилось-то хорошо, вот только... не должно так быть..."
+    Ann_12 "Es war gut, außer... So sollte es nicht sein..."
+
+# game/dialogues/anntalk.rpy:611
+translate german ann_tv_continuation_massage_massage_e1072954:
+
+    # Max_10 "Ну мам, ты же красивая! Вот я и это... возбудился... слегка..."
+    Max_10 "Nun, Mom, du bist wunderschön! Das ist es, was mich... angemacht hat... ein wenig..."
+
+# game/dialogues/anntalk.rpy:612
+translate german ann_tv_continuation_massage_massage_1371a9dd:
+
+    # Ann_13 "Ничего себе, слегка! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
+    Ann_13 "Wow, ein wenig! Also gut, tun wir so, als wäre nichts passiert. Geh, beruhige dich..." nointeract
+
+# game/dialogues/anntalk.rpy:615
+translate german ann_tv_continuation_massage_massage_21542021:
+
+    # Ann_15 "Ничего себе! Ты почему сидишь и молчишь об этом, а, Макс?! Я же предупредила, что голая под ним..."
+    Ann_15 "Oh, wow! Warum sitzt du da und sagst nichts dazu, Max?! Ich sagte doch, dass ich darunter nackt bin..."
+
+# game/dialogues/anntalk.rpy:616
+translate german ann_tv_continuation_massage_massage_c532b93a:
+
+    # Max_07 "Так оно под самый конец только сползло, а я хотел массаж закончить. Хорошо же получилось?"
+    Max_07 "Am Ende rutschte es einfach und ich wollte die Massage beenden. Es war doch gut, oder?"
+
+# game/dialogues/anntalk.rpy:618
+translate german ann_tv_continuation_massage_massage_f1a52f3f:
+
+    # Ann_14 "Очень! Но в следующий раз, лучше не молчи об этом... Хорошо?"
+    Ann_14 "Sehr sogar! Aber das nächste Mal solltest du besser den Mund halten... Ist das okay?"
+
+# game/dialogues/anntalk.rpy:619
+translate german ann_tv_continuation_massage_massage_5a863e60:
+
+    # Max_11 "Ладно, скажу."
+    Max_11 "Na gut, ich verstehe."
+
+# game/dialogues/anntalk.rpy:620
+translate german ann_tv_continuation_massage_massage_3c049e1b:
+
+    # Ann_07 "А за массаж огромное тебе спасибо, мне очень понравилось! Обязательно буду ждать следующего раза!"
+    Ann_07 "Und vielen Dank für die Massage, ich habe sie wirklich genossen! Ich freue mich schon auf das nächste Mal!"
+
+# game/dialogues/anntalk.rpy:621
+translate german ann_tv_continuation_massage_massage_535758bb_1:
+
+    # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
+    Max_01 "Großartig! Ich warte auch auf dich, Mom. Ruh dich aus." nointeract
+
+# game/dialogues/anntalk.rpy:631
+translate german ann_tv_continuation_massage_bad_massage_fb4ffbcf:
+
+    # Ann_14 "[ann_bad_mass!t]Ой, нет, Макс... Твой хвалёный массаж не так хорош, как ты рекламировал... Думаю, надо прекратить. Давай в другой раз продолжим... Но всё равно, спасибо!"
+    Ann_14 "[ann_bad_mass!t]Oh, nein, Max... Deine angepriesene Massage ist nicht so gut, wie du behauptet hast... Ich denke, wir sollten aufhören. Lass uns das ein anderes Mal wiederholen... Aber trotzdem danke."
+
+# game/dialogues/anntalk.rpy:633
+translate german ann_tv_continuation_massage_bad_massage_1545505c:
+
+    # Max_10 "Извини. Наверно, на сериал засмотрелся... В следующий раз я буду лучше стараться." nointeract
+    Max_10 "Es tut mir leid. Ich muss die Sendung verfolgt haben... Das nächste Mal werde ich mich mehr anstrengen." nointeract
+
+# game/dialogues/anntalk.rpy:1605
+translate german ann_about_olivia0_succes_54a6a696:
+
+    # Ann_14 "Видимо, из-за Эрика я стала слишком подозрительной. Пытаюсь снова уберечь Лизу от всего на свете. Хотя, прямо перед этим, сама же такое ей показывала..."
+    Ann_14 "Offensichtlich hat mich Eric zu misstrauisch gemacht. Ich versuche wieder, Lisa vor allem zu schützen. Obwohl, kurz vorher habe ich ihr so viel gezeigt..."
+
+translate german strings:
+
+    # game/dialogues/anntalk.rpy:562
+    old "Массаж спины?"
+    new "Rückenmassage?"
+
+    # game/dialogues/anntalk.rpy:562
+    old "Полотенце приспустишь?"
+    new "Kannst du dein Handtuch herunterziehen?"
+
+    # game/dialogues/anntalk.rpy:581
+    old "{i}массировать маме спину{/i}"
+    new "{i}Rückenmassage für die Mom{/i}"
+
+    # game/dialogues/anntalk.rpy:594
+    old "Нет, мам. Не переживай."
+    new "Nein, Mom. Mach dir keine Sorgen."
+
+    # game/dialogues/anntalk.rpy:594
+    old "Есть немного..."
+    new "Es ist ein wenig..."
+
+# TODO: Translation updated at 2022-02-19 02:36
+
+# game/dialogues/anntalk.rpy:576
+translate german ann_tv_continuation_massage_215bab6f:
+
+    # Ann_05 "Конечно! Когда дело доходит до моей спины, я очень требовательна, сынок, потому что обожаю это. Надеюсь, ты справишься."
+    Ann_05 "Ganz genau! Wenn es um meinen Rücken geht, bin ich sehr anspruchsvoll, mein Sohn, denn ich liebe ihn. Ich hoffe, du bist dazu in der Lage."
+
+# game/dialogues/anntalk.rpy:577
+translate german ann_tv_continuation_massage_fb2c93bc_1:
+
+    # Max_04 "Ты не пожалеешь!"
+    Max_04 "Du wirst es nicht bereuen!"
+
+# game/dialogues/anntalk.rpy:579
+translate german ann_tv_continuation_massage_5bae27a4_1:
+
+    # Ann_14 "Ох, даже не знаю, как лучше развернуть это полотенце, чтобы ты мог до моей спины спокойно добраться. Ты лучше глаза закрой, а то мало ли у меня не получится..."
+    Ann_14 "Oh, ich weiß nicht, wie ich das Handtuch drehen soll, damit du an meinen Rücken kommst. Mach lieber die Augen zu, sonst kann ich vielleicht nicht..."
+
+# game/dialogues/anntalk.rpy:580
+translate german ann_tv_continuation_massage_be58c6be_1:
+
+    # Max_02 "{m}Как же здорово будет, если не получится! У меня только от одних мыслей об этом член стоит, как гора, а уж если она что-нибудь засветит...{/m}"
+    Max_02 "{m}Wie toll wäre es, wenn es nicht klappen würde! Wenn ich nur daran denke, steht mein Schwanz wie ein riesiger Turm, und wenn sie etwas zeigt...{/m}"
+
+# game/dialogues/anntalk.rpy:582
+translate german ann_tv_continuation_massage_561a8483_1:
+
+    # Ann_02 "Вот так, мне кажется, будет нормально... Только хочу тебя сразу предупредить, я совсем голая под полотенцем. Я там не сильно... открыта?"
+    Ann_02 "Bitte sehr, ich denke, das reicht völlig aus... Ich will dich nur gleich warnen, ich bin unter dem Handtuch völlig nackt. Ich bin nicht zu... entblößt?"
+
+# game/dialogues/anntalk.rpy:583
+translate german ann_tv_continuation_massage_87f09816_1:
+
+    # Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
+    Max_03 "Nein. Es ist genau das, was ich brauche!" nointeract
+
+# game/dialogues/anntalk.rpy:947
+translate german ann_yoga_with_maxr_6a06f244:
+
+    # Max_04 "Я смотрю, чтобы всё правильно делалось. Ты же этого хотела?"
+    Max_04 "Ich sorge dafür, dass es richtig läuft. Ist es nicht das, was du wolltest?"
+
+# game/dialogues/anntalk.rpy:948
+translate german ann_yoga_with_maxr_62c51999:
+
+    # Ann_13 "А тебе, Макс, не кажется, что твои руки не совсем на месте?"
+    Ann_13 "Findest du nicht auch, dass deine Hände dort ein bisschen fehl am Platz sind, Max?"
+
+# game/dialogues/anntalk.rpy:949
+translate german ann_yoga_with_maxr_a93a3646:
+
+    # Max_07 "А по-моему, именно там где надо. Иначе ты большей гибкости не добьёшься, мам. Или тебе этого не надо?"
+    Max_07 "Ich denke, es ist genau so, wie es sein sollte. Mehr Dehnung wirst du sonst nicht bekommen, Mom. Oder willst du das nicht?"
+
+# game/dialogues/anntalk.rpy:950
+translate german ann_yoga_with_maxr_b6a570e5:
+
+    # Ann_14 "Надо, но... Меня несколько смущает, что тебе для этого нужно руками контролировать мой зад..."
+    Ann_14 "Ich sollte, aber... Es ist mir ein wenig peinlich, dass du deine Hände benutzen musst, um meinen Arsch zu halten..."
+
+# game/dialogues/anntalk.rpy:951
+translate german ann_yoga_with_maxr_62ec40e5:
+
+    # Max_09 "Почему? Что тут такого? Я помогаю и к тому же, легонько. Ты лучше сосредоточься на дыхании и не зажимайся."
+    Max_09 "Warum? Was ist denn so schlimm daran? Ich helfe und zwar behutsam. Konzentriere dich lieber auf deine Atmung und verkrampfe nicht."
+
+# game/dialogues/anntalk.rpy:952
+translate german ann_yoga_with_maxr_f43aaef8:
+
+    # Ann_03 "Да, Макс, верно. Мне лучше расслабиться. Продолжаем..."
+    Ann_03 "Ja, Max, das ist richtig. Ich sollte mich besser entspannen. Weiter geht's..."
+
+# game/dialogues/anntalk.rpy:953
+translate german ann_yoga_with_maxr_72b8ca17:
+
+    # Max_05 "Правильно. Очень классно начинать день с такой красоты, как ты."
+    Max_05 "Das ist richtig. Es ist wirklich cool, seinen Tag mit einer Schönheit wie dir zu beginnen."
+
+# game/dialogues/anntalk.rpy:958
+translate german ann_yoga_with_maxr_6a06f244_1:
+
+    # Max_04 "Я смотрю, чтобы всё правильно делалось. Ты же этого хотела?"
+    Max_04 "Ich sorge dafür, dass es richtig gemacht wird. Ist es nicht das, was du wolltest?"
+
+# game/dialogues/anntalk.rpy:959
+translate german ann_yoga_with_maxr_f7366bcf:
+
+    # Ann_03 "Только не держи меня так крепко, Макс! Придерживай легонько, я справлюсь."
+    Ann_03 "Halt mich nur nicht so fest, Max! Nimm mich nur nicht zu hart ran, ich komme schon klar."
+
+# game/dialogues/anntalk.rpy:960
+translate german ann_yoga_with_maxr_4a3b0f59:
+
+    # Max_05 "Хорошо, придерживаю слегка. Расслабься и сосредоточься на дыхании. Ты прогибаешься просто шикарно!"
+    Max_05 "OK, ich halte mich zurück. Entspanne dich und konzentriere dich auf deine Atmung. Du bist gut in Form!"
+
+# game/dialogues/anntalk.rpy:992
+translate german ann_yoga_with_maxr_6fd1e81a_1:
+
+    # Max_05 "Здорово, мам! Ещё немного потянись и будет идеально..."
+    Max_05 "Das ist großartig, Mom! Ein bisschen mehr Dehnung und es wird perfekt sein..."
+
+# game/dialogues/anntalk.rpy:993
+translate german ann_yoga_with_maxr_a7aab14e:
+
+    # Ann_05 "Главное - не перенапрячься с утра пораньше... А то буду еле живая на работе... Но с твоей поддержкой, кажется, мне это не грозит."
+    Ann_05 "Die Hauptsache ist, dass man es am frühen Morgen nicht übertreibt... Ich werde auf der Arbeit total fertig sein... Aber mit deiner Unterstützung glaube ich nicht, dass ich es übertreibe."
+
+# game/dialogues/anntalk.rpy:996
+translate german ann_yoga_with_maxr_bf667ebd:
+
+    # Max_14 "{m}Ага, у меня сейчас в шортах такая твёрдая опора от всех этих сексуальных изгибов, что мама вот-вот заметит. А не думать о её шелковистом теле просто невозможно! И зачем я без майки этим занимаюсь?{/m}" nointeract
+    Max_14 "{m}Ja, ich habe meine Shorts gerade so straff gespannt von all den sexy Kurven, dass es Mom gleich merken wird. Und es ist unmöglich, nicht an ihren sexy Körper zu denken! Aber wieso tue ich das ohne mein Hemd?{/m}" nointeract
+
+# game/dialogues/anntalk.rpy:1004
+translate german ann_yoga_with_maxr_3dff6869:
+
+    # Ann_04 "[succes_hide!t]Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Буду только рада, если решишь снова присоединиться ко мне."
+    Ann_04 "[succes_hide!t]Oh, danke, mein Sohn, für deine Hilfe. Puh... Ich glaube, wir sind hier fertig. Ich würde mich freuen, wenn du dich entschließt, mir wieder zu helfen."
+
+# game/dialogues/anntalk.rpy:1005
+translate german ann_yoga_with_maxr_ff21d29a:
+
+    # Max_01 "С радостью, мам! Обязательно..."
+    Max_01 "Gerne, Mom! Ich bin bereit..."
+
+# game/dialogues/anntalk.rpy:1006
+translate german ann_yoga_with_maxr_dc624a8a:
+
+    # Ann_02 "Но, давай хотя бы через день. Чтобы я могла без твоей помощи попробовать сделать то же самое."
+    Ann_02 "Aber wir sollten es wenigstens jeden zweiten Tag versuchen. Ich könnte also versuchen, das Gleiche ohne deine Hilfe zu erreichen."
+
+# game/dialogues/anntalk.rpy:1007
+translate german ann_yoga_with_maxr_136c43d9:
+
+    # Max_04 "Хорошо, как скажешь. До следующего раза, мам." nointeract
+    Max_04 "In Ordnung, wie du meinst. Bis zum nächsten Mal, Mom." nointeract
+
+# game/dialogues/anntalk.rpy:1010
+translate german ann_yoga_with_maxr_adabf90d:
+
+    # Ann_04 "[succes_hide!t]Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Завтра я сама попробую это повторить без тебя, а дальше присоединяйся, если захочешь. Я буду только рада."
+    Ann_04 "[succes_hide!t]Oh, danke, mein Sohn, für deine Hilfe. Puh... Ich glaube, wir sind hier fertig. Ich werde es morgen ohne dich versuchen, und wenn du willst, kannst du mir dann helfen. Ich würde mich sehr freuen."
+
+# game/dialogues/anntalk.rpy:1011
+translate german ann_yoga_with_maxr_4e133757_1:
+
+    # Max_01 "С радостью, мам! Обязательно..." nointeract
+    Max_01 "Gerne, Mom! Ich bin bereit..." nointeract
+
+# game/dialogues/anntalk.rpy:1018
+translate german ann_yoga_with_maxr_5a4fa2a4:
+
+    # Ann_15 "Ой, спасибо, сынок, что помог. Фух... А это что такое?! Как тебе не стыдно! Это у тебя на меня такая реакция?!"
+    Ann_15 "Oh, danke, mein Sohn, für deine Hilfe. Puh... Was soll das sein?! Schande über dich! Ist das deine Reaktion auf mich?!"
+
+# game/dialogues/anntalk.rpy:1019
+translate german ann_yoga_with_maxr_28026926:
+
+    # Max_07 "Ну... Говорил же, красиво..."
+    Max_07 "Naja... du bist wunderschön..."
+
+# game/dialogues/anntalk.rpy:1020
+translate german ann_yoga_with_maxr_5f7de140:
+
+    # Ann_14 "Макс, красивое не должно так возбуждать! Вернее, я не должна тебя так возбуждать. Другие женщины, да, но не я, сынок."
+    Ann_14 "Max, schön sollte nicht so erregend sein! Oder besser gesagt, ich sollte dich nicht so sehr nervös machen. Andere Frauen ja, aber nicht ich, mein Sohn."
+
+# game/dialogues/anntalk.rpy:1021
+translate german ann_yoga_with_maxr_7301cfbe:
+
+    # Max_09 "Хоть ты и моя мама, но ты так же и очень красивая женщина! Знаешь, мне кажется, что ЭТО - самый искренний комплимент твоей фигуре."
+    Max_09 "Auch wenn du meine Mutter bist, bist du eine sehr schöne Frau! Weißt du, ich glaube, das ist das aufrichtigste Kompliment, das man deiner Figur machen kann."
+
+# game/dialogues/anntalk.rpy:1022
+translate german ann_yoga_with_maxr_35170ac6:
+
+    # Ann_16 "Да уж, комплимент... Значит так, Макс! Ближайшие три дня можешь ко мне не подходить во время йоги. А в дальнейшем, можешь помогать через день. Всё понятно?"
+    Ann_16 "Ja, das ist ein Kompliment... In Ordnung, Max! In den nächsten drei Tagen solltest du dich beim Yoga von mir fernhalten. Danach kannst du mir jeden zweiten Tag helfen. Ist das klar?"
+
+# game/dialogues/anntalk.rpy:1025
+translate german ann_yoga_with_maxr_17c6fe68:
+
+    # Ann_14 "Ой, спасибо, сынок, что помог. Фух... Да что же это такое! Ты опять перевозбудился..."
+    Ann_14 "Oh, danke, mein Sohn, für deine Hilfe. Puh... Ach, komm schon! Du bist schon wieder überreizt..."
+
+# game/dialogues/anntalk.rpy:1026
+translate german ann_yoga_with_maxr_4b3b94d8:
+
+    # Max_07 "Ага, виновен..."
+    Max_07 "Ja, schuldig..."
+
+# game/dialogues/anntalk.rpy:1027
+translate german ann_yoga_with_maxr_7c53d0c1:
+
+    # Ann_16 "И вот что прикажешь с тобой делать?"
+    Ann_16 "Ist es das, was ich mit dir tun soll?"
+
+# game/dialogues/anntalk.rpy:1028
+translate german ann_yoga_with_maxr_88deb7c3:
+
+    # Max_09 "Понять и простить. Я же мужчина всё-таки..."
+    Max_09 "Verstehen und Verzeihen. Ich bin schließlich ein Mann..."
+
+# game/dialogues/anntalk.rpy:1029
+translate german ann_yoga_with_maxr_41ff6034:
+
+    # Ann_17 "Ох, Макс, горе ты моё... Значит так, в ближайшие три дня можешь ко мне не подходить во время йоги, а дальше смотри сам, можешь присоединяться, но чтобы такое не повторялось. Всё понятно?"
+    Ann_17 "Oh, Max, wehe, wenn ich... Also, die nächsten drei Tage musst du dich beim Yoga von mir fernhalten, und dann kannst du wieder mitmachen, aber lass es nicht wieder so weit kommen. Ist das klar?"
+
+# game/dialogues/anntalk.rpy:1030
+translate german ann_yoga_with_maxr_7ac1ee79:
+
+    # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
+    Max_10 "Was immer du sagst, Mom. Bis zum nächsten Mal..." nointeract
+
+# game/dialogues/anntalk.rpy:1033
+translate german ann_yoga_with_maxr_f2c16400:
+
+    # Max_02 "Под моим присмотром у тебя всегда будет великолепная фигура!"
+    Max_02 "Mit meiner Hilfe wirst du immer eine tolle Figur haben!"
+
+# game/dialogues/anntalk.rpy:1037
+translate german ann_yoga_with_maxr_f0d0acff:
+
+    # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Буду только рада, если решишь снова присоединиться ко мне."
+    Ann_04 "Oh, danke, mein Sohn, für deine Hilfe. Puh... Ich glaube, wir sind hier fertig. Ich würde mich freuen, wenn du dich entschließt, mir wieder zu helfen."
+
+# game/dialogues/anntalk.rpy:1038
+translate german ann_yoga_with_maxr_ff21d29a_1:
+
+    # Max_01 "С радостью, мам! Обязательно..."
+    Max_01 "Gerne, Mom! Ich bin bereit..."
+
+# game/dialogues/anntalk.rpy:1039
+translate german ann_yoga_with_maxr_dc624a8a_1:
+
+    # Ann_02 "Но, давай хотя бы через день. Чтобы я могла без твоей помощи попробовать сделать то же самое."
+    Ann_02 "Aber wir sollten es wenigstens jeden zweiten Tag versuchen. Ich könnte also versuchen, das Gleiche ohne deine Hilfe zu erreichen."
+
+# game/dialogues/anntalk.rpy:1040
+translate german ann_yoga_with_maxr_136c43d9_1:
+
+    # Max_04 "Хорошо, как скажешь. До следующего раза, мам." nointeract
+    Max_04 "In Ordnung, wie du meinst. Bis zum nächsten Mal, Mom." nointeract
+
+# game/dialogues/anntalk.rpy:1043
+translate german ann_yoga_with_maxr_c9b86927:
+
+    # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Завтра я сама попробую это повторить без тебя, а дальше присоединяйся, если захочешь. Я буду только рада."
+    Ann_04 "Oh, danke, mein Sohn, für deine Hilfe. Puh... Ich glaube, wir sind hier fertig. Ich werde es morgen ohne dich versuchen, und wenn du willst, kannst du mir dann helfen. Ich würde mich sehr freuen."
+
+# game/dialogues/anntalk.rpy:1044
+translate german ann_yoga_with_maxr_4e133757_2:
+
+    # Max_01 "С радостью, мам! Обязательно..." nointeract
+    Max_01 "Gerne, Mom! Ich bin bereit..." nointeract
+
+translate german strings:
+
+    # game/dialogues/anntalk.rpy:997
+    old "{i}постараться успокоиться{/i}"
+    new "{i}beruhigen{/i}"
 

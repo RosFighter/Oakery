@@ -523,7 +523,7 @@ init python:
         MM_Cookies('alice', 'new_year', 'house[6]', '1,2,3,4,5', '13:00', '15:59', (1827, 367), 0.75, 0.5, req="renpy.showing('BG punish-sun 03')"),
 
         MM_Cookies('ann', 'casual_d', 'house[5]', '0,1,2,3,4,5,6', '19:00', '19:59', (754, 596), 0.75, req="ann.dress=='d' and not check_is_home('eric')"),
-        MM_Cookies('ann', 'sleep0', 'house[6]', '1,3', '7:0', '7:59', (5, 730), 0.6, 0.4, req="renpy.showing('BG char Ann yoga 02')"),
+        MM_Cookies('ann', 'sleep0', 'house[6]', '1,3', '7:0', '7:59', (5, 730), 0.6, 0.4, req="all([renpy.showing('Ann_yoga'), var_stage=='02'])"),
         MM_Cookies('ann', 'new_year', 'house[4]', '0', '21:00', '21:59', (25, 207), 0.75, 0.3, req="renpy.showing('BG tv-mass-03')"),
 
         MM_Cookies('kira', 'casual_d', 'house[5]', '6', '09:00', '09:59', (960, 587), 0.75),

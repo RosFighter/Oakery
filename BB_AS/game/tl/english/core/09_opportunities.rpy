@@ -1912,7 +1912,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями!"
-    new "Lisa warned me that now that their theoretical classes were over, Eric would be giving her sex education lessons without my mother's involvement. And, as I understood it, they were going to reinforce the theoretical part with practical lessons!"
+    new "Lisa warned me that now that their theoretical classes were over, Eric would be giving her sex education lessons without Mom's involvement. And, as I understood it, they were going to reinforce the theoretical part with practical lessons!"
 
     # game/core/09_opportunities.rpy:4
     old "Ивент находится в разработке"
@@ -1920,7 +1920,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы."
-    new "Lisa came to me for advice, because, as it turned out, after finishing their theoretical lessons, Eric suggested that she consolidate all this in practical lessons without my mother's participation."
+    new "Lisa came to me for advice, because, as it turned out, after finishing their theoretical lessons, Eric suggested that she consolidate all this in practical lessons without Mom's participation."
 
 # TODO: Translation updated at 2021-12-27 16:14
 
@@ -1928,7 +1928,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Теперь Эрика нет и я могу спокойно помогать Алисе дальше. Я уже предложил ей сходить куда-нибудь и развеяться, а то Эрик своими планами произвёл на моих сестёр и маму не самые лучшие впечатления. Но Алиса хочет сперва опомниться, а уже потом как-то развлекаться. Остаётся ждать..."
-    new "Now that Eric was gone, I could help Alice get on with her life. I've already suggested that she go out and have some fun, because Eric's plans haven't made the best impression on my sisters and my mother. But Alice wants to come to her senses first and then have some fun. We just have to wait..."
+    new "Now that Eric was gone, I could help Alice get on with her life. I've already suggested that she go out and have some fun, because Eric's plans haven't made the best impression on my sisters and Mom. But Alice wants to come to her senses first and then have some fun. We just have to wait..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно помешать Эрику и Лизе во время практических занятий..."
@@ -1948,7 +1948,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Эта сволочь Эрик, взял и обвинил меня в воровстве его бумажника с деньгами! И якобы именно на эти сворованные деньги я и покупаю все подарки для моей семьи. Дал мне неделю, чтобы я всё ему вернул, иначе меня отправят в военный лагерь. А как обидно, что верят именно Эрику, а не мне.\nЭрик так же дал понять, что \"уладить\" это у меня не получится, так что дело за компроматом на него. Но сначала нужно поговорить с сёстрами, чтобы понять, насколько они верят Эрику."
-    new "That bastard Eric, he accused me of stealing his wallet of money! And supposedly it was with this stolen money that I was buying all the presents for my family. He gave me a week to pay him back, or else I would be sent to a military camp. And it's a shame that they believe Eric and not me.\nEric also made it clear that I can't fix this, so it's up to me to \"get dirt\" on him. But first we need to talk to the sisters to find out how much they trust Eric."
+    new "That bastard Eric, he accused me of stealing his wallet! Supposedly that's how I've been buying my family presents. He gave me a week to pay him back, or else I would be sent to military school. And it's a shame that they believe Eric and not me.\nEric also made it clear that I can't fix this, so it's up to me to \"get dirt\" on him. But first we need to talk to my sisters to find out how much they trust Eric."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно торопиться! Лучше поговорить с Лизой и Алисой как можно быстрее..."
@@ -1956,7 +1956,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Спрашиваете меня об Эрике? Эрик... Эрик... Какой такой Эрик? Не слышал ни о каком Эрике... Кажется, его и не было никогда. Даже вспоминать не буду! Но что мне запомнилось, так это Алиса в гневе. У меня даже привстал на такое..."
-    new "Are you asking me about Eric? Eric... Eric... Eric who? I've never heard of any Eric... I don't think he ever existed. I won't even remember! But what I do remember is Alice in anger. I even had a hard-on for that..."
+    new "Are you asking me about Eric? Eric... Eric... Eric who? I've never heard of an Eric... I don't think he ever existed. I won't even remember! But what I do remember is Alice in a rage. I even had a hard-on for that..."
 
     # game/core/09_opportunities.rpy:4
     old "Или же Эрик ещё может вернуться? Как знать..."
@@ -1964,35 +1964,35 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Спрашиваете меня об Эрике? Эрик... Эрик... Какой такой Эрик? Не слышал ни о каком Эрике... Кажется, его и не было никогда. Даже вспоминать не буду! Но что мне запомнилось, так это Лиза в гневе. Вроде хотела порвать Эрика, а сама за меня в итоге пряталась..."
-    new "Are you asking me about Eric? Eric... Eric... Eric who? I've never heard of any Eric... I don't think he ever existed. I won't even remember! But what I do remember is Lisa in a rage. Like she wanted to tear Eric up, but she ended up hiding behind me..."
+    new "Are you asking me about Eric? Eric... Eric... Eric who? I've never heard of an Eric... I don't think he ever existed. I don't even remember! But what I do remember is Lisa in a rage. Like she wanted to tear Eric up, but she ended up hiding behind me..."
 
     # game/core/09_opportunities.rpy:4
     old "Пришло время действовать! Одного снимка мало, чтобы убедить всех в том, что Эрик тот ещё мудак, а заманивать его его в комнату к Алисе нет времени. Вот бы мне разговорить Эрика и записать его мерзкие признания на диктофон! У Лизы на телефоне наверняка должен быть диктофон, но нужно подождать пару дней, чтобы она остыла. Тогда я его и попрошу на время..."
-    new "It was time to act! It wasn't enough to convince everyone that Eric was an asshole, and there was no time to lure him into Alice's room. I wish I could get Eric to talk and record his disgusting confessions! Lisa must have a tape recorder on her phone, but we have to wait a couple of days for her to cool down. Then I'll ask him for a while..."
+    new "It was time to act! It wasn't enough to convince everyone that Eric was an asshole, and there was no time to lure him into Alice's room. I wish I could get Eric to talk and record his disgusting confessions! Lisa must have a recorder on her phone, but we have to wait a couple of days for her to cool down. Then I'll ask..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно будет подождать и попросить у Лизы на время её телефон. Стоит попробовать начиная с субботы..."
-    new "We'll have to wait and ask Lisa for her phone number for a while. It's worth trying starting on Saturday..."
+    new "We'll have to wait and ask Lisa for her phone for a while. It's worth trying on Saturday..."
 
     # game/core/09_opportunities.rpy:4
     old "Пришло время действовать! Без доказательств я никак не смогу убедить всех в том, что Эрик тот ещё мудак. Вот бы мне разговорить его... и записать его мерзкие признания на диктофон! У Лизы на телефоне наверняка должен быть диктофон, но нужно подождать пару дней, чтобы она остыла. Тогда я его и попрошу на время..."
-    new "It's time to act! Without proof, there's no way I can convince everyone that Eric is an asshole. I wish I could get him to talk... and get his disgusting confessions on tape! Lisa must have a tape recorder on her phone, but it'll have to wait a couple of days for her to cool down. Then I'll ask him for a while..."
+    new "It's time to act! Without proof, there's no way I can reveal Eric's true nature. I wish I could get him to talk... and get his disgusting confessions on tape! Lisa must have a recorder on her phone, but it'll have to wait a couple of days for her to cool down. Then I'll ask..."
 
     # game/core/09_opportunities.rpy:4
     old "Пришло время действовать! Снимки у меня есть, но хорошо бы перетянуть кого-нибудь из сестёр на свою сторону. Раз Эрик любит подрочить на Алису, то я знаю, как усилить эффект от компромата.\n\nНужно проследить за Эриком и убедиться, что он сделал все свои мерзкие ночные дела, а после немного \"испачкать\" Алису, будто бы это Эрик. С учётом обстоятельств, она точно прибежит с утра именно ко мне. Надеюсь, я успею показать ей снимки до того, как она меня убьёт!"
-    new "It's time for action! I have the pictures, but it would be good to get one of the sisters on my side. Since Eric likes to jerk off to Alice, I know how to enhance the effect of the dirt. I need to follow Eric and make sure he's done all his creepy nighttime stuff, and then make Alice look a little \"dirty\" as if it were Eric. Given the circumstances, I'm sure I'm the one she'll be running to in the morning. I hope I get to show her the pictures before she kills me!"
+    new "It's time for action! I have the pictures, but it would be good to get one of my sisters on my side. Since Eric likes to jerk off to Alice, I know how to get the most out of the material. I need to follow Eric and make sure he's done all his creepy night-time stuff, and then make Alice look a little \"dirty\" as if it were Eric. Given the circumstances, I'm sure I'm the one she'll be running to in the morning. I hope I get to show her the pictures before she kills me!"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно убедиться, что Эрик вернулся в комнату мамы после ночных похождений и подставить его, зайдя к спящей Алисе в комнату..."
-    new "We need to make sure Eric is back in his mom's room after his nightly adventures and set him up by walking into Alice's sleeping room..."
+    new "We need to make sure Eric is back in Mom's room after his nightly adventures and set him up by walking into Alice's sleeping room..."
 
     # game/core/09_opportunities.rpy:4
     old "Лиза ни за что не хочет давать мне свой телефон! Придётся взять его, пока она будет мыть посуду после ужина. Думаю, у меня получится найти её телефон в комнате и быстренько разговорить Эрика, пока она не обнаружила пропажу и подняла шум."
-    new "There's no way Lisa wants to give me her phone! I'll have to get it while she does the dishes after dinner. I think I might be able to find her phone in her room and get Eric to talk quickly before she finds it missing and makes a fuss."
+    new "There's no way Lisa wants to give me her phone! I'll have to get it while she does the dishes after dinner. I think I might be able to find her phone in her room and get Eric to talk quickly before she knows it's missing."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно найти телефон Лизы в комнате, пока она моет посуду и сразу же идти к Эрику. Другой возможности больше может не представиться..."
-    new "We need to find Lisa's phone in her room while she's washing the dishes and go straight to Eric's house. There might not be another opportunity..."
+    new "We need to find Lisa's phone in her room while she's washing the dishes and go straight to see Eric. There might not be another opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Эрик повержен! Мне удалось вывести его на чистую воду и теперь мы наконец-то заживём, как раньше. Даже ещё лучше! Но для начала всем нужно время, чтобы отойти от правды о нём."
@@ -2004,7 +2004,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Пока Эрик представляет для меня угрозу, нет смысла что-то планировать насчёт Лизы и Оливии, поэтому мне потребуются успехи в возможности \"Альфа\"..."
-    new "As long as Eric is a threat to me, there is no point in planning anything about Lisa and Olivia, so I will need advances in opportunity \"Alpha\"..."
+    new "As long as Eric is a threat to me, there is no point in planning anything about Lisa and Olivia, so I will need to progress \"Alpha\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Хорошо было бы поинтересоваться, сильно ли Лиза переживает всю эту историю с Эриком..."
@@ -2012,19 +2012,19 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Эх, Эрика прогнали, а проблемы всё равно есть. Лиза сообразила, что мама теперь не будет уезжать на ночь к Эрику, а значит ночёвка Оливии под {b}БОЛЬШИМ{/b} вопросом. Теперь, чтобы не было никаких неожиданностей, нужно скорее их познакомить и уже исходя из того, как мама отнесётся к \"особенности\" Оливии, решать эту проблему."
-    new "Eh, Eric's gone, but there's still a problem. Lisa realized that Mom would not be spending the night at Eric's, which meant that Olivia's sleepover was a big question. Now, to avoid any surprises, it is necessary to introduce them to each other as soon as possible, and based on how Mom will treat Olivia's \"peculiarities\", to solve this problem."
+    new "Eh, Eric's gone, but there's still a problem. Lisa realized that Mom would not be spending the night at Eric's, which meant that Olivia's sleepover was a big question. Now, to avoid any surprises, it is necessary to introduce them to each other as soon as possible, and see how Mom will treat Olivia's \"peculiarities\", to solve this problem."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно немного подождать и Оливия придёт знакомиться с мамой..."
-    new "We have to wait a little longer and Olivia will come to meet her mother..."
+    new "We have to wait a little longer and Olivia will come to meet Mom..."
 
     # game/core/09_opportunities.rpy:4
     old "На мой взгляд, знакомство мамы и Оливии прошло хорошо. Конечно, маму слегка шокировал натуризм Оливии, но в целом, она не против их дружбы с Лизой. Теперь мне нужно получить одобрение мамы на ночёвку Оливии и я понятия не имею, насколько это будет просто или сложно. А ещё девочкам можно дать крем для загара, вдруг это приведёт рано или поздно к чему-нибудь очень интересному..."
-    new "In my opinion, the introduction of Mom and Olivia went well. Of course, Mom was a little shocked by Olivia's naturism, but overall, she's okay with her friendship with Lisa. Now I need to get Mom's approval for Olivia's sleepover and I have no idea how easy or difficult that will be. Also, the girls can be given sunscreen, in case it leads to something very interesting sooner or later..."
+    new "In my opinion, Mom and Olivia's meeting went well. Of course, Mom was a little shocked by Olivia's naturism, but overall, she's okay with her friendship with Lisa. Now I need to get Mom's approval for Olivia's sleepover and I have no idea how hard that will be. Also, the girls can be given sunscreen, in case it leads to something very interesting sooner or later..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно поговорить с мамой, чтобы она разрешила приходить Оливии к нам с ночёвкой..."
-    new "We need to talk to my mom to get her to let Olivia come over to our place for sleepovers..."
+    new "We need to talk to Mom to get her to let Olivia come over to our place for sleepovers..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно дать маме несколько дней на раздумья о ночёвке Оливии и снова поговорить с ней..."
@@ -2040,37 +2040,124 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Кстати, с этим Эриком совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
-    new ""
+    new "By the way, with that Eric, I completely forgot to ask if she had read the book on sex education! I'll have to ask..."
 
     # game/core/09_opportunities.rpy:4
     old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я ещё предложил её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. Но ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
-    new ""
+    new "I found out from Lisa that she had read the book on sex education. At the same time, I suggested that she study kissing further, but in a more intimate way. She still let me kiss her neck, but she would not let me touch her breasts, she was embarrassed. But that's okay, she will. I think that if you try to make unobtrusive advances to her when she reads, then the kissing lessons can be fully resumed."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит попробовать составить компанию Лизе, когда она читает..."
-    new ""
+    new "It's worth trying to keep Lisa company when she reads..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать приставать к Лизе, когда она читает. Но не исключено, что для успеха в этих приставаниях у неё должно быть очень хорошее настроение..."
-    new ""
+    new "We have to keep pestering Lisa when she reads. But she must be in a very good mood for this to get anywhere..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот чёрт! Во время моих приставаний, Лиза каким-то образом почувствовала, что я не читал книгу по сексуальному образованию. Она намекнула, что к ней можно даже не пытаться приставать, пока я её не прочитаю. Эх, надо было прочитать её сразу, как купил, а потом уже дарить."
-    new ""
+    new "Holy crap! During my advances, Lisa somehow sensed that I hadn't read the sex-education book. She hinted that I shouldn't even try to hit on her until I'd read it. Eh, I should have read it as soon as I bought it and then given it to her."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно сперва прочитать книгу по сексуальному образованию, а уже после продолжить приставать к Лизе, когда она читает..."
-    new ""
+    new "You have to read the sex-education book first, and then keep pestering Lisa as she reads..."
 
     # game/core/09_opportunities.rpy:4
     old "от это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
-    new ""
+    new "This is great! I finally got to treat Lisa's boobs with my kisses! The possibilities this is going to open up... I'd better take my time and enjoy this."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого и не портить Лизе настроение..."
-    new ""
+    new "I think I've already gotten close enough to Lisa so that she and Olivia won't mind my company on Friday night. All that was left to do was to wait for that and not spoil Lisa's mood..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь Оливия может приходить к нам с ночёвкой, как и раньше. Эрик мне больше ничем не угрожает, а это значит я могу попытать удачу с Лизой и Оливией по ночам... Правда, здесь есть другой напряг - мама может проверить, чем мы занимаемся."
-    new ""
+    new "Now Olivia can come to our place for sleepovers, just like before. Eric isn't threatening me anymore, which means I can try my luck with Lisa and Olivia at night... The only problem is Mom might check on what we're doing."
 
+# TODO: Translation updated at 2022-02-19 02:36
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Самое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ. Нужно сперва избавиться от Эрика, а уже потом покупать эротические фильмы. Пока только массаж время от времени..."
+    new "The most frustrating thing is that we hardly get to watch TV with Mom. We need to get rid of Eric first, and then buy erotic movies. So far, only massages from time to time..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Можно довольствоваться редкими моментами у ТВ с мамой и делать ей лёгкий массаж, а можно попробовать избавиться от Эрика. Для этого потребуются успехи в возможности \"Альфа\"..."
+    new "You can be content with the occasional moment by the TV with Mom and give her a light massage, or you can try to get rid of Eric. That would require success in \"Alpha\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Во главе семьи!\"..."
+    new "It's going to take progress in \"Head of the family!\""
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно попробовать сделать маме массаж спины, пока она смотрит ТВ..."
+    new "I should try giving Mom a back massage while she's watching TV..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, мама обожает массаж спины, а это значит, что мне будет не так-то и просто сделать его на отлично. Но, если хотя бы иногда будет получаться, то уже хорошо и я смогу, например, обнимать её сзади, когда она будет грустить на балконе."
+    new "Mom seems to adore back rubs, which means that it won't be easy for me to do it perfectly. But, if I can do it at least occasionally, it's already good and I can, for example, cuddle her from behind when she's sad on the balcony."
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
+    new "I think it's enough for me to hug Mom from behind and make her feel comfortable... Successfully performed a back massage on my mom at the TV: [ann.flags.m_back] of 3"
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
+    new "This is great! I finally got to treat Lisa's boobs with my kisses! The possibilities this is going to open up... I'd better take my time and enjoy this."
+
+    # game/core/09_opportunities.rpy:4
+    old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды... \nХотя, пока я не избавлюсь от Эрика, все мои старания будут почти напрасными."
+    new "It's already so much better! Mom now has a new tracksuit that will give her and me a lot of warmth. She wasn't even too vocal about it being very open. It depends on what it's for. \nFor me, if she did yoga completely naked, it would be the bomb! Eh, a man can dream... But who knows, maybe one day... \nUnless I get rid of Eric, all my efforts will be almost in vain."
+
+    # game/core/09_opportunities.rpy:4
+    old "Можно проводить время с мамой, как сейчас, помогая ей с йогой, а можно попробовать избавиться от Эрика и посмотреть, что будет без него. Для этого потребуются успехи в возможности \"Альфа\"..."
+    new "You could spend time with Mom, like now, helping her with yoga, or you could try to get rid of Eric and see what happens without him. That would require progress in the \"Alpha\" opportunity..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно и дальше продолжать помогать маме с йогой. Теперь она должна стать ещё интереснее..."
+    new "We need to keep helping Mom with yoga. It should get even more interesting now..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет и утешать её станет куда приятнее. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
+    new "This is my kind of yoga! Mom is still confused by my restless hands, but I think she will get used to them and it will become much more pleasant to comfort her. \nIt's just impossible not to get hard, so I'd better make sure I'm wearing a shirt and shorts. It's so much easier to hide a boner if you have one. \n\nToo bad she wants me to help at least every other day because of my activity... But I don't mind, it just makes me want to join her again."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, то и утешать я её смогу так же... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
+    new "Once Mom gets used to my touch, then I can comfort her the same way... I was able to successfully help Mom with yoga: [ann.flags.truehelp] of 5"
+
+    # game/core/09_opportunities.rpy:4
+    old "Во главе семьи!"
+    new "Head of the family!"
+
+    # game/core/09_opportunities.rpy:4
+    old "После того, как я вывел Эрика на чистую воду, мама однозначно будет переживать, грустить, заниматься самобичеванием... Я обязательно должен быть рядом и, как смогу, утешать и ободрять её. Правда, перед всеми нами она скорее всего будет стараться этого не показывать, поэтому нужно будет периодически заглядывать к ней в комнату и если она будет грустить, побыть с ней."
+    new "After I exposed Eric, Mom would definitely be worried, sad, and self-deprecating... I should definitely be there to comfort and encourage her as much as I can. She'll probably try not to show it in front of the rest of us, though, so I'll need to look in her room periodically and be with her if she's sad."
+
+    # game/core/09_opportunities.rpy:4
+    old "Чтобы не попадать на мамины переодевания, заходя к ней в комнату, лучше заглядывать во второй половине часа перед её работой..."
+    new "To avoid getting caught while Mom's changing clothes, it's better to look in the second half of the hour before she leaves for work..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я был прав. Хоть это и было очевидно, мама переживает из-за всей этой истории с Эриком. Она слишком сильно винит себя в том, что привела к нам домой такого уёб... Эрика, короче. К тому же, он напрягает её на работе. \nЯ успокоил её, на этот раз, и заодно предложил ей массаж спины, чтобы она хоть как-то смогла расслабиться. \nТеперь Эрик не мешает и мама по вечерам всегда в моём распоряжении у ТВ. Мои руки помогут ей расслабиться, а я смогу полюбоваться её шелковистой спинкой... Правда, массаж - это не панацея от всех душевных проблем, поэтому мама и дальше будет переживать."
+    new "I was right. Even though it was obvious, Mom's worried about the whole Eric thing. She blames herself for bringing that demon into our lives. Plus, he's stressing her out at work. \nSo I calmed her down and offered a back rub so she could at least relax. \nWith Eric out of my way I can spend time with Mom by the TV in the evenings. My hands can help her relax while I admire her. But, massage is not a cure-all for mental problems, so Mom will continue to worry."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать заглядывать к маме перед работой и в воскресенье, чтобы успокоить её, если она будет грустить..."
+    new "I should see Mom before work and on Sunday to comfort her if she gets sad..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я снова застал маму всю расстроенную и грустную. Ей тяжело видеть его ехидную рожу на работе и от этого никуда не деться. Только если уволиться, но не известно, какие проблемы он может устроить в этом случае маме. \nЯ решил приободрить её, помимо обычных утешений, приобняв за попку, но она сказала, что её это скорее смущает, чем ободряет. \nНадо это дело исправлять... И чтобы такие прикосновения стали более естественными, надо чаще прикасаться к её попке. \nПожалуй, самый приемлемый вариант таких контактов, где меня не посчитают озабоченным - это йога. Так что нужно пробовать..."
+    new "Mom's sad and upset again. It's hard for her to see his bastard face at work, and there's no getting away from it. All she can really do is resign, but who know's what kind of situation we'd find ourselves in if she did that. \nI decided to cheer her up by massaging her ass, but she said it was more uncomfortable than encouraging. \nWe need to fix this... I just need to get her used to my touch. \nYoga seems like the perfect outlet for that, don't you think?"
+
+    # game/core/09_opportunities.rpy:4
+    old "Эх, придётся пораньше вставать, чтобы помогать маме с йогой..."
+    new "Eh, I'll have to get up early to help my mom with yoga..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама перестанет смущаться моих прикосновений к её сочной попке во время йоги, то и утешать я смогу её куда эффективнее. Для этого потребуются успехи в возможности \"Волнующие изгибы\"..."
+    new "Once Mom's more comfortable with me touching her juicy ass during yoga, I'll be able to comfort her much more effectively. I'll need to progress the \"Exciting Curves\" opportunity..."
+
+    # game/core/09_opportunities.rpy:908
+    old "Пока мама встречается с Эриком, мне не занять главное место в нашей семье, а значит потребуются успехи в возможности \"Альфа\"..."
+    new "As long Mom's dating Eric, I'll never be seen as head of the family. So I'll need to progress the \"Alpha\" opportunity..."

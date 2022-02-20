@@ -779,6 +779,7 @@ screen room_navigation():
     modal True
 
     use notify_check
+    use wait_navigation
 
     $ renpy.stop_predict('extra/**.webp')
 
@@ -1001,11 +1002,12 @@ screen room_navigation():
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
     frame align(.99, .99) xysize(123, 395) background None:
-        vbox:
-            spacing 5
-            imagebutton idle 'interface wait 10' focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', 10), Jump('Waiting')] at small_zoom
-            imagebutton idle 'interface wait 30' focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', 30), Jump('Waiting')] at small_zoom
-    timer 2.0 action Hide('wait_navigation')
+        if all(['11:00' > tm >= '10:00', 6 > weekday > 0, flags.eric_banished]):
+            vbox:
+                spacing 5
+                imagebutton idle 'interface wait 10' focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', 10), Jump('Waiting')] at small_zoom
+                imagebutton idle 'interface wait 30' focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', 30), Jump('Waiting')] at small_zoom
+    # timer 2.0 action Hide('wait_navigation')
 
 ################################################################################
 screen menu_my_help():
@@ -1173,6 +1175,15 @@ screen menu_opportunity():
                                         text renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[CurPoss][1][view_stage].desc)) size 24 color gui.accent_color
                                         text renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[CurPoss][1][view_stage].ps)) size 24
                                         if view_stage in poss_dict[CurPoss][2]:     # временная концовка
+                                            if ShowHint and are_hints(CurPoss, view_stage):
+                                                text _("Подсказка:") size 24 color gui.accent_color
+                                                for ht in poss_dict[CurPoss][1][view_stage].hints:
+                                                    if ht.met():
+                                                        text renpy.config.say_menu_text_filter(renpy.translate_string(ht.hint)) size 20
+                                            elif not are_hints(CurPoss, view_stage):
+                                                $ ShowBtnHint = False
+                                            else:
+                                                $ ShowBtnHint = True
                                             text _("{i}{b}Внимание:{/b} Пока это всё, что можно сделать для данной \"возможности\" в текущей версии игры.{/i}") size 24 color orange
                                         elif view_stage in poss_dict[CurPoss][3]:   # хорошая концовка
                                             text _("{i}{b}Поздравляем!{/b} Вы завершили данную возможность!{/i}") size 24 color lime

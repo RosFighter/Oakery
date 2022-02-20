@@ -243,6 +243,7 @@ label Midnight:
     $ prenoted = 0
     $ film = ''
     $ olivia_night_visits = olivia_nightvisits()
+    $ lisa.sleeptoples = False
 
     if poss['nightclub'].st() >= 5 and kol_choco == 0:
         $ items['choco'].unblock()
@@ -423,6 +424,7 @@ label NewWeek:
     if 'eric' in chars and eric_obligation.get_debt() and flags.eric_wallet == 0:
         # Макс не заплатил Эрику дань, запускается кошелёк
         $ eric_obligation.volume = 0
+        $ eric_obligation.debt = 0
         $ flags.eric_wallet = 1
 
     python:
@@ -687,12 +689,12 @@ label random_dressed:
             all([ann.prev_plan == 'tv', ann.plan_name == 'resting', ann.clothes.rest_eve.GetCur().suf != 'b']),
             ]):
 
-            if all([current_room == prev_room, current_room == house[2], len(current_room.cur_char)==1]):
+            if all([current_room == prev_room, current_room == house[2], len(current_room.cur_char)<2]):
                 # Макс оставался в комнате Анны
                 $ ann.hourly.dressed = 1
                 call ann_dressed.stay_in_room from _call_ann_dressed_stay_in_room_1
 
-            elif all([current_room != prev_room, current_room == house[2], len(current_room.cur_char)==1]):
+            elif all([current_room != prev_room, current_room == house[2], len(current_room.cur_char)<2]):
                 # Макс входит в комнату Анны
                 call chance_dressing_roll('Ann') from _call_chance_dressing_roll_3
 
@@ -777,9 +779,10 @@ label night_of_fun:
     $ status_sleep = True
     $ cur_ratio = 1
     $ spent_time = clip_time(int(round((100. - mgg.energy)/10, 0)) * 60, '06:00', '08:00')
-    scene BG char Max bed-night-01
-    $ renpy.show('Max sleep-night '+pose3_3)
-    $ renpy.show('cloth1 Max sleep-night '+pose3_3)
+    # scene BG char Max bed-night-01
+    # $ renpy.show('Max sleep-night '+pose3_3)
+    # $ renpy.show('cloth1 Max sleep-night '+pose3_3)
+    scene Max_sleep with diss5
     Max_19 "{m}Теперь можно спокойно спать и ничего больше...{/m}"
     jump Waiting
 
@@ -948,6 +951,46 @@ label after_buying:
 
     return
 
+################################################################################
+
+label correct_showing_images:
+    if renpy.showing('Max sleep-night'):
+        scene Max_sleep
+    elif renpy.showing('Max nap'):
+        scene Max_sleep mde
+    elif renpy.showing('FG Lisa sleep-night'):
+        scene Lisa_sleep
+    elif renpy.showing('FG Lisa sleep-morning'):
+        scene Lisa_sleep mde
+    elif renpy.showing('FG Olivia sleep'):
+        scene Lisa_sleep olivia
+    elif renpy.showing('FG Lisa reading 00'):
+        scene Lisa_read_phone talk_read
+    elif renpy.showing('FG Lisa reading'):
+        scene Lisa_read_phone read
+    elif renpy.showing('cloth1 Lisa reading'):
+        scene Lisa_read_phone read
+    elif renpy.showing('FG Lisa phone-evening 00'):
+        scene Lisa_read_phone talk_phone
+    elif renpy.showing('FG Lisa phone-evening'):
+        scene Lisa_read_phone phone
+    elif renpy.showing('cloth1 Lisa sleep-night'):
+        scene Lisa_sleep
+    elif renpy.showing('cloth1 Lisa sleep-morning'):
+        scene Lisa_sleep mde
+    elif renpy.showing('Ann sleep-night'):
+        scene Ann_sleep
+    elif renpy.showing('Ann sleep-night-closer'):
+        scene Ann_sleep closer
+    elif renpy.showing('Eric sleep-night'):
+        scene Ann_sleep eric
+    elif renpy.showing('Eric sleep-night-closer'):
+        scene Ann_sleep closer eric
+    # elif renpy.showing(''):
+    #     scene
+    # elif renpy.showing(''):
+    #     scene
+    return
 
 label after_load:
     # срабатывает каждый раз при загрузке сохранения или начале новой игры
@@ -958,15 +1001,17 @@ label after_load:
     if main_menu:
         return
 
+    call correct_showing_images from _call_correct_showing_images
+
     if 'current_ver' in globals():
-        if config.developer:
-            "ver [current_ver], _ver [_version], conf.ver [config.version]"
+        # if config.developer:
+        #     "ver [current_ver], _ver [_version], conf.ver [config.version]"
 
         if _version < current_ver or current_ver < "0.06.0.999":
             call old_fix from _call_old_fix
 
-    elif config.developer:
-        "_ver [_version], conf.ver [config.version]"
+    # elif config.developer:
+    #     "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
 
@@ -1029,17 +1074,11 @@ label after_load:
     $ weekday = GetWeekday(day)
     $ checking_clothes()
 
-    if _version <= '0.07.p2.50':
-        if all([current_room == house[0], lisa.plan_name == 'sleep', tm < '06:00']):
-            call lisa_sleep_night from _call_lisa_sleep_night
-        elif all([current_room == house[0], lisa.plan_name == 'sleep', tm >= '06:00']):
-            call lisa_sleep_morning from _call_lisa_sleep_morning
-        elif all([current_room == house[0], lisa.plan_name == 'phone']):
-            call lisa_phone from _call_lisa_phone
-        elif all([current_room == house[0], lisa.plan_name == 'read']):
-            call lisa_read from _call_lisa_read
-        elif 'olivia' in chars and all([current_room == house[0], lisa.plan_name == 'sleep2']):
-            call olivia_lisa_sleep from _call_olivia_lisa_sleep
+    # if _version < '0.07.p2.51':
+    #     elif all([current_room == house[0], lisa.plan_name == 'phone']):
+    #         call lisa_phone from _call_lisa_phone
+    #     elif all([current_room == house[0], lisa.plan_name == 'read']):
+    #         call lisa_read from _call_lisa_read
 
     if alice.flags.showdown_e and not poss['blog'].used(21):
         $ poss['blog'].open(21)
@@ -1830,3 +1869,14 @@ label update_07_p2_99:
 
     if flags.eric_banished and 3 > wcv.catch_Kira.stage > 0:
         $ wcv.catch_Kira.stage = 3
+
+    if poss['seduction'].used(32) and not lisa.flags.kiss_breast:
+        $ lisa.flags.kiss_breast = 1
+
+    if poss['alpha'].used(5) and not poss['boss'].used(0):
+        $ poss['boss'].open(0)
+    if poss['alpha'].used(6) and not poss['boss'].used(1):
+        $ poss['boss'].open(1)
+
+    if ann.flags.showdown_e > 0:
+        $ poss['boss'].open(2)

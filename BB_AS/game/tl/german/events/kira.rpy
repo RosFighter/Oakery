@@ -64,31 +64,31 @@ translate german kira_bath_ladder_76e8b72b:
 translate german kira_bath_ladder_ad4cb718:
 
     # Max_02 "{m}Ох, чёрт! Какая аппетитная попка у неё... Это я удачно решил дождаться её возвращения! Давай, тётя Кира, этой попке пора стать мокренькой...{/m}"
-    Max_02 "{m}Oh! Was für einen prächtigen Arsch sie hat... Gut, dass ich auf ihre Rückkehr gewartet habe! Komm schon, Tante Kira, es wird Zeit, dass der Hintern nass wird...{/m}"
+    Max_02 "{m}Oh, Scheiße! Was für einen leckeren Arsch sie hat... Ich konnte glücklicherweise warten, bis sie zurückkommt! Komm schon, Tante Kira, es wird Zeit, dass dein Arsch nass wird...{/m}"
 
 # game/events/kira.rpy:83
 translate german kira_bath_ladder_cd6aa247:
 
     # Max_05 "{m}Ого! Да она сперва решила поиграть со своей киской... Вот это классно! Только почему бы не делать это лёжа в ванной? Такое ощущение, что она это специально...{/m}"
-    Max_05 "{m}Wow! Sie hat beschlossen, mit ihrer Muschi zu spielen... Oh, das ist fantastisch. Warum macht sie es nicht einfach im Liegen im Badezimmer? Es fühlt sich an, als hätte sie es mit Absicht gemacht...{/m}"
+    Max_05 "{m}Wow! Sie hat beschlossen, zuerst mit ihrer Pussy zu spielen... Das ist cool! Aber warum nicht auch in der Badewanne liegend? Es ist, als würde sie es absichtlich tun...{/m}"
 
 # game/events/kira.rpy:85
 translate german kira_bath_ladder_2e94138e:
 
     # Max_10 "{m}Блин! Она меня видела! Вот это уже не круто... Хотя, это же тётя Кира... она же не станет меня сдавать маме? Или нет?!{/m}"
-    Max_10 "{m}Scheiße! Sie hat mich gesehen! Das ist kein Quatsch... Es ist aber Tante Kira... sie wird mich doch nicht an Mom ausliefern, oder?{/m}"
+    Max_10 "{m}Scheiße! Sie hat mich gesehen! Das ist aber nicht cool... Obwohl, es ist Tante Kira... Sie wird mich doch nicht an Mom verraten? Oder doch?!{/m}"
 
 # game/events/kira.rpy:88
 translate german kira_bath_ladder_d1389531:
 
     # Max_08 "{m}Что? Она зовёт меня к себе?! Да ладно! Как-то мне это не очень нравится...{/m}" nointeract
-    Max_08 "{m}Was? Ruft sie mich rüber?! Ich bin nervös, mir gefällt nicht, wohin das führt...{/m}" nointeract
+    Max_08 "{m}Was? Sie ruft mich zu sich?! Ach, komm schon! Irgendwie mag ich das nicht so sehr...{/m}" nointeract
 
 # game/events/kira.rpy:98
 translate german kira_bath_ladder_947ff46b:
 
     # Max_04 "{m}Да-а-а, у неё просто обалденная грудь! Сосочки прямо там, где надо... Ох, я бы с ней ванну попринимал! Надеюсь, мне это приснится. Пора идти спать...{/m}"
-    Max_04 "{m}Ja, sie hat tolle Titten! Ihre Brustwarzen sind genau da, wo sie sein sollten... Oh, ich würde ein Bad mit ihr nehmen! Ich hoffe, es passiert wenigstens in meinen Träumen.{/m}"
+    Max_04 "{m}Ja-a-a, sie hat die tollsten Brüste. Nippel genau da, wo sie sein sollten... Oh, ich würde so gerne mit ihr baden gehen! Ich hoffe, ich träume. Zeit, ins Bett zu gehen...{/m}"
 
 # game/events/kira.rpy:102
 translate german kira_bath_kira_mass_bath_first_7398c496:
@@ -238,7 +238,7 @@ translate german kira_bath_kira_mass_bath_first_1095bd15:
 translate german kira_bath_kira_mass_bath_first_00ca4913:
 
     # Kira_01 "У меня здесь есть одна бывшая одноклассница и, как я помню, она с мужем как раз занимается массажем и йогой. Я попробую с ней встретиться и договориться, чтобы они тебя поднатаскали в этом... Если, конечно, хочешь?"
-    Kira_01 "Ich habe eine alte Freundin hier. Sie und ihr Mann sind Spezialisten auf Massage und Yoga. Ich werde versuchen, mich mit ihr zu treffen und dafür sorgen, dass sie dich ausbilden... Natürlich nur, wenn du das möchtest."
+    Kira_01 "Ich habe eine alte Freundin hier. Sie und ihr Mann sind Spezialisten für Massage und Yoga. Ich werde versuchen, mich mit ihr zu treffen und dafür sorgen, dass sie dich ausbilden... Natürlich nur, wenn du das möchtest."
 
 # game/events/kira.rpy:142
 translate german kira_bath_kira_mass_bath_first_d2d2822b:
@@ -1858,7 +1858,7 @@ translate german kira_night_tv_promise_cuni_48f0e333:
 translate german kira_night_tv_promise_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1259
 translate german kira_night_tv_promise_cuni_0b64a46b:
@@ -2326,7 +2326,7 @@ translate german kira_night_tv_repeat_lesson_2df27d30:
 translate german kira_night_tv_repeat_lesson_c494b70e:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам."
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus."
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus."
 
 # game/events/kira.rpy:1558
 translate german kira_night_tv_repeat_lesson_7d5bc607:
@@ -2530,7 +2530,7 @@ translate german kira_night_tv_teach_cuni_2df27d30:
 translate german kira_night_tv_teach_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1702
 translate german kira_night_tv_teach_cuni_fe50801f:
@@ -2668,7 +2668,7 @@ translate german kira_night_tv_tv_cuni_2c995eaa:
 translate german kira_night_tv_tv_cuni_328ceb80:
 
     # Kira_02 "Макс... Если тебе мешают мои трусики, я их сниму... Или сними их сам." nointeract
-    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh sie einfach selbst aus." nointeract
+    Kira_02 "Max... Wenn dich mein Slip stört, ziehe ich ihn aus... Oder zieh ihn einfach selbst aus." nointeract
 
 # game/events/kira.rpy:1869
 translate german kira_night_tv_tv_cuni_fe50801f:
@@ -3580,25 +3580,25 @@ translate german return_from_club_5145f6a5:
 translate german return_from_club_1215df56:
 
     # Alice_06 "Эй, а как же я?! Я хочу принять ванну перед сном, а у меня полотенце наверху! Вдруг я упаду, пока буду подниматься..."
-    Alice_06 "Hey, was ist mit mir?! Ich will vor dem Schlafengehen ein Bad nehmen und ich habe oben ein Handtuch! Ich könnte auf dem Weg nach oben umfallen..."
+    Alice_06 "Hey, was ist mit mir?! Ich möchte vor dem Schlafengehen ein Bad nehmen, und das Handtuch liegt oben! Ich könnte auf dem Weg nach oben hinfallen..."
 
 # game/events/kira.rpy:2767
 translate german return_from_club_ba66703f:
 
     # Max_07 "Я принесу тебе полотенце, как только уложу тётю Киру спать. Идёт?"
-    Max_07 "Ich werde dir dein Handtuch holen, sobald ich Tante Kira ins Bett gebracht habe. In Ordnung?"
+    Max_07 "Ich bringe dir ein Handtuch, sobald ich Tante Kira aufs Sofa gebracht habe. Ist das in Ordnung?"
 
 # game/events/kira.rpy:2768
 translate german return_from_club_fde1b591:
 
     # Alice_12 "Только давай быстрее!" nointeract
-    Alice_12 "Mach es einfach schnell!" nointeract
+    Alice_12 "Beeile dich einfach!" nointeract
 
 # game/events/kira.rpy:2773
 translate german return_from_club_f9df4462:
 
     # Max_01 "Вот, держи конфетку, чтобы не скучать, пока я с тётей..."
-    Max_01 "Hier, nimm ein paar Süßigkeiten, damit du dich nicht langweilst, während ich bei ihr bin..."
+    Max_01 "Hier, iss ein paar Süßigkeiten, damit du dich nicht langweilst, während ich bei unserer Tante bin..."
 
 # game/events/kira.rpy:2774
 translate german return_from_club_babe3fd1:
@@ -4032,7 +4032,7 @@ translate german strings:
 
     # game/events/kira.rpy:738
     old "Да, что-то не спится... К тебе можно?"
-    new "Ja, ich kann nicht schlafen... Darf ich mich zu Dir setzen?"
+    new "Ja, ich kann nicht einschlafen... Kann ich zu dir kommen?"
 
     # game/events/kira.rpy:738
     old "Не могу уснуть, слишком напряжён! {i}(снять шорты){/i}"
@@ -4244,7 +4244,7 @@ translate german strings:
 
     # game/events/kira.rpy:2790
     old "Такого поворота событий я не ожидал! Можно и задержаться..."
-    new "Das habe ich nicht erwartet ! Ich bleibe länger..."
+    new "Das habe ich nicht erwartet! Ich bleibe länger..."
 
     # game/events/kira.rpy:2790
     old "Я бы задержался, но нужно проверить, как там Алиса..."

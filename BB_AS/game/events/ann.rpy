@@ -10,9 +10,10 @@ label ann_sleep:
     menu:
         Max_00 "{m}В это время мама обычно спит.\nМне кажется, не стоит её будить...{/m}"
         "{i}заглянуть в окно{/i}":
-            scene BG char Ann bed-night-01
-            $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
-            $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+            scene Ann_sleep
+            # scene BG char Ann bed-night-01
+            # $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
+            # $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
             if ann.dress == 'a':
                 if pose3_3 == '01':
                     Max_01 "{m}Класс! Мама спит... Даже не верится, что у этой конфетки трое детей... В жизни бы в такое не поверил!{/m}" nointeract
@@ -31,8 +32,9 @@ label ann_sleep:
             menu:
                 "{i}прокрасться в комнату{/i}":
                     $ spent_time += 10
-                    scene BG char Ann bed-night-02
-                    $ renpy.show('Ann sleep-night-closer '+pose3_3+ann.dress)
+                    # scene BG char Ann bed-night-02
+                    # $ renpy.show('Ann sleep-night-closer '+pose3_3+ann.dress)
+                    scene Ann_sleep closer
                     if ann.dress == 'a':
                         if pose3_3 == '01':
                             Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Вот бы снять с неё всё белье и пристроиться сзади... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
@@ -226,16 +228,19 @@ label ann_shower:
 
 
 label ann_yoga:
-    scene BG char Ann yoga 00
-    if int(tm[3:4])%3 == 0: # смена позы каждые 10 минут
-        $ renpy.show('Ann yoga '+pose3_1+ann.dress)
-        $ persone_button1 = 'Ann yoga '+pose3_1+ann.dress
-    elif int(tm[3:4])%3 == 1:
-        $ renpy.show('Ann yoga '+pose3_2+ann.dress)
-        $ persone_button1 = 'Ann yoga '+pose3_2+ann.dress
-    else:
-        $ renpy.show('Ann yoga '+pose3_3+ann.dress)
-        $ persone_button1 = 'Ann yoga '+pose3_3+ann.dress
+    $ var_pose = '0' + str(int(eval('pose3_' + str(1 + int(tm[3]) % 3) )))
+    scene Ann_yoga basic
+    $ persone_button1 = 'Ann yoga ann-yoga-' + var_pose + ann.dress
+    # scene BG char Ann yoga 00
+    # if int(tm[3:4])%3 == 0: # смена позы каждые 10 минут
+    #     $ renpy.show('Ann yoga '+pose3_1+ann.dress)
+    #     $ persone_button1 = 'Ann yoga '+pose3_1+ann.dress
+    # elif int(tm[3:4])%3 == 1:
+    #     $ renpy.show('Ann yoga '+pose3_2+ann.dress)
+    #     $ persone_button1 = 'Ann yoga '+pose3_2+ann.dress
+    # else:
+    #     $ renpy.show('Ann yoga '+pose3_3+ann.dress)
+    #     $ persone_button1 = 'Ann yoga '+pose3_3+ann.dress
     return
 
 
@@ -257,12 +262,14 @@ label ann_dressed:
     if ann.hourly.dressed:
         return
     $ ann.hourly.dressed = 1
-    $ renpy.dynamic('open', 'lst', 'r1')
+    $ renpy.dynamic('open', 'lst', 'r1', 'balcony')
     $ open = False
     $ mood = 0
     $ spent_time = 10
+    # Эрик изгнан, час переодеваний в будние дни, в сумке нет ночнушки
+    $ balcony = renpy.random.choice([True, False]) if all([flags.eric_banished, '11:00' > tm >= '10:00', weekday != 6, not items['nightie'].have]) else False
 
-    if GetWeekday(day) == 6:
+    if weekday == 6:
         Max_09 "{m}Сегодня суббота, день шоппинга. Видимо, мама собирается...{/m}" nointeract
     else:
         Max_09 "{m}Сейчас 10 часов, а значит, мама собирается на работу...{/m}" nointeract
@@ -271,7 +278,7 @@ label ann_dressed:
             menu:
                 Ann "{b}Анна:{/b} Кто там?"
                 "Это я, Макс. Можно войти?"  if not items['nightie'].have:
-                    if GetWeekday(day) == 6:
+                    if weekday == 6:
                         Ann "{b}Анна:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
                     else:
                         Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
@@ -284,7 +291,9 @@ label ann_dressed:
                 "{i}уйти{/i}":
                     jump .end
         "{i}открыть дверь{/i}":
-            if all([random_outcome(40), tm[-2:]=='00', not (items['nightie'].have and ann.plan_name == 'dressed')]):
+            if balcony:
+                call .balcony from _call_ann_dressed_balcony
+            elif all([random_outcome(40), tm[-2:]=='00', not (items['nightie'].have and ann.plan_name == 'dressed')]):
                 # не срабатывает в час переодевания, если в сумке ночнушка
                 call .moment0 from _call_ann_dressed_moment0_1   # "нулевой"
             elif random_outcome(45):
@@ -294,7 +303,7 @@ label ann_dressed:
             jump .end
         "{i}заглянуть в окно{/i}":
             $ mood = 0
-            if GetWeekday(day) == 6:
+            if weekday == 6:
                 $ lst = ['03', '03a', '04']
             else:
                 $ lst = ['01', '01a', '02', '03', '03a', '04']
@@ -319,23 +328,20 @@ label ann_dressed:
             jump .end
 
     label .stay_in_room:
-        $ renpy.dynamic('lvl', 'pose')
+        $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
-        $ pose = get_ann_dress_pose(0)
+        $ get_ann_dress(0)
         $ mood = 0
 
         ### фон + поза
-        scene BG char Ann mde-02
         if ann.prev_plan == 'shower2':      # Эрик в комнате
-            show Eric dressed 01
-        $ renpy.show('Ann dressed ' + pose)
-
-        if ann.prev_plan == 'shower2':      # Эрик в комнате
+            scene Ann_dressing eric
             if flags.eric_wallet == 2:      # Макс на сроке за воровство
                 Eric_09 "Макс, не мешай взрослым! В твоём положении это просто верх наглости! Найди себе занятие..." nointeract
             else:
                 Ann_00 "Сынок, мы с Эриком собирались переодеться. Не мешай взрослым, займись чем-нибудь..." nointeract
         else:                               # Анна одна
+            scene Ann_dressing
             if flags.eric_wallet == 2:      # Макс на сроке за воровство
                 Ann_12 "Сынок, я собиралась переодеться. Не мешай маме. Займись чем-нибудь полезным..." nointeract
             else:
@@ -345,19 +351,15 @@ label ann_dressed:
                 jump .end
 
     label .moment0:     # "нулевой"
-        $ renpy.dynamic('lvl', 'pose')
+        $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
-        $ pose = get_ann_dress_pose(0)
+        $ get_ann_dress(0)
         $ mood = 0
 
         ### фон + поза
-        scene BG char Ann mde-01
         if ann.prev_plan == 'shower2':      # Эрик в комнате
-            show Eric dressed 01
-        $ renpy.show('Ann dressed ' + pose)
-
-        if ann.prev_plan == 'shower2':      # Эрик в комнате
+            scene Ann_dressing eric
             if flags.eric_wallet == 2:      # Макс на сроке за воровство
                 Eric_09 "Макс, не мешай взрослым! В твоём положении это просто верх наглости! Найди себе занятие..." nointeract
             else:
@@ -366,6 +368,7 @@ label ann_dressed:
                 "{i}уйти{/i}":
                     jump .end
 
+        scene Ann_dressing
         menu:
             Ann_00 "Так, сынок... Ты можешь погулять? А то мне нужно переодеться..."
             "А я разве чем-то помешаю?" if lvl == 1:
@@ -378,26 +381,23 @@ label ann_dressed:
             "{i}уйти{/i}":
                 jump .end
 
-    label .moment2:     # повезло
-        $ renpy.dynamic('lvl', 'pose')
+    label .moment2():     # повезло
+        $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
-        $ pose = get_ann_dress_pose(2)
+        $ get_ann_dress(2)
         $ mood = 0
 
         ### фон + поза
-        scene BG char Ann mde-01
-        $ renpy.show('Ann dressed ' + pose)
+        scene Ann_dressing
 
         if lvl == 1:
             Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
         elif lvl == 2:
             Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
 
-        $ pose = get_ann_dress_pose(1, pose)
-
+        $ get_ann_dress(1, var_pose) # изменение позы вызывает автоматическое обновление изображения
         ### поза
-        $ renpy.show('Ann dressed ' + pose)
 
         if lvl == 1:
             Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
@@ -407,15 +407,14 @@ label ann_dressed:
             jump .lvl_2
 
     label .moment1:     # неповезло
-        $ renpy.dynamic('lvl', 'pose')
+        $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
-        $ pose = get_ann_dress_pose(1)
+        $ get_ann_dress(1)
         $ mood = 0
 
         ### фон + поза
-        scene BG char Ann mde-01
-        $ renpy.show('Ann dressed ' + pose)
+        scene Ann_dressing
 
         if lvl == 1:
             Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
@@ -433,17 +432,17 @@ label ann_dressed:
                 Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
                 jump .gift
 
-            "У тебя самые зачётные сиськи, которые я видел!" if pose[:2] < '04':
+            "У тебя самые зачётные сиськи, которые я видел!" if var_pose < '04':
                 # Анна стоит передом к Максу
                 $ mood -= 30
                 Ann_17 "Что?! Макс! Это что ещё за словечки такие? А ну-ка быстро выйди и закрой дверь!" nointeract
 
-            "У тебя самый потрясный зад на свете, мам!" if '03' < pose[:2] < '08':
+            "У тебя самый потрясный зад на свете, мам!" if '03' < var_pose < '08':
                 # Анна стоит задом к Максу
                 $ mood -= 30
                 Ann_17 "Что я слышу! Вряд ли я та женщина, которой стоит такое говорить, Макс. А теперь выйди и закрой дверь!" nointeract
 
-            "Я просто хотел посмотреть..." if pose[:2] == '08':
+            "Я просто хотел посмотреть..." if var_pose == '08':
                 # Анна прикрывает только низ
                 $ mood -= 10
                 Ann_13 "Как я переодеваюсь?! Сынок, ты что такое говоришь! Давай-ка выйди и закрой за собой дверь." nointeract
@@ -463,17 +462,17 @@ label ann_dressed:
                 Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
                 jump .gift
 
-            "Да не прикрывай такую красоту, все свои же!" if pose[:2] < '04':
+            "Да не прикрывай такую красоту, все свои же!" if var_pose < '04':
                 # Анна стоит передом к Максу
                 $ mood -= 10
                 Ann_13 "Макс! И не стыдно тебе такое своей маме говорить, а? Ну-ка бегом за дверь, а то мешаешь." nointeract
 
-            "Сразу видно, что попка у тебя тренированная!" if '03' < pose[:2] < '08':
+            "Сразу видно, что попка у тебя тренированная!" if '03' < var_pose < '08':
                 # Анна стоит задом к Максу
                 $ mood -= 10
                 Ann_13 "Даже не знаю, что на это ответить... Ну-ка бегом за дверь, а то засмущал меня." nointeract
 
-            "А посмотреть нельзя?" if pose[:2] == '08':
+            "А посмотреть нельзя?" if var_pose == '08':
                 # Анна прикрывает только низ
                 Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
 
@@ -485,8 +484,10 @@ label ann_dressed:
                 jump .end
 
     label .gift:
-        scene BG char Ann mde-01
-        $ renpy.show('Ann dressed 07' + ('j' if GetWeekday(day) == 6 else 'a'))
+        # scene BG char Ann mde-01
+        # $ renpy.show('Ann dressed 07' + ('j' if weekday == 6 else 'a'))
+        $ get_ann_dress(g)
+        scene Ann_dressing
         Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
         Max_04 "У меня для тебя подарок! Ночнушка!"
         Ann_06 "Ты это серьёзно? Но в честь чего?"
@@ -502,15 +503,19 @@ label ann_dressed:
         Max_09 "Я уже большой, мам! Я же от души!"
         Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
         Max_02 "Думаю, смотрится она на тебе просто фантастически!"
-        scene BG char Ann mde-01
-        $ renpy.show('Ann dressed 07' + ('j' if GetWeekday(day) == 6 else 'a'))
+        # scene BG char Ann mde-01
+        # $ renpy.show('Ann dressed 07' + ('j' if weekday == 6 else 'a'))
+        scene Ann_dressing
         Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
-        $ r1 = renpy.random.choice(['01', '02'])
-        $ renpy.show('Ann hugging morning-annroom '+r1+'-1'+('b' if GetWeekday(day) == 6 else 'a')+mgg.dress)
+        # $ r1 = renpy.random.choice(['01', '02'])
+        # $ renpy.show('Ann hugging morning-annroom '+r1+'-1'+('b' if weekday == 6 else 'a')+mgg.dress)
+        $ var_pose = renpy.random.choice(['01', '02'])
+        scene Ann_gift hug1
         Max_05 "{m}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/m}"
-        $ renpy.show('Ann hugging morning-annroom '+r1+'-2'+('b' if GetWeekday(day) == 6 else 'a')+mgg.dress)
+        # $ renpy.show('Ann hugging morning-annroom '+r1+'-2'+('b' if weekday == 6 else 'a')+mgg.dress)
+        scene Ann_gift hug2
         $ spent_time += 10
-        if GetWeekday(day) == 6:
+        if weekday == 6:
             Ann_04 "Ну всё, мой дорогой, нам с девочками ещё нужно успеть пробежаться по магазинам сегодня..." nointeract
         else:
             Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..." nointeract
@@ -519,9 +524,11 @@ label ann_dressed:
                 if rand_result:
                     $ spent_time += 10
                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-                    $ renpy.show('Ann hugging morning-annroom '+r1+'-3'+('b' if GetWeekday(day) == 6 else 'a')+mgg.dress)
+                    # $ renpy.show('Ann hugging morning-annroom '+r1+'-3'+('b' if weekday == 6 else 'a')+mgg.dress)
+                    scene Ann_gift hug3
                     Max_06 "{m}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/m}"
-                    $ renpy.show('Ann hugging morning-annroom '+r1+'-2'+('b' if GetWeekday(day) == 6 else 'a')+mgg.dress)
+                    # $ renpy.show('Ann hugging morning-annroom '+r1+'-2'+('b' if weekday == 6 else 'a')+mgg.dress)
+                    scene Ann_gift hug2
                     $ AddRelMood('ann', 0, 200)
                     $ AttitudeChange('ann', 0.9)
                     menu:
@@ -544,7 +551,7 @@ label ann_dressed:
 
     label .fail:
         $ _text = failed if open else ""
-        if GetWeekday(day) == 6:
+        if weekday == 6:
             Ann_01 "[_text!t]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь." nointeract
         else:
             Ann_01 "[_text!t]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами." nointeract
@@ -568,332 +575,190 @@ label ann_dressed:
         $ setting_clothes_by_conditions()
         $ infl[ann].add_m(40, True)
         $ mood = 0
+        $ prev_room = house[2]
+        $ current_room = house[5]  # Макс выходит на веранду
+        jump .end
+
+    label .balcony:
+        $ renpy.dynamic('lvl')
+        # $ ann.hourly.dressed = 1
+        $ lvl = get_ann_emancipation()
+        $ mood = 0
+
+        # annroom-wardrobe-mde-01
+        scene Ann_dressing empty
+        Max_07 "{m}Хм... Должно быть мама на балконе...{/m}"
+
+        if any([
+            all([tm>='10:30', 6 > weekday > 0, not ann.flags.showdown_e]),   # 1-ый разговор (только в рабочие дни)
+            all([tm>='10:30', 6 > weekday > 0, ann.flags.showdown_e == 1, ann.dcv.other.done]),   # 2-ой разговор (в рабочие дни или воскресенье), не раньше, чем через 5 дней после 1-ого разговора на балконе
+            all(['11:00'>tm>='10:00', weekday == 0, ann.flags.showdown_e == 1, ann.dcv.other.done]),   # 2-ой разговор (в рабочие дни или воскресенье), не раньше, чем через 5 дней после 1-ого разговора на балконе
+                                                            ]):
+            # если рабочий день и Анна одета
+            # annroom-balcony-md-01 + annroom-balcony-md-01-ann-dresses-01a
+            $ get_ann_dress('b0')
+            scene Ann_dressing balcony zero
+            Max_09 "{m}То ли мама просто задумалась, то ли грустит...{/m}" nointeract
+            menu:
+                "Мам, всё нормально?":
+                    # annroom-balcony-md-01 + annroom-wardrobe-mde-01-ann-dresses-07a
+                    scene Ann_dressing balcony
+                    Ann_12 "Ой, Макс! Ты слишком тихо ходишь. А я так, ничего, просто задумалась немного..."
+                    Max_07 "Расскажешь, о чём?"
+                    if not ann.flags.showdown_e:
+                        jump .balkon_talk1
+                    elif ann.flags.showdown_e == 1:
+                        jump .balkon_talk2
+
+                "{i}уйти{/i}":
+                    jump .end
+        else:
+            # annroom-balcony-md-01 + annroom-balcony-md-01-ann-dresses-(01/01c2)   #если рабочий день и Анна ещё не одета
+            $ get_ann_dress('b')
+            scene Ann_dressing balcony zero
+            Max_05 "{m}Оу! Мама ещё не оделась... Это я вовремя зашёл. Она шикарно смотрится...{/m}" nointeract
+            menu:
+                "Мам?":
+                    # annroom-balcony-md-01 + прикрывания
+                    # дальше текст, как в переодеваниях НЕ ПОВЕЗЛО по уровням
+                    $ get_ann_dress(1, var_pose)
+                    scene Ann_dressing balcony
+                    if lvl == 1:
+                        Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+                        jump .lvl_1
+                    elif lvl == 2:
+                        Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+                        jump .lvl_2
+
+                "{i}продолжить смотреть{/i}":
+                    #annroom-balcony-md-01 + 3 сек задержки
+                    #дальше текст, как в переодеваниях ПОВЕЗЛО по уровням
+                    scene Ann_dressing balcony
+                    if lvl == 1:
+                        Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
+                    elif lvl == 2:
+                        Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
+                    $ get_ann_dress(1, var_pose)
+                    if lvl == 1:
+                        Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+                        jump .lvl_1
+                    elif lvl == 2:
+                        Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+                        jump .lvl_2
+
+                "{i}уйти{/i}":
+                    jump .end
+
+    label .balkon_talk1:
+        # 1-ый разговор (только в рабочие дни)
+        # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-01 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+        $ var_pose = '01'
+        scene Ann_dressing talk
+        Ann_14 "У меня сейчас такое состояние, что я не знаю, как мне жить дальше... Я... Я ужасная мать..."
+        Max_08 "Что?! Как ты можешь такое говорить?"
+        Ann_13 "А разве нет? Я... Я была так глупа, что привела в дом проходимца, который не только воспользовался мной, но и чуть не совратил моих девочек!"
+        Max_09 "Мам, прекрати, это уже всё в прошлом... Забудь..."
+        Ann_14 "Забыть? Забыть, как я чуть не отправила единственного сына в военный лагерь и... который один оказался настолько умным и благородным, что не только не разозлился на меня, а наоборот, спас всю семью от этого ублюдка Эрика."
+        Max_07 "Ну хватит... Было и было. Прими и сделай выводы. Нельзя же всё время теперь ходить такой печальной и заниматься самобичеванием. Ты ни в чём не виновата!"
+        Ann_17 "Возможно ты прав, но... присутствие Эрика на работе постоянно мне напоминает о тех событиях и мне это ужасно неприятно."
+        Max_15 "Да и чёрт с ним! Просто игнорируй его. К тому же, у тебя есть мы, и мы все тебя очень любим!"
+        Ann_02 "Спасибо, мой хороший, за твои тёплые слова и поддержку, мне очень приятно это слышать."
+        Max_04 "Не стоит благодарить, мам. Я очень тебя люблю! Ты самая замечательная мама на свете! Самая добрая и самая красивая!"
+        # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-02 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+        $ var_pose = '02'
+        Ann_04 "Ой! Вот же ты маленький льстец, Макс!"
+        Max_07 "Это я-то маленький?"
+        Ann_05 "Ну, конечно, ты большой, Макс! Совсем взрослый, почти мужчина."
+        Max_09 "Что значит почти?"
+        Ann_07 "Ну... То и значит, что полноценным мужчиной ты станешь только после того, как у тебя появится девушка."
+        Max_08 "Серьёзно? А поподробнее можно узнать, как и что делать с ней, чтобы стать мужчиной?"
+        Ann_02 "Макс, что за вопросы? Как будто ты до сих пор не знаешь."
+        Max_02 "Да это я просто так спросил... Теперь ты уже не такая печальная и задумчивая, как до моего прихода."
+        Ann_05 "Вот же ты хитрец! Нашёл чем меня отвлечь..."
+        Max_03 "Могу отвлечь чем-нибудь приятным. Например, массажем спины. Думаю, это тебе бы сейчас помогло. Хочешь?"
+        Ann_04 "Нет, Макс, сейчас мне некогда. Давай вечерком, сынок, у ТВ."
+        Max_01 "Договорились, мам. И не забывай, если что, я всегда рядом. Обращайся!"
+        Ann_01 "Обязательно!" nointeract
+        menu:
+            "{i}уйти{/i}":
+                $ spent_time = 20
+                $ ann.flags.showdown_e = 1
+                $ ann.dcv.other.set_lost(6)
+                $ prev_room = house[2]
+                $ current_room = house[5]  # Макс выходит на веранду
+                $ infl[ann].add_m(20, True)
+                $ poss['boss'].open(2)
+                $ mood = 100
+                jump .end
+
+    label .balkon_talk2:
+        # 2-ой разговор (в рабочие дни или воскресенье)
+        #не раньше, чем через 5 дней после 1-ого разговора на балконе
+        # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-01 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+        $ var_pose = '01'
+        scene Ann_dressing talk
+        Ann_14 "Это всё моя работа... Присутствие Эрика делает её просто невыносимой."
+        Max_15 "Он пристаёт к тебе?"
+        Ann_18 "Нет, но его ехидная ухмылочка и постоянные намёки о возможных неприятностях, если я вдруг попытаюсь уволиться, сводят меня с ума."
+        Max_09 "Просто постарайся не обращать на него внимание."
+        Ann_12 "Вряд ли это возможно, сынок, он же мой начальник." nointeract
+        menu:
+            "{i}приобнять маму за попку{/i}":
+                pass
+
+        # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-03 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+        $ var_pose = '03'
+        Ann_13 "Макс, ты что это делаешь? За зад меня обнимаешь?!"
+        Max_07 "Ну да. Это я так приободрить тебя решил. Если бы он действительно хотел тебе что-то сделать, то он бы уже давно это сделал."
+        Ann_17 "Сынок, такое вот твое приободрение не работает. Оно меня скорее смущает..."
+
+        # annroom-balcony-md-02 + annroom-balcony-md-02-max&ann-02 + Одежда (Анна перекрывает Макса) + annroom-balcony-md-02a
+        $ var_pose = '02'
+        Max_09 "Ладно, уберу... Просто Эрику нравится играть на нервах, вот и всё, что он может сделать."
+        Ann_12 "Возможно так и есть, но... мне бы очень не хотелось искушать судьбу... это ведь может отразиться и на вас, моих детях, а вы для меня самое дорогое."
+        Max_10 "Ты тоже самое дорогое для меня... для нас... И нам бы не хотелось видеть тебя такой печальной, мам."
+        Ann_02 "Спасибо, Макс. Мне очень приятно это слышать. Как хорошо, что у меня есть такой внимательный и заботливый сын."
+        Max_07 "В любом случае, если ты захочешь сменить место работы и у нас, вдруг, появятся сложности с деньгами, мы все тебя поймём и поддержим."
+        Ann_04 "Спасибо, мой хороший, я подумаю об этом..."
+        Max_09 "Обязательно подумай. Нужно покончить с этим прошлым раз и навсегда!"
+        Ann_05 "Хм... Глядя на тебя в последнее время, я вижу, что ты очень повзрослел."
+        Max_04 "Ну, тебе виднее."
+        Ann_08 "Так и есть. И мне нравится то, что я вижу..."
+        Max_03 "Главное не унывай, мам. Всё образуется."
+        Ann_07 "Хорошо! Спасибо, что поддержал меня и развеял тоску."
+        Max_01 "Пожалуйста! Если что, я всегда рядом. Обращайся!"
+        Ann_01 "Обязательно!" nointeract
+
+        menu:
+            "{i}уйти{/i}":
+                $ spent_time = 20
+                $ ann.flags.showdown_e = 2
+                $ ann.dcv.other.set_lost(6)
+                $ infl[ann].add_m(20, True)
+                $ poss['boss'].open(3)
+                $ mood = 100
+
+        # after-breakfast + ad-max-(00a/00b)
+        scene BG after-breakfast
+        $ renpy.show("Max talk-terrace 00"+mgg.dress)
+        Max_09 "{m}Смущают её мои прикосновения... Ясно. Значит, нужно больше прикасаться тогда, когда это максимально естественно, чтобы она привыкла. Пожалуй, йога - то, что нужно! Стоит попробовать...{/m}"
+
+        $ prev_room = house[2]
+        $ current_room = house[5]  # Макс выходит на веранду
         jump .end
 
     label .end:
+        $ ann.hourly.dressed = 1
         $ ann.prev_plan = ann.plan_name
         $ AddRelMood('ann', 0, mood)
         jump Waiting
 
 
-# label ann_dressed_work:
-#     scene location house annroom door-morning
-#     if ann.hourly.dressed != 0:
-#         return
-#     $ ann.hourly.dressed = 1
-#     $ __mood = 0
-#     menu:
-#         Max_09 "{m}Сейчас 10 часов, а значит, мама собирается на работу...{/m}"
-#         "{i}постучаться{/i}":
-#             menu:
-#                 Ann "{b}Анна:{/b} Кто там?"
-#                 "Это я, Макс. Можно войти?"  if not items['nightie'].have:
-#                     Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
-#                     Max_00 "Хорошо, мам."
-#                     jump .end
-#                 "Это я, Макс. Можно войти? У меня для тебя кое-что есть." if items['nightie'].have:
-#                     Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на работу. Подожди немного, дорогой."
-#                     Max_00 "Хорошо, мам."
-#                     $ __open = False
-#                     jump .gift
-#                 "{i}уйти{/i}":
-#                     jump .end
-#         "{i}открыть дверь{/i}":
-#             scene BG char Ann mde-01
-#             $ __list = ['01', '01a', '02', '02a', '03', '03a', '01', '01a', '02', '02a', '03', '03a', '04']
-#             if ann.dress=='d':
-#                 $ __list.extend(['06', '07', '07a'])
-#             $ __ran1 = renpy.random.choice(__list)
-#             $ __open = True
-#             $ renpy.show('Ann dressed '+__ran1)
-#             $ ann.dress_inf = {'01':'02',  '01a':'02e', '02':'02b', '02a':'02d', '03':'02a', '03a':'02c', '04':'00', '06':'2g', '07':'2i', '07a':'2h'}[__ran1]
-#             menu:
-#                 Ann_13 "Макс! Я же учила тебя стучаться!"
-#                 "Хорошо выглядишь, мам!":
-#                     $ __mood += 30
-#                     Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
-#                     Max_00 "Конечно, мам!"
-#                 "У меня для тебя кое-что есть." if items['nightie'].have:
-#                     Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
-#                     Max_00 "Конечно, мам!"
-#                     scene location house annroom door-morning
-#                     Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
-#                     jump .gift
-#                 "Зачётные сиськи!":
-#                     $ __mood -= 30
-#                     Ann_19 "Что?! Макс! А ну-ка быстро выйди и закрой дверь!"
-#                     Max_00 "Как скажешь, мам..."
-#                 "Ой, извини. Я забыл...":
-#                     $ __mood -= 10
-#                     Ann_07 "Ну, бывает. Я сама ещё не привыкла к тому, что замков нигде нет. Ладно, дорогой. Подожди за дверью, пока мама одевается. хорошо?"
-#                     Max_00 "Хорошо, мам..."
-#             $ AddRelMood('ann', 0, __mood)
-#             jump .end
-#         "{i}заглянуть в окно{/i}":
-#             $ __list = ['01', '01a', '02', '03', '03a', '04']
-#             if ann.dress=='d':
-#                 $ __list.extend(['05', '06', '06a'])
-#             $ __ran1 = renpy.random.choice(__list)
-#             $ ann.dress_inf = {'01':'02e', '01a':'02c', '02':'02d', '03':'02', '03a':'02a', '04':'02b', '05':'2g', '06':'2i', '06a':'2h'}[__ran1]
-#
-#             if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
-#                 scene BG char Ann voyeur-01
-#                 $ renpy.show('Ann voyeur alt-'+__ran1)
-#                 $ renpy.show('FG voyeur-morning-01'+mgg.dress)
-#             else:
-#                 scene BG char Ann voyeur-00
-#                 $ renpy.show('Ann voyeur '+__ran1)
-#                 $ renpy.show('FG voyeur-morning-00'+mgg.dress)
-#
-#             $ Skill('hide', 0.03, 10)
-#             Max_01 "{m}Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!{/m}"
-#             jump .end
-#         "{i}уйти{/i}":
-#             jump .end
-#
-#     label .gift:
-#         scene BG char Ann mde-01
-#         show Ann dressed 07a # 05
-#         Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
-#         Max_04 "У меня для тебя подарок! Ночнушка!"
-#         Ann_06 "Ты это серьёзно? Но в честь чего?"
-#         Max_05 "Просто ты - самая лучшая мама на свете!"
-#         Ann_08 "Ох, Макс, ты мне льстишь! Это так... неожиданно! Спасибо тебе мой милый, я очень тронута!"
-#         Max_03 "Может, примеришь?"
-#         Ann_06 "Примерить? Для тебя? Ну... ладно... Думаю, ты это заслужил. Подожди, пожалуйста, за дверью..."
-#         Max_01 "Хорошо, мам."
-#         scene location house annroom door-morning
-#         Ann "{b}Анна:{/b} Ничего себе, она полупрозрачная! Дорогой, ты же понимаешь, что твоя мама не может показаться в этом перед сыном..."
-#         Max_10 "Тебе не понравился подарок?!"
-#         Ann "{b}Анна:{/b} Нет, мне очень нравится! Это прекрасный подарок! Только вот, тебе не кажется, что ты ещё слишком мал, чтобы делать подобные подарки?"
-#         Max_09 "Я уже большой, мам! Я же от души!"
-#         Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
-#         Max_02 "Думаю, смотрится она на тебе просто фантастически!"
-#         scene BG char Ann mde-01
-#         show Ann dressed 07a # 05
-#         Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
-#         $ __r1 = renpy.random.choice(['01', '02'])
-#         $ renpy.show('Ann hugging morning-annroom '+__r1+'-1a'+mgg.dress)
-#         Max_05 "{m}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/m}"
-#         $ renpy.show('Ann hugging morning-annroom '+__r1+'-2a'+mgg.dress)
-#         $ spent_time += 10
-#         menu:
-#             Ann_04 "Ну всё, мой дорогой, мне уже скоро на работу и нужно успеть сделать ещё кое-какие дела..."
-#             "Ну мам! Этого было так мало, давай ещё..." ('soc', mgg.social * 3, 90) if not __open:
-#                 if rand_result:
-#                     $ spent_time += 10
-#                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-#                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-3a'+mgg.dress)
-#                     Max_06 "{m}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/m}"
-#                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-2a'+mgg.dress)
-#                     $ AddRelMood('ann', 0, 200)
-#                     $ AttitudeChange('ann', 0.9)
-#                     menu:
-#                         Ann_04 "А теперь иди, сынок... Пора заниматься делами."
-#                         "Хорошо... Я тебя люблю, мам!":
-#                             jump .loveyou
-#                         "Конечно, мам! Хорошего тебе дня...":
-#                             jump .goodday
-#                 else:
-#                     $ AddRelMood('ann', 0, 170)
-#                     $ AttitudeChange('ann', 0.8)
-#                     jump .fail
-#
-#             "Ну мам! Этого было так мало, давай ещё..." if __open:
-#                 $ AddRelMood('ann', 0, 150)
-#                 $ AttitudeChange('ann', 0.7)
-#                 jump .fail
-#             "Конечно, мам! Хорошего тебе дня...":
-#                 jump .goodday
-#     label .fail:
-#         $ _text = failed if __open else ""
-#         menu:
-#             Ann_01 "[_text!t]Макс, я так на работу не успею собраться... Давай, сынок, иди... Пора заниматься делами."
-#             "Хорошо... Я тебя люблю, мам!":
-#                 jump .loveyou
-#             "Конечно, мам! Хорошего тебе дня...":
-#                 jump .goodday
-#
-#     label .loveyou:
-#         Ann_07 "И я тебя, Макс..."
-#         jump .endgift
-#
-#     label .goodday:
-#         Ann_02 "Спасибо, сынок! И тебе тоже..."
-#         jump .endgift
-#
-#     label .endgift:
-#         $ items['nightie'].give()
-#         $ ann.gifts.append('nightie')
-#         $ setting_clothes_by_conditions()
-#         $ infl[ann].add_m(40, True)
-#         jump .end
-#
-#     label .end:
-#         $ spent_time += 10
-#         jump Waiting
-
-
-# label ann_dressed_shop:
-#     scene location house annroom door-morning
-#     if ann.hourly.dressed != 0:
-#         return
-#
-#     $ ann.hourly.dressed = 1
-#     $ __mood = 0
-#     menu:
-#         Max_09 "{m}Сегодня суббота, день шоппинга. Видимо, мама собирается...{/m}"
-#         "{i}постучаться{/i}":
-#             menu:
-#                 Ann "{b}Анна:{/b} Кто там?"
-#                 "Это я, Макс. Можно войти?" if not items['nightie'].have:
-#                     Ann "{b}Анна:{/b} Нет, Макс. Я переодеваюсь. Подожди немного, дорогой."
-#                     Max_00 "Хорошо, мам."
-#                 "Это я, Макс. Можно войти? У меня для тебя кое-что есть." if items['nightie'].have:
-#                     Ann "{b}Анна:{/b} Макс, я не одета. Собираюсь на шопинг. Подожди немного, дорогой."
-#                     Max_00 "Хорошо, мам."
-#                     $ __open = False
-#                     jump .gift
-#                 "{i}уйти{/i}":
-#                     pass
-#             jump .end
-#         "{i}открыть дверь{/i}":
-#             scene BG char Ann mde-01
-#             $ __list = ['01', '02', '03', '04']
-#             if ann.dress=='d':
-#                 $ __list.extend(['06', '07', '07a'])
-#             $ __ran1 = renpy.random.choice(__list)
-#             $ __open = True
-#             $ renpy.show('Ann dressed '+__ran1)
-#             $ ann.dress_inf = {'01':'02', '02':'02b', '03':'02a', '04':'00', '06':'2g', '07':'2i', '07a':'2h'}[__ran1]
-#             menu:
-#                 Ann_13 "Макс! Я же учила тебя стучаться!"
-#                 "Хорошо выглядишь, мам!":
-#                     $ __mood += 30
-#                     Ann_12 "Спасибо, конечно. Но... Макс, не мог бы ты подождать за дверью, пока я оденусь?"
-#                     Max_00 "Конечно, мам!"
-#                 "У меня для тебя кое-что есть." if items['nightie'].have:
-#                     Ann_12 "Очень здорово, Макс! Но сначала, ты закроешь дверь и я спокойно переоденусь, а уже после этого посмотрим, что у тебя там такое срочное..."
-#                     Max_00 "Конечно, мам!"
-#                     scene location house annroom door-morning
-#                     Max_00 "{m}Пожалуй, не стоило вот так врываться к маме... Надеюсь, подарок всё сгладит.{/m}"
-#                     jump .gift
-#                 "Ой, извини...":
-#                     Ann_07 "И Макс... Постарайся больше не входить без стука, хорошо?"
-#                     Max_00 "Хорошо, мам..."
-#             $ AddRelMood('ann', 0, __mood)
-#             jump .end
-#         "{i}заглянуть в окно{/i}":
-#             $ __list = ['03', '03a', '04']
-#             if ann.dress=='d':
-#                 $ __list.extend(['05', '06', '06a'])
-#             $ __ran1 = renpy.random.choice(__list)
-#             $ ann.dress_inf = {'03':'02', '03a':'02a', '04':'02b', '05':'2g', '06':'2i', '06a':'2h'}[__ran1]
-#
-#             if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
-#                 scene BG char Ann voyeur-01
-#                 $ renpy.show('Ann voyeur alt-'+__ran1)
-#                 $ renpy.show('FG voyeur-morning-01'+mgg.dress)
-#             else:
-#                 scene BG char Ann voyeur-00
-#                 $ renpy.show('Ann voyeur '+__ran1)
-#                 $ renpy.show('FG voyeur-morning-00'+mgg.dress)
-#
-#             $ Skill('hide', 0.03, 10)
-#             Max_01 "{m}Ничего себе, вот это зрелище! Это я удачно выбрал момент... Но пора уходить, а то вдруг увидит меня в зеркало!{/m}"
-#             jump .end
-#         "{i}уйти{/i}":
-#             jump .end
-#
-#     label .gift:
-#         scene BG char Ann mde-01
-#         show Ann dressed 05a
-#         Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
-#         Max_04 "У меня для тебя подарок! Ночнушка!"
-#         Ann_06 "Ты это серьёзно? Но в честь чего?"
-#         Max_05 "Просто ты - самая лучшая мама на свете!"
-#         Ann_08 "Ох, Макс, ты мне льстишь! Это так... неожиданно! Спасибо тебе мой милый, я очень тронута!"
-#         Max_03 "Может, примеришь?"
-#         Ann_06 "Примерить? Для тебя? Ну... ладно... Думаю, ты это заслужил. Подожди, пожалуйста, за дверью..."
-#         Max_01 "Хорошо, мам."
-#         scene location house annroom door-morning
-#         Ann "{b}Анна:{/b} Ничего себе, она полупрозрачная! Дорогой, ты же понимаешь, что твоя мама не может показаться в этом перед сыном..."
-#         Max_10 "Тебе не понравился подарок?!"
-#         Ann "{b}Анна:{/b} Нет, мне очень нравится! Это прекрасный подарок! Только вот, тебе не кажется, что ты ещё слишком мал, чтобы делать подобные подарки?"
-#         Max_09 "Я уже большой, мам! Я же от души!"
-#         Ann "{b}Анна:{/b} Ох, Макс, ты меня смущаешь, такой откровенный подарок, да ещё родной матери... Но всё равно, я очень это ценю... и ещё раз огромное спасибо!"
-#         Max_02 "Думаю, смотрится она на тебе просто фантастически!"
-#         scene BG char Ann mde-01
-#         show Ann dressed 05a
-#         Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
-#         $ __r1 = renpy.random.choice(['01', '02'])
-#         $ renpy.show('Ann hugging morning-annroom '+__r1+'-1b'+mgg.dress)
-#         Max_05 "{m}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/m}"
-#         $ renpy.show('Ann hugging morning-annroom '+__r1+'-2b'+mgg.dress)
-#         $ spent_time += 10
-#         menu:
-#             Ann_04 "Ну всё, мой дорогой, нам с девочками ещё нужно успеть пробежаться по магазинам сегодня..."
-#             "Ну мам! Этого было так мало, давай ещё..." ('soc', mgg.social * 3, 90) if not __open:
-#                 if rand_result:
-#                     $ spent_time += 10
-#                     Ann_05 "[succes!t]Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
-#                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-3b'+mgg.dress)
-#                     Max_06 "{m}Ого! Это даже больше того, на что я надеялся... И не менее приятно чувствовать прикосновение её губ на своём лице! Блаженно...{/m}"
-#                     $ renpy.show('Ann hugging morning-annroom '+__r1+'-2b'+mgg.dress)
-#                     $ AddRelMood('ann', 0, 200)
-#                     $ AttitudeChange('ann', 0.9)
-#                     menu:
-#                         Ann_04 "А теперь иди, сынок... Пора заниматься делами."
-#                         "Хорошо... Я тебя люблю, мам!":
-#                             jump .loveyou
-#                         "Конечно, мам! Хорошего тебе дня...":
-#                             jump .goodday
-#                 else:
-#                     $ AddRelMood('ann', 0, 170)
-#                     $ AttitudeChange('ann', 0.8)
-#                     jump .fail
-#
-#             "Ну мам! Этого было так мало, давай ещё..." if __open:
-#                 $ AddRelMood('ann', 0, 150)
-#                 $ AttitudeChange('ann', 0.7)
-#                 jump .fail
-#             "Конечно, мам! Хорошего тебе дня...":
-#                 jump .goodday
-#     label .fail:
-#         $ _text = failed if __open else ""
-#         menu:
-#             Ann_01 "[_text!t]Макс, мне нужно ещё успеть сделать кое-какие дела... Давай, сынок, иди... Займись чем-нибудь."
-#             "Хорошо... Я тебя люблю, мам!":
-#                 jump .loveyou
-#             "Конечно, мам! Хорошего тебе дня...":
-#                 jump .goodday
-#
-#     label .loveyou:
-#         Ann_07 "И я тебя, Макс..."
-#         jump .endgift
-#
-#     label .goodday:
-#         Ann_02 "Спасибо, сынок! И тебе тоже..."
-#         jump .endgift
-#
-#     label .endgift:
-#         $ items['nightie'].give()
-#         # $ items['nightie'].have = False
-#         # $ items['nightie'].InShop = False
-#         $ ann.gifts.append('nightie')
-#         $ setting_clothes_by_conditions()
-#         # $ ann.clothes.sleep.sel.append(Garb('b', '02f', 'НОЧНУШКА', True))
-#         # $ ann.clothes.sleep.cur = 1
-#         # $ ann.clothes.sleep.rand = True
-#         $ infl[ann].add_m(40, True)
-#         jump .end
-#
-#     label .end:
-#         $ spent_time += 10
-#         jump Waiting
-
-
 label ann_resting:
+
+    if all([not ann.hourly.dressed, '11:00' > tm >= '10:00', ann.flags.showdown_e == 1, ann.dcv.other.done]): # 2-ой разговор (в рабочие дни или воскресенье), не раньше, чем через 5 дней после 1-ого разговора на балконе
+        jump ann_dressed.balcony
+
     if tm < '19:00':
         scene BG char Ann relax-morning-01
         $ renpy.show('Ann relax-morning '+pose3_3+ann.dress)

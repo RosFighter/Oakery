@@ -78,6 +78,8 @@ default expected_photo = []
 
 default purchased_items = []
 default var_pose = '02'
+default var_stage = '01'
+default var_dress = ''
 
 define cam_flag = []
 define cam_list = []
@@ -174,7 +176,7 @@ define talks = {
     'ann.kiss'      : TalkTheme('ann', _("Мам, а как учатся целоваться?"), 'ann_about_kiss', "all([lisa.dcv.seduce.stage==1, 'ann' not in flags.how_to_kiss])"),
     'ann.secr1'     : TalkTheme('ann', _("Мам, Кира отправила меня к тебе..."), 'ann_about_ann_secret1', "ann.dcv.feature.stage==1"),
     'ann.yoga0'     : TalkTheme('ann', _("С тобой можно?"), 'ann_yoga_with_max0', "all([ann.plan_name=='yoga', ann.dcv.feature.stage==4, ann.dcv.feature.done])"),
-    'ann.yoga1'     : TalkTheme('ann', _("Я присоединюсь?"), 'ann_yoga_with_maxr', "all([ann.plan_name=='yoga', ann.dcv.feature.stage>4, ann.dcv.feature.done])"),
+    'ann.yoga1'     : TalkTheme('ann', _("Я присоединюсь?"), 'ann_yoga_with_maxr', "all([ann.plan_name=='yoga', ann.dcv.feature.stage>4, ann.dcv.feature.done, ann.dcv.seduce.done])"),
     'm.wallet'      : TalkTheme('ann', "Да не крал я у него ничего! Он всех обманывает!", 'ann_about_wallet', "all([flags.eric_wallet == 2, not ann.flags.talkblock])"),
     'm.olivia.0'    : TalkTheme('ann', _("Мам, нужно поговорить об Оливии."), 'ann_about_olivia0', "all([olivia.flags.incident > 1, lisa.flags.showdown_e == 3, ann.plan_name != 'yoga'])"),     # девчонки хотя бы раз намазывались кремом
     'm.olivia.1'    : TalkTheme('ann', _("Мам, ты подумала об Оливии?"), 'ann_about_olivia1', "all([lisa.flags.showdown_e == 4, ann.dcv.special.done, ann.plan_name != 'yoga'])"),     # первая попытка убедить Анну провалилась

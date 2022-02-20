@@ -390,9 +390,9 @@ label olivia_second_sunscreen:
 
     $ kol_cream -= 2
     if kol_cream < 2:
-        call left_cream         ## солнцезащитный крем закончился
+        call left_cream from _call_left_cream_6         ## солнцезащитный крем закончился
     elif kol_cream < 4:
-        call left_cream(1)      ## осталось мало крема
+        call left_cream(1) from _call_left_cream_7      ## осталось мало крема
 
     $ olivia.flags.incident = 3
     $ spent_time += 20
@@ -423,7 +423,7 @@ label olivia_third_sunscreen:
     Olivia_08 "О да! А у тебя, Макс, руки сильнее, чем может показаться. Можно даже представить, что мы на пляже и с нами персональный массажист."
     Max_02 "Ну, если тебя это заводит..."
     Lisa_01 "О, ну всё... Точно тебе говорю, скоро Макс начнёт распускать руки."
-    Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты Макс уже оживился."
+    Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты, Макс, уже оживился."
     Max_04 "Это потому что у тебя такая нежная кожа... Я же не сильно давлю?"
 
     ###(sun2-01 + sun2-01-max&olivia-02 + одежда Макса) или ---------------- (04-02)
@@ -468,9 +468,9 @@ label olivia_third_sunscreen:
 
     $ kol_cream -= 2
     if kol_cream < 2:
-        call left_cream         ## солнцезащитный крем закончился
+        call left_cream from _call_left_cream_8         ## солнцезащитный крем закончился
     elif kol_cream < 4:
-        call left_cream(1)      ## осталось мало крема
+        call left_cream(1) from _call_left_cream_9      ## осталось мало крема
 
     $ olivia.flags.incident = 4
     $ olivia.flags.m_back = 1
@@ -743,9 +743,9 @@ label olivia_repeat_sunscreen:
 
     $ kol_cream -= 2
     if kol_cream < 2:
-        call left_cream         ## солнцезащитный крем закончился
+        call left_cream from _call_left_cream_10         ## солнцезащитный крем закончился
     elif kol_cream < 4:
-        call left_cream(1)      ## осталось мало крема
+        call left_cream(1) from _call_left_cream_11      ## осталось мало крема
 
     $ olivia.flags.m_back += 1
     $ olivia.flags.handmass = 1     # теперь можно дать девушкам крем, чтобы они намазались сами
@@ -812,9 +812,9 @@ label olivia_give_sunscreen:
 
     $ kol_cream -= 2
     if kol_cream < 2:
-        call left_cream         ## солнцезащитный крем закончился
+        call left_cream from _call_left_cream_12         ## солнцезащитный крем закончился
     elif kol_cream < 4:
-        call left_cream(1)      ## осталось мало крема
+        call left_cream(1) from _call_left_cream_13      ## осталось мало крема
 
     $ olivia.flags.handmass = 0     # недоступно, пока Макс снова не намажет девушек
     $ spent_time += 20

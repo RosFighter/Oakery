@@ -826,7 +826,7 @@ translate german eric_ann_shower_ladder_2ca95f17:
 translate german eric_ann_shower_ladder_c4969be1:
 
     # Max_10 "{m}Ого! Эрик долбит маму сзади с такой силой, что через стекло даже слышны шлепки о её попку! Похоже, она еле сдерживается, чтобы не кричать слишком громко...{/m}"
-    Max_10 "{m}Wow! Eric schlägt Mom mit solcher Wucht auf den Rücken, dass man sogar den Schlag auf ihren Arsch durch die Scheibe hören kann! Sieht aus, als könne sie sich kaum zurückhalten, nicht zu laut zu schreien...{/m}"
+    Max_10 "{m}Wow! Eric nimmt Mom so heftig von hinten, dass man sogar den Klatzschen vom ihrem Arsch durch die Scheibe hören kann! Sieht aus, als könne sie sich kaum zurückhalten, nicht zu laut zu schreien...{/m}"
 
 # game/events/eric.rpy:859
 translate german eric_ann_shower_fin1_6b60f91d:

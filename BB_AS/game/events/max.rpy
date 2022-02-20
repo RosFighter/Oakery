@@ -27,7 +27,7 @@ label StartDialog:
 
 label Sleep:
     $ renpy.block_rollback()
-    scene BG char Max bed-night-01
+    scene Max sleep myroom-bedmax-n-01
     menu:
         Max_00 "{m}Пожалуй, пора ложиться спать...{/m}"
         "{i}установить будильник{/i}" if mgg.energy>40:
@@ -40,8 +40,7 @@ label Sleep:
 
         "{i}спать до утра{/i}":
             $ alarm_time = '08:00'
-    $ renpy.show('Max sleep-night '+pose3_3)
-    $ renpy.show('cloth1 Max sleep-night '+pose3_3)
+    scene Max_sleep with diss5
 
     call bedtime_thoughts from _call_bedtime_thoughts
 
@@ -58,9 +57,10 @@ label Sleep:
 label Wearied:
     $ renpy.block_rollback()
     # прождали все доступное время - спим до восьми
-    scene BG char Max bed-night-01
-    $ renpy.show('Max sleep-night '+pose3_1)
-    $ renpy.show('cloth1 Max sleep-night '+pose3_1)
+    # scene BG char Max bed-night-01
+    # $ renpy.show('Max sleep-night '+pose3_1)
+    # $ renpy.show('cloth1 Max sleep-night '+pose3_1)
+    scene Max_sleep with diss5
     menu:
         Max_10 "{m}Моя голова уже совсем не соображает, нужно ложиться спать...{/m}"
         "{i}спать до утра{/i}":
@@ -78,17 +78,19 @@ label Wearied:
 label LittleEnergy:
     $ renpy.block_rollback()
     if '11:00' < tm <= '19:00':
-        scene BG char Max bed-mde-01
+        scene Max sleep myroom-bedmax-mde-01
     else:
-        scene BG char Max bed-night-01
+        scene Max sleep myroom-bedmax-n-01
     menu:
         Max_10 "{m}Я слишком вымотался, нужно хоть немного вздремнуть...{/m}"
         "{i}вздремнуть{/i}":
             if '11:00' < tm <= '19:00':
-                $ renpy.show('Max nap '+pose3_1+mgg.dress)
+                # $ renpy.show('Max nap '+pose3_1+mgg.dress)
+                scene Max_sleep mde with diss5
             else:
-                $ renpy.show('Max sleep-night '+pose3_1)
-                $ renpy.show('cloth1 Max sleep-night '+pose3_1)
+                # $ renpy.show('Max sleep-night '+pose3_1)
+                # $ renpy.show('cloth1 Max sleep-night '+pose3_1)
+                scene Max_sleep with diss5
                 call bedtime_thoughts from _call_bedtime_thoughts_1
 
             Max_19 "{m}Как же в этом доме хорошо...{/m}"
@@ -109,7 +111,7 @@ label LittleEnergy:
 
 label Nap:
     $ renpy.block_rollback()
-    scene BG char Max bed-mde-01
+    scene Max sleep myroom-bedmax-mde-01
     if mgg.energy > 40.0:
         Max_00 "{m}Я сейчас не очень хочу спать, но немного вздремнуть лишним не будет...{/m}" nointeract
     else:
@@ -127,8 +129,9 @@ label Nap:
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
 
-    $ renpy.show('Max nap ' + pose3_1)
-    $ renpy.show('cloth1 Max nap ' + pose3_1 + mgg.dress)
+    # $ renpy.show('Max nap ' + pose3_1)
+    # $ renpy.show('cloth1 Max nap ' + pose3_1 + mgg.dress)
+    scene Max_sleep mde with diss5
     Max_19 "{m}Как же в этом доме хорошо...{/m}"
     $ status_sleep = True
     jump Waiting
@@ -136,7 +139,7 @@ label Nap:
 
 label Alarm:
     $ renpy.block_rollback()
-    scene BG char Max bed-night-01
+    scene Max sleep myroom-bedmax-n-01
     menu:
         Max_00 "{m}В каком часу мне будет лучше проснуться?{/m}"
         "{i}в 6 утра{/i}":
@@ -145,8 +148,9 @@ label Alarm:
             $ alarm_time = '07:00'
         "{i}не-а, может позже...{/i}":
             jump AfterWaiting
-    $ renpy.show('Max sleep-night '+pose3_2)
-    $ renpy.show('cloth1 Max sleep-night '+pose3_2)
+    # $ renpy.show('Max sleep-night '+pose3_2)
+    # $ renpy.show('cloth1 Max sleep-night '+pose3_2)
+    scene Max_sleep with diss5
 
     call bedtime_thoughts from _call_bedtime_thoughts_2
 
@@ -673,7 +677,7 @@ label BookRead:
                 $ items['sex.ed'].block()
             Max_01 "Ага. У каждого есть свои особенности, а то я не знал! Вот, строение половых органов девочки-подростка, то что надо... Будем читать и разглядывать.\n\n{color=[orange]}{i}(Книга изучена на 25%%){/i}{/color}"
         elif items['sex.ed'].read < 3:
-            Max_03 "Так, это не особо интересно... А вот сексуальное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}" id BookRead_sex_ed_2c2e756a
+            Max_03 "Так, это не особо интересно... А вот сексуальное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
         elif items['sex.ed'].read < 4:
             Max_07 "Ого, здесь даже есть краткий исторический очерк о сексуальном воспитании детей и подростков... Как только голову не дурили за всё это время!\n\n{color=[orange]}{i}(Книга изучена на 75%%){/i}{/color}"
         else:

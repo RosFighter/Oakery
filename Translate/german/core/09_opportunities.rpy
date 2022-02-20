@@ -2099,8 +2099,8 @@ translate german strings:
     new "Meine Mom scheint Rückenmassagen zu lieben, was bedeutet, dass es für mich nicht einfach sein wird, sie perfekt auszuführen. Aber wenn es wenigstens ab und zu funktioniert, ist es schon ganz gut und ich kann sie z.B. von hinten umarmen, wenn sie auf dem Balkon traurig ist."
 
     # game/core/09_opportunities.rpy:4
-    old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back - 1] из 3"
-    new "Ich glaube, das reicht aus, um Mom von hinten zu umarmen und sie würde sich dabei wohl fühlen... Erfolgreich eine Rückenmassage bei Mom vor dem Fernseher durchgeführt: [ann.flags.m_back - 1] von 3"
+    old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
+    new "Ich glaube, das reicht aus, um Mom von hinten zu umarmen und sie würde sich dabei wohl fühlen... Erfolgreich eine Rückenmassage bei Mom vor dem Fernseher durchgeführt: [ann.flags.m_back] von 3"
 
     # game/core/09_opportunities.rpy:4
     old "Вот это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."

@@ -3478,6 +3478,7 @@ label lisa_ment_kiss:
 label lisa_kiss_lesson:
     $ var_pose = renpy.random.choice(['01', '02'])
     scene Lisa_read_kiss kiss start
+    $ renpy.music.play('audio/Romantic'+str(renpy.random.randint(1, 3))+'.ogg', fadein=2.0)
     menu:
         Max_05 "{m}Эти нежные губки такие сладкие... С огромным удовольствием целовал бы Лизу весь день!{/m}"
         "{i}Продемонстрировать своё мастерство{/i}" ('kiss', mgg.kissing * 12, 90):
@@ -3498,6 +3499,7 @@ label lisa_kiss_lesson:
                 $ AddRelMood('lisa', 0, -30)
     $ lisa.dcv.seduce.set_lost(2 if lisa.flags.kiss_lesson>9 else 1)
     $ spent_time += 10
+    stop music fadeout 1.0
     jump Waiting
 
 
@@ -4763,7 +4765,7 @@ label lisa_about_olivia_6:
 label lisa_about_sex_book0:
     # только когда Лиза читает
     # "Кстати, а как тебе та книжка, которую я дарил?"
-    call lisa_read_closer
+    call lisa_read_closer from _call_lisa_read_closer
     Lisa_02 "Ты про ту с забавными картинками? Интересная. Я и правда многое узнала. Думаю, что теперь и сама могу учить кого угодно..."
     Max_08 "Эй, книжка учителя не заменит!"
     Lisa_03 "Что, испугался, учитель?"
@@ -4825,7 +4827,7 @@ label lisa_about_sex_book0:
 # Макс ложится почитать с Лизой (открывается после попытки возобновить уроки поцелуев)
 label lisa_read_with_Max0:
     # "Можно вместе с тобой книжку почитать?"
-    call lisa_read_closer
+    call lisa_read_closer from _call_lisa_read_closer_1
     Lisa_01 "Тебе заняться больше нечем?"
     Max_01 "Просто с тобой хочу побыть."
     Lisa_02 "Ну, хорошо... Присоединяйся. Только если мешаться не будешь!" nointeract
@@ -4834,6 +4836,7 @@ label lisa_read_with_Max0:
             $ var_pose = ''
     # myroom-bedlisa-mde-01 + myroom-bedlisa-mde-01-max&lisa-read-(01/02/03) + Одежда(Лиза перекрывает Макса)
     scene Lisa_read_with_Max read
+    $ renpy.music.play('audio/Romantic'+str(renpy.random.randint(1, 3))+'.ogg', fadein=2.0)
     Lisa_01 "Осторожнее, Макс! Если начнёшь приставать, то я и обидеться могу."
     Max_04 "Да ладно тебе. Я же ничего не делаю. Ты как, не передумала?"
     Lisa_00 "Насчёт чего? Уроков поцелуев?"
@@ -4894,13 +4897,14 @@ label lisa_read_with_Max0:
 
     $ lisa.dcv.seduce.set_lost(1)
     $ spent_time = 20
+    stop music fadeout 1.0
     jump Waiting
 
 
 label lisa_read_with_Max_r:
     # "Можно к тебе присоединиться?"
 
-    call lisa_read_closer
+    call lisa_read_closer from _call_lisa_read_closer_2
     $ lisa.dcv.seduce.set_lost(1)
 
     if lisa.GetMood()[0] < 3:
@@ -4919,6 +4923,7 @@ label lisa_read_with_Max_r:
     # лечь рядом с Лизой
     # myroom-bedlisa-mde-01 + myroom-bedlisa-mde-01-max&lisa-read-(01/02/03) + Одежда(Лиза перекрывает Макса)
     scene Lisa_read_with_Max read
+    $ renpy.music.play('audio/Romantic'+str(renpy.random.randint(1, 3))+'.ogg', fadein=2.0)
     Lisa_01 "Не успел лечь, уже ручонки начинаешь распускать?"
     Max_03 "Ты что! И в мыслях не было. Просто с тобой хочу побыть."
     Lisa_02 "Ну конечно... Всё я знаю. Целоваться опять полезешь..."
@@ -4998,6 +5003,7 @@ label lisa_read_with_Max_r:
                 Max_10 "Да, возможно..." nointeract
                 menu:
                     "{i}уйти{/i}":
+                        stop music fadeout 1.0
                         jump Waiting
 
     # целовать её шею
@@ -5013,6 +5019,7 @@ label lisa_read_with_Max_r:
             Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..." nointeract
             menu:
                 "{i}уйти{/i}":
+                    stop music fadeout 1.0
                     jump Waiting
         "{i}целовать её грудь{/i}" ('kiss', mgg.kissing * 3, 90):
             $ spent_time += 10
@@ -5031,6 +5038,7 @@ label lisa_read_with_Max_r:
                 Max_03 "Рад, что тебе понравилось... Ты очень классная, Лиза! И сисечки у тебя прелестные!"
 
                 $ poss['seduction'].open(32)    # Макс добирается до поцелуев груди Лизы
+                $ lisa.flags.kiss_breast += 1
                 Lisa_02 "Ой, Макс, не смущай меня так... Но спасибо за комплимент." nointeract
             else:
                 # Навык поцелуев слабоват
@@ -5040,4 +5048,5 @@ label lisa_read_with_Max_r:
                 Max_01 "Рад, что тебе понравилось... В следующий раз я постараюсь не торопиться." nointeract
     menu:
         "{i}уйти{/i}":
+            stop music fadeout 1.0
             jump Waiting

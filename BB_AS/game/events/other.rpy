@@ -377,10 +377,7 @@ label Kira_arrival:
 
 label follow_cameras_eric:
     # спящая Лиза
-    scene BG char Lisa bed-n-01
-    $ AvailableActions['touch'].active = True
-    $ renpy.show('Lisa sleep-night ' + pose3_1)
-    $ renpy.show('cloth1 Lisa sleep-night ' + pose3_1+lisa.dress)
+    scene Lisa_sleep
     with fade4
     pause 1.5
     # веранда
@@ -530,9 +527,11 @@ label showdown_with_eric:
             scene BG black with fade4
 
     # annroom-morning-01 + eric-dresses-morning-01 + ann-dresses-morning-05c
-    scene BG char Ann mde-01
-    show Eric dressed 01
-    $ renpy.show('Ann dressed 07b'+renpy.random.choice(['1', '2']))
+    # scene BG char Ann mde-01
+    # show Eric dressed 01
+    # $ renpy.show('Ann dressed 07b'+renpy.random.choice(['1', '2']))
+    $ var_pose, var_dress = '07', 'b'+renpy.random.choice(['1', '2'])
+    scene Ann_dressing eric
 
     Ann_13 "Алиса! Ты зачем так врываешься?! Стучаться надо..."
     Alice_16 "Не волнуйся, мам, я обязательно сейчас по кое-кому постучу! Знаешь, что твой мужчина вытворяет по ночам?"
@@ -612,7 +611,8 @@ label showdown_with_eric:
     Max_07 "Д-а-а... Это проблемка. Ты главное не слушай его оправдания, а то он умеет убеждать, как ты сама убедилась прекрасно. А теперь давайте, все вместе, поддержим маму!"
 
     # annroom-morning-01 + annroom-sud-01-ann&max&lisa-alice-(05a/05b)
-    scene BG char Ann mde-01
+    # scene BG char Ann mde-01
+    scene Ann_dressing empty
     $ renpy.show('Alice showdown annroom 05' + alice.dress)
 
     Ann_13 "Ой, дорогие мои, вы меня так раздавите! Но вы всё равно самые лучшие, кто у меня есть... Простите ещё раз за то, что я привела в наш прекрасный дом этого человека и всё испортила."
@@ -629,6 +629,7 @@ label showdown_with_eric:
     $ eric.dcv.battle.stage = 1     # подстава с фотографиями
     $ poss['alpha'].open(5)         # Макс подставил Эрика через Алису и того прогоняют
     $ poss['discrediting'].open(8)
+    $ poss['boss'].open(0)
     $ current_room = house[2]
     $ SetCamsGrow(house[2], 150)
 
@@ -743,6 +744,7 @@ label dictaphone_showdown_with_eric:
     $ flags.eric_banished = 2       # Эрик изгнан
     $ eric.dcv.battle.stage = 2     # подстава через звукозапись
     $ poss['alpha'].open(6)         # Макс подставил Эрика через Лизу и того прогоняют
+    $ poss['boss'].open(1)
     $ poss['discrediting'].open(9)
     $ current_room = house[4]
     $ SetCamsGrow(house[4], 150)

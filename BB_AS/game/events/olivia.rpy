@@ -71,9 +71,7 @@ label olivia_lisa_tv:
 
 
 label olivia_lisa_sleep:
-    scene BG char Lisa bed-n-01
-    $ renpy.show('Olivia sleep ' + pose3_1)
-    $ renpy.show('cloth1 Lisa sleep2 ' + pose3_1 + lisa.dress)
+    scene Lisa_sleep olivia
     $ lisa.prev_plan = lisa.plan_name
     $ olivia.prev_plan = olivia.plan_name
     return
@@ -681,13 +679,20 @@ label olivia_repeatable_night_out_with:
     with fade4
     Max_04 "Если вдруг вам надоест спать вместе, я всегда рад приютить любую из вас на своей кровати."
     Olivia_03 "Спасибо, Макс! Трусы хоть одень, чтобы было не так заметно, насколько ты рад этим фантазиям."
-    Lisa_02 "И с чего ты взял, что нам надоест?"
-    Max_02 "Ну мало ли."
-    Olivia_01 "Всем спокойной ночи..."
+    if lisa.flags.kiss_breast:#poss['seduction'].used(32):
+        Lisa_02 "И с чего ты взял, что нам надоест? Я даже маечку одевать не буду. Макс уже всё видел, а без неё удобнее..."
+        Max_02 "Ох, что за дивный вечерок!"
+        Olivia_01 "Ночь вообще-то, Макс. Укладываемся спать..."
+        $ lisa.sleeptoples = True
+    else:
+        Lisa_02 "И с чего ты взял, что нам надоест?"
+        Max_02 "Ну мало ли."
+        Olivia_01 "Всем спокойной ночи..."
+        if lisa.dress > 'b':    # возвращаем маечку
+            $ lisa.dress = 'b'
+
     Max_01 "Приятных снов."
 
-    if lisa.dress > 'b':    # возвращаем маечку
-        $ lisa.dress = 'b'
 
     $ renpy.end_replay()
     if lisa.flags.showdown_e and not poss['Schoolmate'].used(10):
@@ -706,8 +711,9 @@ label olivia_dressed:
         $ lvl = get_lisa_emancipation()
         $ mood = 0
         $ pl, var = get_lisa_dress_pose(0)
+        $ po = get_olivia_dress_pose(0)
         scene BG char Lisa dressing-02
-        show Olivia dressing inroom 00
+        $ renpy.show('Olivia dressing inroom '+po)
         $ renpy.show('Lisa dressing '+pl, at_list=[stay_in_room,])    # добавить увеличение и положение
         with diss3
         if lvl == 2:
@@ -724,7 +730,7 @@ label olivia_dressed:
         menu:
             "{i}отвернуться{/i}" if flags.eric_wallet != 2:
                 # myroom-bedmax-morning,day,evening-01
-                scene BG char Max bed-mde-01
+                scene Max sleep myroom-bedmax-mde-01
                 if lvl == 2:
                     Lisa "{b}Лиза:{/b} И не вздумай подглядывать! Это не займёт много времени..." nointeract
                 else:
@@ -965,7 +971,7 @@ label olivia_dressed:
     label .wait_in_room:
         window hide
         $ hide_say()
-        scene BG char Max bed-mde-01 with diss3
+        scene Max sleep myroom-bedmax-mde-01 with diss3
         pause(1)
         $ ClothingNps('lisa', lisa.plan_name)
         $ ClothingNps('olivia', olivia.plan_name)
@@ -1051,7 +1057,7 @@ label olivia_ann_meeting:
     # punish-sun-01 + sun-incoming-01-lisa&olivia-01a + sun-incoming-01-max-(01a/01b) + sun-incoming-01-ann-03
     scene BG punish-sun 01
     show Olivia incoming 03a
-    $ renpy.show('Max incoming 00'+mgg.dress, at_list=[trans_zoom_vibr])
+    $ renpy.show('Max incoming 00'+mgg.dress)
     show Ann incoming 03
     with diss2
     Ann_15 "Оливия, а где твой купальник? Лиза, ты почему не дала своей подруге купальник, хотя бы тот, чёрный?"
@@ -1151,9 +1157,9 @@ label olivia_lisa_sunscreen_0:
 
     $ kol_cream -= 2
     if kol_cream < 2:
-        call left_cream         ## солнцезащитный крем закончился
+        call left_cream from _call_left_cream         ## солнцезащитный крем закончился
     elif kol_cream < 4:
-        call left_cream(1)      ## осталось мало крема
+        call left_cream(1) from _call_left_cream_1      ## осталось мало крема
 
     $ olivia.flags.incident = 2
     $ olivia.daily.oiled = 1

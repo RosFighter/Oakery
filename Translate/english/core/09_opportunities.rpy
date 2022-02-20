@@ -2099,8 +2099,8 @@ translate english strings:
     new "Mom seems to adore back rubs, which means that it won't be easy for me to do it perfectly. But, if I can do it at least occasionally, it's already good and I can, for example, cuddle her from behind when she's sad on the balcony."
 
     # game/core/09_opportunities.rpy:4
-    old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back - 1] из 3"
-    new "I think it's enough for me to hug Mom from behind and make her feel comfortable... Successfully performed a back massage on my mom at the TV: [ann.flags.m_back - 1] of 3"
+    old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
+    new "I think it's enough for me to hug Mom from behind and make her feel comfortable... Successfully performed a back massage on my mom at the TV: [ann.flags.m_back] of 3"
 
     # game/core/09_opportunities.rpy:4
     old "Вот это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."

@@ -248,7 +248,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Тусовщица"
-    new "Partygirl"
+    new "Party-Girl"
 
     # game/core/09_opportunities.rpy:4
     old "Алиса настойчиво просит маму купить ей вечернее платье для посещения ночных клубов. Та ей регулярно отказывала, пока Эрик не предложил подарить ей платье во время следующего шопинга. Нужно поспешить, если я хочу сделать это первым!"
@@ -328,7 +328,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно больше подарков для Алисы, а значит потребуются успехи в возможности \"Блог\"..."
-    new "Ich glaube, ich brauche mehr Geschenke für Alice, was bedeutet, dass es einen Fortschritt in den \"Möglichkeiten\" gibt..."
+    new "Ich glaube, ich brauche mehr Geschenke für Alice, was bedeutet, dass es einen Fortschritt bei der Möglichkeit \"Blog\" braucht..."
 
     # game/core/09_opportunities.rpy:4
     old "Такие игры с Алисой в ванной комнате уже куда интереснее... Вот бы она ещё помнила, что вытворяет, хотя бы немного. Ну, а пока, у меня есть всё, чтобы оттачивать на Алисе свой сексуальный опыт. Нужно лишь не забывать давать ей ещё одну конфету с ликёром по возвращению из клуба. А уже где я её застану, у зеркала или в ванне, зависит от того, сколько времени я потрачу на тётю Киру."
@@ -564,7 +564,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно будет продемонстрировать тёте Кире мои умения в массаже. А для этого потребуются успехи в возможности \"Любимая тётя\"..."
-    new "Ich werde Tante Kira meine Massagekünste demonstrieren müssen. Und das erfordert Erfolg bei der \"Geliebte Tante\"-Möglichkeit..."
+    new "Ich werde Tante Kira meine Massagekünste demonstrieren müssen. Und das erfordert Erfolg bei der \"Lieblingstante\"-Möglichkeit..."
 
     # game/core/09_opportunities.rpy:4
     old "Отличная новость! Тётя Кира сказала, что встретится со своей одноклассницей, которая занимается массажем, и возможна та, возьмёт меня к себе на обучение. Надеюсь, и правда возьмёт, потому что там я научусь ещё большему, чем тут. Буду с нетерпением этого ждать..."
@@ -588,7 +588,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Было бы неплохо побольше сблизиться со своими сёстрами. Тогда наши совместные занятия с ними станут более естественными и перспективными. \nС Алисой же особое внимание стоит уделить успехам в возможности \"Тусовщица\"..."
-    new "Es wäre schön, meinen Schwestern näher zu kommen. Dann werden meine Aktivitäten mit ihnen natürlicher und erfolgsversprechender werden.\nBei Alice sollte ich ein besonderes Augenmerk auf den Erfolg der \"Party-Girl\"-Möglichkeit legen..."
+    new "Es wäre schön, meinen Schwestern näher zu kommen. Dann werden unsere Aktivitäten mit ihnen natürlicher und vielversprechender sein.\nBei Alice hingegen sollte man besonders auf den Erfolg der \"Party-Girl\"-Möglichkeit achten..."
 
     # game/core/09_opportunities.rpy:4
     old "А ведь конфеты с ликёром делают своё дело и очень быстро! Алиса явно становится более податливой и открытой в моих руках. Её трусики скрывают так мало, что у меня каждый раз слегка привстаёт. Чувствую, рано или поздно её ножки упрутся в мой член и будет много криков! И как замечательно, что она об этом потом не вспомнит."
@@ -872,11 +872,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Как бы там у Лизы всё не сложилось с Алексом, но это хорошая возможность сблизиться со своей младшей сестрёнкой, помогая ей узнать побольше о взрослой жизни. Потребуются успехи в возможности \"Наставник\"..."
-    new "Auch wenn es mit Alex nicht geklappt hat, ist es eine gute Gelegenheit sich weiter mit meiner kleinen Schwester Lisa zu befassen, indem ich ihr hilfe, mehr über das Erwachsenenleben zu lernen. Es wird einige Fortschritte bei der \"Mentor-Gelegenheit\" brauchen..."
+    new "Auch wenn es mit Alex nicht geklappt hat, ist es eine gute Gelegenheit sich weiter mit meiner kleinen Schwester Lisa zu befassen, indem ich ihr hilfe, mehr über das Erwachsenenleben zu lernen. Es wird einige Fortschritte bei der Möglichkeit \"Lehrer\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Благодаря моему наставничеству Лиза хорошо осведомлена о том, ЧЕМ думают мальчики и чего хотят. Надеюсь, эти знания защитят её от Алекса. Теперь лишь нужно немного подождать и узнать, позвала ли Лиза Оливию к нам в гости..."
-    new "Dank meines Mentorings weiß Lisa genau, WAS Jungs denken und wollen. Hoffentlich wird dieses Wissen sie vor Alex schützen. Jetzt muss ich nur noch abwarten, ob Lisa Olivia wirklich eingeladen hat, uns zu besuchen..."
+    new "Dank meines Unterrichts weiß Lisa genau, WAS Jungs denken und wollen. Hoffentlich wird dieses Wissen sie vor Alex schützen. Jetzt muss ich nur noch abwarten, ob Lisa Olivia wirklich eingeladen hat, uns zu besuchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Я познакомился с Оливией! Да, реальность даже немного превзошла все мои ожидания! Оливия абсолютно не стесняется своей наготы... На что я соответствующе отреагировал. Ну ничего, главное, что я произвел впечатление..."
@@ -1056,7 +1056,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Наставник\"..."
-    new "Es wird Fortschritte in der \"Mentor-Möglichkeit\" brauchen..."
+    new "Es wird Fortschritte in der Möglichkeit \"Lehrer\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Если я буду уделять Лизе достаточно внимания во всём, что только можно, то после массажа плеч могу попробовать зайти ещё дальше. Вернее, ниже..."
@@ -1424,7 +1424,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы нам с Лизой было более комфортно с друг другом, понадобятся успехи в возможности \"Наставник\"..."
-    new "Damit Lisa und ich uns wohler fühlen, brauchen wir Fortschritte bei der \"Mentor-Gelegenheit\"..."
+    new "Damit Lisa und ich uns wohler fühlen, brauchen wir Fortschritte bei der Möglichkeit \"Lehrer\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать эти ночные просмотры дальше. Может, Лиза ко мне и привыкнет, а я к ней..."
@@ -2073,4 +2073,92 @@ translate german strings:
     # game/core/09_opportunities.rpy:4
     old "Теперь Оливия может приходить к нам с ночёвкой, как и раньше. Эрик мне больше ничем не угрожает, а это значит я могу попытать удачу с Лизой и Оливией по ночам... Правда, здесь есть другой напряг - мама может проверить, чем мы занимаемся."
     new "Jetzt kann Olivia zu uns kommen und bei uns übernachten, genau wie früher. Eric stört nicht mehr, was bedeutet, dass ich nachts mein Glück bei Lisa und Olivia versuchen kann... Es gibt aber noch eine anderes Problem, denn Mom könnte jederzeit nachsehen, was wir tun."
+
+# TODO: Translation updated at 2022-02-19 02:36
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Самое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ. Нужно сперва избавиться от Эрика, а уже потом покупать эротические фильмы. Пока только массаж время от времени..."
+    new "Das Frustrierendste ist, dass ich viel zu selten gemeinsam mit Mom fernsehen kann. Erst muss man Eric loswerden und dann Erotikfilme kaufen. Im Moment gibt es nur eine Massage ab und zu..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Можно довольствоваться редкими моментами у ТВ с мамой и делать ей лёгкий массаж, а можно попробовать избавиться от Эрика. Для этого потребуются успехи в возможности \"Альфа\"..."
+    new "Man könnte sich damit begnügen, gelegentlich mit Mom fernzusehen und ihr eine leichte Massage zu geben, oder man könnte versuchen, Eric loszuwerden. Das würde Fortschritte bei der Möglichkeit \"Alphatier\" erfordern..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Во главе семьи!\"..."
+    new "Es wird Fortschritte in der Möglichkeit \"Familienoberhaupt!\" brauchen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно попробовать сделать маме массаж спины, пока она смотрит ТВ..."
+    new "Versuche doch mal, Mom den Rücken zu massieren, während sie fernsieht..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, мама обожает массаж спины, а это значит, что мне будет не так-то и просто сделать его на отлично. Но, если хотя бы иногда будет получаться, то уже хорошо и я смогу, например, обнимать её сзади, когда она будет грустить на балконе."
+    new "Meine Mom scheint Rückenmassagen zu lieben, was bedeutet, dass es für mich nicht einfach sein wird, sie perfekt auszuführen. Aber wenn es wenigstens ab und zu funktioniert, ist es schon ganz gut und ich kann sie z.B. von hinten umarmen, wenn sie auf dem Balkon traurig ist."
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
+    new "Ich glaube, das reicht aus, um Mom von hinten zu umarmen und sie würde sich dabei wohl fühlen... Erfolgreich eine Rückenmassage bei Mom vor dem Fernseher durchgeführt: [ann.flags.m_back] von 3"
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
+    new "Das ist die richtige Einstellung! Endlich durfte ich Lisas Brüste küssen! Und wie viel Perspektive sich dadurch eröffnen kann... Das Wichtigste ist, dass man sich Zeit nimmt und diese Momente genießt."
+
+    # game/core/09_opportunities.rpy:4
+    old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды... \nХотя, пока я не избавлюсь от Эрика, все мои старания будут почти напрасными."
+    new "Es ist schon so viel besser! Mom hat jetzt neue Sportsachen, die ihr und mir viel Freude bereiten werden. Sie war nicht besonders begeistert davon, dass sie so freizügig sind. Das hängt davon ab, wofür sie gebraucht werden... \nMeiner Meinung nach wäre es der Hammer, wenn sie Yoga komplett nackt machen würde! Äh, Träume... Aber wer weiß, vielleicht eines Tages... \nWenn ich Eric nicht loswerde, werden all meine Bemühungen fast umsonst sein."
+
+    # game/core/09_opportunities.rpy:4
+    old "Можно проводить время с мамой, как сейчас, помогая ей с йогой, а можно попробовать избавиться от Эрика и посмотреть, что будет без него. Для этого потребуются успехи в возможности \"Альфа\"..."
+    new "Vielleicht verbringt man Zeit mit Mom, wie jetzt, und hilfst ihr beim Yoga, oder man versucht, Eric loszuwerden und sieht, was ohne ihn passiert. Es würde Fortschritte bei der Möglichkeit \"Alphatier\" erfordern..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно и дальше продолжать помогать маме с йогой. Теперь она должна стать ещё интереснее..."
+    new "Man muss Mom weiterhin beim Yoga helfen. Jetzt dürfte es noch interessanter werden..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет и утешать её станет куда приятнее. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
+    new "Das ist die Art von Yoga, die mir besser gefällt! Mom ist immer noch beschämt über meine rastlosen Hände, aber ich denke, sie wird sich an sie gewöhnen und es wird viel angenehmer sein, sie zu trösten. \n\nEs ist aber schwer, keinen Ständer zu bekommen, also ist es besser, in T-Shirt und Shorts zum Yoga-Kurs mit Mom zu tragen. Es ist viel einfacher, einen Ständer zu verstecken, wenn man einen hat. \nZu schade, dass sie will, dass ich jetzt, wo ich so aktiv bin, mindestens jeden zweiten Tag mitmache... Aber das macht mir nichts aus, ich möchte mich ihr einfach weiter annähern."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, то и утешать я её смогу так же... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
+    new "Wenn Mom sich erst einmal daran gewöhnt hat, dass sie beim Yoga so ungezwungen an ihrem Allerheiligsten berührt wird, dann kann ich sie auf die gleiche Weise trösten... Es ist mir gelungen, Mom mit Yoga zu helfen: [ann.flags.truehelp] von 5"
+
+    # game/core/09_opportunities.rpy:4
+    old "Во главе семьи!"
+    new "Familienoberhaupt!"
+
+    # game/core/09_opportunities.rpy:4
+    old "После того, как я вывел Эрика на чистую воду, мама однозначно будет переживать, грустить, заниматься самобичеванием... Я обязательно должен быть рядом и, как смогу, утешать и ободрять её. Правда, перед всеми нами она скорее всего будет стараться этого не показывать, поэтому нужно будет периодически заглядывать к ней в комнату и если она будет грустить, побыть с ней."
+    new "Nachdem ich Eric mit der Wahrheit konfrontiert hatte, würde Mom bestimmt besorgt, traurig und niedergeschlagen sein... Ich sollte auf jeden Fall da sein, um sie zu trösten und zu ermutigen, so gut ich kann. Sie wird aber wahrscheinlich versuchen, es nicht vor uns anderen zu zeigen, also muss ich regelmäßig nach ihr sehen und bei ihr sein, wenn sie traurig ist."
+
+    # game/core/09_opportunities.rpy:4
+    old "Чтобы не попадать на мамины переодевания, заходя к ней в комнату, лучше заглядывать во второй половине часа перед её работой..."
+    new "Um zu vermeiden, dass man Mom beim Anziehen erwischt, indem man in ihr Zimmer geht, ist es am besten, eine halbe Stunde vorher vorbeizuschauen, bevor sie zur Arbeit geht..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я был прав. Хоть это и было очевидно, мама переживает из-за всей этой истории с Эриком. Она слишком сильно винит себя в том, что привела к нам домой такого уёб... Эрика, короче. К тому же, он напрягает её на работе. \nЯ успокоил её, на этот раз, и заодно предложил ей массаж спины, чтобы она хоть как-то смогла расслабиться. \nТеперь Эрик не мешает и мама по вечерам всегда в моём распоряжении у ТВ. Мои руки помогут ей расслабиться, а я смогу полюбоваться её шелковистой спинкой... Правда, массаж - это не панацея от всех душевных проблем, поэтому мама и дальше будет переживать."
+    new "Ich hatte Recht. Obwohl es offensichtlich war, ist Mom besorgt über die ganze Sache mit Eric. Sie macht sich zu viele Vorwürfe, weil sie so ein Arschloch in unser Haus gebracht hat... Eric, zumindest. Außerdem stresst er sie bei der Arbeit. \nIch habe sie diesmal beruhigt und ihr eine Rückenmassage angeboten, damit sie sich etwas entspannen konnte. \nNun ist Eric aus dem Weg und ich habe meine Mutter abends immer beim Fernsehen. Meine Hände helfen ihr, sich zu entspannen, und ich kann ihren glatten Rücken bewundern... Eine Massage ist jedoch kein Allheilmittel für alle psychischen Probleme, so dass Mom sich weiterhin Sorgen machen wird."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать заглядывать к маме перед работой и в воскресенье, чтобы успокоить её, если она будет грустить..."
+    new "Man muss immer wieder vor der Arbeit und sonntags bei Mom vorbeischauen, um sie zu beruhigen, wenn sie traurig ist..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я снова застал маму всю расстроенную и грустную. Ей тяжело видеть его ехидную рожу на работе и от этого никуда не деться. Только если уволиться, но не известно, какие проблемы он может устроить в этом случае маме. \nЯ решил приободрить её, помимо обычных утешений, приобняв за попку, но она сказала, что её это скорее смущает, чем ободряет. \nНадо это дело исправлять... И чтобы такие прикосновения стали более естественными, надо чаще прикасаться к её попке. \nПожалуй, самый приемлемый вариант таких контактов, где меня не посчитают озабоченным - это йога. Так что нужно пробовать..."
+    new "Ich hatte meine Mutter wieder ganz aufgeregt und traurig erwischt. Es fällt ihr schwer, sein höhnisches Gesicht bei der Arbeit zu ertragen, und sie kommt nicht umhin, es zu sehen. Nur wenn er kündigt, aber man kann nicht sagen, was für einen Ärger er Mom bereiten könnte, wenn er das tut. \nIch habe beschlossen, sie aufzumuntern, indem ich sie zusätzlich zu der üblichen Beruhigung umarmte, aber sie sagte, das sei eher peinlich als beruhigend. \nWir müssen das in Ordnung bringen... Und um diese Art der Berührung natürlicher zu machen, sollten ich ihren Arsch öfter berühren. \nNun, ich denke, die akzeptabelste Art, es zu tun, ohne als geil angesehen zu werden, ist durch Yoga. Man muss es also versuchen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эх, придётся пораньше вставать, чтобы помогать маме с йогой..."
+    new "Eh, ich muss früh aufstehen, um Mom beim Yoga zu unterstützen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама перестанет смущаться моих прикосновений к её сочной попке во время йоги, то и утешать я смогу её куда эффективнее. Для этого потребуются успехи в возможности \"Волнующие изгибы\"..."
+    new "Wenn Mom sich nicht mehr peinlich berührt fühlt, wenn ich beim Yoga ihren knackigen Arsch berühre, werde ich sie viel besser trösten können. Dazu braucht man Erfolg bei der Möglichkeit \"Aufregende Kurven\"..."
+
+    # game/core/09_opportunities.rpy:908
+    old "Пока мама встречается с Эриком, мне не занять главное место в нашей семье, а значит потребуются успехи в возможности \"Альфа\"..."
+    new "Solange meine Mom mit Eric zusammen ist, kann ich nicht die Hauptrolle in unserer Familie übernehmen, was bedeutet, dass es Fortschritte in der Möglichkeit \"Alphatier\" geben muss..."
 

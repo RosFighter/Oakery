@@ -1546,7 +1546,7 @@ translate german Lisa_MorningWood_d246544c:
 translate german Lisa_MorningWood_6116b3e3:
 
     # Lisa_02 "Ну да, ну да... В общем, я подумаю. Только вот не уверена, что ты всё-таки подходишь на роль такого... наставника, если ты меня понимаешь..."
-    Lisa_02 "Richtig, richtig... Wie auch immer, ich werde darüber nachdenken. Ich bin mir immer noch nicht sicher, wie du in diese... Mentoren... Sache passt."
+    Lisa_02 "Richtig, richtig... Wie auch immer, ich werde darüber nachdenken. Ich bin mir immer noch nicht sicher, wie du in diese... Lehrer... Sache passt."
 
 # game/dialogues/lisatalk.rpy:889
 translate german Lisa_MorningWood_1b8bc4b2:
@@ -2176,7 +2176,7 @@ translate german Lisa_HomeWork_first_foot_mass_def08673:
 translate german Lisa_HomeWork_first_foot_mass_3f00b33e:
 
     # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
-    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig! Lassen wir das lieber, ich könnte ja keinen Fehler machen..." nointeract
+    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig!Das sollten wir nicht tun, ich könnte schließlich Fehler machen..." nointeract
 
 # game/dialogues/lisatalk.rpy:1309
 translate german Lisa_HomeWork_first_foot_mass_31c88882:
@@ -2212,7 +2212,7 @@ translate german Lisa_HomeWork_first_foot_mass_f0ba5c19:
 translate german Lisa_HomeWork_first_foot_mass_b975c16c:
 
     # Max_05 "Рад, что тебе понравилось. Могу делать тебе массаж всякий раз, когда занимаемся уроками? Мне не сложно."
-    Max_05 "Ich bin froh, dass es dir gefallen hat. Kann ich dich massieren, wenn wir lernen? Das ist nicht schwer für mich."
+    Max_05 "Freut mich, dass es dir gefällt. Kann ich dir eine Massage geben, wenn wir gemeinsam lernen? Das stört mich nicht."
 
 # game/dialogues/lisatalk.rpy:1322
 translate german Lisa_HomeWork_first_foot_mass_5d3faf25:
@@ -2230,13 +2230,13 @@ translate german Lisa_HomeWork_first_foot_mass_d2d86c45:
 translate german Lisa_HomeWork_first_foot_mass_235a9d11:
 
     # Max_07 "К тебе просто другой подход нужен. Не как с Алисой. В следующий раз у меня получится лучше..."
-    Max_07 "Du magst es eben anders. Nicht wie Alice. Das nächste Mal kann ich es besser machen..."
+    Max_07 "Ich versuche, es richtig zu machen, also sei nachsichtig mit mir. Nächstes Mal werde ich es besser machen..."
 
 # game/dialogues/lisatalk.rpy:1332
 translate german Lisa_HomeWork_first_foot_mass_7ecaa66b:
 
     # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
-    Lisa_02 "Ja, ich wünschte, ich könnte. Und bitte stell sicher, dass ich alles richtig gemacht habe..."
+    Lisa_02 "Ja, das würde ich gerne. Und bitte stell sicher, dass ich keine Fehler gemacht habe..."
 
 # game/dialogues/lisatalk.rpy:1335
 translate german Lisa_HomeWork_first_foot_mass_09997fa1:
@@ -2290,7 +2290,7 @@ translate german Lisa_HomeWork_next_foot_mass_9ba963d4:
 translate german Lisa_HomeWork_next_foot_mass_3f00b33e:
 
     # Lisa_01 "[lisa_bad_mass!t]Макс! Мне щекотно! Давай без этого, я же всё-таки ошибку могу допустить..." nointeract
-    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig! Lassen wir das lieber, ich könnte sonst einen Fehler machen..." nointeract
+    Lisa_01 "[lisa_bad_mass!t]Max! Ich bin kitzelig!Das sollten wir nicht tun, ich könnte schließlich Fehler machen..." nointeract
 
 # game/dialogues/lisatalk.rpy:1387
 translate german Lisa_HomeWork_next_foot_mass_ecec7f41:
@@ -2344,13 +2344,13 @@ translate german Lisa_HomeWork_next_foot_mass_af5ff8cf:
 translate german Lisa_HomeWork_next_foot_mass_3cd1b957:
 
     # Max_07 "Я всё делаю, как надо, так что терпи. В следующий раз у меня получится лучше..."
-    Max_07 "Ich mache es richtig, also hab bitte Geduld mit mir. Nächstes Mal werde ich es besser machen..."
+    Max_07 "Ich versuche, es richtig zu machen, also sei nachsichtig mit mir. Nächstes Mal werde ich es besser machen..."
 
 # game/dialogues/lisatalk.rpy:1425
 translate german Lisa_HomeWork_next_foot_mass_7ecaa66b:
 
     # Lisa_02 "Да уж, хотелось бы. И проверь, пожалуйста, всё ли я сделала правильно..."
-    Lisa_02 "Ja, ich wünschte, ich könnte. Und bitte stell sicher, dass ich alles richtig gemacht habe..."
+    Lisa_02 "Ja, das würde ich gerne. Und bitte stell sicher, dass ich keine Fehler gemacht habe..."
 
 # game/dialogues/lisatalk.rpy:1446
 translate german Lisa_HomeWork_shoulders_aa180a92:
@@ -3106,7 +3106,7 @@ translate german Lisa_sorry_88ece42c:
 translate german Lisa_sorry_cf9250b3:
 
     # Max_10 "Не виноват я! Просто шёл, а ты душ как раз принимала... Ну я и отскочил к стене... где ты меня и заметила... Вот и всё, я даже и не видел ничего такого!"
-    Max_10 "Es ist nicht meine Schuld! Ich bin nur spazieren gegangen, und du warst gerade unter der Dusche... Also schaute ich, ohne nachzudenken... ...als du mich bemerkt hast... Das war's, ich habe nicht mal was gesehen!"
+    Max_10 "Es war nicht meine Schuld! Ich war gerade unterwegs und du warst unter der Dusche... Also ging ich rüber zur Wand... wo du mich gesehen hast... Das ist alles, ich habe nicht einmal was gesehen!"
 
 # game/dialogues/lisatalk.rpy:1912
 translate german Lisa_sorry_7e2e1148:
@@ -3148,7 +3148,7 @@ translate german Lisa_sorry_a79e8934:
 translate german Lisa_sorry_0132e90e:
 
     # Max_01 "Хорошо. Завтра всё будет..."
-    Max_01 "Okay. Morgen wird alles vorbereitet sein..."
+    Max_01 "Gut. Für morgen wird alles..."
 
 # game/dialogues/lisatalk.rpy:1921
 translate german Lisa_sorry_449604df:
@@ -5266,7 +5266,7 @@ translate german lisa_sorry_gifts_good_f5f8687c:
 translate german lisa_sorry_gifts_good_610255c7:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3013
 translate german lisa_sorry_gifts_good_ae854677:
@@ -5548,7 +5548,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_4:
 translate german lisa_sorry_gifts_good_610255c7_1:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3107
 translate german lisa_sorry_gifts_good_ae854677_1:
@@ -5764,7 +5764,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_7:
 translate german lisa_sorry_gifts_good_610255c7_2:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3183
 translate german lisa_sorry_gifts_good_ae854677_2:
@@ -5842,7 +5842,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_8:
 translate german lisa_sorry_gifts_good_610255c7_3:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3213
 translate german lisa_sorry_gifts_good_ae854677_3:
@@ -5920,7 +5920,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_9:
 translate german lisa_sorry_gifts_good_610255c7_4:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3243
 translate german lisa_sorry_gifts_good_ae854677_4:
@@ -5998,7 +5998,7 @@ translate german lisa_sorry_gifts_good_f5f8687c_10:
 translate german lisa_sorry_gifts_good_610255c7_5:
 
     # Lisa_03 "Ого! Ты снова выбрал мои любимые шоколадки! Спасибо тебе большое!"
-    Lisa_03 "Wow! Du hast wieder meine Lieblingspralinen genommen! Ich danke dir vielmals!"
+    Lisa_03 "Wow, du hast schon wieder meine Lieblingsschokoladen herausgesucht! Ich danke dir vielmals!"
 
 # game/dialogues/lisatalk.rpy:3273
 translate german lisa_sorry_gifts_good_ae854677_5:
@@ -6106,7 +6106,7 @@ translate german lisa_sorry_gifts_good_7a981228_13:
 translate german lisa_sorry_gifts_good_5e16fb60_12:
 
     # Lisa_03 "Ладно-ладно, можешь не продолжать, я тебе верю."
-    Lisa_03 "Schon gut, schon gut, du brauchst nicht weiter zu erzählen, ich glaube dir."
+    Lisa_03 "Schon gut, schon gut, du musst nicht weiterreden, ich glaube dir."
 
 # game/dialogues/lisatalk.rpy:3312
 translate german lisa_sorry_gifts_good_f5f8687c_12:
@@ -6118,13 +6118,13 @@ translate german lisa_sorry_gifts_good_f5f8687c_12:
 translate german liza_secret_alisa_8969254c:
 
     # Lisa_02 "Странный? Скорее, беспокойный. Переживаю насчёт Алисы..."
-    Lisa_02 "Merkwürdig? Eher unruhig. Ich mache mir Sorgen um Alice..."
+    Lisa_02 "Seltsam? Eher ängstlich. Besorgt um Alice..."
 
 # game/dialogues/lisatalk.rpy:3330
 translate german liza_secret_alisa_130b65fe:
 
     # Max_09 "А что такое?"
-    Max_09 "Was ist es?"
+    Max_09 "Was ist los?"
 
 # game/dialogues/lisatalk.rpy:3331
 translate german liza_secret_alisa_c2c06334:
@@ -6148,7 +6148,7 @@ translate german liza_secret_alisa_b629dab1:
 translate german liza_secret_alisa_56fa1346:
 
     # Lisa_09 "[failed!t]Нет, Макс, не расскажу. Я обещала. Ты же не хочешь, чтобы твои секреты кто-то узнал, верно?"
-    Lisa_09 "[failed!t]Nein, Max, das werde ich nicht. Ich habe es versprochen. Du würdest nicht wollen, dass jemand deine Geheimnisse kennt, oder?"
+    Lisa_09 "[failed!t]Nein, Max, das werde ich nicht. Ich habe es versprochen. Du willst doch nicht, dass jemand deine Geheimnisse erfährt, oder?"
 
 # game/dialogues/lisatalk.rpy:3348
 translate german liza_secret_alisa_1e8b77df:
@@ -6160,7 +6160,7 @@ translate german liza_secret_alisa_1e8b77df:
 translate german liza_secret_alisa_9297cda4:
 
     # Lisa_00 "[succes!t]Ну ладно, расскажу... В общем, год назад Алиса тоже как-то пошла в ночной клуб..."
-    Lisa_00 "[succes!t]Na gut, ich erzähle es dir... Vor einem Jahr ging Alice in einen Club..."
+    Lisa_00 "[succes!t]Na gut, ich sage es dir... Wie auch immer, vor einem Jahr ging Alice auch eines Abends in einen Nachtclub..."
 
 # game/dialogues/lisatalk.rpy:3358
 translate german liza_secret_alisa_52ee407e:
@@ -6172,7 +6172,7 @@ translate german liza_secret_alisa_52ee407e:
 translate german liza_secret_alisa_e332fb06:
 
     # Lisa_01 "Видимо, там она первый раз и попробовала алкоголь. Как рассказывала её лучшая подружка, Алиса выпила буквально один глоток шампанского, но её как подменили!"
-    Lisa_01 "Anscheinend hat sie damals zum ersten Mal Alkohol probiert. Wie auch immer, ihre besten Freunde sagten, dass Alice buchstäblich einen Schluck Champagner getrunken hatte, und sie war völlig betrunken!"
+    Lisa_01 "Offenbar hat sie dort zum ersten Mal Alkohol getrunken. Laut ihrer besten Freundin hatte Alice buchstäblich nur einen Schluck Champagner getrunken, aber es war, als wäre sie ausgetauscht worden!"
 
 # game/dialogues/lisatalk.rpy:3360
 translate german liza_secret_alisa_460dca20:
@@ -6184,7 +6184,7 @@ translate german liza_secret_alisa_460dca20:
 translate german liza_secret_alisa_7927017b:
 
     # Lisa_02 "Похоже, когда она выпивает любое количество алкоголя, даже каплю, у неё отключаются какие-то внутренние ограничители и Алиса начинает делать что попало. Причём, она не выглядит пьяной, но ведёт себя... странно. И на утро ничего не помнит, представляешь!"
-    Lisa_02 "Anscheinend verliert Alice, wenn sie auch nur die kleinste Menge Alkohol trinkt, komplett ihre Hemmungen und fängt an zu tun, was sie will. Und sie sieht nicht immer betrunken aus, sondern verhält sich ... seltsam. Und am Morgen kann sie sich an nichts mehr erinnern!"
+    Lisa_02 "Es scheint so, als ob Alice, sobald sie auch nur einen Tropfen Alkohol trinkt, ihre inneren Hemmungen ablegt und alles tut, was sie will. Und sie sieht nicht betrunken aus, aber sie verhält sich... seltsam. Und am Morgen danach kann sie sich an nichts mehr erinnern, kannst du dir das vorstellen!"
 
 # game/dialogues/lisatalk.rpy:3362
 translate german liza_secret_alisa_f0a72923:
@@ -6202,7 +6202,7 @@ translate german liza_secret_alisa_bdd0db49:
 translate german liza_secret_alisa_ff8b5804:
 
     # Max_01 "Конечно! Я тебя не выдам..."
-    Max_01 "Auf jeden Fall! Ich werde nichts verraten."
+    Max_01 "Ja, natürlich! Ich werde nichts verraten..."
 
 # game/dialogues/lisatalk.rpy:3374
 translate german lisa_gift_sweets_094878f0:
@@ -6214,7 +6214,7 @@ translate german lisa_gift_sweets_094878f0:
 translate german lisa_gift_sweets_18a348cf:
 
     # Lisa_02 "Правда? Ну давай, показывай, что у тебя на этот раз?!" nointeract
-    Lisa_02 "Wirklich? Komm schon, zeig mir, dass du dieses Mal wirklich alles hälst!" nointeract
+    Lisa_02 "Wirklich? Komm schon, zeig mal, was du diesmal hast?!" nointeract
 
 # game/dialogues/lisatalk.rpy:3386
 translate german lisa_gift_sweets_ac3f0acd:
@@ -9664,7 +9664,7 @@ translate german strings:
 
     # game/dialogues/lisatalk.rpy:2516
     old "Правда? Ну ты даёшь! А какую на этот раз?!"
-    new "Wirklich? Oje! Was ist das nächste?!"
+    new "Wirklich? Oh, du bist super! Was ist es denn diesmal?!"
 
     # game/dialogues/lisatalk.rpy:2516
     old "Правда? Ну давай, показывай, что у тебя на этот раз?!"
@@ -10556,7 +10556,7 @@ translate german lisa_sorry_gifts_5dc942a0:
 translate german lisa_sorry_gifts_18215912:
 
     # Lisa_02 "Правда? Ну ты даёшь! А какую на этот раз?!" nointeract
-    Lisa_02 "Wirklich? Oje! Was ist das nächste?!" nointeract
+    Lisa_02 "Wirklich? Oh, du bist super! Was ist es denn diesmal?!" nointeract
 
 # game/dialogues/lisatalk.rpy:2331
 translate german lisa_sorry_gifts_18a348cf:
@@ -10983,13 +10983,13 @@ translate german lisa_about_olivia_5_37f257a7:
 translate german lisa_about_olivia_5_2704fdca:
 
     # Max_04 "Ну, \"полуголых\" - это слабо сказано, потому что из полуголых у нас только ты, а все остальные СОВСЕМ голые."
-    Max_04 "Nun, \"halbnackt\" ist eine Untertreibung, denn du bist der einzige Halbnackte hier, und alle anderen sind VOLLkommen nackt."
+    Max_04 "Nun, \"halbnackt\" ist eine Untertreibung, denn du bist die einzige Halbnackte hier, und alle anderen sind VOLLKOMMEN nackt."
 
 # game/dialogues/lisatalk.rpy:4737
 translate german lisa_about_olivia_5_50191b16:
 
     # Lisa_10 "И мне кажется, что кому-кому, а мне она запретит по ночам тусоваться с вами. Да и не факт, что и тебе с Оливией разрешит."
-    Lisa_10 "Und ich glaube, ich bin der Einzige, den sie nachts nicht mit euch abhängen lässt. Ich weiß auch nicht, ob sie dich und Olivia alleine lassen wird."
+    Lisa_10 "Und ich glaube, ich bin die Einzige, den sie nachts nicht mit euch abhängen lässt. Ich weiß auch nicht, ob sie dich und Olivia alleine lassen wird."
 
 # game/dialogues/lisatalk.rpy:4738
 translate german lisa_about_olivia_5_52089248:

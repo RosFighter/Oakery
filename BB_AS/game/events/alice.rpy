@@ -1073,9 +1073,10 @@ label spider_in_bed:
 
     label .goaway:
         hide screen Cookies_Button
-        scene BG char Max bed-night-01
-        $ renpy.show('Max sleep-night '+pose3_3)
-        $ renpy.show('cloth1 Max sleep-night '+pose3_3)
+        # scene BG char Max bed-night-01
+        # $ renpy.show('Max sleep-night '+pose3_3)
+        # $ renpy.show('cloth1 Max sleep-night '+pose3_3)
+        scene Max_sleep with diss5
         menu:
             Max_09 "Бегает ещё, кричит что-то... Совсем сдурела..."
             "{i}спать до утра{/i}":

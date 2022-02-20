@@ -675,7 +675,7 @@ label eric_ann_sleep:
     menu:
         Max_00 "{m}Кажется, все спят...{/m}"
         "{i}заглянуть в окно{/i}":
-            scene BG char Ann bed-night-01
+            # scene BG char Ann bed-night-01
             if flags.eric_jerk and '02:00'<=tm<'02:30':
                 # Эрик дрочит на Алису
                 if not alice.sleepnaked:
@@ -683,8 +683,9 @@ label eric_ann_sleep:
                     $ alice.hourly.sleep = 1
                     jump jerk_balkon
 
-                $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
-                $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                # $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
+                # $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                scene Ann_sleep naked
                 if not prenoted and not flags.eric_noticed:
                     # Эрика не видели
                     if all([flags.eric_wallet == 2, flags.eric_photo2, not len(house[1].cams)]):
@@ -717,13 +718,15 @@ label eric_ann_sleep:
 
             elif not check_is_room('eric', house[2]):
                 # Эрик с Кирой
-                $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
-                $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                # $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
+                # $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                scene Ann_sleep naked
                 jump .not_eric
 
             else:
-                $ renpy.show('Eric sleep-night '+pose3_1)
-                $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
+                scene Ann_sleep eric
+                # $ renpy.show('Eric sleep-night '+pose3_1)
+                # $ renpy.show('FG ann-voyeur-night-00'+mgg.dress)
                 if pose3_1 == '01':
                     Max_01 "{m}Похоже, они крепко спят... Совершенно голые! Чёрт, жаль только мама лежит за Эриком и её почти не видно... Почему он такой здоровый?{/m}" nointeract
                 elif pose3_1 == '02':
@@ -735,8 +738,9 @@ label eric_ann_sleep:
                         $ spent_time += 10
                     "{i}уйти{/i}":
                         jump .end
-                scene BG char Ann bed-night-02
-                $ renpy.show('Eric sleep-night-closer '+pose3_1)
+                # scene BG char Ann bed-night-02
+                # $ renpy.show('Eric sleep-night-closer '+pose3_1)
+                scene Ann_sleep closer eric
                 if pose3_1 == '01':
                     Max_03 "{m}Они действительно крепко спят... Может самого интересного и не видно, но мама так элегантно, по-женски, закинула на него свою ножку... Хорошо, что такая жара и дома нет кондиционеров... Так, пора уходить.{/m}" nointeract
                 elif pose3_1 == '02':
@@ -767,8 +771,9 @@ label eric_ann_sleep:
 
     label .not_eric_closer:
         # Прокрасться в комнату (ближний план):
-        scene BG char Ann bed-night-02
-        $ renpy.show('Ann sleep-night-closer '+pose3_3+ann.dress)
+        # scene BG char Ann bed-night-02
+        # $ renpy.show('Ann sleep-night-closer '+pose3_3+ann.dress)
+        scene Ann_sleep naked closer
         $ prenoted = 2
         if pose3_1 == '01':
             Max_03 "{m}Чёрт, у меня самая аппетитная мама на свете! Я бы с огромным удовольствием пораспускал с ней руки... Но лучше потихоньку уходить, пока она не проснулась.{/m}" nointeract
@@ -1650,6 +1655,7 @@ label lisa_eric_sex_ed_practice:
 
                 $ flags.eric_wallet = 1         # Эрик запустит кошелёк
                 $ eric_obligation.volume = 0
+                $ eric_obligation.debt = 0
                 $ AddRelMood('lisa', 0, -100)   # настроение Лизы портится (её стыдно)
                 $ infl[lisa].sub_m(30)          # влияние и Макс и Эрика снижается
                 $ infl[lisa].sub_e(30)
@@ -1732,6 +1738,7 @@ label eric_about_practice_war:
             "{i}уйти{/i}":
                 $ flags.eric_wallet = 1
                 $ eric_obligation.volume = 0
+                $ eric_obligation.debt = 0
                 $ spent_time = 10
 
     else:

@@ -5,18 +5,14 @@ label lisa_sleep_night:
     if all([flags.film_punish, not lisa.dcv.special.done, tm < '00:30']):
         call lisa_select_movie from _call_lisa_select_movie
 
-    scene BG char Lisa bed-n-01
+    scene Lisa_sleep
     $ AvailableActions['touch'].active = True
-    $ renpy.show('Lisa sleep-night ' + pose3_1)
-    $ renpy.show('cloth1 Lisa sleep-night ' + pose3_1+lisa.dress)
     $ lisa.prev_plan = lisa.plan_name
     return
 
 
 label lisa_sleep_morning:
-    scene BG char Lisa bed-m-01
-    $ renpy.show('Lisa sleep-morning '+pose3_1)
-    $ renpy.show('cloth1 Lisa sleep-morning '+pose3_1+lisa.dress)
+    scene Lisa_sleep mde
     $ lisa.prev_plan = lisa.plan_name
     return
 
@@ -449,7 +445,7 @@ label lisa_dressed:
         menu:
             "{i}отвернуться{/i}" if flags.eric_wallet != 2:
                 # myroom-bedmax-morning,day,evening-01
-                scene BG char Max bed-mde-01
+                scene Max sleep myroom-bedmax-mde-01
                 if lvl == 1:
                     Lisa "{b}Лиза:{/b} Я быстро... Главное, не подглядывай! Надеюсь, тебе это по силам..." nointeract
                 elif lvl == 2:
@@ -635,7 +631,7 @@ label lisa_dressed:
         hide screen Cookies_Button
         window hide
         $ hide_say()
-        scene BG char Max bed-mde-01 with diss3
+        scene Max sleep myroom-bedmax-mde-01 with diss3
         pause(1)
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
@@ -839,7 +835,7 @@ label lisa_bath:
             jump .end
 
     label .open_knock:
-        if poss['seduction'].st() < 31:
+        # if poss['seduction'].st() < 40:
             $ mood -= 50
             scene BG bath-open-00
             if GetRelMax('lisa')[0] < 0:
@@ -856,12 +852,12 @@ label lisa_bath:
             Max_00 "Упс! Уже ушёл..."
 
             jump .end
-        else:
-            Max_00 "В следующих версиях..."
-            jump .end
+        # else:
+        #     Max_00 "В следующих версиях..."
+        #     jump .end
 
     label .open:
-        if poss['seduction'].st() < 31:
+        # if poss['seduction'].st() < 40:
             scene BG bath-open-00
             if GetRelMax('lisa')[0] < 0:
                 show Lisa bath-open 01
@@ -881,8 +877,8 @@ label lisa_bath:
                     pass
             Lisa_12 "Макс, выйди немедленно!"
             Max_00 "Хорошо, уже ухожу..."
-        else:
-            Max_00 "В следующих версиях..."
+        # else:
+        #     Max_00 "В следующих версиях..."
 
     label .end:
         $ AddRelMood('lisa', rel, mood)
