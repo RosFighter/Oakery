@@ -1674,111 +1674,111 @@ translate german strings:
 translate german ann_dressed_balkon_r_4897a021:
 
     # Ann_02 "Ой, Макс! Как ты так тихо подкрадываешься? Да, любуюсь... А ты почему без дела слоняешься?" nointeract
-    Ann_02 "" nointeract
+    Ann_02 "Oh, Max! Wieso schleichst du dich so an mich heran? Ja, ich bewundere nur... Was machst du hier draußen?" nointeract
 
 # game/events/ann.rpy:760
 translate german ann_dressed_balkon_r_0a883de4:
 
     # Ann_01 "Не то, чтобы мешаешь... Иди лучше чем-нибудь продуктивным займись. Маме пока некогда."
-    Ann_01 ""
+    Ann_01 "Nicht, dass du im Weg wärst... Du solltest lieber etwas Produktives tun. Für so etwas fehlt noch die Zeit."
 
 # game/events/ann.rpy:761
 translate german ann_dressed_balkon_r_58738e49:
 
     # Max_00 "Ладно, не буду мешать." nointeract
-    Max_00 "" nointeract
+    Max_00 "Gut, ich lasse dich in Ruhe." nointeract
 
 # game/events/ann.rpy:767
 translate german ann_dressed_balkon_r_2280510e:
 
     # Ann_04 "Нет. Побудь, если хочется. Я не против." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Nein. Bleib, wenn du willst. Das stört mich nicht." nointeract
 
 # game/events/ann.rpy:774
 translate german ann_dressed_balkon_r_119f09c9:
 
     # Ann_02 "Как у тебя дела, Макс? Всё хорошо?"
-    Ann_02 ""
+    Ann_02 "Wie geht es dir, Max? Geht es dir gut?"
 
 # game/events/ann.rpy:775
 translate german ann_dressed_balkon_r_ca3ee871:
 
     # Max_04 "Да, порядок. А ты как? Не скучаешь?"
-    Max_04 ""
+    Max_04 "Ja, es ist alles in Ordnung. Was ist mit dir? Langeweile?"
 
 # game/events/ann.rpy:776
 translate german ann_dressed_balkon_r_7fdac7ed:
 
     # Ann_05 "Ох, сынок, с вами разве заскучаешь. Да и на работе дел хватает." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Oh, mein Sohn, mit dir wird es nie langweilig werden. Auch bei der Arbeit gibt es viel zu tun." nointeract
 
 # game/events/ann.rpy:781
 translate german ann_dressed_balkon_r_55550510:
 
     # Max_07 "Ты, мам, побольше отдыхать не забывай."
-    Max_07 ""
+    Max_07 "Vergiss nicht, dich mehr auszuruhen, Mom."
 
 # game/events/ann.rpy:782
 translate german ann_dressed_balkon_r_081cb55f:
 
     # Ann_07 "Это я и делаю сейчас. А ты давай беги, займись чем-нибудь полезным."
-    Ann_07 ""
+    Ann_07 "Das ist es, was ich jetzt tue. Du gehst und tust etwas Nützliches."
 
 # game/events/ann.rpy:793
 translate german ann_dressed_balkon_r_a9420db7:
 
     # Max_07 "Ты, мам, побольше отдыхать не забывай. У нас слишком прекрасный дом, чтобы грустить."
-    Max_07 ""
+    Max_07 "Vergiss nicht, dich mehr auszuruhen, Mom. Wir haben ein zu schönes Zuhause, um traurig zu sein."
 
 # game/events/ann.rpy:794
 translate german ann_dressed_balkon_r_874166e7:
 
     # Ann_08 "Да, здесь здорово! Маленький рай. Ты зашёл меня просто вот так подбодрить?"
-    Ann_08 ""
+    Ann_08 "Ja, hier ist es großartig! Ein kleines Paradies. Bist du nur vorbeigekommen, um mich aufzuheitern?"
 
 # game/events/ann.rpy:798
 translate german ann_dressed_balkon_r_6b6b7f92:
 
     # Max_02 "Ну, да. Хотел напомнить, что я всегда рядом."
-    Max_02 ""
+    Max_02 "Nun, ja. Ich wollte dich nur daran erinnern, dass ich immer da bin."
 
 # game/events/ann.rpy:799
 translate german ann_dressed_balkon_r_680063a0:
 
     # Ann_07 "Спасибо, но лучше беги, займись чем-нибудь полезным. У меня всё в порядке."
-    Ann_07 ""
+    Ann_07 "Danke, aber du solltest lieber gehen und etwas Sinnvolles tun. Es geht mir gut."
 
 # game/events/ann.rpy:806
 translate german ann_dressed_balkon_r_0cc8bfb1:
 
     # Max_03 "Ладно, не буду отвлекать. Я тебя люблю, мам!"
-    Max_03 ""
+    Max_03 "Okay, ich will nicht stören. Ich liebe dich, Mom!"
 
 # game/events/ann.rpy:807
 translate german ann_dressed_balkon_r_dfe00014:
 
     # Ann_06 "Я тебя тоже, сынок." nointeract
-    Ann_06 "" nointeract
+    Ann_06 "Ich dich auch, mein Sohn." nointeract
 
 translate german strings:
 
     # game/events/ann.rpy:604
     old "Видами любуешься, мам?"
-    new ""
+    new "Genießt du die Aussicht, Mom?"
 
     # game/events/ann.rpy:758
     old "А что, я мешаю?"
-    new ""
+    new "Störe ich?"
 
     # game/events/ann.rpy:758
     old "С тобой хотел побыть. Или я мешаю?"
-    new ""
+    new "Ich bei dir sein. Oder störe ich?"
 
     # game/events/ann.rpy:768
     old "{i}приобнять маму{/i}"
-    new ""
+    new "{i}Mom umarmen{/i}"
 
     # game/events/ann.rpy:777
     old "{i}продолжить обнимать{/i}"
-    new ""
+    new "{i}Umarmung fortsetzen{/i}"
 
