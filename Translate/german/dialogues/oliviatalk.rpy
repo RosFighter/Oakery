@@ -592,7 +592,7 @@ translate german olivia_talk4_82b0e52d:
 translate german olivia_talk4_3c03a230:
 
     # Lisa_09 "Эй, ребята, вы там чего расшушукались?! Со мной не хотите поделиться?"
-    Lisa_09 "Hey, Leute, was soll der Quatsch?! Wollt ihr es nicht mit mir mitteilen?"
+    Lisa_09 "Hey, Leute, was soll der Quatsch?! Wollt ihr es nicht mit mir teilen?"
 
 # game/dialogues/oliviatalk.rpy:216
 translate german olivia_talk4_decec462:
