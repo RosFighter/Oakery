@@ -406,7 +406,7 @@ translate german olivia_talk3_41254256:
 translate german olivia_talk3_4353c164:
 
     # Lisa_01 "Слушайте, а можно... Правда раньше полуночи я не освобожусь..."
-    Lisa_01 "Also, kann ich... Aber ich kann nicht vor Mitternacht kommen, also..."
+    Lisa_01 "Also, kann ich... Aber vor Mitternacht komme ich nicht raus..."
 
 # game/dialogues/oliviatalk.rpy:158
 translate german olivia_talk3_8e5b6309:
@@ -436,7 +436,7 @@ translate german olivia_talk3_720aafa5:
 translate german olivia_talk3_f7f4adb9:
 
     # Olivia_03 "Вот ещё! Всего лишь одна ночь на неделе, когда можно спокойно поваляться на диване перед огромным экраном с друзьями, а Алекс у меня в распоряжении почти всегда. Так что обойдётся!"
-    Olivia_03 "Also dann! Es ist nur ein Abend in der Woche, an dem ich mich mit meinen Freunden auf der Couch vor einem riesigen Fernseher entspannen kann, und ich habe Alex die meiste Zeit zur Verfügung. Es wird also reichen!"
+    Olivia_03 "Warum das! Es ist nur ein Abend in der Woche, an dem ich mich mit meinen Freunden auf der Couch vor einem riesigen Fernseher entspannen kann, aber Alex habe ich die ganze Zeit für mich. Es wird also alles gut!"
 
 # game/dialogues/oliviatalk.rpy:163
 translate german olivia_talk3_f303719b:

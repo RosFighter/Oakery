@@ -1008,7 +1008,7 @@ translate german ann_dressed_moment2_a9e5c75c:
 translate german ann_dressed_moment2_babcea3a:
 
     # Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
-    Ann_15 "Max! Was soll das heißen, wer klopft? {p=3}{nw}"
+    Ann_15 "MMax! Was ist los?! {p=3}{nw}"
 
 # game/events/ann.rpy:399
 translate german ann_dressed_moment2_aa9214ef:
