@@ -1743,3 +1743,31 @@ translate german Eric_with_dictaphone_fde14d10:
     # "{color=[orange]}( Затем наступил тот самый ужин, когда все решилось... ){/color}"
     "{color=[orange]}( Dann kam das Abendessen, bei dem alles entschieden wurde... ){/color}"
 
+# TODO: Translation updated at 2022-02-23 00:12
+
+translate german strings:
+
+    # game/dialogues/erictalk.rpy:337
+    old "Нет, можешь обучать... (Настоящая дружба)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:337
+    old "А ей не рановато? (Фальшивая дружба)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:337
+    old "Лизу тебе не отдам! (Откровенная вражда)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:432
+    old "Значит, тебя её блог интересует? (Настоящая дружба)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:432
+    old "Я мало что об этом знаю... (Фальшивая дружба)"
+    new ""
+
+    # game/dialogues/erictalk.rpy:432
+    old "Вот у неё и спрашивай! (Откровенная вражда)"
+    new ""
+
