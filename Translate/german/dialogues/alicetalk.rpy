@@ -8206,7 +8206,7 @@ translate german alice_about_lingerie0_2a44705b:
 translate german alice_about_lingerie0_43b3d5bb:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 "Ja, ich brauche noch einen Body. Ich zeigte ihm genau, was ich wollte, und wir beschlossen, dass er es kaufen würde, wenn wir am Samstag einkaufen gingen. Und was nun?"
+    Alice_05 "Ja, ich brauche noch einen sexy Body. Also habe ich ihm genau gezeigt, welchen ich haben will. Wir haben entschieden, einen zu kaufen, wenn wir am Samstag einkaufen gehen. Warum?"
 
 # game/dialogues/alicetalk.rpy:4581
 translate german alice_about_lingerie0_f8fd533a:

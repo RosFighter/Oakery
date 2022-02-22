@@ -2332,7 +2332,7 @@ translate german alice_blog_lingerie_c6a4ad3e:
 translate german alice_blog_lingerie_43b3d5bb:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 "Ja, ich brauche noch einen Bodysuit. Und ich zeigte ihm genau, welchen ich wollte. Wir beschlossen, dass wir einen kaufen würden, wenn wir am Samstag einkaufen gehen. Warum fragst du?"
+    Alice_05 "Ja, ich brauche noch einen sexy Body. Also habe ich ihm genau gezeigt, welchen ich haben will. Wir haben entschieden, einen zu kaufen, wenn wir am Samstag einkaufen gehen. Warum?"
 
 # game/events/alice.rpy:2131
 translate german alice_blog_lingerie_f8fd533a:
@@ -2560,7 +2560,7 @@ translate german alice_blog_lingerie_16484159_2:
 translate german alice_blog_lingerie_2625a223:
 
     # Alice_07 "Ты знаешь, отлично! С раскруткой и размещением рекламы от Эрика по другому и быть не может."
-    Alice_07 "Großartig! Mit Erics Unterstützung und Werbung konnte es gar nicht anders laufen."
+    Alice_07 "Einfach Großartig, weißt du? Mit Erics Unterstützung und Werbung konnte es gar nicht anders sein."
 
 # game/events/alice.rpy:2209
 translate german alice_blog_lingerie_dcaa06cd:

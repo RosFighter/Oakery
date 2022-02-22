@@ -6940,121 +6940,121 @@ translate german gift_sexbook_71e49abd:
 translate german MorningWoodCont2_var1_8c16bd79:
 
     # Lisa_01 "Эй, Макс, просыпайся, а то в школу опоздаешь! Там сегодня важный день, надо на уроке Биологии всем твой стоящий член показать!"
-    Lisa_01 "Hey, Max, wach auf oder du kommst zu spät zur Schule! Du musst allen deinen Penis für dein Biologie-Referat zeigen!"
+    Lisa_01 "Hey, Max, wach auf, sonst kommst du zu spät zur Schule! Es ist ein großer Tag im Biologieunterricht, du musst allen deinen steifen Penis zeigen!"
 
 # game/dialogues/lisatalk.rpy:3830
 translate german MorningWoodCont2_var1_358c4a02:
 
     # Max_19 "Нет... Я не хочу в школу... Зови всех сюда, здесь покажем..."
-    Max_19 "Nein... Ich will nicht zur Schule gehen... Sag ihnen, sie sollen herkommen, wenn sie etwas sehen wollen..."
+    Max_19 "Nein... Ich will nicht zur Schule gehen... Sag allen Bescheid, sie sollen herkommen..."
 
 # game/dialogues/lisatalk.rpy:3831
 translate german MorningWoodCont2_var1_db1a936b:
 
     # Lisa_03 "Ага, а учительницу нашу тоже звать?"
-    Lisa_03 "Ja, sogar die Lehrerin?"
+    Lisa_03 "Ja, und die Lehrerin auch?"
 
 # game/dialogues/lisatalk.rpy:3832
 translate german MorningWoodCont2_var1_c08f4c70:
 
     # Max_19 "О да! Я ей такое покажу, будет знать... как надо..."
-    Max_19 "Oh ja! Ich werde ihn ihr zeigen, sie würde sicher wissen, was man damit alles machen kann..."
+    Max_19 "Oh ja! Ich werde ihn ihr zeigen, sie wird wissen... was sie zu tun hat..."
 
 # game/dialogues/lisatalk.rpy:3833
 translate german MorningWoodCont2_var1_2abb080f:
 
     # Lisa_02 "Какой же ты озабоченный, Макс!"
-    Lisa_02 "Du bist so ekelhaft, Max!"
+    Lisa_02 "Was bist du doch für ein geiler Typ, Max!"
 
 # game/dialogues/lisatalk.rpy:3836
 translate german MorningWoodCont2_var1_94f51215:
 
     # Max_07 "А?! Кто озабоченный? Где?!"
-    Max_07 "Eh?! Wer ist gemeint? Wo?"
+    Max_07 "Eh?! Wer ist der geile Typ? Wo?!"
 
 # game/dialogues/lisatalk.rpy:3837
 translate german MorningWoodCont2_var1_31646b7b:
 
     # Lisa_01 "Да вот, прямо тут, передо мной валяется один, с торчащим из трусов членом..."
-    Lisa_01 "Genau hier vor mir ist eine Person, deren Schwanz aus der Unterwäsche ragt..."
+    Lisa_01 "Einer ist direkt vor mir und sein Schwanz ragt aus der Hose..."
 
 # game/dialogues/lisatalk.rpy:3840
 translate german MorningWoodCont2_var1_f25f4e6a:
 
     # Max_09 "Да я же говорил, это само так происходит... Естественный процесс!"
-    Max_09 "Wie gesagt, es ist ein natürlicher Prozess!"
+    Max_09 "Ich sagte doch, es passiert von selbst... Ein natürlicher Zustand!"
 
 # game/dialogues/lisatalk.rpy:3841
 translate german MorningWoodCont2_var1_c7ae7591:
 
     # Lisa_03 "Ну да, очень удобно назвать это естественным процессом!"
-    Lisa_03 "Hmm, es ist sicher so bequem, es einfach auf die Natur zu schieben!"
+    Lisa_03 "Nun ja, es ist sehr bequem, es einen natürlichen Zustand zu nennen!"
 
 # game/dialogues/lisatalk.rpy:3842
 translate german MorningWoodCont2_var1_0d61b2ad:
 
     # Max_07 "Лиза, ты чего меня разбудила-то?!"
-    Max_07 "Lisa, warum hast du mich geweckt?"
+    Max_07 "Lisa, warum weckst du mich?!"
 
 # game/dialogues/lisatalk.rpy:3843
 translate german MorningWoodCont2_var1_841f7193:
 
     # Lisa_01 "Да так, просто хотела немного поиздеваться... Случай мне показался подходящим!"
-    Lisa_01 "Kein wirklicher Grund ... ich wollte nur ein bisschen Spaß haben. Jetzt schien ein guter Zeitpunkt zu sein!"
+    Lisa_01 "Einfach so, ich wollte mich nur ein bisschen darüber amysieren... Der Anlass schien angemessen!"
 
 # game/dialogues/lisatalk.rpy:3844
 translate german MorningWoodCont2_var1_d3da950b:
 
     # Max_09 "Может, пойдёшь уже по своим делам куда-нибудь?!"
-    Max_09 "Warum machst du das nicht woanders?!"
+    Max_09 "Warum gehst du nicht woanders hin?!"
 
 # game/dialogues/lisatalk.rpy:3845
 translate german MorningWoodCont2_var1_146ba08f:
 
     # Lisa_02 "Ладно, озабоченный, я пошла в ванную..."
-    Lisa_02 "Okay, Perversling. Ich gehe ins Badezimmer..."
+    Lisa_02 "Okay, Schatz, ich gehe jetzt ins Bad..."
 
 # game/dialogues/lisatalk.rpy:3846
 translate german MorningWoodCont2_var1_a7cd4ea6:
 
     # Max_16 "Ага, на здоровье!"
-    Max_16 "Ja, gern geschehen!"
+    Max_16 "Ja, gerne!"
 
 # game/dialogues/lisatalk.rpy:3848
 translate german MorningWoodCont2_var1_eb0d01fc:
 
     # Max_09 "Ты же читала, знаешь, что это естественный процесс!"
-    Max_09 "Du hast darüber gelesen, du weißt, dass es ein natürlicher Prozess ist!"
+    Max_09 "Du hast es selbst gehört, du weißt, dass es ein natürlicher Prozess ist!"
 
 # game/dialogues/lisatalk.rpy:3849
 translate german MorningWoodCont2_var1_ec4001bb:
 
     # Lisa_02 "Да, но это всё равно выглядит забавно, вот я и решила немного поиздеваться, пока ты спросонья..."
-    Lisa_02 "Ja, aber es sieht trotzdem lustig aus, also wollte ich ein bisschen Spaß haben, während du aufwachst..."
+    Lisa_02 "Ja, aber es sieht trotzdem lustig aus, also dachte ich, ich amysiere mich darüber, während du aufwachst..."
 
 # game/dialogues/lisatalk.rpy:3850
 translate german MorningWoodCont2_var1_2132c496:
 
     # Max_07 "Ты меня только из-за этого разбудила что ли?!"
-    Max_07 "Hast du mich gerade zum Spaß aufgeweckt?!"
+    Max_07 "Hast du mich deshalb geweckt?!"
 
 # game/dialogues/lisatalk.rpy:3851
 translate german MorningWoodCont2_var1_a8d7114a:
 
     # Lisa_03 "Ещё сказать, что я пошла в ванную..."
-    Lisa_03 "Ich war auch auf der Toilette..."
+    Lisa_03 "Ich wollte noch sagen, dass ich auf dem Weg zur Toilette war..."
 
 # game/dialogues/lisatalk.rpy:3852
 translate german MorningWoodCont2_var1_6b0a393c:
 
     # Max_16 "Ага, на здоровье! Давай, иди уже..."
-    Max_16 "Ja, gern geschehen! Du kannst mich jetzt in Ruhe lassen..."
+    Max_16 "Ja, alles klar! Du kannst mich jetzt in Ruhe lassen..."
 
 # game/dialogues/lisatalk.rpy:3860
 translate german MorningWoodCont2_var2_aa7578ba:
 
     # Lisa_01 "Эй, Макс, а бывает, что я тебе снюсь?"
-    Lisa_01 "Hey, Max, träumst du... manchmal von mir?"
+    Lisa_01 "Hey, Max, träumst du manchmal von mir?"
 
 # game/dialogues/lisatalk.rpy:3861
 translate german MorningWoodCont2_var2_8fb286a1:
@@ -7066,55 +7066,55 @@ translate german MorningWoodCont2_var2_8fb286a1:
 translate german MorningWoodCont2_var2_7f7f7ffd:
 
     # Lisa_02 "А что мы делаем?"
-    Lisa_02 "Was passiert dabei?"
+    Lisa_02 "Was passiert dann?"
 
 # game/dialogues/lisatalk.rpy:3863
 translate german MorningWoodCont2_var2_eac59ca3:
 
     # Max_19 "Да я тебя там... по всякому... и так, и этак..."
-    Max_19 "Nichts wirklich Interessantes... dies und das..."
+    Max_19 "Das habe ich schon... alle möglichen Dinge... in diese und in jene Richtung..."
 
 # game/dialogues/lisatalk.rpy:3864
 translate german MorningWoodCont2_var2_69ba8618:
 
     # Lisa_11 "Не поняла! Что это там и так, и этак ты делаешь?!"
-    Lisa_11 "Lüg nicht! Was meinst du mit \"dies und das\"!?"
+    Lisa_11 "Das verstehe ich nicht! Was machst du auf diese und auf jene Weise?"
 
 # game/dialogues/lisatalk.rpy:3867
 translate german MorningWoodCont2_var2_7d193d82:
 
     # Max_07 "А?! Чего делаю? Кому?!"
-    Max_07 "Eh?! Was habe ich getan? Was habe ich gesagt?"
+    Max_07 "Eh?!  Was soll ich tun? Wie bitte?!"
 
 # game/dialogues/lisatalk.rpy:3868
 translate german MorningWoodCont2_var2_5aed04d8:
 
     # Lisa_12 "Мне! Чего это ты там со мной во сне делаешь, признавайся?!"
-    Lisa_12 "Hör zu! Was machst du mit mir in deinen Träumen, gestehe!"
+    Lisa_12 "Mich! Was machst du mit mir in deinem Traum, erzähl es mir?!"
 
 # game/dialogues/lisatalk.rpy:3869
 translate german MorningWoodCont2_var2_e60ce384:
 
     # Max_08 "Э-э-э... Да так, во всякие Монополии уделываю тебя только так... В Пазлы..."
-    Max_08 "Uh-uh... der Versuch, ein Stück Papier achtmal zur Hälfte zu falten..."
+    Max_08 "Uh-Äh... Nur, du weißt schon, Monopoly-Zeug, das ist alles, was ich mache... Geduldspiele..."
 
 # game/dialogues/lisatalk.rpy:3870
 translate german MorningWoodCont2_var2_8417bd7c:
 
     # Lisa_02 "Чего?! Как можно уделать кого-то в Пазлы?"
-    Lisa_02 "Was? Ist das überhaupt möglich?"
+    Lisa_02 "Was?! Wie bezwingt man jemanden in Geduldspielen?"
 
 # game/dialogues/lisatalk.rpy:3871
 translate german MorningWoodCont2_var2_d4a51097:
 
     # Max_09 "Вот не мешала бы спать, я бы узнал, как..."
-    Max_09 "Wenn du mich nicht aufwecken würdest, wüsste ich das jetzt vielleicht..."
+    Max_09 "Wenn ich weiter schlafen könnte, würde ich herausfinden, wie..."
 
 # game/dialogues/lisatalk.rpy:3872
 translate german MorningWoodCont2_var2_62d996ad:
 
     # Lisa_03 "Заливаешь, Макс! Если бы у тебя член так не стоял, я бы может и поверила в твои оправдания..."
-    Lisa_03 "Klar, Max! Wenn dein Schwanz nicht so stehen würde, würde ich deine Ausreden vielleicht glauben..."
+    Lisa_03 "Klar, Max! Wenn du nicht so einen Steifen hättest, würde ich dir deine Ausreden glauben..."
 
 # game/dialogues/lisatalk.rpy:3873
 translate german MorningWoodCont2_var2_df170a9a:
@@ -7126,37 +7126,37 @@ translate german MorningWoodCont2_var2_df170a9a:
 translate german MorningWoodCont2_var2_b812ded9:
 
     # Lisa_11 "Я не пялюсь! Не опоздаю... хотя могу... Я тогда побежала в ванную..."
-    Lisa_11 "Ich starre nicht, und ich werde nicht zu spät kommen! Ich muss nur... ins Badezimmer gehen, bevor ich gehe..."
+    Lisa_11 "Ich starre nicht! Ich werde nicht zu spät kommen... obwohl ich vielleicht... Ich gehe dann ins Bad..."
 
 # game/dialogues/lisatalk.rpy:3877
 translate german MorningWoodCont2_var2_9998603c:
 
     # Max_02 "Как это!? А ещё поглазеть на мой член? Ой, а может ты извращенка!"
-    Max_02 "Oh, vielleicht damit du mehr Zeit hast, auf meinen Schwanz zu schauen? Ich glaube, du bist die Perverse!"
+    Max_02 "Wie ist das? Auf meinen Schwanz zu starren? Oh, vielleicht bist du ja pervers!"
 
 # game/dialogues/lisatalk.rpy:3878
 translate german MorningWoodCont2_var2_402b9fe1:
 
     # Lisa_10 "Чего!? Я не извращенка! Сам такой. Понял! Вот, всё."
-    Lisa_10 "Was!? Ich bin nicht pervers, du bist es! Und damit basta!"
+    Lisa_10 "Was!? Ich bin kein Perverser! Du bist es. Alles klar! Das war's."
 
 # game/dialogues/lisatalk.rpy:3880
 translate german MorningWoodCont2_var2_92d4cea4:
 
     # Lisa_01 "Я не пялюсь и сегодня нет уроков! Выходные же!"
-    Lisa_01 "Ich starre nicht und heute ist keine Schule! Es ist Wochenende!"
+    Lisa_01 "Ich starre nicht, und heute ist keine Schule! Es ist Wochenende!"
 
 # game/dialogues/lisatalk.rpy:3881
 translate german MorningWoodCont2_var2_c8f2f573:
 
     # Max_02 "Нет, ты пялишься... Да ты извращенка!"
-    Max_02 "Nö, du starrst definitiv ... und bist definitiv pervers!"
+    Max_02 "Nein, du starrst... Du bist ein Perverser!"
 
 # game/dialogues/lisatalk.rpy:3882
 translate german MorningWoodCont2_var2_04f38e1a:
 
     # Lisa_10 "Чего!? Я не извращенка! Сам такой. Вот. А я пошла в ванную..."
-    Lisa_10 "Was!? Ich bin nicht pervers! Du warst schon so, als ich aus dem Badezimmer zurückkam..."
+    Lisa_10 "Was!? Ich bin kein Perverser! Du bist das. Hier. Und ich gehe auf die Toilette..."
 
 # game/dialogues/lisatalk.rpy:3883
 translate german MorningWoodCont2_var2_8137b9e5:
