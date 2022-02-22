@@ -1864,7 +1864,7 @@ translate german dinner_lace_lingerie_c85be202:
 translate german dinner_lace_lingerie_df977086:
 
     # Alice_03 "Сегодня за меня тоже можешь не волноваться, мам. Я не иду в клуб. У тёти Киры этой ночью \"корпоративная\" вечеринка, а я лучше над своим блогом дополнительный вечерок поработаю."
-    Alice_03 "Du musst dir heute Abend auch keine Sorgen um mich machen, Mom. Ich gehe nicht aus. Tante Kira ist heute Abend eine Firmenfeier, also werde ich etwas Zeit damit verbringen, an meinem Blog zu arbeiten."
+    Alice_03 "Du musst dir heute Abend auch keine Sorgen um mich machen, Mom. Ich werde nicht in den Club gehen. Tante Kira hat heute Abend eine \"Firmenfeier\" und ich würde lieber eine Nacht länger an meinem Blog arbeiten."
 
 # game/dialogues/dinner.rpy:793
 translate german dinner_lace_lingerie_fcb50d1a:
