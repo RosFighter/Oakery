@@ -184,7 +184,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Ещё было бы классно делать маме массаж и смотреть при этом какой-нибудь эротический фильм. Но лучше сперва довести этот массаж до автоматизма, потому что фильм будет отвлекать. Потребуются успехи в возможности \"Любимая тётя\"..."
-    new "Es wäre auch schön, meiner Mutter eine Massage zu geben, während sie einen erotischen Film ansieht. Aber es ist am besten, diese Massage erst einmal zu perfektionieren, denn der Film wird Sie ablenken. Du musst Fortschritte bei der Möglichkeit der \"Geliebten Tante\" machen..."
+    new "Es wäre auch schön, meiner Mutter eine Massage zu geben, während sie einen erotischen Film ansieht. Aber es ist am besten, diese Massage erst einmal zu perfektionieren, denn der Film wird Sie ablenken. Du musst Fortschritte bei der Möglichkeit \"Lieblingstante\" machen..."
 
     # game/core/09_opportunities.rpy:4
     old "Прежде чем купить какой-нибудь эротический фильм и уговорить маму его посмотреть, нужно больше с ней сблизиться. Её утренние занятия йогой отлично подойдут для этого..."
@@ -620,7 +620,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно больше сближаться с Алисой в экстремальных ситуациях. Для этого потребуются успехи в возможности \"Арахнофобия\"..."
-    new "Ich muss mich Alice in Extremsituationen annähern. Das erfordert Fortschritte bei der \"Arachnophobie\"-Möglichkeit..."
+    new "Ich muss mich Alice in Extremsituationen annähern. Das erfordert Fortschritte bei der Möglichkeit \"Angst vor Spinnen\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит попробовать не торопиться довести Алису до оргазма в самый последний момент..."
@@ -768,11 +768,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Я решил, что и мне самому будет полезно прочитать купленную для Лизы книгу. Вдруг, тем самым, я что-то для себя интересное открою..."
-    new "Ich entschied, dass es für mich nützlich wäre, das Buch zu lesen, das ich für Lisa gekauft hatte. Vielleicht entdecke ich dabei etwas Interessantes für mich..."
+    new "Ich habe entschieden, dass es für mich nützlich ist, das Buch selbst erst einmal zu lesen, das ich für Lisa gekauft hatte. Vielleicht entdecke ich dabei etwas Interessantes für mich..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно набраться терпения и прочитать эту книгу..."
-    new "Ich muss geduldig sein und dieses Buch lesen..."
+    new "Ich muss geduldig sein und dieses Buch zu Ende lesen..."
 
     # game/core/09_opportunities.rpy:4
     old "Книга прочитана! Не то, чтобы много всего нового я для себя открыл, но есть то, что может помочь нам с Лизой ещё больше сблизиться. А пока можно ей книжку подарить..."
