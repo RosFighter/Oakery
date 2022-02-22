@@ -406,7 +406,7 @@ translate german olivia_talk3_41254256:
 translate german olivia_talk3_4353c164:
 
     # Lisa_01 "Слушайте, а можно... Правда раньше полуночи я не освобожусь..."
-    Lisa_01 "Also, kann ich... Aber vor Mitternacht komme ich nicht raus..."
+    Lisa_01 "Ähm, also ich... Aber vor Mitternacht bin ich kaum fertig..."
 
 # game/dialogues/oliviatalk.rpy:158
 translate german olivia_talk3_8e5b6309:
