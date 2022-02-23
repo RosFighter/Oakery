@@ -143,7 +143,7 @@ translate german strings:
     new "Ich muss sehen, ob meine Mutter meinen Ständer bemerkt, wenn ich in T-Shirt und Shorts mit ihr fernsehe..."
 
     # game/core/09_opportunities.rpy:4
-    old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно незаметить. Но я сам виноват... Понадеялся на лучшее, а у самого даже майки нет. Стоило бы, кстати, её купить и уже тогда спокойно смотреть с мамой ТВ. Там правда тоже гарантий нет, но попробовать можно..."
+    old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно не заметить. Но я сам виноват... Понадеялся на лучшее, а у самого даже майки нет. Стоило бы, кстати, её купить и уже тогда спокойно смотреть с мамой ТВ. Там правда тоже гарантий нет, но попробовать можно..."
     new "Hoppla... Meine Mutter hat also meinen Ständer bemerkt. Was soll ich sagen, es ist wirklich schwer, das nicht zu bemerken. Aber das ist meine eigene Schuld... Ich habe mir Hoffnungen gemacht, und ich habe nicht einmal ein Hemd an. Ich glaube, ich sollte mir eines kaufen und dann in Ruhe mit meiner Mutter fernsehen. Eine Garantie gibt es auch hier nicht, aber man kann es versuchen..."
 
     # game/core/09_opportunities.rpy:4
@@ -2201,4 +2201,28 @@ translate german strings:
     # game/core/09_opportunities.rpy:4
     old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я испытал удачу и предложил ей продолжить уроки Эрика, но уже с собой во главе. \nВот только Лиза не верит, что я знаю чему её учить, поэтому, пока что, мне удалось уговорить её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. \nНо ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
     new "Von Lisa habe ich erfahren, dass sie das Buch über Sexualerziehung gelesen hat. Gleichzeitig habe ich mein Glück versucht und vorgeschlagen, dass sie Erics Unterricht fortsetzt, aber unter meiner Leitung. \nAber Lisa glaubt nicht, dass ich weiß, was ich ihr beibringen soll, also habe ich es nur geschafft, sie zu überreden, mehr über das Küssen zu lernen, aber auf eine intimere Weise. Sie erlaubt immer noch, dass ich ihren Hals küsse, aber sie lässt mich auch nicht ihre Brüste berühren, weil es ihr peinlich ist, oder? \nAber es ist okay, sie wird es zulassen. Ich denke, wenn man versucht, ihr während des Lesens ein paar nette Annäherungsversuche zu machen, kann der Kussunterricht mit voller Kraft fortgesetzt werden."
+
+# TODO: Translation updated at 2022-02-24 00:58
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "У меня появились кое-какие опасения на счёт практических занятий Лизы и Эрика. Нужно будет поговорить с Эриком после следующего совместного ужина..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Я спросил Эрика, думал ли он о том, что у него могут возникнуть серьёзные проблемы, если их с Лизой кто-нибудь увидит или она кому-то расскажет об этих уроках. И похоже, Эрик не особо об этом думал! Его так ослепили перспективы перетрахать всю женскую половину моей семьи, что он даже не подумал о таких элементарных вещах. И о чудо, после недолгих раздумий он решил переложить сексуальное воспитание Лизы на меня! Это просто невероятно! Теперь Лиза полностью в моём распоряжении. Конечно, пока не повзрослеет, но времени ещё навалом..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Кстати, я всё не спрошу у Лизы, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды..."
+    new ""
+
+    # game/core/09_opportunities.rpy:968
+    old "Эта возможность не доступна при дружбе с Эриком..."
+    new ""
 
