@@ -544,7 +544,7 @@ translate german olivia_talk4_5c268ef1:
 translate german olivia_talk4_4d6fb032:
 
     # Olivia_02 "Если бы я не знала Лизу, то подумала бы, что попытка подружиться со мной, была с целью как раз к нему подкатить..."
-    Olivia_02 "Wenn ich Lisa nicht besser kennen würde, würde ich denken, dass der Versuch, sich mit mir anzufreunden, nur dazu diente, ihn anzumachen..."
+    Olivia_02 "Wenn ich Lisa nicht besser kennen würde, könnte ich denken, dass der Versuch, sich mit mir anzufreunden, nur dazu diente, ihn anzumachen..."
 
 # game/dialogues/oliviatalk.rpy:203
 translate german olivia_talk4_d684e49e:

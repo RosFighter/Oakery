@@ -3268,7 +3268,7 @@ translate german Lisa_sorry_52b41ffd:
 translate german Lisa_sorry_f154d4e4:
 
     # Max_04 "Уверен, если бы ты сидела дома, а я ходил в школу, то ты бы сейчас была на моём месте и оправдывалась..."
-    Max_04 "Ich bin sicher, wenn du zu Hause sitzen würdest und ich zur Schule gehen würde, würdest du sehen, wie es ist, an meiner Stelle zu sein..."
+    Max_04 "Ich bin sicher, wenn du zu Hause sitzen würdest und ich zur Schule gehe, könntest du erleben, wie es ist, an meiner Stelle zu sein..."
 
 # game/dialogues/lisatalk.rpy:1952
 translate german Lisa_sorry_0f1bd400:
