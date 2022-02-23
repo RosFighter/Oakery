@@ -183,6 +183,33 @@ layeredimage Lisa_sleep:
 
     attribute naked null
 
+layeredimage Lisa_practice:
+    image_format 'Lisa practice {image}'
+    group bg:
+        attribute lessons default:
+            'myroom-lessons-[var_pose]'
+        attribute seen:
+            'myroom-voyeur-evening-00'
+
+    attribute seen:
+        'myroom-seen-lisa-[var_pose][lisa.dress]'
+
+    attribute seen:
+        'myroom-seen-eric-[var_pose][eric.dress]'
+
+    if var_pose in ['00', '02']:
+        if_all 'lessons'
+        'myroom-lessons-[var_pose]-lisa-01[lisa.dress]-eric-01[eric.dress]'
+
+    if var_pose in ['01', '03', '04', '05']:
+        if_all 'lessons'    # lisa
+        'myroom-lessons-[var_pose]-lisa-01[lisa.dress]'
+
+    if var_pose in ['01', '03', '04', '05']:
+        if_all 'lessons'    # eric
+        'myroom-lessons-[var_pose]-eric-01[eric.dress]'
+
+
 ################################################################################
 ## Анна
 
@@ -363,3 +390,7 @@ layeredimage Max_sleep:
             'myroom-bedmax-mde-01-max-sleep-[pose3_3][mgg.dress]'
         attribute night default:
             'myroom-bedmax-n-01-max-sleep-[pose3_3]a'
+
+
+################################################################################
+## Эрик

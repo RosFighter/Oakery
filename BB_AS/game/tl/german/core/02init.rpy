@@ -440,7 +440,7 @@ translate german strings:
 
     # game/core/02init.rpy:133
     old "Рассказывай, что делали?"
-    new "Sage mir, was hast du getan?"
+    new "Sag mir, über was habt ihr geredet?"
 
     # game/core/02init.rpy:133
     old "Ну так и чему же тебя учили?"

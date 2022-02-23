@@ -414,3 +414,11 @@ translate german strings:
     old "Продолжить"
     new "Klicken Sie zum Fortfahren"
 
+# TODO: Translation updated at 2022-02-24 00:58
+
+translate german strings:
+
+    # game/core/screens.rpy:1136
+    old "ЗАБЛОКИРОВАНЫ..."
+    new ""
+

@@ -28,19 +28,19 @@ translate german lisa_shower_1e033770:
 translate german lisa_shower_21893e03:
 
     # Max_09 "{m}Кажется, Лиза что-то делает в ванной...{/m}" nointeract
-    Max_09 "{m}Sieht aus, als wäre Lisa in der Badewanne...{/m}" nointeract
+    Max_09 "{m}Lisa scheint im Badezimmer etwas zu machen...{/m}" nointeract
 
 # game/events/lisa.rpy:43
 translate german lisa_shower_7a2afa4f:
 
     # Lisa "{b}Лиза:{/b} Кто там? Я ещё не закончила. Подождите немного..." nointeract
-    Lisa "{b}Lisa:{/b} Wer ist da? Ich bin noch nicht fertig. Gib mir nur noch ein paar Minuten..." nointeract
+    Lisa "{b}Lisa:{/b} Wer ist da? Ich bin noch nicht fertig. Einen Moment noch..." nointeract
 
 # game/events/lisa.rpy:46
 translate german lisa_shower_0451df43:
 
     # Lisa "{b}Лиза:{/b} Макс, чего хотел? Я же говорю, скоро выйду!" nointeract
-    Lisa "{b}Lisa:{/b} Was willst du, Max? Ich bin noch nicht fertig!" nointeract
+    Lisa "{b}Lisa:{/b} Max, was willst du? Ich sagte doch, ich komme bald raus!" nointeract
 
 # game/events/lisa.rpy:49
 translate german lisa_shower_d84f6a90:

@@ -566,7 +566,7 @@ label ann_tv_continuation_massage:
     show Ann tv-ero 04-01
     Ann_07 "Ой, Макс! Это чудесно... Ты знаешь как сделать приятно. Мне очень понравилось... Ты большой молодец у меня!" nointeract
     menu:
-        "Массаж спины?" if not poss['mom-tv'].used(11):
+        "Массаж спины?" if not poss['mom-tv'].used(12):
             # 1-ый массаж спины Анны
             Ann_05 "Обожаю массаж спины... Не знаю, хватит ли у тебя для этого силы, но давай попробуем. Может у тебя уже было достаточно практики и ты со мной справишься..."
             Max_04 "Ты не пожалеешь!"
@@ -582,7 +582,7 @@ label ann_tv_continuation_massage:
             Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
             $ ann.flags.m_back = 1
             jump .massage
-        "Полотенце приспустишь?" if poss['mom-tv'].used(11):   #периодический массаж спины
+        "Полотенце приспустишь?" if poss['mom-tv'].used(12):   #периодический массаж спины
             Ann_05 "Конечно! Когда дело доходит до моей спины, я очень требовательна, сынок, потому что обожаю это. Надеюсь, ты справишься."
             Max_04 "Ты не пожалеешь!"
             # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
@@ -673,7 +673,7 @@ label ann_tv_continuation_massage:
 
     menu .end:
         "{i}уйти{/i}":
-            $ poss['mom-tv'].open(11)
+            $ poss['mom-tv'].open(12)
     $ spent_time = max((60 - int(tm[-2:])), 40)
     $ cur_ratio = 0.5
     jump Waiting
@@ -1054,7 +1054,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
         scene Ann_yoga seven
         Max_05 "Здорово, мам! Ещё немного потянись и будет идеально..."
         Ann_05 "Главное - не перенапрячься с утра пораньше... А то буду еле живая на работе... Но с твоей поддержкой, кажется, мне это не грозит."
-        $ poss['yoga'].open(3)
+        $ poss['yoga'].open(4)
         if mgg.dress != 'b':
             Max_14 "{m}Ага, у меня сейчас в шортах такая твёрдая опора от всех этих сексуальных изгибов, что мама вот-вот заметит. А не думать о её шелковистом теле просто невозможно! И зачем я без майки этим занимаюсь?{/m}" nointeract
             menu:
@@ -1064,6 +1064,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
                         # yoga-05 + yoga-05-ann-(00/00a) + yoga-05-max-00b
                         $ var_stage = '05'
                         $ var_pose = '00'
+                        $ ann.flags.truehelp += 1
                         $ renpy.retain_after_load()
                         scene Ann_yoga
                         if ann.flags.defend == 1:
@@ -1105,6 +1106,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
             # yoga-05 + yoga-05-ann-(00/00a) + yoga-05-max-00a
             $ var_stage = '05'
             $ var_pose = '00'
+            $ ann.flags.truehelp += 1
             $ renpy.retain_after_load()
             scene Ann_yoga
             if ann.flags.defend == 1:
@@ -1186,7 +1188,11 @@ label ann_gift_fit1:
             Ann_02 "Спасибо, сынок! И ты тоже..."
 
     $ items['fit1'].give()
-    $ poss['yoga'].open(2)
+    if get_rel_eric()[0] < 0:
+        $ poss['yoga'].open(3)
+    else:
+        $ poss['yoga'].open(2)
+
     $ ann.gifts.append('fit1')
     $ setting_clothes_by_conditions()
     $ spent_time = 30
@@ -1720,7 +1726,10 @@ label erofilm2_2:
     $ spent_time = max((60 - int(tm[-2:])), 40)
     $ SetCamsGrow(house[4], 180)
     $ items['erofilm2'].block()
-    $ poss['mom-tv'].open(10)
+    if get_rel_eric()[0] < 0:
+        $ poss['mom-tv'].open(11)
+    else:
+        $ poss['mom-tv'].open(10)
     jump Waiting
 
 

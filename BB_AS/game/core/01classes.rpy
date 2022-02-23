@@ -1520,12 +1520,19 @@ init python:
 
         Kira_ab_photo3  = CutEvent('10:00', label='kira_about_photo3_1', desc="Кира говорит, когда состоится 3-я фотосессия", variable="all([kira.dcv.feature.done, kira.dcv.feature.stage==9, kira.dcv.photo.stage==2, kira.flags.held_out > 2])")
 
-        # в ближайший четверг, если закончились все уроки Лизы у АиЭ по дрочке + решилась ходовка с кружевным боди
+        # в ближайший четверг после окончания всех уроков Лизы у АиЭ по дрочке + решилась ходовка с кружевным боди
         Lisa_ab_Eric0   = CutEvent('20:00', (4, ), 'lisa_about_ae_sexed5', "Диалог с Лизой о практике у Эрика", "all([flags.lisa_sexed == 5, alice.dcv.intrusion.stage>5])")
         # состоялся разговор с Лизой о практике, война с Эриком, таблетки не подсыпаны, влияние Эрика было выше
-        Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage==3, not flags.eric_wallet])")
+        Eric_war_sexed  = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при вражде с Эриком", "all([flags.lisa_sexed == 7, get_rel_eric()[0] < 0, not eric.daily.sweets, lisa.dcv.intrusion.stage == 3, not flags.eric_wallet])")
         # состоялся разговор с Лизой о практике, война с Эриком, влияние Эрика было ниже
-        Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed==7, GetRelMax('eric')[0] < 0, lisa.dcv.intrusion.stage==4, not flags.eric_wallet])")
+        Eric_war_no_ed  = CutEvent('20:00', (1, ), 'eric_about_practice_war', "при вражде с Эриком практика не состоялась", "all([flags.lisa_sexed == 7, get_rel_eric()[0] < 0, lisa.dcv.intrusion.stage == 4, not flags.eric_wallet])")
+        # состоялся разговор с Лизой о практике, хитрая дружба с Эриком, таблетки не подсыпаны
+        Eric_sexed_FF   = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая (срываемая) практика Лизы при Д-", "all([flags.lisa_sexed == 7, get_rel_eric()[0] == 2, not eric.daily.sweets])")
+        # состоялся разговор с Лизой о практике, настоящая дружба с Эриком
+        Eric_sexed_RF   = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая и вторая практика Лизы при Д+", "all([flags.lisa_sexed in [6, 8], get_rel_eric()[0] == 3])")
+        # среда, сразу после ужина, в понедельник прошла 2-ая практика
+        Eric_t_se_RF    = CutEvent('20:00', (3, ), 'Eric_talk_about_Lisa_3', "розговор с Эриком после второй практики на Д+, Эрик уступает Лизу", "all([flags.lisa_sexed == 9, get_rel_eric()[0] == 3])")
+
         Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", 'flags.eric_wallet == 1')
         Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable='flags.eric_wallet == 3', sleep=True, extend=True)
 

@@ -168,8 +168,7 @@ label eric_time_settings:
             $ infl[lisa].add_e(40)
 
             # отмечаем урок пройденным
-            $ flags.lisa_sexed += 1
-            # 5 - не урок, а остающийся "за кадром" разговор Лизы с Эриком о апрактике
+            $ flags.lisa_sexed += 1     # урок 1-4 Лизы у АиЭ, 5 - остающийся "за кадром" разговор Лизы с Эриком о апрактике
 
             # сбрасываем флаг диалога с Лизой
             $ flags.l_ab_sexed = False
@@ -1845,13 +1844,13 @@ label update_07_p1_99:
         $ olivia_night_visits = olivia_nightvisits()
 
     if _version < '0.07.p1.02':
-        if flags.lisa_sexed == 6 and lisa.dcv.battle.stage in [1, 4]:
-            # временные этапы при дружбе с Эриком
-            if infl[lisa].balance[2] == 'm':
-                $ poss['seduction'].open(27)
-            else:
-                $ poss['seduction'].open(26)
-            ########
+        # if flags.lisa_sexed == 6 and lisa.dcv.battle.stage in [1, 4]:
+        #     # временные этапы при дружбе с Эриком
+        #     if infl[lisa].balance[2] == 'm':
+        #         $ poss['seduction'].open(27)
+        #     else:
+        #         $ poss['seduction'].open(26)
+        #     ########
 
         if 'kira' in chars and kira.dcv.feature.stage == 11 and len(expected_photo) == 10:
             $ expected_photo.clear()
@@ -1880,3 +1879,33 @@ label update_07_p2_99:
 
     if ann.flags.showdown_e > 0:
         $ poss['boss'].open(2)
+
+    if _version < '0.07.p2.60':
+        if all([get_rel_eric()[0] == 2, any([poss['seduction'].used(24), poss['seduction'].used(25), poss['seduction'].used(26)])]):
+            $ poss['seduction'].stages[24] = 0
+            $ poss['seduction'].stages[25] = 0
+            $ poss['seduction'].stages[26] = 0
+            $ poss['seduction'].open(27)
+        elif all([get_rel_eric()[0] == 3, any([poss['seduction'].used(24), poss['seduction'].used(25), poss['seduction'].used(27)])]):
+            $ poss['seduction'].stages[24] = 0
+            $ poss['seduction'].stages[25] = 0
+            $ poss['seduction'].stages[26] = 0
+            $ poss['seduction'].open(26)
+
+        if poss['seduction'].used(32):
+            $ poss['seduction'].stages[32] = 0
+            $ poss['seduction'].open(36)
+        if poss['seduction'].used(31):
+            $ poss['seduction'].stages[31] = 0
+            $ poss['seduction'].open(35)
+        if poss['seduction'].used(30):
+            $ poss['seduction'].stages[30] = 0
+            $ poss['seduction'].open(34)
+
+        if poss['yoga'].used(3):
+            $ poss['yoga'].stages[2] = 0
+            $ poss['yoga'].open(4)
+
+        if poss['mom-tv'].used(11):
+            $ poss['mom-tv'].stages[10] = 0
+            $ poss['mom-tv'].open(12)

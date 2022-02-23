@@ -1066,7 +1066,7 @@ translate german kira_bath_cum_in_her_mouth_6f308174_1:
 translate german kira_bath_end_sex_94418467:
 
     # Kira_01 "Давай уже быстренько разбегаться, а то вдруг наши с тобой стоны кто-то услышал."
-    Kira_01 "Lass uns hier verschwinden, bevor uns jemand jammern hört."
+    Kira_01 "Lass uns hier schnell rausgehen, bevor uns jemand stöhnen hört."
 
 # game/events/kira.rpy:705
 translate german kira_bath_end_sex_4144ec85:

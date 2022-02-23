@@ -406,7 +406,7 @@ translate german olivia_talk3_41254256:
 translate german olivia_talk3_4353c164:
 
     # Lisa_01 "Слушайте, а можно... Правда раньше полуночи я не освобожусь..."
-    Lisa_01 "Also, kann ich... Aber ich kann nicht vor Mitternacht kommen, also..."
+    Lisa_01 "Ähm, also ich... Aber vor Mitternacht bin ich kaum fertig..."
 
 # game/dialogues/oliviatalk.rpy:158
 translate german olivia_talk3_8e5b6309:
@@ -436,7 +436,7 @@ translate german olivia_talk3_720aafa5:
 translate german olivia_talk3_f7f4adb9:
 
     # Olivia_03 "Вот ещё! Всего лишь одна ночь на неделе, когда можно спокойно поваляться на диване перед огромным экраном с друзьями, а Алекс у меня в распоряжении почти всегда. Так что обойдётся!"
-    Olivia_03 "Also dann! Es ist nur ein Abend in der Woche, an dem ich mich mit meinen Freunden auf der Couch vor einem riesigen Fernseher entspannen kann, und ich habe Alex die meiste Zeit zur Verfügung. Es wird also reichen!"
+    Olivia_03 "Warum das! Es ist nur ein Abend in der Woche, an dem ich mich mit meinen Freunden auf der Couch vor einem riesigen Fernseher entspannen kann, aber Alex habe ich die ganze Zeit für mich. Es wird also alles gut!"
 
 # game/dialogues/oliviatalk.rpy:163
 translate german olivia_talk3_f303719b:
@@ -544,7 +544,7 @@ translate german olivia_talk4_5c268ef1:
 translate german olivia_talk4_4d6fb032:
 
     # Olivia_02 "Если бы я не знала Лизу, то подумала бы, что попытка подружиться со мной, была с целью как раз к нему подкатить..."
-    Olivia_02 "Wenn ich Lisa nicht besser kennen würde, würde ich denken, dass der Versuch, sich mit mir anzufreunden, nur dazu diente, ihn anzumachen..."
+    Olivia_02 "Wenn ich Lisa nicht besser kennen würde, könnte ich denken, dass der Versuch, sich mit mir anzufreunden, nur dazu diente, ihn anzumachen..."
 
 # game/dialogues/oliviatalk.rpy:203
 translate german olivia_talk4_d684e49e:
@@ -592,7 +592,7 @@ translate german olivia_talk4_82b0e52d:
 translate german olivia_talk4_3c03a230:
 
     # Lisa_09 "Эй, ребята, вы там чего расшушукались?! Со мной не хотите поделиться?"
-    Lisa_09 "Hey, Leute, was soll der Quatsch?! Wollt ihr es nicht mit mir mitteilen?"
+    Lisa_09 "Hey, Leute, was soll der Quatsch?! Wollt ihr es nicht mit mir teilen?"
 
 # game/dialogues/oliviatalk.rpy:216
 translate german olivia_talk4_decec462:

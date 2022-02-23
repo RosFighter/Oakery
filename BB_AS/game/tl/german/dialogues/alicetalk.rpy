@@ -8206,7 +8206,7 @@ translate german alice_about_lingerie0_2a44705b:
 translate german alice_about_lingerie0_43b3d5bb:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 "Ja, ich brauche noch einen Body. Ich zeigte ihm genau, was ich wollte, und wir beschlossen, dass er es kaufen würde, wenn wir am Samstag einkaufen gingen. Und was nun?"
+    Alice_05 "Ja, ich brauche noch einen sexy Body. Also habe ich ihm genau gezeigt, welchen ich haben will. Wir haben entschieden, einen zu kaufen, wenn wir am Samstag einkaufen gehen. Warum?"
 
 # game/dialogues/alicetalk.rpy:4581
 translate german alice_about_lingerie0_f8fd533a:
@@ -8326,7 +8326,7 @@ translate german gift_lace_lingerie_88c80c12:
 translate german gift_lace_lingerie_b8b29617:
 
     # Max_19 "Естественно, не хочу." nointeract
-    Max_19 "Of course, I don't want to." nointeract
+    Max_19 "Das will ich natürlich nicht." nointeract
 
 # game/dialogues/alicetalk.rpy:4648
 translate german gift_lace_lingerie_8d5dabdd:
@@ -8404,7 +8404,7 @@ translate german gift_lace_lingerie_8aa39d7d:
 translate german gift_lace_lingerie_3ecad78b:
 
     # Alice_03 "Двигаться больше — это спортом заниматься, ты хочешь сказать? Не люблю я это. Я люблю на солнышке понежиться, за книжкой посидеть или перед экраном ТВ или компьютера. Ты же знаешь."
-    Alice_03 "Mehr Bewegung — meinst du also? Das gefällt mir nicht. Ich mag es, mich in der Sonne zu sonnen, vor einem Buch zu sitzen oder vor dem Fernseher oder Computerbildschirm zu sitzen. Das weißt du doch."
+    Alice_03 "Mehr Bewegung — meinst du also? Das gefällt mir nicht. Ich mag es, mich in die Sonne zu legen, ein Buch zu lesen oder vor dem Fernseher oder Computer zu sitzen. Das weißt du doch."
 
 # game/dialogues/alicetalk.rpy:4692
 translate german gift_lace_lingerie_697f00d7:
@@ -8428,7 +8428,7 @@ translate german gift_lace_lingerie_e52eb91b:
 translate german gift_lace_lingerie_7778d00e:
 
     # Alice_01 "Но правдивая, извращенец ты мелкий! Давай гуляй, у меня блог простаивает... И спасибо за подарок. Нужно будет Эрику не забыть сказать, что ты его опередил. Это же не станет для вас проблемой?"
-    Alice_01 "Aber es ist wahrscheinlich wahr, du Perversling! Wie auch immer, du kannst jetzt loslegen. Und danke für das Geschenk. Ich muss daran denken, Eric zu sagen, dass du schneller warst als er. Das wird doch kein Problem für dich sein, oder?"
+    Alice_01 "Aber es ist wahrscheinlich wahr, du Perversling! Wie auch immer, du kannst... jetzt aufhören. Und danke für das Geschenk. Ich muss daran denken, Eric zu sagen, dass du schneller warst als er. Das wird doch kein Problem für dich sein, oder?"
 
 # game/dialogues/alicetalk.rpy:4696
 translate german gift_lace_lingerie_311d8c21:
@@ -11110,7 +11110,7 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:5459
     old "{i}отнести тарелки на веранду{/i}"
-    new "{i}Teller auf die Terasse bringen{/i}"
+    new "{i}Teller auf den Balkon bringen{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}приступить к ужину{/i}"

@@ -212,7 +212,7 @@ init python:
             return False
 
         return all([
-            flags.lisa_sexed > 6,
+            flags.lisa_sexed in [7, 10],
             lisa.dcv.intrusion.stage > 2,
             eric.get_plan(day, '19:00').name == 'dinner',
             items['laxative'].have,
@@ -226,7 +226,7 @@ init python:
             return False
 
         return all([
-            flags.lisa_sexed > 6,
+            flags.lisa_sexed in [7, 10],
             lisa.dcv.intrusion.stage > 2,
             eric.get_plan(day, '19:00').name == 'dinner',
             items['sedative'].have,
@@ -360,3 +360,40 @@ init python:
             alice.dcv.intrusion.lost in [1, 2], # когда откату осталось 1-2 дня
             items['sexbody2'].have,             # у Макса есть кружевное боди
             ])
+
+    def get_rel_eric():
+        if 'eric' not in chars:
+            return False
+        if eric.relmax == 0:
+            return (0, _("Не определены"))
+        elif eric.relmax < 0:
+            return (-1, _("Откровенная вражда"))
+
+        # для определения дружбы / хитрой дружбы нужно разобрать выбор Макса в вопросах по девушкам
+        # варианты:
+        #   дружба              - до определения отношений хотя бы с одной девушкой
+        #   Настоящая дружба    - выбран вариант отдать девушку Эрику (обеих девушек после определения отношений по обеим)
+        #   Фальшивая дружба    - хотя бы по одной девушке начал юлить
+
+        if not any([lisa.dcv.battle.stage, alice.dcv.battle.stage]):
+            # ещё ни по одной девушке отношения не определены
+            return (1, _("Дружба"))
+
+        elif any([
+                all([lisa.dcv.battle.stage in [1, 4], alice.dcv.battle.stage in [1, 4, 7]]),    # выбор сделан по обеим девушкам
+                all([not lisa.dcv.battle.stage, alice.dcv.battle.stage in [1, 4, 7]]),          # по Лизе путь не выбран, по Алисе выбрана настоящая дружба
+                all([lisa.dcv.battle.stage in [1, 4], not alice.dcv.battle.stage]),             # по Алисе путь не выбран, по Лизе выбрана настоящая дружба
+                ]):
+            # настоящая дружба
+            return (3, _("Настоящая дружба"))
+
+        elif any([
+                all([lisa.dcv.battle.stage in [3, 6], alice.dcv.battle.stage in [3, 6, 9]]),    # выбор сделан по обеим девушкам
+                all([not lisa.dcv.battle.stage, alice.dcv.battle.stage in [3, 6, 9]]),          # по Лизе путь не выбран, по Алисе откровенная вражда
+                all([lisa.dcv.battle.stage in [3, 6], not alice.dcv.battle.stage]),             # по Алисе путь не выбран, по Лизе откровенная вражда
+                ]):
+            # откровенная вражда
+            pass
+        else:
+            # хотя бы по одной девушке Макс попытался схитрить
+            return (2, _("Фальшивая дружба"))

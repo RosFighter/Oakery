@@ -2332,7 +2332,7 @@ translate german alice_blog_lingerie_c6a4ad3e:
 translate german alice_blog_lingerie_43b3d5bb:
 
     # Alice_05 "Да, мне нужно ещё одно сексуальное боди. И я показала ему, какое конкретно хочу. Решили, что купим, когда поедем на шопинг в субботу. А что?"
-    Alice_05 "Ja, ich brauche noch einen Bodysuit. Und ich zeigte ihm genau, welchen ich wollte. Wir beschlossen, dass wir einen kaufen würden, wenn wir am Samstag einkaufen gehen. Warum fragst du?"
+    Alice_05 "Ja, ich brauche noch einen sexy Body. Also habe ich ihm genau gezeigt, welchen ich haben will. Wir haben entschieden, einen zu kaufen, wenn wir am Samstag einkaufen gehen. Warum?"
 
 # game/events/alice.rpy:2131
 translate german alice_blog_lingerie_f8fd533a:
@@ -2560,7 +2560,7 @@ translate german alice_blog_lingerie_16484159_2:
 translate german alice_blog_lingerie_2625a223:
 
     # Alice_07 "Ты знаешь, отлично! С раскруткой и размещением рекламы от Эрика по другому и быть не может."
-    Alice_07 "Großartig! Mit Erics Unterstützung und Werbung konnte es gar nicht anders laufen."
+    Alice_07 "Einfach Großartig, weißt du? Mit Erics Unterstützung und Werbung konnte es gar nicht anders sein."
 
 # game/events/alice.rpy:2209
 translate german alice_blog_lingerie_dcaa06cd:
@@ -3658,25 +3658,25 @@ translate german blog_with_Eric_55fa4c7f:
 translate german blog_with_Eric_deb81d2b:
 
     # Max_09 "{m}Понятно всё с вами, Алиса села на шею Эрику, а он и рад. А мне лучше сматываться отсюда, не хватало ещё чтобы меня сейчас заметили...{/m}" nointeract
-    Max_09 "{m}Ich sehe, was mit euch beiden los ist, Alice versucht, Eric auszunutzen, und denkt, er fällt darauf rein! Ich haue besser ab, ich will nicht gesehen werden...{/m}" nointeract
+    Max_09 "{m}Ich sehe, was mit den beiden los ist, Alice wirft sich Eric an den Hals und der ist glücklich darüber. Ich sollte besser verschwinden, ich will nicht entdeckt werden...{/m}" nointeract
 
 # game/events/alice.rpy:2858
 translate german blog_with_Eric_96da1d99:
 
     # Max_07 "{m}Эрик решил поумничать перед Алисой знаниями в потребительстве и рекламе... Ну да, а тем временем глазеет на её прелести, еле прикрытые бельём. Делать мне здесь пока нечего...{/m}"
-    Max_07 "{m}Eric beschloss, sich über Alices Wissen über Konsum und Werbung lustig zu machen... Ja, und währenddessen starrt er sie an, kaum bedeckt von ihrer Unterwäsche. Hier gibt es für mich noch nichts zu tun...{/m}"
+    Max_07 "{m}Eric beschließt, Alice mit seinem Wissen über Konsum und Werbung aufzuklären... Ja, und in der Zwischenzeit starrt er ihren nur von Unterwäsche bedeckten Körper an. Ich habe hier noch nichts zu tun...{/m}"
 
 # game/events/alice.rpy:2859
 translate german blog_with_Eric_7d7ffc41:
 
     # Max_09 "{m}Подождите-ка, они о покупке белья разговаривают... И без меня! Нужно будет поскорее узнать у Алисы, что это ей там Эрик собрался покупать...{/m}" nointeract
-    Max_09 "{m}Moment mal, die reden über den Kauf von Unterwäsche... Und das ohne mich! Ich werde Alice fragen müssen, was Eric ihr kaufen wird...{/m}" nointeract
+    Max_09 "{m}Moment mal, die reden über den Kauf von Unterwäsche... Und das ohne mich! Ich muss mit Alice reden, um herauszufinden, was Eric ihr kaufen will...{/m}" nointeract
 
 # game/events/alice.rpy:2866
 translate german blog_with_Eric_9660eef6:
 
     # Max_07 "{m}Эрик решил поумничать перед Алисой знаниями в потребительстве и рекламе... Ну да, а тем временем глазеет на её прелести, еле прикрытые бельём. Делать мне здесь пока нечего...{/m}" nointeract
-    Max_07 "{m}Eric beschloss, sich über Alices Wissen über Konsum und Werbung lustig zu machen... Ja, und währenddessen starrt er sie an, kaum bedeckt von ihrer Unterwäsche. Hier gibt es für mich noch nichts zu tun...{/m}" nointeract
+    Max_07 "{m}Eric beschließt, Alice mit seinem Wissen über Konsum und Werbung aufzuklären... Ja, und in der Zwischenzeit starrt er ihren nur von Unterwäsche bedeckten Körper an. Ich habe hier noch nichts zu tun...{/m}" nointeract
 
 translate german strings:
 

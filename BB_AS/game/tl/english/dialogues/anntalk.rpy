@@ -1132,7 +1132,7 @@ translate english ann_yoga_with_maxr_9dc43457:
 translate english ann_yoga_with_maxr_b6c184b0:
 
     # Max_03 "А, что? Я просто засмотрелся и немного прослушал, что ты говорила..."
-    Max_03 "what? Of course. Every word..."
+    Max_03 "Why? I was just staring and listening a little bit to what you were saying..."
 
 # game/dialogues/anntalk.rpy:818
 translate english ann_yoga_with_maxr_a8e83c1d:

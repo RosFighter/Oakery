@@ -247,7 +247,9 @@ define talks = {
     'l.need_phone'  : TalkTheme('lisa', "Мне нужна твоя помощь!", 'lisa_asked_phone', "all([flags.eric_wallet == 2, lisa.flags.talkblock, not any([flags.asked_phone, flags.eric_photo2, lisa.hourly.talkblock, weekday in [4, 5]])])"),
     'l.showdown'    : TalkTheme('lisa', _("Лиза, ты чего нос повесила?"), 'lisa_about_showdown', "all([flags.eric_wallet==4, not lisa.flags.showdown_e])"),
     'l.olivia_6'    : TalkTheme('lisa', _("Мама разрешила!"), 'lisa_about_olivia_6', "lisa.flags.showdown_e == 5"),
+
     'l.cont_kiss0'  : TalkTheme('lisa', _("Кстати, а как тебе та книжка, которую я дарил?"), 'lisa_about_sex_book0', "all([lisa.plan_name == 'read', lisa.dcv.seduce.stage == 5, lisa.dcv.seduce.done])"),
+
     'l.read.w.mc'   : TalkTheme('lisa', _("Можно вместе с тобой книжку почитать?"), 'lisa_read_with_Max0', "all([lisa.plan_name == 'read', lisa.dcv.seduce.stage == 6, lisa.dcv.seduce.done, lisa.dcv.special.stage==7])"),
     'l.read.w.mc.r' : TalkTheme('lisa', _("Можно к тебе присоединиться?"), 'lisa_read_with_Max_r', "all([lisa.plan_name == 'read', lisa.dcv.seduce.stage > 7, lisa.dcv.seduce.done])"),
 

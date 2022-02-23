@@ -324,6 +324,7 @@ init python:
                 inf = '00' if olivia.dcv.other.stage else '03'
                 dress = 'b' if olivia.dcv.other.stage else 'a'
             elif name == 'swim':
+                dress = 'b' if olivia.dcv.other.stage else 'a'
                 if pose3_3=='01':
                     inf = '00' if olivia.dcv.other.stage else '03'
                 else:

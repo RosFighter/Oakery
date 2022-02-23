@@ -1067,8 +1067,8 @@ screen menu_opportunity():
     tag menu
     style_prefix 'opportunity'
 
-    $ kol = sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict])# количество открытых возможностей
-    $ all = len(poss_dict) # Общее количество введенных в игру 'возможностей'
+    $ kol = sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict])     # количество открытых возможностей
+    $ all = len(poss_dict)      # Общее количество введенных в игру 'возможностей'
     $ lst_stage = []
 
     $ lst_poss      = []
@@ -1076,13 +1076,17 @@ screen menu_opportunity():
     $ tmpComplete   = []
     $ Complete      = []
     $ NotStarted    = []
+    $ Blocked       = []
 
     for ps in poss_dict:
         if sum(poss[ps].stages) and not CurPoss:
             default CurPoss = ps
         $ last_st = max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1
         if last_st == -1:                   # неоткрыта
-            $ NotStarted.append(ps)
+            if blocked[ps].met():
+                $ Blocked.append(ps)
+            else:
+                $ NotStarted.append(ps)
         elif last_st in poss_dict[ps][2]:   # временная концовка
             $ tmpComplete.append(ps)
         elif last_st in poss_dict[ps][3]:   # хорошая концовка
@@ -1092,9 +1096,12 @@ screen menu_opportunity():
         else:                               # в процессе
             $ InProgress.append(ps)
 
+    $ kol += len(Blocked)
+
     $ lst_poss.extend(InProgress)
     $ lst_poss.extend(Complete)
     $ lst_poss.extend(tmpComplete)
+    $ lst_poss.extend(Blocked)
     $ lst_poss.extend(NotStarted)
     $ t_ps = 0
 
@@ -1125,12 +1132,14 @@ screen menu_opportunity():
                                 text _("В ПРОЦЕССЕ...") size 22 color gui.interface_text_color
                             elif t_ps == len(InProgress) and (tmpComplete or Complete):
                                 text _("ЗАВЕРШЕНЫ...") size 22 color lime
-                            elif (t_ps == len(InProgress)+len(tmpComplete)+len(Complete) and
+                            elif t_ps == len(InProgress)+len(tmpComplete)+len(Complete) and Blocked:
+                                text _("ЗАБЛОКИРОВАНЫ...") size 22 color red
+                            elif (t_ps == len(InProgress)+len(tmpComplete)+len(Complete)+len(Blocked) and
                                                 persistent.all_opportunities and NotStarted):
                                 text _("НЕ ОТКРЫТЫ...") size 22 color red
 
                             $ t_ps += 1
-                            if sum(poss[ps].stages) or persistent.all_opportunities:
+                            if any([sum(poss[ps].stages), ps in Blocked, persistent.all_opportunities]):
                                 if CurPoss == '':
                                     $ CurPoss = ps
                                     $ view_stage = max([i for i, st in enumerate(poss[CurPoss].stages) if st]) if sum(poss[ps].stages) else -1
@@ -1155,6 +1164,8 @@ screen menu_opportunity():
                                         foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(0.07, 0.3, 0.2))
                                     elif ps in NotStarted:
                                         foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(0.5, 0.5, 0.5))
+                                    elif ps in Blocked:
+                                        foreground im.MatrixColor("images/interface/marker.webp", im.matrix.tint(1, 0, 0))
                                     else:
                                         foreground 'interface marker'
                 vbar value YScrollValue('vp1') style 'poss_vscroll'
@@ -1203,6 +1214,9 @@ screen menu_opportunity():
                                             $ ShowBtnHint = False
 
                                 vbar value YScrollValue('vp2') style 'poss_vscroll'
+                    elif CurPoss in Blocked:
+                        text renpy.config.say_menu_text_filter(renpy.translate_string(blocked[CurPoss].hint)) size 24 color orange
+                        $ ShowHint = True
                     else:
                         if ShowHint:
                             if isinstance(zero_hints[CurPoss], (str, basestring)):
@@ -1429,7 +1443,10 @@ screen menu_userinfo():
                                                     $ char_name = chars[char].name_4
                                                     text _("Отношения с [char_name!t]:") size 24 color gui.accent_color
                                                 frame xfill True background None:
-                                                    text GetRelMax(char)[1] size 24
+                                                    if char != 'eric':
+                                                        text GetRelMax(char)[1] size 24
+                                                    else:
+                                                        text get_rel_eric()[1] size 24
                                         frame area (0, 0, 350, 25):
                                             background None
 
@@ -1513,20 +1530,6 @@ screen menu_userinfo():
                                         #             text _("Раскрепощенность:") size 24 color gui.accent_color
                                         #         frame xfill True background None:
                                         #             text str(chars[CurChar].free) size 24
-                                        # if not chars[CurChar].releric is None:
-                                        #     # releric
-                                        #     hbox xfill True:
-                                        #         frame xsize 350 background None:
-                                        #             text _("Отношения с Эриком") size 24 color gui.accent_color
-                                        #         frame xfill True background None:
-                                        #             text GetRelEric(CurChar)[1] size 24
-                                        #
-                                        #     # inf_eric
-                                        #     hbox xfill True:
-                                        #         frame xsize 350 background None:
-                                        #             text _("Влияние Эрика") size 24 color gui.accent_color
-                                        #         frame xfill True background None:
-                                        #             text str(chars[CurChar].free)+"%" size 24
                                         if chars[CurChar] in infl:
                                             hbox xfill True:
                                                 frame xsize 350 background None:
@@ -1538,16 +1541,6 @@ screen menu_userinfo():
                                                     text _("Влияние Эрика:") size 24 color gui.accent_color
                                                 frame xfill True background None:
                                                     text str(infl[chars[CurChar]].balance[1])+"%" size 24
-                                            # hbox xfill True:
-                                            #     frame xsize 350 background None:
-                                            #         text _("Лидирует по влиянию") size 24 color gui.accent_color
-                                            #     frame xfill True background None:
-                                            #         if infl[chars[CurChar]].balance[2] == 'n':
-                                            #             text _("------") size 24
-                                            #         elif infl[chars[CurChar]].balance[2] == 'm':
-                                            #             text _("Макс") size 24
-                                            #         else:
-                                            #             text _("Эрик") size 24
 
                             frame xfill True background None:
                                 vbox spacing 5:

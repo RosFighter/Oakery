@@ -220,7 +220,7 @@ translate german olivia_first_meeting_ced16fa4:
 translate german olivia_first_night_visit_d18e20dc:
 
     # Olivia_01 "Приветик! А вот и я... Спасибо, что встретил, Макс."
-    Olivia_01 "Hallo! Hier bin ich... Danke, dass du hergekommen bist, Max."
+    Olivia_01 "Hallo! Hier bin ich... Danke, dass du mich eingeladen hast, Max."
 
 # game/events/olivia.rpy:173
 translate german olivia_first_night_visit_e2d51ab8:
@@ -1290,7 +1290,7 @@ translate german strings:
 
     # game/events/olivia.rpy:181
     old "Конечно с вами!"
-    new "Natürlich mit dir!"
+    new "Natürlich bin dabei!"
 
     # game/events/olivia.rpy:294
     old "Я с вами!"

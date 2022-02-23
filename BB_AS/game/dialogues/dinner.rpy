@@ -699,7 +699,7 @@ label dinner_ab_lisa_ed:
             Ann_02 "Да, Лиза, зайди в мою комнату часов в 10 вечера. Нам с Эриком нужно с тобой поговорить кое о чём."
             Lisa_01 "Хорошо, мам."
             $ lisa.dcv.intrusion.enabled = True
-            $ lisa.dcv.intrusion.stage = 1
+            $ lisa.dcv.intrusion.stage = 1  # Эрик оплатил репетитора Лизе, начались уроки
             $ poss['seduction'].open(22)
         else:
             # отсрочка
@@ -718,7 +718,7 @@ label dinner_ab_lisa_ed:
         Ann_02 "А ты, Лиза, зайди в мою комнату часов в 10 вечера. Нам с Эриком нужно с тобой поговорить кое о чём."
         Lisa_01 "Хорошо, мам."
         $ lisa.dcv.intrusion.enabled = True
-        $ lisa.dcv.intrusion.stage = 1
+        $ lisa.dcv.intrusion.stage = 1  # Эрик оплатил доп.курсы Лизе, начались уроки
         $ poss['seduction'].open(23)
 
     Ann_01 "Вот и хорошо. Давайте теперь спокойно поедим."
@@ -730,7 +730,6 @@ label dinner_ab_lisa_ed:
     jump after_dinner
 
 
-# требуется доработка кода, для включения возможности делать заказ продуктов и чистку бассейна без денег Ани
 label dinner_ab_earn:
     $ flags.about_earn = True
 
@@ -753,13 +752,13 @@ label dinner_ab_earn:
         Ann_04 "Вот придёшь и узнаешь... Давайте больше ешьте, а не разговаривайте."
         $ lisa.dcv.battle.stage = 5
         $ lisa.dcv.intrusion.enabled = True
-        $ poss['seduction'].open(22)
+        # $ poss['seduction'].open(22)
     else:
         # отсрочки уроков Лизы не было
         Ann_04 "Я была бы тебе сынок очень признательна, если бы так и было. А теперь, давайте больше ешьте, а не разговаривайте."
     Max_01 "Да, давайте."
 
-    $ lisa.dcv.intrusion.stage = 2
+    $ lisa.dcv.intrusion.stage = 2  # стостоялся разговор о заработках, кончилась отсрочка по Лизе
     jump after_dinner
 
 
