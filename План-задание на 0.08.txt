@@ -44,18 +44,19 @@
  - новые моменты в помощи Анне с йогой.
 
 При Эрике в "Фальшивой дружбе"...
- - 
+ - практическое занятие Лизы и Эрика;
+ - Макс пытается возобновить уроки поцелуев с Лизой;
 
 При Эрике в "Настоящей дружбе"...
- - 
-
+ - практические занятия Лизы и Эрика;
+ - Макс пытается возобновить уроки поцелуев с Лизой;
 
 
 
  - updated the initial images of Lisa's homework help;
  - updated images of Ann sleeping.
 
-After getting rid of Eric in an outright feud...
+After getting rid of Eric in "Hostile"...
  - Ann meets Olivia;
  - Max's new interaction with Olivia and Lisa in the yard during the day;
  - Max convinces Ann to let Olivia stay the night at their house;
@@ -65,3 +66,11 @@ After getting rid of Eric in an outright feud...
  - a new Opportunity and event related to Ann;
  - Ann can have her back massaged while watching TV;
  - new moments in helping Ann with yoga.
+
+With Eric in "Fake Friendship"...
+ - Lisa and Eric's practical lesson;
+ - Max tries to resume kissing lessons with Lisa;
+
+With Eric in "Real Friendship"...
+ - Lisa and Eric's practical lessons;
+ - Max tries to resume kissing lessons with Lisa;
