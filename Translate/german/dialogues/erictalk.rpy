@@ -1749,25 +1749,25 @@ translate german strings:
 
     # game/dialogues/erictalk.rpy:337
     old "Нет, можешь обучать... (Настоящая дружба)"
-    new ""
+    new "Nein, du kannst unterrichten... (Wahre Freundschaft)"
 
     # game/dialogues/erictalk.rpy:337
     old "А ей не рановато? (Фальшивая дружба)"
-    new ""
+    new "Ist es nicht ein bisschen zu früh? (Falsche Freundschaft)"
 
     # game/dialogues/erictalk.rpy:337
     old "Лизу тебе не отдам! (Откровенная вражда)"
-    new ""
+    new "Ich werde dir Lisa nicht geben! (Offene Feindseligkeit)"
 
     # game/dialogues/erictalk.rpy:432
     old "Значит, тебя её блог интересует? (Настоящая дружба)"
-    new ""
+    new "Du bist also an ihrem Blog interessiert? (Wahre Freundschaft)"
 
     # game/dialogues/erictalk.rpy:432
     old "Я мало что об этом знаю... (Фальшивая дружба)"
-    new ""
+    new "Ich weiß nicht viel darüber... (Falsche Freundschaft)"
 
     # game/dialogues/erictalk.rpy:432
     old "Вот у неё и спрашивай! (Откровенная вражда)"
-    new ""
+    new "Frag Sie selber! (Offene Feindseligkeit)"
 

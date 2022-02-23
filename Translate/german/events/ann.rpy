@@ -1788,11 +1788,11 @@ translate german strings:
 translate german ann_dressed_balkon_talk1_37635b4b:
 
     # Ann_14 "Забыть? Забыть, как я чуть не отправила единственного сына в военный лагерь и... который один оказался настолько умным и благородным, что не только не разозлился на меня, а наоборот, спас всю семью от этого ублюдка - Эрика."
-    Ann_14 ""
+    Ann_14 "Vergessen? Vergessen, dass ich meinen einzigen Sohn fast in ein Armeelager geschickt hätte und... der sich als einziger als so klug und edel erwies, dass er nicht nur nicht böse auf mich war, sondern im Gegenteil die ganze Familie vor diesem Bastard Eric gerettet hat."
 
 # game/events/ann.rpy:666
 translate german ann_dressed_balkon_talk1_ac19285d:
 
     # Max_07 "Ну хватит... Было и было. Прими это и сделай выводы. Нельзя же всё время теперь ходить такой печальной и заниматься самобичеванием. Ты ни в чём не виновата!"
-    Max_07 ""
+    Max_07 "Komm schon... Es war einmal so. Akzeptiere es und zieh deine eigenen Schlüsse. Man kann sich nicht die ganze Zeit selbst fertig machen. Es ist nicht deine Schuld!"
 

@@ -2168,37 +2168,37 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! \nЭрик хорошо запудрил мозги Лизе, я даже не смог её отговорить от этого. Остаётся разве что помешать им... \nЕсли бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что практические занятия с Лизой - это последнее, о чём он будет думать. \n\nГлавное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт. Ну, а уже если не получится, то я вмешаюсь в их практику лично. Проблем из-за этого мне точно не избежать, но что поделать..."
-    new ""
+    new "Lisa hat mich gewarnt, dass Eric ihr nun, da der theoretische Unterricht vorbei ist, ohne Mitwirkung meiner Mutter Sexualkundeunterricht erteilen wird. Und soweit ich weiß, werden sie den theoretischen Teil durch praktischen Unterricht ergänzen! \nEric hat Lisa ziemlich gut im Griff, ich konnte es ihr nicht einmal ausreden. Das Einzige, was noch zu tun ist, ist, sie aufzuhalten... \nWenn ich Eric etwas ins Essen tun könnte, wie ein Abführmittel oder ein Schlafmittel, dann wäre das Üben mit Lisa vielleicht das Letzte, woran er denkt. \n\nIch sollte es nur nicht öfter als einmal pro Woche versuchen, sonst wird er es herausfinden. Nun, wenn es nicht klappt, werde ich mich persönlich in ihren Unterricht einmischen. Ich kann es nicht verhindern, dafür Ärger zu bekommen, aber was kann man schon sonst tun?"
 
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы. Благо, Лиза прислушивается ко мне и у меня получилось убедить её, что на это лучше не соглашаться. \nНо вряд ли Эрик этому обрадуется. Меня наверняка ждут проблемы из-за этого, но что поделать... \nБыло бы неплохо хоть немного снизить его активную деятельность в нашем доме! \nЕсли бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что лезть к моим сёстрам - это последнее, о чём он будет думать. \n\nГлавное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт."
-    new ""
+    new "Lisa kam zu mir, um sich einen Rat zu holen, denn es stellte sich heraus, dass Eric ihr nach dem theoretischen Unterricht vorgeschlagen hatte, all dies im praktischen Unterricht ohne die Einbeziehung meiner Mutter zu vertiefen. Zum Glück hörte Lisa auf mich, und ich konnte sie davon überzeugen, dass es besser ist, dem nicht zuzustimmen. \nAber ich glaube nicht, dass Eric darüber erfreut sein wird. Ich werde dafür wahrscheinlich Ärger bekommen, aber was soll ich machen... \nEs wäre schön, wenn man seine Aktivitäten in unserem Haus nur ein wenig einschränken könnte! \nWenn ich Eric etwas ins Essen mischen könnte, z. B. ein Abführmittel oder ein Schlafmittel, wäre es das Letzte, was ihm einfällt, sich mit meinen Schwestern zu befassen. \n\nDas Wichtigste ist, dass es nicht öfter als einmal pro Woche geschieht, sonst wird er es herausfinden."
 
     # game/core/09_opportunities.rpy:4
     old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! \nПохоже, моя младшая сестрёнка скоро начнёт взрослеть, как того и хотела. \nНу, а я ни за что не упущу возможности подсмотреть за этими уроками, ведь с Эриком я договорился на этот счёт. Лишь бы только сама Лиза меня не заметила..."
-    new ""
+    new "Lisa hat mich gewarnt, dass Eric ihr nun, da der theoretische Unterricht vorbei ist, ohne die Anwesenheit meiner Mutter Sexualkundeunterricht erteilen wird. Und soweit ich weiß, werden sie den theoretischen Teil durch praktischen Unterricht ergänzen! \nSieht so aus, als würde meine kleine Schwester bald erwachsen werden, genau wie sie es wollte. \nNun, ich würde mir die Gelegenheit nicht entgehen lassen, diese Lektionen auszuspionieren, denn ich habe mit Eric eine Vereinbarung darüber getroffen. Solange Lisa mich nicht sieht..."
 
     # game/core/09_opportunities.rpy:4
     old "Эрик собирается проводить практические занятия с Лизой по понедельникам. Нужно обязательно подсмотреть, чем они будут заниматься..."
-    new ""
+    new "Eric wird montags mit Lisa praktischen Unterricht durchführen. Auf jeden Fall sollte man beobachten, was sie tun werden..."
 
     # game/core/09_opportunities.rpy:4
     old "Ну, что... Больше разговоров было, чем дела. Но, с другой стороны, Лиза такая стесняшка и то, что она хотя бы просто подержала член в руке - уже достижение. А впереди у неё ещё будет куча практики, так что скоро дрочить будет с закрытыми глазами, так сказать."
-    new ""
+    new "Nun, also... Es wurde mehr geredet als gehandelt. Aber andererseits ist Lisa so schüchtern und die Tatsache, dass sie wenigstens seinen Schwanz in der Hand gehalten hat, war schon eine Leistung. Und sie hat noch eine Menge Übung vor sich, so dass sie bald sozusagen mit geschlossenen Augen wichsen wird."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно будет обязательно подсмотреть в ближайший понедельник за практическими уроками сексуального образования Лизы..."
-    new ""
+    new "Nächsten Montag wird Lisa den praktischen Sexualkundeunterricht durchführen..."
 
     # game/core/09_opportunities.rpy:4
     old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик вывел меня поговорить о том, какого чёрта я вмешиваюсь. \nЯ, чтобы себя не скомпрометировать, высказался о том, что у него могут возникнуть серьёзные проблемы, если их с Лизой кто-нибудь увидит или она кому-то расскажет об этих уроках. \nИ похоже, Эрик не особо об этом думал! Его так ослепили перспективы перетрахать всю женскую половину моей семьи, что он даже не подумал о таких элементарных вещах. \nИ о чудо, после недолгих раздумий он решил переложить сексуальное воспитание Лизы на меня! Это просто невероятно! Теперь Лиза полностью в моём распоряжении..."
-    new ""
+    new "Ich habe in Lisas Übungsstunde eingegriffen, bevor sie einen großen Fehler machte... Natürlich nahm Eric mich zur Seite, um darüber zu sprechen, warum ich mich eingemischt habe. \nUm mich nicht zu kompromittieren, sagte ich ihm, dass er ernsthafte Probleme bekommen könnte, wenn er und Lisa von jemandem gesehen werden oder sie jemandem von diesen Stunden erzählt. \nEric schien nicht viel davon zu halten! Er war so geblendet von der Aussicht, alle Frauen in meiner Familie zu ficken, dass er nicht einmal an solche grundlegenden Dinge gedacht hat. \nUnd wie durch ein Wunder entschied er sich nach kurzem Zögern, mir Lisas Sexualkundeunterricht zu überlassen! Unglaublich! Lisa steht jetzt ganz zu meiner Verfügung..."
 
     # game/core/09_opportunities.rpy:4
     old "Кстати, со всей этой опасностью их с Эриком уроков, я совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
-    new ""
+    new "Übrigens habe ich bei all der Gefahr, die von Erics Unterricht ausgeht, völlig vergessen zu fragen, ob sie das Buch über Sexualkunde gelesen hat! Da muss ich mal nachfragen..."
 
     # game/core/09_opportunities.rpy:4
     old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я испытал удачу и предложил ей продолжить уроки Эрика, но уже с собой во главе. \nВот только Лиза не верит, что я знаю чему её учить, поэтому, пока что, мне удалось уговорить её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. \nНо ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
-    new ""
+    new "Von Lisa habe ich erfahren, dass sie das Buch über Sexualerziehung gelesen hat. Gleichzeitig habe ich mein Glück versucht und vorgeschlagen, dass sie Erics Unterricht fortsetzt, aber unter meiner Leitung. \nAber Lisa glaubt nicht, dass ich weiß, was ich ihr beibringen soll, also habe ich es nur geschafft, sie zu überreden, mehr über das Küssen zu lernen, aber auf eine intimere Weise. Sie erlaubt immer noch, dass ich ihren Hals küsse, aber sie lässt mich auch nicht ihre Brüste berühren, weil es ihr peinlich ist, oder? \nAber es ist okay, sie wird es zulassen. Ich denke, wenn man versucht, ihr während des Lesens ein paar nette Annäherungsversuche zu machen, kann der Kussunterricht mit voller Kraft fortgesetzt werden."
 

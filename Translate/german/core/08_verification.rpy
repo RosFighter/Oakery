@@ -4,21 +4,21 @@ translate german strings:
 
     # game/core/08_verification.rpy:368
     old "Не определены"
-    new ""
+    new "Nicht entschieden"
 
     # game/core/08_verification.rpy:370
     old "Откровенная вражда"
-    new ""
+    new "Offene Feindschaft"
 
     # game/core/08_verification.rpy:380
     old "Дружба"
-    new ""
+    new "Freundschaft"
 
     # game/core/08_verification.rpy:388
     old "Настоящая дружба"
-    new ""
+    new "Echte Freundschaft"
 
     # game/core/08_verification.rpy:399
     old "Фальшивая дружба"
-    new ""
+    new "Vorgetäuschte Freundschaft"
 

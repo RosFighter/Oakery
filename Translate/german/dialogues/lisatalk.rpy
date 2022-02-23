@@ -11611,29 +11611,29 @@ translate german strings:
 translate german lisa_about_sex_book0_7ebe75f0:
 
     # Max_03 "Ещё как. Ну что, продолжим уроки сексуального образования Эрика, но только уже со мной?"
-    Max_03 ""
+    Max_03 "Darauf kannst du wetten. Wollen wir also Erics Aufklärungsunterricht fortsetzen, aber mit mir?"
 
 # game/dialogues/lisatalk.rpy:4775
 translate german lisa_about_sex_book0_e48b612f:
 
     # Lisa_13 "Ну нет! Хоть Эрик и сказал, что ты знаешь, чему меня учить, но я сильно сомневаюсь в этом. Наверняка, ты чего-то там ему наболтал и он поверил."
-    Lisa_13 ""
+    Lisa_13 "Nun, nein! Auch wenn Eric gesagt hat, dass du weißt, was du mir beibringen kannst, bezweifle ich das ernsthaft. Du musst ihm etwas erzählt haben und er hat dir glaubt."
 
 # game/dialogues/lisatalk.rpy:4776
 translate german lisa_about_sex_book0_40be8496:
 
     # Max_09 "Ты серьёзно думаешь, что я провёл Эрика?"
-    Max_09 ""
+    Max_09 "Glaubst du ernsthaft, ich hätte Eric getäuscht?"
 
 # game/dialogues/lisatalk.rpy:4777
 translate german lisa_about_sex_book0_d7fbed8f:
 
     # Lisa_10 "Не думаю. Я {b}ОЧЕНЬ{/b} в этом уверена!"
-    Lisa_10 ""
+    Lisa_10 "Das glaube ich nicht. Da bin ich mir {b}absolut{/b} sicher!"
 
 # game/dialogues/lisatalk.rpy:4778
 translate german lisa_about_sex_book0_e1846811:
 
     # Max_07 "Тогда, для начала, давай возобновим уроки поцелуев? А когда ты поймёшь, что я знаю, чему учить, то продолжим уроки Эрика..."
-    Max_07 ""
+    Max_07 "Dann lasst uns für den Anfang den Kussunterricht fortsetzen, ja? Und wenn du feststellst, dass ich weiß, was ich lehren soll, dann lass uns mit Erics Lektionen fortfahren..."
 
