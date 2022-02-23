@@ -1594,7 +1594,7 @@ translate german dinner_ab_lisa_ed_dc1cdcf5:
 translate german dinner_ab_lisa_ed_ccd44083:
 
     # Lisa_00 "Для меня?! Какая?"
-    Lisa_00 "Für mich?! Was ist das?"
+    Lisa_00 "Für mich?! Welche denn?"
 
 # game/dialogues/dinner.rpy:710
 translate german dinner_ab_lisa_ed_f6502d96:

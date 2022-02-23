@@ -7240,7 +7240,7 @@ translate german MorningWoodCont2_var3_9aba62c0:
 translate german lisa_about_ae_sexed0_f4d81d33:
 
     # Lisa_00 "Ты про поход к маме с Эриком?"
-    Lisa_00 "Du meinst, Mom und Eric zu sehen?"
+    Lisa_00 "Du meinst, bei Mom und Eric?"
 
 # game/dialogues/lisatalk.rpy:3919
 translate german lisa_about_ae_sexed0_9e1a3fc3:
@@ -7252,7 +7252,7 @@ translate german lisa_about_ae_sexed0_9e1a3fc3:
 translate german lisa_about_ae_sexed0_91eb4007:
 
     # Lisa_09 "Они хотят подготовить меня к взрослой жизни. Всё покажут и расскажут. То же, чему и ты собирался меня учить, только вот..."
-    Lisa_09 "Sie wollen mich auf das Erwachsenenleben vorbereiten, indem sie mir alles zeigen. Die gleichen Dinge, die du genauso vorhattest, außer..."
+    Lisa_09 "Sie wollen mich auf das Erwachsenenleben vorbereiten, indem sie mir alles zeigen. Die gleichen Dinge, die du auch vorhattest, außer..."
 
 # game/dialogues/lisatalk.rpy:3921
 translate german lisa_about_ae_sexed0_d6a2976b:
@@ -7264,7 +7264,7 @@ translate german lisa_about_ae_sexed0_d6a2976b:
 translate german lisa_about_ae_sexed0_1a9594bb:
 
     # Lisa_10 "А это вообще нормально? Одно дело, когда меня чему-нибудь учишь ты, а здесь... Мама... и Эрик... Мама так вообще раньше меня от всего такого до жути оберегала!"
-    Lisa_10 "Ist das überhaupt normal? Es ist eine Sache, wenn du mir etwas erklärst, aber jetzt... Mom... und Eric... Mom hat mich immer vor all dem Zeug beschützt, bis zu dem Punkt, dass es irgendwie gruselig war!"
+    Lisa_10 "Ist das überhaupt normal? Es ist eine Sache, wenn du mir etwas erklärst, aber jetzt... Mom... und Eric... Mom hat mich immer vor all dem Zeug beschützt, bis jetzt, dass ist irgendwie gruselig!"
 
 # game/dialogues/lisatalk.rpy:3925
 translate german lisa_about_ae_sexed0_e341ad72:
@@ -7300,7 +7300,7 @@ translate german lisa_about_ae_sexed0_9cf1879e:
 translate german lisa_about_ae_sexed0_5c2709c2:
 
     # Lisa_02 "Расскажу, если тебе интересно."
-    Lisa_02 "Ich sag's dir, wenn du interessiert bist."
+    Lisa_02 "Ich sag's dir, wenn es dich wirklich interessiert."
 
 # game/dialogues/lisatalk.rpy:3931
 translate german lisa_about_ae_sexed0_4b2e62c5:
@@ -7354,7 +7354,7 @@ translate german lisa_about_ae_sexed0_9cf1879e_1:
 translate german lisa_about_ae_sexed0_5c2709c2_1:
 
     # Lisa_02 "Расскажу, если тебе интересно."
-    Lisa_02 "Ich sag's dir, wenn du interessiert bist."
+    Lisa_02 "Ich sag's dir, wenn es dich wirklich interessiert."
 
 # game/dialogues/lisatalk.rpy:3767
 translate german lisa_about_ae_sexed0_4b2e62c5_1:

@@ -824,7 +824,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Как выяснилось, Эрик проплатил репетитора для Лизы по воскресеньям, чтобы улучшить её оценки, а в действительности, чтобы втереться к ней в доверие. Теперь он и моя мама будут по понедельникам проводить для Лизы уроки сексуального воспитания..."
-    new "Wie sich herausstellte, hat Eric für Lisas Sonntagsnachhilfe bezahlt, um ihre Noten zu verbessern, in Wirklichkeit versucht er, ihr näher zu kommen. Jetzt werden er und Mom Lisa Montags Aufklärungsunterricht geben..."
+    new "Wie sich herausstellte, hat Eric für Lisas Nachhilfe bezahlt, um ihre Noten zu verbessern, in Wirklichkeit versucht er, ihr näher zu kommen. Jetzt werden er und Mom Lisa Montags Aufklärungsunterricht geben..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно приглядывать за тем, чему они там Лизу обучают. Вдруг получится узнать что-то важное..."
@@ -832,7 +832,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Как выяснилось, Эрик проплатил дополнительные курсы для Лизы в школе, чтобы улучшить её оценки, а в действительности, чтобы втереться к ней в доверие. А заодно и от меня отстранить, ведь теперь моя помощь с уроками ей особо и не нужна. И ещё он и моя мама будут по понедельникам проводить для Лизы уроки сексуального воспитания..."
-    new "Wie sich herausstellte, hat Eric für Lisas Sonntagsnachhilfe bezahlt, um ihre Noten zu verbessern, in Wirklichkeit versucht er, ihr näher zu kommen. Ganz zu schweigen davon, sie weniger abhängig von mir zu machen, so dass sie meine Hilfe nicht braucht. Jetzt werden er und Mom Lisa Montags Aufklärungsunterricht geben..."
+    new "Wie sich herausstellte, hat Eric für Lisas Nachhilfe bezahlt, um ihre Noten zu verbessern, in Wirklichkeit versucht er, ihr näher zu kommen. Ganz zu schweigen davon, sie weniger abhängig von mir zu machen, so dass sie meine Hilfe nicht braucht. Jetzt werden er und Mom Lisa Montags Aufklärungsunterricht geben..."
 
     # game/core/09_opportunities.rpy:4
     old "Одноклассник"
