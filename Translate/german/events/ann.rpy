@@ -1348,7 +1348,7 @@ translate german ann_dressed_balcony_1f19d7dd:
 translate german ann_dressed_balcony_e1ca91d3:
 
     # Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
-    Ann_15 "Max! Wer klopft denn da?! Hör auf, plötzlich und unangemeldet ins Zimmer zu platzen! Oder handelt es sich um einen Notfall?" nointeract
+    Ann_15 "Max! Wer klopft denn da?! Hör auf, unangemeldet ins Zimmer zu platzen! Oder handelt es sich um einen Notfall?" nointeract
 
 # game/events/ann.rpy:633
 translate german ann_dressed_balcony_a9e5c75c:
