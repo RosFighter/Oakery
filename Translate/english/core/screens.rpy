@@ -413,3 +413,11 @@ translate english strings:
     old "Продолжить"
     new "Click to continue"
 
+# TODO: Translation updated at 2022-02-24 01:02
+
+translate english strings:
+
+    # game/core/screens.rpy:1136
+    old "ЗАБЛОКИРОВАНЫ..."
+    new ""
+
