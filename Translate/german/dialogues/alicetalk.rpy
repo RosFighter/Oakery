@@ -11110,7 +11110,7 @@ translate german strings:
 
     # game/dialogues/alicetalk.rpy:5459
     old "{i}отнести тарелки на веранду{/i}"
-    new "{i}Teller auf die Terasse bringen{/i}"
+    new "{i}Teller auf den Balkon bringen{/i}"
 
     # game/dialogues/alicetalk.rpy:5474
     old "{i}приступить к ужину{/i}"

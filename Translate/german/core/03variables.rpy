@@ -40,7 +40,7 @@ translate german strings:
 
     # game/core/03variables.rpy:29
     old "ВЕРАНДА"
-    new "TERRASSE"
+    new "BALKON"
 
     # game/core/03variables.rpy:29
     old "ДВОР"
