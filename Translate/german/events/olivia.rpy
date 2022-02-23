@@ -1290,7 +1290,7 @@ translate german strings:
 
     # game/events/olivia.rpy:181
     old "Конечно с вами!"
-    new "Natürlich mit dir!"
+    new "Natürlich bin dabei!"
 
     # game/events/olivia.rpy:294
     old "Я с вами!"
