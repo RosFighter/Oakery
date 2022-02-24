@@ -11513,7 +11513,7 @@ translate english lisa_read_with_Max_r_a5d5a0b3:
 translate english lisa_read_with_Max_r_bba74f75:
 
     # Max_19 "{m}Обалдеть! Её кожа такая нежная... Интересно, её это заводит так же сильно, как и меня? Ощущения от того, что я тискаю её обнажённую грудь и целую её восхитительную шейку, бесподобны!{/m}"
-    Max_19 "{m}{/m}"
+    Max_19 "{m}I can't believe it! Her skin is so soft... I wonder if it turns her on as much as it does me. The sensation of squeezing her naked breasts and kissing her delightful neck is unparalleled!{/m}"
 
 # game/dialogues/lisatalk.rpy:5000
 translate english lisa_read_with_Max_r_20d02ca2:
