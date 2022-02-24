@@ -2208,21 +2208,21 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "У меня появились кое-какие опасения на счёт практических занятий Лизы и Эрика. Нужно будет поговорить с Эриком после следующего совместного ужина..."
-    new ""
+    new "Ich habe einige Bedenken bezüglich der Übungsstunden von Lisa und Eric. Ich werde mit Eric nach unserem nächsten gemeinsamen Abendessen reden müssen..."
 
     # game/core/09_opportunities.rpy:4
     old "Я спросил Эрика, думал ли он о том, что у него могут возникнуть серьёзные проблемы, если их с Лизой кто-нибудь увидит или она кому-то расскажет об этих уроках. И похоже, Эрик не особо об этом думал! Его так ослепили перспективы перетрахать всю женскую половину моей семьи, что он даже не подумал о таких элементарных вещах. И о чудо, после недолгих раздумий он решил переложить сексуальное воспитание Лизы на меня! Это просто невероятно! Теперь Лиза полностью в моём распоряжении. Конечно, пока не повзрослеет, но времени ещё навалом..."
-    new ""
+    new "Ich habe Eric gefragt, ob er über die Möglichkeit nachgedacht hat, dass er ernsthafte Probleme bekommen könnte, wenn er und Lisa gesehen werden oder sie jemandem von den Stunden erzählt. Und Eric schien nicht viel davon zu halten! Er war so fasziniert von der Aussicht, den gesamte weiblichen Teil meiner Familie zu vögeln, dass er nicht einmal an so grundlegende Dinge dachte. Und wie durch ein Wunder hat er nach kurzem Überlegen beschlossen, mir Lisas Sexualerziehung zu überlassen! Unglaublich! Lisa steht jetzt ganz zu meiner Verfügung. Natürlich erst, wenn sie erwachsen ist, aber das hat noch viel Zeit..."
 
     # game/core/09_opportunities.rpy:4
     old "Кстати, я всё не спрошу у Лизы, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
-    new ""
+    new "Übrigens, ich habe Lisa immer noch nicht fragen können, ob sie das Aufklärungsbuch gelesen hat! Da muss ich nachholen..."
 
     # game/core/09_opportunities.rpy:4
     old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды..."
-    new ""
+    new "Es ist schon so viel besser! Mom hat jetzt neues Sportzeug, das ihr und mir viel angenehmer passt. Sie war nicht einmal übermäßig begeistert davon, weil es für sie zu freizügig ist. Das hängt davon ab, wofür es gebraucht wird. \nMeiner Meinung nach wäre es der Hammer, wenn sie Yoga komplett nackt machen würde! Äh, Träume... Aber wer weiß, vielleicht eines Tages..."
 
     # game/core/09_opportunities.rpy:968
     old "Эта возможность не доступна при дружбе с Эриком..."
-    new ""
+    new "Diese Option ist nicht verfügbar, wenn Sie mit Eric befreundet sind..."
 

@@ -420,5 +420,5 @@ translate german strings:
 
     # game/core/screens.rpy:1136
     old "ЗАБЛОКИРОВАНЫ..."
-    new ""
+    new "GESPERRT..."
 

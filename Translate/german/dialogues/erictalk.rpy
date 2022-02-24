@@ -1777,89 +1777,89 @@ translate german strings:
 translate german Eric_talk_about_Lisa_3_58112272:
 
     # Eric_01 "Ты что-то хотел, Макс? Спрашивай..."
-    Eric_01 ""
+    Eric_01 "Willst du etwas, Max? Frag..."
 
 # game/dialogues/erictalk.rpy:813
 translate german Eric_talk_about_Lisa_3_6ec16737:
 
     # Max_08 "Да, знаешь, я подглядывал за вашими с Лизой уроками и подумал... А ничего, что она ещё маленькая?"
-    Max_08 ""
+    Max_08 "Ja, weißt du, ich habe mir deinen Unterricht mit Lisa angesehen und dachte... Ist es okay, dass sie noch ein junges Mädchen ist?"
 
 # game/dialogues/erictalk.rpy:814
 translate german Eric_talk_about_Lisa_3_2e69e3bf:
 
     # Eric_05 "Ты что! То, что она ещё такая юная - это вообще бомба. Прямо то, что надо для полного счастья!"
-    Eric_05 ""
+    Eric_05 "Niemals! Die Tatsache, dass sie so jung ist, ist der Hammer. Genau das, was du brauchst, um glücklich zu sein!"
 
 # game/dialogues/erictalk.rpy:815
 translate german Eric_talk_about_Lisa_3_d4b10974:
 
     # Max_07 "Это понятно. Я о другом... Вас же всё равно, рано или поздно, кто-нибудь увидит. А если даже и нет, то что будет, когда Лиза кому-нибудь об этом разболтает?"
-    Max_07 ""
+    Max_07 "Das ist verständlich. Was ich meine, ist... Irgendjemand wird dich früher oder später sowieso sehen. Und selbst wenn nicht, was passiert, wenn Lisa jemandem davon erzählt?"
 
 # game/dialogues/erictalk.rpy:816
 translate german Eric_talk_about_Lisa_3_4ecceec3:
 
     # Eric_09 "Хм... Нет, я с ней поработаю и она будет держать это втайне."
-    Eric_09 ""
+    Eric_09 "Ähm ... Nein, ich werde mit ihr arbeiten und sie wird es für sich behalten."
 
 # game/dialogues/erictalk.rpy:817
 translate german Eric_talk_about_Lisa_3_67167989:
 
     # Max_09 "Просто, я хорошо знаю Лизу и она мне разболтала несколько секретов, хотя мы были не так близки, как сейчас. А у вас с ней секрет очень... наказуемый... Из-за его раскрытия можно всё потерять!"
-    Max_09 ""
+    Max_09 "Es ist nur so, dass ich Lisa gut kenne und sie mir einige Geheimnisse verraten hat, auch wenn wir uns nicht so nahe standen wie jetzt. Und ihr beide habt eine sehr... strafbar... Du könntest alles verlieren, wenn du jemals raus kommt!"
 
 # game/dialogues/erictalk.rpy:818
 translate german Eric_talk_about_Lisa_3_5ff62a9d:
 
     # Eric_10 "Эх, как-то я об этом не подумал..."
-    Eric_10 ""
+    Eric_10 "Eh, daran habe ich irgendwie nicht gedacht..."
 
 # game/dialogues/erictalk.rpy:819
 translate german Eric_talk_about_Lisa_3_999fc9b3:
 
     # Max_07 "Смотри... Я тебе по дружески эти опасения высказал. Если ты на все 150%% уверен, что вам удастся сохранить это в тайне, то пожалуйста. Но тебе потом от этого отмыться не удастся, если что."
-    Max_07 ""
+    Max_07 "Sieh mal... Ich habe dir gegenüber diese Bedenken auf freundliche Art und Weise geäußert. Wenn du dir zu 150%% sicher bist, dass du es geheim halten kannst, gut. Aber du wirst damit nicht durchkommen."
 
 # game/dialogues/erictalk.rpy:820
 translate german Eric_talk_about_Lisa_3_d9d496ce:
 
     # Eric_16 "Блин, рискованно! А так хочется! Вот какой же ты, Макс... Всю малину растоптал..."
-    Eric_16 ""
+    Eric_16 "Mann, ist das riskant! Das würde dir gefallen! So bist du nun mal, Max... Du hast alles kaputt gemacht..."
 
 # game/dialogues/erictalk.rpy:821
 translate german Eric_talk_about_Lisa_3_90215746:
 
     # Max_09 "А я не знаю, почему ты об этом не подумал. Видимо, из-за обилия перспектив с моей семьёй, ты совсем перестал думать тем, чем надо. Это будет невероятное везение, если тебя за это не посадят."
-    Max_09 ""
+    Max_09 "Ich weiß nicht, warum du nicht daran gedacht hast. Offensichtlich hast du aufgrund der zahlreichen Möglichkeiten, die du mit meiner Familie hast, völlig aufgehört, darüber nachzudenken, was richtig ist. Es wäre ein unglaubliches Glück, wenn du dafür nicht ins Gefängnis kämst."
 
 # game/dialogues/erictalk.rpy:822
 translate german Eric_talk_about_Lisa_3_c9d70062:
 
     # Eric_09 "Что теперь с Лизой делать... Если эти уроки прекратить в самом начале, она может начать задавать вопросы тем, кому не надо."
-    Eric_09 ""
+    Eric_09 "Was machen wir jetzt mit Lisa... Wenn diese Lektionen am Anfang unterbrochen werden, könnte sie anfangen, Fragen an diejenigen zu stellen, die es nicht wissen müssen."
 
 # game/dialogues/erictalk.rpy:823
 translate german Eric_talk_about_Lisa_3_f9b2bcd6:
 
     # Max_07 "Ну, я попробую взять её на себя. Чем-нибудь, да займу её. К тому же, она же не всегда будет маленькой. Подрастёт и можно будет с ней делать всё, что захочется! И без такой лютой опаски. А с остальными членами моей семьи я тебе помогу, как и договаривались."
-    Max_07 ""
+    Max_07 "Nun, ich werde versuchen, es weiter zu versuchen. Beschäftige dich mit etwas anderem. Außerdem wird sie nicht immer klein sein. Wenn sie groß ist, kannst du mit ihr machen, was du willst! Und ohne so viel Angst. Und ich werde dir, wie vereinbart, mit dem Rest meiner Familie helfen."
 
 # game/dialogues/erictalk.rpy:824
 translate german Eric_talk_about_Lisa_3_72418067:
 
     # Eric_06 "Ладно, Макс, повезло тебе. Отдам Лизу на твоё попечение. Сейчас я ей объясню, что ты прекрасно справишься с этим обучением, а дальше уже твои проблемы. Возись с ней сам. У меня зато больше времени на другие киски будет..."
-    Eric_06 ""
+    Eric_06 "Okay, Max, du hast Glück. Ich übergebe Lisa in deine Obhut. Ich werde ihr erklären, dass du mit dieser Ausbildung keine Probleme haben wirst, und dann liegt es an dir. Du kümmerst dich um sie. Wenigstens habe ich dann mehr Zeit für andere Pussys..."
 
 # game/dialogues/erictalk.rpy:825
 translate german Eric_talk_about_Lisa_3_7def813d:
 
     # Max_08 "Ого! Спасибо! Я за ней присмотрю." nointeract
-    Max_08 "" nointeract
+    Max_08 "Wow! Ich danke dir! Ich werde sie im Auge behalten." nointeract
 
 # game/dialogues/erictalk.rpy:836
 translate german Eric_talk_about_Lisa_3_36c2b900:
 
     # Max_11 "{m}Посуду лучше всё-таки помыть, а то Лиза вообще со мной ещё не скоро начнёт разговаривать...{/m}"
-    Max_11 ""
+    Max_11 "{m}Ich mache besser den Abwasch, sonst redet Lisa eine Weile nicht mehr mit mir...{/m}"
 
