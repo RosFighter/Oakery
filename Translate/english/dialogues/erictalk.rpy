@@ -1750,27 +1750,27 @@ translate english strings:
 
     # game/dialogues/erictalk.rpy:337
     old "Нет, можешь обучать... (Настоящая дружба)"
-    new ""
+    new "No, you can teach... (True friendship)"
 
     # game/dialogues/erictalk.rpy:337
     old "А ей не рановато? (Фальшивая дружба)"
-    new ""
+    new "Isn't she a little early? (Fake Friendship)"
 
     # game/dialogues/erictalk.rpy:337
     old "Лизу тебе не отдам! (Откровенная вражда)"
-    new ""
+    new "I won't give you Lisa! (Open hostility)"
 
     # game/dialogues/erictalk.rpy:432
     old "Значит, тебя её блог интересует? (Настоящая дружба)"
-    new ""
+    new "So you're interested in her blog? (True friendship.)"
 
     # game/dialogues/erictalk.rpy:432
     old "Я мало что об этом знаю... (Фальшивая дружба)"
-    new ""
+    new "I don't know much about it... (Fake Friendship)"
 
     # game/dialogues/erictalk.rpy:432
     old "Вот у неё и спрашивай! (Откровенная вражда)"
-    new ""
+    new "Ask her! (Open hostility)"
 
 # TODO: Translation updated at 2022-02-24 01:02
 
@@ -1778,89 +1778,88 @@ translate english strings:
 translate english Eric_talk_about_Lisa_3_58112272:
 
     # Eric_01 "Ты что-то хотел, Макс? Спрашивай..."
-    Eric_01 ""
+    Eric_01 "Did you want something, Max? Ask..."
 
 # game/dialogues/erictalk.rpy:813
 translate english Eric_talk_about_Lisa_3_6ec16737:
 
     # Max_08 "Да, знаешь, я подглядывал за вашими с Лизой уроками и подумал... А ничего, что она ещё маленькая?"
-    Max_08 ""
+    Max_08 "Yeah, you know, I was peeking at your lessons with Lisa and I thought... Is it okay that she's just a baby?"
 
 # game/dialogues/erictalk.rpy:814
 translate english Eric_talk_about_Lisa_3_2e69e3bf:
 
     # Eric_05 "Ты что! То, что она ещё такая юная - это вообще бомба. Прямо то, что надо для полного счастья!"
-    Eric_05 ""
+    Eric_05 "No way! The fact that she's still so young is the bomb. Just what you need to be happy!"
 
 # game/dialogues/erictalk.rpy:815
 translate english Eric_talk_about_Lisa_3_d4b10974:
 
     # Max_07 "Это понятно. Я о другом... Вас же всё равно, рано или поздно, кто-нибудь увидит. А если даже и нет, то что будет, когда Лиза кому-нибудь об этом разболтает?"
-    Max_07 ""
+    Max_07 "That's understandable. What I mean is... Someone will see you sooner or later anyway. And even if they don't, what happens when Lisa tells someone about it?"
 
 # game/dialogues/erictalk.rpy:816
 translate english Eric_talk_about_Lisa_3_4ecceec3:
 
     # Eric_09 "Хм... Нет, я с ней поработаю и она будет держать это втайне."
-    Eric_09 ""
+    Eric_09 "Um... No, I'll work with her and she'll keep it to herself."
 
 # game/dialogues/erictalk.rpy:817
 translate english Eric_talk_about_Lisa_3_67167989:
 
     # Max_09 "Просто, я хорошо знаю Лизу и она мне разболтала несколько секретов, хотя мы были не так близки, как сейчас. А у вас с ней секрет очень... наказуемый... Из-за его раскрытия можно всё потерять!"
-    Max_09 ""
+    Max_09 "It's just that I know Lisa well, and she told me some secrets, even though we weren't as close as we are now. And your secret with her is very... punishable... You could lose everything by revealing it!"
 
 # game/dialogues/erictalk.rpy:818
 translate english Eric_talk_about_Lisa_3_5ff62a9d:
 
     # Eric_10 "Эх, как-то я об этом не подумал..."
-    Eric_10 ""
+    Eric_10 "Eh, somehow I didn't think of that..."
 
 # game/dialogues/erictalk.rpy:819
 translate english Eric_talk_about_Lisa_3_999fc9b3:
 
     # Max_07 "Смотри... Я тебе по дружески эти опасения высказал. Если ты на все 150%% уверен, что вам удастся сохранить это в тайне, то пожалуйста. Но тебе потом от этого отмыться не удастся, если что."
-    Max_07 ""
+    Max_07 "Look... I'm being friendly with you about these concerns. If you're 150% sure you can keep it a secret, you're welcome. But you can't get away with it later, if anything."
 
 # game/dialogues/erictalk.rpy:820
 translate english Eric_talk_about_Lisa_3_d9d496ce:
 
     # Eric_16 "Блин, рискованно! А так хочется! Вот какой же ты, Макс... Всю малину растоптал..."
-    Eric_16 ""
+    Eric_16 "Man, that's risky! And I want it so bad! That's how you are, Max... You've ruined everything..."
 
 # game/dialogues/erictalk.rpy:821
 translate english Eric_talk_about_Lisa_3_90215746:
 
     # Max_09 "А я не знаю, почему ты об этом не подумал. Видимо, из-за обилия перспектив с моей семьёй, ты совсем перестал думать тем, чем надо. Это будет невероятное везение, если тебя за это не посадят."
-    Max_09 ""
+    Max_09 "I don't know why you didn't think of that. Apparently, because of the abundance of prospects with my family, you've stopped thinking the right way. It would be unbelievable luck if you didn't go to jail for it."
 
 # game/dialogues/erictalk.rpy:822
 translate english Eric_talk_about_Lisa_3_c9d70062:
 
     # Eric_09 "Что теперь с Лизой делать... Если эти уроки прекратить в самом начале, она может начать задавать вопросы тем, кому не надо."
-    Eric_09 ""
+    Eric_09 "What to do with Lisa now... If these lessons are stopped at the beginning, she might start asking questions to those who don't need to."
 
 # game/dialogues/erictalk.rpy:823
 translate english Eric_talk_about_Lisa_3_f9b2bcd6:
 
     # Max_07 "Ну, я попробую взять её на себя. Чем-нибудь, да займу её. К тому же, она же не всегда будет маленькой. Подрастёт и можно будет с ней делать всё, что захочется! И без такой лютой опаски. А с остальными членами моей семьи я тебе помогу, как и договаривались."
-    Max_07 ""
+    Max_07 "Well, I'll try to take her on. I'll keep her busy. Besides, she won't always be little. When she grows up, you can do whatever you want with her! And without so much fear. And with the rest of my family I'll help you, as we agreed."
 
 # game/dialogues/erictalk.rpy:824
 translate english Eric_talk_about_Lisa_3_72418067:
 
     # Eric_06 "Ладно, Макс, повезло тебе. Отдам Лизу на твоё попечение. Сейчас я ей объясню, что ты прекрасно справишься с этим обучением, а дальше уже твои проблемы. Возись с ней сам. У меня зато больше времени на другие киски будет..."
-    Eric_06 ""
+    Eric_06 "Okay, Max, lucky you. I'll leave Lisa in your care. Now I'll explain to her that you'll be fine with this training, and then it's up to you. You take care of her. At least I'll have more time for other pussies..."
 
 # game/dialogues/erictalk.rpy:825
 translate english Eric_talk_about_Lisa_3_7def813d:
 
     # Max_08 "Ого! Спасибо! Я за ней присмотрю." nointeract
-    Max_08 "" nointeract
+    Max_08 "Wow! Thank you! I'll keep an eye on her." nointeract
 
 # game/dialogues/erictalk.rpy:836
 translate english Eric_talk_about_Lisa_3_36c2b900:
 
     # Max_11 "{m}Посуду лучше всё-таки помыть, а то Лиза вообще со мной ещё не скоро начнёт разговаривать...{/m}"
-    Max_11 ""
-
+    Max_11 "{m}It's better to wash the dishes, or Lisa won't start talking to me at all anytime soon...{/m}"

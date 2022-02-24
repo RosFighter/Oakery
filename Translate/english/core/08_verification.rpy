@@ -4,21 +4,20 @@ translate english strings:
 
     # game/core/08_verification.rpy:368
     old "Не определены"
-    new ""
+    new "Not defined"
 
     # game/core/08_verification.rpy:370
     old "Откровенная вражда"
-    new ""
+    new "Hostile"
 
     # game/core/08_verification.rpy:380
     old "Дружба"
-    new ""
+    new "Friendship"
 
     # game/core/08_verification.rpy:388
     old "Настоящая дружба"
-    new ""
+    new "True friendship"
 
     # game/core/08_verification.rpy:399
     old "Фальшивая дружба"
-    new ""
-
+    new "Fake Friendship"

@@ -11611,29 +11611,28 @@ translate english strings:
 translate english lisa_about_sex_book0_7ebe75f0:
 
     # Max_03 "Ещё как. Ну что, продолжим уроки сексуального образования Эрика, но только уже со мной?"
-    Max_03 ""
+    Max_03 "You betcha. So, shall we continue Eric's sex education lessons, but only with me?"
 
 # game/dialogues/lisatalk.rpy:4775
 translate english lisa_about_sex_book0_e48b612f:
 
     # Lisa_13 "Ну нет! Хоть Эрик и сказал, что ты знаешь, чему меня учить, но я сильно сомневаюсь в этом. Наверняка, ты чего-то там ему наболтал и он поверил."
-    Lisa_13 ""
+    Lisa_13 "Well, no! Even though Eric said you knew what to teach me, I highly doubt it. You must have told him something and he believed you."
 
 # game/dialogues/lisatalk.rpy:4776
 translate english lisa_about_sex_book0_40be8496:
 
     # Max_09 "Ты серьёзно думаешь, что я провёл Эрика?"
-    Max_09 ""
+    Max_09 "Do you really think I fooled Eric?"
 
 # game/dialogues/lisatalk.rpy:4777
 translate english lisa_about_sex_book0_d7fbed8f:
 
     # Lisa_10 "Не думаю. Я {b}ОЧЕНЬ{/b} в этом уверена!"
-    Lisa_10 ""
+    Lisa_10 "I don't think so. I'm {b}VERY{/b} sure of it!"
 
 # game/dialogues/lisatalk.rpy:4778
 translate english lisa_about_sex_book0_e1846811:
 
     # Max_07 "Тогда, для начала, давай возобновим уроки поцелуев? А когда ты поймёшь, что я знаю, чему учить, то продолжим уроки Эрика..."
-    Max_07 ""
-
+    Max_07 "Well, let's start by resuming our kissing lessons, shall we? And when you realize that I know what to teach, let's continue with Eric's lessons..."
