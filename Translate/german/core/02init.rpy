@@ -240,7 +240,7 @@ translate german strings:
 
     # game/core/02init.rpy:133
     old "Не слабо тебя отшлёпали!"
-    new "Das ist eine höllische Tracht Prügel!"
+    new "Das war eine höllische Tracht Prügel!"
 
     # game/core/02init.rpy:133
     old "Ты не передумала о наказаниях?"
