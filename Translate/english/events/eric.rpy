@@ -2885,349 +2885,349 @@ translate english start_eric_wallet_93fe8bc0:
 translate english lisa_eric_sex_ed_practice_practice_1_94b29054:
 
     # Max_01 "{m}Отлично! С этого места мне всё хорошо видно. Эрик разрешил подглядывать, поэтому главное, чтобы меня не заметила Лиза. Если Эрик собирается делать то, что я думаю, то он тот ещё извращенец...{/m}"
-    Max_01 ""
+    Max_01 "{m}{/m}"
 
 # game/events/eric.rpy:1596
 translate english lisa_eric_sex_ed_practice_practice_1_b51df49b:
 
     # Max_04 "{m}Лиза большая умница! Уверен, с талантами у неё тоже всё в порядке, нужно их только раскрыть...{/m}"
-    Max_04 ""
+    Max_04 "{m}Lisa is very clever! I'm sure she's got all the talent in the world too, just need to discover it...{/m}"
 
 # game/events/eric.rpy:1610
 translate english lisa_eric_sex_ed_practice_practice_1_057b807a:
 
     # Max_07 "{m}Нет, Лиза у нас та ещё стесняшка. Для неё эта практика сейчас - самое волнительное событие в жизни. Мне хорошо видно, что у неё руки дрожат...{/m}"
-    Max_07 ""
+    Max_07 "{m}No, Lisa is very shy. This practice is the most exciting thing in her life right now. I can clearly see that her hands are shaking...{/m}"
 
 # game/events/eric.rpy:1623
 translate english lisa_eric_sex_ed_practice_practice_1_3ae62fc7:
 
     # Max_03 "{m}А вот и начинается самое интересное! Лиза сейчас впервые возьмёт в руки член... Интересно посмотреть на её эмоции от такого...{/m}"
-    Max_03 ""
+    Max_03 "{m}And here comes the fun part! Lisa is about to get her hands on a cock for the first time... It's interesting to see her emotions at this...{/m}"
 
 # game/events/eric.rpy:1637
 translate english lisa_eric_sex_ed_practice_practice_1_4b3a47e5:
 
     # Max_03 "{m}Ого! Похоже, я очень вовремя! Чуть всё самое интересное не пропустил с этой посудой... Судя по всему, Лиза сейчас впервые возьмёт в руки член... Интересно посмотреть на её эмоции от такого...{/m}"
-    Max_03 ""
+    Max_03 "{m}Wow! Looks like I'm right on time! Almost missed all the excitement with those dishes... Apparently, Lisa's about to get her first dick in her hands. It's interesting to see how she feels about it...{/m}"
 
 # game/events/eric.rpy:1648
 translate english lisa_eric_sex_ed_practice_practice_1_7bf11fc1:
 
     # Lisa_09 "Ну ладно. Я сейчас попробую..."
-    Lisa_09 ""
+    Lisa_09 "All right. I'm going to try..."
 
 # game/events/eric.rpy:1652
 translate english lisa_eric_sex_ed_practice_practice_1_0f697fc3:
 
     # Lisa_01 "Он... Ну... Я не знаю... Он такой тёплый и нежный... Эрик, а что дальше нужно делать?"
-    Lisa_01 ""
+    Lisa_01 "He... Well... I don't know... He's so warm and gentle... Eric, what's the next step?"
 
 # game/events/eric.rpy:1654
 translate english lisa_eric_sex_ed_practice_practice_1_d4ba3fa3:
 
     # Max_05 "{m}Вот это сейчас будет шоу! Давай, сестрёнка... Дрочить - это тебе не книжки читать! Руки будут отниматься по первости только так...{/m}"
-    Max_05 ""
+    Max_05 "{m}This is going to be quite a show! Come on, sister... Wanking is not like reading a book. It's the only way to get your hands off at first...{/m}"
 
 # game/events/eric.rpy:1658
 translate english lisa_eric_sex_ed_practice_practice_1_5f517bd0:
 
     # Max_11 "{m}Да ничего она практически не сделала! Подержала и всё... Ну да ладно, главное, что она меня не заметила, а там и глядишь, в следующий понедельник наконец подрочит спокойно, насколько сможет.{/m}" nointeract
-    Max_11 "" nointeract
+    Max_11 "{m}She did practically nothing! She just held me and that was it... But anyway, the main thing is that she didn't notice me, and then next Monday she'll finally jerk off as quietly as she can.{/m}" nointeract
 
 # game/events/eric.rpy:1701
 translate english lisa_eric_sex_ed_practice_practice_1_43fa62d0:
 
     # Eric_13 "Ты какого чёрта, Макс, вмешиваешься в наши с Лизой уроки?! Она же просила тебя не мешать, разве нет?"
-    Eric_13 ""
+    Eric_13 "What the hell are you doing interfering with our lessons, Max?! She asked you not to interfere, didn't she?"
 
 # game/events/eric.rpy:1702
 translate english lisa_eric_sex_ed_practice_practice_1_ff9a7213:
 
     # Max_09 "Просила... Просто, я вот о чём подумал... Лиза ещё маленькая... Ты уверен, что хочешь в это влезть?"
-    Max_09 ""
+    Max_09 "Asked... It's just that I was thinking... Lisa's just a kid. Are you sure you want to get into this?"
 
 # game/events/eric.rpy:1703
 translate english lisa_eric_sex_ed_practice_practice_1_d9e68fa9:
 
     # Eric_14 "О да! Я очень хочу в это влезть, если ты ещё не заметил. А то, что она ещё маленькая - именно то, что надо."
-    Eric_14 ""
+    Eric_14 "Oh yeah! I really want to get into this, in case you haven't noticed yet. And the fact that she's still little is exactly the right thing to do."
 
 # game/events/eric.rpy:1704
 translate english lisa_eric_sex_ed_practice_practice_1_3539f3e2:
 
     # Max_08 "А ты думал, что будет, если вас кто-нибудь увидит? Кроме меня, конечно... Или она кому-нибудь разболтает это? Здесь или в школе..."
-    Max_08 ""
+    Max_08 "Have you ever wondered what would happen if anyone saw you? Besides me, of course... Or would she blab it to anyone? Here or at school..."
 
 # game/events/eric.rpy:1705
 translate english lisa_eric_sex_ed_practice_practice_1_4ecceec3:
 
     # Eric_09 "Хм... Нет, я с ней поработаю и она будет держать это втайне."
-    Eric_09 ""
+    Eric_09 "Um... No, I'll work with her and she'll keep it to herself."
 
 # game/events/eric.rpy:1706
 translate english lisa_eric_sex_ed_practice_practice_1_bfaf740b:
 
     # Max_07 "Смотри... Я тебе по дружески эти опасения высказал. Если ты на все 150% уверен, что вам удастся сохранить это в тайне, то пожалуйста. Но тебе потом от этого отмыться не удастся, если что."
-    Max_07 ""
+    Max_07 "Look... I'm just being friendly with you about these concerns. If you're 150% sure you can keep it a secret, you're welcome. But you can't get away with it later, if anything."
 
 # game/events/eric.rpy:1707
 translate english lisa_eric_sex_ed_practice_practice_1_d9d496ce:
 
     # Eric_16 "Блин, рискованно! А так хочется! Вот какой же ты, Макс... Всю малину растоптал..."
-    Eric_16 ""
+    Eric_16 "Man, that's risky! And I want it so bad! That's how you are, Max... You've ruined everything..."
 
 # game/events/eric.rpy:1708
 translate english lisa_eric_sex_ed_practice_practice_1_b3a3e772:
 
     # Max_09 "А я не знаю, почему ты об этом не подумал. Видимо, из-за обилия перспектив с моей семьёй, ты совсем перестал думать тем, чем надо."
-    Max_09 ""
+    Max_09 "I don't know why you didn't think of that. Apparently, because of the abundance of prospects with my family, you have completely stopped thinking the right way."
 
 # game/events/eric.rpy:1709
 translate english lisa_eric_sex_ed_practice_practice_1_c9d70062:
 
     # Eric_09 "Что теперь с Лизой делать... Если эти уроки прекратить в самом начале, она может начать задавать вопросы тем, кому не надо."
-    Eric_09 ""
+    Eric_09 "What to do with Lisa now... If these lessons are stopped at the beginning, she might start asking questions to those who don't need to."
 
 # game/events/eric.rpy:1710
 translate english lisa_eric_sex_ed_practice_practice_1_0d98c4b2:
 
     # Max_07 "Ну, я попробую взять её на себя. Чем-нибудь, да займу её. А с остальными членами моей семьи я тебе помогу, как и договаривались."
-    Max_07 ""
+    Max_07 "Well, I'll try to take her on. I'll keep her busy. And with the rest of my family, I'll help you, as we agreed."
 
 # game/events/eric.rpy:1711
 translate english lisa_eric_sex_ed_practice_practice_1_16f6e99d:
 
     # Eric_06 "Ладно, Макс, повезло тебе. Отдам Лизу на твоё попечение. Сейчас я ей объясню, что ты прекрасно справишься с этим обучением, а дальше уже твои проблемы."
-    Eric_06 ""
+    Eric_06 "Okay, Max, lucky you. I'll leave Lisa in your care. Now I'll explain to her that you'll do just fine with this training, and then it's up to you."
 
 # game/events/eric.rpy:1713
 translate english lisa_eric_sex_ed_practice_practice_1_a0a1d076:
 
     # Max_00 "Понял, постараюсь не облажаться." nointeract
-    Max_00 "" nointeract
+    Max_00 "Got it, I'll try not to screw it up." nointeract
 
 # game/events/eric.rpy:1730
 translate english lisa_eric_sex_ed_practice_practice_1_f60134c6:
 
     # Max_03 "{m}Как будто я стану мыть посуду, когда в нашей с Лизой комнате происходят такие интересные события! Да ни за что, ничего не хочу пропустить...{/m}"
-    Max_03 ""
+    Max_03 "{m}Like I'm going to do the dishes when Lisa and I have such interesting things going on in our room! No way, I don't want to miss anything...{/m}"
 
 # game/events/eric.rpy:1731
 translate english lisa_eric_sex_ed_practice_practice_1_470fd346:
 
     # Eric_01 "... уже ведь не так страшно, как в первый раз, да, Лиза?"
-    Eric_01 ""
+    Eric_01 "...it's not as scary as the first time, is it, Lisa?"
 
 # game/events/eric.rpy:1732
 translate english lisa_eric_sex_ed_practice_practice_1_af8f9b62:
 
     # Lisa_10 "Да. Но я всё равно немного волнуюсь..."
-    Lisa_10 ""
+    Lisa_10 "Yes. But I'm still a little worried..."
 
 # game/events/eric.rpy:1733
 translate english lisa_eric_sex_ed_practice_practice_1_a2c1cbe0:
 
     # Eric_03 "Всё в порядке. Главное, что мы это начали и свой страх ты преодолела. Ты умница!"
-    Eric_03 ""
+    Eric_03 "It's okay. The main thing is that we started it and you overcame your fear. You're doing great."
 
 # game/events/eric.rpy:1734
 translate english lisa_eric_sex_ed_practice_practice_1_37a7b75d:
 
     # Lisa_09 "Честно говоря, я ещё и немного стесняюсь это делать..."
-    Lisa_09 ""
+    Lisa_09 "To be honest, I'm also a little embarrassed to do it..."
 
 # game/events/eric.rpy:1735
 translate english lisa_eric_sex_ed_practice_practice_1_b3f3c39c:
 
     # Max_04 "{m}Ничего, небольшое стеснение со стороны Лизы выглядит даже мило. Но постеснялась и всё, хватит, давай за дело, сестрёнка!{/m}"
-    Max_04 ""
+    Max_04 "{m}Nothing, a little shyness on Lisa's part even looks nice. But she's shy and that's it, let's get on with it, sister!{/m}"
 
 # game/events/eric.rpy:1737
 translate english lisa_eric_sex_ed_practice_practice_1_f726e72b:
 
     # Eric_02 "Я тебя понимаю, Лиза. Вначале это всегда кажется чем-то шокирующим, но потом, когда ты к этому привыкнешь, то для тебя откроются новые горизонты."
-    Eric_02 ""
+    Eric_02 "I know what you mean, Lisa. It always seems shocking in the beginning, but when you get used to it, new horizons open up for you."
 
 # game/events/eric.rpy:1738
 translate english lisa_eric_sex_ed_practice_practice_1_e76ed681:
 
     # Lisa_03 "Серьёзно? И я смогу, также как мама, делать это легко и просто?"
-    Lisa_03 ""
+    Lisa_03 "Really? And I can, just like my mother, do it easily and easily?"
 
 # game/events/eric.rpy:1739
 translate english lisa_eric_sex_ed_practice_practice_1_00ed89fd:
 
     # Eric_04 "Конечно! А может быть даже и лучше, чем она!"
-    Eric_04 ""
+    Eric_04 "Of course! And maybe even better than her!"
 
 # game/events/eric.rpy:1740
 translate english lisa_eric_sex_ed_practice_practice_1_fe01d491:
 
     # Lisa_03 "Правда?! А такое возможно?"
-    Lisa_03 ""
+    Lisa_03 "Really?! Is that possible?"
 
 # game/events/eric.rpy:1741
 translate english lisa_eric_sex_ed_practice_practice_1_eba35258:
 
     # Eric_03 "Нет предела совершенству, Лиза! Но, пора бы уже не просто обо всём этом говорить, но и делать..."
-    Eric_03 ""
+    Eric_03 "There's no limit to perfection, Lisa! But, it's time to not just talk about it all, but to do it..."
 
 # game/events/eric.rpy:1742
 translate english lisa_eric_sex_ed_practice_practice_1_73ce750d:
 
     # Max_02 "{m}Вот именно! Не тяни резину, Лиза... Тебе пора немного подрочить в целях сексуального воспитания!{/m}"
-    Max_02 ""
+    Max_02 "{m}Exactly! Don't drag it out, Lisa... It's time for you to have a little sex education wank!{/m}"
 
 # game/events/eric.rpy:1744
 translate english lisa_eric_sex_ed_practice_practice_1_536d7df8:
 
     # Lisa_01 "Да, Эрик. Думаю, я готова продолжить... Так значит, я просто беру его и начинаю водить вверх-вниз?"
-    Lisa_01 ""
+    Lisa_01 "Yes, Eric. I think I'm ready to continue... So I just pick it up and I just start to drive it up and down?"
 
 # game/events/eric.rpy:1745
 translate english lisa_eric_sex_ed_practice_practice_1_bb26a930:
 
     # Eric_05 "Да, моя девочка. Тебе нужно уверенно взять его в свою нежную ручку и так же нежно ею водить по нему."
-    Eric_05 ""
+    Eric_05 "Yes, my girl. You need to take it confidently in your delicate hand and stroke it just as gently."
 
 # game/events/eric.rpy:1751
 translate english lisa_eric_sex_ed_practice_practice_1_140d5a14:
 
     # Max_02 "{m}Фух! Похоже, я очень вовремя подоспел... Ну что, сестрёнка, тебе пора немного подрочить в целях сексуального воспитания!{/m}"
-    Max_02 ""
+    Max_02 "{m}Whew! Looks like I got here just in time... Well, sis, it's time for you to have a little sex education wank!{/m}"
 
 # game/events/eric.rpy:1753
 translate english lisa_eric_sex_ed_practice_practice_1_f814ae2c:
 
     # Lisa_10 "Ладно, я сейчас попробую... Только не смейся, если я что-то буду делать не так! Хорошо?"
-    Lisa_10 ""
+    Lisa_10 "Okay, I'm going to try it now... Just don't laugh if I do something wrong! Okay?"
 
 # game/events/eric.rpy:1754
 translate english lisa_eric_sex_ed_practice_practice_1_0e946955:
 
     # Eric_07 "Лиза, я и не думал смеяться! Всё у тебя получится, а даже если нет, я всегда тебе подскажу. Начинай..."
-    Eric_07 ""
+    Eric_07 "Lisa, I didn't mean to laugh! You'll do fine, and even if you don't, I'll always give you a hint. Go ahead..."
 
 # game/events/eric.rpy:1755
 translate english lisa_eric_sex_ed_practice_practice_1_b050a65e:
 
     # Max_07 "{m}Да, Лиза, начинай уже... А то разговорились тут!{/m}"
-    Max_07 ""
+    Max_07 "{m}Yes, Lisa, start already ... You're talking!{/m}"
 
 # game/events/eric.rpy:1757
 translate english lisa_eric_sex_ed_practice_practice_1_5fe7735c:
 
     # Lisa_01 "Хорошо... Хоть я и до сих пор сильно смущаюсь этого, но во второй раз это уже совсем иначе! Не так страшно..."
-    Lisa_01 ""
+    Lisa_01 "Okay... Even though I'm still very embarrassed about it, it's different the second time! It's not so scary..."
 
 # game/events/eric.rpy:1758
 translate english lisa_eric_sex_ed_practice_practice_1_2d2ca381:
 
     # Eric_03 "Вот и замечательно! Нечего бояться совершенно естественных вещей, таких, как это!"
-    Eric_03 ""
+    Eric_03 "That's great! Nothing to fear from perfectly natural things such as this!"
 
 # game/events/eric.rpy:1759
 translate english lisa_eric_sex_ed_practice_practice_1_23f29fa5:
 
     # Lisa_02 "Ага, наверное... Не знаю, что вы мужчины в такие моменты испытываете, но я пока сгораю от стыда. Хотя, в то же время, мне очень интересно это делать!"
-    Lisa_02 ""
+    Lisa_02 "Yeah, I guess... I don't know what you men feel at such moments, but I'm burning with shame so far. Although, at the same time, I'm very interested in doing it!"
 
 # game/events/eric.rpy:1760
 translate english lisa_eric_sex_ed_practice_practice_1_b015c998:
 
     # Eric_02 "Понимаю. Это нормально, Лиза. Потом, когда ты преодолеешь все неудобства, это станет ещё интереснее и желаннее для тебя. Ох, у тебя очень хорошо получается, продолжай..."
-    Eric_02 ""
+    Eric_02 "I understand. It's okay, Lisa. Then, when you get over all the discomfort, it will become even more interesting and desirable for you. Oh, you're doing very well, go on..."
 
 # game/events/eric.rpy:1761
 translate english lisa_eric_sex_ed_practice_practice_1_4162a3b6:
 
     # Max_05 "{m}Да, Лиза, продолжай, не стесняйся! Может быть, когда ты этому более-менее обучишься, мне удастся тебя уговорить показать мастерство дрочки...{/m}"
-    Max_05 ""
+    Max_05 "{m}Yes, Lisa, go on, don't be shy! Maybe when you're more or less trained, I'll be able to talk you into showing off your wanking skills...{/m}"
 
 # game/events/eric.rpy:1763
 translate english lisa_eric_sex_ed_practice_practice_1_4970b973:
 
     # Lisa_11 "Ой! Он начал становится таким твёрдым и большим! Это же, насколько я помню, хорошо, да?!"
-    Lisa_11 ""
+    Lisa_11 "Oh! It's starting to get so hard and big! That's as good as I remember, right?!"
 
 # game/events/eric.rpy:1764
 translate english lisa_eric_sex_ed_practice_practice_1_2cee1748:
 
     # Eric_06 "Конечно, это ОЧЕНЬ хорошо! Давай, обхвати его чуть покрепче и всей ладошкой... Вспомни, как это делала твоя мама... Вот так, да..."
-    Eric_06 ""
+    Eric_06 "Of course, it's VERY good! Come on, put your hand around it a little tighter and with your whole palm... Remember how your mother used to do it... Like this, yes..."
 
 # game/events/eric.rpy:1765
 translate english lisa_eric_sex_ed_practice_practice_1_a095d453:
 
     # Lisa_10 "Да, кажется, я помню... Она делала как-то так... У меня получается? Тебе нравится?"
-    Lisa_10 ""
+    Lisa_10 "Yes, I think I remember... She was doing something like this... Am I doing it? Do you like it?"
 
 # game/events/eric.rpy:1766
 translate english lisa_eric_sex_ed_practice_practice_1_2764b823:
 
     # Eric_05 "Да, всё правильно, моя девочка, молодец! Твоя нежная ладошка так хороша... Попробуй делать это чувственно и интуитивно..."
-    Eric_05 ""
+    Eric_05 "Yes, that's right, my girl, well done! Your gentle palm is so good... Try to do it sensually and intuitively..."
 
 # game/events/eric.rpy:1767
 translate english lisa_eric_sex_ed_practice_practice_1_7615ec72:
 
     # Max_03 "{m}Ухх... Я бы тоже очень хотел, чтобы её ладошка и пальчики обхватили мой член... Д-а-а... Даже думать об этом невероятно приятно!{/m}"
-    Max_03 ""
+    Max_03 "{m}Ugh... I'd really like to have her palm and fingers wrapped around my cock, too... Y-a-a... Even to think about it is incredibly pleasant!{/m}"
 
 # game/events/eric.rpy:1769
 translate english lisa_eric_sex_ed_practice_practice_1_27ce6092:
 
     # Lisa_09 "Ой, Эрик, ну я даже не знаю... Может, на сегодня уже хватит? Потому что у меня уже рука начинает болеть, а мне ещё домашнее задание нужно делать..."
-    Lisa_09 ""
+    Lisa_09 "Oh, Eric, I don't know... Maybe that's enough for today? Because my arm is starting to hurt, and I have homework to do..."
 
 # game/events/eric.rpy:1770
 translate english lisa_eric_sex_ed_practice_practice_1_1b3a38e2:
 
     # Eric_04 "Конечно, Лиза! Я и не настаивал на продолжении... Ты и так сегодня сделала большой шаг! Так что занимайся своими делами, а в следующий понедельник мы продолжим. Да, моя дорогая?"
-    Eric_04 ""
+    Eric_04 "Of course, Lisa! I didn't insist on continuing... You've already made a big step today! So mind your own business and we'll continue next Monday. Yes, my dear?"
 
 # game/events/eric.rpy:1772
 translate english lisa_eric_sex_ed_practice_practice_1_8b5130df:
 
     # Lisa_02 "Да! Спасибо, Эрик, за наставления и этот опыт! Даже не знаю, чтобы я без тебя делала..."
-    Lisa_02 ""
+    Lisa_02 "Yes! Thank you, Eric, for the guidance and this experience! I don't even know what I would do without you..."
 
 # game/events/eric.rpy:1773
 translate english lisa_eric_sex_ed_practice_practice_1_bb69e3a1:
 
     # Eric_01 "Не за что, Лиза. До следующего раза."
-    Eric_01 ""
+    Eric_01 "You're welcome, Lisa. See you next time."
 
 # game/events/eric.rpy:1774
 translate english lisa_eric_sex_ed_practice_practice_1_b465168f:
 
     # Max_09 "{m}Ага, до следующего... Вот только есть у меня некоторые опасения на этот счёт. Нужно будет обязательно высказать их Эрику в следующий раз после ужина!{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Yeah, until the next... Except I have some concerns about that. I'll have to be sure to express them to Eric next time after dinner!{/m}" nointeract
 
 # game/events/eric.rpy:1882
 translate english lisa_eric_zero_practice_war_6f687e90:
 
     # Max_07 "{m}У Лизы сейчас должен состояться практический урок сексуального воспитания. Надо обязательно подглядеть за этим! Правда, она попросила помыть за неё посуду...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Lisa is about to have a practical sex education lesson. We should totally spy on it! Really, she asked me to do the dishes for her...{/m} nointeract
 
 # game/events/eric.rpy:1885
 translate english lisa_eric_zero_practice_war_026ddd2f:
 
     # Max_07 "{m}У Лизы сейчас должен состояться практический урок сексуального воспитания. Надо обязательно подглядеть за этим, ведь это такое волнительное событие будет для моей сестрёнки! Правда, она попросила помыть за неё посуду...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Lisa is about to have a hands-on sex education lesson. I have to watch it, because it's going to be so exciting for my little sister! She did ask me to do the dishes for her, though...{/m}" nointeract
 
 # game/events/eric.rpy:1901
 translate english lisa_eric_zero_practice_war_d2275465:
 
     # Max_10 "{m}Нужно как можно быстрее вымыть всю посуду и бежать к своей комнате, не зазря же я выпросил у Эрика возможность подглядывать за их уроками. Ну вот и закончил...{/m}" nointeract
-    Max_10 "" nointeract
+    Max_10 "{m}I had to wash all the dishes as quickly as possible and run to my room, because I'd asked Eric to peek at their lessons for a reason. I'm done now...{/m}" nointeract
 
 translate english strings:
 
     # game/events/eric.rpy:1712
     old "{i}уйти мыть посуду{/i}"
-    new ""
+    new "Go away to wash the dishes"
 
 # TODO: Translation updated at 2022-02-24 01:02
 
@@ -3235,203 +3235,202 @@ translate english strings:
 translate english lisa_eric_sex_ed_practice_practice_1_999fc9b3:
 
     # Max_07 "Смотри... Я тебе по дружески эти опасения высказал. Если ты на все 150%% уверен, что вам удастся сохранить это в тайне, то пожалуйста. Но тебе потом от этого отмыться не удастся, если что."
-    Max_07 ""
+    Max_07 "Look... I'm being friendly with you about these concerns. If you're 150% sure you can keep it a secret, you're welcome. But you can't get away with it later, if anything."
 
 # game/events/eric.rpy:1749
 translate english lisa_eric_sex_ed_practice_practice_2_f60134c6:
 
     # Max_03 "{m}Как будто я стану мыть посуду, когда в нашей с Лизой комнате происходят такие интересные события! Да ни за что, ничего не хочу пропустить...{/m}"
-    Max_03 ""
+    Max_03 "{m}Like I'm going to do the dishes when Lisa and I have such interesting things going on in our room! No way, I don't want to miss anything...{/m}"
 
 # game/events/eric.rpy:1750
 translate english lisa_eric_sex_ed_practice_practice_2_470fd346:
 
     # Eric_01 "... уже ведь не так страшно, как в первый раз, да, Лиза?"
-    Eric_01 ""
+    Eric_01 "... It's not as scary as the first time, is it, Lisa?"
 
 # game/events/eric.rpy:1751
 translate english lisa_eric_sex_ed_practice_practice_2_af8f9b62:
 
     # Lisa_10 "Да. Но я всё равно немного волнуюсь..."
-    Lisa_10 ""
+    Lisa_10 "Yes. But I'm still a little worried..."
 
 # game/events/eric.rpy:1752
 translate english lisa_eric_sex_ed_practice_practice_2_a2c1cbe0:
 
     # Eric_03 "Всё в порядке. Главное, что мы это начали и свой страх ты преодолела. Ты умница!"
-    Eric_03 ""
+    Eric_03 "It's okay. The main thing is that we started it and you overcame your fear. You're doing great."
 
 # game/events/eric.rpy:1753
 translate english lisa_eric_sex_ed_practice_practice_2_37a7b75d:
 
     # Lisa_09 "Честно говоря, я ещё и немного стесняюсь это делать..."
-    Lisa_09 ""
+    Lisa_09 "To be honest, I'm also a little embarrassed to do it..."
 
 # game/events/eric.rpy:1754
 translate english lisa_eric_sex_ed_practice_practice_2_b3f3c39c:
 
     # Max_04 "{m}Ничего, небольшое стеснение со стороны Лизы выглядит даже мило. Но постеснялась и всё, хватит, давай за дело, сестрёнка!{/m}"
-    Max_04 ""
+    Max_04 "{m}Nothing, a little shyness on Lisa's part even looks nice. But she's shy and that's it, let's get on with it, sister!{/m}"
 
 # game/events/eric.rpy:1758
 translate english lisa_eric_sex_ed_practice_practice_2_f726e72b:
 
     # Eric_02 "Я тебя понимаю, Лиза. Вначале это всегда кажется чем-то шокирующим, но потом, когда ты к этому привыкнешь, то для тебя откроются новые горизонты."
-    Eric_02 ""
+    Eric_02 "I know what you mean, Lisa. It always seems shocking in the beginning, but when you get used to it, new horizons open up for you."
 
 # game/events/eric.rpy:1759
 translate english lisa_eric_sex_ed_practice_practice_2_e76ed681:
 
     # Lisa_03 "Серьёзно? И я смогу, также как мама, делать это легко и просто?"
-    Lisa_03 ""
+    Lisa_03 "Really? And I can, just like my Mom, do it easily?"
 
 # game/events/eric.rpy:1760
 translate english lisa_eric_sex_ed_practice_practice_2_00ed89fd:
 
     # Eric_04 "Конечно! А может быть даже и лучше, чем она!"
-    Eric_04 ""
+    Eric_04 "Of course! And maybe even better than her!"
 
 # game/events/eric.rpy:1761
 translate english lisa_eric_sex_ed_practice_practice_2_fe01d491:
 
     # Lisa_03 "Правда?! А такое возможно?"
-    Lisa_03 ""
+    Lisa_03 "Really?! Is that possible?"
 
 # game/events/eric.rpy:1762
 translate english lisa_eric_sex_ed_practice_practice_2_eba35258:
 
     # Eric_03 "Нет предела совершенству, Лиза! Но, пора бы уже не просто обо всём этом говорить, но и делать..."
-    Eric_03 ""
+    Eric_03 "There's no limit to perfection, Lisa! But, it's time to not just talk about it, but do it..."
 
 # game/events/eric.rpy:1763
 translate english lisa_eric_sex_ed_practice_practice_2_73ce750d:
 
     # Max_02 "{m}Вот именно! Не тяни резину, Лиза... Тебе пора немного подрочить в целях сексуального воспитания!{/m}"
-    Max_02 ""
+    Max_02 "{m}Exactly! Don't drag it out, Lisa... It's time for you to have a little sex education wank!{/m}"
 
 # game/events/eric.rpy:1767
 translate english lisa_eric_sex_ed_practice_practice_2_536d7df8:
 
     # Lisa_01 "Да, Эрик. Думаю, я готова продолжить... Так значит, я просто беру его и начинаю водить вверх-вниз?"
-    Lisa_01 ""
+    Lisa_01 "Yes, Eric. I think I'm ready to continue... So I just pick it up and I just start to grab it up and down?"
 
 # game/events/eric.rpy:1768
 translate english lisa_eric_sex_ed_practice_practice_2_bb26a930:
 
     # Eric_05 "Да, моя девочка. Тебе нужно уверенно взять его в свою нежную ручку и так же нежно ею водить по нему."
-    Eric_05 ""
+    Eric_05 "Yes, my girl. You need to take it confidently in your delicate hand and stroke it just as gently."
 
 # game/events/eric.rpy:1777
 translate english lisa_eric_sex_ed_practice_practice_2_140d5a14:
 
     # Max_02 "{m}Фух! Похоже, я очень вовремя подоспел... Ну что, сестрёнка, тебе пора немного подрочить в целях сексуального воспитания!{/m}"
-    Max_02 ""
+    Max_02 "{m}Whew! Looks like I got here just in time... Well, sis, it's time for you to have a little sex education wank!{/m}"
 
 # game/events/eric.rpy:1779
 translate english lisa_eric_sex_ed_practice_practice_2_f814ae2c:
 
     # Lisa_10 "Ладно, я сейчас попробую... Только не смейся, если я что-то буду делать не так! Хорошо?"
-    Lisa_10 ""
+    Lisa_10 "Okay, I'm going to try it now... Just don't laugh if I do something wrong! Okay?"
 
 # game/events/eric.rpy:1780
 translate english lisa_eric_sex_ed_practice_practice_2_0e946955:
 
     # Eric_07 "Лиза, я и не думал смеяться! Всё у тебя получится, а даже если нет, я всегда тебе подскажу. Начинай..."
-    Eric_07 ""
+    Eric_07 "Lisa, I didn't mean to laugh! You'll do fine, and even if you don't, I'll always give you a hint. Go ahead..."
 
 # game/events/eric.rpy:1781
 translate english lisa_eric_sex_ed_practice_practice_2_b050a65e:
 
     # Max_07 "{m}Да, Лиза, начинай уже... А то разговорились тут!{/m}"
-    Max_07 ""
+    Max_07 "{m}Yes, Lisa, start already ... You're talking!{/m}"
 
 # game/events/eric.rpy:1786
 translate english lisa_eric_sex_ed_practice_practice_2_5fe7735c:
 
     # Lisa_01 "Хорошо... Хоть я и до сих пор сильно смущаюсь этого, но во второй раз это уже совсем иначе! Не так страшно..."
-    Lisa_01 ""
+    Lisa_01 "Okay... Even though I'm still very embarrassed about it, it's different the second time! It's not so scary..."
 
 # game/events/eric.rpy:1787
 translate english lisa_eric_sex_ed_practice_practice_2_2d2ca381:
 
     # Eric_03 "Вот и замечательно! Нечего бояться совершенно естественных вещей, таких, как это!"
-    Eric_03 ""
+    Eric_03 "That's great! Nothing to fear from perfectly natural things such as this!"
 
 # game/events/eric.rpy:1788
 translate english lisa_eric_sex_ed_practice_practice_2_23f29fa5:
 
     # Lisa_02 "Ага, наверное... Не знаю, что вы мужчины в такие моменты испытываете, но я пока сгораю от стыда. Хотя, в то же время, мне очень интересно это делать!"
-    Lisa_02 ""
+    Lisa_02 "Yeah, I guess... I don't know what you men feel at such moments, but I'm burning with shame so far. Although, at the same time, I'm very interested in doing it!"
 
 # game/events/eric.rpy:1789
 translate english lisa_eric_sex_ed_practice_practice_2_b015c998:
 
     # Eric_02 "Понимаю. Это нормально, Лиза. Потом, когда ты преодолеешь все неудобства, это станет ещё интереснее и желаннее для тебя. Ох, у тебя очень хорошо получается, продолжай..."
-    Eric_02 ""
+    Eric_02 "I understand. It's okay, Lisa. Then, when you get over all the discomfort, it will become even more interesting and desirable for you. Oh, you're doing very well, go on..."
 
 # game/events/eric.rpy:1790
 translate english lisa_eric_sex_ed_practice_practice_2_4162a3b6:
 
     # Max_05 "{m}Да, Лиза, продолжай, не стесняйся! Может быть, когда ты этому более-менее обучишься, мне удастся тебя уговорить показать мастерство дрочки...{/m}"
-    Max_05 ""
+    Max_05 "{m}Yes, Lisa, go on, don't be shy! Maybe when you're more or less trained, I'll be able to talk you into showing off your wanking skills...{/m}"
 
 # game/events/eric.rpy:1794
 translate english lisa_eric_sex_ed_practice_practice_2_4970b973:
 
     # Lisa_11 "Ой! Он начал становится таким твёрдым и большим! Это же, насколько я помню, хорошо, да?!"
-    Lisa_11 ""
+    Lisa_11 "Oh! It's starting to get so hard and big! That's as good as I remember, right?!"
 
 # game/events/eric.rpy:1795
 translate english lisa_eric_sex_ed_practice_practice_2_2cee1748:
 
     # Eric_06 "Конечно, это ОЧЕНЬ хорошо! Давай, обхвати его чуть покрепче и всей ладошкой... Вспомни, как это делала твоя мама... Вот так, да..."
-    Eric_06 ""
+    Eric_06 "Of course, it's VERY good! Come on, put your hand around it a little tighter and with your whole palm... Remember how your mother used to do it... Like this, yes..."
 
 # game/events/eric.rpy:1796
 translate english lisa_eric_sex_ed_practice_practice_2_a095d453:
 
     # Lisa_10 "Да, кажется, я помню... Она делала как-то так... У меня получается? Тебе нравится?"
-    Lisa_10 ""
+    Lisa_10 "Yes, I think I remember... She was doing something like this... Am I doing it? Do you like it?"
 
 # game/events/eric.rpy:1797
 translate english lisa_eric_sex_ed_practice_practice_2_2764b823:
 
     # Eric_05 "Да, всё правильно, моя девочка, молодец! Твоя нежная ладошка так хороша... Попробуй делать это чувственно и интуитивно..."
-    Eric_05 ""
+    Eric_05 "Yes, that's right, my girl, well done! Your gentle palm is so good... Try to do it sensually and intuitively..."
 
 # game/events/eric.rpy:1798
 translate english lisa_eric_sex_ed_practice_practice_2_7615ec72:
 
     # Max_03 "{m}Ухх... Я бы тоже очень хотел, чтобы её ладошка и пальчики обхватили мой член... Д-а-а... Даже думать об этом невероятно приятно!{/m}"
-    Max_03 ""
+    Max_03 "{m}Ugh... I'd really like to have her palm and fingers wrapped around my cock, too... Y-a-a... Even to think about it is incredibly pleasant!{/m}"
 
 # game/events/eric.rpy:1802
 translate english lisa_eric_sex_ed_practice_practice_2_27ce6092:
 
     # Lisa_09 "Ой, Эрик, ну я даже не знаю... Может, на сегодня уже хватит? Потому что у меня уже рука начинает болеть, а мне ещё домашнее задание нужно делать..."
-    Lisa_09 ""
+    Lisa_09 "Oh, Eric, I don't know... Maybe that's enough for today? Because my arm is starting to hurt, and I have homework to do..."
 
 # game/events/eric.rpy:1803
 translate english lisa_eric_sex_ed_practice_practice_2_1b3a38e2:
 
     # Eric_04 "Конечно, Лиза! Я и не настаивал на продолжении... Ты и так сегодня сделала большой шаг! Так что занимайся своими делами, а в следующий понедельник мы продолжим. Да, моя дорогая?"
-    Eric_04 ""
+    Eric_04 "Of course, Lisa! I didn't insist on continuing... You've already made a big step today! So mind your own business and we'll continue next Monday. Yes, my dear?"
 
 # game/events/eric.rpy:1807
 translate english lisa_eric_sex_ed_practice_practice_2_8b5130df:
 
     # Lisa_02 "Да! Спасибо, Эрик, за наставления и этот опыт! Даже не знаю, чтобы я без тебя делала..."
-    Lisa_02 ""
+    Lisa_02 "Yes! Thank you, Eric, for the guidance and this experience! I don't even know what I would do without you..."
 
 # game/events/eric.rpy:1808
 translate english lisa_eric_sex_ed_practice_practice_2_bb69e3a1:
 
     # Eric_01 "Не за что, Лиза. До следующего раза."
-    Eric_01 ""
+    Eric_01 "You're welcome, Lisa. See you next time."
 
 # game/events/eric.rpy:1809
 translate english lisa_eric_sex_ed_practice_practice_2_b465168f:
 
     # Max_09 "{m}Ага, до следующего... Вот только есть у меня некоторые опасения на этот счёт. Нужно будет обязательно высказать их Эрику в следующий раз после ужина!{/m}" nointeract
-    Max_09 "" nointeract
-
+    Max_09 "{m}{m}Yeah, until the next... Except I have some concerns about that. I'll have to be sure to express them to Eric next time after dinner!{/m}{/m}" nointeract
