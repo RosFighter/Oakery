@@ -716,13 +716,12 @@ translate english strings:
 
     # game/core/02init.rpy:138
     old "Мою премию за помощь с Лизой!"
-    new ""
+    new "My bonus for helping with Lisa!"
 
     # game/core/02init.rpy:138
     old "Чтобы на маме были не только очки для сна, но и чулки!"
-    new ""
+    new "So that mom not only wears a sleeping mask, but also stockings!"
 
     # game/core/02init.rpy:138
     old "Чтобы на маме были только очки для сна!"
-    new ""
-
+    new "So that mom only wears a sleeping mask!"

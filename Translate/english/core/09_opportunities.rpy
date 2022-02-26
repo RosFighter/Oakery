@@ -2231,53 +2231,52 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот это поворот! Хвалёная дружба с Эриком, которую он мне расписывал, как что-то сказочное, на деле оказалась не такой уж и сказкой. Придётся с этим как-то разбираться..."
-    new ""
+    new "What a twist! The friendship with Eric that he told me was a fairy tale turned out not to be such a fairy tale. I'll have to deal with it somehow..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно выяснить, как Эрик планирует подмазаться к моим сёстрам и будут ли у меня какие-то перспективы в дружбе с ним. Потребуются успехи в возможностях \"Блог\" и \"Наставник\"..."
-    new ""
+    new "I need to find out how Eric plans to grease up with my sisters and if I have any prospect of being friends with him. It's going to take some progress on the Blog and the Mentor opportunities..."
 
     # game/core/09_opportunities.rpy:4
     old "Неизвестно, понадобится ли Эрику моя помощь с Алисой. Может, что-то выгорит с Лизой? Чтобы это выяснить, потребуются успехи в возможности \"Наставник\"..."
-    new ""
+    new "There was no telling whether Eric would need my help with Alice. Maybe something will work out with Lisa? To find out, it's going to take success in the Mentor opportunity..."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, не всё безнадёжно и у Эрика получится выпросить что-то интересное. Надо будет с ним поговорить, когда он начнёт подлизываться к Лизе..."
-    new ""
+    new "I think it's not hopeless, and Eric might be able to get something interesting out of it. I'll have to talk to him when he starts sucking up to Lisa..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот это поворот! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я потерял премию, которую мне обещал Эрик. Лиза, видите ли, и есть премия. Правда, он намекнул, что если мне будет, что ему рассказать, то у меня будут и другие премиальные. Я сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... Теперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, а я за это получу возможность присутствовать во время их с мамой секса! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет!"
-    new ""
+    new "What a turnaround! Because Lisa's sex education is now entrusted to me, I've lost the bonus Eric promised me. Lisa, you see, is the bonus. True, he hinted that if I had something to tell him, I would have other bonuses. I immediately told Eric about me and Kira and he was pleasantly surprised! He was surprised to find out you had a porn actress by your side... Now I have to play along with Eric in the bathtub with Kira, when he supposedly bumps into us by accident, so that he can have an easier time with her, and I get to be present during her and Mom's sex! True, with some reservations. Mom won't see me, and I, in turn, don't have to make any noise. I think I can manage that. Oh, how cool would that be?"
 
     # game/core/09_opportunities.rpy:4
     old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько с ней поразвлечься..."
-    new ""
+    new "You just have to wait until Tuesday or Friday night and have a good time with her..."
 
     # game/core/09_opportunities.rpy:4
     old "Круто! Я попросил у Эрика возможность присутствовать во время их с мамой секса и он согласился это устроить! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет! Только бы не упустить день, в который на маме будут очки для сна..."
-    new ""
+    new "Cool! I asked Eric for the opportunity to be present during his and my mom's sex, and he agreed to arrange it! With a few reservations, though. Mom won't see me, and I, in turn, must not make any noise. I think I can handle it. Oh, this is going to be great! Just as long as I don't miss the day my mom wears her sleep goggles..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно заглядывать к ним в комнату, чтобы не упустить момент и попасть на порно-шоу..."
-    new ""
+    new "You have to peek into their room to make sure you don't miss the moment and get to the porn show..."
 
     # game/core/09_opportunities.rpy:4
     old "Может быть, попробовать попросить Эрика о том, чтобы мама была одета во что-то сексуальное на этих порно-шоу?"
-    new ""
+    new "Maybe try asking Eric for mom to wear something sexy to those porn shows?"
 
     # game/core/09_opportunities.rpy:4
     old "Подумал я и решил, ну эту дружбу с Эриком нафиг! Это всё-таки моя семья, а то, что он планирует с ними сделать - меня не устраивает. Так что буду притворяться другом, пока есть возможность. А пока не стало сильно критично это делать, самое время собирать компромат на Эрика и постараться успеть урвать что-нибудь стоящее для себя, пока мы с ним не начали враждовать."
-    new ""
+    new "I thought about it, and I decided, screw this friendship with Eric! It's my family, after all, and what he's planning to do to them doesn't suit me. So I'm going to pretend to be his friend while I can. And before it gets too critical to do that, it's time to get some dirt on Eric and try to get something worthwhile for myself before we start feuding with him."
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Что посмотрим, мам?\"..."
-    new ""
+    new "It's going to take progress in the possibility of \"What shall we see, Mom?\..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот так дела! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я лишился порно-шоу с мамой. Очень обидно, если не сказать похуже. Правда, Эрик намекнул, что если мне будет, что ему рассказать, то это шоу можно будет возобновить. Но это должна быть стоящая информация и она у меня есть! Я сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... Я тоже был приятно удивлен, когда это узнал. Теперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, и я смог возобновить шоу с мамой."
-    new ""
+    new "That's it! Because Lisa's sex education is now entrusted to me, I have lost my porn show with my mother. That's a shame, to say the least. True, Eric hinted that if I had something to tell him, the show could be resumed. But it had to be worthwhile information and I had it! I immediately told Eric about me and Kira and he was pleasantly surprised! He was surprised to find out you had a porn actress on the side. I was pleasantly surprised when I found out, too. Now I have to play along with Eric in the bathtub with Kira when he supposedly runs into us, so he can make it easier on her, too, and I can resume the show with my mom."
 
     # game/core/09_opportunities.rpy:4
     old "Вот нас и поймали с поличным! Конечно, это был спектакль специально для Киры, чтобы Эрик получал свой любимый минет теперь и от неё, а я получу порно-шоу с мамой. Главное, с Эриком не забыть поговорить об этом!"
-    new ""
-
+    new "Here we are, caught red-handed! Of course, this was a spectacle especially for Kira, so that Eric would get his favorite blow job now from her, too, and I would get a porn show with my mother. The main thing is to remember to talk to Eric about it!"
