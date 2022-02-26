@@ -27,6 +27,7 @@
 Знакомство с Каприс и массажным салоном.
 
 
+-------------------------------------------------------------------------------------
 Что сделано по v0.08:
 
  - обновлены начальные изображения помощи с домашним заданием Лизы;
@@ -50,8 +51,9 @@
 При Эрике в "Настоящей дружбе"...
  - практические занятия Лизы и Эрика;
  - Макс пытается возобновить уроки поцелуев с Лизой;
+ - Макс может получить премию за помощь Эрику с Лизой и Кирой.
 
-
+-------------------------------------------------------------------------------------
 
  - updated the initial images of Lisa's homework help;
  - updated images of Ann sleeping.
@@ -74,3 +76,4 @@ With Eric in "Fake Friendship"...
 With Eric in "Real Friendship"...
  - Lisa and Eric's practical lessons;
  - Max tries to resume kissing lessons with Lisa;
+ - Max may get a bonus for helping Eric with Lisa and Kira.
