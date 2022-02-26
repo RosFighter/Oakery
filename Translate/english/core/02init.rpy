@@ -709,3 +709,20 @@ translate english strings:
     # game/core/02init.rpy:136
     old "Можно к тебе присоединиться?"
     new "May I join you?"
+
+# TODO: Translation updated at 2022-02-27 01:23
+
+translate english strings:
+
+    # game/core/02init.rpy:138
+    old "Мою премию за помощь с Лизой!"
+    new ""
+
+    # game/core/02init.rpy:138
+    old "Чтобы на маме были не только очки для сна, но и чулки!"
+    new ""
+
+    # game/core/02init.rpy:138
+    old "Чтобы на маме были только очки для сна!"
+    new ""
+
