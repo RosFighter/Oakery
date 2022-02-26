@@ -240,7 +240,7 @@ translate german strings:
 
     # game/core/02init.rpy:133
     old "Не слабо тебя отшлёпали!"
-    new "Das war eine höllische Tracht Prügel!"
+    new "Das ist eine höllische Tracht Prügel!"
 
     # game/core/02init.rpy:133
     old "Ты не передумала о наказаниях?"
@@ -708,4 +708,20 @@ translate german strings:
     # game/core/02init.rpy:136
     old "Можно к тебе присоединиться?"
     new "Darf ich mich zu dir gesellen?"
+
+# TODO: Translation updated at 2022-02-27 01:25
+
+translate german strings:
+
+    # game/core/02init.rpy:138
+    old "Мою премию за помощь с Лизой!"
+    new ""
+
+    # game/core/02init.rpy:138
+    old "Чтобы на маме были не только очки для сна, но и чулки!"
+    new ""
+
+    # game/core/02init.rpy:138
+    old "Чтобы на маме были только очки для сна!"
+    new ""
 
