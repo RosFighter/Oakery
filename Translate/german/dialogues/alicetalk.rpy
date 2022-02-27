@@ -8506,13 +8506,13 @@ translate german alice_about_defend_punish1_f8acf22c:
 translate german alice_about_defend_punish1_cc301f6a:
 
     # Alice_12 "Макс, давай иначе договоримся? Это отстой..."
-    Alice_12 "Max, wie wäre es, wenn wir einen anderen Deal machen? Das ist misst..."
+    Alice_12 "Max, wie wäre es, wenn wir einen anderen Deal machen? Der ist misst..."
 
 # game/dialogues/alicetalk.rpy:4737
 translate german alice_about_defend_punish1_7b76a9ae:
 
     # Max_09 "Иногда получать от меня легонько по попке - это значит отстой, а всегда и сурово от мамы - это класс?! Ты ведь даже не знаешь, как я буду шлёпать!"
-    Max_09 "Manchmal einen leichten Klaps auf den Hintern von mir zu bekommen, nervt, aber immer und hart von Mom, das ist cool?! Du weißt doch gar nicht, wie ich dich versohlen werde!"
+    Max_09 "Manchmal einen leichten Klaps von mir auf den Hintern zu bekommen, nervt, aber immer hart von Mom, das ist cool?! Du weißt doch gar nicht, wie ich dich versohlen werde!"
 
 # game/dialogues/alicetalk.rpy:4739
 translate german alice_about_defend_punish1_1428cf3b:
@@ -8524,7 +8524,7 @@ translate german alice_about_defend_punish1_1428cf3b:
 translate german alice_about_defend_punish1_cont_1a13a2ef:
 
     # Alice_12 "Чтобы меня младший брат наказывал? Обойдёшься, Макс!" nointeract
-    Alice_12 "Um von meinem kleinen Bruder bestraft zu werden? Du schaffst das schon, Max!" nointeract
+    Alice_12 "Von meinem kleinen Bruder bestraft zu werden? Ich schaff das schon, Max!" nointeract
 
 # game/dialogues/alicetalk.rpy:4755
 translate german alice_about_defend_punish1_convince_7bec5e8c:
