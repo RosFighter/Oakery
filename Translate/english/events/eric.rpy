@@ -583,7 +583,7 @@ translate english eric_ann_fucking_voyeur_1a6dca32:
     Ann_18 "Max? Again?! Get out of here!" nointeract
 
 # game/events/eric.rpy:593
-translate english eric_ann_fucking_voyeur_afca94eb:
+translate english eric_ann_fucking_voyeur_141f69df:
 
     # Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
     Eric_02 "Ann, it's better to watch us instead of all the messed up stuff on the internet, you know? Max, come in here and we'll talk..." nointeract

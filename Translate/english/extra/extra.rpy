@@ -270,3 +270,39 @@ translate english strings:
     old "Вместо ночного плаванья"
     new "Instead of night swimming"
 
+# TODO: Translation updated at 2022-02-28 02:41
+
+translate english strings:
+
+    # game/extra/extra.rpy:60
+    old "Я спасу их от солнца"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Всё ниже и ниже"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Йога с мамой"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Ещё больше массажа у ТВ"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Не надо печалиться"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Секс-шоу с первых рядов"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Стесняется трогать..."
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Ещё стесняется, но трогает..."
+    new ""
+
