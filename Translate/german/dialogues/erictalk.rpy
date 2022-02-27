@@ -1901,10 +1901,10 @@ translate german lessons_from_Eric_fourth_visit_63b985ee:
     # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Нужно понять, всё дело в Эрике или маме!{/m}"
     Max_09 "{m}Ähm ... Das war's, echt jetzt. Ich musste zusehen, wie Mom Eric einen Blowjob gegeben hat, wobei ich sehen konnte, wie sehr sie ihm gehorchte. Man muss herausfinden, ob es Eric oder Mom ist!{/m}"
 
-# game/dialogues/erictalk.rpy:347
-translate german lessons_from_Eric_fourth_visit_6875096a:
+# game/dialogues/erictalk.rpy:358
+translate german lessons_from_Eric_fourth_visit_463416a1:
 
-    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие «образовательные» уроки.{/m}"
+    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие \"образовательные\" уроки.{/m}"
     Max_09 "{m}Ähm ... Das war's, echt. Ich musste natürlich zusehen, wie meine Mutter Eric einen Blowjob gegeben hat, dabei konnte ich sehen, wie sehr sie ihm gehorchte. Aber ich weiß schon, warum... Ich muss also näher an meine Mutter herankommen, und dann kann ich sie vielleicht zu ein paar \"erzieherischen\" Stunden überreden.{/m}"
 
 # game/dialogues/erictalk.rpy:353
@@ -1919,11 +1919,11 @@ translate german lessons_from_Eric_fourth_visit_63b985ee_1:
     # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Нужно понять, всё дело в Эрике или маме!{/m}"
     Max_09 "{m}Ähm ... Das war's, ernsthaft. Ich musste zusehen, wie Mom Eric einen Blowjob gegeben hat, aber ich konnte sehen, wie sehr sie ihm gehorcht hat. Man muss herausfinden, ob es Eric oder Mom ist!{/m}"
 
-# game/dialogues/erictalk.rpy:361
-translate german lessons_from_Eric_fourth_visit_6875096a_1:
+# game/dialogues/erictalk.rpy:372
+translate german lessons_from_Eric_fourth_visit_463416a1_1:
 
-    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие «образовательные» уроки.{/m}"
-    Max_09 "{m}Ähm ... Das war's, echt. Ich musste natürlich zusehen, wie meine Mutter Eric einen Blowjob gegeben hat, dabei konnte ich sehen, wie sehr sie ihm gehorchte. Aber ich weiß schon, warum... Ich muss also näher an meine Mutter herankommen, und dann kann ich sie vielleicht zu ein paar \"erzieherischen\" Stunden überreden.{{/m}"
+    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие \"образовательные\" уроки.{/m}"
+    Max_09 "{m}Ähm ... Das war's, echt. Ich musste natürlich zusehen, wie meine Mutter Eric einen Blowjob gegeben hat, dabei konnte ich sehen, wie sehr sie ihm gehorchte. Aber ich weiß schon, warum... Ich muss also näher an meine Mutter herankommen, und dann kann ich sie vielleicht zu ein paar \"erzieherischen\" Stunden überreden.{/m}"
 
 # game/dialogues/erictalk.rpy:364
 translate german lessons_from_Eric_fourth_visit_c96b2882:
@@ -2548,4 +2548,3 @@ translate german Eric_ask_no_stockings_6fbaeb06:
 
     # Max_01 "Спасибо!" nointeract
     Max_01 "Vielen Dank!" nointeract
-
