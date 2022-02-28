@@ -2890,7 +2890,7 @@ translate german kira_night_tv_cum_in_mouth_a2bb381b:
 translate german kira_night_tv_minet_after_sex_4713ca96:
 
     # Kira_07 "[restrain!t]Фух, удивляюсь, как ты ещё не кончил, Макс! Твой член так и напрашивается на то, чтобы его хорошенько приласкали..."
-    Kira_07 "[restrain!t]Puh, ich bin überrascht, dass du noch nicht abgespritzt hast, Max! Dein Schwanz braucht eine Menge Streicheleinheiten..."
+    Kira_07 "[restrain!t]Puh, ich bin überrascht, dass du noch nicht abgespritzt hast, Max! Dein Schwanz braucht eine jetzt eine besondere Zuwendung..."
 
 # game/events/kira.rpy:2117
 translate german kira_night_tv_minet_after_sex_f7a0a397:
