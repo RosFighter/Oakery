@@ -276,33 +276,33 @@ translate german strings:
 
     # game/extra/extra.rpy:60
     old "Я спасу их от солнца"
-    new ""
+    new "Ich bewahre sie vor der Sonne"
 
     # game/extra/extra.rpy:60
     old "Всё ниже и ниже"
-    new ""
+    new "Tiefer und tiefer"
 
     # game/extra/extra.rpy:60
     old "Йога с мамой"
-    new ""
+    new "Yoga mit Mom"
 
     # game/extra/extra.rpy:60
     old "Ещё больше массажа у ТВ"
-    new ""
+    new "Weitere Massagen vorm TV"
 
     # game/extra/extra.rpy:60
     old "Не надо печалиться"
-    new ""
+    new "Kein Grund, traurig zu sein"
 
     # game/extra/extra.rpy:60
     old "Секс-шоу с первых рядов"
-    new ""
+    new "Eine Sex-Show aus den ersten Reihen"
 
     # game/extra/extra.rpy:60
     old "Стесняется трогать..."
-    new ""
+    new "Scheu vor Berührung..."
 
     # game/extra/extra.rpy:60
     old "Ещё стесняется, но трогает..."
-    new ""
+    new "Noch schüchtern, aber anregend..."
 

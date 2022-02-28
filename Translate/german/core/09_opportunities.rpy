@@ -2288,45 +2288,45 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь! \n\nСамое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ."
-    new ""
+    new "Also haben Mom und ich \"The Colour of Night\" zu Ende gesehen. Ich habe wieder ihre nackten Brüste bewundert und im Allgemeinen lief es gut für uns. Sie fängt langsam an zu begreifen, dass ich erwachsen bin, und es macht ihr nichts mehr aus, solche Filme mit mir zu sehen. Um des Anstands willen hat mir Mom natürlich gesagt, ich solle keine solch expliziten Erotik mehr kaufen, aber als ob ich auf sie hören würde! \n\nDas Frustrierendste ist, dass ich viel zu selten gemeinsam mit Mom fernsehen kann."
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Контроль\"..."
-    new ""
+    new "Es wird Fortschritte bei der Möglichkeit \"Kontrolle\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Сперва нужно закрепиться с массажем маминых плеч, пока она смотрит ТВ. Успешно выполнено массажей плеч мамы у ТВ: [ann.flags.m_shoulder] из 5..."
-    new ""
+    new "Zuerst sollte ich mich darauf konzentrieren, Moms Schultern zu massieren, während sie fernsieht. Ich habe erfolgreich Moms Schultern vor dem Fernseher massiert: [ann.flags.m_shoulder] von 5..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь! \n\nСамое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ. Нужно сперва избавиться от Эрика, а уже потом покупать эротические фильмы. Пока только массаж время от времени..."
-    new ""
+    new "Also haben Mom und ich \"The Colour of Night zu Ende\" gesehen. Ich habe wieder ihre nackten Brüste bewundert und im Allgemeinen lief es gut für uns. Sie fängt langsam an zu begreifen, dass ich erwachsen bin, und es macht ihr nichts mehr aus, solche Filme mit mir zu sehen. Um des Anstands willen hat mir Mom natürlich gesagt, ich solle keine solch expliziten Erotik mehr kaufen, aber als ob ich auf sie hören würde! \n\nDas Frustrierendste ist, dass ich viel zu selten mit Mom fernsehen kann. Zuerst muss man Eric loswerden, bevor man erotische Filme kaufen kann. Im Moment gibt es nur ab und zu eine Massage..."
 
     # game/core/09_opportunities.rpy:4
     old "Похоже, мама обожает массаж спины, а это значит, что мне будет не так-то и просто сделать его на отлично. Но, если хотя бы иногда будет получаться, то уже хорошо. \nНу и раз я добрался до маминой спины, то и до её попки тоже нужно добираться, но уже через помощь с йогой. Там поддерживать её за попку будет естественнее всего. \nИ уже когда мама к этому всему привыкнет, можно будет попробовать уговорить её на продолжение тех уроков минета, которыми они с Эриком поделились. Ведь, как радоваться минету показали, а как женщин ублажать - нет!"
-    new ""
+    new "Mom scheint Rückenmassagen zu lieben, was bedeutet, dass es für mich nicht einfach sein wird, sie perfekt auszuführen. Aber wenn ich das ab und zu mal machen kann, ist das gut. \nNun, da ich Moms Rücken geschafft habe, muss ich natürlich auch ihren Arsch bekommen, aber mit Hilfe von Yoga. Dort ist es am natürlichsten, ihren Arsch zu berühren. \nNun, da Mom sich an alles gewöhnt hat, kannst du versuchen, sie zu überreden, die Blowjob-Lektionen fortzusetzen, die sie mit Eric zusammen gemacht hat. Schließlich haben sie dir gezeigt, wie man einen Blowjob genießt, aber nicht, wie man eine Frau befriedigt!"
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, этого хватит, чтобы я мог попробовать уговорить её на новые интимные уроки... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
-    new ""
+    new "Ich denke, das ist Grund genug für mich, sie zu neuen intimen Stunden zu überreden... Ich habe den ihren Rücken vor dem Fernseher erfolgreich massiert: [ann.flags.m_back] von 3"
 
     # game/core/09_opportunities.rpy:4
     old "Может быть, попробовать поговорить с мамой, когда она принимает ванну? Это отличное место, чтобы напомнить ей о том, что они с Эриком мне показывали в своей комнате..."
-    new ""
+    new "Vielleicht sollte ich mit Mom reden, während sie ein Bad nimmt. Das ist ein guter Ort, um sie daran zu erinnern, was sie und Eric mir in ihrem Zimmer gezeigt haben..."
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Волнующие изгибы\"..."
-    new ""
+    new "Es wird Fortschritte bei der Möglichkeit \"Aufregende Kurven\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Похоже, мой дерзкий разговор с мамой удался! Конечно, если бы Эрик не устроил для меня тех уроков по минету, у меня бы и близко не получилось выпросить у мамы их продолжение. \nПравда, пока она только согласилась подумать над этим, так что, возможно, она ещё ответит отказом. Пускай, уговорить её в таком случае будет не просто, но думаю получится, рано или поздно."
-    new ""
+    new "Es sieht so aus, als wäre mein lockeres Gespräch mit Mom ein Erfolg gewesen! Natürlich hätte ich Mom nicht dazu bringen können, den Blowjob-Unterricht fortzusetzen, wenn Eric ihn nicht begonnen hätte. \nNun, sie hat nur zugestimmt, darüber nachzudenken, also wird sie vielleicht nein sagen. Es wird nicht leicht sein, sie zu überreden, aber ich denke, sie wird es früher oder später tun."
 
     # game/core/09_opportunities.rpy:4
     old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
-    new ""
+    new "Das ist die Art von Yoga, die mir besser gefällt! Momr sind meine ruhelosen Hände immer noch peinlich, aber ich denke, sie wird sich daran gewöhnen. \nIch kann einfach nicht anders, als einen Ständer zu bekommen, also ist es besser, in T-Shirt und Shorts zum Yoga mit Mom anzuziehen. Es ist viel einfacher, meinen Ständer zu verstecken, wenn ich einen habe. \n\nZu schade, dass sie will, dass ich jetzt, wo ich aktiv bin, mindestens jeden zweiten Tag mitmache... Aber das macht mir nichts aus, ich möchte mich ihr einfach wieder anschließen."
 
     # game/core/09_opportunities.rpy:4
     old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, можно будет попробовать уговорить её на новые интимные уроки... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
-    new ""
+    new "Wenn Mom sich erst einmal daran gewöhnt hat, dass sie beim Yoga an ihrem Heiligtum berührt wird, kannst ich versuchen, sie zu intimeren Kursen zu überreden... Ich habe Mom erfolgreich beim Yoga geholfen: [ann.flags.truehelp] von 5"
 
