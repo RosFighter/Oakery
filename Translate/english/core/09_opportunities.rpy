@@ -2291,7 +2291,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Контроль\"..."
-    new "It's going to take progress in the "Control" capability..."
+    new "It's going to take progress in the \"Control\" capability..."
 
     # game/core/09_opportunities.rpy:4
     old "Сперва нужно закрепиться с массажем маминых плеч, пока она смотрит ТВ. Успешно выполнено массажей плеч мамы у ТВ: [ann.flags.m_shoulder] из 5..."

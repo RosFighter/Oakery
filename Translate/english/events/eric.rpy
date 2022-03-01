@@ -3577,14 +3577,9 @@ translate english eric_ann_fuck_glasses_sleeping_7d68e880:
 translate english strings:
 
     # game/events/eric.rpy:678
-    old "{m}тихо зайти в комнату{/m}"
-    new "{m}quietly walk into the room{/m}"
+    old "{i}тихо зайти в комнату{/i}"
+    new "{i}quietly walk into the room{/i}"
 
     # game/events/eric.rpy:694
-    old "{m}хорошо устроиться{/m}"
-    new "{m}get comfortable{/m}"
-
-    # game/events/eric.rpy:733
-    old "{m}тихо уйти{/m}"
-    new "{m}Quietly leave{/m}"
-
+    old "{i}хорошо устроиться{/i}"
+    new "{i}get comfortable{/i}"

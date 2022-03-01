@@ -1878,11 +1878,11 @@ translate english kira_about_ann_secret_r_39f028b6:
     # Kira_14 "Макс, твоя мама не хочет, чтобы кто-то об этом что-то знал. На это есть причины и я не хочу подорвать её, и без того довольно шаткое, доверие ко мне..." nointeract
     Kira_14 "Max, your mom doesn't want anyone to know anything about this. There are reasons for that, and I don't want to betray her trust..." nointeract
 
-# game/dialogues/kiratalk.rpy:1070
-translate english story_from_childhood_ann_37f146bb:
+# game/dialogues/kiratalk.rpy:1062
+translate english story_from_childhood_ann_5afda0cd:
 
-    # Kira_03 "Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
-    Kira_03 "You're not going to let it go, are you? Just keep in mind, if you mention it to anyone or your mother herself, they will lose trust in you."
+    # Kira_03 "[succes!t]Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
+    Kira_03 "[succes!t]You're not going to let it go, are you? Just keep in mind, if you mention it to anyone or your mother herself, they will lose trust in you."
 
 # game/dialogues/kiratalk.rpy:1071
 translate english story_from_childhood_ann_9b09dcde:
