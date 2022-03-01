@@ -1869,683 +1869,682 @@ translate english Eric_talk_about_Lisa_3_36c2b900:
 translate english lessons_from_Eric_fourth_visit_fa9a17f5:
 
     # Max_07 "К вам ведь можно?"
-    Max_07 ""
+    Max_07 "It's all right to see you, isn't it?"
 
 # game/dialogues/erictalk.rpy:326
 translate english lessons_from_Eric_fourth_visit_5499a427:
 
     # Eric_01 "Ну, как сказать... Вообще-то, того, что мы тебе до этого показали, более чем достаточно. На этом всё, Макс."
-    Eric_01 ""
+    Eric_01 "Well, how can I put it... Actually, what we've shown you so far is more than enough. That's all, Max."
 
 # game/dialogues/erictalk.rpy:327
 translate english lessons_from_Eric_fourth_visit_ea18ead2:
 
     # Ann_14 "Да, сынок. Дальше ты уже сам разберёшься, что и как. Поэтому постарайся нас не беспокоить по пустякам, хорошо?"
-    Ann_14 ""
+    Ann_14 "Yes, son. You can take it from here. So try not to bother us about anything, okay?"
 
 # game/dialogues/erictalk.rpy:328
 translate english lessons_from_Eric_fourth_visit_c7465eb5:
 
     # Max_08 "Ну, ладно. Как скажешь, мам." nointeract
-    Max_08 "" nointeract
+    Max_08 "Well, okay. Whatever you say, Mom." nointeract
 
 # game/dialogues/erictalk.rpy:339
 translate english lessons_from_Eric_fourth_visit_87030dec:
 
     # Max_09 "{m}Хм... Значит, это ВСЁ говорите... Нет, такое меня не устраивает. Здесь облом. С Алисой тоже непонятно, ведь Эрику может и не понадобится моя помощь с ней. Может, хоть с Лизой будут какие-то перспективы...{/m}"
-    Max_09 ""
+    Max_09 "{m}Hmmm... So that's ALL you're saying... No, that doesn't work for me. That's a bummer. With Alice is also unclear, because Eric may not need my help with her. Maybe there's at least some prospect with Lisa...{/m}"
 
 # game/dialogues/erictalk.rpy:344
 translate english lessons_from_Eric_fourth_visit_63b985ee:
 
     # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Нужно понять, всё дело в Эрике или маме!{/m}"
-    Max_09 ""
+    Max_09 "{m}Hmm... That's it, that's it. I had to watch Mom give Eric a blowjob this way and that, but I could see how much she listened to him. We have to figure out if it's Eric or Mom!{/m}"
 
 # game/dialogues/erictalk.rpy:347
 translate english lessons_from_Eric_fourth_visit_463416a1:
 
     # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие \"образовательные\" уроки.{/m}"
-    Max_09 ""
+    Max_09 "{m}Hmm... That's it, that's it. I had to watch my mother give Eric a blowjob this and that, of course, but I could see how much she listened to him. But I already know why... Which means I need to get closer to my mom and then maybe I can talk her into some \"educational\" lessons.{/m}"
 
 # game/dialogues/erictalk.rpy:353
 translate english lessons_from_Eric_fourth_visit_8be9de5b:
 
     # Max_09 "{m}Хм... Значит, это ВСЁ говорите... А вот я так не считаю! Эрик сам сказал, что я могу попросить что-нибудь за то, что помог с Лизой. И я уже знаю, что попросить...{/m}"
-    Max_09 ""
+    Max_09 "{m}Hmmm... So that's ALL you're saying... I don't think so! Eric himself said I could ask for something for helping with Lisa. And I already know what to ask for...{/m}"
 
 # game/dialogues/erictalk.rpy:358
 translate english lessons_from_Eric_fourth_visit_63b985ee_1:
 
     # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Нужно понять, всё дело в Эрике или маме!{/m}"
-    Max_09 ""
+    Max_09 "{m}Hmm... That's it, that's it. I had to watch Mom give Eric a blowjob this way and that, but I could see how much she listened to him. We have to figure out if it's Eric or Mom!{/m}"
 
 # game/dialogues/erictalk.rpy:361
 translate english lessons_from_Eric_fourth_visit_463416a1_1:
 
     # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие \"образовательные\" уроки.{/m}"
-    Max_09 ""
+    Max_09 "{m}Hmm... That's it, that's it. I had to watch my mother give Eric a blowjob this and that, of course, but I could see how much she listened to him. But I already know why... Which means I need to get closer to my mom and then maybe I can talk her into some "educational" lessons.{/m}"
 
 # game/dialogues/erictalk.rpy:364
 translate english lessons_from_Eric_fourth_visit_c96b2882:
 
     # Max_09 "{m}Хм... Меня совершенно не устраивает такая дружба с Эриком! Если это действительно {b}ВСЁ{/b}, что я буду иметь с этой дружбы, то зачем он тут сдался? Пожалуй, стоит немного подождать и посмотреть, как он собирается пудрить мозги моим сёстрам... Тогда и станет ясно, светит мне что-нибудь там или нет.{/m}"
-    Max_09 ""
+    Max_09 "{m}Hmmm... I'm not at all happy with this friendship with Eric! If that's really all I'm going to get out of this friendship, then why is he here? Maybe we should wait and see how he's going to mess with my sisters... Then we'll know if I'm going to get anything out of it or not.{/m}"
 
 # game/dialogues/erictalk.rpy:695
 translate english Eric_talk_about_Kira_1_92183915:
 
     # Eric_02 "Ну, спорить с этим не буду. Но ты, вроде как, хотел возобновить шоу со своей мамой?"
-    Eric_02 ""
+    Eric_02 "Well, I'm not going to argue with that. But you kind of wanted to restart the show with your mom?"
 
 # game/dialogues/erictalk.rpy:696
 translate english Eric_talk_about_Kira_1_fd7af465:
 
     # Max_07 "Точно! Хочу возобновить шоу с мамой в очках для сна!"
-    Max_07 ""
+    Max_07 "That's right! I want to resume the show with my mom wearing sleep glasses!"
 
 # game/dialogues/erictalk.rpy:697
 translate english Eric_talk_about_Kira_1_b808aecd:
 
     # Eric_01 "Хорошо, Макс. Как скажешь."
-    Eric_01 ""
+    Eric_01 "All right, Max. Whatever you say."
 
 # game/dialogues/erictalk.rpy:702
 translate english Eric_talk_about_Kira_1_99319513:
 
     # Eric_01 "Да, Макс, тянуло бы... Если бы ты не обломал мой подарок для Алисы! Но за то, что ты подогнал мне Киру на блюдечке, я тебя прощаю и даже даю возможность попросить что-либо. Но ты, вроде как, хотел возобновить шоу со своей мамой?"
-    Eric_01 ""
+    Eric_01 "Yes, Max, I would have... If you hadn't ruined my present for Alice! But for handing me Kira on a platter, I forgive you and even let you ask for something. But you kind of wanted to resume the show with your mom, didn't you?"
 
 # game/dialogues/erictalk.rpy:703
 translate english Eric_talk_about_Kira_1_fd7af465_1:
 
     # Max_07 "Точно! Хочу возобновить шоу с мамой в очках для сна!"
-    Max_07 ""
+    Max_07 "That's right! I want to resume the show with my mom wearing sleep glasses!"
 
 # game/dialogues/erictalk.rpy:704
 translate english Eric_talk_about_Kira_1_63295c66:
 
     # Eric_01 "Хорошо, Макс. Как скажешь. Но денег от меня ты больше получать не будешь, а то я наспонсирую себе проблем."
-    Eric_01 ""
+    Eric_01 "All right, Max. Whatever you say. But you won't get any more money from me, or I'll sponsor myself into trouble."
 
 # game/dialogues/erictalk.rpy:708
 translate english Eric_talk_about_Kira_1_153dc910:
 
     # Max_11 "Ладно, давай так." nointeract
-    Max_11 "" nointeract
+    Max_11 "Okay, let's do this." nointeract
 
 # game/dialogues/erictalk.rpy:717
 translate english Eric_talk_about_Kira_1_0c0c1bbe:
 
     # Eric_02 "Ну, спорить с этим не буду. Мы, вроде как, договорились о шоу с твоей мамой?"
-    Eric_02 ""
+    Eric_02 "Well, I'm not going to argue with that. Didn't we kind of agree on a show with your mom?"
 
 # game/dialogues/erictalk.rpy:718
 translate english Eric_talk_about_Kira_1_01036b8a:
 
     # Max_07 "Точно! Хочу шоу с мамой в очках для сна!"
-    Max_07 ""
+    Max_07 "That's right! I want a show with my mom wearing sleep glasses!"
 
 # game/dialogues/erictalk.rpy:719
 translate english Eric_talk_about_Kira_1_b808aecd_1:
 
     # Eric_01 "Хорошо, Макс. Как скажешь."
-    Eric_01 ""
+    Eric_01 "All right, Max. Whatever you say."
 
 # game/dialogues/erictalk.rpy:720
 translate english Eric_talk_about_Kira_1_90c46fa5_1:
 
     # Max_05 "Круто!" nointeract
-    Max_05 "" nointeract
+    Max_05 "Cool!" nointeract
 
 # game/dialogues/erictalk.rpy:724
 translate english Eric_talk_about_Kira_1_5a7bd4f7:
 
     # Eric_01 "Да, Макс, тянуло бы... Если бы ты не обломал мой подарок для Алисы! Но за то, что ты подогнал мне Киру на блюдечке, я тебя прощаю и даже даю возможность попросить что-либо. Но мы, вроде как, договорились о шоу с твоей мамой?"
-    Eric_01 ""
+    Eric_01 "Yes, Max, I would have... If you hadn't ruined my present for Alice! But for handing me Kira on a platter, I forgive you and even let you ask for something. But we kind of agreed on a show with your mom, didn't we?"
 
 # game/dialogues/erictalk.rpy:725
 translate english Eric_talk_about_Kira_1_01036b8a_1:
 
     # Max_07 "Точно! Хочу шоу с мамой в очках для сна!"
-    Max_07 ""
+    Max_07 "That's right! I want a show with my mom wearing sleep glasses!"
 
 # game/dialogues/erictalk.rpy:726
 translate english Eric_talk_about_Kira_1_63295c66_1:
 
     # Eric_01 "Хорошо, Макс. Как скажешь. Но денег от меня ты больше получать не будешь, а то я наспонсирую себе проблем."
-    Eric_01 ""
+    Eric_01 "All right, Max. Whatever you say. But you won't get any more money from me, or I'll sponsor myself into trouble."
 
 # game/dialogues/erictalk.rpy:730
 translate english Eric_talk_about_Kira_1_153dc910_1:
 
     # Max_11 "Ладно, давай так." nointeract
-    Max_11 "" nointeract
+    Max_11 "Okay, let's do this." nointeract
 
 # game/dialogues/erictalk.rpy:918
 translate english Eric_bonus_for_Lisa_f73c4a0a:
 
     # Eric_04 "Какую ещё премию, парень?! С Лизой ты мне, конечно, помог, только ведь она теперь отдана на поруки ТЕБЕ. Вот и считай это премией."
-    Eric_04 ""
+    Eric_04 "What bonus, man?! You helped me with Lisa, of course, but now she is in your care. Consider it a bonus."
 
 # game/dialogues/erictalk.rpy:919
 translate english Eric_bonus_for_Lisa_c2636588:
 
     # Max_10 "Обидно, конечно. Но я понял."
-    Max_10 ""
+    Max_10 "It's a shame, of course. But I get it."
 
 # game/dialogues/erictalk.rpy:920
 translate english Eric_bonus_for_Lisa_53a711aa:
 
     # Eric_03 "Но, если вдруг, например, ты будешь располагать крайне полезной для меня информацией, в отношении твоей семьи, то у тебя будут ещё премиальные."
-    Eric_03 ""
+    Eric_03 "But if, for example, you happen to have some very useful information for me, regarding your family, you'll have more bonuses."
 
 # game/dialogues/erictalk.rpy:921
 translate english Eric_bonus_for_Lisa_373c87f8:
 
     # Max_07 "Так у меня уже есть такая информация для тебя. О моей тёте Кире."
-    Max_07 ""
+    Max_07 "So I already have that information for you. About my Aunt Kira."
 
 # game/dialogues/erictalk.rpy:922
 translate english Eric_bonus_for_Lisa_a0b9d0c1:
 
     # Eric_09 "Надеюсь, это что-то весьма интересное или важное, иначе меня это не особо волнует..."
-    Eric_09 ""
+    Eric_09 "I hope it's something quite interesting or important, otherwise I don't really care..."
 
 # game/dialogues/erictalk.rpy:923
 translate english Eric_bonus_for_Lisa_5b981410:
 
     # Max_02 "Как минимум неожиданное для тебя. Короче, мы с ней... ну, того... этого..."
-    Max_02 ""
+    Max_02 "At least unexpected for you. Anyway, she and I... you know... this..."
 
 # game/dialogues/erictalk.rpy:924
 translate english Eric_bonus_for_Lisa_ab04f09c:
 
     # Eric_13 "Используй более понятные слова, Макс."
-    Eric_13 ""
+    Eric_13 "Use clearer words, Max."
 
 # game/dialogues/erictalk.rpy:925
 translate english Eric_bonus_for_Lisa_cae5ce20:
 
     # Max_07 "Мы с ней, как бы это сказать... занимаемся оральными утехами..."
-    Max_07 ""
+    Max_07 "She and I, how should I say it... ...we do oral pleasures..."
 
 # game/dialogues/erictalk.rpy:926
 translate english Eric_bonus_for_Lisa_ad877c77:
 
     # Eric_12 "Чего?!"
-    Eric_12 ""
+    Eric_12 "What?!"
 
 # game/dialogues/erictalk.rpy:927
 translate english Eric_bonus_for_Lisa_41f2d91b:
 
     # Max_04 "У нас с ней интимная близость, вот."
-    Max_04 ""
+    Max_04 "She and I are intimate, that's it."
 
 # game/dialogues/erictalk.rpy:928
 translate english Eric_bonus_for_Lisa_66b1162c:
 
     # Eric_04 "Да ладно! Это у тебя приколы такие, Макс?! Хочешь сказать, она тебе отсасывает?!"
-    Eric_04 ""
+    Eric_04 "Come on! Is this your idea of a joke, Max?! You mean she's sucking your dick?!"
 
 # game/dialogues/erictalk.rpy:929
 translate english Eric_bonus_for_Lisa_1dc507c8:
 
     # Max_03 "Ага. Кстати, по мне так это самая офигенная вещь в мире!"
-    Max_03 ""
+    Max_03 "Yeah. By the way, it sounds like the most awesome thing in the world to me!"
 
 # game/dialogues/erictalk.rpy:930
 translate english Eric_bonus_for_Lisa_695395c6:
 
     # Eric_06 "Погоди... То есть ТЕБЕ отсасывает ТВОЯ родная тётя?! Это ты хочешь сказать?"
-    Eric_06 ""
+    Eric_06 "Wait a minute... You mean your own aunt is giving you a blow job?! Is that what you're saying?"
 
 # game/dialogues/erictalk.rpy:931
 translate english Eric_bonus_for_Lisa_9acc7a48:
 
     # Max_01 "Ну да, об этом я и говорю."
-    Max_01 ""
+    Max_01 "Well, yeah, that's what I'm talking about."
 
 # game/dialogues/erictalk.rpy:932
 translate english Eric_bonus_for_Lisa_918aaf8d:
 
     # Eric_12 "Так. Вот это нихрена себе открытие! Это как вышло вообще?!"
-    Eric_12 ""
+    Eric_12 "Right. That's a hell of a discovery! How did that even happen?!"
 
 # game/dialogues/erictalk.rpy:933
 translate english Eric_bonus_for_Lisa_361cd83d:
 
     # Max_07 "Наверно, сказалось то, что она работает в порноиндустрии сейчас... Хотя, она и без этого была довольно открыта в плане таких развлечений."
-    Max_07 ""
+    Max_07 "I guess it must have had something to do with her working in the porn industry now... Although, she was pretty open about this kind of entertainment anyway."
 
 # game/dialogues/erictalk.rpy:934
 translate english Eric_bonus_for_Lisa_e0b3dd08:
 
     # Eric_08 "Ого! Это шикарные новости, Макс! Ты только что подогнал мне порномодель, а она ещё и сестра моей женщины! Это очень круто!!!"
-    Eric_08 ""
+    Eric_08 "Wow! That's great news, Max! You just got me a porn model and she's also my woman's sister! That's very cool!!!"
 
 # game/dialogues/erictalk.rpy:935
 translate english Eric_bonus_for_Lisa_fdd8e06e:
 
     # Max_09 "Значит, такая информация тянет на премию?"
-    Max_09 ""
+    Max_09 "So this information is worth a prize?"
 
 # game/dialogues/erictalk.rpy:936
 translate english Eric_bonus_for_Lisa_9942b3b4:
 
     # Eric_04 "Однозначно тянет. Обязательно это обсудим... Но сперва, когда вы этим с Кирой занимаетесь?"
-    Eric_04 ""
+    Eric_04 "Definitely pulls. We'll definitely discuss it... But first, when do you and Kira do it?"
 
 # game/dialogues/erictalk.rpy:937
 translate english Eric_bonus_for_Lisa_ae52c68e:
 
     # Max_04 "По ночам, когда она возвращается с работы. В это время все уже спят, а мы развлекаемся..."
-    Max_04 ""
+    Max_04 "At night, when she comes home from work. At that time everyone else is asleep, and we're having fun..."
 
 # game/dialogues/erictalk.rpy:938
 translate english Eric_bonus_for_Lisa_90704005:
 
     # Eric_03 "И где вы развлекаетесь?"
-    Eric_03 ""
+    Eric_03 "And where do you have fun?"
 
 # game/dialogues/erictalk.rpy:939
 translate english Eric_bonus_for_Lisa_26197899:
 
     # Max_01 "Когда ты ночуешь у нас в гостях - в ванной комнате и у бассейна."
-    Max_01 ""
+    Max_01 "When you spend the night at our house - in the bathroom and by the pool."
 
 # game/dialogues/erictalk.rpy:940
 translate english Eric_bonus_for_Lisa_f5bec7c8:
 
     # Eric_06 "Да вы рисковые ребята! Не боитесь, что вас кто-то увидит? В ванной ладно, там ещё есть шансы как-то скрыться, а вот у бассейна..."
-    Eric_06 ""
+    Eric_06 "You guys are risk takers! Aren't you afraid someone will see you? In the bathroom, okay, there's still a chance of hiding, but by the pool..."
 
 # game/dialogues/erictalk.rpy:941
 translate english Eric_bonus_for_Lisa_8bf662f4:
 
     # Max_02 "Да мы там по-быстренькому шалим..."
-    Max_02 ""
+    Max_02 "We're just doing a quickie..."
 
 # game/dialogues/erictalk.rpy:942
 translate english Eric_bonus_for_Lisa_840a0cb4:
 
     # Eric_08 "В таком случае, я обязательно загляну к вам в ванную, как бы случайно... Так сказать, поймаю с поличным, чтобы можно было максимально просто развести твою тётю на оральные утехи и для себя. Ты же подыграешь мне?"
-    Eric_08 ""
+    Eric_08 "In that case, I'll be sure to stop by your bathroom, as if by accident... I'll catch you red-handed, so to speak, so that I can get your aunt to perform oral pleasures on me as easily as possible. You'll play along, won't you?"
 
 # game/dialogues/erictalk.rpy:943
 translate english Eric_bonus_for_Lisa_176f968d:
 
     # Max_03 "Если я получу премию, то подыграю."
-    Max_03 ""
+    Max_03 "If I get a bonus, I'll play along."
 
 # game/dialogues/erictalk.rpy:944
 translate english Eric_bonus_for_Lisa_326a2cf3:
 
     # Eric_02 "Само собой, Макс. Выкладывай, если решил, чего хочешь."
-    Eric_02 ""
+    Eric_02 "Of course, Max. Spit it out if you've decided what you want."
 
 # game/dialogues/erictalk.rpy:948
 translate english Eric_bonus_for_Lisa_869907d3:
 
     # Eric_02 "Выкладывай, если решил, чего хочешь."
-    Eric_02 ""
+    Eric_02 "Spit it out if you've decided what you want."
 
 # game/dialogues/erictalk.rpy:949
 translate english Eric_bonus_for_Lisa_f5b3af6e:
 
     # Max_07 "Я... Я хотел бы смотреть, как вы с мамой трахаетесь! При чём, так сказать, с первых рядов..."
-    Max_07 ""
+    Max_07 "I... I'd like to watch you and Mom fuck! From the front rows, so to speak..."
 
 # game/dialogues/erictalk.rpy:950
 translate english Eric_bonus_for_Lisa_9b8cd369:
 
     # Eric_03 "И что ты, мелкий извращенец, подразумеваешь под \"первыми рядами\"?"
-    Eric_03 ""
+    Eric_03 "And what do you, you little pervert, mean by \"front rows\"?"
 
 # game/dialogues/erictalk.rpy:951
 translate english Eric_bonus_for_Lisa_e3ea4723:
 
     # Max_09 "Быть прямо в комнате. Как на тех уроках, где мама отсасывала тебе."
-    Max_09 ""
+    Max_09 "Being right in the room. Like in those classes where Mom sucked you off."
 
 # game/dialogues/erictalk.rpy:952
 translate english Eric_bonus_for_Lisa_47defc6f:
 
     # Eric_09 "Смело просить такое! А ты, парень, случаем на солнышке не перегрелся сегодня днём? Нет, я конечно польщён, что ты считаешь меня настолько крутым, но лучше подумай о каких-нибудь... более реальных просьбах."
-    Eric_09 ""
+    Eric_09 "It's brave to ask for that! You didn't happen to get too hot in the sun this afternoon, did you, boy? No, I'm flattered that you think I'm so cool, but you better think of some... more realistic requests."
 
 # game/dialogues/erictalk.rpy:953
 translate english Eric_bonus_for_Lisa_62140d11:
 
     # Max_08 "Почему? Ты же каким-то образом уговорил мою маму отсасывать тебе, пока я смотрю во всех подробностях!"
-    Max_08 ""
+    Max_08 "Why? You somehow talked my mom into sucking you off while I watch in detail!"
 
 # game/dialogues/erictalk.rpy:954
 translate english Eric_bonus_for_Lisa_cce9de36:
 
     # Eric_04 "Так это одно... И даже с этим было не всё так просто, как тебе думается. А ты сейчас просишь запредельного. Не смотря на все внешние прелести твоей мамы, характер у неё довольно сложный, особенно, что касается её детей."
-    Eric_04 ""
+    Eric_04 "So that's one thing... And even that wasn't as easy as you think. And now you're asking for the beyond. In spite of all the outward charms of your mom, she's a complicated character, especially when it comes to her children."
 
 # game/dialogues/erictalk.rpy:955
 translate english Eric_bonus_for_Lisa_b51621dc:
 
     # Max_11 "То есть, это невозможно?"
-    Max_11 ""
+    Max_11 "You mean it's impossible?"
 
 # game/dialogues/erictalk.rpy:956
 translate english Eric_bonus_for_Lisa_5b534c40:
 
     # Eric_01 "Я бы не сказал. Это вполне возможно, просто... Чтобы настроить твою маму на то, что ты просишь, уйдёт много времени и моих стараний, а ты ведь не хочешь долго ждать, верно?"
-    Eric_01 ""
+    Eric_01 "I wouldn't say that. It's quite possible, it's just... It would take a lot of time and my effort to set your mother up for what you're asking, and you don't want to wait long, right?"
 
 # game/dialogues/erictalk.rpy:957
 translate english Eric_bonus_for_Lisa_b9e56a5b:
 
     # Max_10 "Ну, да. Ты ведь можешь с этим сколько угодно тянуть, а я в дураках буду сидеть и ждать."
-    Max_10 ""
+    Max_10 "Well, yes. You can drag this out as long as you want, and I'll sit and wait in fools."
 
 # game/dialogues/erictalk.rpy:958
 translate english Eric_bonus_for_Lisa_aa1d7b5e:
 
     # Eric_02 "Вот... Поэтому, я предлагаю тебе альтернативу, Макс. Будет тебе то, что ты просишь, но с рядом нюансов."
-    Eric_02 ""
+    Eric_02 "Here... That's why I'm offering you an alternative, Max. I'll give you what you're asking for, but with a few nuances."
 
 # game/dialogues/erictalk.rpy:959
 translate english Eric_bonus_for_Lisa_724db350:
 
     # Max_09 "И что за нюансы такие?"
-    Max_09 ""
+    Max_09 "And what are these nuances?"
 
 # game/dialogues/erictalk.rpy:960
 translate english Eric_bonus_for_Lisa_127c681f:
 
     # Eric_05 "Во-первых, она не будет знать, что ты находишься в комнате."
-    Eric_05 ""
+    Eric_05 "First of all, she won't know you're in the room."
 
 # game/dialogues/erictalk.rpy:961
 translate english Eric_bonus_for_Lisa_8c73dcb6:
 
     # Max_07 "Это как так? Я невидимым становиться не умею."
-    Max_07 ""
+    Max_07 "What do you mean? I don't know how to become invisible."
 
 # game/dialogues/erictalk.rpy:962
 translate english Eric_bonus_for_Lisa_9583dd2a:
 
     # Eric_01 "Плохо, Макс! Но не волнуйся из-за этого. Я одену на неё очки для сна и она ничего не увидит."
-    Eric_01 ""
+    Eric_01 "Not good, Max! But don't worry about it. I'll put sleeping glasses on her and she won't see a thing."
 
 # game/dialogues/erictalk.rpy:963
 translate english Eric_bonus_for_Lisa_a903a483:
 
     # Max_05 "А, это отлично! То, что надо."
-    Max_05 ""
+    Max_05 "Oh, that's great! That's perfect."
 
 # game/dialogues/erictalk.rpy:964
 translate english Eric_bonus_for_Lisa_45e005db:
 
     # Eric_06 "А во-вторых, тебе нужно будет вести себя {b}ОЧЕНЬ{/b} тихо. Думаю, сам понимаешь почему."
-    Eric_06 ""
+    Eric_06 "And secondly, you'll have to be VERY quiet. I think you can see why."
 
 # game/dialogues/erictalk.rpy:965
 translate english Eric_bonus_for_Lisa_2dc708b0:
 
     # Max_02 "Ага, понятное дело."
-    Max_02 ""
+    Max_02 "Yeah, of course."
 
 # game/dialogues/erictalk.rpy:966
 translate english Eric_bonus_for_Lisa_dbbb2eec:
 
     # Eric_03 "Я, конечно, буду трахать твою маму так, что за её стонами мало что ещё будет слышно, но всё равно... Не шуметь - в твоих интересах. Если не справишься и она тебя услышит, то я прикинусь, будто не заметил тебя в порыве страсти."
-    Eric_03 ""
+    Eric_03 "Of course, I'm going to fuck your mother in such a way that you won't hear much beyond her moans, but still... It's in your best interest to be quiet. If you fail and she hears you, I'll pretend I didn't notice you in a fit of passion."
 
 # game/dialogues/erictalk.rpy:967
 translate english Eric_bonus_for_Lisa_3f434d2f:
 
     # Max_07 "Понял. Я буду стараться не шуметь."
-    Max_07 ""
+    Max_07 "Got it. I'll try to be quiet."
 
 # game/dialogues/erictalk.rpy:968
 translate english Eric_bonus_for_Lisa_9bf8dbda:
 
     # Eric_01 "Тогда, вот и порешали. Только, Макс, давай не чаще, чем раз в неделю. Если упустишь день - твои проблемы, понял? И заглядывай в окно без опаски, Аню я возьму на себя."
-    Eric_01 ""
+    Eric_01 "Then it's settled. But, Max, not more than once a week. If you miss a day, it's your problem, okay? And look out the window safely, I'll take care of Ann."
 
 # game/dialogues/erictalk.rpy:974
 translate english Eric_bonus_for_Lisa_0a7c5d4d:
 
     # Max_01 "Ладно, договорились. Ты натыкаешься на нас с Кирой в ванне, я за это получаю шоу с мамой, а ты Киру." nointeract
-    Max_01 "" nointeract
+    Max_01 "Okay, here's the deal. You bump into me and Kira in the bathtub, I get the mom show for it, and you get Kira." nointeract
 
 # game/dialogues/erictalk.rpy:978
 translate english Eric_bonus_for_Lisa_ce78d8b5:
 
     # Max_01 "Ладно, договорились." nointeract
-    Max_01 "" nointeract
+    Max_01 "Okay, it's a deal." nointeract
 
 # game/dialogues/erictalk.rpy:995
 translate english Eric_stopLisa_bonus_b64e4b51:
 
     # Eric_00 "Макс, задержись ненадолго. Кое-что скажу..."
-    Eric_00 ""
+    Eric_00 "Max, stick around for a while. I'll tell you something..."
 
 # game/dialogues/erictalk.rpy:996
 translate english Eric_stopLisa_bonus_e7f5724b:
 
     # Max_07 "Я слушаю..."
-    Max_07 ""
+    Max_07 "I'm listening..."
 
 # game/dialogues/erictalk.rpy:997
 translate english Eric_stopLisa_bonus_35b241fd:
 
     # Eric_02 "Раз Лиза, пока что, отошла тебе на поруки, то никакого больше шоу с твоей мамой в очках для сна не будет. Это ясно?"
-    Eric_02 ""
+    Eric_02 "Since Lisa, for now, has bailed on you, there will be no more shows with your mother in her sleeping glasses. Is that clear?"
 
 # game/dialogues/erictalk.rpy:998
 translate english Eric_stopLisa_bonus_de267cbe:
 
     # Max_08 "Э-э-э! Не понял! Это почему?!"
-    Max_08 ""
+    Max_08 "Uh-uh! I don't get it! Why not?!"
 
 # game/dialogues/erictalk.rpy:999
 translate english Eric_stopLisa_bonus_5f3d05f9:
 
     # Eric_04 "Причина и следствие, Шерлок! Ты мне с Лизой помог? Помог... Но для меня это оказалось зря. Поэтому, шоу аннулировано. Вместо него ты получил Лизу."
-    Eric_04 ""
+    Eric_04 "Cause and effect, Sherlock! You helped me with Lisa? I did... But for me, it was for nothing. So the show is canceled. You got Lisa instead."
 
 # game/dialogues/erictalk.rpy:1000
 translate english Eric_stopLisa_bonus_c2636588:
 
     # Max_10 "Обидно, конечно. Но я понял."
-    Max_10 ""
+    Max_10 "It's a shame, of course. But I get it."
 
 # game/dialogues/erictalk.rpy:1001
 translate english Eric_stopLisa_bonus_d2b6da8b:
 
     # Eric_03 "Но, если вдруг, например, ты будешь располагать крайне полезной для меня информацией в отношении твоей семьи, то не исключаю, что шоу с твоей мамой можно будет возобновить."
-    Eric_03 ""
+    Eric_03 "But if, for example, you happen to have some extremely useful information for me regarding your family, I don't rule out that the show with your mother could be resumed."
 
 # game/dialogues/erictalk.rpy:1002
 translate english Eric_stopLisa_bonus_373c87f8:
 
     # Max_07 "Так у меня уже есть такая информация для тебя. О моей тёте Кире."
-    Max_07 ""
+    Max_07 "So I already have that information for you. About my Aunt Kira."
 
 # game/dialogues/erictalk.rpy:1003
 translate english Eric_stopLisa_bonus_a0b9d0c1:
 
     # Eric_09 "Надеюсь, это что-то весьма интересное или важное, иначе меня это не особо волнует..."
-    Eric_09 ""
+    Eric_09 "I hope it's something quite interesting or important, otherwise I don't really care..."
 
 # game/dialogues/erictalk.rpy:1004
 translate english Eric_stopLisa_bonus_5b981410:
 
     # Max_02 "Как минимум неожиданное для тебя. Короче, мы с ней... ну, того... этого..."
-    Max_02 ""
+    Max_02 "At least unexpected for you. Anyway, she and I... you know... this..."
 
 # game/dialogues/erictalk.rpy:1005
 translate english Eric_stopLisa_bonus_ab04f09c:
 
     # Eric_13 "Используй более понятные слова, Макс."
-    Eric_13 ""
+    Eric_13 "Use clearer words, Max."
 
 # game/dialogues/erictalk.rpy:1006
 translate english Eric_stopLisa_bonus_cae5ce20:
 
     # Max_07 "Мы с ней, как бы это сказать... занимаемся оральными утехами..."
-    Max_07 ""
+    Max_07 "She and I, how should I say it... ...we do oral pleasures..."
 
 # game/dialogues/erictalk.rpy:1007
 translate english Eric_stopLisa_bonus_ad877c77:
 
     # Eric_12 "Чего?!"
-    Eric_12 ""
+    Eric_12 "What?!"
 
 # game/dialogues/erictalk.rpy:1008
 translate english Eric_stopLisa_bonus_41f2d91b:
 
     # Max_04 "У нас с ней интимная близость, вот."
-    Max_04 ""
+    Max_04 "She and I are intimate, that's it."
 
 # game/dialogues/erictalk.rpy:1009
 translate english Eric_stopLisa_bonus_66b1162c:
 
     # Eric_04 "Да ладно! Это у тебя приколы такие, Макс?! Хочешь сказать, она тебе отсасывает?!"
-    Eric_04 ""
+    Eric_04 "Come on! Is this your idea of a joke, Max?! You mean she's sucking your dick?!"
 
 # game/dialogues/erictalk.rpy:1010
 translate english Eric_stopLisa_bonus_1dc507c8:
 
     # Max_03 "Ага. Кстати, по мне так это самая офигенная вещь в мире!"
-    Max_03 ""
+    Max_03 "Yeah. By the way, it sounds like the most awesome thing in the world to me!"
 
 # game/dialogues/erictalk.rpy:1011
 translate english Eric_stopLisa_bonus_dd4462cc:
 
     # Eric_06 "Погоди... То есть {b}ТЕБЕ{/b} отсасывает {b}ТВОЯ{/b} родная тётя?! Это ты хочешь сказать?"
-    Eric_06 ""
+    Eric_06 "Wait... You mean you're getting sucked off by your aunt? Is that what you're saying?"
 
 # game/dialogues/erictalk.rpy:1012
 translate english Eric_stopLisa_bonus_9acc7a48:
 
     # Max_01 "Ну да, об этом я и говорю."
-    Max_01 ""
+    Max_01 "Well, yeah, that's what I'm talking about."
 
 # game/dialogues/erictalk.rpy:1013
 translate english Eric_stopLisa_bonus_918aaf8d:
 
     # Eric_12 "Так. Вот это нихрена себе открытие! Это как вышло вообще?!"
-    Eric_12 ""
+    Eric_12 "Right. That's a hell of a discovery! How did that even happen?!"
 
 # game/dialogues/erictalk.rpy:1014
 translate english Eric_stopLisa_bonus_361cd83d:
 
     # Max_07 "Наверно, сказалось то, что она работает в порноиндустрии сейчас... Хотя, она и без этого была довольно открыта в плане таких развлечений."
-    Max_07 ""
+    Max_07 "I guess it must have had something to do with her working in the porn industry now... Although, she was pretty open about this kind of entertainment anyway."
 
 # game/dialogues/erictalk.rpy:1015
 translate english Eric_stopLisa_bonus_e0b3dd08:
 
     # Eric_08 "Ого! Это шикарные новости, Макс! Ты только что подогнал мне порномодель, а она ещё и сестра моей женщины! Это очень круто!!!"
-    Eric_08 ""
+    Eric_08 "Wow! That's great news, Max! You just got me a porn model and she's also my woman's sister! That's very cool!!!"
 
 # game/dialogues/erictalk.rpy:1016
 translate english Eric_stopLisa_bonus_cb36dfe8:
 
     # Max_09 "Значит, такая информация тянет на возобновление шоу с мамой?"
-    Max_09 ""
+    Max_09 "So this kind of information is pulling for the show to resume with Mom?"
 
 # game/dialogues/erictalk.rpy:1017
 translate english Eric_stopLisa_bonus_9942b3b4:
 
     # Eric_04 "Однозначно тянет. Обязательно это обсудим... Но сперва, когда вы этим с Кирой занимаетесь?"
-    Eric_04 ""
+    Eric_04 "Definitely pulls. We'll definitely discuss it... But first, when do you and Kira do it?"
 
 # game/dialogues/erictalk.rpy:1018
 translate english Eric_stopLisa_bonus_ae52c68e:
 
     # Max_04 "По ночам, когда она возвращается с работы. В это время все уже спят, а мы развлекаемся..."
-    Max_04 ""
+    Max_04 "At night, when she comes home from work. At that time everyone else is asleep, and we're having fun..."
 
 # game/dialogues/erictalk.rpy:1019
 translate english Eric_stopLisa_bonus_90704005:
 
     # Eric_03 "И где вы развлекаетесь?"
-    Eric_03 ""
+    Eric_03 "And where do you have fun?"
 
 # game/dialogues/erictalk.rpy:1020
 translate english Eric_stopLisa_bonus_26197899:
 
     # Max_01 "Когда ты ночуешь у нас в гостях - в ванной комнате и у бассейна."
-    Max_01 ""
+    Max_01 "When you spend the night at our house - in the bathroom and by the pool."
 
 # game/dialogues/erictalk.rpy:1021
 translate english Eric_stopLisa_bonus_f5bec7c8:
 
     # Eric_06 "Да вы рисковые ребята! Не боитесь, что вас кто-то увидит? В ванной ладно, там ещё есть шансы как-то скрыться, а вот у бассейна..."
-    Eric_06 ""
+    Eric_06 "You guys are risk takers! Aren't you afraid someone will see you? In the bathroom, okay, there's still a chance of hiding, but by the pool..."
 
 # game/dialogues/erictalk.rpy:1022
 translate english Eric_stopLisa_bonus_8bf662f4:
 
     # Max_02 "Да мы там по-быстренькому шалим..."
-    Max_02 ""
+    Max_02 "We're just doing a quickie there..."
 
 # game/dialogues/erictalk.rpy:1023
 translate english Eric_stopLisa_bonus_840a0cb4:
 
     # Eric_08 "В таком случае, я обязательно загляну к вам в ванную, как бы случайно... Так сказать, поймаю с поличным, чтобы можно было максимально просто развести твою тётю на оральные утехи и для себя. Ты же подыграешь мне?"
-    Eric_08 ""
+    Eric_08 "In that case, I'll be sure to stop by your bathroom, as if by accident... I'll catch you red-handed, so to speak, so that I can get your aunt to perform oral pleasures on me as easily as possible. You'll play along, won't you?"
 
 # game/dialogues/erictalk.rpy:1024
 translate english Eric_stopLisa_bonus_4562bb07:
 
     # Max_03 "Если я получу шоу с мамой, то подыграю."
-    Max_03 ""
+    Max_03 "If I get the show with my mom, I'll play along."
 
 # game/dialogues/erictalk.rpy:1025
 translate english Eric_stopLisa_bonus_c1a34d4e:
 
     # Eric_02 "Само собой, Макс. Это уже совсем другой разговор."
-    Eric_02 ""
+    Eric_02 "Of course, Max, that's a whole other conversation."
 
 # game/dialogues/erictalk.rpy:1026
 translate english Eric_stopLisa_bonus_f22feeb6:
 
     # Max_01 "Значит, договорились." nointeract
-    Max_01 "" nointeract
+    Max_01 "So we have a deal." nointeract
 
 # game/dialogues/erictalk.rpy:1045
 translate english Eric_ask_stockings_45f8d67f:
 
     # Eric_13 "А вот хрен тебе, Макс, а не Аня в чулках! Не надо было дарить Алисе нижнее бельё первее меня."
-    Eric_13 ""
+    Eric_13 "Fuck you, Max, not Ann in stockings! You shouldn't have given Alice underwear before me."
 
 # game/dialogues/erictalk.rpy:1047
 translate english Eric_ask_stockings_3e3e64a5:
 
     # Max_14 "Вот блин!" nointeract
-    Max_14 "" nointeract
+    Max_14 "Oh, shit!" nointeract
 
 # game/dialogues/erictalk.rpy:1051
 translate english Eric_ask_stockings_faecdce4:
 
     # Eric_03 "О-о-о, пацан, это я с радостью устрою. Твоя мама в чулках - это бомба!"
-    Eric_03 ""
+    Eric_03 "Oh-oh, kid, I'd love to do that. Your mom in stockings is the bomb!"
 
 # game/dialogues/erictalk.rpy:1053
 translate english Eric_ask_stockings_7978befc:
 
     # Max_02 "Спасибо! Рад, что мы на одной волне." nointeract
-    Max_02 "" nointeract
+    Max_02 "Thank you! Glad we're on the same page." nointeract
 
 # game/dialogues/erictalk.rpy:1068
 translate english Eric_ask_no_stockings_945fa08a:
 
     # Eric_02 "Что, Макс, чулки надоели? Не вопрос, твоя мама и без чулков жутко сексуальна."
-    Eric_02 ""
+    Eric_02 "What, Max, are you tired of stockings? No problem, your mother is sexy without stockings."
 
 # game/dialogues/erictalk.rpy:1070
 translate english Eric_ask_no_stockings_6fbaeb06:
 
     # Max_01 "Спасибо!" nointeract
-    Max_01 "" nointeract
-
+    Max_01 "Thank you!" nointeract
