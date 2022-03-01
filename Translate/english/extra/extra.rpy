@@ -276,33 +276,33 @@ translate english strings:
 
     # game/extra/extra.rpy:60
     old "Я спасу их от солнца"
-    new ""
+    new "I'll save them from the sun"
 
     # game/extra/extra.rpy:60
     old "Всё ниже и ниже"
-    new ""
+    new "Lower and lower"
 
     # game/extra/extra.rpy:60
     old "Йога с мамой"
-    new ""
+    new "Yoga with mom"
 
     # game/extra/extra.rpy:60
     old "Ещё больше массажа у ТВ"
-    new ""
+    new "More massages at TV"
 
     # game/extra/extra.rpy:60
     old "Не надо печалиться"
-    new ""
+    new "Don't be sad"
 
     # game/extra/extra.rpy:60
     old "Секс-шоу с первых рядов"
-    new ""
+    new "Sex show from the front"
 
     # game/extra/extra.rpy:60
     old "Стесняется трогать..."
-    new ""
+    new "Shy to touch..."
 
     # game/extra/extra.rpy:60
     old "Ещё стесняется, но трогает..."
-    new ""
+    new "It's still shy, but it touches..."
 

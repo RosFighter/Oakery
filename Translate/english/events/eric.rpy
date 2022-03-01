@@ -2885,7 +2885,7 @@ translate english start_eric_wallet_93fe8bc0:
 translate english lisa_eric_sex_ed_practice_practice_1_94b29054:
 
     # Max_01 "{m}Отлично! С этого места мне всё хорошо видно. Эрик разрешил подглядывать, поэтому главное, чтобы меня не заметила Лиза. Если Эрик собирается делать то, что я думаю, то он тот ещё извращенец...{/m}"
-    Max_01 ""
+    Max_01 "{m}Great! I can see everything clearly from here. Eric said I could peek, so the main thing is to make sure Lisa doesn't see me. If Eric is going to do what I think he's going to do, he's a pervert...{/m}"
 
 # game/events/eric.rpy:1596
 translate english lisa_eric_sex_ed_practice_practice_1_b51df49b:
@@ -3434,157 +3434,157 @@ translate english lisa_eric_sex_ed_practice_practice_2_b465168f:
 translate english eric_ann_fucking_voyeur_141f69df:
 
     # Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
-    Eric_02 "" nointeract
+    Eric_02 "Ann, it's better to watch us than to watch some pervert on the Internet, right? Okay, Max, come on in here, let's talk..." nointeract
 
 # game/events/eric.rpy:677
 translate english eric_ann_fuck_glasses_sleeping_cb30e1a3:
 
     # Max_07 "{m}Оу, супер! Похоже, я очень вовремя! Главное, не шуметь. Тогда всё должно будет пройти отпадно...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Oh, great! Looks like I'm right on time! The main thing is to keep it quiet. Then it should go great...{/m}" nointeract
 
 # game/events/eric.rpy:683
 translate english eric_ann_fuck_glasses_sleeping_6b9150a2:
 
     # Ann_05 "Ох, Эрик, ты такой шалун... Твоя фантазия с этими очками такая волнующая! И мне это очень нравится..."
-    Ann_05 ""
+    Ann_05 "Oh, Eric, you are such a naughty boy... Your fantasy with those glasses is so exciting! And I love it so much..."
 
 # game/events/eric.rpy:684
 translate english eric_ann_fuck_glasses_sleeping_b4763990:
 
     # Eric_02 "Если будешь и дальше меня слушаться, то ли ещё будет! Ты чувствуешь, как поднимается градус возбуждения?"
-    Eric_02 ""
+    Eric_02 "If you keep obeying me, it's not going to happen! Can you feel the excitement rising?"
 
 # game/events/eric.rpy:685
 translate english eric_ann_fuck_glasses_sleeping_285268d7:
 
     # Max_03 "{m}Не знаю, как у вас ребята, но мой градус уже поднялся до полной готовности! Жгите...{/m}"
-    Max_03 ""
+    Max_03 "{m}I don't know about you guys, but my degree is already up to full strength! Burn...{/m}"
 
 # game/events/eric.rpy:689
 translate english eric_ann_fuck_glasses_sleeping_68278021:
 
     # Ann_07 "Да, Эрик, твой член... Он сейчас такой твёрдый... Дай мне его скорее! Ты же знаешь, что мне нравится больше всего..."
-    Ann_07 ""
+    Ann_07 "Yes, Eric, your cock... It's so hard now... Give it to me quickly! You know what I like best..."
 
 # game/events/eric.rpy:690
 translate english eric_ann_fuck_glasses_sleeping_ffe8566a:
 
     # Eric_04 "Чёрт возьми, детка, ты сводишь меня с ума своим великолепным телом! Ты... Ты просто чертовски сладкая!"
-    Eric_04 ""
+    Eric_04 "Damn it, baby, you drive me crazy with your gorgeous body! You are... You're just so damn sweet!"
 
 # game/events/eric.rpy:691
 translate english eric_ann_fuck_glasses_sleeping_3eda019d:
 
-    # Ann_08 "Давай, мой милый, возьми меня... Я мечтаю об этом уже целый вечер. Я уже такая мокренькая! Ах-х-х!"
-    Ann_08 ""
+    # Ann_08 "Come on, my darling, take me... I've been dreaming about it all evening. I'm so wet already! Ahhhh!"
+    Ann_08 "Come on, my darling, take me... I've been dreaming about it all evening. I'm so wet already! Ahhhh!"
 
 # game/events/eric.rpy:692
 translate english eric_ann_fuck_glasses_sleeping_ffe21f0c:
 
     # Eric_03 "Сейчас, Аня, мы с тобой зажжём на полную катушку! Ты готова?"
-    Eric_03 ""
+    Eric_03 "Now, Anya, you and I are going to rock! Are you ready?"
 
 # game/events/eric.rpy:693
 translate english eric_ann_fuck_glasses_sleeping_44d37b69:
 
     # Max_08 "{m}Погодите! Мне нужно тихо и незаметно лучшее место для обзора для себя найти...{/m}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{m}Wait a minute! I need to quietly and inconspicuously find a better place to view myself...{/m}" nointeract
 
 # game/events/eric.rpy:704
 translate english eric_ann_fuck_glasses_sleeping_a84f86a2:
 
     # Ann_10 "Ахх... Да-а-а! Боже мой, Эрик, мне так хорошо... Ещё! Трахай меня ещё! Охх... Не вздумай останавливаться! Вот так... Ммм..."
-    Ann_10 ""
+    Ann_10 "Ahhh... Yes! Oh my God, Eric, I feel so good. More! Fuck me more! Ohhh... Don't you dare stop! That's it... Mmm..."
 
 # game/events/eric.rpy:705
 translate english eric_ann_fuck_glasses_sleeping_64a7d43c:
 
     # Eric_06 "Ухх... Ну держись, детка! Сейчас ты получишь всё, чего так хотела... Вот так тебе нравится?"
-    Eric_06 ""
+    Eric_06 "Ugh... Hang in there, baby! Now you're gonna get everything you've ever wanted... Is this how you like it?"
 
 # game/events/eric.rpy:706
 translate english eric_ann_fuck_glasses_sleeping_95dd1b5f:
 
     # Ann_11 "Да! Ещё, мой милый... Ммм... Оттрахай меня, Эрик! Сильнее, не сдерживайся... Как хорошо, д-а-а..."
-    Ann_11 ""
+    Ann_11 "Yes! Also, my darling... Mmm... Fuck me, Eric! Harder, don't hold back... It feels so good..."
 
 # game/events/eric.rpy:707
 translate english eric_ann_fuck_glasses_sleeping_e81c2611:
 
     # Max_02 "{m}О боже! Моя мама с такой страстью ему подчиняется! А Эрику, похоже, всё мало и он пытается засадить ей как можно глубже. И, кажется, уже еле сдерживается...{/m}"
-    Max_02 ""
+    Max_02 "{m}Oh, my God! My mother submits to him with such passion! And Eric can't seem to get enough, so he tries to go as deep as he can. And he can hardly seem to hold back anymore...{/m}"
 
 # game/events/eric.rpy:714
 translate english eric_ann_fuck_glasses_sleeping_2de0f4bb:
 
     # Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
-    Eric_08 ""
+    Eric_08 "Ahhh... Oh my God, baby, I can't take it anymore! I'm coming! Yaahhhh... Oh, great..."
 
 # game/events/eric.rpy:715
 translate english eric_ann_fuck_glasses_sleeping_bc1ff92c:
 
     # Ann_07 "Фух... Эрик, это было сильно! Видимо, я была на высоте, раз ты так мощно кончил..."
-    Ann_07 ""
+    Ann_07 "Whew... Eric, that was intense! I must have been on top of it because you came so hard..."
 
 # game/events/eric.rpy:716
 translate english eric_ann_fuck_glasses_sleeping_40765c82:
 
     # Eric_05 "Можешь поверить мне на слово, Ань, долго жарить такую сочную и прекрасную женщину, как ты, никто не сможет!"
-    Eric_05 ""
+    Eric_05 "You can take my word for it, Anya, no one can fry such a juicy and beautiful woman like you for long!"
 
 # game/events/eric.rpy:722
 translate english eric_ann_fuck_glasses_sleeping_a989a47e:
 
     # Eric_04 "Давай, детка, скорее возьми его в ротик поглубже! Охх... Ты же знаешь, что я просто улетаю, когда ты смачно сосёшь... О да!"
-    Eric_04 ""
+    Eric_04 "Come on, baby, hurry up and take it deep in your mouth! Ohhhh... You know I just fly away when you suck so hard... Oh, yeah!"
 
 # game/events/eric.rpy:723
 translate english eric_ann_fuck_glasses_sleeping_25848186:
 
     # Max_04 "{m}То, что смачно, это точно! При мне, на тех уроках, она с таким жаром ему не отсасывала... Какая же ты, мам, развратница!{/m}"
-    Max_04 ""
+    Max_04 "{m}That's for sure, that's for sure! She didn't blow him so hard in my class... What a slut you are, mom!{/m}"
 
 # game/events/eric.rpy:726
 translate english eric_ann_fuck_glasses_sleeping_2de0f4bb_1:
 
     # Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
-    Eric_08 ""
+    Eric_08 "Ahhh... Oh my God, baby, I can't take it anymore! I'm coming! Yaahhhh... Oh, great..."
 
 # game/events/eric.rpy:727
 translate english eric_ann_fuck_glasses_sleeping_bc1ff92c_1:
 
     # Ann_07 "Фух... Эрик, это было сильно! Видимо, я была на высоте, раз ты так мощно кончил..."
-    Ann_07 ""
+    Ann_07 "Whew... Eric, that was intense! I must have been on top of it because you came so hard..."
 
 # game/events/eric.rpy:728
 translate english eric_ann_fuck_glasses_sleeping_e031cdb4:
 
     # Eric_05 "Не то слово, Ань! Ты была просто бесподобна! Твой ротик - просто сказка."
-    Eric_05 ""
+    Eric_05 "That's right, Ann! You were just peerless! Your mouth was just a fairy tale."
 
 # game/events/eric.rpy:731
 translate english eric_ann_fuck_glasses_sleeping_767e8043:
 
     # Ann_05 "Спасибо за комплимент, дорогой, мне тоже понравилось."
-    Ann_05 ""
+    Ann_05 "Thanks for the compliment, honey, I liked it too."
 
 # game/events/eric.rpy:732
 translate english eric_ann_fuck_glasses_sleeping_7d68e880:
 
     # Max_08 "{m}Да уж! А я вот зря так глазею... Пора по-тихому отсюда сваливать, пока мама ещё не сняла очки...{/m}" nointeract
-    Max_08 "" nointeract
+    Max_08 "{m}Yeah! I've been staring at this for nothing... It's time to get out of here quietly, before my mother takes off her glasses...{/m}" nointeract
 
 translate english strings:
 
     # game/events/eric.rpy:678
     old "{m}тихо зайти в комнату{/m}"
-    new ""
+    new "{m}quietly walk into the room{/m}"
 
     # game/events/eric.rpy:694
     old "{m}хорошо устроиться{/m}"
-    new ""
+    new "{m}get comfortable{/m}"
 
     # game/events/eric.rpy:733
     old "{m}тихо уйти{/m}"
-    new ""
+    new "{m}Quietly leave{/m}"
 
