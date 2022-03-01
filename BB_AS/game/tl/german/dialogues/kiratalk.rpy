@@ -1878,11 +1878,11 @@ translate german kira_about_ann_secret_r_39f028b6:
     # Kira_14 "Макс, твоя мама не хочет, чтобы кто-то об этом что-то знал. На это есть причины и я не хочу подорвать её, и без того довольно шаткое, доверие ко мне..." nointeract
     Kira_14 "Max, deine Mutter will nicht, dass jemand etwas davon erfährt. Dafür gibt es einen Grund, und ich will ihr ohnehin schon wackeliges Vertrauen in mich nicht untergraben..." nointeract
 
-# game/dialogues/kiratalk.rpy:1070
-translate german story_from_childhood_ann_37f146bb:
+# game/dialogues/kiratalk.rpy:1062
+translate german story_from_childhood_ann_5afda0cd:
 
-    # Kira_03 "Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
-    Kira_03 "Du wirst es doch nicht dabei belassen, oder? Aber sei gewarnt: Wenn du es jemandem oder deiner Mutter selbst gegenüber erwähnst, wirst du das Vertrauen komplett verlieren."
+    # Kira_03 "[succes!t]Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
+    Kira_03 "[succes!t]Du wirst es doch nicht dabei belassen, oder? Aber sei gewarnt: Wenn du es jemandem oder deiner Mutter selbst gegenüber erwähnst, wirst du das Vertrauen komplett verlieren."
 
 # game/dialogues/kiratalk.rpy:1071
 translate german story_from_childhood_ann_9b09dcde:
@@ -3532,4 +3532,3 @@ translate german kira_about_showdown_95a9e818:
 
     # Max_01 "Я тоже на это надеюсь!"
     Max_01 "Ich hoffe es auch!"
-

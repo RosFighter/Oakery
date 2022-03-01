@@ -226,7 +226,7 @@ translate german cam0_sexed_lisa_c0ac64d9:
 translate german cam0_sexed_lisa_91d200d1:
 
     # Max_08 "{m}Ага, дрочка пошла... И уговорил же Эрик маму на всё это...{/m}"
-    Max_08 "{m}Ja, da stehen sie... Und Eric hat Mom zu all dem überredet...{/m}"
+    Max_08 "{m}Ja, da sitzen die beiden... Und Eric hat Mom zu all dem überredet...{/m}"
 
 # game/events/eric_cam.rpy:269
 translate german cam0_sexed_lisa_71c1a2f8_1:

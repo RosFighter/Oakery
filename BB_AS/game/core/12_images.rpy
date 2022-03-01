@@ -370,6 +370,28 @@ layeredimage Ann_yoga:
 
     attribute seven null
 
+layeredimage Ann_in_bath:
+
+    group BG:
+        attribute open:
+            'BG bath-open-00'
+        attribute enter:
+            'BG bathrooom-bath-02'
+        attribute talk:
+            'BG after-club-bath01'
+
+    group body:
+        attribute open:
+            'Ann bath bath-open-ann-01'
+        attribute enter:
+            'Ann bath bathrooom-bath-02-ann-00'
+        attribute talk:
+            'Ann bath bathrooom-bath-02-ann&max-01'
+
+    group cloth:
+        attribute talk:
+            'Ann bath bathrooom-bath-02-max-01[mgg.dress]'
+
 ################################################################################
 ## Макс
 
@@ -394,3 +416,152 @@ layeredimage Max_sleep:
 
 ################################################################################
 ## Эрик
+
+layeredimage Eric_glasses_fuck:
+    image_format 'Eric glasses-fuck {image}'
+
+    group BG:
+        attribute voyeur:
+            'annroom-bedann-01'
+        attribute watch:
+            'annroom-watch-01'
+        attribute sex01:
+            'annroom-watch-02-bj02'
+
+    if any([all([pose3_2 == '01', var_pose == '01']),
+            all([pose3_2 == '03', var_pose == '02'])]):
+        if_all 'sex02'
+        'annroom-watch-04-bj01'
+    elif pose3_2 == '02' and var_pose == '01':
+        if_all 'sex02'
+        'annroom-watch-03-bj01'
+    elif any([all([pose3_2 == '03', var_pose == '01']),
+            all([pose3_2 == '01', var_pose == '02'])]):
+        if_all 'sex02'
+        'annroom-watch-03-bj02'
+    else:
+        if_all 'sex02'
+        'annroom-watch-04-bj02'
+
+    if var_pose == '01':
+        if_all 'bj01'
+        'annroom-watch-04-bj01'
+    else:
+        if_all 'bj01'
+        'annroom-watch-03-bj03'
+    if var_pose == '01':
+        if_all 'bj02'
+        'annroom-shot-02-max&kira-03-f'
+    else:
+        if_all 'bj02'
+        'annroom-watch-03-bj01'
+
+    if var_pose == '02':
+        if_all 'bj01'
+        'annroom-watch-03-bj03-max-01[mgg.dress]'  # 'annroom-watch-02-sex-max-04[mgg.dress]'
+
+    group body:
+        attribute voyeur:
+            'ann&eric-sex00'
+        attribute watch:
+            'annroom-watch-01-ann&eric-sex00'
+        attribute sex01:
+            'annroom-watch-02-sex[pose3_2]-ann&eric-01'
+        attribute sex02:
+            'annroom-watch-02-sex[pose3_2]-ann&eric-02-[var_pose]'
+
+    if var_pose == '01':
+        if_all 'bj01'
+        'annroom-watch-04-bj01-ann&eric-01'
+    else:
+        if_all 'bj01'
+        'annroom-watch-03-bj03-ann&eric-01'
+    if var_pose == '01':
+        if_all 'bj02'
+        'annroom-watch-04-bj01-ann&eric-02'
+    else:
+        if_all 'bj02'
+        'annroom-watch-03-bj03-ann&eric-02'
+
+    # чулки
+    if stockings:
+        if_all 'voyeur'
+        'ann&eric-sex00a'
+    if stockings:
+        if_all 'watch'
+        'annroom-watch-01-ann&eric-sex00a'
+    if stockings:
+        if_all 'sex01'
+        'annroom-watch-02-sex[pose3_2]-ann&eric-01a'
+    if stockings:
+        if_all 'sex02'
+        'annroom-watch-02-sex[pose3_2]-ann&eric-02-[var_pose]a'
+    if stockings and var_pose == '01':
+        if_all 'bj01'
+        'annroom-watch-04-bj01-ann&eric-01a'
+    elif stockings:
+        if_all 'bj01'
+        'annroom-watch-03-bj03-ann&eric-01a'
+    if stockings and var_pose == '01':
+        if_all 'bj02'
+        'annroom-watch-04-bj01-ann&eric-02a'
+    elif stockings:
+        if_all 'bj02'
+        'annroom-watch-03-bj03-ann&eric-02a'
+
+    # очки для сна
+    if var_pose == '01':
+        if_all 'bj01'
+        'annroom-watch-04-bj01-ann&eric-01z'
+    else:
+        if_all 'bj01'
+        'annroom-watch-03-bj03-ann&eric-01z'
+    if var_pose == '01':
+        if_all 'bj02'
+        'annroom-watch-04-bj01-ann&eric-02z'
+    else:
+        if_all 'bj02'
+        'annroom-watch-03-bj03-ann&eric-02z'
+
+    group dop:
+        attribute voyeur:
+            'annroom-bedann-01-voyeur'
+        attribute cum:
+            if_all 'sex01'
+            'annroom-watch-02-sex[pose3_2]-ann&eric-cum01'
+
+    if var_pose == '01':
+        if_all 'bj02'
+        'annroom-watch-04-bj01-ann&eric-02cum'
+    else:
+        if_all 'bj02'
+        'annroom-watch-03-bj03-ann&eric-02cum'
+
+    group Max:
+        attribute watch:
+            'annroom-watch-01-max-01[mgg.dress]'
+
+    if any([all([pose3_2 == '01', var_pose == '01']),
+            all([pose3_2 == '03', var_pose == '02'])]):
+        if_all 'sex02'
+        'annroom-watch-02-sex-max-02[mgg.dress]'
+    elif pose3_2 == '02' and var_pose == '01':
+        if_all 'sex02'
+        'annroom-watch-02-sex-max-01[mgg.dress]'
+    elif any([all([pose3_2 == '03', var_pose == '01']),
+            all([pose3_2 == '01', var_pose == '02'])]):
+        if_all 'sex02'
+        'annroom-watch-02-sex-max-03[mgg.dress]'
+    else:
+        if_all 'sex02'
+        'annroom-watch-02-sex-max-04[mgg.dress]'
+
+    if var_pose == '01':
+        if_all 'bj01'
+        'annroom-watch-04-bj01-max-01[mgg.dress]'
+    # else:
+    #     if_all 'bj01'
+    #     'annroom-watch-03-bj03-max-01[mgg.dress]'  # 'annroom-watch-02-sex-max-04[mgg.dress]'
+
+    attribute bj01 null
+    attribute bj02 null

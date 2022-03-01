@@ -539,7 +539,7 @@ label ann_tv_casual_r:
                 $ ann.flags.handmass = True
                 $ AddRelMood('ann', 5, 30)
             else:
-                #(Маме не понравился массаж!)
+                # (Маме не понравился массаж!)
                 # tv-watch-01 + serial_(01/02/03/04/05/06/07)_03 + tv-watch-01-max&ann-(01a/01b)
                 scene BG tv-watch-01
                 $ renpy.show('tv serial '+film+'-02', at_list=[tv_screen,]) # tv_screen
@@ -547,7 +547,10 @@ label ann_tv_casual_r:
                 Ann_14 "[ann_bad_mass!t]Ой, Макс... Нет, теперь уже не так хорошо... Что-то даже мышцам немного больно стало. Давай в другой раз продолжим... Но всё равно, спасибо!"
                 Max_10 "Извини. Наверно, на сериал засмотрелся... Я пойду."
                 $ ann.flags.handmass = False
-        "{i}продолжать массаж{/i}" if ann.flags.showdown_e:
+        "{i}продолжать массаж{/i}" if get_rel_eric()[0] < 0 and ann.flags.showdown_e:
+            # вражда, Эрик изгнан, состоялся первый разговор на балконе
+            jump ann_tv_continuation_massage
+        "{i}продолжать массаж{/i}" if all([get_rel_eric()[0] == 2, flags.voy_stage == 8, poss['control'].used(10)]):
             jump ann_tv_continuation_massage
 
     $ spent_time = max((60 - int(tm[-2:])), 40)
@@ -555,6 +558,8 @@ label ann_tv_casual_r:
     jump Waiting
 
 label ann_tv_continuation_massage:
+    $ renpy.dynamic('film')
+    $ film = '0' + str(renpy.random.randint(1, 7))
     # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
     scene BG char Kira after-club-s08a-f
     $ renpy.show('Max tv-ero 03-01'+mgg.dress)
@@ -566,7 +571,7 @@ label ann_tv_continuation_massage:
     show Ann tv-ero 04-01
     Ann_07 "Ой, Макс! Это чудесно... Ты знаешь как сделать приятно. Мне очень понравилось... Ты большой молодец у меня!" nointeract
     menu:
-        "Массаж спины?" if not poss['mom-tv'].used(12):
+        "Массаж спины?" if _in_replay or not any([poss['mom-tv'].used(13), poss['mom-tv'].used(14)]):
             # 1-ый массаж спины Анны
             Ann_05 "Обожаю массаж спины... Не знаю, хватит ли у тебя для этого силы, но давай попробуем. Может у тебя уже было достаточно практики и ты со мной справишься..."
             Max_04 "Ты не пожалеешь!"
@@ -580,9 +585,8 @@ label ann_tv_continuation_massage:
             $ renpy.show('Ann tv-ero 06-01'+mgg.dress)
             Ann_02 "Вот так, мне кажется, будет нормально... Только хочу тебя сразу предупредить, я совсем голая под полотенцем. Я там не сильно... открыта?"
             Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
-            $ ann.flags.m_back = 1
             jump .massage
-        "Полотенце приспустишь?" if poss['mom-tv'].used(12):   #периодический массаж спины
+        "Полотенце приспустишь?" if not _in_replay and any([poss['mom-tv'].used(13), poss['mom-tv'].used(14)]):   #периодический массаж спины
             Ann_05 "Конечно! Когда дело доходит до моей спины, я очень требовательна, сынок, потому что обожаю это. Надеюсь, ты справишься."
             Max_04 "Ты не пожалеешь!"
             # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
@@ -596,7 +600,7 @@ label ann_tv_continuation_massage:
             Ann_02 "Вот так, мне кажется, будет нормально... Только хочу тебя сразу предупредить, я совсем голая под полотенцем. Я там не сильно... открыта?"
             Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
             jump .massage
-        "{i}закончить массаж{/i}":
+        "{i}закончить массаж{/i}" if not _in_replay:
             Max_01 "Спасибо за похвалу! Жду не дождусь следующего раза, мам. Отдыхай." nointeract
             jump .end
 
@@ -673,7 +677,13 @@ label ann_tv_continuation_massage:
 
     menu .end:
         "{i}уйти{/i}":
-            $ poss['mom-tv'].open(12)
+            $ renpy.end_replay()
+    if not any([poss['mom-tv'].used(13), poss['mom-tv'].used(14)]):
+        if get_rel_eric()[0] == 2:      # первый массаж спины Фальшивая дружба
+            $ poss['mom-tv'].open(13)
+        else:   # if get_rel_eric()[0] < 0:
+            $ poss['mom-tv'].open(14)   # первый массаж спины Откровенная вражда
+
     $ spent_time = max((60 - int(tm[-2:])), 40)
     $ cur_ratio = 0.5
     jump Waiting
@@ -815,7 +825,7 @@ label ann_about_ann_secret1:    # Попытка разузнать у Анны 
     Max_11 "Я понял..."
 
     $ ann.dcv.feature.stage = 2
-    $ poss['aunt'].open(14)
+    $ poss['aunt'].open(14) # попытка разговора с Анной о случае из детства
     $ spent_time += 10
     jump Waiting
 
@@ -921,9 +931,12 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
 
     $ ann.dcv.feature.set_lost(1)   # следующая попытка на следующий день
 
-    #если Анна заметила, что Макс подглядывает за ней в душе перед йогой и убеждение не удалось
-    if (punreason[3] or punreason[2]):
+    # Анна заметила, что Макс подглядывает за ней в душе перед йогой и убеждение не удалось
+    if not _in_replay and (punreason[3] or punreason[2]):
         jump yoga_after_peeping
+
+    if _in_replay:
+        call ann_yoga from _call_ann_yoga
 
     menu:
         Ann_05 "Конечно, Макс, зачем спрашиваешь... Если ты ещё не созрел проверить свою гибкость, то просто смотри и помогай, если я попрошу. Ну и запоминай, что я делаю..."
@@ -949,9 +962,6 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
             pass
 
     # yoga-01 + yoga-01-ann-(01/01a или 02/02a или 03/03a) + yoga-01-max-(01a/01b)
-    # scene BG char Ann yoga 01
-    # $ renpy.show('Ann yoga 01-0'+str(renpy.random.randint(1, 3))+ann.dress)
-    # $ renpy.show('Max yoga 01'+mgg.dress)
     $ var_pose = renpy.random.choice(['01', '02', '03'])
     $ var_stage = '01'
     $ renpy.retain_after_load()
@@ -965,9 +975,6 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
     Max_03 "А, что? Я просто засмотрелся и немного прослушал, что ты говорила..."
 
     # yoga-02 + yoga-02-ann-(01/01a или 02/02a или 03/03a) + yoga-02-max-(01a/01b)
-    # scene BG char Ann yoga 02
-    # $ renpy.show('Max yoga 02'+mgg.dress)
-    # $ renpy.show('Ann yoga 02-0'+str(renpy.random.randint(1, 3))+ann.dress)
     $ var_pose = renpy.random.choice(['01', '02', '03'])
     $ var_stage = '02'
     $ renpy.retain_after_load()
@@ -980,14 +987,16 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
 
     hide screen Cookies_Button
     # yoga-03 + yoga-03-max-(a/b)-ann-(01/01a или 02/02a или 03/03a)
-    # scene BG char Ann yoga 03
-    # $ renpy.show('Ann yoga 03-0'+str(renpy.random.randint(1, 3))+ann.dress+mgg.dress)
     $ var_pose = renpy.random.choice(['01', '02', '03'])
     $ var_stage = '03'
     $ renpy.retain_after_load()
     Max_05 "{m}Она такая гибкая! Главное всё не испортить, хотя, как же хочется прикоснуться ко всему, что я перед собой сейчас вижу... Мама у меня конфетка!{/m}"
     Ann_08 "Макс, ты чего молчишь? Это мне говорить не очень удобно, потому что я стараюсь расслабиться и сосредоточиться на дыхании..."
-    if ann.flags.showdown_e < 2:
+    if any([
+        all([_in_replay, 'yoga_truehelp' not in persistent.mems_var]),  # повтор, ещё не было расширенной йоги
+        not _in_replay and all([ann.flags.showdown_e < 2, get_rel_eric()[0] < 0]),         # НАХ, Эрик
+        not _in_replay and all([not poss['mom-tv'].used(13), get_rel_eric()[0] == 2]),     # Д-, ещё не делал массаж спины Анне
+        ]):
         Max_03 "Да что тут скажешь, красота да и только!"
     elif ann.flags.defend < 5:
         $ ann.flags.defend += 1
@@ -1015,25 +1024,20 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
 
     # yoga-04 + yoga-04-max-(a/b)-ann-(01/01a или 02/02a)
     # yoga-05 + yoga-05-max-(a/b)-ann-(03/03a)
-    # if renpy.random.randint(0, 1):
-    #     scene BG char Ann yoga 04
-    #     $ renpy.show('Ann yoga 04-0'+str(renpy.random.randint(1, 2))+ann.dress+mgg.dress)
-    # else:
-    #     scene BG char Ann yoga 05
-    #     $ renpy.show('Ann yoga 05-03'+ann.dress+mgg.dress)
     $ var_stage, var_pose = renpy.random.choice([('04', '01'), ('04', '02'), ('05', '03')])
     $ renpy.retain_after_load()
     Ann_07 "Приятно каждый раз от тебя слышать, что я не зря этим занимаюсь... Это прекрасно мотивирует."
     Max_04 "Тебе явно эти занятия идут только на пользу. А чувствуешь себя как?"
     Ann_06 "Немного устала, но в целом, мне хорошо. Появляется такое ощущение... лёгкости..."
 
-    if ann.flags.showdown_e < 2:
+    if any([
+        all([_in_replay, 'yoga_truehelp' not in persistent.mems_var]),  # повтор, ещё не было расширенной йоги
+        not _in_replay and all([ann.flags.showdown_e < 2, get_rel_eric()[0] < 0]), # Откровенная вражда, Эрик ещё не изгнан
+        not _in_replay and all([poss['mom-tv'].used(13), get_rel_eric()[0] == 2]), # Фальшивая дружба, Макс делал Анне массаж спины
+        ]):
         Max_05 "Здорово, мам! Ещё немного потянись и будет идеально..."
         Ann_14 "Главное - не перенапрячься с утра пораньше... А то буду еле живая на работе..."
         # yoga-05 + yoga-05-ann-(00/00a) + yoga-05-max-(00a/00b)
-        # scene BG char Ann yoga 05
-        # $ renpy.show('Ann yoga 05'+ann.dress)
-        # $ renpy.show('Max yoga 05'+mgg.dress)
         $ var_pose = '00'
         $ var_stage = '05'
         $ renpy.retain_after_load()
@@ -1054,7 +1058,13 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
         scene Ann_yoga seven
         Max_05 "Здорово, мам! Ещё немного потянись и будет идеально..."
         Ann_05 "Главное - не перенапрячься с утра пораньше... А то буду еле живая на работе... Но с твоей поддержкой, кажется, мне это не грозит."
-        $ poss['yoga'].open(4)
+        if not _in_replay:
+            if not any([poss['yoga'].used(6), poss['yoga'].used(5)]):
+                if get_rel_eric()[0] < 0:
+                    $ poss['yoga'].open(6)
+                else:   # if get_rel_eric()[0] == 2
+                    $ poss['yoga'].open(5)
+
         if mgg.dress != 'b':
             Max_14 "{m}Ага, у меня сейчас в шортах такая твёрдая опора от всех этих сексуальных изгибов, что мама вот-вот заметит. А не думать о её шелковистом теле просто невозможно! И зачем я без майки этим занимаюсь?{/m}" nointeract
             menu:
@@ -1066,6 +1076,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
                         $ var_pose = '00'
                         $ ann.flags.truehelp += 1
                         $ renpy.retain_after_load()
+                        $ added_mem_var('yoga_truehelp')
                         scene Ann_yoga
                         if ann.flags.defend == 1:
                             # для 1-ой йоги после 2-ого разговора с Анной на балконе
@@ -1085,7 +1096,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
                         $ renpy.retain_after_load()
                         scene Ann_yoga
                         if not ann.dcv.seduce.stage:
-                            $ ann.dcv.seduce.stage = 1
+                            $ ann.dcv.seduce.stage = 1  # Анна засекла стояк Макса (йога)
                             # для 1-ого спаливания со стояком на йоге
                             Ann_15 "Ой, спасибо, сынок, что помог. Фух... А это что такое?! Как тебе не стыдно! Это у тебя на меня такая реакция?!"
                             Max_07 "Ну... Говорил же, красиво..."
@@ -1107,6 +1118,8 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
             $ var_stage = '05'
             $ var_pose = '00'
             $ ann.flags.truehelp += 1
+            if not _in_replay:
+                $ added_mem_var('yoga_truehelp')
             $ renpy.retain_after_load()
             scene Ann_yoga
             if ann.flags.defend == 1:
@@ -1125,6 +1138,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
                 pass
 
     label .end:
+        $ renpy.end_replay()
     $ ann.flags.help += 1
     $ spent_time = max((60 - int(tm[-2:])), 30)
     jump Waiting
@@ -1189,9 +1203,11 @@ label ann_gift_fit1:
 
     $ items['fit1'].give()
     if get_rel_eric()[0] < 0:
-        $ poss['yoga'].open(3)
+        $ poss['yoga'].open(4)  # новая спортивка, Откровенная вражда
+    elif get_rel_eric()[0] == 2:
+        $ poss['yoga'].open(3)  # новая спортивка, Фальшивая дружба
     else:
-        $ poss['yoga'].open(2)
+        $ poss['yoga'].open(2)  # новая спортивка, Настоящая дружба
 
     $ ann.gifts.append('fit1')
     $ setting_clothes_by_conditions()
@@ -1727,6 +1743,8 @@ label erofilm2_2:
     $ SetCamsGrow(house[4], 180)
     $ items['erofilm2'].block()
     if get_rel_eric()[0] < 0:
+        $ poss['mom-tv'].open(12)
+    elif get_rel_eric()[0] == 2:
         $ poss['mom-tv'].open(11)
     else:
         $ poss['mom-tv'].open(10)
@@ -1795,7 +1813,6 @@ label ann_about_olivia0:
     menu .end:
         "{i}уйти{/i}":
             jump Waiting
-
 
 
 # второй разговор о ночёвке Оливии, если в первый раз не удалось убедить (через 3 дня)

@@ -74,6 +74,7 @@ define mems = [
             Memories('Lisa_HomeWork.shoulders', 'lisa-massage-03', 'set_shoulders_mass', _("Разомнём и плечики")),
             Memories('kira_bath.ladder', 'kira-bathmassage-01', 'set_kira_bathmass', _("Массаж для любимой тёти"), var="'kira_mass_bath_first' in persistent.mems_var"),
             Memories('kira_bath.mass_bath', 'kira-bathfj-01', 'set_kira_bathfj', _("Совсем другой массаж")),
+            Memories('olivia_repeat_sunscreen', 'lisa&olivia-01-sun', 'set_olivia_repeat_sunscreen', _("Я спасу их от солнца")),
         ],
         [
             Memories('spider_in_bed', 'alice-spidernight-01', 'set_spider_in_bed', _("Ночные страхи")),
@@ -84,8 +85,8 @@ define mems = [
             Memories('alice_after_club.next1', 'alice-afterclub-02', 'set_after_club_next1', _("Я была плохой девочкой")),
             Memories('alice_after_club.next2', 'alice-afterclub-03', 'set_after_club_next2', _("Как тебе такое?"), var="renpy.seen_label('alice_after_club.cunnilingus')"),
             Memories('alice_towel_after_club', 'alice-afterclubbath-01', 'set_alice_towel_after_club', _("Я принес тебе полотенце!"), var="'bath_fan' in persistent.mems_var"),
-            Memories('alice_blog_lingerie', 'alice-dress&photoset-01', 'set_alice_body_photoset1', _("Первые снимки для блога Алисы"), var="'alice_photoset1' in persistent.mems_var"),  # добавить условие на состоявшуюся фотосессию
-            Memories('alice_blog_lingerie', 'alice-dress&max-01', 'set_gift_lace_lingerie', _("Я обошёл Эрика с подарком для Алисы"), var="'lace_ling_max1' in persistent.mems_var"),  # gift_lace_lingerie
+            Memories('alice_blog_lingerie', 'alice-dress&photoset-01', 'set_alice_body_photoset1', _("Первые снимки для блога Алисы"), var="'alice_photoset1' in persistent.mems_var"),
+            Memories('alice_blog_lingerie', 'alice-dress&max-01', 'set_gift_lace_lingerie', _("Я обошёл Эрика с подарком для Алисы"), var="'lace_ling_max1' in persistent.mems_var"),
             Memories('alice_private_punish_r.smoke_pun', 'alice-privatepun-01', 'set_private_punish1', _("Попка, которую я теперь могу отшлёпать")),
             Memories('alice_mistress_3', 'alice-dominance-01', 'set_alice_domine_drink', _("Меня нужно наказать именно так!"), var = "renpy.seen_label('alice_domine_drink.kiss')"),
         ],
@@ -100,7 +101,7 @@ define mems = [
             Memories('kira_about_photo1', 'kira-max-shower-bj-01', '', _("Не зря купил сорочку")),
             Memories('kira_shower.promise_cuni', 'kira-max-shower-cuni-01', '', _("С меня приятный должок")),
             Memories('return_from_club', 'kira-strip-01', 'set_kira_strip_01', _("Стриптиз после клуба"), var="'kira_tv_bj' in persistent.memories and persistent.memories['kira_tv_bj']>0"),
-            Memories('kira_talk6', 'kira-photoset-01', 'set_kira_photoset_01', _("Порно-портфолио для Киры"), var="'kira_photoset1' in persistent.mems_var"),
+            Memories('kira_talk6', 'kira-photoset-01', 'set_kira_photoset_01', _("Порно-портфолио для Киры"), var="renpy.seen_label('first_photoset')"),
             Memories('kira_about_photo2', 'kira-photoset-02', '', _("Немного БДСМ от Киры")),
             Memories('kira_night_tv.teach_cuni', 'kira-tvsex-04', 'set_porn_tv3', _("Хватит мять сиськи"), var="renpy.seen_label('kira_night_tv.tv_sex1') or renpy.seen_label('kira_night_tv.tv_sex2')"),
             Memories('kira_bath.cuni_bj', 'kira-bathsex-04', 'set_kira_batxsex1', _("И помылись, и порезвились"), var="renpy.seen_label('kira_bath.horsewoman') or renpy.seen_label('kira_bath.dogstyle')"),
@@ -110,6 +111,7 @@ define mems = [
         [
             Memories('lisa_advanced_kiss_lesson', 'lisa-kisslesson-01', 'set_lisa_advanced_kiss_lesson', _("Вкусные уроки с сестрёнкой")),
             Memories('liza_hand_mass', 'lisa-kissmassage-02', 'set_kiss_massage1', _("Кажется, мы что-то забыли"), var="'kissing_massage' in persistent.mems_var"),
+            Memories('lisa_read_with_Max_r', 'lisa-01-kisslesson02', 'set_lisa_read_with_Max_r', _("Всё ниже и ниже")),
             Memories('Lisa_HomeWork.new_self', 'lisa-massage-04', 'set_homework_mass_01', _("Больше, чем помощь с домашним заданием")),
             Memories('lisa_horor_movie_r', 'lisa-horror-01', 'set_horor_01', _("Ужастики в обнимку с Лизой")),
             Memories('lisa_horor_movie_r', 'lisa-horror-02', 'set_horor_02', _("Без майки куда интереснее"), var="'horror_topples_kiss' in persistent.mems_var"),
@@ -119,17 +121,23 @@ define mems = [
             Memories('ann_talk_tv.first_movie', 'ann-erotv-01', 'set_ann_ero1', _("Я уже взрослый!")),
             Memories('erofilm2_1', 'ann-erotv-02', 'set_ann_ero2', _("Это точно триллер-детектив?")),
             Memories('erofilm2_2', 'ann-erotv-03', 'set_ann_ero2', _("Полотенце снова сползает...")),
+            Memories('ann_yoga_with_maxr', 'ann-01-yoga', 'set_ann_yoga_with_maxr', _("Йога с мамой"), "renpy.seen_label('ann_gift_fit1')"),
+            Memories('ann_tv_continuation_massage', 'ann-04-massagetv', 'set_ann_tv_continuation_massage', _("Ещё больше массажа у ТВ")),
+            Memories('ann_dressed.balcony', 'ann-01-hug', 'set_ann_dressed_balcony', _("Не надо печалиться"), "'balcony_hug' in persistent.mems_var"),
         ],
         [
             Memories('lessons_from_Eric.first_bj', 'ann&eric-bj01', 'set_lessons_Eric_01', _("Урок по минету от мамы и Эрика")),
             Memories('lessons_from_Eric.second_bj', 'ann&eric-bj02', 'set_lessons_Eric_01', _("Так близко к маминой попке")),
             Memories('lessons_from_Eric.third_bj', 'ann&eric-bj03', 'set_lessons_Eric_01', _("Глубокий минет в мамином исполнении")),
+            Memories('eric_ann_fuck_glasses_sleeping', 'ann&eric-sex', 'set_eric_ann_fuck_glasses_sleeping', _("Секс-шоу с первых рядов")),
         ],
         [
             Memories('sexed_lisa.lesson_0', 'lisa-sexed-01', 'set_sexed_01', _("Её первые познания...")),
             Memories('sexed_lisa.lesson_1', 'lisa-sexed-02', 'set_sexed_01', _("Как возбудить ещё больше?")),
             Memories('sexed_lisa.lesson_2', 'lisa-sexed-03', 'set_sexed_01', _("Нежно и аккуратно!")),
             Memories('sexed_lisa.lesson_3', 'lisa-sexed-04', 'set_sexed_01', _("Как долго это нужно делать?")),
+            Memories('lisa_eric_sex_ed_practice.practice_1', 'lisa-01-hje01', 'set_practice_1', _("Стесняется трогать...")),
+            Memories('lisa_eric_sex_ed_practice.practice_2', 'lisa-01-hje02', 'set_practice_1', _("Ещё стесняется, но трогает...")),
             Memories('blog_with_Eric', 'alice-dress&eric-01', 'set_blog_with_Eric_01', _("Кружевное боди для Алисы от Эрика"), var="'lace_ling_eric1' in persistent.mems_var"),
         ],
     ]

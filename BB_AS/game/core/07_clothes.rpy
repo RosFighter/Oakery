@@ -995,7 +995,10 @@ init python:
             if lvl > 1:
                 lst.append('')    # голая
         elif vr == 'b0':    # на балконе одетая
-            lst.extend(['a'] if 6 > weekday > 0 else 'f' if ann.clothes.rest_morn.GetCur().suf == 'a' else 'e')
+            if _in_replay:
+                lst.extend(['a', 'f', 'e'])
+            else:
+                lst.extend(['a'] if 6 > weekday > 0 else 'f' if ann.clothes.rest_morn.GetCur().suf == 'a' else 'e')
         elif vr == 'g':
             lst.append('j' if weekday == 6 else 'a')
         elif vr == 0:

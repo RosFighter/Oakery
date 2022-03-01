@@ -253,7 +253,7 @@ init python:
     def get_ann_emancipation():
         # 01. Я же мать! Стесняется показываться перед Максом в нижнем белье. Переход: 1-ая попытка сделать массаж у ТВ.
         # 02. Не для детских глаз. Стесняется показываться перед Максом с обнажённой грудью и без трусиков. Переход: ???.
-        if poss['mom-tv'].st() > 7:
+        if _in_replay or poss['mom-tv'].st() > 7:
             # состоялся первый массаж у ТВ
             return 2
         else:
@@ -361,7 +361,11 @@ init python:
             items['sexbody2'].have,             # у Макса есть кружевное боди
             ])
 
+    # отношения Макса с Эриком
     def get_rel_eric():
+        if _in_replay:
+            return rel_eric
+
         if 'eric' not in chars:
             return False
         if eric.relmax == 0:
