@@ -824,11 +824,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Как выяснилось, Эрик проплатил репетитора для Лизы по воскресеньям, чтобы улучшить её оценки, а в действительности, чтобы втереться к ней в доверие. Теперь он и моя мама будут по понедельникам проводить для Лизы уроки сексуального воспитания..."
-    new "Wie sich herausstellte, hat Eric für Lisas Nachhilfe bezahlt, um ihre Noten zu verbessern, in Wirklichkeit versucht er, ihr näher zu kommen. Jetzt werden er und Mom Lisa Montags Aufklärungsunterricht geben..."
+    new "Wie sich herausstellte, hat Eric für Lisas Nachhilfe bezahlt, um ihre Noten zu verbessern, in Wirklichkeit versucht er, ihr näher zu kommen. Jetzt werden er und Mom Lisa jeden Montag Aufklärungsunterricht geben..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно приглядывать за тем, чему они там Лизу обучают. Вдруг получится узнать что-то важное..."
-    new "Ich sollte ein Auge darauf haben, was sie Lisa beibringen. Vielleicht gibt es etwas Wichtiges, das ich dabei lernen könnte..."
+    new "Ich sollte ein Auge darauf haben, was sie Lisa beibringen. Vielleicht gibt es etwas Wichtiges, das ich dabei erfahren könnte..."
 
     # game/core/09_opportunities.rpy:4
     old "Как выяснилось, Эрик проплатил дополнительные курсы для Лизы в школе, чтобы улучшить её оценки, а в действительности, чтобы втереться к ней в доверие. А заодно и от меня отстранить, ведь теперь моя помощь с уроками ей особо и не нужна. И ещё он и моя мама будут по понедельникам проводить для Лизы уроки сексуального воспитания..."
