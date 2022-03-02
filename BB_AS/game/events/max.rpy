@@ -1108,7 +1108,7 @@ label bedtime_thoughts:
         else:                       # путь Д-
             $ poss['seduction'].open(27)
 
-        $ flags.lisa_sexed = 7
+        $ flags.lisa_sexed = 7      # обдумывает пакости Эрику
         $ items['laxative'].unblock()
         $ items['sedative'].unblock()
 

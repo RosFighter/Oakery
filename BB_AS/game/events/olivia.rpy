@@ -233,7 +233,7 @@ label olivia_first_night_visit:
             jump olivia_about_film_punish   # в разговорах
 
         Max_14 "Ладно..."
-        #перенос Макса в его комнату
+        # перенос Макса в его комнату
         $ poss['Schoolmate'].open(9)
         $ spent_time = 20
         $ current_room = house[0]

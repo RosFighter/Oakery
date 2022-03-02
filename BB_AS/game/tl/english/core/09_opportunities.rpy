@@ -2168,39 +2168,39 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! \nЭрик хорошо запудрил мозги Лизе, я даже не смог её отговорить от этого. Остаётся разве что помешать им... \nЕсли бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что практические занятия с Лизой - это последнее, о чём он будет думать. \n\nГлавное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт. Ну, а уже если не получится, то я вмешаюсь в их практику лично. Проблем из-за этого мне точно не избежать, но что поделать..."
-    new ""
+    new "Lisa warned me that now that their theoretical classes were over, Eric would be giving her sex education lessons without my mother's involvement. And, as I understood it, they were going to reinforce the theoretical part with practical lessons! \nEric had messed with Lisa's head pretty good; I couldn't even talk her out of it. The only thing left to do is to stop them... \nIf I could slip something like a laxative or sedative into Eric's food, it's quite possible that practicing with Lisa would be the last thing on his mind. \nThe main thing is not to do this more often than once a week, otherwise he will understand everything. And if it does not work, then I will interfere in their practice personally. I can't avoid problems because of that, but what can I do..."
 
     # game/core/09_opportunities.rpy:4
     old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы. Благо, Лиза прислушивается ко мне и у меня получилось убедить её, что на это лучше не соглашаться. \nНо вряд ли Эрик этому обрадуется. Меня наверняка ждут проблемы из-за этого, но что поделать... \nБыло бы неплохо хоть немного снизить его активную деятельность в нашем доме! \nЕсли бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что лезть к моим сёстрам - это последнее, о чём он будет думать. \n\nГлавное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт."
-    new ""
+    new "Lisa came to me for advice, because, as it turned out, after they finished their theoretical classes, Eric suggested that she consolidate all this in practical lessons without my mother's participation. Fortunately, Lisa listens to me, and I was able to convince her that it was better not to agree to this. \nBut I don't think Eric will be happy about it. I'm probably going to get in trouble for this, but what can I do? \nIt would be nice if we could reduce his activity in our house just a little bit! \nIf I could put something like a laxative or a sedative in Eric's food, it might be the last thing he'd think about messing with my sisters. \nThe important thing is not to do this more than once a week, or he'll figure it out."
 
     # game/core/09_opportunities.rpy:4
     old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! \nПохоже, моя младшая сестрёнка скоро начнёт взрослеть, как того и хотела. \nНу, а я ни за что не упущу возможности подсмотреть за этими уроками, ведь с Эриком я договорился на этот счёт. Лишь бы только сама Лиза меня не заметила..."
-    new ""
+    new "Lisa warned me that now that their theoretical classes were over, Eric would be giving her sex education lessons without my mother's involvement. And from what I understand, they are going to reinforce the theoretical part with practical lessons! \nLooks like my little sister is about to start growing up, just like she wanted. \nWell, I wouldn't miss the opportunity to watch these lessons, because I made a deal with Eric about it. As long as Lisa doesn't see me..."
 
     # game/core/09_opportunities.rpy:4
     old "Эрик собирается проводить практические занятия с Лизой по понедельникам. Нужно обязательно подсмотреть, чем они будут заниматься..."
-    new ""
+    new "Eric is going to have hands-on activities with Lisa on Mondays. We should definitely see what they do..."
 
     # game/core/09_opportunities.rpy:4
     old "Ну, что... Больше разговоров было, чем дела. Но, с другой стороны, Лиза такая стесняшка и то, что она хотя бы просто подержала член в руке - уже достижение. А впереди у неё ещё будет куча практики, так что скоро дрочить будет с закрытыми глазами, так сказать."
-    new ""
+    new "Well... It was more talk than action. But, on the other hand, Lisa is so shy, and the fact that she even just held her dick in her hand was already an achievement. And she has a lot of practice ahead of her, so soon she'll be jerking off with her eyes closed, so to speak."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно будет обязательно подсмотреть в ближайший понедельник за практическими уроками сексуального образования Лизы..."
-    new ""
+    new "We'll have to watch for Lisa's practical sex-education lessons next Monday..."
 
     # game/core/09_opportunities.rpy:4
     old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик вывел меня поговорить о том, какого чёрта я вмешиваюсь. \nЯ, чтобы себя не скомпрометировать, высказался о том, что у него могут возникнуть серьёзные проблемы, если их с Лизой кто-нибудь увидит или она кому-то расскажет об этих уроках. \nИ похоже, Эрик не особо об этом думал! Его так ослепили перспективы перетрахать всю женскую половину моей семьи, что он даже не подумал о таких элементарных вещах. \nИ о чудо, после недолгих раздумий он решил переложить сексуальное воспитание Лизы на меня! Это просто невероятно! Теперь Лиза полностью в моём распоряжении..."
-    new ""
+    new "I interfered in Lisa's practice session before she made a big mistake... Naturally, Eric took me out to talk about why the hell I was interfering. \nSo as not to compromise myself, I mentioned that he could get in serious trouble if he and Lisa were seen by anyone or if she told anyone about these lessons. \nEric didn't seem to think much of it! He was so blinded by the prospect of fucking all the women in my family that he didn't even think about such basic things. \nAnd miraculously, after a moment's consideration, he decided to turn Lisa's sex education over to me! It's unbelievable! Now I have Lisa all to myself..."
 
     # game/core/09_opportunities.rpy:4
     old "Кстати, со всей этой опасностью их с Эриком уроков, я совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
-    new ""
+    new "By the way, with all the danger of her and Eric's lessons, I completely forgot to ask if she had read the book on sex education! I'll have to ask..."
 
     # game/core/09_opportunities.rpy:4
     old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я испытал удачу и предложил ей продолжить уроки Эрика, но уже с собой во главе. \nВот только Лиза не верит, что я знаю чему её учить, поэтому, пока что, мне удалось уговорить её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. \nНо ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
-    new ""
+    new "I found out from Lisa that she had read the book on sex education. At the same time, I tried my luck and invited her to continue Eric's lessons, but with me at the helm. \nBut Lisa doesn't believe that I know what to teach her, so, so far, I've managed to convince her to continue learning how to kiss, but in a more intimate way. She still allows kissing the neck, but she won't let me kiss her breasts, she's embarrassed about it. \nBut it's okay, she'll let me in. I think that if you try to make unobtrusive advances to her when she reads, then the kissing lessons can be fully resumed."
 
 # TODO: Translation updated at 2022-02-24 01:02
 
@@ -2208,21 +2208,123 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "У меня появились кое-какие опасения на счёт практических занятий Лизы и Эрика. Нужно будет поговорить с Эриком после следующего совместного ужина..."
-    new ""
+    new "I have some concerns about Lisa and Eric's practice sessions. I'll have to talk to Eric after our next dinner together..."
 
     # game/core/09_opportunities.rpy:4
     old "Я спросил Эрика, думал ли он о том, что у него могут возникнуть серьёзные проблемы, если их с Лизой кто-нибудь увидит или она кому-то расскажет об этих уроках. И похоже, Эрик не особо об этом думал! Его так ослепили перспективы перетрахать всю женскую половину моей семьи, что он даже не подумал о таких элементарных вещах. И о чудо, после недолгих раздумий он решил переложить сексуальное воспитание Лизы на меня! Это просто невероятно! Теперь Лиза полностью в моём распоряжении. Конечно, пока не повзрослеет, но времени ещё навалом..."
-    new ""
+    new "I asked Eric if he thought he could get in serious trouble if he and Lisa were seen by anyone or if she told anyone about the lessons. And Eric didn't seem to think much of it! He was so blinded by the prospect of fucking the entire female half of my family that he didn't even think about such basic things. And miraculously, after a little deliberation, he decided to turn Lisa's sex education over to me! This is unbelievable! Now Lisa is completely at my disposal. Of course, until she grows up, but there's still plenty of time..."
 
     # game/core/09_opportunities.rpy:4
     old "Кстати, я всё не спрошу у Лизы, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
-    new ""
+    new "By the way, I still won't ask Lisa if she's read the book on sex education! I'll have to ask..."
 
     # game/core/09_opportunities.rpy:4
     old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды..."
-    new ""
+    new "It's so much better already! Mom now has a new tracksuit that will give her and me a lot of warmth. She wasn't even too vocal about it being very open. It depends on what it's for. \nFor me, if she did yoga completely naked, it would be the bomb! Eh, dreams... But who knows, maybe one day..."
 
     # game/core/09_opportunities.rpy:968
     old "Эта возможность не доступна при дружбе с Эриком..."
-    new ""
+    new "This option is not available when being friends with Eric..."
+# TODO: Translation updated at 2022-02-27 01:23
 
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это поворот! Хвалёная дружба с Эриком, которую он мне расписывал, как что-то сказочное, на деле оказалась не такой уж и сказкой. Придётся с этим как-то разбираться..."
+    new "What a twist! The friendship with Eric that he told me was a fairy tale turned out not to be such a fairy tale. I'll have to deal with it somehow..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно выяснить, как Эрик планирует подмазаться к моим сёстрам и будут ли у меня какие-то перспективы в дружбе с ним. Потребуются успехи в возможностях \"Блог\" и \"Наставник\"..."
+    new "I need to find out how Eric plans to grease up with my sisters and if I have any prospect of being friends with him. It's going to take some progress on the Blog and the Mentor opportunities..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Неизвестно, понадобится ли Эрику моя помощь с Алисой. Может, что-то выгорит с Лизой? Чтобы это выяснить, потребуются успехи в возможности \"Наставник\"..."
+    new "There was no telling whether Eric would need my help with Alice. Maybe something will work out with Lisa? To find out, it's going to take success in the Mentor opportunity..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, не всё безнадёжно и у Эрика получится выпросить что-то интересное. Надо будет с ним поговорить, когда он начнёт подлизываться к Лизе..."
+    new "I think it's not hopeless, and Eric might be able to get something interesting out of it. I'll have to talk to him when he starts sucking up to Lisa..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это поворот! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я потерял премию, которую мне обещал Эрик. Лиза, видите ли, и есть премия. Правда, он намекнул, что если мне будет, что ему рассказать, то у меня будут и другие премиальные. Я сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... Теперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, а я за это получу возможность присутствовать во время их с мамой секса! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет!"
+    new "What a turnaround! Because Lisa's sex education is now entrusted to me, I've lost the bonus Eric promised me. Lisa, you see, is the bonus. True, he hinted that if I had something to tell him, I would have other bonuses. I immediately told Eric about me and Kira and he was pleasantly surprised! He was surprised to find out you had a porn actress by your side... Now I have to play along with Eric in the bathtub with Kira, when he supposedly bumps into us by accident, so that he can have an easier time with her, and I get to be present during her and Mom's sex! True, with some reservations. Mom won't see me, and I, in turn, don't have to make any noise. I think I can manage that. Oh, how cool would that be?"
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько с ней поразвлечься..."
+    new "You just have to wait until Tuesday or Friday night and have a good time with her..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Круто! Я попросил у Эрика возможность присутствовать во время их с мамой секса и он согласился это устроить! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет! Только бы не упустить день, в который на маме будут очки для сна..."
+    new "Cool! I asked Eric for the opportunity to be present during his and my mom's sex, and he agreed to arrange it! With a few reservations, though. Mom won't see me, and I, in turn, must not make any noise. I think I can handle it. Oh, this is going to be great! Just as long as I don't miss the day my mom wears her sleep goggles..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно заглядывать к ним в комнату, чтобы не упустить момент и попасть на порно-шоу..."
+    new "You have to peek into their room to make sure you don't miss the moment and get to the porn show..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Может быть, попробовать попросить Эрика о том, чтобы мама была одета во что-то сексуальное на этих порно-шоу?"
+    new "Maybe try asking Eric for mom to wear something sexy to those porn shows?"
+
+    # game/core/09_opportunities.rpy:4
+    old "Подумал я и решил, ну эту дружбу с Эриком нафиг! Это всё-таки моя семья, а то, что он планирует с ними сделать - меня не устраивает. Так что буду притворяться другом, пока есть возможность. А пока не стало сильно критично это делать, самое время собирать компромат на Эрика и постараться успеть урвать что-нибудь стоящее для себя, пока мы с ним не начали враждовать."
+    new "I thought about it, and I decided, screw this friendship with Eric! It's my family, after all, and what he's planning to do to them doesn't suit me. So I'm going to pretend to be his friend while I can. And before it gets too critical to do that, it's time to get some dirt on Eric and try to get something worthwhile for myself before we start feuding with him."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Что посмотрим, мам?\"..."
+    new "It's going to take progress in the possibility of \"What shall we see, Mom?\..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот так дела! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я лишился порно-шоу с мамой. Очень обидно, если не сказать похуже. Правда, Эрик намекнул, что если мне будет, что ему рассказать, то это шоу можно будет возобновить. Но это должна быть стоящая информация и она у меня есть! Я сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... Я тоже был приятно удивлен, когда это узнал. Теперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, и я смог возобновить шоу с мамой."
+    new "That's it! Because Lisa's sex education is now entrusted to me, I have lost my porn show with my mother. That's a shame, to say the least. True, Eric hinted that if I had something to tell him, the show could be resumed. But it had to be worthwhile information and I had it! I immediately told Eric about me and Kira and he was pleasantly surprised! He was surprised to find out you had a porn actress on the side. I was pleasantly surprised when I found out, too. Now I have to play along with Eric in the bathtub with Kira when he supposedly runs into us, so he can make it easier on her, too, and I can resume the show with my mom."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот нас и поймали с поличным! Конечно, это был спектакль специально для Киры, чтобы Эрик получал свой любимый минет теперь и от неё, а я получу порно-шоу с мамой. Главное, с Эриком не забыть поговорить об этом!"
+    new "Here we are, caught red-handed! Of course, this was a spectacle especially for Kira, so that Eric would get his favorite blow job now from her, too, and I would get a porn show with my mother. The main thing is to remember to talk to Eric about it!"
+
+# TODO: Translation updated at 2022-02-28 02:41
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь! \n\nСамое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ."
+    new "So my mom and I finished watching The Color of Night. I was admiring her naked breasts again, and in general, things were going well for us. She's slowly starting to realize that I'm an adult and she doesn't mind watching movies like this with me anymore. For the sake of decency, of course, my mother told me not to buy such explicit erotica anymore, but as if I would listen! \n\nThe most frustrating thing is that we too rarely get to watch TV together with my mother."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Контроль\"..."
+    new "It's going to take progress in the \"Control\" capability..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Сперва нужно закрепиться с массажем маминых плеч, пока она смотрит ТВ. Успешно выполнено массажей плеч мамы у ТВ: [ann.flags.m_shoulder] из 5..."
+    new "First you need to get a foothold with massaging mom's shoulders while she watches TV. Successfully performed massages of mom's shoulders at the TV: [ann.flags.m_shoulder] of 5..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь! \n\nСамое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ. Нужно сперва избавиться от Эрика, а уже потом покупать эротические фильмы. Пока только массаж время от времени..."
+    new "So my mom and I finished watching The Color of Night. I was admiring her naked breasts again, and in general, things were going well for us. She's slowly starting to realize that I'm an adult and she doesn't mind watching movies like this with me anymore. For the sake of decency, of course, my mother told me not to buy such explicit erotica anymore, but as if I would listen! \n\nThe most frustrating thing is that we too rarely get to watch TV with my mom. We need to get rid of Eric first before we can buy erotic movies. For now it's just a massage once in a while..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, мама обожает массаж спины, а это значит, что мне будет не так-то и просто сделать его на отлично. Но, если хотя бы иногда будет получаться, то уже хорошо. \nНу и раз я добрался до маминой спины, то и до её попки тоже нужно добираться, но уже через помощь с йогой. Там поддерживать её за попку будет естественнее всего. \nИ уже когда мама к этому всему привыкнет, можно будет попробовать уговорить её на продолжение тех уроков минета, которыми они с Эриком поделились. Ведь, как радоваться минету показали, а как женщин ублажать - нет!"
+    new "My mom seems to love back rubs, which means it won't be easy for me to do it perfectly. But if I can do it once in a while, that's a good thing. \Well, now that I've gotten to my mom's back, I need to get to her butt, too, but through yoga help. That's where it's most natural to hold her butt. \Now when Mom gets used to all this, you can try to talk her into continuing those blowjob lessons that she and Eric shared. After all, they've shown you how to enjoy a blowjob, but not how to please a woman!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, этого хватит, чтобы я мог попробовать уговорить её на новые интимные уроки... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
+    new "I think that's enough for me to try to talk her into new intimate lessons... Successfully performed back massages on my mom at TV: [ann.flags.m_back] of 3"
+
+    # game/core/09_opportunities.rpy:4
+    old "Может быть, попробовать поговорить с мамой, когда она принимает ванну? Это отличное место, чтобы напомнить ей о том, что они с Эриком мне показывали в своей комнате..."
+    new "Maybe try talking to my mom while she's taking a bath? It's a great place to remind her of what she and Eric showed me in her room..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Волнующие изгибы\"..."
+    new "It's going to take some progress on the \"Exciting Curves\" opportunity..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, мой дерзкий разговор с мамой удался! Конечно, если бы Эрик не устроил для меня тех уроков по минету, у меня бы и близко не получилось выпросить у мамы их продолжение. \nПравда, пока она только согласилась подумать над этим, так что, возможно, она ещё ответит отказом. Пускай, уговорить её в таком случае будет не просто, но думаю получится, рано или поздно."
+    new "Looks like my sassy talk with my mom was a success! Of course, if Eric hadn't given me those blowjob lessons, I wouldn't have been able to get my mom to continue them. \She only agreed to think about it for now, though, so maybe she'll still say no. It's not going to be easy to talk her into it, but I think she will, sooner or later."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
+    new "This is the kind of yoga I like better! My mom is still confused by my restless arms, but I think she'll get used to them. \It is true that I can't help but get hard, so it's better to come to my mom's yoga in a T-shirt and shorts. It's a lot easier to hide a boner if you have one. \It's too bad she wants me to help out at least every other day because of my activity. But I don't mind, it just makes me want to join her again."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, можно будет попробовать уговорить её на новые интимные уроки... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
+    new "Once Mom gets used to such unceremonious touching for the sacred at yoga, you can try to talk her into a new intimate class... Successfully helped my mom with yoga: [ann.flags.truehelp] of 5"

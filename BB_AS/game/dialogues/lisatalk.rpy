@@ -5022,7 +5022,7 @@ label lisa_read_with_Max_r:
     Max_19 "{m}Обалдеть! Её кожа такая нежная... Интересно, её это заводит так же сильно, как и меня? Ощущения от того, что я тискаю её обнажённую грудь и целую её восхитительную шейку, бесподобны!{/m}"
     Lisa_04 "Ммм... Макс, это так приятно! Мне кажется, я совсем сейчас потеряю голову от удовольствия... Может, нам лучше остановиться?" nointeract
     menu:
-        "{i}остановиться{/i}":
+        "{i}остановиться{/i}" if not _in_replay:
             # myroom-bedlisa-mde-02 + myroom-bedlisa-mde-02-lisa-(01b/01c/01d/01e)-hug + myroom-bedlisa-mde-02-max-(01b/01c)-hug
             scene Lisa_read_kiss
             Lisa_03 "Ухх... Было приятно, настолько, что даже отрываться не хотелось... Но хорошего помаленьку."
@@ -5047,7 +5047,8 @@ label lisa_read_with_Max_r:
                 scene Lisa_read_kiss opened
                 Max_03 "Рад, что тебе понравилось... Ты очень классная, Лиза! И сисечки у тебя прелестные!"
 
-                $ poss['seduction'].open(36)    # Макс добирается до поцелуев груди Лизы
+                if not _in_replay:
+                    $ poss['seduction'].open(36)    # Макс добирается до поцелуев груди Лизы
                 $ lisa.flags.kiss_breast += 1
                 Lisa_02 "Ой, Макс, не смущай меня так... Но спасибо за комплимент." nointeract
             else:
@@ -5059,4 +5060,5 @@ label lisa_read_with_Max_r:
     menu:
         "{i}уйти{/i}":
             stop music fadeout 1.0
+            $ renpy.end_replay()
             jump Waiting

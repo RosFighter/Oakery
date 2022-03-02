@@ -3452,7 +3452,7 @@ translate slovak strings:
     new "Potrebujem zistiť, či si moja mama všimne moju erekciu, keď s ňou budem pozerať televíziu v tričku a šortkách..."
 
     # game/core/09_opportunities.rpy:4
-    old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно незаметить. Но я сам виноват... Понадеялся на лучшее, а у самого даже майки нет. Стоило бы, кстати, её купить и уже тогда спокойно смотреть с мамой ТВ. Там правда тоже гарантий нет, но попробовать можно..."
+    old "Упс... Вот мама и заметила мой стояк. Что тут сказать, на самом деле сложно не заметить. Но я сам виноват... Понадеялся на лучшее, а у самого даже майки нет. Стоило бы, кстати, её купить и уже тогда спокойно смотреть с мамой ТВ. Там правда тоже гарантий нет, но попробовать можно..."
     new "Jejda... Takže moja mama si všimla moju erekciu. Čo môžem na to povedať, je naozaj ťažké si to nevšimnúť. Ale je to moja vina... Dúfal som v to najlepšie a sám nemám ani tričko. Mimochodom, stálo by za to kúpiť si ho a dokonca aj potom pokojne sledovať televíziu s mojou matkou. Neexistujú žiadne záruky, ale môžem to skúsiť..."
 
     # game/core/09_opportunities.rpy:4
@@ -4289,7 +4289,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Теперь две эти симпатичные попки в моём распоряжении... Аж глаза разбегаются... Хоть Оливия и не особо привязывалась к Алексу, но расставание есть расставание и ей явно нужно время, чтобы оправиться. Как знать, может у нас с ней что-нибудь получится?! Ну а чтобы Лиза чаще сверкала своими голыми сисечками, нужно проявить побольше заботы... Главное постоянно и в разумных пределах! А позаботиться можно и о защите её от маминых наказаний, и о помощи с домашним заданием. А так же уделять внимание и её рукам, помогая с мытьём посуды и делая массаж."
-    new "Teraz mám k dispozícii tieto dva pekné zadky... Oči sa mi rozširujú... Hoci Olívia nebola na Alexa nijako zvlášť viazaná, ale rozchod je rozchod a očividne potrebuje čas na zotavenie. Ktovie, možno s ňou môžem niečo urobiť?! No, aby Líza žiarila svojimi nahými prsiami častejšie, musím prejaviť viac starostlivosti v rozumných medziach! A môžem sa postarať o to, aby som ju ochránili pred trestami jej matky a pomohol jej s domácimi úlohami. A tiež venovať pozornosť jej rukám, pomáhať s umývaním riadu a robiť masáže."
+    new "Teraz mám k dispozícii tieto dva pekné zadky... Oči sa mi rozširujú... Hoci Olívia nebola na Alexa nijako zvlášť viazaná, ale rozchod je rozchod a očividne potrebuje čas na zotavenie. Ktovie, možno s ňou môžem niečo urobiť?! No, aby Líza žiarila svojimi nahými prsiami častejšie, musím prejaviť viac starostlivosti v rozumných medziach! A môžem sa postarať o to, aby som ju ochránil pred trestami našej matky a pomohol jej s domácimi úlohami. A tiež musím venovať pozornosť jej rukám, pomáhať s umývaním riadu a robiť masáže."
 
     # game/core/09_opportunities.rpy:4
     old "Школьница"
@@ -6828,7 +6828,7 @@ translate slovak alice_talk_tv_massage_next_a14e48fe:
 # game/dialogues/alicetalk.rpy:959
 translate slovak alice_talk_tv_massage_next_864ca86f:
 
-    # Max_05 "c"
+    # Max_05 "Я тоже не ожидал... такого..."
     Max_05 "Nečakal som ani jedno... takéto..."
 
 # game/dialogues/alicetalk.rpy:960
@@ -8148,7 +8148,7 @@ translate slovak smoke_toples_794078b3:
 # game/dialogues/alicetalk.rpy:1962
 translate slovak smoke_toples_2db9f65a:
 
-    # Max_09 "c"
+    # Max_09 "Ну и ладно..."
     Max_09 "Čokoľvek..."
 
 # game/dialogues/alicetalk.rpy:1965
@@ -17930,10 +17930,10 @@ translate slovak ann_tv_casual_r_4ccbb069:
     Ann_07 "Ach, Max! Je to úžasné... Taká úľava. Vieš, ako to urobiť pekne. Veľmi sa mi to páčilo... Rozhodne sa teším na ďalšie stretnutie!"
 
 # game/dialogues/anntalk.rpy:523
-translate slovak ann_tv_casual_r_ea1ff6fc:
+translate slovak ann_tv_casual_r_3f435f31:
 
-    # Max_00 "Класс! Я тоже буду ждать, мам. Отдыхай."
-    Max_00 "Pekné! Aj ja budem čakať, mami. Oddýchni si."
+    # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай."
+    Max_01 "Pekné! Aj ja budem čakať, mami. Oddýchni si."
 
 # game/dialogues/anntalk.rpy:533
 translate slovak ann_tv_casual_r_4969c11a:
@@ -17942,10 +17942,10 @@ translate slovak ann_tv_casual_r_4969c11a:
     Ann_14 "[ann_bad_mass!t]Ach, Max... Nie, teraz už nie je taká dobrá... Niečo dokonca spôsobilo, že svaly ma trochu zaboleli. Pokračujme v tom inokedy... Ale aj tak vďaka!"
 
 # game/dialogues/anntalk.rpy:534
-translate slovak ann_tv_casual_r_a30f1880:
+translate slovak ann_tv_casual_r_40d1e45e:
 
-    # Max_00 "Извини. Наверно, на сериал засмотрелся... Я пойду."
-    Max_00 "Prepáč. Musel som sa pozerať na seriál... Pôjdem."
+    # Max_10 "Извини. Наверно, на сериал засмотрелся... Я пойду."
+    Max_10 "Prepáč. Musel som sa pozerať na seriál... Pôjdem."
 
 # game/dialogues/anntalk.rpy:542
 translate slovak Ann_MorningWood_bb881ec2:
@@ -27916,11 +27916,11 @@ translate slovak kira_about_ann_secret_r_39f028b6:
     # Kira_14 "Макс, твоя мама не хочет, чтобы кто-то об этом что-то знал. На это есть причины и я не хочу подорвать её, и без того довольно шаткое, доверие ко мне..." nointeract
     Kira_14 "Max, tvoja mama nechce, aby o tom niekto niečo vedel. Sú na to dôvody a nechcem si podkopať, už dosť neistú, dôveru vo mňa " nointeract
 
-# game/dialogues/kiratalk.rpy:1065
-translate slovak story_from_childhood_ann_37f146bb:
+# game/dialogues/kiratalk.rpy:1062
+translate slovak story_from_childhood_ann_5afda0cd:
 
-    # Kira_03 "Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
-    Kira_03 "Nechystáš sa prestať, však? Len ťa upozorňujem, že ak sa o tom zmieniš niekomu alebo samotnej matke, dôjde k strate dôvery k obom."
+    # Kira_03 "[succes!t]Ты же не отстанешь, да? Только учти, если ты обмолвишься об этом кому-то или самой маме, то к обоим доверие пропадёт."
+    Kira_03 "[succes!t]Nechystáš sa prestať, však? Len ťa upozorňujem, že ak sa o tom zmieniš niekomu alebo samotnej matke, dôjde k strate dôvery k obom."
 
 # game/dialogues/kiratalk.rpy:1066
 translate slovak story_from_childhood_ann_9b09dcde:
@@ -31833,7 +31833,7 @@ translate slovak Lisa_HomeWork_shoulders_f9066800:
 # game/dialogues/lisatalk.rpy:1433
 translate slovak Lisa_HomeWork_shoulders_3593d09b:
 
-    # Max_09 "{m}Только сперва нужно отточить свои навыки массажа на Лизе. c{/m}"
+    # Max_09 "{m}Только сперва нужно отточить свои навыки массажа на Лизе. Ещё не хватало перед мамой позориться тем, что я так себе массажист. Нужно, чтобы ей понравилось...{/m}"
     Max_09 "{m}Len najprv musím zdokonaliť svoje masážne zručnosti na Líze. Stále som nemal pred mamou dosť hanby, že som takzvaný masér. Musí sa jej to páčiť...{/m}"
 
 # game/dialogues/lisatalk.rpy:1440
@@ -32128,7 +32128,7 @@ translate slovak Lisa_HomeWork_new_shoulders_052f029d:
 translate slovak Lisa_HomeWork_new_shoulders_a71a7519:
 
     # Max_05 "[lisa_good_mass!t]{m}Похоже, Лиза уже так возбудилась, что с ней можно делать всё, что только захочется! У неё такая упругая и нежная грудь... Вот бы добраться и до неё губами!{/m}"
-    Max_05 "[lisa_good_mass!t]{m}Líza sa zdá byť teraz taká nadržaná, že si s ňou môžeš robiť, čo chcem! Jej prsia sú také pevné a jemné... Chcel by som sa k nim dostať svojimi perami!{/m}"
+    Max_05 "[lisa_good_mass!t]{m}Líza sa zdá byť teraz taká nadržaná, že si s ňou môžem robiť, čo chcem! Jej prsia sú také pevné a jemné... Chcel by som sa k nim dostať svojimi perami!{/m}"
 
 # game/dialogues/lisatalk.rpy:1608
 translate slovak Lisa_HomeWork_new_shoulders_52b18094:
@@ -32146,7 +32146,7 @@ translate slovak Lisa_HomeWork_new_shoulders_90b36f7e:
 translate slovak Lisa_HomeWork_new_shoulders_af730dde:
 
     # Max_06 "{m}Ухх... А у меня страстная сестрёнка! И очень сладкая... Её сосочки стали такими твёрденькими! Обалденная девочка...{/m}"
-    Max_06 "{m}Uf... A mám vášnivú sestru! A veľmi sladké... Jej bradavky sú také tvrdé! Skvelé dievčatko...{/m}"
+    Max_06 "{m}Uf... A mám vášnivú sestru! A veľmi sladkú... Jej bradavky sú také tvrdé! Skvelé dievčatko...{/m}"
 
 # game/dialogues/lisatalk.rpy:1621
 translate slovak Lisa_HomeWork_new_shoulders_81d89528:
@@ -38502,12 +38502,6 @@ translate slovak lisa_about_ae_sexed5_a3d4d2b6:
     # Max_01 "Ну, теоретические знания нужно закреплять на практике, потому что увидеть что-то или прочесть одно, а вот самому это сделать - уже другое."
     Max_01 "Teóriu musíš uplatniť v praxi, pretože vidieť alebo čítať niečo je jedna vec, ale robiť to na vlastnej koži je druhá."
 
-# game/dialogues/lisatalk.rpy:4331
-translate slovak lisa_about_ae_sexed5_108a6b51:
-
-    # Lisa_01 "Тогда я соглашаюсь на продолжение уроков с Эриком. Только тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
-    Lisa_01 "Potom som súhlasila, že budem pokračovať v lekciách s Erikom. Lenže v pondelok po večeri budeš musieť ísť niekam von... najmenej pol hodiny."
-
 # game/dialogues/lisatalk.rpy:4332
 translate slovak lisa_about_ae_sexed5_73916dd2:
 
@@ -38579,12 +38573,6 @@ translate slovak lisa_about_ae_sexed5_0616845d:
 
     # Max_09 "Что за вздор! Я многое знаю и пробовал..."
     Max_09 "Aký nezmysel! Viem toho veľa a vyskúšal som.."
-
-# game/dialogues/lisatalk.rpy:4356
-translate slovak lisa_about_ae_sexed5_166344de:
-
-    # Lisa_01 "Ну да, конечно, не смеши. Так, что думаешь, Макс? Только если я соглашусь, тебе придётся теперь по понедельникам, после ужина, где-нибудь «погулять»... минимум полчасика."
-    Lisa_01 "No, áno, samozrejme, nebuď vtipný. Tak čo ty na to, Max? Iba ak s tým súhlasíš, teraz budeš musieť chodiť niekde v pondelok, po večeri... Minimálne pol hodiny."
 
 # game/dialogues/lisatalk.rpy:4357
 translate slovak lisa_about_ae_sexed5_73916dd2_1:
@@ -41152,7 +41140,7 @@ translate slovak punishment_lisa_1be74016:
 translate slovak punishment_lisa_2a6e0df8:
 
     # Ann_16 "Давай терпи! Плохо вела себя в школе - получила по голой заднице у всех на глазах."
-    Ann_16 "No tak, buď trpezliví! V škole sa správala zle - pred všetkými dostala na holý zadok."
+    Ann_16 "No tak, buď trpezlivá! V škole sa správala zle - pred všetkými dostala na holý zadok."
 
 # game/dialogues/punishment.rpy:577
 translate slovak punishment_lisa_22426d4e:
@@ -47687,7 +47675,7 @@ translate slovak eric_ann_fucking_voyeur_1a6dca32:
 # game/events/eric.rpy:588
 translate slovak eric_ann_fucking_voyeur_afca94eb:
 
-    # Eric_02 "Ань, пусть лучше смотрит на нас, чем на непойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
+    # Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
     Eric_02 "Anna, je lepšie pozerať sa na nás ako na nejakú úchylku na internete, však? Takže, Max, poď sem a porozprávame sa..." nointeract
 
 # game/events/eric.rpy:594
@@ -57137,9 +57125,9 @@ translate slovak BookRead_sex_ed_e2e2e4d9:
     Max_01 "Áno. Každý má svoje špecifiká, inak toto som teda nevedel! Tu je štruktúra genitálií dospievajúceho dievčaťa tak akurát... Prečítam a rozhliadnem sa.\n\n{color=[orange]}{i}(Kniha naštudovaná na 25%%){/i}{/color}"
 
 # game/events/max.rpy:674
-translate slovak BookRead_sex_ed_2c2e756a:
+translate slovak BookRead_sex_ed_5dc0d1da:
 
-    # Max_03 "Так, это не особо интересно... А вот сексуалное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
+    # Max_03 "Так, это не особо интересно... А вот сексуальное поведение подростков - это как раз про меня! Ещё про мои утренние стояки написали бы, было бы вообще супер...\n\n{color=[orange]}{i}(Книга изучена на 50%%){/i}{/color}"
     Max_03 "Takže to nie je veľmi zaujímavé... Ale sexuálne správanie tínedžerov je len o mne! Ak by ste mohli napísať o mojich ranných erekciách, bolo by to skvelé...\n\n{color=[orange]}{i}(Kniha naštudovaná na 50%%){/i}{/color}"
 
 # game/events/max.rpy:676
@@ -58122,7 +58110,7 @@ translate slovak olivia_night_visit_r_04f7e51a:
 translate slovak olivia_night_visit_r_b6a957f2:
 
     # Olivia_02 "Лиза, я полдня тебя сегодня не видела, а уже соскучилась... Жду не дождусь уже раздеться и заниматься ничегонеделанием. Только сериалы с любимыми друзьями!"
-    Olivia_02 "Líza, dnes som ťa nevidela pol dňa a už si mi chýbala... Nemôžem sa dočkať, až sa vyzlečiem a nebudem nič robiť. Len televízne seriály s mojimi obľúbenými priateľmi"
+    Olivia_02 "Líza, dnes som ťa nevidela pol dňa a už si mi chýbala... Nemôžem sa dočkať, až sa vyzlečiem a nebudem nič robiť. Len televízne seriály s mojimi obľúbenými priateľmi!"
 
 # game/events/olivia.rpy:292
 translate slovak olivia_night_visit_r_9b51ac68:
@@ -60204,7 +60192,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "После того, как с Эриком всё разрешилось, я поговорил с Лизой. Она после того, что затевал Эрик, не горит большим желанием активно продолжать своё сексуальное образование. Поэтому я предложил ей смотреть обучающие фильмы и она не против. Теперь нужно будет подыскать что-нибудь такое для неё, не порно, но добротные эротические фильмы. А там глядишь и до порно фильмов недалеко..."
-    new "Po tom, ako som všetko s Erikom vyriešil, som sa porozprával s Lízou. Po tom, čo Erik zažil, nemá veľkú chuť aktívne sa venovať sexuálnej výchove. Tak som jej navrhol, aby pozerala vzdelávacie filmy, a ona nemala nič proti. Teraz pre ňu musíme nájsť niečo, nie porno, ale dobré erotické filmy. A potom je na ceste k pornofilmu..."
+    new "Po tom, ako som všetko s Erikom vyriešil, som sa porozprával s Lízou. Po tom, čo s Erikom zažila, nemá veľkú chuť aktívne sa venovať sexuálnej výchove. Tak som jej navrhol, aby pozerala vzdelávacie filmy, a ona nemala nič proti. Teraz pre ňu musím nájsť niečo, hlavne nie porno, ale dobré erotické filmy. Až potom bude na ceste k pornofilmu..."
 
     # game/core/09_opportunities.rpy:4
     old "Эта сволочь Эрик, взял и обвинил меня в воровстве его бумажника с деньгами! И якобы именно на эти сворованные деньги я и покупаю все подарки для моей семьи. Дал мне неделю, чтобы я всё ему вернул, иначе меня отправят в военный лагерь. А как обидно, что верят именно Эрику, а не мне.\nЭрик так же дал понять, что \"уладить\" это у меня не получится, так что дело за компроматом на него. Но сначала нужно поговорить с сёстрами, чтобы понять, насколько они верят Эрику."
@@ -60850,7 +60838,7 @@ translate slovak breakfast_after_showdown_with_eric_d19c6569:
 translate slovak breakfast_after_showdown_with_eric_e556daca:
 
     # Alice_06 "Ничего себе... Я и забыла, что вы работаете вместе. Так может это и к лучшему? Может тебе уволиться, чтобы нервы не трепать? Устроишься в другое место! Лучше прежнего!"
-    Alice_06 "Wow... Zabudol som, že pracujete spolu. Možno je to tak lepšie? Prečo nedáš výpoveď v práci, aby ti neliezla na nervy? Nájdi si prácu niekde inde! Lepšie ako predtým!"
+    Alice_06 "Wow... Zabudla som, že pracujete spolu. Možno je to tak lepšie? Prečo nedáš výpoveď v práci, aby ti neliezla na nervy? Nájdi si prácu niekde inde! Lepšie ako predtým!"
 
 # game/dialogues/breakfast.rpy:880
 translate slovak breakfast_after_showdown_with_eric_8b47b3d2:
@@ -60862,7 +60850,7 @@ translate slovak breakfast_after_showdown_with_eric_8b47b3d2:
 translate slovak breakfast_after_showdown_with_eric_6cb65c7a:
 
     # Kira_15 "Слушай, Ань, а может тебе и правда уйти? Как можно терпеть каждый день человека, который сделал тебе столько гадостей?"
-    Kira_15 "Pozri, Anna, prečo naozaj neodídeš? Ako môžše každý deň znášať niekoho, kto ti urobil toľko zlého?"
+    Kira_15 "Pozri, Anna, prečo naozaj neodídeš? Ako môžeš každý deň znášať niekoho, kto ti urobil toľko zlého?"
 
 # game/dialogues/breakfast.rpy:882
 translate slovak breakfast_after_showdown_with_eric_d661b13d:
@@ -61314,7 +61302,7 @@ translate slovak kira_about_showdown_27400ec2:
 translate slovak kira_about_showdown_dce05986:
 
     # Max_10 "Не за что. Обращайтесь, если что. А, вообще, меня это тоже касалось, как никого другого. Он меня и вором выставил перед всеми... и в лагерь хотел сослать..."
-    Max_10 "Nemáš za čo. V prípade potreby ma neváhaj kontaktovať. A v skutočnosti ma to ovplyvnilo rovnako ako kohokoľvek iného. Takisto zo mňa pred všetkými urobil zlodeja... a chcel ho poslať do tábora..."
+    Max_10 "Nemáš za čo. V prípade potreby ma neváhaj kontaktovať. A v skutočnosti ma to ovplyvnilo rovnako ako kohokoľvek iného. Takisto zo mňa pred všetkými urobil zlodeja... a chcel ma poslať do tábora..."
 
 # game/dialogues/kiratalk.rpy:1545
 translate slovak kira_about_showdown_955714a1:
@@ -61326,7 +61314,7 @@ translate slovak kira_about_showdown_955714a1:
 translate slovak kira_about_showdown_3728113c:
 
     # Max_03 "Нашла о чём думать! Всё уже в прошлом."
-    Max_03 "O čom treba premýšľať! Všetko je už minulosťou."
+    Max_03 "O čom netreba premýšľať! Všetko je už minulosťou."
 
 # game/dialogues/kiratalk.rpy:1548
 translate slovak kira_about_showdown_51718959:
@@ -63862,3 +63850,5136 @@ translate slovak strings:
     old "Вместо ночного плаванья"
     new "Namiesto nočného kúpania"
 
+# TODO: Translation updated at 2022-01-27 20:47
+
+translate slovak strings:
+
+    # game/core/02init.rpy:135
+    old "А у меня есть крем для загара. Хотите?"
+    new "A mám opaľovací krém. Chceš trochu?"
+
+    # game/core/02init.rpy:135
+    old "Давайте, я намажу вас кремом для загара?"
+    new "Prečo ťa nenamažem opaľovacím krémom?"
+
+    # game/core/02init.rpy:135
+    old "Вам дать крем для загара?"
+    new "Chceli by ste opaľovací krém?"
+
+# TODO: Translation updated at 2022-01-27 20:47
+
+# game/dialogues/lisatalk.rpy:4720
+translate slovak lisa_about_olivia_5_805315c8:
+
+    # Lisa_11 "Макс, слушай... Знаешь, что я сейчас сообразила?"
+    Lisa_11 "Max, počúvaj... Vieš, čo ma práve napadlo?"
+
+# game/dialogues/lisatalk.rpy:4721
+translate slovak lisa_about_olivia_5_42eae722:
+
+    # Max_07 "Нет. Давай рассказывай..."
+    Max_07 "Nie. Povedz mi o tom..."
+
+# game/dialogues/lisatalk.rpy:4722
+translate slovak lisa_about_olivia_5_5914c219:
+
+    # Lisa_10 "К нам же теперь Оливия не сможет по ночам приходить! Мама теперь всё время будет дома ночевать."
+    Lisa_10 "Teraz Olívia nebude môcť prísť v noci! Mama bude teraz stále doma."
+
+# game/dialogues/lisatalk.rpy:4723
+translate slovak lisa_about_olivia_5_cf4a656a:
+
+    # Max_09 "Вот блин! Это плохо... В смысле, хорошо, что она дома, но плохо..."
+    Max_09 "Do prdele! To nie je dobré... Je dobré, že síce je doma, ale toto je zlé..."
+
+# game/dialogues/lisatalk.rpy:4728
+translate slovak lisa_about_olivia_5_d7a9ae54:
+
+    # Lisa_09 "Что будем делать?"
+    Lisa_09 "Čo budeme robiť?"
+
+# game/dialogues/lisatalk.rpy:4729
+translate slovak lisa_about_olivia_5_ab36e9a3:
+
+    # Max_08 "Знакомить их скорее! Правда, не знаю, как мама отреагирует на... особенность Оливии, но нужно сперва посмотреть на реакцию, а уже потом делать выводы."
+    Max_08 "Zoznámime ich čo najskôr! Síce naozaj neviem, ako bude naša mama reagovať na... zvláštnu vlastnosť Olívie, ale najprv sa musíme pozrieť na reakciu a potom vyvodíme závery."
+
+# game/dialogues/lisatalk.rpy:4730
+translate slovak lisa_about_olivia_5_37f257a7:
+
+    # Lisa_13 "Думаешь, она будет не против наших полуголых ночных посиделок? Я вот как-то сомневаюсь. Хотя..."
+    Lisa_13 "Myslíš, že jej bude vadiť naša polonahá noc? Mám nejaké pochybnosti. Hoci..."
+
+# game/dialogues/lisatalk.rpy:4731
+translate slovak lisa_about_olivia_5_2704fdca:
+
+    # Max_04 "Ну, \"полуголых\" - это слабо сказано, потому что из полуголых у нас только ты, а все остальные СОВСЕМ голые."
+    Max_04 "No, \"polonahý\" - to je slabé slovo, pretože si jediná, kto je polonahý, a všetci ostatní sú úplne nahí."
+
+# game/dialogues/lisatalk.rpy:4737
+translate slovak lisa_about_olivia_5_50191b16:
+
+    # Lisa_10 "И мне кажется, что кому-кому, а мне она запретит по ночам тусоваться с вами. Да и не факт, что и тебе с Оливией разрешит."
+    Lisa_10 "A myslím, že som jediná, komu nedovolí, aby sa s tebou v noci stretával. A nie je isté, či sa to podarí aj tebe a Olívii."
+
+# game/dialogues/lisatalk.rpy:4738
+translate slovak lisa_about_olivia_5_52089248:
+
+    # Max_03 "Как бы там ни было, но зови её к нам завтра. А маму я уж как-нибудь уговорю. К тому же, ей не обязательно сообщать, в каком виде мы тусуемся."
+    Max_03 "Každopádne ju zajtra zavoláme k nám. Nejakým spôsobom prinútim našu mamu, aby to urobila. Okrem toho jej netreba hovoriť, na akej párty sme."
+
+# game/dialogues/lisatalk.rpy:4739
+translate slovak lisa_about_olivia_5_ec426758:
+
+    # Lisa_01 "Да, подробности лучше опустить. Ох и удивится завтра мама."
+    Lisa_01 "Áno, detaily je lepšie vynechať. Naša mama bude zajtra veru prekvapená."
+
+# game/dialogues/lisatalk.rpy:4744
+translate slovak lisa_about_olivia_5_080cf4d3:
+
+    # Max_09 "{m}Лиза может быть права. После подлянки от Эрика, мама может начать снова оберегать Лизу от всего на свете. Надеюсь, мне удастся её завтра убедить, что контактирование с голой Оливией - это безобидное занятие, что для меня, что для Лизы.{/m}"
+    Max_09 "{m}Líza má možno pravdu. Po Erikovom žartíku môže mama opäť začať Lízu chrániť pred všetkým možným na svete. Dúfam, že ju zajtra presvedčím, že kontakt s nahou Olíviou je neškodná činnosť, pre mňa aj pre Lízu.{/m}"
+
+# TODO: Translation updated at 2022-01-27 20:47
+
+# game/dialogues/oliviatalk.rpy:314
+translate slovak about_first_sunscreen_020f43c6:
+
+    # Olivia_03 "Ах, да. Ты же предлагал нам в тот раз. Но у нас, вроде, и так всё в порядке."
+    Olivia_03 "Ach, áno. Si nám to predtým navrhol. Zdalo sa však, že to bolo v poriadku."
+
+# game/dialogues/oliviatalk.rpy:315
+translate slovak about_first_sunscreen_543be174:
+
+    # Max_07 "Но лишний ультрафиолет здоровья никому не прибавляет. Так что кожу лучше защитить."
+    Max_07 "Nadmerné ultrafialové žiarenie však nie je dobré pre nikoho. Preto je najlepšie pokožku chrániť."
+
+# game/dialogues/oliviatalk.rpy:316
+translate slovak about_first_sunscreen_2ecc1627:
+
+    # Lisa_03 "Ну, раз в ход пошли слова, вроде ультрафиолета, то лучше намазаться кремом!"
+    Lisa_03 "No, teraz, keď sa objavili slová ako ultrafialové svetlo, je lepšie sa namazať krémom!"
+
+# game/dialogues/oliviatalk.rpy:318
+translate slovak about_first_sunscreen_f0e1429e:
+
+    # Olivia_05 "Ага, давай крем. Чур гостей мажут первыми!" nointeract
+    Olivia_05 "Áno, daj mi krém. Hostia, ale majú predsa prednosť!" nointeract
+
+# game/dialogues/oliviatalk.rpy:327
+translate slovak ran_out_sunscreen_1f5b4651:
+
+    # Max_11 "{m}А крема-то нет! Теперь только до следующего раза...{/m}"
+    Max_11 "{m}A nie je tam žiadny krém! Teraz už len do budúcna...{/m}"
+
+# game/dialogues/oliviatalk.rpy:343
+translate slovak olivia_second_sunscreen_e8fc43ad:
+
+    # Olivia_03 "Давай крем и мы сами намажемся. Или ты думаешь, что мы сделаем это так себе?"
+    Olivia_03 "Daj nám krém a my si ho namažeme sami. Alebo si myslíš, že to urobíme tak tak?"
+
+# game/dialogues/oliviatalk.rpy:344
+translate slovak olivia_second_sunscreen_a6ad108b:
+
+    # Max_02 "Я бы точно сделал это приятнее."
+    Max_02 "Určite by som to urobil príjemnejším."
+
+# game/dialogues/oliviatalk.rpy:345
+translate slovak olivia_second_sunscreen_55b7cb05:
+
+    # Lisa_02 "Да что ты. Поводить руками по спине - большого ума не нужно."
+    Lisa_02 "Nehovor. Na pohyb rúk po chrbte nie je potrebná veľká inteligencia."
+
+# game/dialogues/oliviatalk.rpy:346
+translate slovak olivia_second_sunscreen_9d0bc0c4:
+
+    # Max_09 "Ну как знаете. Моё дело предложить."
+    Max_09 "No, ako vieš. Mojou úlohou je navrhovať."
+
+# game/dialogues/oliviatalk.rpy:356
+translate slovak olivia_second_sunscreen_1e2ac5b8:
+
+    # Lisa_01 "Сейчас я намажу Оливии спинку, чтобы она была защищена от этого яркого солнышка."
+    Lisa_01 "Teraz idem Olívii natrieť chrbát, aby som ju ochránila pred týmto jasným slnkom."
+
+# game/dialogues/oliviatalk.rpy:357
+translate slovak olivia_second_sunscreen_e65ca6c0:
+
+    # Olivia_04 "Ммм... Неплохо, Лиза... У тебя приятные ручки. Мне очень нравится."
+    Olivia_04 "Mmm... To nie je zlé, Líza... Máš jemné ruky. Veľmi sa mi to páči."
+
+# game/dialogues/oliviatalk.rpy:358
+translate slovak olivia_second_sunscreen_c5040609:
+
+    # Max_07 "Решили надо мной поиздеваться, да? Переигрываете..."
+    Max_07 "Snažíš sa zo mňa vysmievať, áno? Prehráš..."
+
+# game/dialogues/oliviatalk.rpy:359
+translate slovak olivia_second_sunscreen_b99ccfbb:
+
+    # Lisa_03 "А вдруг нет! Может, я просто стараюсь и из-за этого Оливии так приятно..."
+    Lisa_03 "Ale čo ak nie! Možno sa len snažím a Olívia sa vďaka tomu cíti tak dobre..."
+
+# game/dialogues/oliviatalk.rpy:360
+translate slovak olivia_second_sunscreen_f9c6e8ee:
+
+    # Olivia_05 "А ты, Макс, хотя бы пока на пальму слазил за веткой и стоял ветерок ей создавал. Жарковато..."
+    Olivia_05 "A ty, Max, aspoň keby si vyliezol na palmu, aby si schytil konár a postavil sa tu a vytvoril vánok. Je horúco..."
+
+# game/dialogues/oliviatalk.rpy:361
+translate slovak olivia_second_sunscreen_35b6a8df:
+
+    # Max_01 "Я бы мог. Да вот только с моим приподнятым настроением лазить по пальмам будет неудобно. Да и поцарапаюсь наверняка."
+    Max_01 "Mohol by som. Až na to, že pri mojej povznesenej nálade by bolo lezenie po palmách nepríjemné. Áno, a pravdepodobne ma poškriabe."
+
+# game/dialogues/oliviatalk.rpy:371
+translate slovak olivia_second_sunscreen_815fee87:
+
+    # Lisa_01 "Моя очередь подставлять спинку! На меня плохо загар ложиться, может хоть этот крем как-то поможет."
+    Lisa_01 "Som na rade, aby som sa otočila chrbtom! Zle sa mi opaľuje, možno tento krém nejako pomôže."
+
+# game/dialogues/oliviatalk.rpy:372
+translate slovak olivia_second_sunscreen_1ef708c1:
+
+    # Olivia_02 "У меня и без загара красивая подружка! Но я всё равно хорошенько тебя намажу."
+    Olivia_02 "Mám krásnu priateľku aj bez opálenia! Ale aj tak ťa poriadne potrápim."
+
+# game/dialogues/oliviatalk.rpy:373
+translate slovak olivia_second_sunscreen_06bfee44:
+
+    # Max_07 "Вы бы хоть разок попробовали для сравнения то, как это делаю я. Я сколько раз натирал Алису кремом и ей нравилось. А ты, Лиза, знаешь какая она привереда."
+    Max_07 "Pre porovnanie by ste mali aspoň raz vyskúšať spôsob, akým to robím ja. Koľkokrát som Alicu natrel krémom a ona to milovala. A ty, Líza, vieš, aká je vyberavá."
+
+# game/dialogues/oliviatalk.rpy:374
+translate slovak olivia_second_sunscreen_4518947a:
+
+    # Lisa_05 "Ну... Врать не буду, мне тоже нравится, как Макс делает мне массаж ног."
+    Lisa_05 "No... Nebudem klamať, aj mne sa páči, ako mi Max masíruje nohy."
+
+# game/dialogues/oliviatalk.rpy:375
+translate slovak olivia_second_sunscreen_d1514b89:
+
+    # Olivia_06 "А почему я узнаю об этом только сейчас??? Когда мы уже намазались..."
+    Olivia_06 "Prečo sa o tom dozvedám až teraz? Keď sme sa natreli..."
+
+# game/dialogues/oliviatalk.rpy:376
+translate slovak olivia_second_sunscreen_eeb3fe5d:
+
+    # Max_03 "Тогда решено. В следующий раз я натру вас кремом. Уверяю, недовольных не будет!"
+    Max_03 "Potom je to vyriešené. Nabudúce ťa natriem krémom. Uisťujem ťa, že nebudeš nespokojná!"
+
+# game/dialogues/oliviatalk.rpy:384
+translate slovak olivia_second_sunscreen_963f890a:
+
+    # Olivia_03 "Ой, я буду очень ждать следующего раза. Только на пальму слазь заранее."
+    Olivia_03 "Budem sa tešiť nabudúce. Predtým len predsa vylez na tú palmu."
+
+# game/dialogues/oliviatalk.rpy:386
+translate slovak olivia_second_sunscreen_ffe6d206:
+
+    # Max_04 "Вот мне делать больше нечего, только по пальмам лазать. Фух, жарко. Пойду я. Отдыхайте, девчонки." nointeract
+    Max_04 "Nemám nič iné na práci, len liezť po palmách. Uff, je horúco. Pôjdem. Oddýchnite si, dievčatá." nointeract
+
+# game/dialogues/oliviatalk.rpy:413
+translate slovak olivia_third_sunscreen_7cb27aba:
+
+    # Olivia_04 "Да, давай... На таком солнцепёке запросто можно сгореть. Чур гостей мажут первыми!" nointeract
+    Olivia_04 "Áno, no tak... Na takomto slnku sa môžeme popáliť. Najskôr majú prednosť hostia!" nointeract
+
+# game/dialogues/oliviatalk.rpy:422
+translate slovak olivia_third_sunscreen_091802d2:
+
+    # Olivia_08 "О да! А у тебя, Макс, руки сильнее, чем может показаться. Можно даже представить, что мы на пляже и с нами персональный массажист."
+    Olivia_08 "Ó áno! A ty, Max, máš silnejšie ruky, než si myslíš. Môžem si dokonca predstaviť, že sme na pláži a máme so sebou osobného maséra."
+
+# game/dialogues/oliviatalk.rpy:423
+translate slovak olivia_third_sunscreen_4c78d340:
+
+    # Max_02 "Ну, если тебя это заводит..."
+    Max_02 "No, ak ťa to vzrušuje..."
+
+# game/dialogues/oliviatalk.rpy:424
+translate slovak olivia_third_sunscreen_18491192:
+
+    # Lisa_01 "О, ну всё... Точно тебе говорю, скоро Макс начнёт распускать руки."
+    Lisa_01 "Aha, to je ono... Hovorím ti, že Max si čoskoro začne rozpúštať ruky."
+
+# game/dialogues/oliviatalk.rpy:425
+translate slovak olivia_third_sunscreen_6f26c3bd:
+
+    # Olivia_07 "Ммм... Как раз то, что мне нужно... В смысле, лёгкий массаж, а не распускание рук. А то я вижу краем глаза, что ты, Макс, уже оживился."
+    Olivia_07 "Mmm... Presne to, čo potrebujem... Myslím tým jemnú masáž, nie len rozťahovanie rúk. Pretože kútikom oka vidím, že ty, Max, si sa už spamätal."
+
+# game/dialogues/oliviatalk.rpy:426
+translate slovak olivia_third_sunscreen_fe76f73a:
+
+    # Max_04 "Это потому что у тебя такая нежная кожа... Я же не сильно давлю?"
+    Max_04 "Je to preto, že tvoja pokožka je taká jemná... Netlačím príliš na pílu, však?"
+
+# game/dialogues/oliviatalk.rpy:434
+translate slovak olivia_third_sunscreen_8cf7b533:
+
+    # Olivia_08 "Охх... Нет... Продолжай, у тебя прекрасно получается. Даже не хочется, чтобы это заканчивалось..."
+    Olivia_08 "Ohhh... Nie... Pokračuj, robíš skvelú prácu. Ani nechcem, aby sa to skončilo..."
+
+# game/dialogues/oliviatalk.rpy:435
+translate slovak olivia_third_sunscreen_023b7317:
+
+    # Max_01 "Это можно устроить."
+    Max_01 "Dá sa to zariadiť."
+
+# game/dialogues/oliviatalk.rpy:436
+translate slovak olivia_third_sunscreen_72d0ca86:
+
+    # Lisa_09 "Эй, голубки, хватит там ворковать, вы здесь не одни! Не забудьте, что меня тоже нужно защитить от солнышка."
+    Lisa_09 "Hej, hrdličky, prestaňte hrkútať, nie ste tu len vy! Nezabudnite, že aj ja sa musím chrániť pred slnkom."
+
+# game/dialogues/oliviatalk.rpy:438
+translate slovak olivia_third_sunscreen_3d44832b:
+
+    # Max_03 "Не забыли. Уже иду!" nointeract
+    Max_03 "Nezabudli sme. Som na ceste!" nointeract
+
+# game/dialogues/oliviatalk.rpy:449
+translate slovak olivia_third_sunscreen_8fb6801f:
+
+    # Olivia_05 "Спасибо тебе, Макс! Позаботься там о своей сестрёнке. А я теперь, с ещё большим наслаждением, буду загорать."
+    Olivia_05 "Ďakujem, Max! Postaraj sa o svoju malú sestru. A ja sa teraz budem s ešte väčším potešením opaľovať."
+
+# game/dialogues/oliviatalk.rpy:450
+translate slovak olivia_third_sunscreen_205a5644:
+
+    # Max_07 "Правильно, Оливия, отдыхай. Ухх... А ты, Лиза, горячая штучка!"
+    Max_07 "Presne tak, Olívia, odpočívaj. Uf... A ty, Lisa, si ale sexi!"
+
+# game/dialogues/oliviatalk.rpy:451
+translate slovak olivia_third_sunscreen_cd49ed9f:
+
+    # Lisa_10 "Только давай без этих вот приставаний. Просто натри мне спинку кремом."
+    Lisa_10 "Ale nerob mi to s tým obťažovaním. Len mi natri chrbát krémom."
+
+# game/dialogues/oliviatalk.rpy:452
+translate slovak olivia_third_sunscreen_8ea166d5:
+
+    # Max_09 "Я вообще-то говорил о том, что у тебя кожа горячая от солнца. А ты всё озабоченный, озабоченный..."
+    Max_09 "V skutočnosti som hovoril o tom, že tvoja pokožka je horúca od slnka. A ty si nadržaná, nadržaná, nadržaná..."
+
+# game/dialogues/oliviatalk.rpy:453
+translate slovak olivia_third_sunscreen_7b97c09a:
+
+    # Olivia_02 "Мне кажется, Макс как раз таки ведёт себя профессионально, хотя мы и ожидаем от него подвоха. У меня к нему нареканий никаких, он молодец."
+    Olivia_02 "Zdá sa mi, že Max sa správa profesionálne, aj keď očakávam trik. Nemám na neho žiadne sťažnosti, je dobrý."
+
+# game/dialogues/oliviatalk.rpy:454
+translate slovak olivia_third_sunscreen_377ad985:
+
+    # Lisa_02 "Хм... И правда. Ммм... Хорошо-то как становится после его рук!"
+    Lisa_02 "Hmmm... V skutočnosti. Mmm... Pod jeho rukami je to také príjemné!"
+
+# game/dialogues/oliviatalk.rpy:463
+translate slovak olivia_third_sunscreen_1a8811c9:
+
+    # Max_07 "А я не знаю, почему вы меня сразу в штыки поставили."
+    Max_07 "A neviem, prečo ma hneď odmietate."
+
+# game/dialogues/oliviatalk.rpy:464
+translate slovak olivia_third_sunscreen_b59a07e7:
+
+    # Olivia_03 "Тебе, Макс, надо становиться массажистом. Будет повод лапать девушек на законных основаниях. Хи-хи... Шутка! Хотя, под такой классный массаж я бы разрешила трогать что угодно."
+    Olivia_03 "Mal by si sa stať masérom, Max. Bude to zámienka na legálne ošahávanie dievčat. Hee-hee... Len žartujem! Hoci pri takejto skvelej masáži by som ti dovolila dotknúť sa čohokoľvek."
+
+# game/dialogues/oliviatalk.rpy:465
+translate slovak olivia_third_sunscreen_6d2943af:
+
+    # Max_05 "Да?! Всё, ловлю на слове!"
+    Max_05 "Áno?! Všetkého, beriem ťa za slovo!"
+
+# game/dialogues/oliviatalk.rpy:466
+translate slovak olivia_third_sunscreen_09b14a55:
+
+    # Lisa_05 "Оливия, ты осторожнее такое говори, а то он возьмёт и убежит к тебе. Правда, я бы сказала, что он уже заканчивает..."
+    Lisa_05 "Olívia, dávaj si pozor, čo hovoríš, lebo sa k tebe vráti. Skutočne by som povedala, že práve končí..."
+
+# game/dialogues/oliviatalk.rpy:467
+translate slovak olivia_third_sunscreen_616823a1:
+
+    # Max_01 "Верно. Я мог бы пошутить про то, что у тебя ещё много чего можно намазать кремом, но не буду. Отдыхайте, девчонки."
+    Max_01 "Pravda. Mohol by som zavtipkovať o tom, že máš ešte veľa vecí, ktoré treba natrieť krémom, ale neurobím to. Oddýchnite si, dievčatá."
+
+# game/dialogues/oliviatalk.rpy:468
+translate slovak olivia_third_sunscreen_bb90cc35:
+
+    # Lisa_01 "Спасибо, Макс."
+    Lisa_01 "Ďakujem, Max."
+
+# game/dialogues/oliviatalk.rpy:498
+translate slovak olivia_repeat_sunscreen_1ea14ad7:
+
+    # Olivia_04 "Да, давай... На таком солнцепёке запросто можно сгореть."
+    Olivia_04 "Áno, no tak... Na takomto slnku sa môžeme popáliť."
+
+# game/dialogues/oliviatalk.rpy:499
+translate slovak olivia_repeat_sunscreen_a4b2409d:
+
+    # Lisa_01 "Только с лёгким массажем! Потому что просто намазаться кремом я и сама могу."
+    Lisa_01 "Ale len s ľahkou masážou! Pretože sa môžem akurát tak natrieť krémom aj sama."
+
+# game/dialogues/oliviatalk.rpy:501
+translate slovak olivia_repeat_sunscreen_6975ead3:
+
+    # Max_04 "Значит, массаж всем! Но по очереди..." nointeract
+    Max_04 "Takže masáž pre každého! Ale postupne..." nointeract
+
+# game/dialogues/oliviatalk.rpy:513
+translate slovak olivia_repeat_sunscreen_olivia_first_b7464d3b:
+
+    # Max_01 "Думаю, в этот раз я начну с Оливии, она всё таки наша гостья!"
+    Max_01 "Myslím, že tentoraz začnem s Olíviou, je to predsa náš hosť!"
+
+# game/dialogues/oliviatalk.rpy:514
+translate slovak olivia_repeat_sunscreen_olivia_first_101ffe02:
+
+    # Lisa_09 "Ну вот... Младшая сестрёнка сразу перестала что-то значить..."
+    Lisa_09 "A je to tu... Malá sestra okamžite prestala niečo znamenať..."
+
+# game/dialogues/oliviatalk.rpy:515
+translate slovak olivia_repeat_sunscreen_olivia_first_8a157314:
+
+    # Olivia_03 "Брось, Лиза, тебя твой любимый братик тоже намажет кремом с таким же усердием, как и меня. Правда, Макс?"
+    Olivia_03 "No tak, Líza, tvoj obľúbený brat ťa natrie rovnako poctivo ako mňa. Však, Max?"
+
+# game/dialogues/oliviatalk.rpy:516
+translate slovak olivia_repeat_sunscreen_olivia_first_59e67e18:
+
+    # Max_03 "Конечно намажу! Хорошо будет всем. Не переживайте."
+    Max_03 "Samozrejme, že áno! Bude to príjemné pre všetkých. Nemaj obavy."
+
+# game/dialogues/oliviatalk.rpy:517
+translate slovak olivia_repeat_sunscreen_olivia_first_ae1f6587:
+
+    # Lisa_10 "Тогда я жду... Главное, надолго не задерживайся."
+    Lisa_10 "Potom čakám... Najdôležitejšie je, aby si sa nezdržiaval príliš dlho."
+
+# game/dialogues/oliviatalk.rpy:519
+translate slovak olivia_repeat_sunscreen_olivia_first_55dcef70:
+
+    # Olivia_07 "У тебя просто бесподобно получается это делать, Макс... Я сейчас начну мурлыкать, как киска. Ммм..."
+    Olivia_07 "Si v tom naozaj dobrý, Max... Za chvíľu začnem vrčať ako mačička. Mmm..."
+
+# game/dialogues/oliviatalk.rpy:520
+translate slovak olivia_repeat_sunscreen_olivia_first_7db7515c:
+
+    # Max_02 "Так сильно нравится?"
+    Max_02 "Páči sa ti to tak veľmi?"
+
+# game/dialogues/oliviatalk.rpy:521
+translate slovak olivia_repeat_sunscreen_olivia_first_ec78591c:
+
+    # Olivia_08 "О да! Ещё как. Если бы у меня был такой старший брат, я бы постоянно млела в его руках совершенно голенькая, как сейчас. Повезло тебе, Лиза..."
+    Olivia_08 "Ó áno! To sa stav. Keby som mala takéhoto staršieho brata, neustále by som sa mu mľaskala v náručí, úplne nahá, ako som teraz. Máš šťastie, Líza..."
+
+# game/dialogues/oliviatalk.rpy:522
+translate slovak olivia_repeat_sunscreen_olivia_first_a0bc94b9:
+
+    # Lisa_13 "Не сильно-то мне и везёт, я вот лежу тут совсем без внимания и вся горю... Макс, иди уже ко мне!"
+    Lisa_13 "Nemám veľa šťastia, ležím tu úplne bez pozornosti a už horím... Max, poď sem!"
+
+# game/dialogues/oliviatalk.rpy:524
+translate slovak olivia_repeat_sunscreen_olivia_first_a0e75b6f:
+
+    # Max_01 "Я почти закончил. Уже иду..." nointeract
+    Max_01 "Už som takmer hotový. Som na ceste..." nointeract
+
+# game/dialogues/oliviatalk.rpy:527
+translate slovak olivia_repeat_sunscreen_olivia_first_e79e19b5:
+
+    # Olivia_04 "Ой, Макс... Не то, чтобы я была против этого, но попку я и сама могу натереть кремом, а вот Лиза уже совсем тебя заждалась."
+    Olivia_04 "Oh, Max... Nie že by som bola proti, ale môžem si natrieť zadok krémom sama, lebo Líza už na teba čaká."
+
+# game/dialogues/oliviatalk.rpy:528
+translate slovak olivia_repeat_sunscreen_olivia_first_13913e65:
+
+    # Max_02 "Да мне не трудно."
+    Max_02 "Pre mňa to nie je problém."
+
+# game/dialogues/oliviatalk.rpy:530
+translate slovak olivia_repeat_sunscreen_olivia_first_1ef925d6:
+
+    # Lisa_12 "Эй! Я тут жду, вообще-то..." nointeract
+    Lisa_12 "Hej! Vlastne tu stále čakám..." nointeract
+
+# game/dialogues/oliviatalk.rpy:536
+translate slovak olivia_repeat_sunscreen_olivia_first_afebe292:
+
+    # Lisa_01 "Давай, Макс, начинай... Моя спинка полностью в твоём распоряжении!"
+    Lisa_01 "No tak, Max, začni... Môj chrbát je celý tvoj!"
+
+# game/dialogues/oliviatalk.rpy:537
+translate slovak olivia_repeat_sunscreen_olivia_first_8fb6801f:
+
+    # Olivia_05 "Спасибо тебе, Макс! Позаботься там о своей сестрёнке. А я теперь, с ещё большим наслаждением, буду загорать."
+    Olivia_05 "Ďakujem, Max! Postaraj sa o svoju malú sestru. A ja sa teraz budem s ešte väčším potešením opaľovať."
+
+# game/dialogues/oliviatalk.rpy:538
+translate slovak olivia_repeat_sunscreen_olivia_first_4029b1fb:
+
+    # Max_02 "Массажист к вашим услугам."
+    Max_02 "Masér k tvojím službám."
+
+# game/dialogues/oliviatalk.rpy:539
+translate slovak olivia_repeat_sunscreen_olivia_first_ae446843:
+
+    # Lisa_05 "Ах, как классно! Под этими руками можно с лёгкостью растаять... Ммм..."
+    Lisa_05 "Ach, ako super! Pod týmito rukami by som sa ľahko roztopila... Mmm..."
+
+# game/dialogues/oliviatalk.rpy:540
+translate slovak olivia_repeat_sunscreen_olivia_first_affa6724:
+
+    # Max_04 "Только растекайся после того, как я закончу."
+    Max_04 "Len sa rozptýl, až keď skončím."
+
+# game/dialogues/oliviatalk.rpy:542
+translate slovak olivia_repeat_sunscreen_olivia_first_d7c0c6a4:
+
+    # Olivia_03 "Как я тебя понимаю, подруга! Лично мне очень нравится вот так вот отдыхать с вами."
+    Olivia_03 "Viem, ako sa cítiš, priateľka moja! Osobne sa mi veľmi páči, keď sa s vami takto stretávam."
+
+# game/dialogues/oliviatalk.rpy:543
+translate slovak olivia_repeat_sunscreen_olivia_first_6ccd663c:
+
+    # Lisa_02 "Если бы Макс при этом постоянно не пялился, куда не нужно, я бы смогла расслабиться на все сто."
+    Lisa_02 "Keby Max neustále nehľadel tam, kam nemá, mohla by som sa úplne uvoľniť."
+
+# game/dialogues/oliviatalk.rpy:544
+translate slovak olivia_repeat_sunscreen_olivia_first_0e089261:
+
+    # Max_02 "Тебе кажется."
+    Max_02 "Zdá sa ti to len."
+
+# game/dialogues/oliviatalk.rpy:549
+translate slovak olivia_repeat_sunscreen_olivia_first_4b3f92d2:
+
+    # Lisa_01 "А ладно, будем считать, что убедил. Давай заканчивай. А то знаю я тебя, скоро начнёшь руки распускать, как с Оливией." nointeract
+    Lisa_01 "Dobre, beriem to ako presvedčivé. Pokračuj a dokonči to. A potom ťa poznám, čoskoro sa ti začnú rozpúšťať ruky ako u Olívií." nointeract
+
+# game/dialogues/oliviatalk.rpy:555
+translate slovak olivia_repeat_sunscreen_olivia_first_328f29ef:
+
+    # Lisa_01 "А ладно, будем считать, что убедил. Можно уже и заканчивать, Макс. Хоть мне и не хочется." nointeract
+    Lisa_01 "Dobre, beriem to ako presvedčivé. Mohli by sme to rovno zabaliť, Max. Aj keď sa mi nechce." nointeract
+
+# game/dialogues/oliviatalk.rpy:558
+translate slovak olivia_repeat_sunscreen_olivia_first_6219e64f:
+
+    # Lisa_10 "Макс, ну ты что делаешь, а? Зачем без предупреждения мой купальник развязываешь?"
+    Lisa_10 "Max, čo to robíš? Prečo mi bez varovania rozopínaš plavky?"
+
+# game/dialogues/oliviatalk.rpy:559
+translate slovak olivia_repeat_sunscreen_olivia_first_dbd83af0:
+
+    # Max_03 "Надо было. Твои завязки мешались."
+    Max_03 "Bolo to potrebné. Tvoje šnúrky prekážali."
+
+# game/dialogues/oliviatalk.rpy:561
+translate slovak olivia_repeat_sunscreen_olivia_first_9062395a:
+
+    # Lisa_09 "Да ну тебя! На грудь мою поглазеть захотел, как всегда... Всё, отстань!" nointeract
+    Lisa_09 "Ale no tak! Chcel sa mi pozrieť na prsia, ako vždy... To je všetko, nechaj ma na pokoji!" nointeract
+
+# game/dialogues/oliviatalk.rpy:571
+translate slovak olivia_repeat_sunscreen_lisa_first_daff6af3:
+
+    # Max_01 "Думаю, в этот раз я начну с Лизы. Мне хочется побыстрее защитить её белоснежную спинку от солнца!"
+    Max_01 "Myslím, že tentoraz začnem s Lízou. Mám chuť jej snehobiely chrbát čo najrýchlejšie ochrániť pred slnkom!"
+
+# game/dialogues/oliviatalk.rpy:572
+translate slovak olivia_repeat_sunscreen_lisa_first_afebe292:
+
+    # Lisa_01 "Давай, Макс, начинай... Моя спинка полностью в твоём распоряжении!"
+    Lisa_01 "No tak, Max, začni... Môj chrbát je celý tvoj!"
+
+# game/dialogues/oliviatalk.rpy:573
+translate slovak olivia_repeat_sunscreen_lisa_first_f66767c3:
+
+    # Olivia_03 "Я совсем не против, тем более, что я всё равно буду следующей. Ты ведь намажешь меня кремом так же усердно, как и свою любимую сестрёнку, да, Макс?"
+    Olivia_03 "Vôbec mi to nevadí, najmä preto, že aj tak budem ďalšia. Chystáš sa ma nakrémovať rovnako tvrdo ako svoju obľúbenú sestru, však, Max?"
+
+# game/dialogues/oliviatalk.rpy:574
+translate slovak olivia_repeat_sunscreen_lisa_first_59e67e18:
+
+    # Max_03 "Конечно намажу! Хорошо будет всем. Не переживайте."
+    Max_03 "Samozrejme, že budem! Bude to príjemné pre všetkých. Nemaj obavy."
+
+# game/dialogues/oliviatalk.rpy:575
+translate slovak olivia_repeat_sunscreen_lisa_first_82a306cc:
+
+    # Olivia_06 "Ох, как жарко! Я жду не дождусь тебя, Макс..."
+    Olivia_06 "Ach, to je také vzrušujúce! Nemôžem sa na teba dočkať, Max..."
+
+# game/dialogues/oliviatalk.rpy:577
+translate slovak olivia_repeat_sunscreen_lisa_first_ae446843:
+
+    # Lisa_05 "Ах, как классно! Под этими руками можно с лёгкостью растаять... Ммм..."
+    Lisa_05 "Ach, ako super! Pod týmito rukami by som sa ľahko roztopila... Mmm..."
+
+# game/dialogues/oliviatalk.rpy:578
+translate slovak olivia_repeat_sunscreen_lisa_first_affa6724:
+
+    # Max_04 "Только растекайся после того, как я закончу."
+    Max_04 "Len sa rozptýl, až keď skončím."
+
+# game/dialogues/oliviatalk.rpy:579
+translate slovak olivia_repeat_sunscreen_lisa_first_29095313:
+
+    # Lisa_02 "Если бы ты при этом постоянно не пялился, куда не нужно, я бы смогла расслабиться на все сто."
+    Lisa_02 "Keby si neustále nehľadel tam, kam nemáš, mohla by som byť stále uvoľnená."
+
+# game/dialogues/oliviatalk.rpy:580
+translate slovak olivia_repeat_sunscreen_lisa_first_cc38c0c0:
+
+    # Olivia_02 "Как я тебя понимаю, подруга! Макс, ты там скоро освободишься? Я уже не могу..."
+    Olivia_02 "Viem, ako sa cítiš, priateľka moja! Max, budeš čoskoro voľný? Už nemôžem..."
+
+# game/dialogues/oliviatalk.rpy:582
+translate slovak olivia_repeat_sunscreen_lisa_first_a0e75b6f:
+
+    # Max_01 "Я почти закончил. Уже иду..." nointeract
+    Max_01 "Už som takmer hotový. Som na ceste..." nointeract
+
+# game/dialogues/oliviatalk.rpy:585
+translate slovak olivia_repeat_sunscreen_lisa_first_6219e64f:
+
+    # Lisa_10 "Макс, ну ты что делаешь, а? Зачем без предупреждения мой купальник развязываешь?"
+    Lisa_10 "Max, čo to robíš? Prečo mi bez varovania rozopínaš plavky?"
+
+# game/dialogues/oliviatalk.rpy:586
+translate slovak olivia_repeat_sunscreen_lisa_first_dbd83af0:
+
+    # Max_03 "Надо было. Твои завязки мешались."
+    Max_03 "Bolo to potrebné. Tvoje šnúrky prekážali."
+
+# game/dialogues/oliviatalk.rpy:588
+translate slovak olivia_repeat_sunscreen_lisa_first_9062395a:
+
+    # Lisa_09 "Да ну тебя! На грудь мою поглазеть захотел, как всегда... Всё, отстань!" nointeract
+    Lisa_09 "Ale no tak! Chcel sa mi pozrieť na prsia, ako vždy... To je všetko, nechaj ma na pokoji!" nointeract
+
+# game/dialogues/oliviatalk.rpy:597
+translate slovak olivia_repeat_sunscreen_lisa_first_cca31528:
+
+    # Olivia_04 "Вот я и дождалась! Делай с моей спинкой всё, что потребуется... Лиза, тебе понравился массаж?"
+    Olivia_04 "Tak som sa dočkala! Urob s mojím chrbtom čokoľvek, čo potrebuješ... Líza, páčila sa ti masáž?"
+
+# game/dialogues/oliviatalk.rpy:601
+translate slovak olivia_repeat_sunscreen_lisa_first_3df7378b:
+
+    # Lisa_01 "Если бы Макс мне купальник не развязал, было бы шикарно. Хотя, не буду обманывать, это было потрясно! Спасибо, Макс!"
+    Lisa_01 "Keby mi Max nerozviazal plavky, bolo by to nádherné. Nebudem však klamať, bolo to úžasné! Ďakujem, Max!"
+
+# game/dialogues/oliviatalk.rpy:604
+translate slovak olivia_repeat_sunscreen_lisa_first_3d396ff9:
+
+    # Lisa_05 "Это было потрясно! Теперь я могу загорать без всякой опаски сгореть на солнце... Спасибо, Макс!"
+    Lisa_05 "Bolo to úžasné! Teraz sa môžem opaľovať bez strachu, že sa spálim... Ďakujem, Max!"
+
+# game/dialogues/oliviatalk.rpy:606
+translate slovak olivia_repeat_sunscreen_lisa_first_4029b1fb:
+
+    # Max_02 "Массажист к вашим услугам."
+    Max_02 "Masér k tvojím službám."
+
+# game/dialogues/oliviatalk.rpy:607
+translate slovak olivia_repeat_sunscreen_lisa_first_55dcef70:
+
+    # Olivia_07 "У тебя просто бесподобно получается это делать, Макс... Я сейчас начну мурлыкать, как киска. Ммм..."
+    Olivia_07 "Si v tom naozaj dobrý, Max... Za chvíľu začnem vrčať ako mačička. Mmm..."
+
+# game/dialogues/oliviatalk.rpy:608
+translate slovak olivia_repeat_sunscreen_lisa_first_7db7515c:
+
+    # Max_02 "Так сильно нравится?"
+    Max_02 "Páči sa ti to tak veľmi?"
+
+# game/dialogues/oliviatalk.rpy:610
+translate slovak olivia_repeat_sunscreen_lisa_first_ec78591c:
+
+    # Olivia_08 "О да! Ещё как. Если бы у меня был такой старший брат, я бы постоянно млела в его руках совершенно голенькая, как сейчас. Повезло тебе, Лиза..."
+    Olivia_08 "Ó áno! To sa stav. Keby som mala takéhoto staršieho brata, neustále by som sa mu mľaskala v náručí, úplne nahá, ako som teraz. Máš šťastie, Líza..."
+
+# game/dialogues/oliviatalk.rpy:611
+translate slovak olivia_repeat_sunscreen_lisa_first_c33a4c18:
+
+    # Lisa_02 "Когда везёт, когда нет... Макс у нас любит попроказничать. Хоть бы немножко меру знал."
+    Lisa_02 "Keď máš šťastie, keď nie... Max je tak trochu žartovník. Mal by si vedieť niečo o striedmosti."
+
+# game/dialogues/oliviatalk.rpy:612
+translate slovak olivia_repeat_sunscreen_lisa_first_31fd4e12:
+
+    # Max_03 "Зато не скучаем!"
+    Max_03 "Ale ja sa nenudím!"
+
+# game/dialogues/oliviatalk.rpy:617
+translate slovak olivia_repeat_sunscreen_lisa_first_5291ca1f:
+
+    # Olivia_05 "И здорово, что не скучаете! Пора заканчивать, Макс. Руки у тебя приятные, но, как я увидела по Лизе, любят попроказничать, а мне сейчас так хорошо, что со мной можно делать всё, что захочется." nointeract
+    Olivia_05 "A je skvelé, že sa nenudíš! Je čas to ukončiť, Max. Tvoje ruky sú príjemné, ale ako som videla na Líze, rady zlobia, a ja sa teraz cítim tak dobre, že si so mnou môžeš robiť, čo chceš." nointeract
+
+# game/dialogues/oliviatalk.rpy:624
+translate slovak olivia_repeat_sunscreen_lisa_first_b6f5e255:
+
+    # Olivia_05 "И здорово, что не скучаете! Пора заканчивать, Макс. Руки у тебя приятные, а мне сейчас так хорошо, что со мной можно делать всё, что захочется. Я себя знаю..." nointeract
+    Olivia_05 "A je skvelé, že sa nenudíš! Je čas to ukončiť, Max. Tvoje ruky sú príjemné, a teraz sa cítim tak dobre, že si so mnou môžeš robiť, čo chceš. Poznám sa..." nointeract
+
+# game/dialogues/oliviatalk.rpy:627
+translate slovak olivia_repeat_sunscreen_lisa_first_a5fc1b9b:
+
+    # Olivia_04 "Ой, Макс... Не то, чтобы я была против этого, но попку я и сама могу натереть кремом."
+    Olivia_04 "Ach, Max... Nie že by som bol proti, ale krém si môžem natrieť na zadok sama."
+
+# game/dialogues/oliviatalk.rpy:628
+translate slovak olivia_repeat_sunscreen_lisa_first_13913e65:
+
+    # Max_02 "Да мне не трудно."
+    Max_02 "Pre mňa to nie je problém."
+
+# game/dialogues/oliviatalk.rpy:630
+translate slovak olivia_repeat_sunscreen_lisa_first_9241cea4:
+
+    # Olivia_03 "Я заметила. Но хорошего - понемножку. А то при Лизе как-то неудобно." nointeract
+    Olivia_03 "Všimla som si. Ale dobre - kúsok po kúsku. A potom s Lízou je to nejako nepríjemné." nointeract
+
+# game/dialogues/oliviatalk.rpy:641
+translate slovak olivia_repeat_sunscreen_end_be248b37:
+
+    # Lisa_02 "Мы тебе очень благодарны, Макс. Прекрасный массаж!"
+    Lisa_02 "Sme ti veľmi vďačné, Max. Krásna masáž!"
+
+# game/dialogues/oliviatalk.rpy:642
+translate slovak olivia_repeat_sunscreen_end_2909abdc:
+
+    # Olivia_02 "Да, спасибо тебе!"
+    Olivia_02 "Áno, ďakujem!"
+
+# game/dialogues/oliviatalk.rpy:644
+translate slovak olivia_repeat_sunscreen_end_22bbc860:
+
+    # Max_01 "Не за что. Отдыхайте, девчонки." nointeract
+    Max_01 "Nemáte za čo. Oddýchnite si, dievčatá." nointeract
+
+# game/dialogues/oliviatalk.rpy:671
+translate slovak olivia_give_sunscreen_5948b939:
+
+    # Olivia_03 "Да, давай... На таком солнцепёке запросто можно сгореть. А ты нас разве не намажешь?"
+    Olivia_03 "Áno, no tak... Na takomto slnku sa môžeme popáliť. Nechystáš sa nás natrieť?"
+
+# game/dialogues/oliviatalk.rpy:672
+translate slovak olivia_give_sunscreen_33f283e4:
+
+    # Max_04 "Сегодня давайте сами... А то у меня руки устали. Им тоже нужно отдыхать."
+    Max_04 "Dnes to urobíte sami... Pretože mám unavené ruky. Aj oni si potrebujú oddýchnuť."
+
+# game/dialogues/oliviatalk.rpy:673
+translate slovak olivia_give_sunscreen_243c5d9b:
+
+    # Lisa_02 "Если это и правда, то я не хочу знать, отчего они у тебя устали. Мы и сами прекрасно можем намазаться."
+    Lisa_02 "Ak je to pravda, nechcem vedieť, čo ich unavuje. Dokážeme sa dokonale namazať."
+
+# game/dialogues/oliviatalk.rpy:674
+translate slovak olivia_give_sunscreen_972fe205:
+
+    # Max_02 "Вот и хорошо. Но я за вами смотрю, а то начнёте тут натирать что-нибудь интересное..."
+    Max_02 "To je dobré. Ale ja ťa sledujem, inak tu začneš trieť niečo zaujímavé..."
+
+# game/dialogues/oliviatalk.rpy:676
+translate slovak olivia_give_sunscreen_a4e5e197:
+
+    # Lisa_01 "Мечтай, Макс! Сейчас я намажу Оливии спинку, чтобы она была защищена от этого яркого солнышка."
+    Lisa_01 "Snívaj, Max! Teraz idem Olívii natrieť chrbát, aby som ju ochránila pred týmto jasným slnkom."
+
+# game/dialogues/oliviatalk.rpy:677
+translate slovak olivia_give_sunscreen_ee0e933f:
+
+    # Olivia_04 "Ммм... Неплохо, Лиза... У тебя приятные ручки. Мне очень нравится. Не такие сильные, как у твоего брата, но массируешь ты ими прекрасно."
+    Olivia_04 "Mmm... To nie je zlé, Líza... Máš jemné ruky. Veľmi sa mi to páči. Nie si taká silná ako tvoj brat, ale masíruješ krásne."
+
+# game/dialogues/oliviatalk.rpy:678
+translate slovak olivia_give_sunscreen_c5040609:
+
+    # Max_07 "Решили надо мной поиздеваться, да? Переигрываете..."
+    Max_07 "Snažíš sa zo mňa vysmievať, áno? Prehráš..."
+
+# game/dialogues/oliviatalk.rpy:679
+translate slovak olivia_give_sunscreen_b99ccfbb:
+
+    # Lisa_03 "А вдруг нет! Может, я просто стараюсь и из-за этого Оливии так приятно..."
+    Lisa_03 "Ale čo ak nie! Možno sa len snažím a Olívia sa vďaka tomu cíti tak dobre..."
+
+# game/dialogues/oliviatalk.rpy:680
+translate slovak olivia_give_sunscreen_5356ae3f:
+
+    # Olivia_05 "Но я всё равно не отказалась бы от массажа в исполнении Макса. Остаётся надеяться, что в следующий раз он не откажется нас намазать."
+    Olivia_05 "Ale aj tak by som nemala nič proti masáži, ktorú by mi robil Max. Môžeme len dúfať, že nabudúce nás neodmietne natrieť."
+
+# game/dialogues/oliviatalk.rpy:681
+translate slovak olivia_give_sunscreen_8192759f:
+
+    # Max_03 "Очень может быть. Говоря по-правде, наблюдать за вами со стороны тоже классно."
+    Max_03 "Veľmi pravdepodobne. Pravdupovediac, sledovať vás z boku je tiež fajn."
+
+# game/dialogues/oliviatalk.rpy:683
+translate slovak olivia_give_sunscreen_bb885b95:
+
+    # Lisa_01 "Моя очередь подставлять спинку! На меня плохо загар ложиться, но благодаря этому крему я могу не переживать, что сгорю на солнце."
+    Lisa_01 "Som na rade, aby som sa otočila chrbtom! Neopaľujem sa dobre, ale s týmto krémom sa nemusím obávať spálenia."
+
+# game/dialogues/oliviatalk.rpy:684
+translate slovak olivia_give_sunscreen_1ef708c1:
+
+    # Olivia_02 "У меня и без загара красивая подружка! Но я всё равно хорошенько тебя намажу."
+    Olivia_02 "Mám krásnu priateľku bez opálenia! Ale aj tak ťa poriadne potrápim."
+
+# game/dialogues/oliviatalk.rpy:685
+translate slovak olivia_give_sunscreen_82b536c4:
+
+    # Max_05 "Без Лизиного купальника это было бы невероятное шоу! Я бы для этого даже научился двойному массажу. По руке на каждую."
+    Max_05 "Bez Líziných plaviek by to bola neuveriteľná šou! Dokonca by som sa kvôli tomu naučil dvojitú masáž. Pre každú jedna ruka."
+
+# game/dialogues/oliviatalk.rpy:686
+translate slovak olivia_give_sunscreen_fc489638:
+
+    # Lisa_05 "Какой у меня братик фантазёр. Как будто нам будет достаточно только одной твоей руки... Мы хотим, чтобы нас массировали двумя руками. Так ведь, Оливия?"
+    Lisa_05 "Môj brat je fantastický. Akoby nám stačila len jedna tvoja ruka... Chceme byť masírované oboma rukami. Je to tak, Olívia?"
+
+# game/dialogues/oliviatalk.rpy:687
+translate slovak olivia_give_sunscreen_07d730de:
+
+    # Olivia_06 "Конечно! Если назвался массажистом, то будь добр, массируй, как надо. А то устал он..."
+    Olivia_06 "Samozrejme! Ak si hovoríš masér, rob to poriadne. A ty si bol unavený..."
+
+# game/dialogues/oliviatalk.rpy:689
+translate slovak olivia_give_sunscreen_0860fa68:
+
+    # Max_01 "Тогда, до следующего раза, девчонки." nointeract
+    Max_01 "Tak teda, dievčatá, do budúcna." nointeract
+
+translate slovak strings:
+
+    # game/dialogues/oliviatalk.rpy:317
+    old "{i}устроиться поудобнее и наблюдать{/i}"
+    new "{i}sadnúť si a sledovať{/i}"
+
+    # game/dialogues/oliviatalk.rpy:412
+    old "{i}массировать Оливию кремом для загара{/i}"
+    new "{i}masírovať Olíviu opaľovacím krémom{/i}"
+
+    # game/dialogues/oliviatalk.rpy:437
+    old "{i}массировать Лизу кремом для загара{/i}"
+    new "{i}masírovať Lízu opaľovacím krémom{/i}"
+
+    # game/dialogues/oliviatalk.rpy:500
+    old "{i}сначала делать массаж Оливии{/i}"
+    new "{i}najprv namasírovať Oliviu.{/i}"
+
+    # game/dialogues/oliviatalk.rpy:500
+    old "{i}сначала делать массаж Лизе{/i}"
+    new "{i}najprv namasírovať Lízu{/i}"
+
+    # game/dialogues/oliviatalk.rpy:523
+    old "{i}обнаглеть и массировать Оливии попку{/i}"
+    new "{i}byť nehanebný a masírovať Olíviin zadok{/i}"
+
+    # game/dialogues/oliviatalk.rpy:523
+    old "{i}делать массаж Лизе{/i}"
+    new "{i}masírovať Lízu{/i}"
+
+    # game/dialogues/oliviatalk.rpy:554
+    old "{i}развязать Лизе купальник{/i}"
+    new "{i}rozviazať Líze plavky{/i}"
+
+    # game/dialogues/oliviatalk.rpy:581
+    old "{i}делать массаж Оливии{/i}"
+    new "{i}masírovať olíviu{/i}"
+
+# TODO: Translation updated at 2022-01-27 20:47
+
+# game/events/olivia.rpy:986
+translate slovak olivia_ann_meeting_72a9dc2e:
+
+    # Ann_00 "Что-то случилось, дорогой?"
+    Ann_00 "Niečo sa stalo, zlatko?"
+
+# game/events/olivia.rpy:987
+translate slovak olivia_ann_meeting_61ee095e:
+
+    # Max_01 "Пока что нет, но к нам в гости сейчас должна прийти одноклассница Лизы."
+    Max_01 "Ešte nie, ale Lízina spolužiačka by nás mala prísť navštíviť."
+
+# game/events/olivia.rpy:988
+translate slovak olivia_ann_meeting_12ec5499:
+
+    # Ann_04 "Ой! У Лизы подружка появилась? Это очень хорошо."
+    Ann_04 "Au! Má Líza priateľku? To je veľmi dobré."
+
+# game/events/olivia.rpy:989
+translate slovak olivia_ann_meeting_a910fad5:
+
+    # Max_04 "Да и она уже была у нас в гостях. Днём после школы..."
+    Max_04 "A už nás navštívila. Poobede po škole..."
+
+# game/events/olivia.rpy:995
+translate slovak olivia_ann_meeting_0eda89f8:
+
+    # Lisa_01 "Мама, знакомься, это Оливия, моя одноклассница!"
+    Lisa_01 "Mama, spoznaj Olíviu, moja spolužiačka!"
+
+# game/events/olivia.rpy:996
+translate slovak olivia_ann_meeting_fb8ee967:
+
+    # Olivia_04 "Здравствуйте! Мне очень приятно с вами познакомиться. У вас потрясающая дочь!"
+    Olivia_04 "Dobrý deň! Rada Vás spoznávam. Máte úžasnú dcéru!"
+
+# game/events/olivia.rpy:1004
+translate slovak olivia_ann_meeting_3cbfb1ec:
+
+    # Ann_08 "Здравствуй, Оливия. Мне тоже приятно. А ещё я очень рада, что Лиза наконец-то нашла себе подругу. А то новое место, сама понимаешь..."
+    Ann_08 "Ahoj, Olívia. Som tiež potešená. Som veľmi rada, že si Líza konečne našla priateľku. A to nové miesto, vieš..."
+
+# game/events/olivia.rpy:1005
+translate slovak olivia_ann_meeting_e555d37c:
+
+    # Olivia_05 "Я тоже рада. У вас такой большой, красивый и стильный дом... И такой классный бассейн!"
+    Olivia_05 "Aj ja som rada. Máte taký veľký, krásny a štýlový dom... A taký skvelý bazén!"
+
+# game/events/olivia.rpy:1006
+translate slovak olivia_ann_meeting_7ba98055:
+
+    # Lisa_02 "Мам, мы с Оливией сейчас переоденемся и будем в бассейне плескаться, ты не против?"
+    Lisa_02 "Mami, Olívia a ja sa teraz prezlečieme a okúpeme sa v bazéne, vadilo by ti to?"
+
+# game/events/olivia.rpy:1007
+translate slovak olivia_ann_meeting_ed750a19:
+
+    # Ann_02 "Конечно, девочки, развлекайтесь сколько угодно."
+    Ann_02 "Samozrejme, dievčatá, bavte sa, koľko chcete."
+
+# game/events/olivia.rpy:1008
+translate slovak olivia_ann_meeting_bf2b83f9:
+
+    # Olivia_03 "Привет, Макс! Рада тебя видеть."
+    Olivia_03 "Ahoj Max! Rada ťa vidím."
+
+# game/events/olivia.rpy:1009
+translate slovak olivia_ann_meeting_0b901396:
+
+    # Max_02 "Привет, Оливия! Хорошо, что заглянула."
+    Max_02 "Ahoj Olivia! Je dobré, že si sa pozrela."
+
+# game/events/olivia.rpy:1016
+translate slovak olivia_ann_meeting_2bb1adf1:
+
+    # Ann_05 "Девочка, вроде, хорошая. Ладно, пусть развлекаются, а я пойду отдохну к себе."
+    Ann_05 "To dievča je dobré. Dobre, nechaj ich zabaviť sa a ja si pôjdem oddýchnuť."
+
+# game/events/olivia.rpy:1017
+translate slovak olivia_ann_meeting_8a119134:
+
+    # Max_07 "Не торопись, мам. Подожди немного. Тебе нужно кое-что увидеть."
+    Max_07 "Urob si čas, mami. Počkaj chvíľu. Musíš niečo vidieť."
+
+# game/events/olivia.rpy:1018
+translate slovak olivia_ann_meeting_6de9e9c0:
+
+    # Ann_07 "Хорошо. Ну, а тебе, Макс, как Оливия, нравится?"
+    Ann_07 "Ok. No, ty, Max, ako Olívia?"
+
+# game/events/olivia.rpy:1019
+translate slovak olivia_ann_meeting_87a80392:
+
+    # Max_01 "Да, она ничего такая. Правда, у неё есть... некоторая особенность... Она натуристка. Знаешь, кто это такие?"
+    Max_01 "Áno, ona nie je nič také. Má však... niektoré zvláštnosti... Je to naturistka. Vieš, kto sú?"
+
+# game/events/olivia.rpy:1020
+translate slovak olivia_ann_meeting_e53b9053:
+
+    # Ann_02 "Хм... Звучит, как уклон во что-то натуральное. Может, это связано с питанием?"
+    Ann_02 "Hmm... Znie to ako zaujatosť do niečoho prirodzeného. Môže to mať niečo spoločné s výživou?"
+
+# game/events/olivia.rpy:1021
+translate slovak olivia_ann_meeting_ecc99f9b:
+
+    # Max_04 "Сейчас Оливия вернётся и объяснит, кто это такие. А вот как раз и они..."
+    Max_04 "Olívia sa vráti a vysvetlí, kto sú. A tu sú..."
+
+# game/events/olivia.rpy:1029
+translate slovak olivia_ann_meeting_2245b664:
+
+    # Ann_15 "Оливия, а где твой купальник? Лиза, ты почему не дала своей подруге купальник, хотя бы тот, чёрный?"
+    Ann_15 "Olívia, kde máš plavky? Líza, prečo si nedala svojej priateľke plavky, aspoň také, ktoré boli čierne?"
+
+# game/events/olivia.rpy:1030
+translate slovak olivia_ann_meeting_7eac38fc:
+
+    # Olivia_02 "Да вы не переживайте на этот счёт! Я совсем не стесняюсь. У меня родители натуристы и мы дома все ходим голые, я привыкла!"
+    Olivia_02 "Nerobte si s tým starosti! Vôbec sa nehanbím. Moji rodičia sú naturisti a všetci chodíme nahí doma, som na to zvyknutá!"
+
+# game/events/olivia.rpy:1031
+translate slovak olivia_ann_meeting_8dfdf625:
+
+    # Max_03 "У них не семья, а праздник какой-то!"
+    Max_03 "Nemajú rodinu, ale nejakú dovolenku!"
+
+# game/events/olivia.rpy:1039
+translate slovak olivia_ann_meeting_2bb03421:
+
+    # Ann_14 "Ну, я рада, что ты не стесняешься, но вот я стесняюсь за Макса... Кажется, он уже отреагировал в своём стиле... У нас он единственный мужчина в доме, поэтому может временами... напрягаться."
+    Ann_14 "No, som rada, že nie si plachá, ale hanbím sa za Maxa... Zdá sa, že už reagoval vo svojom vlastnom štýle... Máme ho jediného muža v dome, takže niekedy možno... namáha sám seba."
+
+# game/events/olivia.rpy:1040
+translate slovak olivia_ann_meeting_71cb94fe:
+
+    # Olivia_03 "Да это нормально! У папы такая же реакция была, когда мы вместе с ним купались или загорали, пока он ещё был с нами... Так что, для меня это обычное дело!"
+    Olivia_03 "Áno, to je v poriadku! Otec mal rovnakú reakciu, keď sme s ním plávali alebo sa opaľovali, keď bol ešte s nami. Takže je to pre mňa ako zvyčajne!"
+
+# game/events/olivia.rpy:1041
+translate slovak olivia_ann_meeting_e64f98f3:
+
+    # Ann_13 "Это так... странно, Оливия... А где твой папа сейчас?"
+    Ann_13 "Je to tak... Divné, Olívia... Kde je teraz tvoj otec?"
+
+# game/events/olivia.rpy:1042
+translate slovak olivia_ann_meeting_65d93586:
+
+    # Olivia_01 "Ну... Они с мамой поругались уже давненько и сейчас он с нами не живёт. А ещё у нас сломался бассейн и его некому чинить... Можно я к вам буду приходить купаться?"
+    Olivia_01 "No... S mamou sa už dávno pohádali a teraz s nami nebýva. A máme rozbitý bazén a nie je nikto, kto by to opravil... Môžem za Vami prísť a plávať?"
+
+# game/events/olivia.rpy:1043
+translate slovak olivia_ann_meeting_0b55a823:
+
+    # Lisa_03 "Мам, скажи да, скажи да!"
+    Lisa_03 "Mami, povedz áno, povedz áno!"
+
+# game/events/olivia.rpy:1044
+translate slovak olivia_ann_meeting_902a71d5:
+
+    # Ann_01 "Конечно, Оливия. Если тебя не смущает Макс, который только на тебя и пялится, то я не против. Можешь приходить в любое время! Ну а я пойду по делам, а то уже достаточно позагорала. Развлекайтесь!"
+    Ann_01 "Samozrejme, Olívia. Ak sa nehanbíš pred Maxom, ktorý sa na teba len pozerá, potom mi to nevadí. Môžeš prísť kedykoľvek! No, pôjdem niečo robiť, lebo mám dosť opaľovania. Bavte sa!"
+
+# game/events/olivia.rpy:1052
+translate slovak olivia_ann_meeting_3d9d7b14:
+
+    # Max_02 "Как мне кажется, всё прошло довольно хорошо."
+    Max_02 "Myslím, že to dopadlo celkom dobre."
+
+# game/events/olivia.rpy:1053
+translate slovak olivia_ann_meeting_11a6a1b3:
+
+    # Olivia_06 "Думаешь, твоя мама разрешит нам собираться вместе по ночам?"
+    Olivia_06 "Myslíš, že nás tvoja mama nechá stretávať sa v noci?"
+
+# game/events/olivia.rpy:1054
+translate slovak olivia_ann_meeting_02812b71:
+
+    # Max_07 "Даже если и нет, то я смогу её уговорить. Ну, или как минимум, очень постараюсь уговорить."
+    Max_07 "Aj keby nie, môžem ju presvedčiť. No, aspoň sa budem veľmi snažiť presvedčiť ju."
+
+# game/events/olivia.rpy:1055
+translate slovak olivia_ann_meeting_512f166a:
+
+    # Lisa_13 "Ты, главное, про меня не забудь в этих уговорах. А то мама запросто может сказать, что я ещё маленькая, хотя с Оливией мы ровесницы."
+    Lisa_13 "A čo je najdôležitejšie, nezabudni na mňa v týchto presviedčaniach. V opačnom prípade môže naša matka ľahko povedať, že som stále malá, aj keď sme v rovnakom veku ako Olívia."
+
+# game/events/olivia.rpy:1056
+translate slovak olivia_ann_meeting_1a2cd1ba:
+
+    # Max_09 "Не знаю, не знаю, Лиза... Это уже будет непросто. Вот если бы вы с Оливией намазали друг друга кремом для загара, то я бы мог и тебя отстоять перед мамой."
+    Max_09 "Neviem, neviem, Líza... Nebude to ľahké. Ak by ste si s Olíviou navzájom rozmazali opaľovací krém, mohol by som ťa brániť pred tvojou matkou."
+
+# game/events/olivia.rpy:1057
+translate slovak olivia_ann_meeting_d996de1a:
+
+    # Olivia_03 "Ах вот как, да? Это мы запросто!"
+    Olivia_03 "Oh dobre, huh? Je to ľahké!"
+
+# game/events/olivia.rpy:1058
+translate slovak olivia_ann_meeting_41617c79:
+
+    # Lisa_02 "У тебя-то этот самый крем хоть есть?"
+    Lisa_02 "Máš vôbec tento krém?"
+
+# game/events/olivia.rpy:1064
+translate slovak olivia_ann_meeting_76e86aa6:
+
+    # Max_10 "Сейчас, к сожалению нет, но я обязательно его куплю."
+    Max_10 "Bohužiaľ nie, ale určite ho kúpim."
+
+# game/events/olivia.rpy:1065
+translate slovak olivia_ann_meeting_77380e2d:
+
+    # Lisa_01 "Очень жаль, Макс. Вот будет крем - мы и намажемся специально для тебя."
+    Lisa_01 "Škoda, Max. Ak bude krém - namažeme sa špeciálne pre teba."
+
+# game/events/olivia.rpy:1072
+translate slovak olivia_ann_meeting_4d4507bf:
+
+    # Max_11 "{m}Эх... Такой момент упустил... Теперь только до следующего раза.{/m}"
+    Max_11 "{m}Chýbala mi taká chvíľa... Teraz už len nabudúce.{/m}"
+
+# game/events/olivia.rpy:1076
+translate slovak olivia_ann_meeting_32d70104:
+
+    # Max_05 "Разумеется есть! Могу даже сам вас намазать, руки у меня почти не заняты."
+    Max_05 "Samozrejme, že je! Môžem ťa dokonca natrieť sám, moje ruky nie sú takmer obsadené."
+
+# game/events/olivia.rpy:1077
+translate slovak olivia_ann_meeting_c7b26a60:
+
+    # Lisa_01 "О нет... За крем, конечно, спасибо, но от твоей помощи мы как-нибудь воздержимся, правда Оливия? Не хватало, чтобы ты свои озабоченные ручонки распускал."
+    Lisa_01 "Oh nie... Ďakujem za krém, samozrejme, ale nejako sa zdržíme tvojej pomoci, však Olívia? Nestačilo, aby si otvoril svoje malé nervózne ručičky."
+
+# game/events/olivia.rpy:1079
+translate slovak olivia_ann_meeting_2aec5f80:
+
+    # Olivia_05 "Ага, мы и сами прекрасно справимся. Давай крем. Чур гостей мажут первыми!" nointeract
+    Olivia_05 "Áno, môžeme to urobiť dobre. Dajme si krém. Hostia majú prednosť!" nointeract
+
+# game/events/olivia.rpy:1098
+translate slovak olivia_lisa_sunscreen_0_916ccd9a:
+
+    # Lisa_05 "Я же ведь помажу только спину, Оливия? Остальное ты сама..."
+    Lisa_05 "Natriem ti len chrbát, Olívia? Ostatné je na tebe..."
+
+# game/events/olivia.rpy:1099
+translate slovak olivia_lisa_sunscreen_0_4b7517eb:
+
+    # Max_08 "Э-э-э! Какую только спину?! Тебе нужно натереть кремом всё её тело, Лиза."
+    Max_08 "Uhh! Aký chrbát?! Musíš jej natrieť celé telo krémom, Líza."
+
+# game/events/olivia.rpy:1100
+translate slovak olivia_lisa_sunscreen_0_9a51e79c:
+
+    # Olivia_03 "Ой, Макс, вот ты разбежался. Может ты тогда за фотоаппаратом или видеокамерой по такому случаю сразу сбегаешь?"
+    Olivia_03 "Ach, Max, tak vidíš. Prečo si pri takejto príležitosti nezabehneš po fotoaparát alebo kameru?"
+
+# game/events/olivia.rpy:1101
+translate slovak olivia_lisa_sunscreen_0_63f097d0:
+
+    # Max_03 "Что-то мне подсказывает, что пока я буду бегать, вы уже закончите. Я лучше останусь здесь, чтобы ничего не пропустить."
+    Max_03 "Niečo mi hovorí, že kým budem bežať, ty už budeš hotová. Radšej zostanem tu, aby som o nič neprišiel."
+
+# game/events/olivia.rpy:1102
+translate slovak olivia_lisa_sunscreen_0_62a4a929:
+
+    # Lisa_02 "Эх, а мы ведь могли бы и подождать."
+    Lisa_02 "Mohli sme predsa počkať, nie?"
+
+# game/events/olivia.rpy:1103
+translate slovak olivia_lisa_sunscreen_0_963a3477:
+
+    # Max_09 "Нет, меня не проведёшь! Эй, ты ей попку совсем не натёрла, не говоря уже обо всём остальном... Это не дело!"
+    Max_09 "Nie, nemôžete ma oklamať! Hej, veď si jej vôbec nenatrela zadok, nehovoriac o všetkom ostatnom... Nie je to tak!"
+
+# game/events/olivia.rpy:1104
+translate slovak olivia_lisa_sunscreen_0_58ca6b5e:
+
+    # Olivia_05 "Со всем остальным я прекрасно справлюсь сама. Поворачивайся ко мне, Лиза, я тебя тоже намажу."
+    Olivia_05 "Všetko ostatné zvládnem sama. Otoč sa ku mne, Líza, a ja ťa tiež namažem krémom."
+
+# game/events/olivia.rpy:1115
+translate slovak olivia_lisa_sunscreen_0_a00e937b:
+
+    # Max_02 "Оливия, ты бы ей купальник развязала. Так будет удобнее..."
+    Max_02 "Olívia, mohla by si jej rozviazať plavky. Bolo by to pohodlnejšie..."
+
+# game/events/olivia.rpy:1116
+translate slovak olivia_lisa_sunscreen_0_1b5600b7:
+
+    # Lisa_01 "В твоих похотливых идеях, Макс, здесь никто не нуждается! Мы сами разберёмся."
+    Lisa_01 "Nikto tu nepotrebuje tvoje žiadostivé nápady, Max! Vyriešime to samé."
+
+# game/events/olivia.rpy:1117
+translate slovak olivia_lisa_sunscreen_0_c5a55342:
+
+    # Max_07 "Лиза, я же за тебя переживаю. Вдруг Оливия из-за твоего купальника намажет не всё."
+    Max_07 "Líza, mám o teba strach. Čo ak Olívia kvôli tvojim plavkám nenatrie všetko."
+
+# game/events/olivia.rpy:1118
+translate slovak olivia_lisa_sunscreen_0_5e735faf:
+
+    # Olivia_02 "Не переживай, я ничего не упущу. Или, может, всё-таки развязать купальник?"
+    Olivia_02 "Neboj sa, nič mi neujde. Alebo ti mám predsa len rozviazať plavky?"
+
+# game/events/olivia.rpy:1137
+translate slovak olivia_lisa_sunscreen_0_95df47e9:
+
+    # Max_05 "Никаких \"может\". Снимай с неё всё!"
+    Max_05 "Žiadne \"možno\". Daj z nej všetko dole!"
+
+# game/events/olivia.rpy:1120
+translate slovak olivia_lisa_sunscreen_0_7e394240:
+
+    # Lisa_11 "Нет, ребята, вы чего?! Не надо меня раздевать, мне и так хорошо."
+    Lisa_11 "Nie, kamoši, čo to robíte?! Nemusíš ma vyzliekať, som v poriadku taká, aká som."
+
+# game/events/olivia.rpy:1121
+translate slovak olivia_lisa_sunscreen_0_2c278307:
+
+    # Olivia_01 "Тогда всё, Лиза, я закончила. А тебе, Макс, спасибо за крем."
+    Olivia_01 "To je všetko, Líza, skončila som. A tebe, Max, ďakujem za krém."
+
+# game/events/olivia.rpy:1122
+translate slovak olivia_lisa_sunscreen_0_ffc96ca2:
+
+    # Max_01 "Не за что, девчонки. Мне всё понравилось, но можно было это делать и более страстно."
+    Max_01 "Nemáte za čo, dievčatá. Bavilo ma to celé, ale mohlo to byť urobené s väčším zanietením."
+
+# game/events/olivia.rpy:1123
+translate slovak olivia_lisa_sunscreen_0_c7bb4508:
+
+    # Lisa_03 "Других пожеланий я и не ожидала."
+    Lisa_03 "Nič iné som neočakávala."
+
+# TODO: Translation updated at 2022-01-27 20:47
+
+# game/events/other.rpy:868
+translate slovak left_cream_68a6f9b5:
+
+    # Max_10 "{m}Ну вот, крем закончился. Надо ещё купить.{/m}"
+    Max_10 "{m}No, to je všetko, krém došiel. Musím kúpiť ďalší.{/m}"
+
+# game/events/other.rpy:874
+translate slovak left_cream_61f00467:
+
+    # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
+    Max_08 "{m}Krému už nie je veľa, nabudúce by ho nemuselo byť dosť, radšej si ho kúpim v predstihu.{/m}"
+
+# TODO: Translation updated at 2022-02-09 00:14
+
+translate slovak strings:
+
+    # game/core/02init.rpy:136
+    old "Мам, нужно поговорить об Оливии."
+    new "Mami, musíme sa porozprávať o Olívii."
+
+    # game/core/02init.rpy:136
+    old "Мам, ты подумала об Оливии?"
+    new "Mami, myslela si na Olíviu?"
+
+    # game/core/02init.rpy:136
+    old "Мама разрешила!"
+    new "Mama povedala, že môžem!"
+
+    # game/core/02init.rpy:136
+    old "Кстати, а как тебе та книжка, которую я дарил?"
+    new "Mimochodom, čo si myslíš o tej knihe, ktorú som ti dal?"
+
+    # game/core/02init.rpy:136
+    old "Можно вместе с тобой книжку почитать?"
+    new "Môžem si s tebou prečítať knihu?"
+
+    # game/core/02init.rpy:136
+    old "Можно к тебе присоединиться?"
+    new "Môžem sa pridať?"
+
+# TODO: Translation updated at 2022-02-09 00:14
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Пока Эрик представляет для меня угрозу, нет смысла что-то планировать насчёт Лизы и Оливии, поэтому мне потребуются успехи в возможности \"Альфа\"..."
+    new "Kým je pre mňa Erik hrozbou, nemá zmysel plánovať niečo s Lízou a Olíviou, takže budem potrebovať pokrok v príležitosti \"Alfa\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Хорошо было бы поинтересоваться, сильно ли Лиза переживает всю эту историю с Эриком..."
+    new "Bolo by dobré sa zamyslieť, či Líza prechádza celou touto vecou s Erikom..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эх, Эрика прогнали, а проблемы всё равно есть. Лиза сообразила, что мама теперь не будет уезжать на ночь к Эрику, а значит ночёвка Оливии под {b}БОЛЬШИМ{/b} вопросом. Теперь, чтобы не было никаких неожиданностей, нужно скорее их познакомить и уже исходя из того, как мама отнесётся к \"особенности\" Оливии, решать эту проблему."
+    new "Erik bol vyhnaný a stále sú tu problémy. Líza si uvedomila, že mama teraz nebude nocovať u Erika, čo znamená, že Olíviina nocľaháreň je {b}VEĽKOU{/b} otázkou. Teraz, aby nedošlo k žiadnym prekvapeniam, musím ich predstaviť čo najskôr a podľa toho, ako mama zareaguje na Oliviine \"črty\" sa tento problém vyrieši."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно немного подождать и Оливия придёт знакомиться с мамой..."
+    new "Musím ešte chvíľu počkať a Olívia príde za našou matkou..."
+
+    # game/core/09_opportunities.rpy:4
+    old "На мой взгляд, знакомство мамы и Оливии прошло хорошо. Конечно, маму слегка шокировал натуризм Оливии, но в целом, она не против их дружбы с Лизой. Теперь мне нужно получить одобрение мамы на ночёвку Оливии и я понятия не имею, насколько это будет просто или сложно. А ещё девочкам можно дать крем для загара, вдруг это приведёт рано или поздно к чему-нибудь очень интересному..."
+    new "Podľa môjho názoru sa predstavenie mamy a Olívie vydarilo. Samozrejme, naša matka bola trochu šokovaná Oliviiným naturizmom, ale celkovo jej ich priateľstvo s Lízou vyhovovalo. Teraz musím získať súhlas mojej mamy na Olíviino prespanie a netuším, aké ľahké alebo ťažké to bude. A tiež môžem dať dievčatám opaľovací krém, ak by to skôr či neskôr viedlo k niečomu veľmi zaujímavému..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно поговорить с мамой, чтобы она разрешила приходить Оливии к нам с ночёвкой..."
+    new "Musím sa porozprávať s mamou, či by Olívia mohla prísť k nám na noc..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно дать маме несколько дней на раздумья о ночёвке Оливии и снова поговорить с ней..."
+    new "Musím dať mame pár dní na rozmyslenie o Olíviinom prespaní a znovu sa s ňou porozprávať..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Осталось сказать Лизе, что мама разрешила ночевать Оливии у нас дома..."
+    new "Len musím odkázať Líze, že mama povedala, že môže nechať Oliviu spať u nás doma..."
+
+# TODO: Translation updated at 2022-02-09 00:14
+
+# game/dialogues/anntalk.rpy:1483
+translate slovak ann_about_olivia0_2931469c:
+
+    # Ann_00 "Да, Макс, что такое?"
+    Ann_00 "Áno, Max, o čo ide?"
+
+# game/dialogues/anntalk.rpy:1484
+translate slovak ann_about_olivia0_0fb43d08:
+
+    # Max_07 "Можно она будет приходить к нам с ночёвкой по пятницам?"
+    Max_07 "Môže prísť na naše piatkové prenocovanie?"
+
+# game/dialogues/anntalk.rpy:1485
+translate slovak ann_about_olivia0_ca484fbb:
+
+    # Ann_13 "С ночёвкой? Ну, не знаю, сынок. А её родители, что скажут? И кто за вами будет присматривать?"
+    Ann_13 "Prenocovanie? Ja neviem, synku. A čo na to jej rodičia? A kto sa o vás postará?"
+
+# game/dialogues/anntalk.rpy:1486
+translate slovak ann_about_olivia0_7526967f:
+
+    # Max_09 "За нами не нужно присматривать, мы уже взрослые. И раз это для тебя так важно, то я присмотрю за Оливией и Лизой."
+    Max_09 "Nepotrebujeme, aby sa o nás niekto staral, sme už dospelí. A keďže je to pre teba také dôležité, postarám sa o Olíviu a Lízu."
+
+# game/dialogues/anntalk.rpy:1487
+translate slovak ann_about_olivia0_070aa522:
+
+    # Ann_17 "А заниматься вы чем планируете? С натуризмом Оливии даже боюсь представить..."
+    Ann_17 "Čo plánujete robiť? Pri Olíviinom naturizme sa bojím čo i len predstaviť..."
+
+# game/dialogues/anntalk.rpy:1488
+translate slovak ann_about_olivia0_ee58332d:
+
+    # Max_01 "Мы может ТВ посмотрим или в бассейне поплаваем. Может в комнате поиграем."
+    Max_01 "Možno budeme pozerať televíziu alebo si zaplávame v bazéne. Možno by sme sa mohli hrať v izbe."
+
+# game/dialogues/anntalk.rpy:1489
+translate slovak ann_about_olivia0_993f301a:
+
+    # Ann_14 "Ох, вот насчёт бассейна я сильно сомневаюсь. Придётся не ложиться спать и караулить, как бы чего не произошло..."
+    Ann_14 "O bazéne mám pochybnosti. Budem musieť zostať hore a sledovať, či sa niečo nestane..."
+
+# game/dialogues/anntalk.rpy:1490
+translate slovak ann_about_olivia0_eefee8b2:
+
+    # Max_08 "Мам, я же сказал, я за ними присмотрю. К тому же, хоть Оливия и натуристка, но во всём остальном она девочка целомудренная. Днём ты же нас не караулишь."
+    Max_08 "Mami, povedal som, že sa o ne postarám. Okrem toho, hoci je Olívia nudistka, inak je cudné dievča. Nie je to tak, že by si nás musela cez deň strážiť."
+
+# game/dialogues/anntalk.rpy:1491
+translate slovak ann_about_olivia0_51952594:
+
+    # Ann_12 "Одно дело днём, Макс, и совсем другое - ночью... Ох, не знаю..." nointeract
+    Ann_12 "Jedna vec je cez deň, Max, a druhá v noci... No, ja neviem..." nointeract
+
+# game/dialogues/anntalk.rpy:1497
+translate slovak ann_about_olivia0_b2ba75f7:
+
+    # Ann_14 "[succes!t]Вроде и запретить вам хочу, но не известно, как на это может Лиза отреагировать. Ещё начнёт в отместку из дома убегать..."
+    Ann_14 "[succes!t]Chcem to zakázať, ale neviem, ako by Líza zareagovala. Začne utekať z domu, aby sa pomstila..."
+
+# game/dialogues/anntalk.rpy:1503
+translate slovak ann_about_olivia0_902cc700:
+
+    # Ann_17 "[failed!t]Извини, Макс, но мне нужно подумать. Мне кажется, я вся изведусь, зная, что вы там ночью у бассейна играете."
+    Ann_17 "[failed!t]Je mi ľúto, Max, ale musím premýšľať. Myslím, že by som bola vyčerpaná, keby som vedela, že sa v noci hráte pri bazéne."
+
+# game/dialogues/anntalk.rpy:1504
+translate slovak ann_about_olivia0_a744479d:
+
+    # Max_09 "Ладно, подумай пару дней." nointeract
+    Max_09 "Dobre, premýšľaj o tom niekoľko dní." nointeract
+
+# game/dialogues/anntalk.rpy:1512
+translate slovak ann_about_olivia0_succes_a46cecf5:
+
+    # Max_10 "Ну да, это ещё хуже."
+    Max_10 "Áno, to je ešte horšie."
+
+# game/dialogues/anntalk.rpy:1513
+translate slovak ann_about_olivia0_succes_b91eb0ff:
+
+    # Ann_12 "Но меня здесь смущает даже больше не Оливия со своим натуризмом, а то, как ты на это реагируешь. Ладно она к этому у себя дома привыкла. А Лиза?"
+    Ann_12 "Ale ani nie Olívia a jej naturizmus ma tu mätú viac, ale to, ako na to reaguješ. Dobre, doma je na to zvyknutá. A Líza?"
+
+# game/dialogues/anntalk.rpy:1514
+translate slovak ann_about_olivia0_succes_1c48074f:
+
+    # Max_09 "А что Лиза? Ты вспомни, чему вы с Эриком её учили..."
+    Max_09 "A čo Líza? Spomeň si, čo ste ju s Erikom naučili..."
+
+# game/dialogues/anntalk.rpy:1515
+translate slovak ann_about_olivia0_succes_bb86700b:
+
+    # Ann_15 "Ой! Лучше не напоминай, Макс. Что я тогда творила, ужас..."
+    Ann_15 "Au! Radšej mi to nepripomínaj, Max. To, čo som vtedy robila, tá hrôza..."
+
+# game/dialogues/anntalk.rpy:1516
+translate slovak ann_about_olivia0_succes_b0bdbf1c:
+
+    # Max_07 "Вот-вот. Лизу теперь это тоже, как и Оливию, совершенно не смущает."
+    Max_07 "Presne tak. Líza, rovnako ako Olívia, sa teraz za to vôbec nehanbia."
+
+# game/dialogues/anntalk.rpy:1517
+translate slovak ann_about_olivia0_succes_48663582:
+
+    # Ann_14 "Видимо, из-за Эрика я стала слишком подозрительной. Пытаюсь снова уберечь Лизу от всего на свете, хотя сама же такое ей показала..."
+    Ann_14 "Kvôli Erikovi som zase príliš podozrievavá. Snažím sa znova zachrániť Lízu pred všetkým na svete, hoci som jej to ukázala"
+
+# game/dialogues/anntalk.rpy:1518
+translate slovak ann_about_olivia0_succes_a1e2dec6:
+
+    # Max_09 "И вспомни, кто вывел Эрика на чистую воду? Я! И я же тебе говорю, что присмотрю за Лизой и Оливией."
+    Max_09 "A nezabudni, kto Erika vyniesol na svetlo? Ja! A ja ti hovorím, že sa postarám o Lízu a Olíviu."
+
+# game/dialogues/anntalk.rpy:1519
+translate slovak ann_about_olivia0_succes_e99695fc:
+
+    # Ann_17 "Хорошо, я разрешу вам собираться по ночам, но! Если мне будет слишком неспокойно, я могу взять и проверить, чем вы занимаетесь."
+    Ann_17 "Dobre, nechám vás, aby ste sa v noci stretli, ale! Ak budem príliš nepokojná, pozriem sa, čo robíte."
+
+# game/dialogues/anntalk.rpy:1520
+translate slovak ann_about_olivia0_succes_a7934c48:
+
+    # Max_01 "Не проблема, мам. Приходи в любое время."
+    Max_01 "Žiadny problém, mami. Môžeš prísť kedykoľvek."
+
+# game/dialogues/anntalk.rpy:1521
+translate slovak ann_about_olivia0_succes_573881bf:
+
+    # Ann_04 "Договорились. Ведите себя хорошо." nointeract
+    Ann_04 "Dohodnuté. Správajte sa slušne." nointeract
+
+# game/dialogues/anntalk.rpy:1532
+translate slovak ann_about_olivia1_282cd97e:
+
+    # Ann_14 "Подумала... Вроде и запретить вам хочу, но не известно, как на это может Лиза отреагировать. Ещё начнёт в отместку из дома убегать..."
+    Ann_14 "Myslela som, že... Chcem to zakázať, ale neviem, ako by Líza zareagovala. Začne utekať z domu, aby sa pomstila..."
+
+translate slovak strings:
+
+    # game/dialogues/anntalk.rpy:1492
+    old "Ну пожалуйста! Всё будет хорошо."
+    new "Prosím! Všetko bude v poriadku."
+
+# TODO: Translation updated at 2022-02-09 00:14
+
+# game/dialogues/lisatalk.rpy:3521
+translate slovak lisa_advanced_kiss_lesson_31a01586:
+
+    # Max_06 "[like!t]{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "[like!t]{m}Ach, áno! Cítil som niečo mäkké a okrúhle a dokonca aj s vyčnievajúcimi bradavkami, ktoré sú cítiť aj cez jej oblečenie ...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4736
+translate slovak lisa_about_olivia_6_4625ce5e:
+
+    # Lisa_03 "Ты про Оливию? И мне с вами можно?"
+    Lisa_03 "Myslíš Olíviu? Môžem prísť aj ja?"
+
+# game/dialogues/lisatalk.rpy:4737
+translate slovak lisa_about_olivia_6_b6006830:
+
+    # Max_07 "Да, я получил добро на всё. Но мама намекнула, что если мы будем шуметь, то она вполне может прийти и проверить, чем мы занимаемся."
+    Max_07 "Áno, na všetko som dostal povolenie. Mama však naznačila, že ak budeme hluční, možno sa príde pozrieť, čo robíme."
+
+# game/dialogues/lisatalk.rpy:4738
+translate slovak lisa_about_olivia_6_17e47234:
+
+    # Lisa_10 "Ой! Но мы же вроде не собираемся сильно шуметь, да?"
+    Lisa_10 "Au! Ale nebudeme robiť veľký hluk, však?"
+
+# game/dialogues/lisatalk.rpy:4739
+translate slovak lisa_about_olivia_6_791f2d69:
+
+    # Max_02 "Да, но как знать."
+    Max_02 "Áno, ale kto vie."
+
+# game/dialogues/lisatalk.rpy:4740
+translate slovak lisa_about_olivia_6_0d89823a:
+
+    # Lisa_02 "Не знаю, что ты там себе уже нафантазировал, но мы с Оливией шуметь не собираемся."
+    Lisa_02 "Neviem, čo si si už predstavoval, ale Olívia a ja nebudeme robiť žiadny hluk."
+
+# game/dialogues/lisatalk.rpy:4741
+translate slovak lisa_about_olivia_6_9ff6f03c:
+
+    # Max_08 "Я тоже. Надеюсь, если мама придёт нас проверять, то не станет подходить слишком близко."
+    Max_08 "Ja tiež. Dúfajme, že ak nás mama príde skontrolovať, nedostane sa príliš blízko."
+
+# game/dialogues/lisatalk.rpy:4742
+translate slovak lisa_about_olivia_6_3c37e115:
+
+    # Lisa_13 "Да, в таком случае у нас будут проблемы из-за кое-кого."
+    Lisa_13 "Áno, v tom prípade budeme mať kvôli niekomu problémy."
+
+# game/dialogues/lisatalk.rpy:4743
+translate slovak lisa_about_olivia_6_d648b0fe:
+
+    # Max_03 "Давай только пальцами не показывать."
+    Max_03 "Neukazuj na niekoho prstom."
+
+# game/dialogues/lisatalk.rpy:4744
+translate slovak lisa_about_olivia_6_cc4386fa:
+
+    # Lisa_01 "Спасибо, что уговорил маму. Видимо, это было не особо сложно."
+    Lisa_01 "Ďakujem, že si mamu presvedčil. Zjavne to nebolo obzvlášť ťažké."
+
+# game/dialogues/lisatalk.rpy:4745
+translate slovak lisa_about_olivia_6_61461d8f:
+
+    # Max_02 "Просто я могу быть очень убедителен, если захочу."
+    Max_02 "Keď chcem, dokážem byť veľmi presvedčivý."
+
+# game/dialogues/lisatalk.rpy:4746
+translate slovak lisa_about_olivia_6_e1a37a49:
+
+    # Lisa_02 "И правда, чему я удивляюсь. Это же из-за голой Оливии."
+    Lisa_02 "Naozaj, prečo som prekvapená. Ide o nahú Olíviu."
+
+# game/dialogues/lisatalk.rpy:4747
+translate slovak lisa_about_olivia_6_0a7bae5a:
+
+    # Max_05 "Не только. Когда-нибудь мы все будем резвиться ночью голышом!"
+    Max_05 "A nielen to. Jedného dňa sa budeme všetci v noci preháňať nahí!"
+
+# game/dialogues/lisatalk.rpy:4748
+translate slovak lisa_about_olivia_6_023ebf67:
+
+    # Lisa_01 "Ага, мечтай."
+    Lisa_01 "Áno, snívaj ďalej."
+
+# game/dialogues/lisatalk.rpy:4762
+translate slovak lisa_about_sex_book0_351a8dec:
+
+    # Lisa_02 "Ты про ту с забавными картинками? Интересная. Я и правда многое узнала. Думаю, что теперь и сама могу учить кого угодно..."
+    Lisa_02 "Myslíš tú s vtipnými obrázkami? Zaujímavé. Naozaj som sa toho veľa naučila. Myslím, že teraz sa môžem naučiť čokoľvek..."
+
+# game/dialogues/lisatalk.rpy:4763
+translate slovak lisa_about_sex_book0_7b00466f:
+
+    # Max_08 "Эй, книжка учителя не заменит!"
+    Max_08 "Hej, kniha nenahradí učiteľa!"
+
+# game/dialogues/lisatalk.rpy:4764
+translate slovak lisa_about_sex_book0_862d72d5:
+
+    # Lisa_03 "Что, испугался, учитель?"
+    Lisa_03 "Čo, bojíš sa, pán učiteľ?"
+
+# game/dialogues/lisatalk.rpy:4765
+translate slovak lisa_about_sex_book0_8e5b6c38:
+
+    # Max_03 "Ещё как. Так значит, возобновим уроки поцелуев?"
+    Max_03 "To sa stav. Takže budeme pokračovať v lekciách bozkávania?"
+
+# game/dialogues/lisatalk.rpy:4766
+translate slovak lisa_about_sex_book0_fdec10eb:
+
+    # Lisa_13 "Хм... А зачем? Я же теперь умею целоваться. Если это всё, чему ты собрался меня учить, то дальше я сама разберусь..."
+    Lisa_13 "Hmmm... Prečo? Už viem, ako sa bozkávať. Ak je to všetko, čo ma chceš naučiť, prevezmem to odtiaľ..."
+
+# game/dialogues/lisatalk.rpy:4770
+translate slovak lisa_about_sex_book0_bc716f9b:
+
+    # Max_07 "Конечно не всё. Мы пойдём дальше. Ты же уже не стесняешься моих прикосновений?"
+    Max_07 "Samozrejme, nie všetko. Pokračujeme ďalej. Už sa nehanbíš za môj dotyk, však?"
+
+# game/dialogues/lisatalk.rpy:4771
+translate slovak lisa_about_sex_book0_dc029ff0:
+
+    # Lisa_01 "Ты имеешь в виду, во время поцелуев? Нет, не стесняюсь. Они делают поцелуи куда приятнее. А что?"
+    Lisa_01 "Myslíš počas bozkávania? Nie, nie. Vďaka nim je bozkávanie oveľa príjemnejšie. Prečo?"
+
+# game/dialogues/lisatalk.rpy:4772
+translate slovak lisa_about_sex_book0_c68a94ec:
+
+    # Max_04 "А то, что тебе пора учиться принимать поцелуи не только в губы. Я буду целовать тебя в шею и грудь, а ты не должна стесняться."
+    Max_04 "A že je načase, aby si sa naučila prijímať aj iné bozky ako na pery. Budem ťa bozkávať na krk a hruď a ty sa nemusíš hanbiť."
+
+# game/dialogues/lisatalk.rpy:4773
+translate slovak lisa_about_sex_book0_2c2f9970:
+
+    # Lisa_10 "Ой, ну... В шею ещё можно попробовать, но вот грудь... Не уверена..."
+    Lisa_10 "No, dobre... V oblasti krku to môžeš ešte skúsiť, ale v oblasti hrudníka... Nie som si istá..."
+
+# game/dialogues/lisatalk.rpy:4774
+translate slovak lisa_about_sex_book0_cceec119:
+
+    # Max_01 "Это же всё будет происходить плавно. Начнём с обычных поцелуев в губы, а затем я двинусь ниже."
+    Max_01 "Všetko prebehne hladko. Začneme obvyklými bozkami na pery a potom sa posuniem nižšie."
+
+# game/dialogues/lisatalk.rpy:4775
+translate slovak lisa_about_sex_book0_6876e809:
+
+    # Lisa_02 "Это если мне понравится. А это не факт, Макс! Но давай попробуем..." nointeract
+    Lisa_02 "Ak sa mi to zapáči. A to nie je fakt, Max! Ale skúsme to..." nointeract
+
+# game/dialogues/lisatalk.rpy:4783
+translate slovak lisa_about_sex_book0_1092223e:
+
+    # Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим! Посмотрим, что будет дальше...{/m}" nointeract
+    Max_04 "{m}Tie jemné pery sú také sladké... A jej horúci jazyk sa začína čoraz aktívnejšie hrať s mojím! Uvidíme, čo sa stane ďalej...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4789
+translate slovak lisa_about_sex_book0_afa17d8b:
+
+    # Max_05 "{m}Классно... Её ножки такие гладкие, а попка очень упругая! Без таких прикосновений наши поцелуи уже не обходятся, а значит можно спокойно двигаться дальше...{/m}" nointeract
+    Max_05 "{m}Super... Jej nohy sú také hladké a jej zadok je veľmi pevný! Naše bozky sa už nezaobídu bez takýchto dotykov, čo znamená, že je bezpečné ísť ďalej...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4795
+translate slovak lisa_about_sex_book0_d262e2cc:
+
+    # Max_06 "{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "{m}Ach, áno! Cítil som niečo mäkké a okrúhle a dokonca aj s vyčnievajúcimi bradavkami, ktoré sú cítiť aj cez jej oblečenie ...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4801
+translate slovak lisa_about_sex_book0_bba74f75:
+
+    # Max_19 "{m}Обалдеть! Её кожа такая нежная... Интересно, её это заводит так же сильно, как и меня? Ощущения от того, что я тискаю её обнажённую грудь и целую её восхитительную шейку, бесподобны!{/m}"
+    Max_19 "{m}Wow! Jej pokožka je taká jemná... Zaujímalo by ma, či ju to vzrušuje rovnako ako mňa. Pocit, keď jej stláčam nahé prsia a bozkávam jej rozkošný krk, nemá obdoby!{/m}"
+
+# game/dialogues/lisatalk.rpy:4802
+translate slovak lisa_about_sex_book0_b4655fea:
+
+    # Lisa_04 "Ммм... Макс... Всё, остановись. Давай не будем..."
+    Lisa_04 "Mmm... Max... To je všetko, stop. Nebudeme..."
+
+# game/dialogues/lisatalk.rpy:4806
+translate slovak lisa_about_sex_book0_de1bedf6:
+
+    # Max_10 "Почему? Тебе не понравилось?"
+    Max_10 "Prečo? Nepáčilo sa ti to?"
+
+# game/dialogues/lisatalk.rpy:4807
+translate slovak lisa_about_sex_book0_a3368a42:
+
+    # Lisa_05 "Понравились... Просто это уже слишком... интимно. Не уверена, что таким следует заниматься с братом."
+    Lisa_05 "Páči sa mi to... Je toho príliš veľa... je to intímne. Nie som si istá, či je to vec, ktorú by som mala robiť so svojím bratom."
+
+# game/dialogues/lisatalk.rpy:4808
+translate slovak lisa_about_sex_book0_d607c9c9:
+
+    # Max_07 "Ну, знаешь... Другие могут и не деликатничать с тобой."
+    Max_07 "No vieš... Ostatní k tebe nemusia byť milí."
+
+# game/dialogues/lisatalk.rpy:4809
+translate slovak lisa_about_sex_book0_66f59451:
+
+    # Lisa_09 "Мне нравится, как ты это делаешь, но я стесняюсь."
+    Lisa_09 "Páči sa mi, ako to robíš, ale ja sa hanbím."
+
+# game/dialogues/lisatalk.rpy:4810
+translate slovak lisa_about_sex_book0_963f8bda:
+
+    # Max_01 "Ладно, может быть ты ещё передумаешь..."
+    Max_01 "Dobre, možno si to rozmyslíš..."
+
+# game/dialogues/lisatalk.rpy:4811
+translate slovak lisa_about_sex_book0_92b12f4a:
+
+    # Lisa_01 "Не знаю, может быть."
+    Lisa_01 "Neviem, možno."
+
+# game/dialogues/lisatalk.rpy:4823
+translate slovak lisa_read_with_Max0_612a816a:
+
+    # Lisa_01 "Тебе заняться больше нечем?"
+    Lisa_01 "Nemáš nič iné na práci?"
+
+# game/dialogues/lisatalk.rpy:4824
+translate slovak lisa_read_with_Max0_80b95965:
+
+    # Max_01 "Просто с тобой хочу побыть."
+    Max_01 "Chcem byť len s tebou."
+
+# game/dialogues/lisatalk.rpy:4825
+translate slovak lisa_read_with_Max0_88576ab2:
+
+    # Lisa_02 "Ну, хорошо... Присоединяйся. Только если мешаться не будешь!" nointeract
+    Lisa_02 "No, dobre... Pridaj sa. Iba ak mi nebudeš stáť v ceste!" nointeract
+
+# game/dialogues/lisatalk.rpy:4831
+translate slovak lisa_read_with_Max0_90e899b5:
+
+    # Lisa_01 "Осторожнее, Макс! Если начнёшь приставать, то я и обидеться могу."
+    Lisa_01 "Opatrne, Max! Ak ma začneš obťažovať, môžem sa uraziť."
+
+# game/dialogues/lisatalk.rpy:4832
+translate slovak lisa_read_with_Max0_3db23ad8:
+
+    # Max_04 "Да ладно тебе. Я же ничего не делаю. Ты как, не передумала?"
+    Max_04 "Ale no tak. Nie je to tak, že by som niečo robil. Zmenila si názor?"
+
+# game/dialogues/lisatalk.rpy:4833
+translate slovak lisa_read_with_Max0_9b51ee12:
+
+    # Lisa_00 "Насчёт чего? Уроков поцелуев?"
+    Lisa_00 "O čom? Lekcie bozkávania?"
+
+# game/dialogues/lisatalk.rpy:4834
+translate slovak lisa_read_with_Max0_f5881c27:
+
+    # Max_07 "Ага. Не хочешь снова попробовать? Я ведь могу целовать ещё нежнее..."
+    Max_07 "Áno. Chceš to skúsiť znova? Môžem bozkávať ešte jemnejšie..."
+
+# game/dialogues/lisatalk.rpy:4835
+translate slovak lisa_read_with_Max0_f6f35474:
+
+    # Lisa_09 "Дело не в нежности. С этим всё в порядке. Просто ты ко мне так прикасаешься, а мы брат и сестра. Это ведь как-то неправильно!"
+    Lisa_09 "Nie je to o nežnosti. Na tom nie je nič zlé. Je to len spôsob, akým sa ma dotýkaš, a sme brat a sestra. Nezdá sa ti to správne, však?"
+
+# game/dialogues/lisatalk.rpy:4841
+translate slovak lisa_read_with_Max0_e3bd0cdf:
+
+    # Max_03 "Ты моя любимая сестрёнка и ВОТ ТАК я к тебе прикасаюсь, потому что хочу сделать тебе приятно."
+    Max_03 "Si moja najobľúbenejšia sestra a takto sa ťa dotýkam, pretože ťa chcem potešiť."
+
+# game/dialogues/lisatalk.rpy:4842
+translate slovak lisa_read_with_Max0_26f40943:
+
+    # Lisa_02 "Ах вот оно что! А я думала ВОТ ТАК ты ко мне прикасаешься, чтобы свои ручки шаловливые порадовать..."
+    Lisa_02 "Aha, to je ono! A ja som si myslela, že sa ma tak dotýkaš, aby si potešil svoje neposlušné ruky..."
+
+# game/dialogues/lisatalk.rpy:4843
+translate slovak lisa_read_with_Max0_39ae90b5:
+
+    # Max_02 "Не без этого. Тебе приятно, мне приятно, а остальное как-то неважно."
+    Max_02 "Nie bez toho. Cítiš sa dobre, cítim sa dobre, a to ostatné je akosi nepodstatné."
+
+# game/dialogues/lisatalk.rpy:4844
+translate slovak lisa_read_with_Max0_ad30bc58:
+
+    # Lisa_10 "А вдруг кто-то узнает, чем мы с тобой занимаемся? Знаешь как нам прилетит!"
+    Lisa_10 "Čo ak niekto zistí, čo robíme? Vieš, ako nás to zasiahne!"
+
+# game/dialogues/lisatalk.rpy:4845
+translate slovak lisa_read_with_Max0_b43f08a3:
+
+    # Max_09 "Да никто не узнает, если ты сама не проболтаешься."
+    Max_09 "Nikto sa to nedozvie, pokiaľ to sami nepovieme."
+
+# game/dialogues/lisatalk.rpy:4846
+translate slovak lisa_read_with_Max0_a89d5233:
+
+    # Lisa_01 "Ну ладно, давай попробуем... Но если я попрошу остановиться, мы остановимся, ясно?" nointeract
+    Lisa_01 "Dobre, skúsme to... Ale ak ťa požiadam, aby si prestal, prestaneme, dobre?" nointeract
+
+# game/dialogues/lisatalk.rpy:4852
+translate slovak lisa_read_with_Max0_c3cb9e88:
+
+    # Max_06 "{m}Ммм... Теперь я могу мять эту упругую попку так, как захочу! А дальше... Дальше мои руки смогут обласкать всё её нежное тело...{/m}"
+    Max_06 "{m}Mmm... Teraz môžem ten pevný zadok stláčať, ako sa mi zachce! A potom... Potom budú môcť moje ruky hladiť celé jej jemné telo...{/m}"
+
+# game/dialogues/lisatalk.rpy:4860
+translate slovak lisa_read_with_Max0_32ffbb2f:
+
+    # Lisa_13 "Знаешь, Макс... Мы вот это делаем и я чувствую, что сам ты эту книгу по сексуальному образованию не читал. А ещё учителем называешься!"
+    Lisa_13 "Vieš, Max... Robíme to a mám pocit, že si tú knihu o sexuálnej výchove sám nečítal. A ty sa nazývaš učiteľom!"
+
+# game/dialogues/lisatalk.rpy:4861
+translate slovak lisa_read_with_Max0_288ff111:
+
+    # Max_09 "Ты каким таким образом это могла почувствовать?"
+    Max_09 "Ako si to mohla takto vycítiť?"
+
+# game/dialogues/lisatalk.rpy:4864
+translate slovak lisa_read_with_Max0_ba792759:
+
+    # Lisa_01 "А ты вот прочитай сначала, тогда и поймёшь, а уже потом приставай."
+    Lisa_01 "Najprv si ju prečítaj, potom ju pochopíš a potom sa ňou zaoberaj."
+
+# game/dialogues/lisatalk.rpy:4866
+translate slovak lisa_read_with_Max0_06d96872:
+
+    # Max_11 "Ну ладно... Прочту." nointeract
+    Max_11 "Dobre... Prečítam si ju." nointeract
+
+# game/dialogues/lisatalk.rpy:4876
+translate slovak lisa_read_with_Max0_8e745304:
+
+    # Lisa_05 "Знаешь, Макс... Если и дальше будешь довольно галантно и чутко себя вести, то у тебя вполне может получиться завлечь меня на поцелуи."
+    Lisa_05 "Vieš, Max... Ak budeš aj naďalej galantný a citlivý, možno sa ti podarí zlákať ma, aby som ťa pobozkala."
+
+# game/dialogues/lisatalk.rpy:4877
+translate slovak lisa_read_with_Max0_5f34a1ae:
+
+    # Max_03 "Правда? Тогда я обязательно попробую..."
+    Max_03 "Naozaj? Potom to určite vyskúšam..."
+
+# game/dialogues/lisatalk.rpy:4880
+translate slovak lisa_read_with_Max0_6fde9b0d:
+
+    # Lisa_02 "Но только уже в следующий раз. А сейчас дай почитать."
+    Lisa_02 "Ale až nabudúce. Teraz mi dovoľ, aby som to dočítala."
+
+# game/dialogues/lisatalk.rpy:4882
+translate slovak lisa_read_with_Max0_0f10a4f5:
+
+    # Max_01 "Хорошо, не буду мешать." nointeract
+    Max_01 "Dobre, nebudem sa ti pliesť do cesty." nointeract
+
+# game/dialogues/lisatalk.rpy:4901
+translate slovak lisa_read_with_Max_r_4c0c670e:
+
+    # Lisa_09 "Макс, дай сегодня почитать. У меня нет настроения для твоих приставаний..."
+    Lisa_09 "Max, dnes čítam. Nemám náladu na tvoje otravovanie..."
+
+# game/dialogues/lisatalk.rpy:4902
+translate slovak lisa_read_with_Max_r_cabc4c76:
+
+    # Max_07 "Хорошо, не буду мешать."
+    Max_07 "Dobre, nebudem sa ti pliesť do cesty."
+
+# game/dialogues/lisatalk.rpy:4906
+translate slovak lisa_read_with_Max_r_209f6521:
+
+    # Lisa_02 "Да, ложись рядом... Только сильно не приставай!" nointeract
+    Lisa_02 "Áno, ľahni si vedľa... Len nerob príliš veľké problémy!" nointeract
+
+# game/dialogues/lisatalk.rpy:4915
+translate slovak lisa_read_with_Max_r_7fad580e:
+
+    # Lisa_01 "Не успел лечь, уже ручонки начинаешь распускать?"
+    Lisa_01 "Tesne pred spaním si začínaš špiniť ruky, však?"
+
+# game/dialogues/lisatalk.rpy:4916
+translate slovak lisa_read_with_Max_r_c93bf94a:
+
+    # Max_03 "Ты что! И в мыслях не было. Просто с тобой хочу побыть."
+    Max_03 "Čože? Nemal som to v úmysle. Chcem byť len s tebou."
+
+# game/dialogues/lisatalk.rpy:4917
+translate slovak lisa_read_with_Max_r_33458038:
+
+    # Lisa_02 "Ну конечно... Всё я знаю. Целоваться опять полезешь..."
+    Lisa_02 "Samozrejme... Viem všetko. Opäť bozkávanie..."
+
+# game/dialogues/lisatalk.rpy:4918
+translate slovak lisa_read_with_Max_r_25b1ed08:
+
+    # Max_02 "Как будто ты меня на кровать пустила, чтобы мы оба книжку читали. Ну-ну."
+    Max_02 "Ako keby si ma pustila na posteľ, aby sme si obaja mohli čítať knihu. No, no."
+
+# game/dialogues/lisatalk.rpy:4925
+translate slovak lisa_read_with_Max_r_8ae6aace:
+
+    # Lisa_03 "А зачем ещё? Не знаю, на что ты надеешься, но я девочка приличная и ничего такого себе не позволяю."
+    Lisa_03 "Prečo inak? Neviem, v čo dúfaš, ale som slušné dievča a nič také nerobím."
+
+# game/dialogues/lisatalk.rpy:4926
+translate slovak lisa_read_with_Max_r_3d1f409c:
+
+    # Max_04 "А я вот себе в удовольствии не отказываю. И тебе советую..."
+    Max_04 "Neodopieram si to potešenie. Odporúčam urobiť to isté..."
+
+# game/dialogues/lisatalk.rpy:4929
+translate slovak lisa_read_with_Max_r_9f7605bb:
+
+    # Lisa_13 "Ты так уверенно пристаёшь... Книжку что ли прочитал наконец-то?"
+    Lisa_13 "Tak sebavedome sa navážaš do... Prečítal si si konečne tú knihu?"
+
+# game/dialogues/lisatalk.rpy:4930
+translate slovak lisa_read_with_Max_r_4c11b74c:
+
+    # Max_02 "Да, прочитал. И готов показать, что я из неё почерпнул."
+    Max_02 "Áno, to som urobil. A som pripravený ukázať ti, čo som sa z toho naučil."
+
+# game/dialogues/lisatalk.rpy:4933
+translate slovak lisa_read_with_Max_r_086ab079:
+
+    # Lisa_02 "Ну, не знаю... Думаю, один разочек можно попробовать немного пошалить. Вдруг понравится, да?"
+    Lisa_02 "Ja neviem... Myslím, že je v poriadku, ak sa raz pokúsime o malú zlomyseľnosť. Mohlo by sa ti to páčiť, však?"
+
+# game/dialogues/lisatalk.rpy:4934
+translate slovak lisa_read_with_Max_r_6a0241e4:
+
+    # Max_01 "Конечно, да!" nointeract
+    Max_01 "Samozrejme, že áno!" nointeract
+
+# game/dialogues/lisatalk.rpy:4941
+translate slovak lisa_read_with_Max_r_4a523cd1:
+
+    # Max_02 "{m}Надеюсь, этих разочков, на самом деле, будет бесконечное множество. Лиза хоть для приличия и изображает недотрогу, но я уже достаточно её расшевелил, чтобы она не захотела останавливаться. Пора хитрить...{/m}" nointeract
+    Max_02 "{m}Dúfajme, že takýchto prípadov bude v skutočnosti nekonečne veľa. Líza sa hrá na ťažko dostupnú, ale už som ju urobil natoľko šťastnou, že nechce prestať. Je čas na šikovnosť...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4948
+translate slovak lisa_read_with_Max_r_3a83b3a0:
+
+    # Max_01 "Всё, Лиза. Немного пошалили и хватит. Как ты там раньше говорила, хорошего помаленьку?"
+    Max_01 "To je všetko, Líza. Trochu neporiadku a dosť. Ako si to hovorila, trochu dobrej veci?"
+
+# game/dialogues/lisatalk.rpy:4949
+translate slovak lisa_read_with_Max_r_d0cd9ad4:
+
+    # Lisa_10 "В смысле, всё?! Раззадорил меня и уходишь что ли? Я хочу ещё!" nointeract
+    Lisa_10 "Teda všetko?! Vytočíš ma a potom odídeš? Chcem viac!" nointeract
+
+# game/dialogues/lisatalk.rpy:4958
+translate slovak lisa_read_with_Max_r_1092223e:
+
+    # Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим! Посмотрим, что будет дальше...{/m}" nointeract
+    Max_04 "{m}Tie jemné pery sú také sladké... A jej horúci jazyk sa začína čoraz aktívnejšie hrať s mojím! Uvidíme, čo sa stane ďalej...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4963
+translate slovak lisa_read_with_Max_r_afa17d8b:
+
+    # Max_05 "{m}Классно... Её ножки такие гладкие, а попка очень упругая! Без таких прикосновений наши поцелуи уже не обходятся, а значит можно спокойно двигаться дальше...{/m}" nointeract
+    Max_05 "{m}Super... Jej nohy sú také hladké a jej zadok je veľmi pevný! Naše bozky sa už nezaobídu bez takýchto dotykov, čo znamená, že je bezpečné ísť ďalej...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4970
+translate slovak lisa_read_with_Max_r_d262e2cc:
+
+    # Max_06 "{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "{m}Ach, áno! Cítil som niečo mäkké a okrúhle a dokonca aj s vyčnievajúcimi bradavkami, ktoré sú cítiť aj cez jej oblečenie ...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4980
+translate slovak lisa_read_with_Max_r_31a01586:
+
+    # Max_06 "[like!t]{m}О да! Нащупал что-то мягкое и округлое, да ещё и с торчащими сосочками, которые чувствуются даже через её одежду...{/m}" nointeract
+    Max_06 "[like!t]{m}Ach, áno! Cítil som niečo mäkké a okrúhle a dokonca aj s vyčnievajúcimi bradavkami, ktoré sú cítiť aj cez jej oblečenie ...{/m}" nointeract
+
+# game/dialogues/lisatalk.rpy:4988
+translate slovak lisa_read_with_Max_r_783629e4:
+
+    # Lisa_09 "[dont_like!t]Эй, Макс! Ты куда так торопишься? Лишь бы облапать побыстрее!"
+    Lisa_09 "[dont_like!t]Hej, Max! Kam sa ponáhľaš? Len rýchle ohmatanie!"
+
+# game/dialogues/lisatalk.rpy:4989
+translate slovak lisa_read_with_Max_r_68658364:
+
+    # Max_07 "Я думал, что уже достаточно увлёк тебя поцелуями для этого."
+    Max_07 "Myslel som si, že som ťa už dosť bozkával."
+
+# game/dialogues/lisatalk.rpy:4990
+translate slovak lisa_read_with_Max_r_7b367055:
+
+    # Lisa_01 "Неправильно ты думал. Может быть, в другой раз, ты будешь умнее."
+    Lisa_01 "Rozmýšľal si nesprávne. Možno nabudúce budeš múdrejší."
+
+# game/dialogues/lisatalk.rpy:4991
+translate slovak lisa_read_with_Max_r_a5d5a0b3:
+
+    # Max_10 "Да, возможно..." nointeract
+    Max_10 "Áno, možno..." nointeract
+
+# game/dialogues/lisatalk.rpy:4999
+translate slovak lisa_read_with_Max_r_bba74f75:
+
+    # Max_19 "{m}Обалдеть! Её кожа такая нежная... Интересно, её это заводит так же сильно, как и меня? Ощущения от того, что я тискаю её обнажённую грудь и целую её восхитительную шейку, бесподобны!{/m}"
+    Max_19 "{m}Wow! Jej pokožka je taká jemná... Zaujímalo by ma, či ju to vzrušuje rovnako ako mňa. Pocit, keď jej stláčam nahé prsia a bozkávam jej rozkošný krk, nemá obdoby!{/m}"
+
+# game/dialogues/lisatalk.rpy:5000
+translate slovak lisa_read_with_Max_r_20d02ca2:
+
+    # Lisa_04 "Ммм... Макс, это так приятно! Мне кажется, я совсем сейчас потеряю голову от удовольствия... Может, нам лучше остановиться?" nointeract
+    Lisa_04 "Mmm... Max, to je taký dobrý pocit! Myslím, že za chvíľu stratím hlavu od radosti... Možno by sme mali prestať." nointeract
+
+# game/dialogues/lisatalk.rpy:5005
+translate slovak lisa_read_with_Max_r_6bc9d722:
+
+    # Lisa_03 "Ухх... Было приятно, настолько, что даже отрываться не хотелось... Но хорошего помаленьку."
+    Lisa_03 "Uf... Bolo to príjemné, až tak, že si sa nechcel odtrhnúť... Ale je to trochu dobrá vec."
+
+# game/dialogues/lisatalk.rpy:5006
+translate slovak lisa_read_with_Max_r_1517d0bc:
+
+    # Max_03 "Рад, что тебе понравилось... И мне тоже было приятно..." nointeract
+    Max_03 "Som rád, že sa ti to páčilo... Bolo to pekné aj pre mňa..." nointeract
+
+# game/dialogues/lisatalk.rpy:5016
+translate slovak lisa_read_with_Max_r_6afe97b7:
+
+    # Lisa_06 "[lisa_good_kiss!t]Ах, Макс... Мои сосочки... Как хорошо! Ты так нежно это делаешь, что мне хочется начать громко стонать..."
+    Lisa_06 "[lisa_good_kiss!t]Ach, Max... Moje bradavky... Aké pekné! Robíš to tak jemne, že mám chuť začať hlasno stonať..."
+
+# game/dialogues/lisatalk.rpy:5017
+translate slovak lisa_read_with_Max_r_af705223:
+
+    # Max_04 "{m}Да, Лиза! Наверняка твои шелковистые и сладкие сисечки не хотят, чтобы эти ласки прекращались. Ммм! А мне не хочется от них отрываться, но пора...{/m}"
+    Max_04 "{m}Áno, Líza! Určite tvoje hodvábne a sladké prsia nechcú, aby sa tieto lásky zastavili. Mmm! A nerád sa od nich odpútavam, ale je čas..{/m}"
+
+# game/dialogues/lisatalk.rpy:5020
+translate slovak lisa_read_with_Max_r_9f51292e:
+
+    # Lisa_05 "А я уже сама хотела тебя остановить, Макс... Было приятно, настолько, что даже отрываться не хотелось... Шалость удалась!"
+    Lisa_05 "A ja som ťa chcela zastaviť, Max... Bolo to príjemné, až tak, že si sa nechcel odtrhnúť... Žart bol úspešný!"
+
+# game/dialogues/lisatalk.rpy:5024
+translate slovak lisa_read_with_Max_r_08c1057f:
+
+    # Max_03 "Рад, что тебе понравилось... Ты очень классная, Лиза! И сисечки у тебя прелестные!"
+    Max_03 "Som rád, že sa ti to páčilo... Si veľmi skvelá, Líza! A tvoje prsia sú nádherné!"
+
+# game/dialogues/lisatalk.rpy:5025
+translate slovak lisa_read_with_Max_r_f72901e5:
+
+    # Lisa_02 "Ой, Макс, не смущай меня так... Но спасибо за комплимент." nointeract
+    Lisa_02 "Ach, Max, neuvádzaj ma do rozpakov... Ale ďakujem za kompliment." nointeract
+
+# game/dialogues/lisatalk.rpy:5030
+translate slovak lisa_read_with_Max_r_7539a0ef:
+
+    # Lisa_02 "[lisa_bad_kiss!t]Ухх... Было приятно, настолько, что даже отрываться не хотелось... Но ты немножко торопишься, так что хорошего помаленьку."
+    Lisa_02 "[lisa_bad_kiss!t]Uf... Bolo to príjemné, až tak, že si sa nechcel odtrhnúť... Ale ty sa trochu ponáhľaš, kúsok po kúsku."
+
+# game/dialogues/lisatalk.rpy:5031
+translate slovak lisa_read_with_Max_r_29e49474:
+
+    # Max_01 "Рад, что тебе понравилось... В следующий раз я постараюсь не торопиться." nointeract
+    Max_01 "Som rád, že sa ti to páčilo... Nabudúce sa budem snažiť neponáhľať." nointeract
+
+translate slovak strings:
+
+    # game/dialogues/lisatalk.rpy:4784
+    old "{i}нежно прикасаться к её попке{/i}"
+    new "{i}jemne sa dotýkať jej zadku{/i}"
+
+    # game/dialogues/lisatalk.rpy:4796
+    old "{i}целовать её шею{/i}"
+    new "{i}pobozkať ju na krk{/i}"
+
+    # game/dialogues/lisatalk.rpy:4826
+    old "{i}лечь рядом с Лизой{/i}"
+    new "{i}ľahnúť si vedľa Lízy{/i}"
+
+    # game/dialogues/lisatalk.rpy:4942
+    old "{i}закончить поцелуй{/i}"
+    new "{i}dokončiť bozk{/i}"
+
+    # game/dialogues/lisatalk.rpy:4950
+    old "{i}снова целовать Лизу{/i}"
+    new "{i}znovu pobozkať Lízu{/i}"
+
+    # game/dialogues/lisatalk.rpy:5001
+    old "{i}остановиться{/i}"
+    new "{i}zostať{/i}"
+
+    # game/dialogues/lisatalk.rpy:5001
+    old "{i}целовать её грудь{/i}"
+    new "{i}bozkávať jej prsia{/i}"
+
+# TODO: Translation updated at 2022-02-09 00:14
+
+# game/events/max.rpy:685
+translate slovak BookRead_sex_ed_37326ac9:
+
+    # Max_04 "Вот и последние главы... Кажется, я понял о чём говорила Лиза. Эх, надо было раньше эту книжку прочитать, сейчас бы не тратил на это время! Но лучше поздно, чем никогда. Материал усвоен и теперь можно снова приставать к Лизе."
+    Max_04 "Prichádzajú posledné kapitoly... Myslím, že viem, o čom Líza hovorila. Ech, mal som si túto knihu prečítať skôr, teraz by som s ňou nestrácal čas! Ale lepšie neskoro ako nikdy. Materiál som vstrebal a teraz je bezpečné Lízu opäť otravovať."
+
+# TODO: Translation updated at 2022-02-09 00:14
+
+# game/events/olivia.rpy:184
+translate slovak olivia_first_night_visit_af6afb32:
+
+    # Olivia_02 "Значит, кроме нас и Лизы дома только ваша мама?"
+    Olivia_02 "Takže okrem nás a Lízy je doma len tvoja mama?"
+
+# game/events/olivia.rpy:185
+translate slovak olivia_first_night_visit_40050d52:
+
+    # Max_03 "Да... Алиса с тётей Кирой как всегда в это время тусят где-то допоздна. Мама у себя в комнате, но может прийти нас проверить. Главное сильно не шуметь."
+    Max_03 "Áno... Alica a teta Kira sú ako zvyčajne vonku. Mama je vo svojej izbe, ale môže nás prísť skontrolovať. Hlavnou vecou je nerobiť príliš veľký hluk."
+
+# game/events/olivia.rpy:265
+translate slovak olivia_second_night_visit_4bfe6ec9:
+
+    # Olivia_03 "Лиза, а ты так и будешь в маечке и трусиках? Мы ведь шуметь не собираемся, так что твоя мама ничего не увидит. А даже если и придёт, то мы тебя прикроем."
+    Olivia_03 "Líza, budeš stále v tielku a nohavičkách? Nebudeme robiť žiadny hluk, aby tvoja matka nič nevidela. A aj keby sa tak stalo, kryjeme ti chrbát."
+
+# game/events/olivia.rpy:266
+translate slovak olivia_second_night_visit_96357a48:
+
+    # Lisa_09 "Да я больше не из-за мамы, а из-за Макса. Только и будет делать, что пялиться."
+    Lisa_09 "Už to nie je moja mama, ale Max. Bude sa len pozerať."
+
+# game/events/olivia.rpy:309
+translate slovak olivia_night_visit_r_11acffe5:
+
+    # Olivia_01 "Привет, Макс. А вот и я! Как дома обстановка?"
+    Olivia_01 "Ahoj, Max. Tu som! Ako to vyzerá doma?"
+
+# game/events/olivia.rpy:310
+translate slovak olivia_night_visit_r_e85cfe71:
+
+    # Max_04 "Привет! Рад тебя видеть. Дома только я, Лиза и мама. Проходи..."
+    Max_04 "Ahoj! Rád ťa vidím. Doma som len ja, Líza a mama. Vstúp..."
+
+# TODO: Translation updated at 2022-02-09 18:49
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Кстати, с этим Эриком совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
+    new "Mimochodom, popritom Erikovi som sa úplne zabudol spýtať, či čítala knihu o sexuálnej výchove! Musím sa opýtať..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я ещё предложил её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. Но ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
+    new "Od Lízy som sa dozvedel, že čítala knihu o sexuálnej výchove. Zároveň som jej ponúkol, že ju naučím bozkávať sa ďalej, ale intímnejšie. Stále mi dovoľuje bozky na krk, ale nedovolí mi dotýkať sa jej pŕs, hanbí sa za to. Ale to je v poriadku, pustí ma dnu. Myslím, že ak ju skúsim nenápadne baliť, keď si číta, hodiny bozkávania sa môžu naplno obnoviť."
+
+    # game/core/09_opportunities.rpy:4
+    old "Стоит попробовать составить компанию Лизе, когда она читает..."
+    new "Stojí za to pokúsiť sa robiť Líze spoločnosť, keď číta..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать приставать к Лизе, когда она читает. Но не исключено, что для успеха в этих приставаниях у неё должно быть очень хорошее настроение..."
+    new "Musím Lízu stále otravovať, keď číta. Je však možné, že musí mať veľmi dobrú náladu, aby sa mi tieto prosby podarili..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот чёрт! Во время моих приставаний, Лиза каким-то образом почувствовала, что я не читал книгу по сексуальному образованию. Она намекнула, что к ней можно даже не пытаться приставать, пока я её не прочитаю. Эх, надо было прочитать её сразу, как купил, а потом уже дарить."
+    new "Do prdele! Počas mojich obťažovaní Líza akosi vycítila, že som nečítal učebnicu sexuálnej výchovy. Naznačila, že sa ju nemusím ani pokúšať zbaliť, kým si ju neprečítam. Eh, mal som si ju prečítať hneď, ako som ju kúpil, a potom ju darovať ako darček."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно сперва прочитать книгу по сексуальному образованию, а уже после продолжить приставать к Лизе, когда она читает..."
+    new "Najprv si musím prečítať knihu o sexuálnej výchove a potom otravovať Lízu pri čítaní..."
+
+    # game/core/09_opportunities.rpy:4
+    old "от это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
+    new "To je skvelé! Konečne sa mi podarilo bozkami pohladiť Lízine prsia! A koľko perspektív to môže otvoriť... Najdôležitejšie je neponáhľať sa a užívať si tieto chvíle."
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого и не портить Лизе настроение..."
+    new "Myslím, že som sa s Lízou už zblížil natoľko, že jej a Olívii nebude vadiť moja spoločnosť v piatok a v sobotu večer. Zostáva len čakať a nepokaziť Líze náladu..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь Оливия может приходить к нам с ночёвкой, как и раньше. Эрик мне больше ничем не угрожает, а это значит я могу попытать удачу с Лизой и Оливией по ночам... Правда, здесь есть другой напряг - мама может проверить, чем мы занимаемся."
+    new "Olivia teraz môže prísť k nám na prespanie ako predtým. Erik ma už nijako neohrozuje, čo znamená, že môžem v noci skúsiť šťastie s Lízou a Olíviou... Pravda, je tu ešte jedno vzrušo - mama by mohla skontrolovať, čo robíme."
+
+# TODO: Translation updated at 2022-02-16 00:39
+
+# game/dialogues/anntalk.rpy:559
+translate slovak ann_tv_continuation_massage_513fb7a2:
+
+    # Max_06 "{m}Неплохой у меня вид открывается! Под полотенцем слегка виднеются её аппетитные сосочки... Это возбуждает ещё сильнее. Вот бы её полотенце начало сползать... Возможно, она бы даже не сразу это поняла, особенно, если ей очень понравился массаж.{/m}"
+    Max_06 "{m}Nie je to zlý výhľad! Jej bujné bradavky sú pod uterákom mierne viditeľné... Je to ešte vzrušujúcejšie. Želám si, aby jej uterák začal kĺzať... Možno si to ani hneď neuvedomila, najmä ak sa jej masáž naozaj páčila.{/m}"
+
+# game/dialogues/anntalk.rpy:561
+translate slovak ann_tv_continuation_massage_4a0638de:
+
+    # Ann_07 "Ой, Макс! Это чудесно... Ты знаешь как сделать приятно. Мне очень понравилось... Ты большой молодец у меня!" nointeract
+    Ann_07 "Ach, Max! Je to úžasné... Vieš, ako to urobiť pekne. Veľmi sa mi to páčilo... Odvádzaš so mnou skvelú prácu!" nointeract
+
+# game/dialogues/anntalk.rpy:565
+translate slovak ann_tv_continuation_massage_3a615788:
+
+    # Ann_05 "Обожаю массаж спины... Не знаю, хватит ли у тебя для этого силы, но давай попробуем. Может у тебя уже было достаточно практики и ты со мной справишься..."
+    Ann_05 "Milujem masáže chrbta... Neviem, či na to máš silu, ale skúsme to. Možno máš dostatok praxe a zvládneš ma..."
+
+# game/dialogues/anntalk.rpy:566
+translate slovak ann_tv_continuation_massage_fb2c93bc:
+
+    # Max_04 "Ты не пожалеешь!"
+    Max_04 "Nebudeš ľutovať!"
+
+# game/dialogues/anntalk.rpy:568
+translate slovak ann_tv_continuation_massage_5bae27a4:
+
+    # Ann_14 "Ох, даже не знаю, как лучше развернуть это полотенце, чтобы ты мог до моей спины спокойно добраться. Ты лучше глаза закрой, а то мало ли у меня не получится..."
+    Ann_14 "Ani neviem, ako najlepšie otočiť tento uterák, aby si sa mi mohol v pokoji dostať na chrbát. Radšej zavri oči, lebo by som to nemusela stihnúť..."
+
+# game/dialogues/anntalk.rpy:569
+translate slovak ann_tv_continuation_massage_be58c6be:
+
+    # Max_02 "{m}Как же здорово будет, если не получится! У меня только от одних мыслей об этом член стоит, как гора, а уж если она что-нибудь засветит...{/m}"
+    Max_02 "{m}Aké by to bolo skvelé, keby to nevyšlo! Len pri pomyslení na to sa mi postaví penis ako hora, a ak niečo zabliká...{/m}"
+
+# game/dialogues/anntalk.rpy:571
+translate slovak ann_tv_continuation_massage_561a8483:
+
+    # Ann_02 "Вот так, мне кажется, будет нормально... Только хочу тебя сразу предупредить, я совсем голая под полотенцем. Я там не сильно... открыта?"
+    Ann_02 "Zdá sa mi to v poriadku... Len ťa chcem hneď upozorniť, že pod uterákom som úplne nahá. Nie som tam veľa... otvorená?"
+
+# game/dialogues/anntalk.rpy:572
+translate slovak ann_tv_continuation_massage_87f09816:
+
+    # Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
+    Max_03 "Nie. Je to presne to, čo potrebujem!" nointeract
+
+# game/dialogues/anntalk.rpy:578
+translate slovak ann_tv_continuation_massage_42d57509:
+
+    # Max_01 "Спасибо за похвалу! Жду не дождусь следующего раза, мам. Отдыхай." nointeract
+    Max_01 "Ďakujem za pochvalu! Už sa neviem dočkať ďalšieho pokračovania, mami. Oddýchni si." nointeract
+
+# game/dialogues/anntalk.rpy:586
+translate slovak ann_tv_continuation_massage_massage_f3601d08:
+
+    # Ann_03 "[ann_good_mass!t]Да, Макс... Твои руки приносят мне огромное удовольствие. В смысле, у тебя получается очень хорошо... Как будто сходила к профессионалу..."
+    Ann_03 "[ann_good_mass!t]Áno, Max... Tvoje ruky mi robia veľkú radosť. Myslím, že si vedieš naozaj dobre... Je to ako chodiť k profesionálovi..."
+
+# game/dialogues/anntalk.rpy:587
+translate slovak ann_tv_continuation_massage_massage_49ee9ac5:
+
+    # Max_06 "{m}Вау... Какая у неё шикарная и почти голая попка! Блин, как же хочется прижаться к ней членом, прямо по серединке, и тереться... Но лучше не отвлекаться, а то запросто можно массаж запороть!{/m}" nointeract
+    Max_06 "{m}Wow... Aký má nádherný a takmer nahý zadok! Sakra, chcel by som si pritlačiť penis, presne do stredu, a trieť ho... Ale je lepšie sa nenechať rozptýliť, inak by som mohol masáž ľahko pokaziť!{/m}" nointeract
+
+# game/dialogues/anntalk.rpy:593
+translate slovak ann_tv_continuation_massage_massage_ffdec8ce:
+
+    # Ann_09 "[ann_good_mass!t]Ох, как здорово, сынок... Такие нежные, но сильные руки у тебя! Но они уже опустились так низко, а я не чувствую по полотенцу, что оно тебе хоть как-то мешает. Оно там не сползло слишком низко?" nointeract
+    Ann_09 "[ann_good_mass!t]To je skvelé, synku... Máš také jemné, ale silné ruky! Ale už klesli tak nízko a z uteráka necítim, že by ťa to nejako trápilo. Neskĺzol tam príliš nízko?" nointeract
+
+# game/dialogues/anntalk.rpy:598
+translate slovak ann_tv_continuation_massage_massage_e212b960:
+
+    # Ann_08 "[succes!t]Фух... А то я сижу, наслаждаюсь массажем и про всё остальное забыла. Такая лёгкость. Мне очень понравилось!" nointeract
+    Ann_08 "[succes!t]Uff... Pretože tu sedím, užívam si masáž a zabúdam na všetko ostatné. Taká ľahkosť. Veľmi sa mi to páčilo!" nointeract
+
+# game/dialogues/anntalk.rpy:603
+translate slovak ann_tv_continuation_massage_massage_727fe7fb:
+
+    # Ann_07 "Я обязательно буду ждать следующего раза, сынок!"
+    Ann_07 "Určite sa budem tešiť nabudúce, synku!"
+
+# game/dialogues/anntalk.rpy:604
+translate slovak ann_tv_continuation_massage_massage_535758bb:
+
+    # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
+    Max_01 "Pekné! Aj ja budem čakať, mami. Oddýchni si." nointeract
+
+# game/dialogues/anntalk.rpy:608
+translate slovak ann_tv_continuation_massage_massage_d390c1ed:
+
+    # Ann_17 "[failed!t]Обманщик ты, Макс! Это что такое?! Как тебе не стыдно! У тебя встал на собственную маму! Что у тебя в голове творится... Почему ты не сказал, что я тут голая сижу?"
+    Ann_17 "[failed!t]Si klamár, Max! Čo je to?! Hanba ti! Máš erekciu z vlastnej mami! Čo sa deje v tvojej hlave... Prečo si mi nepovedal, že tu sedím nahá?"
+
+# game/dialogues/anntalk.rpy:609
+translate slovak ann_tv_continuation_massage_massage_c7019911:
+
+    # Max_07 "Просто засмотрелся на тебя по ходу дела. А не сказал, потому что хотел массаж закончить. Хорошо же получилось?"
+    Max_07 "Len sa na teba pozerám, keď ideš. Ale nepovedal, pretože som chcel masáž dokončiť. Dopadlo to dobre?"
+
+# game/dialogues/anntalk.rpy:610
+translate slovak ann_tv_continuation_massage_massage_d53168cf:
+
+    # Ann_12 "Получилось-то хорошо, вот только... не должно так быть..."
+    Ann_12 "Je to dobré, až na to, že... nemalo by to tak byť..."
+
+# game/dialogues/anntalk.rpy:611
+translate slovak ann_tv_continuation_massage_massage_e1072954:
+
+    # Max_10 "Ну мам, ты же красивая! Вот я и это... возбудился... слегка..."
+    Max_10 "No tak, mami, si krásna! Som tu a toto... som sa vzrušil... mierne..."
+
+# game/dialogues/anntalk.rpy:612
+translate slovak ann_tv_continuation_massage_massage_1371a9dd:
+
+    # Ann_13 "Ничего себе, слегка! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
+    Ann_13 "Wow, málo! Takže, dobre, predstierajme, že sa nič nestalo. Choď von a bav sa..." nointeract
+
+# game/dialogues/anntalk.rpy:615
+translate slovak ann_tv_continuation_massage_massage_21542021:
+
+    # Ann_15 "Ничего себе! Ты почему сидишь и молчишь об этом, а, Макс?! Я же предупредила, что голая под ним..."
+    Ann_15 "Wow! Prečo tam sedíš a nehovoríš o tom, čo, Max?! Povedala som ti, že som pod ním nahá..."
+
+# game/dialogues/anntalk.rpy:616
+translate slovak ann_tv_continuation_massage_massage_c532b93a:
+
+    # Max_07 "Так оно под самый конец только сползло, а я хотел массаж закончить. Хорошо же получилось?"
+    Max_07 "Ku koncu to skĺzlo a chcel som masáž hlavne dokončiť. Je to dobré, však?"
+
+# game/dialogues/anntalk.rpy:618
+translate slovak ann_tv_continuation_massage_massage_f1a52f3f:
+
+    # Ann_14 "Очень! Но в следующий раз, лучше не молчи об этом... Хорошо?"
+    Ann_14 "Veľa! Ale nabudúce o tom radšej nemlč... Dobre?"
+
+# game/dialogues/anntalk.rpy:619
+translate slovak ann_tv_continuation_massage_massage_5a863e60:
+
+    # Max_11 "Ладно, скажу."
+    Max_11 "Dobre, poviem."
+
+# game/dialogues/anntalk.rpy:620
+translate slovak ann_tv_continuation_massage_massage_3c049e1b:
+
+    # Ann_07 "А за массаж огромное тебе спасибо, мне очень понравилось! Обязательно буду ждать следующего раза!"
+    Ann_07 "A ďakujem za masáž, veľmi sa mi páčila! Rozhodne sa teším na ďalšie stretnutie!"
+
+# game/dialogues/anntalk.rpy:621
+translate slovak ann_tv_continuation_massage_massage_535758bb_1:
+
+    # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
+    Max_01 "Pekné! Aj ja budem čakať, mami. Oddýchni si." nointeract
+
+# game/dialogues/anntalk.rpy:631
+translate slovak ann_tv_continuation_massage_bad_massage_fb4ffbcf:
+
+    # Ann_14 "[ann_bad_mass!t]Ой, нет, Макс... Твой хвалёный массаж не так хорош, как ты рекламировал... Думаю, надо прекратить. Давай в другой раз продолжим... Но всё равно, спасибо!"
+    Ann_14 "[ann_bad_mass!t]Ale nie, Max... Tvoja vychvaľovaná masáž nie je taká dobrá, ako si inzeroval... Myslím, že by sme mali prestať. Pokračujme v tom inokedy... Ale aj tak vďaka!"
+
+# game/dialogues/anntalk.rpy:633
+translate slovak ann_tv_continuation_massage_bad_massage_1545505c:
+
+    # Max_10 "Извини. Наверно, на сериал засмотрелся... В следующий раз я буду лучше стараться." nointeract
+    Max_10 "Prepáč. Musel som sa pozerať na seriál... Nabudúce sa budem snažiť viac." nointeract
+
+# game/dialogues/anntalk.rpy:1605
+translate slovak ann_about_olivia0_succes_54a6a696:
+
+    # Ann_14 "Видимо, из-за Эрика я стала слишком подозрительной. Пытаюсь снова уберечь Лизу от всего на свете. Хотя, прямо перед этим, сама же такое ей показывала..."
+    Ann_14 "Zjavne Erik vyvolal vo mne príliš podozrievavosti. Znovu sa snažím udržať Lízu v bezpečí pred všetkým na svete. Hoci tesne predtým som jej sama ukázala toto..."
+
+translate slovak strings:
+
+    # game/dialogues/anntalk.rpy:562
+    old "Массаж спины?"
+    new "Masáž chrbta?"
+
+    # game/dialogues/anntalk.rpy:562
+    old "Полотенце приспустишь?"
+    new "Môžeš si stiahnuť uterák?"
+
+    # game/dialogues/anntalk.rpy:581
+    old "{i}массировать маме спину{/i}"
+    new "{i}masírovať mamin chrbát{/i}"
+
+    # game/dialogues/anntalk.rpy:594
+    old "Нет, мам. Не переживай."
+    new "Nie, mami. Nemaj obavy."
+
+    # game/dialogues/anntalk.rpy:594
+    old "Есть немного..."
+    new "Je tu malý..."
+
+# TODO: Translation updated at 2022-02-16 00:39
+
+# game/events/ann.rpy:587
+translate slovak ann_dressed_balcony_919b6a05:
+
+    # Max_07 "{m}Хм... Должно быть мама на балконе...{/m}"
+    Max_07 "{m}Hmmm... Mama musí byť na balkóne...{/m}"
+
+# game/events/ann.rpy:595
+translate slovak ann_dressed_balcony_34f4b4a9:
+
+    # Max_09 "{m}То ли мама просто задумалась, то ли грустит...{/m}" nointeract
+    Max_09 "{m}Buď mama len premýšľa, alebo je smutná...{/m}" nointeract
+
+# game/events/ann.rpy:601
+translate slovak ann_dressed_balcony_2fd8332a:
+
+    # Ann_12 "Ой, Макс! Ты слишком тихо ходишь. А я так, ничего, просто задумалась немного..."
+    Ann_12 "Ach, Max! Chodíš príliš potichu. Len o tom trochu premýšľam..."
+
+# game/events/ann.rpy:602
+translate slovak ann_dressed_balcony_d6e397b3:
+
+    # Max_07 "Расскажешь, о чём?"
+    Max_07 "Povieš mi, o čom?"
+
+# game/events/ann.rpy:612
+translate slovak ann_dressed_balcony_2e72dc0c:
+
+    # Max_05 "{m}Оу! Мама ещё не оделась... Это я вовремя зашёл. Она шикарно смотрится...{/m}" nointeract
+    Max_05 "{m}Oh! Mama ešte nie je oblečená... Je najvyšší čas, aby som sa dostal dovnútra. Vyzerá nádherne...{/m}" nointeract
+
+# game/events/ann.rpy:621
+translate slovak ann_dressed_balcony_1f19d7dd:
+
+    # Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+    Ann_15 "Max! Naučila som ťa klopať! Nemôžeš len tak bez ohlásenia vtrhnúť do miestnosti! Stalo sa niečo?" nointeract
+
+# game/events/ann.rpy:624
+translate slovak ann_dressed_balcony_e1ca91d3:
+
+    # Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+    Ann_15 "Max! Kto bude klopať?! Prestaň bez ohlásenia vnikať do miestnosti! Alebo máš niečo naliehavé?" nointeract
+
+# game/events/ann.rpy:633
+translate slovak ann_dressed_balcony_a9e5c75c:
+
+    # Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
+    Ann_15 "Max! Naučila som ťa klopať! {p=3}{nw}"
+
+# game/events/ann.rpy:635
+translate slovak ann_dressed_balcony_babcea3a:
+
+    # Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
+    Ann_15 "Max! Kto bude klopať?! {p=3}{nw}"
+
+# game/events/ann.rpy:638
+translate slovak ann_dressed_balcony_aa9214ef:
+
+    # Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
+    Ann_14 "Nemôžeš len tak bez ohlásenia vtrhnúť do miestnosti! Stalo sa niečo?" nointeract
+
+# game/events/ann.rpy:641
+translate slovak ann_dressed_balcony_c391d1e4:
+
+    # Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
+    Ann_12 "Prestaň bez ohlásenia vnikať do miestnosti! Alebo máš niečo naliehavé?" nointeract
+
+# game/events/ann.rpy:650
+translate slovak ann_dressed_balkon_talk1_b906cb2e:
+
+    # Ann_14 "У меня сейчас такое состояние, что я не знаю, как мне жить дальше... Я... Я ужасная мать..."
+    Ann_14 "Momentálne som v stave, keď neviem, ako budem žiť... Som... Som hrozná matka..."
+
+# game/events/ann.rpy:651
+translate slovak ann_dressed_balkon_talk1_b034aec8:
+
+    # Max_08 "Что?! Как ты можешь такое говорить?"
+    Max_08 "Čože?! Ako to môžeš povedať?"
+
+# game/events/ann.rpy:652
+translate slovak ann_dressed_balkon_talk1_79bc09d7:
+
+    # Ann_13 "А разве нет? Я... Я была так глупа, что привела в дом проходимца, который не только воспользовался мной, но и чуть не совратил моих девочек!"
+    Ann_13 "Je to tak? Ach... Bola som taká hlúpa, že som si do domu priviedla tuláka, ktorý ma nielenže zneužil, ale takmer obťažoval moje dievčatá!"
+
+# game/events/ann.rpy:653
+translate slovak ann_dressed_balkon_talk1_de50c165:
+
+    # Max_09 "Мам, прекрати, это уже всё в прошлом... Забудь..."
+    Max_09 "Mami, prestaň, už je to minulosť... Zabudni na to..."
+
+# game/events/ann.rpy:654
+translate slovak ann_dressed_balkon_talk1_c7c7442f:
+
+    # Ann_14 "Забыть? Забыть, как я чуть не отправила единственного сына в военный лагерь и... который один оказался настолько умным и благородным, что не только не разозлился на меня, а наоборот, спас всю семью от этого ублюдка Эрика."
+    Ann_14 "Zabudol si? Zabudni, ako som takmer poslala svojho jediného syna do vojenského tábora a... ktorý sa ako jediný ukázal byť taký múdry a šľachetný, že sa na mňa nielenže nenahneval, ale naopak, zachránil celú rodinu pred tým bastardom Erikom."
+
+# game/events/ann.rpy:655
+translate slovak ann_dressed_balkon_talk1_efb41ecc:
+
+    # Max_07 "Ну хватит... Было и было. Прими и сделай выводы. Нельзя же всё время теперь ходить такой печальной и заниматься самобичеванием. Ты ни в чём не виновата!"
+    Max_07 "To stačí... Bolo a bolo. Prijmi to a vyvodzuj závery. Nemôžeš byť stále taká smutná a sebakritická. Nie je to tvoja chyba!"
+
+# game/events/ann.rpy:656
+translate slovak ann_dressed_balkon_talk1_e8140f63:
+
+    # Ann_17 "Возможно ты прав, но... присутствие Эрика на работе постоянно мне напоминает о тех событиях и мне это ужасно неприятно."
+    Ann_17 "Možno máš pravdu, ale... Erikova prítomnosť v práci mi tie udalosti neustále pripomína a ja sa kvôli tomu cítim hrozne."
+
+# game/events/ann.rpy:657
+translate slovak ann_dressed_balkon_talk1_63d3ad78:
+
+    # Max_15 "Да и чёрт с ним! Просто игнорируй его. К тому же, у тебя есть мы, и мы все тебя очень любим!"
+    Max_15 "K čertu s tým! Jednoducho ho ignoruj. Okrem toho máš nás a my všetci ťa máme veľmi radi!"
+
+# game/events/ann.rpy:658
+translate slovak ann_dressed_balkon_talk1_6335970c:
+
+    # Ann_02 "Спасибо, мой хороший, за твои тёплые слова и поддержку, мне очень приятно это слышать."
+    Ann_02 "Ďakujem ti, dobrý muž, za tvoje milé slová a podporu, veľmi ma to teší."
+
+# game/events/ann.rpy:659
+translate slovak ann_dressed_balkon_talk1_59e5166a:
+
+    # Max_04 "Не стоит благодарить, мам. Я очень тебя люблю! Ты самая замечательная мама на свете! Самая добрая и самая красивая!"
+    Max_04 "Nemusíš mi ďakovať, mami. Mám ťa veľmi rád! Si tá najúžasnejšia mama na svete! Najláskavejšia a najkrajšia!"
+
+# game/events/ann.rpy:661
+translate slovak ann_dressed_balkon_talk1_d77c6ad5:
+
+    # Ann_04 "Ой! Вот же ты маленький льстец, Макс!"
+    Ann_04 "Och! Aký si ty malý lichotník, Max!"
+
+# game/events/ann.rpy:662
+translate slovak ann_dressed_balkon_talk1_5e9b1161:
+
+    # Max_07 "Это я-то маленький?"
+    Max_07 "Som ja ten malý?"
+
+# game/events/ann.rpy:663
+translate slovak ann_dressed_balkon_talk1_5eb0124c:
+
+    # Ann_05 "Ну, конечно, ты большой, Макс! Совсем взрослый, почти мужчина."
+    Ann_05 "Samozrejme, že si veľký, Max! Vyrástol si, je z teba takmer muž."
+
+# game/events/ann.rpy:664
+translate slovak ann_dressed_balkon_talk1_f86a1ee3:
+
+    # Max_09 "Что значит почти?"
+    Max_09 "Čo myslíš tým takmer?"
+
+# game/events/ann.rpy:665
+translate slovak ann_dressed_balkon_talk1_2e6b2825:
+
+    # Ann_07 "Ну... То и значит, что полноценным мужчиной ты станешь только после того, как у тебя появится девушка."
+    Ann_07 "No... To znamená, že plnohodnotným mužom sa staneš až vtedy, keď budeš mať priateľku."
+
+# game/events/ann.rpy:666
+translate slovak ann_dressed_balkon_talk1_a8851b6c:
+
+    # Max_08 "Серьёзно? А поподробнее можно узнать, как и что делать с ней, чтобы стать мужчиной?"
+    Max_08 "Naozaj? Môžem sa dozvedieť viac o tom, ako a čo s tým robiť, aby som sa stal mužom?"
+
+# game/events/ann.rpy:667
+translate slovak ann_dressed_balkon_talk1_f041c776:
+
+    # Ann_02 "Макс, что за вопросы? Как будто ты до сих пор не знаешь."
+    Ann_02 "Max, čo je to za otázky? Akoby si to stále nevedel."
+
+# game/events/ann.rpy:668
+translate slovak ann_dressed_balkon_talk1_d7d0349c:
+
+    # Max_02 "Да это я просто так спросил... Теперь ты уже не такая печальная и задумчивая, как до моего прихода."
+    Max_02 "Len som sa pýtal... Teraz už nie si taká smutná a zádumčivá ako pred mojím príchodom."
+
+# game/events/ann.rpy:669
+translate slovak ann_dressed_balkon_talk1_1c8db60a:
+
+    # Ann_05 "Вот же ты хитрец! Нашёл чем меня отвлечь..."
+    Ann_05 "Si šibal, však? Nájsť niečo, čo by ma rozptýlilo..."
+
+# game/events/ann.rpy:670
+translate slovak ann_dressed_balkon_talk1_3696543d:
+
+    # Max_03 "Могу отвлечь чем-нибудь приятным. Например, массажем спины. Думаю, это тебе бы сейчас помогло. Хочешь?"
+    Max_03 "Môžem ťa rozptýliť niečím príjemným. Napríklad masáž chrbta. Myslím, že by to teraz pomohlo. Chceš?"
+
+# game/events/ann.rpy:671
+translate slovak ann_dressed_balkon_talk1_eb82677e:
+
+    # Ann_04 "Нет, Макс, сейчас мне некогда. Давай вечерком, сынок, у ТВ."
+    Ann_04 "Nie, Max, teraz nemám čas. Príď dnes večer, synku, k televízii."
+
+# game/events/ann.rpy:672
+translate slovak ann_dressed_balkon_talk1_a3767c9d:
+
+    # Max_01 "Договорились, мам. И не забывай, если что, я всегда рядом. Обращайся!"
+    Max_01 "Dohodnuté, mami. A nezabudni, že som tu vždy, ak ma budeš potrebovať. Len sa ozvi!"
+
+# game/events/ann.rpy:673
+translate slovak ann_dressed_balkon_talk1_59d69cc0:
+
+    # Ann_01 "Обязательно!" nointeract
+    Ann_01 "Rozhodne!" nointeract
+
+translate slovak strings:
+
+    # game/events/ann.rpy:596
+    old "Мам, всё нормально?"
+    new "Mami, si v poriadku?"
+
+    # game/events/ann.rpy:613
+    old "Мам?"
+    new "Mami?"
+
+# TODO: Translation updated at 2022-02-16 00:39
+
+# game/events/olivia.rpy:683
+translate slovak olivia_repeatable_night_out_with_eab840c0:
+
+    # Lisa_02 "И с чего ты взял, что нам надоест? Я даже маечку одевать не буду. Макс уже всё видел, а без неё удобнее..."
+    Lisa_02 "A prečo si myslíte, že sa budeme nudiť? Dokonca si ani neoblečiem tričko. Max už všetko videl a bez neho je to pohodlnejšie..."
+
+# game/events/olivia.rpy:684
+translate slovak olivia_repeatable_night_out_with_ba36eeb5:
+
+    # Max_02 "Ох, что за дивный вечерок!"
+    Max_02 "Ó, aký krásny večer!"
+
+# game/events/olivia.rpy:685
+translate slovak olivia_repeatable_night_out_with_0a6cf6a4:
+
+    # Olivia_01 "Ночь вообще-то, Макс. Укладываемся спать..."
+    Olivia_01 "V skutočnosti je noc, Max. Poďme spať..."
+
+# TODO: Translation updated at 2022-02-19 11:44
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Самое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ. Нужно сперва избавиться от Эрика, а уже потом покупать эротические фильмы. Пока только массаж время от времени..."
+    new "Najviac frustrujúce je, že sa len zriedkakedy dostaneme k tomu, aby sme s mamou pozerali televíziu. Najprv sa musím zbaviť Erika, aby som mohol kúpiť erotické filmy. Zatiaľ ostáva len občasná masáž..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Можно довольствоваться редкими моментами у ТВ с мамой и делать ей лёгкий массаж, а можно попробовать избавиться от Эрика. Для этого потребуются успехи в возможности \"Альфа\"..."
+    new "Môžem sa uspokojiť so vzácnymi chvíľami pri televízore s mamou a dopriať jej ľahkú masáž, alebo sa môžem pokúsiť Erika zbaviť. Bude si to vyžadovať úspech v príležitosti \"Alfa\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Во главе семьи!\"..."
+    new "Bude to vyžadovať pokrok v príležitosti \"Vodca rodiny!\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно попробовать сделать маме массаж спины, пока она смотрит ТВ..."
+    new "Mal by som skúsiť mojej matke masírovať chrbát, kým pozerá televíziu..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, мама обожает массаж спины, а это значит, что мне будет не так-то и просто сделать его на отлично. Но, если хотя бы иногда будет получаться, то уже хорошо и я смогу, например, обнимать её сзади, когда она будет грустить на балконе."
+    new "Zdá sa, že mama zbožňuje masáže chrbta, čo znamená, že pre mňa nebude ľahké robiť to dokonale. Ale ak to funguje aspoň občas, je to už dobré a môžem ju napríklad objímať zozadu, keď je smutná na balkóne."
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, этого хватит, чтобы я мог обнимать маму сзади и ей от этого было бы комфортно... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
+    new "Myslím, že to stačí na to, aby som mohol mamu zozadu objať a ona sa bude cítiť príjemne... Úspešne vykonané masáže chrbta pre mamičku pri televízii: [ann.flags.m_back] z 3"
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это класс! Мне наконец-то удалось обласкать Лизины сисечки своими поцелуями! А сколько перспектив от этого может открыться... Главное, не торопиться и наслаждаться такими моментами."
+    new "To je skvelé! Konečne sa mi podarilo bozkami pohladiť Lízine prsia! A koľko perspektív to môže otvoriť... Najdôležitejšie je neponáhľať sa a užívať si tieto chvíle."
+
+    # game/core/09_opportunities.rpy:4
+    old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды... \nХотя, пока я не избавлюсь от Эрика, все мои старания будут почти напрасными."
+    new "To je oveľa lepšie! Mama má teraz novú súpravu na cvičenie, ktorá jej aj mne poskytne veľa vášnivých emocíí. Dokonca nebola ani príliš skeptická k tomu, že je veľmi otvorená. Záleží na tom, čo... \Ak sa ma pýtate, keby cvičila jogu úplne nahá, bola by to bomba! Eh, sny... Ale kto vie, možno jedného dňa... \Kým sa však Erika nezbavím, všetko moje úsilie bude takmer márne."
+
+    # game/core/09_opportunities.rpy:4
+    old "Можно проводить время с мамой, как сейчас, помогая ей с йогой, а можно попробовать избавиться от Эрика и посмотреть, что будет без него. Для этого потребуются успехи в возможности \"Альфа\"..."
+    new "Mohol by som tráviť čas s mamou, ako teraz, pomáhať jej s jógou, alebo by som sa mohol pokúsiť zbaviť Erika a zistiť, čo sa stane ak tu nebude. Bude si to vyžadovať úspechy v príležitosti \"Alfa\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно и дальше продолжать помогать маме с йогой. Теперь она должна стать ещё интереснее..."
+    new "Musím mame naďalej pomáhať s jógou. Teraz by to malo byť ešte zaujímavejšie..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет и утешать её станет куда приятнее. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
+    new "Takýto druh jógy mám radšej! Matka je stále v rozpakoch z mojich nepokojných rúk, ale myslím, že si na ne zvykne a bude jej oveľa príjemnejšie ich utešovať. \To je pravda, jednoducho si nemôžem pomôcť a musím vstať, takže je najlepšie prísť na maminu jógu v tričku a šortkách. V prípade núdze je oveľa jednoduchšie erekciu skryť. \Je to škoda, že teraz, kvôli mojej aktivite, chce, aby som jej pomáhal aspoň každý druhý deň... Ale mne to nevadí, len ma to núti znova sa k nej pridať."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, то и утешать я её смогу так же... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
+    new "Keď si mama zvykne na to, že sa jej tak bezočivo dotýkajú sväté veci v joge, potom ju môžem utešiť rovnakým spôsobom... Úspešná pomoc mame pri cvičení jogy: [ann.flags.truehelp] z 5"
+
+    # game/core/09_opportunities.rpy:4
+    old "Во главе семьи!"
+    new "Na čele rodiny!"
+
+    # game/core/09_opportunities.rpy:4
+    old "После того, как я вывел Эрика на чистую воду, мама однозначно будет переживать, грустить, заниматься самобичеванием... Я обязательно должен быть рядом и, как смогу, утешать и ободрять её. Правда, перед всеми нами она скорее всего будет стараться этого не показывать, поэтому нужно будет периодически заглядывать к ней в комнату и если она будет грустить, побыть с ней."
+    new "Po odhalení pravdy o Erikovi bude mama určite znepokojená, smutná, zdevastovaná... Určite by som ju mal utešovať a povzbudzovať, ako len môžem. Pravdepodobne sa však bude snažiť nedávať to najavo pred ostatnými, takže sa budem musieť pravidelne pozerať do jej izby a byť s ňou, ak je smutná."
+
+    # game/core/09_opportunities.rpy:4
+    old "Чтобы не попадать на мамины переодевания, заходя к ней в комнату, лучше заглядывать во второй половине часа перед её работой..."
+    new "Ak sa chcem vyhnúť tomu, aby som ju pristihol pri tom, ako sa mama prezlieka, keď idem do jej izby, najlepšie je zájsť v druhej polovici hodiny, kým pracuje..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я был прав. Хоть это и было очевидно, мама переживает из-за всей этой истории с Эриком. Она слишком сильно винит себя в том, что привела к нам домой такого уёб... Эрика, короче. К тому же, он напрягает её на работе. \nЯ успокоил её, на этот раз, и заодно предложил ей массаж спины, чтобы она хоть как-то смогла расслабиться. \nТеперь Эрик не мешает и мама по вечерам всегда в моём распоряжении у ТВ. Мои руки помогут ей расслабиться, а я смогу полюбоваться её шелковистой спинкой... Правда, массаж - это не панацея от всех душевных проблем, поэтому мама и дальше будет переживать."
+    new "Mal som pravdu. Aj keď to bolo zrejmé, mama sa obáva celej tej veci s Erikom. Príliš si vyčíta, že si do nášho domu priviedla takého hajzla... Erika, v skratke. Okrem toho ju stresuje v práci. \Tentoraz som ju upokojil a ponúkol jej masáž chrbta, aby sa uvoľnila. \Teraz je Erik preč a mama je mi večer vždy k dispozícii pri televízore. Moje ruky jej pomôžu uvoľniť sa a ja môžem obdivovať jej hodvábny chrbát... Je pravda, že masáž nie je všeliekom na všetky psychické problémy, takže mama sa bude naďalej trápiť."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать заглядывать к маме перед работой и в воскресенье, чтобы успокоить её, если она будет грустить..."
+    new "Musím sa za mamou zastaviť pred prácou a v nedeľu, aby som ju upokojil, ak je smutná..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я снова застал маму всю расстроенную и грустную. Ей тяжело видеть его ехидную рожу на работе и от этого никуда не деться. Только если уволиться, но не известно, какие проблемы он может устроить в этом случае маме. \nЯ решил приободрить её, помимо обычных утешений, приобняв за попку, но она сказала, что её это скорее смущает, чем ободряет. \nНадо это дело исправлять... И чтобы такие прикосновения стали более естественными, надо чаще прикасаться к её попке. \nПожалуй, самый приемлемый вариант таких контактов, где меня не посчитают озабоченным - это йога. Так что нужно пробовать..."
+    new "Znova som našiel svoju mamu celú rozrušenú a smutnú. Je pre ňu ťažké vidieť jeho uštipačný výraz v práci a nedá sa mu uniknúť. Iba ak dá výpoveď, ale nevedno, aké problémy by jej mohol spôsobiť. \Rozhodol som sa ju okrem zvyčajného uistenia rozveseliť aj objatím zadku, ale povedala, že je viac v rozpakoch ako upokojená. \Musím to napraviť... A aby boli takéto dotyky prirodzenejšie, mal by som sa jej zadku dotýkať častejšie. \Asi najprijateľnejšou možnosťou takéhoto kontaktu, pri ktorom ma nebude považovať za nadržaného, je jóga. Takže sa musím pokúsiť..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эх, придётся пораньше вставать, чтобы помогать маме с йогой..."
+    new "Eh, budem musieť vstať skôr, aby som pomohol mame s jógou..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама перестанет смущаться моих прикосновений к её сочной попке во время йоги, то и утешать я смогу её куда эффективнее. Для этого потребуются успехи в возможности \"Волнующие изгибы\"..."
+    new "Keď sa mama prestane hanbiť za to, že sa počas jógy dotýkam jej šťavnatého zadku, môžem ju utešiť oveľa účinnejšie. To si bude vyžadovať pokrok v príležitosti \"Vzrušujúcich kriviek\"..."
+
+    # game/core/09_opportunities.rpy:908
+    old "Пока мама встречается с Эриком, мне не занять главное место в нашей семье, а значит потребуются успехи в возможности \"Альфа\"..."
+    new "Kým moja mama chodí s Erikom, nemôžem sa v našej rodine dostať do centra pozornosti, čo znamená, že bude potrebný pokrok v príležitosti \"Alfa\"..."
+
+# TODO: Translation updated at 2022-02-19 11:44
+
+# game/dialogues/anntalk.rpy:576
+translate slovak ann_tv_continuation_massage_215bab6f:
+
+    # Ann_05 "Конечно! Когда дело доходит до моей спины, я очень требовательна, сынок, потому что обожаю это. Надеюсь, ты справишься."
+    Ann_05 "Samozrejme! Keď ide o môj chrbát, som veľmi náročná, synku, pretože ho milujem. Dúfam, že to zvládneš."
+
+# game/dialogues/anntalk.rpy:577
+translate slovak ann_tv_continuation_massage_fb2c93bc_1:
+
+    # Max_04 "Ты не пожалеешь!"
+    Max_04 "Nebudeš veru ľutovať!"
+
+# game/dialogues/anntalk.rpy:579
+translate slovak ann_tv_continuation_massage_5bae27a4_1:
+
+    # Ann_14 "Ох, даже не знаю, как лучше развернуть это полотенце, чтобы ты мог до моей спины спокойно добраться. Ты лучше глаза закрой, а то мало ли у меня не получится..."
+    Ann_14 "Ani neviem, ako najlepšie otočiť tento uterák, aby si sa mi mohol v pokoji dostať na chrbát. Radšej zavri oči, lebo by som to nemusela stihnúť..."
+
+# game/dialogues/anntalk.rpy:580
+translate slovak ann_tv_continuation_massage_be58c6be_1:
+
+    # Max_02 "{m}Как же здорово будет, если не получится! У меня только от одних мыслей об этом член стоит, как гора, а уж если она что-нибудь засветит...{/m}"
+    Max_02 "{m}Aké by to bolo skvelé, keby to nevyšlo! Len pri pomyslení na to sa mi postaví penis ako hora, a ak niečo vykukne...{/m}"
+
+# game/dialogues/anntalk.rpy:582
+translate slovak ann_tv_continuation_massage_561a8483_1:
+
+    # Ann_02 "Вот так, мне кажется, будет нормально... Только хочу тебя сразу предупредить, я совсем голая под полотенцем. Я там не сильно... открыта?"
+    Ann_02 "Zdá sa mi to v poriadku... Len ťa chcem hneď upozorniť, že pod uterákom som úplne nahá. Nie som tam veľmi... otvorená?"
+
+# game/dialogues/anntalk.rpy:583
+translate slovak ann_tv_continuation_massage_87f09816_1:
+
+    # Max_03 "Нет. Открыто именно то, что мне надо!" nointeract
+    Max_03 "Nie. Je to presne to, čo potrebujem!" nointeract
+
+# game/dialogues/anntalk.rpy:947
+translate slovak ann_yoga_with_maxr_6a06f244:
+
+    # Max_04 "Я смотрю, чтобы всё правильно делалось. Ты же этого хотела?"
+    Max_04 "Dbám na to, aby sa všetko robilo správne. Nie je to to, čo si chcela?"
+
+# game/dialogues/anntalk.rpy:948
+translate slovak ann_yoga_with_maxr_62c51999:
+
+    # Ann_13 "А тебе, Макс, не кажется, что твои руки не совсем на месте?"
+    Ann_13 "Nezdá sa ti, že tvoje ruky sú trochu mimo, Max?"
+
+# game/dialogues/anntalk.rpy:949
+translate slovak ann_yoga_with_maxr_a93a3646:
+
+    # Max_07 "А по-моему, именно там где надо. Иначе ты большей гибкости не добьёшься, мам. Или тебе этого не надо?"
+    Max_07 "Podľa môjho názoru sú presne tam, kde majú byť. Inak nezískaš väčšiu flexibilitu, mami. Alebo to nechceš?"
+
+# game/dialogues/anntalk.rpy:950
+translate slovak ann_yoga_with_maxr_b6a570e5:
+
+    # Ann_14 "Надо, но... Меня несколько смущает, что тебе для этого нужно руками контролировать мой зад..."
+    Ann_14 "Mali by sme, ale... Trochu sa hanbím, že musíš používať ruky na ovládanie môjho zadku..."
+
+# game/dialogues/anntalk.rpy:951
+translate slovak ann_yoga_with_maxr_62ec40e5:
+
+    # Max_09 "Почему? Что тут такого? Я помогаю и к тому же, легонько. Ты лучше сосредоточься на дыхании и не зажимайся."
+    Max_09 "Prečo? O čo ide? Pomáham a tiež, jemne. Radšej sa sústreď na dýchanie a uvoľnenie sa."
+
+# game/dialogues/anntalk.rpy:952
+translate slovak ann_yoga_with_maxr_f43aaef8:
+
+    # Ann_03 "Да, Макс, верно. Мне лучше расслабиться. Продолжаем..."
+    Ann_03 "Áno, Max, to je pravda. Radšej si oddýchnem. Pokračujeme ďalej..."
+
+# game/dialogues/anntalk.rpy:953
+translate slovak ann_yoga_with_maxr_72b8ca17:
+
+    # Max_05 "Правильно. Очень классно начинать день с такой красоты, как ты."
+    Max_05 "Pravda. Je naozaj skvelé začať deň s takou kráskou, ako si ty."
+
+# game/dialogues/anntalk.rpy:958
+translate slovak ann_yoga_with_maxr_6a06f244_1:
+
+    # Max_04 "Я смотрю, чтобы всё правильно делалось. Ты же этого хотела?"
+    Max_04 "Dbám na to, aby sa všetko robilo správne. Nie je to to, čo si chcela?"
+
+# game/dialogues/anntalk.rpy:959
+translate slovak ann_yoga_with_maxr_f7366bcf:
+
+    # Ann_03 "Только не держи меня так крепко, Макс! Придерживай легонько, я справлюсь."
+    Ann_03 "Len ma nedrž tak pevne, Max! Drž ma zľahka, zvládnem to."
+
+# game/dialogues/anntalk.rpy:960
+translate slovak ann_yoga_with_maxr_4a3b0f59:
+
+    # Max_05 "Хорошо, придерживаю слегка. Расслабься и сосредоточься на дыхании. Ты прогибаешься просто шикарно!"
+    Max_05 "Dobre, držím ťa zľahka. Uvoľni sa a sústreď sa na dýchanie. Ovísajú ti ruky!"
+
+# game/dialogues/anntalk.rpy:992
+translate slovak ann_yoga_with_maxr_6fd1e81a_1:
+
+    # Max_05 "Здорово, мам! Ещё немного потянись и будет идеально..."
+    Max_05 "Skvelé, mami! Ešte trochu sa natiahni a bude to perfektné..."
+
+# game/dialogues/anntalk.rpy:993
+translate slovak ann_yoga_with_maxr_a7aab14e:
+
+    # Ann_05 "Главное - не перенапрячься с утра пораньше... А то буду еле живая на работе... Но с твоей поддержкой, кажется, мне это не грозит."
+    Ann_05 "Hlavnou vecou je, aby som sa skoro ráno príliš nenamáhala... Lebo budem v práci sotva nažive... Ale s tvojou podporou sa zdá, že mi nič nehrozí."
+
+# game/dialogues/anntalk.rpy:996
+translate slovak ann_yoga_with_maxr_bf667ebd:
+
+    # Max_14 "{m}Ага, у меня сейчас в шортах такая твёрдая опора от всех этих сексуальных изгибов, что мама вот-вот заметит. А не думать о её шелковистом теле просто невозможно! И зачем я без майки этим занимаюсь?{/m}" nointeract
+    Max_14 "{m}Áno, práve teraz mám zo všetkých tých sexi kriviek takú pevnú ereckiu v šortkách, že si to mama určite všimne. A je nemožné nemyslieť na jej hodvábne telo! Prečo to robím bez trička?{/m}" nointeract
+
+# game/dialogues/anntalk.rpy:1004
+translate slovak ann_yoga_with_maxr_3dff6869:
+
+    # Ann_04 "[succes_hide!t]Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Буду только рада, если решишь снова присоединиться ко мне."
+    Ann_04 "[succes_hide!t]Ďakujem ti, synu, že si mi pomohol. Uff... Myslím, že to je koniec. Budem veľmi rada, ak sa ku mne opäť pridáš."
+
+# game/dialogues/anntalk.rpy:1005
+translate slovak ann_yoga_with_maxr_ff21d29a:
+
+    # Max_01 "С радостью, мам! Обязательно..."
+    Max_01 "S radosťou, mami! Rozhodne..."
+
+# game/dialogues/anntalk.rpy:1006
+translate slovak ann_yoga_with_maxr_dc624a8a:
+
+    # Ann_02 "Но, давай хотя бы через день. Чтобы я могла без твоей помощи попробовать сделать то же самое."
+    Ann_02 "Ale budeme cvičiť aspoň každý druhý deň. Takže sa môžem pokúsiť urobiť to isté bez tvojej pomoci."
+
+# game/dialogues/anntalk.rpy:1007
+translate slovak ann_yoga_with_maxr_136c43d9:
+
+    # Max_04 "Хорошо, как скажешь. До следующего раза, мам." nointeract
+    Max_04 "Dobre, nech sa páči. Uvidíme sa nabudúce, mami." nointeract
+
+# game/dialogues/anntalk.rpy:1010
+translate slovak ann_yoga_with_maxr_adabf90d:
+
+    # Ann_04 "[succes_hide!t]Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Завтра я сама попробую это повторить без тебя, а дальше присоединяйся, если захочешь. Я буду только рада."
+    Ann_04 "[succes_hide!t]Ďakujem ti, synu, že si mi pomohol. Uff... Myslím, že to je na dnes koniec. Zajtra to skúsim sama bez teba a potom sa pridaj, ak chceš. Bola by som veľmi rada."
+
+# game/dialogues/anntalk.rpy:1011
+translate slovak ann_yoga_with_maxr_4e133757_1:
+
+    # Max_01 "С радостью, мам! Обязательно..." nointeract
+    Max_01 "S radosťou, mami! Rozhodne..." nointeract
+
+# game/dialogues/anntalk.rpy:1018
+translate slovak ann_yoga_with_maxr_5a4fa2a4:
+
+    # Ann_15 "Ой, спасибо, сынок, что помог. Фух... А это что такое?! Как тебе не стыдно! Это у тебя на меня такая реакция?!"
+    Ann_15 "Ďakujem ti, synu, že si mi pomohol. Uff... Čo je to?! Hanba ti! To je tvoja reakcia na mňa?!"
+
+# game/dialogues/anntalk.rpy:1019
+translate slovak ann_yoga_with_maxr_28026926:
+
+    # Max_07 "Ну... Говорил же, красиво..."
+    Max_07 "No... Hovoril som ti, že je to krásne..."
+
+# game/dialogues/anntalk.rpy:1020
+translate slovak ann_yoga_with_maxr_5f7de140:
+
+    # Ann_14 "Макс, красивое не должно так возбуждать! Вернее, я не должна тебя так возбуждать. Другие женщины, да, но не я, сынок."
+    Ann_14 "Max, krása by nemala byť taká vzrušujúca! Alebo by som ťa skôr nemala tak vzrušovať. Iné ženy áno, ale nie ja, synku."
+
+# game/dialogues/anntalk.rpy:1021
+translate slovak ann_yoga_with_maxr_7301cfbe:
+
+    # Max_09 "Хоть ты и моя мама, но ты так же и очень красивая женщина! Знаешь, мне кажется, что ЭТО - самый искренний комплимент твоей фигуре."
+    Max_09 "Aj keď si moja matka, si veľmi krásna žena! Vieš, myslím, že TOTO je ten najúprimnejší kompliment tvojej postavy."
+
+# game/dialogues/anntalk.rpy:1022
+translate slovak ann_yoga_with_maxr_35170ac6:
+
+    # Ann_16 "Да уж, комплимент... Значит так, Макс! Ближайшие три дня можешь ко мне не подходить во время йоги. А в дальнейшем, можешь помогать через день. Всё понятно?"
+    Ann_16 "Áno, kompliment... Dobre, Max! Nasledujúce tri dni sa odo mňa budeš počas jógy držať ďalej. A potom mi môžeš pomáhať každý druhý deň. Je to jasné?"
+
+# game/dialogues/anntalk.rpy:1025
+translate slovak ann_yoga_with_maxr_17c6fe68:
+
+    # Ann_14 "Ой, спасибо, сынок, что помог. Фух... Да что же это такое! Ты опять перевозбудился..."
+    Ann_14 "Ďakujem ti, synu, že si mi pomohol. Uff... Čo to preboha je! Zase si nadšený..."
+
+# game/dialogues/anntalk.rpy:1026
+translate slovak ann_yoga_with_maxr_4b3b94d8:
+
+    # Max_07 "Ага, виновен..."
+    Max_07 "Áno, vinný..."
+
+# game/dialogues/anntalk.rpy:1027
+translate slovak ann_yoga_with_maxr_7c53d0c1:
+
+    # Ann_16 "И вот что прикажешь с тобой делать?"
+    Ann_16 "Čo mám s tebou robiť?"
+
+# game/dialogues/anntalk.rpy:1028
+translate slovak ann_yoga_with_maxr_88deb7c3:
+
+    # Max_09 "Понять и простить. Я же мужчина всё-таки..."
+    Max_09 "Pochop ma a odpusti mi. Som predsa len slabý muž..."
+
+# game/dialogues/anntalk.rpy:1029
+translate slovak ann_yoga_with_maxr_41ff6034:
+
+    # Ann_17 "Ох, Макс, горе ты моё... Значит так, в ближайшие три дня можешь ко мне не подходить во время йоги, а дальше смотри сам, можешь присоединяться, но чтобы такое не повторялось. Всё понятно?"
+    Ann_17 "Ach, Max, beda mi... Takže najbližšie tri dni sa budeš počas jogy držať odo mňa ďalej a potom sa môžeš pridať, ale nech sa to neopakuje. Je to jasné?"
+
+# game/dialogues/anntalk.rpy:1030
+translate slovak ann_yoga_with_maxr_7ac1ee79:
+
+    # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
+    Max_10 "Nech sa páči, mami. Do budúcna..." nointeract
+
+# game/dialogues/anntalk.rpy:1033
+translate slovak ann_yoga_with_maxr_f2c16400:
+
+    # Max_02 "Под моим присмотром у тебя всегда будет великолепная фигура!"
+    Max_02 "Pod mojím dohľadom budeš mať vždy skvelú postavu!"
+
+# game/dialogues/anntalk.rpy:1037
+translate slovak ann_yoga_with_maxr_f0d0acff:
+
+    # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Буду только рада, если решишь снова присоединиться ко мне."
+    Ann_04 "Ďakujem ti, synu, že si mi pomohol. Uff... Myslím, že to je koniec. Budem veľmi rada, ak sa ku mne opäť pridáš."
+
+# game/dialogues/anntalk.rpy:1038
+translate slovak ann_yoga_with_maxr_ff21d29a_1:
+
+    # Max_01 "С радостью, мам! Обязательно..."
+    Max_01 "S radosťou, mami! Rozhodne..."
+
+# game/dialogues/anntalk.rpy:1039
+translate slovak ann_yoga_with_maxr_dc624a8a_1:
+
+    # Ann_02 "Но, давай хотя бы через день. Чтобы я могла без твоей помощи попробовать сделать то же самое."
+    Ann_02 "Ale budme cvičiť spolu aspoň každý druhý deň. Takže sa môžem pokúsiť urobiť to isté bez tvojej pomoci."
+
+# game/dialogues/anntalk.rpy:1040
+translate slovak ann_yoga_with_maxr_136c43d9_1:
+
+    # Max_04 "Хорошо, как скажешь. До следующего раза, мам." nointeract
+    Max_04 "Dobre, nech sa páči. Uvidíme sa nabudúce, mami." nointeract
+
+# game/dialogues/anntalk.rpy:1043
+translate slovak ann_yoga_with_maxr_c9b86927:
+
+    # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Завтра я сама попробую это повторить без тебя, а дальше присоединяйся, если захочешь. Я буду только рада."
+    Ann_04 "Ďakujem ti, synu, že si mi pomohol. Uff... Myslím, že to je koniec. Zajtra to skúsim sama bez teba a potom sa pridaj, ak chceš. Bola by som veľmi rada."
+
+# game/dialogues/anntalk.rpy:1044
+translate slovak ann_yoga_with_maxr_4e133757_2:
+
+    # Max_01 "С радостью, мам! Обязательно..." nointeract
+    Max_01 "S radosťou, mami! Rozhodne..." nointeract
+
+translate slovak strings:
+
+    # game/dialogues/anntalk.rpy:997
+    old "{i}постараться успокоиться{/i}"
+    new "{i}upokojiť sa{/i}"
+
+# TODO: Translation updated at 2022-02-19 11:44
+
+# game/events/ann.rpy:684
+translate slovak ann_dressed_balkon_talk2_640d08ea:
+
+    # Ann_14 "Это всё моя работа... Присутствие Эрика делает её просто невыносимой."
+    Ann_14 "To je všetko moja práca... Erikova prítomnosť to robí neznesiteľnou."
+
+# game/events/ann.rpy:685
+translate slovak ann_dressed_balkon_talk2_799ed018:
+
+    # Max_15 "Он пристаёт к тебе?"
+    Max_15 "Otravuje ťa?"
+
+# game/events/ann.rpy:686
+translate slovak ann_dressed_balkon_talk2_624bc582:
+
+    # Ann_18 "Нет, но его ехидная ухмылочка и постоянные намёки о возможных неприятностях, если я вдруг попытаюсь уволиться, сводят меня с ума."
+    Ann_18 "Nie, ale jeho hnusný úsmev a neustále náznaky možných problémov, ak sa náhle pokúsim prestať, ma vyvádzajú z miery."
+
+# game/events/ann.rpy:687
+translate slovak ann_dressed_balkon_talk2_0ce3e59e:
+
+    # Max_09 "Просто постарайся не обращать на него внимание."
+    Max_09 "Snaž sa tomu nevenovať pozornosť."
+
+# game/events/ann.rpy:688
+translate slovak ann_dressed_balkon_talk2_a8ecc8ef:
+
+    # Ann_12 "Вряд ли это возможно, сынок, он же мой начальник." nointeract
+    Ann_12 "Je to sotva možné, synu, je to môj šéf." nointeract
+
+# game/events/ann.rpy:693
+translate slovak ann_dressed_balkon_talk2_9803998b:
+
+    # Ann_13 "Макс, ты что это делаешь? За зад меня обнимаешь?!"
+    Ann_13 "Max, čo to robíš? Za zadok, ktorý mi objímaš?!"
+
+# game/events/ann.rpy:694
+translate slovak ann_dressed_balkon_talk2_f912aa8d:
+
+    # Max_07 "Ну да. Это я так приободрить тебя решил. Если бы он действительно хотел тебе что-то сделать, то он бы уже давно это сделал."
+    Max_07 "Premýšľaj o tom. Ja som bol ten, kto sa rozhodol rozveseliť ťa. Ak by ti naozaj chcel niečo urobiť, urobil by to už dávno."
+
+# game/events/ann.rpy:695
+translate slovak ann_dressed_balkon_talk2_769cdc0b:
+
+    # Ann_17 "Сынок, такое вот твое приободрение не работает. Оно меня скорее смущает..."
+    Ann_17 "Synu, takéto povzbudenie nefunguje. Skôr ma to mätie..."
+
+# game/events/ann.rpy:697
+translate slovak ann_dressed_balkon_talk2_0167e576:
+
+    # Max_09 "Ладно, уберу... Просто Эрику нравится играть на нервах, вот и всё, что он может сделать."
+    Max_09 "Dobre, odstránim ho... Je to len to, že Erik rád hrá na nervy, to je všetko, čo môže urobiť."
+
+# game/events/ann.rpy:698
+translate slovak ann_dressed_balkon_talk2_273fc7d0:
+
+    # Ann_12 "Возможно так и есть, но... мне бы очень не хотелось искушать судьбу... это ведь может отразиться и на вас, моих детях, а вы для меня самое дорогое."
+    Ann_12 "Možno áno, ale... Naozaj nechcem pokúšať osud... Môže to ovplyvniť teba, tvoje sestry, a vy ste pre mňa to najcennejšie."
+
+# game/events/ann.rpy:699
+translate slovak ann_dressed_balkon_talk2_682e32bc:
+
+    # Max_10 "Ты тоже самое дорогое для меня... для нас... И нам бы не хотелось видеть тебя такой печальной, мам."
+    Max_10 "Si pre mňa tiež to najcennejšie... pre nás... A nechcel by som ťa vidieť takú smutnú, mami."
+
+# game/events/ann.rpy:700
+translate slovak ann_dressed_balkon_talk2_261a6f2e:
+
+    # Ann_02 "Спасибо, Макс. Мне очень приятно это слышать. Как хорошо, что у меня есть такой внимательный и заботливый сын."
+    Ann_02 "Ďakujem, Max. Som veľmi rada, že to počujem. Aké dobré je, že mám takého pozorného a starostlivého syna."
+
+# game/events/ann.rpy:701
+translate slovak ann_dressed_balkon_talk2_23203ebd:
+
+    # Max_07 "В любом случае, если ты захочешь сменить место работы и у нас, вдруг, появятся сложности с деньгами, мы все тебя поймём и поддержим."
+    Max_07 "V každom prípade, ak chceš zmeniť svoje pracovné miesto a možno budeme mať problémy s peniazmi, všetci ťa pochopíme a aj tak podporíme."
+
+# game/events/ann.rpy:702
+translate slovak ann_dressed_balkon_talk2_bed6c909:
+
+    # Ann_04 "Спасибо, мой хороший, я подумаю об этом..."
+    Ann_04 "Ďakujem, môj dobrý, porozmýšľam o tom..."
+
+# game/events/ann.rpy:703
+translate slovak ann_dressed_balkon_talk2_d9948e58:
+
+    # Max_09 "Обязательно подумай. Нужно покончить с этим прошлым раз и навсегда!"
+    Max_09 "Uisti sa, že o tom popremýšľaš. Musíme raz a navždy skoncovať s touto minulosťou!"
+
+# game/events/ann.rpy:704
+translate slovak ann_dressed_balkon_talk2_09e80fa0:
+
+    # Ann_05 "Хм... Глядя на тебя в последнее время, я вижу, что ты очень повзрослел."
+    Ann_05 "Hmm... Keď sa na teba v poslednej dobe pozerám, vidím, že si veľmi dozrel."
+
+# game/events/ann.rpy:705
+translate slovak ann_dressed_balkon_talk2_cdbf49b6:
+
+    # Max_04 "Ну, тебе виднее."
+    Max_04 "No, vieš to najlepšie."
+
+# game/events/ann.rpy:706
+translate slovak ann_dressed_balkon_talk2_650e344f:
+
+    # Ann_08 "Так и есть. И мне нравится то, что я вижу..."
+    Ann_08 "Je to tak. Milujem to, čo vidím..."
+
+# game/events/ann.rpy:707
+translate slovak ann_dressed_balkon_talk2_40bdc5b1:
+
+    # Max_03 "Главное не унывай, мам. Всё образуется."
+    Max_03 "Hlavná vec je, aby si sa nenechala odradiť, mamička. Všetko je sformované."
+
+# game/events/ann.rpy:708
+translate slovak ann_dressed_balkon_talk2_ed9bd79e:
+
+    # Ann_07 "Хорошо! Спасибо, что поддержал меня и развеял тоску."
+    Ann_07 "Ok! Ďakujem, že si ma podporil a rozptýlil moju túžbu."
+
+# game/events/ann.rpy:709
+translate slovak ann_dressed_balkon_talk2_1c195d26:
+
+    # Max_01 "Пожалуйста! Если что, я всегда рядом. Обращайся!"
+    Max_01 "Rado sa stalo! Ak niečo, vždy som tu. Kontaktuj ma!"
+
+# game/events/ann.rpy:710
+translate slovak ann_dressed_balkon_talk2_59d69cc0:
+
+    # Ann_01 "Обязательно!" nointeract
+    Ann_01 "Iste!" nointeract
+
+# game/events/ann.rpy:719
+translate slovak ann_dressed_balkon_talk2_1f418bf5:
+
+    # Max_09 "{m}Смущают её мои прикосновения... Ясно. Значит, нужно больше прикасаться тогда, когда это максимально естественно, чтобы она привыкла. Пожалуй, йога - то, что нужно! Стоит попробовать...{/m}"
+    Max_09 "{m}Hanba pre ňu je môj dotyk... Vidím, chápem. Takže sa jej musím dotýkať viac, keď je to čo najprirodzenejšie, aby si na to zvykla. Jóga je to, čo potrebujem! Stojí za to vyskúšať...{/m}"
+
+translate slovak strings:
+
+    # game/events/ann.rpy:689
+    old "{i}приобнять маму за попку{/i}"
+    new "{i}objať mame zadok{/i}"
+
+# TODO: Translation updated at 2022-02-20 19:56
+
+# game/events/ann.rpy:757
+translate slovak ann_dressed_balkon_r_4897a021:
+
+    # Ann_02 "Ой, Макс! Как ты так тихо подкрадываешься? Да, любуюсь... А ты почему без дела слоняешься?" nointeract
+    Ann_02 "Oh, Max! Ako sa tak potichu vkrádaš? Áno, obdivuješ... Prečo sa potuluješ a nič nerobíš?" nointeract
+
+# game/events/ann.rpy:760
+translate slovak ann_dressed_balkon_r_0a883de4:
+
+    # Ann_01 "Не то, чтобы мешаешь... Иди лучше чем-нибудь продуктивным займись. Маме пока некогда."
+    Ann_01 "Nie že by si stál v ceste... Choď radšej robiť niečo produktívne. Mama na to ešte nemá čas."
+
+# game/events/ann.rpy:761
+translate slovak ann_dressed_balkon_r_58738e49:
+
+    # Max_00 "Ладно, не буду мешать." nointeract
+    Max_00 "Dobre, nechám ťa pri tom samú." nointeract
+
+# game/events/ann.rpy:767
+translate slovak ann_dressed_balkon_r_2280510e:
+
+    # Ann_04 "Нет. Побудь, если хочется. Я не против." nointeract
+    Ann_04 "Nie. Ak máš chuť, zostaň. Nevadí mi to." nointeract
+
+# game/events/ann.rpy:774
+translate slovak ann_dressed_balkon_r_119f09c9:
+
+    # Ann_02 "Как у тебя дела, Макс? Всё хорошо?"
+    Ann_02 "Ako sa ti darí, Max? Je všetko v poriadku?"
+
+# game/events/ann.rpy:775
+translate slovak ann_dressed_balkon_r_ca3ee871:
+
+    # Max_04 "Да, порядок. А ты как? Не скучаешь?"
+    Max_04 "Áno, všetko naporiadku. A ako sa máš? Nudíš sa?"
+
+# game/events/ann.rpy:776
+translate slovak ann_dressed_balkon_r_7fdac7ed:
+
+    # Ann_05 "Ох, сынок, с вами разве заскучаешь. Да и на работе дел хватает." nointeract
+    Ann_05 "Synku, s tebou sa nikdy nebudem nudiť. A veľa roboty je aj v práci." nointeract
+
+# game/events/ann.rpy:781
+translate slovak ann_dressed_balkon_r_55550510:
+
+    # Max_07 "Ты, мам, побольше отдыхать не забывай."
+    Max_07 "Nezabudni viac odpočívať, mami."
+
+# game/events/ann.rpy:782
+translate slovak ann_dressed_balkon_r_081cb55f:
+
+    # Ann_07 "Это я и делаю сейчас. А ты давай беги, займись чем-нибудь полезным."
+    Ann_07 "To je to, čo teraz robím. Rozbehni sa a urob niečo užitočné."
+
+# game/events/ann.rpy:793
+translate slovak ann_dressed_balkon_r_a9420db7:
+
+    # Max_07 "Ты, мам, побольше отдыхать не забывай. У нас слишком прекрасный дом, чтобы грустить."
+    Max_07 "Nezabudni viac odpočívať, mami. Máme príliš krásny domov na to, aby sme boli smutní."
+
+# game/events/ann.rpy:794
+translate slovak ann_dressed_balkon_r_874166e7:
+
+    # Ann_08 "Да, здесь здорово! Маленький рай. Ты зашёл меня просто вот так подбодрить?"
+    Ann_08 "Áno, je to tu skvelé! Malý raj. Prišiel si ma len tak rozveseliť?"
+
+# game/events/ann.rpy:798
+translate slovak ann_dressed_balkon_r_6b6b7f92:
+
+    # Max_02 "Ну, да. Хотел напомнить, что я всегда рядом."
+    Max_02 "No, áno. Len som ti chcel pripomenúť, že som stále nablízku."
+
+# game/events/ann.rpy:799
+translate slovak ann_dressed_balkon_r_680063a0:
+
+    # Ann_07 "Спасибо, но лучше беги, займись чем-нибудь полезным. У меня всё в порядке."
+    Ann_07 "Ďakujem, ale radšej by si mal bežať a robiť niečo užitočné. Mám sa dobre."
+
+# game/events/ann.rpy:806
+translate slovak ann_dressed_balkon_r_0cc8bfb1:
+
+    # Max_03 "Ладно, не буду отвлекать. Я тебя люблю, мам!"
+    Max_03 "Dobre, nechám ťa na pokoji. Milujem ťa, mami!"
+
+# game/events/ann.rpy:807
+translate slovak ann_dressed_balkon_r_dfe00014:
+
+    # Ann_06 "Я тебя тоже, сынок." nointeract
+    Ann_06 "Aj ja teba, synku." nointeract
+
+translate slovak strings:
+
+    # game/events/ann.rpy:604
+    old "Видами любуешься, мам?"
+    new "Pozeráš sa na výhľad, mami?"
+
+    # game/events/ann.rpy:758
+    old "А что, я мешаю?"
+    new "Prekážam?"
+
+    # game/events/ann.rpy:758
+    old "С тобой хотел побыть. Или я мешаю?"
+    new "Chcel som byť s tebou. Alebo ti prekážam?"
+
+    # game/events/ann.rpy:768
+    old "{i}приобнять маму{/i}"
+    new "{i}objať mamu{/i}"
+
+    # game/events/ann.rpy:777
+    old "{i}продолжить обнимать{/i}"
+    new "{i}objať{/i}"
+
+# TODO: Translation updated at 2022-02-23 00:15
+
+translate slovak strings:
+
+    # game/core/08_verification.rpy:368
+    old "Не определены"
+    new "Nedefinované"
+
+    # game/core/08_verification.rpy:370
+    old "Откровенная вражда"
+    new "Priame nepriateľstvo"
+
+    # game/core/08_verification.rpy:380
+    old "Дружба"
+    new "Priateľstvo"
+
+    # game/core/08_verification.rpy:388
+    old "Настоящая дружба"
+    new "Skutočné priateľstvo"
+
+    # game/core/08_verification.rpy:399
+    old "Фальшивая дружба"
+    new "Falošné priateľstvo"
+
+# TODO: Translation updated at 2022-02-23 00:15
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! \nЭрик хорошо запудрил мозги Лизе, я даже не смог её отговорить от этого. Остаётся разве что помешать им... \nЕсли бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что практические занятия с Лизой - это последнее, о чём он будет думать. \n\nГлавное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт. Ну, а уже если не получится, то я вмешаюсь в их практику лично. Проблем из-за этого мне точно не избежать, но что поделать..."
+    new "Líza ma varovala, že teraz, keď sa jej teoretické hodiny skončili, Erik by jej dal hodiny sexuálnej výchovy bez účasti našej mamy. A ako som pochopil, budú prepájať teoretickú časť praktickými cvičeniami! \nErik dobre vymyl Lízin mozog, nemohol som ju od toho ani odradiť. Jediné, čo treba urobiť, je zastaviť ich... \nAk by som mohol namiešať Erikovi niečo do jedla ako preháňadlo alebo sedatívum, je možné, že cvičenie s Lízou je posledná vec, na ktorú bude myslieť. Hlavnou vecou je usporiadať takéto špinavé triky nie viac ako raz týždenne, inak všetko pochopí. No, ak to nebude fungovať, potom zasiahnem do ich praxe osobne. Určite sa kvôli tomu nemôžem vyhnúť problémom, ale čo môžem urobiť..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза обратилась ко мне за советом, ведь как оказалось, после окончания их теоретических занятий, Эрик предложил ей закрепить всё это на практических уроках без участия моей мамы. Благо, Лиза прислушивается ко мне и у меня получилось убедить её, что на это лучше не соглашаться. \nНо вряд ли Эрик этому обрадуется. Меня наверняка ждут проблемы из-за этого, но что поделать... \nБыло бы неплохо хоть немного снизить его активную деятельность в нашем доме! \nЕсли бы у меня получилось подмешать Эрику в еду что-нибудь, вроде слабительного или успокоительного, то вполне возможно, что лезть к моим сёстрам - это последнее, о чём он будет думать. \n\nГлавное устраивать такие пакости не чаще, чем раз в неделю, иначе он всё поймёт."
+    new "Líza sa na mňa obrátila so žiadosťou o radu, pretože ako sa ukázalo, po skončení ich teoretických cvičení Erik navrhol, aby to všetko prepojila v praktických lekciách bez účasti mojej matky. Našťastie ma Líza počúva a podarilo sa mi ju presvedčiť, že je lepšie s tým nesúhlasiť. Ale je nepravdepodobné, že by bol Erik šťastný. Pravdepodobne budem mať s tým problémy, ale čo môžem urobiť ... \n Bolo by pekné aspoň trochu znížiť jeho aktivitu v našom dome! Ak by som mohol zmiešať Erikovi do jeho jedál niečo ako preháňadlo alebo sedatívum, je možné, že oslovenie mojich sestier je posledná vec, na ktorú bude myslieť. Hlavnou vecou je usporiadať takéto špinavé triky nie viac ako raz týždenne, inak všetko pochopí."
+
+    # game/core/09_opportunities.rpy:4
+    old "Лиза предупредила меня, что теперь, когда их теоретические занятия закончились, Эрик будет проводить для неё уроки сексуального воспитания без участия моей мамы. И, как я понял, они собираются закреплять теоретическую часть практическими занятиями! \nПохоже, моя младшая сестрёнка скоро начнёт взрослеть, как того и хотела. \nНу, а я ни за что не упущу возможности подсмотреть за этими уроками, ведь с Эриком я договорился на этот счёт. Лишь бы только сама Лиза меня не заметила..."
+    new "Líza ma varovala, že teraz, keď sa ich teoretické hodiny skončili, Erik by jej dal hodiny sexuálnej výchovy bez účasti mojej mamy. A ako som pochopil, budú prepájať teoretickú časť praktickými cvičeniami! \nMoja malá sestra čoskoro začne vyrastať, ako chcela. \nNo, nikdy nepremeškám príležitosť špehovať tieto lekcie, pretože som súhlasil s Erikom v tejto veci. Keby si ma len samotná Líza nevšimla..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Эрик собирается проводить практические занятия с Лизой по понедельникам. Нужно обязательно подсмотреть, чем они будут заниматься..."
+    new "Erik bude robiť praktické hodiny s Lízou v pondelok. Je potrebné pozrieť sa na to, čo budú robiť..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Ну, что... Больше разговоров было, чем дела. Но, с другой стороны, Лиза такая стесняшка и то, что она хотя бы просто подержала член в руке - уже достижение. А впереди у неё ещё будет куча практики, так что скоро дрочить будет с закрытыми глазами, так сказать."
+    new "No, čo... Viac sa hovorilo ako robilo. Ale na druhej strane, Líza je taká plachá a už to, že aspoň držala v ruke penis, je úspech. A bude mať pred sebou ešte veľa tréningu, takže čoskoro bude takpovediac honiť so zatvorenými očami."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно будет обязательно подсмотреть в ближайший понедельник за практическими уроками сексуального образования Лизы..."
+    new "Budem si musieť dať pozor na Lízine praktické hodiny sexuálnej výchovy budúci pondelok..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик вывел меня поговорить о том, какого чёрта я вмешиваюсь. \nЯ, чтобы себя не скомпрометировать, высказался о том, что у него могут возникнуть серьёзные проблемы, если их с Лизой кто-нибудь увидит или она кому-то расскажет об этих уроках. \nИ похоже, Эрик не особо об этом думал! Его так ослепили перспективы перетрахать всю женскую половину моей семьи, что он даже не подумал о таких элементарных вещах. \nИ о чудо, после недолгих раздумий он решил переложить сексуальное воспитание Лизы на меня! Это просто невероятно! Теперь Лиза полностью в моём распоряжении..."
+    new "Zasiahol som do Lízinho tréningu predtým, ako urobila veľkú chybu... Samozrejme, že ma Erik vytiahol von, aby sme si pohovorili, prečo sa do toho, dočerta, miešam. \Aby sa nekompromitoval, povedal som mu, že by sa mohol dostať do vážnych problémov, ak by ho s Lízou videli alebo ak by niekomu povedala o vyučovaní. \Erik sa nezdal, že by o tom veľa premýšľal! Bol taký zaslepený vyhliadkou, že si to rozdá s celou ženskou polovicou mojej rodiny, že na také základné veci ani nepomyslel. \A zázračne sa po chvíli premýšľania rozhodol odovzdať Lízinu sexuálnu výchovu mne! Je to jednoducho neuveriteľné! Líza je mi teraz úplne k dispozícii..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Кстати, со всей этой опасностью их с Эриком уроков, я совсем забыл спросить, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
+    new "Mimochodom, pri všetkom tom nebezpečenstve, ktoré jej a Erikovi hrozí, som sa úplne zabudol opýtať, či čítala knihu o sexuálnej výchove! Musím sa opýtať..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я узнал у Лизы, что книгу по сексуальному образованию она прочитала. Заодно я испытал удачу и предложил ей продолжить уроки Эрика, но уже с собой во главе. \nВот только Лиза не верит, что я знаю чему её учить, поэтому, пока что, мне удалось уговорить её обучаться поцелуям дальше, но уже в более интимном плане. Поцелуи в шею она ещё допустила, а вот к груди не пускает, стесняется видите ли. \nНо ничего, пустит. Думаю, если к ней попробовать ненавязчиво поприставать, когда она читает, то уроки поцелуев удастся полноценно возобновить."
+    new "Od Lízy som sa dozvedel, že čítala knihu o sexuálnej výchove. Zároveň som skúsil šťastie a navrhol jej, aby pokračovala v Erikových hodinách, ale so mnou na čele. \Ale Líza neverí, že viem, čo ju mám naučiť, takže sa mi zatiaľ podarilo presvedčiť ju, aby sa naučila hlbšie bozkávať, najmä intímnejšie. Stále mi dovoľuje bozky na krk, ale nedovolí mi dotýkať sa jej pŕs, hanbí sa za to. \Ale to je v poriadku, pustí ma dnu. Myslím, že ak ju skúsim nenápadne baliť, keď si číta, hodiny bozkávania sa môžu naplno obnoviť."
+
+# TODO: Translation updated at 2022-02-23 00:15
+
+translate slovak strings:
+
+    # game/dialogues/erictalk.rpy:337
+    old "Нет, можешь обучать... (Настоящая дружба)"
+    new "Nie, môžeš učiť... (Skutočné priateľstvo)"
+
+    # game/dialogues/erictalk.rpy:337
+    old "А ей не рановато? (Фальшивая дружба)"
+    new "Nie je to trochu skoro? (Falošné priateľstvo)"
+
+    # game/dialogues/erictalk.rpy:337
+    old "Лизу тебе не отдам! (Откровенная вражда)"
+    new "Lízu si nemôžeš vziať! (Otvorené nepriateľstvo)"
+
+    # game/dialogues/erictalk.rpy:432
+    old "Значит, тебя её блог интересует? (Настоящая дружба)"
+    new "Takže máš záujem o jej blog? (Skutočné priateľstvo)"
+
+    # game/dialogues/erictalk.rpy:432
+    old "Я мало что об этом знаю... (Фальшивая дружба)"
+    new "Veľa o tom neviem... (Falošné priateľstvo)"
+
+    # game/dialogues/erictalk.rpy:432
+    old "Вот у неё и спрашивай! (Откровенная вражда)"
+    new "Spýtaj sa jej! (Otvorené nepriateľstvo)"
+
+# TODO: Translation updated at 2022-02-23 00:15
+
+# game/dialogues/lisatalk.rpy:4774
+translate slovak lisa_about_sex_book0_7ebe75f0:
+
+    # Max_03 "Ещё как. Ну что, продолжим уроки сексуального образования Эрика, но только уже со мной?"
+    Max_03 "To sa stav. Takže budeme pokračovať v Erikových lekciách sexuálnej výchovy, ale so mnou?"
+
+# game/dialogues/lisatalk.rpy:4775
+translate slovak lisa_about_sex_book0_e48b612f:
+
+    # Lisa_13 "Ну нет! Хоть Эрик и сказал, что ты знаешь, чему меня учить, но я сильно сомневаюсь в этом. Наверняка, ты чего-то там ему наболтал и он поверил."
+    Lisa_13 "No nie! Aj keď Erik povedal, že vieš, čo ma máš naučiť, veľmi o tom pochybujem. Určite si mu musel niečo povedať a on ti uveril."
+
+# game/dialogues/lisatalk.rpy:4776
+translate slovak lisa_about_sex_book0_40be8496:
+
+    # Max_09 "Ты серьёзно думаешь, что я провёл Эрика?"
+    Max_09 "Naozaj si myslíš, že som Erika oklamal?"
+
+# game/dialogues/lisatalk.rpy:4777
+translate slovak lisa_about_sex_book0_d7fbed8f:
+
+    # Lisa_10 "Не думаю. Я {b}ОЧЕНЬ{/b} в этом уверена!"
+    Lisa_10 "Nemyslím si to. Som si tým {b}veľmi{/b} istá!"
+
+# game/dialogues/lisatalk.rpy:4778
+translate slovak lisa_about_sex_book0_e1846811:
+
+    # Max_07 "Тогда, для начала, давай возобновим уроки поцелуев? А когда ты поймёшь, что я знаю, чему учить, то продолжим уроки Эрика..."
+    Max_07 "Tak na začiatok pokračujme v našich lekciách bozkávania, dobre? A keď si uvedomíš, že viem, čo ťa mám učiť, budeme pokračovať v Erikových lekciách..."
+
+# TODO: Translation updated at 2022-02-23 00:15
+
+# game/events/ann.rpy:665
+translate slovak ann_dressed_balkon_talk1_37635b4b:
+
+    # Ann_14 "Забыть? Забыть, как я чуть не отправила единственного сына в военный лагерь и... который один оказался настолько умным и благородным, что не только не разозлился на меня, а наоборот, спас всю семью от этого ублюдка - Эрика."
+    Ann_14 "Zabudol si? Zabudnúť, ako som takmer poslal svojho jediného syna do vojenského tábora a... ktorý sa ako jediný ukázal byť taký múdry a šľachetný, že sa na mňa nielenže nenahneval, ale naopak, zachránil celú rodinu pred tým bastardom Erikom."
+
+# game/events/ann.rpy:666
+translate slovak ann_dressed_balkon_talk1_ac19285d:
+
+    # Max_07 "Ну хватит... Было и было. Прими это и сделай выводы. Нельзя же всё время теперь ходить такой печальной и заниматься самобичеванием. Ты ни в чём не виновата!"
+    Max_07 "To stačí... Čo bolo, bolo. Prijmi to a vyvodzuj závery. Nemôžeš byť stále taká smutná a sebakritická. Nie je to tvoja chyba!"
+
+# TODO: Translation updated at 2022-02-23 00:15
+
+# game/events/eric.rpy:1584
+translate slovak lisa_eric_sex_ed_practice_practice_1_94b29054:
+
+    # Max_01 "{m}Отлично! С этого места мне всё хорошо видно. Эрик разрешил подглядывать, поэтому главное, чтобы меня не заметила Лиза. Если Эрик собирается делать то, что я думаю, то он тот ещё извращенец...{/m}"
+    Max_01 "{m}Skvelé! Odtiaľto všetko jasne vidím. Erik mi dal povolenie nakuknúť, takže hlavná vec je, aby si ma Líza nevšimla. Ak sa Erik chystá urobiť to, čo si myslím, že sa chystá urobiť, je to zvrhlík...{/m}"
+
+# game/events/eric.rpy:1596
+translate slovak lisa_eric_sex_ed_practice_practice_1_b51df49b:
+
+    # Max_04 "{m}Лиза большая умница! Уверен, с талантами у неё тоже всё в порядке, нужно их только раскрыть...{/m}"
+    Max_04 "{m}Líza je veľmi šikovné dievča! Som si istý, že aj jej talent bude v poriadku, len ho musí objaviť...{/m}"
+
+# game/events/eric.rpy:1610
+translate slovak lisa_eric_sex_ed_practice_practice_1_057b807a:
+
+    # Max_07 "{m}Нет, Лиза у нас та ещё стесняшка. Для неё эта практика сейчас - самое волнительное событие в жизни. Мне хорошо видно, что у неё руки дрожат...{/m}"
+    Max_07 "{m}Nie, Líza je veľmi plachá. Táto prax je pre ňu teraz najvzrušujúcejšou vecou v živote. Jasne vidím, že sa jej trasú ruky...{/m}"
+
+# game/events/eric.rpy:1623
+translate slovak lisa_eric_sex_ed_practice_practice_1_3ae62fc7:
+
+    # Max_03 "{m}А вот и начинается самое интересное! Лиза сейчас впервые возьмёт в руки член... Интересно посмотреть на её эмоции от такого...{/m}"
+    Max_03 "{m}Teraz prichádza zábavná časť! Líza sa chystá po prvý raz dostať do rúk penis... Je zaujímavé sledovať jej emócie z takého...{/m}"
+
+# game/events/eric.rpy:1637
+translate slovak lisa_eric_sex_ed_practice_practice_1_4b3a47e5:
+
+    # Max_03 "{m}Ого! Похоже, я очень вовремя! Чуть всё самое интересное не пропустил с этой посудой... Судя по всему, Лиза сейчас впервые возьмёт в руки член... Интересно посмотреть на её эмоции от такого...{/m}"
+    Max_03 "{m}Wow! Vyzerá to, že som prišiel práve včas! Takmer som zmeškal všetko to vzrušenie s týmto riadom... Líza sa zjavne chystá po prvý raz dostať do rúk vtáka... Je zaujímavé sledovať jej emócie z takého...{/m}"
+
+# game/events/eric.rpy:1648
+translate slovak lisa_eric_sex_ed_practice_practice_1_7bf11fc1:
+
+    # Lisa_09 "Ну ладно. Я сейчас попробую..."
+    Lisa_09 "Dobre. Teraz to vyskúšam..."
+
+# game/events/eric.rpy:1650
+translate slovak lisa_eric_sex_ed_practice_practice_1_137e23cb:
+
+    # Lisa_11 "Охх... Я... Я сделала это! Боже мой... Это и правда не так страшно, как мне казалось..."
+    Lisa_11 "Ohhh... Oh... Podarilo sa mi to! Bože môj... Naozaj to nie je také desivé, ako som si myslela..."
+
+# game/events/eric.rpy:1651
+translate slovak lisa_eric_sex_ed_practice_practice_1_940f7c80:
+
+    # Eric_02 "Ну и как он тебе? Что чувствуешь?"
+    Eric_02 "Čo si o ňom myslíš? Aký je to pocit?"
+
+# game/events/eric.rpy:1652
+translate slovak lisa_eric_sex_ed_practice_practice_1_0f697fc3:
+
+    # Lisa_01 "Он... Ну... Я не знаю... Он такой тёплый и нежный... Эрик, а что дальше нужно делать?"
+    Lisa_01 "On... No... Ja neviem... Je taký srdečný a nežný... Erik, čo by sa malo urobiť ďalej?"
+
+# game/events/eric.rpy:1653
+translate slovak lisa_eric_sex_ed_practice_practice_1_38fa3271:
+
+    # Eric_05 "Дальше его нужно массировать. У тебя ручки нежнее, чем у твоей мамы. Возьми его поглубже в ладонь и води вверх-вниз... Нежно и ласково, не спеша..."
+    Eric_05 "Potom je potrebné ho namasírovať. Tvoje ruky sú jemnejšie ako ruky tvojej matky. Vezmi ho hlboko do dlane a pohybuj nimi hore a dole... Jemne a nežne, neponáhľaj sa..."
+
+# game/events/eric.rpy:1654
+translate slovak lisa_eric_sex_ed_practice_practice_1_d4ba3fa3:
+
+    # Max_05 "{m}Вот это сейчас будет шоу! Давай, сестрёнка... Дрочить - это тебе не книжки читать! Руки будут отниматься по первости только так...{/m}"
+    Max_05 "{m}Aká to bude šou! No tak, sestra... Onanovanie nie je ako čítanie knihy! Ruky budú odňaté hneď na začiatku...{/m}"
+
+# game/events/eric.rpy:1656
+translate slovak lisa_eric_sex_ed_practice_practice_1_0f5e38dd:
+
+    # Lisa_10 "Я не... Эрик, давай не сегодня! Я что-то слишком переволновалась... Мне нужно успокоиться и прийти в себя..."
+    Lisa_10 "Ja nie... Erik, no tak dnes nie! Som príliš znepokojená... Musím sa upokojiť a zotaviť sa..."
+
+# game/events/eric.rpy:1657
+translate slovak lisa_eric_sex_ed_practice_practice_1_a7a2a190:
+
+    # Eric_01 "Ну конечно, Лиза, я не собираюсь давить на тебя. Не сегодня, так не сегодня. Ты и так многое сегодня сделала, переборов свой собственный страх и смущение. Мы продолжим в следующий понедельник..."
+    Eric_01 "No, samozrejme, Líza, nebudem na teba vyvíjať tlak. Nie dnes, nie dnes. Dnes si toho urobila veľa, prekonala si svoj vlastný strach a rozpaky. Budeme pokračovať budúci pondelok..."
+
+# game/events/eric.rpy:1658
+translate slovak lisa_eric_sex_ed_practice_practice_1_5f517bd0:
+
+    # Max_11 "{m}Да ничего она практически не сделала! Подержала и всё... Ну да ладно, главное, что она меня не заметила, а там и глядишь, в следующий понедельник наконец подрочит спокойно, насколько сможет.{/m}" nointeract
+    Max_11 "{m}Veľa toho neurobila! Držanie a to je všetko... No, hlavná vec je, že si ma nevšimla, a potom ho budúci pondelok konečne v pokoji vyhoní, ako sa len dá.{/m}" nointeract
+
+# game/events/eric.rpy:1701
+translate slovak lisa_eric_sex_ed_practice_practice_1_43fa62d0:
+
+    # Eric_13 "Ты какого чёрта, Макс, вмешиваешься в наши с Лизой уроки?! Она же просила тебя не мешать, разве нет?"
+    Eric_13 "Čo sa, dočerta, miešaš do mojich hodín s Lízou?! Požiadal som ťa, aby si sa držal stranou, však?"
+
+# game/events/eric.rpy:1702
+translate slovak lisa_eric_sex_ed_practice_practice_1_ff9a7213:
+
+    # Max_09 "Просила... Просто, я вот о чём подумал... Лиза ещё маленькая... Ты уверен, что хочешь в это влезть?"
+    Max_09 "Opýtal... Len som o tom premýšľal... Líza je ešte mladá... Si si istí, že sa do toho chceš pustiť?"
+
+# game/events/eric.rpy:1703
+translate slovak lisa_eric_sex_ed_practice_practice_1_d9e68fa9:
+
+    # Eric_14 "О да! Я очень хочу в это влезть, если ты ещё не заметил. А то, что она ещё маленькая - именно то, что надо."
+    Eric_14 "Ó áno! Ak si si to ešte nevšimol, naozaj sa do toho chcem pustiť. A to, že je stále malá, je presne to, prečo to treba urobiť."
+
+# game/events/eric.rpy:1704
+translate slovak lisa_eric_sex_ed_practice_practice_1_3539f3e2:
+
+    # Max_08 "А ты думал, что будет, если вас кто-нибудь увидит? Кроме меня, конечно... Или она кому-нибудь разболтает это? Здесь или в школе..."
+    Max_08 "Premýšľal si o tom, čo by sa stalo, keby vás niekto videl? Okrem mňa, samozrejme... Alebo to niekomu vyklopí? Tu alebo v škole..."
+
+# game/events/eric.rpy:1705
+translate slovak lisa_eric_sex_ed_practice_practice_1_4ecceec3:
+
+    # Eric_09 "Хм... Нет, я с ней поработаю и она будет держать это втайне."
+    Eric_09 "Hmmm... Nie, budem s ňou pracovať a ona si to nechá pre seba."
+
+# game/events/eric.rpy:1707
+translate slovak lisa_eric_sex_ed_practice_practice_1_d9d496ce:
+
+    # Eric_16 "Блин, рискованно! А так хочется! Вот какой же ты, Макс... Всю малину растоптал..."
+    Eric_16 "Páni, to je riskantné! To by som veľmi rád! Taký si, Max... Rozdupal si všetky maliny..."
+
+# game/events/eric.rpy:1708
+translate slovak lisa_eric_sex_ed_practice_practice_1_b3a3e772:
+
+    # Max_09 "А я не знаю, почему ты об этом не подумал. Видимо, из-за обилия перспектив с моей семьёй, ты совсем перестал думать тем, чем надо."
+    Max_09 "Neviem, prečo ťa to nenapadlo. Zrejme kvôli množstvu vyhliadok s mojou rodinou si úplne prestali myslieť správnym spôsobom."
+
+# game/events/eric.rpy:1709
+translate slovak lisa_eric_sex_ed_practice_practice_1_c9d70062:
+
+    # Eric_09 "Что теперь с Лизой делать... Если эти уроки прекратить в самом начале, она может начать задавать вопросы тем, кому не надо."
+    Eric_09 "Čo teraz robiť s Lízou... Ak sa tieto hodiny zastavia na začiatku, môže začať klásť otázky tým, ktorí to nepotrebujú."
+
+# game/events/eric.rpy:1710
+translate slovak lisa_eric_sex_ed_practice_practice_1_0d98c4b2:
+
+    # Max_07 "Ну, я попробую взять её на себя. Чем-нибудь, да займу её. А с остальными членами моей семьи я тебе помогу, как и договаривались."
+    Max_07 "Pokúsim sa to prevziať. Zamestnám ju. A so zvyškom mojej rodiny ti pomôžem, ako sme sa dohodli."
+
+# game/events/eric.rpy:1711
+translate slovak lisa_eric_sex_ed_practice_practice_1_16f6e99d:
+
+    # Eric_06 "Ладно, Макс, повезло тебе. Отдам Лизу на твоё попечение. Сейчас я ей объясню, что ты прекрасно справишься с этим обучением, а дальше уже твои проблемы."
+    Eric_06 "Dobre, Max, máš šťastie. Zverujem ti Lízu do opatery. Teraz jej vysvetlím, že tento tréning zvládneš, a potom je to na tebe."
+
+# game/events/eric.rpy:1713
+translate slovak lisa_eric_sex_ed_practice_practice_1_a0a1d076:
+
+    # Max_00 "Понял, постараюсь не облажаться." nointeract
+    Max_00 "Rozumiem, pokúsim sa to nepokaziť." nointeract
+
+# game/events/eric.rpy:1730
+translate slovak lisa_eric_sex_ed_practice_practice_1_f60134c6:
+
+    # Max_03 "{m}Как будто я стану мыть посуду, когда в нашей с Лизой комнате происходят такие интересные события! Да ни за что, ничего не хочу пропустить...{/m}"
+    Max_03 "{m}Akoby som mal umývať riad, keď sa s Lízou v izbe dejú také zaujímavé veci! V žiadnom prípade, nechcem o nič prísť...{/m}"
+
+# game/events/eric.rpy:1731
+translate slovak lisa_eric_sex_ed_practice_practice_1_470fd346:
+
+    # Eric_01 "... уже ведь не так страшно, как в первый раз, да, Лиза?"
+    Eric_01 "... nie je to také desivé ako prvýkrát, však, Líza?"
+
+# game/events/eric.rpy:1732
+translate slovak lisa_eric_sex_ed_practice_practice_1_af8f9b62:
+
+    # Lisa_10 "Да. Но я всё равно немного волнуюсь..."
+    Lisa_10 "Áno. Ale stále mám trochu obavy..."
+
+# game/events/eric.rpy:1733
+translate slovak lisa_eric_sex_ed_practice_practice_1_a2c1cbe0:
+
+    # Eric_03 "Всё в порядке. Главное, что мы это начали и свой страх ты преодолела. Ты умница!"
+    Eric_03 "To je v poriadku. Dôležité je, že sme začali a ty si prekonala svoj strach. Si šikovná!"
+
+# game/events/eric.rpy:1734
+translate slovak lisa_eric_sex_ed_practice_practice_1_37a7b75d:
+
+    # Lisa_09 "Честно говоря, я ещё и немного стесняюсь это делать..."
+    Lisa_09 "Ak mám byť úprimná, aj ja sa za to trochu hanbím..."
+
+# game/events/eric.rpy:1735
+translate slovak lisa_eric_sex_ed_practice_practice_1_b3f3c39c:
+
+    # Max_04 "{m}Ничего, небольшое стеснение со стороны Лизы выглядит даже мило. Но постеснялась и всё, хватит, давай за дело, сестрёнка!{/m}"
+    Max_04 "{m}Nič, trochu plachosti zo strany Lízy dokonca vyzerá pekne. Ale hanbila som sa a to je všetko, stačilo, poďme do práce, malá sestra!{/m}"
+
+# game/events/eric.rpy:1737
+translate slovak lisa_eric_sex_ed_practice_practice_1_f726e72b:
+
+    # Eric_02 "Я тебя понимаю, Лиза. Вначале это всегда кажется чем-то шокирующим, но потом, когда ты к этому привыкнешь, то для тебя откроются новые горизонты."
+    Eric_02 "Rozumiem ti, Líza. Na začiatku sa to vždy zdá šokujúce, ale keď si na to zvykneš, otvoria sa ti nové obzory."
+
+# game/events/eric.rpy:1738
+translate slovak lisa_eric_sex_ed_practice_practice_1_e76ed681:
+
+    # Lisa_03 "Серьёзно? И я смогу, также как мама, делать это легко и просто?"
+    Lisa_03 "Naozaj? A budem to môcť, rovnako ako moja matka, urobiť ľahko a bez problémov?"
+
+# game/events/eric.rpy:1739
+translate slovak lisa_eric_sex_ed_practice_practice_1_00ed89fd:
+
+    # Eric_04 "Конечно! А может быть даже и лучше, чем она!"
+    Eric_04 "Samozrejme! A možno dokonca lepšie ako ona!"
+
+# game/events/eric.rpy:1740
+translate slovak lisa_eric_sex_ed_practice_practice_1_fe01d491:
+
+    # Lisa_03 "Правда?! А такое возможно?"
+    Lisa_03 "Naozaj?! Je to možné?"
+
+# game/events/eric.rpy:1741
+translate slovak lisa_eric_sex_ed_practice_practice_1_eba35258:
+
+    # Eric_03 "Нет предела совершенству, Лиза! Но, пора бы уже не просто обо всём этом говорить, но и делать..."
+    Eric_03 "Dokonalosti sa medze nekladú, Líza! Ale je načase, aby sme o tom všetkom nielen hovorili, ale aj..."
+
+# game/events/eric.rpy:1742
+translate slovak lisa_eric_sex_ed_practice_practice_1_73ce750d:
+
+    # Max_02 "{m}Вот именно! Не тяни резину, Лиза... Тебе пора немного подрочить в целях сексуального воспитания!{/m}"
+    Max_02 "{m}Presne tak! Nepreťahuj to, Líza... Je čas, aby si trochu vylepšila sexuálnu výchovu!{/m}"
+
+# game/events/eric.rpy:1744
+translate slovak lisa_eric_sex_ed_practice_practice_1_536d7df8:
+
+    # Lisa_01 "Да, Эрик. Думаю, я готова продолжить... Так значит, я просто беру его и начинаю водить вверх-вниз?"
+    Lisa_01 "Áno, Erik. Myslím, že som pripravená pokračovať... Takže ho jednoducho zdvihnem a začnem rukou jazdiť hore-dole?"
+
+# game/events/eric.rpy:1745
+translate slovak lisa_eric_sex_ed_practice_practice_1_bb26a930:
+
+    # Eric_05 "Да, моя девочка. Тебе нужно уверенно взять его в свою нежную ручку и так же нежно ею водить по нему."
+    Eric_05 "Áno, moje dievča. Musíš ho s dôverou vziať do jemnej ruky a rovnako jemne ho ňou hladiť."
+
+# game/events/eric.rpy:1751
+translate slovak lisa_eric_sex_ed_practice_practice_1_140d5a14:
+
+    # Max_02 "{m}Фух! Похоже, я очень вовремя подоспел... Ну что, сестрёнка, тебе пора немного подрочить в целях сексуального воспитания!{/m}"
+    Max_02 "{m}Uff! Zdá sa, že som prišiel práve včas... No, sestrička, je čas, aby si trochu vylepšila sexuálnu výchovu!{/m}"
+
+# game/events/eric.rpy:1753
+translate slovak lisa_eric_sex_ed_practice_practice_1_f814ae2c:
+
+    # Lisa_10 "Ладно, я сейчас попробую... Только не смейся, если я что-то буду делать не так! Хорошо?"
+    Lisa_10 "Dobre, skúsim to teraz... Len sa nesmej, ak urobím niečo zlé! Ok?"
+
+# game/events/eric.rpy:1754
+translate slovak lisa_eric_sex_ed_practice_practice_1_0e946955:
+
+    # Eric_07 "Лиза, я и не думал смеяться! Всё у тебя получится, а даже если нет, я всегда тебе подскажу. Начинай..."
+    Eric_07 "Líza, nemyslel som na smiech! Všetko bude fungovať, a aj keď nie, vždy ti to poviem. Začiatok..."
+
+# game/events/eric.rpy:1755
+translate slovak lisa_eric_sex_ed_practice_practice_1_b050a65e:
+
+    # Max_07 "{m}Да, Лиза, начинай уже... А то разговорились тут!{/m}"
+    Max_07 "{m}Áno, Líza, začni už... Hovoríš z vlastnej hlavy!{/m}"
+
+# game/events/eric.rpy:1757
+translate slovak lisa_eric_sex_ed_practice_practice_1_5fe7735c:
+
+    # Lisa_01 "Хорошо... Хоть я и до сих пор сильно смущаюсь этого, но во второй раз это уже совсем иначе! Не так страшно..."
+    Lisa_01 "No... Aj keď sa za to stále veľmi hanbím, druhýkrát je to iné! Nie je to také strašidelné..."
+
+# game/events/eric.rpy:1758
+translate slovak lisa_eric_sex_ed_practice_practice_1_2d2ca381:
+
+    # Eric_03 "Вот и замечательно! Нечего бояться совершенно естественных вещей, таких, как это!"
+    Eric_03 "To je skvelé! Takýchto úplne prirodzených vecí sa netreba báť!"
+
+# game/events/eric.rpy:1759
+translate slovak lisa_eric_sex_ed_practice_practice_1_23f29fa5:
+
+    # Lisa_02 "Ага, наверное... Не знаю, что вы мужчины в такие моменты испытываете, но я пока сгораю от стыда. Хотя, в то же время, мне очень интересно это делать!"
+    Lisa_02 "Áno, myslím, že... Neviem, ako sa v takýchto chvíľach cítite vy muži, ale ja zatiaľ horím hanbou. Aj keď ma to zároveň veľmi zaujíma!"
+
+# game/events/eric.rpy:1760
+translate slovak lisa_eric_sex_ed_practice_practice_1_b015c998:
+
+    # Eric_02 "Понимаю. Это нормально, Лиза. Потом, когда ты преодолеешь все неудобства, это станет ещё интереснее и желаннее для тебя. Ох, у тебя очень хорошо получается, продолжай..."
+    Eric_02 "Rozumiem. To je v poriadku, Líza. Keď prekonáš nepríjemné pocity, bude to pre teba ešte zaujímavejšie a žiadanejšie. Ach, darí sa ti veľmi dobre, pokračuj..."
+
+# game/events/eric.rpy:1761
+translate slovak lisa_eric_sex_ed_practice_practice_1_4162a3b6:
+
+    # Max_05 "{m}Да, Лиза, продолжай, не стесняйся! Может быть, когда ты этому более-менее обучишься, мне удастся тебя уговорить показать мастерство дрочки...{/m}"
+    Max_05 "{m}Áno, Líza, pokračuj, nehanbi sa! Možno keď budeš viac-menej trénovaná, môžem ťa prinútiť, aby si predviedla svoje honiace schopnosti...{/m}"
+
+# game/events/eric.rpy:1763
+translate slovak lisa_eric_sex_ed_practice_practice_1_4970b973:
+
+    # Lisa_11 "Ой! Он начал становится таким твёрдым и большим! Это же, насколько я помню, хорошо, да?!"
+    Lisa_11 "Au! Začína byť taký tvrdý a veľký! To je tak dobré, ako si pamätám, však?!"
+
+# game/events/eric.rpy:1764
+translate slovak lisa_eric_sex_ed_practice_practice_1_2cee1748:
+
+    # Eric_06 "Конечно, это ОЧЕНЬ хорошо! Давай, обхвати его чуть покрепче и всей ладошкой... Вспомни, как это делала твоя мама... Вот так, да..."
+    Eric_06 "Samozrejme, je to veľmi dobré! No tak, objím ho trochu pevnejšie a celou dlaňou... Spomeň si, ako to robila tvoja matka... To je ono, áno..."
+
+# game/events/eric.rpy:1765
+translate slovak lisa_eric_sex_ed_practice_practice_1_a095d453:
+
+    # Lisa_10 "Да, кажется, я помню... Она делала как-то так... У меня получается? Тебе нравится?"
+    Lisa_10 "Áno, zdá sa mi, že si pamätám... Robila niečo podobné... Darí sa mi to? Páči sa ti to?"
+
+# game/events/eric.rpy:1766
+translate slovak lisa_eric_sex_ed_practice_practice_1_2764b823:
+
+    # Eric_05 "Да, всё правильно, моя девочка, молодец! Твоя нежная ладошка так хороша... Попробуй делать это чувственно и интуитивно..."
+    Eric_05 "Áno, je to tak, dievčatko, výborne! Tvoja jemná dlaň je taká dobrá... Skús to robiť zmyselne a intuitívne..."
+
+# game/events/eric.rpy:1767
+translate slovak lisa_eric_sex_ed_practice_practice_1_7615ec72:
+
+    # Max_03 "{m}Ухх... Я бы тоже очень хотел, чтобы её ладошка и пальчики обхватили мой член... Д-а-а... Даже думать об этом невероятно приятно!{/m}"
+    Max_03 "{m}Uf... Aj ja by som chcel mať jej dlaň a prsty ovinuté okolo môjho vtáka... Y-a-a-a... Už len to, že na to myslím, je neuveriteľne uspokojujúce!{/m}"
+
+# game/events/eric.rpy:1769
+translate slovak lisa_eric_sex_ed_practice_practice_1_27ce6092:
+
+    # Lisa_09 "Ой, Эрик, ну я даже не знаю... Может, на сегодня уже хватит? Потому что у меня уже рука начинает болеть, а мне ещё домашнее задание нужно делать..."
+    Lisa_09 "Erik, ja neviem... Môžeme to ukončiť? Pretože ma začína bolieť ruka a musím urobiť domácu úlohu..."
+
+# game/events/eric.rpy:1770
+translate slovak lisa_eric_sex_ed_practice_practice_1_1b3a38e2:
+
+    # Eric_04 "Конечно, Лиза! Я и не настаивал на продолжении... Ты и так сегодня сделала большой шаг! Так что занимайся своими делами, а в следующий понедельник мы продолжим. Да, моя дорогая?"
+    Eric_04 "Samozrejme, Líza! Netrval som na pokračovaní... Už dnes si urobila veľký krok! Takže sa staraj o svoje veci a budeme pokračovať budúci pondelok. Áno, moja drahá?"
+
+# game/events/eric.rpy:1772
+translate slovak lisa_eric_sex_ed_practice_practice_1_8b5130df:
+
+    # Lisa_02 "Да! Спасибо, Эрик, за наставления и этот опыт! Даже не знаю, чтобы я без тебя делала..."
+    Lisa_02 "Áno! Ďakujem ti, Erik, za usmernenie a túto skúsenosť! Neviem, čo by som si bez teba počala..."
+
+# game/events/eric.rpy:1773
+translate slovak lisa_eric_sex_ed_practice_practice_1_bb69e3a1:
+
+    # Eric_01 "Не за что, Лиза. До следующего раза."
+    Eric_01 "Nemáš za čo, Líza. Nabudúce."
+
+# game/events/eric.rpy:1774
+translate slovak lisa_eric_sex_ed_practice_practice_1_b465168f:
+
+    # Max_09 "{m}Ага, до следующего... Вот только есть у меня некоторые опасения на этот счёт. Нужно будет обязательно высказать их Эрику в следующий раз после ужина!{/m}" nointeract
+    Max_09 "{m}Áno, až do ďalšieho... Až na to, že mám určité obavy. Budem to musieť nabudúce po večeri povedať Erikovi!{/m}" nointeract
+
+# game/events/eric.rpy:1882
+translate slovak lisa_eric_zero_practice_war_6f687e90:
+
+    # Max_07 "{m}У Лизы сейчас должен состояться практический урок сексуального воспитания. Надо обязательно подглядеть за этим! Правда, она попросила помыть за неё посуду...{/m}" nointeract
+    Max_07 "{m}Líza sa chystá na praktickú lekciu sexuálnej výchovy. Určite to treba vidieť! Je pravda, že ma požiadala, aby som za ňu umyl riad...{/m}" nointeract
+
+# game/events/eric.rpy:1885
+translate slovak lisa_eric_zero_practice_war_026ddd2f:
+
+    # Max_07 "{m}У Лизы сейчас должен состояться практический урок сексуального воспитания. Надо обязательно подглядеть за этим, ведь это такое волнительное событие будет для моей сестрёнки! Правда, она попросила помыть за неё посуду...{/m}" nointeract
+    Max_07 "{m}Líza sa chystá na praktickú lekciu sexuálnej výchovy. Budem to musieť sledovať, pretože to bude pre moju malú sestru taká vzrušujúca udalosť! Je pravda, že ma požiadala, aby som za ňu umyl riad...{/m}" nointeract
+
+# game/events/eric.rpy:1901
+translate slovak lisa_eric_zero_practice_war_d2275465:
+
+    # Max_10 "{m}Нужно как можно быстрее вымыть всю посуду и бежать к своей комнате, не зазря же я выпросил у Эрика возможность подглядывать за их уроками. Ну вот и закончил...{/m}" nointeract
+    Max_10 "{m}Musím čo najrýchlejšie umyť všetok riad a utekať do svojej izby; ani za nič som Erika neprosil, aby som mohol nakuknúť do ich hodín. Som tu, hotovo...{/m}" nointeract
+
+translate slovak strings:
+
+    # game/events/eric.rpy:1712
+    old "{i}уйти мыть посуду{/i}"
+    new "{i}ísť a umyť riad{/i}"
+
+# TODO: Translation updated at 2022-02-24 00:56
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "У меня появились кое-какие опасения на счёт практических занятий Лизы и Эрика. Нужно будет поговорить с Эриком после следующего совместного ужина..."
+    new "Mám isté obavy z tréningov Lízy a Erika. Budem sa musieť porozprávať s Erikom po našej ďalšej spoločnej večeri..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Я спросил Эрика, думал ли он о том, что у него могут возникнуть серьёзные проблемы, если их с Лизой кто-нибудь увидит или она кому-то расскажет об этих уроках. И похоже, Эрик не особо об этом думал! Его так ослепили перспективы перетрахать всю женскую половину моей семьи, что он даже не подумал о таких элементарных вещах. И о чудо, после недолгих раздумий он решил переложить сексуальное воспитание Лизы на меня! Это просто невероятно! Теперь Лиза полностью в моём распоряжении. Конечно, пока не повзрослеет, но времени ещё навалом..."
+    new "Spýtal som sa Erika, či premýšľal o tom, že by sa mohol dostať do vážnych problémov, keby ho s Lízou niekto videl alebo keby niekomu povedala o lekciách. A Erik si z toho nič nerobil! Bol taký zaslepený vyhliadkou, že si to rozdá s celou ženskou polovicou mojej rodiny, že na také základné veci ani nepomyslel. A ako zázrakom sa po chvíli premýšľania rozhodol, že Lízinu sexuálnu výchovu odovzdá mne! Je to jednoducho neuveriteľné! Líza je mi teraz úplne k dispozícii. Samozrejme, kým nevyrastie, ale na to je ešte dosť času..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Кстати, я всё не спрошу у Лизы, прочитала ли она книгу по сексуальному образованию! Надо будет спросить..."
+    new "Mimochodom, stále sa Lízy pýtam, či čítala knihu o sexuálnej výchove! Musím sa znovu opýtať..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Так уже намного лучше! Теперь у мамы есть новый спортивный костюм, который подарит нам с ней много тёплых эмоций. Она даже не слишком выступала по поводу того, что он очень открытый. Это смотря для чего... \nКак по мне, если бы она занималась йогой совершенно голой - это была бы бомба! Эх, мечты... Но как знать, может однажды..."
+    new "To je oveľa lepšie! Mama má teraz novú súpravu na cvičenie, ktorá jej aj mne poskytne veľa tepla. Dokonca nebola ani príliš skeptická k tomu, že je veľmi otvorená. Záleží na tom, čo... \Ak sa ma spýtate, keby cvičila jogu úplne nahá, bola by to bomba! Eh, sny... Ale kto vie, možno jedného dňa..."
+
+    # game/core/09_opportunities.rpy:968
+    old "Эта возможность не доступна при дружбе с Эриком..."
+    new "Táto možnosť nie je k dispozícii, keď ste priateľmi Erika..."
+
+# TODO: Translation updated at 2022-02-24 00:56
+
+translate slovak strings:
+
+    # game/core/screens.rpy:1136
+    old "ЗАБЛОКИРОВАНЫ..."
+    new "BLOKOVANÉ..."
+
+# TODO: Translation updated at 2022-02-24 00:56
+
+# game/dialogues/erictalk.rpy:812
+translate slovak Eric_talk_about_Lisa_3_58112272:
+
+    # Eric_01 "Ты что-то хотел, Макс? Спрашивай..."
+    Eric_01 "Chcel si niečo, Max? Spýtaj sa..."
+
+# game/dialogues/erictalk.rpy:813
+translate slovak Eric_talk_about_Lisa_3_6ec16737:
+
+    # Max_08 "Да, знаешь, я подглядывал за вашими с Лизой уроками и подумал... А ничего, что она ещё маленькая?"
+    Max_08 "Áno, vieš, pozeral som sa na vaše hodiny s Lízou a pomyslel som si... Je to vôbec v poriadku, je ešte malá?"
+
+# game/dialogues/erictalk.rpy:814
+translate slovak Eric_talk_about_Lisa_3_2e69e3bf:
+
+    # Eric_05 "Ты что! То, что она ещё такая юная - это вообще бомба. Прямо то, что надо для полного счастья!"
+    Eric_05 "Čože? To, že je stále taká mladá, je bomba. Presne to, čo potrebujem k úplnému šťastiu!"
+
+# game/dialogues/erictalk.rpy:815
+translate slovak Eric_talk_about_Lisa_3_d4b10974:
+
+    # Max_07 "Это понятно. Я о другом... Вас же всё равно, рано или поздно, кто-нибудь увидит. А если даже и нет, то что будет, когда Лиза кому-нибудь об этом разболтает?"
+    Max_07 "Je to pochopiteľné. To nie je to, čo som mal na mysli... Skôr či neskôr vás niekto uvidí. A aj keby nie, čo sa stane, keď o tom Líza niekomu povie?"
+
+# game/dialogues/erictalk.rpy:816
+translate slovak Eric_talk_about_Lisa_3_4ecceec3:
+
+    # Eric_09 "Хм... Нет, я с ней поработаю и она будет держать это втайне."
+    Eric_09 "Hmmm... Nie, budem s ňou pracovať a ona si to nechá pre seba."
+
+# game/dialogues/erictalk.rpy:817
+translate slovak Eric_talk_about_Lisa_3_67167989:
+
+    # Max_09 "Просто, я хорошо знаю Лизу и она мне разболтала несколько секретов, хотя мы были не так близки, как сейчас. А у вас с ней секрет очень... наказуемый... Из-за его раскрытия можно всё потерять!"
+    Max_09 "Lenže Lízu dobre poznám a prezradila mi niekoľko tajomstiev, aj keď sme si neboli tak blízki ako teraz. A tvoje tajomstvo s ňou je veľmi... trestné... Kvôli jeho odhaleniu môžeš prísť o všetko!"
+
+# game/dialogues/erictalk.rpy:818
+translate slovak Eric_talk_about_Lisa_3_5ff62a9d:
+
+    # Eric_10 "Эх, как-то я об этом не подумал..."
+    Eric_10 "Eh, nejako ma to nenapadlo..."
+
+# game/dialogues/erictalk.rpy:819
+translate slovak Eric_talk_about_Lisa_3_999fc9b3:
+
+    # Max_07 "Смотри... Я тебе по дружески эти опасения высказал. Если ты на все 150%% уверен, что вам удастся сохранить это в тайне, то пожалуйста. Но тебе потом от этого отмыться не удастся, если что."
+    Max_07 "Pozri sa... Tieto obavy som ti vyjadril priateľským spôsobom. Ak si si na 150%% istí, že to dokážeš udržať v tajnosti, nemáš za čo. Ale neskôr ti to už neprejde, ak vôbec."
+
+# game/dialogues/erictalk.rpy:820
+translate slovak Eric_talk_about_Lisa_3_d9d496ce:
+
+    # Eric_16 "Блин, рискованно! А так хочется! Вот какой же ты, Макс... Всю малину растоптал..."
+    Eric_16 "Páni, to je riskantné! To by som veľmi rád! Taký si ty, Max... Rozdupal si všetku zábavu..."
+
+# game/dialogues/erictalk.rpy:821
+translate slovak Eric_talk_about_Lisa_3_90215746:
+
+    # Max_09 "А я не знаю, почему ты об этом не подумал. Видимо, из-за обилия перспектив с моей семьёй, ты совсем перестал думать тем, чем надо. Это будет невероятное везение, если тебя за это не посадят."
+    Max_09 "Neviem, prečo ťa to nenapadlo. Zrejme kvôli množstvu vyhliadok s mojou rodinou si úplne prestal myslieť správnym spôsobom. Bolo by neuveriteľné šťastie, keby si za to nešiel do väzenia."
+
+# game/dialogues/erictalk.rpy:822
+translate slovak Eric_talk_about_Lisa_3_c9d70062:
+
+    # Eric_09 "Что теперь с Лизой делать... Если эти уроки прекратить в самом начале, она может начать задавать вопросы тем, кому не надо."
+    Eric_09 "Čo teraz robiť s Lízou... Ak sa tieto hodiny zastavia na začiatku, môže začať klásť otázky tým, ktorí to nepotrebujú."
+
+# game/dialogues/erictalk.rpy:823
+translate slovak Eric_talk_about_Lisa_3_f9b2bcd6:
+
+    # Max_07 "Ну, я попробую взять её на себя. Чем-нибудь, да займу её. К тому же, она же не всегда будет маленькой. Подрастёт и можно будет с ней делать всё, что захочется! И без такой лютой опаски. А с остальными членами моей семьи я тебе помогу, как и договаривались."
+    Max_07 "No, pokúsim sa to prevziať. Zamestnám ju. Okrem toho nebude vždy malá. Dospeje a môže robiť, čo chce! A bez takého krutého strachu. A so zvyškom mojej rodiny ti pomôžem, ako sme sa dohodli."
+
+# game/dialogues/erictalk.rpy:824
+translate slovak Eric_talk_about_Lisa_3_72418067:
+
+    # Eric_06 "Ладно, Макс, повезло тебе. Отдам Лизу на твоё попечение. Сейчас я ей объясню, что ты прекрасно справишься с этим обучением, а дальше уже твои проблемы. Возись с ней сам. У меня зато больше времени на другие киски будет..."
+    Eric_06 "Dobre, Max, máš šťastie. Zverujem ti Lízu do opatery. Teraz jej vysvetlím, že tento tréning zvládneš, a potom je to na tebe. Zvládnite to sami. Aspoň budem mať viac času na iné mačičky..."
+
+# game/dialogues/erictalk.rpy:825
+translate slovak Eric_talk_about_Lisa_3_7def813d:
+
+    # Max_08 "Ого! Спасибо! Я за ней присмотрю." nointeract
+    Max_08 "Wow! Ďakujem! Budem na ňu dohliadať." nointeract
+
+# game/dialogues/erictalk.rpy:836
+translate slovak Eric_talk_about_Lisa_3_36c2b900:
+
+    # Max_11 "{m}Посуду лучше всё-таки помыть, а то Лиза вообще со мной ещё не скоро начнёт разговаривать...{/m}"
+    Max_11 "{m}Radšej umyjem riad, lebo Líza sa so mnou chvíľu vôbec nebude rozprávať...{/m}"
+
+# TODO: Translation updated at 2022-02-24 00:56
+
+# game/events/eric.rpy:1722
+translate slovak lisa_eric_sex_ed_practice_practice_1_999fc9b3:
+
+    # Max_07 "Смотри... Я тебе по дружески эти опасения высказал. Если ты на все 150%% уверен, что вам удастся сохранить это в тайне, то пожалуйста. Но тебе потом от этого отмыться не удастся, если что."
+    Max_07 "Pozri sa... Tieto obavy som ti vyjadril priateľským spôsobom. Ak si si na 150 % istí, že to dokážeš udržať v tajnosti, nemáš za čo. Ale neskôr ti to už neprejde, ak vôbec."
+
+# game/events/eric.rpy:1749
+translate slovak lisa_eric_sex_ed_practice_practice_2_f60134c6:
+
+    # Max_03 "{m}Как будто я стану мыть посуду, когда в нашей с Лизой комнате происходят такие интересные события! Да ни за что, ничего не хочу пропустить...{/m}"
+    Max_03 "{m}Prečo by som mal umývať riad, keď sa s Lízou v izbe dejú také zaujímavé veci! V žiadnom prípade, nechcem o nič prísť...{/m}"
+
+# game/events/eric.rpy:1750
+translate slovak lisa_eric_sex_ed_practice_practice_2_470fd346:
+
+    # Eric_01 "... уже ведь не так страшно, как в первый раз, да, Лиза?"
+    Eric_01 "... nie je to také desivé ako prvýkrát, však, Líza?"
+
+# game/events/eric.rpy:1751
+translate slovak lisa_eric_sex_ed_practice_practice_2_af8f9b62:
+
+    # Lisa_10 "Да. Но я всё равно немного волнуюсь..."
+    Lisa_10 "Áno. Ale stále mám trochu obavy..."
+
+# game/events/eric.rpy:1752
+translate slovak lisa_eric_sex_ed_practice_practice_2_a2c1cbe0:
+
+    # Eric_03 "Всё в порядке. Главное, что мы это начали и свой страх ты преодолела. Ты умница!"
+    Eric_03 "To je v poriadku. Dôležité je, že sme začali a ty si prekonala svoj strach. Si šikovná!"
+
+# game/events/eric.rpy:1753
+translate slovak lisa_eric_sex_ed_practice_practice_2_37a7b75d:
+
+    # Lisa_09 "Честно говоря, я ещё и немного стесняюсь это делать..."
+    Lisa_09 "Ak mám byť úprimná, aj ja sa za to trochu hanbím..."
+
+# game/events/eric.rpy:1754
+translate slovak lisa_eric_sex_ed_practice_practice_2_b3f3c39c:
+
+    # Max_04 "{m}Ничего, небольшое стеснение со стороны Лизы выглядит даже мило. Но постеснялась и всё, хватит, давай за дело, сестрёнка!{/m}"
+    Max_04 "{m}Nič, trochu plachosti zo strany Lízy dokonca vyzerá pekne. Ale plachá a to je všetko, to je všetko, poďme na to, sestra!{/m}"
+
+# game/events/eric.rpy:1758
+translate slovak lisa_eric_sex_ed_practice_practice_2_f726e72b:
+
+    # Eric_02 "Я тебя понимаю, Лиза. Вначале это всегда кажется чем-то шокирующим, но потом, когда ты к этому привыкнешь, то для тебя откроются новые горизонты."
+    Eric_02 "Rozumiem ti, Líza. Na začiatku sa to vždy zdá šokujúce, ale keď si na to zvykneš, otvoria sa ti nové obzory."
+
+# game/events/eric.rpy:1759
+translate slovak lisa_eric_sex_ed_practice_practice_2_e76ed681:
+
+    # Lisa_03 "Серьёзно? И я смогу, также как мама, делать это легко и просто?"
+    Lisa_03 "Naozaj? A budem to môcť, rovnako ako moja matka, urobiť ľahko a bez problémov?"
+
+# game/events/eric.rpy:1760
+translate slovak lisa_eric_sex_ed_practice_practice_2_00ed89fd:
+
+    # Eric_04 "Конечно! А может быть даже и лучше, чем она!"
+    Eric_04 "Samozrejme! A možno dokonca lepšie ako ona!"
+
+# game/events/eric.rpy:1761
+translate slovak lisa_eric_sex_ed_practice_practice_2_fe01d491:
+
+    # Lisa_03 "Правда?! А такое возможно?"
+    Lisa_03 "Naozaj?! Je to možné?"
+
+# game/events/eric.rpy:1762
+translate slovak lisa_eric_sex_ed_practice_practice_2_eba35258:
+
+    # Eric_03 "Нет предела совершенству, Лиза! Но, пора бы уже не просто обо всём этом говорить, но и делать..."
+    Eric_03 "Dokonalosti sa medze nekladú, Líza! Ale je načase, aby sme o tom všetkom nielen hovorili, ale aj..."
+
+# game/events/eric.rpy:1763
+translate slovak lisa_eric_sex_ed_practice_practice_2_73ce750d:
+
+    # Max_02 "{m}Вот именно! Не тяни резину, Лиза... Тебе пора немного подрочить в целях сексуального воспитания!{/m}"
+    Max_02 "{m}Presne tak! Nepreťahuj to, Líza... Je čas, aby si trochu precvičila sexuálnu výchovu!{/m}"
+
+# game/events/eric.rpy:1767
+translate slovak lisa_eric_sex_ed_practice_practice_2_536d7df8:
+
+    # Lisa_01 "Да, Эрик. Думаю, я готова продолжить... Так значит, я просто беру его и начинаю водить вверх-вниз?"
+    Lisa_01 "Áno, Erik. Myslím, že som pripravená pokračovať... Takže ho jednoducho zdvihnem a začnem rukou jazdiť po ňom hore-dole?"
+
+# game/events/eric.rpy:1768
+translate slovak lisa_eric_sex_ed_practice_practice_2_bb26a930:
+
+    # Eric_05 "Да, моя девочка. Тебе нужно уверенно взять его в свою нежную ручку и так же нежно ею водить по нему."
+    Eric_05 "Áno, moje dievča. Musíš ho s dôverou vziať do jemnej ruky a rovnako jemne ho ňou hladiť."
+
+# game/events/eric.rpy:1777
+translate slovak lisa_eric_sex_ed_practice_practice_2_140d5a14:
+
+    # Max_02 "{m}Фух! Похоже, я очень вовремя подоспел... Ну что, сестрёнка, тебе пора немного подрочить в целях сексуального воспитания!{/m}"
+    Max_02 "{m}Phew! Zdá sa, že som prišiel práve včas... No, sestrička, je čas, aby si trochu precvičila sexuálnu výchovu!{/m}"
+
+# game/events/eric.rpy:1779
+translate slovak lisa_eric_sex_ed_practice_practice_2_f814ae2c:
+
+    # Lisa_10 "Ладно, я сейчас попробую... Только не смейся, если я что-то буду делать не так! Хорошо?"
+    Lisa_10 "Dobre, teraz to skúsim... Len sa nesmej, ak urobím niečo zle! Dobre?"
+
+# game/events/eric.rpy:1780
+translate slovak lisa_eric_sex_ed_practice_practice_2_0e946955:
+
+    # Eric_07 "Лиза, я и не думал смеяться! Всё у тебя получится, а даже если нет, я всегда тебе подскажу. Начинай..."
+    Eric_07 "Líza, nechcel som sa smiať! Zvládneš to, a aj keby nie, vždy ti niečo napoviem. Začni..."
+
+# game/events/eric.rpy:1781
+translate slovak lisa_eric_sex_ed_practice_practice_2_b050a65e:
+
+    # Max_07 "{m}Да, Лиза, начинай уже... А то разговорились тут!{/m}"
+    Max_07 "{m}Áno, Líza, začni už... Hovoríš z vlastnej hlavy!{/m}"
+
+# game/events/eric.rpy:1786
+translate slovak lisa_eric_sex_ed_practice_practice_2_5fe7735c:
+
+    # Lisa_01 "Хорошо... Хоть я и до сих пор сильно смущаюсь этого, но во второй раз это уже совсем иначе! Не так страшно..."
+    Lisa_01 "No... Aj keď sa za to stále veľmi hanbím, druhýkrát je to iné! Nie tak strašidelné..."
+
+# game/events/eric.rpy:1787
+translate slovak lisa_eric_sex_ed_practice_practice_2_2d2ca381:
+
+    # Eric_03 "Вот и замечательно! Нечего бояться совершенно естественных вещей, таких, как это!"
+    Eric_03 "To je skvelé! Takýchto úplne prirodzených vecí sa netreba báť!"
+
+# game/events/eric.rpy:1788
+translate slovak lisa_eric_sex_ed_practice_practice_2_23f29fa5:
+
+    # Lisa_02 "Ага, наверное... Не знаю, что вы мужчины в такие моменты испытываете, но я пока сгораю от стыда. Хотя, в то же время, мне очень интересно это делать!"
+    Lisa_02 "Áno, myslím, že... Neviem, ako sa v takýchto chvíľach cítite vy muži, ale ja zatiaľ horím hanbou. Aj keď ma to zároveň veľmi zaujíma!"
+
+# game/events/eric.rpy:1789
+translate slovak lisa_eric_sex_ed_practice_practice_2_b015c998:
+
+    # Eric_02 "Понимаю. Это нормально, Лиза. Потом, когда ты преодолеешь все неудобства, это станет ещё интереснее и желаннее для тебя. Ох, у тебя очень хорошо получается, продолжай..."
+    Eric_02 "Rozumiem. To je v poriadku, Líza. Keď prekonáš nepríjemné pocity, bude to pre teba ešte zaujímavejšie a žiadanejšie. Ach, darí sa ti veľmi dobre, pokračuj..."
+
+# game/events/eric.rpy:1790
+translate slovak lisa_eric_sex_ed_practice_practice_2_4162a3b6:
+
+    # Max_05 "{m}Да, Лиза, продолжай, не стесняйся! Может быть, когда ты этому более-менее обучишься, мне удастся тебя уговорить показать мастерство дрочки...{/m}"
+    Max_05 "{m}Áno, Líza, pokračuj, nehanbi sa! Možno keď budeš viac-menej trénovaná, môžem ťa prinútiť, aby si predviedla svoje honiace schopnosti...{/m}"
+
+# game/events/eric.rpy:1794
+translate slovak lisa_eric_sex_ed_practice_practice_2_4970b973:
+
+    # Lisa_11 "Ой! Он начал становится таким твёрдым и большим! Это же, насколько я помню, хорошо, да?!"
+    Lisa_11 "Au! Začínal byť taký tvrdý a veľký! To je tak dobre, ako si pamätám, však?!"
+
+# game/events/eric.rpy:1795
+translate slovak lisa_eric_sex_ed_practice_practice_2_2cee1748:
+
+    # Eric_06 "Конечно, это ОЧЕНЬ хорошо! Давай, обхвати его чуть покрепче и всей ладошкой... Вспомни, как это делала твоя мама... Вот так, да..."
+    Eric_06 "Samozrejme, je to veľmi dobré! No tak, objím ho trochu pevnejšie a celou dlaňou... Spomeň si, ako to robila  matka... To je ono, áno..."
+
+# game/events/eric.rpy:1796
+translate slovak lisa_eric_sex_ed_practice_practice_2_a095d453:
+
+    # Lisa_10 "Да, кажется, я помню... Она делала как-то так... У меня получается? Тебе нравится?"
+    Lisa_10 "Áno, zdá sa mi, že si pamätám... Robila niečo podobné... Darí sa mi to? Páči sa ti to?"
+
+# game/events/eric.rpy:1797
+translate slovak lisa_eric_sex_ed_practice_practice_2_2764b823:
+
+    # Eric_05 "Да, всё правильно, моя девочка, молодец! Твоя нежная ладошка так хороша... Попробуй делать это чувственно и интуитивно..."
+    Eric_05 "Áno, je to tak, dievčatko, výborne! Tvoja jemná dlaň je taká dobrá... Skús to robiť zmyselne a intuitívne..."
+
+# game/events/eric.rpy:1798
+translate slovak lisa_eric_sex_ed_practice_practice_2_7615ec72:
+
+    # Max_03 "{m}Ухх... Я бы тоже очень хотел, чтобы её ладошка и пальчики обхватили мой член... Д-а-а... Даже думать об этом невероятно приятно!{/m}"
+    Max_03 "{m}Uf... Aj ja by som chcel mať jej dlaň a prsty ovinuté okolo môjho vtáka... Y-a-a-a... Už len to, že na to myslím, je neuveriteľne uspokojujúce!{/m}"
+
+# game/events/eric.rpy:1802
+translate slovak lisa_eric_sex_ed_practice_practice_2_27ce6092:
+
+    # Lisa_09 "Ой, Эрик, ну я даже не знаю... Может, на сегодня уже хватит? Потому что у меня уже рука начинает болеть, а мне ещё домашнее задание нужно делать..."
+    Lisa_09 "Erik, ja neviem... Môžeme to ukončiť? Pretože ma začína bolieť ruka a musím urobiť domácu úlohu..."
+
+# game/events/eric.rpy:1803
+translate slovak lisa_eric_sex_ed_practice_practice_2_1b3a38e2:
+
+    # Eric_04 "Конечно, Лиза! Я и не настаивал на продолжении... Ты и так сегодня сделала большой шаг! Так что занимайся своими делами, а в следующий понедельник мы продолжим. Да, моя дорогая?"
+    Eric_04 "Samozrejme, Líza! Netrval som na pokračovaní... Už dnes si urobila veľký pokrok! Takže sa staraj o svoje veci a budeme pokračovať budúci pondelok. Áno, moja drahá?"
+
+# game/events/eric.rpy:1807
+translate slovak lisa_eric_sex_ed_practice_practice_2_8b5130df:
+
+    # Lisa_02 "Да! Спасибо, Эрик, за наставления и этот опыт! Даже не знаю, чтобы я без тебя делала..."
+    Lisa_02 "Áno! Ďakujem ti, Erik, za usmernenie a túto skúsenosť! Neviem, čo by som si bez teba počala..."
+
+# game/events/eric.rpy:1808
+translate slovak lisa_eric_sex_ed_practice_practice_2_bb69e3a1:
+
+    # Eric_01 "Не за что, Лиза. До следующего раза."
+    Eric_01 "Nemáš za čo, Líza. Tak nabudúce."
+
+# game/events/eric.rpy:1809
+translate slovak lisa_eric_sex_ed_practice_practice_2_b465168f:
+
+    # Max_09 "{m}Ага, до следующего... Вот только есть у меня некоторые опасения на этот счёт. Нужно будет обязательно высказать их Эрику в следующий раз после ужина!{/m}" nointeract
+    Max_09 "{m}Áno, až do ďalšieho... Až na to, že mám určité obavy. Budem to musieť nabudúce po večeri povedať Erikovi!{/m}" nointeract
+
+# TODO: Translation updated at 2022-02-27 01:28
+
+translate slovak strings:
+
+    # game/core/02init.rpy:138
+    old "Мою премию за помощь с Лизой!"
+    new "Môj bonus za pomoc s Lízou!"
+
+    # game/core/02init.rpy:138
+    old "Чтобы на маме были не только очки для сна, но и чулки!"
+    new "Aby mama nenosila len okuliare na spanie, ale aj pančuchy!"
+
+    # game/core/02init.rpy:138
+    old "Чтобы на маме были только очки для сна!"
+    new "Aby mama nosila len okuliare na spanie!"
+
+# TODO: Translation updated at 2022-02-27 01:28
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это поворот! Хвалёная дружба с Эриком, которую он мне расписывал, как что-то сказочное, на деле оказалась не такой уж и сказкой. Придётся с этим как-то разбираться..."
+    new "To je ale zvrat! Priateľstvo s Erikom, o ktorom mi povedal, že je to rozprávka, nebolo rozprávkou. Budem sa s tým musieť nejako vyrovnať..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно выяснить, как Эрик планирует подмазаться к моим сёстрам и будут ли у меня какие-то перспективы в дружбе с ним. Потребуются успехи в возможностях \"Блог\" и \"Наставник\"..."
+    new "Potrebujem zistiť, ako sa Erik plánuje zblížiť s mojimi sestrami a či mám vôbec vyhliadky na to, že sa s ním spriatelím. Bude to vyžadovať určitý pokrok v príležitostiach \"Blog\" a \"Mentor\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Неизвестно, понадобится ли Эрику моя помощь с Алисой. Может, что-то выгорит с Лизой? Чтобы это выяснить, потребуются успехи в возможности \"Наставник\"..."
+    new "Nedá sa povedať, či Erik bude potrebovať moju pomoc s Alicou. Možno sa niečo podarí s Lízou? Aby som to zistil, bude potrebné pokročiť v príležitosti \"Mentor\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, не всё безнадёжно и у Эрика получится выпросить что-то интересное. Надо будет с ним поговорить, когда он начнёт подлизываться к Лизе..."
+    new "Myslím si, že to nie je beznádejné a Erik by z toho mohol vyťažiť niečo zaujímavé. Budem sa s ním musieť porozprávať, keď sa začne podlizovať Líze..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это поворот! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я потерял премию, которую мне обещал Эрик. Лиза, видите ли, и есть премия. Правда, он намекнул, что если мне будет, что ему рассказать, то у меня будут и другие премиальные. Я сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... Теперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, а я за это получу возможность присутствовать во время их с мамой секса! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет!"
+    new "To je ale zvrat! Keďže Lízina sexuálna výchova je teraz zverená mne, prišiel som o bonus, ktorý mi sľúbil Erik. Líza, ako vidím, je cena. Pravda, naznačil mi, že keby som mu mal čo povedať, mal by som ďalšie bonusy. Hneď som Erikovi povedala o sebe a Kire a on bol milo prekvapený! Mal by si vedieť, že hneď vedľa je pornoherečka... Teraz sa musíme hrať s Erikom vo vani s Kirou, keď do nás údajne náhodou vrazí, aby jej to aj on uľahčil, a ja budem kvôli tomu prítomný pri jeho a maminom sexe! Pravda, s určitými výhradami. Mama ma neuvidí a ja zasa nesmiem robiť hluk. Myslím, že to zvládnem. To bude úžasné!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько с ней поразвлечься..."
+    new "Stačí počkať do utorka alebo piatku večera a užiť si s ňou..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Круто! Я попросил у Эрика возможность присутствовать во время их с мамой секса и он согласился это устроить! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет! Только бы не упустить день, в который на маме будут очки для сна..."
+    new "Super! Požiadal som Erika o možnosť byť prítomný pri jeho a maminom sexe a on súhlasil, že to zariadi! Pravda, s určitými výhradami. Mama ma neuvidí a ja zasa nesmiem robiť hluk. Myslím, že to zvládnem. To bude úžasné! Len sa uistím, že nezmeškám deň, keď bude mať mama na sebe okuliare na spanie..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно заглядывать к ним в комнату, чтобы не упустить момент и попасть на порно-шоу..."
+    new "Musím nakuknúť do ich izby, aby som sa uistil, že nezmeškám ten moment a nedostanem sa do pornoshow..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Может быть, попробовать попросить Эрика о том, чтобы мама была одета во что-то сексуальное на этих порно-шоу?"
+    new "Možno skúsim požiadať Erika, aby mama nosila niečo sexi v tých porno reláciách?"
+
+    # game/core/09_opportunities.rpy:4
+    old "Подумал я и решил, ну эту дружбу с Эриком нафиг! Это всё-таки моя семья, а то, что он планирует с ними сделать - меня не устраивает. Так что буду притворяться другом, пока есть возможность. А пока не стало сильно критично это делать, самое время собирать компромат на Эрика и постараться успеть урвать что-нибудь стоящее для себя, пока мы с ним не начали враждовать."
+    new "Premýšľal som o tom a rozhodol som sa, že na toto priateľstvo s Erikom kašlem! Sú predsa moja rodina a to, čo s nimi plánuje urobiť, sa mi nepozdáva. Takže budem predstierať, že som priateľ, kým môžem. A skôr, ako to bude príliš kritické, je čas získať na Erika nejakú špinu a pokúsiť sa získať niečo, čo by stálo za to, než sa s ním začneme hádať."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Что посмотрим, мам?\"..."
+    new "Bude to vyžadovať určitý pokrok v príležitosti \"Čo uvidíme, mami?\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот так дела! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я лишился порно-шоу с мамой. Очень обидно, если не сказать похуже. Правда, Эрик намекнул, что если мне будет, что ему рассказать, то это шоу можно будет возобновить. Но это должна быть стоящая информация и она у меня есть! Я сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... Я тоже был приятно удивлен, когда это узнал. Теперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, и я смог возобновить шоу с мамой."
+    new "Tak to je! Keďže Lízina sexuálna výchova je teraz zverená mne, prišel som o pornografický program s mamou. Je to prinajmenšom veľmi frustrujúce. Pravda, Erik mi naznačil, že ak mu chcem niečo povedať, predstavenie by sa mohlo obnoviť. Ale musia to byť hodnotné informácie a ja ich mám! Hneď som Erikovi povedal o sebe a Kire a on bol milo prekvapený! Mal by si vedieť, že hneď vedľa je pornoherečka... Aj ja som bol príjemne prekvapený, keď som to zistil. Teraz sa musíme hrať s Erikom vo vani s Kirou, keď do nás údajne náhodou vrazí, aby sa aj on s ňou mohol ľahšie zabaviť a ja som mohla pokračovať v predstavení s mamou."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот нас и поймали с поличным! Конечно, это был спектакль специально для Киры, чтобы Эрик получал свой любимый минет теперь и от неё, а я получу порно-шоу с мамой. Главное, с Эриком не забыть поговорить об этом!"
+    new "Sme tu, prichytení pri čine! Samozrejme, že to bolo predstavenie špeciálne pre Kiru, aby teraz Erik dostal od nej aj svoj obľúbený orál a ja som mal pornoshow s mojou mamou. Hlavné je nezabudnúť sa o tom porozprávať s Erikom!"
+
+# TODO: Translation updated at 2022-02-27 01:28
+
+# game/dialogues/erictalk.rpy:325
+translate slovak lessons_from_Eric_fourth_visit_fa9a17f5:
+
+    # Max_07 "К вам ведь можно?"
+    Max_07 "Mám to povolené, však?"
+
+# game/dialogues/erictalk.rpy:326
+translate slovak lessons_from_Eric_fourth_visit_5499a427:
+
+    # Eric_01 "Ну, как сказать... Вообще-то, того, что мы тебе до этого показали, более чем достаточно. На этом всё, Макс."
+    Eric_01 "No, ako by som to povedal... To, čo sme ti doteraz ukázali, je viac než dosť. To je všetko, Max."
+
+# game/dialogues/erictalk.rpy:327
+translate slovak lessons_from_Eric_fourth_visit_ea18ead2:
+
+    # Ann_14 "Да, сынок. Дальше ты уже сам разберёшься, что и как. Поэтому постарайся нас не беспокоить по пустякам, хорошо?"
+    Ann_14 "Áno, synu. Odtiaľto to môžeme vyriešiť. Takže sa snaž nás s ničím neobťažovať, dobre?"
+
+# game/dialogues/erictalk.rpy:328
+translate slovak lessons_from_Eric_fourth_visit_c7465eb5:
+
+    # Max_08 "Ну, ладно. Как скажешь, мам." nointeract
+    Max_08 "Dobre, v poriadku. Nech sa páči, mami." nointeract
+
+# game/dialogues/erictalk.rpy:339
+translate slovak lessons_from_Eric_fourth_visit_87030dec:
+
+    # Max_09 "{m}Хм... Значит, это ВСЁ говорите... Нет, такое меня не устраивает. Здесь облом. С Алисой тоже непонятно, ведь Эрику может и не понадобится моя помощь с ней. Может, хоть с Лизой будут какие-то перспективы...{/m}"
+    Max_09 "{m}Hmmm... Takže to je VŠETKO, čo hovoríš... Nie, to mi nevyhovuje. Som smutný. Ani s Alicou to nie je jasné, pretože Erik možno nepotrebuje moju pomoc. Možno bude mať Líza aspoň nejakú perspektívu...{/m}"
+
+# game/dialogues/erictalk.rpy:344
+translate slovak lessons_from_Eric_fourth_visit_63b985ee:
+
+    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Нужно понять, всё дело в Эрике или маме!{/m}"
+    Max_09 "{m}Hmmm... To je všetko, to je všetko. Samozrejme, musel som sa pozerať na to, ako mama Erikovi fajčí to a ono, ale videl som, do akej miery ho počúva. Musím zistiť, či ide o Erika alebo o mamu!{/m}"
+
+# game/dialogues/erictalk.rpy:358
+translate slovak lessons_from_Eric_fourth_visit_463416a1:
+
+    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие \"образовательные\" уроки.{/m}"
+    Max_09 "{m}Hmmm... To je všetko, to je všetko. Musel som sa pozerať, ako mama Erikovi fajčí to a ono, ale videl som, do akej miery ho počúva. Ale už viem prečo... To znamená, že sa musím zblížiť s mamou a potom ju možno prehovorím na nejaké \"vzdelávacie\" lekcie.{/m}"
+
+# game/dialogues/erictalk.rpy:353
+translate slovak lessons_from_Eric_fourth_visit_8be9de5b:
+
+    # Max_09 "{m}Хм... Значит, это ВСЁ говорите... А вот я так не считаю! Эрик сам сказал, что я могу попросить что-нибудь за то, что помог с Лизой. И я уже знаю, что попросить...{/m}"
+    Max_09 "{m}Hmmm... Takže to je VŠETKO, čo hovoríš... To si nemyslím! Erik sám povedal, že si môžem niečo vypýtať za pomoc s Lízou. A už viem, čo si mám pýtať...{/m}"
+
+# game/dialogues/erictalk.rpy:358
+translate slovak lessons_from_Eric_fourth_visit_63b985ee_1:
+
+    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Нужно понять, всё дело в Эрике или маме!{/m}"
+    Max_09 "{m}Hmmm... To je všetko, to je všetko. Musel som sa pozerať, ako mama Erikovi fajčí to a ono, ale videl som, do akej miery ho počúva. Musím zistiť, či ide o Erika alebo o mamu!{/m}"
+
+# game/dialogues/erictalk.rpy:372
+translate slovak lessons_from_Eric_fourth_visit_463416a1_1:
+
+    # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие \"образовательные\" уроки.{/m}"
+    Max_09 "{m}Hmmm... To je všetko, to je všetko. Musel som sa pozerať, ako mama Erikovi fajčí to a ono, ale videl som, do akej miery ho počúva. Ale už viem prečo... To znamená, že sa musím zblížiť s mamou a potom ju možno prehovorím na nejaké \"vzdelávacie\" lekcie.{/m}"
+
+# game/dialogues/erictalk.rpy:364
+translate slovak lessons_from_Eric_fourth_visit_c96b2882:
+
+    # Max_09 "{m}Хм... Меня совершенно не устраивает такая дружба с Эриком! Если это действительно {b}ВСЁ{/b}, что я буду иметь с этой дружбы, то зачем он тут сдался? Пожалуй, стоит немного подождать и посмотреть, как он собирается пудрить мозги моим сёстрам... Тогда и станет ясно, светит мне что-нибудь там или нет.{/m}"
+    Max_09 "{m}Hmmm... Som úplne nešťastný z tohto priateľstva s Erikom! Ak je to naozaj {b}VŠETKO{/b}, čo z tohto priateľstva získam, tak prečo je tu? Možno by som mal počkať a uvidím, ako sa bude zahrávať s mojimi sestrami... Potom bude jasné, či mám alebo nemám šancu.{/m}"
+
+# game/dialogues/erictalk.rpy:695
+translate slovak Eric_talk_about_Kira_1_92183915:
+
+    # Eric_02 "Ну, спорить с этим не буду. Но ты, вроде как, хотел возобновить шоу со своей мамой?"
+    Eric_02 "O tom nebudem polemizovať. Ale tak trochu si chcel reštartovať predstavenie s tvojou mamou?"
+
+# game/dialogues/erictalk.rpy:696
+translate slovak Eric_talk_about_Kira_1_fd7af465:
+
+    # Max_07 "Точно! Хочу возобновить шоу с мамой в очках для сна!"
+    Max_07 "Presne tak! Chcem pokračovať v predstavení s mamou v škraboške na spanie!"
+
+# game/dialogues/erictalk.rpy:697
+translate slovak Eric_talk_about_Kira_1_b808aecd:
+
+    # Eric_01 "Хорошо, Макс. Как скажешь."
+    Eric_01 "Dobre, Max. Nech sa páči."
+
+# game/dialogues/erictalk.rpy:702
+translate slovak Eric_talk_about_Kira_1_99319513:
+
+    # Eric_01 "Да, Макс, тянуло бы... Если бы ты не обломал мой подарок для Алисы! Но за то, что ты подогнал мне Киру на блюдечке, я тебя прощаю и даже даю возможность попросить что-либо. Но ты, вроде как, хотел возобновить шоу со своей мамой?"
+    Eric_01 "Áno, Max, ty by si... Keby si len nezničil môj darček pre Alicu! Ale za to, že mi podávaš Kiru na podnose, ti odpúšťam a dokonca ti dovolím, aby si si niečo vypýtal. Ale tak trochu si chcel reštartovať predstavenie s tvojou mamou?"
+
+# game/dialogues/erictalk.rpy:703
+translate slovak Eric_talk_about_Kira_1_fd7af465_1:
+
+    # Max_07 "Точно! Хочу возобновить шоу с мамой в очках для сна!"
+    Max_07 "Presne tak! Chcem pokračovať v predstavení s mamou v škraboške na spanie!"
+
+# game/dialogues/erictalk.rpy:704
+translate slovak Eric_talk_about_Kira_1_63295c66:
+
+    # Eric_01 "Хорошо, Макс. Как скажешь. Но денег от меня ты больше получать не будешь, а то я наспонсирую себе проблем."
+    Eric_01 "Dobre, Max. Nech sa páči. Ale viac peňazí odo mňa nedostaneš, inak sa dostanem do problémov."
+
+# game/dialogues/erictalk.rpy:708
+translate slovak Eric_talk_about_Kira_1_153dc910:
+
+    # Max_11 "Ладно, давай так." nointeract
+    Max_11 "Dobre, povedzme to takto." nointeract
+
+# game/dialogues/erictalk.rpy:717
+translate slovak Eric_talk_about_Kira_1_0c0c1bbe:
+
+    # Eric_02 "Ну, спорить с этим не буду. Мы, вроде как, договорились о шоу с твоей мамой?"
+    Eric_02 "O tom nebudem polemizovať. Nedohodol som sa s tvojou mamou na predstavení?"
+
+# game/dialogues/erictalk.rpy:718
+translate slovak Eric_talk_about_Kira_1_01036b8a:
+
+    # Max_07 "Точно! Хочу шоу с мамой в очках для сна!"
+    Max_07 "Presne tak! Chcel by som seriál s mamou v škraboške na spanie!"
+
+# game/dialogues/erictalk.rpy:719
+translate slovak Eric_talk_about_Kira_1_b808aecd_1:
+
+    # Eric_01 "Хорошо, Макс. Как скажешь."
+    Eric_01 "Dobre, Max. Nech sa páči."
+
+# game/dialogues/erictalk.rpy:720
+translate slovak Eric_talk_about_Kira_1_90c46fa5_1:
+
+    # Max_05 "Круто!" nointeract
+    Max_05 "Super!" nointeract
+
+# game/dialogues/erictalk.rpy:724
+translate slovak Eric_talk_about_Kira_1_5a7bd4f7:
+
+    # Eric_01 "Да, Макс, тянуло бы... Если бы ты не обломал мой подарок для Алисы! Но за то, что ты подогнал мне Киру на блюдечке, я тебя прощаю и даже даю возможность попросить что-либо. Но мы, вроде как, договорились о шоу с твоей мамой?"
+    Eric_01 "Áno, Max, ty by si... Keby si len nezničil môj darček pre Alicu! Ale za to, že mi podávaš Kiru na podnose, ti odpúšťam a dokonca ti dovolím, aby si si niečo vypýtal. Ale s tvojou mamou sme sa tak trochu dohodli na predstavení, nie?"
+
+# game/dialogues/erictalk.rpy:725
+translate slovak Eric_talk_about_Kira_1_01036b8a_1:
+
+    # Max_07 "Точно! Хочу шоу с мамой в очках для сна!"
+    Max_07 "Presne tak! Chcel by som seriál s mamou v škraboške na spanie!"
+
+# game/dialogues/erictalk.rpy:726
+translate slovak Eric_talk_about_Kira_1_63295c66_1:
+
+    # Eric_01 "Хорошо, Макс. Как скажешь. Но денег от меня ты больше получать не будешь, а то я наспонсирую себе проблем."
+    Eric_01 "Presne tak! Chcel by som seriál s mamou v škraboške na spanie!"
+
+# game/dialogues/erictalk.rpy:730
+translate slovak Eric_talk_about_Kira_1_153dc910_1:
+
+    # Max_11 "Ладно, давай так." nointeract
+    Max_11 "Dobre, povedzme to takto." nointeract
+
+# game/dialogues/erictalk.rpy:918
+translate slovak Eric_bonus_for_Lisa_f73c4a0a:
+
+    # Eric_04 "Какую ещё премию, парень?! С Лизой ты мне, конечно, помог, только ведь она теперь отдана на поруки ТЕБЕ. Вот и считай это премией."
+    Eric_04 "Aký bonus, človeče?! Samozrejme, pomohol si mi s Lízou, ale teraz je v tvojej starostlivosti. Považuj to za bonus."
+
+# game/dialogues/erictalk.rpy:919
+translate slovak Eric_bonus_for_Lisa_c2636588:
+
+    # Max_10 "Обидно, конечно. Но я понял."
+    Max_10 "Samozrejme, je to škoda. Ale chápem to."
+
+# game/dialogues/erictalk.rpy:920
+translate slovak Eric_bonus_for_Lisa_53a711aa:
+
+    # Eric_03 "Но, если вдруг, например, ты будешь располагать крайне полезной для меня информацией, в отношении твоей семьи, то у тебя будут ещё премиальные."
+    Eric_03 "Ale ak máš pre mňa napríklad mimoriadne užitočné informácie týkajúce sa tvojej rodiny, dostaneš bonus."
+
+# game/dialogues/erictalk.rpy:921
+translate slovak Eric_bonus_for_Lisa_373c87f8:
+
+    # Max_07 "Так у меня уже есть такая информация для тебя. О моей тёте Кире."
+    Max_07 "Takže tieto informácie už pre teba mám. O mojej tete Kire."
+
+# game/dialogues/erictalk.rpy:922
+translate slovak Eric_bonus_for_Lisa_a0b9d0c1:
+
+    # Eric_09 "Надеюсь, это что-то весьма интересное или важное, иначе меня это не особо волнует..."
+    Eric_09 "Dúfam, že je to niečo zaujímavé alebo dôležité, inak ma to nezaujíma..."
+
+# game/dialogues/erictalk.rpy:923
+translate slovak Eric_bonus_for_Lisa_5b981410:
+
+    # Max_02 "Как минимум неожиданное для тебя. Короче, мы с ней... ну, того... этого..."
+    Max_02 "Prinajmenšom pre vteba neočakávané. Každopádne, ona a ja... no, to... toto..."
+
+# game/dialogues/erictalk.rpy:924
+translate slovak Eric_bonus_for_Lisa_ab04f09c:
+
+    # Eric_13 "Используй более понятные слова, Макс."
+    Eric_13 "Používaj jasnejšie slová, Max."
+
+# game/dialogues/erictalk.rpy:925
+translate slovak Eric_bonus_for_Lisa_cae5ce20:
+
+    # Max_07 "Мы с ней, как бы это сказать... занимаемся оральными утехами..."
+    Max_07 "Ona a ja sme, ako by som to povedal... Robíme orálne potešenie..."
+
+# game/dialogues/erictalk.rpy:926
+translate slovak Eric_bonus_for_Lisa_ad877c77:
+
+    # Eric_12 "Чего?!"
+    Eric_12 "Čože?!"
+
+# game/dialogues/erictalk.rpy:927
+translate slovak Eric_bonus_for_Lisa_41f2d91b:
+
+    # Max_04 "У нас с ней интимная близость, вот."
+    Max_04 "Ona a ja sme si tu blízki."
+
+# game/dialogues/erictalk.rpy:928
+translate slovak Eric_bonus_for_Lisa_66b1162c:
+
+    # Eric_04 "Да ладно! Это у тебя приколы такие, Макс?! Хочешь сказать, она тебе отсасывает?!"
+    Eric_04 "No tak! To je tvoja predstava vtipu, Max?! Chceš povedať, že ti fajčí vtáka?!"
+
+# game/dialogues/erictalk.rpy:929
+translate slovak Eric_bonus_for_Lisa_1dc507c8:
+
+    # Max_03 "Ага. Кстати, по мне так это самая офигенная вещь в мире!"
+    Max_03 "Áno. Mimochodom, mne to pripadá ako tá najúžasnejšia vec na svete!"
+
+# game/dialogues/erictalk.rpy:930
+translate slovak Eric_bonus_for_Lisa_695395c6:
+
+    # Eric_06 "Погоди... То есть ТЕБЕ отсасывает ТВОЯ родная тётя?! Это ты хочешь сказать?"
+    Eric_06 "Počkaj... Chceš povedať, že ťa vyfajčí tvoja vlastná teta?! To je to, čo hovoríš?"
+
+# game/dialogues/erictalk.rpy:931
+translate slovak Eric_bonus_for_Lisa_9acc7a48:
+
+    # Max_01 "Ну да, об этом я и говорю."
+    Max_01 "Áno, presne o tom hovorím."
+
+# game/dialogues/erictalk.rpy:932
+translate slovak Eric_bonus_for_Lisa_918aaf8d:
+
+    # Eric_12 "Так. Вот это нихрена себе открытие! Это как вышло вообще?!"
+    Eric_12 "Takže. To je ale zasraný objav! Ako to vôbec vyšlo?!"
+
+# game/dialogues/erictalk.rpy:933
+translate slovak Eric_bonus_for_Lisa_361cd83d:
+
+    # Max_07 "Наверно, сказалось то, что она работает в порноиндустрии сейчас... Хотя, она и без этого была довольно открыта в плане таких развлечений."
+    Max_07 "Pravdepodobne preto, že teraz pracuje v pornopriemysle... Hoci už bola dosť otvorená, pokiaľ ide o takúto zábavu."
+
+# game/dialogues/erictalk.rpy:934
+translate slovak Eric_bonus_for_Lisa_e0b3dd08:
+
+    # Eric_08 "Ого! Это шикарные новости, Макс! Ты только что подогнал мне порномодель, а она ещё и сестра моей женщины! Это очень круто!!!"
+    Eric_08 "Wow! To je úžasná správa, Max! Práve si mi dal porno modelku a je to zároveň sestra mojej ženy! To je veľmi cool!!!"
+
+# game/dialogues/erictalk.rpy:935
+translate slovak Eric_bonus_for_Lisa_fdd8e06e:
+
+    # Max_09 "Значит, такая информация тянет на премию?"
+    Max_09 "Takže tento druh informácií stojí za ocenenie?"
+
+# game/dialogues/erictalk.rpy:936
+translate slovak Eric_bonus_for_Lisa_9942b3b4:
+
+    # Eric_04 "Однозначно тянет. Обязательно это обсудим... Но сперва, когда вы этим с Кирой занимаетесь?"
+    Eric_04 "Určite ťahá. Určite o tom budeme diskutovať... Ale najprv, kedy to s Kirou robíte?"
+
+# game/dialogues/erictalk.rpy:937
+translate slovak Eric_bonus_for_Lisa_ae52c68e:
+
+    # Max_04 "По ночам, когда она возвращается с работы. В это время все уже спят, а мы развлекаемся..."
+    Max_04 "V noci, keď sa vráti z práce. V tomto čase už všetci spia a my sa zabávame..."
+
+# game/dialogues/erictalk.rpy:938
+translate slovak Eric_bonus_for_Lisa_90704005:
+
+    # Eric_03 "И где вы развлекаетесь?"
+    Eric_03 "A kde sa zabávate?"
+
+# game/dialogues/erictalk.rpy:939
+translate slovak Eric_bonus_for_Lisa_26197899:
+
+    # Max_01 "Когда ты ночуешь у нас в гостях - в ванной комнате и у бассейна."
+    Max_01 "Keď stráviš noc ako hosť, je to v kúpeľni a pri bazéne."
+
+# game/dialogues/erictalk.rpy:940
+translate slovak Eric_bonus_for_Lisa_f5bec7c8:
+
+    # Eric_06 "Да вы рисковые ребята! Не боитесь, что вас кто-то увидит? В ванной ладно, там ещё есть шансы как-то скрыться, а вот у бассейна..."
+    Eric_06 "Vy riskujete! Nebojíte sa, že vás niekto uvidí? V kúpeľni je stále šanca ukryť sa, ale pri bazéne..."
+
+# game/dialogues/erictalk.rpy:941
+translate slovak Eric_bonus_for_Lisa_8bf662f4:
+
+    # Max_02 "Да мы там по-быстренькому шалим..."
+    Max_02 "Máme len rýchlovku..."
+
+# game/dialogues/erictalk.rpy:942
+translate slovak Eric_bonus_for_Lisa_840a0cb4:
+
+    # Eric_08 "В таком случае, я обязательно загляну к вам в ванную, как бы случайно... Так сказать, поймаю с поличным, чтобы можно было максимально просто развести твою тётю на оральные утехи и для себя. Ты же подыграешь мне?"
+    Eric_08 "V tom prípade sa určite zastavím v kúpeľni, akoby náhodou... Chytiť vás takpovediac pri čine, aby som mohol tvoju tetu čo najľahšie prinútiť k orálnym radovánkam. Budeme hrať spolu, však?"
+
+# game/dialogues/erictalk.rpy:943
+translate slovak Eric_bonus_for_Lisa_176f968d:
+
+    # Max_03 "Если я получу премию, то подыграю."
+    Max_03 "Ak dostanem bonus, budeme hrať spolu."
+
+# game/dialogues/erictalk.rpy:944
+translate slovak Eric_bonus_for_Lisa_326a2cf3:
+
+    # Eric_02 "Само собой, Макс. Выкладывай, если решил, чего хочешь."
+    Eric_02 "Samozrejme, Max. Ak si sa rozhodol, čo chceš, povedz mi to."
+
+# game/dialogues/erictalk.rpy:948
+translate slovak Eric_bonus_for_Lisa_869907d3:
+
+    # Eric_02 "Выкладывай, если решил, чего хочешь."
+    Eric_02 "Ak si sa rozhodol, čo chceš, povedz mi to."
+
+# game/dialogues/erictalk.rpy:949
+translate slovak Eric_bonus_for_Lisa_f5b3af6e:
+
+    # Max_07 "Я... Я хотел бы смотреть, как вы с мамой трахаетесь! При чём, так сказать, с первых рядов..."
+    Max_07 "Hmm... Chcel by som sa pozerať na teba a mamu, ako si to rozdávate! A takpovediac z prvých radov..."
+
+# game/dialogues/erictalk.rpy:950
+translate slovak Eric_bonus_for_Lisa_9b8cd369:
+
+    # Eric_03 "И что ты, мелкий извращенец, подразумеваешь под \"первыми рядами\"?"
+    Eric_03 "A čo ty, ty malý zvrhlík, myslíš tým \"prvým radom\"?"
+
+# game/dialogues/erictalk.rpy:951
+translate slovak Eric_bonus_for_Lisa_e3ea4723:
+
+    # Max_09 "Быть прямо в комнате. Как на тех уроках, где мама отсасывала тебе."
+    Max_09 "Byť priamo v miestnosti. Ako na tých hodinách, na ktorých ti mama fajčila penis."
+
+# game/dialogues/erictalk.rpy:952
+translate slovak Eric_bonus_for_Lisa_47defc6f:
+
+    # Eric_09 "Смело просить такое! А ты, парень, случаем на солнышке не перегрелся сегодня днём? Нет, я конечно польщён, что ты считаешь меня настолько крутым, но лучше подумай о каких-нибудь... более реальных просьбах."
+    Eric_09 "Je odvážne žiadať o takúto vec! Bol si dnes popoludní príliš na slnku, chlapče? Nie, určite mi lichotí, že si myslíš, že som taký super, ale radšej by si mal popremýšľať o nejakých... reálnejších požiadavkach."
+
+# game/dialogues/erictalk.rpy:953
+translate slovak Eric_bonus_for_Lisa_62140d11:
+
+    # Max_08 "Почему? Ты же каким-то образом уговорил мою маму отсасывать тебе, пока я смотрю во всех подробностях!"
+    Max_08 "Prečo? Nejako si presvedčil moju mamu, aby ťa vyfajčila, zatiaľ čo ja sa budem detailne pozerať!"
+
+# game/dialogues/erictalk.rpy:954
+translate slovak Eric_bonus_for_Lisa_cce9de36:
+
+    # Eric_04 "Так это одно... И даже с этим было не всё так просто, как тебе думается. А ты сейчас просишь запредельного. Не смотря на все внешние прелести твоей мамы, характер у неё довольно сложный, особенно, что касается её детей."
+    Eric_04 "Takže to je jedna vec... A aj napriek tomu to nebolo také jednoduché, ako si myslíš. A teraz sa pýtaš na to, čo bude ďalej. Napriek všetkým vonkajším pôvabom tvojej matky je jej povaha dosť komplikovaná, najmä pokiaľ ide o jej deti."
+
+# game/dialogues/erictalk.rpy:955
+translate slovak Eric_bonus_for_Lisa_b51621dc:
+
+    # Max_11 "То есть, это невозможно?"
+    Max_11 "Chceš povedať, že to nie je možné?"
+
+# game/dialogues/erictalk.rpy:956
+translate slovak Eric_bonus_for_Lisa_5b534c40:
+
+    # Eric_01 "Я бы не сказал. Это вполне возможно, просто... Чтобы настроить твою маму на то, что ты просишь, уйдёт много времени и моих стараний, а ты ведь не хочешь долго ждать, верно?"
+    Eric_01 "To by som nepovedal. Je to celkom možné, len... Bude to trvať dlho a bude ma stáť veľa úsilia, aby som tvoju matku pripravil na to, o čo žiadaš, a ty nechceš dlho čakať, však?"
+
+# game/dialogues/erictalk.rpy:957
+translate slovak Eric_bonus_for_Lisa_b9e56a5b:
+
+    # Max_10 "Ну, да. Ты ведь можешь с этим сколько угодно тянуть, а я в дураках буду сидеть и ждать."
+    Max_10 "No, áno. Môžeš to ťahať, ako dlho chceš, a ja budem sedieť a čakať v raji bláznov."
+
+# game/dialogues/erictalk.rpy:958
+translate slovak Eric_bonus_for_Lisa_aa1d7b5e:
+
+    # Eric_02 "Вот... Поэтому, я предлагаю тебе альтернативу, Макс. Будет тебе то, что ты просишь, но с рядом нюансов."
+    Eric_02 "Tu... Preto ti ponúkam alternatívu, Max. Dostaneš to, o čo žiadaš, ale s viacerými nuansami."
+
+# game/dialogues/erictalk.rpy:959
+translate slovak Eric_bonus_for_Lisa_724db350:
+
+    # Max_09 "И что за нюансы такие?"
+    Max_09 "A aké sú tieto nuansy?"
+
+# game/dialogues/erictalk.rpy:960
+translate slovak Eric_bonus_for_Lisa_127c681f:
+
+    # Eric_05 "Во-первых, она не будет знать, что ты находишься в комнате."
+    Eric_05 "Po prvé, nebude vedieť, že si v miestnosti."
+
+# game/dialogues/erictalk.rpy:961
+translate slovak Eric_bonus_for_Lisa_8c73dcb6:
+
+    # Max_07 "Это как так? Я невидимым становиться не умею."
+    Max_07 "Ako to? Neviem, ako sa stať neviditeľným."
+
+# game/dialogues/erictalk.rpy:962
+translate slovak Eric_bonus_for_Lisa_9583dd2a:
+
+    # Eric_01 "Плохо, Макс! Но не волнуйся из-за этого. Я одену на неё очки для сна и она ничего не увидит."
+    Eric_01 "To nie je ľahké, Max! Ale nerob si s tým starosti. Nasadím jej škrabošku na spanie a ona nič neuvidí."
+
+# game/dialogues/erictalk.rpy:963
+translate slovak Eric_bonus_for_Lisa_a903a483:
+
+    # Max_05 "А, это отлично! То, что надо."
+    Max_05 "Ach, to je skvelé! To je všetko."
+
+# game/dialogues/erictalk.rpy:964
+translate slovak Eric_bonus_for_Lisa_45e005db:
+
+    # Eric_06 "А во-вторых, тебе нужно будет вести себя {b}ОЧЕНЬ{/b} тихо. Думаю, сам понимаешь почему."
+    Eric_06 "A po druhé, budeš musieť byť {b}veľmi ticho{/b}. Myslím, že chápeš prečo."
+
+# game/dialogues/erictalk.rpy:965
+translate slovak Eric_bonus_for_Lisa_2dc708b0:
+
+    # Max_02 "Ага, понятное дело."
+    Max_02 "Áno, to je jasné."
+
+# game/dialogues/erictalk.rpy:966
+translate slovak Eric_bonus_for_Lisa_dbbb2eec:
+
+    # Eric_03 "Я, конечно, буду трахать твою маму так, что за её стонами мало что ещё будет слышно, но всё равно... Не шуметь - в твоих интересах. Если не справишься и она тебя услышит, то я прикинусь, будто не заметил тебя в порыве страсти."
+    Eric_03 "Určite budem tvoju mamu šukať tak, že za jej stonmi nebudeš počuť nič iné, ale aj tak... Je v tvojom najlepšom záujme, aby si nerobil hluk. Ak sa ti to nepodarí a ona ťa počuje, v návale vášne budem predstierať, že si ťa nevšimla."
+
+# game/dialogues/erictalk.rpy:967
+translate slovak Eric_bonus_for_Lisa_3f434d2f:
+
+    # Max_07 "Понял. Я буду стараться не шуметь."
+    Max_07 "Rozumiem. Budem sa snažiť nerobiť hluk."
+
+# game/dialogues/erictalk.rpy:968
+translate slovak Eric_bonus_for_Lisa_9bf8dbda:
+
+    # Eric_01 "Тогда, вот и порешали. Только, Макс, давай не чаще, чем раз в неделю. Если упустишь день - твои проблемы, понял? И заглядывай в окно без опаски, Аню я возьму на себя."
+    Eric_01 "Tak, a je to. Lenže, Max, nerobme to častejšie ako raz za týždeň. Ak vynecháš jeden deň, je to tvoj problém, dobre? A bez strachu sa pozeraj z okna, ako si vezmem Annu."
+
+# game/dialogues/erictalk.rpy:974
+translate slovak Eric_bonus_for_Lisa_0a7c5d4d:
+
+    # Max_01 "Ладно, договорились. Ты натыкаешься на нас с Кирой в ванне, я за это получаю шоу с мамой, а ты Киру." nointeract
+    Max_01 "OK, je to dohoda. Narazíš na mňa a Kiru vo vani, ja dostanem predstavenie s mojou mamou a ty za to dostaneš Kiru." nointeract
+
+# game/dialogues/erictalk.rpy:978
+translate slovak Eric_bonus_for_Lisa_ce78d8b5:
+
+    # Max_01 "Ладно, договорились." nointeract
+    Max_01 "OK, je to dohoda." nointeract
+
+# game/dialogues/erictalk.rpy:995
+translate slovak Eric_stopLisa_bonus_b64e4b51:
+
+    # Eric_00 "Макс, задержись ненадолго. Кое-что скажу..."
+    Eric_00 "Max, zostaň tu chvíľu. Niečo ti poviem..."
+
+# game/dialogues/erictalk.rpy:996
+translate slovak Eric_stopLisa_bonus_e7f5724b:
+
+    # Max_07 "Я слушаю..."
+    Max_07 "Počúvam..."
+
+# game/dialogues/erictalk.rpy:997
+translate slovak Eric_stopLisa_bonus_35b241fd:
+
+    # Eric_02 "Раз Лиза, пока что, отошла тебе на поруки, то никакого больше шоу с твоей мамой в очках для сна не будет. Это ясно?"
+    Eric_02 "Keďže Líza za teba zatiaľ zaplatila kauciu, už nebudú žiadne predstavenia s tvojou mamou v okuliaroch na spanie. Je to jasné?"
+
+# game/dialogues/erictalk.rpy:998
+translate slovak Eric_stopLisa_bonus_de267cbe:
+
+    # Max_08 "Э-э-э! Не понял! Это почему?!"
+    Max_08 "Uhh! Nechápem to! Prečo je to tak?!"
+
+# game/dialogues/erictalk.rpy:999
+translate slovak Eric_stopLisa_bonus_5f3d05f9:
+
+    # Eric_04 "Причина и следствие, Шерлок! Ты мне с Лизой помог? Помог... Но для меня это оказалось зря. Поэтому, шоу аннулировано. Вместо него ты получил Лизу."
+    Eric_04 "Príčina a následok, Sherlock! Pomohol si mi s Lízou? Pomohol... Pre mňa to však bolo zbytočné. Preto sa predstavenie ruší. Namiesto toho máš Lízu."
+
+# game/dialogues/erictalk.rpy:1000
+translate slovak Eric_stopLisa_bonus_c2636588:
+
+    # Max_10 "Обидно, конечно. Но я понял."
+    Max_10 "Samozrejme, je to škoda. Ale chápem to."
+
+# game/dialogues/erictalk.rpy:1001
+translate slovak Eric_stopLisa_bonus_d2b6da8b:
+
+    # Eric_03 "Но, если вдруг, например, ты будешь располагать крайне полезной для меня информацией в отношении твоей семьи, то не исключаю, что шоу с твоей мамой можно будет возобновить."
+    Eric_03 "Ale ak by si pre mňa mal napríklad mimoriadne užitočné informácie o tvojej rodine, nevylučujem, že by som pokračoval v relácii s tvojou mamou."
+
+# game/dialogues/erictalk.rpy:1002
+translate slovak Eric_stopLisa_bonus_373c87f8:
+
+    # Max_07 "Так у меня уже есть такая информация для тебя. О моей тёте Кире."
+    Max_07 "Takže tieto informácie už pre teba mám. O mojej tete Kire."
+
+# game/dialogues/erictalk.rpy:1003
+translate slovak Eric_stopLisa_bonus_a0b9d0c1:
+
+    # Eric_09 "Надеюсь, это что-то весьма интересное или важное, иначе меня это не особо волнует..."
+    Eric_09 "Dúfam, že je to niečo zaujímavé alebo dôležité, inak ma to nezaujíma..."
+
+# game/dialogues/erictalk.rpy:1004
+translate slovak Eric_stopLisa_bonus_5b981410:
+
+    # Max_02 "Как минимум неожиданное для тебя. Короче, мы с ней... ну, того... этого..."
+    Max_02 "Prinajmenšom pre teba neočakávané. Každopádne, ona a ja... no, to... toto..."
+
+# game/dialogues/erictalk.rpy:1005
+translate slovak Eric_stopLisa_bonus_ab04f09c:
+
+    # Eric_13 "Используй более понятные слова, Макс."
+    Eric_13 "Používaj jasnejšie slová, Max."
+
+# game/dialogues/erictalk.rpy:1006
+translate slovak Eric_stopLisa_bonus_cae5ce20:
+
+    # Max_07 "Мы с ней, как бы это сказать... занимаемся оральными утехами..."
+    Max_07 "Ona a ja sme, ako by som to povedal... orálne potešenie.."
+
+# game/dialogues/erictalk.rpy:1007
+translate slovak Eric_stopLisa_bonus_ad877c77:
+
+    # Eric_12 "Чего?!"
+    Eric_12 "Čože?!"
+
+# game/dialogues/erictalk.rpy:1008
+translate slovak Eric_stopLisa_bonus_41f2d91b:
+
+    # Max_04 "У нас с ней интимная близость, вот."
+    Max_04 "Ona a ja sme si tu blízki."
+
+# game/dialogues/erictalk.rpy:1009
+translate slovak Eric_stopLisa_bonus_66b1162c:
+
+    # Eric_04 "Да ладно! Это у тебя приколы такие, Макс?! Хочешь сказать, она тебе отсасывает?!"
+    Eric_04 "No tak! To je tvoja predstava vtipu, Max?! Chceš povedať, že ti fajčí vtáka?!"
+
+# game/dialogues/erictalk.rpy:1010
+translate slovak Eric_stopLisa_bonus_1dc507c8:
+
+    # Max_03 "Ага. Кстати, по мне так это самая офигенная вещь в мире!"
+    Max_03 "Áno. Mimochodom, mne to pripadá ako tá najúžasnejšia vec na svete!"
+
+# game/dialogues/erictalk.rpy:1011
+translate slovak Eric_stopLisa_bonus_dd4462cc:
+
+    # Eric_06 "Погоди... То есть {b}ТЕБЕ{/b} отсасывает {b}ТВОЯ{/b} родная тётя?! Это ты хочешь сказать?"
+    Eric_06 "Počkaj... Takže {b}TEBA{/b} fajčí {b}TVOJA{/b} vlastná teta?! To je to, čo hovoríš?"
+
+# game/dialogues/erictalk.rpy:1012
+translate slovak Eric_stopLisa_bonus_9acc7a48:
+
+    # Max_01 "Ну да, об этом я и говорю."
+    Max_01 "Áno, presne o tom hovorím."
+
+# game/dialogues/erictalk.rpy:1013
+translate slovak Eric_stopLisa_bonus_918aaf8d:
+
+    # Eric_12 "Так. Вот это нихрена себе открытие! Это как вышло вообще?!"
+    Eric_12 "Takže. To je ale zasraný objav! Ako to vôbec vyšlo?!"
+
+# game/dialogues/erictalk.rpy:1014
+translate slovak Eric_stopLisa_bonus_361cd83d:
+
+    # Max_07 "Наверно, сказалось то, что она работает в порноиндустрии сейчас... Хотя, она и без этого была довольно открыта в плане таких развлечений."
+    Max_07 "Pravdepodobne preto, že teraz pracuje v pornopriemysle... Aj keď už tak bola dosť otvorená tomuto druhu zábavy."
+
+# game/dialogues/erictalk.rpy:1015
+translate slovak Eric_stopLisa_bonus_e0b3dd08:
+
+    # Eric_08 "Ого! Это шикарные новости, Макс! Ты только что подогнал мне порномодель, а она ещё и сестра моей женщины! Это очень круто!!!"
+    Eric_08 "Wow! To je skvelá správa, Max! Práve si mi dal porno modelku a je to zároveň sestra mojej ženy! To je veľmi cool!!!"
+
+# game/dialogues/erictalk.rpy:1016
+translate slovak Eric_stopLisa_bonus_cb36dfe8:
+
+    # Max_09 "Значит, такая информация тянет на возобновление шоу с мамой?"
+    Max_09 "Takže tento druh informácií pomôže na pokračovanie prehliadky s mamou?"
+
+# game/dialogues/erictalk.rpy:1017
+translate slovak Eric_stopLisa_bonus_9942b3b4:
+
+    # Eric_04 "Однозначно тянет. Обязательно это обсудим... Но сперва, когда вы этим с Кирой занимаетесь?"
+    Eric_04 "Určite pomôže. Určite o tom budeme diskutovať... Ale najprv, kedy to s Kirou robíte?"
+
+# game/dialogues/erictalk.rpy:1018
+translate slovak Eric_stopLisa_bonus_ae52c68e:
+
+    # Max_04 "По ночам, когда она возвращается с работы. В это время все уже спят, а мы развлекаемся..."
+    Max_04 "V noci, keď sa vráti z práce. V tomto čase už všetci spia a my sa zabávame..."
+
+# game/dialogues/erictalk.rpy:1019
+translate slovak Eric_stopLisa_bonus_90704005:
+
+    # Eric_03 "И где вы развлекаетесь?"
+    Eric_03 "A kde sa zabávate?"
+
+# game/dialogues/erictalk.rpy:1020
+translate slovak Eric_stopLisa_bonus_26197899:
+
+    # Max_01 "Когда ты ночуешь у нас в гостях - в ванной комнате и у бассейна."
+    Max_01 "Keď strávi noc ako hosť, je to v kúpeľni a pri bazéne."
+
+# game/dialogues/erictalk.rpy:1021
+translate slovak Eric_stopLisa_bonus_f5bec7c8:
+
+    # Eric_06 "Да вы рисковые ребята! Не боитесь, что вас кто-то увидит? В ванной ладно, там ещё есть шансы как-то скрыться, а вот у бассейна..."
+    Eric_06 "Vy riskujete! Nebojíte sa, že vás niekto uvidí? V kúpeľni je ešte stále šanca ukryť sa, ale pri bazéne..."
+
+# game/dialogues/erictalk.rpy:1022
+translate slovak Eric_stopLisa_bonus_8bf662f4:
+
+    # Max_02 "Да мы там по-быстренькому шалим..."
+    Max_02 "Máme tam malý úlet..."
+
+# game/dialogues/erictalk.rpy:1023
+translate slovak Eric_stopLisa_bonus_840a0cb4:
+
+    # Eric_08 "В таком случае, я обязательно загляну к вам в ванную, как бы случайно... Так сказать, поймаю с поличным, чтобы можно было максимально просто развести твою тётю на оральные утехи и для себя. Ты же подыграешь мне?"
+    Eric_08 "V tom prípade sa určite zastavím v tvojej kúpeľni, akoby náhodou... Chytiť vás takpovediac pri čine, aby som mohol tetu čo najľahšie prinútiť k orálnym radovánkam. Budeme hrať spolu, však?"
+
+# game/dialogues/erictalk.rpy:1024
+translate slovak Eric_stopLisa_bonus_4562bb07:
+
+    # Max_03 "Если я получу шоу с мамой, то подыграю."
+    Max_03 "Ak budem mať predstavenie s mamou, budem hrať spolu s ňou."
+
+# game/dialogues/erictalk.rpy:1025
+translate slovak Eric_stopLisa_bonus_c1a34d4e:
+
+    # Eric_02 "Само собой, Макс. Это уже совсем другой разговор."
+    Eric_02 "Samozrejme, Max. To je úplne iný rozhovor."
+
+# game/dialogues/erictalk.rpy:1026
+translate slovak Eric_stopLisa_bonus_f22feeb6:
+
+    # Max_01 "Значит, договорились." nointeract
+    Max_01 "Takže sme sa dohodli." nointeract
+
+# game/dialogues/erictalk.rpy:1045
+translate slovak Eric_ask_stockings_45f8d67f:
+
+    # Eric_13 "А вот хрен тебе, Макс, а не Аня в чулках! Не надо было дарить Алисе нижнее бельё первее меня."
+    Eric_13 "Choď do riti, Max, nie Anna v pančuchách! Nemal si dávať Alici spodnú bielizeň predo mnou."
+
+# game/dialogues/erictalk.rpy:1047
+translate slovak Eric_ask_stockings_3e3e64a5:
+
+    # Max_14 "Вот блин!" nointeract
+    Max_14 "Do prdele!" nointeract
+
+# game/dialogues/erictalk.rpy:1051
+translate slovak Eric_ask_stockings_faecdce4:
+
+    # Eric_03 "О-о-о, пацан, это я с радостью устрою. Твоя мама в чулках - это бомба!"
+    Eric_03 "Uh-oh, chlapče, rád to zariadim. Tvoja mama v pančuchách je bomba!"
+
+# game/dialogues/erictalk.rpy:1053
+translate slovak Eric_ask_stockings_7978befc:
+
+    # Max_02 "Спасибо! Рад, что мы на одной волне." nointeract
+    Max_02 "Ďakujem! Som rád, že sme na rovnakej vlne." nointeract
+
+# game/dialogues/erictalk.rpy:1068
+translate slovak Eric_ask_no_stockings_945fa08a:
+
+    # Eric_02 "Что, Макс, чулки надоели? Не вопрос, твоя мама и без чулков жутко сексуальна."
+    Eric_02 "Čo, Max, už ťa nebavia pančuchy? Žiadny problém, tvoja mama je sexy aj bez pančúch."
+
+# game/dialogues/erictalk.rpy:1070
+translate slovak Eric_ask_no_stockings_6fbaeb06:
+
+    # Max_01 "Спасибо!" nointeract
+    Max_01 "Ďakujem!" nointeract
+
+# TODO: Translation updated at 2022-02-27 01:28
+
+# game/events/eric.rpy:593
+translate slovak eric_ann_fucking_voyeur_141f69df:
+
+    # Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
+    Eric_02 "Anna, je lepšie pozerať sa na nás ako na nejakú úchylku na internete, však? Takže, Max, poď sem a porozprávame sa..." nointeract
+
+# game/events/eric.rpy:677
+translate slovak eric_ann_fuck_glasses_sleeping_cb30e1a3:
+
+    # Max_07 "{m}Оу, супер! Похоже, я очень вовремя! Главное, не шуметь. Тогда всё должно будет пройти отпадно...{/m}" nointeract
+    Max_07 "{m}Skvelé! Vyzerá to, že som prišiel práve včas! Hlavnou vecou je, aby som nevydával žiadne zvuky. Potom sa to celé bude musieť skončiť...{/m}" nointeract
+
+# game/events/eric.rpy:683
+translate slovak eric_ann_fuck_glasses_sleeping_6b9150a2:
+
+    # Ann_05 "Ох, Эрик, ты такой шалун... Твоя фантазия с этими очками такая волнующая! И мне это очень нравится..."
+    Ann_05 "Erik, ty si taký nezbedník... Tvoja fantázia s týmito okuliarmi je taká vzrušujúca! A veľmi sa mi to páči..."
+
+# game/events/eric.rpy:684
+translate slovak eric_ann_fuck_glasses_sleeping_b4763990:
+
+    # Eric_02 "Если будешь и дальше меня слушаться, то ли ещё будет! Ты чувствуешь, как поднимается градус возбуждения?"
+    Eric_02 "Ak ma budeš počúvať, nestane sa to! Cítiš, že vzrušenie stúpa?"
+
+# game/events/eric.rpy:685
+translate slovak eric_ann_fuck_glasses_sleeping_285268d7:
+
+    # Max_03 "{m}Не знаю, как у вас ребята, но мой градус уже поднялся до полной готовности! Жгите...{/m}"
+    Max_03 "{m}Neviem, ako ty, ale môj titul je už na úrovni! Vypáliť...{/m}"
+
+# game/events/eric.rpy:689
+translate slovak eric_ann_fuck_glasses_sleeping_68278021:
+
+    # Ann_07 "Да, Эрик, твой член... Он сейчас такой твёрдый... Дай мне его скорее! Ты же знаешь, что мне нравится больше всего..."
+    Ann_07 "Áno, Erik, tvoj penis... Teraz je taký tvrdý... Rýchlo mi ho daj! Vieš, čo mám najradšej..."
+
+# game/events/eric.rpy:690
+translate slovak eric_ann_fuck_glasses_sleeping_ffe8566a:
+
+    # Eric_04 "Чёрт возьми, детка, ты сводишь меня с ума своим великолепным телом! Ты... Ты просто чертовски сладкая!"
+    Eric_04 "Sakra, zlato, privádzaš ma do šialenstva svojím nádherným telom! Ty... Si príliš milý!"
+
+# game/events/eric.rpy:691
+translate slovak eric_ann_fuck_glasses_sleeping_3eda019d:
+
+    # Ann_08 "Давай, мой милый, возьми меня... Я мечтаю об этом уже целый вечер. Я уже такая мокренькая! Ах-х-х!"
+    Ann_08 "No tak, miláčik, vezmi si ma... Snívala som o tom celý večer. Už som taká mokrá! Ah-ha-ha!"
+
+# game/events/eric.rpy:692
+translate slovak eric_ann_fuck_glasses_sleeping_ffe21f0c:
+
+    # Eric_03 "Сейчас, Аня, мы с тобой зажжём на полную катушку! Ты готова?"
+    Eric_03 "A teraz, Anna, ty a ja si to užijeme! Si pripravená?"
+
+# game/events/eric.rpy:693
+translate slovak eric_ann_fuck_glasses_sleeping_44d37b69:
+
+    # Max_08 "{m}Погодите! Мне нужно тихо и незаметно лучшее место для обзора для себя найти...{/m}" nointeract
+    Max_08 "{m}Počkajte! Musím si potichu a nenápadne nájsť lepší pozorovací bod...{/m}" nointeract
+
+# game/events/eric.rpy:704
+translate slovak eric_ann_fuck_glasses_sleeping_a84f86a2:
+
+    # Ann_10 "Ахх... Да-а-а! Боже мой, Эрик, мне так хорошо... Ещё! Трахай меня ещё! Охх... Не вздумай останавливаться! Вот так... Ммм..."
+    Ann_10 "Ahhh... Áno! Bože, Erik, je mi tak dobre... Viac! Ešte raz ma ošukaj! Ohhh... Neopováž sa zastaviť! A je to... Mmm..."
+
+# game/events/eric.rpy:705
+translate slovak eric_ann_fuck_glasses_sleeping_64a7d43c:
+
+    # Eric_06 "Ухх... Ну держись, детка! Сейчас ты получишь всё, чего так хотела... Вот так тебе нравится?"
+    Eric_06 "Uf... Drž sa, zlato! Teraz dostaneš všetko, čo si si kedy želala... Takto sa ti to páči?"
+
+# game/events/eric.rpy:706
+translate slovak eric_ann_fuck_glasses_sleeping_95dd1b5f:
+
+    # Ann_11 "Да! Ещё, мой милый... Ммм... Оттрахай меня, Эрик! Сильнее, не сдерживайся... Как хорошо, д-а-а..."
+    Ann_11 "Áno! Viac, miláčik... Mmm... Jeb ma, Erik! Tvrdšie, nedrž sa späť... Ako pekné, á-n-no..."
+
+# game/events/eric.rpy:707
+translate slovak eric_ann_fuck_glasses_sleeping_e81c2611:
+
+    # Max_02 "{m}О боже! Моя мама с такой страстью ему подчиняется! А Эрику, похоже, всё мало и он пытается засадить ей как можно глубже. И, кажется, уже еле сдерживается...{/m}"
+    Max_02 "{m}Panebože! Moja matka sa mu podriaďuje s takou vášňou! A zdá sa, že Erik nemá dosť a snaží sa ho zasunúť čo najhlbšie. A zdá sa, že sa už nedokáže udržať...{/m}"
+
+# game/events/eric.rpy:714
+translate slovak eric_ann_fuck_glasses_sleeping_2de0f4bb:
+
+    # Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
+    Eric_08 "Ahhh... Bože môj, zlato, už to nevydržím! Už idem!!! Á-a-a-a... Skvelé..."
+
+# game/events/eric.rpy:715
+translate slovak eric_ann_fuck_glasses_sleeping_bc1ff92c:
+
+    # Ann_07 "Фух... Эрик, это было сильно! Видимо, я была на высоте, раз ты так мощно кончил..."
+    Ann_07 "Uff... Eric, to bolo silné! Zrejme som bola na vrchole, keďže si sa urobil tak silno..."
+
+# game/events/eric.rpy:716
+translate slovak eric_ann_fuck_glasses_sleeping_40765c82:
+
+    # Eric_05 "Можешь поверить мне на слово, Ань, долго жарить такую сочную и прекрасную женщину, как ты, никто не сможет!"
+    Eric_05 "Môžeš mi veriť na slovo, Anna, takú šťavnatú a krásnu ženu ako ty, nikto dlho nevydrží prirážať!"
+
+# game/events/eric.rpy:722
+translate slovak eric_ann_fuck_glasses_sleeping_a989a47e:
+
+    # Eric_04 "Давай, детка, скорее возьми его в ротик поглубже! Охх... Ты же знаешь, что я просто улетаю, когда ты смачно сосёшь... О да!"
+    Eric_04 "No tak, zlato, poď sa poponáhlať a vložiť si ho hlboko do úst! Ohhh... Vieš, že keď ma silno vysaješ, jednoducho odletím... Ó áno!"
+
+# game/events/eric.rpy:723
+translate slovak eric_ann_fuck_glasses_sleeping_25848186:
+
+    # Max_04 "{m}То, что смачно, это точно! При мне, на тех уроках, она с таким жаром ему не отсасывала... Какая же ты, мам, развратница!{/m}"
+    Max_04 "{m}Je to chutné, to je isté! Na vyučovacej hodine tak silno nefajčila... Aká si ty štetka, mami!{/m}"
+
+# game/events/eric.rpy:726
+translate slovak eric_ann_fuck_glasses_sleeping_2de0f4bb_1:
+
+    # Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
+    Eric_08 "Ahhh... Bože môj, zlato, už to nevydržím! Už idem!!! Á-a-a-a... Skvelé..."
+
+# game/events/eric.rpy:727
+translate slovak eric_ann_fuck_glasses_sleeping_bc1ff92c_1:
+
+    # Ann_07 "Фух... Эрик, это было сильно! Видимо, я была на высоте, раз ты так мощно кончил..."
+    Ann_07 "Uff... Erik, to bolo silné! Zrejme som bola na vrchole, keďže si prišiel tak silno..."
+
+# game/events/eric.rpy:728
+translate slovak eric_ann_fuck_glasses_sleeping_e031cdb4:
+
+    # Eric_05 "Не то слово, Ань! Ты была просто бесподобна! Твой ротик - просто сказка."
+    Eric_05 "Presne tak, Anna! Bola si úplne skvelá! Tvoje ústa sú úžasné."
+
+# game/events/eric.rpy:731
+translate slovak eric_ann_fuck_glasses_sleeping_767e8043:
+
+    # Ann_05 "Спасибо за комплимент, дорогой, мне тоже понравилось."
+    Ann_05 "Ďakujem za kompliment, miláčik, aj mne sa to páčilo."
+
+# game/events/eric.rpy:732
+translate slovak eric_ann_fuck_glasses_sleeping_7d68e880:
+
+    # Max_08 "{m}Да уж! А я вот зря так глазею... Пора по-тихому отсюда сваливать, пока мама ещё не сняла очки...{/m}" nointeract
+    Max_08 "{m}Áno! Pozerám na to zbytočne... Je načase odtiaľto potichu odísť, kým si mama nezloží okuliare...{/m}" nointeract
+
+translate slovak strings:
+
+    # game/events/eric.rpy:678
+    old "{i}тихо зайти в комнату{/i}"
+    new "{i}ticho vojsť do miestnosti{/i}"
+
+    # game/events/eric.rpy:694
+    old "{i}хорошо устроиться{/i}"
+    new "{i}dobre sa usadiť{/i}"
+
+# TODO: Translation updated at 2022-02-28 02:37
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь! \n\nСамое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ."
+    new "Tak sme s mamou dopozerali film \"Farba noci\". Opäť som obdivoval jej nahé prsia a celkovo nám to išlo dobre. Pomaly si začína uvedomovať, že som dospelý a už sa nebráni pozerať so mnou takéto filmy. Moja mama mi, samozrejme, v záujme slušnosti povedala, aby som už takúto explicitnú erotiku nekupoval, ale akoby som ju počúval! \n\nNajviac frustrujúce je to, že sa s mamou len zriedkakedy pozeráme na televíziu."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Контроль\"..."
+    new "Bude potrebný pokrok v príležitosti \"Kontrola\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Сперва нужно закрепиться с массажем маминых плеч, пока она смотрит ТВ. Успешно выполнено массажей плеч мамы у ТВ: [ann.flags.m_shoulder] из 5..."
+    new "Najskôr sa musím uchytiť pri masáži maminých ramien, zatiaľ čo ona pozerá televíziu. Úspešne vykonaná masáž ramien matky pri televízii: [ann.flags.m_shoulder] z 5..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот мы с мамой и досмотрели \"Цвет ночи\". Я снова полюбовался её голой грудью и вообще, в целом, всё у нас складывается хорошо. Она понемногу начинает понимать, что я уже взрослый и уже не противится смотреть со мной такие фильмы. Ради приличия мама, конечно сказала, чтобы столь откровенную эротику я больше не покупал, но как будто я послушаюсь! \n\nСамое обидное, это то, что мы слишком редко когда можем посмотреть вместе с мамой ТВ. Нужно сперва избавиться от Эрика, а уже потом покупать эротические фильмы. Пока только массаж время от времени..."
+    new "Tak sme s mamou dopozerali film \"Farba noci\". Opäť som obdivoval jej nahé prsia a celkovo nám to išlo dobre. Pomaly si začína uvedomovať, že som dospelý a už sa nebráni pozerať so mnou takéto filmy. Moja mama mi, samozrejme, v záujme slušnosti povedala, aby som už takúto explicitnú erotiku nekupoval, ale akoby som ju počúvala! \n\nNajviac frustrujúce je to, že sa s mamou len zriedkakedy pozeráme na televíziu. Najprv sa musím zbaviť Erika, aby som mohol kúpiť erotické filmy. Zatiaľ len občasná masáž..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, мама обожает массаж спины, а это значит, что мне будет не так-то и просто сделать его на отлично. Но, если хотя бы иногда будет получаться, то уже хорошо. \nНу и раз я добрался до маминой спины, то и до её попки тоже нужно добираться, но уже через помощь с йогой. Там поддерживать её за попку будет естественнее всего. \nИ уже когда мама к этому всему привыкнет, можно будет попробовать уговорить её на продолжение тех уроков минета, которыми они с Эриком поделились. Ведь, как радоваться минету показали, а как женщин ублажать - нет!"
+    new "Zdá sa, že mama zbožňuje masáže chrbta, čo znamená, že pre mňa nebude ľahké robiť to dokonale. Ale ak sa mi to raz za čas podarí, je to dobré. \nNo, teraz, keď som sa dostal k maminmu chrbtu, musím sa dostať aj k jej zadku, ale s pomocou jogy. Tam by bolo najprirodzenejšie podoprieť ju za zadok. \nA keď si mama na to všetko zvykne, môžem ju skúsiť presvedčiť, aby pokračovala v lekciách fajčenia, ktoré má s Erikom. Koniec koncov, ako si užiť orál, bolo ukázané, ale ako potešiť ženy nie!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Думаю, этого хватит, чтобы я мог попробовать уговорить её на новые интимные уроки... Успешно выполнено массажей спины мамы у ТВ: [ann.flags.m_back] из 3"
+    new "Myslím, že mi to stačí na to, aby som sa ju pokúsil prehovoriť na nové intímne lekcie... Úspešne vykonať masáž chrbta pre mamičku pri televízii: [ann.flags.m_back] z 3"
+
+    # game/core/09_opportunities.rpy:4
+    old "Может быть, попробовать поговорить с мамой, когда она принимает ванну? Это отличное место, чтобы напомнить ей о том, что они с Эриком мне показывали в своей комнате..."
+    new "Možno sa skúsim porozprávať s mamou, keď sa kúpe? Je to skvelé miesto, ktoré jej pripomína to, čo mi s Erikom ukázali v ich izbe..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Волнующие изгибы\"..."
+    new "Bude to vyžadovať pokrok v príležitosti \"Vzrušujúce krivky\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, мой дерзкий разговор с мамой удался! Конечно, если бы Эрик не устроил для меня тех уроков по минету, у меня бы и близко не получилось выпросить у мамы их продолжение. \nПравда, пока она только согласилась подумать над этим, так что, возможно, она ещё ответит отказом. Пускай, уговорить её в таком случае будет не просто, но думаю получится, рано или поздно."
+    new "Zdá sa, že môj drzý rozhovor s mamou dopadol dobre! Samozrejme, keby mi Erik nevybavil tie lekcie fajčenia, nemal by som ani zďaleka možnosť požiadať mamu, aby v tom pokračovala. \nZatiaľ však súhlasila len s tým, že o tom bude premýšľať, takže možno bude stále brať nie ako odpoveď. V takom prípade ju možno nebude ľahké presvedčiť, ale myslím si, že sa to skôr či neskôr stane."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
+    new "Takýto druh jogy mám radšej! Moja mama je stále zmätená z mojich nepokojných rúk, ale myslím, že si na ne zvykne. \To je pravda, jednoducho si nemôžem pomôcť a musím mať erekciu, takže je najlepšie prísť na maminu jogu v tričku a šortkách. V prípade núdze je oveľa jednoduchšie stúpačku skryť. \n\nJe škoda, že teraz, kvôli mojej aktivite, chce, aby som jej pomáhal aspoň každý druhý deň... Ale mne to nevadí, len ma to núti, aby som sa k nej opäť pripojil."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, можно будет попробовать уговорить её на новые интимные уроки... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
+    new "Keď si mama zvykne na takéto bezočivé dotyky pri posvätnej joge, môžem ju skúsiť presvedčiť, aby som chodil na intímnejšie hodiny... Úspešne pomoc mojej matke pri cvičení jogy: [ann.flags.truehelp] z 5"
+
+# TODO: Translation updated at 2022-02-28 02:37
+
+# game/events/ann.rpy:960
+translate slovak ann_bath_about_intime_0_cddc6bee:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!" nointeract
+    Ann "{b}Anna:{/b} Kto je to? Kúpem sa!" nointeract
+
+# game/events/ann.rpy:961
+translate slovak ann_bath_about_intime_0_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 "To som ja, Max. Môžem vstúpiť?"
+
+# game/events/ann.rpy:962
+translate slovak ann_bath_about_intime_0_765e20f4:
+
+    # Ann "{b}Анна:{/b} Зачем, дорогой? Тебе что-то нужно?"
+    Ann "{b}Anna:{/b} Prečo, miláčik? Potrebuješ niečo?"
+
+# game/events/ann.rpy:963
+translate slovak ann_bath_about_intime_0_cc4bed10:
+
+    # Max_09 "Да, мам. Хотел поговорить."
+    Max_09 "Áno, mami. Chcel som sa porozprávať."
+
+# game/events/ann.rpy:964
+translate slovak ann_bath_about_intime_0_62195f79:
+
+    # Ann "{b}Анна{/b}: Если это может подождать, то я через полчасика освобожусь..." nointeract
+    Ann "{b}Anna:{/b} Ak to môže počkať, budem vonku za pol hodiny..." nointeract
+
+# game/events/ann.rpy:974
+translate slovak ann_bath_about_intime_0_53cc7aca:
+
+    # Ann_15 "Макс! Ты почему так нагло врываешься! Я же сказала, что скоро освобожусь! Не мог подождать?"
+    Ann_15 "Max! Prečo sem tak drzo vtrhávaš! Hovorila som ti, že budem čoskoro vonku! Nemohlo to počkať?"
+
+# game/events/ann.rpy:975
+translate slovak ann_bath_about_intime_0_1af3858f:
+
+    # Max_08 "Нет, нужно кое-что обсудить, пока ты здесь."
+    Max_08 "Nie, musíme si o niečom pohovoriť, kým si tu."
+
+# game/events/ann.rpy:978
+translate slovak ann_bath_about_intime_0_01bf0619:
+
+    # Ann_14 "И что там у тебя такого срочного?!"
+    Ann_14 "Čo je také naliehavé?!"
+
+# game/events/ann.rpy:979
+translate slovak ann_bath_about_intime_0_a34fa2a4:
+
+    # Max_07 "Хотел поговорить о девочках!"
+    Max_07 "Chcel som hovoriť o dievčatách!"
+
+# game/events/ann.rpy:980
+translate slovak ann_bath_about_intime_0_197357cf:
+
+    # Ann_17 "И ты считаешь, что это настолько важно, что кроме как здесь об этом говорить нельзя, да?"
+    Ann_17 "A myslíš si, že je to také dôležité, že o tom nemôžeme hovoriť inak ako tu?"
+
+# game/events/ann.rpy:981
+translate slovak ann_bath_about_intime_0_7db297d2:
+
+    # Max_01 "Ну... Не просто о девочках, а том, как им... делать приятно... там, внизу..."
+    Max_01 "No... Nielen o dievčatách, ale aj o tom, ako... aby si bola milá... tam dole..."
+
+# game/events/ann.rpy:982
+translate slovak ann_bath_about_intime_0_28faf8d1:
+
+    # Ann_02 "Вот это вопросы у тебя, Макс! А что, у тебя девочка появилась?"
+    Ann_02 "Aké máš otázky, Max! Prečo, máš dievča?"
+
+# game/events/ann.rpy:983
+translate slovak ann_bath_about_intime_0_4dd2948d:
+
+    # Max_07 "Ещё нет, но появится же. А я хочу быть готовым! Вы мне с Эриком показали на тех уроках, как себя вести, если женщина... так сказать, ласкает мужчину, а вот как ласкать женщин - нет."
+    Max_07 "Zatiaľ nie, ale príde. A ja chcem byť pripravený! Ty a Erik ste mi na tých hodinách ukázali, ako sa mám správať, keď žena... takpovediac pohladí muža, ale ako pohladiť ženu nie."
+
+# game/events/ann.rpy:984
+translate slovak ann_bath_about_intime_0_435b556c:
+
+    # Ann_14 "Ой, сынок, какие же это неудобные вопросы! Я всё ещё до конца не могу осознать, что ты уже почти взрослый."
+    Ann_14 "Ach, synku, aké sú to nepríjemné otázky! Stále nedokážem pochopiť, že si takmer dospelý."
+
+# game/events/ann.rpy:985
+translate slovak ann_bath_about_intime_0_b912cfb2:
+
+    # Max_09 "Пора бы уже осознать, мам! И уроки ваши, какие-то односторонние. Как-то неправильно."
+    Max_09 "Je najvyšší čas, aby si si to uvedomila, mami! A vaše lekcie sú trochu jednostranné. Nejako sa mi to nezdá."
+
+# game/events/ann.rpy:986
+translate slovak ann_bath_about_intime_0_24e945aa:
+
+    # Ann_13 "Ну... Что-то я даже не знаю..."
+    Ann_13 "No... Niečo, čo ani neviem..."
+
+# game/events/ann.rpy:989
+translate slovak ann_bath_about_intime_0_acd6b1b2:
+
+    # Max_07 "Да ладно, я же уже такое видел с вами на тех уроках..."
+    Max_07 "No tak, už som to s tebou videl v tých triedach..."
+
+# game/events/ann.rpy:990
+translate slovak ann_bath_about_intime_0_fdfa6acb:
+
+    # Ann_12 "Ой, Макс, не напоминай. Это всё было исключительно для твоего... сексуального образования..."
+    Ann_12 "Ach, Max, nepripomínaj mi to. Všetko to bolo len pre tvoju... sexuálnu výchovu..."
+
+# game/events/ann.rpy:991
+translate slovak ann_bath_about_intime_0_e2b46bea:
+
+    # Max_08 "Так и это тоже для образования! Потому что я хочу не только получать ласку от девочек, но и давать её им. А это, как я понимаю, куда сложнее."
+    Max_08 "Takže je to aj na vzdelávanie! Pretože chcem nielen prijímať náklonnosť od dievčat, ale aj im ju dávať. A to je, ako som pochopil, oveľa ťažšie."
+
+# game/events/ann.rpy:992
+translate slovak ann_bath_about_intime_0_1f40fc0d:
+
+    # Ann_13 "Ох, с учётом того, чему мы с Эриком уже тебя тогда научили, твоя просьба очень логична, сынок. Так что я поговорю об этом с Эриком..."
+    Ann_13 "Vzhľadom na to, čo sme ťa s Erikom už naučili, je tvoja požiadavka veľmi logická, synku. Takže sa o tom porozprávam s Erikom..."
+
+# game/events/ann.rpy:993
+translate slovak ann_bath_about_intime_0_ee64e187:
+
+    # Max_10 "Нет, мам, я хочу только с тобой этому учиться!"
+    Max_10 "Nie, mami, chcem sa to učiť len s tebou!"
+
+# game/events/ann.rpy:994
+translate slovak ann_bath_about_intime_0_bd74b95d:
+
+    # Ann_17 "То есть, только со мной?! А Эрик тебе чем не угодил?"
+    Ann_17 "Myslíš len mňa?! Čo je s Erikom?"
+
+# game/events/ann.rpy:995
+translate slovak ann_bath_about_intime_0_0314b6cd:
+
+    # Max_09 "Мне кажется, он это... направление не особо любит. Мне же лучше, чтобы такому учила именно женщина, ведь вам виднее."
+    Max_09 "Myslím, že je to... jeho réžia nie je veľmi obľúbená. Bol by som radšej, keby ma to učila žena, pretože vy to viete najlepšie."
+
+# game/events/ann.rpy:996
+translate slovak ann_bath_about_intime_0_ba4d6bb6:
+
+    # Ann_12 "Виднее, конечно. Но без Эрика я даже не знаю... Не уверена... Ничего, если я подумаю об этом в более... комфортной обстановке?"
+    Ann_12 "Viac k veci, samozrejme. Ale bez Erika ani neviem... Nie som si istá... Je v poriadku, ak o tom budem premýšľať viac... v príjemnom prostredí?"
+
+# game/events/ann.rpy:997
+translate slovak ann_bath_about_intime_0_3a30664f:
+
+    # Max_01 "Да, мам! Я не буду мешать, расслабляйся." nointeract
+    Max_01 "Áno, mami! Nebudem ti prekážať, uvoľni sa." nointeract
+
+# TODO: Translation updated at 2022-02-28 02:37
+
+translate slovak strings:
+
+    # game/extra/extra.rpy:60
+    old "Я спасу их от солнца"
+    new "Zachránim ich pred slnkom"
+
+    # game/extra/extra.rpy:60
+    old "Всё ниже и ниже"
+    new "Nižšie a nižšie"
+
+    # game/extra/extra.rpy:60
+    old "Йога с мамой"
+    new "Jóga s mamou"
+
+    # game/extra/extra.rpy:60
+    old "Ещё больше массажа у ТВ"
+    new "Viac masáží pri televízii"
+
+    # game/extra/extra.rpy:60
+    old "Не надо печалиться"
+    new "Nie je potrebné byť smutný"
+
+    # game/extra/extra.rpy:60
+    old "Секс-шоу с первых рядов"
+    new "Sexuálna šou z prvých radov"
+
+    # game/extra/extra.rpy:60
+    old "Стесняется трогать..."
+    new "Plachosť na dotyk..."
+
+    # game/extra/extra.rpy:60
+    old "Ещё стесняется, но трогает..."
+    new "Stále plaché, ale dojímavé..."

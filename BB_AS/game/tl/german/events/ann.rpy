@@ -1796,3 +1796,155 @@ translate german ann_dressed_balkon_talk1_ac19285d:
     # Max_07 "Ну хватит... Было и было. Прими это и сделай выводы. Нельзя же всё время теперь ходить такой печальной и заниматься самобичеванием. Ты ни в чём не виновата!"
     Max_07 "Komm schon... Es war einmal so. Akzeptiere es und zieh deine eigenen Schlüsse. Man kann sich nicht die ganze Zeit selbst fertig machen. Es ist nicht deine Schuld!"
 
+# TODO: Translation updated at 2022-02-28 02:39
+
+# game/events/ann.rpy:960
+translate german ann_bath_about_intime_0_cddc6bee:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!" nointeract
+    Ann "{b}Аnn:{/b} Wer ist da? Ich nehme ein Bad!" nointeract
+
+# game/events/ann.rpy:961
+translate german ann_bath_about_intime_0_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 "Ich bin's, Max. Darf ich reinkommen?"
+
+# game/events/ann.rpy:962
+translate german ann_bath_about_intime_0_765e20f4:
+
+    # Ann "{b}Анна:{/b} Зачем, дорогой? Тебе что-то нужно?"
+    Ann "{b}Аnn:{/b} Warum, mein Schatz? Brauchst du etwas?"
+
+# game/events/ann.rpy:963
+translate german ann_bath_about_intime_0_cc4bed10:
+
+    # Max_09 "Да, мам. Хотел поговорить."
+    Max_09 "Ja, Mom. Wir müssen reden."
+
+# game/events/ann.rpy:964
+translate german ann_bath_about_intime_0_62195f79:
+
+    # Ann "{b}Анна{/b}: Если это может подождать, то я через полчасика освобожусь..." nointeract
+    Ann "{b}Аnn:{/b} Kann das nicht warten? Ich bin in einer halben Stunde draußen..." nointeract
+
+# game/events/ann.rpy:974
+translate german ann_bath_about_intime_0_53cc7aca:
+
+    # Ann_15 "Макс! Ты почему так нагло врываешься! Я же сказала, что скоро освобожусь! Не мог подождать?"
+    Ann_15 "Max! Warum haben Sie die Dreistigkeit, hier hereinzuplatzen? Ich sagte doch, dass ich bald rauskomme! Kannst du nicht warten?"
+
+# game/events/ann.rpy:975
+translate german ann_bath_about_intime_0_1af3858f:
+
+    # Max_08 "Нет, нужно кое-что обсудить, пока ты здесь."
+    Max_08 "Nein, es gibt etwas zu besprechen, solange du hier bist."
+
+# game/events/ann.rpy:978
+translate german ann_bath_about_intime_0_01bf0619:
+
+    # Ann_14 "И что там у тебя такого срочного?!"
+    Ann_14 "Was ist denn so dringend?!"
+
+# game/events/ann.rpy:979
+translate german ann_bath_about_intime_0_a34fa2a4:
+
+    # Max_07 "Хотел поговорить о девочках!"
+    Max_07 "Ich wollte über Frauen reden!"
+
+# game/events/ann.rpy:980
+translate german ann_bath_about_intime_0_197357cf:
+
+    # Ann_17 "И ты считаешь, что это настолько важно, что кроме как здесь об этом говорить нельзя, да?"
+    Ann_17 "Und du hältst es für so wichtig, dass du nur hier darüber sprechen kannst, oder?"
+
+# game/events/ann.rpy:981
+translate german ann_bath_about_intime_0_7db297d2:
+
+    # Max_01 "Ну... Не просто о девочках, а том, как им... делать приятно... там, внизу..."
+    Max_01 "Na ja... Nicht nur über Frauen, sondern auch darüber, wie man sie dazu bringt... damit sie sich gut fühlen... Da unten..."
+
+# game/events/ann.rpy:982
+translate german ann_bath_about_intime_0_28faf8d1:
+
+    # Ann_02 "Вот это вопросы у тебя, Макс! А что, у тебя девочка появилась?"
+    Ann_02 "Was für Fragen du hast, Max! Hast du etwa ein Mädchen?"
+
+# game/events/ann.rpy:983
+translate german ann_bath_about_intime_0_4dd2948d:
+
+    # Max_07 "Ещё нет, но появится же. А я хочу быть готовым! Вы мне с Эриком показали на тех уроках, как себя вести, если женщина... так сказать, ласкает мужчину, а вот как ласкать женщин - нет."
+    Max_07 "Noch nicht, aber bald. Und ich will vorbereitet sein! Du und Eric habt mir in diesem Kurs gezeigt, wie man sich verhält, wenn eine Frau... sozusagen, einen Mann liebkost, aber wie man eine Frau liebkost, nicht."
+
+# game/events/ann.rpy:984
+translate german ann_bath_about_intime_0_435b556c:
+
+    # Ann_14 "Ой, сынок, какие же это неудобные вопросы! Я всё ещё до конца не могу осознать, что ты уже почти взрослый."
+    Ann_14 "Oh, mein Sohn, was sind das für unangenehme Fragen! Ich kann immer noch nicht ganz begreifen, dass du fast erwachsen bist."
+
+# game/events/ann.rpy:985
+translate german ann_bath_about_intime_0_b912cfb2:
+
+    # Max_09 "Пора бы уже осознать, мам! И уроки ваши, какие-то односторонние. Как-то неправильно."
+    Max_09 "Es wird Zeit, dass du das erkennst, Mom! Und dein Unterricht ist ziemlich einseitig. Es fühlt sich nicht richtig an."
+
+# game/events/ann.rpy:986
+translate german ann_bath_about_intime_0_24e945aa:
+
+    # Ann_13 "Ну... Что-то я даже не знаю..."
+    Ann_13 "Na ja... Etwas, das ich nicht verstehe..."
+
+# game/events/ann.rpy:989
+translate german ann_bath_about_intime_0_acd6b1b2:
+
+    # Max_07 "Да ладно, я же уже такое видел с вами на тех уроках..."
+    Max_07 "Komm schon, ich habe das schon mal bei dir in diesen Kursen gesehen..."
+
+# game/events/ann.rpy:990
+translate german ann_bath_about_intime_0_fdfa6acb:
+
+    # Ann_12 "Ой, Макс, не напоминай. Это всё было исключительно для твоего... сексуального образования..."
+    Ann_12 "Oh, Max, erinnere mich nicht daran. Das war alles nur für deine... Sexualerziehung..."
+
+# game/events/ann.rpy:991
+translate german ann_bath_about_intime_0_e2b46bea:
+
+    # Max_08 "Так и это тоже для образования! Потому что я хочу не только получать ласку от девочек, но и давать её им. А это, как я понимаю, куда сложнее."
+    Max_08 "Es geht also auch um Erziehung! Denn ich möchte nicht nur Zuneigung von Mädchen erhalten, sondern ihnen auch Zuneigung geben. Und das ist, soweit ich weiß, sehr viel schwieriger."
+
+# game/events/ann.rpy:992
+translate german ann_bath_about_intime_0_1f40fc0d:
+
+    # Ann_13 "Ох, с учётом того, чему мы с Эриком уже тебя тогда научили, твоя просьба очень логична, сынок. Так что я поговорю об этом с Эриком..."
+    Ann_13 "Wenn man bedenkt, was Eric und ich dir bereits beigebracht haben, ist deine Bitte sehr logisch, mein Sohn. Ich werde also mit Eric darüber sprechen..."
+
+# game/events/ann.rpy:993
+translate german ann_bath_about_intime_0_ee64e187:
+
+    # Max_10 "Нет, мам, я хочу только с тобой этому учиться!"
+    Max_10 "Nein, Mom, ich will es nur mit dir üben!"
+
+# game/events/ann.rpy:994
+translate german ann_bath_about_intime_0_bd74b95d:
+
+    # Ann_17 "То есть, только со мной?! А Эрик тебе чем не угодил?"
+    Ann_17 "Du meinst, nur ich?! Was ist mit Eric?"
+
+# game/events/ann.rpy:995
+translate german ann_bath_about_intime_0_0314b6cd:
+
+    # Max_09 "Мне кажется, он это... направление не особо любит. Мне же лучше, чтобы такому учила именно женщина, ведь вам виднее."
+    Max_09 "Ich glaube nicht, dass er ein... Ich glaube nicht, dass er sich für so etwas interessiert. Ich würde es lieber von einer Frau lernen lassen, denn Sie weiß es am besten."
+
+# game/events/ann.rpy:996
+translate german ann_bath_about_intime_0_ba4d6bb6:
+
+    # Ann_12 "Виднее, конечно. Но без Эрика я даже не знаю... Не уверена... Ничего, если я подумаю об этом в более... комфортной обстановке?"
+    Ann_12 "Das ist natürlich besser so. Aber ohne Eric weiß ich nicht... Ich bin mir nicht sicher... Ist es in Ordnung, wenn ich darüber in einer etwas... angenehmeren Umgebung nachdenke?"
+
+# game/events/ann.rpy:997
+translate german ann_bath_about_intime_0_3a30664f:
+
+    # Max_01 "Да, мам! Я не буду мешать, расслабляйся." nointeract
+    Max_01 "Ja, Mom! Ich lasse dich in Ruhe, entspann dich." nointeract
+

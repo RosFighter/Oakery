@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.07.p2.60"
+define config.version = "0.08.0.00"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -230,26 +230,11 @@ init python:
     # build.classify('game/tl/**/extra/**.rpyc', 'extra')
 
     build.archive("img_fix", "all")
-    # # убрать перед сборкой!
-    build.classify('game/images/Olivia/dressing/**a*.webp', 'img_fix')
-    build.classify('game/images/Olivia/dressing/**b*.webp', 'img_fix')
-    build.classify('game/images/Olivia/dressing/inroom/00h.webp', 'img_fix')
-    build.classify('game/images/Ann/sleep/**.webp', 'img_fix')
-    build.classify('game/images/Lisa/sleep/**.webp', 'img_fix')
-    build.classify('game/images/Lisa/practice/**.webp', 'img_fix')
-    build.classify('game/images/Max/sleep/**.webp', 'img_fix')
-    build.classify('game/images/Ann/dressing/**.webp', 'img_fix')
-    build.classify('game/images/Ann/yoga/**.webp', 'img_fix')
-    build.classify('game/images/Ann/tv-ero/00*.webp', 'img_fix')
-    build.classify('game/images/Ann/tv-ero/06*.webp', 'img_fix')
-    build.classify('game/images/Ann/tv-ero/07*.webp', 'img_fix')
-    build.classify('game/images/BG/char/Ann/tv-ero-07.webp', 'img_fix')
-    build.classify('game/images/Max/tv-ero/00*.webp', 'img_fix')
-
-    build.classify('game/images/interface/poss/boss/*.webp', 'img_fix')
-    build.classify('game/images/interface/poss/mom-tv/ep06.webp', 'img_fix')
-    build.classify('game/images/interface/poss/yoga/ep04.webp', 'img_fix')
-    build.classify('game/images/interface/poss/mentor/ep13a.webp', 'img_fix')
+    # убрать перед сборкой!
+    # build.classify('game/images/interface/poss/boss/*.webp', 'img_fix')
+    # build.classify('game/images/interface/poss/mom-tv/ep06.webp', 'img_fix')
+    # build.classify('game/images/interface/poss/yoga/ep04.webp', 'img_fix')
+    # build.classify('game/images/interface/poss/mentor/ep13a.webp', 'img_fix')
 
     build.archive("images", "all")
 

@@ -156,7 +156,7 @@ init python:
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress()
-        mg.social = renpy.random.randint(258, 197) / 10 #27
+        mg.social = renpy.random.randint(197, 258) / 10 #27
         mg.massage = renpy.random.randint(58, 78) / 10 #6.8
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
@@ -335,6 +335,22 @@ init python:
             }
         return my_scope
 
+    # Я спасу их от солнца
+    def set_olivia_repeat_sunscreen():
+        tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        to = Profile('olivia', "Оливия", "Оливии", "Оливии", "Оливию", "Оливией", "Оливии")
+        tl.dress = 'b'
+        to.dress = 'b'
+
+        my_scope = {
+            'kol_cream' : 10,
+            'pose3_1'   : renpy.random.choice(['01', '02', '03']),
+            'pose3_3'   : renpy.random.choice(['01', '02', '03']),
+            'olivia'    : to,
+            'lisa'      : tl,
+            }
+        return my_scope
+
     ############################################################################
 
     # Ночные страхи
@@ -365,7 +381,8 @@ init python:
         mg.dress = 'c'
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.daily.oiled = renpy.random.choice([1, 2])
+        # al.daily.oiled = renpy.random.choice([1, 2])
+        al.daily.oiled = 2
 
         if 'squeeze_chest' in persistent.mems_var:
             # тискал Алису за грудь
@@ -471,7 +488,7 @@ init python:
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.sex = renpy.random.randint(110, 130) / 10
         sm = ['']
-        if 'alice_nopants' in persistent.mems_var:
+        if renpy.seen_label('smoke_fear.nopants'):  #'alice_nopants' in persistent.mems_var:
             sm.extend(['nopants', 'not_nopants'])
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.req.result       = renpy.random.choice(sm)
@@ -522,17 +539,17 @@ init python:
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
 
-        if 'alice_photoset1' in persistent.mems_var:
-            al.daily.drink = 1
+        al.daily.drink = 1
 
         my_scope = {
-                'cam_pose_blog' : '',
-                'tm'            : '20:30',
-                'spent_time'    : 0,
-                'alice'         : al,
-                'mgg'           : mg,
-                'items'         : {'sexbody1':Item("ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ", have=True), 'photocamera':Item("ФОТОАППАРАТ", have=True)},
-                'expected_photo': [],
+            'cam_pose_blog' : '',
+            'tm'            : '20:30',
+            'spent_time'    : 0,
+            'alice'         : al,
+            'mgg'           : mg,
+            'items'         : {'sexbody1':Item("ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ", have=True), 'sexbody2':Item("ЧЁРНОЕ КРУЖЕВНОЕ БОДИ"), 'photocamera':Item("ФОТОАППАРАТ", have=True)},
+            'expected_photo': [],
+            'flags'         : Other_Flags_and_counters(),
             }
 
         return my_scope
@@ -547,12 +564,13 @@ init python:
         mg.stealth = renpy.random.randint(270, 290) / 10
 
         al.dcv.intrusion.stage = 3
-        al.dcv.intrusion.set_lost(3)
+        al.dcv.intrusion.set_lost(2)
         al.dcv.photo.stage = 2
         if 'alice_photoset1' in persistent.mems_var:
             al.daily.drink = 1
         my_scope = {
             'cam_pose_blog' : '',
+            'weekday'       : 4,
             'tm'            : '20:30',
             'spent_time'    : 0,
             'alice'         : al,
@@ -561,15 +579,18 @@ init python:
                                 'sexbody1':Item("ЧЁРНОЕ СЕКСУАЛЬНОЕ БОДИ"),
                                 'sexbody2':Item("ЧЁРНОЕ КРУЖЕВНОЕ БОДИ", have=True)
                             },
+            'flags'         : Other_Flags_and_counters(),
             }
 
         return my_scope
 
     # Попка, которую я теперь могу отшлёпать
     def set_private_punish1():
+        al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
         my_scope = {
+            'alice'         : al,
             'mgg'           : mg,
             }
 
@@ -715,8 +736,9 @@ init python:
         if 'bj_in_pool' in persistent.mems_var:
             tk.stat.sex = 5
         my_scope = {
-            'mgg'      : mg,
-            'kira'     : tk,
+            'mgg'       : mg,
+            'kira'      : tk,
+            'flags'     : Other_Flags_and_counters(),
             }
         return my_scope
 
@@ -798,6 +820,7 @@ init python:
     def set_kira_photoset3():
 
         mg        = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress  = get_max_dress(ex='a')
         mg.sex    = renpy.random.randint(350, 790) / 10
 
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
@@ -842,6 +865,25 @@ init python:
                 'kissmas'   : True,
                 'lisa'     : tl,
                 'mgg'      : mg,
+            }
+        return my_scope
+
+    # Всё ниже и ниже
+    def set_lisa_read_with_Max_r():
+        tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dress = get_lisa_dress()
+        tl.mood = 300
+
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        mg.kissing = renpy.random.randint(192, 274) / 10
+
+        my_scope = {
+            'lisa'          : tl,
+            'mgg'           : mg,
+            'spent_time'    : 0,
+            'pose3_1'       : renpy.random.choice(['01', '02', '03']),
+            'var_pose'      : '',
             }
         return my_scope
 
@@ -906,7 +948,7 @@ init python:
     # Долой смущение
     def set_olivia_second_night_visit():
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
-        tl.dcv.special.stage=4
+        tl.dcv.special.stage = 5
 
         to = Profile('olivia', "Оливия", "Оливии", "Оливии", "Оливию", "Оливией", "Оливии")
         to.dcv.other.stage = 1
@@ -955,6 +997,45 @@ init python:
             }
         return my_scope
 
+    # Йога с мамой
+    def set_ann_yoga_with_maxr():
+        ta = Profile('ann', "Анна", "Анны", "Анне", "Анну", "Анной", "Анне")
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        my_scope = {
+            'ann'       : ta,
+            'mgg'       : mg,
+            }
+        return my_scope
+
+    # Ещё больше массажа у ТВ
+    def set_ann_tv_continuation_massage():
+        ta = Profile('ann', "Анна", "Анны", "Анне", "Анну", "Анной", "Анне")
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        mg.massage = renpy.random.randint(478, 632) / 10
+        mg.social = renpy.random.randint(537, 684) / 10
+        my_scope = {
+            'ann'       : ta,
+            'mgg'       : mg,
+            }
+        return my_scope
+
+    # Не надо печалиться
+    def set_ann_dressed_balcony():
+        ta = Profile('ann', "Анна", "Анны", "Анне", "Анну", "Анной", "Анне")
+        ta.flags.truehelp = 5
+        ta.flags.m_back = 3
+
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        my_scope = {
+            'ann'       : ta,
+            'mgg'       : mg,
+            }
+        return my_scope
+
+
     ############################################################################
 
     # Урок по минету от мамы и Эрика
@@ -965,8 +1046,18 @@ init python:
         mg.dress = get_max_dress()
 
         my_scope = {
-                'mgg'       : mg,
-                '_stockings' : random_outcome(50),
+            'mgg'       : mg,
+            'stockings' : random_outcome(50),
+            }
+        return my_scope
+
+    # Секс-шоу с первых рядов
+    def set_eric_ann_fuck_glasses_sleeping():
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress(ex='a')
+        my_scope = {
+            'mgg'       : mg,
+            'stockings' : random_outcome(50) if 'stockings' in persistent.mems_var else 0,
             }
         return my_scope
 
@@ -984,6 +1075,21 @@ init python:
         te.dress = renpy.random.choice(['a', 'b'])
 
         my_scope = {
+            'eric' : te,
+            'lisa' : tl,
+            }
+        return my_scope
+
+    # Стесняется трогать...
+    # Ещё стесняется, но трогает...
+    def set_practice_1():
+        tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
+        tl.dress = get_lisa_dress()
+        te = Profile('eric', "Эрик", "Эрика", "Эрику", "Эрика", "Эриком", "Эрике")
+        te.dress = renpy.random.choice(['a', 'b'])
+        my_scope = {
+            'dishes_washed' : False,
+            'rel_eric'      : (3, ''),
             'eric' : te,
             'lisa' : tl,
             }

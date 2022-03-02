@@ -181,7 +181,7 @@ label Eric_talk_afterdinner:
         Eric_02 "Всё ясно с тобой. Ну, это твой выбор. У тебя была неделя, чтобы всё обдумать. Ты решил начать войну, ну что же, не вини меня за то, как я её закончу..."
         $ notify_list.append(_("{color=[orange]}{i}{b}Внимание:{/b} Ваши отношения значительно ухудшились!{/i}{/color}"))
         $ AttitudeChange('eric', -3)
-        $ flags.voy_stage = -1
+        $ flags.voy_stage = -1  # смотреть на потрахушки запрещено
         $ poss['alpha'].open(3)
         jump Waiting
 
@@ -278,7 +278,7 @@ label Eric_talk_afterdinner:
         Eric_01 "Ну всё, Макс. Я рад, что мы разобрались и, так сказать, поделили территорию. Теперь всё в твоих руках. Ну и в моих тоже... О, твоя мама идёт. Ну всё, пока!"
         $ notify_list.append(_("{color=[lime]}{i}{b}Внимание:{/b} Ваши отношения значительно улучшились{/i}{/color}"))
         $ poss['alpha'].open(2)
-        $ flags.voy_stage = 0
+        $ flags.voy_stage = 0   # можно заглядывать к АиЭ в спальню
         $ flags.bonus_from_eric.append('money')
         $ AttitudeChange('eric', 4)
         jump Waiting
@@ -533,12 +533,17 @@ label eric_ann_fucking:
 
     menu:
         Max_00 "{m}Судя по звукам, мама с Эриком чем-то занимаются. Открывать дверь точно не стоит, влетит...{/m}"
-        "{i}заглянуть в окно{/i}" ('hide', mgg.stealth * 3, 90) if flags.voy_stage<0 or GetRelMax('eric')[0]<0:
+        "{i}заглянуть в окно{/i}" ('hide', mgg.stealth * 3, 90) if flags.voy_stage < 0 or GetRelMax('eric')[0]<0:
             pass
-        "{i}заглянуть в окно{/i}" if 0<=flags.voy_stage<4 and GetRelMax('eric')[0]>3:
+        "{i}заглянуть в окно{/i}" if 0 <= flags.voy_stage < 4 and GetRelMax('eric')[0] > 3:
             pass
-        "{i}зайти в спальню{/i}" if 3<flags.voy_stage<8 and GetRelMax('eric')[0]>3:
+        "{i}зайти в спальню{/i}" if 3 < flags.voy_stage < 8 and GetRelMax('eric')[0] > 3:
             jump lessons_from_Eric
+        "{i}заглянуть в окно{/i}" if flags.voy_stage == 8:
+            pass
+        "{i}заглянуть в окно{/i}" if flags.voy_stage in [9, 10, 12, 13, 14] and weekday == flags.ae_bonus_day:
+            # бонус с потрахушками за Лизу (или Киру) активирован, день совпадает с назначенным
+            jump eric_ann_fuck_glasses_sleeping
         "{i}уйти{/i}":
             jump AfterWaiting
 
@@ -577,7 +582,7 @@ label eric_ann_fucking:
             Eric_03 "Ань, не спеши. Макс подросток и ему всё интересно. Ты же знаешь, запретный плод сладок. Думаю, не стоит его наказывать за такие шалости. Хорошо?"
             Ann_14 "Ну, хорошо, Эрик. Если ты так считаешь... Но пусть он уйдёт, я не могу так..."
             Max_07 "Я уже ухожу, мам... Продолжайте!"
-            $ flags.voy_stage = 3
+            $ flags.voy_stage = 3   # наказание миновало
             $ poss['control'].open(2)
 
         elif flags.voy_stage == 3:
@@ -585,7 +590,7 @@ label eric_ann_fucking:
                 Ann_18 "Макс? Опять подглядываешь?! Ну-ка бегом отсюда!"
                 "Я никому не мешаю же...":
                     menu:
-                        Eric_02 "Ань, пусть лучше смотрит на нас, чем на непойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..."
+                        Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..."
                         "{i}войти в комнату{/i}":
                             scene BG annroom-watch-01
                             show Eric watch 00
@@ -596,7 +601,7 @@ label eric_ann_fucking:
                             Ann_12 "Как скажешь, Эрик..."
                             Eric_01 "Ну всё, Макс. Мы тут ещё побеседуем. А для тебя на сегодня хватит, иди."
                             Max_00 "Хорошо..."
-                            $ flags.voy_stage = 4
+                            $ flags.voy_stage = 4   # Эрик почти уговорил Анну
                             $ poss['control'].open(3)
 
                 "Я уже ухожу, мам... Извини...":
@@ -665,6 +670,91 @@ label eric_ann_fucking:
     stop music
     jump Waiting
 
+label eric_ann_fuck_glasses_sleeping:
+    # подглядываем, Анна может быть с очками для сна раз в неделю
+
+    $ renpy.dynamic('precum')
+    $ precum = renpy.random.randint(0, 1)   # 50% шанс, что Эрик кончит во время секса
+    $ var_pose = renpy.random.choice(['01', '02'])
+
+    # annroom-bedann-01 + ann&eric-sex00 + Чулки + annroom-bedann-01-voyeur
+    scene Eric_glasses_fuck voyeur with fade4
+    Max_07 "{m}Оу, супер! Похоже, я очень вовремя! Главное, не шуметь. Тогда всё должно будет пройти отпадно...{/m}" nointeract
+    menu:
+        "{i}тихо зайти в комнату{/i}":
+            pass
+
+    # annroom-watch-01 + annroom-watch-01-ann&eric-sex00 + Чулки + annroom-watch-01-max-(01a/01b)
+    scene Eric_glasses_fuck watch with diss4
+    Ann_05 "Ох, Эрик, ты такой шалун... Твоя фантазия с этими очками такая волнующая! И мне это очень нравится..."
+    Eric_02 "Если будешь и дальше меня слушаться, то ли ещё будет! Ты чувствуешь, как поднимается градус возбуждения?"
+    Max_03 "{m}Не знаю, как у вас ребята, но мой градус уже поднялся до полной готовности! Жгите...{/m}"
+
+    # annroom-watch-02-bj02 + annroom-watch-02-sex01-ann&eric-01 + Чулки + annroom-watch-02-bj01-max-(01a/01b)
+    # annroom-watch-02-bj02 + annroom-watch-02-sex02-ann&eric-01 + Чулки + annroom-watch-02-bj01-max-(01a/01b)
+    # annroom-watch-02-bj02 + annroom-watch-02-sex03-ann&eric-01 + Чулки + annroom-watch-02-bj01-max-(01a/01b)
+    scene Eric_glasses_fuck sex01 with diss4
+    Ann_07 "Да, Эрик, твой член... Он сейчас такой твёрдый... Дай мне его скорее! Ты же знаешь, что мне нравится больше всего..."
+    Eric_04 "Чёрт возьми, детка, ты сводишь меня с ума своим великолепным телом! Ты... Ты просто чертовски сладкая!"
+    Ann_08 "Давай, мой милый, возьми меня... Я мечтаю об этом уже целый вечер. Я уже такая мокренькая! Ах-х-х!"
+    Eric_03 "Сейчас, Аня, мы с тобой зажжём на полную катушку! Ты готова?"
+    Max_08 "{m}Погодите! Мне нужно тихо и незаметно лучшее место для обзора для себя найти...{/m}" nointeract
+    menu:
+        "{i}хорошо устроиться{/i}":
+            pass
+    # annroom-watch-04-bj01 + annroom-watch-02-sex01-ann&eric-02-01 + Чулки + annroom-watch-02-sex-max-(02a/02b)
+    # annroom-watch-03-bj01 + annroom-watch-02-sex02-ann&eric-02-01 + Чулки + annroom-watch-02-sex-max-(01a/01b)
+    # annroom-watch-03-bj02 + annroom-watch-02-sex03-ann&eric-02-01 + Чулки + annroom-watch-02-sex-max-(03a/03b)
+    # либо
+    # annroom-watch-03-bj02 + annroom-watch-02-sex01-ann&eric-02-02 + Чулки + annroom-watch-02-sex-max-(03a/03b)
+    # annroom-watch-04-bj02 + annroom-watch-02-sex02-ann&eric-02-02 + Чулки + annroom-watch-02-sex-max-(04a/04b)
+    # annroom-watch-04-bj01 + annroom-watch-02-sex03-ann&eric-02-02 + чулки + annroom-watch-02-sex-max-(02a/02b)
+    scene Eric_glasses_fuck sex02 with diss4
+    Ann_10 "Ахх... Да-а-а! Боже мой, Эрик, мне так хорошо... Ещё! Трахай меня ещё! Охх... Не вздумай останавливаться! Вот так... Ммм..."
+    Eric_06 "Ухх... Ну держись, детка! Сейчас ты получишь всё, чего так хотела... Вот так тебе нравится?"
+    Ann_11 "Да! Ещё, мой милый... Ммм... Оттрахай меня, Эрик! Сильнее, не сдерживайся... Как хорошо, д-а-а..."
+    Max_02 "{m}О боже! Моя мама с такой страстью ему подчиняется! А Эрику, похоже, всё мало и он пытается засадить ей как можно глубже. И, кажется, уже еле сдерживается...{/m}"
+
+    if precum:
+        # 50% шанс, что Эрик кончит во время секса
+        # annroom-watch-02-bj02 + annroom-watch-02-sex01-ann&eric-01 + Чулки + annroom-watch-02-sex01-ann&eric-cum01 + annroom-watch-02-bj01-max-(01a/01b)
+        # annroom-watch-02-bj02 + annroom-watch-02-sex02-ann&eric-01 + Чулки + annroom-watch-02-sex02-ann&eric-cum01 + annroom-watch-02-bj01-max-(01a/01b)
+        # annroom-watch-02-bj02 + annroom-watch-02-sex03-ann&eric-01 + Чулки + annroom-watch-02-sex03-ann&eric-cum01 + annroom-watch-02-bj01-max-(01a/01b)
+        scene Eric_glasses_fuck sex01 cum with diss4
+        Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
+        Ann_07 "Фух... Эрик, это было сильно! Видимо, я была на высоте, раз ты так мощно кончил..."
+        Eric_05 "Можешь поверить мне на слово, Ань, долго жарить такую сочную и прекрасную женщину, как ты, никто не сможет!"
+
+    else:
+        # 50% шанс, что Анна начнёт делать Эрику минет
+        # annroom-watch-04-bj01 + annroom-watch-04-bj01-ann&eric-01 + Чулки + Очки + annroom-watch-04-bj01-max-(01a/01b)
+        # annroom-watch-03-bj03 + annroom-watch-03-bj03-max-(01a/01b) + annroom-watch-03-bj03-ann&eric-01 + Чулки + Очки
+        scene Eric_glasses_fuck bj01 with diss4
+        Eric_04 "Давай, детка, скорее возьми его в ротик поглубже! Охх... Ты же знаешь, что я просто улетаю, когда ты смачно сосёшь... О да!"
+        Max_04 "{m}То, что смачно, это точно! При мне, на тех уроках, она с таким жаром ему не отсасывала... Какая же ты, мам, развратница!{/m}"
+        # annroom-shot-02-max&kira-03-f + annroom-watch-04-bj01-ann&eric-02 + Чулки + Очки + Следы
+        # annroom-watch-03-bj01 + annroom-watch-03-bj03-ann&eric-02 + Чулки + Очки + Следы
+        scene Eric_glasses_fuck bj02 with diss4
+        Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
+        Ann_07 "Фух... Эрик, это было сильно! Видимо, я была на высоте, раз ты так мощно кончил..."
+        Eric_05 "Не то слово, Ань! Ты была просто бесподобна! Твой ротик - просто сказка."
+
+
+    Ann_05 "Спасибо за комплимент, дорогой, мне тоже понравилось."
+    Max_08 "{m}Да уж! А я вот зря так глазею... Пора по-тихому отсюда сваливать, пока мама ещё не сняла очки...{/m}" nointeract
+    menu:
+        "{i}тихо уйти{/i}":
+            $ renpy.end_replay()
+
+    if stockings:
+        $ added_mem_var('stockings')
+
+    if not flags.can_ask:
+        $ flags.can_ask = 1     # можно попросить чулки
+    $ eric.daily.sex = 5
+    $ spent_time += 30
+    stop music
+    jump Waiting
 
 label eric_ann_sleep:
     scene location house annroom door-night
@@ -1670,6 +1760,7 @@ label lisa_eric_sex_ed_practice:
             Max_11 "{m}Да ничего она практически не сделала! Подержала и всё... Ну да ладно, главное, что она меня не заметила, а там и глядишь, в следующий понедельник наконец подрочит спокойно, насколько сможет.{/m}" nointeract
             menu:
                 "{i}уйти{/i}":
+                    $ renpy.end_replay()
                     $ flags.lisa_sexed = 8          # состоялась первая практика (Д+)
                     $ poss['seduction'].open(30)    # Макс подсмотрел за 1-ой практикой Лизы у Эрика (Настоящая дружба)
             $ infl[lisa].add_e(30)
@@ -1809,6 +1900,7 @@ label lisa_eric_sex_ed_practice:
         Max_09 "{m}Ага, до следующего... Вот только есть у меня некоторые опасения на этот счёт. Нужно будет обязательно высказать их Эрику в следующий раз после ужина!{/m}" nointeract
         menu:
             "{i}уйти{/i}":
+                $ renpy.end_replay()
                 $ flags.lisa_sexed = 9  # состоялась вторая практика (Д+)
         $ infl[lisa].add_e(30)
         return
@@ -1941,7 +2033,7 @@ label lisa_eric_zero_practice_war:
                 "{i}быстрее смотреть, что делают Лиза и Эрик{/i}":
                     if flags.lisa_sexed == 8:
                         # попадание на укороченную версию 2-ой практики
-                        call lisa_eric_sex_ed_practice.practice_2
+                        call lisa_eric_sex_ed_practice.practice_2 from _call_lisa_eric_sex_ed_practice_practice_2
                     else:
                         # попадание на укороченную версию 1-ой практики
                         call lisa_eric_sex_ed_practice.practice_1 from _call_lisa_eric_sex_ed_practice_practice_1
@@ -1949,7 +2041,7 @@ label lisa_eric_zero_practice_war:
         "{i}проследить сразу{/i}":
             if flags.lisa_sexed == 8:
                 # попадание на полную версию 2-ой практики
-                call lisa_eric_sex_ed_practice.practice_2
+                call lisa_eric_sex_ed_practice.practice_2 from _call_lisa_eric_sex_ed_practice_practice_2_1
             else:
                 # попадание на полную версию 1-ой практики
                 call lisa_eric_sex_ed_practice.practice_1 from _call_lisa_eric_sex_ed_practice_practice_1_1

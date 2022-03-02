@@ -2503,7 +2503,7 @@ label alice_towel_after_club:
     Alice_13 "Да не смеши, Макс! Тётя Кира, конечно, пьяная, но... хотя в клубе она это вытворяла..."
 
     # after-club-bath01-max&alice-01-f + after-club-bath01-max&alice-01
-    scene BG char Alice after-club-bath 01
+    scene BG after-club-bath01
     show Alice after-club-bath 01-01
 
     Max_03 "Двигалась она классно! Ну а как ты повеселилась в клубе?"
@@ -2530,7 +2530,7 @@ label alice_towel_after_club:
             Max_01 "Хочешь, чтобы я перестал это делать?"
 
             # after-club-bath01-max&alice-01-f + after-club-bath02a-max&alice-01
-            scene BG char Alice after-club-bath 01
+            scene BG after-club-bath01
             show Alice after-club-bath 02-01a
 
             Alice_09 "Хочу... ухх... чтобы ты продолжал... Как же хорошо... Ты этому на своих курсах массажа научился?!"
@@ -2548,7 +2548,7 @@ label alice_towel_after_club:
             Max_04 "{m}Алиса так приятно постанывает... А уж мне не менее приятно трахать эту нежную киску пальцами. Может быть, она даже кончит, если я ускорюсь...{/m}"
 
             # after-club-bath01-max&alice-01-f + after-club-bath03a-max&alice-01
-            scene BG char Alice after-club-bath 01
+            scene BG after-club-bath01
             show Alice after-club-bath 03-01a
 
             Alice_11 "Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс!"
@@ -2560,7 +2560,7 @@ label alice_towel_after_club:
             Max_09 "Вот об этом я и говорю, ты очень неблагодарно себя ведёшь. Совершенно не хочешь меня порадовать в ответ..."
 
             # after-club-bath01-max&alice-01-f + after-club-bath02b-max&alice-01
-            scene BG char Alice after-club-bath 01
+            scene BG after-club-bath01
             show Alice after-club-bath 02-01b
 
             Alice_06 "Нет, я хочу... Ахх... но это ведь так... неправильно. Ммм..."

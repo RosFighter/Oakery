@@ -103,6 +103,7 @@ default cam_poses = {}
 default cam_pose_blog = []
 default cur_ch = 'max'
 default current_language_list = []
+default stockings= False
 
 init:
     $ config.keymap['hide_windows'].append('`')
@@ -181,10 +182,16 @@ define talks = {
     'm.olivia.0'    : TalkTheme('ann', _("Мам, нужно поговорить об Оливии."), 'ann_about_olivia0', "all([olivia.flags.incident > 1, lisa.flags.showdown_e == 3, ann.plan_name != 'yoga'])"),     # девчонки хотя бы раз намазывались кремом
     'm.olivia.1'    : TalkTheme('ann', _("Мам, ты подумала об Оливии?"), 'ann_about_olivia1', "all([lisa.flags.showdown_e == 4, ann.dcv.special.done, ann.plan_name != 'yoga'])"),     # первая попытка убедить Анну провалилась
 
-    'eric.money'    : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([not eric.daily.ask_money, GetRelMax('eric')[0]>3, 'money' in flags.bonus_from_eric])"),
-    'eric.wtf'      : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "all([flags.voy_stage==1, GetRelMax('eric')[0]>0])"),
-    'eric.kira0'    : TalkTheme('eric', _("Хочу рассказать тебе кое-что о Кире..."), 'Eric_talk_about_Kira_0', "all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage<1, GetRelMax('eric')[0]>0])"),
+    'eric.money'    : TalkTheme('eric', _("Мне нужны деньги..."), 'eric_needmoney', "all([not eric.daily.ask_money, get_rel_eric()[0] > 0, 'money' in flags.bonus_from_eric])"),
+    'eric.wtf'      : TalkTheme('eric', _("Эрик, мы же договорились!"), 'eric_voy_wtf', "all([flags.voy_stage == 1, get_rel_eric()[0] > 0])"),
+    # 'eric.kira0'    : TalkTheme('eric', _("Хочу рассказать тебе кое-что о Кире..."), 'Eric_talk_about_Kira_0', "all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage < 1, ger_rel_eric()[0] == 3])"),
     'eric.kira1'    : TalkTheme('eric', _("Я хотел поговорить о Кире..."), 'Eric_talk_about_Kira_1', "all([wcv.catch_Kira.stage==1, kira.dcv.battle.stage>0])"),
+
+#====================
+    'eric.lisa.b_0' : TalkTheme('eric', _("Мою премию за помощь с Лизой!"), 'Eric_bonus_for_Lisa', "all([flags.voy_stage == 8, get_rel_eric()[0] == 3])"),
+    'eric.stocking' : TalkTheme('eric', _("Чтобы на маме были не только очки для сна, но и чулки!"), 'Eric_ask_stockings', "all([flags.can_ask in [1, 2], not eric.daily.blog_we, get_rel_eric()[0] == 3])"),
+    'eric.no_stock' : TalkTheme('eric', _("Чтобы на маме были только очки для сна!"), 'Eric_ask_no_stockings', "all([flags.can_ask == 3, not eric.daily.blog_we, get_rel_eric()[0] == 3])"),
+#====================
 
     'eric.tribute'  : TalkTheme('eric', _("Вот деньги, чтобы ты не лез к Лизе..."), 'Eric_tribute', "all([eric_obligation.volume, not eric_obligation.paid, mgg.money >= eric_obligation.get_debt(), not flags.eric_wallet])"),
     'eric.nomoney'  : TalkTheme('eric', _("У меня нет денег, чтобы ты не лез к Лизе."), 'Eric_tribute_no_money', "all([eric_obligation.volume, not eric_obligation.paid, mgg.money < eric_obligation.get_debt(), not flags.eric_wallet])"),

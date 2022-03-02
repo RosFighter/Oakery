@@ -505,7 +505,7 @@ label olivia_repeat_sunscreen:
             jump .lisa_first
 
     label .olivia_first:
-        $ r0 = False#renpy.random.randint(0, 1)
+        $ r0 = renpy.random.randint(0, 1)
 
         # sun2-01 + sun2-01-max&olivia-01 + одежда Макса
         scene BG char Lisa Olivia sun2-01
@@ -739,7 +739,7 @@ label olivia_repeat_sunscreen:
     menu:
         Max_01 "Не за что. Отдыхайте, девчонки."
         "{i}уйти{/i}":
-            pass
+            $ renpy.end_replay()
 
     $ kol_cream -= 2
     if kol_cream < 3:

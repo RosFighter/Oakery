@@ -3123,7 +3123,6 @@ label massage_sunscreen:
                 Alice_05 "А ты постарайся."
                 Max_01 "Ага."
             else:
-                $ persistent.memories['massage_sunscreen.spider'] = 1
                 show Alice spider-sun 02-02bc
                 Alice_12 "Какого чёрта, Макс?! Совсем что ли извращенец? Я же твоя сестра! Блин... Прикройся хоть..."   #спрайт с прикрывающейся от Макса Алисой
                 Max_01 "Да не так-то это просто, прикрыть его."
@@ -3132,6 +3131,7 @@ label massage_sunscreen:
                 Alice_13 "Нет, ну ты точно больной... Ладно, представим, что ничего не было. Убирай эту свою штуку и не появляйся в таком виде рядом со мной!"
                 Max_02 "Хорошо. Не скучай."
                 $ renpy.end_replay()
+                $ persistent.memories['massage_sunscreen.spider'] = 1
                 $ infl[alice].add_m(10)
             jump .end
 

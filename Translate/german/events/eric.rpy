@@ -3576,14 +3576,9 @@ translate german eric_ann_fuck_glasses_sleeping_7d68e880:
 translate german strings:
 
     # game/events/eric.rpy:678
-    old "{m}тихо зайти в комнату{/m}"
-    new "{m}leise ins Zimmer gehen{/m}"
+    old "{i}тихо зайти в комнату{/i}"
+    new "{i}leise ins Zimmer gehen{/i}"
 
     # game/events/eric.rpy:694
-    old "{m}хорошо устроиться{/m}"
-    new "{m}sich gut verstehen{/m}"
-
-    # game/events/eric.rpy:733
-    old "{m}тихо уйти{/m}"
-    new "{m}leise weggehen{/m}"
-
+    old "{i}хорошо устроиться{/i}"
+    new "{i}sich gut verstehen{/i}"

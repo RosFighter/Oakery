@@ -326,6 +326,13 @@ label NewDay:
 
     $ cam_poses.clear()  # обнулим список поз для камер
 
+    if flags.voy_stage in [9, 10, 12, 13, 14] and day == flags.ae_bonus_day:
+        # наличие чулков определяется договорённстью
+        $ stockings = flags.can_ask == 3
+    else:
+        # просто рандом
+        $ stockings = random_outcome(50) # шанс, что Аня будет в чулках, 50%
+
     python:
         random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
 
@@ -361,6 +368,10 @@ label NewDay:
 
         # сброс фильма-наказания
         lisa.dcv.countdown(only=['special'])
+
+    # назначаем день бонусных потрахушек (за Лизу) первый раз
+    if flags.voy_stage in [9, 10, 12, 13, 14] and not flags.ae_bonus_day:
+        $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
 
     return
 
@@ -407,8 +418,8 @@ label NewWeek:
         $ shower_schedule = 1       # активируем новое расписаниеa
 
 
-    if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0]):
-        # отношения с Эриком по сёстрам определены
+    if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0, get_rel_eric()[0] < 0]):
+        # отношения с Эриком по сёстрам определены, вражда
         # активируем еженедельный счетчик на спаливание Киры и Макса Эриком
         $ wcv.catch_Kira.enabled = True  # теперь можно сдать Киру Эрику (при дружбе), либо Эрик может сам спалить Макса и Киру
 
@@ -425,6 +436,10 @@ label NewWeek:
         $ eric_obligation.volume = 0
         $ eric_obligation.debt = 0
         $ flags.eric_wallet = 1
+
+    # назначаем день бонусных потрахушек (за Лизу) на новую неделю
+    if flags.voy_stage in [9, 10, 12, 13, 14]:
+        $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
 
     python:
         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -1909,3 +1924,29 @@ label update_07_p2_99:
         if poss['mom-tv'].used(11):
             $ poss['mom-tv'].stages[10] = 0
             $ poss['mom-tv'].open(12)
+
+        if flags.eric_fee < 0:
+            $ flags.eric_fee = -20
+
+
+    if _version < '0.07.p2.70':
+
+        if poss['mom-tv'].used(12) and get_rel_eric()[0] < 0:
+            $ poss['mom-tv'].stages[12] = 0
+            $ poss['mom-tv'].open(14)
+        if poss['mom-tv'].used(11) and get_rel_eric()[0] < 0:
+            $ poss['mom-tv'].stages[11] = 0
+            $ poss['mom-tv'].open(12)
+        if poss['mom-tv'].used(10) and get_rel_eric()[0] == 2:
+            $ poss['mom-tv'].stages[10] = 0
+            $ poss['mom-tv'].open(11)
+
+        if poss['yoga'].used(4) and get_rel_eric()[0] < 0:
+            $ poss['yoga'].stages[4] = 0
+            $ poss['yoga'].open(6)
+        if poss['yoga'].used(3) and get_rel_eric()[0] < 0:
+            $ poss['yoga'].stages[3] = 0
+            $ poss['yoga'].open(4)
+        if poss['yoga'].used(2) and get_rel_eric()[0] == 2:
+            $ poss['yoga'].stages[2] = 0
+            $ poss['yoga'].open(3)

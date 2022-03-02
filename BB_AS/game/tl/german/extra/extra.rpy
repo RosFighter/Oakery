@@ -270,3 +270,39 @@ translate german strings:
     old "Вместо ночного плаванья"
     new "Statt Nachtschwimmen"
 
+# TODO: Translation updated at 2022-02-28 02:39
+
+translate german strings:
+
+    # game/extra/extra.rpy:60
+    old "Я спасу их от солнца"
+    new "Ich bewahre sie vor der Sonne"
+
+    # game/extra/extra.rpy:60
+    old "Всё ниже и ниже"
+    new "Tiefer und tiefer"
+
+    # game/extra/extra.rpy:60
+    old "Йога с мамой"
+    new "Yoga mit Mom"
+
+    # game/extra/extra.rpy:60
+    old "Ещё больше массажа у ТВ"
+    new "Weitere Massagen vorm TV"
+
+    # game/extra/extra.rpy:60
+    old "Не надо печалиться"
+    new "Kein Grund, traurig zu sein"
+
+    # game/extra/extra.rpy:60
+    old "Секс-шоу с первых рядов"
+    new "Eine Sex-Show aus den ersten Reihen"
+
+    # game/extra/extra.rpy:60
+    old "Стесняется трогать..."
+    new "Scheu vor Berührung..."
+
+    # game/extra/extra.rpy:60
+    old "Ещё стесняется, но трогает..."
+    new "Noch schüchtern, aber anregend..."
+

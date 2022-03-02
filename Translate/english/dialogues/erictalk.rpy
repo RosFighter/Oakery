@@ -1923,7 +1923,7 @@ translate english lessons_from_Eric_fourth_visit_63b985ee_1:
 translate english lessons_from_Eric_fourth_visit_463416a1_1:
 
     # Max_09 "{m}Хм... Всё, так всё. Пришлось, конечно, насмотреться, как мама делает Эрику минет и так, и этак, но зато было видно, до какой степени она его слушается. Но, я уже знаю, почему... А значит нужно побольше сблизится с мамой и тогда, может быть, получится уговорить её на кое-какие \"образовательные\" уроки.{/m}"
-    Max_09 "{m}Hmm... That's it, that's it. I had to watch my mother give Eric a blowjob this and that, of course, but I could see how much she listened to him. But I already know why... Which means I need to get closer to my mom and then maybe I can talk her into some "educational" lessons.{/m}"
+    Max_09 "{m}Hmm... That's it, that's it. I had to watch my mother give Eric a blowjob this and that, of course, but I could see how much she listened to him. But I already know why... Which means I need to get closer to my mom and then maybe I can talk her into some \"educational\" lessons.{/m}"
 
 # game/dialogues/erictalk.rpy:364
 translate english lessons_from_Eric_fourth_visit_c96b2882:

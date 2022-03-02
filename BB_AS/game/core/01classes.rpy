@@ -1127,6 +1127,8 @@ init python:
         eric_photo2     = 0         # получено фото Эрика в комнате Алисы
         eric_fee        = 0         # прибавка или штраф к карманным деньгам от Эрика
         voy_stage       = -1        # стадии подглядывания за АиЭ
+        ae_bonus_day    = 0         # день, в который будут потрахушки в очках для сна
+        can_ask         = 0         # можно попросить одеть Аню в чулки (на боныусные потрахушки)
 
         ladder          = 0         # стадии получения/установки стремянки
         credit          = 0         # стадии доступа к кредиту  (доработать на опережение Эрика с бельём)
@@ -1167,6 +1169,8 @@ init python:
             self.eric_photo2        = 0
             self.eric_fee           = 0
             self.voy_stage          = -1
+            self.ae_bonus_day       = 0
+            self.can_ask            = 0
             self.ladder             = 0
             self.credit             = 0
             self.bonus_from_eric    = []
@@ -1201,6 +1205,7 @@ init python:
             return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
 
     ############################################################################
+
     ############################################################################
 
     class Room():  # описание комнат в каждой локации (дом, школа, кафе и т.п.)
@@ -1532,6 +1537,8 @@ init python:
         Eric_sexed_RF   = CutEvent('20:00', (1, ), 'lisa_eric_zero_practice_war', "первая и вторая практика Лизы при Д+", "all([flags.lisa_sexed in [6, 8], get_rel_eric()[0] == 3])")
         # среда, сразу после ужина, в понедельник прошла 2-ая практика
         Eric_t_se_RF    = CutEvent('20:00', (3, ), 'Eric_talk_about_Lisa_3', "розговор с Эриком после второй практики на Д+, Эрик уступает Лизу", "all([flags.lisa_sexed == 9, get_rel_eric()[0] == 3])")
+        # Д+, Лизу отдали Максу, уже активированы потрахушки
+        Eric_stop_b_1   = CutEvent('20:00', (1, 3, 4), 'Eric_stopLisa_bonus', "Д+, Эрик останавливает потрахушки после передачи Лизы в руки Макса", "all([get_rel_eric()[0] == 3, flags.lisa_sexed = 11, flags.voy_stage in [9, 10]])")
 
         Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", 'flags.eric_wallet == 1')
         Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable='flags.eric_wallet == 3', sleep=True, extend=True)
