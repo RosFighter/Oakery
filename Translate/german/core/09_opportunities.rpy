@@ -1152,7 +1152,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Да пошёл он, этот Эрик! Я отказался от его сомнительного предложения и не собираюсь иметь с ним ничего общего. Пусть попробует только полезть, я ему покажу! Глаза мои его бы не видели... Конечно, я отказался от всего что он там мог предложить, но зато моя совесть чиста и моя семья в моих руках!"
-    new "Zum Teufel mit ihm! Ich habe sein zweifelhaftes Angebot abgelehnt und werde nicht mit ihm zusammenarbeiten. Ich werde nichts von seinem Angebot bekommen, aber mein Gewissen ist rein und meine Familie ist in meinen Händen!"
+    new "Scheiß auf ihn, diesen Eric! Ich habe sein zweifelhaftes Angebot abgelehnt und will nichts mit ihm zu tun haben. Wenn er versucht, durchzukommen, werde ich es ihm schon zeigen! Als ob ich ihn nicht gesehen hätte... Natürlich habe ich alles abgelehnt, was er mir angeboten hat, aber ich habe ein reines Gewissen und meine Familie gehört zu mir!"
 
     # game/core/09_opportunities.rpy:4
     old "Любимая тётя"

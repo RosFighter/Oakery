@@ -7474,7 +7474,7 @@ translate german lisa_about_ae_sexed1_07023c28:
 translate german lisa_about_ae_sexed2_8e2a71cd:
 
     # Lisa_09 "Да так, контрольная работа очередная. Но я вроде большую часть там решила. Надеюсь, правильно..."
-    Lisa_09 "Es ist nur ein weiterer Test. Aber ich denke, ich habe das meiste davon gelöst. Ich hoffe, ich habe alles richtig verstanden..."
+    Lisa_09 "Es war nur ein weiterer Test. Aber ich denke, ich habe das meiste davon begriffen. Ich hoffe, ich habe alles richtig verstanden..."
 
 # game/dialogues/lisatalk.rpy:3980
 translate german lisa_about_ae_sexed2_1279d157:
@@ -9744,7 +9744,7 @@ translate german strings:
 
     # game/dialogues/lisatalk.rpy:3999
     old "А то ты не знаешь, как она выглядит..."
-    new "Weil du nicht weißt, wie sie aussieht..."
+    new "Weil du nicht weißt, wie er aussieht..."
 
     # game/dialogues/lisatalk.rpy:3999
     old "Да легко! Ты показываешь грудь, я член!"
