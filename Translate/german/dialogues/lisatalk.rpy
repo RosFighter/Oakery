@@ -10430,7 +10430,7 @@ translate german take_to_school_f7d87922:
 translate german take_to_school_bb885618_3:
 
     # Max_01 "А я буду. Успехов тебе!"
-    Max_01 "Das werde ich nicht. Viel Glück!"
+    Max_01 "Das werde ich nicht. Viel Spaß!"
 
 translate german strings:
 
