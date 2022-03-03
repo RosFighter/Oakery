@@ -1372,7 +1372,7 @@ translate german lisa_horor_movie_0_6c701e39:
 translate german lisa_horor_movie_0_dfc5290b:
 
     # Max_09 "Ну, ты не одна в комнате, так что бояться нечего. Всех монстров я возьму на себя!"
-    Max_09 "Nun, du bist nicht allein im Raum, also gibt es nichts, wovor du Angst haben musst. Ich kümmere mich um alle Monster!"
+    Max_09 "Nun, du bist nicht allein im Zimmer, also gibt es nichts, wovor du Angst haben musst. Ich kümmere mich um alle Monster!"
 
 # game/events/lisa.rpy:1112
 translate german lisa_horor_movie_0_5bde3f33:
