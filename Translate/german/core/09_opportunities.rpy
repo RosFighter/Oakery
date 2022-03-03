@@ -2330,3 +2330,10 @@ translate german strings:
     old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, можно будет попробовать уговорить её на новые интимные уроки... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
     new "Wenn Mom sich erst einmal daran gewöhnt hat, dass sie beim Yoga an ihrem Heiligtum berührt wird, kannst ich versuchen, sie zu intimeren Kursen zu überreden... Ich habe Mom erfolgreich beim Yoga geholfen: [ann.flags.truehelp] von 5"
 
+# TODO: Translation updated at 2022-03-03 19:24
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях..."
+    new "Endlich konnte ich mit Mama und Eric zu einer Pornoshow kommen! Tante Kira muss sich jetzt aber wegen meiner Laune vor Eric zurücklehnen... Zwischen den Shows wird es notwendig sein, einen Weg zu finden, Kira mit Eric beizutreten. Vielleicht gelingt es sogar, an ihnen teilzunehmen... Unterhaltungen..."

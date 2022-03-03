@@ -1108,19 +1108,19 @@ translate german lisa_romantic_movie_r_a517a1f8:
 translate german lisa_romantic_movie_r_ef4f9485:
 
     # Lisa_10 "Макс, у тебя опять стоит! Ну сколько можно?"
-    Lisa_10 "Max, du stehst schon wieder! Wie oft?"
+    Lisa_10 "Max, du bist schon wieder hart! Warum ist das so oft?"
 
 # game/events/lisa.rpy:1015
 translate german lisa_romantic_movie_r_8309f28f:
 
     # Max_01 "Фильмы такие! Что тут поделать..."
-    Max_01 "Filme sind so! Was kann man tun..."
+    Max_01 "Solche Filme sind so! Was soll ich da machen..."
 
 # game/events/lisa.rpy:1016
 translate german lisa_romantic_movie_r_b7875281:
 
     # Lisa_01 "А я знаю что! Мы будем смотреть что-нибудь такое, на что ты не будешь реагировать так, как сейчас."
-    Lisa_01 "Das war's! Wir werden uns etwas ansehen, von dem ich garantieren kann, dass du keinen Ständer bekommst."
+    Lisa_01 "Das war's! Wir werden uns etwas ansehen, beim dem ich mir ziemlich sicher bin, dass du keinen Ständer bekommst."
 
 # game/events/lisa.rpy:1017
 translate german lisa_romantic_movie_r_7c8eec32:
@@ -1150,13 +1150,13 @@ translate german lisa_romantic_movie_r_0a46ff77:
 translate german lisa_romantic_movie_r_1ed9f3b6:
 
     # Max_16 "Не дождёшься! Считай, что вызов я принял! Ещё увидим, кто будет визжать..."
-    Max_16 "Eigentlich kann ich es nicht erwarten! Sieh es als Herausforderung! Wir werden sehen, wer quiekt..."
+    Max_16 "Eigentlich kann ich es kaum erwarten! Sieh es als Herausforderung! Wir werden sehen, wer hier quiekt..."
 
 # game/events/lisa.rpy:1022
 translate german lisa_romantic_movie_r_eeef1b80:
 
     # Lisa_02 "Да, да... Не удивлюсь, если подглядывания за мной... прекратятся."
-    Lisa_02 "Ja, ja... Es würde mich nicht wundern, wenn das Piepsen... Hör auf."
+    Lisa_02 "Ja, ja... Es würde mich nicht überraschen, wenn das Ausspionieren von mir... aufhören würde."
 
 # game/events/lisa.rpy:1023
 translate german lisa_romantic_movie_r_d629e652:
@@ -2805,3 +2805,12 @@ translate german lisa_dressed_stay_in_room_4d0209ac:
 
     # Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
     Lisa_09 "Max, ich muss mich umziehen. Würden Du so freundlich sein, den Raum für einen Moment zu verlassen..." nointeract
+
+# TODO: Translation updated at 2022-03-03 01:42
+
+# game/events/lisa.rpy:463
+translate german lisa_dressed_stay_in_room_db51f185:
+
+    # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
+    Max_09 "{m}Ich habe zu oft versucht, Lisa anzuschauen, wie sie sich umzieht. Es lohnt sich nicht mehr, es heute zu versuchen.{/m}"
+

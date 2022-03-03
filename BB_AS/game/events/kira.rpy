@@ -490,7 +490,7 @@ label kira_bath:
         # bath-mass-02 + catch-bath-01-max-kira-eric-03
         scene BG char Kira bath-mass-02
         show Eric catch bath 03
-        if GetRelMax('eric')[0] == 3 and kira.dcv.battle.stage == 1:
+        if get_rel_eric()[0] == 3 and kira.dcv.battle.stage == 1:
             # при дружбе с Эриком (если сдал Киру до этого)
             Max_08 "Ты правда собираешься по ночам отсасывать Эрику?!"
             Kira_13 "Похоже, придётся... Иначе, ты отправишься прямиком в летний лагерь, а я... Меня, скорее всего, тоже выгонят и боюсь отношения с твоей мамой у меня будут испорчены навсегда... А я этого очень не хочу..."

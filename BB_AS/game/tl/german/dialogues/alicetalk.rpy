@@ -1036,13 +1036,13 @@ translate german alice_talk_tv_sober_mass_07156cb0:
 translate german alice_talk_tv_sober_mass_1f6c1c31:
 
     # Alice_17 "Ещё бы! Должно быть, это очень приятно, делать массаж ног, когда тебе в ответ дрочат. Пнуть бы тебя за это сам знаешь куда!"
-    Alice_17 "Na klar! Es muss wirklich schön sein, eine Fußmassage zu bekommen, wenn man im Gegenzug einen runtergeholt bekommt. Ich sollte dich dafür treten, du weißt schon wohin!"
+    Alice_17 "Na klar! Es muss wirklich toll sein, eine Fußmassage zu geben, wenn man im Gegenzug einen runtergeholt bekommt. Ich sollte dich dafür treten, du weißt schon wohin!"
 
 # game/dialogues/alicetalk.rpy:1016
 translate german alice_talk_tv_sober_mass_1d198e96:
 
     # Max_07 "Алиса, зачем этого стыдиться? Тебе же понравилось..."
-    Max_07 "Alice, warum sollte man sich dafür schämen? Du hast es genossen..."
+    Max_07 "Alice, warum solltest du dich dafür schämen? Du hast es doch genossen..."
 
 # game/dialogues/alicetalk.rpy:1017
 translate german alice_talk_tv_sober_mass_a783939d:

@@ -1008,7 +1008,7 @@ translate german ann_dressed_moment2_a9e5c75c:
 translate german ann_dressed_moment2_babcea3a:
 
     # Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
-    Ann_15 "MMax! Was ist los?! {p=3}{nw}"
+    Ann_15 "Max! Was soll das werden?! {p=3}{nw}"
 
 # game/events/ann.rpy:399
 translate german ann_dressed_moment2_aa9214ef:
@@ -1020,7 +1020,7 @@ translate german ann_dressed_moment2_aa9214ef:
 translate german ann_dressed_moment2_c391d1e4:
 
     # Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
-    Ann_12 "Hör auf, unangemeldet ins Zimmer zu platzen! Oder liegt ein Notfall vor?" nointeract
+    Ann_12 "Hör auf, unangemeldet ins Zimmer zu platzen! Liegt ein Notfall vor?" nointeract
 
 # game/events/ann.rpy:417
 translate german ann_dressed_moment1_1f19d7dd:
@@ -1044,7 +1044,7 @@ translate german ann_dressed_lvl_1_3e8f5598:
 translate german ann_dressed_lvl_1_c8682e5b:
 
     # Max_00 "Конечно, мам!"
-    Max_00 "Alles klar, Mom."
+    Max_00 "Alles klar, Mom!"
 
 # game/events/ann.rpy:429
 translate german ann_dressed_lvl_1_a94cbdaa:

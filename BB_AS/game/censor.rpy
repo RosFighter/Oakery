@@ -131,6 +131,7 @@ init -100 python:
         ("mutter"               , "vermieterin"),
         ("moom"                 , "vermieterin"),
         ("mo-om"                , "vermieterin"),
+        ("mo'om"                , "vermieterin"),
         ("mo-o-om"              , "vermieterin"),
         ("mom"                  , "vermieterin"),
         ("moms"                 , "vermieterins"),
@@ -196,7 +197,7 @@ init python:
 
         if not len(replace_dict):
             return st0
-            
+
         rc = re.compile('\\b|\\b'.join(map(re.escape, replace_dict)), re.U+re.I)
         def transplate(match):
             key = match.group(0).lower()

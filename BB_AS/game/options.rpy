@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.08.0.00"
+define config.version = "0.08.0.03"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -173,12 +173,13 @@ default preferences.desktop_rollback_side = "disable"   # сторона отк�
 
 init python:
     def json_callback(d):
-        d["day"]    = day
-        d["tm"]     = tm
-        d["wd"]     = weekdays[weekday][0]
-        d["desc"]   = save_name
-        d["auto"]   = str(number_autosave)
-        d["quick"]  = str(number_quicksave)
+        d['day']    = day
+        d['tm']     = tm
+        d['wd']     = weekdays[weekday][0]
+        d['desc']   = save_name
+        d['auto']   = str(number_autosave)
+        d['quick']  = str(number_quicksave)
+        d['ver']    = _version
 
     config.default_fullscreen = False
     config.save_json_callbacks.append(json_callback)
@@ -231,7 +232,7 @@ init python:
 
     build.archive("img_fix", "all")
     # убрать перед сборкой!
-    # build.classify('game/images/interface/poss/boss/*.webp', 'img_fix')
+    build.classify('game/images/interface/poss/control/ep08.webp', 'img_fix')
     # build.classify('game/images/interface/poss/mom-tv/ep06.webp', 'img_fix')
     # build.classify('game/images/interface/poss/yoga/ep04.webp', 'img_fix')
     # build.classify('game/images/interface/poss/mentor/ep13a.webp', 'img_fix')

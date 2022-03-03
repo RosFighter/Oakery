@@ -259,7 +259,7 @@ screen choice(items, rand=None):
 
                             $ sz = -5
 
-                            $ lim, vis, col, txt, step = get_lim_col_step(i)
+                            $ lim, vis, col, txt, step, bl = get_lim_col_step(i)
 
                             if (lim == 100 and vis == 100) or all([lim < 100, i.args[1] > lim * 1.2, not _in_replay]):
                                 button action i.action background None:
@@ -270,17 +270,17 @@ screen choice(items, rand=None):
                                         xpos 30
                                         sensitive not i.kwargs.get("disabled", False)
                                     foreground "interface marker"
-                                key str(yy) action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]
+                                key str(yy) action [Skill_Outsome(i.args[0], i.args[1], lim, step, bl), i.action]
                             else:
                                 button action i.action background None:
                                     xpadding 0 ypadding 0 xmargin 0 ymargin 0
                                     textbutton _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}"):
-                                        action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]
+                                        action [Skill_Outsome(i.args[0], i.args[1], lim, step, bl), i.action]
                                         yalign .0
                                         xpos 30
                                         sensitive not i.kwargs.get("disabled", False)
                                     foreground "interface marker"
-                                key str(yy) action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]
+                                key str(yy) action [Skill_Outsome(i.args[0], i.args[1], lim, step, bl), i.action]
                         else:
                             button action i.action background None:
                                 xpadding 0 ypadding 0 xmargin 0 ymargin 0
@@ -294,8 +294,8 @@ screen choice(items, rand=None):
             vbar value YScrollValue("vp_choice") style "choice_vscroll"
     if len(items) == 1:
         if len(items[0].args)>1:
-            $ lim, vis, col, txt, step = get_lim_col_step(items[0])
-            key "K_SPACE" action [Skill_Outsome(items[0].args[0], items[0].args[1], lim, step), items[0].action]
+            $ lim, vis, col, txt, step, bl = get_lim_col_step(items[0])
+            key "K_SPACE" action [Skill_Outsome(items[0].args[0], items[0].args[1], lim, step, bl), items[0].action]
         else:
             key "K_SPACE" action items[0].action
 
@@ -791,22 +791,23 @@ screen file_slots(title):
 
                             $ slot = i + 1
 
-                            $ load_day      = FileJson(slot, "day")
-                            $ load_tm       = FileJson(slot, "tm")
-                            $ load_wd       = FileJson(slot, "wd")
+                            $ load_day      = FileJson(slot, 'day')
+                            $ load_tm       = FileJson(slot, 'tm')
+                            $ load_wd       = FileJson(slot, 'wd')
+                            $ load_ver      = FileJson(slot, 'ver')
                             if load_day is None:
                                 $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
                             else:
                                 if persistent._file_page == "auto":
-                                    $ s_description = FileJson(slot, "auto")
+                                    $ s_description = FileJson(slot, 'auto')
                                     if s_description:
                                         $ s_description = "AUTO-"+str(s_description)
                                 elif persistent._file_page == "quick":
-                                    $ s_description = FileJson(slot, "quick")
+                                    $ s_description = FileJson(slot, 'quick')
                                     if s_description:
                                         $ s_description = "QUICK-"+str(s_description)
                                 else:
-                                    $ s_description = FileJson(slot, "desc")
+                                    $ s_description = FileJson(slot, 'desc')
 
                             button:
                                 if title == "save":
@@ -827,6 +828,8 @@ screen file_slots(title):
                                     vbox xalign 0.95:
                                         text "[load_wd!t], [load_tm]" style "ext_text"
                                         text _("ДЕНЬ [load_day]") style "ext_text"
+                                if load_ver:
+                                    text load_ver xalign 0.05 style "ext_text"
 
 
                                 key "save_delete" action FileDelete(slot)
@@ -1791,17 +1794,17 @@ screen choice(items, rand=None):
 
                             $ sz = -3
 
-                            $ lim, vis, col, txt, step = get_lim_col_step(i)
+                            $ lim, vis, col, txt, step, bl = get_lim_col_step(i)
 
                             if (lim == 100 and vis == 100) or (lim < 100 and i.args[1] > lim * 1.2):
-                                button action [Skill_Outsome(i.args[0], i.args[1], lim, step), i.action]:
+                                button action [Skill_Outsome(i.args[0], i.args[1], lim, step, bl), i.action]:
                                     text i.caption style "choice_button_text"
                                     left_padding 50 right_padding 35
                                     sensitive not i.kwargs.get("disabled", False)
                                     foreground "interface marker"
                                     # id 'vbb'+str(yy)
                             else:
-                                button action [Skill_Outsome(i.args[0], vis, lim, step), i.action]:
+                                button action [Skill_Outsome(i.args[0], vis, lim, step, bl), i.action]:
                                     text _("[txt] \n{i}{size=[sz]}{color=[col]}([skill!t]шанс: [vis]%){/color}{/size}{/i}") style "choice_button_text"
                                     left_padding 50 right_padding 35
                                     sensitive not i.kwargs.get("disabled", False)

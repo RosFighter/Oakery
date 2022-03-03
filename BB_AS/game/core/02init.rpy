@@ -188,7 +188,7 @@ define talks = {
     'eric.kira1'    : TalkTheme('eric', _("Я хотел поговорить о Кире..."), 'Eric_talk_about_Kira_1', "all([wcv.catch_Kira.stage==1, kira.dcv.battle.stage>0])"),
 
 #====================
-    'eric.lisa.b_0' : TalkTheme('eric', _("Мою премию за помощь с Лизой!"), 'Eric_bonus_for_Lisa', "all([flags.voy_stage == 8, get_rel_eric()[0] == 3])"),
+    'eric.lisa.b_0' : TalkTheme('eric', _("Мою премию за помощь с Лизой!"), 'Eric_bonus_for_Lisa', "all([flags.voy_stage == 8, get_rel_eric()[0] == 3, not kira.dcv.battle.stage])"),
     'eric.stocking' : TalkTheme('eric', _("Чтобы на маме были не только очки для сна, но и чулки!"), 'Eric_ask_stockings', "all([flags.can_ask in [1, 2], not eric.daily.blog_we, get_rel_eric()[0] == 3])"),
     'eric.no_stock' : TalkTheme('eric', _("Чтобы на маме были только очки для сна!"), 'Eric_ask_no_stockings', "all([flags.can_ask == 3, not eric.daily.blog_we, get_rel_eric()[0] == 3])"),
 #====================

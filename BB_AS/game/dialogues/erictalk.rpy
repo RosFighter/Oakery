@@ -982,18 +982,21 @@ label Eric_bonus_for_Lisa:
 
     if flags.lisa_sexed > 10:
         # Макс посетил Анну и Эрика в 4-ый раз уже после того, как Эрик отдал ему Лизу
+        if not poss['control'].used(9):
+            $ poss['control'].open(8)
         $ kira.dcv.battle.stage = 1 # добровольная передача Киры
         $ wcv.catch_Kira.set_lost(0)
+        $ wcv.catch_Kira.enabled = True
         Max_01 "Ладно, договорились. Ты натыкаешься на нас с Кирой в ванне, я за это получаю шоу с мамой, а ты Киру." nointeract
     else:
         # Макс посетил Анну и Эрика в 4-ый раз раньше, чем Эрик отдал ему Лизу
-        $ flags.voy_stage == 9  # потрахушки ДО передачи Лизы Максу
+        $ flags.voy_stage = 9  # потрахушки ДО передачи Лизы Максу
         Max_01 "Ладно, договорились." nointeract
     menu:
         "{i}уйти{/i}":
             pass
     $ spent_time += 20
-    return
+    jump Waiting
 
 
 label Eric_stopLisa_bonus:
@@ -1045,6 +1048,7 @@ label Eric_stopLisa_bonus:
     $ flags.ae_bonus_day = 0    # день обнулён
     $ kira.dcv.battle.stage = 1 # добровольная передача Киры
     $ wcv.catch_Kira.set_lost(0)
+    $ wcv.catch_Kira.enabled = True
     $ poss['control'].open(11)
     $ spent_time = 20
     jump Waiting

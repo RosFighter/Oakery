@@ -458,8 +458,11 @@ label lisa_dressed:
                         jump .wait_in_room
                     "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth*2, 80, lisa.daily.in_room+1) if lisa.daily.in_room < 2 and not lisa.daily.gotcha:
                         call .try_to_peek from _call_lisa_dressed_try_to_peek
-                    "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth, 80, lisa.daily.in_room+1) if lisa.daily.in_room == 2 and not lisa.daily.gotcha:
-                        call .try_to_peek from _call_lisa_dressed_try_to_peek_1
+                    "{i}попробовать подглядеть{/i}" ('hide', mgg.stealth, 80, lisa.daily.in_room+1, True) if lisa.daily.in_room == 2 and not lisa.daily.gotcha:
+                        # call .try_to_peek from _call_lisa_dressed_try_to_peek_1
+                        Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
+                        $ lisa.daily.gotcha = 1
+                        jump .wait_in_room
 
             "{i}подождать за дверью, пока Лиза переоденется{/i}":
                 jump .wait_outside

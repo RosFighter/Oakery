@@ -539,11 +539,14 @@ label eric_ann_fucking:
             pass
         "{i}зайти в спальню{/i}" if 3 < flags.voy_stage < 8 and GetRelMax('eric')[0] > 3:
             jump lessons_from_Eric
-        "{i}заглянуть в окно{/i}" if flags.voy_stage == 8:
+        "{i}заглянуть в окно{/i}" if flags.voy_stage in [8, 11]:
             pass
         "{i}заглянуть в окно{/i}" if flags.voy_stage in [9, 10, 12, 13, 14] and weekday == flags.ae_bonus_day:
             # бонус с потрахушками за Лизу (или Киру) активирован, день совпадает с назначенным
             jump eric_ann_fuck_glasses_sleeping
+        "{i}заглянуть в окно{/i}" if flags.voy_stage in [9, 10, 12, 13, 14] and weekday != flags.ae_bonus_day:
+            # бонус с потрахушками за Лизу (или Киру) активирован, день НЕ совпадает с назначенным
+            pass
         "{i}уйти{/i}":
             jump AfterWaiting
 
@@ -751,6 +754,8 @@ label eric_ann_fuck_glasses_sleeping:
 
     if not flags.can_ask:
         $ flags.can_ask = 1     # можно попросить чулки
+        if flags.voy_stage > 11:
+            $ poss['control'].open(14)
     $ eric.daily.sex = 5
     $ spent_time += 30
     stop music

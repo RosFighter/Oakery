@@ -1504,7 +1504,7 @@ init python:
 
         MorningWood     = CutEvent('06:30', label='MorningWood', variable='day == 2', sleep=True, desc='утренний стояк', extend=True)
         MorningWood1    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont', desc='утренний стояк продолжение', variable="all([day>=7, dcv.mw.done, dcv.mw.stage%2==0, 0<poss['seduction'].st()<4])", sleep=True, cut=True)
-        MorningWood2    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([flags.eric_wallet < 2, poss['seduction'].st()>11, dcv.mw.done, lisa.GetMood()[0]>2])", sleep=True, cut=True)
+        MorningWood2    = CutEvent('06:30', (1, 2, 4, 5, 6), label='MorningWoodCont2', desc='периодический утренний стояк', variable="all([flags.eric_wallet < 2, poss['seduction'].st()>11, dcv.mw.done, lisa.GetMood()[0]>2, lisa.dcv.seduce.stage < 6])", sleep=True, cut=True)
 
         MeetingEric     = CutEvent('18:50', (6, ), 'MeetingEric', 'знакомство с Эриком', 'day == 4', cut=True)
         Eric_af_dinner  = CutEvent('20:00', (6, ), 'Eric_talk_afterdinner', 'разговор с Эриком после субботнего ужина', 'day<12 or flags.dinner==11')
@@ -1538,7 +1538,7 @@ init python:
         # среда, сразу после ужина, в понедельник прошла 2-ая практика
         Eric_t_se_RF    = CutEvent('20:00', (3, ), 'Eric_talk_about_Lisa_3', "розговор с Эриком после второй практики на Д+, Эрик уступает Лизу", "all([flags.lisa_sexed == 9, get_rel_eric()[0] == 3])")
         # Д+, Лизу отдали Максу, уже активированы потрахушки
-        Eric_stop_b_1   = CutEvent('20:00', (1, 3, 4), 'Eric_stopLisa_bonus', "Д+, Эрик останавливает потрахушки после передачи Лизы в руки Макса", "all([get_rel_eric()[0] == 3, flags.lisa_sexed = 11, flags.voy_stage in [9, 10]])")
+        Eric_stop_b_1   = CutEvent('20:00', (1, 3, 4), 'Eric_stopLisa_bonus', "Д+, Эрик останавливает потрахушки после передачи Лизы в руки Макса", "all([get_rel_eric()[0] == 3, flags.lisa_sexed == 11, flags.voy_stage in [9, 10]])")
 
         Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", 'flags.eric_wallet == 1')
         Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable='flags.eric_wallet == 3', sleep=True, extend=True)
