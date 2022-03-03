@@ -156,15 +156,15 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Талантливый массажист\"..."
-    new "Vielleicht ergibt sich die Lösung dieses Problems von selbst. Es wird Fortschritte bei der Möglichkeit \"talentierter Masseur\" benötigt..."
+    new "Vielleicht ergibt sich die Lösung dieses Problems von selbst. Es wird weiterer Fortschritt bei der Möglichkeit \"talentierter Masseur\" benötigt..."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new "Vielleicht ergibt sich die Lösung dieses Problems von selbst. Es wird Fortschritte \"freche Schenkel\" benötigt..."
+    new "Vielleicht ergibt sich die Lösung dieses Problems von selbst. Es wird Fortschritte bei der Möglichkeit \"freche Schenkel\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Возможно, решение этой проблемы придёт само собой. Потребуются успехи в возможности \"Школьница\"..."
-    new "Vielleicht ergibt sich eine Lösung für dieses Problem von selbst. Es wird Fortschritte bei der Gelegenheit \"Schulmädchen\" brauchen..."
+    new "Vielleicht ergibt sich eine Lösung für dieses Problem von selbst. Es wird Fortschritte bei der Möglichkeit \"Schulmädchen\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Пока я делал Лизе массаж шеи и плеч, у меня возникла отличная идея! Почему бы не решить мою проблему со стояком, когда мы с мамой смотрим вместе ТВ, предложив ей массаж? Стоит попробовать... И ей будет приятно, и мне меньше проблем. Главное, чтобы маме понравился массаж!"
@@ -696,7 +696,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "С Лизой стоит больше сблизиться, чтобы она больше доверяла мне и тому, чему я буду её учить. Потребуются успехи в возможности \"Школьница\"..."
-    new "Es lohnt sich, näher an Lisa heranzukommen, damit sie mir und dem, was ich ihr beibringen werde, mehr vertraut. Es wird einige Fortschritte in der \"Schulmädchen-Gelegenheit\" brauchen..."
+    new "Es lohnt sich, näher an Lisa heranzukommen, damit sie mir und dem, was ich ihr beibringen werde, mehr vertraut. Es wird einige Fortschritte in der Möglichkeit \"Schulmädchen\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Итак, Лиза поинтересовалась, чему же я собираюсь её учить. И сразу же поставила меня в глупую ситуацию. Я вроде бы должен её учить, но сам не умею даже целоваться! Нужно срочно найти кого-то, кто бы мне помог в этом... Да, легко сказать..."
@@ -708,7 +708,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Ещё есть небольшая надежда на тётю Киру. Но не стоит к ней вот так сразу лезть с вопросами о поцелуях. Потребуются успехи в возможности \"Любимая тётя\"..."
-    new "Es gibt noch ein wenig Hoffnung für Tante Kira. Aber ich sollte sie nicht so über das Küssen ausfragen. Es wird einige Fortschritte bei der \"Lieblingstante-Gelegenheit\" brauchen..."
+    new "Es gibt noch ein wenig Hoffnung für Tante Kira. Aber ich sollte sie nicht so über das Küssen ausfragen. Es wird einige Fortschritte bei der Möglichkeit \"Lieblingstante\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Ещё есть небольшая надежда на тётю Киру. Она женщина интересная и открытая. Может, что-то дельное и посоветует..."
@@ -908,7 +908,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Ещё не знаю, достаточно ли я сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании, но лучше бы мне подстраховаться и добиться успехов в возможности \"Кнут или пряник?\"..."
-    new "Ich weiß nicht, ob ich Lisa schon nahe genug gekommen bin, damit sie und Olivia mit meiner Gesellschaft an einem Freitag-Samstag-Abend einverstanden sind, aber ich sollte mich besser zurückhalten und die \"Zuckerbrot oder Peitsche?-Gelegenheit\" wahrnehmen."
+    new "Ich weiß nicht, ob ich Lisa schon nahe genug gekommen bin, damit sie und Olivia mit meiner Gesellschaft an einem Freitag-Samstag-Abend einverstanden sind, aber ich sollte mich besser zurückhalten bei der Möglichkeit \"Zuckerbrot oder Peitsche?\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Думаю, я уже достаточно сблизился с Лизой, чтобы в ночь с пятницы на субботу они с Оливией были не против моей компании. Осталось только дождаться этого..."
@@ -924,7 +924,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Кнут или пряник?\"..."
-    new "Es wird einige Fortschritte bei der \"Zuckerbrot oder Peitsche?-Gelegenheit\" brauchen..."
+    new "Es wird einiger Fortschritt bei der Möglichkeit \"Zuckerbrot oder Peitsche?\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Ухх... Как же классно оказаться с такими прекрасными девчонками на одном диване! Оливия совершенно голая... Я совершенно голый... Только одна Лиза ещё стесняется... Но думаю, со временем, если такие посиделки станут традицией, она привыкнет и более того, сама начнёт раздеваться! Мечтать не вредно. Главное, не давить на неё, пусть привыкает... Не исключено, что втайне, ей очень нравится всё, что происходит!"
@@ -1012,11 +1012,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Талантливый массажист\"..."
-    new "Es wird Fortschritte in der \"Talentierter Masseur\"-Gelegenheit nötig sein..."
+    new "Es wird Fortschritt in der Möglichkeit \"Talentierter Masseur\" nötig sein..."
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Шаловливые ножки\"..."
-    new "Es wird ein paar Fortschritte bei der Gelegenheit der \"freche Schenkel\" brauchen..."
+    new "Es wird ein paar Fortschritte bei der Möglichkeit \"freche Schenkel\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит почаще уговаривать Лизу показать грудь. Лучше всего, когда она в очень хорошем настроении..."
@@ -1188,11 +1188,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Я не смогу подсмотреть за тётей Кирой в ванной комнате. Нужны успехи в возможности \"Скрытые камеры\"..."
-    new "Ich kann Tante Kira nicht im Bad ausspionieren. Ich brauche Fortschritte bei der Gelegenheit \"Versteckte Kameras\"..."
+    new "Ich kann Tante Kira nicht im Bad ausspionieren. Ich brauche Fortschritte bei der Möglichkeit \"Versteckte Kameras\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Школьница\"..."
-    new "Es wird einige Fortschritte bei der \"Schulmädchen-Gelegenheit\" brauchen..."
+    new "Es wird einigen Fortschritt bei der Möglichkeit \"Schulmädchen\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Стоит подсмотреть со стремянки, как тётя Кира принимает ванну. Вдруг удастся увидеть что-то интересное..."
@@ -1448,7 +1448,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Чтобы нам с Лизой было более комфортно с друг другом, понадобятся успехи в возможности \"Одноклассник\"..."
-    new "Damit Lisa und ich uns wohler fühlen, brauchen wir Fortschritte bei der \"Klassenkamerad-Gelegenheit\"..."
+    new "Damit Lisa und ich uns wohler fühlen, brauchen wir Fortschritte bei der Möglichkeit \"Klassenkamerad\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно чаще защищать Лизу от маминых наказаний. Это только на пользу нашим отношениям..."
@@ -1936,7 +1936,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Компромат на Эрика\"..."
-    new "Es sind Fortschritte bei der \"Eric im Dreck\"-Gelegenheit nötig..."
+    new "Es sind Fortschritte bei der Möglichkeit \"Eric im Dreck\" brauchen..."
 
     # game/core/09_opportunities.rpy:4
     old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик предупредил меня, что так просто он это не оставит и у меня будут огромные проблемы. Ну посмотрим, что такого он может сделать..."
