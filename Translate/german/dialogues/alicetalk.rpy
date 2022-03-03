@@ -724,7 +724,7 @@ translate german alice_nopants_massage_not_nopants_9a2648a0:
 translate german alice_nopants_massage_not_nopants_1aaeec10:
 
     # Max_02 "Не будет."
-    Max_02 "Wirst du nicht."
+    Max_02 "Das passiert nicht."
 
 # game/dialogues/alicetalk.rpy:727
 translate german alice_nopants_massage_not_nopants_43ffc4e7:
@@ -1150,7 +1150,7 @@ translate german alice_talk_tv_sober_mass_936e0278:
 translate german alice_talk_tv_sober_mass_166375f1:
 
     # Max_01 "Не будет."
-    Max_01 "Wirst du nicht."
+    Max_01 "Das passiert nicht."
 
 # game/dialogues/alicetalk.rpy:1050
 translate german alice_talk_tv_sober_mass_594dae48:
