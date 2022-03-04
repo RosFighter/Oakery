@@ -2336,4 +2336,4 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях..."
-    new "Endlich konnte ich mit Mama und Eric zu einer Pornoshow kommen! Tante Kira muss sich jetzt aber wegen meiner Laune vor Eric zurücklehnen... Zwischen den Shows wird es notwendig sein, einen Weg zu finden, Kira mit Eric beizutreten. Vielleicht gelingt es sogar, an ihnen teilzunehmen... Unterhaltungen..."
+    new "Endlich - Ich darf mit Mom und Eric eine Porno-Show erleben! Tante Kira jedoch würde sich nun vor Eric für meine Wünsche verantworten müssen... Zwischen den Veranstaltungen muss ein Weg gefunden werden, um Kira und Eric zu treffen. Vielleicht sogar bei ihren... Unterhaltungen..."
