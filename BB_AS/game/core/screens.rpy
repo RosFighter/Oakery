@@ -1087,7 +1087,7 @@ screen menu_opportunity():
                 $ Blocked.append(ps)
             else:
                 $ NotStarted.append(ps)
-        elif last_st in poss_dict[ps][2]:   # временная концовка
+        elif num_in_list(last_st, poss_dict[ps][2]): #last_st in poss_dict[ps][2]:   # временная концовка
             $ tmpComplete.append(ps)
         elif last_st in poss_dict[ps][3]:   # хорошая концовка
             $ Complete.append(ps)

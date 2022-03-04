@@ -2226,7 +2226,7 @@ translate german strings:
 
     # game/dialogues/anntalk.rpy:779
     old "Продолжай, мам. Я весь во внимании..."
-    new "Mach weiter, Mom. Ich bin ganz Ohr..."
+    new "Mach weiter, Mom. Ich bin sehr interessiert..."
 
     # game/dialogues/anntalk.rpy:871
     old "..."
@@ -2234,7 +2234,7 @@ translate german strings:
 
     # game/dialogues/anntalk.rpy:894
     old "Давай ещё?! Ты такая классная!"
-    new "Wie bitte?! Du bist so cool!"
+    new "Wie bitte?! Du bist so wahnsinnig toll!"
 
     # game/dialogues/anntalk.rpy:894
     old "Конечно, мам! Не скучай..."

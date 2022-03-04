@@ -2805,3 +2805,12 @@ translate english lisa_dressed_stay_in_room_4d0209ac:
 
     # Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
     Lisa_09 "Max, I need to change. Would you be so kind as to leave the room for a moment?" nointeract
+
+# TODO: Translation updated at 2022-03-03 01:43
+
+# game/events/lisa.rpy:463
+translate english lisa_dressed_stay_in_room_db51f185:
+
+    # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
+    Max_09 "{m}I've tried too many times to spy on Lisa changing clothes. It's not worth trying to do it anymore today.{/m}"
+

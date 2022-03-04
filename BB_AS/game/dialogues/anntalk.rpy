@@ -519,7 +519,9 @@ label ann_tv_casual_r:
     Ann_08 "У тебя это очень хорошо получается... Такая лёгкость наступает. С таким талантом ты можешь много достичь в этом деле!"
     menu:
         Max_02 "Очень надеюсь, что так и будет."
-        "{i}продолжать массаж{/i}" ('mass', mgg.massage) if not ann.flags.showdown_e:
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage) if any([all([get_rel_eric()[0] < 0, not ann.flags.showdown_e]),
+                                    get_rel_eric()[0] == 2 and not all([flags.voy_stage == 8, poss['control'].used(10)]),
+                                    get_rel_eric()[0] == 3]):
             if rand_result:
                 # (Маме понравился массаж!)
                 # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
@@ -994,8 +996,9 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
     Ann_08 "Макс, ты чего молчишь? Это мне говорить не очень удобно, потому что я стараюсь расслабиться и сосредоточиться на дыхании..."
     if any([
         all([_in_replay, 'yoga_truehelp' not in persistent.mems_var]),  # повтор, ещё не было расширенной йоги
-        not _in_replay and all([ann.flags.showdown_e < 2, get_rel_eric()[0] < 0]),         # НАХ, Эрик
-        not _in_replay and all([not poss['mom-tv'].used(13), get_rel_eric()[0] == 2]),     # Д-, ещё не делал массаж спины Анне
+        not _in_replay and all([ann.flags.showdown_e < 2, get_rel_eric()[0] < 0]),          # НАХ, Эрик
+        not _in_replay and all([not poss['mom-tv'].used(13), get_rel_eric()[0] == 2]),      # Д-, ещё не делал массаж спины Анне
+        not _in_replay and get_rel_eric()[0] == 3,                                          # Д+
         ]):
         Max_03 "Да что тут скажешь, красота да и только!"
     elif ann.flags.defend < 5:
@@ -1032,8 +1035,9 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
 
     if any([
         all([_in_replay, 'yoga_truehelp' not in persistent.mems_var]),  # повтор, ещё не было расширенной йоги
-        not _in_replay and all([ann.flags.showdown_e < 2, get_rel_eric()[0] < 0]), # Откровенная вражда, Эрик ещё не изгнан
-        not _in_replay and all([poss['mom-tv'].used(13), get_rel_eric()[0] == 2]), # Фальшивая дружба, Макс делал Анне массаж спины
+        not _in_replay and all([ann.flags.showdown_e < 2, get_rel_eric()[0] < 0]),          # НАХ, Эрик
+        not _in_replay and all([not poss['mom-tv'].used(13), get_rel_eric()[0] == 2]),      # Д-, ещё не делал массаж спины Анне
+        not _in_replay and get_rel_eric()[0] == 3,                                          # Д+
         ]):
         Max_05 "Здорово, мам! Ещё немного потянись и будет идеально..."
         Ann_14 "Главное - не перенапрячься с утра пораньше... А то буду еле живая на работе..."

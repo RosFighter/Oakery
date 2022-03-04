@@ -180,7 +180,9 @@ label eric_time_settings:
             if flags.eric_wallet != 2 and any([weekday==4 and random_outcome(70),
                     weekday==5 and random_outcome(35)]):
                 # Эрик дрочит на спящую Алису
-                $ flags.eric_jerk = True
+                if not all([weekday == 5, wcv.catch_Kira.enabled, kira.dcv.battle.stage == 1]):
+                    # исключая пятницу, если только-только рассказали о Кире
+                    $ flags.eric_jerk = True
             elif all([flags.eric_wallet == 2, not eric.daily.sweets, weekday!=5]):
                 # после запуска кошелька дрочке Эрика могут помешать лишь таблетки ###
                 if flags.eric_photo2:
@@ -1018,14 +1020,14 @@ label after_load:
     call correct_showing_images from _call_correct_showing_images
 
     if 'current_ver' in globals():
-        # if config.developer:
-        #     "ver [current_ver], _ver [_version], conf.ver [config.version]"
+        if config.developer:
+            "ver [current_ver], _ver [_version], conf.ver [config.version]"
 
         if _version < current_ver or current_ver < "0.06.0.999":
             call old_fix from _call_old_fix
 
-    # elif config.developer:
-    #     "_ver [_version], conf.ver [config.version]"
+    elif config.developer:
+        "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
 
@@ -1054,6 +1056,7 @@ label after_load:
         call update_07_0_99 from _call_update_07_0_99
         call update_07_p1_99 from _call_update_07_p1_99
         call update_07_p2_99 from _call_update_07_p2_99
+        call update_08_0_99 from _call_update_08_0_99
 
         $ _version = config.version
 
@@ -1087,12 +1090,6 @@ label after_load:
 
     $ weekday = GetWeekday(day)
     $ checking_clothes()
-
-    # if _version < '0.07.p2.51':
-    #     elif all([current_room == house[0], lisa.plan_name == 'phone']):
-    #         call lisa_phone from _call_lisa_phone
-    #     elif all([current_room == house[0], lisa.plan_name == 'read']):
-    #         call lisa_read from _call_lisa_read
 
     if alice.flags.showdown_e and not poss['blog'].used(21):
         $ poss['blog'].open(21)
@@ -1826,7 +1823,7 @@ label update_07_0_99:
 
     if _version < '0.06.8.10':
         if poss['naughty'].st() == 6 and not alice.flags.touched:
-            $ poss['naughty'].stages[6] == 0
+            $ poss['naughty'].stages[6] = 0
 
     if _version < '0.06.8.12':
         python:
@@ -1917,13 +1914,16 @@ label update_07_p2_99:
             $ poss['seduction'].stages[30] = 0
             $ poss['seduction'].open(34)
 
-        if poss['yoga'].used(3):
-            $ poss['yoga'].stages[2] = 0
-            $ poss['yoga'].open(4)
+        # if poss['yoga'].used(3):
+        #     $ poss['yoga'].stages[2] = 0
+        #     $ poss['yoga'].open(4)
 
-        if poss['mom-tv'].used(11):
-            $ poss['mom-tv'].stages[10] = 0
-            $ poss['mom-tv'].open(12)
+        # if poss['mom-tv'].used(11):
+        #     $ poss['mom-tv'].stages[10] = 0
+        #     $ poss['mom-tv'].open(12)
+        # if poss['mom-tv'].used(10) and get_rel_eric()[0] < 0:
+        #     $ poss['mom-tv'].stages[10] = 0
+        #     $ poss['mom-tv'].open(12)
 
         if flags.eric_fee < 0:
             $ flags.eric_fee = -20
@@ -1931,22 +1931,49 @@ label update_07_p2_99:
 
     if _version < '0.07.p2.70':
 
-        if poss['mom-tv'].used(12) and get_rel_eric()[0] < 0:
-            $ poss['mom-tv'].stages[12] = 0
-            $ poss['mom-tv'].open(14)
-        if poss['mom-tv'].used(11) and get_rel_eric()[0] < 0:
-            $ poss['mom-tv'].stages[11] = 0
-            $ poss['mom-tv'].open(12)
-        if poss['mom-tv'].used(10) and get_rel_eric()[0] == 2:
-            $ poss['mom-tv'].stages[10] = 0
-            $ poss['mom-tv'].open(11)
+        if poss['mom-tv'].used(10):
+            if get_rel_eric()[0] < 0:
+                $ poss['mom-tv'].stages[10] = 0
+                $ poss['mom-tv'].open(12)
+            elif get_rel_eric()[0] == 2:
+                $ poss['mom-tv'].stages[10] = 0
+                $ poss['mom-tv'].open(11)
 
-        if poss['yoga'].used(4) and get_rel_eric()[0] < 0:
-            $ poss['yoga'].stages[4] = 0
-            $ poss['yoga'].open(6)
-        if poss['yoga'].used(3) and get_rel_eric()[0] < 0:
-            $ poss['yoga'].stages[3] = 0
-            $ poss['yoga'].open(4)
-        if poss['yoga'].used(2) and get_rel_eric()[0] == 2:
-            $ poss['yoga'].stages[2] = 0
-            $ poss['yoga'].open(3)
+        if poss['yoga'].used(2):
+            if get_rel_eric()[0] < 0:
+                $ poss['yoga'].stages[2] = 0
+                $ poss['yoga'].open(4)
+            elif get_rel_eric()[0] == 2:
+                $ poss['yoga'].stages[2] = 0
+                $ poss['yoga'].open(3)
+
+        # if poss['mom-tv'].used(12) and get_rel_eric()[0] < 0:
+        #     $ poss['mom-tv'].stages[12] = 0
+        #     $ poss['mom-tv'].open(14)
+        # if poss['mom-tv'].used(11) and get_rel_eric()[0] < 0:
+        #     $ poss['mom-tv'].stages[11] = 0
+        #     $ poss['mom-tv'].open(12)
+        # if poss['mom-tv'].used(10) and get_rel_eric()[0] == 2:
+        #     $ poss['mom-tv'].stages[10] = 0
+        #     $ poss['mom-tv'].open(11)
+        #
+        # if poss['yoga'].used(4) and get_rel_eric()[0] < 0:
+        #     $ poss['yoga'].stages[4] = 0
+        #     $ poss['yoga'].open(6)
+        # if poss['yoga'].used(3) and get_rel_eric()[0] < 0:
+        #     $ poss['yoga'].stages[3] = 0
+        #     $ poss['yoga'].open(4)
+        # if poss['yoga'].used(2) and get_rel_eric()[0] == 2:
+        #     $ poss['yoga'].stages[2] = 0
+        #     $ poss['yoga'].open(3)
+        # if poss['yoga'].used(2) and get_rel_eric()[0] < 0:
+        #     $ poss['yoga'].stages[2] = 0
+        #     $ poss['yoga'].open(4)
+
+label update_08_0_99:
+    if _version < '0.08.0.02':
+        if all([get_rel_eric()[0] == 3, flags.voy_stage == 8, wcv.catch_Kira.stage > 0]):
+            $ kira.dcv.battle.stage = 0
+            $ wcv.catch_Kira.stage = 0
+            $ wcv.catch_Kira.set_lost(0)
+            $ wcv.catch_Kira.enabled = False

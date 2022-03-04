@@ -401,3 +401,17 @@ init python:
         else:
             # хотя бы по одной девушке Макс попытался схитрить
             return (2, _("Фальшивая дружба"))
+
+
+    # проверяет входит ли число в список
+    # если элемент не число, значит кортеж, где первый элемент число, второй - условие
+    def num_in_list(num, lst):
+        for n in lst:
+            if isinstance(n, int) or isinstance(n, (str, basestring)):
+                if num == n:
+                    return True
+            else:
+                if num == n[0] and eval(n[1]):
+                    return True
+
+        return False

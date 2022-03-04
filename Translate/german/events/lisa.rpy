@@ -2805,3 +2805,12 @@ translate german lisa_dressed_stay_in_room_4d0209ac:
 
     # Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
     Lisa_09 "Max, ich muss mich umziehen. Würden Du so freundlich sein, den Raum für einen Moment zu verlassen..." nointeract
+
+# TODO: Translation updated at 2022-03-03 01:42
+
+# game/events/lisa.rpy:463
+translate german lisa_dressed_stay_in_room_db51f185:
+
+    # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
+    Max_09 "{m}Ich habe zu oft versucht, Lisa anzuschauen, wie sie sich umzieht. Es lohnt sich nicht mehr, es heute zu versuchen.{/m}"
+

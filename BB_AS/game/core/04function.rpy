@@ -1200,7 +1200,8 @@ init python:
         col = {vis < 33 : "#f00", vis > 66 : "#0f0", 33 <= vis <= 66 : "#ffbe00"}[True]
         txt = renpy.config.say_menu_text_filter(renpy.translate_string(i.caption))
         step = i.args[3] if len(i.args) > 3 else 1
-        return lim, vis, col, txt, step
+        bl = i.args[4] if len(i.args) > 4 else False
+        return lim, vis, col, txt, step, bl
 
     def random_outcome(value):
         if _in_replay:
@@ -1208,7 +1209,7 @@ init python:
         # random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
         return random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < value
 
-    def skill_outcome(skill, value, lim=100, d=1):
+    def skill_outcome(skill, value, lim=100, d=1, bl=False):
         # результат применения навыка в меню выбора:
         #    5 - 100% результат, повышение навка не требуется
         #    1 - навык сработал успешно, прирост 0.1
@@ -1249,40 +1250,41 @@ init python:
         if skill in ['sex', 'kiss']:
             increase * 3
 
-        if skill in ['stealth', 'hide']:
-            mgg.stealth += increase
-            notify_list.append(_("+ к навыку скрытности"))
-            if not rand_result:
-                renpy.music.stop()
-            if d > 1:
-                renpy.play('audio/' + ('undetect' if rand_result > 1 else 'suspicion' if rand_result else 'noticed')+ '.ogg')
-            else:
-                renpy.play('audio/' + ('undetect' if rand_result else 'noticed')+ '.ogg')
-        elif skill in ['social', 'soc']:
-            mgg.social += increase
-            notify_list.append(_("+ к навыку убеждения"))
-            renpy.play('audio/' + ('succes' if rand_result else 'failed')+ '.ogg')
-        elif skill in ['massage', 'mass']:
-            mgg.massage += increase
-            notify_list.append(_("+ к навыку массажа"))
-        elif skill in ['kissing', 'kiss']:
-            mgg.kissing += increase
-            notify_list.append(_("+ к навыку поцелуев"))
-        elif skill in ['ero_massage', 'ero']:
-            mgg.ero_massage += increase
-            notify_list.append(_("+ к навыку эротического массажа"))
-        elif skill in ['training', 'train']:
-            mgg.training += increase
-            notify_list.append(_("+ к тренированности"))
-        elif skill == 'cuni':
-            mgg.cuni += increase
-            notify_list.append(_("+ к навыку кунилингуса"))
-        elif skill == 'sex':
-            mgg.sex += increase
-            notify_list.append(_("+ к сексуальному опыту"))
-        elif skill == 'anal':
-            mgg.anal += mgg.anal
-            notify_list.append(_("+ к опыту анального секса"))
+        if not bl:
+            if skill in ['stealth', 'hide']:
+                mgg.stealth += increase
+                notify_list.append(_("+ к навыку скрытности"))
+                if not rand_result:
+                    renpy.music.stop()
+                if d > 1:
+                    renpy.play('audio/' + ('undetect' if rand_result > 1 else 'suspicion' if rand_result else 'noticed')+ '.ogg')
+                else:
+                    renpy.play('audio/' + ('undetect' if rand_result else 'noticed')+ '.ogg')
+            elif skill in ['social', 'soc']:
+                mgg.social += increase
+                notify_list.append(_("+ к навыку убеждения"))
+                renpy.play('audio/' + ('succes' if rand_result else 'failed')+ '.ogg')
+            elif skill in ['massage', 'mass']:
+                mgg.massage += increase
+                notify_list.append(_("+ к навыку массажа"))
+            elif skill in ['kissing', 'kiss']:
+                mgg.kissing += increase
+                notify_list.append(_("+ к навыку поцелуев"))
+            elif skill in ['ero_massage', 'ero']:
+                mgg.ero_massage += increase
+                notify_list.append(_("+ к навыку эротического массажа"))
+            elif skill in ['training', 'train']:
+                mgg.training += increase
+                notify_list.append(_("+ к тренированности"))
+            elif skill == 'cuni':
+                mgg.cuni += increase
+                notify_list.append(_("+ к навыку кунилингуса"))
+            elif skill == 'sex':
+                mgg.sex += increase
+                notify_list.append(_("+ к сексуальному опыту"))
+            elif skill == 'anal':
+                mgg.anal += mgg.anal
+                notify_list.append(_("+ к опыту анального секса"))
 
     Skill_Outsome = renpy.curry(skill_outcome)  # преобразуем функцию в экшен
 
