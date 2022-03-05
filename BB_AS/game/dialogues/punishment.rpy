@@ -439,7 +439,7 @@ label max_consequences:
 
 label punishment_lisa:
     $ renpy.block_rollback()
-    $ renpy.dynamic('mood')
+    # $ renpy.dynamic('mood')
 
     scene BG punish-evening 01
     $ renpy.show("Lisa punish-evening 01"+lisa.dress)
@@ -601,7 +601,7 @@ label punishment_lisa:
 
 label punishment_alice:
     $ renpy.block_rollback()
-    $ renpy.dynamic('mood', 'suf')
+    # $ renpy.dynamic('mood', 'suf')
 
     scene BG punish-evening 01
     $ renpy.show("Alice punish-evening 01"+alice.dress)

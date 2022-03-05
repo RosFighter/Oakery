@@ -10218,19 +10218,19 @@ translate german lisa_about_ae_sexed5_a8cf08b3_2:
 translate german lisa_about_ae_sexed5_6e4f777a:
 
     # Max_07 "{m}Идти к маме с компроматом на Эрика рискованно. Она в слишком большой его власти. Поэтому нужно позаботиться о том, чтобы мои сёстры были со мной на одной стороне и поддержали меня перед мамой. А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
-    Max_07 "{m}Es ist riskant, mit belastenden Informationen über Eric zu Mom zu gehen. Sie steht zu sehr unter seinem Einfluss. Ich muss also sicherstellen, dass meine Schwestern auf meiner Seite sind und mich gegenüber Mom unterstützen. Und um Erics Angriffe auf die Mädchen zu unterbinden, bedarf es eines Tricks, den man anwenden kann!{/m}"
+    Max_07 "{m}Es ist riskant, mit belastenden Informationen über Eric zu Mom zu gehen. Sie steht zu sehr unter seinem Einfluss. Ich muss also sicherstellen, dass meine Schwestern auf meiner Seite sind und mich gegenüber Mom unterstützen. Und um Erics Annäherungen an meine Schwestern zu stoppen, sollte ich ihn irgendwie austricksen!{/m}"
 
 # game/dialogues/lisatalk.rpy:4282
 translate german lisa_about_ae_sexed5_d336737a:
 
     # Max_07 "{m}Мне нужно заснять Эрика в более компрометирующей обстановке, чем у меня сейчас есть. А так как мама находится в огромной власти Эрика, мне нужно позаботиться о том, чтобы мои сёстры были со мной на одной стороне и поддержали меня перед мамой. А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
-    Max_07 "{m}Ich muss Eric in einer kompromittierenden Umgebung filmen, als ich es bis jetzt getan habe. Und da Mom unter Erics großem Einfluss steht, muss ich sicherstellen, dass meine Schwestern auf meiner Seite sind und mich bei Mom unterstützen. Und um Erics Angriffe auf die Mädchen zu stoppen, muss ich eine Art Trick anwenden!{/m}"
+    Max_07 "{m}Ich muss Eric in einer kompromittierenderen Situation erwischen, als ich es bis jetzt habe. Und da Mom unter Erics direktem Einfluss steht, muss ich sicherstellen, dass meine Schwestern auf meiner Seite sind und mich bei Mom unterstützen. Und um Erics Annäherungen an meine Schwestern zu stoppen, sollte ich ihn irgendwie austricksen!{/m}"
 
 # game/dialogues/lisatalk.rpy:4285
 translate german lisa_about_ae_sexed5_a052c712:
 
     # Max_07 "{m}На Эрика срочно нужно достать компромат! Если он и делает что-то такое, то явно по ночам, когда никто не видит. Нужно последить за ним... А чтобы пресечь посягательства Эрика на девчонок, нужно устроить ему какую-нибудь подлянку!{/m}"
-    Max_07 "{m}Jetzt muss ich mehr über Eric herausfinden! Wenn er so etwas tut, dann offensichtlich nachts, wenn niemand zusieht. Ich muss ihn im Auge behalten... Und um Erics Angriffe auf die Mädchen zu stoppen, sollte ich ihn irgendwie austricksen!{/m}"
+    Max_07 "{m}Jetzt muss ich mehr über Eric herausfinden! Wenn er so etwas tut, dann offensichtlich nachts, wenn niemand zusieht. Ich muss ihn im Auge behalten... Und um Erics Annäherungen an meine Schwestern zu stoppen, sollte ich ihn irgendwie austricksen!{/m}"
 
 translate german strings:
 

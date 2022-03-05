@@ -1242,7 +1242,7 @@ label Lisa_HomeWork:
         jump Waiting
 
     label .first_foot_mass:
-        $ renpy.dynamic("foot")
+        # $ renpy.dynamic("foot")
         if not _in_replay:
             $ persistent.memories['Lisa_HomeWork.first_foot_mass'] = 1
         else:
@@ -1327,7 +1327,7 @@ label Lisa_HomeWork:
         jump Waiting
 
     label .next_foot_mass:
-        $ renpy.dynamic("foot")
+        # $ renpy.dynamic("foot")
         if _in_replay:
             scene BG char Lisa lessons-help-00
             $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
@@ -1411,7 +1411,7 @@ label Lisa_HomeWork:
         jump .random_answer
 
     label .shoulders:
-        $ renpy.dynamic("foot")
+        # $ renpy.dynamic("foot")
         if _in_replay:
             $ foot = renpy.random.choice(['02', '01'])
             scene BG char Lisa lessons-mass-01
@@ -1537,7 +1537,7 @@ label Lisa_HomeWork:
         jump .new_massage
 
     label .new_massage:
-        $ renpy.dynamic("foot")
+        # $ renpy.dynamic("foot")
         scene BG char Lisa lessons-help-00
         $ renpy.show("Lisa lessons-talk 01"+lisa.dress)
         $ renpy.show("Max lessons-talk 01"+mgg.dress)
@@ -4451,7 +4451,7 @@ label take_to_school:
                 #Лиза уходит в школу
 
             else:
-                $ renpy.dynamic('ch')
+                # $ renpy.dynamic('ch')
                 if punlisa[1][0] not in [0, 2] and punlisa[2][0] not in [0, 2]:
                     $ ch = 100
                 elif punlisa[1][0] not in [0, 2] or punlisa[2][0] not in [0, 2]:

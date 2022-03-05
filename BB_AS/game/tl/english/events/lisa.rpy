@@ -2806,7 +2806,6 @@ translate english lisa_dressed_stay_in_room_4d0209ac:
     # Lisa_09 "Макс, мне нужно переодеться. Будь добр, выйди из комнаты ненадолго..." nointeract
     Lisa_09 "Max, I need to change. Would you be so kind as to leave the room for a moment?" nointeract
 
-
 # TODO: Translation updated at 2022-03-03 01:43
 
 # game/events/lisa.rpy:463

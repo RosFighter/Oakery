@@ -20,7 +20,7 @@ label cam0_alice_sleep_night:
         $ cam_flag.append('alice_sleep_fun')
         $ cam_flag.append('alice_sleep')
         # день веселья. начало
-        hide other
+        hide cloth1
         show Alice cams fun-in-bed 01 at laptop_screen
         Max_07 "{m}Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?{/m}"
 
@@ -665,22 +665,22 @@ label cam0_alice_blog_lingerie:
         call cam0_alice_rest_evening from _call_cam0_alice_rest_evening
         return
 
-    $ renpy.dynamic('cur_pose')
+    # $ renpy.dynamic('cur_pose')
     if not len(cam_pose_blog):
         # заполняем список поз
         $ cam_pose_blog = ['01', '02', '03', '04', '05', '06']
         $ renpy.random.shuffle(cam_pose_blog)
-    $ cur_pose = cam_poses_manager(alice, cam_pose_blog)
+    $ var_pose = cam_poses_manager(alice, cam_pose_blog)
     $ alice.dress_inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[alice.dress]
-    $ renpy.show('Alice cams blog '+cur_pose+alice.dress, at_list=[laptop_screen,])
+    $ renpy.show('Alice cams blog '+var_pose+alice.dress, at_list=[laptop_screen,])
     show FG cam-shum-act at laptop_screen
-    if cur_pose in cam_pose_blog:
-        $ cam_pose_blog.remove(cur_pose)
+    if var_pose in cam_pose_blog:
+        $ cam_pose_blog.remove(var_pose)
         if not len(cam_pose_blog):
             $ cam_pose_blog.append('01')
     if 'alice_blog' not in cam_flag:
         $ cam_flag.append('alice_blog')
-        if cur_pose == '01':
+        if var_pose == '01':
             Max_02 "{m}Сегодня Алиса занимается блогом в нижнем белье! Это уже поинтереснее...{/m}"
         else:
             Max_04 "{m}Правильно, сестрёнка! Нужно хорошенько попозировать... А если бы ты ещё и раздевалась, вот это было бы шоу!{/m}"

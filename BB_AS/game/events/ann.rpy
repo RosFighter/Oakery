@@ -262,7 +262,7 @@ label ann_dressed:
     if ann.hourly.dressed:
         return
     $ ann.hourly.dressed = 1
-    $ renpy.dynamic('open', 'lst', 'r1', 'balcony')
+    # $ renpy.dynamic('open', 'lst', 'r1', 'balcony')
     $ open = False
     $ mood = 0
     $ spent_time = 10
@@ -328,7 +328,7 @@ label ann_dressed:
             jump .end
 
     label .stay_in_room:
-        $ renpy.dynamic('lvl')
+        # $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ get_ann_dress(0)
         $ mood = 0
@@ -351,7 +351,7 @@ label ann_dressed:
                 jump .end
 
     label .moment0:     # "нулевой"
-        $ renpy.dynamic('lvl')
+        # $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
         $ get_ann_dress(0)
@@ -382,7 +382,7 @@ label ann_dressed:
                 jump .end
 
     label .moment2():     # повезло
-        $ renpy.dynamic('lvl')
+        # $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
         $ get_ann_dress(2)
@@ -407,7 +407,7 @@ label ann_dressed:
             jump .lvl_2
 
     label .moment1:     # неповезло
-        $ renpy.dynamic('lvl')
+        # $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
         $ get_ann_dress(1)
@@ -486,7 +486,7 @@ label ann_dressed:
     label .gift:
         # scene BG char Ann mde-01
         # $ renpy.show('Ann dressed 07' + ('j' if weekday == 6 else 'a'))
-        $ get_ann_dress(g)
+        $ get_ann_dress('g')
         scene Ann_dressing
         Ann_01 "Ну вот, я одета. Ты сказал, что у тебя что-то есть для меня?! О чём это ты?"
         Max_04 "У меня для тебя подарок! Ночнушка!"
@@ -580,7 +580,7 @@ label ann_dressed:
         jump .end
 
     label .balcony:
-        $ renpy.dynamic('lvl')
+        # $ renpy.dynamic('lvl')
         # $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
         $ mood = 0

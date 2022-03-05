@@ -2328,6 +2328,7 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, можно будет попробовать уговорить её на новые интимные уроки... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
     new "Once Mom gets used to such unceremonious touching for the sacred at yoga, you can try to talk her into a new intimate class... Successfully helped my mom with yoga: [ann.flags.truehelp] of 5"
+
 # TODO: Translation updated at 2022-03-03 19:15
 
 translate english strings:

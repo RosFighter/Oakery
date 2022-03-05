@@ -20,7 +20,7 @@ label kira_bath:
     if wcv.catch_Kira.stage and not any([flags.eric_jerk, eric.daily.sweets, flags.eric_banished]):
         return
 
-    $ renpy.dynamic('ch_catch', 'catch', 'r1')
+    # $ renpy.dynamic('ch_catch', 'catch', 'r1')
     $ kira.daily.bath = 1
     menu:
         Max_01 "{m}Только один человек может в это время не спать и плескаться в ванне. И человек этот - Кира!{/m}"
@@ -712,7 +712,7 @@ label kira_bath:
 
 
 label kira_night_swim:
-    $ renpy.dynamic('r1')
+    # $ renpy.dynamic('r1')
     $ renpy.scene()
     $ renpy.show('Kira night-swim '+renpy.random.choice(['01', '02', '03']))
 
@@ -960,7 +960,7 @@ label kira_sleep_morning:
 
 label kira_night_tv:
     $ renpy.block_rollback()
-    $ renpy.dynamic('lst', 'film', 'naked', 'suf', 'r1')
+    # $ renpy.dynamic('lst', 'film', 'naked', 'suf', 'r1')
     scene BG tv-watch-01
     $ lst = []
     python:
@@ -2256,7 +2256,7 @@ label kira_night_tv:
 
 
 label kira_shower:
-    $ renpy.dynamic('r1')
+    # $ renpy.dynamic('r1')
 
     scene location house bathroom door-morning
     if kira.daily.shower > 0:
@@ -2443,7 +2443,7 @@ label kira_shower:
 
     label .sex:
         stop music
-        $ renpy.dynamic('r1')
+        # $ renpy.dynamic('r1')
         $ r1 = renpy.random.choice(['07', '08'])
 
         # bathroom-shower-01 + shower-kira-09 + bathroom-shower-02
@@ -2570,7 +2570,7 @@ label kira_shower:
 
 
 label kira_lisa_shower:
-    $ renpy.dynamic('r0', 'r1')
+    # $ renpy.dynamic('r0', 'r1')
 
     scene location house bathroom door-morning
     if lisa.daily.shower > 0:
@@ -2732,7 +2732,7 @@ label kira_lisa_shower:
 
 
 label kira_alice_shower:
-    $ renpy.dynamic('r0', 'r1')
+    # $ renpy.dynamic('r0', 'r1')
     scene location house bathroom door-morning
     if alice.daily.shower > 0:
         menu:
