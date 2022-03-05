@@ -69599,3 +69599,19 @@ translate french strings:
     old "Ещё стесняется, но трогает..."
     new "Toujours timide, mais émouvant..."
 
+# TODO: Translation updated at 2022-03-03 19:25
+
+translate french strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях..."
+    new "J'ai enfin pu aller à un show porno avec ma mère et Eric ! Cependant, Tatie Kira devra maintenant répondre à Eric pour mes caprices... Entre les émissions télé, il faudra trouver un moyen de rejoindre Kira et Eric. Peut-être même participer à leur... divertissement..."
+
+# TODO: Translation updated at 2022-03-03 01:42
+
+# game/events/lisa.rpy:463
+translate french lisa_dressed_stay_in_room_db51f185:
+
+    # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
+    Max_09 "{m}J'ai essayé trop souvent de regarder Lisa se changer. Ce n'est pas la peine d'essayer de recommencer aujourd'hui.{/m}"
+
