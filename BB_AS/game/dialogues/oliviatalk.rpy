@@ -1,6 +1,6 @@
 
 label OliviaTalkStart:
-    $ renpy.dynamic('plan')
+    # $ renpy.dynamic('plan')
     $ dial = TalkMenuItems()
 
     $ plan = olivia.get_plan()
@@ -487,7 +487,7 @@ label olivia_repeat_sunscreen:
 
     # "Давайте, я намажу вас кремом для загара?"
 
-    $ renpy.dynamic('pester', 'r0')
+    # $ renpy.dynamic('pester', 'r0')
 
     $ pester = 0
     # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01a
@@ -761,7 +761,7 @@ label olivia_give_sunscreen:
         jump ran_out_sunscreen
 
     # "Вам дать крем для загара?"
-    $ renpy.dynamic('r0')
+    # $ renpy.dynamic('r0')
 
     # sun2-01 + sun2-01-max-03 + sun2-01-olivia-01a
     scene BG sun-talk-01

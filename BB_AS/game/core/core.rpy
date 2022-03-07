@@ -89,6 +89,7 @@ label Waiting:
         call after_buying from _call_after_buying
 
     $ mood = 0
+    $ rel = 0
 
     if name_label != '' and renpy.has_label(name_label):
         # "запуск [name_label]"
@@ -328,7 +329,7 @@ label NewDay:
 
     $ cam_poses.clear()  # обнулим список поз для камер
 
-    if flags.voy_stage in [9, 10, 12, 13, 14] and day == flags.ae_bonus_day:
+    if flags.voy_stage in [9, 10, 12, 13, 14] and weekday == flags.ae_bonus_day:
         # наличие чулков определяется договорённстью
         $ stockings = flags.can_ask == 3
     else:

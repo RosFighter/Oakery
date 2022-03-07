@@ -1202,7 +1202,7 @@ label kira_about_photo3_1:
 
 label kira_photoset3:
     #автозапуск в субботу, после того, как все уезжают на шопинг, если соблюдены все условия
-    $ renpy.dynamic('ch')
+    # $ renpy.dynamic('ch')
 
     if not _in_replay:
         scene BG black with fade4

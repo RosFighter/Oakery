@@ -2314,7 +2314,7 @@ translate german lisa_eric_sex_ed_practice_practice_2_c4af202c:
 translate german eric_about_practice_war_cd954bd0:
 
     # Eric_13 "Ну-ка стой, Макс. Ты совсем страх потерял?"
-    Eric_13 "Bleib sofort stehen, Max. Hast du deine Angst verloren?"
+    Eric_13 "Bleib sofort stehen, Max. Hast du den Verstand verloren?"
 
 # game/events/eric.rpy:1695
 translate german eric_about_practice_war_f825e035:
@@ -2332,7 +2332,7 @@ translate german eric_about_practice_war_9e1dccbf:
 translate german eric_about_practice_war_02ffd2cd:
 
     # Max_07 "Ну хоть цветы не стал дарить, уже хорошо."
-    Max_07 "Wenigstens hat er mir keine Blumen geschenkt, was gut ist."
+    Max_07 "Zumindest habe ich keinen Korb von ihr bekommen, was gut ist."
 
 # game/events/eric.rpy:1700
 translate german eric_about_practice_war_30fc7577:
@@ -2368,7 +2368,7 @@ translate german eric_about_practice_war_b9cfdec8:
 translate german eric_about_practice_war_6acf127b:
 
     # Eric_03 "Я, как это от неё услышал, первым делом хотел сделать так, чтобы тебя отсюда с позором в военный лагерь отправили или даже вовсе на улицу выпнули... Это я запросто могу сделать. Но вдруг ты не настолько уж и безнадёжен!"
-    Eric_03 "Als ich das von ihr hörte, wollte ich als Erstes dafür sorgen, dass du in ein Militärlager gesteckt oder sogar auf die Straße geworfen wirst... Das könnte ich leicht tun. Aber vielleicht bist du gar nicht so hoffnungslos!"
+    Eric_03 "Als ich das von ihr gehörte, wollte ich als Erstes dafür sorgen, dass du in ein Militärlager gesteckt oder sogar auf die Straße geworfen wirst... Das könnte ich leicht erreichen. Aber vielleicht bist du gar nicht so hoffnungslos!"
 
 # game/events/eric.rpy:1711
 translate german eric_about_practice_war_3d8756c9_1:
@@ -2404,7 +2404,7 @@ translate german eric_about_practice_war_6ef6aff2:
 translate german eric_about_practice_war_c0338be6:
 
     # Eric_01 "Не знаю, как там на самом деле, Макс, но я намерен получать с тебя по 1000$ каждую неделю."
-    Eric_01 "Ich weiß nicht, was wahr ist, Max, aber ich werde jede Woche 1000$ von dir bekommen."
+    Eric_01 "Ich weiß nicht, ob das wahr ist, Max, aber ich werde jede Woche 1000$ von dir bekommen."
 
 # game/events/eric.rpy:1722
 translate german eric_about_practice_war_dc2b96a5:
@@ -2464,7 +2464,7 @@ translate german eric_about_practice_war_6795eebc:
 translate german eric_about_practice_war_7fade9dd:
 
     # Eric_14 "Ну так не стой и беги зарабатывай! Ты будешь платить за неделю вперёд, так что через неделю я жду от тебя удвоенную сумму. Или ты думал, что обломать мои планы на Лизу никак тебе не аукнутся?"
-    Eric_14 "Stehen Sie nicht einfach da und heule so rum wegen Geld! Du zahlst eine Woche im Voraus, also erwarte ich in einer Woche doppelt so viel von dir. Oder dachtest du, es würde sich für dich nicht auszahlen, meine Pläne für Lisa zu vereiteln?"
+    Eric_14 "Steh nicht einfach da und heule rum wegen Geld! Du zahlst eine Woche im Voraus, also erwarte ich in einer Woche das Doppelt von dir. Oder dachtest du, es würde sich für dich nicht auszahlen, meine Pläne für Lisa zu vereiteln?"
 
 # game/events/eric.rpy:1746
 translate german eric_about_practice_war_1cacd8b8:
@@ -2482,7 +2482,7 @@ translate german eric_about_practice_war_14f657ad:
 translate german eric_about_practice_war_7fade9dd_1:
 
     # Eric_14 "Ну так не стой и беги зарабатывай! Ты будешь платить за неделю вперёд, так что через неделю я жду от тебя удвоенную сумму. Или ты думал, что обломать мои планы на Лизу никак тебе не аукнутся?"
-    Eric_14 "Stehen Sie nicht einfach da und heule so rum wegen Geld! Du zahlst eine Woche im Voraus, also erwarte ich in einer Woche doppelt so viel von dir. Oder dachtest du, es würde sich für dich nicht auszahlen, meine Pläne für Lisa zu vereiteln?"
+    Eric_14 "Steh nicht einfach da und heule rum wegen Geld! Du zahlst eine Woche im Voraus, also erwarte ich in einer Woche das Doppelt von dir. Oder dachtest du, es würde sich für dich nicht auszahlen, meine Pläne für Lisa zu vereiteln?"
 
 # game/events/eric.rpy:1754
 translate german eric_about_practice_war_315c5c07:
@@ -2494,7 +2494,7 @@ translate german eric_about_practice_war_315c5c07:
 translate german eric_about_practice_war_51da6fda:
 
     # Eric_05 "По крайней мере в ближайшие две недели, за которые ты мне и заплатишь. Но и ты не станешь мешать мне в моих планах на остальных дамочек в этом доме."
-    Eric_05 "Zumindest für die nächsten zwei Wochen, für die du mich bezahlen wirst. Aber du wirst meine Pläne für die anderen Mädels in diesem Haus auch nicht durchkreuzen."
+    Eric_05 "Zumindest für die nächsten zwei Wochen, für die du mich bezahlen wirst. Aber du wirst meine Pläne für die anderen Mädels in diesem Haus nicht auch noch durchkreuzen."
 
 # game/events/eric.rpy:1756
 translate german eric_about_practice_war_1cacd8b8_1:

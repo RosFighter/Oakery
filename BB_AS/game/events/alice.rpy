@@ -46,7 +46,7 @@ label alice_bath:
             jump .end
 
     label .ladder:
-        $ renpy.dynamic('r1')
+        # $ renpy.dynamic('r1')
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-evening 02'+mgg.dress)
         Max_04 "{m}Посмотрим, что у нас тут...{/m}"
@@ -335,7 +335,7 @@ label alice_shower:
                 return
 
     label .start_peeping:
-        $ renpy.dynamic('r1')
+        # $ renpy.dynamic('r1')
         $ Skill('hide', 0.025, 10)
         $ r1 = renpy.random.randint(1, 4)
 
@@ -556,7 +556,7 @@ label alice_shower:
         $ spent_time += 10
         if rand_result < 2:
             jump .not_luck
-        $ renpy.dynamic('r1')
+        # $ renpy.dynamic('r1')
         $ alice.daily.shower = 1
         $ alice.dress_inf = '00aa'
         $ r1 = renpy.random.randint(1, 6)
@@ -573,7 +573,7 @@ label alice_shower:
     label .closer_peepeng:
         $ spent_time += 10
         if rand_result > 1:
-            $ renpy.dynamic('r1')
+            # $ renpy.dynamic('r1')
             $ alice.daily.shower = 1
             $ alice.dress_inf = '00aa'
             $ r1 = renpy.random.randint(1, 6)
@@ -590,7 +590,7 @@ label alice_shower:
 
     label .not_luck:
         if rand_result or get_alice_shower_peeping_stage() == 1:
-            $ renpy.dynamic('r1')
+            # $ renpy.dynamic('r1')
             $ alice.daily.shower = 2
             $ alice.dress_inf = '00aa'
             $ r1 = renpy.random.randint(7, 8)
@@ -603,7 +603,7 @@ label alice_shower:
             jump .pinded
 
     label .pinded:
-        $ renpy.dynamic('r1')
+        # $ renpy.dynamic('r1')
 
         if flags.mistres_pun:
             $ alice.dcv.mistress.set_lost(1)
@@ -642,7 +642,7 @@ label alice_shower:
                 jump .end
 
     label .ladder:
-        $ renpy.dynamic('r1')
+        # $ renpy.dynamic('r1')
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "{m}Посмотрим, что у нас тут...{/m}"
@@ -706,7 +706,7 @@ label alice_rest_evening:
 
 
 label alice_dressed_shop:
-    $ renpy.dynamic('lst', 'r1', 'suf')
+    # $ renpy.dynamic('lst', 'r1', 'suf')
     scene location house aliceroom door-morning
     if alice.hourly.dressed == 0:
         $ alice.hourly.dressed = 1
@@ -801,7 +801,7 @@ label alice_read_closer:
 
 
 label alice_dressed_friend:
-    $ renpy.dynamic('lst', 'r1', 'suf')
+    # $ renpy.dynamic('lst', 'r1', 'suf')
     scene location house aliceroom door-day
     if alice.hourly.dressed == 0:
         $ alice.hourly.dressed = 1
@@ -870,7 +870,7 @@ label alice_dressed_friend:
 
 
 label alice_dressed_club:
-    $ renpy.dynamic('suf')
+    # $ renpy.dynamic('suf')
     scene location house aliceroom door-evening
     if alice.hourly.dressed != 0:
         return
@@ -1030,7 +1030,7 @@ label alice_evening_closer:
 
 
 label spider_in_bed:
-    $ renpy.dynamic('mood', 'naked', 'toples', 'suf')
+    # $ renpy.dynamic('mood', 'naked', 'toples', 'suf')
     $ mood = 0
     $ naked = False
     $ toples = False
@@ -1428,7 +1428,7 @@ label alice_smoke:
 
 #  Алиса перед зеркалом ванной
 label alice_after_club:
-    $ renpy.dynamic('lst')
+    # $ renpy.dynamic('lst')
     scene location house bathroom door-evening
     if alice.daily.bath != 0:
         return
@@ -1469,7 +1469,7 @@ label alice_after_club:
     jump .end
 
     label .knock:
-        $ renpy.dynamic('suf', 'r1')
+        # $ renpy.dynamic('suf', 'r1')
         if alice.req.result == 'nopants':
             $ suf = 'a'
             $ alice.dress_inf = '04da'
@@ -1929,7 +1929,7 @@ label alice_lisa_shower:
             return
 
     label .ladder:
-        $ renpy.dynamic('r0', 'r1', 'vr')
+        # $ renpy.dynamic('r0', 'r1', 'vr')
         $ Skill('hide', 0.025, 10)
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
@@ -2009,7 +2009,7 @@ label alice_lisa_shower:
         jump .end
 
     label .start_peeping:
-        $ renpy.dynamic('r1', 'r2')
+        # $ renpy.dynamic('r1', 'r2')
         $ Skill('hide', 0.025, 10)
 
         scene Alice shower-Lisa 01
@@ -2043,7 +2043,7 @@ label alice_lisa_shower:
         jump .end
 
     label .alt_peepeng:
-        $ renpy.dynamic('r1', 'r2')
+        # $ renpy.dynamic('r1', 'r2')
         $ spent_time += 10
         $ alice.dress_inf = '00aa'
         $ lisa.dress_inf = '00a'

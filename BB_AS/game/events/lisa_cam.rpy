@@ -193,7 +193,7 @@ label lisa_cam_dress_inf(r1):
 
 
 label cam0_lisa_dressed:
-    $ renpy.dynamic('r1', 'st')
+    # $ renpy.dynamic('r1', 'st')
     if 'lisa_dressed' in cam_flag:
         if not weekday:
             $ r1 = '15' if lisa.clothes.weekend.GetCur().suf == 'w' else '17'

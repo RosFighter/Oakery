@@ -367,7 +367,7 @@ init python:
             return rel_eric
 
         if 'eric' not in chars:
-            return False
+            return (False, '')
         if eric.relmax == 0:
             return (0, _("Не определены"))
         elif eric.relmax < 0:

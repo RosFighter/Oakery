@@ -35,7 +35,7 @@ label lisa_shower:
         jump .end_peeping2
 
     $ renpy.block_rollback()
-    $ renpy.dynamic('r1')
+    # $ renpy.dynamic('r1')
     $ lisa.daily.shower = 4
     $ lisa.prev_plan = lisa.plan_name
     menu:
@@ -70,7 +70,7 @@ label lisa_shower:
             jump .end_peeping
 
     label .ladder:
-        $ renpy.dynamic('lst')
+        # $ renpy.dynamic('lst')
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "{m}Посмотрим, что у нас тут...{/m}"
@@ -255,7 +255,7 @@ label lisa_dressed:
         return
 
     $ lisa.hourly.dressed = 1
-    $ renpy.dynamic('mood', 'warned', 'r1', 'pose', 'var', 'np')
+    # $ renpy.dynamic('mood', 'warned', 'r1', 'pose', 'var', 'np')
     $ warned = False
     $ r1 = random_outcome(50)   # Лиза начала переодеваться и ещё не закончила
     $ mood = 0
@@ -748,7 +748,7 @@ label lisa_bath:
     if lisa.daily.bath:
         return
 
-    $ renpy.dynamic('mood', 'rel', 'r1')
+    # $ renpy.dynamic('mood', 'rel', 'r1')
     $ lisa.daily.bath = 1
     $ lisa.prev_plan = lisa.plan_name
     $ mood = 0
@@ -1282,7 +1282,7 @@ label lisa_horor_movie_r:
 
     scene BG char Lisa horror-myroom 02
     $ renpy.show('Lisa horror-myroom 02-01'+lisa.dress)
-    $ renpy.dynamic('h_film', 'r1')
+    # $ renpy.dynamic('h_film', 'r1')
     $ h_film = {'hes':1, 'f13':2, 'scr':3}[flags.cur_movies[0]]
     $ renpy.show('FG horror-myroom '+flags.cur_movies[0]+' 0'+str(flags.cur_movies[h_film])+"-0"+str(flags.cur_series))
     Lisa_11 "Ой-ёй-ёй... Зря мы это смотрим! Кажется, я теперь от таких ужасов не смогу заснуть..."

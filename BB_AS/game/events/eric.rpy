@@ -676,7 +676,7 @@ label eric_ann_fucking:
 label eric_ann_fuck_glasses_sleeping:
     # подглядываем, Анна может быть с очками для сна раз в неделю
 
-    $ renpy.dynamic('precum')
+    # $ renpy.dynamic('precum')
     $ precum = renpy.random.randint(0, 1)   # 50% шанс, что Эрик кончит во время секса
     $ var_pose = renpy.random.choice(['01', '02'])
 

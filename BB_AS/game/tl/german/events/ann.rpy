@@ -1832,7 +1832,7 @@ translate german ann_bath_about_intime_0_62195f79:
 translate german ann_bath_about_intime_0_53cc7aca:
 
     # Ann_15 "Макс! Ты почему так нагло врываешься! Я же сказала, что скоро освобожусь! Не мог подождать?"
-    Ann_15 "Max! Warum haben Sie die Dreistigkeit, hier hereinzuplatzen? Ich sagte doch, dass ich bald rauskomme! Kannst du nicht warten?"
+    Ann_15 "Max! Warum hast du die Dreistigkeit, hier hereinzuplatzen? Ich sagte doch, dass ich bald rauskomme! Kannst du nicht warten?"
 
 # game/events/ann.rpy:975
 translate german ann_bath_about_intime_0_1af3858f:

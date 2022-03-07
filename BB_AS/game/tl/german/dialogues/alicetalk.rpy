@@ -724,7 +724,7 @@ translate german alice_nopants_massage_not_nopants_9a2648a0:
 translate german alice_nopants_massage_not_nopants_1aaeec10:
 
     # Max_02 "Не будет."
-    Max_02 "Wirst du nicht."
+    Max_02 "Das passiert nicht."
 
 # game/dialogues/alicetalk.rpy:727
 translate german alice_nopants_massage_not_nopants_43ffc4e7:
@@ -1150,7 +1150,7 @@ translate german alice_talk_tv_sober_mass_936e0278:
 translate german alice_talk_tv_sober_mass_166375f1:
 
     # Max_01 "Не будет."
-    Max_01 "Wirst du nicht."
+    Max_01 "Das passiert nicht."
 
 # game/dialogues/alicetalk.rpy:1050
 translate german alice_talk_tv_sober_mass_594dae48:
@@ -1522,7 +1522,7 @@ translate german advanced_massage1_reciprocity_b368585e:
 translate german advanced_massage1_reciprocity_9410eaf1:
 
     # Max_21 "{m}Ох, как это классно! Алиса с явным наслаждением посасывает мой член. Мой массаж её определённо очень возбуждает, раз она делает мне минет с таким смаком. Д-а-а, это кайф!{/m}" nointeract
-    Max_21 "{m}Oh, das ist so gut! Alice bläst meinen Schwanz mit offensichtlichem Vergnügen. Meine Massage erregt sie bestimmt sehr, da sie mir so genüsslich einen Blowjob gibt. Ja, es ist echt der Hammer!{/m}" nointeract
+    Max_21 "{m}Oh, das ist so gut! Alice bläst meinen Schwanz mit offensichtlichem Vergnügen. Meine Massage erregt sie bestimmt sehr, da sie mir so genüsslich einen Blowjob gibt. J-a-a, es ist echt der Hammer!{/m}" nointeract
 
 # game/dialogues/alicetalk.rpy:1438
 translate german advanced_massage1_reciprocity_1272725b:
@@ -1534,7 +1534,7 @@ translate german advanced_massage1_reciprocity_1272725b:
 translate german advanced_massage1_reciprocity_da5f55a1:
 
     # Alice_07 "Давай! Кончи мне на грудь... Я бы удивилась, если бы ты продержался ещё дольше. Массаж получился классный, Макс... и я не только про сам массаж. А сейчас, давай-ка засовывай свой член обратно, а мне нужно скорее привести себя в порядок."
-    Alice_07 "Na los! Spritz auf meine Brüste... Ich wäre schoon überrascht, wenn du es noch länger aushältst. Das war eine tolle Massage, Max... Und damit meine ich nicht nur deine Massage. Warum steckst du deinen Schwanz nicht wieder rein und ich gehe mich sauber machen."
+    Alice_07 "Na los! Spritz auf meine Brüste... Ich wäre schon überrascht, wenn du es noch länger aushältst. Das war eine tolle Massage, Max... Und damit meine ich nicht nur deine Massage. Warum packst du deinen Schwanz nicht wieder ein und ich gehe mich sauber machen."
 
 # game/dialogues/alicetalk.rpy:1446
 translate german advanced_massage1_reciprocity_7fef34b9:
@@ -1552,7 +1552,7 @@ translate german advanced_massage1_no_restrain_1bb78087:
 translate german advanced_massage1_no_restrain_da5f55a1:
 
     # Alice_07 "Давай! Кончи мне на грудь... Я бы удивилась, если бы ты продержался ещё дольше. Массаж получился классный, Макс... и я не только про сам массаж. А сейчас, давай-ка засовывай свой член обратно, а мне нужно скорее привести себя в порядок."
-    Alice_07 " Na los! Spritz auf meine Brüste... Ich wäre schoon überrascht, wenn du es noch länger aushältst. Das war eine tolle Massage, Max... Und damit meine ich nicht nur deine Massage. Warum steckst du deinen Schwanz nicht wieder rein und ich gehe mich sauber machen."
+    Alice_07 " Na los! Spritz auf meine Brüste... Ich wäre schon überrascht, wenn du es noch länger aushältst. Das war eine tolle Massage, Max... Und damit meine ich nicht nur deine Massage. Warum packst du deinen Schwanz nicht wieder ein und ich gehe mich sauber machen."
 
 # game/dialogues/alicetalk.rpy:1463
 translate german advanced_massage1_no_restrain_7fef34b9:

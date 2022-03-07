@@ -1083,7 +1083,7 @@ screen menu_opportunity():
             default CurPoss = ps
         $ last_st = max([i for i, st in enumerate(poss[ps].stages) if st]) if sum(poss[ps].stages) else -1
         if last_st == -1:                   # неоткрыта
-            if blocked[ps].met():
+            if ps in blocked and blocked[ps].met():
                 $ Blocked.append(ps)
             else:
                 $ NotStarted.append(ps)

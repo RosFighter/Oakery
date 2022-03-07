@@ -707,7 +707,7 @@ label olivia_repeatable_night_out_with:
 label olivia_dressed:
 
     label .stay_in_room:    # Макс оставался в комнате
-        $ renpy.dynamic('mood', 'pl', 'po', 'var', 'np')
+        # $ renpy.dynamic('mood', 'pl', 'po', 'var', 'np')
         $ lvl = get_lisa_emancipation()
         $ mood = 0
         $ pl, var = get_lisa_dress_pose(0)
@@ -751,7 +751,7 @@ label olivia_dressed:
                 jump .leave
 
     label .moment0:     # рано (или уже поздно)
-        $ renpy.dynamic('pl', 'po', 'var', 'np')
+        # $ renpy.dynamic('pl', 'po', 'var', 'np')
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pl, var = get_lisa_dress_pose(0)
@@ -773,7 +773,7 @@ label olivia_dressed:
         call .wait_or_leave from _call_olivia_dressed_wait_or_leave
 
     label .moment2:     # повезло
-        $ renpy.dynamic('pl', 'po', 'var', 'np', 'face')
+        # $ renpy.dynamic('pl', 'po', 'var', 'np', 'face')
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pl, var = get_lisa_dress_pose(2)
@@ -802,7 +802,7 @@ label olivia_dressed:
             call .lvl_3 from _call_olivia_dressed_lvl_3
 
     label .moment1:     # неповезло
-        $ renpy.dynamic('pl', 'po', 'var', 'np', 'face')
+        # $ renpy.dynamic('pl', 'po', 'var', 'np', 'face')
         $ lvl = get_lisa_emancipation()
         scene BG char Lisa dressing-01
         $ pl, var = get_lisa_dress_pose(1)

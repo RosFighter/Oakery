@@ -794,7 +794,7 @@ screen file_slots(title):
                             $ load_day      = FileJson(slot, 'day')
                             $ load_tm       = FileJson(slot, 'tm')
                             $ load_wd       = FileJson(slot, 'wd')
-                            $ load_ver      = FileJson(slot, 'ver')
+                            $ load_ver      = FileJson(slot, '_version')
                             if load_day is None:
                                 $ s_description, load_wd, load_tm, load_day = get_extra_stuff(FileSaveName(slot))
                             else:
@@ -829,7 +829,7 @@ screen file_slots(title):
                                         text "[load_wd!t], [load_tm]" style "ext_text"
                                         text _("ДЕНЬ [load_day]") style "ext_text"
                                 if load_ver:
-                                    text load_ver xalign 0.05 style "ext_text"
+                                    text 'v. [load_ver]' xalign 0.05 style "ext_text"
 
 
                                 key "save_delete" action FileDelete(slot)

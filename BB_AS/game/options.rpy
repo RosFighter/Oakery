@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.08.0.03"
+define config.version = "0.08.0.05"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -179,7 +179,6 @@ init python:
         d['desc']   = save_name
         d['auto']   = str(number_autosave)
         d['quick']  = str(number_quicksave)
-        d['ver']    = _version
 
     config.default_fullscreen = False
     config.save_json_callbacks.append(json_callback)

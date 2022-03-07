@@ -3916,7 +3916,7 @@ translate english Alice_solar_a419850a:
 translate english Alice_solar_22c9ef31:
 
     # Alice_03 "Если у тебя есть крем, то давай, раз тебе делать нечего."
-    Alice_03 "Well if you've got some suncreen, go ahead and put it on me. It's not like you've got anything better to do."
+    Alice_03 "Well if you've got some sunscreen, go ahead and put it on me. It's not like you've got anything better to do."
 
 # game/dialogues/alicetalk.rpy:2702
 translate english Alice_solar_93baf4d9:

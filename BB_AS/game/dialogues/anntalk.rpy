@@ -278,7 +278,7 @@ label ann_talk_tv:
     jump Waiting
 
 label ann_tv_casual_0:
-    $ renpy.dynamic('mood', 'ch')
+    # $ renpy.dynamic('mood', 'ch')
 
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
     scene BG tv-watch-01
@@ -396,7 +396,7 @@ label ann_tv_casual_0:
         jump Waiting
 
 label ann_tv_casual_1:
-    $ renpy.dynamic('film')
+    # $ renpy.dynamic('film')
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
     scene BG tv-watch-01
     $ film = '0' + str(renpy.random.randint(1, 7))
@@ -469,7 +469,7 @@ label ann_tv_casual_1:
     jump Waiting
 
 label ann_tv_casual_r:
-    $ renpy.dynamic('film')
+    # $ renpy.dynamic('film')
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
     scene BG tv-watch-01
     $ film = '0' + str(renpy.random.randint(1, 7))
@@ -560,7 +560,7 @@ label ann_tv_casual_r:
     jump Waiting
 
 label ann_tv_continuation_massage:
-    $ renpy.dynamic('film')
+    # $ renpy.dynamic('film')
     $ film = '0' + str(renpy.random.randint(1, 7))
     # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
     scene BG char Kira after-club-s08a-f
@@ -1299,7 +1299,7 @@ label erofilm2_1:
     # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01
     scene BG char Kira after-club-s08a-f
     $ renpy.show('Max tv-ero 03-01'+mgg.dress)
-    $ renpy.dynamic('pose')
+    # $ renpy.dynamic('pose')
     menu:
         Max_05 "{m}Уххх... А у мамы ведь полотенце сползло... И она это ещё не заметила! Должно быть, мой массаж действительно её хорошо расслабил! Надо продолжать... Может оно тогда ещё больше спадёт...{/m}"
         "{i}продолжать массаж{/i}" ('mass', mgg.massage):
@@ -1332,7 +1332,7 @@ label erofilm2_1:
         $ renpy.show('Max tv-ero 03-01'+mgg.dress)
         show Ann tv-ero 03-01
 
-        $ pose = 'good'
+        $ var_pose = 'good'
 
         $ ann.flags.m_shoulder += 1
         $ ann.flags.handmass = True
@@ -1363,7 +1363,7 @@ label erofilm2_1:
             $ renpy.show('Max tv-ero 03'+mgg.dress)
             $ renpy.show('Ann tv-ero 01-0'+str(6+int(pose3_3)))
 
-            $ pose = 'lucky'
+            $ var_pose = 'lucky'
 
         else:
             # (Не повезло!)
@@ -1382,14 +1382,14 @@ label erofilm2_1:
             Ann_14 "Ты специально такой фильм купил?"
             Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
 
-            $ pose = 'unlucky'
+            $ var_pose = 'unlucky'
 
     Ann_15 "Всё, Макс! Такое мы дальше смотреть не будем. По крайней мере {b}ТЫ{/b} не будешь смотреть!"
     Max_09 "Я же всё равно досмотрю этот фильм. Только без тебя это не так интересно..."
 
     scene BG tv-watch-01
     show tv ero2 06 at tv_screen
-    if pose == 'good':
+    if var_pose == 'good':
         # tv-watch-01 + ero_mov_02_06 + tv-watch-01-max&ann-(01a/01b)
         $ renpy.show('Max tv-watch ann-01'+mgg.dress)
     else:
@@ -1405,11 +1405,11 @@ label erofilm2_1:
         # Анна и Эрик ловили Макса за подглядыванием
         Max_07 "Я ведь уже не раз видел, как вы с Эриком такое делаете! И просмотр эротического фильма точно не дотягивает до вас!"
 
-    if pose == 'good':
+    if var_pose == 'good':
         # tv-mass-05 + tv-ero-02-max-(01a/01b)-ann-01
         scene BG tv-mass-05
         $ renpy.show('Ann tv-ero 02-01'+mgg.dress)
-    elif pose == 'lucky':
+    elif var_pose == 'lucky':
         # tv-mass-03 + tv-ero-01-max-(01a/01b) + tv-ero-01-ann-(01/02/03)
         scene BG tv-mass-03
         $ renpy.show('Max tv-ero 01'+mgg.dress)
@@ -1424,7 +1424,7 @@ label erofilm2_1:
     hide screen Cookies_Button
     scene BG tv-watch-01
     show tv ero2 07 at tv_screen
-    if pose == 'good':
+    if var_pose == 'good':
         # tv-watch-01 + ero_mov_02_07 + tv-watch-01-max&ann-(01a/01b)
         $ renpy.show('Max tv-watch ann-01'+mgg.dress)
     else:
@@ -1435,7 +1435,7 @@ label erofilm2_1:
     Ann_12 "Да, ты прав. Но пока у тебя эта самая девушка не появилась..."
     Max_00 "А пока я буду смотреть эротику с тобой! Под твоим контролем."
 
-    if pose == 'good':
+    if var_pose == 'good':
         # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01 + tv-ero-04-ann-01a
         scene BG tv-ero-04
         $ renpy.show('Max tv-ero 04-01'+mgg.dress)

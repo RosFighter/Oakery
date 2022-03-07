@@ -844,7 +844,7 @@ label InstallCam:
 label SearchSpider:
     scene BG char Max spider-search-00
     $ renpy.show('Max spider search-00'+mgg.dress)
-    $ renpy.dynamic('ch')
+    # $ renpy.dynamic('ch')
     $ ch = {
         0 : 100,
         1 : {
@@ -877,7 +877,7 @@ label SearchSpider:
 
 label HideSpider:
 
-    $ renpy.dynamic('ch')
+    # $ renpy.dynamic('ch')
     if '00:40' < tm < '01:00':
         Max_00 "{m}Я могу не успеть как следует припрятать паука, прежде чем Алиса вернется из ванной.{/m}"
         jump Waiting

@@ -68983,3 +68983,20 @@ translate slovak strings:
     # game/extra/extra.rpy:60
     old "Ещё стесняется, но трогает..."
     new "Stále plaché, ale dojímavé..."
+
+# TODO: Translation updated at 2022-03-03 19:26
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях..."
+    new "Konečne sa mi podarilo dostať sa na show s mojou mamou a Erikom! Teta Kira však teraz bude musieť bojovať pred Erikom za moje rozmary... Medzi predstaveniami budem musieť nájsť spôsob, ako sa pripojiť ku Kire s Erikom. Možno sa môžem zúčastniť aj na ich... Činnosti..."
+
+# TODO: Translation updated at 2022-03-03 01:38
+
+# game/events/lisa.rpy:463
+translate slovak lisa_dressed_stay_in_room_db51f185:
+
+    # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
+    Max_09 "{m}Snažil som sa príliš veľakrát, aby som sa pozrel na Lízu, ako sa prezlieka. Dnes sa o to už neoplatí pokúšať.{/m}"
+
