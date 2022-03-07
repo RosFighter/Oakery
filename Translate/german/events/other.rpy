@@ -376,13 +376,13 @@ translate german MeetingEric_68dfdf17:
 translate german MeetingEric_good_53d048fe:
 
     # Ann_07 "Ну, я рада, что вы познакомились и, вроде бы, нашли общий язык. Прошу, Эрик, к столу. Мы завтракаем и ужинаем на свежем воздухе, на веранде, пойдём покажу." nointeract
-    Ann_07 "Ich freue mich, dass ihr euch kennen gelernt habt und miteinander auskommt. Gehen wir jetzt an den Tisch. Wir frühstücken und essen unter freiem Himmel auf der Veranda, kommt und seht euch das an." nointeract
+    Ann_07 "Ich freue mich, dass ihr euch kennen gelernt habt und miteinander auskommt. Gehen wir jetzt an den Tisch. Wir frühstücken und essen unter freiem Himmel auf dem Balkon, kommt und seht euch das an." nointeract
 
 # game/events/other.rpy:208
 translate german MeetingEric_middle_6e04cd04:
 
     # Ann_17 "Макс, мы с тобой потом поговорим. Ну, Эрик, проходи к столу. Мы обычно ужинаем, да и завтракаем на открытом воздухе, тут у нас веранда..." nointeract
-    Ann_17 "Max! Wir reden später weiter. Lass uns jetzt zum Tisch gehen, Eric. Wir frühstücken und essen unter freiem Himmel auf der Veranda, kommt und seht euch das an." nointeract
+    Ann_17 "Max, wir reden später. Nun, Eric, komm an den Tisch. Das Abendessen und das Frühstück nehmen wir normalerweise im Freien ein, wir haben hier einen Balkon..." nointeract
 
 # game/events/other.rpy:218
 translate german MeetingEric_bad_2c10cf49:
@@ -406,7 +406,7 @@ translate german MeetingEric_bad_9101ec96:
 translate german MeetingEric_bad_c246e424:
 
     # Ann_01 "Молчишь? Нечего сказать или стыдно? Будем считать, что ты просто голодный, а не специально хотел нахамить Эрику. Ладно, пойдёмте ужинать..."
-    Ann_01 "Schweigen? Hast du nichts zu sagen oder schämst du dich? Wir gehen einfach mal davon aus, dass du einfach nur hungrig bist und Eric gegenüber nicht absichtlich unhöflich sein wolltest. Okay, lass uns essen gehen..."
+    Ann_01 "Du sagst nichts? Du hast nichts zu sagen oder schämst dich? Nehmen wir an, du hast einfach nur Hunger und wolltest gegenüber Eric nicht absichtlich frech werden. Okay, gehen wir zum Abendessen..."
 
 # game/events/other.rpy:243
 translate german Kira_arrival_ce3f4211:

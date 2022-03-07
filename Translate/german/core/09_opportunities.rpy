@@ -1936,7 +1936,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Компромат на Эрика\"..."
-    new "Es sind Fortschritte bei der Möglichkeit \"Eric im Dreck\" brauchen..."
+    new "Es sind Fortschritte bei der Möglichkeit \"Eric im Dreck\" notwendig..."
 
     # game/core/09_opportunities.rpy:4
     old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик предупредил меня, что так просто он это не оставит и у меня будут огромные проблемы. Ну посмотрим, что такого он может сделать..."

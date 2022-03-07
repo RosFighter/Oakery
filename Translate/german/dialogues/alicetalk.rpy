@@ -11042,13 +11042,13 @@ translate german strings:
 translate german alice_help_carry_plates_170dcbe9:
 
     # Alice_07 "На это я, на самом деле, и надеялась. Пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "Das hatte ich mir wirklich erhofft. Ich könnte wirklich ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf die Veranda bringen." nointeract
+    Alice_07 "Das hatte ich mir wirklich erhofft. Ich könnte wirklich ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf den Balkon bringen." nointeract
 
 # game/dialogues/alicetalk.rpy:5452
 translate german alice_help_carry_plates_78889183:
 
     # Alice_07 "Помочь?! Чего это ты, Макс, такой добрый? Хотя, пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "Hilfe?! Warum bist du so nett, Max? Ich könnte allerdings ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf die Veranda bringen." nointeract
+    Alice_07 "Hilfe?! Warum bist du so nett, Max? Ich könnte allerdings ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf den Balkon bringen." nointeract
 
 # game/dialogues/alicetalk.rpy:5459
 translate german alice_help_carry_plates_9489751c:
