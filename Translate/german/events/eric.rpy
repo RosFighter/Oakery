@@ -694,7 +694,7 @@ translate german eric_ann_sleep_6d97eb0c:
 translate german eric_ann_sleep_adf5bbdf:
 
     # Max_09 "{m}О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!{/m}" nointeract
-    Max_09 "{m}Oh! Mom schläft allein... Sie ist so heiß, besonders nackt... Wo ist Eric? Ist er nicht in Alice' Zimmer?{/m}" nointeract
+    Max_09 "{m}О! Mom schläft allein... Wie schön sie ist, besonders nackt... Wo ist Eric? Er ist doch in Alice's Zimmer?!{/m}" nointeract
 
 # game/events/eric.rpy:728
 translate german eric_ann_sleep_980b6a59:
@@ -706,13 +706,13 @@ translate german eric_ann_sleep_980b6a59:
 translate german eric_ann_sleep_9f0558e6:
 
     # Max_07 "{m}О, да! Этой ночью мама предстала во всей красе... Полностью голенькая... такая соблазнительная. Только вот обезьяна здесь лишняя повисла!{/m}" nointeract
-    Max_07 "{m}Oh, ja! Mom ist völlig unbekleidet!... Komplett nackt... so verlockend. Außer, dass da auch noch ein Arschloch ist!{/m}" nointeract
+    Max_07 "{m}Oh ja, heute Nacht zeigt Mom sich in ihrer ganzen Pracht... Völlig nackt... so verführerisch. Außer, dass hier ein Affe herumhängt!{/m}" nointeract
 
 # game/events/eric.rpy:732
 translate german eric_ann_sleep_5da2c2be:
 
     # Max_04 "{m}Класс! У моей мамы лучшая попка в мире... а голая она просто сводит с ума! Ещё бы эта гора мышц около неё не лежала...{/m}" nointeract
-    Max_04 "{m}Schön! Meine Mom hat den schönsten Arsch der Welt... und dass sie nackt ist, macht mich verrückt! Ich wünschte nur, dieser Schwanz würde nicht da liegen...{/m}" nointeract
+    Max_04 "{m}Oh, großartig! Meine Mom hat den geilsten Arsch der Welt... und sie ist splitternackt! Ich wünschte, sie hätte nicht diesen großen Muskelberg neben sich liegen...{/m}" nointeract
 
 # game/events/eric.rpy:741
 translate german eric_ann_sleep_784afa47:
@@ -724,7 +724,7 @@ translate german eric_ann_sleep_784afa47:
 translate german eric_ann_sleep_2bbb8611:
 
     # Max_02 "{m}Просто с ума сойти можно! Она лежит всего в метре от меня... совсем голая... и мне видно её киску... такая красивая! А этот ублюдок, Эрик, так по-хозяйски облапал её... Врезать бы ему, гаду... Ладно, пора бы мне уже уходить, а то они ещё проснутся.{/m}" nointeract
-    Max_02 "{m}Es ist einfach verrückt! Sie ist mir so nah... ...völlig nackt... und ich kann ihre Muschi sehen... ...so schön! Und dieser Bastard, Eric, betatscht sie... Okay, ich gehe besser, sonst wachen sie noch auf.{/m}" nointeract
+    Max_02 "{m}Es ist einfach verrückt! Sie ist nur einen Meter von mir entfernt... ...völlig nackt... und ich kann ihre Pussy sehen... so schön! Und dieser Bastard, Eric, hat seine Hände überall an ihr... Ich würde ihm gerne eine reinhauen, dem Bastard... Ich muss jetzt los, sonst wachen sie noch auf.{/m}" nointeract
 
 # game/events/eric.rpy:745
 translate german eric_ann_sleep_b74cc146:
