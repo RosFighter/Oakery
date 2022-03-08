@@ -802,7 +802,7 @@ translate german lisa_bath_open_44974c8f:
 translate german lisa_bath_open_bb4cd26f:
 
     # Lisa_12 "Макс, выйди немедленно!"
-    Lisa_12 "Max, komm sofort raus!"
+    Lisa_12 "Max, geh sofort raus!"
 
 # game/events/lisa.rpy:874
 translate german lisa_bath_open_3db87e42:
