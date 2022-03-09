@@ -8998,13 +8998,13 @@ translate german alice_gift_whip_34569bf8:
 translate german alice_gift_whip_c58cb444:
 
     # Alice_05 "Может быть тебе показать? С удовольствием продемонстрирую... прямо на твоей заднице!"
-    Alice_05 "Vielleicht zeige ich es dir? Ich würde es dir liebend gerne probieren... direkt auf deinem Arsch!"
+    Alice_05 "Vielleicht zeige ich es dir? Ich würde es an dir liebend gerne probieren... direkt an deinem Arsch!"
 
 # game/dialogues/alicetalk.rpy:5075
 translate german alice_gift_whip_bf59dae4:
 
     # Max_10 "Нет-нет... Спасибо, но посягательств от мамы более чем хватило! Так что не надо."
-    Max_10 "Nein, nein... Danke, ich wurde von Mom schon mehr als genug geschlagen! Also lass es."
+    Max_10 "Nein, nein... Danke, ich wurde von Mom schon mehr als genug geschlagen! Also vergiss es."
 
 # game/dialogues/alicetalk.rpy:5077
 translate german alice_gift_whip_4da3856f:
@@ -9016,13 +9016,13 @@ translate german alice_gift_whip_4da3856f:
 translate german alice_gift_whip_713a7aab:
 
     # Alice_01 "Точно не надо? А то я могу!"
-    Alice_01 "Bist du sicher, dass du das nicht willst? Ich bin dazu bereit!"
+    Alice_01 "Bist du sicher? Ich bin dazu bereit!"
 
 # game/dialogues/alicetalk.rpy:5080
 translate german alice_gift_whip_7653d151:
 
     # Max_07 "Точно! Я как-нибудь обойдусь..."
-    Max_07 "Genau! Ich werde schon irgendwie zurechtkommen..."
+    Max_07 "Genau! Ich komm schon irgendwie klar..."
 
 # game/dialogues/alicetalk.rpy:5081
 translate german alice_gift_whip_5bbb8668:
