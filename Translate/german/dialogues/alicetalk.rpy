@@ -148,7 +148,7 @@ translate german talkblog1_no_f28dfb56:
 translate german talkblog1_no_e05a3f44:
 
     # Alice_09 "Знаешь что, Макс, отвали!"
-    Alice_09 "Weißt du was, lass mich in Ruhe!"
+    Alice_09 "Weißt du was, Max, verschwinde!"
 
 # game/dialogues/alicetalk.rpy:182
 translate german talkblog1_no_4a96e107:
@@ -2230,13 +2230,13 @@ translate german smoke_fear_money_69538574:
 translate german smoke_fear_fail_1bbfb6e5:
 
     # Alice_16 "[failed!t]Ага, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..." nointeract
-    Alice_16 "[failed!t]Ja, klar! Raus hier, du kleiner Scheißer. Lass mich in Ruhe." nointeract
+    Alice_16 "[failed!t]Ja, genau! Du bist ein Idiot, Max... Und jetzt verpiss dich und lass mich in Ruhe rauchen..." nointeract
 
 # game/dialogues/alicetalk.rpy:1992
 translate german smoke_fear_fail2_77090a0c:
 
     # Alice_12 "[failed!t]Вот так значит? А я вот выбираю вариант, в котором ты, может быть, останешься сегодня цел, если очень быстро свалишь отсюда и не будешь мне надоедать... Пока я ещё более-менее добрая." nointeract
-    Alice_12 "[failed!t]War's das? Nun, ich wähle die Option, bei der du heute Abend sicher bist, wenn du ganz schnell verschwindest und mich nicht nervst... Solange ich freundlich gestimmt bin." nointeract
+    Alice_12 "[failed!t]Mehr nicht? Und ich entscheide mich für die Möglichkeit, dass du heute Nacht vielleicht unversehrt bleibst, wenn du hier ganz schnell verschwindest und mich nicht weiter nervst... Obwohl ich immer noch mehr oder weniger nett bin." nointeract
 
 # game/dialogues/alicetalk.rpy:2007
 translate german smoke_toples_6c5b6af2:
@@ -2254,7 +2254,7 @@ translate german smoke_toples_feec497a:
 translate german smoke_toples_ea9774a5:
 
     # Alice_04 "Вот и молодец. А теперь иди, займись чем-нибудь..."
-    Alice_04 "Gut. Geh jetzt und mach dich woanders nützlich."
+    Alice_04 "Gut für dich. Und jetzt verschwinde und mach was anderes..."
 
 # game/dialogues/alicetalk.rpy:2014
 translate german smoke_toples_82324783:

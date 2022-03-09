@@ -1108,7 +1108,7 @@ translate german ann_yoga_with_maxr_a4d4efa2:
 translate german ann_yoga_with_maxr_be09b23d:
 
     # Max_01 "Да, давай..."
-    Max_01 "Ja, lass uns..."
+    Max_01 "Ja, los gehts..."
 
 # game/dialogues/anntalk.rpy:809
 translate german ann_yoga_with_maxr_dbbb3c5b:
@@ -1120,25 +1120,25 @@ translate german ann_yoga_with_maxr_dbbb3c5b:
 translate german ann_yoga_with_maxr_c8a1933c:
 
     # Max_04 "Ага... Класс..."
-    Max_04 "Ja, äh... Oh, toll..."
+    Max_04 "Ja, äh... Oh, naja..."
 
 # game/dialogues/anntalk.rpy:811
 translate german ann_yoga_with_maxr_9dc43457:
 
     # Ann_12 "Это в смысле - да, будешь сидеть?"
-    Ann_12 "Was soll das heißen, ja, du wirst?"
+    Ann_12 "Was soll das heißen - naja, tust du es, oder nicht?"
 
 # game/dialogues/anntalk.rpy:812
 translate german ann_yoga_with_maxr_b6c184b0:
 
     # Max_03 "А, что? Я просто засмотрелся и немного прослушал, что ты говорила..."
-    Max_03 "Oh, was? Ich habe nur gestarrt und ein bisschen zugehört, was du gesagt hast..."
+    Max_03 "Oh, was? Ich habe nur nachgedacht und ein bisschen zugehört, was du gesagt hast..."
 
 # game/dialogues/anntalk.rpy:818
 translate german ann_yoga_with_maxr_a8e83c1d:
 
     # Ann_04 "Макс, будь повнимательнее... Я ведь хочу, чтобы ты хоть чему-то научился от меня."
-    Ann_04 "Max, pass auf... Ich möchte, dass du etwas von mir lernst."
+    Ann_04 "Max, pass auf... Ich möchte, dass du etwas lernst - von mir lernst."
 
 # game/dialogues/anntalk.rpy:819
 translate german ann_yoga_with_maxr_8e1d1dc1:

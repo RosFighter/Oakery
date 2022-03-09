@@ -3547,7 +3547,7 @@ translate german eric_ann_fuck_glasses_sleeping_25848186:
 translate german eric_ann_fuck_glasses_sleeping_2de0f4bb_1:
 
     # Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
-    Eric_08 "Ahhh... Oh mein Gott, Baby, ich kann es nicht mehr halten! Ich komme ja gleich! D-a-a-a... Oh, toll..."
+    Eric_08 "Ahhh... Oh mein Gott, Baby, ich kann es nicht mehr halten! Ich komme ja gleich! J-a-a-a... Oh, toll..."
 
 # game/events/eric.rpy:727
 translate german eric_ann_fuck_glasses_sleeping_bc1ff92c_1:
