@@ -1704,7 +1704,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот всё и получилось! У меня есть два снимка, на которых Эрик, как грязный извращенец, дрочит пока все спокойно спят... А на одном из снимков даже видно на кого он дрочит...\n\nМне стоит быть осторожнее с этими снимками, Эрик столько всего делает для моих сестёр, что они запросто могут рассказать о том, что у меня есть. А так же хорошенько подумать над тем, как я буду использовать эти снимки.\n\nЯ могу придержать этот компромат, пойти с ним к Эрику в ближайшее время или же вовсе как-то подставить его..."
-    new "Das war's also! Ich habe zwei Bilder von Eric, wie er sich wie ein Perverser einen runterholt, während alle friedlich schlafen... Und auf einem der Bilder kann man sogar sehen, zu wem er sich einen runterholt...\n\n Ich sollte mit diesen Bildern vorsichtig sein, Eric tut so viel für meine Schwestern, dass sie leicht vererkennen könnten, was ich habe. Ich sollte auch sorgfältig darüber nachdenken, wie ich sie verwende.\n\nIch kann die hier behalten, sie mitnehmen, zu Eric bringen, oder ich kann ihn irgendwie reinlegen..."
+    new "Das war's also! Ich habe zwei Bilder von Eric, wie er sich wie ein Perverser einen runterholt, während alle friedlich schlafen... Und auf einem der Bilder kann man sogar sehen, zu wem er sich einen runterholt...\n\n Ich sollte mit diesen Bildern vorsichtig sein, Eric tut so viel für meine Schwestern, dass sie leicht verkennen könnten, was ich habe. Ich sollte auch sorgfältig darüber nachdenken, wie ich sie verwende.\n\nIch kann die hier behalten, sie mitnehmen, zu Eric bringen, oder ich kann ihn irgendwie reinlegen..."
 
     # game/core/09_opportunities.rpy:4
     old "Забота о попках"
