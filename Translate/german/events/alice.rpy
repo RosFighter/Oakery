@@ -94,7 +94,7 @@ translate german alice_sleep_night_ea249669:
 translate german alice_sleep_night_f84d87b6:
 
     # Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
-    Max_01 "{m}Fantastisch! Schwesterchen schläft mit gekrümmtem Rücken, so dass ihre nackten Brüste wie zwei Hügel herausragen... Ein verlockender Anblick...{/m}" nointeract
+    Max_01 "{m}Das ist großartig! Schwesterchen schläft auf dem Rücken, so dass ihre Brüste wie zwei Hügel herausragen... Ein verführerischer Anblick...{/m}" nointeract
 
 # game/events/alice.rpy:122
 translate german alice_sleep_night_60e127e3:
@@ -112,7 +112,7 @@ translate german alice_sleep_night_58e230bc:
 translate german alice_sleep_night_f84d87b6_1:
 
     # Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
-    Max_01 "{m}Erstaunlich! Meine Schwester schläft auf dem Rücken, so dass ihre nackten Brüste wie zwei Hügel herausragen... Ein verführerischer Anblick...{/m}" nointeract
+    Max_01 "{m}Das ist großartig! Schwesterchen schläft auf dem Rücken, so dass ihre Brüste wie zwei Hügel herausragen... Ein verführerischer Anblick...{/m}" nointeract
 
 # game/events/alice.rpy:133
 translate german alice_sleep_night_853ba5e8:
