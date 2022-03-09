@@ -1600,13 +1600,13 @@ translate german jerk_photohant1_f18969bd:
 translate german jerk_photohant1_7df01892:
 
     # Max_10 "{m}Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз...{/m}" nointeract
-    Max_10 "{m}Als ich ankam, war Eric schon weg... Nun, ich werde ihn das nächste Mal erwischen...{/m}" nointeract
+    Max_10 "{m}Jetzt bin ich zurück, aber Eric ist schon weg... Nun, ich werde ihn sicher das nächste Mal erwischen...{/m}" nointeract
 
 # game/events/eric.rpy:1483
 translate german jerk_photohant2_8c6a080b:
 
     # Max_05 "{m}Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!{/m}" nointeract
-    Max_05 "{m}Du bist so was von erledigt! Mit so einem Schmuddelbild wissen wir alles, wenn etwas passiert... Die Hauptsache ist jetzt, nicht erwischt zu werden!{/m}" nointeract
+    Max_05 "{m}Du bist so was von erledigt! Mit so einem \"Schmuddelbild\" sehen alle, was passiert ist... Die Hauptsache ist jetzt, nicht erwischt zu werden!{/m}" nointeract
 
 # game/events/eric.rpy:1497
 translate german jerk_photohant2_7df01892:
@@ -1618,11 +1618,11 @@ translate german strings:
 
     # game/events/eric.rpy:17
     old "Понимаю, хорошо..."
-    new "Ich verstehe"
+    new "Ich verstehe..."
 
     # game/events/eric.rpy:17
     old "И зачем мне это?"
-    new "Und warum sollte mich das interessieren?"
+    new "Wen interessiert das?"
 
     # game/events/eric.rpy:46
     old "А если нет, то что?"
@@ -1630,7 +1630,7 @@ translate german strings:
 
     # game/events/eric.rpy:46
     old "Думаю, подружимся..."
-    new "Ich denke, wir werden Freunde sein"
+    new "Ich denke, wir werden Freunde sein..."
 
     # game/events/eric.rpy:58
     old "Это ещё почему?"
@@ -1642,11 +1642,11 @@ translate german strings:
 
     # game/events/eric.rpy:66
     old "Да верю, верю. Я просто спросил и не хочу ссориться..."
-    new "Ich glaube dir. Ich will nicht mit dir kämpfen, ich war nur neugierig..."
+    new "Ich glaube dir. Ich will keinen Streß, ich war voreilig..."
 
     # game/events/eric.rpy:66
     old "Меня все любят и мне поверят, что ты мне угрожал!"
-    new "Alle lieben mich, und sie werden mir glauben, wenn ich sage, dass du mir gedroht hast!"
+    new "Alle lieben mich, und werden mir glauben, dass du mir gedroht hast!"
 
     # game/events/eric.rpy:66
     old "У меня есть мозги и я что-нибудь придумаю!"
@@ -1654,7 +1654,7 @@ translate german strings:
 
     # game/events/eric.rpy:75
     old "Не верю! Всё не так!"
-    new "Ich glaube dir nicht! Du irrst dich!"
+    new "Niemals! Du irrst dich!"
 
     # game/events/eric.rpy:75
     old "Она так сказала?"
@@ -1670,7 +1670,7 @@ translate german strings:
 
     # game/events/eric.rpy:103
     old "Ладно, посмотрим... И что я выиграю?"
-    new "Okay, was würde ich gewinnen?"
+    new "Okay, was würde ich... gewinnen?"
 
     # game/events/eric.rpy:113
     old "Какие проблемы?"
