@@ -1572,7 +1572,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Фух, повезло не испытать на себе этот самый стек, который я подарил Алисе. Что же за БДСМ-игры она собирается затевать? И ещё более интересно, с кем?! Сейчас же я пока что могу лишь узнать, что ещё она попросит в дополнение к своему костюму... Ошейник... Зажимы на соски... Я уже ничему не удивлюсь."
-    new "Puh, ein Glück, dass ich nicht genau die Lederpeitsche bekommen habe, den ich Alice bekommen wollte. Welche Art von BDSM-Spiel wird sie spielen? Und was noch interessanter ist, mit wem?! Im Moment kann ich mich nur fragen, was sie sich zusätzlich zu ihrem Kostüm noch wünschen wird... Ein Halsband... Nippelklemmen... Das würde mich nicht überraschen."
+    new "Puh, ein Glück, dass ich nicht genau das bekommen habe, was Alice gefordert hat. Welche Art von BDSM-Spiel wird sie spielen? Und was noch interessanter ist, mit wem?! Im Moment kann ich mich nur raten, was sie sich zusätzlich zu ihrem Kostüm noch wünschen wird... Ein Halsband... Nippelklemmen... Das würde mich nicht überraschen."
 
     # game/core/09_opportunities.rpy:4
     old "В очередной раз, извиняясь перед Алисой, что-то пошло не так... Она не стала ничего просить, лишь сказала, что наказание, которое она для меня придумала, переносится на вечер. Но я обязательно должен подойти к ней, когда она будет смотреть ТВ ближе к ночи. Можно, конечно, и не ходить, но тогда на следующий день Алиса всё расскажет маме о моих подглядываниях и меня всё равно накажут перед всеми. Так что хорошо было бы узнать, что там Алиса придумала для меня. Хотя бы для сравнения..."
