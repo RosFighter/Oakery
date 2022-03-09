@@ -11798,13 +11798,13 @@ translate german alice_about_wallet_1fc2b461:
 translate german alice_about_wallet_7fa286a3:
 
     # Max_07 "Э-э-э... Что не интересно?"
-    Max_07 "Ähm ... Was ist nicht interessant?"
+    Max_07 "Ähm ... An was nicht interessiert?"
 
 # game/dialogues/alicetalk.rpy:5777
 translate german alice_about_wallet_b528c3ce:
 
     # Alice_12 "Всё, с чем бы ты не пришёл. Просто уходи... Или врежу!"
-    Alice_12 "Was auch immer du anschleppst. Geh einfach weg... Oder ich werde dich verletzen!"
+    Alice_12 "Was auch immer du willst. Geh einfach weg... Oder ich werde dich verletzen!"
 
 # game/dialogues/alicetalk.rpy:5778
 translate german alice_about_wallet_d249d4b4:
@@ -11822,13 +11822,13 @@ translate german alice_about_wallet_1310eef7:
 translate german alice_about_wallet_3deff628:
 
     # Max_10 "Ладно. Всё понял. Ухожу."
-    Max_10 "Also gut. Du hast es verstanden. Ich haue jetzt ab."
+    Max_10 "Also gut. Ich hab verstanden. Ich gehe."
 
 # game/dialogues/alicetalk.rpy:5792
 translate german smoke_after_wallet_aa2d0826:
 
     # Alice_12 "Нечего на меня тут глазеть, Макс! Иди отсюда. Или тебя поджопником ускорить?"
-    Alice_12 "Starr mich nicht so an, Max! Raus hier. Oder soll ich dir einen Tritt in den Arsch geben?"
+    Alice_12 "Starr mich nicht so an, Max! Verschwinde. Oder soll ich dir einen Tritt in den Arsch geben?"
 
 # game/dialogues/alicetalk.rpy:5793
 translate german smoke_after_wallet_8a0bacb0:

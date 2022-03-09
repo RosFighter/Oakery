@@ -2704,7 +2704,7 @@ translate german start_eric_wallet_4520c649:
 translate german start_eric_wallet_75289435:
 
     # Eric_09 "Мой бумажник пропал ещё давно и именно здесь. Я об этом ничего не говорил, потому что хотел посмотреть, у кого и что начнёт появляться. Так что это ты, Макс! Без вариантов! И сумма, которую я прошу вернуть, названа уже с примерным вычетом того, что ты потратил."
-    Eric_09 "Mein Portmonee ist schon vor langer Zeit verschwunden, und wo ist es jetzt. Ich habe nichts dazu gesagt, weil ich abwarten wollte, wer und was passieren würde. Du bist es also, Max! Niemals! Und der Betrag, den ich zurückfordere, wurde bereits mit einem ungefähren Anteil dessen, was du ausgegeben hast, angegeben."
+    Eric_09 "Mein Portmonee ist schon vor langer Zeit verschwunden, und wo ist es jetzt. Ich habe nichts dazu gesagt, weil ich abwarten wollte, wer und was passieren würde. Du bist es also, Max! Kein anderer! Und der Betrag, den ich zurückfordere, wurde bereits um einem ungefähren Anteil dessen, was du ausgegeben hast, verringert."
 
 # game/events/eric.rpy:1858
 translate german start_eric_wallet_424e7e6c:
