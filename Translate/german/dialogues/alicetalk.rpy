@@ -9220,19 +9220,19 @@ translate german alice_mistress_0_8aa9b539:
 translate german alice_mistress_0_ebf41a2c:
 
     # Max_03 "О да! Интересно, с каким же..."
-    Max_03 "Oh ja! Ich frage mich, was für eine Art..."
+    Max_03 "Oh ja! Ich frage mich, was für es ist..."
 
 # game/dialogues/alicetalk.rpy:5157
 translate german alice_mistress_0_384f6e34:
 
     # Alice_05 "Да вот с этим, Макс... Ну что, узнаёшь его?"
-    Alice_05 "Ja, mit dem hier, Max... Erkennst du es wieder?"
+    Alice_05 "Ja, genau das hier, Max... Erkennst du ihn wieder?"
 
 # game/dialogues/alicetalk.rpy:5158
 translate german alice_mistress_0_b07b0cf8:
 
     # Max_08 "Эй... Потише, это тебе не игрушки!"
-    Max_08 "Hey... Sprich leise, das ist kein Spielzeug!"
+    Max_08 "Hey... Vorsicht, das ist kein Spielzeug!"
 
 # game/dialogues/alicetalk.rpy:5159
 translate german alice_mistress_0_53b888cf:
