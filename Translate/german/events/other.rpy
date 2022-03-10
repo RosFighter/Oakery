@@ -1040,7 +1040,7 @@ translate german showdown_with_eric_3d070281:
 translate german showdown_with_eric_a26a29c6:
 
     # Max_07 "Я бы сказал, что с завидным постоянством!"
-    Max_07 "Ich würde sagen, mit beneidenswerter Konsequenz!"
+    Max_07 "Ich würde sagen, mit beneidenswerter Regelmäßigkeit!"
 
 # game/events/other.rpy:525
 translate german showdown_with_eric_3d7646d5:
@@ -1136,19 +1136,19 @@ translate german showdown_with_eric_517352a4:
 translate german showdown_with_eric_54354826:
 
     # Ann_15 "Эрик! У меня в голове не укладывается то, что я вижу... Господи! Ты же дрочишь на мою дочь! Как ты мог такое делать, мерзавец... Лиза, а с тобой всё в порядке?! Эрик ничего с тобой не делал?"
-    Ann_15 "Eric! Ich kann nicht begreifen, was ich da sehe... Mein Gott! Du wichst dir auf meine Tochter einen! Wie konntest du das tun, du Bastard... Lisa, ist alles in Ordnung? Eric hat dir nichts angetan?"
+    Ann_15 "Eric! Ich kann nicht begreifen, was ich da sehe... Mein Gott! Du wichst dir auf meine Tochter einen! Wie konntest du das tun, du Bastard... Lisa, ist mit dir alles in Ordnung? Eric hat dir nichts angetan?"
 
 # game/events/other.rpy:566
 translate german showdown_with_eric_6266c673:
 
     # Lisa_10 "Нет... Правда, он предлагал мне закрепить на практике те уроки сексуального воспитания, что вы для меня проводили."
-    Lisa_10 "Nein... Allerdings hat er mir angeboten, mit mir den Sexualkundeunterricht zu üben, den du mir gegeben hast."
+    Lisa_10 "Nein... Mir hat er mir mehrmals angeboten, den Sexualkundeunterricht praktisch zu üben, den du mir gegeben hast."
 
 # game/events/other.rpy:575
 translate german showdown_with_eric_ad4584a4:
 
     # Alice_18 "Ах так! Значит, ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
-    Alice_18 "Oh, ja! Du hast unsere kleine Lisa also schon in der Hand? Hier... Nimm das, du Scheißkerl..."
+    Alice_18 "Ach, ernsthaft! Du hast unsere kleine Lisa also schon in der Hand? Hier... Nimm das, du Dreckskerl..."
 
 # game/events/other.rpy:576
 translate german showdown_with_eric_8277ef23:
@@ -1172,7 +1172,7 @@ translate german showdown_with_eric_8cb800af:
 translate german showdown_with_eric_5dcf637a:
 
     # Alice_16 "Я раньше от души могла навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
-    Alice_16 "Früher hätte ich Max die Scheiße aus dem Leib prügeln können, aber jetzt bin ich so sauer, dass ich einem Perversen wie dir die Seele aus dem Leib prügeln könnte!"
+    Alice_16 "Früher hätte ich Max die Scheiße aus dem Leib prügeln können, aber jetzt bin ich so sauer, dass ich einem Perversen wie dir die Seele aus dem Leib prügeln werde!"
 
 # game/events/other.rpy:590
 translate german showdown_with_eric_aece1638:
@@ -1220,13 +1220,13 @@ translate german showdown_with_eric_90ee4fd2:
 translate german showdown_with_eric_167ce82b:
 
     # Max_09 "Хорошо, что я своим мужским взглядом сразу понял, что он мутный тип!"
-    Max_09 "Gut, dass ich mit meinem männlichen Blick wusste, dass er ein mieser Typ ist!"
+    Max_09 "Gut, dass ich mit meinem männlichen Instinkt wusste, dass er ein mieser Typ ist!"
 
 # game/events/other.rpy:607
 translate german showdown_with_eric_ca2a104b:
 
     # Lisa_09 "Так это получается, что? Про бумажник Эрик наврал?"
-    Lisa_09 "Das war's dann also? Hat Eric wegen der Brieftasche gelogen?"
+    Lisa_09 "So ist das also? Hat Eric wegen der Brieftasche auch gelogen?"
 
 # game/events/other.rpy:608
 translate german showdown_with_eric_b84c6e58:

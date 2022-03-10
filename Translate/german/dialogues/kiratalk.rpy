@@ -3495,7 +3495,7 @@ translate german kira_about_showdown_15d3b212:
 translate german kira_about_showdown_d25e8b6a:
 
     # Kira_15 "Я переживу, Макс. Не знаю, каким чудом он ещё не узнал, что я порно-актриса! Наверняка бы сразу все свои наигрязнейшие фантазии стал воплощать в жизнь..."
-    Kira_15 "Ich werde darüber hinwegkommen, Max. Ich verstehe nicht, wie er nicht erfahren hat, dass ich eine Pornodarstellerin bin! Ich bin sicher, er hätte sofort angefangen, seine schmutzigen Fantasien auszuleben..."
+    Kira_15 "Ich werde darüber hinwegkommen, Max. Ich verstehe nur nicht, wdas er nicht sofort bemerkt hat, dass ich eine Pornodarstellerin bin! Ich bin sicher, er hätte dann sofort angefangen, seine schmutzigen Fantasien auszuleben..."
 
 # game/dialogues/kiratalk.rpy:1543
 translate german kira_about_showdown_27400ec2:
