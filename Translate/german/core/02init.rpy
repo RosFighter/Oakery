@@ -695,7 +695,7 @@ translate german strings:
 
     # game/core/02init.rpy:136
     old "Мама разрешила!"
-    new "Mom hat gesagt, ich darf das!"
+    new "Mom hat zugestimmt!"
 
     # game/core/02init.rpy:136
     old "Кстати, а как тебе та книжка, которую я дарил?"

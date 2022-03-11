@@ -2040,7 +2040,7 @@ translate german olivia_lisa_sunscreen_0_1b5600b7:
 translate german olivia_lisa_sunscreen_0_c5a55342:
 
     # Max_07 "Лиза, я же за тебя переживаю. Вдруг Оливия из-за твоего купальника намажет не всё."
-    Max_07 "Lisa, ich mache mir Sorgen um dich. Vielleicht will Olivia wegen deines Badeanzugs nicht alles anziehen."
+    Max_07 "Lisa, ich mache mir Sorgen um dich. Vielleicht will Olivia wegen deines Badeanzugs nicht alles erreichen können."
 
 # game/events/olivia.rpy:1118
 translate german olivia_lisa_sunscreen_0_5e735faf:
