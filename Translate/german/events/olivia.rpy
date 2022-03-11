@@ -742,7 +742,7 @@ translate german olivia_first_night_out_with_a4ff6d3b:
 translate german olivia_first_night_out_with_bf95efa9:
 
     # Max_02 "Оливия же в гостях... Может определим её на твою кровать, а ты со мной?"
-    Max_02 "Olivia ist zu Besuch... Wie wäre es, wenn wir sie in dein Bett legen und du kommst mit mir?"
+    Max_02 "Olivia ist zu Besuch... Wie wäre es, wenn wir ihr dein Bett überlassen und du kommst zu mir?"
 
 # game/events/olivia.rpy:439
 translate german olivia_first_night_out_with_e113e5b9:
