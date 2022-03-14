@@ -808,7 +808,7 @@ translate german eric_ann_shower_ladder_89298c59:
 translate german eric_ann_shower_ladder_bbf123bb:
 
     # Max_09 "{m}Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?{/m}"
-    Max_09 "{m}Wow! Mit was für eine Leidenschaft lutscht Mom den chwanz von Eric... Und er scheint nicht genug zu bekommen und versucht, seinen Schwanz tief in ihren Mund zu stecken... Warum lässt sie ihn das tun, gehorcht sie gerne?{/m}"
+    Max_09 "{m}Wow! Mit was für einer Leidenschaft lutscht Mom den Schwanz von Eric... Und er scheint nicht genug zu bekommen und versucht, seinen Schwanz tief in ihren Mund zu stecken... Warum lässt sie ihn das tun, gehorcht sie gerne?{/m}"
 
 # game/events/eric.rpy:840
 translate german eric_ann_shower_ladder_83ee9801:
