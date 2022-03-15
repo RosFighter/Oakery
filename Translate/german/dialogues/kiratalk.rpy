@@ -580,7 +580,7 @@ translate german kira_talk4_5c93772d:
 translate german kira_talk4_d3b3b86a:
 
     # Max_08 "Это порно?!"
-    Max_08 "Es sidn Pornos!?"
+    Max_08 "Es sind Pornos!?"
 
 # game/dialogues/kiratalk.rpy:286
 translate german kira_talk4_2dea5ed4:
