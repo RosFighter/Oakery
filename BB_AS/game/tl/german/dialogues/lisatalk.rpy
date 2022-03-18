@@ -11021,7 +11021,7 @@ translate german lisa_advanced_kiss_lesson_31a01586:
 translate german lisa_about_olivia_6_4625ce5e:
 
     # Lisa_03 "Ты про Оливию? И мне с вами можно?"
-    Lisa_03 "Du meinst Olivia? Kann ich mitkommen?"
+    Lisa_03 "Du meinst Olivia? Kann ich dabeisein?"
 
 # game/dialogues/lisatalk.rpy:4737
 translate german lisa_about_olivia_6_b6006830:
@@ -11051,7 +11051,7 @@ translate german lisa_about_olivia_6_0d89823a:
 translate german lisa_about_olivia_6_9ff6f03c:
 
     # Max_08 "Я тоже. Надеюсь, если мама придёт нас проверять, то не станет подходить слишком близко."
-    Max_08 "Ich auch. Hoffentlich kommt Mom, wenn sie nach uns sieht, nicht zu nahe heran."
+    Max_08 "Ich auch nicht. Hoffentlich kommt Mom, wenn sie nach uns sieht, nicht zu nahe heran."
 
 # game/dialogues/lisatalk.rpy:4742
 translate german lisa_about_olivia_6_3c37e115:

@@ -94,7 +94,7 @@ translate german alice_sleep_night_ea249669:
 translate german alice_sleep_night_f84d87b6:
 
     # Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
-    Max_01 "{m}Fantastisch! Schwesterchen schläft mit gekrümmtem Rücken, so dass ihre nackten Brüste wie zwei Hügel herausragen... Ein verlockender Anblick...{/m}" nointeract
+    Max_01 "{m}Das ist großartig! Schwesterchen schläft auf dem Rücken, so dass ihre Brüste wie zwei Hügel herausragen... Ein verführerischer Anblick...{/m}" nointeract
 
 # game/events/alice.rpy:122
 translate german alice_sleep_night_60e127e3:
@@ -112,7 +112,7 @@ translate german alice_sleep_night_58e230bc:
 translate german alice_sleep_night_f84d87b6_1:
 
     # Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
-    Max_01 "{m}Erstaunlich! Meine Schwester schläft auf dem Rücken, so dass ihre nackten Brüste wie zwei Hügel herausragen... Ein verführerischer Anblick...{/m}" nointeract
+    Max_01 "{m}Das ist großartig! Schwesterchen schläft auf dem Rücken, so dass ihre Brüste wie zwei Hügel herausragen... Ein verführerischer Anblick...{/m}" nointeract
 
 # game/events/alice.rpy:133
 translate german alice_sleep_night_853ba5e8:
@@ -1432,7 +1432,7 @@ translate german spider_in_bed_help_35d72be5:
 translate german spider_in_bed_fail_afe9b556:
 
     # Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
-    Alice_17 "[failed!t]Was?! Ich werde dich selbst erwürgen! Ich habe keine Angst vor dir! Töten Sie schnell! Entweder er oder du. Einer von euch wird jetztQ sterben!"
+    Alice_17 "[failed!t]Was? Ich werde dich eigenhändig erwürgen! Ich habe keine Angst vor dir! Tötet sie sofort! Entweder du oder sie. Einer von euch wird jetzt sterben!"
 
 # game/events/alice.rpy:1275
 translate german spider_in_bed_fail_11231cfc:

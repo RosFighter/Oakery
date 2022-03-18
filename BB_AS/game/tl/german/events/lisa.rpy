@@ -802,7 +802,7 @@ translate german lisa_bath_open_44974c8f:
 translate german lisa_bath_open_bb4cd26f:
 
     # Lisa_12 "Макс, выйди немедленно!"
-    Lisa_12 "Max, komm sofort raus!"
+    Lisa_12 "Max, geh sofort raus!"
 
 # game/events/lisa.rpy:874
 translate german lisa_bath_open_3db87e42:
@@ -2090,7 +2090,7 @@ translate german strings:
 
     # game/events/lisa.rpy:287
     old "{i}уйти с ноутбуком на веранду{/i}"
-    new "{i}Laptop mit auf die Veranda nehmen{/i}"
+    new "{i}Laptop mit auf den Balkon nehmen{/i}"
 
     # game/events/lisa.rpy:1491
     old "А я разве чем-то помешаю?"
@@ -2142,11 +2142,11 @@ translate german strings:
 
     # game/events/lisa.rpy:1574
     old "уйти с ноутбуком на веранду"
-    new "Laptop mit auf die Veranda nehmen"
+    new "Laptop mit auf den Balkon nehmen"
 
     # game/events/lisa.rpy:1583
     old "подождать и войти в комнату"
-    new "warten und das Zimmer betreten"
+    new "warten und dann das Zimmer betreten"
 
     # game/events/lisa.rpy:1583
     old "уйти"

@@ -1807,7 +1807,7 @@ translate german Eric_talk_about_Lisa_3_4ecceec3:
 translate german Eric_talk_about_Lisa_3_67167989:
 
     # Max_09 "Просто, я хорошо знаю Лизу и она мне разболтала несколько секретов, хотя мы были не так близки, как сейчас. А у вас с ней секрет очень... наказуемый... Из-за его раскрытия можно всё потерять!"
-    Max_09 "Es ist nur so, dass ich Lisa gut kenne und sie mir einige Geheimnisse verraten hat, auch wenn wir uns nicht so nahe standen wie jetzt. Und ihr beide habt eine sehr... strafbar... Du könntest alles verlieren, wenn du jemals raus kommt!"
+    Max_09 "Es ist nur so, dass ich Lisa gut kenne und sie mir einige Geheimnisse verraten hat, auch wenn wir uns nicht so nahe standen wie jetzt. Und ihr beide habt eine sehr... strafbar... Du könntest alles verlieren, wenn das jemals rauskommt!"
 
 # game/dialogues/erictalk.rpy:818
 translate german Eric_talk_about_Lisa_3_5ff62a9d:
@@ -1843,7 +1843,7 @@ translate german Eric_talk_about_Lisa_3_c9d70062:
 translate german Eric_talk_about_Lisa_3_f9b2bcd6:
 
     # Max_07 "Ну, я попробую взять её на себя. Чем-нибудь, да займу её. К тому же, она же не всегда будет маленькой. Подрастёт и можно будет с ней делать всё, что захочется! И без такой лютой опаски. А с остальными членами моей семьи я тебе помогу, как и договаривались."
-    Max_07 "Nun, ich werde versuchen, es weiter zu versuchen. Beschäftige dich mit etwas anderem. Außerdem wird sie nicht immer klein sein. Wenn sie groß ist, kannst du mit ihr machen, was du willst! Und ohne so viel Angst. Und ich werde dir, wie vereinbart, mit dem Rest meiner Familie helfen."
+    Max_07 "Nun, ich werde versuchen, es weiter zu führen. Kümmere dich um irgendwas anderes. Außerdem wird sie nicht immer klein sein. Wenn sie groß ist, kannst du mit ihr machen, was du willst! Und das ohne so Probleme. Und ich werde dir, wie vereinbart, mit dem Rest meiner Familie helfen."
 
 # game/dialogues/erictalk.rpy:824
 translate german Eric_talk_about_Lisa_3_72418067:

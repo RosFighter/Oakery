@@ -178,13 +178,13 @@ label kira_bath:
         # рассчитываем шанс на спаливание Киры и Макса Эриком:
         if _in_replay or not wcv.catch_Kira.enabled:    # ещё не активировано спаливание
             $ ch_catch = 0
-        elif flags.eric_jerk:                           # Эрик дрочит на Алису
-            $ ch_catch = 0
-        elif eric.daily.sweets:                         # Эрик под таблетками
-            $ ch_catch = 0
-        elif flags.eric_banished:                       # Эрик изгнан
-            $ ch_catch = 0
-        elif wcv.catch_Kira.stage > 2:
+        elif any([
+                flags.eric_jerk,            # Эрик дрочит на Алису
+                eric.daily.sweets,          # Эрик под таблетками
+                flags.eric_banished,        # Эрик изгнан
+                wcv.catch_Kira.stage > 2,   # после изгнания Эрика, Эрик ловил Макса с Кирой
+                flags.eric_wallet == 2,     # Эрик публично обвинил Макса в воровстве
+            ]):
             $ ch_catch = 0
         elif all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage<1]):
             $ ch_catch = 100 - 25 * wcv.catch_Kira.lost
@@ -635,13 +635,13 @@ label kira_bath:
         # рассчитываем шанс на спаливание Киры и Макса Эриком:
         if _in_replay or not wcv.catch_Kira.enabled:    # ещё не активировано спаливание
             $ ch_catch = 0
-        elif flags.eric_jerk:                           # Эрик дрочит на Алису
-            $ ch_catch = 0
-        elif eric.daily.sweets:                         # Эрик под таблетками
-            $ ch_catch = 0
-        elif flags.eric_banished:                       # Эрик изгнан
-            $ ch_catch = 0
-        elif wcv.catch_Kira.stage > 2:
+        elif any([
+                flags.eric_jerk,            # Эрик дрочит на Алису
+                eric.daily.sweets,          # Эрик под таблетками
+                flags.eric_banished,        # Эрик изгнан
+                wcv.catch_Kira.stage > 2,   # после изгнания Эрика, Эрик ловил Макса с Кирой
+                flags.eric_wallet == 2,     # Эрик публично обвинил Макса в воровстве
+            ]):
             $ ch_catch = 0
         elif all([wcv.catch_Kira.enabled, not wcv.catch_Kira.done, wcv.catch_Kira.stage<1]):
             $ ch_catch = 100 - 25 * wcv.catch_Kira.lost

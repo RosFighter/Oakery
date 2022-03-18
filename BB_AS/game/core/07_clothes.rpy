@@ -606,7 +606,7 @@ init python:
                     lst.extend(['01e1', '01e3', '04e1', '04e3'])
                     if lvl > 2:
                         lst.extend(['01e', '01e2', '04e', '04e2'])
-            elif lisa.plan_name in ['read', 'phone', 'homework']:
+            elif lisa.plan_name in ['read', 'phone']:
                 if lisa.clothes.casual.GetCur().suf == 'a':
                     lst.extend(['01a', '04a'])
                 elif lisa.clothes.casual.GetCur().suf == 'b':
@@ -614,6 +614,17 @@ init python:
                     if lvl > 2:
                         lst.append('01b')
                 else:   # lisa.clothes.casual.GetCur().suf == 'd'
+                    lst.extend(['01d1', '01d2', '04d1', '04d2'])
+                    if lvl > 2:
+                        lst.extend(['01d', '04d'])
+            elif lisa.plan_name == 'homework':
+                if lisa.clothes.learn.GetCur().suf == 'a':
+                    lst.extend(['01a', '04a'])
+                elif lisa.clothes.learn.GetCur().suf == 'b':
+                    lst.append('01b1')
+                    if lvl > 2:
+                        lst.append('01b')
+                elif lisa.clothes.learn.GetCur().suf == 'd':
                     lst.extend(['01d1', '01d2', '04d1', '04d2'])
                     if lvl > 2:
                         lst.extend(['01d', '04d'])
@@ -716,7 +727,8 @@ init python:
         if lisa.prev_plan == 'in_shcool':
             lst.append('01e')   # школьная юбка после школы
 
-        if lisa.plan_name in ['swim', 'sun'] or lisa.prev_plan in ['swim', 'sun']:
+        if lisa.clothes.swimsuit.cur and (lisa.plan_name in ['swim', 'sun']
+                                        or lisa.prev_plan in ['swim', 'sun']):
             lst.append('01c')   # трусики от бикини перед или после отдыха во дворе
 
         if lisa.prev_plan not in ['in_shcool', 'in_shop', 'at_tutor', 'homework', 'on_courses']:

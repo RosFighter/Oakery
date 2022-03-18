@@ -778,7 +778,6 @@ label restore_relations:
     $ kira.flags.talkblock  = 0
 
     # Обнуляем отношения и влияние Эрика
-
     $ ann.releric   = 0
     $ alice.releric = 0
     $ lisa.releric  = 0

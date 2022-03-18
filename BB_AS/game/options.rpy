@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.08.0.05"
+define config.version = "0.08.0.07"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -232,7 +232,7 @@ init python:
     build.archive("img_fix", "all")
     # убрать перед сборкой!
     build.classify('game/images/interface/poss/control/ep08.webp', 'img_fix')
-    # build.classify('game/images/interface/poss/mom-tv/ep06.webp', 'img_fix')
+    build.classify('game/images/Ann/hugging/morning-annroom/*j*.webp', 'img_fix')
     # build.classify('game/images/interface/poss/yoga/ep04.webp', 'img_fix')
     # build.classify('game/images/interface/poss/mentor/ep13a.webp', 'img_fix')
 

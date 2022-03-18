@@ -2782,7 +2782,7 @@ label blog_with_Eric:
         "{i}заглянуть в окно{/i}":
             $ spent_time += 20
             if _in_replay or all([alice.dcv.intrusion.stage==8, alice.dcv.battle.stage in [4, 5, 7, 8], GetRelMax('eric')[0]>0]):
-                #если Эрик купил Алисе чёрное кружевное боди вперёд Макса
+                # Эрик купил Алисе чёрное кружевное боди вперёд Макса
 
                 # spider-night-04 + aliceroom-blog-dresses-01-eric-(01/01a) + Алиса в белье(spider-night-04-alice-(01/02/03) / spider-night-04-alice-(01a/02a/03a) / aliceroom-blog-dresses-01-alice-(01a/02a/03a))
                 scene BG char Alice spider-night-04

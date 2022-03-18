@@ -836,7 +836,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Одноклассник"
-    new "Schulfreund"
+    new "Klassenkamerad"
 
     # game/core/09_opportunities.rpy:4
     old "Очевидно, Лиза по уши влюблена в какого-то своего одноклассника по имени Алекс. Как она рассказала, у него есть подруга Оливия, самая красивая девочка в школе. Лиза ждёт от меня помощи в виде совета - как ей быть дальше.\n\nИ это хороший вопрос! С одной стороны хочется ей помочь дельным советом, а с другой, не хочется отдавать младшую сестрёнку в руки какому-то там Алексу. Нужно не торопиться и какое-то время хорошенько подумать над всем этим."
@@ -1572,7 +1572,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Фух, повезло не испытать на себе этот самый стек, который я подарил Алисе. Что же за БДСМ-игры она собирается затевать? И ещё более интересно, с кем?! Сейчас же я пока что могу лишь узнать, что ещё она попросит в дополнение к своему костюму... Ошейник... Зажимы на соски... Я уже ничему не удивлюсь."
-    new "Puh, ein Glück, dass ich nicht genau die Lederpeitsche bekommen habe, den ich Alice bekommen wollte. Welche Art von BDSM-Spiel wird sie spielen? Und was noch interessanter ist, mit wem?! Im Moment kann ich mich nur fragen, was sie sich zusätzlich zu ihrem Kostüm noch wünschen wird... Ein Halsband... Nippelklemmen... Das würde mich nicht überraschen."
+    new "Puh, ein Glück, dass ich nicht genau das bekommen habe, was Alice gefordert hat. Welche Art von BDSM-Spiel wird sie spielen? Und was noch interessanter ist, mit wem?! Im Moment kann ich mich nur raten, was sie sich zusätzlich zu ihrem Kostüm noch wünschen wird... Ein Halsband... Nippelklemmen... Das würde mich nicht überraschen."
 
     # game/core/09_opportunities.rpy:4
     old "В очередной раз, извиняясь перед Алисой, что-то пошло не так... Она не стала ничего просить, лишь сказала, что наказание, которое она для меня придумала, переносится на вечер. Но я обязательно должен подойти к ней, когда она будет смотреть ТВ ближе к ночи. Можно, конечно, и не ходить, но тогда на следующий день Алиса всё расскажет маме о моих подглядываниях и меня всё равно накажут перед всеми. Так что хорошо было бы узнать, что там Алиса придумала для меня. Хотя бы для сравнения..."
@@ -1704,7 +1704,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот всё и получилось! У меня есть два снимка, на которых Эрик, как грязный извращенец, дрочит пока все спокойно спят... А на одном из снимков даже видно на кого он дрочит...\n\nМне стоит быть осторожнее с этими снимками, Эрик столько всего делает для моих сестёр, что они запросто могут рассказать о том, что у меня есть. А так же хорошенько подумать над тем, как я буду использовать эти снимки.\n\nЯ могу придержать этот компромат, пойти с ним к Эрику в ближайшее время или же вовсе как-то подставить его..."
-    new "Das war's also! Ich habe zwei Bilder von Eric, wie er sich wie ein Perverser einen runterholt, während alle friedlich schlafen... Und auf einem der Bilder kann man sogar sehen, zu wem er sich einen runterholt...\n\n Ich sollte mit diesen Bildern vorsichtig sein, Eric tut so viel für meine Schwestern, dass sie leicht vererkennen könnten, was ich habe. Ich sollte auch sorgfältig darüber nachdenken, wie ich sie verwende.\n\nIch kann die hier behalten, sie mitnehmen, zu Eric bringen, oder ich kann ihn irgendwie reinlegen..."
+    new "Das war's also! Ich habe zwei Bilder von Eric, wie er sich wie ein Perverser einen runterholt, während alle friedlich schlafen... Und auf einem der Bilder kann man sogar sehen, zu wem er sich einen runterholt...\n\n Ich sollte mit diesen Bildern vorsichtig sein, Eric tut so viel für meine Schwestern, dass sie leicht verkennen könnten, was ich habe. Ich sollte auch sorgfältig darüber nachdenken, wie ich sie verwende.\n\nIch kann die hier behalten, sie mitnehmen, zu Eric bringen, oder ich kann ihn irgendwie reinlegen..."
 
     # game/core/09_opportunities.rpy:4
     old "Забота о попках"
@@ -1936,7 +1936,7 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Компромат на Эрика\"..."
-    new "Es sind Fortschritte bei der Möglichkeit \"Eric im Dreck\" brauchen..."
+    new "Es sind Fortschritte bei der Möglichkeit \"Eric im Dreck\" notwendig..."
 
     # game/core/09_opportunities.rpy:4
     old "Я вмешался в практическое занятие Лизы, прежде чем она совершила большую ошибку... Естественно, Эрик предупредил меня, что так просто он это не оставит и у меня будут огромные проблемы. Ну посмотрим, что такого он может сделать..."
@@ -2337,3 +2337,12 @@ translate german strings:
     # game/core/09_opportunities.rpy:4
     old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях..."
     new "Endlich - Ich darf mit Mom und Eric eine Porno-Show erleben! Tante Kira jedoch würde sich nun vor Eric für meine Wünsche verantworten müssen... Zwischen den Veranstaltungen muss ein Weg gefunden werden, um Kira und Eric zu treffen. Vielleicht sogar bei ihren... Unterhaltungen..."
+
+# TODO: Translation updated at 2022-03-18 22:07
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно защитить Лизу от маминого наказания, а затем, как можно быстрее, с ней поговорить..."
+    new "Müssen Lisa vor der Bestrafung ihrer Mutter schützen und dann so schnell wie möglich mit ihr reden..."
+

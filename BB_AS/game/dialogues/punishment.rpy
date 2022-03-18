@@ -528,7 +528,7 @@ label punishment_lisa:
                                 Max_07 "{m}На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти...{/m}"
                                 $ poss['SoC'].open(16)
                                 $ lisa.dcv.other.set_lost(1)
-                            elif lisa.dcv.other.enabled:
+                            elif lisa.dcv.other.enabled or poss['SoC'].used(15):
                                 $ lisa.dcv.other.set_lost(1)
 
                     $ lisa.weekly.protected += 1

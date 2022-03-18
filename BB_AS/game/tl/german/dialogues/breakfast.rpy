@@ -436,7 +436,7 @@ translate german breakfast_2_c34f0d6f_1:
 translate german breakfast_2_2501d22e:
 
     # Ann_00 "Давайте сменим тему. Скажите, только меня смущают картины, которые висят в наших комнатах?" nointeract
-    Ann_00 "Lasst uns das Thema wechseln. Bin ich der Einzige, den die Bilder in unseren Zimmern irritieren?" nointeract
+    Ann_00 "Lasst uns das Thema wechseln. Bin ich die Einzige, den die Bilder in unseren Zimmern irritieren?" nointeract
 
 # game/dialogues/breakfast.rpy:397
 translate german breakfast_2_f64d9ad1:

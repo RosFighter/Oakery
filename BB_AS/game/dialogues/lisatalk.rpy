@@ -35,7 +35,7 @@ label LisaTalkStart:
     if rez != "exit":
         $ renpy.block_rollback()
         $ __mood = lisa.GetMood()[0]
-        if rez in gifts['lisa']:
+        if isinstance(rez, Gift): # in gifts['lisa']:
             if renpy.has_label(rez.label):
                 call expression rez.label from _call_expression_5
         elif __mood < talks[rez].mood:
@@ -1615,7 +1615,7 @@ label Lisa_HomeWork:
         $ lisa.flags.m_shoulder += 1
         Lisa_04 "Ммм... Макс... Не очень хочется это говорить, но по-моему это уже не плечи..."
         if not _in_replay and infl[lisa].m[1] < 35:
-            #если у Макса меньше 35% влияния на Лизу
+            # у Макса меньше 35% влияния на Лизу
             Max_02 "Уверена?"
             Lisa_06 "Да-а-а... От этого массажа мне становится слишком горячо... А здесь и так жарко!"
             if not _in_replay:
@@ -1631,7 +1631,7 @@ label Lisa_HomeWork:
             Lisa_01 "Да, Макс. Ещё раз спасибо! И за уроки, и за мои ножки... и плечи..."
             Max_01 "Да не за что."
         else:
-            #если у Макса 35% или больше влияния на Лизу
+            # у Макса 35% или больше влияния на Лизу
             Max_02 "Ну... Пожалуй, я немного отклонился от курса, чтобы тебе было ещё приятнее... Или нет?"
             if not _in_replay:
                 if poss['mom-tv'].st() == 6:
@@ -3615,8 +3615,6 @@ label gift_sexbook:
     Lisa_01 "В общем, спасибо тебе, Макс. Буду читать перед сном. Ну или когда будет... сам понимаешь, Настроение..."
     Max_01 "Не за что!"
     $ items['sex.ed'].give()
-    # $ items['sex.ed'].InShop = False
-    # $ items['sex.ed'].have = False
     $ spent_time += 10
     $ lisa.dcv.battle.set_lost(9) # по прошествии срока можно будет поинтересоваться мнением Лизы о книге...
     jump Waiting

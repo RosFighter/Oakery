@@ -148,7 +148,7 @@ translate german talkblog1_no_f28dfb56:
 translate german talkblog1_no_e05a3f44:
 
     # Alice_09 "Знаешь что, Макс, отвали!"
-    Alice_09 "Weißt du was, lass mich in Ruhe!"
+    Alice_09 "Weißt du was, Max, verschwinde!"
 
 # game/dialogues/alicetalk.rpy:182
 translate german talkblog1_no_4a96e107:
@@ -2230,13 +2230,13 @@ translate german smoke_fear_money_69538574:
 translate german smoke_fear_fail_1bbfb6e5:
 
     # Alice_16 "[failed!t]Ага, сейчас! Ну ты и хам, Макс... Всё, отвали, дай покурить спокойно..." nointeract
-    Alice_16 "[failed!t]Ja, klar! Raus hier, du kleiner Scheißer. Lass mich in Ruhe." nointeract
+    Alice_16 "[failed!t]Ja, genau! Du bist ein Idiot, Max... Und jetzt verpiss dich und lass mich in Ruhe rauchen..." nointeract
 
 # game/dialogues/alicetalk.rpy:1992
 translate german smoke_fear_fail2_77090a0c:
 
     # Alice_12 "[failed!t]Вот так значит? А я вот выбираю вариант, в котором ты, может быть, останешься сегодня цел, если очень быстро свалишь отсюда и не будешь мне надоедать... Пока я ещё более-менее добрая." nointeract
-    Alice_12 "[failed!t]War's das? Nun, ich wähle die Option, bei der du heute Abend sicher bist, wenn du ganz schnell verschwindest und mich nicht nervst... Solange ich freundlich gestimmt bin." nointeract
+    Alice_12 "[failed!t]Mehr nicht? Und ich entscheide mich für die Möglichkeit, dass du heute Nacht vielleicht unversehrt bleibst, wenn du hier ganz schnell verschwindest und mich nicht weiter nervst... Obwohl ich immer noch mehr oder weniger nett bin." nointeract
 
 # game/dialogues/alicetalk.rpy:2007
 translate german smoke_toples_6c5b6af2:
@@ -2254,7 +2254,7 @@ translate german smoke_toples_feec497a:
 translate german smoke_toples_ea9774a5:
 
     # Alice_04 "Вот и молодец. А теперь иди, займись чем-нибудь..."
-    Alice_04 "Gut. Geh jetzt und mach dich woanders nützlich."
+    Alice_04 "Gut für dich. Und jetzt verschwinde und mach was anderes..."
 
 # game/dialogues/alicetalk.rpy:2014
 translate german smoke_toples_82324783:
@@ -8998,13 +8998,13 @@ translate german alice_gift_whip_34569bf8:
 translate german alice_gift_whip_c58cb444:
 
     # Alice_05 "Может быть тебе показать? С удовольствием продемонстрирую... прямо на твоей заднице!"
-    Alice_05 "Vielleicht zeige ich es dir? Ich würde es dir liebend gerne probieren... direkt auf deinem Arsch!"
+    Alice_05 "Vielleicht zeige ich es dir? Ich würde es an dir liebend gerne probieren... direkt an deinem Arsch!"
 
 # game/dialogues/alicetalk.rpy:5075
 translate german alice_gift_whip_bf59dae4:
 
     # Max_10 "Нет-нет... Спасибо, но посягательств от мамы более чем хватило! Так что не надо."
-    Max_10 "Nein, nein... Danke, ich wurde von Mom schon mehr als genug geschlagen! Also lass es."
+    Max_10 "Nein, nein... Danke, ich wurde von Mom schon mehr als genug geschlagen! Also vergiss es."
 
 # game/dialogues/alicetalk.rpy:5077
 translate german alice_gift_whip_4da3856f:
@@ -9016,13 +9016,13 @@ translate german alice_gift_whip_4da3856f:
 translate german alice_gift_whip_713a7aab:
 
     # Alice_01 "Точно не надо? А то я могу!"
-    Alice_01 "Bist du sicher, dass du das nicht willst? Ich bin dazu bereit!"
+    Alice_01 "Bist du sicher? Ich bin dazu bereit!"
 
 # game/dialogues/alicetalk.rpy:5080
 translate german alice_gift_whip_7653d151:
 
     # Max_07 "Точно! Я как-нибудь обойдусь..."
-    Max_07 "Genau! Ich werde schon irgendwie zurechtkommen..."
+    Max_07 "Genau! Ich komm schon irgendwie klar..."
 
 # game/dialogues/alicetalk.rpy:5081
 translate german alice_gift_whip_5bbb8668:
@@ -9220,19 +9220,19 @@ translate german alice_mistress_0_8aa9b539:
 translate german alice_mistress_0_ebf41a2c:
 
     # Max_03 "О да! Интересно, с каким же..."
-    Max_03 "Oh ja! Ich frage mich, was für eine Art..."
+    Max_03 "Oh ja! Ich frage mich, was für es ist..."
 
 # game/dialogues/alicetalk.rpy:5157
 translate german alice_mistress_0_384f6e34:
 
     # Alice_05 "Да вот с этим, Макс... Ну что, узнаёшь его?"
-    Alice_05 "Ja, mit dem hier, Max... Erkennst du es wieder?"
+    Alice_05 "Ja, genau das hier, Max... Erkennst du ihn wieder?"
 
 # game/dialogues/alicetalk.rpy:5158
 translate german alice_mistress_0_b07b0cf8:
 
     # Max_08 "Эй... Потише, это тебе не игрушки!"
-    Max_08 "Hey... Sprich leise, das ist kein Spielzeug!"
+    Max_08 "Hey... Vorsicht, das ist kein Spielzeug!"
 
 # game/dialogues/alicetalk.rpy:5159
 translate german alice_mistress_0_53b888cf:
@@ -11042,13 +11042,13 @@ translate german strings:
 translate german alice_help_carry_plates_170dcbe9:
 
     # Alice_07 "На это я, на самом деле, и надеялась. Пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "Das hatte ich mir wirklich erhofft. Ich könnte wirklich ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf die Veranda bringen." nointeract
+    Alice_07 "Das hatte ich mir wirklich erhofft. Ich könnte wirklich ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf den Balkon bringen." nointeract
 
 # game/dialogues/alicetalk.rpy:5452
 translate german alice_help_carry_plates_78889183:
 
     # Alice_07 "Помочь?! Чего это ты, Макс, такой добрый? Хотя, пара лишних рук мне точно не помешает... Пока я здесь со всем закончу и наведу порядок, ты можешь отнести тарелки с едой на веранду." nointeract
-    Alice_07 "Hilfe?! Warum bist du so nett, Max? Ich könnte allerdings ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf die Veranda bringen." nointeract
+    Alice_07 "Hilfe?! Warum bist du so nett, Max? Ich könnte allerdings ein zusätzliches Paar Hände gebrauchen... Während ich hier aufräume, kannst du die Teller mit dem Essen auf den Balkon bringen." nointeract
 
 # game/dialogues/alicetalk.rpy:5459
 translate german alice_help_carry_plates_9489751c:
@@ -11798,13 +11798,13 @@ translate german alice_about_wallet_1fc2b461:
 translate german alice_about_wallet_7fa286a3:
 
     # Max_07 "Э-э-э... Что не интересно?"
-    Max_07 "Ähm ... Was ist nicht interessant?"
+    Max_07 "Ähm ... An was nicht interessiert?"
 
 # game/dialogues/alicetalk.rpy:5777
 translate german alice_about_wallet_b528c3ce:
 
     # Alice_12 "Всё, с чем бы ты не пришёл. Просто уходи... Или врежу!"
-    Alice_12 "Was auch immer du anschleppst. Geh einfach weg... Oder ich werde dich verletzen!"
+    Alice_12 "Was auch immer du willst. Geh einfach weg... Oder ich werde dich verletzen!"
 
 # game/dialogues/alicetalk.rpy:5778
 translate german alice_about_wallet_d249d4b4:
@@ -11822,13 +11822,13 @@ translate german alice_about_wallet_1310eef7:
 translate german alice_about_wallet_3deff628:
 
     # Max_10 "Ладно. Всё понял. Ухожу."
-    Max_10 "Also gut. Du hast es verstanden. Ich haue jetzt ab."
+    Max_10 "Also gut. Ich hab verstanden. Ich gehe."
 
 # game/dialogues/alicetalk.rpy:5792
 translate german smoke_after_wallet_aa2d0826:
 
     # Alice_12 "Нечего на меня тут глазеть, Макс! Иди отсюда. Или тебя поджопником ускорить?"
-    Alice_12 "Starr mich nicht so an, Max! Raus hier. Oder soll ich dir einen Tritt in den Arsch geben?"
+    Alice_12 "Starr mich nicht so an, Max! Verschwinde. Oder soll ich dir einen Tritt in den Arsch geben?"
 
 # game/dialogues/alicetalk.rpy:5793
 translate german smoke_after_wallet_8a0bacb0:

@@ -1419,7 +1419,10 @@ screen menu_userinfo():
                 if chars[CurChar].dress_inf == '':
                     add chars[CurChar].pref+' info-00' size (550, 900) xpos -50 ypos 10
                 else:
-                    add chars[CurChar].pref+' info '+chars[CurChar].dress_inf size (550, 900) xpos -50 ypos 10
+                    if CurChar == 'eric' and eric.plan_name == 'None':
+                        add 'Eric info 01' size (550, 900) xpos -50 ypos 10
+                    else:
+                        add chars[CurChar].pref+' info '+chars[CurChar].dress_inf size (550, 900) xpos -50 ypos 10
 
         viewport area (0, 30, 880, 800):
             vbox spacing 20:

@@ -88,7 +88,7 @@ translate german dinner_first_great_f75fe005:
 translate german dinner_first_great_0ed07e47:
 
     # Alice_07 "Не за что. Ты же сама меня научила всему, вот и пожинай плоды! Слушай, ну а кто у тебя начальник на работе?"
-    Alice_07 "Kein Problem, Mom. Ich bin froh, dass ich die Chance hatte, das zu üben, was du mir beigebracht hast! Jedenfalls, wie ist dein Chaf so bei der Arbeit?"
+    Alice_07 "Kein Problem, Mom. Ich bin froh, dass ich die Chance hatte, das zu üben, was du mir beigebracht hast! Jedenfalls, wie ist dein Chef bei der Arbeit so?"
 
 # game/dialogues/dinner.rpy:129
 translate german dinner_first_boss_9e062c0f:

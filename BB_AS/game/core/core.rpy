@@ -434,7 +434,7 @@ label NewWeek:
     $ flags.noclub = False
     $ flags.trick = False
 
-    if 'eric' in chars and eric_obligation.get_debt() and flags.eric_wallet == 0:
+    if 'eric' in chars and all([eric_obligation.get_debt(), flags.eric_wallet == 0, get_rel_eric()[0] < 0]):
         # Макс не заплатил Эрику дань, запускается кошелёк
         $ eric_obligation.volume = 0
         $ eric_obligation.debt = 0
@@ -464,7 +464,7 @@ label NewWeek:
 
 label AfterWaiting:
 
-    $ renpy.dynamic('name_label', 'cur_plan')
+    # $ renpy.dynamic('name_label', 'cur_plan')
 
     ## расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
     $ CamShow()
@@ -539,33 +539,11 @@ label AfterWaiting:
     ## проверяем, не пора ли открыть костюмы для главного меню
     if 'kira' in persistent.mems_var:
         $ open_cookies()
-        # if 'kira' in chars and 'swim' not in menu_chars['Kira'].get_open_clot():
-        #     # купальники
-        #     if all(['casual_d' in persistent.mm_cookies['lisa'],
-        #             'casual_d' in persistent.mm_cookies['alice'],
-        #             'casual_d' in persistent.mm_cookies['ann'],
-        #             'casual_d' in persistent.mm_cookies['kira']]):
-        #         $ menu_chars['Lisa'].open('swim')
-        #         $ menu_chars['Alice'].open('swim')
-        #         $ menu_chars['Ann'].open('swim')
-        #         $ menu_chars['Kira'].open('swim')
-        #
-        # if 'kira' in chars and 'sleep0' not in menu_chars['Kira'].get_open_clot():
-        #     # нижнее бельё
-        #     if all(['swim' in persistent.mm_cookies['lisa'],
-        #             'swim' in persistent.mm_cookies['alice'],
-        #             'swim' in persistent.mm_cookies['ann'],
-        #             'swim' in persistent.mm_cookies['kira']]):
-        #         $ menu_chars['Lisa'].open('sleep0')
-        #         $ menu_chars['Alice'].open('sleep0')
-        #         $ menu_chars['Alice'].open('sleep1')
-        #         $ menu_chars['Ann'].open('sleep0')
-        #         $ menu_chars['Kira'].open('sleep0')
 
     ## случайное попадание на переодевания
     call random_dressed from _call_random_dressed
 
-    if name_label != '' and renpy.has_label(name_label):
+    if 'name_label' in globals() and name_label != '' and renpy.has_label(name_label):
         # управляющий блок найден и существует
         call expression name_label from _call_expression
     else:
@@ -1110,6 +1088,12 @@ label after_load:
                 $ append_album('01-Alice', ['01', '02', '03', '04', '05', '06', '07', '08'])
                 if expected_photo == ['01', '02', '03', '04', '05', '06', '07', '08']:
                     $ expected_photo.clear()
+
+    if 'kira' in chars and all([renpy.seen_label('kira_about_photo1'), '01-Kira' not in persistent.photos, kira.dcv.photo.stage]):
+        $ append_album('01-Kira', ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'])
+
+    if 'kira' in chars and all([renpy.seen_label('kira_about_photo2'), '02-Kira' not in persistent.photos, kira.dcv.photo.stage > 1]):
+        $ append_album('01-Kira', ['01', '02', '03', '04', '05', '06', '07', '08', '09'])
 
     if 'kira' in persistent.mems_var:
         $ open_cookies()
@@ -1664,10 +1648,10 @@ label update_06_5_99:
             poss['SoC'].stages[2], poss['SoC'].stages[4] = poss['SoC'].stages[4], poss['SoC'].stages[2]
             poss['SoC'].stages.insert(5, 0)
             poss['SoC'].stages.insert(10, 0)
-            poss['SoC'].stages.insert(16, (1 if lisa.flags.topless and lisa.dcv.other.enabled else 0))
+            poss['SoC'].stages.insert(16, (1 if all([lisa.flags.topless, lisa.dcv.other.enabled, lisa.dcv.special.stage>5]) else 0))
             poss['SoC'].stages = poss['SoC'].stages[0:len(poss_dict['SoC'][1])]
             poss['SoC'].stages[17] = 1 if lisa.dcv.special.stage>6 else 0
-            poss['SoC'].stages[16] = 1 if lisa.dcv.other.enabled else 0
+            poss['SoC'].stages[16] = 1 if lisa.dcv.other.enabled and lisa.dcv.special.stage>5 else 0
             poss['SoC'].stages[15] = 1 if lisa.dcv.special.stage>5 else 0
             poss['SoC'].stages[14] = 1 if lisa.dcv.special.stage>4 else 0
             poss['SoC'].stages[13] = 1 if lisa.dcv.special.stage>3 else 0
@@ -1929,7 +1913,6 @@ label update_07_p2_99:
         if flags.eric_fee < 0:
             $ flags.eric_fee = -20
 
-
     if _version < '0.07.p2.70':
 
         if poss['mom-tv'].used(10):
@@ -1948,33 +1931,154 @@ label update_07_p2_99:
                 $ poss['yoga'].stages[2] = 0
                 $ poss['yoga'].open(3)
 
-        # if poss['mom-tv'].used(12) and get_rel_eric()[0] < 0:
-        #     $ poss['mom-tv'].stages[12] = 0
-        #     $ poss['mom-tv'].open(14)
-        # if poss['mom-tv'].used(11) and get_rel_eric()[0] < 0:
-        #     $ poss['mom-tv'].stages[11] = 0
-        #     $ poss['mom-tv'].open(12)
-        # if poss['mom-tv'].used(10) and get_rel_eric()[0] == 2:
-        #     $ poss['mom-tv'].stages[10] = 0
-        #     $ poss['mom-tv'].open(11)
-        #
-        # if poss['yoga'].used(4) and get_rel_eric()[0] < 0:
-        #     $ poss['yoga'].stages[4] = 0
-        #     $ poss['yoga'].open(6)
-        # if poss['yoga'].used(3) and get_rel_eric()[0] < 0:
-        #     $ poss['yoga'].stages[3] = 0
-        #     $ poss['yoga'].open(4)
-        # if poss['yoga'].used(2) and get_rel_eric()[0] == 2:
-        #     $ poss['yoga'].stages[2] = 0
-        #     $ poss['yoga'].open(3)
-        # if poss['yoga'].used(2) and get_rel_eric()[0] < 0:
-        #     $ poss['yoga'].stages[2] = 0
-        #     $ poss['yoga'].open(4)
-
 label update_08_0_99:
     if _version < '0.08.0.02':
-        if all([get_rel_eric()[0] == 3, flags.voy_stage == 8, wcv.catch_Kira.stage > 0]):
+        if all([get_rel_eric()[0] == 3, flags.voy_stage <= 8, wcv.catch_Kira.stage > 0]):
             $ kira.dcv.battle.stage = 0
             $ wcv.catch_Kira.stage = 0
             $ wcv.catch_Kira.set_lost(0)
             $ wcv.catch_Kira.enabled = False
+
+    if _version < '0.08.0.07':
+        # корректировка наличия книги секс.образование
+        if 4 > items['sex.ed'].read > 0 and not items['sex.ed'].have:
+            $ items['sex.ed'].have = True
+
+        # корректировка сдачи Киры при Д+
+        if 'kira' in chars and all([get_rel_eric()[0] == 3, kira.dcv.battle.stage > 2, poss['control'].st() == 8, flags.voy_stage == 8]):
+            $ poss['control'].open(13)
+            $ kira.dcv.battle.stage = 2
+            $ wcv.catch_Kira.stage = 1
+
+        # корректировка преждевременного получения бонуса за Лизу
+        if all([get_rel_eric()[0] == 3, flags.voy_stage > 8,
+                    not all([lisa.dcv.battle.stage, alice.dcv.battle.stage])]):
+            $ flags.voy_stage = 8
+            python:
+                for st in range(8, len(poss['control'].stages)):
+                    poss['control'].stages[st] = 0
+            $ flags.can_ask = 0
+
+        # корректировка преждевременного открытия мысли об уговоре Лизы спать без майки
+        if all([poss['SoC'].used(16), not poss['SoC'].used(15), not lisa.dcv.other.enabled]):
+            $ poss['SoC'].stages[16] = 0
+
+        ## корректировка пройденных стадий просмотра ТВ с Анной
+        if ann.flags.erofilms > 1:
+            $ poss['mom-tv'].open(2)
+            $ poss['mom-tv'].open(6)
+            $ poss['mom-tv'].open(7)
+            $ poss['mom-tv'].open(8)
+            $ poss['mom-tv'].open(9)
+
+        if ann.flags.erofilms > 2:
+            if get_rel_eric()[0] == 3:
+                $ poss['mom-tv'].open(10)
+                $ poss['mom-tv'].stages[11] = 0
+                $ poss['mom-tv'].stages[12] = 0
+            elif get_rel_eric()[0] == 2:
+                $ poss['mom-tv'].stages[10] = 0
+                $ poss['mom-tv'].open(11)
+                $ poss['mom-tv'].stages[12] = 0
+            elif get_rel_eric()[0] < 0:
+                $ poss['mom-tv'].stages[10] = 0
+                $ poss['mom-tv'].stages[11] = 0
+                $ poss['mom-tv'].open(12)
+
+        if ann.flags.m_back:
+            if get_rel_eric()[0] == 3:
+                $ ann.flags.m_back = 0
+                $ poss['mom-tv'].stages[13] = 0
+                $ poss['mom-tv'].stages[14] = 0
+            elif get_rel_eric()[0] == 3:
+                $ poss['mom-tv'].open(13)
+                $ poss['mom-tv'].stages[14] = 0
+            elif get_rel_eric()[0] < 0:
+                $ poss['mom-tv'].stages[13] = 0
+                $ poss['mom-tv'].open(14)
+
+        if get_rel_eric()[0] == 2 and flags.eric_wallet:
+            # $ print "Fake banish"
+            # $ print poss['seduction']
+            # $ print flags.lisa_sexed
+
+            # Фальшивая дружба и запущен "кошелёк"
+            # обнуляем все события, характерные для НАХ, вплоть до "практики"
+            $ flags.eric_wallet = 0         # обнуляем "кошелёк"
+            $ eric_obligation.volume = 0    # обнуляем "дань"
+            $ eric_obligation.debt = 0
+            $ eric.dcv.battle.stage = 0     # обнуляем путь изгнания
+            $ flags.eric_banished = 0       # обнуляем изгнание
+            $ flags.asked_phone = 0         # обнуляем вопрос о телефоне
+            $ alice.hourly.talkblock = 0    # обнуляем блокировку разговоров с Алисой
+            $ alice.flags.talkblock = 0
+            $ ann.hourly.talkblock = 0      # обнуляем блокировку разговоров с Анной
+            $ ann.flags.talkblock = 0
+            $ lisa.hourly.talkblock = 0     # обнуляем блокировку разговоров с Лизой
+            $ lisa.flags.talkblock = 0
+            $ kira.hourly.talkblock = 0     # обнуляем блокировку разговоров с Кирой
+            $ kira.flags.talkblock = 0
+            $ alice.flags.showdown_e = 0    # обнуляем разговор об изгнании Эрика
+            $ ann.flags.showdown_e = 0
+            $ kira.flags.showdown_e = 0
+            $ lisa.flags.showdown_e = 0
+
+            ####    корректировка этапов Возможностей   ####
+            python:
+                # Блог
+                poss['blog'].stages[21] = 0
+
+                # Одноклассник
+                for st in range(14, len(poss['Schoolmate'].stages)):
+                    poss['Schoolmate'].stages[st] = 0
+
+                # Альфа
+                for st in range(3, len(poss['alpha'].stages)):
+                    poss['alpha'].stages[st] = 0
+
+                # Компромат на Эрика
+                for st in range(4, len(poss['discrediting'].stages)):
+                    poss['discrediting'].stages[st] = 0
+
+                # Во главе семьи!
+                for st in range(0, len(poss['boss'].stages)):
+                    poss['boss'].stages[st] = 0
+
+            # Наставник
+            if poss['seduction'].used(34):
+                $ poss['seduction'].stages[34] = 0 # НАХ
+                $ poss['seduction'].open(33)
+            if poss['seduction'].used(32):
+                $ poss['seduction'].stages[32] = 0 # Д+
+                $ poss['seduction'].open(31)
+            if poss['seduction'].used(30):
+                $ poss['seduction'].stages[30] = 0 # Д+
+                $ poss['seduction'].open(31)
+            if poss['seduction'].used(29):
+                $ poss['seduction'].stages[29] = 0 # НАХ
+                $ poss['seduction'].open(31)
+            if poss['seduction'].used(28):
+                $ poss['seduction'].stages[28] = 0 # НАХ
+                $ poss['seduction'].open(27)
+            if poss['seduction'].used(26):
+                $ poss['seduction'].stages[26] = 0 # Д+
+                $ poss['seduction'].open(27)
+            if poss['seduction'].used(25):
+                $ poss['seduction'].stages[25] = 0 # НАХ
+                $ poss['seduction'].open(27)
+            if poss['seduction'].used(24):
+                $ poss['seduction'].stages[24] = 0 # НАХ
+                $ poss['seduction'].open(27)
+            if poss['seduction'].used(23):
+                $ poss['seduction'].stages[23] = 0 # НАХ
+                $ poss['seduction'].open(22)
+                $ poss['seduction'].open(21)
+            if poss['seduction'].used(20):
+                $ poss['seduction'].stages[20] = 0 # НАХ
+                $ poss['seduction'].open(19)
+            if poss['seduction'].used(18):
+                $ poss['seduction'].stages[18] = 0 # блокирована
+            if poss['seduction'].used(17):
+                $ poss['seduction'].stages[17] = 0 # Д+
+                $ poss['seduction'].open(19)
+            # $ print poss['seduction']

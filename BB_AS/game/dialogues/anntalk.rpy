@@ -30,7 +30,7 @@ label AnnTalkStart:
 
     if rez != "exit":
         $ __mood = ann.GetMood()[0]
-        if rez in gifts['ann']:
+        if isinstance(rez, Gift): # in gifts['ann']:
             if renpy.has_label(rez.label):
                 call expression rez.label from _call_expression_8
         elif __mood < talks[rez].mood:

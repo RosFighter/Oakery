@@ -1540,8 +1540,8 @@ init python:
         # Д+, Лизу отдали Максу, уже активированы потрахушки
         Eric_stop_b_1   = CutEvent('20:00', (1, 3, 4), 'Eric_stopLisa_bonus', "Д+, Эрик останавливает потрахушки после передачи Лизы в руки Макса", "all([get_rel_eric()[0] == 3, flags.lisa_sexed == 11, flags.voy_stage in [9, 10]])")
 
-        Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", 'flags.eric_wallet == 1')
-        Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable='flags.eric_wallet == 3', sleep=True, extend=True)
+        Eric_st_wallet  = CutEvent('20:00', (4, ), 'start_eric_wallet', "Эрик запускает кошелёк", "all([flags.eric_wallet == 1, get_rel_eric()[0] < 0])")
+        Showdown_Eric   = CutEvent('06:30', label='showdown_with_eric', desc="разборки с Эриком после подставы", variable="all([flags.eric_wallet == 3, get_rel_eric()[0] < 0])", sleep=True, extend=True)
 
         # в ближайшую пятницук, после разговора с Лизой об изгнании Эрика
         Lisa_ab_Olivia  = CutEvent('10:00', (5,), 'lisa_about_olivia_5', "разговор с Лизой о посиделках с Оливией", "all([flags.eric_wallet>3, lisa.flags.showdown_e==1])", cut=True)

@@ -508,7 +508,7 @@ translate german SearchSecretBook_table_1c89acaf:
 translate german SearchSecretBook_wardrobe_b73b38d5:
 
     # Max_04 "{m}Вот же она! И зачем её так прятать? Любопытная обложка. Запомню-ка я название. Интересно, о чём эта книга? Может быть, погуглить? Так, всё, надо уходить...{/m}"
-    Max_04 "{m}Da ist sie! Warum es so verstecken? Interessante Tarnung. Ich werde mir den Namen merken. Ich frage mich, was es damit auf sich hat. Vielleicht sollte ich das mal googeln. In Ordnung, ich muss los...{/m}"
+    Max_04 "{m}Da ist es! Warum sollte man es so verstecken? Es ist ein interessantes Cover. Ich werde mir den Titel merken. Ich frage mich, was es damit auf sich hat. Vielleicht sollte ich es googeln. Also gut, ich muss los...{/m}"
 
 # game/events/max.rpy:764
 translate german InstallCam_90e45062:

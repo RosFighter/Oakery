@@ -694,7 +694,7 @@ translate german eric_ann_sleep_6d97eb0c:
 translate german eric_ann_sleep_adf5bbdf:
 
     # Max_09 "{m}О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!{/m}" nointeract
-    Max_09 "{m}Oh! Mom schläft allein... Sie ist so heiß, besonders nackt... Wo ist Eric? Ist er nicht in Alice' Zimmer?{/m}" nointeract
+    Max_09 "{m}О! Mom schläft allein... Wie schön sie ist, besonders nackt... Wo ist Eric? Er ist doch in Alice's Zimmer?!{/m}" nointeract
 
 # game/events/eric.rpy:728
 translate german eric_ann_sleep_980b6a59:
@@ -706,13 +706,13 @@ translate german eric_ann_sleep_980b6a59:
 translate german eric_ann_sleep_9f0558e6:
 
     # Max_07 "{m}О, да! Этой ночью мама предстала во всей красе... Полностью голенькая... такая соблазнительная. Только вот обезьяна здесь лишняя повисла!{/m}" nointeract
-    Max_07 "{m}Oh, ja! Mom ist völlig unbekleidet!... Komplett nackt... so verlockend. Außer, dass da auch noch ein Arschloch ist!{/m}" nointeract
+    Max_07 "{m}Oh ja, heute Nacht zeigt Mom sich in ihrer ganzen Pracht... Völlig nackt... so verführerisch. Außer, dass hier ein Affe herumhängt!{/m}" nointeract
 
 # game/events/eric.rpy:732
 translate german eric_ann_sleep_5da2c2be:
 
     # Max_04 "{m}Класс! У моей мамы лучшая попка в мире... а голая она просто сводит с ума! Ещё бы эта гора мышц около неё не лежала...{/m}" nointeract
-    Max_04 "{m}Schön! Meine Mom hat den schönsten Arsch der Welt... und dass sie nackt ist, macht mich verrückt! Ich wünschte nur, dieser Schwanz würde nicht da liegen...{/m}" nointeract
+    Max_04 "{m}Oh, großartig! Meine Mom hat den geilsten Arsch der Welt... und sie ist splitternackt! Ich wünschte, sie hätte nicht diesen großen Muskelberg neben sich liegen...{/m}" nointeract
 
 # game/events/eric.rpy:741
 translate german eric_ann_sleep_784afa47:
@@ -724,7 +724,7 @@ translate german eric_ann_sleep_784afa47:
 translate german eric_ann_sleep_2bbb8611:
 
     # Max_02 "{m}Просто с ума сойти можно! Она лежит всего в метре от меня... совсем голая... и мне видно её киску... такая красивая! А этот ублюдок, Эрик, так по-хозяйски облапал её... Врезать бы ему, гаду... Ладно, пора бы мне уже уходить, а то они ещё проснутся.{/m}" nointeract
-    Max_02 "{m}Es ist einfach verrückt! Sie ist mir so nah... ...völlig nackt... und ich kann ihre Muschi sehen... ...so schön! Und dieser Bastard, Eric, betatscht sie... Okay, ich gehe besser, sonst wachen sie noch auf.{/m}" nointeract
+    Max_02 "{m}Es ist einfach verrückt! Sie ist nur einen Meter von mir entfernt... ...völlig nackt... und ich kann ihre Pussy sehen... so schön! Und dieser Bastard, Eric, hat seine Hände überall an ihr... Ich würde ihm gerne eine reinhauen, dem Bastard... Ich muss jetzt los, sonst wachen sie noch auf.{/m}" nointeract
 
 # game/events/eric.rpy:745
 translate german eric_ann_sleep_b74cc146:
@@ -808,7 +808,7 @@ translate german eric_ann_shower_ladder_89298c59:
 translate german eric_ann_shower_ladder_bbf123bb:
 
     # Max_09 "{m}Вау! С какой же страстью мама отсасывает Эрику... А ему, похоже, этого даже мало и он пытается засадить свой член поглубже ей в рот... Почему она ему это позволяет, ей что, нравится подчиняться?{/m}"
-    Max_09 "{m}Wow! Mit was für eine Leidenschaft lutscht Mom den chwanz von Eric... Und er scheint nicht genug zu bekommen und versucht, seinen Schwanz tief in ihren Mund zu stecken... Warum lässt sie ihn das tun, gehorcht sie gerne?{/m}"
+    Max_09 "{m}Wow! Mit was für einer Leidenschaft lutscht Mom den Schwanz von Eric... Und er scheint nicht genug zu bekommen und versucht, seinen Schwanz tief in ihren Mund zu stecken... Warum lässt sie ihn das tun, gehorcht sie gerne?{/m}"
 
 # game/events/eric.rpy:840
 translate german eric_ann_shower_ladder_83ee9801:
@@ -1600,13 +1600,13 @@ translate german jerk_photohant1_f18969bd:
 translate german jerk_photohant1_7df01892:
 
     # Max_10 "{m}Блин, пока я бегал, Эрик уже ушёл... Ну ничего, поймаю его в следующий раз...{/m}" nointeract
-    Max_10 "{m}Als ich ankam, war Eric schon weg... Nun, ich werde ihn das nächste Mal erwischen...{/m}" nointeract
+    Max_10 "{m}Jetzt bin ich zurück, aber Eric ist schon weg... Nun, ich werde ihn sicher das nächste Mal erwischen...{/m}" nointeract
 
 # game/events/eric.rpy:1483
 translate german jerk_photohant2_8c6a080b:
 
     # Max_05 "{m}Вот ты и попался! С таким \"грязным\" снимком, в случае чего, уже всем всё будет понятно... Главное сейчас не попасться!{/m}" nointeract
-    Max_05 "{m}Du bist so was von erledigt! Mit so einem Schmuddelbild wissen wir alles, wenn etwas passiert... Die Hauptsache ist jetzt, nicht erwischt zu werden!{/m}" nointeract
+    Max_05 "{m}Du bist so was von erledigt! Mit so einem \"Schmuddelbild\" sehen alle, was passiert ist... Die Hauptsache ist jetzt, nicht erwischt zu werden!{/m}" nointeract
 
 # game/events/eric.rpy:1497
 translate german jerk_photohant2_7df01892:
@@ -1618,11 +1618,11 @@ translate german strings:
 
     # game/events/eric.rpy:17
     old "Понимаю, хорошо..."
-    new "Ich verstehe"
+    new "Ich verstehe..."
 
     # game/events/eric.rpy:17
     old "И зачем мне это?"
-    new "Und warum sollte mich das interessieren?"
+    new "Wen interessiert das?"
 
     # game/events/eric.rpy:46
     old "А если нет, то что?"
@@ -1630,7 +1630,7 @@ translate german strings:
 
     # game/events/eric.rpy:46
     old "Думаю, подружимся..."
-    new "Ich denke, wir werden Freunde sein"
+    new "Ich denke, wir werden Freunde sein..."
 
     # game/events/eric.rpy:58
     old "Это ещё почему?"
@@ -1642,11 +1642,11 @@ translate german strings:
 
     # game/events/eric.rpy:66
     old "Да верю, верю. Я просто спросил и не хочу ссориться..."
-    new "Ich glaube dir. Ich will nicht mit dir kämpfen, ich war nur neugierig..."
+    new "Ich glaube dir. Ich will keinen Streß, ich war voreilig..."
 
     # game/events/eric.rpy:66
     old "Меня все любят и мне поверят, что ты мне угрожал!"
-    new "Alle lieben mich, und sie werden mir glauben, wenn ich sage, dass du mir gedroht hast!"
+    new "Alle lieben mich, und werden mir glauben, dass du mir gedroht hast!"
 
     # game/events/eric.rpy:66
     old "У меня есть мозги и я что-нибудь придумаю!"
@@ -1654,7 +1654,7 @@ translate german strings:
 
     # game/events/eric.rpy:75
     old "Не верю! Всё не так!"
-    new "Ich glaube dir nicht! Du irrst dich!"
+    new "Niemals! Du irrst dich!"
 
     # game/events/eric.rpy:75
     old "Она так сказала?"
@@ -1670,7 +1670,7 @@ translate german strings:
 
     # game/events/eric.rpy:103
     old "Ладно, посмотрим... И что я выиграю?"
-    new "Okay, was würde ich gewinnen?"
+    new "Okay, was würde ich... gewinnen?"
 
     # game/events/eric.rpy:113
     old "Какие проблемы?"
@@ -2704,7 +2704,7 @@ translate german start_eric_wallet_4520c649:
 translate german start_eric_wallet_75289435:
 
     # Eric_09 "Мой бумажник пропал ещё давно и именно здесь. Я об этом ничего не говорил, потому что хотел посмотреть, у кого и что начнёт появляться. Так что это ты, Макс! Без вариантов! И сумма, которую я прошу вернуть, названа уже с примерным вычетом того, что ты потратил."
-    Eric_09 "Mein Portmonee ist schon vor langer Zeit verschwunden, und wo ist es jetzt. Ich habe nichts dazu gesagt, weil ich abwarten wollte, wer und was passieren würde. Du bist es also, Max! Niemals! Und der Betrag, den ich zurückfordere, wurde bereits mit einem ungefähren Anteil dessen, was du ausgegeben hast, angegeben."
+    Eric_09 "Mein Portmonee ist schon vor langer Zeit verschwunden, und wo ist es jetzt. Ich habe nichts dazu gesagt, weil ich abwarten wollte, wer und was passieren würde. Du bist es also, Max! Kein anderer! Und der Betrag, den ich zurückfordere, wurde bereits um einem ungefähren Anteil dessen, was du ausgegeben hast, verringert."
 
 # game/events/eric.rpy:1858
 translate german start_eric_wallet_424e7e6c:
@@ -3547,7 +3547,7 @@ translate german eric_ann_fuck_glasses_sleeping_25848186:
 translate german eric_ann_fuck_glasses_sleeping_2de0f4bb_1:
 
     # Eric_08 "Ахх... О Господи, детка, я больше не могу! Я кончаю!!! Д-а-а... Ох, класс..."
-    Eric_08 "Ahhh... Oh mein Gott, Baby, ich kann es nicht mehr halten! Ich komme ja gleich! D-a-a-a... Oh, toll..."
+    Eric_08 "Ahhh... Oh mein Gott, Baby, ich kann es nicht mehr halten! Ich komme ja gleich! J-a-a-a... Oh, toll..."
 
 # game/events/eric.rpy:727
 translate german eric_ann_fuck_glasses_sleeping_bc1ff92c_1:

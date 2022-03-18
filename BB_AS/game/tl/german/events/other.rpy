@@ -376,13 +376,13 @@ translate german MeetingEric_68dfdf17:
 translate german MeetingEric_good_53d048fe:
 
     # Ann_07 "Ну, я рада, что вы познакомились и, вроде бы, нашли общий язык. Прошу, Эрик, к столу. Мы завтракаем и ужинаем на свежем воздухе, на веранде, пойдём покажу." nointeract
-    Ann_07 "Ich freue mich, dass ihr euch kennen gelernt habt und miteinander auskommt. Gehen wir jetzt an den Tisch. Wir frühstücken und essen unter freiem Himmel auf der Veranda, kommt und seht euch das an." nointeract
+    Ann_07 "Ich freue mich, dass ihr euch kennen gelernt habt und miteinander auskommt. Gehen wir jetzt an den Tisch. Wir frühstücken und essen unter freiem Himmel auf dem Balkon, kommt und seht euch das an." nointeract
 
 # game/events/other.rpy:208
 translate german MeetingEric_middle_6e04cd04:
 
     # Ann_17 "Макс, мы с тобой потом поговорим. Ну, Эрик, проходи к столу. Мы обычно ужинаем, да и завтракаем на открытом воздухе, тут у нас веранда..." nointeract
-    Ann_17 "Max! Wir reden später weiter. Lass uns jetzt zum Tisch gehen, Eric. Wir frühstücken und essen unter freiem Himmel auf der Veranda, kommt und seht euch das an." nointeract
+    Ann_17 "Max, wir reden später. Nun, Eric, komm an den Tisch. Das Abendessen und das Frühstück nehmen wir normalerweise im Freien ein, wir haben hier einen Balkon..." nointeract
 
 # game/events/other.rpy:218
 translate german MeetingEric_bad_2c10cf49:
@@ -406,7 +406,7 @@ translate german MeetingEric_bad_9101ec96:
 translate german MeetingEric_bad_c246e424:
 
     # Ann_01 "Молчишь? Нечего сказать или стыдно? Будем считать, что ты просто голодный, а не специально хотел нахамить Эрику. Ладно, пойдёмте ужинать..."
-    Ann_01 "Schweigen? Hast du nichts zu sagen oder schämst du dich? Wir gehen einfach mal davon aus, dass du einfach nur hungrig bist und Eric gegenüber nicht absichtlich unhöflich sein wolltest. Okay, lass uns essen gehen..."
+    Ann_01 "Du sagst nichts? Du hast nichts zu sagen oder schämst dich? Nehmen wir an, du hast einfach nur Hunger und wolltest gegenüber Eric nicht absichtlich frech werden. Okay, gehen wir zum Abendessen..."
 
 # game/events/other.rpy:243
 translate german Kira_arrival_ce3f4211:
@@ -1040,7 +1040,7 @@ translate german showdown_with_eric_3d070281:
 translate german showdown_with_eric_a26a29c6:
 
     # Max_07 "Я бы сказал, что с завидным постоянством!"
-    Max_07 "Ich würde sagen, mit beneidenswerter Konsequenz!"
+    Max_07 "Ich würde sagen, mit beneidenswerter Regelmäßigkeit!"
 
 # game/events/other.rpy:525
 translate german showdown_with_eric_3d7646d5:
@@ -1136,19 +1136,19 @@ translate german showdown_with_eric_517352a4:
 translate german showdown_with_eric_54354826:
 
     # Ann_15 "Эрик! У меня в голове не укладывается то, что я вижу... Господи! Ты же дрочишь на мою дочь! Как ты мог такое делать, мерзавец... Лиза, а с тобой всё в порядке?! Эрик ничего с тобой не делал?"
-    Ann_15 "Eric! Ich kann nicht begreifen, was ich da sehe... Mein Gott! Du wichst dir auf meine Tochter einen! Wie konntest du das tun, du Bastard... Lisa, ist alles in Ordnung? Eric hat dir nichts angetan?"
+    Ann_15 "Eric! Ich kann nicht begreifen, was ich da sehe... Mein Gott! Du wichst dir auf meine Tochter einen! Wie konntest du das tun, du Bastard... Lisa, ist mit dir alles in Ordnung? Eric hat dir nichts angetan?"
 
 # game/events/other.rpy:566
 translate german showdown_with_eric_6266c673:
 
     # Lisa_10 "Нет... Правда, он предлагал мне закрепить на практике те уроки сексуального воспитания, что вы для меня проводили."
-    Lisa_10 "Nein... Allerdings hat er mir angeboten, mit mir den Sexualkundeunterricht zu üben, den du mir gegeben hast."
+    Lisa_10 "Nein... Mir hat er mir mehrmals angeboten, den Sexualkundeunterricht praktisch zu üben, den du mir gegeben hast."
 
 # game/events/other.rpy:575
 translate german showdown_with_eric_ad4584a4:
 
     # Alice_18 "Ах так! Значит, ты свои ручищи к нашей маленькой Лизе уже тянешь? Вот... получай, скотина..."
-    Alice_18 "Oh, ja! Du hast unsere kleine Lisa also schon in der Hand? Hier... Nimm das, du Scheißkerl..."
+    Alice_18 "Ach, ernsthaft! Du hast unsere kleine Lisa also schon in der Hand? Hier... Nimm das, du Dreckskerl..."
 
 # game/events/other.rpy:576
 translate german showdown_with_eric_8277ef23:
@@ -1172,7 +1172,7 @@ translate german showdown_with_eric_8cb800af:
 translate german showdown_with_eric_5dcf637a:
 
     # Alice_16 "Я раньше от души могла навалять Максу, но сейчас я в такой ярости, что запросто наваляю такому здоровому извращенцу, как ты!"
-    Alice_16 "Früher hätte ich Max die Scheiße aus dem Leib prügeln können, aber jetzt bin ich so sauer, dass ich einem Perversen wie dir die Seele aus dem Leib prügeln könnte!"
+    Alice_16 "Früher hätte ich Max die Scheiße aus dem Leib prügeln können, aber jetzt bin ich so sauer, dass ich einem Perversen wie dir die Seele aus dem Leib prügeln werde!"
 
 # game/events/other.rpy:590
 translate german showdown_with_eric_aece1638:
@@ -1220,13 +1220,13 @@ translate german showdown_with_eric_90ee4fd2:
 translate german showdown_with_eric_167ce82b:
 
     # Max_09 "Хорошо, что я своим мужским взглядом сразу понял, что он мутный тип!"
-    Max_09 "Gut, dass ich mit meinem männlichen Blick wusste, dass er ein mieser Typ ist!"
+    Max_09 "Gut, dass ich mit meinem männlichen Instinkt wusste, dass er ein mieser Typ ist!"
 
 # game/events/other.rpy:607
 translate german showdown_with_eric_ca2a104b:
 
     # Lisa_09 "Так это получается, что? Про бумажник Эрик наврал?"
-    Lisa_09 "Das war's dann also? Hat Eric wegen der Brieftasche gelogen?"
+    Lisa_09 "So ist das also? Hat Eric wegen der Brieftasche auch gelogen?"
 
 # game/events/other.rpy:608
 translate german showdown_with_eric_b84c6e58:

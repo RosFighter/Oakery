@@ -16,13 +16,13 @@ translate german night_of_fun_35c4c591:
 translate german cam_after_waiting_bfada06d:
 
     # Max_09 "{m}Думаю, просматривать сейчас камеры не самая лучшая идея. Не хватало ещё, чтобы Лиза что-то заметила... Может, стоит пойти на веранду? Там сейчас не должно никого быть...{/m}" nointeract
-    Max_09 "{m}Es ist keine gute Idee, jetzt die Kameras zu überprüfen, falls Lisa Verdacht schöpft. Vielleicht sollte ich auf die Veranda gehen, wenn keiner da ist...{/m}" nointeract
+    Max_09 "{m}Es ist keine gute Idee, jetzt die Kameras zu überprüfen, falls Lisa Verdacht schöpft. Vielleicht sollte ich auf den Balkon gehen, wenn keiner da ist...{/m}" nointeract
 
 # game/core/core.rpy:719
 translate german cam_after_waiting_44f62349:
 
     # Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
-    Max_09 "{m}Lisa ist in unserem Zimmer und die Veranda ist besetzt! Ich werde einfach geduldig sein und warten, bevor ich die Kameras überprüfe.{/m}"
+    Max_09 "{m}Lisa ist jetzt in unserem Zimmer... Und der Balkon ist besetzt! Man sollte kein Risiko eingehen und warten, bis alle Kameras zugeschaltet sind.{/m}"
 
 # game/core/core.rpy:724
 translate german cam_after_waiting_935d8f7d:
@@ -34,13 +34,13 @@ translate german cam_after_waiting_935d8f7d:
 translate german cam_after_waiting_af0a2821:
 
     # Max_09 "{m}Пожалуй, не стоит сейчас просматривать камеры. Лиза может проснуться и заметить, что я делаю... Может, стоит пойти на веранду? Там сейчас не должно никого быть...{/m}" nointeract
-    Max_09 "{m}Ich will jetzt nicht riskieren, die Kameras zu überprüfen, falls Lisa aufwacht. Vielleicht sollte ich auf die Veranda gehen, wenn keiner da ist...{/m}" nointeract
+    Max_09 "{m}Es ist wahrscheinlich keine gute Idee, jetzt durch die Kameras zu sehen. Lisa könnte aufwachen und bemerken, was ich tue... Vielleicht sollten wir raus auf den Balkon gehen. Es sollte im Moment niemand da draußen sein...{/m}" nointeract
 
 # game/core/core.rpy:743
 translate german cam_after_waiting_44f62349_1:
 
     # Max_09 "{m}Лиза сейчас в комнате... И на веранде место занято! Лучше не рисковать и подождать с просмотром камер.{/m}"
-    Max_09 "{m}Lisa ist im Zimmer ... und die Veranda ist besetzt! Ich sollte jetzt nicht riskieren, die Kameras zu sehen.{/m}"
+    Max_09 "{m}Lisa ist jetzt in unserem Zimmer... Und der Balkon ist besetzt! Man sollte kein Risiko eingehen und warten, bis alle Kameras zugeschaltet sind.{/m}"
 
 # game/core/core.rpy:748
 translate german cam_after_waiting_24007a63:
@@ -74,7 +74,7 @@ translate german strings:
 
     # game/core/core.rpy:578
     old "{i}идти на веранду{/i}"
-    new "{i}auf die Veranda gehen{/i}"
+    new "{i}auf den Balkon gehen{/i}"
 
     # game/core/core.rpy:578
     old "{i}не сейчас{/i}"

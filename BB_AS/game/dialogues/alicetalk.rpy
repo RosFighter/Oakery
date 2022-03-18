@@ -44,7 +44,7 @@ label AliceTalkStart:
 
     if rez != "exit":
         $ __mood = alice.GetMood()[0]
-        if rez in gifts['alice']:
+        if isinstance(rez, Gift): # in gifts['alice']:
             if renpy.has_label(rez.label):
                 call expression rez.label from _call_expression_2
         elif __mood < talks[rez].mood:
