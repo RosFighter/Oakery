@@ -2337,3 +2337,12 @@ translate german strings:
     # game/core/09_opportunities.rpy:4
     old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях..."
     new "Endlich - Ich darf mit Mom und Eric eine Porno-Show erleben! Tante Kira jedoch würde sich nun vor Eric für meine Wünsche verantworten müssen... Zwischen den Veranstaltungen muss ein Weg gefunden werden, um Kira und Eric zu treffen. Vielleicht sogar bei ihren... Unterhaltungen..."
+
+# TODO: Translation updated at 2022-03-18 22:07
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно защитить Лизу от маминого наказания, а затем, как можно быстрее, с ней поговорить..."
+    new "Müssen Lisa vor der Bestrafung ihrer Mutter schützen und dann so schnell wie möglich mit ihr reden..."
+

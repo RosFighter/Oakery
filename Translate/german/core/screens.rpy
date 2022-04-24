@@ -422,3 +422,11 @@ translate german strings:
     old "ЗАБЛОКИРОВАНЫ..."
     new "GESPERRT..."
 
+# TODO: Translation updated at 2022-04-25 01:44
+
+translate german strings:
+
+    # game/core/screens.rpy:220
+    old "{b}ЧИТ-МЕНЮ{/b}"
+    new ""
+
