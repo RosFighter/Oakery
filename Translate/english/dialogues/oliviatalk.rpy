@@ -1206,7 +1206,7 @@ translate english olivia_repeat_sunscreen_olivia_first_328f29ef:
 translate english olivia_repeat_sunscreen_olivia_first_6219e64f:
 
     # Lisa_10 "Макс, ну ты что делаешь, а? Зачем без предупреждения мой купальник развязываешь?"
-    Lisa_10 "Max, what are you doing, huh? Why are you unzipping my swimsuit without warning?"
+    Lisa_10 "Max, what are you doing, huh? Why are you untying my swimsuit without warning?"
 
 # game/dialogues/oliviatalk.rpy:559
 translate english olivia_repeat_sunscreen_olivia_first_dbd83af0:
@@ -1284,7 +1284,7 @@ translate english olivia_repeat_sunscreen_lisa_first_a0e75b6f:
 translate english olivia_repeat_sunscreen_lisa_first_6219e64f:
 
     # Lisa_10 "Макс, ну ты что делаешь, а? Зачем без предупреждения мой купальник развязываешь?"
-    Lisa_10 "Max, what are you doing, huh? Why are you unzipping my swimsuit without warning?"
+    Lisa_10 "Max, what are you doing, huh? Why are you untying my swimsuit without warning?"
 
 # game/dialogues/oliviatalk.rpy:586
 translate english olivia_repeat_sunscreen_lisa_first_dbd83af0:
@@ -1533,4 +1533,3 @@ translate english strings:
     # game/dialogues/oliviatalk.rpy:581
     old "{i}делать массаж Оливии{/i}"
     new "{i}giving Olivia a massage{/i}"
-
