@@ -412,7 +412,7 @@ translate german strings:
 
     # game/core/screens.rpy:2058
     old "Продолжить"
-    new "Klicken Sie zum Fortfahren"
+    new "Klicken zum Fortfahren"
 
 # TODO: Translation updated at 2022-02-24 00:58
 
@@ -428,5 +428,5 @@ translate german strings:
 
     # game/core/screens.rpy:220
     old "{b}ЧИТ-МЕНЮ{/b}"
-    new ""
+    new "{b}CHEAT-MENÜ{/b}"
 

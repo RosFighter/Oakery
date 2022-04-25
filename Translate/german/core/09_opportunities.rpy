@@ -2344,5 +2344,5 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно защитить Лизу от маминого наказания, а затем, как можно быстрее, с ней поговорить..."
-    new "Müssen Lisa vor der Bestrafung ihrer Mutter schützen und dann so schnell wie möglich mit ihr reden..."
+    new "Man muss Lisa vor der Bestrafung durch Mom schützen und dann so schnell wie möglich mit ihr reden..."
 

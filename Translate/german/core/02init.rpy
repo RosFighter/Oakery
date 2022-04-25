@@ -731,9 +731,9 @@ translate german strings:
 
     # game/core/02init.rpy:141
     old "Мам, поговорим?"
-    new ""
+    new "Mom, wollen wir reden?"
 
     # game/core/02init.rpy:141
     old "Хотел поговорить о маме..."
-    new ""
+    new "Ich wollte über meine Mutter sprechen..."
 

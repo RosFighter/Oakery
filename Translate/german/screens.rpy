@@ -452,5 +452,5 @@ translate german strings:
 
     # game/screens.rpy:1036
     old "Активировать чит-меню"
-    new ""
+    new "Aktiviere das Cheat-Menü"
 
