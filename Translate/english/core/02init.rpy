@@ -731,9 +731,8 @@ translate english strings:
 
     # game/core/02init.rpy:141
     old "Мам, поговорим?"
-    new ""
+    new "Mom, can we talk?"
 
     # game/core/02init.rpy:141
     old "Хотел поговорить о маме..."
-    new ""
-
+    new "I wanted to talk about Mom..."

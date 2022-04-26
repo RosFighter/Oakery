@@ -426,5 +426,4 @@ translate english strings:
 
     # game/core/screens.rpy:220
     old "{b}ЧИТ-МЕНЮ{/b}"
-    new ""
-
+    new "{b}CHEAT MENU{/b}"
