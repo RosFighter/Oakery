@@ -531,541 +531,540 @@ translate english strings:
 translate english s1_ann_drink_95e0d854:
 
     # Max_09 "Снова расслабляешься, пока никто не видит?"
-    Max_09 ""
+    Max_09 "Снова расслабляешься, пока никто не видит?"
 
 # game/scripts_s1/s1_v91.rpy:170
 translate english s1_ann_drink_62a37d3d:
 
     # Ann_12 "Да, сынок. Раз в недельку, да немножко, почему бы и нет. Ты почему не спишь?"
-    Ann_12 ""
+    Ann_12 "Yes, son. Once a week, just a little bit, why not? What are you doing up?"
 
 # game/scripts_s1/s1_v91.rpy:174
 translate english s1_ann_drink_1b69c140:
 
     # Ann_13 "Нет, всего лишь бокальчик. Я знаю, что мне лучше не напиваться."
-    Ann_13 ""
+    Ann_13 "No, just a glass. I know I'd better not get drunk."
 
 # game/scripts_s1/s1_v91.rpy:175
 translate english s1_ann_drink_2b627bd9:
 
     # Max_07 "Да, тебя и от одного бокала развозит неплохо. Может, уже в сторону постельки выдвигаться будем, если тебя ещё ноги держат?"
-    Max_07 ""
+    Max_07 "Yeah, you're getting pretty drunk from just one drink. Maybe we should move on to bed now, if you're still on your feet."
 
 # game/scripts_s1/s1_v91.rpy:176
 translate english s1_ann_drink_ff4a35d0:
 
     # Ann_02 "Нет, сынок, я ещё посижу здесь... А ты иди спать, не переживай за меня." nointeract
-    Ann_02 "" nointeract
+    Ann_02 "No, son, I'm going to stay here... And you go to bed, don't worry about me." nointeract
 
 # game/scripts_s1/s1_v91.rpy:179
 translate english s1_ann_drink_13299f28:
 
     # Ann_14 "А я не хочу!"
-    Ann_14 ""
+    Ann_14 "I don't want to!"
 
 # game/scripts_s1/s1_v91.rpy:180
 translate english s1_ann_drink_52f68794:
 
     # Max_15 "А мне до лампочки, мам. Спать!"
-    Max_15 ""
+    Max_15 "I don't care, Mom. Sleep!"
 
 # game/scripts_s1/s1_v91.rpy:181
 translate english s1_ann_drink_d7ab74a7:
 
     # Ann_05 "Да? Ну, ладно... раз ты такой настойчивый..." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Yes? All right, well... since you're so persistent..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:190
 translate english s1_ann_drink_70cb03ea:
 
     # Ann_07 "Вот и добрались! Если бы не ты, я бы точно не смогла сюда подняться, пришлось бы спать прямо на барной стойке. Хи-хи..."
-    Ann_07 ""
+    Ann_07 "Here we are! If it wasn't for you, I definitely wouldn't have been able to get up here, I'd have had to sleep right on the bar. Hee hee..."
 
 # game/scripts_s1/s1_v91.rpy:191
 translate english s1_ann_drink_5fbe2d5d:
 
     # Max_01 "Нет, мам, до такой степени я не дам тебе опуститься. Вот и твоя кроватка..."
-    Max_01 ""
+    Max_01 "No, Mom, I won't let you stoop to that level. Here's your bed..."
 
 # game/scripts_s1/s1_v91.rpy:194
 translate english s1_ann_drink_e1e9aa8b:
 
     # Ann_03 "Да... Моя постелька... Спасибо, мой милый, что помог. Можешь идти спать..."
-    Ann_03 ""
+    Ann_03 "Yes... My bed... Thank you, my darling, for helping me. You can go to bed..."
 
 # game/scripts_s1/s1_v91.rpy:195
 translate english s1_ann_drink_38f1a458:
 
     # Max_07 "Ты рано легла, сначала нужно переодеться. Если приподнимешься, то я помогу тебе с этим..."
-    Max_07 ""
+    Max_07 "You went to bed early, you need to change first. If you get up, I'll help you with that..."
 
 # game/scripts_s1/s1_v91.rpy:198
 translate english s1_ann_drink_ff680f4b:
 
     # Ann_02 "Ох... У меня почти нет на это сил... Дальше давай сам, только не подглядывай."
-    Ann_02 ""
+    Ann_02 "Oh... I almost don't have the strength for it... You can take it from here, but don't peek."
 
 # game/scripts_s1/s1_v91.rpy:199
 translate english s1_ann_drink_99160781:
 
     # Max_04 "Здесь темно, мам. Я работаю практически на ощупь. Но, не переживай, лишнего не трону."
-    Max_04 ""
+    Max_04 "It's dark in here, Mom. I work practically by touch. But don't worry, I won't touch anything else."
 
 # game/scripts_s1/s1_v91.rpy:202
 translate english s1_ann_drink_a27de2e6:
 
     # Ann_04 "Я не переживаю. Мне очень повезло с таким заботливым и деликатным сыном."
-    Ann_04 ""
+    Ann_04 "I'm not worried. I am very lucky to have such a caring and sensitive son."
 
 # game/scripts_s1/s1_v91.rpy:203
 translate english s1_ann_drink_cf3e0eea:
 
     # Max_02 "Вот и всё! Твой лифчик там, где ему и положено быть. Теперь можно ложиться спать."
-    Max_02 ""
+    Max_02 "That's it! Your bra is where it's supposed to be. Now you can go to bed."
 
 # game/scripts_s1/s1_v91.rpy:206
 translate english s1_ann_drink_575f8f7f:
 
     # Ann_14 "Хорошо... Если ты снова хочешь остаться здесь, то лучше не стоит. Если мне станет худо, то я справлюсь сама."
-    Ann_14 ""
+    Ann_14 "Okay... If you want to stay here again, you'd better not. If I get sick, I'll manage on my own."
 
 # game/scripts_s1/s1_v91.rpy:207
 translate english s1_ann_drink_873453b3:
 
     # Max_07 "Нет, мам. Я останусь однозначно. А чтобы тебя ничто не тревожило, одень свою маску для сна. Она поможет тебе лучше выспаться."
-    Max_07 ""
+    Max_07 "No, Mom. I will definitely stay. And to make sure nothing disturbs you, wear your sleep mask. It will help you get a better night's sleep."
 
 # game/scripts_s1/s1_v91.rpy:208
 translate english s1_ann_drink_7d95ec5d:
 
     # Ann_08 "Надеюсь, так и будет. Спокойной ночи, сынок."
-    Ann_08 ""
+    Ann_08 "I hope so. Good night, son."
 
 # game/scripts_s1/s1_v91.rpy:209
 translate english s1_ann_drink_6498dd9a:
 
     # Max_01 "Поцелую перед сном, чтобы ты ни о чём не переживала и отдыхала... Сладких снов."
-    Max_01 ""
+    Max_01 "I'll kiss you before I go to sleep, so that you don't worry about anything and rest... Sweet dreams."
 
 # game/scripts_s1/s1_v91.rpy:212
 translate english s1_ann_drink_1a597b2d:
 
     # Max_19 "{m}Ну вот, теперь остаётся только ждать... Благодаря маске для сна, мама сможет в полной мере оторваться в своей фантазии. Если, конечно, не станет её снимать...{/m}" nointeract
-    Max_19 "" nointeract
+    Max_19 "{m}Well, now all we have to do is wait... Thanks to the sleep mask, Mom will be able to go off in her fantasy to the fullest. Unless, of course, she takes it off...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:219
 translate english s1_ann_drink_7e2fabc6:
 
     # Max_04 "{m}О да! Мама снова лезет обниматься... Мой член уже в огромном предвкушении всяческих забав!{/m}"
-    Max_04 ""
+    Max_04 "{m}Oh, yes! Mom is cuddling again... My cock is already in great anticipation of all kinds of fun!{/m}"
 
 # game/scripts_s1/s1_v91.rpy:220
 translate english s1_ann_drink_c9c94fff:
 
     # Ann_03 "Ммм... Наконец-то ты снова рядом, дорогой... Как же мне хорошо с тобой..." nointeract
-    Ann_03 "" nointeract
+    Ann_03 "Mmm... At last you are with me again, darling... I feel so good with you..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:231
 translate english s1_ann_drink_demonstrate_1878288f:
 
     # Ann_05 "Ухх! Я ещё ничего не делала, а он уже такой твёрдый! Кто-то явно нацелен хорошенько порезвиться..."
-    Ann_05 ""
+    Ann_05 "Ugh! I haven't done anything yet, and he's already so hard! Someone's clearly aiming for a good romp..."
 
 # game/scripts_s1/s1_v91.rpy:232
 translate english s1_ann_drink_demonstrate_0e7c069a:
 
     # Max_02 "С такой горячей сексуальной женщиной как ты, только этим и хочется заниматься!" nointeract
-    Max_02 "" nointeract
+    Max_02 "With such a hot sexy woman like you, that's all you want to do!" nointeract
 
 # game/scripts_s1/s1_v91.rpy:239
 translate english s1_ann_drink_demonstrate_73685471:
 
     # Max_05 "{m}Ох, не знаю за кого мама меня принимает, но её поцелуи это что-то! А от того, как нежно её рука обхватила мой член, у меня внутри всё начинает трепетать от восторга...{/m}"
-    Max_05 ""
+    Max_05 "{m}Oh, I don't know who my mother thinks I am, but her kisses are something! And the way her hand gently wrapped around my cock made my insides flutter with excitement...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:241
 translate english s1_ann_drink_demonstrate_bf6638a1:
 
     # Ann_08 "Становится слишком жарко, чтобы продолжать. Давай освободимся от всей одежды."
-    Ann_08 ""
+    Ann_08 "It's getting too hot to continue. Let's get out of all our clothes."
 
 # game/scripts_s1/s1_v91.rpy:242
 translate english s1_ann_drink_demonstrate_cf788ce3:
 
     # Max_07 "Давай. Но я хочу, чтобы оставила маску. Так будет куда чувственнее..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Go ahead. But I want you to leave the mask on. It's much more sensual that way..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:248
 translate english s1_ann_drink_demonstrate_649abd07:
 
     # Max_20 "{m}О да! Мама сразу же потянулась прямо вниз... Теперь её губки нежно скользят по концу моего члена, а язычок исследует и играет со всеми изгибами... Она никуда не торопится и просто наслаждается им. Фантастика!{/m}"
-    Max_20 ""
+    Max_20 "{m}Oh yes! Mom immediately reached straight down... Now her lips are gently sliding over the end of my cock, and her tongue is exploring and playing with all the curves... She's not rushing anywhere and just enjoying it. Fantastic!{/m}"
 
 # game/scripts_s1/s1_v91.rpy:249
 translate english s1_ann_drink_demonstrate_32bdb443:
 
     # Ann_07 "Ммм... Ты же любишь, когда я дразню твоего мальчика своим языком, прежде чем он попадёт ко мне в рот?"
-    Ann_07 ""
+    Ann_07 "Mmm... You like it when I tease your boy with my tongue before he gets in my mouth, don't you?"
 
 # game/scripts_s1/s1_v91.rpy:250
 translate english s1_ann_drink_demonstrate_9e501bef:
 
     # Max_19 "Да, мне очень нравится это, продолжай..."
-    Max_19 ""
+    Max_19 "Yes, I really like that, go on..."
 
 # game/scripts_s1/s1_v91.rpy:253
 translate english s1_ann_drink_demonstrate_1a060af5:
 
     # Max_21 "{m}Пока она играется с моим членом, нужно пользоваться моментом и отвлечься на её киску. Иначе, я просто не выдержу и кончу. Мамина щёлочка слегка мокренькая, но так не пойдёт. Сейчас мои пальцы решат эту проблему...{/m}" nointeract
-    Max_21 "" nointeract
+    Max_21 "{m}While she's playing with my cock, I have to take advantage of the moment and distract myself with her pussy. Otherwise, I just can't take it anymore and cum. Mom's pussy is a little wet, but that won't do. Now my fingers will solve this problem...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:271
 translate english s1_ann_drink_no_restrain_23fb7d5a:
 
     # Ann_13 "[norestrain!t]Ого! Ты уже кончил, дорогой... Не думала, что это будет так быстро, ведь я ещё даже не начала стараться!"
-    Ann_13 ""
+    Ann_13 "[norestrain!t]Wow! You came already, honey... I didn't think it would be so fast, because I haven't even started trying yet!"
 
 # game/scripts_s1/s1_v91.rpy:272
 translate english s1_ann_drink_no_restrain_afae4d6a:
 
     # Max_07 "Прости. Просто твои прикосновения и ласки меня перевозбудили."
-    Max_07 ""
+    Max_07 "I'm sorry. It's just that your touching and caressing me overexcited me."
 
 # game/scripts_s1/s1_v91.rpy:273
 translate english s1_ann_drink_no_restrain_2776a308:
 
     # Ann_08 "Ничего страшного. Возможно, я так соскучилась по твоему члену, что немного увлеклась. Сейчас я приведу всё в порядок..."
-    Ann_08 ""
+    Ann_08 "That's okay. Maybe I missed your cock so much that I got a little carried away. I'm going to clean up now..."
 
 # game/scripts_s1/s1_v91.rpy:274
 translate english s1_ann_drink_no_restrain_db8070f2:
 
     # Max_19 "{m}Вот чёрт! От того, как тщательно и эротично она слизывает мою сперму запросто можно бы было кончить ещё раз! Просто невероятно, что это на самом деле происходит.{/m}"
-    Max_19 ""
+    Max_19 "{m}Oh, shit! The way she licked my cum thoroughly and erotically would have made me cum all over again! It's unbelievable that this is actually happening.{/m}"
 
 # game/scripts_s1/s1_v91.rpy:277
 translate english s1_ann_drink_no_restrain_cae2d9bf:
 
     # Ann_05 "Обещаю, в следующий раз, я не буду так увлекаться и постараюсь растянуть наше удовольствие подольше."
-    Ann_05 ""
+    Ann_05 "Next time, I promise, I won't get so carried away, and I'll try to stretch out our pleasure a little longer."
 
 # game/scripts_s1/s1_v91.rpy:278
 translate english s1_ann_drink_no_restrain_d98841bc:
 
     # Max_04 "Но это в следующий раз. А сейчас я просто обязан постараться сделать всё, чтобы ты тоже кончила."
-    Max_04 ""
+    Max_04 "But that's for next time. But right now I just have to do my best to make you cum, too."
 
 # game/scripts_s1/s1_v91.rpy:281
 translate english s1_ann_drink_no_restrain_718b6dc4:
 
     # Ann_09 "Ахх... Этого я и жду... Я вся в предвкушении того, что ты будешь для этого делать. Ох..."
-    Ann_09 ""
+    Ann_09 "Ahhh... That's what I'm waiting for... I'm all excited about what you're going to do for it. Oh..."
 
 # game/scripts_s1/s1_v91.rpy:282
 translate english s1_ann_drink_no_restrain_6e349e3f:
 
     # Max_03 "{m}Ммм... От такой сочной и пышной груди даже отрываться не хочется! Но у меня есть не менее интересные дела кое-где пониже! Только устроюсь поудобнее...{/m}"
-    Max_03 ""
+    Max_03 "{m}Mmm... You don't even want to tear yourself away from such juicy and lush breasts! But I have no less interesting things to do somewhere lower! Just let me get comfortable...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:285
 translate english s1_ann_drink_no_restrain_8cf76278:
 
     # Ann_10 "Да... Как же меня возбуждают твои нежные прикосновения... Твои пальцы знают, как нужно ласкать мою киску. Ухх... Да... Ещё..."
-    Ann_10 ""
+    Ann_10 "Yes... How I am aroused by your gentle touch... Your fingers know how to caress my pussy. Ugh... Yes... More..."
 
 # game/scripts_s1/s1_v91.rpy:286
 translate english s1_ann_drink_no_restrain_bf8a6272:
 
     # Max_02 "{m}Да, мои пальцы довольно легко скользят по маминой киске. Если бы она только знала, что это делаю я, всё в миг бы прекратилось. Но она не знает, так что нужно пользоваться моментом...{/m}"
-    Max_02 ""
+    Max_02 "{m}Yes, my fingers slid quite easily over my mother's pussy. If she only knew that I was doing it, it would stop in a moment. But she doesn't know, so we have to seize the moment...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:289
 translate english s1_ann_drink_no_restrain_f0f106cc:
 
     # Ann_14 "Ухх, да... Как же мне хорошо от твоих пальчиков... Да, продолжай... Ещё... Поглубже... Ммм... Я сейчас просто потеряю голову от наслаждения... Ах!" nointeract
-    Ann_14 "" nointeract
+    Ann_14 "Oooh, yes... I feel so good with your fingers... Yeah, go on... More... Deeper. Mmm... I'm going to lose my head with pleasure. Ah!" nointeract
 
 # game/scripts_s1/s1_v91.rpy:295
 translate english s1_ann_drink_no_restrain_beef9a92:
 
     # Ann_11 "Ох, это... нет слов, как приятно... Ахх... Ты самый лучший мужчина на свете! Д-а-а! Твой язычок сводит меня с ума... Я... Я больше не могу... Я сейчас... Я кончаю! Д-а-а!"
-    Ann_11 ""
+    Ann_11 "Oh, that's... there are no words, it feels so good... Ahhh... You are the best man in the world! Yaah! Your tongue is driving me crazy... Я... I can't take it anymore... I'm gonna... I'm coming! Duh-ah!"
 
 # game/scripts_s1/s1_v91.rpy:296
 translate english s1_ann_drink_no_restrain_bcd0f0c5:
 
     # Max_05 "{m}Да, мам! Вот так... Её тело так классно содрогается от оргазма. Ради такой шикарной женщины грех не постараться.{/m}"
-    Max_05 ""
+    Max_05 "{m}Yes, Mom! That's it... Her body is shaking so beautifully from her orgasm. For such a gorgeous woman, it's a sin not to try.{/m}"
 
 # game/scripts_s1/s1_v91.rpy:304
 translate english s1_ann_drink_restrain_5baa544f:
 
     # Max_22 "[restrain!t]{m}Ох, она начала посасывать мой член... Это просто божественно! Я прямо чувствую, с каким удовольствием она это делает. Как же это приятно, мам, чёрт возьми!{/m}" nointeract
-    Max_22 "" nointeract
+    Max_22 "[restrain!t]{m}Oh, she started sucking my cock... It's just divine! I can feel the pleasure she's taking in it. It feels so good, Mom, goddamn it!{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:311
 translate english s1_ann_drink_restrain_ae9af4f4:
 
     # Max_03 "{m}Ммм... Мои пальцы запросто проскользнули в неё. Обалденно, она стала сосать ещё активнее от моих ласк. Ох, мама... Знала бы ты, что сейчас вытворяешь! Вернее, с кем. Д-а-а...{/m}" nointeract
-    Max_03 "" nointeract
+    Max_03 "{m}Mmm... My fingers slipped easily into her. She sucked even harder from my caresses. Oh, mother... You should know what you're doing right now. Or rather, with whom. Yeah...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:316
 translate english s1_ann_drink_restrain_3f1d3b3e:
 
     # Max_02 "{m}Ухх... Уткнуться в её сногсшибательную большую попку одно наслаждение! Теперь она сосёт и одновременно постанывает от того, что вытворяет мой язык с её сочной киской...{/m}" nointeract
-    Max_02 "" nointeract
+    Max_02 "{m}Ugh... Biting into her stunning big ass is a pleasure! Now she's sucking and simultaneously moaning from what my tongue is doing to her juicy pussy...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:323
 translate english s1_ann_drink_restrain_eab11e6a:
 
     # Max_20 "{m}Блин! Она ещё и рукой начала моими яичками играть! А уж про то, что она всё смачнее и глубже заглатывает мой член, я вообще молчу... Только стонать и остаётся. Долго я так не протяну...{/m}" nointeract
-    Max_20 "" nointeract
+    Max_20 "{m}Shit! She started playing with my testicles with her hand, too! And I don't even want to say nothing about her swallowing my cock deeper and deeper... All I can do is moan. I can't last that long...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:330
 translate english s1_ann_drink_restrain_f9f680a2:
 
     # Max_21 "{m}Д-а-а! Ах, мама не отрываясь принимает всю мою сперму! Она умничка... Знает, как порадовать мужчину. Но я с кое-чем ещё не закончил...{/m}" nointeract
-    Max_21 "" nointeract
+    Max_21 "{m}Yaah! Ah, my mom takes all my sperm in her mouth! She's a good girl... She knows how to please a man. But I'm not done with something yet...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:337
 translate english s1_ann_drink_restrain_6e37798e:
 
     # Ann_10 "Да, дорогой... Уфф... Ты кончил так мощно! Я даже не смогла удержать всё в себе. Ммм... Я хочу кончить так же сильно, как ты. Пожалуйста... Ах-х-х..." nointeract
-    Ann_10 "" nointeract
+    Ann_10 "Yes, dear... Oof... You came so hard! I couldn't even hold it in. Mmm... I want to cum as hard as you do. Please... Ahhh..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:344
 translate english s1_ann_drink_restrain_beef9a92:
 
     # Ann_11 "Ох, это... нет слов, как приятно... Ахх... Ты самый лучший мужчина на свете! Д-а-а! Твой язычок сводит меня с ума... Я... Я больше не могу... Я сейчас... Я кончаю! Д-а-а!"
-    Ann_11 ""
+    Ann_11 "Oh, that's... there are no words, it feels so good... Ahhh... You are the best man in the world! Yaah! Your tongue is driving me crazy... Я... I can't take it anymore... I'm gonna... I'm coming! Duh-ah!"
 
 # game/scripts_s1/s1_v91.rpy:346
 translate english s1_ann_drink_restrain_bcd0f0c5:
 
     # Max_05 "{m}Да, мам! Вот так... Её тело так классно содрогается от оргазма. Ради такой шикарной женщины грех не постараться.{/m}"
-    Max_05 ""
+    Max_05 "{m}Yes, Mom! That's it... Her body is shaking so beautifully from her orgasm. For such a gorgeous woman, it's a sin not to try.{/m}"
 
 # game/scripts_s1/s1_v91.rpy:355
 translate english s1_ann_drink_end_1_68e5f607:
 
     # Ann_08 "Ох... Это было... нечто! Я просто... Извини, не знаю даже, что сказать... Так хорошо..."
-    Ann_08 ""
+    Ann_08 "Oh... That was... something! I just... I'm sorry, I don't even know what to say... It felt so good..."
 
 # game/scripts_s1/s1_v91.rpy:356
 translate english s1_ann_drink_end_1_2df45fd4:
 
     # Max_03 "Ты была великолепна! Теперь просто отдыхай... Спокойной ночи."
-    Max_03 ""
+    Max_03 "You were great! Now just rest... Good night."
 
 # game/scripts_s1/s1_v91.rpy:357
 translate english s1_ann_drink_end_1_d975ed12:
 
     # Ann_07 "Спасибо, дорогой. Мне тоже понравилось. И тебе доброй ночи."
-    Ann_07 ""
+    Ann_07 "Thank you, dear. I enjoyed it too. Good night to you, too."
 
 # game/scripts_s1/s1_v91.rpy:362
 translate english s1_ann_drink_end_1_cb4a8a27:
 
     # Max_09 "{m}Надо бы натянуть шорты, а то утром будет много визга, когда мама проснётся голой. И ещё больше визга будет, если я буду лежать рядом такой же голый. И не исключено, что с утренним стояком...{/m}"
-    Max_09 ""
+    Max_09 "{m}I should pull my shorts on, or there would be a lot of squealing in the morning when Mom woke up naked. And there would be even more squealing if I were lying next to her just as naked. And it's not out of the question to have a morning boner...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:365
 translate english s1_ann_drink_end_1_481c4fe1:
 
     # Max_19 "{m}Фух... Теперь можно и спать. Вот это мы с мамой выдали! Она фантазировала, а я, так сказать, сделал эту фантазию реальной. Эх, вот бы почаще так развлекаться...{/m}" nointeract
-    Max_19 "" nointeract
+    Max_19 "{m}Phew... Now we can go to sleep. That's what my mother and I did! She fantasized, and I, so to speak, made this fantasy real. Oh, I wish we could do this more often...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:372
 translate english s1_ann_drink_end_1_d84609d5:
 
     # Ann_17 "Охх... Моя голова... Что происходит?!"
-    Ann_17 ""
+    Ann_17 "Ohhh... My head... What's going on?!"
 
 # game/scripts_s1/s1_v91.rpy:373
 translate english s1_ann_drink_end_1_a96f79e8:
 
     # Max_20 "Доброе утро, мам."
-    Max_20 ""
+    Max_20 "Good morning, Mom."
 
 # game/scripts_s1/s1_v91.rpy:376
 translate english s1_ann_drink_end_1_1046c4a1:
 
     # Ann_15 "Макс! Быстро отвернись! Ты что тут делаешь?!"
-    Ann_15 ""
+    Ann_15 "Max! Turn around now! What are you doing here?!"
 
 # game/scripts_s1/s1_v91.rpy:377
 translate english s1_ann_drink_end_1_7f7438f4:
 
     # Max_08 "Не помнишь? Ты вчера выпила и я решил остаться с тобой на случай, если тебе будет плохо."
-    Max_08 ""
+    Max_08 "Don't you remember? You were drunk last night and I decided to stay with you in case you got sick."
 
 # game/scripts_s1/s1_v91.rpy:378
 translate english s1_ann_drink_end_1_de11b26c:
 
     # Ann_13 "Ах, ну да, точно... Но почему я голая?!"
-    Ann_13 ""
+    Ann_13 "Oh, right, right... But why am I naked?!"
 
 # game/scripts_s1/s1_v91.rpy:379
 translate english s1_ann_drink_end_1_5ed568e4:
 
     # Max_07 "Ну, видимо тебе стало жарко. А я не стал этому возражать."
-    Max_07 ""
+    Max_07 "Well, apparently you got hot. And I didn't mind that."
 
 # game/scripts_s1/s1_v91.rpy:380
 translate english s1_ann_drink_end_1_e786afda:
 
     # Ann_14 "Макс, я же твоя мама! Это всё совсем не правильно... Надо было меня остановить!"
-    Ann_14 ""
+    Ann_14 "Max, I'm your mother! This isn't right at all... You should have stopped me!"
 
 # game/scripts_s1/s1_v91.rpy:381
 translate english s1_ann_drink_end_1_c74b39dc:
 
     # Max_09 "Мне кажется, телу нужно дышать. Особенно в том состоянии, в котором ты находилась."
-    Max_09 ""
+    Max_09 "I think the body needs to breathe. Especially in the state you were in."
 
 # game/scripts_s1/s1_v91.rpy:382
 translate english s1_ann_drink_end_1_05a3d7ce:
 
     # Ann_17 "Может и так, но не в присутствии же собственного сына! Получается, я сама разделась?"
-    Ann_17 ""
+    Ann_17 "Maybe so, but not in front of my own son! So I undressed myself?"
 
 # game/scripts_s1/s1_v91.rpy:383
 translate english s1_ann_drink_end_1_3b5fb676:
 
     # Max_01 "Ага. Ты разделась и заснула."
-    Max_01 ""
+    Max_01 "Yeah. You got undressed and fell asleep."
 
 # game/scripts_s1/s1_v91.rpy:384
 translate english s1_ann_drink_end_1_b513fece:
 
     # Ann_13 "Фух... А то, мне такой сон приснился... Там я тоже разделась, но не только... Ой, сынок, это ты из-за моего вида так возбудился?!"
-    Ann_13 ""
+    Ann_13 "Phew... I had such a dream... I was naked there too, but not only... Oh, son, is it my sight that's turning you on?!"
 
 # game/scripts_s1/s1_v91.rpy:385
 translate english s1_ann_drink_end_1_a041acec:
 
     # Max_07 "Нет, у меня часто такое по утрам. Лиза не даст соврать. Хотя, возможно, сегодня это произошло благодаря тебе."
-    Max_07 ""
+    Max_07 "No, I get that a lot in the morning. Lisa wouldn't lie. Maybe it was thanks to you today, though."
 
 # game/scripts_s1/s1_v91.rpy:386
 translate english s1_ann_drink_end_1_5fc3fabf:
 
     # Ann_18 "Макс, что ты такое при маме говоришь! И вообще, хватит меня забалтывать и глазеть. Давай-ка отвернись уже и иди к себе, ты меня смущаешь." nointeract
-    Ann_18 "" nointeract
+    Ann_18 "Max, what are you saying in front of your mother? And anyway, stop gossiping and staring at me. Why don't you turn around and go to your room, you're embarrassing me." nointeract
 
 # game/scripts_s1/s1_v91.rpy:395
 translate english s1_ann_drink_end_1_529b9202:
 
     # Max_19 "{m}Фух... Теперь можно и спать. А когда рядом засыпает совершенно голая и невероятно сексуальная женщина, пускай это и моя мама, то засыпать одно удовольствие.{/m}" nointeract
-    Max_19 "" nointeract
+    Max_19 "{m}Phew... Now I can go to sleep. And when a completely naked and incredibly sexy woman falls asleep next to me, even if it's my mother, it's a pleasure to fall asleep.{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:402
 translate english s1_ann_drink_end_1_405b7193:
 
     # Ann_17 "Охх... Неужели опять... Я тут валяюсь совершенно голая, а мой сын лежит рядом с огромным возбуждением! Тебе не стыдно?"
-    Ann_17 ""
+    Ann_17 "Ohhh... Not again... I'm lying here completely naked, and my son is lying next to me with great excitement! Aren't you ashamed?"
 
 # game/scripts_s1/s1_v91.rpy:403
 translate english s1_ann_drink_end_1_670a9ff8:
 
     # Max_20 "Ага, и тебе доброе утро. Почему мне должно быть стыдно, если ты сама разделась?"
-    Max_20 ""
+    Max_20 "Yeah, good morning to you, too. Why should I be ashamed if you undressed yourself?"
 
 # game/scripts_s1/s1_v91.rpy:406
 translate english s1_ann_drink_end_1_e3cb293d:
 
     # Ann_14 "Потому что это мягко говоря странно, когда сына возбуждает собственная мать. Это что-то нездоровое."
-    Ann_14 ""
+    Ann_14 "Because it's strange, to put it mildly, when a son is aroused by his own mother. It's something unhealthy."
 
 # game/scripts_s1/s1_v91.rpy:407
 translate english s1_ann_drink_end_1_f0c77805:
 
     # Max_07 "Подумаешь, возбудился. Это же самый искренний комплимент для такой прекрасной женщины, как ты."
-    Max_07 ""
+    Max_07 "What's the big deal, I got aroused. It's the most sincere compliment for such a beautiful woman like you."
 
 # game/scripts_s1/s1_v91.rpy:408
 translate english s1_ann_drink_end_1_9db04b62:
 
     # Ann_12 "Ой, Макс, прекрати... Спасибо, конечно, но это неуместно! Ты не мог бы отвернуться?"
-    Ann_12 ""
+    Ann_12 "Oh, Max, stop it... Thank you, of course, but this is inappropriate! Would you mind turning around?"
 
 # game/scripts_s1/s1_v91.rpy:409
 translate english s1_ann_drink_end_1_1cd036b1:
 
     # Max_02 "А ты мне расскажешь, как спалось? Что снилось?"
-    Max_02 ""
+    Max_02 "Will you tell me how you slept? What did you dream?"
 
 # game/scripts_s1/s1_v91.rpy:410
 translate english s1_ann_drink_end_1_b122c91c:
 
     # Ann_14 "Ты выбрал просто самое \"лучшее\" время, чтобы об этом поболтать. Спасибо, что присмотрел за мной, но прекращай глазеть. Давай шуруй к себе."
-    Ann_14 ""
+    Ann_14 "You just picked the best time to talk about it. Thanks for looking out for me, but stop staring. Go back to your place."
 
 # game/scripts_s1/s1_v91.rpy:411
 translate english s1_ann_drink_end_1_5e15ef72:
 
     # Max_01 "Не за что, мам." nointeract
-    Max_01 "" nointeract
+    Max_01 "You're welcome, Mom." nointeract
 
 translate english strings:
 
     # game/scripts_s1/s1_v91.rpy:214
     old "{i}дремать{/i}"
-    new ""
+    new "{i}Snooze{/i}"
 
     # game/scripts_s1/s1_v91.rpy:222
     old "Мне тоже... Хочешь почувствовать, насколько?"
-    new ""
+    new "Me too... Do you want to feel how much?"
 
     # game/scripts_s1/s1_v91.rpy:222
     old "{i}притвориться спящим{/i}"
-    new ""
+    new "{i}Pretend to sleep{/i}"
 
     # game/scripts_s1/s1_v91.rpy:234
     old "{i}целовать маму{/i}"
-    new ""
+    new "{i}Kiss mom{/i}"
 
     # game/scripts_s1/s1_v91.rpy:255
     old "отвлечься на её киску"
-    new ""
+    new "Distracted by her pussy"
 
     # game/scripts_s1/s1_v91.rpy:291
     old "{i}ласкать маму языком{/i}"
-    new ""
+    new "{i}Caress Mom with my tongue{/i}"
 
     # game/scripts_s1/s1_v91.rpy:306
     old "{i}проникнуть пальцами в её киску{/i}"
-    new ""
+    new "{i}Penetrate her pussy with my fingers{/i}"
 
     # game/scripts_s1/s1_v91.rpy:313
     old "{i}перебраться в позу 69{/i}"
-    new ""
+    new "{i}Move into a 69 position{/i}"
 
     # game/scripts_s1/s1_v91.rpy:313
     old "другие позы"
-    new ""
+    new "Other positions"
 
     # game/scripts_s1/s1_v91.rpy:318
     old "{i}ласкать языком неспеша{/i}"
-    new ""
+    new "{i}Caress with your tongue leisurely{/i}"
 
     # game/scripts_s1/s1_v91.rpy:325
     old "{i}кончить маме в рот{/i}"
-    new ""
+    new "{i}Cum in my mom's mouth{/i}"
 
     # game/scripts_s1/s1_v91.rpy:332
     old "{i}продолжить ласкать языком{/i}"
-    new ""
+    new "{i}Continue caressing with tongue{/i}"
 
     # game/scripts_s1/s1_v91.rpy:339
     old "{i}ласкать языком активнее{/i}"
-    new ""
+    new "{i}Caress with your tongue more vigorously{/i}"
 
     # game/scripts_s1/s1_v91.rpy:390
     old "{i}натянуть шорты{/i}"
-    new ""
+    new "{i}Pull on shorts{/i}"
 
     # game/scripts_s1/s1_v91.rpy:413
     old "{i}уйти к себе в комнату{/i}"
-    new ""
-
+    new "{i}Retire to your room{/i}"
