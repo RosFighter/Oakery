@@ -409,10 +409,10 @@ translate german s1_kira_talk_about_ann_drink_c594ec4e:
     Kira_07 "Ich erinnere mich, dass sie und ich uns eine Flasche Wein geschnappt haben... Und dann haben wir eine Sauftour gemacht. Ich denke, wenn sie wütend wird, verfällt sie in eine gewisse Art von... Fantasie. Sie weiß, was vor sich geht, und erinnert sich an alles, aber sie glaubt nicht, dass es wahr ist."
 
 # game/scripts_s1/s1_v91.rpy:152
-translate german s1_kira_talk_about_ann_drink_1b8e0f89:
+translate german s1_kira_talk_about_ann_drink_2c727844:
 
-    # Max_02 "Во как! Ну и... понравилось тебе «развлекаться» с моей мамой?"
-    Max_02 "Oh, ja! Also... hat es dir Spaß gemacht, mit meiner Mutter «Spaß zu haben»?"
+    # Max_02 "Во как! Ну и... понравилось тебе \"развлекаться\" с моей мамой?"
+    Max_02 "Oh, ja! Also... hat es dir Spaß gemacht, mit meiner Mutter \"Spaß zu haben\"?"
 
 # game/scripts_s1/s1_v91.rpy:153
 translate german s1_kira_talk_about_ann_drink_7bca3c9c:
@@ -1069,4 +1069,1179 @@ translate german strings:
     # game/scripts_s1/s1_v91.rpy:413
     old "{i}уйти к себе в комнату{/i}"
     new "{i}ins eigene Zimmer gehen{/i}"
+# TODO: Translation updated at 2022-06-09 13:17
+
+# game/scripts_s1/s1_v91.rpy:440
+translate german s1_about_intimate_lessons_fc38a309:
+
+    # Ann_12 "Да, я подумала и приняла решение - ничего не получится. А теперь давай закончим этот разговор и сделаем вид, что ничего не было. Живут же другие семьи как-то без этих... уроков..."
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:441
+translate german s1_about_intimate_lessons_5893e70d:
+
+    # Max_10 "Но ведь ты была не против! Ты позволяла смотреть за тем, что вы с Эриком делали..."
+    Max_10 ""
+
+# game/scripts_s1/s1_v91.rpy:442
+translate german s1_about_intimate_lessons_19d06407:
+
+    # Ann_18 "Макс! Я всё сказала! Ты мой сын и делать такие вещи... Это неправильно!"
+    Ann_18 ""
+
+# game/scripts_s1/s1_v91.rpy:443
+translate german s1_about_intimate_lessons_6ba1fc46:
+
+    # Max_11 "Ты это серьёзно?"
+    Max_11 ""
+
+# game/scripts_s1/s1_v91.rpy:444
+translate german s1_about_intimate_lessons_cbc29c20:
+
+    # Ann_16 "Более чем! Нормальные мальчики, если ты не в курсе, находят себе девочку и осваивают всё с ней."
+    Ann_16 ""
+
+# game/scripts_s1/s1_v91.rpy:445
+translate german s1_about_intimate_lessons_c695435d:
+
+    # Max_09 "Согласен, мам. Но у меня есть идейка получше... И ходить далеко не придётся..."
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:446
+translate german s1_about_intimate_lessons_f2042d88:
+
+    # Ann_15 "Не поняла! Что значит, \"ходить далеко не придётся\"?!"
+    Ann_15 ""
+
+# game/scripts_s1/s1_v91.rpy:447
+translate german s1_about_intimate_lessons_d432d3e1:
+
+    # Max_07 "По-моему мы договорились о том, что никакого разговора не было? Так что я пошёл..."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:448
+translate german s1_about_intimate_lessons_9e75a728:
+
+    # Ann_17 "Минуточку! Я тебя не отпускала! Ты что, уже подстраховался на случай моего отказа?"
+    Ann_17 ""
+
+# game/scripts_s1/s1_v91.rpy:449
+translate german s1_about_intimate_lessons_7e387496:
+
+    # Max_09 "Ну... Я не особо надеялся на твою помощь... Поэтому пойду к тёте Кире. Она взрослая и опытная женщина... Уж она-то наверняка знает, как мужчине нужно ублажать женщину."
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:450
+translate german s1_about_intimate_lessons_921e42b8:
+
+    # Ann_13 "Господи, Макс, ты совсем с ума сошёл, просить о таком мою сестру?!"
+    Ann_13 ""
+
+# game/scripts_s1/s1_v91.rpy:451
+translate german s1_about_intimate_lessons_94beb716:
+
+    # Max_07 "А что? Мне кажется, она как раз таки та женщина, которая действительно не отвернётся от своего любимого племянника, а не будет искать отговорки, как и думать, правильно это или нет."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:452
+translate german s1_about_intimate_lessons_fc2a769a:
+
+    # Ann_15 "Нет, Макс, я не отворачивалась от тебя! Просто... Я считаю, что мама не должна учить {b}ТАКОМУ{/b} своего сына."
+    Ann_15 ""
+
+# game/scripts_s1/s1_v91.rpy:453
+translate german s1_about_intimate_lessons_b87e3e4e:
+
+    # Max_09 "А смотреть, как ты занимаешься этим с Эриком - это должное? Или тебе нравилось, что я на вас смотрел?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:454
+translate german s1_about_intimate_lessons_248dd135:
+
+    # Ann_14 "Господи, Макс, ну что ты такое говоришь? Я просто... Я..."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:455
+translate german s1_about_intimate_lessons_380b082b:
+
+    # Max_00 "Короче, я пошёл..."
+    Max_00 ""
+
+# game/scripts_s1/s1_v91.rpy:456
+translate german s1_about_intimate_lessons_616b441d:
+
+    # Ann_17 "О боже... Ну ладно, будь по-твоему, давай попробуем... Не хватало ещё, чтобы ты просил о подобной помощи кого-то ещё."
+    Ann_17 ""
+
+# game/scripts_s1/s1_v91.rpy:457
+translate german s1_about_intimate_lessons_b0bd52a7:
+
+    # Max_03 "Отлично! Когда начнём?"
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:458
+translate german s1_about_intimate_lessons_7ca0b85a:
+
+    # Ann_12 "Так, давай не торопиться! Вот как я вечером, после ванны, буду одна в гостиной отдыхать за просмотром ТВ, так и подходи. Будем разбираться..."
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:459
+translate german s1_about_intimate_lessons_01316ee1:
+
+    # Max_02 "Договорились. Кстати, можно было бы тогда посмотреть что-то... обучающего плана... Заодно, так сказать."
+    Max_02 ""
+
+# game/scripts_s1/s1_v91.rpy:460
+translate german s1_about_intimate_lessons_4b24ef57:
+
+    # Ann_13 "Пожалуй... Это будет весьма уместно. Но никому не говори об этом. И к Кире не вздумай ходить!"
+    Ann_13 ""
+
+# game/scripts_s1/s1_v91.rpy:461
+translate german s1_about_intimate_lessons_499f29a4:
+
+    # Max_01 "Конечно! Это будет нашим секретом, мам." nointeract
+    Max_01 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:473
+translate german s1_ann_intimate_lesson_1_7599b96c:
+
+    # Ann_01 "Проведём... Я же согласилась, на свою голову. Я, в общем-то, определилась, что тебе покажу..."
+    Ann_01 ""
+
+# game/scripts_s1/s1_v91.rpy:474
+translate german s1_ann_intimate_lesson_1_dfc9c730:
+
+    # Max_01 "Я весь в предвкушении!"
+    Max_01 ""
+
+# game/scripts_s1/s1_v91.rpy:477
+translate german s1_ann_intimate_lesson_1_dcdcc847:
+
+    # Ann_02 "Вот... Сейчас посмотришь, как девочки развлекают себя без мальчиков. Думаю, этого будет вполне достаточно, чтобы понять... основу..."
+    Ann_02 ""
+
+# game/scripts_s1/s1_v91.rpy:478
+translate german s1_ann_intimate_lesson_1_41224389:
+
+    # Max_08 "Так, ладно... И в чем основа?"
+    Max_08 ""
+
+# game/scripts_s1/s1_v91.rpy:481
+translate german s1_ann_intimate_lesson_1_031ce397:
+
+    # Ann_04 "В стимуляции... сам знаешь чего. У вас, мальчиков, с этим куда проще. Ты и сам, уж я думаю, прекрасно знаешь, как снять напряжение... самостоятельно."
+    Ann_04 ""
+
+# game/scripts_s1/s1_v91.rpy:482
+translate german s1_ann_intimate_lesson_1_021896f4:
+
+    # Max_07 "А у вас?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:485
+translate german s1_ann_intimate_lesson_1_775d59dd:
+
+    # Ann_14 "А у нас множество нюансов, из-за которых добиться... оргазма сложнее. Женщинам важна и обстановка, максимально ли мы привлекательны, нет ли у нас в голове каких-то проблем, которые нас не оставят в покое..."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:486
+translate german s1_ann_intimate_lesson_1_676e08c8:
+
+    # Max_10 "О-о-о... Как всё печально."
+    Max_10 ""
+
+# game/scripts_s1/s1_v91.rpy:489
+translate german s1_ann_intimate_lesson_1_8ce0f08a:
+
+    # Max_09 "Но, мам, это какой-то уж совсем детский уровень. Я, например, уже взрослый, а потому хочу знать, как целовать девочек, как прикасаться к ним... Так что давай, показывай."
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:490
+translate german s1_ann_intimate_lesson_1_52061cc9:
+
+    # Ann_01 "Ну да, я так и думала, что просмотром одного ролика мы не обойдёмся..."
+    Ann_01 ""
+
+# game/scripts_s1/s1_v91.rpy:493
+translate german s1_ann_intimate_lesson_1_71a91c7c:
+
+    # Max_03 "Во! Вот это уже ближе к теме... Такое мне нравится. Красиво!"
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:494
+translate german s1_ann_intimate_lesson_1_6cea527e:
+
+    # Ann_02 "Тогда смотри и запоминай. Если будет что-то непонятно, я объясню."
+    Ann_02 ""
+
+# game/scripts_s1/s1_v91.rpy:497
+translate german s1_ann_intimate_lesson_1_ee056de1:
+
+    # Max_07 "Да, вопросик есть. А что, ласки женской груди действительно настолько приятны, что эта девушка просто потеряла голову?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:498
+translate german s1_ann_intimate_lesson_1_5355b1ad:
+
+    # Ann_05 "Ну конечно! А вообще, у всех это бывает по-разному... Это зависит от чувствительности и возбудимости девушки..."
+    Ann_05 ""
+
+# game/scripts_s1/s1_v91.rpy:501
+translate german s1_ann_intimate_lesson_1_aa83dc45:
+
+    # Max_09 "И как это выяснить?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:502
+translate german s1_ann_intimate_lesson_1_24d351a1:
+
+    # Ann_14 "В процессе сближения с девушкой. Иначе, просто никак."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:505
+translate german s1_ann_intimate_lesson_1_d99b1ea5:
+
+    # Max_11 "Хмм... Засада, однако..."
+    Max_11 ""
+
+# game/scripts_s1/s1_v91.rpy:506
+translate german s1_ann_intimate_lesson_1_418ad13b:
+
+    # Ann_01 "И почему ты так тяжко вздыхаешь? Разочарован, что не ко всему можно подготовиться заранее?"
+    Ann_01 ""
+
+# game/scripts_s1/s1_v91.rpy:509
+translate german s1_ann_intimate_lesson_1_23526750:
+
+    # Max_04 "Ага. Так когда мы это всё попробуем, мам?"
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:510
+translate german s1_ann_intimate_lesson_1_20fc9780:
+
+    # Ann_13 "В смысле, \"мы\"?! Это же очень интимные процессы..."
+    Ann_13 ""
+
+# game/scripts_s1/s1_v91.rpy:513
+translate german s1_ann_intimate_lesson_1_5b0aa651:
+
+    # Max_07 "Поэтому я к тебе и обратился. И я же не прошу целоваться в губы, а так... Хотя бы в шею попробовать... Заодно и массаж сделаю..."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:514
+translate german s1_ann_intimate_lesson_1_2848ecd9:
+
+    # Ann_12 "Даже не знаю... Как-то это всё..." nointeract
+    Ann_12 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:520
+translate german s1_ann_intimate_lesson_1_472590a6:
+
+    # Ann_17 "Массаж и поцелуи, это всё, конечно, здорово, сынок... Но не когда это происходит с мамой."
+    Ann_17 ""
+
+# game/scripts_s1/s1_v91.rpy:521
+translate german s1_ann_intimate_lesson_1_94042a4a:
+
+    # Max_01 "Да не напрягайся ты так, мам. Мы просто проверим, насколько я с этим справлюсь, вот и всё."
+    Max_01 ""
+
+# game/scripts_s1/s1_v91.rpy:524
+translate german s1_ann_intimate_lesson_1_dfb8ce5b:
+
+    # Ann_12 "И как, по-твоему, я должна оценивать твои поцелуи? Я вряд ли смогу сделать это, как женщина, потому что я твоя мать. Но, ладно, так уж и быть, я постараюсь..." nointeract
+    Ann_12 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:530
+translate german s1_ann_intimate_lesson_1_154bb5cf:
+
+    # Max_04 "{m}Мама замолчала... И начала так глубоко дышать! Нужно постараться целовать её хоть немного неуклюже, чтобы не было похоже, что у меня есть в этом опыт. Вот только не так-то это и просто...{/m}"
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:533
+translate german s1_ann_intimate_lesson_1_1983b8c2:
+
+    # Ann_02 "Ну что я скажу... Получается у тебя, Макс, довольно неплохо. Я имею ввиду сами поцелуи. Но тебе нужно расширять область их применения."
+    Ann_02 ""
+
+# game/scripts_s1/s1_v91.rpy:534
+translate german s1_ann_intimate_lesson_1_d6beaf4d:
+
+    # Max_09 "Эээ... То есть?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:535
+translate german s1_ann_intimate_lesson_1_cce37033:
+
+    # Ann_05 "Нужно не забывать и про остальное: ключицу, плечи, спину, мочку ушка. Раз уж ты взялся это осваивать..."
+    Ann_05 ""
+
+# game/scripts_s1/s1_v91.rpy:536
+translate german s1_ann_intimate_lesson_1_f069bec4:
+
+    # Max_02 "Понял. Тогда я сейчас попробую..." nointeract
+    Max_02 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:542
+translate german s1_ann_intimate_lesson_1_70ee05dc:
+
+    # Max_03 "{m}Всё перечисленное я с удовольствием попробую, пока мой массаж всё ближе и ближе подступает к маминой груди. Ох, вот бы их тоже помассировать...{/m}"
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:543
+translate german s1_ann_intimate_lesson_1_d2feb746:
+
+    # Ann_03 "Ахх... Сынок, если ты не будешь так частить с поцелуями, а будешь повышать их качество продолжительностью, то в сочетании с твоими навыками массажа, все девочки будут терять голову... Ммм..."
+    Ann_03 ""
+
+# game/scripts_s1/s1_v91.rpy:544
+translate german s1_ann_intimate_lesson_1_68b5a75b:
+
+    # Max_04 "Ну... Если ты потеряешь голову, то твой прогноз однозначно верен."
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:545
+translate german s1_ann_intimate_lesson_1_e254abbd:
+
+    # Ann_14 "Ох... Мне кажется, что ты сейчас не только о своём образовании заботишься, но и... Тебе не хватает кое-чего. И заниматься тебе этим нужно не со мной..."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:548
+translate german s1_ann_intimate_lesson_1_382e011b:
+
+    # Max_07 "Мам, а с кем, как не с тобой, мне такое можно пробовать делать? С тобой мне как-то легче преодолеть страхи. А девочкам, как я слышал, нравятся уверенные мальчики!"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:549
+translate german s1_ann_intimate_lesson_1_345fa74a:
+
+    # Ann_12 "И что, я теперь из-за этого должна отбросить всё смущение и наслаждаться, как эта девушка на экране?"
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:550
+translate german s1_ann_intimate_lesson_1_2afa5928:
+
+    # Max_09 "А почему нет? Для меня бесценный опыт, для тебя одно удовольствие. Тебе же нравится массаж?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:553
+translate german s1_ann_intimate_lesson_1_5e32cafa:
+
+    # Ann_17 "Ну, Макс! Одно дело, когда это просто массаж и другое, когда сын начинает делать своей маме эротический массаж!"
+    Ann_17 ""
+
+# game/scripts_s1/s1_v91.rpy:554
+translate german s1_ann_intimate_lesson_1_29386537:
+
+    # Max_07 "То есть, если бы я, например, начал массировать твою грудь, то тебе бы не понравилось?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:555
+translate german s1_ann_intimate_lesson_1_f2bfe275:
+
+    # Ann_12 "Зная твой талант в массаже, я не сомневаюсь, что мне бы понравилось. Но делать такое мы не будем!"
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:556
+translate german s1_ann_intimate_lesson_1_1323a763:
+
+    # Max_08 "Почему ты так сильно этого стесняешься? У тебя же просто невероятно прекрасная грудь! Мне же нужно знать, как массировать её так, чтобы женщине нравилось. Вдруг, мой массаж здесь не сработает и нужны иные движения рук!"
+    Max_08 ""
+
+# game/scripts_s1/s1_v91.rpy:559
+translate german s1_ann_intimate_lesson_1_6545d9ef:
+
+    # Ann_14 "Ох, сынок... Ты, видимо, не отстанешь, да? Хорошо, попробуем разок, чтобы ты знал, как это... делается... Я скажу, если ты будешь делать что-то не так." nointeract
+    Ann_14 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:565
+translate german s1_ann_intimate_lesson_1_960c1adc:
+
+    # Max_05 "{m}Неужто мои руки наконец дотянулись до этих самых потрясающих сисек на свете! Несмотря на свои годы, мамина грудь выглядит просто отлично, а на ощупь, вообще, обалденная! Но продолжать неуклюжничать, как с поцелуями, так же нужно не забывать...{/m}"
+    Max_05 ""
+
+# game/scripts_s1/s1_v91.rpy:566
+translate german s1_ann_intimate_lesson_1_d0dadc91:
+
+    # Ann_08 "Да, Макс... У тебя довольно неплохо получается. Но с грудью, по крайней мере, поначалу, лучше обращаться как можно нежнее... А так, твои навыки в массаже здесь очень к месту. Охх..."
+    Ann_08 ""
+
+# game/scripts_s1/s1_v91.rpy:567
+translate german s1_ann_intimate_lesson_1_2aa5e608:
+
+    # Max_02 "Значит, как женщине, тебе нравится, как я это делаю? Может, ещё что-нибудь подскажешь?"
+    Max_02 ""
+
+# game/scripts_s1/s1_v91.rpy:568
+translate german s1_ann_intimate_lesson_1_e1eb7ba8:
+
+    # Ann_03 "Да, не останавливайся только на груди. Продолжай массировать и всё то, что ты массировал до этого. Ммм... Но обязательно возвращайся... Как же пошло такое говорить своему сыну..."
+    Ann_03 ""
+
+# game/scripts_s1/s1_v91.rpy:571
+translate german s1_ann_intimate_lesson_1_98be7369:
+
+    # Max_03 "{m}Да, мять эти сочные сисечки одно удовольствие, как и целовать её в шею. Она дышит жарко и глубоко, ей явно приятно. Но вместе с этим, я всё ещё чувствую, как она напрягается от того, что всё это делаю я.{/m}"
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:574
+translate german s1_ann_intimate_lesson_1_c127b58d:
+
+    # Ann_05 "Так, сынок, достаточно. Я думаю, ты вполне готов сводить с ума всех девочек, какие попадутся в твои умелые руки. Ты ещё талантливее, чем мне казалось."
+    Ann_05 ""
+
+# game/scripts_s1/s1_v91.rpy:575
+translate german s1_ann_intimate_lesson_1_314e3e67:
+
+    # Max_07 "Супер! А как же остальное?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:578
+translate german s1_ann_intimate_lesson_1_3c77be73:
+
+    # Ann_17 "Остальное? В смысле остальное? Ты о чём, Макс?"
+    Ann_17 ""
+
+# game/scripts_s1/s1_v91.rpy:579
+translate german s1_ann_intimate_lesson_1_5e421526:
+
+    # Max_01 "Ну как... Мне же ещё нужно попробовать доставить удовольствие женщине там... внизу... Там же можно не только руками, так ведь?"
+    Max_01 ""
+
+# game/scripts_s1/s1_v91.rpy:580
+translate german s1_ann_intimate_lesson_1_1b043e2f:
+
+    # Ann_13 "Да, но это уже осваивай без меня. С мамой таким заниматься, даже в образовательных целях - уже чересчур!"
+    Ann_13 ""
+
+# game/scripts_s1/s1_v91.rpy:581
+translate german s1_ann_intimate_lesson_1_ebad62e7:
+
+    # Max_07 "Наверно, ты права. Лучше учиться у нескольких женщин. К тому же, у тёти Киры, наверно, такого опыта побольше, чем у тебя. Ты же не против, если я поучусь у неё?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:584
+translate german s1_ann_intimate_lesson_1_ce9b98ea:
+
+    # Ann_06 "Ага, хотела бы я посмотреть, как ты будешь её на это уговаривать. Думаю, она ещё не всю свою нравственность растеряла, чтобы заниматься таким."
+    Ann_06 ""
+
+# game/scripts_s1/s1_v91.rpy:585
+translate german s1_ann_intimate_lesson_1_60c104a5:
+
+    # Max_09 "Но! Если что... Никаких претензий к ней или ко мне, хорошо?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:586
+translate german s1_ann_intimate_lesson_1_ad057f04:
+
+    # Ann_07 "Ой, сынок, давай без этой ерунды. Найди уже себе девочку." nointeract
+    Ann_07 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:601
+translate german s1_bait_for_ann_57679d55:
+
+    # Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:602
+translate german s1_bait_for_ann_41436e7f:
+
+    # Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?" nointeract
+    Kira_01 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:606
+translate german s1_bait_for_ann_a15a1f83:
+
+    # Kira_14 "Ой, Макс, может лучше будем решать проблемы с утра? На свежую голову..."
+    Kira_14 ""
+
+# game/scripts_s1/s1_v91.rpy:607
+translate german s1_bait_for_ann_cb24c246:
+
+    # Max_07 "От тебя почти ничего не потребуется."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:608
+translate german s1_bait_for_ann_9fabc03c:
+
+    # Kira_01 "Оу... Ну раз так, то дай мне пару минут, я только загляну в ванную комнату."
+    Kira_01 ""
+
+# game/scripts_s1/s1_v91.rpy:609
+translate german s1_bait_for_ann_fac376a1:
+
+    # Max_04 "Без проблем, тётя Кира."
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:614
+translate german s1_bait_for_ann_7e99f327:
+
+    # Kira_06 "Ничего, если я включу что-нибудь \"горяченькое\"? Или это будет мешать?"
+    Kira_06 ""
+
+# game/scripts_s1/s1_v91.rpy:615
+translate german s1_bait_for_ann_0b28652a:
+
+    # Max_02 "Обязательно включай! Это как раз таки будет нам необходимо для того, чтобы задуманная мной постановка сработала."
+    Max_02 ""
+
+# game/scripts_s1/s1_v91.rpy:616
+translate german s1_bait_for_ann_bffab8dc:
+
+    # Kira_07 "О как! Ты решил перейти со мной на ролевые игры? Интересно! Я думала, ты сперва будешь просить попробовать со мной анальный секс..."
+    Kira_07 ""
+
+# game/scripts_s1/s1_v91.rpy:617
+translate german s1_bait_for_ann_d7a277e7:
+
+    # Max_06 "Ух ты! А что, уже можно?!"
+    Max_06 ""
+
+# game/scripts_s1/s1_v91.rpy:618
+translate german s1_bait_for_ann_4f82bd8a:
+
+    # Kira_05 "Можно? Макс, твой член уже столько раз побывал у меня во рту и вообще во мне, что просто грех для тебя, как мне кажется, не натянуть на него мою попку."
+    Kira_05 ""
+
+# game/scripts_s1/s1_v91.rpy:619
+translate german s1_bait_for_ann_a2f0e512:
+
+    # Max_09 "Блин, тётя Кира! Как ты с этим не вовремя! У меня теперь моральная дилемма, между моей задумкой и твоей..."
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:620
+translate german s1_bait_for_ann_ead7d151:
+
+    # Kira_01 "Ну, ролевые игры - это тоже весьма интересный опыт."
+    Kira_01 ""
+
+# game/scripts_s1/s1_v91.rpy:621
+translate german s1_bait_for_ann_7026412e:
+
+    # Max_07 "Да, это здорово, но мне сейчас нужно не совсем это. Нужна ролевая помощь с мамой!"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:622
+translate german s1_bait_for_ann_2ef9dc7c:
+
+    # Kira_15 "Эээ... Думаешь, она согласится на ролевой тройничок?!"
+    Kira_15 ""
+
+# game/scripts_s1/s1_v91.rpy:623
+translate german s1_bait_for_ann_5e66f6ec:
+
+    # Max_09 "Так, тётя Кира, давай серьёзнее! Помнишь, я говорил, что мама вытворяет вещи, которые до Эрика и не подумала бы делать?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:626
+translate german s1_bait_for_ann_32302405:
+
+    # Kira_13 "Да, помню. А что, градус таких вещей стал ещё больше?"
+    Kira_13 ""
+
+# game/scripts_s1/s1_v91.rpy:627
+translate german s1_bait_for_ann_f0afb72d:
+
+    # Max_07 "Ага, знаешь, я подглядывал за ними... Мама несколько раз меня за это наказала, но Эрик взял и убедил её, что нужно удовлетворить моё подростковое любопытство. Они во всех подробностях показали мне, что такое минет..."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:628
+translate german s1_bait_for_ann_fa71c365:
+
+    # Kira_17 "Ничего себе! Хочешь сказать, моя сестра, которая довольно строго вас от этого всего старалась оберегать, теперь вытворяет такие номера? Вау!"
+    Kira_17 ""
+
+# game/scripts_s1/s1_v91.rpy:629
+translate german s1_bait_for_ann_d8d6f810:
+
+    # Max_01 "Вот-вот. Но раз уж у нас теперь такие вот реалии наступили, то я начал упрашивать её на продолжение таких вот уроков, но в плане ублажения женщин."
+    Max_01 ""
+
+# game/scripts_s1/s1_v91.rpy:630
+translate german s1_bait_for_ann_ab689666:
+
+    # Kira_03 "Смело и находчиво, должна сказать! Только немного обидно, что меня тебе стало мало..."
+    Kira_03 ""
+
+# game/scripts_s1/s1_v91.rpy:633
+translate german s1_bait_for_ann_4b55ef21:
+
+    # Max_03 "Что ты, тётя Кира! Ты вообще лучшая тётя на свете! Просто, я хочу получить такой опыт от разных женщин, чтобы расширить свои границы в сексе."
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:634
+translate german s1_bait_for_ann_47d2723b:
+
+    # Kira_04 "Ну... Не могу здесь с тобой не согласиться. И чему же тебя учит моя сестра-развратница?"
+    Kira_04 ""
+
+# game/scripts_s1/s1_v91.rpy:635
+translate german s1_bait_for_ann_586539e2:
+
+    # Max_02 "Мы начали со слегка интимных поцелуев и эротического массажа. Ну как, эротического... Она разрешила поласкать её грудь."
+    Max_02 ""
+
+# game/scripts_s1/s1_v91.rpy:636
+translate german s1_bait_for_ann_bc4b4bb0:
+
+    # Kira_05 "Ухх... Моё воображение уже не слабо меня заводит от твоих рассказов. А дальше?"
+    Kira_05 ""
+
+# game/scripts_s1/s1_v91.rpy:637
+translate german s1_bait_for_ann_5dc7ef6e:
+
+    # Max_07 "А дальше, всё. Большее - это уже слишком интимно, а потому дальше я должен завести девушку и постигать всё это с ней. И вот здесь мне и нужна твоя помощь."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:640
+translate german s1_bait_for_ann_88a3f603:
+
+    # Kira_14 "Ты хочешь, чтобы я с ней об этом поговорила? Я, конечно, могу попробовать..."
+    Kira_14 ""
+
+# game/scripts_s1/s1_v91.rpy:641
+translate german s1_bait_for_ann_1e339f19:
+
+    # Max_04 "Это ни к чему. Я сказал ей, что наберусь опыта у тебя."
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:642
+translate german s1_bait_for_ann_17dd95c7:
+
+    # Kira_15 "Да?! И как она на такое мощное заявление отреагировала?"
+    Kira_15 ""
+
+# game/scripts_s1/s1_v91.rpy:643
+translate german s1_bait_for_ann_06a6ee89:
+
+    # Max_03 "Ха, она думает, что ты до такой степени нравственность ещё не потеряла. Как же много всего она не знает."
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:644
+translate german s1_bait_for_ann_c38e70f6:
+
+    # Kira_06 "И хорошо, что не знает. Если бы знала, то точно не пустила бы меня сюда жить."
+    Kira_06 ""
+
+# game/scripts_s1/s1_v91.rpy:647
+translate german s1_bait_for_ann_c1489104:
+
+    # Max_07 "Так вот, я надеюсь, что она сегодня пойдёт проверять, так ли она в тебе уверена. В другие дни ей не до этого, а вот сегодня..."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:648
+translate german s1_bait_for_ann_7d49d5ed:
+
+    # Kira_16 "Макс, ты же понимаешь, что в таком случае ругани будет море. Не знаю, что она сделает с тобой, а вот мне точно придётся искать новое жильё."
+    Kira_16 ""
+
+# game/scripts_s1/s1_v91.rpy:649
+translate german s1_bait_for_ann_8524dae7:
+
+    # Max_09 "Не придётся, тётя Кира! Главное подыграй мне, если она начнёт спускаться по лестнице. А когда пойдут разборки, продолжай подыгрывать в направлении, что меня нужно готовить к взрослой жизни."
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:650
+translate german s1_bait_for_ann_dd3c316e:
+
+    # Kira_07 "Ох, Макс... Рискованно... Но смело! Затея мне нравится."
+    Kira_07 ""
+
+# game/scripts_s1/s1_v91.rpy:653
+translate german s1_bait_for_ann_85d60993:
+
+    # Max_02 "Так, а что ты там насчёт анального секса говорила?"
+    Max_02 ""
+
+# game/scripts_s1/s1_v91.rpy:654
+translate german s1_bait_for_ann_2aaa7b97:
+
+    # Kira_05 "Я просто думала, что тебе уже неймётся это попробовать..."
+    Kira_05 ""
+
+# game/scripts_s1/s1_v91.rpy:655
+translate german s1_bait_for_ann_e1f885e0:
+
+    # Max_04 "Честно говоря, было столько забот, что я и не успевал об этом думать... Попробуем?"
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:656
+translate german s1_bait_for_ann_c09ffee1:
+
+    # Kira_04 "Обязательно! Но у меня давненько не было анального секса, поэтому мне нужно будет к этому немного подготовиться..."
+    Kira_04 ""
+
+# game/scripts_s1/s1_v91.rpy:659
+translate german s1_bait_for_ann_9dde754b:
+
+    # Max_08 "Тихо, а вот и мама! Самое время тебе раздвинуть ножки, тётя Кира. Начинаем..."
+    Max_08 ""
+
+# game/scripts_s1/s1_v91.rpy:662
+translate german s1_bait_for_ann_87d088a9:
+
+    # Kira_02 "Да, Макс... Всё правильно. Нужны именно вот-такие лёгкие прикосновения..."
+    Kira_02 ""
+
+# game/scripts_s1/s1_v91.rpy:665
+translate german s1_bait_for_ann_40479877:
+
+    # Ann_20 "Это что тут такое происходит!!! Ну-ка немедленно прекратите! Кира! Макс! С ума сошли что ли?!"
+    Ann_20 ""
+
+# game/scripts_s1/s1_v91.rpy:668
+translate german s1_bait_for_ann_bb0262b6:
+
+    # Max_09 "Мам, давай потише, а то всех разбудишь! Ты же сама разрешила, помнишь? Никаких претензий..."
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:669
+translate german s1_bait_for_ann_0bf995e8:
+
+    # Ann_18 "Вообще-то, я ничего такого не разрешала! Я подумала, ты сказал про Киру просто так, чтобы меня позлить..."
+    Ann_18 ""
+
+# game/scripts_s1/s1_v91.rpy:670
+translate german s1_bait_for_ann_6ded7eed:
+
+    # Max_15 "Ну вот, будешь знать, что ко мне нужно относиться посерьёзнее. А теперь, будь добра, иди спать, не отвлекай..."
+    Max_15 ""
+
+# game/scripts_s1/s1_v91.rpy:671
+translate german s1_bait_for_ann_32f4e841:
+
+    # Ann_16 "Ах вот так, значит! И вы считаете это нормальным, да? Чтобы родная тётя лежала тут с раздвинутыми ногами и учила своего племянника всяким непристойностям, если не сказать похуже!"
+    Ann_16 ""
+
+# game/scripts_s1/s1_v91.rpy:672
+translate german s1_bait_for_ann_2241c813:
+
+    # Kira_16 "Не непристойностям, а взрослой жизни и её... важным аспектам. Раз уж ты сама отказалась помогать сыну, то кому, как не мне следует позаботиться о его воспитании..."
+    Kira_16 ""
+
+# game/scripts_s1/s1_v91.rpy:675
+translate german s1_bait_for_ann_f8bf6b26:
+
+    # Ann_17 "Вот пусть заведёт себе девочку и там осваивает все эти... занятия! Именно таким образом приходит этот опыт и знания, а не на диване со своей тётей."
+    Ann_17 ""
+
+# game/scripts_s1/s1_v91.rpy:676
+translate german s1_bait_for_ann_607ee02b:
+
+    # Kira_15 "Ой, Ань, а то ты не знаешь, какие бывают девочки по молодости глупые и жестокие. С ними ничему хорошему не научишься, а в добавок они ещё и сердце разобьют. И если второе Макса однозначно ждёт, то вот с первым мы как раз и можем действительно помочь."
+    Kira_15 ""
+
+# game/scripts_s1/s1_v91.rpy:677
+translate german s1_bait_for_ann_bddd3b15:
+
+    # Ann_19 "Знаешь, тоже мне великая учительница нашлась. Ты-то как раз именно такой и была. Ещё не известно, какой похабщине ты его научишь..."
+    Ann_19 ""
+
+# game/scripts_s1/s1_v91.rpy:678
+translate german s1_bait_for_ann_e62e79fa:
+
+    # Kira_13 "Если до тебя ещё вдруг не дошло, то твой мальчик вырос и его запросы тоже! И твоя задача, держать процесс воспитания детей в своих собственных руках, как ты и делала. Только уже интимной сферы жизни."
+    Kira_13 ""
+
+# game/scripts_s1/s1_v91.rpy:679
+translate german s1_bait_for_ann_ca3bfb9f:
+
+    # Ann_14 "Но это... Одно дело обучать детей каким-то бытовым навыкам и совсем другое... интимным моментам. Это сложно."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:680
+translate german s1_bait_for_ann_ba59e7e9:
+
+    # Max_07 "Может, хватит? Тётя Кира мне помочь хочет, в отличие от тебя. Кто не помогает, тот мешает."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:681
+translate german s1_bait_for_ann_0032ea38:
+
+    # Ann_16 "Так, сынок, давай-ка отойдём и поговорим наедине..." nointeract
+    Ann_16 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:687
+translate german s1_bait_for_ann_1dc89583:
+
+    # Ann_12 "Как я уже, наверное, говорила - ни стыда, ни совести у тебя, Макс. Вот что прикажешь с тобой делать? Я не знаю..."
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:688
+translate german s1_bait_for_ann_ca2469be:
+
+    # Max_09 "Давай, пока ты будешь думать, я пойду к Кире?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:689
+translate german s1_bait_for_ann_53f00c17:
+
+    # Ann_13 "Ну уж нет! Как представлю, чему тебя может научить моя сестра-оторва, аж страшно становится. Я лучше возьму эту задачу на себя, чем буду каждый день беспокоится об этом..."
+    Ann_13 ""
+
+# game/scripts_s1/s1_v91.rpy:690
+translate german s1_bait_for_ann_7c238abc:
+
+    # Max_10 "Здорово, но... Ты же всё время занята. Когда мы будем успевать?"
+    Max_10 ""
+
+# game/scripts_s1/s1_v91.rpy:691
+translate german s1_bait_for_ann_e6287c08:
+
+    # Ann_12 "Что-нибудь придумаем. Можем попробовать тогда, когда я принимаю ванну. Там нам с этим не должны помешать."
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:692
+translate german s1_bait_for_ann_05f5e63c:
+
+    # Max_07 "Отлично! Договорились. А ты уверена, что справишься с этим?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:693
+translate german s1_bait_for_ann_ec2bc7c4:
+
+    # Ann_14 "Ну... Будет непросто, но я постараюсь. А теперь расходимся по комнатам и спим." nointeract
+    Ann_14 "" nointeract
+
+translate german strings:
+
+    # game/scripts_s1/s1_v91.rpy:525
+    old "{i}продолжить массаж с поцелуями в шею{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:537
+    old "{i}продолжить массаж и поцелуи{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:560
+    old "{i}массировать мамину грудь{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:603
+    old "Нужна твоя помощь. Пойдём на диван, расскажу..."
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:682
+    old "{i}идти на кухню{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:694
+    old "{i}пойти спать{/i}"
+    new ""
+
+# TODO: Translation updated at 2022-06-17 00:19
+
+# game/scripts_s1/s1_v91.rpy:43
+translate german s1_cheat_skip_2bea6bd9:
+
+    # "Есть важные события. Пропуск завершить не удалось."
+    ""
+
+# game/scripts_s1/s1_v91.rpy:541
+translate german s1_ann_drink_end_1_2638b5b5:
+
+    # Ann_07 "Спасибо, дорогой. Мне тоже понравилось. И тебе доброй ночи." nointeract
+    Ann_07 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:846
+translate german s1_ann_bath_59e8f8d8:
+
+    # Max_00 "{m}Сейчас, обычно, мама должна принимать ванну...{/m}" nointeract
+    Max_00 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:853
+translate german s1_ann_bath_752a4ee4:
+
+    # Ann_15 "Макс! Ты почему так нагло врываешься?! Я тут вообще-то ванну принимаю..."
+    Ann_15 ""
+
+# game/scripts_s1/s1_v91.rpy:854
+translate german s1_ann_bath_9bd203b4:
+
+    # Max_07 "У нас ведь есть дело, помнишь?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:855
+translate german s1_ann_bath_b8985256:
+
+    # Ann_16 "Я не вижу смысла тебя чему-либо учить, Макс, пока ты не научишься стучаться перед тем, как войти!"
+    Ann_16 ""
+
+# game/scripts_s1/s1_v91.rpy:856
+translate german s1_ann_bath_834f0d78:
+
+    # Max_09 "Хорошо, в следующий раз постучусь."
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:857
+translate german s1_ann_bath_f18fbf7a:
+
+    # Ann_17 "Вот и урок наш состоится только в следующий раз, если постучишься. А сейчас выйди." nointeract
+    Ann_17 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:872
+translate german s1_ann_intimate_lesson_02_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann ""
+
+# game/scripts_s1/s1_v91.rpy:873
+translate german s1_ann_intimate_lesson_02_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:874
+translate german s1_ann_intimate_lesson_02_896e111e:
+
+    # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
+    Ann "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:880
+translate german s1_ann_intimate_lesson_02_83499f7b:
+
+    # Ann_12 "Только, сынок, это должно быть нашим с тобой огромным секретом, понял? Потому что маме с сыном нехорошо этим заниматься, неправильно."
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:881
+translate german s1_ann_intimate_lesson_02_2a769a8a:
+
+    # Max_01 "Ты же просто будешь меня учить. Что в этом плохого?"
+    Max_01 ""
+
+# game/scripts_s1/s1_v91.rpy:884
+translate german s1_ann_intimate_lesson_02_b2fcf636:
+
+    # Ann_14 "Да, но {b}ЧЕМУ{/b} учить! Для тебя это всё будет, наверняка, очень интересно... Но чтобы ты понимал, для меня не просто учить {b}ТАКОМУ{/b} своего сына."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:885
+translate german s1_ann_intimate_lesson_02_b387c27d:
+
+    # Max_09 "Ну... Уж кто и может научить ТАКОМУ лучше всех, так это мама. Ты же заинтересована в том, чтобы я был лучшим во всём, в том числе и в ЭТОМ?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:886
+translate german s1_ann_intimate_lesson_02_07f19152:
+
+    # Ann_13 "Ох, только такие мысли мне и помогают сейчас. Ладно, раздевайся и залазь ко мне в ванну." nointeract
+    Ann_13 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:892
+translate german s1_ann_intimate_lesson_02_80245246:
+
+    # Ann_01 "Сейчас мы сядем и немного побеседуем. Ты девочку ещё не завёл?"
+    Ann_01 ""
+
+# game/scripts_s1/s1_v91.rpy:893
+translate german s1_ann_intimate_lesson_02_f01f6a8e:
+
+    # Max_04 "Нет. Но на примете несколько есть."
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:894
+translate german s1_ann_intimate_lesson_02_ee5e67c7:
+
+    # Ann_02 "Честно говоря, я рада, что ты интересуешься тем, как не только доставить удовольствие себе, но и твоей девушке."
+    Ann_02 ""
+
+# game/scripts_s1/s1_v91.rpy:895
+translate german s1_ann_intimate_lesson_02_8ff25c03:
+
+    # Max_03 "Я хочу наслаждаться этим по полной, чтобы хорошо было всем."
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:898
+translate german s1_ann_intimate_lesson_02_d3346fad:
+
+    # Ann_04 "Приятно слышать. Значит будем учить тебя, как следует ласкать женские эрогенные зоны."
+    Ann_04 ""
+
+# game/scripts_s1/s1_v91.rpy:899
+translate german s1_ann_intimate_lesson_02_77dc7d16:
+
+    # Max_02 "Вверху я в тот раз ведь немного освоился?"
+    Max_02 ""
+
+# game/scripts_s1/s1_v91.rpy:900
+translate german s1_ann_intimate_lesson_02_4ed32277:
+
+    # Ann_14 "Да, но эрогенных зон у женщины очень много, сынок. При чём их уровень возбудимости у каждой женщины разный. Если одна женщина просто с ума сходит, когда ей массируют ножки, то другой это может не особо нравится."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:901
+translate german s1_ann_intimate_lesson_02_8eda2b08:
+
+    # Max_07 "И определить, какой женщине что нравится, можно только \"прощупав реакцию\", да?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:902
+translate german s1_ann_intimate_lesson_02_1db96e37:
+
+    # Ann_12 "Да, Макс. Всё правильно. Но меня мы \"прощупывать\" не будем. С этим, я думаю, и так всё понятно. А вот то, как нужно ласкать... Вот с этим нам нужно разобраться."
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:905
+translate german s1_ann_intimate_lesson_02_4650bde4:
+
+    # Max_04 "К этому я готов. У меня, вроде, неплохо получалось тогда... на диване?"
+    Max_04 ""
+
+# game/scripts_s1/s1_v91.rpy:906
+translate german s1_ann_intimate_lesson_02_0b059c20:
+
+    # Ann_14 "Да, только вот там мы занимались детскими шалостями по сравнению с тем, чему я должна научить тебя дальше..."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:907
+translate german s1_ann_intimate_lesson_02_b7d855e9:
+
+    # Max_01 "Мам, не напрягайся ты так. Это же всё в образовательных целях делается. С чего мы начнём?"
+    Max_01 ""
+
+# game/scripts_s1/s1_v91.rpy:908
+translate german s1_ann_intimate_lesson_02_b5296c29:
+
+    # Ann_12 "Ох, ну... Я думаю, сначала нужно проверить, как... как у тебя получится ласкать мою грудь. Даже не верится, что я тебе такое говорю. Давай, устраивайся поближе ко мне..." nointeract
+    Ann_12 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:914
+translate german s1_ann_intimate_lesson_02_a01e74fd:
+
+    # Ann_02 "С поцелуями и массажем у тебя более-менее, но женская грудь... Она куда чувствительнее, особенно сосочки. Поэтому с ней лучше обходиться понежнее. По крайней мере, сначала."
+    Ann_02 ""
+
+# game/scripts_s1/s1_v91.rpy:915
+translate german s1_ann_intimate_lesson_02_0283ec79:
+
+    # Max_07 "А впоследствии?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:916
+translate german s1_ann_intimate_lesson_02_7252ae2e:
+
+    # Ann_05 "А дальше всё зависит от женщины. Может быть дальше она любит погрубее."
+    Ann_05 ""
+
+# game/scripts_s1/s1_v91.rpy:917
+translate german s1_ann_intimate_lesson_02_eb253a72:
+
+    # Max_02 "А как любишь ты?"
+    Max_02 ""
+
+# game/scripts_s1/s1_v91.rpy:918
+translate german s1_ann_intimate_lesson_02_6905e57b:
+
+    # Ann_13 "Макс, ну что за вопрос такой? Мы же этим занимаемся в образовательных целях, а не для удовольствия и забавы."
+    Ann_13 ""
+
+# game/scripts_s1/s1_v91.rpy:919
+translate german s1_ann_intimate_lesson_02_1178f669:
+
+    # Max_03 "Да, но тебе же должно быть приятно, чтобы понять, что у меня хорошо получается?"
+    Max_03 ""
+
+# game/scripts_s1/s1_v91.rpy:920
+translate german s1_ann_intimate_lesson_02_5b651a27:
+
+    # Ann_12 "Макс, ты давай пробуй, а я в свою очередь сделаю какие-то замечания." nointeract
+    Ann_12 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:926
+translate german s1_ann_intimate_lesson_02_d45e60d2:
+
+    # Ann_09 "Ахх... Только поаккуратнее с моими сосочками, они очень чувствительные... Не нужно их так грубо ласкать языком! Нежнее, сынок..." nointeract
+    Ann_09 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:932
+translate german s1_ann_intimate_lesson_02_0c29d27a:
+
+    # Ann_03 "Да-а... Всё правильно, вот так... Охх... Ты молодец. Продолжай..."
+    Ann_03 ""
+
+# game/scripts_s1/s1_v91.rpy:933
+translate german s1_ann_intimate_lesson_02_b10b45b3:
+
+    # Max_05 "{m}Какое блаженство играть с маминой грудью! У неё невероятно шикарные сиськи! Такие большие и аппетитные, а сосочки твёрденькие... Ласкал бы без отрыва. Ммм...{/m}"
+    Max_05 ""
+
+# game/scripts_s1/s1_v91.rpy:934
+translate german s1_ann_intimate_lesson_02_de6b87b3:
+
+    # Ann_14 "Ухх... А руками уже можно работать более властно... По-хозяйски, так сказать. Ммм... Д-а-а! Ой, что же я такое говорю..."
+    Ann_14 ""
+
+# game/scripts_s1/s1_v91.rpy:937
+translate german s1_ann_intimate_lesson_02_a0c59985:
+
+    # Max_07 "Ладно тебе, мам, не смущайся. Тебе понравилось?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:938
+translate german s1_ann_intimate_lesson_02_0de91542:
+
+    # Ann_17 "Сынок, ну вот как я должна на это ответить? Если \"да\", то получается я в конец больная, а если \"нет\", то лгунья... Как же неправильно то, что мы делаем!"
+    Ann_17 ""
+
+# game/scripts_s1/s1_v91.rpy:939
+translate german s1_ann_intimate_lesson_02_bd28a745:
+
+    # Max_08 "Так может мне всё-таки к тёте Кире пойти, чтобы ты не мучилась?"
+    Max_08 ""
+
+# game/scripts_s1/s1_v91.rpy:940
+translate german s1_ann_intimate_lesson_02_203aa821:
+
+    # Ann_18 "Нет уж! Раз взялась, то нужно проконтролировать твоё обучение. А там я понятия не имею, чему она тебя научит."
+    Ann_18 ""
+
+# game/scripts_s1/s1_v91.rpy:943
+translate german s1_ann_intimate_lesson_02_9be3c691:
+
+    # Max_09 "Почему ты так плохо о ней думаешь в этом плане?"
+    Max_09 ""
+
+# game/scripts_s1/s1_v91.rpy:944
+translate german s1_ann_intimate_lesson_02_08eb3fe2:
+
+    # Ann_12 "Да у неё вся жизнь какая-то сомнительная. Ладно, не будем о ней. Давай закругляться. Продолжим в следующий раз."
+    Ann_12 ""
+
+# game/scripts_s1/s1_v91.rpy:945
+translate german s1_ann_intimate_lesson_02_c5f6330b:
+
+    # Max_10 "Это что, всё?! Я думал ещё что-то будет..."
+    Max_10 ""
+
+# game/scripts_s1/s1_v91.rpy:948
+translate german s1_ann_intimate_lesson_02_b0e4030c:
+
+    # Ann_00 "Сынок, мне всё это очень непросто даётся делать. Так что дай маме отдохнуть и побыть одной. О многом нужно подумать."
+    Ann_00 ""
+
+# game/scripts_s1/s1_v91.rpy:949
+translate german s1_ann_intimate_lesson_02_b790d1ab:
+
+    # Max_00 "Хорошо. Тогда до следующего раза." nointeract
+    Max_00 "" nointeract
+
+translate german strings:
+
+    # game/scripts_s1/s1_v91.rpy:847
+    old "{i}войти без стука{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:909
+    old "{i}устроиться между маминых ног{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:921
+    old "{i}ласкать мамину грудь{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v91.rpy:927
+    old "{i}ласкать языком нежнее{/i}"
+    new ""
 

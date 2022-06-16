@@ -70,3 +70,11 @@ translate german strings:
     old "ЧЕРЕЗ НЕКОТОРОЕ ВРЕМЯ..."
     new "NACH EINIGER ZEIT..."
 
+# TODO: Translation updated at 2022-06-09 13:17
+
+translate german strings:
+
+    # game/scripts_s1/s1_screens.rpy:331
+    old "ЧЕРЕЗ НЕСКОЛЬКО МИНУТ..."
+    new ""
+

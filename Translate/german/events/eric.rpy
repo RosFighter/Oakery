@@ -583,7 +583,7 @@ translate german eric_ann_fucking_voyeur_1a6dca32:
     Ann_18 "Max? Spionierst du schon wieder?! Raus mit dir!" nointeract
 
 # game/events/eric.rpy:593
-translate german eric_ann_fucking_voyeur_afca94eb:
+translate german eric_ann_fucking_voyeur_141f69df:
 
     # Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
     Eric_02 "Ann, es ist besser, uns zuzuschauen, als das ganze verkorkste Zeug im Internet, weißt du? Max, komm hier rein und wir reden..." nointeract

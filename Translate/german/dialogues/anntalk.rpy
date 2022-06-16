@@ -2900,3 +2900,59 @@ translate german strings:
     old "{i}постараться успокоиться{/i}"
     new "{i}beruhigen{/i}"
 
+# TODO: Translation updated at 2022-06-09 13:17
+
+# game/dialogues/anntalk.rpy:656
+translate german ann_tv_continuation_massage_massage_221bc697:
+
+    # Ann_14 "[failed!t]Да что ты говоришь, Макс! Почему же ты тогда возбуждён так сильно?! Ни стыда, ни совести у тебя нет!"
+    Ann_14 ""
+
+# game/dialogues/anntalk.rpy:657
+translate german ann_tv_continuation_massage_massage_9cb21df5:
+
+    # Max_07 "Ну, да... Сползло немного твоё полотенце, но не критично. Мне это не мешает. Тебе же понравился массаж?"
+    Max_07 ""
+
+# game/dialogues/anntalk.rpy:658
+translate german ann_tv_continuation_massage_massage_8695f276:
+
+    # Ann_13 "Понравился, но вот то, что у меня за спиной происходит помимо массажа... Это вот мне совсем не нравится."
+    Ann_13 ""
+
+# game/dialogues/anntalk.rpy:659
+translate german ann_tv_continuation_massage_massage_403df953:
+
+    # Max_03 "Ну мам, ты же красивая! Уж извини, но воспринимай, как комплимент."
+    Max_03 ""
+
+# game/dialogues/anntalk.rpy:660
+translate german ann_tv_continuation_massage_massage_157b0aa7:
+
+    # Ann_12 "Да уж, большой комплимент! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
+    Ann_12 "" nointeract
+
+# game/dialogues/anntalk.rpy:1136
+translate german ann_yoga_with_maxr_7ac1ee79_1:
+
+    # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
+    Max_10 "" nointeract
+
+# game/dialogues/anntalk.rpy:1139
+translate german ann_yoga_with_maxr_6d31e3c0:
+
+    # Ann_12 "Ох, пора бы тебе уже девушку себе найти и с ней время проводить. Я, конечно, не против твоей помощи, но я всё-таки твоя мама, а потому никак не смогу помочь тебе... ну, снять напряжение."
+    Ann_12 ""
+
+# game/dialogues/anntalk.rpy:1140
+translate german ann_yoga_with_maxr_74c82a5d:
+
+    # Max_07 "Может и найду. А пока, до следующего раза..." nointeract
+    Max_07 "" nointeract
+
+translate german strings:
+
+    # game/dialogues/anntalk.rpy:178
+    old "Проведём сегодня вечер с \"образовательной\" пользой?"
+    new ""
+
