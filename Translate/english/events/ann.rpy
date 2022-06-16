@@ -1948,3 +1948,23 @@ translate english ann_bath_about_intime_0_3a30664f:
     # Max_01 "Да, мам! Я не буду мешать, расслабляйся." nointeract
     Max_01 "Yes, Mom! I won't interfere, relax." nointeract
 
+# TODO: Translation updated at 2022-06-17 00:19
+
+# game/events/ann.rpy:18
+translate english ann_sleep_e0ca90ce:
+
+    # Max_09 "Хм... Мамы нет. Где же она?"
+    Max_09 ""
+
+# game/events/ann.rpy:974
+translate english ann_bath_about_intime_0_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann ""
+
+# game/events/ann.rpy:978
+translate english ann_bath_about_intime_0_a05b810e:
+
+    # Ann "{b}Анна:{/b} Если это может подождать, то я через полчасика освобожусь..." nointeract
+    Ann "" nointeract
+

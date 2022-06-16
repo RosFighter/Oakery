@@ -736,3 +736,11 @@ translate english strings:
     # game/core/02init.rpy:141
     old "Хотел поговорить о маме..."
     new "I wanted to talk about Mom..."
+# TODO: Translation updated at 2022-06-09 13:13
+
+translate english strings:
+
+    # game/core/02init.rpy:141
+    old "Мам, ты подумала?"
+    new ""
+

@@ -3475,7 +3475,7 @@ translate english eric_ann_fuck_glasses_sleeping_ffe8566a:
 # game/events/eric.rpy:691
 translate english eric_ann_fuck_glasses_sleeping_3eda019d:
 
-    # Ann_08 "Come on, my darling, take me... I've been dreaming about it all evening. I'm so wet already! Ahhhh!"
+    # Ann_08 "Давай, мой милый, возьми меня... Я мечтаю об этом уже целый вечер. Я уже такая мокренькая! Ах-х-х!"
     Ann_08 "Come on, my darling, take me... I've been dreaming about it all evening. I'm so wet already! Ahhhh!"
 
 # game/events/eric.rpy:692
@@ -3583,3 +3583,4 @@ translate english strings:
     # game/events/eric.rpy:694
     old "{i}хорошо устроиться{/i}"
     new "{i}get comfortable{/i}"
+
