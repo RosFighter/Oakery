@@ -742,5 +742,4 @@ translate english strings:
 
     # game/core/02init.rpy:141
     old "Мам, ты подумала?"
-    new ""
-
+    new "Mom, did you think about it?"

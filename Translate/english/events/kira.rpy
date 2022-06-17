@@ -4612,11 +4612,10 @@ translate english kira_alice_shower_start_peeping_dda24c4d:
 translate english kira_bath_6147c55c:
 
     # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
-    Max_09 ""
+    Max_09 "It's better to rest today. And with Aunt Kira we can talk about what happened in the morning."
 
 # game/events/kira.rpy:990
 translate english kira_night_tv_6147c55c:
 
     # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
-    Max_09 ""
-
+    Max_09 "It's better to rest today. And with Aunt Kira we can talk about what happened in the morning."

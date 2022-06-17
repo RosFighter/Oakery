@@ -1954,17 +1954,16 @@ translate english ann_bath_about_intime_0_3a30664f:
 translate english ann_sleep_e0ca90ce:
 
     # Max_09 "Хм... Мамы нет. Где же она?"
-    Max_09 ""
+    Max_09 "Um... Mom's not here. Where is she?"
 
 # game/events/ann.rpy:974
 translate english ann_bath_about_intime_0_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann ""
+    Ann "{b}Аnn:{/b} Who's there? I'm taking a bath!"
 
 # game/events/ann.rpy:978
 translate english ann_bath_about_intime_0_a05b810e:
 
     # Ann "{b}Анна:{/b} Если это может подождать, то я через полчасика освобожусь..." nointeract
-    Ann "" nointeract
-
+    Ann "{b}Аnn:{/b} If it can wait, I'll be out in half an hour..." nointeract

@@ -2906,53 +2906,52 @@ translate english strings:
 translate english ann_tv_continuation_massage_massage_221bc697:
 
     # Ann_14 "[failed!t]Да что ты говоришь, Макс! Почему же ты тогда возбуждён так сильно?! Ни стыда, ни совести у тебя нет!"
-    Ann_14 ""
+    Ann_14 "[failed!t]What are you saying, Max! Why are you so horny then?! You have no shame and no conscience!"
 
 # game/dialogues/anntalk.rpy:657
 translate english ann_tv_continuation_massage_massage_9cb21df5:
 
     # Max_07 "Ну, да... Сползло немного твоё полотенце, но не критично. Мне это не мешает. Тебе же понравился массаж?"
-    Max_07 ""
+    Max_07 "Well, yeah... Your towel slipped a little bit, but it's not critical. It doesn't bother me. You liked the massage, didn't you?"
 
 # game/dialogues/anntalk.rpy:658
 translate english ann_tv_continuation_massage_massage_8695f276:
 
     # Ann_13 "Понравился, но вот то, что у меня за спиной происходит помимо массажа... Это вот мне совсем не нравится."
-    Ann_13 ""
+    Ann_13 "I liked it, but what happens behind my back besides the massage... I don't like that at all."
 
 # game/dialogues/anntalk.rpy:659
 translate english ann_tv_continuation_massage_massage_403df953:
 
     # Max_03 "Ну мам, ты же красивая! Уж извини, но воспринимай, как комплимент."
-    Max_03 ""
+    Max_03 "Well, Mom, you're beautiful! I'm sorry, but take it as a compliment."
 
 # game/dialogues/anntalk.rpy:660
 translate english ann_tv_continuation_massage_massage_157b0aa7:
 
     # Ann_12 "Да уж, большой комплимент! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Yeah, that's a big compliment! Okay, let's pretend nothing happened. Go out, have a good time..." nointeract
 
 # game/dialogues/anntalk.rpy:1136
 translate english ann_yoga_with_maxr_7ac1ee79_1:
 
     # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
-    Max_10 "" nointeract
+    Max_10 "Whatever you say, Mom. Until next time..." nointeract
 
 # game/dialogues/anntalk.rpy:1139
 translate english ann_yoga_with_maxr_6d31e3c0:
 
     # Ann_12 "Ох, пора бы тебе уже девушку себе найти и с ней время проводить. Я, конечно, не против твоей помощи, но я всё-таки твоя мама, а потому никак не смогу помочь тебе... ну, снять напряжение."
-    Ann_12 ""
+    Ann_12 "Oh, it's about time you got a girlfriend and spent some time with her. I don't mind your help, but I'm still your mother, so there's no way I can help you... you know, take the edge off."
 
 # game/dialogues/anntalk.rpy:1140
 translate english ann_yoga_with_maxr_74c82a5d:
 
     # Max_07 "Может и найду. А пока, до следующего раза..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Maybe I will. In the meantime, until next time..." nointeract
 
 translate english strings:
 
     # game/dialogues/anntalk.rpy:178
     old "Проведём сегодня вечер с \"образовательной\" пользой?"
-    new ""
-
+    new "Shall we do something educational tonight?"

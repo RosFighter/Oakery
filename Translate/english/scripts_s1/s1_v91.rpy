@@ -1074,439 +1074,439 @@ translate english strings:
 translate english s1_about_intimate_lessons_fc38a309:
 
     # Ann_12 "Да, я подумала и приняла решение - ничего не получится. А теперь давай закончим этот разговор и сделаем вид, что ничего не было. Живут же другие семьи как-то без этих... уроков..."
-    Ann_12 ""
+    Ann_12 "Yes, I've thought about it and I've made up my mind - it's not going to work. Now let's end this conversation and pretend it never happened. I mean, other families somehow live without these... Lessons..."
 
 # game/scripts_s1/s1_v91.rpy:441
 translate english s1_about_intimate_lessons_5893e70d:
 
     # Max_10 "Но ведь ты была не против! Ты позволяла смотреть за тем, что вы с Эриком делали..."
-    Max_10 ""
+    Max_10 "But you didn't mind! You let me watch what you and Eric did..."
 
 # game/scripts_s1/s1_v91.rpy:442
 translate english s1_about_intimate_lessons_19d06407:
 
     # Ann_18 "Макс! Я всё сказала! Ты мой сын и делать такие вещи... Это неправильно!"
-    Ann_18 ""
+    Ann_18 "Max! I told you everything! You're my son, and to do such a thing... It's not right!"
 
 # game/scripts_s1/s1_v91.rpy:443
 translate english s1_about_intimate_lessons_6ba1fc46:
 
     # Max_11 "Ты это серьёзно?"
-    Max_11 ""
+    Max_11 "Are you serious?"
 
 # game/scripts_s1/s1_v91.rpy:444
 translate english s1_about_intimate_lessons_cbc29c20:
 
     # Ann_16 "Более чем! Нормальные мальчики, если ты не в курсе, находят себе девочку и осваивают всё с ней."
-    Ann_16 ""
+    Ann_16 "More than that! Normal boys, in case you don't know, find a girl and master everything with her."
 
 # game/scripts_s1/s1_v91.rpy:445
 translate english s1_about_intimate_lessons_c695435d:
 
     # Max_09 "Согласен, мам. Но у меня есть идейка получше... И ходить далеко не придётся..."
-    Max_09 ""
+    Max_09 "I agree, Mom. But I have a better idea... You don't have to go far..."
 
 # game/scripts_s1/s1_v91.rpy:446
 translate english s1_about_intimate_lessons_f2042d88:
 
     # Ann_15 "Не поняла! Что значит, \"ходить далеко не придётся\"?!"
-    Ann_15 ""
+    Ann_15 "I don't get it! What do you mean, you don't have to go far?"
 
 # game/scripts_s1/s1_v91.rpy:447
 translate english s1_about_intimate_lessons_d432d3e1:
 
     # Max_07 "По-моему мы договорились о том, что никакого разговора не было? Так что я пошёл..."
-    Max_07 ""
+    Max_07 "I thought we agreed that there was no conversation? So I'm off..."
 
 # game/scripts_s1/s1_v91.rpy:448
 translate english s1_about_intimate_lessons_9e75a728:
 
     # Ann_17 "Минуточку! Я тебя не отпускала! Ты что, уже подстраховался на случай моего отказа?"
-    Ann_17 ""
+    Ann_17 "Wait a minute! I didn't let you go! Did you already have insurance against my refusal?"
 
 # game/scripts_s1/s1_v91.rpy:449
 translate english s1_about_intimate_lessons_7e387496:
 
     # Max_09 "Ну... Я не особо надеялся на твою помощь... Поэтому пойду к тёте Кире. Она взрослая и опытная женщина... Уж она-то наверняка знает, как мужчине нужно ублажать женщину."
-    Max_09 ""
+    Max_09 "Well... I didn't hold out much hope for your help... That's why I'm going to Aunt Kira's. She's a mature and experienced woman... I'm sure she knows how a man should please a woman."
 
 # game/scripts_s1/s1_v91.rpy:450
 translate english s1_about_intimate_lessons_921e42b8:
 
     # Ann_13 "Господи, Макс, ты совсем с ума сошёл, просить о таком мою сестру?!"
-    Ann_13 ""
+    Ann_13 "Jesus, Max, are you out of your mind to ask my sister to do that?!"
 
 # game/scripts_s1/s1_v91.rpy:451
 translate english s1_about_intimate_lessons_94beb716:
 
     # Max_07 "А что? Мне кажется, она как раз таки та женщина, которая действительно не отвернётся от своего любимого племянника, а не будет искать отговорки, как и думать, правильно это или нет."
-    Max_07 ""
+    Max_07 "Why? I think she's the kind of woman who really won't turn her back on her beloved nephew, rather than looking for excuses, like wondering if it's right or wrong."
 
 # game/scripts_s1/s1_v91.rpy:452
 translate english s1_about_intimate_lessons_fc2a769a:
 
     # Ann_15 "Нет, Макс, я не отворачивалась от тебя! Просто... Я считаю, что мама не должна учить {b}ТАКОМУ{/b} своего сына."
-    Ann_15 ""
+    Ann_15 "No, Max, I didn't turn my back on you! It's just... I don't think a mother should teach {b}that{b} to her son."
 
 # game/scripts_s1/s1_v91.rpy:453
 translate english s1_about_intimate_lessons_b87e3e4e:
 
     # Max_09 "А смотреть, как ты занимаешься этим с Эриком - это должное? Или тебе нравилось, что я на вас смотрел?"
-    Max_09 ""
+    Max_09 "Was watching you do it with Eric proper? Or did you like me watching you?"
 
 # game/scripts_s1/s1_v91.rpy:454
 translate english s1_about_intimate_lessons_248dd135:
 
     # Ann_14 "Господи, Макс, ну что ты такое говоришь? Я просто... Я..."
-    Ann_14 ""
+    Ann_14 "Jesus, Max, what are you talking about? I just..."
 
 # game/scripts_s1/s1_v91.rpy:455
 translate english s1_about_intimate_lessons_380b082b:
 
     # Max_00 "Короче, я пошёл..."
-    Max_00 ""
+    Max_00 "Anyway, I'm off..."
 
 # game/scripts_s1/s1_v91.rpy:456
 translate english s1_about_intimate_lessons_616b441d:
 
     # Ann_17 "О боже... Ну ладно, будь по-твоему, давай попробуем... Не хватало ещё, чтобы ты просил о подобной помощи кого-то ещё."
-    Ann_17 ""
+    Ann_17 "Oh my God... All right, have it your way, let's try it... I don't want you to ask anyone else for that kind of help."
 
 # game/scripts_s1/s1_v91.rpy:457
 translate english s1_about_intimate_lessons_b0bd52a7:
 
     # Max_03 "Отлично! Когда начнём?"
-    Max_03 ""
+    Max_03 "That's great! When do we start?"
 
 # game/scripts_s1/s1_v91.rpy:458
 translate english s1_about_intimate_lessons_7ca0b85a:
 
     # Ann_12 "Так, давай не торопиться! Вот как я вечером, после ванны, буду одна в гостиной отдыхать за просмотром ТВ, так и подходи. Будем разбираться..."
-    Ann_12 ""
+    Ann_12 "Okay, let's take it slow! When I'm alone in the living room in the evening, after my bath, watching TV, then come over. We'll figure it out..."
 
 # game/scripts_s1/s1_v91.rpy:459
 translate english s1_about_intimate_lessons_01316ee1:
 
     # Max_02 "Договорились. Кстати, можно было бы тогда посмотреть что-то... обучающего плана... Заодно, так сказать."
-    Max_02 ""
+    Max_02 "Done. By the way, we could watch something... ...educational... At the same time, so to speak."
 
 # game/scripts_s1/s1_v91.rpy:460
 translate english s1_about_intimate_lessons_4b24ef57:
 
     # Ann_13 "Пожалуй... Это будет весьма уместно. Но никому не говори об этом. И к Кире не вздумай ходить!"
-    Ann_13 ""
+    Ann_13 "I guess... It would be very appropriate. But don't tell anyone about it. And don't go to Kira!"
 
 # game/scripts_s1/s1_v91.rpy:461
 translate english s1_about_intimate_lessons_499f29a4:
 
     # Max_01 "Конечно! Это будет нашим секретом, мам." nointeract
-    Max_01 "" nointeract
+    Max_01 "Of course! It will be our secret, Mom." nointeract
 
 # game/scripts_s1/s1_v91.rpy:473
 translate english s1_ann_intimate_lesson_1_7599b96c:
 
     # Ann_01 "Проведём... Я же согласилась, на свою голову. Я, в общем-то, определилась, что тебе покажу..."
-    Ann_01 ""
+    Ann_01 "Let's do it... I said yes, on my own head. I've pretty much figured out what I'm going to show you..."
 
 # game/scripts_s1/s1_v91.rpy:474
 translate english s1_ann_intimate_lesson_1_dfc9c730:
 
     # Max_01 "Я весь в предвкушении!"
-    Max_01 ""
+    Max_01 "I'm so excited!"
 
 # game/scripts_s1/s1_v91.rpy:477
 translate english s1_ann_intimate_lesson_1_dcdcc847:
 
     # Ann_02 "Вот... Сейчас посмотришь, как девочки развлекают себя без мальчиков. Думаю, этого будет вполне достаточно, чтобы понять... основу..."
-    Ann_02 ""
+    Ann_02 "Here... Now you'll see how girls amuse themselves without boys. I think that will be enough to understand... the basis..."
 
 # game/scripts_s1/s1_v91.rpy:478
 translate english s1_ann_intimate_lesson_1_41224389:
 
     # Max_08 "Так, ладно... И в чем основа?"
-    Max_08 ""
+    Max_08 "So, okay... What's the basis?"
 
 # game/scripts_s1/s1_v91.rpy:481
 translate english s1_ann_intimate_lesson_1_031ce397:
 
     # Ann_04 "В стимуляции... сам знаешь чего. У вас, мальчиков, с этим куда проще. Ты и сам, уж я думаю, прекрасно знаешь, как снять напряжение... самостоятельно."
-    Ann_04 ""
+    Ann_04 "In stimulation... you know what. It's a lot easier with you boys. I think you know how to relieve the tension... on your own."
 
 # game/scripts_s1/s1_v91.rpy:482
 translate english s1_ann_intimate_lesson_1_021896f4:
 
     # Max_07 "А у вас?"
-    Max_07 ""
+    Max_07 "What about you?"
 
 # game/scripts_s1/s1_v91.rpy:485
 translate english s1_ann_intimate_lesson_1_775d59dd:
 
     # Ann_14 "А у нас множество нюансов, из-за которых добиться... оргазма сложнее. Женщинам важна и обстановка, максимально ли мы привлекательны, нет ли у нас в голове каких-то проблем, которые нас не оставят в покое..."
-    Ann_14 ""
+    Ann_14 "And we have a lot of nuances that make it harder to achieve... orgasm is more difficult. Women also care about the environment, whether we are as attractive as possible, whether we don't have some problems in our heads that won't leave us alone..."
 
 # game/scripts_s1/s1_v91.rpy:486
 translate english s1_ann_intimate_lesson_1_676e08c8:
 
     # Max_10 "О-о-о... Как всё печально."
-    Max_10 ""
+    Max_10 "Uh-oh... This is so sad."
 
 # game/scripts_s1/s1_v91.rpy:489
 translate english s1_ann_intimate_lesson_1_8ce0f08a:
 
     # Max_09 "Но, мам, это какой-то уж совсем детский уровень. Я, например, уже взрослый, а потому хочу знать, как целовать девочек, как прикасаться к ним... Так что давай, показывай."
-    Max_09 ""
+    Max_09 "But, Mom, that's a very childish level. I, for example, am an adult, so I want to know how to kiss girls, how to touch them... So come on, show me."
 
 # game/scripts_s1/s1_v91.rpy:490
 translate english s1_ann_intimate_lesson_1_52061cc9:
 
     # Ann_01 "Ну да, я так и думала, что просмотром одного ролика мы не обойдёмся..."
-    Ann_01 ""
+    Ann_01 "Well, yes, I thought it would be more than just watching one video..."
 
 # game/scripts_s1/s1_v91.rpy:493
 translate english s1_ann_intimate_lesson_1_71a91c7c:
 
     # Max_03 "Во! Вот это уже ближе к теме... Такое мне нравится. Красиво!"
-    Max_03 ""
+    Max_03 "There! Now that's more on topic... I like that one. It's beautiful!"
 
 # game/scripts_s1/s1_v91.rpy:494
 translate english s1_ann_intimate_lesson_1_6cea527e:
 
     # Ann_02 "Тогда смотри и запоминай. Если будет что-то непонятно, я объясню."
-    Ann_02 ""
+    Ann_02 "Then watch and memorize. If you don't understand anything, I'll explain."
 
 # game/scripts_s1/s1_v91.rpy:497
 translate english s1_ann_intimate_lesson_1_ee056de1:
 
     # Max_07 "Да, вопросик есть. А что, ласки женской груди действительно настолько приятны, что эта девушка просто потеряла голову?"
-    Max_07 ""
+    Max_07 "Yes, there is a question. Is caressing a woman's breasts really so pleasurable that this girl just lost her head?"
 
 # game/scripts_s1/s1_v91.rpy:498
 translate english s1_ann_intimate_lesson_1_5355b1ad:
 
     # Ann_05 "Ну конечно! А вообще, у всех это бывает по-разному... Это зависит от чувствительности и возбудимости девушки..."
-    Ann_05 ""
+    Ann_05 "Of course! And in general, it happens differently to everyone... It depends on the sensitivity and excitability of the girl..."
 
 # game/scripts_s1/s1_v91.rpy:501
 translate english s1_ann_intimate_lesson_1_aa83dc45:
 
     # Max_09 "И как это выяснить?"
-    Max_09 ""
+    Max_09 "And how do you figure it out?"
 
 # game/scripts_s1/s1_v91.rpy:502
 translate english s1_ann_intimate_lesson_1_24d351a1:
 
     # Ann_14 "В процессе сближения с девушкой. Иначе, просто никак."
-    Ann_14 ""
+    Ann_14 "In the process of getting closer to the girl. Otherwise, there's just no way."
 
 # game/scripts_s1/s1_v91.rpy:505
 translate english s1_ann_intimate_lesson_1_d99b1ea5:
 
     # Max_11 "Хмм... Засада, однако..."
-    Max_11 ""
+    Max_11 "Hmm... A problem, however..."
 
 # game/scripts_s1/s1_v91.rpy:506
 translate english s1_ann_intimate_lesson_1_418ad13b:
 
     # Ann_01 "И почему ты так тяжко вздыхаешь? Разочарован, что не ко всему можно подготовиться заранее?"
-    Ann_01 ""
+    Ann_01 "And why are you sighing so heavily? Disappointed that you can't prepare for everything in advance?"
 
 # game/scripts_s1/s1_v91.rpy:509
 translate english s1_ann_intimate_lesson_1_23526750:
 
     # Max_04 "Ага. Так когда мы это всё попробуем, мам?"
-    Max_04 ""
+    Max_04 "Yeah. So when are we going to try all this, Mom?"
 
 # game/scripts_s1/s1_v91.rpy:510
 translate english s1_ann_intimate_lesson_1_20fc9780:
 
     # Ann_13 "В смысле, \"мы\"?! Это же очень интимные процессы..."
-    Ann_13 ""
+    Ann_13 "What do you mean, \"we\"? It's a very intimate process..."
 
 # game/scripts_s1/s1_v91.rpy:513
 translate english s1_ann_intimate_lesson_1_5b0aa651:
 
     # Max_07 "Поэтому я к тебе и обратился. И я же не прошу целоваться в губы, а так... Хотя бы в шею попробовать... Заодно и массаж сделаю..."
-    Max_07 ""
+    Max_07 "That's why I came to you. And I'm not asking you to kiss me on the lips, but... At least on the neck... I'll give you a massage, too..."
 
 # game/scripts_s1/s1_v91.rpy:514
 translate english s1_ann_intimate_lesson_1_2848ecd9:
 
     # Ann_12 "Даже не знаю... Как-то это всё..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "I don't know... Somehow it's all..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:520
 translate english s1_ann_intimate_lesson_1_472590a6:
 
     # Ann_17 "Массаж и поцелуи, это всё, конечно, здорово, сынок... Но не когда это происходит с мамой."
-    Ann_17 ""
+    Ann_17 "Massages and kisses are all great, of course, son... But not when it's happening to Mom."
 
 # game/scripts_s1/s1_v91.rpy:521
 translate english s1_ann_intimate_lesson_1_94042a4a:
 
     # Max_01 "Да не напрягайся ты так, мам. Мы просто проверим, насколько я с этим справлюсь, вот и всё."
-    Max_01 ""
+    Max_01 "Don't get so worked up, Mom. We'll just see if I can handle it, that's all."
 
 # game/scripts_s1/s1_v91.rpy:524
 translate english s1_ann_intimate_lesson_1_dfb8ce5b:
 
     # Ann_12 "И как, по-твоему, я должна оценивать твои поцелуи? Я вряд ли смогу сделать это, как женщина, потому что я твоя мать. Но, ладно, так уж и быть, я постараюсь..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "And how do you expect me to judge your kisses? I can hardly do that as a woman, because I'm your mother. But, all right, I'll try..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:530
 translate english s1_ann_intimate_lesson_1_154bb5cf:
 
     # Max_04 "{m}Мама замолчала... И начала так глубоко дышать! Нужно постараться целовать её хоть немного неуклюже, чтобы не было похоже, что у меня есть в этом опыт. Вот только не так-то это и просто...{/m}"
-    Max_04 ""
+    Max_04 "{m}Mom stopped talking... And started breathing so deeply! I should try to kiss her even a little awkwardly, so it wouldn't look like I had any experience at all. Except it's not that easy...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:533
 translate english s1_ann_intimate_lesson_1_1983b8c2:
 
     # Ann_02 "Ну что я скажу... Получается у тебя, Макс, довольно неплохо. Я имею ввиду сами поцелуи. Но тебе нужно расширять область их применения."
-    Ann_02 ""
+    Ann_02 "What can I say... You're doing pretty good, Max. I mean, the kissing itself. But you need to broaden their scope."
 
 # game/scripts_s1/s1_v91.rpy:534
 translate english s1_ann_intimate_lesson_1_d6beaf4d:
 
     # Max_09 "Эээ... То есть?"
-    Max_09 ""
+    Max_09 "Um... What do you mean?"
 
 # game/scripts_s1/s1_v91.rpy:535
 translate english s1_ann_intimate_lesson_1_cce37033:
 
     # Ann_05 "Нужно не забывать и про остальное: ключицу, плечи, спину, мочку ушка. Раз уж ты взялся это осваивать..."
-    Ann_05 ""
+    Ann_05 "You have to remember the rest: your collarbone, your shoulders, your back, your earlobe. Now that you're getting the hang of it..."
 
 # game/scripts_s1/s1_v91.rpy:536
 translate english s1_ann_intimate_lesson_1_f069bec4:
 
     # Max_02 "Понял. Тогда я сейчас попробую..." nointeract
-    Max_02 "" nointeract
+    Max_02 "I see. Then I'll try it now..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:542
 translate english s1_ann_intimate_lesson_1_70ee05dc:
 
     # Max_03 "{m}Всё перечисленное я с удовольствием попробую, пока мой массаж всё ближе и ближе подступает к маминой груди. Ох, вот бы их тоже помассировать...{/m}"
-    Max_03 ""
+    Max_03 "{m}All of the above I would love to try as my massage gets closer and closer to my mom's breasts. Oh, I wish I could massage them, too...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:543
 translate english s1_ann_intimate_lesson_1_d2feb746:
 
     # Ann_03 "Ахх... Сынок, если ты не будешь так частить с поцелуями, а будешь повышать их качество продолжительностью, то в сочетании с твоими навыками массажа, все девочки будут терять голову... Ммм..."
-    Ann_03 ""
+    Ann_03 "Ahhh... Son, if you wouldn't be so fussy about kissing, but improve the quality of your kisses by increasing their duration, then combined with your massage skills, all the girls would lose their heads... Mmm..."
 
 # game/scripts_s1/s1_v91.rpy:544
 translate english s1_ann_intimate_lesson_1_68b5a75b:
 
     # Max_04 "Ну... Если ты потеряешь голову, то твой прогноз однозначно верен."
-    Max_04 ""
+    Max_04 "Well... If you lose your head, your prognosis is definitely correct."
 
 # game/scripts_s1/s1_v91.rpy:545
 translate english s1_ann_intimate_lesson_1_e254abbd:
 
     # Ann_14 "Ох... Мне кажется, что ты сейчас не только о своём образовании заботишься, но и... Тебе не хватает кое-чего. И заниматься тебе этим нужно не со мной..."
-    Ann_14 ""
+    Ann_14 "Oh... It seems to me that you're not just concerned about your education right now, but you're also... You're missing something. And it's not me you need to be doing it with..."
 
 # game/scripts_s1/s1_v91.rpy:548
 translate english s1_ann_intimate_lesson_1_382e011b:
 
     # Max_07 "Мам, а с кем, как не с тобой, мне такое можно пробовать делать? С тобой мне как-то легче преодолеть страхи. А девочкам, как я слышал, нравятся уверенные мальчики!"
-    Max_07 ""
+    Max_07 "Mom, who else but you could I try this with? You make it easier for me to overcome my fears. And girls, from what I hear, like confident boys!"
 
 # game/scripts_s1/s1_v91.rpy:549
 translate english s1_ann_intimate_lesson_1_345fa74a:
 
     # Ann_12 "И что, я теперь из-за этого должна отбросить всё смущение и наслаждаться, как эта девушка на экране?"
-    Ann_12 ""
+    Ann_12 "So now I'm supposed to put aside all embarrassment and enjoy myself like that girl on the screen because of it?"
 
 # game/scripts_s1/s1_v91.rpy:550
 translate english s1_ann_intimate_lesson_1_2afa5928:
 
     # Max_09 "А почему нет? Для меня бесценный опыт, для тебя одно удовольствие. Тебе же нравится массаж?"
-    Max_09 ""
+    Max_09 "Why not? For me it's an invaluable experience, for you it's a pleasure. You like massages, don't you?"
 
 # game/scripts_s1/s1_v91.rpy:553
 translate english s1_ann_intimate_lesson_1_5e32cafa:
 
     # Ann_17 "Ну, Макс! Одно дело, когда это просто массаж и другое, когда сын начинает делать своей маме эротический массаж!"
-    Ann_17 ""
+    Ann_17 "Well, Max! It's one thing when it's just a massage and another when your son starts giving his mom an erotic massage!"
 
 # game/scripts_s1/s1_v91.rpy:554
 translate english s1_ann_intimate_lesson_1_29386537:
 
     # Max_07 "То есть, если бы я, например, начал массировать твою грудь, то тебе бы не понравилось?"
-    Max_07 ""
+    Max_07 "So, for example, if I started massaging your breasts, you wouldn't like it?"
 
 # game/scripts_s1/s1_v91.rpy:555
 translate english s1_ann_intimate_lesson_1_f2bfe275:
 
     # Ann_12 "Зная твой талант в массаже, я не сомневаюсь, что мне бы понравилось. Но делать такое мы не будем!"
-    Ann_12 ""
+    Ann_12 "Knowing your talent for massage, I have no doubt that I would enjoy it. But we're not going to do that!"
 
 # game/scripts_s1/s1_v91.rpy:556
 translate english s1_ann_intimate_lesson_1_1323a763:
 
     # Max_08 "Почему ты так сильно этого стесняешься? У тебя же просто невероятно прекрасная грудь! Мне же нужно знать, как массировать её так, чтобы женщине нравилось. Вдруг, мой массаж здесь не сработает и нужны иные движения рук!"
-    Max_08 ""
+    Max_08 "Why are you so ashamed of it? You have incredibly beautiful breasts! I need to know how to massage it so that a woman likes it. What if my massage doesn't work here and I need a different hand movement!"
 
 # game/scripts_s1/s1_v91.rpy:559
 translate english s1_ann_intimate_lesson_1_6545d9ef:
 
     # Ann_14 "Ох, сынок... Ты, видимо, не отстанешь, да? Хорошо, попробуем разок, чтобы ты знал, как это... делается... Я скажу, если ты будешь делать что-то не так." nointeract
-    Ann_14 "" nointeract
+    Ann_14 "Oh, son... You're not gonna let up, are you? All right, let's try this once, so you know how it's... ...to do... I'll tell you if you do something wrong." nointeract
 
 # game/scripts_s1/s1_v91.rpy:565
 translate english s1_ann_intimate_lesson_1_960c1adc:
 
     # Max_05 "{m}Неужто мои руки наконец дотянулись до этих самых потрясающих сисек на свете! Несмотря на свои годы, мамина грудь выглядит просто отлично, а на ощупь, вообще, обалденная! Но продолжать неуклюжничать, как с поцелуями, так же нужно не забывать...{/m}"
-    Max_05 ""
+    Max_05 "{m}I can't believe my hands finally got their hands on some of the most amazing boobs in the world! In spite of her years, my mom's breasts look just fine, and to the touch, in general, they're awesome! But to continue to be clumsy, as with kisses, so must not forget...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:566
 translate english s1_ann_intimate_lesson_1_d0dadc91:
 
     # Ann_08 "Да, Макс... У тебя довольно неплохо получается. Но с грудью, по крайней мере, поначалу, лучше обращаться как можно нежнее... А так, твои навыки в массаже здесь очень к месту. Охх..."
-    Ann_08 ""
+    Ann_08 "Yes, Max... You're pretty good at it. But at least at first it's better to handle the breasts as gently as possible... But your massage skills are very useful here. Ohh..."
 
 # game/scripts_s1/s1_v91.rpy:567
 translate english s1_ann_intimate_lesson_1_2aa5e608:
 
     # Max_02 "Значит, как женщине, тебе нравится, как я это делаю? Может, ещё что-нибудь подскажешь?"
-    Max_02 ""
+    Max_02 "So, as a woman, you like the way I do it? Is there anything else you can tell me?"
 
 # game/scripts_s1/s1_v91.rpy:568
 translate english s1_ann_intimate_lesson_1_e1eb7ba8:
 
     # Ann_03 "Да, не останавливайся только на груди. Продолжай массировать и всё то, что ты массировал до этого. Ммм... Но обязательно возвращайся... Как же пошло такое говорить своему сыну..."
-    Ann_03 ""
+    Ann_03 "Yes, don't stop just at the breasts. Keep massaging all the things you massaged before, too. Mmm... But be sure to come back... What a dirty thing to say to your son..."
 
 # game/scripts_s1/s1_v91.rpy:571
 translate english s1_ann_intimate_lesson_1_98be7369:
 
     # Max_03 "{m}Да, мять эти сочные сисечки одно удовольствие, как и целовать её в шею. Она дышит жарко и глубоко, ей явно приятно. Но вместе с этим, я всё ещё чувствую, как она напрягается от того, что всё это делаю я.{/m}"
-    Max_03 ""
+    Max_03 "{m}Yes, squeezing those juicy tits is a pleasure, as is kissing her neck. She's breathing hot and deep, she's clearly enjoying herself. But at the same time, I can still feel her tense from the fact that I'm doing all this.{/m}"
 
 # game/scripts_s1/s1_v91.rpy:574
 translate english s1_ann_intimate_lesson_1_c127b58d:
 
     # Ann_05 "Так, сынок, достаточно. Я думаю, ты вполне готов сводить с ума всех девочек, какие попадутся в твои умелые руки. Ты ещё талантливее, чем мне казалось."
-    Ann_05 ""
+    Ann_05 "All right, son, that's enough. I think you are quite ready to drive all the girls who fall into your capable hands crazy. You're even more talented than I thought."
 
 # game/scripts_s1/s1_v91.rpy:575
 translate english s1_ann_intimate_lesson_1_314e3e67:
 
     # Max_07 "Супер! А как же остальное?"
-    Max_07 ""
+    Max_07 "Great! What about the rest?"
 
 # game/scripts_s1/s1_v91.rpy:578
 translate english s1_ann_intimate_lesson_1_3c77be73:
 
     # Ann_17 "Остальное? В смысле остальное? Ты о чём, Макс?"
-    Ann_17 ""
+    Ann_17 "The rest? What do you mean, the rest? What do you mean, Max?"
 
 # game/scripts_s1/s1_v91.rpy:579
 translate english s1_ann_intimate_lesson_1_5e421526:
 
     # Max_01 "Ну как... Мне же ещё нужно попробовать доставить удовольствие женщине там... внизу... Там же можно не только руками, так ведь?"
-    Max_01 ""
+    Max_01 "How... I still have to try to please a woman down there... down there... It's not all hands, is it?"
 
 # game/scripts_s1/s1_v91.rpy:580
 translate english s1_ann_intimate_lesson_1_1b043e2f:
@@ -1518,417 +1518,417 @@ translate english s1_ann_intimate_lesson_1_1b043e2f:
 translate english s1_ann_intimate_lesson_1_ebad62e7:
 
     # Max_07 "Наверно, ты права. Лучше учиться у нескольких женщин. К тому же, у тёти Киры, наверно, такого опыта побольше, чем у тебя. Ты же не против, если я поучусь у неё?"
-    Max_07 ""
+    Max_07 "Yes, but you have to do it without me. It's too much to do with my mother, even for educational purposes!"
 
 # game/scripts_s1/s1_v91.rpy:584
 translate english s1_ann_intimate_lesson_1_ce9b98ea:
 
     # Ann_06 "Ага, хотела бы я посмотреть, как ты будешь её на это уговаривать. Думаю, она ещё не всю свою нравственность растеряла, чтобы заниматься таким."
-    Ann_06 ""
+    Ann_06 "Yeah, I'd like to see you talk her into it. I guess she hasn't lost all her morals to do that yet."
 
 # game/scripts_s1/s1_v91.rpy:585
 translate english s1_ann_intimate_lesson_1_60c104a5:
 
     # Max_09 "Но! Если что... Никаких претензий к ней или ко мне, хорошо?"
-    Max_09 ""
+    Max_09 "But! If anything... No complaints against her or me, okay?"
 
 # game/scripts_s1/s1_v91.rpy:586
 translate english s1_ann_intimate_lesson_1_ad057f04:
 
     # Ann_07 "Ой, сынок, давай без этой ерунды. Найди уже себе девочку." nointeract
-    Ann_07 "" nointeract
+    Ann_07 "Oh, son, let's not do this nonsense. Find yourself a girl already." nointeract
 
 # game/scripts_s1/s1_v91.rpy:601
 translate english s1_bait_for_ann_57679d55:
 
     # Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
-    Max_03 ""
+    Max_03 "Wow... Bathing naked, Aunt Kira?! You look great!"
 
 # game/scripts_s1/s1_v91.rpy:602
 translate english s1_bait_for_ann_41436e7f:
 
     # Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?" nointeract
-    Kira_01 "" nointeract
+    Kira_01 "Ah, Max... I thought everybody was asleep. I wanted to go for a swim... What are you doing up?" nointeract
 
 # game/scripts_s1/s1_v91.rpy:606
 translate english s1_bait_for_ann_a15a1f83:
 
     # Kira_14 "Ой, Макс, может лучше будем решать проблемы с утра? На свежую голову..."
-    Kira_14 ""
+    Kira_14 "Oh, Max, why don't we solve our problems in the morning? With a clear head..."
 
 # game/scripts_s1/s1_v91.rpy:607
 translate english s1_bait_for_ann_cb24c246:
 
     # Max_07 "От тебя почти ничего не потребуется."
-    Max_07 ""
+    Max_07 "You will be required to do almost nothing."
 
 # game/scripts_s1/s1_v91.rpy:608
 translate english s1_bait_for_ann_9fabc03c:
 
     # Kira_01 "Оу... Ну раз так, то дай мне пару минут, я только загляну в ванную комнату."
-    Kira_01 ""
+    Kira_01 "Oh... Well, if that's the case, just give me a few minutes, I'll just look in the bathroom."
 
 # game/scripts_s1/s1_v91.rpy:609
 translate english s1_bait_for_ann_fac376a1:
 
     # Max_04 "Без проблем, тётя Кира."
-    Max_04 ""
+    Max_04 "No problem, Aunt Kira."
 
 # game/scripts_s1/s1_v91.rpy:614
 translate english s1_bait_for_ann_7e99f327:
 
     # Kira_06 "Ничего, если я включу что-нибудь \"горяченькое\"? Или это будет мешать?"
-    Kira_06 ""
+    Kira_06 "Is it okay if I turn on something hot? Or would that get in the way?"
 
 # game/scripts_s1/s1_v91.rpy:615
 translate english s1_bait_for_ann_0b28652a:
 
     # Max_02 "Обязательно включай! Это как раз таки будет нам необходимо для того, чтобы задуманная мной постановка сработала."
-    Max_02 ""
+    Max_02 "Be sure to turn it on! This is exactly what we need in order for my production to work."
 
 # game/scripts_s1/s1_v91.rpy:616
 translate english s1_bait_for_ann_bffab8dc:
 
     # Kira_07 "О как! Ты решил перейти со мной на ролевые игры? Интересно! Я думала, ты сперва будешь просить попробовать со мной анальный секс..."
-    Kira_07 ""
+    Kira_07 "Oh, boy! Have you decided to switch to role-playing with me? Interesting! I thought you were going to ask to try anal sex with me first..."
 
 # game/scripts_s1/s1_v91.rpy:617
 translate english s1_bait_for_ann_d7a277e7:
 
     # Max_06 "Ух ты! А что, уже можно?!"
-    Max_06 ""
+    Max_06 "Wow! Is that allowed?!"
 
 # game/scripts_s1/s1_v91.rpy:618
 translate english s1_bait_for_ann_4f82bd8a:
 
     # Kira_05 "Можно? Макс, твой член уже столько раз побывал у меня во рту и вообще во мне, что просто грех для тебя, как мне кажется, не натянуть на него мою попку."
-    Kira_05 ""
+    Kira_05 "May I? Max, your cock has been in my mouth and inside me so many times, I think it's a sin for you not to put my ass on it."
 
 # game/scripts_s1/s1_v91.rpy:619
 translate english s1_bait_for_ann_a2f0e512:
 
     # Max_09 "Блин, тётя Кира! Как ты с этим не вовремя! У меня теперь моральная дилемма, между моей задумкой и твоей..."
-    Max_09 ""
+    Max_09 "Shit, Aunt Kira! What bad timing! I have a moral dilemma now, between my idea and yours..."
 
 # game/scripts_s1/s1_v91.rpy:620
 translate english s1_bait_for_ann_ead7d151:
 
     # Kira_01 "Ну, ролевые игры - это тоже весьма интересный опыт."
-    Kira_01 ""
+    Kira_01 "Well, role-playing is also quite an interesting experience."
 
 # game/scripts_s1/s1_v91.rpy:621
 translate english s1_bait_for_ann_7026412e:
 
     # Max_07 "Да, это здорово, но мне сейчас нужно не совсем это. Нужна ролевая помощь с мамой!"
-    Max_07 ""
+    Max_07 "Yeah, that's great, but that's not really what I need right now. I need some role-playing help with my mom!"
 
 # game/scripts_s1/s1_v91.rpy:622
 translate english s1_bait_for_ann_2ef9dc7c:
 
     # Kira_15 "Эээ... Думаешь, она согласится на ролевой тройничок?!"
-    Kira_15 ""
+    Kira_15 "Um... Do you think she'll agree to a role-playing threesome?!"
 
 # game/scripts_s1/s1_v91.rpy:623
 translate english s1_bait_for_ann_5e66f6ec:
 
     # Max_09 "Так, тётя Кира, давай серьёзнее! Помнишь, я говорил, что мама вытворяет вещи, которые до Эрика и не подумала бы делать?"
-    Max_09 ""
+    Max_09 "Okay, Aunt Kira, let's get serious! Remember when I told you that Mom does things that she wouldn't have thought to do before Eric?"
 
 # game/scripts_s1/s1_v91.rpy:626
 translate english s1_bait_for_ann_32302405:
 
     # Kira_13 "Да, помню. А что, градус таких вещей стал ещё больше?"
-    Kira_13 ""
+    Kira_13 "Yes, I remember. Has the degree of such things become even greater?"
 
 # game/scripts_s1/s1_v91.rpy:627
 translate english s1_bait_for_ann_f0afb72d:
 
     # Max_07 "Ага, знаешь, я подглядывал за ними... Мама несколько раз меня за это наказала, но Эрик взял и убедил её, что нужно удовлетворить моё подростковое любопытство. Они во всех подробностях показали мне, что такое минет..."
-    Max_07 ""
+    Max_07 "Yeah, you know, I used to peep at them. Mom punished me several times for that, but Eric took it upon himself to convince her to satisfy my teenage curiosity. They showed me all the details of what a blow job is..."
 
 # game/scripts_s1/s1_v91.rpy:628
 translate english s1_bait_for_ann_fa71c365:
 
     # Kira_17 "Ничего себе! Хочешь сказать, моя сестра, которая довольно строго вас от этого всего старалась оберегать, теперь вытворяет такие номера? Вау!"
-    Kira_17 ""
+    Kira_17 "Wow! You mean, my sister, who was pretty strict about keeping you out of all this, is now pulling these kinds of stunts? Wow!"
 
 # game/scripts_s1/s1_v91.rpy:629
 translate english s1_bait_for_ann_d8d6f810:
 
     # Max_01 "Вот-вот. Но раз уж у нас теперь такие вот реалии наступили, то я начал упрашивать её на продолжение таких вот уроков, но в плане ублажения женщин."
-    Max_01 ""
+    Max_01 "That's right. But now that we have this reality, I started begging her to continue such lessons, but in terms of pleasing women."
 
 # game/scripts_s1/s1_v91.rpy:630
 translate english s1_bait_for_ann_ab689666:
 
     # Kira_03 "Смело и находчиво, должна сказать! Только немного обидно, что меня тебе стало мало..."
-    Kira_03 ""
+    Kira_03 "Courageous and resourceful, I must say! It's just a little offensive that I wasn't enough for you..."
 
 # game/scripts_s1/s1_v91.rpy:633
 translate english s1_bait_for_ann_4b55ef21:
 
     # Max_03 "Что ты, тётя Кира! Ты вообще лучшая тётя на свете! Просто, я хочу получить такой опыт от разных женщин, чтобы расширить свои границы в сексе."
-    Max_03 ""
+    Max_03 "What are you, Aunt Kira! You're the best aunt in the world! It's just, I want to have these experiences from different women to push my boundaries in sex."
 
 # game/scripts_s1/s1_v91.rpy:634
 translate english s1_bait_for_ann_47d2723b:
 
     # Kira_04 "Ну... Не могу здесь с тобой не согласиться. И чему же тебя учит моя сестра-развратница?"
-    Kira_04 ""
+    Kira_04 "Well... I couldn't agree with you more. And what does my lecherous sister teach you?"
 
 # game/scripts_s1/s1_v91.rpy:635
 translate english s1_bait_for_ann_586539e2:
 
     # Max_02 "Мы начали со слегка интимных поцелуев и эротического массажа. Ну как, эротического... Она разрешила поласкать её грудь."
-    Max_02 ""
+    Max_02 "We started with a little intimate kissing and erotic massage. What do you mean, erotic... She let me fondle her breasts."
 
 # game/scripts_s1/s1_v91.rpy:636
 translate english s1_bait_for_ann_bc4b4bb0:
 
     # Kira_05 "Ухх... Моё воображение уже не слабо меня заводит от твоих рассказов. А дальше?"
-    Kira_05 ""
+    Kira_05 "Ugh... My imagination is already being turned on by your stories. What's next?"
 
 # game/scripts_s1/s1_v91.rpy:637
 translate english s1_bait_for_ann_5dc7ef6e:
 
     # Max_07 "А дальше, всё. Большее - это уже слишком интимно, а потому дальше я должен завести девушку и постигать всё это с ней. И вот здесь мне и нужна твоя помощь."
-    Max_07 ""
+    Max_07 "And then, that's it. More is too intimate, so I have to get a girl and do it all with her. And that's where I need your help."
 
 # game/scripts_s1/s1_v91.rpy:640
 translate english s1_bait_for_ann_88a3f603:
 
     # Kira_14 "Ты хочешь, чтобы я с ней об этом поговорила? Я, конечно, могу попробовать..."
-    Kira_14 ""
+    Kira_14 "Do you want me to talk to her about it? I can try, of course..."
 
 # game/scripts_s1/s1_v91.rpy:641
 translate english s1_bait_for_ann_1e339f19:
 
     # Max_04 "Это ни к чему. Я сказал ей, что наберусь опыта у тебя."
-    Max_04 ""
+    Max_04 "There's no need for that. I told her I would learn from you."
 
 # game/scripts_s1/s1_v91.rpy:642
 translate english s1_bait_for_ann_17dd95c7:
 
     # Kira_15 "Да?! И как она на такое мощное заявление отреагировала?"
-    Kira_15 ""
+    Kira_15 "Yes?! And how did she react to such a powerful statement?"
 
 # game/scripts_s1/s1_v91.rpy:643
 translate english s1_bait_for_ann_06a6ee89:
 
     # Max_03 "Ха, она думает, что ты до такой степени нравственность ещё не потеряла. Как же много всего она не знает."
-    Max_03 ""
+    Max_03 "Ha, she thinks you haven't lost your morals to that extent yet. There's so much she doesn't know."
 
 # game/scripts_s1/s1_v91.rpy:644
 translate english s1_bait_for_ann_c38e70f6:
 
     # Kira_06 "И хорошо, что не знает. Если бы знала, то точно не пустила бы меня сюда жить."
-    Kira_06 ""
+    Kira_06 "And it's a good thing she doesn't know. If she did, she wouldn't let me live here for sure."
 
 # game/scripts_s1/s1_v91.rpy:647
 translate english s1_bait_for_ann_c1489104:
 
     # Max_07 "Так вот, я надеюсь, что она сегодня пойдёт проверять, так ли она в тебе уверена. В другие дни ей не до этого, а вот сегодня..."
-    Max_07 ""
+    Max_07 "So, I hope she's going to check today to see if she's so sure of you. Other days she doesn't care about that, but today..."
 
 # game/scripts_s1/s1_v91.rpy:648
 translate english s1_bait_for_ann_7d49d5ed:
 
     # Kira_16 "Макс, ты же понимаешь, что в таком случае ругани будет море. Не знаю, что она сделает с тобой, а вот мне точно придётся искать новое жильё."
-    Kira_16 ""
+    Kira_16 "Max, you understand that in this case there will be a lot of scolding. I don't know what she'll do to you, but I'll definitely have to look for a new place to live."
 
 # game/scripts_s1/s1_v91.rpy:649
 translate english s1_bait_for_ann_8524dae7:
 
     # Max_09 "Не придётся, тётя Кира! Главное подыграй мне, если она начнёт спускаться по лестнице. А когда пойдут разборки, продолжай подыгрывать в направлении, что меня нужно готовить к взрослой жизни."
-    Max_09 ""
+    Max_09 "You won't have to, Aunt Kira! Just play along if she starts coming down the stairs. And when the showdown starts, keep playing along to the effect that I need to be prepared for adulthood."
 
 # game/scripts_s1/s1_v91.rpy:650
 translate english s1_bait_for_ann_dd3c316e:
 
     # Kira_07 "Ох, Макс... Рискованно... Но смело! Затея мне нравится."
-    Kira_07 ""
+    Kira_07 "Oh, Max... Risky... But brave! I like the idea."
 
 # game/scripts_s1/s1_v91.rpy:653
 translate english s1_bait_for_ann_85d60993:
 
     # Max_02 "Так, а что ты там насчёт анального секса говорила?"
-    Max_02 ""
+    Max_02 "So, what were you saying about anal sex?"
 
 # game/scripts_s1/s1_v91.rpy:654
 translate english s1_bait_for_ann_2aaa7b97:
 
     # Kira_05 "Я просто думала, что тебе уже неймётся это попробовать..."
-    Kira_05 ""
+    Kira_05 "I just thought you were already dying to try it..."
 
 # game/scripts_s1/s1_v91.rpy:655
 translate english s1_bait_for_ann_e1f885e0:
 
     # Max_04 "Честно говоря, было столько забот, что я и не успевал об этом думать... Попробуем?"
-    Max_04 ""
+    Max_04 "Honestly, there were so many worries that I didn't have time to think about it... Shall we try?"
 
 # game/scripts_s1/s1_v91.rpy:656
 translate english s1_bait_for_ann_c09ffee1:
 
     # Kira_04 "Обязательно! Но у меня давненько не было анального секса, поэтому мне нужно будет к этому немного подготовиться..."
-    Kira_04 ""
+    Kira_04 "I will! But I haven't had anal sex in a long time, so I'll need to prepare for it a little bit..."
 
 # game/scripts_s1/s1_v91.rpy:659
 translate english s1_bait_for_ann_9dde754b:
 
     # Max_08 "Тихо, а вот и мама! Самое время тебе раздвинуть ножки, тётя Кира. Начинаем..."
-    Max_08 ""
+    Max_08 "Quiet, there's Mother! It's about time you spread your legs, Aunt Kira. Here we go..."
 
 # game/scripts_s1/s1_v91.rpy:662
 translate english s1_bait_for_ann_87d088a9:
 
     # Kira_02 "Да, Макс... Всё правильно. Нужны именно вот-такие лёгкие прикосновения..."
-    Kira_02 ""
+    Kira_02 "Yes, Max... That's right. You need just that kind of light touch..."
 
 # game/scripts_s1/s1_v91.rpy:665
 translate english s1_bait_for_ann_40479877:
 
     # Ann_20 "Это что тут такое происходит!!! Ну-ка немедленно прекратите! Кира! Макс! С ума сошли что ли?!"
-    Ann_20 ""
+    Ann_20 "What the hell is going on here!!! Stop that right now! Kira! Max! Are you out of your mind?!"
 
 # game/scripts_s1/s1_v91.rpy:668
 translate english s1_bait_for_ann_bb0262b6:
 
     # Max_09 "Мам, давай потише, а то всех разбудишь! Ты же сама разрешила, помнишь? Никаких претензий..."
-    Max_09 ""
+    Max_09 "Mom, keep your voice down, or you'll wake everyone up! You said it yourself, remember? No complaints..."
 
 # game/scripts_s1/s1_v91.rpy:669
 translate english s1_bait_for_ann_0bf995e8:
 
     # Ann_18 "Вообще-то, я ничего такого не разрешала! Я подумала, ты сказал про Киру просто так, чтобы меня позлить..."
-    Ann_18 ""
+    Ann_18 "Actually, I didn't say anything like that! I thought you were just talking about Kira to piss me off..."
 
 # game/scripts_s1/s1_v91.rpy:670
 translate english s1_bait_for_ann_6ded7eed:
 
     # Max_15 "Ну вот, будешь знать, что ко мне нужно относиться посерьёзнее. А теперь, будь добра, иди спать, не отвлекай..."
-    Max_15 ""
+    Max_15 "There, you'll know you have to take me more seriously. Now, please go to bed, don't distract me..."
 
 # game/scripts_s1/s1_v91.rpy:671
 translate english s1_bait_for_ann_32f4e841:
 
     # Ann_16 "Ах вот так, значит! И вы считаете это нормальным, да? Чтобы родная тётя лежала тут с раздвинутыми ногами и учила своего племянника всяким непристойностям, если не сказать похуже!"
-    Ann_16 ""
+    Ann_16 "Oh, so that's it! And you think it's normal, don't you? To have your own aunt lying there with her legs spread and teaching her nephew all sorts of obscenities, to say the least!"
 
 # game/scripts_s1/s1_v91.rpy:672
 translate english s1_bait_for_ann_2241c813:
 
     # Kira_16 "Не непристойностям, а взрослой жизни и её... важным аспектам. Раз уж ты сама отказалась помогать сыну, то кому, как не мне следует позаботиться о его воспитании..."
-    Kira_16 ""
+    Kira_16 "Not obscenities, but adult life and its... important aspects. Since you yourself refused to help your son, who better to take care of his upbringing than me..."
 
 # game/scripts_s1/s1_v91.rpy:675
 translate english s1_bait_for_ann_f8bf6b26:
 
     # Ann_17 "Вот пусть заведёт себе девочку и там осваивает все эти... занятия! Именно таким образом приходит этот опыт и знания, а не на диване со своей тётей."
-    Ann_17 ""
+    Ann_17 "Let him have a girl and learn all these... classes! That's how this experience and knowledge comes, not on the couch with his aunt."
 
 # game/scripts_s1/s1_v91.rpy:676
 translate english s1_bait_for_ann_607ee02b:
 
     # Kira_15 "Ой, Ань, а то ты не знаешь, какие бывают девочки по молодости глупые и жестокие. С ними ничему хорошему не научишься, а в добавок они ещё и сердце разобьют. И если второе Макса однозначно ждёт, то вот с первым мы как раз и можем действительно помочь."
-    Kira_15 ""
+    Kira_15 "Oh, Ann, because you don't know how stupid and cruel girls can be when they're young. You can't learn anything good from them, and in addition, they also break your heart. And if the second one is unambiguously waiting for Max, then with the first one we can really help."
 
 # game/scripts_s1/s1_v91.rpy:677
 translate english s1_bait_for_ann_bddd3b15:
 
     # Ann_19 "Знаешь, тоже мне великая учительница нашлась. Ты-то как раз именно такой и была. Ещё не известно, какой похабщине ты его научишь..."
-    Ann_19 ""
+    Ann_19 "You know, you're a great teacher, too. That's exactly what you were. There's no telling what kind of filth you'll teach him..."
 
 # game/scripts_s1/s1_v91.rpy:678
 translate english s1_bait_for_ann_e62e79fa:
 
     # Kira_13 "Если до тебя ещё вдруг не дошло, то твой мальчик вырос и его запросы тоже! И твоя задача, держать процесс воспитания детей в своих собственных руках, как ты и делала. Только уже интимной сферы жизни."
-    Kira_13 ""
+    Kira_13 "If it hasn't gotten to you yet, your boy has grown up and so have his requests! And your job is to keep the process of parenting in your own hands, just like you did. Only already the intimate sphere of life."
 
 # game/scripts_s1/s1_v91.rpy:679
 translate english s1_bait_for_ann_ca3bfb9f:
 
     # Ann_14 "Но это... Одно дело обучать детей каким-то бытовым навыкам и совсем другое... интимным моментам. Это сложно."
-    Ann_14 ""
+    Ann_14 "But that's... It's one thing to teach children some domestic skills and quite another... intimate moments. It's complicated."
 
 # game/scripts_s1/s1_v91.rpy:680
 translate english s1_bait_for_ann_ba59e7e9:
 
     # Max_07 "Может, хватит? Тётя Кира мне помочь хочет, в отличие от тебя. Кто не помогает, тот мешает."
-    Max_07 ""
+    Max_07 "Will you stop it? Aunt Kira wants to help me, unlike you. If you don't help, you get in the way."
 
 # game/scripts_s1/s1_v91.rpy:681
 translate english s1_bait_for_ann_0032ea38:
 
     # Ann_16 "Так, сынок, давай-ка отойдём и поговорим наедине..." nointeract
-    Ann_16 "" nointeract
+    Ann_16 "All right, son, let's step back and talk privately..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:687
 translate english s1_bait_for_ann_1dc89583:
 
     # Ann_12 "Как я уже, наверное, говорила - ни стыда, ни совести у тебя, Макс. Вот что прикажешь с тобой делать? Я не знаю..."
-    Ann_12 ""
+    Ann_12 "As I've probably already told you, you have no shame or conscience, Max. What am I supposed to do with you? I don't know..."
 
 # game/scripts_s1/s1_v91.rpy:688
 translate english s1_bait_for_ann_ca2469be:
 
     # Max_09 "Давай, пока ты будешь думать, я пойду к Кире?"
-    Max_09 ""
+    Max_09 "Why don't you let me go to Kira's while you're thinking?"
 
 # game/scripts_s1/s1_v91.rpy:689
 translate english s1_bait_for_ann_53f00c17:
 
     # Ann_13 "Ну уж нет! Как представлю, чему тебя может научить моя сестра-оторва, аж страшно становится. Я лучше возьму эту задачу на себя, чем буду каждый день беспокоится об этом..."
-    Ann_13 ""
+    Ann_13 "No way! I can't imagine what my badass sister could teach you, it makes me scared. I'd rather take on the task than worry about it every day..."
 
 # game/scripts_s1/s1_v91.rpy:690
 translate english s1_bait_for_ann_7c238abc:
 
     # Max_10 "Здорово, но... Ты же всё время занята. Когда мы будем успевать?"
-    Max_10 ""
+    Max_10 "That's great, but... You're busy all the time. When are we going to make it?"
 
 # game/scripts_s1/s1_v91.rpy:691
 translate english s1_bait_for_ann_e6287c08:
 
     # Ann_12 "Что-нибудь придумаем. Можем попробовать тогда, когда я принимаю ванну. Там нам с этим не должны помешать."
-    Ann_12 ""
+    Ann_12 "We'll think of something. We could try it while I'm taking a bath. We shouldn't be interrupted there."
 
 # game/scripts_s1/s1_v91.rpy:692
 translate english s1_bait_for_ann_05f5e63c:
 
     # Max_07 "Отлично! Договорились. А ты уверена, что справишься с этим?"
-    Max_07 ""
+    Max_07 "Great! It's a deal. Are you sure you can handle it?"
 
 # game/scripts_s1/s1_v91.rpy:693
 translate english s1_bait_for_ann_ec2bc7c4:
 
     # Ann_14 "Ну... Будет непросто, но я постараюсь. А теперь расходимся по комнатам и спим." nointeract
-    Ann_14 "" nointeract
+    Ann_14 "Well... It won't be easy, but I'll try. Now let's go to our rooms and go to sleep." nointeract
 
 translate english strings:
 
     # game/scripts_s1/s1_v91.rpy:525
     old "{i}продолжить массаж с поцелуями в шею{/i}"
-    new ""
+    new "{i}Continue massage with kisses on the neck{/i}"
 
     # game/scripts_s1/s1_v91.rpy:537
     old "{i}продолжить массаж и поцелуи{/i}"
-    new ""
+    new "{i}Continue massaging and kissing{/i}"
 
     # game/scripts_s1/s1_v91.rpy:560
     old "{i}массировать мамину грудь{/i}"
-    new ""
+    new "{i}Massage mom's breasts{/i}"
 
     # game/scripts_s1/s1_v91.rpy:603
     old "Нужна твоя помощь. Пойдём на диван, расскажу..."
-    new ""
+    new "I need your help. Let's go to the couch, I'll tell you..."
 
     # game/scripts_s1/s1_v91.rpy:682
     old "{i}идти на кухню{/i}"
-    new ""
+    new "{i}Go to the kitchen{/i}"
 
     # game/scripts_s1/s1_v91.rpy:694
     old "{i}пойти спать{/i}"
-    new ""
+    new "{i}Go to bed{/i}"
 
 # TODO: Translation updated at 2022-06-17 00:19
 
@@ -1936,311 +1936,310 @@ translate english strings:
 translate english s1_cheat_skip_2bea6bd9:
 
     # "Есть важные события. Пропуск завершить не удалось."
-    ""
+    "There are important events. The skip could not be completed."
 
 # game/scripts_s1/s1_v91.rpy:541
 translate english s1_ann_drink_end_1_2638b5b5:
 
     # Ann_07 "Спасибо, дорогой. Мне тоже понравилось. И тебе доброй ночи." nointeract
-    Ann_07 "" nointeract
+    Ann_07 "Thank you, dear. I enjoyed it too. Good night to you, too." nointeract
 
 # game/scripts_s1/s1_v91.rpy:846
 translate english s1_ann_bath_59e8f8d8:
 
     # Max_00 "{m}Сейчас, обычно, мама должна принимать ванну...{/m}" nointeract
-    Max_00 "" nointeract
+    Max_00 "{m}Now, usually, mom has to take a bath...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:853
 translate english s1_ann_bath_752a4ee4:
 
     # Ann_15 "Макс! Ты почему так нагло врываешься?! Я тут вообще-то ванну принимаю..."
-    Ann_15 ""
+    Ann_15 "Max! Why are you barging in so brazenly?! I'm taking a bath here..."
 
 # game/scripts_s1/s1_v91.rpy:854
 translate english s1_ann_bath_9bd203b4:
 
     # Max_07 "У нас ведь есть дело, помнишь?"
-    Max_07 ""
+    Max_07 "We have a case, remember?"
 
 # game/scripts_s1/s1_v91.rpy:855
 translate english s1_ann_bath_b8985256:
 
     # Ann_16 "Я не вижу смысла тебя чему-либо учить, Макс, пока ты не научишься стучаться перед тем, как войти!"
-    Ann_16 ""
+    Ann_16 "I see no point in teaching you anything, Max, until you learn to knock before you enter!"
 
 # game/scripts_s1/s1_v91.rpy:856
 translate english s1_ann_bath_834f0d78:
 
     # Max_09 "Хорошо, в следующий раз постучусь."
-    Max_09 ""
+    Max_09 "Okay, I'll knock next time."
 
 # game/scripts_s1/s1_v91.rpy:857
 translate english s1_ann_bath_f18fbf7a:
 
     # Ann_17 "Вот и урок наш состоится только в следующий раз, если постучишься. А сейчас выйди." nointeract
-    Ann_17 "" nointeract
+    Ann_17 "So our lesson won't take place until the next time, if you knock. Now get out." nointeract
 
 # game/scripts_s1/s1_v91.rpy:872
 translate english s1_ann_intimate_lesson_02_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann ""
+    Ann "{b}Аnn:{/b} Who's there? I'm taking a bath!"
 
 # game/scripts_s1/s1_v91.rpy:873
 translate english s1_ann_intimate_lesson_02_006aa2f9:
 
     # Max_07 "Это я, Макс. Можно войти?"
-    Max_07 ""
+    Max_07 "It's me, Max. May I come in?"
 
 # game/scripts_s1/s1_v91.rpy:874
 translate english s1_ann_intimate_lesson_02_896e111e:
 
     # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
-    Ann "" nointeract
+    Ann "{b}Аnn:{/b} Good for knocking. Come in, but don't let anyone see..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:880
 translate english s1_ann_intimate_lesson_02_83499f7b:
 
     # Ann_12 "Только, сынок, это должно быть нашим с тобой огромным секретом, понял? Потому что маме с сыном нехорошо этим заниматься, неправильно."
-    Ann_12 ""
+    Ann_12 "Only, son, this has to be a huge secret between you and me, okay? Because it's not good for a mother and her son to do this, it's not right."
 
 # game/scripts_s1/s1_v91.rpy:881
 translate english s1_ann_intimate_lesson_02_2a769a8a:
 
     # Max_01 "Ты же просто будешь меня учить. Что в этом плохого?"
-    Max_01 ""
+    Max_01 "You're just going to teach me. What's wrong with that?"
 
 # game/scripts_s1/s1_v91.rpy:884
 translate english s1_ann_intimate_lesson_02_b2fcf636:
 
     # Ann_14 "Да, но {b}ЧЕМУ{/b} учить! Для тебя это всё будет, наверняка, очень интересно... Но чтобы ты понимал, для меня не просто учить {b}ТАКОМУ{/b} своего сына."
-    Ann_14 ""
+    Ann_14 "Yes, but {b}what{b} to teach! For you, all of this will probably be very interesting... But just so you understand, it's not easy for me to teach {b}THAT{b} to my son."
 
 # game/scripts_s1/s1_v91.rpy:885
 translate english s1_ann_intimate_lesson_02_b387c27d:
 
     # Max_09 "Ну... Уж кто и может научить ТАКОМУ лучше всех, так это мама. Ты же заинтересована в том, чтобы я был лучшим во всём, в том числе и в ЭТОМ?"
-    Max_09 ""
+    Max_09 "Well... If anyone can teach THAT better than anyone, it's Mom. You're interested in me being the best at everything, including THIS, aren't you?"
 
 # game/scripts_s1/s1_v91.rpy:886
 translate english s1_ann_intimate_lesson_02_07f19152:
 
     # Ann_13 "Ох, только такие мысли мне и помогают сейчас. Ладно, раздевайся и залазь ко мне в ванну." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Oh, that's the only thing that helps me right now. All right, get undressed and get in my bathtub." nointeract
 
 # game/scripts_s1/s1_v91.rpy:892
 translate english s1_ann_intimate_lesson_02_80245246:
 
     # Ann_01 "Сейчас мы сядем и немного побеседуем. Ты девочку ещё не завёл?"
-    Ann_01 ""
+    Ann_01 "Now we're going to sit down and have a little talk. Have you got a girl yet?"
 
 # game/scripts_s1/s1_v91.rpy:893
 translate english s1_ann_intimate_lesson_02_f01f6a8e:
 
     # Max_04 "Нет. Но на примете несколько есть."
-    Max_04 ""
+    Max_04 "No. But I have a few in mind."
 
 # game/scripts_s1/s1_v91.rpy:894
 translate english s1_ann_intimate_lesson_02_ee5e67c7:
 
     # Ann_02 "Честно говоря, я рада, что ты интересуешься тем, как не только доставить удовольствие себе, но и твоей девушке."
-    Ann_02 ""
+    Ann_02 "Honestly, I'm glad you're interested in not only pleasing yourself, but also your girlfriend."
 
 # game/scripts_s1/s1_v91.rpy:895
 translate english s1_ann_intimate_lesson_02_8ff25c03:
 
     # Max_03 "Я хочу наслаждаться этим по полной, чтобы хорошо было всем."
-    Max_03 ""
+    Max_03 "I want to enjoy it to the fullest, so that everyone has a good time."
 
 # game/scripts_s1/s1_v91.rpy:898
 translate english s1_ann_intimate_lesson_02_d3346fad:
 
     # Ann_04 "Приятно слышать. Значит будем учить тебя, как следует ласкать женские эрогенные зоны."
-    Ann_04 ""
+    Ann_04 "That's nice to hear. So we'll teach you how to caress a woman's erogenous zones."
 
 # game/scripts_s1/s1_v91.rpy:899
 translate english s1_ann_intimate_lesson_02_77dc7d16:
 
     # Max_02 "Вверху я в тот раз ведь немного освоился?"
-    Max_02 ""
+    Max_02 "I got used to the top that time, didn't I?"
 
 # game/scripts_s1/s1_v91.rpy:900
 translate english s1_ann_intimate_lesson_02_4ed32277:
 
     # Ann_14 "Да, но эрогенных зон у женщины очень много, сынок. При чём их уровень возбудимости у каждой женщины разный. Если одна женщина просто с ума сходит, когда ей массируют ножки, то другой это может не особо нравится."
-    Ann_14 ""
+    Ann_14 "Yes, but a woman has many erogenous zones, son. And their level of arousal is different for every woman. If one woman goes crazy when her feet are massaged, then another woman may not like it very much."
 
 # game/scripts_s1/s1_v91.rpy:901
 translate english s1_ann_intimate_lesson_02_8eda2b08:
 
     # Max_07 "И определить, какой женщине что нравится, можно только \"прощупав реакцию\", да?"
-    Max_07 ""
+    Max_07 "And you can only tell which woman likes what by \"probing her reaction\", right?"
 
 # game/scripts_s1/s1_v91.rpy:902
 translate english s1_ann_intimate_lesson_02_1db96e37:
 
     # Ann_12 "Да, Макс. Всё правильно. Но меня мы \"прощупывать\" не будем. С этим, я думаю, и так всё понятно. А вот то, как нужно ласкать... Вот с этим нам нужно разобраться."
-    Ann_12 ""
+    Ann_12 "Yes, Max. That's right. But we're not going to probe me. I think that's pretty clear as it is. But the fondling part... That's what we need to figure out."
 
 # game/scripts_s1/s1_v91.rpy:905
 translate english s1_ann_intimate_lesson_02_4650bde4:
 
     # Max_04 "К этому я готов. У меня, вроде, неплохо получалось тогда... на диване?"
-    Max_04 ""
+    Max_04 "I was ready for that. I seemed to be doing pretty well back then... on the couch?"
 
 # game/scripts_s1/s1_v91.rpy:906
 translate english s1_ann_intimate_lesson_02_0b059c20:
 
     # Ann_14 "Да, только вот там мы занимались детскими шалостями по сравнению с тем, чему я должна научить тебя дальше..."
-    Ann_14 ""
+    Ann_14 "Yes, except that there we were doing childish pranks compared to what I have to teach you next..."
 
 # game/scripts_s1/s1_v91.rpy:907
 translate english s1_ann_intimate_lesson_02_b7d855e9:
 
     # Max_01 "Мам, не напрягайся ты так. Это же всё в образовательных целях делается. С чего мы начнём?"
-    Max_01 ""
+    Max_01 "Mom, don't get so worked up. It's all for educational purposes. Where do we start?"
 
 # game/scripts_s1/s1_v91.rpy:908
 translate english s1_ann_intimate_lesson_02_b5296c29:
 
     # Ann_12 "Ох, ну... Я думаю, сначала нужно проверить, как... как у тебя получится ласкать мою грудь. Даже не верится, что я тебе такое говорю. Давай, устраивайся поближе ко мне..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Oh, well... I think we should see how... how you can fondle my breasts first. I can't believe I'm telling you this. Come on, get close to me..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:914
 translate english s1_ann_intimate_lesson_02_a01e74fd:
 
     # Ann_02 "С поцелуями и массажем у тебя более-менее, но женская грудь... Она куда чувствительнее, особенно сосочки. Поэтому с ней лучше обходиться понежнее. По крайней мере, сначала."
-    Ann_02 ""
+    Ann_02 "You're more or less good at kissing and massaging, but a woman's breasts... They're much more sensitive, especially the nipples. That's why it's better to be gentle with them. At least at first."
 
 # game/scripts_s1/s1_v91.rpy:915
 translate english s1_ann_intimate_lesson_02_0283ec79:
 
     # Max_07 "А впоследствии?"
-    Max_07 ""
+    Max_07 "And afterwards?"
 
 # game/scripts_s1/s1_v91.rpy:916
 translate english s1_ann_intimate_lesson_02_7252ae2e:
 
     # Ann_05 "А дальше всё зависит от женщины. Может быть дальше она любит погрубее."
-    Ann_05 ""
+    Ann_05 "And then it all depends on the woman. Maybe she likes it a little bit more rough."
 
 # game/scripts_s1/s1_v91.rpy:917
 translate english s1_ann_intimate_lesson_02_eb253a72:
 
     # Max_02 "А как любишь ты?"
-    Max_02 ""
+    Max_02 "How do you like it?"
 
 # game/scripts_s1/s1_v91.rpy:918
 translate english s1_ann_intimate_lesson_02_6905e57b:
 
     # Ann_13 "Макс, ну что за вопрос такой? Мы же этим занимаемся в образовательных целях, а не для удовольствия и забавы."
-    Ann_13 ""
+    Ann_13 "Max, what kind of question is that? We are doing this for educational purposes, not for fun and enjoyment."
 
 # game/scripts_s1/s1_v91.rpy:919
 translate english s1_ann_intimate_lesson_02_1178f669:
 
     # Max_03 "Да, но тебе же должно быть приятно, чтобы понять, что у меня хорошо получается?"
-    Max_03 ""
+    Max_03 "Yeah, but it must feel good for you to know that I'm good at it, right?"
 
 # game/scripts_s1/s1_v91.rpy:920
 translate english s1_ann_intimate_lesson_02_5b651a27:
 
     # Ann_12 "Макс, ты давай пробуй, а я в свою очередь сделаю какие-то замечания." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Макс, ты давай пробуй, а я в свою очередь сделаю какие-то замечания." nointeract
 
 # game/scripts_s1/s1_v91.rpy:926
 translate english s1_ann_intimate_lesson_02_d45e60d2:
 
     # Ann_09 "Ахх... Только поаккуратнее с моими сосочками, они очень чувствительные... Не нужно их так грубо ласкать языком! Нежнее, сынок..." nointeract
-    Ann_09 "" nointeract
+    Ann_09 "Ahhh... Just be careful with my nipples, they are very sensitive... Don't caress them so roughly with your tongue! Gently, son..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:932
 translate english s1_ann_intimate_lesson_02_0c29d27a:
 
     # Ann_03 "Да-а... Всё правильно, вот так... Охх... Ты молодец. Продолжай..."
-    Ann_03 ""
+    Ann_03 "Yeah... That's right, that's it... Ohhh... You're good. Keep going..."
 
 # game/scripts_s1/s1_v91.rpy:933
 translate english s1_ann_intimate_lesson_02_b10b45b3:
 
     # Max_05 "{m}Какое блаженство играть с маминой грудью! У неё невероятно шикарные сиськи! Такие большие и аппетитные, а сосочки твёрденькие... Ласкал бы без отрыва. Ммм...{/m}"
-    Max_05 ""
+    Max_05 "{m}What a bliss to play with my mother's breasts! Her tits are unbelievably gorgeous! So big and appetizing, and her nipples so hard... I'd love to fondle them. Mmm...{/m}"
 
 # game/scripts_s1/s1_v91.rpy:934
 translate english s1_ann_intimate_lesson_02_de6b87b3:
 
     # Ann_14 "Ухх... А руками уже можно работать более властно... По-хозяйски, так сказать. Ммм... Д-а-а! Ой, что же я такое говорю..."
-    Ann_14 ""
+    Ann_14 "Ugh... And you can work with your hands more powerfully... Like a master, so to speak. Mmm... Yeah! Oh, what am I saying..."
 
 # game/scripts_s1/s1_v91.rpy:937
 translate english s1_ann_intimate_lesson_02_a0c59985:
 
     # Max_07 "Ладно тебе, мам, не смущайся. Тебе понравилось?"
-    Max_07 ""
+    Max_07 "Come on, Mom, don't be embarrassed. Did you like it?"
 
 # game/scripts_s1/s1_v91.rpy:938
 translate english s1_ann_intimate_lesson_02_0de91542:
 
     # Ann_17 "Сынок, ну вот как я должна на это ответить? Если \"да\", то получается я в конец больная, а если \"нет\", то лгунья... Как же неправильно то, что мы делаем!"
-    Ann_17 ""
+    Ann_17 "Son, how am I supposed to answer that? If it's \"yes\", then I'm totally sick, and if it's \"no\", then I'm a liar... This is so wrong, what we're doing."
 
 # game/scripts_s1/s1_v91.rpy:939
 translate english s1_ann_intimate_lesson_02_bd28a745:
 
     # Max_08 "Так может мне всё-таки к тёте Кире пойти, чтобы ты не мучилась?"
-    Max_08 ""
+    Max_08 "So maybe I should go to Aunt Kira after all, so you don't have to suffer?"
 
 # game/scripts_s1/s1_v91.rpy:940
 translate english s1_ann_intimate_lesson_02_203aa821:
 
     # Ann_18 "Нет уж! Раз взялась, то нужно проконтролировать твоё обучение. А там я понятия не имею, чему она тебя научит."
-    Ann_18 ""
+    Ann_18 "No! If you're going to do it, you need to supervise your training. And there I have no idea what she will teach you."
 
 # game/scripts_s1/s1_v91.rpy:943
 translate english s1_ann_intimate_lesson_02_9be3c691:
 
     # Max_09 "Почему ты так плохо о ней думаешь в этом плане?"
-    Max_09 ""
+    Max_09 "Why do you think so badly of her in this regard?"
 
 # game/scripts_s1/s1_v91.rpy:944
 translate english s1_ann_intimate_lesson_02_08eb3fe2:
 
     # Ann_12 "Да у неё вся жизнь какая-то сомнительная. Ладно, не будем о ней. Давай закругляться. Продолжим в следующий раз."
-    Ann_12 ""
+    Ann_12 "She's got a questionable life. Okay, let's not talk about her. Let's wrap it up. We'll pick it up next time."
 
 # game/scripts_s1/s1_v91.rpy:945
 translate english s1_ann_intimate_lesson_02_c5f6330b:
 
     # Max_10 "Это что, всё?! Я думал ещё что-то будет..."
-    Max_10 ""
+    Max_10 "That's it?! I thought there would be more..."
 
 # game/scripts_s1/s1_v91.rpy:948
 translate english s1_ann_intimate_lesson_02_b0e4030c:
 
     # Ann_00 "Сынок, мне всё это очень непросто даётся делать. Так что дай маме отдохнуть и побыть одной. О многом нужно подумать."
-    Ann_00 ""
+    Ann_00 "Son, it's not easy for me to do all this. So let your mother rest and be alone. It's a lot to think about."
 
 # game/scripts_s1/s1_v91.rpy:949
 translate english s1_ann_intimate_lesson_02_b790d1ab:
 
     # Max_00 "Хорошо. Тогда до следующего раза." nointeract
-    Max_00 "" nointeract
+    Max_00 "Okay. Until next time, then." nointeract
 
 translate english strings:
 
     # game/scripts_s1/s1_v91.rpy:847
     old "{i}войти без стука{/i}"
-    new ""
+    new "{i}Enter without knocking{/i}"
 
     # game/scripts_s1/s1_v91.rpy:909
     old "{i}устроиться между маминых ног{/i}"
-    new ""
+    new "{i}Nestle between mom's legs{/i}"
 
     # game/scripts_s1/s1_v91.rpy:921
     old "{i}ласкать мамину грудь{/i}"
-    new ""
+    new "{i}Caress my mother's breasts{/i}"
 
     # game/scripts_s1/s1_v91.rpy:927
     old "{i}ласкать языком нежнее{/i}"
-    new ""
-
+    new "{i}Caress with your tongue more gently{/i}"
