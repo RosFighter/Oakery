@@ -4611,11 +4611,11 @@ translate german kira_alice_shower_start_peeping_dda24c4d:
 translate german kira_bath_6147c55c:
 
     # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
-    Max_09 ""
+    Max_09 "Es ist besser, wenn man sich heute ausruht. Mit Tante Kira kann man ja morgen früh darüber reden, was passiert ist."
 
 # game/events/kira.rpy:990
 translate german kira_night_tv_6147c55c:
 
     # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
-    Max_09 ""
+    Max_09 "Es ist besser, wenn man sich heute ausruht. Mit Tante Kira kann man ja morgen früh darüber reden, was passiert ist."
 

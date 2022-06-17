@@ -2352,41 +2352,41 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Надеюсь, у мамы не будет проблем на работе из-за того, что она разругалась с Эриком. Со временем это станет ясно, а пока нужно поговорить с остальными об Эрике..."
-    new ""
+    new "Ich hoffe, Mom bekommt keinen Ärger auf der Arbeit, weil sie sich mit Eric gestritten hat. Das wird sich mit der Zeit zeigen, aber in der bis dahin sollte ich mit den anderen über Eric reden..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно присматривать за тем, что делает мама. Вдруг Эрик её в конец достанет и она начнёт искать утешение в чём-то... нехорошем..."
-    new ""
+    new "Man muss im Auge behalten, was Mom vorhat. Vielleicht wird Eric ihr auf die Nerven gehen und sie wird anfangen, Trost in etwas anderem zu suchen... nicht gut..."
 
     # game/core/09_opportunities.rpy:4
     old "Вот это новость! Мама начала заливать своё горе алкоголем. Конечно, не в огромных и постоянных масштабах, но её и от малого количества неплохо сносит. Уже с одного только бокальчика вина мне пришлось помогать ей подняться в комнату. Хоть это всё до добра и не доведёт, но я немного воспользовался маминым уязвимым положением... Помог ей переодеться... Остался с ней... Так, на всякий случай. Каково же было моё удивление, когда она начала со мной обниматься и заигрывать! Не знаю о ком она думала в тот момент, но уж точно не обо мне. Вряд ли мама как-то это прояснит, но попытаться можно. В крайнем случае, всегда можно спросить тётю Киру."
-    new ""
+    new "Das ist es! Mom hat begonnen, ihren Kummer in Alkohol zu ertränken. Natürlich nicht in einem riesigen und konstanten Ausmaß, aber eine kleine Menge reichte aus, um sie umzuhauen. Mit nur einem Glas Wein musste ich ihr schon aufs Zimmer helfen. Es wird mir nichts bringen, aber ich habe die Schwäche meiner Mutter ausgenutzt... Ich habe ihr beim Anziehen geholfen... Bin bei ihr geblieben... Für den Fall der Fälle. Was war ich überrascht, als sie anfing, mich zu umarmen und mit mir zu flirten! Ich weiß nicht, an wen sie in diesem Moment gedacht hat, aber sicher nicht an mich. Es ist unwahrscheinlich, dass Mom das erklären kann, aber einen Versuch ist es wert. Zur Not könnte man auch Tante Kira fragen."
 
     # game/core/09_opportunities.rpy:4
     old "Сперва нужно поговорить с мамой о том, что это такое ночью она вытворяла..."
-    new ""
+    new "Zuerst muss ich mit Mom darüber reden, was sie nachts gemacht hat..."
 
     # game/core/09_opportunities.rpy:4
     old "Неплохо бы поинтересоваться у тёти Киры, пока она загорает, о том, как на маму действует алкоголь..."
-    new ""
+    new "Es ist eine gute Idee, Tante Kira beim Sonnen nach den Auswirkungen von Alkohol auf Mom zu fragen..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь, если мама снова будет прикладываться к выпивке, то я знаю, как ей стоит подыграть, чтобы нам обоим было хорошо..."
-    new ""
+    new "Wenn Mom jetzt noch einen Drink bekommt, weiß ich, wie ich vorgehen muss, damit wir uns beide gut fühlen..."
 
     # game/core/09_opportunities.rpy:4
     old "Похоже, Кира была права! Мама и правда в выпившем состоянии впадает в какие-то фантазии. Видимо, о каком-то идеальном мужчине... А что, я вполне могу эти фантазии поддержать! Правда, это будет ох как непросто, ведь у меня ухх какая мама! Она ещё не успела заглотить мой член, а я уже перевозбудился, как-будто в первый раз. У меня это действительно первый раз с мамой. Ох, что же будет, если смогу продержаться дольше..."
-    new ""
+    new "Es sieht so aus, als hätte Kira recht gehabt! Mom ist in eine Art Fantasie versunken, als sie betrunken war. Anscheinend über den perfekten Mann... Nun, ich kann diese Fantasie unterstützen! Aber es wird nicht leicht sein, denn sie ist meine Mom! Sie hat meinen Schwanz noch nie richtig im Mund gehabt, aber ich bin schon so erregt, als wäre es mein erstes Mal. Es ist wirklich das erste Mal, dass ich mit meiner Mutter zusammen bin. Oh, was passiert wohl, wenn ich lange genug durchhalte..."
 
     # game/core/09_opportunities.rpy:4
     old "Мне бы надо постараться не перевозбуждаться так сильно от маминых ласк, чтобы получить больше..."
-    new ""
+    new "Ich sollte versuchen, mich nicht zu sehr von den Zärtlichkeiten meiner Mom erregen zu lassen, damit ich mehr..."
 
     # game/core/09_opportunities.rpy:4
     old "Как же офигенно поддерживать мамины фантазии, когда она выпьет! Сосёт она прямо как мне хочется, ммм... А играться с её киской при этом одно удовольствие! Я уже не могу, так хочу её трахнуть... И ведь могу... Наверно... Но сперва лучше привыкнуть к тому, чем мы занимаемся. А делаем мы это не так уж и часто. Нужно продолжать ей подыгрывать, а уж потом я ей такой трах-бабах устрою..."
-    new ""
+    new "Wie toll ist es, die Fantasien von Mom zu fördern, wenn sie betrunken ist! Sie bläst genau so, wie ich es haben will, mmm... Und mit ihrer Pussy zu spielen ist ein Vergnügen! Ich halte es nicht mehr aus, ich will sie so gerne ficken... Und ich kann... Vermutlich... Aber zunächst ist es besser, sich an das zu gewöhnen, was wir gerade tun. Und das tun wir nicht so oft. Ich muss weiter mitspielen und dann werde ich sie so hart ficken..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно хоть немного привыкнуть к минету от мамы, чтобы не облажаться с ней в большем. Успешно выдержано минетов от мамы: [ann.flags.held_out] из 3"
-    new ""
+    new "Man muss sich zumindest ein bisschen an einen Blowjob von Mom gewöhnen, damit man es bei ihr nicht mehr versaut. Erfolgreich einen Blowjob von Mom ausgehalten: [ann.flags.held_out] von 3"
 

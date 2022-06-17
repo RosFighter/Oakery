@@ -76,5 +76,5 @@ translate german strings:
 
     # game/scripts_s1/s1_screens.rpy:331
     old "ЧЕРЕЗ НЕСКОЛЬКО МИНУТ..."
-    new ""
+    new "IN EIN PAAR MINUTEN..."
 

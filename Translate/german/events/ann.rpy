@@ -1954,17 +1954,17 @@ translate german ann_bath_about_intime_0_3a30664f:
 translate german ann_sleep_e0ca90ce:
 
     # Max_09 "Хм... Мамы нет. Где же она?"
-    Max_09 ""
+    Max_09 "Ähm ... Mom ist nicht da. Wo ist sie?"
 
 # game/events/ann.rpy:974
 translate german ann_bath_about_intime_0_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann ""
+    Ann "{b}Ann:{/b} Wer ist da? Ich nehme ein Bad!"
 
 # game/events/ann.rpy:978
 translate german ann_bath_about_intime_0_a05b810e:
 
     # Ann "{b}Анна:{/b} Если это может подождать, то я через полчасика освобожусь..." nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} In einer halben Stunde bin ich fertig, falls du etwas warten kannst..." nointeract
 

@@ -2906,53 +2906,53 @@ translate german strings:
 translate german ann_tv_continuation_massage_massage_221bc697:
 
     # Ann_14 "[failed!t]Да что ты говоришь, Макс! Почему же ты тогда возбуждён так сильно?! Ни стыда, ни совести у тебя нет!"
-    Ann_14 ""
+    Ann_14 "[failed!t]Was du nicht sagst, Max! Warum bist du dann so geil?! Du hast keine Scham und kein Gewissen!"
 
 # game/dialogues/anntalk.rpy:657
 translate german ann_tv_continuation_massage_massage_9cb21df5:
 
     # Max_07 "Ну, да... Сползло немного твоё полотенце, но не критично. Мне это не мешает. Тебе же понравился массаж?"
-    Max_07 ""
+    Max_07 "Nun, ja... Dein Handtuch ist ein wenig verrutscht, aber das ist nicht weiter tragisch. Das stört mich nicht. Die Massage hat dir gefallen, nicht wahr?"
 
 # game/dialogues/anntalk.rpy:658
 translate german ann_tv_continuation_massage_massage_8695f276:
 
     # Ann_13 "Понравился, но вот то, что у меня за спиной происходит помимо массажа... Это вот мне совсем не нравится."
-    Ann_13 ""
+    Ann_13 "Ich mag es, aber es geht darum, was hinter meinem Rücken außer der Massage passiert... Das gefällt mir ganz und gar nicht."
 
 # game/dialogues/anntalk.rpy:659
 translate german ann_tv_continuation_massage_massage_403df953:
 
     # Max_03 "Ну мам, ты же красивая! Уж извини, но воспринимай, как комплимент."
-    Max_03 ""
+    Max_03 "Komm schon, Mom, du bist wunderschön! Tut mir leid, aber fasse es als Kompliment auf."
 
 # game/dialogues/anntalk.rpy:660
 translate german ann_tv_continuation_massage_massage_157b0aa7:
 
     # Ann_12 "Да уж, большой комплимент! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Ja, das ist ein großes Kompliment! Also gut, tun wir so, als wäre nichts passiert. Geh, amüsiere dich..." nointeract
 
 # game/dialogues/anntalk.rpy:1136
 translate german ann_yoga_with_maxr_7ac1ee79_1:
 
     # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
-    Max_10 "" nointeract
+    Max_10 "Was immer du sagst, Mom. Bis zum nächsten Mal..." nointeract
 
 # game/dialogues/anntalk.rpy:1139
 translate german ann_yoga_with_maxr_6d31e3c0:
 
     # Ann_12 "Ох, пора бы тебе уже девушку себе найти и с ней время проводить. Я, конечно, не против твоей помощи, но я всё-таки твоя мама, а потому никак не смогу помочь тебе... ну, снять напряжение."
-    Ann_12 ""
+    Ann_12 "Es ist an der Zeit, dass du dir eine Freundin suchst und etwas Zeit mit ihr verbringst. Ich habe nichts gegen deine Hilfe, aber ich bin immer noch deine Mutter, also kann ich dir nicht helfen... Du weißt schon, zur Entspannung."
 
 # game/dialogues/anntalk.rpy:1140
 translate german ann_yoga_with_maxr_74c82a5d:
 
     # Max_07 "Может и найду. А пока, до следующего раза..." nointeract
-    Max_07 "" nointeract
+    Max_07 "Vielleicht werde ich das. Bis dahin, bis zum nächsten Mal..." nointeract
 
 translate german strings:
 
     # game/dialogues/anntalk.rpy:178
     old "Проведём сегодня вечер с \"образовательной\" пользой?"
-    new ""
+    new "Wollen wir heute Abend etwas \"Lehrreiches\" machen?"
 

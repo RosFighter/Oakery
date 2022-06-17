@@ -223,5 +223,5 @@ translate german cam0_ann_tv_8b464610:
 translate german cam0_ann_sleep_e0ca90ce:
 
     # Max_09 "Хм... Мамы нет. Где же она?"
-    Max_09 ""
+    Max_09 "Ähm ... Mom ist nicht da. Wo ist sie?"
 

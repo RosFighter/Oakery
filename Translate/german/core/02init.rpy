@@ -735,7 +735,7 @@ translate german strings:
 
     # game/core/02init.rpy:141
     old "Хотел поговорить о маме..."
-    new "Ich wollte über meine Mutter sprechen..."
+    new "Ich wollte über Mom reden..."
 
 # TODO: Translation updated at 2022-06-09 13:17
 
@@ -743,5 +743,5 @@ translate german strings:
 
     # game/core/02init.rpy:141
     old "Мам, ты подумала?"
-    new ""
+    new "Mom, hast du darüber nachgedacht?"
 
