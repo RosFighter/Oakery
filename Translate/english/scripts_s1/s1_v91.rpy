@@ -531,7 +531,7 @@ translate english strings:
 translate english s1_ann_drink_95e0d854:
 
     # Max_09 "Снова расслабляешься, пока никто не видит?"
-    Max_09 "Снова расслабляешься, пока никто не видит?"
+    Max_09 "Relaxing again when no one's looking?"
 
 # game/scripts_s1/s1_v91.rpy:170
 translate english s1_ann_drink_62a37d3d:
@@ -1512,7 +1512,7 @@ translate english s1_ann_intimate_lesson_1_5e421526:
 translate english s1_ann_intimate_lesson_1_1b043e2f:
 
     # Ann_13 "Да, но это уже осваивай без меня. С мамой таким заниматься, даже в образовательных целях - уже чересчур!"
-    Ann_13 ""
+    Ann_13 "Yes, but you have to do it without me. It's too much to do with my mother, even for educational purposes!"
 
 # game/scripts_s1/s1_v91.rpy:581
 translate english s1_ann_intimate_lesson_1_ebad62e7:
@@ -2146,7 +2146,7 @@ translate english s1_ann_intimate_lesson_02_1178f669:
 translate english s1_ann_intimate_lesson_02_5b651a27:
 
     # Ann_12 "Макс, ты давай пробуй, а я в свою очередь сделаю какие-то замечания." nointeract
-    Ann_12 "Макс, ты давай пробуй, а я в свою очередь сделаю какие-то замечания." nointeract
+    Ann_12 "Max, you go ahead and try it, and I'll make some comments in turn." nointeract
 
 # game/scripts_s1/s1_v91.rpy:926
 translate english s1_ann_intimate_lesson_02_d45e60d2:
