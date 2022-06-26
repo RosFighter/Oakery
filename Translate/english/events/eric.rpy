@@ -3583,4 +3583,3 @@ translate english strings:
     # game/events/eric.rpy:694
     old "{i}хорошо устроиться{/i}"
     new "{i}get comfortable{/i}"
-

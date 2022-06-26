@@ -189,4 +189,3 @@ translate english strings:
     # game/dialogues/christina.rpy:25
     old "А чем вечером будешь заниматься? Давай погуляем!?"
     new "What are you going to do tonight? Let's hang out?"
-

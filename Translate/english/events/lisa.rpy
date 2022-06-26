@@ -2813,4 +2813,3 @@ translate english lisa_dressed_stay_in_room_db51f185:
 
     # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
     Max_09 "{m}I've tried too many times to spy on Lisa changing clothes. It's not worth trying to do it anymore today.{/m}"
-

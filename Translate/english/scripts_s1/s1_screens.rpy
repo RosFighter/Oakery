@@ -69,6 +69,7 @@ translate english strings:
     # game/scripts_s1/s1_screens.rpy:315
     old "ЧЕРЕЗ НЕКОТОРОЕ ВРЕМЯ..."
     new "AFTER A WHILE..."
+
 # TODO: Translation updated at 2022-06-09 13:13
 
 translate english strings:

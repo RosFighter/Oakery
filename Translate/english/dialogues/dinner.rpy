@@ -2223,4 +2223,3 @@ translate english strings:
     # game/dialogues/dinner.rpy:690
     old "Может быть, наоборот?"
     new "What about the other way around?"
-

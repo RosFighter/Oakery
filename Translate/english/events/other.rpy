@@ -1744,4 +1744,3 @@ translate english left_cream_61f00467:
 
     # Max_08 "{m}Осталось мало крема, в следующий раз может не хватить, лучше купить заранее.{/m}"
     Max_08 "{m}There is not enough cream left, next time you may not have enough, it is better to buy in advance.{/m}"
-

@@ -305,4 +305,3 @@ translate english strings:
     # game/extra/extra.rpy:60
     old "Ещё стесняется, но трогает..."
     new "It's still shy, but it touches..."
-

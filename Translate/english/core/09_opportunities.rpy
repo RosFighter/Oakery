@@ -2336,6 +2336,7 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях..."
     new "I was finally able to get on a porn show with Mom and Eric! Aunt Kira, however, will now have to pay for my whims in front of Eric... In between shows, you'll need to find a way to join Kira and Eric. Maybe it will even be possible to participate in them... entertainment..."
+
 # TODO: Translation updated at 2022-03-18 22:06
 
 translate english strings:

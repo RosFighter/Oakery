@@ -420,6 +420,7 @@ translate english strings:
     # game/core/screens.rpy:1136
     old "ЗАБЛОКИРОВАНЫ..."
     new "BLOCKED..."
+
 # TODO: Translation updated at 2022-04-25 01:41
 
 translate english strings:

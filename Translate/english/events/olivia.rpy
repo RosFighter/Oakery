@@ -2115,7 +2115,7 @@ translate english olivia_night_visit_r_e85cfe71:
 
     # Max_04 "Привет! Рад тебя видеть. Дома только я, Лиза и мама. Проходи..."
     Max_04 "Hi! Good to see you. It's just me, Lisa, and Mom at home. Come on in..."
-    
+
 # TODO: Translation updated at 2022-02-16 00:40
 
 # game/events/olivia.rpy:683
@@ -2135,4 +2135,3 @@ translate english olivia_repeatable_night_out_with_0a6cf6a4:
 
     # Olivia_01 "Ночь вообще-то, Макс. Укладываемся спать..."
     Olivia_01 "It's the middle of the night, Max. Let's go to bed..."
-

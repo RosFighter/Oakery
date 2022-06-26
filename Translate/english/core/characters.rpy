@@ -13,4 +13,3 @@ translate english strings:
     # game/core/characters.rpy:369
     old "Сэм"
     new "Sam"
-

@@ -725,6 +725,7 @@ translate english strings:
     # game/core/02init.rpy:138
     old "Чтобы на маме были только очки для сна!"
     new "So that mom only wears a sleeping mask!"
+
 # TODO: Translation updated at 2022-04-25 01:41
 
 translate english strings:
@@ -736,6 +737,7 @@ translate english strings:
     # game/core/02init.rpy:141
     old "Хотел поговорить о маме..."
     new "I wanted to talk about Mom..."
+
 # TODO: Translation updated at 2022-06-09 13:13
 
 translate english strings:
