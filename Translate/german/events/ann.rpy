@@ -1974,133 +1974,133 @@ translate german ann_bath_about_intime_0_a05b810e:
 translate german ann_dressed_stay_in_room_659d5d18:
 
     # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Nein, natürlich nicht! Sieh dich an! Hör mit diesem Unsinn auf und lasse mich in Ruhe umziehen." nointeract
 
 # game/events/ann.rpy:362
 translate german ann_dressed_stay_in_room_e4ef4b48:
 
     # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Das ist gut zu hören, mein Sohn. Vielen Dank für den Hinweis." nointeract
 
 # game/events/ann.rpy:394
 translate german ann_dressed_moment0_659d5d18:
 
     # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Nein, natürlich nicht! Sieh dich an! Hör mit diesem Unsinn auf und lass mich in Ruhe umziehen." nointeract
 
 # game/events/ann.rpy:396
 translate german ann_dressed_moment0_e4ef4b48:
 
     # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Das ist gut zu hören, mein Sohn. Vielen Dank für den Hinweis." nointeract
 
 # game/events/ann.rpy:398
 translate german ann_dressed_moment0_84eb80a2:
 
     # Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Max! Hast du nicht schon genug gesehen? Hör mit diesem Unsinn auf und lass mich in Ruhe umziehen." nointeract
 
 # game/events/ann.rpy:402
 translate german ann_dressed_moment0_ad028372:
 
     # Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Pass nur auf, wo du hintrittst, mein Sohn. Du willst dir doch nicht den Kopf stoßen..." nointeract
 
 # game/events/ann.rpy:421
 translate german ann_dressed_moment2_126ffe76:
 
     # Ann_13 "Ой, Макс! Почему не стучишься? {p=3}{nw}"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Warum klopfst du nicht an? {p=3}{nw}"
 
 # game/events/ann.rpy:433
 translate german ann_dressed_moment2_2cd5729c:
 
     # Ann_02 "Ты что-то хотел или просто от безделья маешься?"
-    Ann_02 ""
+    Ann_02 "Wolltest du etwas oder läufst du nur herum?"
 
 # game/events/ann.rpy:436
 translate german ann_dressed_moment2_2cd5729c_1:
 
     # Ann_02 "Ты что-то хотел или просто от безделья маешься?"
-    Ann_02 ""
+    Ann_02 "Wolltest du etwas oder läufst du nur herum?"
 
 # game/events/ann.rpy:458
 translate german ann_dressed_moment1_dfc78518:
 
     # Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Warum klopfst du nicht an? Wolltest du etwas, oder läufst du nur herum?"
 
 # game/events/ann.rpy:461
 translate german ann_dressed_moment1_dfc78518_1:
 
     # Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Warum klopfst du nicht an? Wolltest du etwas, oder läufst du nur herum?"
 
 # game/events/ann.rpy:525
 translate german ann_dressed_lvl_3_48432cd3:
 
     # Max_01 "Нет, просто решил заглянуть. А ты что, всё ещё стесняешься? Это же я!"
-    Max_01 ""
+    Max_01 "Nein, ich dachte nur, ich schaue mal rein. Bist du immer noch so verklemmt? Ich bin's doch nur!"
 
 # game/events/ann.rpy:530
 translate german ann_dressed_lvl_3_50567e5f:
 
     # Ann_04 "Да это я так, по привычке. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Es ist einfach zur Gewohnheit geworden. Wenn es nichts Dringendes gibt, geh bitte raus. Ich muss mich umziehen..." nointeract
 
 # game/events/ann.rpy:532
 translate german ann_dressed_lvl_3_fa70085d:
 
     # Ann_04 "Конечно стесняюсь! Ещё я тут всю себя на показ не выставляла, только из-за того, что ты уже всё видел. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Aber sicher doch! Außerdem habe ich mich hier nicht zur Schau gestellt, nur weil du schon alles gesehen hast. Wenn es nichts Dringendes gibt, geh bitte raus. Ich muss mich umziehen..." nointeract
 
 # game/events/ann.rpy:535
 translate german ann_dressed_lvl_3_659d5d18:
 
     # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Nein, natürlich nicht! Sieh dich an! Hör auf mit diesem Unsinn und lass mich in Ruhe umziehen." nointeract
 
 # game/events/ann.rpy:537
 translate german ann_dressed_lvl_3_e4ef4b48:
 
     # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Das ist gut zu hören, mein Sohn. Vielen Dank für diesen Hinweis." nointeract
 
 # game/events/ann.rpy:543
 translate german ann_dressed_lvl_4_2af495cf:
 
     # Max_02 "Нет, просто решил заглянуть и полюбоваться на твою шикарную фигуру. Ты же не против?"
-    Max_02 ""
+    Max_02 "Nein, ich dachte nur, ich schaue mal vorbei und bewundere deine tolle Figur. Es macht dir doch nichts aus, oder?"
 
 # game/events/ann.rpy:544
 translate german ann_dressed_lvl_4_b937a903:
 
     # Ann_04 "Ну... Если налюбовался, то выйди пожалуйста. Мне нужно переодеться..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Na ja... Wenn du genug hast, geh bitte raus. Ich muss mich umziehen..." nointeract
 
 # game/events/ann.rpy:547
 translate german ann_dressed_lvl_4_84eb80a2:
 
     # Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Max! Hast du nicht schon genug gesehen? Hör mit diesem Unsinn auf und lass mich in Ruhe umziehen." nointeract
 
 # game/events/ann.rpy:551
 translate german ann_dressed_lvl_4_ad028372:
 
     # Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Pass nur auf, wo du hingehst, mein Sohn. Du willst dir doch nicht den Kopf stoßen..." nointeract
 
 translate german strings:
 
     # game/events/ann.rpy:358
     old "Да легко! Не буду мешать. Выглядишь, кстати, превосходно!"
-    new ""
+    new "Alles klar! Ich gehe. Du siehst übrigens großartig aus!"
 
     # game/events/ann.rpy:385
     old "А можно остаться и посмотреть?"
-    new ""
+    new "Kann ich bleiben und zusehen?"
 
     # game/events/ann.rpy:385
     old "Да легко! А повернуться можешь, пока я ухожу?"
-    new ""
+    new "Alles klar! Kannst du dich umdrehen, während ich mich umziehe?"
 

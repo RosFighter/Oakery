@@ -2251,711 +2251,711 @@ translate german strings:
 translate german s1_ann_bath_6272e6b4:
 
     # Max_09 "{m}Пока Эрик у нас в доме, лучше не рисковать заходить к маме. Он в любой момент может зайти в ванную комнату.{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}Solange Eric noch bei uns ist, sollte man es nicht riskieren, zu Mum zu gehen. Er könnte jederzeit ins Bad kommen.{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:927
 translate german s1_ann_intimate_lesson_02_a9e1c035:
 
     # Max_09 "Ну... Уж кто и может научить {b}ТАКОМУ{/b} лучше всех, так это мама. Ты же заинтересована в том, чтобы я был лучшим во всём, в том числе и в {b}ЭТОМ{/b}?"
-    Max_09 ""
+    Max_09 "Na ja... Wenn jemand {b}das{/b} besser als jeder andere lehren kann, dann bist du es Mom. Du ist sicher daran interessiert, dass ich in allem der Beste bin, auch in {b}diesem{/b}, nicht wahr?"
 
 # game/scripts_s1/s1_v91.rpy:1015
 translate german s1_ann_intimate_lesson_03_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann ""
+    Ann "{b}Ann:{/b} Wer ist da? Ich nehme ein Bad!"
 
 # game/scripts_s1/s1_v91.rpy:1016
 translate german s1_ann_intimate_lesson_03_006aa2f9:
 
     # Max_07 "Это я, Макс. Можно войти?"
-    Max_07 ""
+    Max_07 "Ich bin's, Max. Darf ich reinkommen?"
 
 # game/scripts_s1/s1_v91.rpy:1017
 translate german s1_ann_intimate_lesson_03_896e111e:
 
     # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} Gut gemacht, du hast angeklopft. Komm rein, aber lass es niemanden sehen..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1024
 translate german s1_ann_intimate_lesson_03_9c627c00:
 
     # Ann_14 "Я надеюсь Лиза не видела, что ты пошёл в ванную комнату? Она же сейчас на кухне..."
-    Ann_14 ""
+    Ann_14 "Ich hoffe, Lisa hat dich nicht ins Bad gehen sehen? Sie ist gerade in der Küche..."
 
 # game/scripts_s1/s1_v91.rpy:1025
 translate german s1_ann_intimate_lesson_03_e8444647:
 
     # Max_00 "Да я как-то не смотрел, видела она или нет."
-    Max_00 ""
+    Max_00 "Ja, ich habe nicht genau darauf geachtet, ob sie es gesehen hat oder nicht."
 
 # game/scripts_s1/s1_v91.rpy:1026
 translate german s1_ann_intimate_lesson_03_da4d684b:
 
     # Ann_18 "Макс, ты же понимаешь, как важно держать наши с тобой занятия в тайне! Если она видела..."
-    Ann_18 ""
+    Ann_18 "Max, du weißt, wie wichtig es ist, unsere Aktivitäten geheim zu halten! Wenn sie etwas gesehen hat..."
 
 # game/scripts_s1/s1_v91.rpy:1027
 translate german s1_ann_intimate_lesson_03_3c28894a:
 
     # Max_01 "Мам, это шутка была. Она не видела, так что расслабься."
-    Max_01 ""
+    Max_01 "Mom, das war ein Scherz. Sie hat nichts gesehen, also entspann dich."
 
 # game/scripts_s1/s1_v91.rpy:1032
 translate german s1_ann_intimate_lesson_03_749e00f2:
 
     # Ann_13 "Фух... Не пугай меня так больше! Я и так на нервах из-за наших уроков."
-    Ann_13 ""
+    Ann_13 "Puh... Erschreck mich nicht noch einmal so! Ich bin auch so schon nervös genug wegen unseres Unterrichts."
 
 # game/scripts_s1/s1_v91.rpy:1033
 translate german s1_ann_intimate_lesson_03_e3b6ee31:
 
     # Max_07 "Извини. А ты почему прикрываешься? Я же ведь уже всё видел и не раз. И не только видел."
-    Max_07 ""
+    Max_07 "Es tut mir leid. Warum verdeckst du dich? Ich habe das alles schon einmal gesehen. Und nicht nur gesehen."
 
 # game/scripts_s1/s1_v91.rpy:1034
 translate german s1_ann_intimate_lesson_03_2842875b:
 
     # Ann_16 "Смотри мне, договоришься сейчас! Если ты здесь только для того, чтобы поглазеть на голую маму, то урока сегодня не будет."
-    Ann_16 ""
+    Ann_16 "Sieh mich an, jetzt wirst du dich beruhigen! Wenn du nur hier bist, um deine nackte Mutter anzustarren, gibt es heute keine Lektion."
 
 # game/scripts_s1/s1_v91.rpy:1035
 translate german s1_ann_intimate_lesson_03_d1ca0782:
 
     # Max_09 "Что ты! Я здесь ради знаний!"
-    Max_09 ""
+    Max_09 "Wovon redest du? Ich bin wegen des Lernens hier!"
 
 # game/scripts_s1/s1_v91.rpy:1036
 translate german s1_ann_intimate_lesson_03_ba442144:
 
     # Ann_12 "Тогда хватит шутки шутить, залазь ко мне в ванну." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Dann hör auf zu albern und steig in meine Wanne." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1043
 translate german s1_ann_intimate_lesson_03_41306dbb:
 
     # Ann_14 "Да, сынок... Не верится даже, что ты так подрос. Кажется, что ещё совсем недавно только в школу пошёл..."
-    Ann_14 ""
+    Ann_14 "Ja, mein Sohn... Ich kann nicht glauben, wie erwachsen du geworden bist. Es scheint so, als wärst du gerade erst in die Schule gekommen..."
 
 # game/scripts_s1/s1_v91.rpy:1044
 translate german s1_ann_intimate_lesson_03_d4f2d4ce:
 
     # Max_03 "Ну ты, мам, вспомнила!"
-    Max_03 ""
+    Max_03 "Du hast dich erinnert, Mom!"
 
 # game/scripts_s1/s1_v91.rpy:1048
 translate german s1_ann_intimate_lesson_03_88e11b8c:
 
     # Ann_12 "Да, было время... А сейчас вон чем мы занимаемся! Дальше, я так полагаю, нужно показать тебе, как ласкать женщину... ну там, внизу..."
-    Ann_12 ""
+    Ann_12 "Ja, das war einmal... Und was tun wir jetzt? Als nächstes muss ich dir wohl zeigen, wie man eine Frau streichelt... du weißt schon, da unten..."
 
 # game/scripts_s1/s1_v91.rpy:1049
 translate german s1_ann_intimate_lesson_03_f3a4c8b3:
 
     # Max_02 "Мне нравится слово \"киска\"!"
-    Max_02 ""
+    Max_02 "Ich liebe das Wort \"Pussy\"!"
 
 # game/scripts_s1/s1_v91.rpy:1050
 translate german s1_ann_intimate_lesson_03_c47c7cf4:
 
     # Ann_02 "Пусть так. Честно говоря, я считаю, ты с этим справишься и без уроков, потому что пальчиками ты работаешь хорошо, массажист ты наш талантливый."
-    Ann_02 ""
+    Ann_02 "So soll es sein. Ehrlich gesagt glaube ich, dass du es auch ohne Unterricht könntest, denn du bist ein begabter Masseur und kannst gut mit deinen Fingern umgehen."
 
 # game/scripts_s1/s1_v91.rpy:1051
 translate german s1_ann_intimate_lesson_03_5fcd471d:
 
     # Max_09 "Подожди! Но это всё равно же не одно и то же! Там же тоже, наверно, нужно как-то понежнее себя вести? Или нет?"
-    Max_09 ""
+    Max_09 "Moment! Das ist immer noch nicht dasselbe! Da muss man auch sanfter sein, meinst du nicht? Oder?"
 
 # game/scripts_s1/s1_v91.rpy:1055
 translate german s1_ann_intimate_lesson_03_cca5d1a8:
 
     # Ann_04 "Ну... Там, на самом деле, можно по разному, то наращивая темп стимуляции, то сбавляя. А сначала лучше конечно понежнее и помедленнее. По крайней мере, мне так нравится... В смысле, я думаю, что так нравится всем женщинам."
-    Ann_04 ""
+    Ann_04 "Na ja... Du kannst das auf verschiedene Arten tun, indem du das Tempo der Stimulation steigerst oder reduzierst. Am Anfang ist es besser, behutsam und langsam vorzugehen. Zumindest gefällt es mir so... Ich meine, ich vermute, alle Frauen mögen das ähnlich."
 
 # game/scripts_s1/s1_v91.rpy:1056
 translate german s1_ann_intimate_lesson_03_91c1be4d:
 
     # Max_07 "Ага... Но мне же всё равно нужно попробовать это сделать! Чтобы хоть представление иметь, как это вообще происходит..."
-    Max_07 ""
+    Max_07 "Ja... Aber ich muss es trotzdem versuchen! Nur um eine Vorstellung davon zu bekommen, wie es überhaupt funktioniert..."
 
 # game/scripts_s1/s1_v91.rpy:1057
 translate german s1_ann_intimate_lesson_03_0e933278:
 
     # Ann_13 "Ой, не знаю, сынок... Понимаю, что тебе это нужно, но может... Мне нравится, что у нас тобой такие близкие отношения, но делать {b}ТАКОЕ{/b}... В голове не укладывается."
-    Ann_13 ""
+    Ann_13 "Ich weiß nicht, mein Sohn... Ich weiß, dass du das brauchst, aber vielleicht... Ich liebe es, dass wir eine so enge Beziehung haben, aber das zu {b}tun{/b}... Ich kann das nicht begreifen."
 
 # game/scripts_s1/s1_v91.rpy:1058
 translate german s1_ann_intimate_lesson_03_b9a2b566:
 
     # Max_01 "А мы всего разок попробуем и всё. Для образовательных целей же."
-    Max_01 ""
+    Max_01 "Wir probieren es nur einmal aus, das ist alles. Für pädagogische Zwecke."
 
 # game/scripts_s1/s1_v91.rpy:1062
 translate german s1_ann_intimate_lesson_03_9db8175b:
 
     # Ann_12 "Так уж и быть. Ты уже меня видел, так что постараюсь не стесняться и покажу тебе, как это всё происходит."
-    Ann_12 ""
+    Ann_12 "Also gut. Du hast mich schon gesehen, also werde ich versuchen, nicht allzu scheu zu sein und dir zu zeigen, wie das Ganze abläuft."
 
 # game/scripts_s1/s1_v91.rpy:1063
 translate german s1_ann_intimate_lesson_03_d7a8a4ef:
 
     # Max_04 "Ты лучшая мама на свете! Как же я благодарен тебе за эти знания и опыт. Это очень дорогого стоит. Ты самая-самая!"
-    Max_04 ""
+    Max_04 "Du bist die beste Mutter der Welt! Wie dankbar bin ich dir für dein Wissen und deine Erfahrung. Das ist es wirklich wert. Du bist die Beste!"
 
 # game/scripts_s1/s1_v91.rpy:1064
 translate german s1_ann_intimate_lesson_03_b53b83fe:
 
     # Ann_02 "Спасибо! Надеюсь, ты помнишь, как это делали в том эротическом ролике, что мы смотрели?"
-    Ann_02 ""
+    Ann_02 "Ich danke dir! Ich hoffe, du erinnerst dich daran, wie es in dem erotischen Video gemacht wurde, das wir uns angesehen haben?"
 
 # game/scripts_s1/s1_v91.rpy:1065
 translate german s1_ann_intimate_lesson_03_e48adeab:
 
     # Max_07 "Ну, в общих чертах, да. Но, твои наставления однозначно нужны."
-    Max_07 ""
+    Max_07 "Nun, ganz allgemein gesagt, ja. Aber deine Hilfe wird definitiv notwendig sein."
 
 # game/scripts_s1/s1_v91.rpy:1069
 translate german s1_ann_intimate_lesson_03_f379e77f:
 
     # Ann_04 "Для начала, попробуй просто поводить по ней пальчиком... вверх-вниз... нежно и аккуратно, не торопясь." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Versuche erst einmal, einfach mit dem Finger darüber zu fahren... auf und ab... vorsichtig und behutsam, und lass dir Zeit." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1075
 translate german s1_ann_intimate_lesson_03_3574b02c:
 
     # Ann_14 "Да, вот так... Можно до такой степени не осторожничать, не бойся. Поувереннее, сынок..."
-    Ann_14 ""
+    Ann_14 "Ja, genau so... Du kannst ruhig so weiter machen, nicht zu vorsichtig sein, keine Angst haben. Sei behutsam, mein Sohn..."
 
 # game/scripts_s1/s1_v91.rpy:1076
 translate german s1_ann_intimate_lesson_03_69803dd1:
 
     # Max_10 "Я просто не знаю... Вдруг, я сделаю тебе больно!"
-    Max_10 ""
+    Max_10 "Ich weiß einfach nicht... Und wenn ich dir wehtue?"
 
 # game/scripts_s1/s1_v91.rpy:1077
 translate german s1_ann_intimate_lesson_03_5b13e978:
 
     # Ann_09 "Не переживай из-за этого, всё хорошо. Нежно и уверенно... Ухх... Да... Хорошо... В смысле, у тебя хорошо получается."
-    Ann_09 ""
+    Ann_09 "Mach dir keine Sorgen, das ist schon in Ordnung. Sanft und bestimmt... Äh... Ja... Gut, äh... Ich meine, du bist gut darin."
 
 # game/scripts_s1/s1_v91.rpy:1078
 translate german s1_ann_intimate_lesson_03_b4302cb5:
 
     # Max_07 "А что делать дальше?"
-    Max_07 ""
+    Max_07 "Was machen wir als nächstes?"
 
 # game/scripts_s1/s1_v91.rpy:1082
 translate german s1_ann_intimate_lesson_03_21f9fde7:
 
     # Ann_08 "Теперь можешь попробовать водить пальчиками из стороны в сторону, а так же круговыми движениями. И темп уже можно понемногу наращивать."
-    Ann_08 ""
+    Ann_08 "Versuche nun, deine Finger von einer Seite zur anderen zu bewegen, auch in kreisenden Bewegungen. Du kannst dann das Tempo nach und nach steigern."
 
 # game/scripts_s1/s1_v91.rpy:1083
 translate german s1_ann_intimate_lesson_03_68d72acd:
 
     # Max_01 "Ага, сейчас попробую..."
-    Max_01 ""
+    Max_01 "Ja, ich versuch's mal..."
 
 # game/scripts_s1/s1_v91.rpy:1087
 translate german s1_ann_intimate_lesson_03_4458c9ef:
 
     # Ann_09 "Ох, сынок... Никогда бы не подумала, что ты делаешь это впервые! Ммм... У тебя волшебные пальчики..."
-    Ann_09 ""
+    Ann_09 "Oh, mein Sohn... Ich hätte nie gedacht, dass du das zum ersten Mal machen würdest! Hmmm... Du hast magische Finger..."
 
 # game/scripts_s1/s1_v91.rpy:1088
 translate german s1_ann_intimate_lesson_03_9709739b:
 
     # Max_05 "Правда?! Видимо, сказываются мои навыки в массаже."
-    Max_05 ""
+    Max_05 "Wirklich?! Offenbar zahlen sich meine Massagekünste langsam aus."
 
 # game/scripts_s1/s1_v91.rpy:1089
 translate german s1_ann_intimate_lesson_03_0e7264fb:
 
     # Ann_14 "Похоже на то... Д-а-а... Можно побыстрее. Помнишь, что я говорила? Ухх... Наращивать темп... О да! Вот так... Ещё... Ой, что я такое говорю!"
-    Ann_14 ""
+    Ann_14 "Es sieht aus wie... Ja, ja, ja... Geht das nicht schneller? Erinnerst du dich, was ich gesagt habe? Äh... Erhöhe das Tempo... Oh, ja! Das ist es... Mehr... Oh, was sage ich da!"
 
 # game/scripts_s1/s1_v91.rpy:1090
 translate german s1_ann_intimate_lesson_03_f803a7c5:
 
     # Max_04 "Не напрягайся из-за этого, мам. По твоим эмоциям я лучше понимаю, что всё делаю правильно."
-    Max_04 ""
+    Max_04 "Mach dir keinen Stress, Mom. Durch deine Emotionen weiß ich besser, dass ich das Richtige tue."
 
 # game/scripts_s1/s1_v91.rpy:1091
 translate german s1_ann_intimate_lesson_03_398c7a36:
 
     # Ann_09 "Я понимаю, но... Мне стоит держать себя в руках, иначе пропадёт вся серьёзность наших с тобой уроков."
-    Ann_09 ""
+    Ann_09 "Ich verstehe, aber... Ich muss mich zusammenreißen, sonst geht die Ernsthaftigkeit unseres Unterrichts verloren."
 
 # game/scripts_s1/s1_v91.rpy:1092
 translate german s1_ann_intimate_lesson_03_d592e138:
 
     # Max_07 "Так, а как мне действовать дальше?"
-    Max_07 ""
+    Max_07 "Wie soll ich also vorgehen?"
 
 # game/scripts_s1/s1_v91.rpy:1096
 translate german s1_ann_intimate_lesson_03_1e24aa34:
 
     # Ann_13 "Ой, сынок, я даже не знаю... Дальше должно идти уже проникновение пальчиков... в киску. Но это..."
-    Ann_13 ""
+    Ann_13 "Oh, Sohn, ich weiß nicht mal... Der nächste Schritt sollte das Eindringen der Finger sein... in die Pussy. Aber das..."
 
 # game/scripts_s1/s1_v91.rpy:1097
 translate german s1_ann_intimate_lesson_03_9f5cbf9c:
 
     # Max_03 "О, круто! Значит, постимулировал снаружи, раззадорил, а теперь смещаю акцент внутрь?"
-    Max_03 ""
+    Max_03 "Oh, cool! Ich habe also von außen stimuliert, die Dinge angeheizt, und jetzt verlagere ich den Schwerpunkt nach innen?"
 
 # game/scripts_s1/s1_v91.rpy:1098
 translate german s1_ann_intimate_lesson_03_7c403b85:
 
     # Ann_17 "Смахиваешь на лету. Но я не уверена, что мы будем это делать."
-    Ann_17 ""
+    Ann_17 "Du streichst es im Vorbeigehen. Aber ich bin mir nicht sicher, ob wir das tun sollten."
 
 # game/scripts_s1/s1_v91.rpy:1099
 translate german s1_ann_intimate_lesson_03_caa452a5:
 
     # Max_08 "Но почему? Я же, вроде, всё нормально делал..."
-    Max_08 ""
+    Max_08 "Aber warum? Ich dachte, es läuft ganz gut..."
 
 # game/scripts_s1/s1_v91.rpy:1103
 translate german s1_ann_intimate_lesson_03_274e5d31:
 
     # Ann_12 "Ты молодец, Макс. Просто, проникнуть пальцами в свою маму... Тебе не кажется, что это уже совсем перебор? Не говоря уже о том, до какой степени матери с сыном неправильно заниматься {b}ТАКИМ{/b}..."
-    Ann_12 ""
+    Ann_12 "Du machst das toll, Max. Nur, dass du deine Finger in deine Mutter steckst... Findest du nicht, dass das ein bisschen übertrieben ist? Ganz zu schweigen davon, dass es falsch ist, wenn eine Mutter und ihr Sohn {b}das tun{/b}..."
 
 # game/scripts_s1/s1_v91.rpy:1104
 translate german s1_ann_intimate_lesson_03_dd7ed56f:
 
     # Max_09 "Мы же учимся! Вернее, учусь я, а ты делишься со мной важными знаниями. Я же должен знать, какие движения делать там, внутри. Там явно будет иначе."
-    Max_09 ""
+    Max_09 "Wir lernen! Oder besser gesagt, ich lerne, und du vermittelst mir wichtiges Wissen. Ich soll wissen, welche Schritte ich im Inneren machen muss. Dort wird es natürlich anders sein."
 
 # game/scripts_s1/s1_v91.rpy:1105
 translate german s1_ann_intimate_lesson_03_7c35c2cb:
 
     # Ann_14 "Ох, Макс... Надеюсь, я потом, после всего этого, смогу тебе в глаза смотреть и не краснеть. Что я делаю..."
-    Ann_14 ""
+    Ann_14 "Oh, Max... Ich hoffe, ich kann dir danach noch in die Augen sehen und ohne rot zu werden. Was mache ich nur..."
 
 # game/scripts_s1/s1_v91.rpy:1106
 translate german s1_ann_intimate_lesson_03_41224b86:
 
     # Max_07 "Так как мне лучше это сделать?"
-    Max_07 ""
+    Max_07 "Wie gehe ich am besten vor?"
 
 # game/scripts_s1/s1_v91.rpy:1107
 translate german s1_ann_intimate_lesson_03_2f4be1e2:
 
     # Ann_12 "Всё так же, нежно и не спеша. Просто вводи свои пальчики в мою киску..." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Immer noch gleich, sanft und ohne Hektik. Steck einfach deine Finger in meine Pussy..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1113
 translate german s1_ann_intimate_lesson_03_45ab582b:
 
     # Ann_09 "Ахх... Да... Не спеши, не проникай сразу как можно глубже. Вот так... Ммм..."
-    Ann_09 ""
+    Ann_09 "Ahhh... Ja... Lass dir Zeit, geh nicht gleich so tief, wie du kannst. Das ist es... Hmmm..."
 
 # game/scripts_s1/s1_v91.rpy:1114
 translate german s1_ann_intimate_lesson_03_181dce01:
 
     # Max_05 "Ух ты, мам! Это классно! Что дальше?"
-    Max_05 ""
+    Max_05 "Wow, Mom! Das ist großartig! Was kommt als Nächstes?"
 
 # game/scripts_s1/s1_v91.rpy:1115
 translate german s1_ann_intimate_lesson_03_fdca3f7b:
 
     # Ann_10 "Теперь двигай своими пальчиками, назад-вперёд... Постепенно наращивая темп... Ухх... Да, отлично..."
-    Ann_10 ""
+    Ann_10 "Beweg nun deine Finger hin und her... Allmählich wird das Tempo erhöht... Äh... Ja, das ist gut..."
 
 # game/scripts_s1/s1_v91.rpy:1116
 translate german s1_ann_intimate_lesson_03_59fa2106:
 
     # Max_08 "Ой, мам, а там становится... мокренько! Это нормально или я что-то не так делаю?"
-    Max_08 ""
+    Max_08 "Oh, Mom, es wird... nass! Ist das normal oder mache ich etwas falsch?"
 
 # game/scripts_s1/s1_v91.rpy:1120
 translate german s1_ann_intimate_lesson_03_43177c17:
 
     # Ann_08 "Ах, Макс, ты всё делаешь правильно. Чем больше женщина возбуждена твоей прелюдией, тем влажнее становится её киска. Ммм..."
-    Ann_08 ""
+    Ann_08 "Ah, Max, du machst das schon richtig. Je mehr eine Frau durch dein Vorspiel erregt wird, desto nasser wird ihre Pussy. Hmmm..."
 
 # game/scripts_s1/s1_v91.rpy:1121
 translate german s1_ann_intimate_lesson_03_9b9504bb:
 
     # Max_03 "Мои пальцы от этого проскальзывают в тебя всё легче и легче, хотя ты довольно узенькая."
-    Max_03 ""
+    Max_03 "Dadurch gleiten meine Finger immer leichter in dich hinein, obwohl du ziemlich eng bist."
 
 # game/scripts_s1/s1_v91.rpy:1122
 translate german s1_ann_intimate_lesson_03_9f8cebdc:
 
     # Ann_14 "Ой, сынок, не смущай меня ещё сильнее такими словами! Я вообще не ожидала такой реакции от себя... Ахх... Это очень странно."
-    Ann_14 ""
+    Ann_14 "Oh, mein Sohn, bring mich mit diesen Worten nicht noch mehr in Verlegenheit! Eine solche Reaktion hätte ich von mir selbst nicht erwartet... Ahh... Das ist sehr merkwürdig."
 
 # game/scripts_s1/s1_v91.rpy:1123
 translate german s1_ann_intimate_lesson_03_a241e038:
 
     # Max_07 "А ты думала, что тебе будет приятно, но при этом мокренькой ты становиться не будешь?"
-    Max_07 ""
+    Max_07 "Dachtest du, du würdest dich gut fühlen, aber nicht nass werden?"
 
 # game/scripts_s1/s1_v91.rpy:1124
 translate german s1_ann_intimate_lesson_03_08a8b06c:
 
     # Ann_12 "Именно! Поэтому... На этот раз, я думаю, достаточно, сынок. Закругляемся."
-    Ann_12 ""
+    Ann_12 "Ja, genau! Also... Ich denke, das reicht für den Moment, mein Sohn. Bringen wir es zum Schluss."
 
 # game/scripts_s1/s1_v91.rpy:1128
 translate german s1_ann_intimate_lesson_03_1054e4c7:
 
     # Max_04 "Ты только не переживай из-за этого, мам. Ну подумаешь, понравилось... Мне вот это всё очень нравится. Столько нового для себя открыл."
-    Max_04 ""
+    Max_04 "Mach dir keine Sorgen, Mom. Es ist mir egal, ob es dir gefällt... Ich mag das alles so sehr. Ich habe so viel gelernt."
 
 # game/scripts_s1/s1_v91.rpy:1129
 translate german s1_ann_intimate_lesson_03_c7828ec0:
 
     # Ann_17 "Да уж, но вот мои открытия меня больше озадачили... Всё, хватит глазеть." nointeract
-    Ann_17 "" nointeract
+    Ann_17 "Ja, aber meine Erfahrungen haben mich mehr verwirrt... Genug gestarrt." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1135
 translate german s1_ann_intimate_lesson_03_a9e6e6ca:
 
     # Ann_15 "Ой, Макс! Как же ты возбудился! Хотя, чего я удивляюсь. Я же здесь, перед тобой, с раздвинутыми ногами сидела и {b}ТАКОМУ{/b} учила..."
-    Ann_15 ""
+    Ann_15 "Oh, Max! Du bist so geil! Das überrascht mich allerdings nicht. Ich habe hier mit gespreizten Beinen vor dir gesessen und {b}DICH{/b} unterrichtet..."
 
 # game/scripts_s1/s1_v91.rpy:1136
 translate german s1_ann_intimate_lesson_03_d68b3bac:
 
     # Max_07 "Ну да. Я же сказал, что мне {b}ОЧЕНЬ{/b} понравилось."
-    Max_07 ""
+    Max_07 "Ja, ja. Ich habe dir gesagt, dass es mir {b}sehr{/b} gut gefällt."
 
 # game/scripts_s1/s1_v91.rpy:1137
 translate german s1_ann_intimate_lesson_03_d28bff17:
 
     # Ann_13 "Думаю, тебе нужно принять душ и сбросить... это напряжение. С учётом того, чем мы тут с тобой занимались, смысла стесняться нет. Давай бегом, я не буду смотреть."
-    Ann_13 ""
+    Ann_13 "Ich glaube, du musst duschen und dich erholen... diese Spannung. Angesichts dessen, was wir hier getan haben, gibt es keinen Grund, scheu zu sein. Komm schon, ich schaue nicht zu."
 
 # game/scripts_s1/s1_v91.rpy:1138
 translate german s1_ann_intimate_lesson_03_fef83954:
 
     # Max_01 "Хорошо, мам!"
-    Max_01 ""
+    Max_01 "Alles klar, Mom!"
 
 # game/scripts_s1/s1_v91.rpy:1143
 translate german s1_ann_intimate_lesson_03_3888c586:
 
     # Max_07 "{m}Это что-то с чем-то! Теперь мои пальцы побывали в маминой киске. В маминой!!! И не менее приятно то, что она от этого так потекла... Интересно, что она теперь будет делать после такого? Вдруг она решит прекратить эти уроки?!{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Das ist etwas, das nicht von dieser Welt ist! Jetzt sind meine Finger in Moms Pussy gewesen. Moms Pussy!!! Und genauso schön war es, dass sie dabei so sehr geschwitzt hat... Ich frage mich, was sie jetzt tun wird? Was ist, wenn sie beschließt, mit dem Unterricht aufzuhören?!{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:1149
 translate german s1_ann_intimate_lesson_03_a431a981:
 
     # Ann_15 "Макс! А что это ты там делаешь?!"
-    Ann_15 ""
+    Ann_15 "Max! Was machst du denn da vorne?!"
 
 # game/scripts_s1/s1_v91.rpy:1150
 translate german s1_ann_intimate_lesson_03_04af0b5f:
 
     # Max_08 "Эээ... Ну, как бы это... снимаю напряжение. Ты же сама разрешила."
-    Max_08 ""
+    Max_08 "Ähm ... Nun, es ist eine Art... die Spannung zu lindern. Du hast gesagt, es sei okay."
 
 # game/scripts_s1/s1_v91.rpy:1154
 translate german s1_ann_intimate_lesson_03_ec8d607e:
 
     # Ann_17 "Да, но... Я думала, ты хотя бы отвернёшься и будешь делать это не глядя на меня."
-    Ann_17 ""
+    Ann_17 "Ja, aber... Ich dachte, du würdest dich wenigstens umdrehen und es tun, ohne mich anzuschauen."
 
 # game/scripts_s1/s1_v91.rpy:1155
 translate german s1_ann_intimate_lesson_03_dbe0841a:
 
     # Max_09 "А зачем мне отворачиваться и фантазировать о ком-то, когда всего в метре от меня, за стеклом {b}ТЫ{/b}? С твоей красотой ни одна фантазия не сравнится и близко!"
-    Max_09 ""
+    Max_09 "Warum sollte ich mich abwenden und über jemanden phantasieren, wenn ich nur einen Meter entfernt bin, hinter dem Glas {b}DICH{/b}? Keine Fantasie kann sich mit deiner Schönheit messen!"
 
 # game/scripts_s1/s1_v91.rpy:1156
 translate german s1_ann_intimate_lesson_03_1b5e0ed1:
 
     # Ann_12 "Очень приятно слышать, конечно, но это ненормально, когда сына так сильно возбуждает его собственная мать."
-    Ann_12 ""
+    Ann_12 "Das ist natürlich sehr schön zu hören, aber es ist nicht normal, dass ein Sohn von seiner eigenen Mutter so erregt wird."
 
 # game/scripts_s1/s1_v91.rpy:1157
 translate german s1_ann_intimate_lesson_03_6a444508:
 
     # Max_07 "Ты для меня и женщиной являешься. И очень сексуальной женщиной!"
-    Max_07 ""
+    Max_07 "Für mich bist du auch eine Frau. Und eine sehr sexy Frau dazu!"
 
 # game/scripts_s1/s1_v91.rpy:1158
 translate german s1_ann_intimate_lesson_03_f94d7691:
 
     # Ann_16 "И не стыдно тебе вот так демонстративно это делать прямо передо мной, а?" nointeract
-    Ann_16 "" nointeract
+    Ann_16 "Und schämst du dich nicht, es so unverhohlen vor mir zu tun?" nointeract
 
 # game/scripts_s1/s1_v91.rpy:1165
 translate german s1_ann_intimate_lesson_03_138d5c05:
 
     # Ann_17 "Ну Макс! Вот что ты наделал! Всё стекло заляпал... Даже не вздумай уходить, не прибравшись за собой! Безобразник."
-    Ann_17 ""
+    Ann_17 "Oh, Max! Was hast du getan? Überall auf dem Glas... Wag es nicht, ohne sauber zu machen zu verschwinden! Du kleiner Bengel."
 
 # game/scripts_s1/s1_v91.rpy:1166
 translate german s1_ann_intimate_lesson_03_031d6965:
 
     # Max_20 "Фух... Конечно приберусь, не ругайся." nointeract
-    Max_20 "" nointeract
+    Max_20 "Puh... Natürlich werde ich das, fluche nicht." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1179
 translate german s1_ann_intimate_lesson_04_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann ""
+    Ann "{b}Ann:{/b} Wer ist da? Ich nehme ein Bad!"
 
 # game/scripts_s1/s1_v91.rpy:1180
 translate german s1_ann_intimate_lesson_04_006aa2f9:
 
     # Max_07 "Это я, Макс. Можно войти?"
-    Max_07 ""
+    Max_07 "Ich bin's, Max. Darf ich reinkommen?"
 
 # game/scripts_s1/s1_v91.rpy:1181
 translate german s1_ann_intimate_lesson_04_896e111e:
 
     # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} Gut so, du hast geklopft. Komm rein, aber lass es niemand sehen..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1187
 translate german s1_ann_intimate_lesson_04_a1d94f75:
 
     # Ann_02 "Ну... Что стоишь и глазеешь? Раздевайся и залазь в ванну."
-    Ann_02 ""
+    Ann_02 "Na ja... Was stehst du da und starrst mich an? Ziehen dich aus und steig in die Wanne."
 
 # game/scripts_s1/s1_v91.rpy:1188
 translate german s1_ann_intimate_lesson_04_bf13bde3:
 
     # Max_09 "Я просто не был уверен, что наши уроки будут продолжаться."
-    Max_09 ""
+    Max_09 "Ich war mir nur nicht sicher, ob wir den Unterricht fortsetzen würden."
 
 # game/scripts_s1/s1_v91.rpy:1191
 translate german s1_ann_intimate_lesson_04_803c2d63:
 
     # Ann_05 "Уж как минимум закрепить пройденное надо, Макс. Если ты готов."
-    Ann_05 ""
+    Ann_05 "Du musst zumindest das, was du gelernt hast, verinnerlichen, Max. Wenn du bereit bist."
 
 # game/scripts_s1/s1_v91.rpy:1192
 translate german s1_ann_intimate_lesson_04_b100e351:
 
     # Max_05 "Я всегда готов!" nointeract
-    Max_05 "" nointeract
+    Max_05 "Ich bin immer bereit!" nointeract
 
 # game/scripts_s1/s1_v91.rpy:1197
 translate german s1_ann_intimate_lesson_04_c43a615e:
 
     # Ann_12 "Надеюсь, на всех прошедших уроках ты не просто меня разглядывал, но и усвоил мои наставления."
-    Ann_12 ""
+    Ann_12 "Ich hoffe, dass du in all den vergangenen Lektionen nicht nur auf mich geschaut hast, sondern dass du meine Anweisungen verstanden hast."
 
 # game/scripts_s1/s1_v91.rpy:1198
 translate german s1_ann_intimate_lesson_04_24cd072d:
 
     # Max_01 "Я был очень внимательным! Ну... к наставлениям."
-    Max_01 ""
+    Max_01 "Ich habe sehr gut aufgepasst! Nun... zur Erinnerung."
 
 # game/scripts_s1/s1_v91.rpy:1201
 translate german s1_ann_intimate_lesson_04_642d9a26:
 
     # Ann_04 "Тогда сегодня твоя задача, попытаться совместить знания со всех наших уроков. Думаю, ты справишься. Ты у меня талантливый." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Dann ist es heute deine Aufgabe, zu versuchen, das Wissen aus all unseren Lektionen zu kombinieren. Ich denke, du kannst es schaffen. Du bist talentiert." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1206
 translate german s1_ann_intimate_lesson_04_ed2d911e:
 
     # Ann_02 "Сейчас я не буду тебе ничего подсказывать. Попробуешь полностью сам."
-    Ann_02 ""
+    Ann_02 "Ich werde dir jetzt nichts sagen. Du wirst es ganz alleine ausprobieren."
 
 # game/scripts_s1/s1_v91.rpy:1207
 translate german s1_ann_intimate_lesson_04_57f52aab:
 
     # Max_07 "Тогда ты должна не сдерживаться в выражении эмоций! Мне же нужен ориентир."
-    Max_07 ""
+    Max_07 "Dann solltest du dich nicht zurückhalten, deine Gefühle zu zeigen! Ich brauche einen Bezugspunkt, nicht wahr?"
 
 # game/scripts_s1/s1_v91.rpy:1208
 translate german s1_ann_intimate_lesson_04_14854d78:
 
     # Ann_13 "Ну... Хорошо, я буду вести себя так, как вела бы со своим мужчиной. Хоть мне и не очень удобно это делать..." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Na ja... OK, ich verhalte mich so, wie ich es bei meinem Mann tun würde. Auch wenn ich mich dabei nicht sehr wohl fühle..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1213
 translate german s1_ann_intimate_lesson_04_8ff301a2:
 
     # Ann_14 "Оу! Ты решил начать сразу оттуда... Чему я тебя учила, сынок? А как же прелюдия?"
-    Ann_14 ""
+    Ann_14 "Oh! Du hast dich entschieden, direkt dort anzufangen... Was habe ich dir beigebracht, mein Sohn? Was ist mit dem Vorspiel?"
 
 # game/scripts_s1/s1_v91.rpy:1214
 translate german s1_ann_intimate_lesson_04_538e281d:
 
     # Max_02 "Не переживай, она тоже будет."
-    Max_02 ""
+    Max_02 "Keine Sorge, das kommt schon noch."
 
 # game/scripts_s1/s1_v91.rpy:1215
 translate german s1_ann_intimate_lesson_04_0ddc1141:
 
     # Ann_03 "Охх... Не знаю, что ты там придумал, но, так уж и быть, продолжай... Д-а-а..." nointeract
-    Ann_03 "" nointeract
+    Ann_03 "Ohhh... Ich weiß nicht, was du vorhast, aber dann mach weiter... Ja, ja, ja..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1220
 translate german s1_ann_intimate_lesson_04_1e1d5cdc:
 
     # Ann_08 "Ммм... Должна признать, пальчиками ты работаешь очень приятно. Ахх... Как хорошо... что ты стал заниматься массажем."
-    Ann_08 ""
+    Ann_08 "Hmmm... Ich muss zugeben, dass deine Fingerfertigkeit sehr schön ist. Ahh... Es ist schön, dass du dich für die Massage entschieden hast."
 
 # game/scripts_s1/s1_v91.rpy:1221
 translate german s1_ann_intimate_lesson_04_c4d8a8d0:
 
     # Max_03 "{m}Чёрт, как же мне хочется попробовать на вкус эти нежные губки... Интересно, она позволит мне это сделать? Лучше посильнее её раззадорить, чтобы она не смогла от этого отказаться.{/m}"
-    Max_03 ""
+    Max_03 "{m}Verdammt, ich möchte diese weichen Lippen kosten... Ich frage mich, ob sie mich das machen lässt. Ich sollte sie noch mehr erregen, damit sie es nicht ablehnen wird.{/m}"
 
 # game/scripts_s1/s1_v91.rpy:1224
 translate german s1_ann_intimate_lesson_04_4a78fe22:
 
     # Ann_09 "Да, как хорошо! Я хочу, чтобы твои пальчики двигались ещё быстрее... Ухх... Д-а-а... Вот так. Какой же ты у меня молодец!"
-    Ann_09 ""
+    Ann_09 "Ja, das fühlt sich gut an! Ich will, dass sich deine Finger noch schneller bewegen... Uhh... Ja, ja, ja... Das ist es. Das ist es, wovon ich spreche."
 
 # game/scripts_s1/s1_v91.rpy:1225
 translate german s1_ann_intimate_lesson_04_beda0759:
 
     # Max_04 "{m}Ох, мама так завелась от удовольствия или же она просто отыгрывает роль? Как бы там ни было, самое время переходить к её груди... Все руки должны быть при деле!{/m}"
-    Max_04 ""
+    Max_04 "{m}Oh, ist Mom so geil darauf, sich zu entspannen, oder spielt sie nur ihre Rolle? Wie auch immer, es ist Zeit, zu ihren Brüsten zu gehen... Alle Hände müssen im Einsatz sein!{/m}"
 
 # game/scripts_s1/s1_v91.rpy:1228
 translate german s1_ann_intimate_lesson_04_7135350f:
 
     # Ann_14 "Да, продолжай... Всё правильно. Свои ручки используй по максимуму. Д-а-а... А так же не забывай потренировать свой язычок на моих сосочках, потому что с этим у тебя куда меньше опыта..." nointeract
-    Ann_14 "" nointeract
+    Ann_14 "Ja, mach weiter... Das ist richtig. Mach das Beste mit deinen Händen. Aha... Vergiss auch nicht, deine Zunge an meinen Brustwarzen auszuprobieren, denn damit hast du noch viel weniger Erfahrung..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1233
 translate german s1_ann_intimate_lesson_04_e61e4718:
 
     # Max_02 "{m}Мама даже и близко не представляет, сколько на самом деле у меня опыта и в том, и в том. Но языком всё же лучше работать не очень изобретательно. Если с руками ещё можно успехи списать на опыт в массаже, то с языком так не выйдет. Я же не чемпион по облизыванию Чупа-Чупсов.{/m}"
-    Max_02 ""
+    Max_02 "{m}Meine Mutter hat keine Ahnung, wie viel Erfahrung ich eigentlich in diesen beiden Bereichen habe. Aber es ist besser, nicht zu kreativ mit der Zunge zu sein. Wenn meine Hände für meine Massageerfahrung verantwortlich gemacht werden konnten, dann nicht meine Zunge. Es ist ja nicht so, dass ich ein Meister im Lecken von Himmel gefallen ist.{/m}"
 
 # game/scripts_s1/s1_v91.rpy:1234
 translate german s1_ann_intimate_lesson_04_05c7906b:
 
     # Ann_10 "Ох, сынок... Ммм... Да... Очень неплохо. Думаю, я достаточно хорошо тебя подготовила... Ухх... Надо закругляться."
-    Ann_10 ""
+    Ann_10 "Oh, mein Sohn... Hmmm... Ja... Sehr gut. Ich denke, ich habe dich gut genug vorbereitet... Äh... Bringen wir es zum Abschluss."
 
 # game/scripts_s1/s1_v91.rpy:1237
 translate german s1_ann_intimate_lesson_04_29d2acbe:
 
     # Max_08 "Как это закругляться?! А мне разве не стоит побольше попрактиковаться языком, раз уж он у меня отстаёт от пальцев? Я хочу опробовать его на твоей киске."
-    Max_08 ""
+    Max_08 "Was soll das heißen?! Sollte ich nicht mehr mit meiner Zunge üben, da sie meinen Fingern hinterher hinkt? Ich möchte es an deiner Pussy ausprobieren."
 
 # game/scripts_s1/s1_v91.rpy:1238
 translate german s1_ann_intimate_lesson_04_cdf904e6:
 
     # Ann_13 "Нет, Макс... Такое делать - это уже совсем уму не постижимо..." nointeract
-    Ann_13 "" nointeract
+    Ann_13 "Nein, Max... Es ist unvorstellbar, so etwas zu tun..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1243
 translate german s1_ann_intimate_lesson_04_e3c6affd:
 
     # Ann_14 "Охх... сынок... Что же ты вытворяешь! Нам нельзя... Ах... Это... невероятно... Я... я не могу сопротивляться... Это не в моих силах! Как же хорошо..." nointeract
-    Ann_14 "" nointeract
+    Ann_14 "Ohhh... Mein Sohn... Was machst du denn da? Wir können nicht... Ah ... Das ist... Unglaublich... Ich... Ich kann nicht widerstehen... Es liegt nicht mehr in meiner Hand! Es fühlt sich so gut an..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1248
 translate german s1_ann_intimate_lesson_04_2355dedf:
 
     # Ann_09 "Д-а-а... Кажется, я ошиблась... Ты и языком талантливо управляешься! Ухх... Ещё... Ох, это... нет слов, как приятно... Я и секунды больше не продержусь..."
-    Ann_09 ""
+    Ann_09 "Ja, ja, ja... Ich glaube, ich habe mich geirrt... Du hast auch ein Talent mit der Zunge! Äh... Mehr... Oh, das ist... Ich kann dir nicht sagen, wie gut es sich anfühlt... Ich kann es keine Sekunde länger aushalten..."
 
 # game/scripts_s1/s1_v91.rpy:1249
 translate german s1_ann_intimate_lesson_04_ab6477bc:
 
     # Max_07 "{m}Да, мама вот-вот кончит! Чёрт, да я и сам от её стонов уже на грани...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}Ja, Mom ist kurz davor zu kommen! Scheiße, ihr Stöhnen bringt mich an den Rand des...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:1254
 translate german s1_ann_intimate_lesson_04_b84b58ab:
 
     # Ann_11 "Ещё быстрее... Моё тело меня больше не слушается... Ох, я кончаю, сынок... Д-а-а..." nointeract
-    Ann_11 "" nointeract
+    Ann_11 "Noch schneller... Mein Körper hört nicht mehr auf mich... Oh, ich komme, mein Sohn... Ja-a-a..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1259
 translate german s1_ann_intimate_lesson_04_62323a41:
 
     # Ann_17 "Макс! Ну что же ты делаешь?! Всю меня своей спермой забрызгал! Не мог отвернуться что ли?"
-    Ann_17 ""
+    Ann_17 "Max! Was machst du da?! Du hast mich mit deinem Sperma vollgespritzt! Konntest du nicht wegschauen?"
 
 # game/scripts_s1/s1_v91.rpy:1260
 translate german s1_ann_intimate_lesson_04_c153e0ef:
 
     # Max_22 "Фух, извини... Перевозбудился... Хотелось просто кончить, а куда - неважно!"
-    Max_22 ""
+    Max_22 "Puh, tut mir leid... Ich war zu aufgeregt... Ich wollte einfach nur abspritzen und es war egal, wohin!"
 
 # game/scripts_s1/s1_v91.rpy:1263
 translate german s1_ann_intimate_lesson_04_af3d407f:
 
     # Ann_12 "Пора, сынок, всё это заканчивать. Я имею ввиду, эти уроки. До добра это не доведёт точно. И зачем я только на это согласилась..."
-    Ann_12 ""
+    Ann_12 "Mein Sohn, es ist an der Zeit, Schluss zu machen. Ich meine, mit diesen Lektionen. Das wird nichts ändern. Ich weiß nicht, warum ich dem je zugestimmt habe..."
 
 # game/scripts_s1/s1_v91.rpy:1264
 translate german s1_ann_intimate_lesson_04_c441a121:
 
     # Max_08 "Но, мам..."
-    Max_08 ""
+    Max_08 "Aber, Mom..."
 
 # game/scripts_s1/s1_v91.rpy:1265
 translate german s1_ann_intimate_lesson_04_d8e85bcd:
 
     # Ann_16 "Не спорь! Всё это ты должен осваивать со своей девушкой, а не с мамой. Надеюсь, мы сможем представить, что на этих уроках ничего не было."
-    Ann_16 ""
+    Ann_16 "Keine Widerrede! All das solltest du mit deiner Freundin machen, nicht mit deiner Mutter. Ich hoffe, wir sind uns einige, dass in diesen Lektionen nichts passiert ist."
 
 # game/scripts_s1/s1_v91.rpy:1266
 translate german s1_ann_intimate_lesson_04_561f1b40:
 
     # Max_09 "Ну... Даже не знаю. После твоих стонов..."
-    Max_09 ""
+    Max_09 "Nun ja... Ich weiß es nicht. Nach deinem Stöhnen..."
 
 # game/scripts_s1/s1_v91.rpy:1267
 translate german s1_ann_intimate_lesson_04_ec4a933e:
 
     # Ann_17 "Забыли, сынок! А теперь иди. Мне нужно привести себя в порядок." nointeract
-    Ann_17 "" nointeract
+    Ann_17 "Vergiss es, junger Mann! Jetzt geh. Ich muss mich jetzt erst einmal sammeln." nointeract
 
 translate german strings:
 
     # game/scripts_s1/s1_v91.rpy:1070
     old "{i}следовать маминому совету{/i}"
-    new ""
+    new "{i}dem Rat von Mom folgen{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1108
     old "{i}сделать, как сказала мама{/i}"
-    new ""
+    new "{i}tu, was Mom gesagt hat{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1130
     old "{i}освободить ванну{/i}"
-    new ""
+    new "{i}die Wanne leeren{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1144
     old "{i}дрочить, глядя на маму{/i}"
-    new ""
+    new "{i}beim Anblick von Mom wichsen{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1167
     old "{i}прибраться и уйти{/i}"
-    new ""
+    new "{i}aufräumen und gehen{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1209
     old "{i}начать водить пальцами по маминой киске{/i}"
-    new ""
+    new "{i}mit ihren Fingern durch ihr Pussy gleiten{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1216
     old "{i}ласкать пальцами быстрее{/i}"
-    new ""
+    new "{i}schneller fingern{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1239
     old "{i}ласкать мамину киску языком{/i}"
-    new ""
+    new "{i}die Pussy von Mom mit der Zunge lecken{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1244
     old "{i}не останавливаться{/i}"
-    new ""
+    new "{i}dranbleiben{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1250
     old "{i}проникнуть в маму пальцами{/i}"
-    new ""
+    new "{i}mit den Fingern in Sie eindringt{/i}"
 
     # game/scripts_s1/s1_v91.rpy:1255
     old "{i}тоже кончить!{/i}"
-    new ""
+    new "{i}auch abspritzen!{/i}"
 
