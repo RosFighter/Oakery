@@ -1974,133 +1974,132 @@ translate english ann_bath_about_intime_0_a05b810e:
 translate english ann_dressed_stay_in_room_659d5d18:
 
     # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "No, of course not! Look what you're doing! Stop this nonsense and let your mother change in peace." nointeract
 
 # game/events/ann.rpy:362
 translate english ann_dressed_stay_in_room_e4ef4b48:
 
     # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "That's good to hear, son. Thank you for pointing that out." nointeract
 
 # game/events/ann.rpy:394
 translate english ann_dressed_moment0_659d5d18:
 
     # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "No, of course not! Look what you're doing! Stop this nonsense and let your mother change in peace." nointeract
 
 # game/events/ann.rpy:396
 translate english ann_dressed_moment0_e4ef4b48:
 
     # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "That's good to hear, son. Thank you for pointing that out." nointeract
 
 # game/events/ann.rpy:398
 translate english ann_dressed_moment0_84eb80a2:
 
     # Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Max! Haven't you seen enough? Stop this nonsense and let your mother change in peace." nointeract
 
 # game/events/ann.rpy:402
 translate english ann_dressed_moment0_ad028372:
 
     # Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Just watch your step, son. You might run your forehead into something..." nointeract
 
 # game/events/ann.rpy:421
 translate english ann_dressed_moment2_126ffe76:
 
     # Ann_13 "Ой, Макс! Почему не стучишься? {p=3}{nw}"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Why don't you knock? {p=3}{nw}"
 
 # game/events/ann.rpy:433
 translate english ann_dressed_moment2_2cd5729c:
 
     # Ann_02 "Ты что-то хотел или просто от безделья маешься?"
-    Ann_02 ""
+    Ann_02 "Did you want something, or are you just idle?"
 
 # game/events/ann.rpy:436
 translate english ann_dressed_moment2_2cd5729c_1:
 
     # Ann_02 "Ты что-то хотел или просто от безделья маешься?"
-    Ann_02 ""
+    Ann_02 "Did you want something, or are you just idle?"
 
 # game/events/ann.rpy:458
 translate english ann_dressed_moment1_dfc78518:
 
     # Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Why don't you knock? Did you want something, or are you just idle?"
 
 # game/events/ann.rpy:461
 translate english ann_dressed_moment1_dfc78518_1:
 
     # Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Why don't you knock? Did you want something, or are you just idle?"
 
 # game/events/ann.rpy:525
 translate english ann_dressed_lvl_3_48432cd3:
 
     # Max_01 "Нет, просто решил заглянуть. А ты что, всё ещё стесняешься? Это же я!"
-    Max_01 ""
+    Max_01 "No, I just thought I'd stop by. Are you still shy? It's me!"
 
 # game/events/ann.rpy:530
 translate english ann_dressed_lvl_3_50567e5f:
 
     # Ann_04 "Да это я так, по привычке. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "I'm just making a habit of it. If there's nothing urgent, please come out. I need to change..." nointeract
 
 # game/events/ann.rpy:532
 translate english ann_dressed_lvl_3_fa70085d:
 
     # Ann_04 "Конечно стесняюсь! Ещё я тут всю себя на показ не выставляла, только из-за того, что ты уже всё видел. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Of course I am! And I haven't put myself on full display here, just because you've already seen everything. If there's nothing urgent, please come out. I need to change..." nointeract
 
 # game/events/ann.rpy:535
 translate english ann_dressed_lvl_3_659d5d18:
 
     # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "No, of course not! Look what you're doing! Stop this nonsense and let your mother change in peace." nointeract
 
 # game/events/ann.rpy:537
 translate english ann_dressed_lvl_3_e4ef4b48:
 
     # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "That's good to hear, son. Thank you for pointing that out." nointeract
 
 # game/events/ann.rpy:543
 translate english ann_dressed_lvl_4_2af495cf:
 
     # Max_02 "Нет, просто решил заглянуть и полюбоваться на твою шикарную фигуру. Ты же не против?"
-    Max_02 ""
+    Max_02 "No, I just thought I'd stop by and admire your gorgeous figure. You don't mind, do you?"
 
 # game/events/ann.rpy:544
 translate english ann_dressed_lvl_4_b937a903:
 
     # Ann_04 "Ну... Если налюбовался, то выйди пожалуйста. Мне нужно переодеться..." nointeract
-    Ann_04 "" nointeract
+    Ann_04 "Well... If you've admired enough, please come out. I need to change..." nointeract
 
 # game/events/ann.rpy:547
 translate english ann_dressed_lvl_4_84eb80a2:
 
     # Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Max! Haven't you seen enough? Stop this nonsense and let your mother change in peace." nointeract
 
 # game/events/ann.rpy:551
 translate english ann_dressed_lvl_4_ad028372:
 
     # Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Just watch your step, son. You might run your forehead into something..." nointeract
 
 translate english strings:
 
     # game/events/ann.rpy:358
     old "Да легко! Не буду мешать. Выглядишь, кстати, превосходно!"
-    new ""
+    new "That's easy! I'll leave you to it. You look great, by the way!"
 
     # game/events/ann.rpy:385
     old "А можно остаться и посмотреть?"
-    new ""
+    new "Can I stay and watch?"
 
     # game/events/ann.rpy:385
     old "Да легко! А повернуться можешь, пока я ухожу?"
-    new ""
-
+    new "It's easy! Can you turn around while I'm leaving?"
