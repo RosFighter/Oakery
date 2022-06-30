@@ -2965,29 +2965,29 @@ translate german strings:
 translate german s1_ann_bath_8b2e455e:
 
     # Max_07 "Я просто спросить хотел..."
-    Max_07 ""
+    Max_07 "Ich habe mich nur gefragt..."
 
 # game/scripts_s1/s1_v91.rpy:936
 translate german s1_ann_bath_d6e21fdb:
 
     # Ann_12 "Никаких больше уроков. Я ведь уже сказала! А сейчас выйди." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "Kein Unterricht mehr. Ich habe es dir schon gesagt! Und jetzt raus." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1352
 translate german s1_ann_rejection_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann ""
+    Ann "{b}Ann:{/b} Wer ist da? Ich nehme ein Bad!"
 
 # game/scripts_s1/s1_v91.rpy:1353
 translate german s1_ann_rejection_006aa2f9:
 
     # Max_07 "Это я, Макс. Можно войти?"
-    Max_07 ""
+    Max_07 "Ich bin's, Max. Darf ich reinkommen?"
 
 # game/scripts_s1/s1_v91.rpy:1354
 translate german s1_ann_rejection_f1089d36:
 
     # Ann "{b}Анна:{/b} Никаких больше уроков. Я ведь уже сказала! Не мешай..." nointeract
-    Ann "" nointeract
+    Ann "{b}Ann:{/b} Kein Unterricht mehr. Ich habe es dir schon gesagt! Störe mich nicht..." nointeract
 

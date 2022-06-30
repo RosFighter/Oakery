@@ -2110,29 +2110,29 @@ translate german strings:
 translate german ann_shower_not_luck_7fca7b55:
 
     # Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
-    Ann_14 "" nointeract
+    Ann_14 "[spotted!t]Sohn, ich sehe wirklich alles! Ich weiß, du bist neugierig, aber es ist ein bisschen... peinlich. Lass mich in Ruhe." nointeract
 
 # game/events/ann.rpy:411
 translate german ann_dressed_moment0_04c8c654:
 
     # Ann_13 "Ой, Макс! Где именно?!"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Wo denn genau?!"
 
 # game/events/ann.rpy:412
 translate german ann_dressed_moment0_90f23736:
 
     # Max_02 "А нет, это были твои прекрасные сосочки!"
-    Max_02 ""
+    Max_02 "Und nein, es waren deine wunderbaren Nippel!"
 
 # game/events/ann.rpy:414
 translate german ann_dressed_moment0_8e8d5338:
 
     # Ann_05 "Ну и шуточки у тебя, Макс! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "Du bist ein Scherzkeks, Max! Schluss mit diesem Unsinn und lasst mich in Ruhe umziehen." nointeract
 
 translate german strings:
 
     # game/events/ann.rpy:397
     old "Подожди! Мне кажется или у тебя под халатом что-то шевелится..."
-    new ""
+    new "Warte! Liegt es an mir oder bewegt sich da etwas unter deinem Bademantel..."
 

@@ -3589,5 +3589,5 @@ translate german strings:
 translate german eric_ann_shower_not_luck_43bfc377:
 
     # Ann_14 "[spotted!t]Макс! Если ты думаешь, что теперь можешь смотреть за нами в любое время, то ты ошибаешься! Если быстро не уйдёшь, то я тебя накажу!"
-    Ann_14 ""
+    Ann_14 "[spotted!t]Max! Wenn du denkst, dass du uns jetzt jederzeit beobachten kannst, liegst du falsch! Wenn du nicht schnell verschwindest, werde ich dich bestrafen!"
 
