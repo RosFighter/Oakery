@@ -3583,3 +3583,12 @@ translate english strings:
     # game/events/eric.rpy:694
     old "{i}хорошо устроиться{/i}"
     new "{i}get comfortable{/i}"
+
+# TODO: Translation updated at 2022-06-30 16:41
+
+# game/events/eric.rpy:1105
+translate english eric_ann_shower_not_luck_43bfc377:
+
+    # Ann_14 "[spotted!t]Макс! Если ты думаешь, что теперь можешь смотреть за нами в любое время, то ты ошибаешься! Если быстро не уйдёшь, то я тебя накажу!"
+    Ann_14 ""
+

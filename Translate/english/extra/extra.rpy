@@ -305,3 +305,28 @@ translate english strings:
     # game/extra/extra.rpy:60
     old "Ещё стесняется, но трогает..."
     new "It's still shy, but it touches..."
+
+# TODO: Translation updated at 2022-06-30 16:41
+
+translate english strings:
+
+    # game/extra/extra.rpy:60
+    old "Влажные фантазии"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "1-ый интимный урок с Анной"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "2-ый интимный урок с Анной"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "3-ый интимный урок с Анной"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "4-ый интимный урок с Анной"
+    new ""
+

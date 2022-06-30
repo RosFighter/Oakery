@@ -2103,3 +2103,36 @@ translate english strings:
     # game/events/ann.rpy:385
     old "Да легко! А повернуться можешь, пока я ухожу?"
     new "It's easy! Can you turn around while I'm leaving?"
+
+# TODO: Translation updated at 2022-06-30 16:41
+
+# game/events/ann.rpy:195
+translate english ann_shower_not_luck_7fca7b55:
+
+    # Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
+    Ann_14 "" nointeract
+
+# game/events/ann.rpy:411
+translate english ann_dressed_moment0_04c8c654:
+
+    # Ann_13 "Ой, Макс! Где именно?!"
+    Ann_13 ""
+
+# game/events/ann.rpy:412
+translate english ann_dressed_moment0_90f23736:
+
+    # Max_02 "А нет, это были твои прекрасные сосочки!"
+    Max_02 ""
+
+# game/events/ann.rpy:414
+translate english ann_dressed_moment0_8e8d5338:
+
+    # Ann_05 "Ну и шуточки у тебя, Макс! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_05 "" nointeract
+
+translate english strings:
+
+    # game/events/ann.rpy:397
+    old "Подожди! Мне кажется или у тебя под халатом что-то шевелится..."
+    new ""
+

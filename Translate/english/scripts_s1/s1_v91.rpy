@@ -2256,7 +2256,7 @@ translate english s1_ann_bath_6272e6b4:
 translate english s1_ann_intimate_lesson_02_a9e1c035:
 
     # Max_09 "Ну... Уж кто и может научить {b}ТАКОМУ{/b} лучше всех, так это мама. Ты же заинтересована в том, чтобы я был лучшим во всём, в том числе и в {b}ЭТОМ{/b}?"
-    Max_09 "Well... If anyone can teach {b}THAT{b} better than anyone, it's Mom. You're interested in me being the best at everything, including {b}THAT{b}, aren't you?"
+    Max_09 "Well... If anyone can teach {b}THAT{/b} better than anyone, it's Mom. You're interested in me being the best at everything, including {b}THAT{/b}, aren't you?"
 
 # game/scripts_s1/s1_v91.rpy:1015
 translate english s1_ann_intimate_lesson_03_3aa93926:
@@ -2957,3 +2957,36 @@ translate english strings:
     # game/scripts_s1/s1_v91.rpy:1255
     old "{i}тоже кончить!{/i}"
     new "{i}Cum together!{/i}"
+
+# TODO: Translation updated at 2022-06-30 16:41
+
+# game/scripts_s1/s1_v91.rpy:935
+translate english s1_ann_bath_8b2e455e:
+
+    # Max_07 "Я просто спросить хотел..."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:936
+translate english s1_ann_bath_d6e21fdb:
+
+    # Ann_12 "Никаких больше уроков. Я ведь уже сказала! А сейчас выйди." nointeract
+    Ann_12 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:1352
+translate english s1_ann_rejection_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann ""
+
+# game/scripts_s1/s1_v91.rpy:1353
+translate english s1_ann_rejection_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:1354
+translate english s1_ann_rejection_f1089d36:
+
+    # Ann "{b}Анна:{/b} Никаких больше уроков. Я ведь уже сказала! Не мешай..." nointeract
+    Ann "" nointeract
+
