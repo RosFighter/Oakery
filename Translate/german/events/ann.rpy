@@ -2104,3 +2104,35 @@ translate german strings:
     old "Да легко! А повернуться можешь, пока я ухожу?"
     new "Alles klar! Kannst du dich umdrehen, während ich mich umziehe?"
 
+# TODO: Translation updated at 2022-06-30 16:40
+
+# game/events/ann.rpy:195
+translate german ann_shower_not_luck_7fca7b55:
+
+    # Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
+    Ann_14 "" nointeract
+
+# game/events/ann.rpy:411
+translate german ann_dressed_moment0_04c8c654:
+
+    # Ann_13 "Ой, Макс! Где именно?!"
+    Ann_13 ""
+
+# game/events/ann.rpy:412
+translate german ann_dressed_moment0_90f23736:
+
+    # Max_02 "А нет, это были твои прекрасные сосочки!"
+    Max_02 ""
+
+# game/events/ann.rpy:414
+translate german ann_dressed_moment0_8e8d5338:
+
+    # Ann_05 "Ну и шуточки у тебя, Макс! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_05 "" nointeract
+
+translate german strings:
+
+    # game/events/ann.rpy:397
+    old "Подожди! Мне кажется или у тебя под халатом что-то шевелится..."
+    new ""
+

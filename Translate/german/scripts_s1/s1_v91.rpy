@@ -2959,3 +2959,35 @@ translate german strings:
     old "{i}тоже кончить!{/i}"
     new "{i}auch abspritzen!{/i}"
 
+# TODO: Translation updated at 2022-06-30 16:40
+
+# game/scripts_s1/s1_v91.rpy:935
+translate german s1_ann_bath_8b2e455e:
+
+    # Max_07 "Я просто спросить хотел..."
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:936
+translate german s1_ann_bath_d6e21fdb:
+
+    # Ann_12 "Никаких больше уроков. Я ведь уже сказала! А сейчас выйди." nointeract
+    Ann_12 "" nointeract
+
+# game/scripts_s1/s1_v91.rpy:1352
+translate german s1_ann_rejection_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann ""
+
+# game/scripts_s1/s1_v91.rpy:1353
+translate german s1_ann_rejection_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v91.rpy:1354
+translate german s1_ann_rejection_f1089d36:
+
+    # Ann "{b}Анна:{/b} Никаких больше уроков. Я ведь уже сказала! Не мешай..." nointeract
+    Ann "" nointeract
+
