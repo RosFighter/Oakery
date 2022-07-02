@@ -2964,29 +2964,28 @@ translate english strings:
 translate english s1_ann_bath_8b2e455e:
 
     # Max_07 "Я просто спросить хотел..."
-    Max_07 ""
+    Max_07 "I just wanted to ask..."
 
 # game/scripts_s1/s1_v91.rpy:936
 translate english s1_ann_bath_d6e21fdb:
 
     # Ann_12 "Никаких больше уроков. Я ведь уже сказала! А сейчас выйди." nointeract
-    Ann_12 "" nointeract
+    Ann_12 "No more lessons. I already told you! Now get out." nointeract
 
 # game/scripts_s1/s1_v91.rpy:1352
 translate english s1_ann_rejection_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann ""
+    Ann "{b}Ann:{/b} Who's there? I'm taking a bath!"
 
 # game/scripts_s1/s1_v91.rpy:1353
 translate english s1_ann_rejection_006aa2f9:
 
     # Max_07 "Это я, Макс. Можно войти?"
-    Max_07 ""
+    Max_07 "It's me, Max. May I come in?"
 
 # game/scripts_s1/s1_v91.rpy:1354
 translate english s1_ann_rejection_f1089d36:
 
     # Ann "{b}Анна:{/b} Никаких больше уроков. Я ведь уже сказала! Не мешай..." nointeract
-    Ann "" nointeract
-
+    Ann "{b}Ann:{/b} No more lessons. I already told you! Don't interfere..." nointeract

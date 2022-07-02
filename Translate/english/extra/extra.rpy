@@ -312,21 +312,20 @@ translate english strings:
 
     # game/extra/extra.rpy:60
     old "Влажные фантазии"
-    new ""
+    new "Wet Fantasies"
 
     # game/extra/extra.rpy:60
     old "1-ый интимный урок с Анной"
-    new ""
+    new "The 1st intimate lesson with Ann"
 
     # game/extra/extra.rpy:60
     old "2-ый интимный урок с Анной"
-    new ""
+    new "2nd intimate lesson with Ann"
 
     # game/extra/extra.rpy:60
     old "3-ый интимный урок с Анной"
-    new ""
+    new "3rd intimate lesson with Ann"
 
     # game/extra/extra.rpy:60
     old "4-ый интимный урок с Анной"
-    new ""
-
+    new "4th intimate lesson with Ann"
