@@ -28,46 +28,47 @@
 
 
 -------------------------------------------------------------------------------------
-Что сделано по v0.09:
+Что сделано по v0.09.1:
 
- - 
+ - добавлены читы (располагаются в ноутбуке Макса).
 
 После избавления от Эрика в "Откровенной вражде"...
- - Анна начинает выпивать;
+ - Анна начинает периодически выпивать (продолжение возможности "Во главе семьи!", 3 новых этапа);
+ - изменение реакции Анны на возбуждение Макса при занятиях йогой и массаже у ТВ (при прохождении возможности "Во главе семьи!");
+ - открытие 1-ого воспоминания по выпивающей Анне (Экстра версия).
 
 При Эрике в "Фальшивой дружбе"...
- - интимные уроки с Анной;
+ - интимные уроки с Анной (продолжение возможности "Контроль", 5 новых этапов);
+ - изменение реакции Анны на возбуждение Макса при занятиях йогой и массаже у ТВ (при прохождении возможности "Контроль");
+ - новые моменты при посещении комнаты Анны, когда она переодевается (при прохождении возможности "Контроль");
+ - открытие 4-х воспоминаний по интимным урокам с Анной (Экстра версия).
 
 При Эрике в "Настоящей дружбе"...
- - 
+ - интимные уроки с Анной (продолжение возможности "Контроль", 6 новых этапов);
+ - изменение реакции Анны на возбуждение Макса при занятиях йогой и массаже у ТВ (при прохождении возможности "Контроль");
+ - новые моменты при посещении комнаты Анны, когда она переодевается (при прохождении возможности "Контроль");
+ - открытие 4-х воспоминаний по интимным урокам с Анной (Экстра версия).
 
 -------------------------------------------------------------------------------------
 
- - updated the initial images of Lisa's homework help;
- - updated images of Ann sleeping;
- - updated some of the images in the bath.
+ - added cheats (located in Max's laptop).
 
 After getting rid of Eric in "Hostile"...
- - Ann meets Olivia;
- - Max's new interaction with Olivia and Lisa in the yard during the day;
- - Max convinces Ann to let Olivia stay the night at their house;
- - Olivia can come over Sunday afternoon for a visit;
- - Lisa can sleep without her shirt when Olivia stays the night;
- - Max tries to resume kissing lessons with Lisa;
- - a new Opportunity and event related to Ann;
- - Ann can have her back massaged while watching TV;
- - new moments in helping Ann with yoga.
+ - Ann begins to drink occasionally (continuation of the "Head of the family!" opportunity, 3 new stages);
+ - changes in Ann's reaction to Max's excitement during yoga and massage sessions at the TV (when passing the "Head of the family!" opportunity);
+ - opening of the one memory by drinking Ann (Extra Version).
 
 With Eric in "Fake Friendship"...
- - Lisa and Eric's practical lesson;
- - Max tries to resume kissing lessons with Lisa;
- - Ann can have her back massaged while watching TV;
- - new moments in helping Ann with yoga.
+ - intimate lessons with Ann (continuation of the "Control" opportunity, 5 new stages);
+ - changes in Ann's reaction to Max's excitement during yoga and massage sessions at the TV (when passing the "Control" opportunity);
+ - new moments when visiting Ann's room as she changes clothes (when passing the "Control" opportunity);
+ - opening of the four memories on intimate lessons with Ann (Extra Version).
 
 With Eric in "Real Friendship"...
- - Lisa and Eric's practical lessons;
- - Max tries to resume kissing lessons with Lisa;
- - Max may get a bonus for helping Eric with Lisa and Kira.
+ - intimate lessons with Ann (continuation of the "Control" opportunity, 6 new stages);
+ - changes in Ann's reaction to Max's excitement during yoga and massage sessions at the TV (when passing the "Control" opportunity);
+ - new moments when visiting Ann's room as she changes clothes (when passing the "Control" opportunity);
+ - opening of the four memories on intimate lessons with Ann (Extra Version).
 
 -------------------------------------------------------------------------------------
 
