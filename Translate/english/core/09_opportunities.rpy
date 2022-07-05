@@ -2467,9 +2467,8 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Осталось проверить, изменилась ли реакция мамы на мой стояк. Лучше быть без майки..."
-    new ""
+    new "It remains to be seen if my mother's reaction to my boner has changed. Better to be shirtless..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь с Алисой можно вести себя посмелее..."
-    new ""
-
+    new "Now you can behave more bravely with Alice..."
