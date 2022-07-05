@@ -1960,13 +1960,13 @@ translate english ann_sleep_e0ca90ce:
 translate english ann_bath_about_intime_0_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann "{b}Аnn:{/b} Who's there? I'm taking a bath!"
+    Ann "{b}Ann:{/b} Who's there? I'm taking a bath!"
 
 # game/events/ann.rpy:978
 translate english ann_bath_about_intime_0_a05b810e:
 
     # Ann "{b}Анна:{/b} Если это может подождать, то я через полчасика освобожусь..." nointeract
-    Ann "{b}Аnn:{/b} If it can wait, I'll be out in half an hour..." nointeract
+    Ann "{b}Ann:{/b} If it can wait, I'll be out in half an hour..." nointeract
 
 # TODO: Translation updated at 2022-06-27 01:21
 

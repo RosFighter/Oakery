@@ -78,3 +78,15 @@ translate german strings:
     old "ЧЕРЕЗ НЕСКОЛЬКО МИНУТ..."
     new "IN EIN PAAR MINUTEN..."
 
+# TODO: Translation updated at 2022-07-05 16:00
+
+translate german strings:
+
+    # game/scripts_s1/s1_screens.rpy:79
+    old "Деньги:"
+    new ""
+
+    # game/scripts_s1/s1_screens.rpy:184
+    old "{b}Пропустить дни:{/b}"
+    new ""
+

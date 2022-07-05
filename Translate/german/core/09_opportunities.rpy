@@ -2462,3 +2462,15 @@ translate german strings:
     old "После всех этих ночных маминых фантазий, она уже гораздо спокойней воспринимает моё возбуждение во время занятий йогой. Может, в дальнейшем, это и вовсе перестанет её напрягать, а я смогу сделать эту йогу ещё интереснее?"
     new "Nach all diesen nächtlichen Fantasien von Mom ist sie schon viel entspannter, was meine Erregung während der Yogastunden angeht. Vielleicht stört sie das in Zukunft gar nicht mehr, und ich kann das Yoga noch interessanter machen?"
 
+# TODO: Translation updated at 2022-07-05 16:00
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Осталось проверить, изменилась ли реакция мамы на мой стояк. Лучше быть без майки..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь с Алисой можно вести себя посмелее..."
+    new ""
+
