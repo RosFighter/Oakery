@@ -84,9 +84,9 @@ translate german strings:
 
     # game/scripts_s1/s1_screens.rpy:79
     old "Деньги:"
-    new ""
+    new "Geld:"
 
     # game/scripts_s1/s1_screens.rpy:184
     old "{b}Пропустить дни:{/b}"
-    new ""
+    new "{b}Tage überspringen:{/b}"
 

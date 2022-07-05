@@ -2468,9 +2468,9 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Осталось проверить, изменилась ли реакция мамы на мой стояк. Лучше быть без майки..."
-    new ""
+    new "Es bleibt abzuwarten, ob sich Moms Reaktion auf meinen Ständer verändert hat. Besser ohne Hemd..."
 
     # game/core/09_opportunities.rpy:4
     old "Теперь с Алисой можно вести себя посмелее..."
-    new ""
+    new "Jetzt kann man mit Alice mutiger sein..."
 
