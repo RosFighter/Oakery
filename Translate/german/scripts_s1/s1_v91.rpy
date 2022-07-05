@@ -808,7 +808,7 @@ translate german s1_ann_drink_restrain_5baa544f:
 translate german s1_ann_drink_restrain_ae9af4f4:
 
     # Max_03 "{m}Ммм... Мои пальцы запросто проскользнули в неё. Обалденно, она стала сосать ещё активнее от моих ласк. Ох, мама... Знала бы ты, что сейчас вытворяешь! Вернее, с кем. Д-а-а...{/m}" nointeract
-    Max_03 "{m}Hmmm... Meine Finger gleiten leicht in sie hinein. Toll, sie saugte sogar noch stärker bei meinen Berührungen. Oh, Mom... Sie sollten wissen, was Sie gerade tun. Oder besser gesagt, mit wem. Ja-a-a...{/m}" nointeract
+    Max_03 "{m}Hmmm... Meine Finger gleiten leicht in sie hinein. Toll, sie saugte sogar noch stärker bei meinen Berührungen. Oh, Mom... Du solltest wissen, was Du gerade tust. Oder besser gesagt, mit wem. Ja-a-a...{/m}" nointeract
 
 # game/scripts_s1/s1_v91.rpy:316
 translate german s1_ann_drink_restrain_3f1d3b3e:
@@ -2719,7 +2719,7 @@ translate german s1_ann_intimate_lesson_04_896e111e:
 translate german s1_ann_intimate_lesson_04_a1d94f75:
 
     # Ann_02 "Ну... Что стоишь и глазеешь? Раздевайся и залазь в ванну."
-    Ann_02 "Na ja... Was stehst du da und starrst mich an? Ziehen dich aus und steig in die Wanne."
+    Ann_02 "Na ja... Was stehst du da und starrst mich an? Zieh dich aus und steig in die Wanne."
 
 # game/scripts_s1/s1_v91.rpy:1188
 translate german s1_ann_intimate_lesson_04_bf13bde3:
@@ -2899,7 +2899,7 @@ translate german s1_ann_intimate_lesson_04_c441a121:
 translate german s1_ann_intimate_lesson_04_d8e85bcd:
 
     # Ann_16 "Не спорь! Всё это ты должен осваивать со своей девушкой, а не с мамой. Надеюсь, мы сможем представить, что на этих уроках ничего не было."
-    Ann_16 "Keine Widerrede! All das solltest du mit deiner Freundin machen, nicht mit deiner Mutter. Ich hoffe, wir sind uns einige, dass in diesen Lektionen nichts passiert ist."
+    Ann_16 "Keine Widerrede! All das solltest du mit deiner Freundin machen, nicht mit deiner Mutter. Ich hoffe, wir sind uns einig, dass in diesen Lektionen nichts passiert ist."
 
 # game/scripts_s1/s1_v91.rpy:1266
 translate german s1_ann_intimate_lesson_04_561f1b40:
