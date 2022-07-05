@@ -34,7 +34,7 @@ translate english s1_ann_first_drink_db692275:
 translate english s1_ann_first_drink_c2453842:
 
     # Ann_14 "А? Это ты Макс... Я... Просто решила немножко расслабиться..."
-    Ann_14 "А? It's you, Max... I'm... Just trying to relax a little bit..."
+    Ann_14 "A? It's you, Max... I'm... Just trying to relax a little bit..."
 
 # game/scripts_s1/s1_v91.rpy:43
 translate english s1_ann_first_drink_24bc1e46:
@@ -789,7 +789,7 @@ translate english s1_ann_drink_no_restrain_f0f106cc:
 translate english s1_ann_drink_no_restrain_beef9a92:
 
     # Ann_11 "Ох, это... нет слов, как приятно... Ахх... Ты самый лучший мужчина на свете! Д-а-а! Твой язычок сводит меня с ума... Я... Я больше не могу... Я сейчас... Я кончаю! Д-а-а!"
-    Ann_11 "Oh, that's... there are no words, it feels so good... Ahhh... You are the best man in the world! Yaah! Your tongue is driving me crazy... Я... I can't take it anymore... I'm gonna... I'm coming! Duh-ah!"
+    Ann_11 "Oh, that's... there are no words, it feels so good... Ahhh... You are the best man in the world! Yaah! Your tongue is driving me crazy... I'm... I can't take it anymore... I'm gonna... I'm coming! Duh-ah!"
 
 # game/scripts_s1/s1_v91.rpy:296
 translate english s1_ann_drink_no_restrain_bcd0f0c5:
@@ -837,7 +837,7 @@ translate english s1_ann_drink_restrain_6e37798e:
 translate english s1_ann_drink_restrain_beef9a92:
 
     # Ann_11 "Ох, это... нет слов, как приятно... Ахх... Ты самый лучший мужчина на свете! Д-а-а! Твой язычок сводит меня с ума... Я... Я больше не могу... Я сейчас... Я кончаю! Д-а-а!"
-    Ann_11 "Oh, that's... there are no words, it feels so good... Ahhh... You are the best man in the world! Yaah! Your tongue is driving me crazy... Я... I can't take it anymore... I'm gonna... I'm coming! Duh-ah!"
+    Ann_11 "Oh, that's... there are no words, it feels so good... Ahhh... You are the best man in the world! Yaah! Your tongue is driving me crazy... I'm... I can't take it anymore... I'm gonna... I'm coming! Duh-ah!"
 
 # game/scripts_s1/s1_v91.rpy:346
 translate english s1_ann_drink_restrain_bcd0f0c5:
@@ -1984,7 +1984,7 @@ translate english s1_ann_bath_f18fbf7a:
 translate english s1_ann_intimate_lesson_02_3aa93926:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
-    Ann "{b}Аnn:{/b} Who's there? I'm taking a bath!"
+    Ann "{b}Ann:{/b} Who's there? I'm taking a bath!"
 
 # game/scripts_s1/s1_v91.rpy:873
 translate english s1_ann_intimate_lesson_02_006aa2f9:
@@ -1996,7 +1996,7 @@ translate english s1_ann_intimate_lesson_02_006aa2f9:
 translate english s1_ann_intimate_lesson_02_896e111e:
 
     # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
-    Ann "{b}Аnn:{/b} Good for knocking. Come in, but don't let anyone see..." nointeract
+    Ann "{b}Ann:{/b} Good for knocking. Come in, but don't let anyone see..." nointeract
 
 # game/scripts_s1/s1_v91.rpy:880
 translate english s1_ann_intimate_lesson_02_83499f7b:
@@ -2520,7 +2520,7 @@ translate english s1_ann_intimate_lesson_03_caa452a5:
 translate english s1_ann_intimate_lesson_03_274e5d31:
 
     # Ann_12 "Ты молодец, Макс. Просто, проникнуть пальцами в свою маму... Тебе не кажется, что это уже совсем перебор? Не говоря уже о том, до какой степени матери с сыном неправильно заниматься {b}ТАКИМ{/b}..."
-    Ann_12 "You're doing great, Max. Just, getting your fingers inside your mom... Don't you think that's a little over the top? Not to mention the extent to which it's wrong for a mother and her son to do {b}THAT{b}..."
+    Ann_12 "You're doing great, Max. Just, getting your fingers inside your mom... Don't you think that's a little over the top? Not to mention the extent to which it's wrong for a mother and her son to do {b}THAT{/b}..."
 
 # game/scripts_s1/s1_v91.rpy:1104
 translate english s1_ann_intimate_lesson_03_dd7ed56f:

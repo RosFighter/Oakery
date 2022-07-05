@@ -2001,8 +2001,8 @@ translate english lisa_sudden_dressing_lvl_1_b2616dcb_1:
 # game/events/lisa.rpy:1540
 translate english lisa_sudden_dressing_lvl_1_4d33062b:
 
-    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!"
-    Lisa_13 "How long are you going to keep staring at me? Wait outside, Please!"
+    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
+    Lisa_13 "How long are you going to keep staring at me? Wait outside, Please!" nointeract
 
 # game/events/lisa.rpy:1545
 translate english lisa_sudden_dressing_lvl_2_366df3c4:
@@ -2331,10 +2331,10 @@ translate english lisa_dressed_lvl_1_b2616dcb_1:
     Lisa_12 "What?! If you don't go, I'll tell Mom!" nointeract
 
 # game/events/lisa.rpy:940
-translate english lisa_dressed_lvl_1_4d33062b:
+translate english lisa_dressed_lvl_1_8112b755:
 
-    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!"
-    Lisa_13 "How long are you going to keep staring at me? Wait outside, Please!"
+    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
+    Lisa_13 "How long are you going to keep staring at me? Wait outside, Please!" nointeract
 
 # game/events/lisa.rpy:946
 translate english lisa_dressed_lvl_2_366df3c4:

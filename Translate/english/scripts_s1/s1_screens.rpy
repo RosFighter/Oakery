@@ -77,3 +77,16 @@ translate english strings:
     # game/scripts_s1/s1_screens.rpy:331
     old "ЧЕРЕЗ НЕСКОЛЬКО МИНУТ..."
     new "IN A FEW MINUTES..."
+
+# TODO: Translation updated at 2022-07-05 16:00
+
+translate english strings:
+
+    # game/scripts_s1/s1_screens.rpy:79
+    old "Деньги:"
+    new ""
+
+    # game/scripts_s1/s1_screens.rpy:184
+    old "{b}Пропустить дни:{/b}"
+    new ""
+

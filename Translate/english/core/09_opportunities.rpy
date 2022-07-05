@@ -2419,7 +2419,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Наконец-то мы с мамой посмотрели порнушку, да ещё и с якобы обучающими целями. \nСтранно, что когда я спросил о том, когда мы увиденное будем практиковать, она сильно удивилась. Должно быть она думала, что отделается просмотром порно с некоторыми комментариями. \nНо моя наглость не знает границ и уже через несколько минут я целовал её шею и массировал её грудь! Просто сказочные сиськи! \nНо вот когда речь зашла о том, чтобы переместиться ниже... Тут мама уже наотрез отказалась. \nБлаго, это не проблема, ведь тётя Кира всегда поможет. И мне кажется, что моя уверенность на счёт тёти Киры, теперь не даст маме покоя. Она точно решит проверить, что мы ничем таким не балуемся, как только у неё будет время."
-    new "Finally, my mother and I watched some porn, and for supposedly educational purposes, too. \Strangely enough, when I asked her when we were going to practice what we saw, she was very surprised. She must have thought she would get away with watching porn with some commentary. \But my nerve knows no bounds and within minutes I was kissing her neck and massaging her breasts! Just fabulous boobs! \But when it came to going lower... My mom refused to go any further. \Well, that's not a problem, because Aunt Kira's always there to help. And I think that my confidence in Aunt Kira is going to keep my mom on her toes. She'll make sure we don't do anything like that as soon as she has the time."
+    new "Finally, my mother and I watched some porn, and for supposedly educational purposes, too. \nStrangely enough, when I asked her when we were going to practice what we saw, she was very surprised. She must have thought she would get away with watching porn with some commentary. \nBut my nerve knows no bounds and within minutes I was kissing her neck and massaging her breasts! Just fabulous boobs! \nBut when it came to going lower... My mom refused to go any further. \nWell, that's not a problem, because Aunt Kira's always there to help. And I think that my confidence in Aunt Kira is going to keep my mom on her toes. She'll make sure we don't do anything like that as soon as she has the time."
 
     # game/core/09_opportunities.rpy:4
     old "По воскресеньям мама ночует дома и к тому же одна. Отличные условия для того, чтобы она не смогла заснуть, пока не проверит, не с Кирой ли я провожу время ночью..."
@@ -2439,7 +2439,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Сказать, что мама была шокирована увиденным, ничего не сказать. Тётя Кира отлично отыграла свою роль и теперь мама уже не так категорична в отношении интимных уроков. Лишь бы меня не учила этому развратница Кира. А продолжатся наши с мамой уроки там, где и началась моя инициатива... В ванной комнате! \nВот только желательно обезвредить Эрика, чтобы он не застукал нас там. Слабительное точно отпадает."
-    new "To say that my mother was shocked by what she saw was nothing to say. Aunt Kira had played her part perfectly, and now my mother was no longer so adamant about intimate lessons. I wish I hadn't been taught that by the lecherous Kira. And my mother and I will continue our lessons where my initiative began... In the bathroom! \But we have to get Eric out of there so he doesn't catch us. Laxatives are definitely out."
+    new "To say that my mother was shocked by what she saw was nothing to say. Aunt Kira had played her part perfectly, and now my mother was no longer so adamant about intimate lessons. I wish I hadn't been taught that by the lecherous Kira. And my mother and I will continue our lessons where my initiative began... In the bathroom! \nBut we have to get Eric out of there so he doesn't catch us. Laxatives are definitely out."
 
     # game/core/09_opportunities.rpy:4
     old "Интимные уроки с совершенно голой мамой в ванне... Ухх... О таком я даже и мечтать не мог. Хотя, что я говорю, об этом я как раз и мечтал! Понятно, что учить меня такому ей не просто, но когда я ласкал её грудь руками и языком - удовольствие она получала однозначно. А значит, ей будет сложно устоять и не пойти дальше... Но смущение от того, что это делает её сын, пусть и в образовательных целях, может перекрыть это удовольствие."
@@ -2447,11 +2447,11 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот мои пальцы и добрались до маминой киски! Она дала мне столько советов... Видимо, компенсирует это тем, чего не получает от Эрика. С такой женщиной, как моя мама нужно выкладываться на все 100%, она того стоит. А Эрику лишь бы себя любимого порадовать. Ох, зря ты так, Эрик... \nПравда, теперь у меня есть сомнения, что эти уроки продолжатся. Мама удивлена, что ей понравилась моя работа руками, а я в открытую пошёл и подрочил на неё в душе. Но, может обойдётся..."
-    new "So my fingers got to my mom's pussy! She's given me so much advice... Apparently, she makes up for it with what she doesn't get from Eric. With a woman like my mom, you have to give it 100%, she's worth it. Eric just wants to please himself. Oh, you shouldn't do that, Eric. {\Well, now I have my doubts that these lessons will continue. My mom is surprised that she liked my handiwork and I openly went and jerked her off in the shower. But maybe she'll get over it."
+    new "So my fingers got to my mom's pussy! She's given me so much advice... Apparently, she makes up for it with what she doesn't get from Eric. With a woman like my mom, you have to give it 100%, she's worth it. Eric just wants to please himself. Oh, you shouldn't do that, Eric. \nWell, now I have my doubts that these lessons will continue. My mom is surprised that she liked my handiwork and I openly went and jerked her off in the shower. But maybe she'll get over it."
 
     # game/core/09_opportunities.rpy:4
     old "Ох, как же всё пошло не по плану... Нет, в целом, всё было круто, но я явно перешёл черту, когда довёл маму до оргазма своим языком. Мы должны были закрепить пройденный материал, а я не сдержался и показал ей то, на что способен. Это я, конечно, зря... К тому же ещё и сам не сдержался и кончил прямо на неё... \nМама довольно чётко дала понять, что нашим интимным урокам пришёл конец. Что же теперь делать?"
-    new "Oh, that didn't go according to plan... No, it was cool on the whole, but I was clearly out of line when I gave my mother an orgasm with my tongue. We were supposed to reinforce what we had learned, and I didn't hold back and show her what I could do. That, of course, was a mistake... I couldn't help but cum right on top of her... \Mom made it pretty clear that our intimate lessons were over. What to do now?"
+    new "Oh, that didn't go according to plan... No, it was cool on the whole, but I was clearly out of line when I gave my mother an orgasm with my tongue. We were supposed to reinforce what we had learned, and I didn't hold back and show her what I could do. That, of course, was a mistake... I couldn't help but cum right on top of her... \nMom made it pretty clear that our intimate lessons were over. What to do now?"
 
     # game/core/09_opportunities.rpy:4
     old "После всех этих интимных маминых уроков в ванне, она уже гораздо спокойней воспринимает моё возбуждение во время занятий йогой. Может, в дальнейшем, это и вовсе перестанет её напрягать, а я смогу сделать эту йогу ещё интереснее?"
@@ -2460,3 +2460,16 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "После всех этих ночных маминых фантазий, она уже гораздо спокойней воспринимает моё возбуждение во время занятий йогой. Может, в дальнейшем, это и вовсе перестанет её напрягать, а я смогу сделать эту йогу ещё интереснее?"
     new "After all these nighttime fantasies of my mother, she already takes my arousal during yoga much more calmly. Maybe, in the future, it will not bother her at all, and I can make this yoga even more interesting?"
+
+# TODO: Translation updated at 2022-07-05 16:00
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Осталось проверить, изменилась ли реакция мамы на мой стояк. Лучше быть без майки..."
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь с Алисой можно вести себя посмелее..."
+    new ""
+
