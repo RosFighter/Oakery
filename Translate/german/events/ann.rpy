@@ -2102,7 +2102,7 @@ translate german strings:
 
     # game/events/ann.rpy:385
     old "Да легко! А повернуться можешь, пока я ухожу?"
-    new "Alles klar! Kannst du dich umdrehen, während ich mich umziehe?"
+    new "Kein Problem! Kannst du dich umdrehen, bevor ich gehe?"
 
 # TODO: Translation updated at 2022-06-30 16:40
 
