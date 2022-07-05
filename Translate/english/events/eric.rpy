@@ -3590,5 +3590,4 @@ translate english strings:
 translate english eric_ann_shower_not_luck_43bfc377:
 
     # Ann_14 "[spotted!t]Макс! Если ты думаешь, что теперь можешь смотреть за нами в любое время, то ты ошибаешься! Если быстро не уйдёшь, то я тебя накажу!"
-    Ann_14 ""
-
+    Ann_14 "[spotted!t]Max! If you think you can watch us at any time now, you're wrong! If you don't leave quickly, I'll punish you!"

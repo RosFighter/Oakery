@@ -2110,29 +2110,28 @@ translate english strings:
 translate english ann_shower_not_luck_7fca7b55:
 
     # Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
-    Ann_14 "" nointeract
+    Ann_14 "[spotted!t]Son, I can actually see everything! I know you're curious, but I'm a little... embarrassing. Don't bother your mother." nointeract
 
 # game/events/ann.rpy:411
 translate english ann_dressed_moment0_04c8c654:
 
     # Ann_13 "Ой, Макс! Где именно?!"
-    Ann_13 ""
+    Ann_13 "Oh, Max! Where exactly?!"
 
 # game/events/ann.rpy:412
 translate english ann_dressed_moment0_90f23736:
 
     # Max_02 "А нет, это были твои прекрасные сосочки!"
-    Max_02 ""
+    Max_02 "And no, it was your beautiful nipples!"
 
 # game/events/ann.rpy:414
 translate english ann_dressed_moment0_8e8d5338:
 
     # Ann_05 "Ну и шуточки у тебя, Макс! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-    Ann_05 "" nointeract
+    Ann_05 "What a joke you are, Max! Stop this nonsense and let your mother change in peace." nointeract
 
 translate english strings:
 
     # game/events/ann.rpy:397
     old "Подожди! Мне кажется или у тебя под халатом что-то шевелится..."
-    new ""
-
+    new "Wait! Is it me or is there something moving under your robe..."
