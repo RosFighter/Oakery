@@ -694,7 +694,7 @@ translate german eric_ann_sleep_6d97eb0c:
 translate german eric_ann_sleep_adf5bbdf:
 
     # Max_09 "{m}О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!{/m}" nointeract
-    Max_09 "{m}О! Mom schläft allein... Wie schön sie ist, besonders nackt... Wo ist Eric? Er ist doch in Alice's Zimmer?!{/m}" nointeract
+    Max_09 "{m}O! Mom schläft allein... Wie schön sie ist, besonders nackt... Wo ist Eric? Er ist doch in Alice's Zimmer?!{/m}" nointeract
 
 # game/events/eric.rpy:728
 translate german eric_ann_sleep_980b6a59:

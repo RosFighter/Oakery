@@ -1802,7 +1802,7 @@ translate german ann_dressed_balkon_talk1_ac19285d:
 translate german ann_bath_about_intime_0_cddc6bee:
 
     # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!" nointeract
-    Ann "{b}Аnn:{/b} Wer ist da? Ich nehme ein Bad!" nointeract
+    Ann "{b}Ann:{/b} Wer ist da? Ich nehme ein Bad!" nointeract
 
 # game/events/ann.rpy:961
 translate german ann_bath_about_intime_0_006aa2f9:
@@ -1814,7 +1814,7 @@ translate german ann_bath_about_intime_0_006aa2f9:
 translate german ann_bath_about_intime_0_765e20f4:
 
     # Ann "{b}Анна:{/b} Зачем, дорогой? Тебе что-то нужно?"
-    Ann "{b}Аnn:{/b} Warum, mein Schatz? Brauchst du etwas?"
+    Ann "{b}Ann:{/b} Warum, mein Schatz? Brauchst du etwas?"
 
 # game/events/ann.rpy:963
 translate german ann_bath_about_intime_0_cc4bed10:
@@ -1826,7 +1826,7 @@ translate german ann_bath_about_intime_0_cc4bed10:
 translate german ann_bath_about_intime_0_62195f79:
 
     # Ann "{b}Анна{/b}: Если это может подождать, то я через полчасика освобожусь..." nointeract
-    Ann "{b}Аnn:{/b} Kann das nicht warten? Ich bin in einer halben Stunde draußen..." nointeract
+    Ann "{b}Ann:{/b} Kann das nicht warten? Ich bin in einer halben Stunde draußen..." nointeract
 
 # game/events/ann.rpy:974
 translate german ann_bath_about_intime_0_53cc7aca:
