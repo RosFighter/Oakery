@@ -382,7 +382,7 @@ translate english s1_kira_talk_about_ann_drink_db21659c:
 translate english s1_kira_talk_about_ann_drink_8a8e4391:
 
     # Kira_14 "На самом деле Аню пьяной я видела не так уж много раз. По молодости было дело, уже после того нашего с ней детского... происшествия..."
-    Kira_14 "In fact, I hadn't seen Anya drunk that many times. When I was young, it was after our childhood... incident..."
+    Kira_14 "In fact, I haven't seen Ann drunk that many times since we were young, it was after our childhood... incident..."
 
 # game/scripts_s1/s1_v91.rpy:148
 translate english s1_kira_talk_about_ann_drink_6d17d919:

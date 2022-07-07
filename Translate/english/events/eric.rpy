@@ -3482,7 +3482,7 @@ translate english eric_ann_fuck_glasses_sleeping_3eda019d:
 translate english eric_ann_fuck_glasses_sleeping_ffe21f0c:
 
     # Eric_03 "Сейчас, Аня, мы с тобой зажжём на полную катушку! Ты готова?"
-    Eric_03 "Now, Anya, you and I are going to rock! Are you ready?"
+    Eric_03 "Now, Ann, you and I are going to rock! Are you ready?"
 
 # game/events/eric.rpy:693
 translate english eric_ann_fuck_glasses_sleeping_44d37b69:
@@ -3530,7 +3530,7 @@ translate english eric_ann_fuck_glasses_sleeping_bc1ff92c:
 translate english eric_ann_fuck_glasses_sleeping_40765c82:
 
     # Eric_05 "Можешь поверить мне на слово, Ань, долго жарить такую сочную и прекрасную женщину, как ты, никто не сможет!"
-    Eric_05 "You can take my word for it, Anya, no one can fry such a juicy and beautiful woman like you for long!"
+    Eric_05 "You can take my word for it, Ann, no one can fry such a juicy and beautiful woman like you for long!"
 
 # game/events/eric.rpy:722
 translate english eric_ann_fuck_glasses_sleeping_a989a47e:

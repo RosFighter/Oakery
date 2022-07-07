@@ -1401,7 +1401,7 @@ translate english dictaphone_showdown_with_eric_1f1b1dd8:
 translate english dictaphone_showdown_with_eric_02d9ccd0:
 
     # Eric_09 "Так, Лиза, давай успокаивайся! Ань, я сейчас поговорю с ней наедине. Макс видимо совсем страх потерял, своей младшей сестрёнке каких-то сказок понарассказывал."
-    Eric_09 "Okay, Lisa, let's calm down! Anya, I'll talk to her alone now. Max seems to have lost all fear, telling his little sister some fairy tales."
+    Eric_09 "Okay, Lisa, let's calm down! Ann, I'll talk to her alone now. Max seems to have lost all fear, telling his little sister some fairy tales."
 
 # game/events/other.rpy:671
 translate english dictaphone_showdown_with_eric_8684e2a4:
@@ -1425,7 +1425,7 @@ translate english dictaphone_showdown_with_eric_1c22e674:
 translate english dictaphone_showdown_with_eric_3b4d9713:
 
     # Eric_13 "Ань, я не знаю, что и где это записано, но могу тебя уверить - это неправда! Уверен на все сто, что эта запись подделка."
-    Eric_13 "Anya, I don't know what or where it was recorded, but I can assure you it's not true! I'm sure for a hundred percent that this tape is a fake."
+    Eric_13 "Ann, I don't know what or where it was recorded, but I can assure you it's not true! I'm sure for a hundred percent that this tape is a fake."
 
 # game/events/other.rpy:675
 translate english dictaphone_showdown_with_eric_8dffdb7a:
@@ -1631,7 +1631,7 @@ translate english failed_dinner_851dce21:
 translate english failed_dinner_2c4314ba:
 
     # Eric_09 "Что ж, значит продолжаем отпираться... Ладно... Как ты видишь, Ань, я сделал всё, что было в моих силах, но это твой сын и тебе принимать решение."
-    Eric_09 "Well, so we keep on denying... Well... As you can see, Anya, I did everything I could, but he's your son and it's your decision to make."
+    Eric_09 "Well, so we keep on denying... Well... As you can see, Ann, I did everything I could, but he's your son and it's your decision to make."
 
 # game/events/other.rpy:817
 translate english failed_dinner_e02fe136:
