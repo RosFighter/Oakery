@@ -2529,67 +2529,67 @@ translate english ann_tv_continuation_massage_massage_535758bb:
     Max_01 "Great! I'll be waiting too, Mom. Get some rest." nointeract
 
 # game/dialogues/anntalk.rpy:608
-translate english ann_tv_continuation_massage_massage_d390c1ed:
+translate english ann_tv_continuation_massage_failed_persuasion_d390c1ed:
 
     # Ann_17 "[failed!t]Обманщик ты, Макс! Это что такое?! Как тебе не стыдно! У тебя встал на собственную маму! Что у тебя в голове творится... Почему ты не сказал, что я тут голая сижу?"
     Ann_17 "[failed!t]You're a liar, Max! What is this?! Shame on you! You've got a hard-on for your own mother! What's going on in your head... Why didn't you tell me I was sitting here naked?"
 
 # game/dialogues/anntalk.rpy:609
-translate english ann_tv_continuation_massage_massage_c7019911:
+translate english ann_tv_continuation_massage_failed_persuasion_c7019911:
 
     # Max_07 "Просто засмотрелся на тебя по ходу дела. А не сказал, потому что хотел массаж закончить. Хорошо же получилось?"
     Max_07 "I was just staring at you as I went along. I didn't tell you because I wanted to finish the massage. It was good, wasn't it?"
 
 # game/dialogues/anntalk.rpy:610
-translate english ann_tv_continuation_massage_massage_d53168cf:
+translate english ann_tv_continuation_massage_failed_persuasion_d53168cf:
 
     # Ann_12 "Получилось-то хорошо, вот только... не должно так быть..."
     Ann_12 "It's good, but... It shouldn't be like that..."
 
 # game/dialogues/anntalk.rpy:611
-translate english ann_tv_continuation_massage_massage_e1072954:
+translate english ann_tv_continuation_massage_failed_persuasion_e1072954:
 
     # Max_10 "Ну мам, ты же красивая! Вот я и это... возбудился... слегка..."
     Max_10 "Well, Mom, you're beautiful! So I'm... I got turned on... a little..."
 
 # game/dialogues/anntalk.rpy:612
-translate english ann_tv_continuation_massage_massage_1371a9dd:
+translate english ann_tv_continuation_massage_failed_persuasion_1371a9dd:
 
     # Ann_13 "Ничего себе, слегка! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
     Ann_13 "Wow, a little bit! Okay, let's pretend nothing happened. Go out, have a good time..." nointeract
 
 # game/dialogues/anntalk.rpy:615
-translate english ann_tv_continuation_massage_massage_21542021:
+translate english ann_tv_continuation_massage_failed_persuasion_21542021:
 
     # Ann_15 "Ничего себе! Ты почему сидишь и молчишь об этом, а, Макс?! Я же предупредила, что голая под ним..."
     Ann_15 "Wow! Why are you sitting there not talking about it, Max? I told you I was naked under it..."
 
 # game/dialogues/anntalk.rpy:616
-translate english ann_tv_continuation_massage_massage_c532b93a:
+translate english ann_tv_continuation_massage_failed_persuasion_c532b93a:
 
     # Max_07 "Так оно под самый конец только сползло, а я хотел массаж закончить. Хорошо же получилось?"
     Max_07 "So it just slipped off at the very end, and I wanted to finish the massage. It was good, wasn't it?"
 
 # game/dialogues/anntalk.rpy:618
-translate english ann_tv_continuation_massage_massage_f1a52f3f:
+translate english ann_tv_continuation_massage_failed_persuasion_f1a52f3f:
 
     # Ann_14 "Очень! Но в следующий раз, лучше не молчи об этом... Хорошо?"
     Ann_14 "Very much! But next time, you'd better not keep quiet about it... Okay?"
 
 # game/dialogues/anntalk.rpy:619
-translate english ann_tv_continuation_massage_massage_5a863e60:
+translate english ann_tv_continuation_massage_failed_persuasion_5a863e60:
 
     # Max_11 "Ладно, скажу."
     Max_11 "Okay, I'll tell you."
 
 # game/dialogues/anntalk.rpy:620
-translate english ann_tv_continuation_massage_massage_3c049e1b:
+translate english ann_tv_continuation_massage_failed_persuasion_3c049e1b:
 
     # Ann_07 "А за массаж огромное тебе спасибо, мне очень понравилось! Обязательно буду ждать следующего раза!"
     Ann_07 "And thank you so much for the massage, I really enjoyed it! I will definitely look forward to the next time!"
 
 # game/dialogues/anntalk.rpy:621
-translate english ann_tv_continuation_massage_massage_535758bb_1:
+translate english ann_tv_continuation_massage_failed_persuasion_535758bb:
 
     # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
     Max_01 "Great! I'll be waiting too, Mom. Get some rest." nointeract
@@ -2781,115 +2781,115 @@ translate english ann_yoga_with_maxr_adabf90d:
     Ann_04 "[succes_hide!t]Oh, thank you, son, for helping. Whew... I think we're done here. Tomorrow I'll try to do it without you, and then join me if you want. I'd be glad to."
 
 # game/dialogues/anntalk.rpy:1011
-translate english ann_yoga_with_maxr_4e133757_1:
+translate english ann_yoga_with_maxr_failure_reassurance_4e133757:
 
     # Max_01 "С радостью, мам! Обязательно..." nointeract
     Max_01 "Gladly, Mom! I will..." nointeract
 
 # game/dialogues/anntalk.rpy:1018
-translate english ann_yoga_with_maxr_5a4fa2a4:
+translate english ann_yoga_with_maxr_failure_reassurance_5a4fa2a4:
 
     # Ann_15 "Ой, спасибо, сынок, что помог. Фух... А это что такое?! Как тебе не стыдно! Это у тебя на меня такая реакция?!"
     Ann_15 "Oh, thank you, son, for helping. Whew... What's all this?! Shame on you! Is that your reaction to me?!"
 
 # game/dialogues/anntalk.rpy:1019
-translate english ann_yoga_with_maxr_28026926:
+translate english ann_yoga_with_maxr_failure_reassurance_28026926:
 
     # Max_07 "Ну... Говорил же, красиво..."
     Max_07 "Well... I told you, beautiful..."
 
 # game/dialogues/anntalk.rpy:1020
-translate english ann_yoga_with_maxr_5f7de140:
+translate english ann_yoga_with_maxr_failure_reassurance_5f7de140:
 
     # Ann_14 "Макс, красивое не должно так возбуждать! Вернее, я не должна тебя так возбуждать. Другие женщины, да, но не я, сынок."
     Ann_14 "Max, beautiful shouldn't excite you so much! Or rather, I shouldn't excite you so much. Other women, yes, but not me, son."
 
 # game/dialogues/anntalk.rpy:1021
-translate english ann_yoga_with_maxr_7301cfbe:
+translate english ann_yoga_with_maxr_failure_reassurance_7301cfbe:
 
     # Max_09 "Хоть ты и моя мама, но ты так же и очень красивая женщина! Знаешь, мне кажется, что ЭТО - самый искренний комплимент твоей фигуре."
     Max_09 "Even though you are my mother, you are also a very beautiful woman! You know, I think this is the most sincere compliment you can pay to your figure."
 
 # game/dialogues/anntalk.rpy:1022
-translate english ann_yoga_with_maxr_35170ac6:
+translate english ann_yoga_with_maxr_failure_reassurance_35170ac6:
 
     # Ann_16 "Да уж, комплимент... Значит так, Макс! Ближайшие три дня можешь ко мне не подходить во время йоги. А в дальнейшем, можешь помогать через день. Всё понятно?"
     Ann_16 "Yeah, that's a compliment... All right, Max! For the next three days you can stay away from me during yoga. And after that, you can help me every other day. Is that clear?"
 
 # game/dialogues/anntalk.rpy:1025
-translate english ann_yoga_with_maxr_17c6fe68:
+translate english ann_yoga_with_maxr_failure_reassurance_17c6fe68:
 
     # Ann_14 "Ой, спасибо, сынок, что помог. Фух... Да что же это такое! Ты опять перевозбудился..."
     Ann_14 "Oh, thank you, son, for helping. Phew... What's the matter with you? You're overexcited again..."
 
 # game/dialogues/anntalk.rpy:1026
-translate english ann_yoga_with_maxr_4b3b94d8:
+translate english ann_yoga_with_maxr_failure_reassurance_4b3b94d8:
 
     # Max_07 "Ага, виновен..."
     Max_07 "Yeah, guilty..."
 
 # game/dialogues/anntalk.rpy:1027
-translate english ann_yoga_with_maxr_7c53d0c1:
+translate english ann_yoga_with_maxr_failure_reassurance_7c53d0c1:
 
     # Ann_16 "И вот что прикажешь с тобой делать?"
     Ann_16 "Is this what I'm supposed to do with you?"
 
 # game/dialogues/anntalk.rpy:1028
-translate english ann_yoga_with_maxr_88deb7c3:
+translate english ann_yoga_with_maxr_failure_reassurance_88deb7c3:
 
     # Max_09 "Понять и простить. Я же мужчина всё-таки..."
     Max_09 "I'm a man, after all. I'm a man, after all..."
 
 # game/dialogues/anntalk.rpy:1029
-translate english ann_yoga_with_maxr_41ff6034:
+translate english ann_yoga_with_maxr_failure_reassurance_41ff6034:
 
     # Ann_17 "Ох, Макс, горе ты моё... Значит так, в ближайшие три дня можешь ко мне не подходить во время йоги, а дальше смотри сам, можешь присоединяться, но чтобы такое не повторялось. Всё понятно?"
     Ann_17 "Oh, Max, woe is me... So, for the next three days you can stay away from me during yoga, and then you can join in, but don't let it happen again. Is that clear?"
 
 # game/dialogues/anntalk.rpy:1030
-translate english ann_yoga_with_maxr_7ac1ee79:
+translate english ann_yoga_with_maxr_failure_reassurance_7ac1ee79:
 
     # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
     Max_10 "Whatever you say, Mom. Until next time..." nointeract
 
 # game/dialogues/anntalk.rpy:1033
-translate english ann_yoga_with_maxr_f2c16400:
+translate english ann_yoga_with_maxr_failure_reassurance_f2c16400:
 
     # Max_02 "Под моим присмотром у тебя всегда будет великолепная фигура!"
     Max_02 "Under my supervision, you will always have a great figure!"
 
 # game/dialogues/anntalk.rpy:1037
-translate english ann_yoga_with_maxr_f0d0acff:
+translate english ann_yoga_with_maxr_failure_reassurance_f0d0acff:
 
     # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Буду только рада, если решишь снова присоединиться ко мне."
     Ann_04 "Oh, thank you, son, for helping. Whew... I think we're done here. I'd be delighted if you decide to join me again."
 
 # game/dialogues/anntalk.rpy:1038
-translate english ann_yoga_with_maxr_ff21d29a_1:
+translate english ann_yoga_with_maxr_failure_reassurance_ff21d29a:
 
     # Max_01 "С радостью, мам! Обязательно..."
     Max_01 "Gladly, Mom! I will..."
 
 # game/dialogues/anntalk.rpy:1039
-translate english ann_yoga_with_maxr_dc624a8a_1:
+translate english ann_yoga_with_maxr_failure_reassurance_dc624a8a:
 
     # Ann_02 "Но, давай хотя бы через день. Чтобы я могла без твоей помощи попробовать сделать то же самое."
     Ann_02 "But, let's at least do it every other day. So I can try to do the same thing without your help."
 
 # game/dialogues/anntalk.rpy:1040
-translate english ann_yoga_with_maxr_136c43d9_1:
+translate english ann_yoga_with_maxr_failure_reassurance_136c43d9:
 
     # Max_04 "Хорошо, как скажешь. До следующего раза, мам." nointeract
     Max_04 "Okay, whatever you say. See you next time, Mom." nointeract
 
 # game/dialogues/anntalk.rpy:1043
-translate english ann_yoga_with_maxr_c9b86927:
+translate english ann_yoga_with_maxr_failure_reassurance_c9b86927:
 
     # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Завтра я сама попробую это повторить без тебя, а дальше присоединяйся, если захочешь. Я буду только рада."
     Ann_04 "Oh, thank you, son, for helping. Whew... I think we're done here. Tomorrow I'll try to do it without you, and then join me if you want. I'd be glad to."
 
 # game/dialogues/anntalk.rpy:1044
-translate english ann_yoga_with_maxr_4e133757_2:
+translate english ann_yoga_with_maxr_4e133757_1:
 
     # Max_01 "С радостью, мам! Обязательно..." nointeract
     Max_01 "Gladly, Mom! I will..." nointeract
@@ -2903,49 +2903,49 @@ translate english strings:
 # TODO: Translation updated at 2022-06-09 13:13
 
 # game/dialogues/anntalk.rpy:656
-translate english ann_tv_continuation_massage_massage_221bc697:
+translate english ann_tv_continuation_massage_failed_persuasion_221bc697:
 
     # Ann_14 "[failed!t]Да что ты говоришь, Макс! Почему же ты тогда возбуждён так сильно?! Ни стыда, ни совести у тебя нет!"
     Ann_14 "[failed!t]What are you saying, Max! Why are you so horny then?! You have no shame and no conscience!"
 
 # game/dialogues/anntalk.rpy:657
-translate english ann_tv_continuation_massage_massage_9cb21df5:
+translate english ann_tv_continuation_massage_failed_persuasion_9cb21df5:
 
     # Max_07 "Ну, да... Сползло немного твоё полотенце, но не критично. Мне это не мешает. Тебе же понравился массаж?"
     Max_07 "Well, yeah... Your towel slipped a little bit, but it's not critical. It doesn't bother me. You liked the massage, didn't you?"
 
 # game/dialogues/anntalk.rpy:658
-translate english ann_tv_continuation_massage_massage_8695f276:
+translate english ann_tv_continuation_massage_failed_persuasion_8695f276:
 
     # Ann_13 "Понравился, но вот то, что у меня за спиной происходит помимо массажа... Это вот мне совсем не нравится."
     Ann_13 "I liked it, but what happens behind my back besides the massage... I don't like that at all."
 
 # game/dialogues/anntalk.rpy:659
-translate english ann_tv_continuation_massage_massage_403df953:
+translate english ann_tv_continuation_massage_failed_persuasion_403df953:
 
     # Max_03 "Ну мам, ты же красивая! Уж извини, но воспринимай, как комплимент."
     Max_03 "Well, Mom, you're beautiful! I'm sorry, but take it as a compliment."
 
 # game/dialogues/anntalk.rpy:660
-translate english ann_tv_continuation_massage_massage_157b0aa7:
+translate english ann_tv_continuation_massage_failed_persuasion_157b0aa7:
 
     # Ann_12 "Да уж, большой комплимент! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
     Ann_12 "Yeah, that's a big compliment! Okay, let's pretend nothing happened. Go out, have a good time..." nointeract
 
 # game/dialogues/anntalk.rpy:1136
-translate english ann_yoga_with_maxr_7ac1ee79_1:
+translate english ann_yoga_with_maxr_failure_reassurance_7ac1ee79_1:
 
     # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
     Max_10 "Whatever you say, Mom. Until next time..." nointeract
 
 # game/dialogues/anntalk.rpy:1139
-translate english ann_yoga_with_maxr_6d31e3c0:
+translate english ann_yoga_with_maxr_failure_reassurance_6d31e3c0:
 
     # Ann_12 "Ох, пора бы тебе уже девушку себе найти и с ней время проводить. Я, конечно, не против твоей помощи, но я всё-таки твоя мама, а потому никак не смогу помочь тебе... ну, снять напряжение."
     Ann_12 "Oh, it's about time you got a girlfriend and spent some time with her. I don't mind your help, but I'm still your mother, so there's no way I can help you... you know, take the edge off."
 
 # game/dialogues/anntalk.rpy:1140
-translate english ann_yoga_with_maxr_74c82a5d:
+translate english ann_yoga_with_maxr_failure_reassurance_74c82a5d:
 
     # Max_07 "Может и найду. А пока, до следующего раза..." nointeract
     Max_07 "Maybe I will. In the meantime, until next time..." nointeract
@@ -2955,3 +2955,15 @@ translate english strings:
     # game/dialogues/anntalk.rpy:178
     old "Проведём сегодня вечер с \"образовательной\" пользой?"
     new "Shall we do something educational tonight?"
+
+# TODO: Translation updated at 2022-07-07 23:27
+
+translate english strings:
+
+    # game/dialogues/anntalk.rpy:678
+    old "Нет. Видно не так уж и много..."
+    new ""
+
+    # game/dialogues/anntalk.rpy:1154
+    old "не париться"
+    new ""
