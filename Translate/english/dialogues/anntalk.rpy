@@ -2962,8 +2962,8 @@ translate english strings:
 
     # game/dialogues/anntalk.rpy:678
     old "Нет. Видно не так уж и много..."
-    new ""
+    new "No. Not so much, apparently."
 
     # game/dialogues/anntalk.rpy:1154
     old "не париться"
-    new ""
+    new "Take it easy"
