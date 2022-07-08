@@ -136,7 +136,7 @@ translate german first_new_punishment_9285451a:
 translate german first_naked_punishment_3f2e2a3f:
 
     # Ann_12 "А так как месяц прошёл, а вы всё так же не взялись за ум, то с этого момента наказывать я вас буду полностью голых! Как и обещала..."
-    Ann_12 "Und da ein Monat vergangen ist und du immer noch nicht zur Vernunft gekommen bist, werde ich dich von nun an komplett nackt bestrafen! Wie angekündigt..."
+    Ann_12 "Und da ein Monat vergangen ist und iht immer noch nicht zur Vernunft gekommen seid, werde ich euch von nun an komplett nackt bestrafen! Wie angekündigt..."
 
 # game/dialogues/punishment.rpy:166
 translate german first_naked_punishment_c1e4e97a:
@@ -154,7 +154,7 @@ translate german first_naked_punishment_4a37ae29:
 translate german first_naked_punishment_2c928228:
 
     # Ann_19 "Тихо! У вас был шанс этого избежать. Если вам не стыдно за свою безалаберность, то, надеюсь, станет стыдно получать по голому заду на глазах у всех!"
-    Ann_19 "Es reicht! Du hattest deine Chance, das zu vermeiden. Wenn dein Verhalten nicht ausreicht, um dich zu beschämen, dann muss ich zu diesem Mittel greifen!"
+    Ann_19 "Es reicht! Ihr hattet genügend Gelegenheiten, das zu vermeiden. Wenn ihr euch nicht für eure Leichtsinnigkeit schämt, dann hoffentlich dafür, dass ihr vor allen Leuten den nackten Arsch versohlt bekommt!"
 
 # game/dialogues/punishment.rpy:187
 translate german punishment_max_9f9d4b10:

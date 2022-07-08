@@ -2962,9 +2962,9 @@ translate german strings:
 
     # game/dialogues/anntalk.rpy:678
     old "Нет. Видно не так уж и много..."
-    new ""
+    new "Nein. Hier gibt es nicht viel zu sehen..."
 
     # game/dialogues/anntalk.rpy:1154
     old "не париться"
-    new ""
+    new "sich zurückhalten"
 
