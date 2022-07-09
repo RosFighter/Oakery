@@ -330,7 +330,10 @@ label lisa_dressed:
                     $ renpy.block_rollback()
                     $ alt_wait()
                     scene location house myroom door-morning
-                    call screen room_navigation
+                    # call screen room_navigation
+                    call start_room_navigation from _call_start_room_navigation_1
+                    jump AfterWaiting
+
         "{i}уйти{/i}":
             jump .end
 
@@ -523,7 +526,7 @@ label lisa_dressed:
             "А если я хочу на это посмотреть?" if var['fin']:   # Лиза с верхом и в трусиках
                 Lisa_12 "Макс! Я ведь маме на тебя нажалуюсь, если не уйдёшь!" nointeract
             "Извини, я не знал... Красиво смотришься!":
-                Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!"
+                Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
         call .wait_or_leave from _call_lisa_dressed_wait_or_leave
 
     label .lvl_2:
@@ -639,6 +642,7 @@ label lisa_dressed:
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
         $ lisa.prev_plan = lisa.plan_name
+        $ persone_button1 = ''
         $ renpy.block_rollback()
         scene BG black with diss3
         jump AfterWaiting
@@ -654,6 +658,7 @@ label lisa_dressed:
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
         $ lisa.prev_plan = lisa.plan_name
+        $ persone_button1 = ''
 
         $ renpy.block_rollback()
         scene BG black with diss3
@@ -683,9 +688,12 @@ label lisa_dressed:
         $ ClothingNps('lisa', lisa.plan_name)
         $ AddRelMood('lisa', 0, mood)
         $ lisa.prev_plan = lisa.plan_name
+        $ persone_button1 = ''
 
         $ renpy.block_rollback()
-        call screen room_navigation
+        # call screen room_navigation
+        call start_room_navigation from _call_start_room_navigation_2
+        jump AfterWaiting
 
     label .get_laptop:
         window hide
@@ -694,10 +702,12 @@ label lisa_dressed:
         $ current_room = house[5]
         $ cam_flag.append('notebook_on_terrace')
         $ lisa.prev_plan = lisa.plan_name
+        $ persone_button1 = ''
         jump Laptop
 
     label .end:
         $ lisa.prev_plan = lisa.plan_name
+        $ persone_button1 = ''
         $ AddRelMood('lisa', 0, mood)
         jump Waiting
 

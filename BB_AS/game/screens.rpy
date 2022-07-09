@@ -440,7 +440,7 @@ style navigation_button_text is gui_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 screen main_menu():
 
-    $ recent_save = renpy.newest_slot()#("[^_]")
+    $ recent_save = renpy.newest_slot()#"[^_]")
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
     ## заменять этот.
     tag menu
@@ -571,8 +571,11 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     add "interface phon"
     label _("МЕНЮ")
 
-    if not renpy.variant('small'):
-        imagebutton pos (1740, 100) auto "interface close %s" action Return() focus_mask True at close_zoom
+    imagebutton pos (1740, 100) auto 'interface close %s':
+        action Return()
+        if not renpy.variant('small'):
+            focus_mask True
+        at close_zoom
 
     frame:
         style "game_menu_outer_frame"
@@ -1022,6 +1025,8 @@ screen preferences():
                             textbutton "Español" action Language("spanish")
                         if 'slovak' in current_language_list:
                             textbutton "Slovenský" action Language("slovak")
+                        if 'persian' in current_language_list:
+                            textbutton "فارسی" action Language("persian")
 
                 vbox:
                     spacing 20
@@ -1032,6 +1037,8 @@ screen preferences():
                         textbutton _("Прозрачное текстовое окно") action ToggleVariable("persistent.transparent_textbox")
                         textbutton _("Отображать все \"Возможности\"") action ToggleVariable("persistent.all_opportunities")
                         textbutton _("Переодевания Лизы пропускаются, если Макс в комнате") action ToggleVariable("persistent.skip_lisa_dressed")
+                        # if not persistent.use_cheats:
+                        textbutton _("Активировать чит-меню") action ToggleVariable("persistent.use_cheats")
 
                 ## Дополнительные vbox'ы типа "radio_pref" или "check_pref"
                 ## могут быть добавлены сюда для добавления новых настроек.

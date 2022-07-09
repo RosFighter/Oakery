@@ -2001,8 +2001,8 @@ translate german lisa_sudden_dressing_lvl_1_b2616dcb_1:
 # game/events/lisa.rpy:1540
 translate german lisa_sudden_dressing_lvl_1_4d33062b:
 
-    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!"
-    Lisa_13 "Wie lange willst du mich noch anstarren?! Geh raus und warte vor der Tür. Bitte!"
+    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
+    Lisa_13 "Wie lange willst du mich noch anstarren?! Geh raus und warte vor der Tür. Bitte!" nointeract
 
 # game/events/lisa.rpy:1545
 translate german lisa_sudden_dressing_lvl_2_366df3c4:
@@ -2331,10 +2331,10 @@ translate german lisa_dressed_lvl_1_b2616dcb_1:
     Lisa_12 "Was?! Wenn du nicht gehst, sage ich es Mom!" nointeract
 
 # game/events/lisa.rpy:940
-translate german lisa_dressed_lvl_1_4d33062b:
+translate german lisa_dressed_lvl_1_8112b755:
 
-    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!"
-    Lisa_13 "Wie lange willst du mich noch anstarren?! Geh raus und warte vor der Tür. Bitte!"
+    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
+    Lisa_13 "Wie lange willst du mich noch anstarren?! Geh raus und warte vor der Tür. Bitte!" nointeract
 
 # game/events/lisa.rpy:946
 translate german lisa_dressed_lvl_2_366df3c4:
@@ -2813,4 +2813,3 @@ translate german lisa_dressed_stay_in_room_db51f185:
 
     # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
     Max_09 "{m}Ich habe zu oft versucht, Lisa anzuschauen, wie sie sich umzieht. Es lohnt sich nicht mehr, es heute zu versuchen.{/m}"
-

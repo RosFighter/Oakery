@@ -446,3 +446,11 @@ translate german strings:
     old "Именованные сохранения"
     new "Speichern mit Namen"
 
+# TODO: Translation updated at 2022-04-25 01:44
+
+translate german strings:
+
+    # game/screens.rpy:1036
+    old "Активировать чит-меню"
+    new "Aktiviere das Cheat-Menü"
+

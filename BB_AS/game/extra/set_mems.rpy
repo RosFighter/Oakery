@@ -1111,3 +1111,32 @@ init python:
                 'eric'       : te,
             }
         return my_scope
+
+    ############################    s1.91   ####################################
+
+    # n-ый интимный урок с Анной
+    def set_s1_ann_il():
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = get_max_dress()
+
+        my_scope = {
+            'tm'        : '20:00',
+            'mgg'       : mg,
+            'pose3_3'   : renpy.random.choice(['01', '02', '03']),
+            }
+        return my_scope
+
+    # Влажные фантазии
+    def set_s1_ann_drink():
+        ta = Profile('ann', "Анна", "Анны", "Анне", "Анну", "Анной", "Анне")
+        ta.dcv.drink.stage = renpy.random.randint(3, 4)
+
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress    = get_max_dress()
+        mg.sex      = renpy.random.randint(220, 260) / 10
+
+        my_scope = {
+            'ann'       : ta,
+            'mgg'       : mg,
+            }
+        return my_scope

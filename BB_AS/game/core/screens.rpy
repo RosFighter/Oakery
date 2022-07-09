@@ -56,12 +56,12 @@ screen PowerBack():
         hbox spacing 100:
             imagebutton:
                 auto 'interface laptop back %s'
-                action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')] at zoom_out(50, 50)
+                action [Hide('Withdraw'), Hide('SEO'), Hide('Search'), Hide('s1_cheat_screen'), Hide('LaptopScreen'), SetVariable('at_comp', False), Jump('Laptop')] at zoom_out(50, 50)
             imagebutton:
                 auto 'interface laptop power %s'
-                action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
-    key 'K_ESCAPE' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
-    key 'mouseup_3' action [Hide('Search'), SetVariable('at_comp', False), Jump('Laptop')]
+                action [Hide('Withdraw'), Hide('SEO'), Hide('Search'), Hide('s1_cheat_screen'), Hide('LaptopScreen'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
+    key 'K_ESCAPE' action [Hide('Withdraw'), Hide('SEO'), Hide('Search'), Hide('s1_cheat_screen'), Hide('LaptopScreen'), SetVariable('at_comp', False), Jump('Laptop')]
+    key 'mouseup_3' action [Hide('Withdraw'), Hide('SEO'), Hide('Search'), Hide('s1_cheat_screen'), Hide('LaptopScreen'), SetVariable('at_comp', False), Jump('Laptop')]
     if not _in_replay:
         # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
@@ -94,7 +94,7 @@ screen PowerBack2():
         # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
 
-screen PowerBack3():
+screen PowerButton():
     frame xalign 0.5 ypos 985 xsize 200:# background None:
         if '06:00' <= tm < '22:00':
             if current_room == house[5]:
@@ -108,26 +108,11 @@ screen PowerBack3():
                 background 'interface laptop keys-bg-day'
             else:
                 background 'interface laptop keys-bg-night'
-        xmargin 0 ymargin 0 xpadding 0 ypadding 0
-        hbox spacing 100:
-            imagebutton:
-                auto 'interface laptop back %s'
-                action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')] at zoom_out(50, 50)
-            imagebutton:
-                auto 'interface laptop power %s'
-                action [Hide('Withdraw'), Hide('Bank'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
-    key 'K_ESCAPE' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
-    key 'mouseup_3' action [Hide('Withdraw'), Hide('Bank'), Jump('Laptop')]
-    if not _in_replay:
-        # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
-        key 'K_F8' action QuickLoad()
-
-screen PowerButton():
     imagebutton:
         pos (935, 985) auto 'interface laptop power %s'
-        action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
-    key 'K_ESCAPE' action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')]
-    key 'mouseup_3' action [Hide('Search'), SetVariable('at_comp', False), Jump('Waiting')]
+        action [Hide('Search'), Hide('Bank'), Hide('Withdraw'), Hide('SEO'), Hide('LaptopScreen'), SetVariable('at_comp', False), Jump('Waiting')] at zoom_out(50, 50)
+    key 'K_ESCAPE' action [Hide('Search'), Hide('Bank'), Hide('Withdraw'), Hide('SEO'), Hide('LaptopScreen'), SetVariable('at_comp', False), Jump('Waiting')]
+    key 'mouseup_3' action [Hide('Search'), Hide('Bank'), Hide('Withdraw'), Hide('SEO'), Hide('LaptopScreen'), SetVariable('at_comp', False), Jump('Waiting')]
     if not _in_replay:
         # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
@@ -149,6 +134,8 @@ screen LaptopScreen():
     if poss['cams'].st() >= 4:
         $ bookmarks += 1
     if mgg.credit.level > 0:
+        $ bookmarks += 1
+    if persistent.use_cheats:
         $ bookmarks += 1
 
     frame area(221, 93, 1475, 829) background None:
@@ -217,117 +204,77 @@ screen LaptopScreen():
                             imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop online bank' action Show('Bank') at book_marks
                             text _("{b}CYBER-БАНК{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
 
+                    if persistent.use_cheats:
+                        frame xysize(370, 295) background None:
+                            imagebutton anchor (0.5, 0.5) pos (185, 115):
+                                # if flags.back_shop < 2:
+                                #     if config.gl2:
+                                #         idle 'interface laptop online cheats' at desaturate
+                                #     else:
+                                #         idle im.MatrixColor('images/interface/laptop/online_cheats.webp', im.matrix.desaturate())
+                                #     action NullAction()
+                                # else:
+                                idle 'interface laptop online cheats'
+                                action Jump('s1_cheat_screen')
+                                at book_marks
+                            text _("{b}ЧИТ-МЕНЮ{/b}") xanchor 0.5 xpos 185 ypos 232 drop_shadow[(2, 2)] text_align 0.5:
+                                # if flags.back_shop < 2:
+                                #     color gray
+                                # else:
+                                    color '#FFFFFF'
+
+
 
             if len(search_theme) > 0:
                 frame  xpos 1055 ypos 25 background None:
                     add 'interface marker' at (mark_alt if config.gl2 else mark)
 
-screen LaptopDouble():
-    tag menu
-    modal True
-
-    use PowerButton
-    use notify_check
-
-    $ bookmarks = 2
-    if dcv.buyfood.stage in [1, 3] and dcv.buyfood.done:
-        $ bookmarks += 1
-    if poss['cams'].st() == 3 and mgg.money >= 100:
-        $ bookmarks += 1
-    if poss['cams'].st() >= 4:
-        $ bookmarks += 1
-    if mgg.credit.level > 0:
-        $ bookmarks += 1
-
-    frame area(221, 93, 1475, 829) background None:
-        vbox: # деньги
-            align(0.985, 0.015)
-            text "$[mgg.money]" xalign(1.0) font 'hermes.ttf' size 48 drop_shadow[(2, 2)]
-        viewport:
-            xfill True
-            ypos 30
-            ysize 770
-            mousewheel 'change'
-            draggable True
-            if bookmarks > 6:
-                scrollbars 'vertical'
-
-            vbox:
-                xfill True
-                spacing 30
-                if len(search_theme) > 0:
-                    imagebutton xalign .5 idle 'interface laptop search' action NullAction() focus_mask True
-                else:
-                    imagebutton xalign .5 idle 'interface laptop search' action NullAction() focus_mask True
-
-                vpgrid cols 3 xalign .5 xsize 1260:
-                    xspacing 50
-                    yspacing 40
-
-                    frame xysize(370, 295) background None:
-                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop shop' action NullAction()
-                        text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
-
-                    frame xysize(370, 295) background None:
-                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action NullAction()
-                        text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
-
-                    if dcv.buyfood.stage in [1, 3] and dcv.buyfood.done:
-                        frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action NullAction()
-                            text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
-
-                    if poss['cams'].st() == 3 and mgg.money >= 100:
-                        frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop CreateSite' action NullAction()
-                            text _("{b}ЗАНЯТЬСЯ СВОИМ САЙТОМ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
-
-                    if poss['cams'].st() >= 4:
-                        frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop bb cam' action NullAction()
-                            text _("{b}СВОЙ САЙТ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
-
-                    if mgg.credit.level > 0:
-                        frame xysize(370, 295) background None:
-                            imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop online bank' action NullAction()
-                            text _("{b}CYBER-БАНК{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)] text_align 0.5
-
-
 ################################################################################
 screen Bank():
     tag menu2
     modal True
-    use LaptopDouble
-    use PowerBack3
-    frame align(0.5, 0.42) xsize 1000:
-        xmargin 0 ymargin 0 xpadding 50 ypadding 30
-        vbox spacing 10:
-            frame xysize(900, 300) background 'interface laptop banner bank'
-            text _("ВЫГОДНЫЕ ЗАЙМЫ ИНТЕРНЕТ-ПРЕДПРИНИМАТЕЛЯМ") font 'trebucbd.ttf' color '#FFFFFF' size 28 xalign 0.5
-            if mgg.credit.debt > 0:
-                hbox xfill True:
-                    if mgg.credit.fines:
-                        $ _col = red
+    # use LaptopDouble
+    use LaptopScreen
+    button:
+        area(221, 93, 1475, 829)
+        # area(0, 0, 1920, 1080)
+        background None
+        action Hide('Bank')
+    use PowerButton
+    frame:
+        align(0.5, 0.42) xsize 1000
+        button:
+            xfill True
+            background None
+            action NullAction()
+            xmargin 0 ymargin 0 xpadding 50 ypadding 30
+            vbox spacing 10:
+                frame xysize(900, 300) background 'interface laptop banner bank'
+                text _("ВЫГОДНЫЕ ЗАЙМЫ ИНТЕРНЕТ-ПРЕДПРИНИМАТЕЛЯМ") font 'trebucbd.ttf' color '#FFFFFF' size 28 xalign 0.5
+                if mgg.credit.debt > 0:
+                    hbox xfill True:
+                        if mgg.credit.fines:
+                            $ _col = red
+                        else:
+                            $ _col = orange
+                        text _("Задолженность: {color=[_col]}$[mgg.credit.debt]{/color}")
+                        text _("[mgg.credit.left] дней на погашение") xalign 1.0
+                    if mgg.money >= mgg.credit.debt:
+                        textbutton _("ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"):
+                            action Function(mgg.credit_repay)
+                            style 'green_button'
+                    if mgg.money > 50:
+                        textbutton _("ПОГАСИТЬ ЧАСТЬ ДОЛГА"):
+                            action Jump("return_part_loan")
+                            style 'green_button'
                     else:
-                        $ _col = orange
-                    text _("Задолженность: {color=[_col]}$[mgg.credit.debt]{/color}")
-                    text _("[mgg.credit.left] дней на погашение") xalign 1.0
-                if mgg.money >= mgg.credit.debt:
-                    textbutton _("ПОГАСИТЬ ЗАДОЛЖЕННОСТЬ"):
-                        action Function(mgg.credit_repay)
-                        style 'green_button'
-                if mgg.money > 50:
-                    textbutton _("ПОГАСИТЬ ЧАСТЬ ДОЛГА"):
-                        action Jump("return_part_loan")
-                        style 'green_button'
+                        textbutton _("ПОГАСИТЬ ЧАСТЬ ДОЛГА"):
+                            action NullAction()
+                            style 'red_button'
                 else:
-                    textbutton _("ПОГАСИТЬ ЧАСТЬ ДОЛГА"):
-                        action NullAction()
-                        style 'red_button'
-            else:
-                textbutton _("ВЗЯТЬ КРЕДИТ"):
-                    action Jump('getting_load')
-                    style 'green_button'
+                    textbutton _("ВЗЯТЬ КРЕДИТ"):
+                        action Jump('getting_load')
+                        style 'green_button'
 
 style green_button:
     idle_background Frame('interface button green', 12, 12)
@@ -594,7 +541,14 @@ style buy_button2_text:
 screen Withdraw():
     tag menu2
     modal True
-    use PowerBack2
+    use MySite
+    button:
+        area(221, 93, 1475, 829)
+        # area(0, 0, 1920, 1080)
+        background None
+        action Hide('Withdraw')
+    use PowerButton
+    # use PowerBack2
     $ paid = int(mgg.account)
     frame align(0.5, 0.5) xsize 1000:
         xmargin 0 ymargin 0 xpadding 50 ypadding 30
@@ -632,8 +586,15 @@ screen Withdraw():
 screen SEO():
     tag menu2
     modal True
-    use notify_check
-    use PowerBack2
+    # use notify_check
+    use MySite
+    button:
+        area(221, 93, 1475, 829)
+        # area(0, 0, 1920, 1080)
+        background None
+        action Hide('SEO')
+    use PowerButton
+    # use PowerBack2
     frame align(0.5, 0.5) xsize 1000:
         xmargin 0 ymargin 0 xpadding 50 ypadding 30
         vbox spacing 10:
@@ -792,9 +753,9 @@ screen room_navigation():
     else:
         key 'l' action Language(None)
         key 'д' action Language(None)
-    key 'mouseup_3' action ShowMenu('save')
-    key 'K_ESCAPE' action ShowMenu('save')
-    key 'K_MENU' action ShowMenu('save')
+    key 'mouseup_3' action [Get_Language_List(), ShowMenu('save')]
+    key 'K_ESCAPE' action [Get_Language_List(), ShowMenu('save')]
+    key 'K_MENU' action [Get_Language_List(), ShowMenu('save')]
 
     $ renpy.block_rollback()
 
@@ -997,8 +958,11 @@ screen room_navigation():
         imagebutton idle 'interface menu help' focus_mask True action [Hide('wait_navigation'), Show('menu_my_help')] at small_menu
         if extra_content:   # renpy.loadable('extra/extra.webp'):
             imagebutton idle 'extra/extra.webp' focus_mask True action [Hide('wait_navigation'), Show('menu_gallery')] at small_menu
-        imagebutton idle 'interface menu main' focus_mask True action [Get_Language_List(), ShowMenu('save')] at small_menu
+        imagebutton idle 'interface menu main' focus_mask True:
+            action [Get_Language_List(), ShowMenu('save')]
+            at small_menu
         imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')] at small_menu
+        imagebutton idle 'interface menu boosty' focus_mask True action [Hide('wait_navigation'), OpenURL('https://boosty.to/bbas')] at small_menu
 
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
     frame align(.99, .99) xysize(123, 395) background None:
@@ -1017,7 +981,8 @@ screen menu_my_help():
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
         text _("ПОЛЕЗНОЕ") color gui.accent_color size 28 font 'hermes.ttf'
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+    imagebutton pos (1740, 100) auto 'interface close %s':
+        action Jump('AfterWaiting')
         if not renpy.variant('small'):
             focus_mask True
         at close_zoom
@@ -1117,7 +1082,8 @@ screen menu_opportunity():
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
         text _("ВОЗМОЖНОСТИ ([kol] / [all])") color gui.accent_color size 28 font 'hermes.ttf'
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+    imagebutton pos (1740, 100) auto 'interface close %s':
+        action Jump('AfterWaiting')
         if not renpy.variant('small'):
             focus_mask True
         at close_zoom
@@ -1280,7 +1246,8 @@ screen menu_inventory():
     frame area(150, 95, 350, 50) background None:
         text _("ВЕЩИ") color gui.accent_color size 28 font 'hermes.ttf'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+    imagebutton pos (1740, 100) auto 'interface close %s':
+        action Jump('AfterWaiting')
         if not renpy.variant('small'):
             focus_mask True
         at close_zoom
@@ -1391,7 +1358,8 @@ screen menu_userinfo():
     frame area(150, 95, 350, 50) background None:
         text _("ПЕРСОНАЖИ") color gui.accent_color size 28 font 'hermes.ttf'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+    imagebutton pos (1740, 100) auto 'interface close %s':
+        action Jump('AfterWaiting')
         if not renpy.variant('small'):
             focus_mask True
         at close_zoom
@@ -1401,12 +1369,10 @@ screen menu_userinfo():
             viewport mousewheel 'change' draggable True id 'vp':
                 vbox spacing 5:
                     button background None  action SetVariable('CurChar', 'max') xsize 180:
-                        # xpadding 0 ypadding 0 xmargin 0 ymargin 0
                         textbutton _("Макс") action SetVariable('CurChar', 'max') selected CurChar == 'max' text_selected_color gui.text_color
                         foreground 'interface marker'
                     for char in sorted(chars.keys()):
                         button background None action SetVariable('CurChar', char) xsize 180:
-                            # xpadding 0 ypadding 0 xmargin 0 ymargin 0
                             textbutton chars[char].name action SetVariable('CurChar', char) selected CurChar == char text_selected_color gui.text_color
                             foreground 'interface marker'
             vbar value YScrollValue('vp') style 'info_vscroll'
@@ -1432,7 +1398,6 @@ screen menu_userinfo():
                     else:
                         text renpy.config.say_menu_text_filter(renpy.translate_string(chars[CurChar].desc)) size 24 justify True
 
-                # frame pos (20, 20) xsize 840 background None:
                 hbox pos (20, 0) xsize 810 spacing 5:
                     viewport mousewheel 'change' draggable True id 'vp3':
                         vbox spacing 5:
@@ -1538,12 +1503,16 @@ screen menu_userinfo():
                                                 frame xsize 350 background None:
                                                     text _("Влияние Макса:") size 24 color gui.accent_color
                                                 frame xfill True background None:
-                                                    text str(infl[chars[CurChar]].balance[0])+"%" size 24
+                                                    text str(infl[chars[CurChar]].balance[0])+"%" size 24:
+                                                        if infl[chars[CurChar]].balance[2] == 'm':
+                                                            color lime
                                             hbox xfill True:
                                                 frame xsize 350 background None:
                                                     text _("Влияние Эрика:") size 24 color gui.accent_color
                                                 frame xfill True background None:
-                                                    text str(infl[chars[CurChar]].balance[1])+"%" size 24
+                                                    text str(infl[chars[CurChar]].balance[1])+"%" size 24:
+                                                        if infl[chars[CurChar]].balance[2] == 'e':
+                                                            color lime
 
                             frame xfill True background None:
                                 vbox spacing 5:
@@ -1593,7 +1562,7 @@ screen menu_userinfo():
                                                     text _("Действие алкоголя:") size 24 color gui.accent_color
                                                 if alice.flags.incident<1:
                                                     frame xfill True background None:
-                                                        text _("???") size 24
+                                                        text "???" size 24
                                         if alice.flags.incident in [2, 4]:
                                             frame xpos 20 xsize 790 background None:
                                                 vbox spacing 10:
@@ -1652,7 +1621,8 @@ screen ClothesSelect():
     frame area(150, 95, 750, 50) background None:
         text _("ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА") color gui.accent_color size 28 font 'hermes.ttf'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting'):
+    imagebutton pos (1740, 100) auto 'interface close %s':
+        action Jump('AfterWaiting')
         if not renpy.variant('small'):
             focus_mask True
         at close_zoom

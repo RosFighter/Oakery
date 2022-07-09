@@ -405,9 +405,11 @@ label night_tv_with_olivia:
 label olivia_first_night_out_with:
 
     # lounge-tv-01 + tv-watch-03-lisa&olivia-01 + tv-max-(00a/00b)
-    scene BG lounge-tv-01
-    show Olivia night-tv 03-01b
-    $ renpy.show('Max tv 00'+mgg.dress)
+    $ var_stage, var_pose = '01', '00'
+    scene tv_talk olivia
+    # scene BG lounge-tv-01
+    # show Olivia night-tv 03-01b
+    # $ renpy.show('Max tv 00'+mgg.dress)
     with fade4
     Max_05 "Ух ты! Ничего себе! Я даже забыл, что хотел спросить..."
     Olivia_03 "Так садись, Макс... Потом вспомнишь!"
@@ -418,8 +420,10 @@ label olivia_first_night_out_with:
         "{i}раздеться и сесть рядом{/i}":
             pass
     # lounge-tv-01 + tv-watch-03-lisa&olivia-02 + tv-watch-03-max-01
-    show Olivia night-tv 03-02b
-    show Max night-tv 03-01
+    $ var_stage, var_pose = '02', '04'
+    $ mgg.dress = ''
+    # show Olivia night-tv 03-02b
+    # show Max night-tv 03-01
     Olivia_04 "Ого, Макс! Это смело! И внушительно..."
     Lisa_11 "Ну ты даёшь! Тебе как вообще, не стыдно перед нами в таком виде рассиживаться?"
     Max_07 "Ты как с мальчиками-то собираешь встречаться, если даже со мной голым не можешь себя комфортно чувствовать? Привыкай..."
@@ -484,9 +488,12 @@ label olivia_first_night_out_with:
 label olivia_second_night_out_with:
 
     # lounge-tv-01 + tv-watch-03-lisa&olivia-02 + tv-watch-03-max-01
-    scene BG lounge-tv-01
-    show Olivia night-tv 03-02b
-    show Max night-tv 03-01
+    # scene BG lounge-tv-01
+    # show Olivia night-tv 03-02b
+    # show Max night-tv 03-01
+    $ var_stage, var_pose = '02', '04'
+    $ mgg.dress = ''
+    scene tv_talk olivia
     with fade4
     Lisa_11 "А вы ещё мне предлагаете раздеться! Это Макс только на тебя одну, Оливия, так реагирует... А представь, что будет, если разденусь и я? Его штука вообще, наверно, взорвётся!"
     Max_03 "Ничего не взорвётся, не переживай."
@@ -573,10 +580,11 @@ label olivia_second_night_out_with:
 
 
 label olivia_repeatable_night_out_with:
-    scene BG lounge-tv-01
-    $ renpy.show('Olivia night-tv 03-01'+lisa.dress)
-    $ renpy.show('Max tv 00'+mgg.dress)
-    with fade4
+    # scene BG lounge-tv-01
+    # $ renpy.show('Olivia night-tv 03-01'+lisa.dress)
+    # $ renpy.show('Max tv 00'+mgg.dress)
+    $ var_pose, var_stage = '00', '01'
+    scene tv_talk olivia with fade4
     if lisa_will_be_topless()>0:
         #Лиза без майки
         # lounge-tv-01 + tv-watch-03-lisa&olivia-01a + tv-max-(00a/00b)
@@ -593,8 +601,11 @@ label olivia_repeatable_night_out_with:
         Max_04 "От такой симпатичной компании, как вы, я не откажусь!"
 
     # lounge-tv-01 + tv-watch-03-lisa&olivia-(02/02a) + tv-watch-03-max-01
-    $ renpy.show('Olivia night-tv 03-02'+lisa.dress)
-    show Max night-tv 03-01
+    #   tv-watch-03-max-01  =>  tv-max-04
+    $ mgg.dress = ''
+    $ var_pose, var_stage = '04', '02'
+    # $ renpy.show('Olivia night-tv 03-02'+lisa.dress)
+    # show Max night-tv 03-01
 
     if renpy.random.randint(0, 1):
         #вариант 1
@@ -692,7 +703,6 @@ label olivia_repeatable_night_out_with:
             $ lisa.dress = 'b'
 
     Max_01 "Приятных снов."
-
 
     $ renpy.end_replay()
     if lisa.flags.showdown_e and not poss['Schoolmate'].used(10):
@@ -1003,7 +1013,9 @@ label olivia_dressed:
         $ olivia.prev_plan = olivia.plan_name
 
         $ renpy.block_rollback()
-        call screen room_navigation
+        # call screen room_navigation
+        call start_room_navigation from _call_start_room_navigation
+        jump AfterWaiting
 
     label .end:
         $ lisa.prev_plan = lisa.plan_name

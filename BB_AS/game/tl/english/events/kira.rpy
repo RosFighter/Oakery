@@ -4606,3 +4606,16 @@ translate english kira_alice_shower_start_peeping_dda24c4d:
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
     Max_01 "{m}It's a good thing this doesn't apply to Kira...{/m}" nointeract
 
+# TODO: Translation updated at 2022-06-17 00:19
+
+# game/events/kira.rpy:43
+translate english kira_bath_6147c55c:
+
+    # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
+    Max_09 "It's better to rest today. And with Aunt Kira we can talk about what happened in the morning."
+
+# game/events/kira.rpy:990
+translate english kira_night_tv_6147c55c:
+
+    # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
+    Max_09 "It's better to rest today. And with Aunt Kira we can talk about what happened in the morning."

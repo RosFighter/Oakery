@@ -798,33 +798,9 @@ label dinner_after_punishment:
     $ seat_Dinner()
     with fade4
 
-    if day == 1:
-        jump dinner_first
-    elif day == 2:
-        jump dinner_2
-    elif day == 3:
-        jump dinner_3
-    elif day == 4: # первый ужин с Эриком
-        jump dinner_4
-    elif all([day>=5, weekday==0, flags.dinner==4]):
-        jump dinner_5
-    elif all([day>=6, weekday==1, flags.breakfast==5, flags.dinner==5]):
-        jump dinner_6
-    elif all([day>=11, weekday==6, flags.breakfast==7, flags.dinner==6]):
-        jump dinner_11
-    elif all([day>=12, weekday==0, flags.dinner==11, flags.breakfast==12]):
-        jump dinner_12
-    elif all([day>=17, weekday==5, flags.breakfast==12, flags.dinner==12]):
-        jump dinner_17
-    elif all([weekday==1, lisa.dcv.battle.stage in [1, 2, 3], not flags.add_training]):
-        jump dinner_ab_lisa_ed
-    elif all([weekday==0, lisa.dcv.intrusion.done, not flags.about_earn,
-            (lisa.dcv.battle.stage in [4, 6] and lisa.dcv.intrusion.stage==1 and flags.lisa_sexed==1)
-                or (lisa.dcv.battle.stage==2 and not lisa.dcv.intrusion.stage)]):
-        jump dinner_ab_earn
-    elif all([weekday==5, items['sexbody2'].have, alice.dcv.intrusion.stage<5, alice.dcv.intrusion.enabled]):
-        jump dinner_lace_lingerie
-
+    $ rez = get_dinner()
+    if rez:
+        jump expression 'dinner_'+rez
     else:
         jump typical_dinner
 

@@ -986,23 +986,27 @@ label need_money:
     if ((items['bikini'].InShop and not (items['bikini'].have or items['bikini'].bought)) and
                 (items['dress'].InShop and not (items['dress'].have or items['dress'].bought))):
         if mgg.money >= 500:
-            jump cheat_money
-        elif 300 <= mgg.money < 500:
+            # jump cheat_money
+            $ mgg.__tange = 490
+        if 300 <= mgg.money < 500:
             Max_11 "{m}Нужно скорее купить платье Алисе и купальник для Лизы, а денег у меня хватает лишь на что-то одно...{/m}"
         else:
             Max_11 "{m}Нужно скорее купить платье Алисе и купальник для Лизы, а денег мне не хватит даже на что-то одно...{/m}"
     elif not (items['dress'].InShop and not (items['dress'].have or items['dress'].bought)):
         if mgg.money >= 220:
-            jump cheat_money
+            # jump cheat_money
+            $ mgg.__tange = 210
         else:
             Max_11 "{m}Я уже купил платье Алисе, но на купальник для Лизы мне не хватит денег...{/m}"
     elif not (items['bikini'].InShop and not (items['bikini'].have or items['bikini'].bought)):
         if mgg.money >= 280:
-            jump cheat_money
+            # jump cheat_money
+            $ mgg.__tange = 270
         else:
             Max_11 "{m}Я уже купил купальник для Лизы, но на платье Алисе мне не хватит денег...{/m}"
     else:
-        jump cheat_money
+        # jump cheat_money
+        pass
     if len(house[4].cams) > 0 and house[4].cams[0].total > 0:
         Max_08 "{m}Сайт у меня есть и уже приносит какую-то прибыль, но нужно время, чтобы раскрутить его.{/m}"
     else:
@@ -1057,6 +1061,7 @@ label about_credit:
 
 
 label getting_load:
+    # show screen LaptopScreen
     show screen Bank
     menu:
         Max_00 "{m}Сколько мне сейчас нужно занять?{/m}"
@@ -1070,10 +1075,13 @@ label getting_load:
             $ mgg.credit_getting(5000)
         "{i}не сейчас{/i}":
             pass
+    hide screen Bank
+    show screen LaptopScreen
     call screen Bank
 
 
 label return_part_loan:
+    # show screen LaptopScreen
     show screen Bank
     menu:
         Max_00 "{m}Сколько я верну сейчас?{/m}"
@@ -1091,6 +1099,8 @@ label return_part_loan:
             $ mgg.credit_part(2000)
         "{i}не сейчас{/i}":
             pass
+    hide screen Bank
+    show screen LaptopScreen
     call screen Bank
 
 

@@ -217,3 +217,10 @@ translate english cam0_ann_tv_8b464610:
 
     # Max_01 "{m}Как приятно видеть маму без Эрика. Может составить ей компанию, чтобы она не скучала?{/m}"
     Max_01 "{m}How nice to see Mom without Eric. Should I keep her company so she doesn't get bored?{/m}"
+# TODO: Translation updated at 2022-06-17 00:19
+
+# game/events/ann_cam.rpy:7
+translate english cam0_ann_sleep_e0ca90ce:
+
+    # Max_09 "Хм... Мамы нет. Где же она?"
+    Max_09 "Um... Mom's not here. Where is she?"

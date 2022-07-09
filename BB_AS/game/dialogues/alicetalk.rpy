@@ -321,9 +321,9 @@ label talkblog1:
 # === просмотр ТВ с Алисой ===
 # стартовый диалог при просмотре ТВ
 label alice_talk_tv:
-    if _in_replay:
-        call alice_tv_closer from _call_alice_tv_closer
-    else:
+    call alice_tv_closer from _call_alice_tv_closer
+
+    if not _in_replay:
         if 'alice_talk_tv' not in persistent.memories:
             $ persistent.memories['alice_talk_tv'] = 0
         if not alice.dcv.mistress.done:
@@ -333,7 +333,8 @@ label alice_talk_tv:
 
     Alice_00 "Нет, садись. Тут места много..."
     $ alice.daily.tvwatch = 1
-    $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
+    # $ renpy.show("Max tv-closer "+pose3_1+mgg.dress)
+    $ var_pose = pose3_1
     Max_00 "Хорошо. Что смотришь?"
     $ SetCamsGrow(house[4], 110)
     menu:
@@ -359,7 +360,8 @@ label alice_talk_tv_end:
 # реакция на предложение массажа и первый выбор пути (трезвый/пьяный)
 label alice_tv_massage_starter:
 
-    $ renpy.show("Max tv-closer 04"+mgg.dress)
+    # $ renpy.show("Max tv-closer 04"+mgg.dress)
+    $ var_pose = '04'
     $ alice.daily.massage = 1
 
     if alice.flags.m_foot > 6:
@@ -1403,7 +1405,7 @@ label advanced_massage1_reciprocity:
         Alice_05 "[restrain!t]А ты стойкий, Макс! Похоже, без помощи моих губ тебя не удастся удовлетворить. Ну, держись..."
 
         # lounge-tv-01 + tv-mass-bj01-max-(01a/01b) + tv-mass-bj01-alice-(01a/01b/01c)
-        scene BG lounge-tv-01
+        scene tv lounge-tv-01
         $ renpy.show('Max tv-mass bj-01' + mgg.dress)
         $ renpy.show('Alice tv-mass bj-01' + alice.dress)
 

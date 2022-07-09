@@ -1,5 +1,12 @@
 
 label cam0_ann_sleep:
+    if all([ann.flags.showdown_e > 1, flags.eric_wallet > 4, ann.flags.truehelp > 4, not ann.dcv.drink.stage, '02:00'>tm>='01:00']):
+        # состоялся за завтраком разговор об изгнании Эрика
+        # Макс набрал 5 успешных расширенных йог
+        show FG cam-shum-noact at laptop_screen
+        Max_09 "Хм... Мамы нет. Где же она?"
+        return
+
     $ renpy.show('Ann cams sleep '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     # $ renpy.show('Ann cams sleep night '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen

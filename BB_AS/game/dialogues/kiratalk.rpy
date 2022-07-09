@@ -412,11 +412,13 @@ label kira_talk6:
             menu:
                 Kira_02 "Понятно. Ну, как найдёшь, дай знать. Я почти всегда готова фотографироваться, но нужно, чтобы ещё и дома никого не было... А то нас не поймут..."
                 "Всё понял...":
-                    $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have])"
+                    # $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have])"
+                    $ kt6_first = 1
         "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, weekday!=6]):
             Kira_04 "Очень хорошо. Теперь нужно выбрать подходящий момент, когда дома никого не будет..."
             Max_01 "Точно!"
-            $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have, weekday==6])"
+            # $ talks['kt6'].req = "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have, weekday==6])"
+            $ kt6_first = 2
         "Ага, он у меня!" if all([items['photocamera'].have, items['nightie2'].have, weekday==6]):
             Kira_07 "Макс, ты просто чудо! Я всегда бодра, красива и свежа, чтобы фотографироваться. Нужно только решить где это будет..."
             Max_04 "Может быть, в гостиной?"

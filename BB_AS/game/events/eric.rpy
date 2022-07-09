@@ -754,8 +754,8 @@ label eric_ann_fuck_glasses_sleeping:
 
     if not flags.can_ask:
         $ flags.can_ask = 1     # можно попросить чулки
-        if flags.voy_stage > 11:
-            $ poss['control'].open(14)
+    if flags.voy_stage > 11:
+        $ poss['control'].open(14)
     $ eric.daily.sex = 5
     $ spent_time += 30
     stop music
@@ -1100,7 +1100,11 @@ label eric_ann_shower:
         else:
             show Eric shower-closer seen02
         show FG shower-closer
-        Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
+        if flags.voy_stage > 4:
+            # после прохождения 1-ого урока в спальне
+            Ann_14 "[spotted!t]Макс! Если ты думаешь, что теперь можешь смотреть за нами в любое время, то ты ошибаешься! Если быстро не уйдёшь, то я тебя накажу!"
+        else:
+            Ann_15 "[spotted!t]Макс?! Ты какого чёрта здесь делаешь? Подглядывал за нами?! Сегодня будешь наказан! А ну быстро убирайся!"
         $ punreason[3] = 1 # временно не разбиваем душ и спальню в качестве причины наказания
         $ current_room = house[6]
         jump Waiting

@@ -306,3 +306,27 @@ translate german strings:
     old "Ещё стесняется, но трогает..."
     new "Noch schüchtern, aber anregend..."
 
+# TODO: Translation updated at 2022-06-30 16:40
+
+translate german strings:
+
+    # game/extra/extra.rpy:60
+    old "Влажные фантазии"
+    new "Feuchte Fantasien"
+
+    # game/extra/extra.rpy:60
+    old "1-ый интимный урок с Анной"
+    new "1. intime Lektion mit Ann"
+
+    # game/extra/extra.rpy:60
+    old "2-ый интимный урок с Анной"
+    new "2. intime Lektion mit Ann"
+
+    # game/extra/extra.rpy:60
+    old "3-ый интимный урок с Анной"
+    new "3. intime Lektion mit Ann"
+
+    # game/extra/extra.rpy:60
+    old "4-ый интимный урок с Анной"
+    new "4. intime Lektion mit Ann"
+

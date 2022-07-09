@@ -445,3 +445,10 @@ translate english strings:
     # game/screens.rpy:1021
     old "Именованные сохранения"
     new "Named saves"
+# TODO: Translation updated at 2022-04-25 01:41
+
+translate english strings:
+
+    # game/screens.rpy:1036
+    old "Активировать чит-меню"
+    new "Activate the cheat menu"

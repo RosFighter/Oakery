@@ -45,4 +45,3 @@ translate english strings:
     # game/core/imagemaps.rpy:107
     old "{i}искать на кровати{/i}"
     new "{i}Look on the bed{/i}"
-

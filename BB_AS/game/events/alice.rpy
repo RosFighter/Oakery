@@ -1011,9 +1011,11 @@ label alice_tv:
 
 
 label alice_tv_closer:
-    scene BG lounge-tv-01
-    $ renpy.show('Alice tv-closer '+pose3_2+alice.dress)
-    $ renpy.show('Max tv 00'+mgg.dress)
+    # scene BG lounge-tv-01
+    # $ renpy.show('Alice tv-closer '+pose3_2+alice.dress)
+    # $ renpy.show('Max tv 00'+mgg.dress)
+    $ var_pose = '00'
+    scene tv_talk alice
     return
 
 

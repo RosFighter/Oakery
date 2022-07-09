@@ -33,7 +33,7 @@ init python:
 
     # Проверяет необходимоть смены текущей одежды
     def ChoiceClothes():
-        global cur_shed
+        global ann_eric_scene
         mgg.dress = mgg.clothes.casual.GetCur().suf
 
         if all([GetWeekday(day)==6, day>=11, flags.dinner==6]):
@@ -850,27 +850,41 @@ init python:
 
         if vr == 0:
             # нулевой момент
+            lst = []
             if ann.prev_plan in ['shower', 'shower2']:      # после душа
-                pose = renpy.random.choice(['07b2', '07b']) if lvl > 1 else '07b'
-                ann.dress_inf = '04'                        # халат / чуть распахнутый халат
+                lst.append('07b')       # халат
+                if lvl > 1:
+                    lst.append('07b2')  # чуть распахнутый халат
+                if lvl > 2:
+                    lst.append('07b1')  # чуть распахнутый халат без трусиков
             elif ann.prev_plan == 'yoga':                   # после йоги
-                pose = '07h' if ann.clothes.sports.GetCur().suf == 'a' else '07i'       # спортивка
-                ann.dress_inf = ann.clothes.sports.GetCur().info
+                lst.append('07h' if ann.clothes.sports.GetCur().suf == 'a' else '07i')          # спортивка
+                if lvl > 3 and prev_room != house[2]:
+                    lst.append('07h1' if ann.clothes.sports.GetCur().suf == 'a' else '07i1')    # низ спортивки
             elif ann.prev_plan == 'breakfast':
-                pose = '07'+{'a':'h', 'b':'f', 'c':'i', 'd':'e'}[ann.clothes.cook_morn.GetCur().suf]
-                ann.dress_inf = {'a':'05a', 'b':'01b', 'd':'01e', 'c':'05с'}[ann.clothes.cook_morn.GetCur().suf]
+                lst.append(('07'+{'a':'h', 'b':'f', 'c':'i', 'd':'e'}[ann.clothes.cook_morn.GetCur().suf]))
+                if lvl > 3 and prev_room != house[2]:
+                    lst.append(('07'+{'a':'h1', 'b':'f2', 'c':'i1', 'd':'e2'}[ann.clothes.cook_morn.GetCur().suf]))
             elif ann.prev_plan == 'in_shop':
-                pose = '07j'
-                ann.dress_inf = '01'
+                lst.append('07j')
             elif ann.prev_plan in ['resting', 'read'] and tm[:2] == '14':
-                pose = '07f' if ann.clothes.rest_morn.GetCur().suf == 'a' else '07e'
-                ann.dress_inf = ann.clothes.rest_morn.GetCur().info
+                lst.append('07f' if ann.clothes.rest_morn.GetCur().suf == 'a' else '07e')
+                if lvl > 3 and prev_room != house[2]:
+                    lst.append('07f2' if ann.clothes.rest_morn.GetCur().suf == 'a' else '07e2')
             elif ann.prev_plan in ['sun', 'swim']:
-                pose = '07d'
-                ann.dress_inf = '03'
+                lst.append('07d')
+                if lvl > 2:
+                    lst.append('07d2')
             elif ann.prev_plan == 'tv':
-                pose = '07g'
-                ann.dress_inf = '04b'
+                lst.append('07g')
+
+            pose = renpy.random.choice(lst)
+            ann.dress_inf = {
+                '07b':'04', '07b1':'04d', '07b2':'04c',
+                '07h':'05a', '07h1':'05a', '07i':'05c', '07i1':'05c',
+                '07e':'01e', '07e2':'02g', '07f':'01b', '07f2':'01b',
+                '07j':'01', '07d':'03', '07d2':'03a2', '07g':'04b',
+                }[pose]
             return pose
 
         if not pose:
@@ -886,10 +900,7 @@ init python:
                 if lvl > 1:
                     lst.append('01b')                   # халат без трусиков
             elif ann.prev_plan == 'yoga':                   # после йоги
-                if ann.clothes.sports.cur:
-                    lst.extend(['01i1', '04i1'])        # низ новой спортики
-                else:
-                    lst.extend(['01h1', '04h1'])        # низ спортики
+                lst.extend(['01i1', '04i1'] if ann.clothes.sports.cur else ['01h1', '04h1'])    # низ спортивки
             elif ann.prev_plan in ['sun', 'swim']:          # после бассейна
                 lst.extend(['01d2', '04d2'])            # низ купальника
             elif ann.prev_plan == 'breakfast':              # после завтрака
@@ -913,6 +924,8 @@ init python:
             elif ann.plan_name == 'yoga':                         # йога
                 if lvl == 1:
                     lst.extend(['01h', '04h'])                              # полная спортивка
+                if lvl > 2:
+                    lst.extend(['01i1', '04i1'] if ann.clothes.sports.cur else ['01h1', '04h1'])    # низ спортивки
                 else:
                     if ann.clothes.sports.cur:
                         lst.extend(['01i1', '01i2', '04i1', '04i2'])        # низ и верх новой спортики
@@ -923,53 +936,54 @@ init python:
                     lst.extend(['01f', '04f'])                              # шорты b
                 elif ann.clothes.cook_morn.GetCur().suf == 'd':
                     lst.extend(['01e', '04e'])                              # шорты d
-                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
-                    if lvl > 1:
-                        lst.extend(['01e2', '04e2'])                        # верх d
+                    if lvl < 3:
+                        lst.extend(['01e3', '04e3'])                            # верх d + трусики
+                        if lvl > 1:
+                            lst.extend(['01e2', '04e2'])                        # верх d
             elif ann.plan_name == 'dressed':                    # одевается на работу/шопинг
-                lst.extend(['01c2', '04c2'])                                # трусики
+                lst.extend(['01c2', '04c2'])                        # трусики
                 if GetWeekday(day) != 6:
                     # будни
-                    lst.extend(['01a3', '04a3'])                            # рабочий топ + трусики
+                    if lvl < 3:
+                        lst.extend(['01a3', '04a3'])                # рабочий топ + трусики
                     if lvl > 1:
-                        lst.extend(['01a', '01a2', '04a', '04a2'])          # рабочая юбка, рабочий топ
+                        lst.extend(['01a', '04a'])                  # рабочая юбка
+                    if lvl == 2:
+                        lst.extend(['01a2', '04a2'])                # рабочий топ
             elif ann.plan_name in ['sun', 'swim']:              # купальник
                 lst.extend(['01d2', '04d2'])                                # низ купальника
-                if lvl > 1:
+                if lvl == 2:
                     lst.extend(['01d1', '04d1'])                            # верх купальника
             elif ann.plan_name == 'cooking' and tm > '12:00':   # готовка вечером
                 if ann.clothes.cook_eve.GetCur().suf == 'b':
                     lst.extend(['01f', '04f'])                              # шорты b
                 elif ann.clothes.cook_eve.GetCur().suf == 'd':
                     lst.extend(['01e', '04e'])                              # шорты d
-                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
-                    if lvl > 1:
+                    if lvl < 3:
+                        lst.extend(['01e3', '04e3'])                        # верх d + трусики
+                    if lvl == 2:
                         lst.extend(['01e2', '04e2'])                        # верх d
-            elif ann.plan_name == 'resting' and tm < '12:00':   # отдых утром после завтрака
+            elif ann.plan_name == 'resting' and any([tm < '12:00', tm > '20:00']):   # отдых утром после завтрака
                 if ann.clothes.rest_morn.GetCur().suf == 'a':
                     lst.extend(['01f', '04f'])                              # шорты b
                 elif ann.clothes.rest_morn.GetCur().suf == 'd':
                     lst.extend(['01e', '04e'])                              # шорты d
-                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
-                    if lvl > 1:
+                    if lvl < 3:
+                        lst.extend(['01e3', '04e3'])                        # верх d + трусики
+                    if lvl == 2:
                         lst.extend(['01e2', '04e2'])                        # верх d
-            elif ann.plan_name == 'resting' and tm > '20:00':   # отдых вечером
-                if ann.clothes.rest_eve.GetCur().suf == 'a':
-                    lst.extend(['01f', '04f'])                              # шорты b
-                elif ann.clothes.rest_eve.GetCur().suf == 'd':
-                    lst.extend(['01e', '04e'])                              # шорты d
-                    lst.extend(['01e3', '04e3'])                            # верх d + трусики
-                    if lvl > 1:
-                        lst.extend(['01e2', '04e2'])                        # верх d
+            if lvl > 2:
+                lst.extend(['01', '04'])
 
             pose = renpy.random.choice(lst)
 
         if vr < 2:
-            if lvl == 1 and pose in ['01b1', '01h3', '04h3', '01e3', '04e3',
+            # получим позу для "не повезло" или вторую позу при "повезло"
+            if lvl == 1 and pose in ['01b1', '01e3', '04e3',
                                     '01a3', '04a3', '01c2', '04c2']:
                 pose = {
                     '01b1':'03b1',                  # халат
-                    '01h3':'03h3', '04h3':'06h3',    # верх спортивки + трусики
+                    # '01h3':'03h3', '04h3':'06h3',   # верх спортивки + трусики
                     '01e3':'03e3', '04e3':'06e3',   # верх d + трусики
                     '01a3':'03a3', '04a3':'06a3',   # рабочий топ + трусики
                     '01c2':'03c2', '04c2':'06c2',   # трусики
@@ -986,8 +1000,25 @@ init python:
                     '01a2':'03a2', '04a2':'06a2', '01a3':'02a3', '04a3':'05a3', # рабочий топ / + трусики
                     '01c2':'02c2', '04c2':'05c2',                               # трусики
                     '01d1':'08d1', '04d1':'08d1', '01d2':'02d2', '04d2':'05d2', # верх / низ бикини
-                    '01':'02', '04': '06',          # голая
+                    '01':'03', '04': '06',                                      # голая
                     }[pose]
+
+        if vr == 3:
+            # третий этап - Аня принимает более расслабленную позу
+            lst = {
+                '02b1':'09b2',                  # халат + трусики
+                '01h1':'09h1', '04h1':'10h1',   # низ спортивки
+                '01i1':'09i1', '04i1':'10i1',   # низ новой спортивки
+                '02c2':'09c2', '05c2':'10c2',   # трусики
+                '02f' :'09f2', '05f' :'10f2',   # шорты b
+                '02e' :'09e2', '05e' :'10e2',   # шорты d
+                '02a' :'09a2', '05a' :'10a2',   # рабочая юбка
+                '02d2':'09d2', '05d2':'10d2',   # низ купальника
+                '03':'08', '06':'10',           # голая
+                }
+
+            pose, relax = (lst[pose], True) if pose in lst.keys() else (pose, False)
+            return pose, relax
 
         if pose:
             return pose
@@ -995,10 +1026,41 @@ init python:
             return '02c2'
 
 
-    def get_ann_dress(vr, pose=''):
+    def get_ann_dress(vr, pose='', reverse=False):
         global var_pose, var_dress
 
         lvl = get_ann_emancipation()
+        if vr == 2 and pose == '07':
+            # для момента с халатом
+            var_pose = '01'
+            return
+
+        if reverse:
+            if pose == '09':
+                var_pose = '10'
+            elif pose == '10':
+                var_pose = '09'
+            elif pose == '07':
+                lst = {
+                    '07'  :'10',
+                    '07a2':'10a2',
+                    '07a3':'10a1',
+                    '07c2':'10c2',
+                    '07d1':'10d1',
+                    '07d2':'10d2',
+                    '07e2':'10e2',
+                    '07e3':'10e1',
+                    '07f2':'10f2',
+                    '07h1':'10h1',
+                    '07h2':'10h2',
+                    '07i1':'10i1',
+                    '07i2':'10i2',
+                    }
+                pose = pose + var_dress
+                pose = lst[pose] if pose in lst.keys() else pose
+                var_pose = pose[:2]
+                var_dress = pose[2:]
+            return
 
         # определим доступные варианты одежды
         lst = []
@@ -1017,23 +1079,45 @@ init python:
             # нулевой момент
             if ann.prev_plan in ['shower', 'shower2']:      # после душа
                 lst.append('b')       # халат
-                if lvl > 1:
+                if 4 > lvl > 1:
                     lst.append('b2')  # чуть распахнутый халат
+                if lvl > 2:
+                    lst.append('b1')  # чуть распахнутый халат без трусиков
             elif ann.prev_plan == 'yoga':                   # после йоги
-                lst.append('h' if ann.clothes.sports.GetCur().suf == 'a' else 'i')       # спортивка
+                if lvl < 4:
+                    lst.append('h' if ann.clothes.sports.GetCur().suf == 'a' else 'i')     # спортивка
+                if lvl > 2:
+                    lst.append('h1' if ann.clothes.sports.GetCur().suf == 'a' else 'i1')   # низ спортивки
+                if lvl > 3:
+                    lst.append('h2' if ann.clothes.sports.GetCur().suf == 'a' else 'i2')   # верх спортивки
             elif ann.prev_plan == 'breakfast':
-                lst.append({'a':'h', 'b':'f', 'c':'i', 'd':'e'}[ann.clothes.cook_morn.GetCur().suf])
+                if lvl < 4:
+                    lst.append({'a':'h', 'b':'f', 'c':'i', 'd':'e'}[ann.clothes.cook_morn.GetCur().suf])
+                if lvl > 2:
+                    lst.append({'a':'h1', 'b':'f2', 'c':'i1', 'd':'e2'}[ann.clothes.cook_morn.GetCur().suf])
+                if lvl > 3:
+                    lst.append({'a':'h2', 'b':'f2', 'c':'i2', 'd':'e3'}[ann.clothes.cook_morn.GetCur().suf])
             elif ann.prev_plan == 'in_shop':
                 lst.append('j')
             elif ann.prev_plan in ['resting', 'read'] and tm[:2] == '14':
                 lst.append('f' if ann.clothes.rest_morn.GetCur().suf == 'a' else 'e')
+                if lvl > 2:
+                    lst.append('f2' if ann.clothes.rest_morn.GetCur().suf == 'a' else 'e2')
+                if lvl > 3 and ann.clothes.rest_morn.GetCur().suf != 'a':
+                    lst.append('e3')
             elif ann.prev_plan in ['sun', 'swim']:
-                lst.append('d')
+                if lvl < 3:
+                    lst.append('d')
+                if lvl > 2:
+                    lst.append('d1')
+                if lvl > 3:
+                    lst.append('d2')
             elif ann.prev_plan == 'tv':
                 lst.append('g')
         else:
             if ann.prev_plan in ['shower', 'shower2']:      # после душа
-                lst.append('b1')                                            # халат + трусики
+                if lvl < 4:
+                    lst.append('b1')                                        # халат + трусики
                 if lvl > 1:
                     lst.append('b')                                         # халат без трусиков
             elif ann.prev_plan == 'yoga':                   # после йоги
@@ -1048,54 +1132,50 @@ init python:
                 lst.append('f' if ann.clothes.rest_morn.GetCur().suf == 'a' else 'e')
             if ann.plan_name == 'yoga':                         # йога
                 if lvl == 1:
-                    lst.append('h')                              # полная спортивка
+                    lst.append('h')                                             # полная спортивка
                 else:
                     if ann.clothes.sports.cur:
-                        lst.extend(['i1', 'i2'])        # низ и верх новой спортики
+                        lst.extend(['i1', 'i2'] if lvl != 3 else ['i1',])        # низ и верх новой спортики
                     else:
-                        lst.extend(['h1', 'h2'])        # низ и верх спортики
+                        lst.extend(['h1', 'h2'] if lvl != 3 else ['h1',])        # низ и верх спортики
             elif ann.plan_name == 'cooking' and tm < '12:00':   # готовка утром
                 if ann.clothes.cook_morn.GetCur().suf == 'b':
                     lst.append('f')                              # шорты b
                 elif ann.clothes.cook_morn.GetCur().suf == 'd':
-                    lst.extend(['e', 'e3'])                      # шорты d, верх d + трусики
-                    if lvl > 1:
+                    lst.extend(['e', 'e3'] if lvl < 3 else ['e',])              # шорты d, верх d + трусики
+                    if lvl in [2, 4]:
                         lst.append('e2')                        # верх d
             elif ann.plan_name == 'dressed':                    # одевается на работу/шопинг
                 lst.append('c2')                                # трусики
-                if GetWeekday(day) != 6:
-                    # будни
-                    lst.append('a3')                            # рабочий топ + трусики
-                    if lvl > 1:
-                        lst.extend(['a', 'a2'])          # рабочая юбка, рабочий топ
+                if GetWeekday(day) != 6:    # будни
+                    if lvl < 3:
+                        lst.append('a3')                        # рабочий топ + трусики
+                    lst.extend(['a', 'a2'] if lvl in [2, 4] else ['a',])             # рабочая юбка, рабочий топ
             elif ann.plan_name in ['sun', 'swim']:              # купальник
                 lst.append('d2')                                # низ купальника
                 if lvl > 1:
                     lst.append('d1')                            # верх купальника
             elif ann.plan_name == 'cooking' and tm > '12:00':   # готовка вечером
                 if ann.clothes.cook_eve.GetCur().suf == 'b':
-                    lst.append('f')                              # шорты b
+                    lst.append('f')                             # шорты b
                 elif ann.clothes.cook_eve.GetCur().suf == 'd':
-                    lst.extend(['e', 'e3'])                     # шорты d, верх d + трусики
-                    if lvl > 1:
+                    lst.extend(['e', 'e3'] if lvl < 3 else ['e',])              # шорты d, верх d + трусики
+                    if lvl in [2, 4]:
                         lst.append('e2')                        # верх d
-            elif ann.plan_name == 'resting' and tm < '12:00':   # отдых утром после завтрака
+            elif ann.plan_name == 'resting' and any([tm < '12:00', tm > '20:00']):
+                # отдых утром после завтрака или отдых вечером
                 if ann.clothes.rest_morn.GetCur().suf == 'a':
-                    lst.append('f')                              # шорты b
+                    lst.append('f')                             # шорты b
                 elif ann.clothes.rest_morn.GetCur().suf == 'd':
-                    lst.extend(['e', 'e3'])                     # шорты d, верх d + трусики
-                    if lvl > 1:
+                    lst.extend(['e', 'e3'] if lvl < 3 else ['e',])              # шорты d, верх d + трусики
+                    if lvl in [2, 4]:
                         lst.append('e2')                        # верх d
-            elif ann.plan_name == 'resting' and tm > '20:00':   # отдых вечером
-                if ann.clothes.rest_eve.GetCur().suf == 'a':
-                    lst.append('f')                              # шорты b
-                elif ann.clothes.rest_eve.GetCur().suf == 'd':
-                    lst.extend(['e', 'e3'])                     # шорты d, верх d + трусики
-                    if lvl > 1:
-                        lst.append('e2')                        # верх d
+            if lvl > 2:
+                lst.append('')                                  # голая
 
         if not pose:
             # установим одежду и выберем позу для момента "повезло"
+            print vr, lvl, lst
             var_dress = renpy.random.choice(lst)
             if vr in [0, 'g', 'b0']:
                 pose = '07'
@@ -1103,8 +1183,69 @@ init python:
                 pose = '01'
             else:
                 pose = renpy.random.choice(['01', '04'])
+            var_pose = pose
+            print pose, var_dress
 
-        if vr == 1:
+        if vr == 3:
+            if lvl < 4:
+                lst = {
+                    '01b1':'09b2',                  # халат + трусики
+                    '02b1':'09b2',                  # халат + трусики
+                    '01h1':'09h1', '04h1':'10h1',   # низ спортивки
+                    '02h1':'09h1', '05h1':'10h1',   # низ спортивки
+                    '01i1':'09i1', '04i1':'10i1',   # низ новой спортивки
+                    '02i1':'09i1', '05i1':'10i1',   # низ новой спортивки
+                    '01c2':'09c2', '04c2':'10c2',   # трусики
+                    '02c2':'09c2', '05c2':'10c2',   # трусики
+                    '01f' :'09f2', '04f' :'10f2',   # шорты b
+                    '02f' :'09f2', '05f' :'10f2',   # шорты b
+                    '01e' :'09e2', '04e' :'10e2',   # шорты d
+                    '02e' :'09e2', '05e' :'10e2',   # шорты d
+                    '01a' :'09a2', '04a' :'10a2',   # рабочая юбка
+                    '02a' :'09a2', '05a' :'10a2',   # рабочая юбка
+                    '01d2':'09d2', '04d2':'10d2',   # низ купальника
+                    '02d2':'09d2', '05d2':'10d2',   # низ купальника
+                    '01'  :'08',   '04'  :'10',     # голая
+                    '03'  :'08',   '06'  :'10',     # голая
+                    }
+            else:
+                lst = {
+                    '01'  :'09',   '04'  :'10',     # голая
+                    '03'  :'09',   '06'  :'10',     # голая
+                    '01a' :'09a2', '04a' :'10a2',   # рабочая юбка
+                    '02a' :'09a2', '05a' :'10a2',   # рабочая юбка
+                    '01a2':'09a1', '04a2':'10a1',   # рабочий верх
+                    '03a2':'09a1', '06a2':'10a1',   # рабочий верх
+                    '01b' :'09b1', '01b1':'09b2',   # халат, халат + трусики
+                    '03b' :'09b1', '02b1':'09b2',   # халат, халат + трусики
+                    '01c2':'09c2', '04c2':'10c2',   # трусики
+                    '02c2':'09c2', '05c2':'10c2',   # трусики
+                    '01d1':'09d1', '04d1':'10d1',   # верх купальника
+                    '01d1':'09d1', '04d1':'10d1',   # верх купальника
+                    '08d1':'09d1',                  # верх купальника
+                    '01d2':'09d2', '04d2':'10d2',   # низ купальника
+                    '02d2':'09d2', '05d2':'10d2',   # низ купальника
+                    '01e' :'09e2', '04e' :'10e2',   # шорты d
+                    '02e' :'09e2', '05e' :'10e2',   # шорты d
+                    '01e2':'09e1', '04e2':'10e1',   # верх d
+                    '03e2':'09e1', '06e2':'10e1',   # верх d
+                    '01f' :'09f2', '04f' :'10f2',   # шорты b
+                    '02f' :'09f2', '05f' :'10f2',   # шорты b
+                    '01h1':'09h1', '04h1':'10h1',   # низ спортивки
+                    '02h1':'09h1', '05h1':'10h1',   # низ спортивки
+                    '01i1':'09i1', '04i1':'10i1',   # низ новой спортивки
+                    '02i1':'09i1', '05i1':'10i1',   # низ новой спортивки
+                    '01i2':'09i2', '04i2':'10i2',   # верх новой спортивки
+                    '02i2':'09i2', '05i2':'10i2',   # верх новой спортивки
+                }
+            pose = var_pose + var_dress
+            pose, relax = (lst[pose], True) if pose in lst.keys() else (pose, False)
+            var_pose = pose[:2]
+            var_dress = pose[2:]
+            print 'pose-3', pose
+            return relax
+
+        elif vr == 1:
             # не повезло, смотрим, в какую позу встанет Анна
             if lvl == 1 and var_dress in ['a3', 'b1', 'c2', 'e3', 'h3']:
                 pose = {'01':'03', '04':'06'}[pose]
@@ -1115,4 +1256,5 @@ init python:
             else:
                 pose = {'01':'03', '04':'06'}[pose]
 
+            print 'pose-1', pose
         var_pose = pose

@@ -110,26 +110,6 @@ init python:
         mgg.stealth = clip(mgg.stealth, 0.0, 100.0)
 
 
-    # def cam_wait(delta=10):
-    #     global cam_day, cam_tm
-    #     h, m = cam_tm.split(':')
-    #     ti = int(h)*60 + int(m) + int(delta)
-    #     h = ti // 60
-    #     m = ti % 60
-    #
-    #     if h > 23:
-    #         cam_day += h // 24
-    #         h = h % 24
-    #
-    #     cam_tm = ('0'+str(h))[-2:] + ':' + ('0'+str(m))[-2:]
-    #
-    #     for char in chars:
-    #         plan_char = chars[char].get_plan(cam_day, cam_tm)
-    #         if plan_char is not None:
-    #             if plan_char.loc != '' and not plan_char.loc is None:
-    #                 eval(plan_char.loc+"["+str(plan_char.room)+"].cur_char.append('"+char+"')")
-
-
     # функция вычисляет разницу в минутах между time2 и time1
     # если time1 больше, считается, что оно принадлежит предыдущему дню """
     def TimeDifference(time1, time2):
@@ -390,11 +370,12 @@ init python:
 
 
     def GetDeliveryList(): # формирует список доставляемых товаров
-        global delivery_list, items
+        # global delivery_list, items
         for i in items:
             if items[i].bought and items[i].delivery > 0:
                 items[i].delivery -= 1
-                if items[i].delivery == 0:
+                # if items[i].delivery == 0:
+            if items[i].delivery == 0 and items[i].bought:
                     if items[i].category in [0, 4, 5, 6]:
                         delivery_list[1].append(i)
                     else:
@@ -769,14 +750,14 @@ init python:
     def seat_Breakfast(): # рассаживает семью за завтраком
         renpy.scene()
         renpy.show('BG breakfast 00') # общий фон
-        if 'kira' in chars and check_is_home('kira'):
+        if check_is_home('kira'):
             renpy.show('Kira breakfast 2-0'+renpy.random.choice(['1', '2', '3'])+kira.dress)
             renpy.show('Ann breakfast 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
         else:
             renpy.show('Ann breakfast 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
         renpy.show('Alice breakfast 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
         renpy.show('Lisa breakfast 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
-        if 'kira' in chars and check_is_home('kira'):
+        if check_is_home('kira'):
             renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
         else:
             renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])) # стол
@@ -1358,7 +1339,8 @@ init python:
             'polish'    : 'interface/POL.webp',
             'portuguese': 'interface/POR.webp',
             'spanish'   : 'interface/SPA.webp',
-            'slovak'    : 'interface/SLO.webp',         # заменить
+            'slovak'    : 'interface/SLO.webp',
+            'persian'   : 'interface/ENG.webp',         # заменить
             }[lang]
 
     def get_lang_list():
@@ -1412,6 +1394,15 @@ init python:
                 if 'slovak' not in persistent.list_language:
                     new_lang = True
                     persistent.list_language.append('slovak')
+
+            if 'persian/script.rpy' in fn or 'persian.rpy' in fn:
+                if 'persian' not in current_language_list:
+                    current_language_list.append('persian')
+                if 'persian' not in persistent.list_language:
+                    new_lang = True
+                    persistent.list_language.append('persian')
+
+
 
         return new_lang
 

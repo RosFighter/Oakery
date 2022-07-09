@@ -170,6 +170,8 @@ init -100 python:
     ])
     replace_dict_sl = OrderedDict([
     ])
+    replace_dict_ps = OrderedDict([
+    ])
 
 init python:
     import re
@@ -192,6 +194,8 @@ init python:
             replace_dict = replace_dict_sp
         elif _preferences.language=='slovak':
             replace_dict = replace_dict_sl
+        elif _preferences.language=='persian':
+            replace_dict = replace_dict_ps
         else:
             return st0
 

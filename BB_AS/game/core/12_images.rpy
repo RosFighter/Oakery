@@ -40,8 +40,7 @@ init python:
 
 layeredimage Lisa_read_phone:   # Лиза читает или лежит с телефоном
     image_format 'Lisa read {image}'
-    always:
-        'myroom-bedlisa-mde-01'
+    always 'myroom-bedlisa-mde-01'
     group naked:
         attribute talk_read:
             'myroom-bedlisa-mde-01-lisa-read-00'
@@ -222,12 +221,12 @@ layeredimage Ann_sleep:
             'annroom-bedann-n-01'
 
     attribute naked:
-        if_not ['eric', 'closer']
+        if_not ['eric', 'closer', 'no_ann']
         'ann-sleep-night-[pose3_3]'
 
     group body:
         attribute closer:
-            if_not 'eric'
+            if_not ['eric']
             'annroom-bedann-n-01-ann-sleep-[pose3_3]'
 
     attribute eric:
@@ -239,7 +238,7 @@ layeredimage Ann_sleep:
 
     group nightie:
         attribute far default:
-            if_not ['eric', 'naked']
+            if_not ['eric', 'naked', 'no_ann']
             'ann-sleep-night-[pose3_3][ann.dress]'
         attribute closer:
             if_not ['eric', 'naked']
@@ -248,6 +247,8 @@ layeredimage Ann_sleep:
     attribute max default:
         if_not 'closer'
         'max-voyeur-ann-night-00[mgg.dress]'
+
+    attribute no_ann null
 
 layeredimage Ann_dressing:
     image_format 'Ann dressing {image}'
@@ -291,9 +292,7 @@ layeredimage Ann_dressing:
     attribute empty null
 
 layeredimage Ann_gift:
-    attribute door default:
-        'Ann dressing annroom-wardrobe-mde-01'
-
+    always 'Ann dressing annroom-wardrobe-mde-01'
     attribute hug1:
         'Ann hugging morning-annroom [var_pose]-1[var_dress][mgg.dress]'
     attribute hug2:
@@ -317,6 +316,7 @@ layeredimage Ann_yoga:
         if_all 'seven'
         'yoga-06'
     if var_stage == '04' and var_pose == '03':
+        if_not 'basic'  # ann
         'yoga-06-max&ann-03'
 
     if var_stage == '01':
@@ -369,28 +369,6 @@ layeredimage Ann_yoga:
         'yoga-07-max-[var_pose][mgg.dress]'
 
     attribute seven null
-
-layeredimage Ann_in_bath:
-
-    group BG:
-        attribute open:
-            'BG bath-open-00'
-        attribute enter:
-            'BG bathrooom-bath-02'
-        attribute talk:
-            'BG after-club-bath01'
-
-    group body:
-        attribute open:
-            'Ann bath bath-open-ann-01'
-        attribute enter:
-            'Ann bath bathrooom-bath-02-ann-00'
-        attribute talk:
-            'Ann bath bathrooom-bath-02-ann&max-01'
-
-    group cloth:
-        attribute talk:
-            'Ann bath bathrooom-bath-02-max-01[mgg.dress]'
 
 ################################################################################
 ## Макс
@@ -565,3 +543,5 @@ layeredimage Eric_glasses_fuck:
 
     attribute bj01 null
     attribute bj02 null
+
+################################################################################

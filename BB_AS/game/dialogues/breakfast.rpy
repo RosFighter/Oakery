@@ -914,42 +914,9 @@ label breakfast_after_punishment:
     $ seat_Breakfast()
     with fade4
 
-    if day == 1:
-        jump breakfast_first
-    elif day == 2:
-        jump breakfast_2
-    elif day == 3:
-        jump breakfast_3
-    elif day == 4:
-        # первый шопинг
-        jump breakfast_4
-    elif all([day>=5, weekday==0, flags.breakfast==4]):
-        # после ночёвки у Эрика
-        jump breakfast_5
-    elif all([day>=7, weekday==2, flags.breakfast==5, flags.dinner==6]):
-        # вторник после ночевки Эрика
-        jump breakfast_7
-    elif all([day>=12, weekday==0, flags.breakfast==7, flags.dinner==11]):
-        # Аня рассказывает о вероятной свадьбе
-        jump breakfast_12
-    elif all([day>=18, weekday==6, flags.breakfast==12, flags.dinner==17]):
-        # первый завтрак с Кирой
-        jump breakfast_18
-    elif 'kira' in chars and all([weekday==2, kira.dcv.feature.stage in [6, 7],
-                                        flags.breakfast==18, flags.dinner==17]):
-            # первое упоминание Александры (через несколько дней после первой
-            # фотосессии с Кирой)
-        jump breakfast_35
-    elif 'kira' in chars and all([
-            kira.flags.showdown_e,      # поговорили об Эрике со всеми кроме
-            lisa.flags.showdown_e,      # Анны
-            alice.flags.showdown_e,
-            # прошло не менее 3-х рабочих дней с момента изгнания Эрика
-            eric.dcv.battle.lost<56 or (eric.dcv.battle.lost<58 and weekday>4),
-            flags.eric_wallet == 4,     # этап "кошелька"
-            ]):
-        # завтрак через несколько дней после изгнания Эрика
-        jump breakfast_after_showdown_with_eric
+    $ rez = get_breakfast()
+    if rez:
+        jump expression 'breakfast_'+rez
     else:
         jump typical_breakfast
 

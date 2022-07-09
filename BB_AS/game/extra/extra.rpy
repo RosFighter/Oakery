@@ -62,6 +62,7 @@ define mems = [
             Memories('gift_swimsuit.swimsuit_show', 'lisa-newsuit-01', 'set_gift_swimsuit', _("Новый купальник Лизы")),
             Memories('gift_pajamas', 'alice-pajamas-01', 'set_gift_pajamas', _("Извинительная пижамка для Алисы")),
             Memories('gift_black_lingerie', 'alice-newlingerie-01', 'set_gift_black_lingerie', _("Тёмное кружево")),
+            Memories('s1_ann_drink', 'ann&max-bj01', 'set_s1_ann_drink', _("Влажные фантазии"), var="'s1_ann_drink.restrain' in persistent.mems_var"),
         ],
         [
             Memories('massage_sunscreen', 'alice-massagesun-01', 'set_sunscreen', _("Давай я нанесу крем")),
@@ -140,6 +141,12 @@ define mems = [
             Memories('lisa_eric_sex_ed_practice.practice_2', 'lisa-01-hje02', 'set_practice_1', _("Ещё стесняется, но трогает...")),
             Memories('blog_with_Eric', 'alice-dress&eric-01', 'set_blog_with_Eric_01', _("Кружевное боди для Алисы от Эрика"), var="'lace_ling_eric1' in persistent.mems_var"),
         ],
+        [
+            Memories('s1_ann_intimate_lesson_1', 'ann&max-il01', 'set_s1_ann_il', _("1-ый интимный урок с Анной")),
+            Memories('s1_ann_intimate_lesson_02', 'ann&max-il02', 'set_s1_ann_il', _("2-ый интимный урок с Анной")),
+            Memories('s1_ann_intimate_lesson_03', 'ann&max-il03', 'set_s1_ann_il', _("3-ый интимный урок с Анной")),
+            Memories('s1_ann_intimate_lesson_04', 'ann&max-il04', 'set_s1_ann_il', _("4-ый интимный урок с Анной")),
+        ],
     ]
 
 define photo_album = [
@@ -149,8 +156,8 @@ define photo_album = [
         ("01-Alice", _("Первые снимки для блога Алисы")),
     ]
 
-define cur_starts = [0, 0, 0, 0, 0, 0, 0, 0]
-define displayed_group = [1, 1, 1, 1, 1, 1, 0, 0]
+define cur_starts = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+define displayed_group = [1, 1, 1, 1, 1, 1, 0, 0, 0]
 default st_gallery =  'mem'
 
 define next_sh = False
@@ -172,8 +179,10 @@ screen menu_gallery():
                 action SetVariable('st_gallery', 'art')
                 selected st_gallery == 'art'
 
-    imagebutton pos (1740, 100) auto 'interface close %s' action Jump('AfterWaiting') at close_zoom:
+    imagebutton pos (1740, 100) auto 'interface close %s':
+        action Jump('AfterWaiting')
         focus_mask (None if renpy.variant('small') else True)
+        at close_zoom
 
     if st_gallery == 'mem':
         frame area(140, 160, 1640, 850) xalign 0.0 yalign 0.5 background None:

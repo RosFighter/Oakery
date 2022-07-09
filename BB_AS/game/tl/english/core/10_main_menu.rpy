@@ -149,4 +149,3 @@ translate english strings:
     # game/core/10_main_menu.rpy:287
     old "{color=#00FF00}Открыт новый костюм %s для главного меню{/color}"
     new "{color=#00FF00}New costume %s for the main menu is opened{/color}"
-

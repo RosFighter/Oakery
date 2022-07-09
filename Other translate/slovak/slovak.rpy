@@ -18509,7 +18509,7 @@ translate slovak ann_yoga_with_maxr_be09b23d:
 translate slovak ann_yoga_with_maxr_dbbb3c5b:
 
     # Ann_02 "Я рада, что хоть так мы успеваем побыть вместе... Какие у тебя планы на день? Надеюсь, не за компьютером будешь всё время сидеть..."
-    Ann_02 "Som rada, že aspoň takto môžeme byť spolu... Aké sú tvoje plány na tento deň? Dúfam, že nie ste stále na počítači..."
+    Ann_02 "Som rada, že aspoň takto môžeme byť spolu... Aké sú tvoje plány na tento deň? Dúfam, že nie si stále na počítači..."
 
 # game/dialogues/anntalk.rpy:807
 translate slovak ann_yoga_with_maxr_c8a1933c:
@@ -47673,7 +47673,7 @@ translate slovak eric_ann_fucking_voyeur_1a6dca32:
     Ann_18 "Max? Opäť šmírovanie?! Vypadni odtiaľto!" nointeract
 
 # game/events/eric.rpy:588
-translate slovak eric_ann_fucking_voyeur_afca94eb:
+translate slovak eric_ann_fucking_voyeur_141f69df:
 
     # Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
     Eric_02 "Anna, je lepšie pozerať sa na nás ako na nejakú úchylku na internete, však? Takže, Max, poď sem a porozprávame sa..." nointeract
@@ -55083,10 +55083,10 @@ translate slovak lisa_dressed_lvl_1_10a5c581:
     Lisa_12 "Max! Poviem to mame, ak neodídeš!" nointeract
 
 # game/events/lisa.rpy:982
-translate slovak lisa_dressed_lvl_1_4d33062b:
+translate slovak lisa_dressed_lvl_1_8112b755:
 
-    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!"
-    Lisa_13 "Ako dlho sa na mňa budeš pozerať?! Vyjdi von a počkaj pred dverami. Nemáš za čo!"
+    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
+    Lisa_13 "Ako dlho sa na mňa budeš pozerať?! Vyjdi von a počkaj pred dverami. Nemáš za čo!" nointeract
 
 # game/events/lisa.rpy:988
 translate slovak lisa_dressed_lvl_2_366df3c4:
@@ -66037,67 +66037,67 @@ translate slovak ann_tv_continuation_massage_massage_535758bb:
     Max_01 "Pekné! Aj ja budem čakať, mami. Oddýchni si." nointeract
 
 # game/dialogues/anntalk.rpy:608
-translate slovak ann_tv_continuation_massage_massage_d390c1ed:
+translate slovak ann_tv_continuation_massage_failed_persuasion_d390c1ed:
 
     # Ann_17 "[failed!t]Обманщик ты, Макс! Это что такое?! Как тебе не стыдно! У тебя встал на собственную маму! Что у тебя в голове творится... Почему ты не сказал, что я тут голая сижу?"
     Ann_17 "[failed!t]Si klamár, Max! Čo je to?! Hanba ti! Máš erekciu z vlastnej mami! Čo sa deje v tvojej hlave... Prečo si mi nepovedal, že tu sedím nahá?"
 
 # game/dialogues/anntalk.rpy:609
-translate slovak ann_tv_continuation_massage_massage_c7019911:
+translate slovak ann_tv_continuation_massage_failed_persuasion_c7019911:
 
     # Max_07 "Просто засмотрелся на тебя по ходу дела. А не сказал, потому что хотел массаж закончить. Хорошо же получилось?"
     Max_07 "Len sa na teba pozerám, keď ideš. Ale nepovedal, pretože som chcel masáž dokončiť. Dopadlo to dobre?"
 
 # game/dialogues/anntalk.rpy:610
-translate slovak ann_tv_continuation_massage_massage_d53168cf:
+translate slovak ann_tv_continuation_massage_failed_persuasion_d53168cf:
 
     # Ann_12 "Получилось-то хорошо, вот только... не должно так быть..."
     Ann_12 "Je to dobré, až na to, že... nemalo by to tak byť..."
 
 # game/dialogues/anntalk.rpy:611
-translate slovak ann_tv_continuation_massage_massage_e1072954:
+translate slovak ann_tv_continuation_massage_failed_persuasion_e1072954:
 
     # Max_10 "Ну мам, ты же красивая! Вот я и это... возбудился... слегка..."
     Max_10 "No tak, mami, si krásna! Som tu a toto... som sa vzrušil... mierne..."
 
 # game/dialogues/anntalk.rpy:612
-translate slovak ann_tv_continuation_massage_massage_1371a9dd:
+translate slovak ann_tv_continuation_massage_failed_persuasion_1371a9dd:
 
     # Ann_13 "Ничего себе, слегка! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
     Ann_13 "Wow, málo! Takže, dobre, predstierajme, že sa nič nestalo. Choď von a bav sa..." nointeract
 
 # game/dialogues/anntalk.rpy:615
-translate slovak ann_tv_continuation_massage_massage_21542021:
+translate slovak ann_tv_continuation_massage_failed_persuasion_21542021:
 
     # Ann_15 "Ничего себе! Ты почему сидишь и молчишь об этом, а, Макс?! Я же предупредила, что голая под ним..."
     Ann_15 "Wow! Prečo tam sedíš a nehovoríš o tom, čo, Max?! Povedala som ti, že som pod ním nahá..."
 
 # game/dialogues/anntalk.rpy:616
-translate slovak ann_tv_continuation_massage_massage_c532b93a:
+translate slovak ann_tv_continuation_massage_failed_persuasion_c532b93a:
 
     # Max_07 "Так оно под самый конец только сползло, а я хотел массаж закончить. Хорошо же получилось?"
     Max_07 "Ku koncu to skĺzlo a chcel som masáž hlavne dokončiť. Je to dobré, však?"
 
 # game/dialogues/anntalk.rpy:618
-translate slovak ann_tv_continuation_massage_massage_f1a52f3f:
+translate slovak ann_tv_continuation_massage_failed_persuasion_f1a52f3f:
 
     # Ann_14 "Очень! Но в следующий раз, лучше не молчи об этом... Хорошо?"
     Ann_14 "Veľa! Ale nabudúce o tom radšej nemlč... Dobre?"
 
 # game/dialogues/anntalk.rpy:619
-translate slovak ann_tv_continuation_massage_massage_5a863e60:
+translate slovak ann_tv_continuation_massage_failed_persuasion_5a863e60:
 
     # Max_11 "Ладно, скажу."
     Max_11 "Dobre, poviem."
 
 # game/dialogues/anntalk.rpy:620
-translate slovak ann_tv_continuation_massage_massage_3c049e1b:
+translate slovak ann_tv_continuation_massage_failed_persuasion_3c049e1b:
 
     # Ann_07 "А за массаж огромное тебе спасибо, мне очень понравилось! Обязательно буду ждать следующего раза!"
     Ann_07 "A ďakujem za masáž, veľmi sa mi páčila! Rozhodne sa teším na ďalšie stretnutie!"
 
 # game/dialogues/anntalk.rpy:621
-translate slovak ann_tv_continuation_massage_massage_535758bb_1:
+translate slovak ann_tv_continuation_massage_failed_persuasion_535758bb:
 
     # Max_01 "Класс! Я тоже буду ждать, мам. Отдыхай." nointeract
     Max_01 "Pekné! Aj ja budem čakať, mami. Oddýchni si." nointeract
@@ -66392,7 +66392,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Во главе семьи!\"..."
-    new "Bude to vyžadovať pokrok v príležitosti \"Vodca rodiny!\"..."
+    new "Bude to vyžadovať pokrok v príležitosti \"Na čele rodiny!\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно попробовать сделать маме массаж спины, пока она смотрит ТВ..."
@@ -66424,7 +66424,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Вот такая йога мне нравится больше! Маму пока ещё смущают мои неугомонные руки, но, думаю, она к ним привыкнет и утешать её станет куда приятнее. \nОт такого, правда, просто не может не встать, поэтому лучше приходить на мамину йогу в майке и шортах. Так куда проще скрыть стояк, в случае чего. \n\nЖалко, что она теперь, из-за моей активности, хочет, чтобы я помогал минимум через день... Но я не против, от этого только сильнее хочется снова к ней присоединиться."
-    new "Takýto druh jógy mám radšej! Matka je stále v rozpakoch z mojich nepokojných rúk, ale myslím, že si na ne zvykne a bude jej oveľa príjemnejšie ich utešovať. \To je pravda, jednoducho si nemôžem pomôcť a musím vstať, takže je najlepšie prísť na maminu jógu v tričku a šortkách. V prípade núdze je oveľa jednoduchšie erekciu skryť. \Je to škoda, že teraz, kvôli mojej aktivite, chce, aby som jej pomáhal aspoň každý druhý deň... Ale mne to nevadí, len ma to núti znova sa k nej pridať."
+    new "Takýto druh jógy mám radšej! Matka je stále v rozpakoch z mojich nepokojných rúk, ale myslím, že si na ne zvykne a bude jej oveľa príjemnejšie ich utešovať. \nTo je pravda, jednoducho si nemôžem pomôcť a musím vstať, takže je najlepšie prísť na maminu jógu v tričku a šortkách. V prípade núdze je oveľa jednoduchšie erekciu skryť. \n\nJe to škoda, že teraz, kvôli mojej aktivite, chce, aby som jej pomáhal aspoň každý druhý deň... Ale mne to nevadí, len ma to núti znova sa k nej pridať."
 
     # game/core/09_opportunities.rpy:4
     old "Как только мама привыкнет к таким бесцеремонным прикосновениям за святое на йоге, то и утешать я её смогу так же... Получилось успешно помочь маме с йогой: [ann.flags.truehelp] из 5"
@@ -66452,7 +66452,7 @@ translate slovak strings:
 
     # game/core/09_opportunities.rpy:4
     old "Я снова застал маму всю расстроенную и грустную. Ей тяжело видеть его ехидную рожу на работе и от этого никуда не деться. Только если уволиться, но не известно, какие проблемы он может устроить в этом случае маме. \nЯ решил приободрить её, помимо обычных утешений, приобняв за попку, но она сказала, что её это скорее смущает, чем ободряет. \nНадо это дело исправлять... И чтобы такие прикосновения стали более естественными, надо чаще прикасаться к её попке. \nПожалуй, самый приемлемый вариант таких контактов, где меня не посчитают озабоченным - это йога. Так что нужно пробовать..."
-    new "Znova som našiel svoju mamu celú rozrušenú a smutnú. Je pre ňu ťažké vidieť jeho uštipačný výraz v práci a nedá sa mu uniknúť. Iba ak dá výpoveď, ale nevedno, aké problémy by jej mohol spôsobiť. \Rozhodol som sa ju okrem zvyčajného uistenia rozveseliť aj objatím zadku, ale povedala, že je viac v rozpakoch ako upokojená. \Musím to napraviť... A aby boli takéto dotyky prirodzenejšie, mal by som sa jej zadku dotýkať častejšie. \Asi najprijateľnejšou možnosťou takéhoto kontaktu, pri ktorom ma nebude považovať za nadržaného, je jóga. Takže sa musím pokúsiť..."
+    new "Znova som našiel svoju mamu celú rozrušenú a smutnú. Je pre ňu ťažké vidieť jeho uštipačný výraz v práci a nedá sa mu uniknúť. Iba ak dá výpoveď, ale nevedno, aké problémy by jej mohol spôsobiť. \nRozhodol som sa ju okrem zvyčajného uistenia rozveseliť aj objatím zadku, ale povedala, že je viac v rozpakoch ako upokojená. \nMusím to napraviť... A aby boli takéto dotyky prirodzenejšie, mal by som sa jej zadku dotýkať častejšie. \nAsi najprijateľnejšou možnosťou takéhoto kontaktu, pri ktorom ma nebude považovať za nadržaného, je jóga. Takže sa musím pokúsiť..."
 
     # game/core/09_opportunities.rpy:4
     old "Эх, придётся пораньше вставать, чтобы помогать маме с йогой..."
@@ -66619,109 +66619,109 @@ translate slovak ann_yoga_with_maxr_4e133757_1:
     Max_01 "S radosťou, mami! Rozhodne..." nointeract
 
 # game/dialogues/anntalk.rpy:1018
-translate slovak ann_yoga_with_maxr_5a4fa2a4:
+translate slovak ann_yoga_with_maxr_failure_reassurance_5a4fa2a4:
 
     # Ann_15 "Ой, спасибо, сынок, что помог. Фух... А это что такое?! Как тебе не стыдно! Это у тебя на меня такая реакция?!"
     Ann_15 "Ďakujem ti, synu, že si mi pomohol. Uff... Čo je to?! Hanba ti! To je tvoja reakcia na mňa?!"
 
 # game/dialogues/anntalk.rpy:1019
-translate slovak ann_yoga_with_maxr_28026926:
+translate slovak ann_yoga_with_maxr_failure_reassurance_28026926:
 
     # Max_07 "Ну... Говорил же, красиво..."
     Max_07 "No... Hovoril som ti, že je to krásne..."
 
 # game/dialogues/anntalk.rpy:1020
-translate slovak ann_yoga_with_maxr_5f7de140:
+translate slovak ann_yoga_with_maxr_failure_reassurance_5f7de140:
 
     # Ann_14 "Макс, красивое не должно так возбуждать! Вернее, я не должна тебя так возбуждать. Другие женщины, да, но не я, сынок."
     Ann_14 "Max, krása by nemala byť taká vzrušujúca! Alebo by som ťa skôr nemala tak vzrušovať. Iné ženy áno, ale nie ja, synku."
 
 # game/dialogues/anntalk.rpy:1021
-translate slovak ann_yoga_with_maxr_7301cfbe:
+translate slovak ann_yoga_with_maxr_failure_reassurance_7301cfbe:
 
     # Max_09 "Хоть ты и моя мама, но ты так же и очень красивая женщина! Знаешь, мне кажется, что ЭТО - самый искренний комплимент твоей фигуре."
     Max_09 "Aj keď si moja matka, si veľmi krásna žena! Vieš, myslím, že TOTO je ten najúprimnejší kompliment tvojej postavy."
 
 # game/dialogues/anntalk.rpy:1022
-translate slovak ann_yoga_with_maxr_35170ac6:
+translate slovak ann_yoga_with_maxr_failure_reassurance_35170ac6:
 
     # Ann_16 "Да уж, комплимент... Значит так, Макс! Ближайшие три дня можешь ко мне не подходить во время йоги. А в дальнейшем, можешь помогать через день. Всё понятно?"
     Ann_16 "Áno, kompliment... Dobre, Max! Nasledujúce tri dni sa odo mňa budeš počas jógy držať ďalej. A potom mi môžeš pomáhať každý druhý deň. Je to jasné?"
 
 # game/dialogues/anntalk.rpy:1025
-translate slovak ann_yoga_with_maxr_17c6fe68:
+translate slovak ann_yoga_with_maxr_failure_reassurance_17c6fe68:
 
     # Ann_14 "Ой, спасибо, сынок, что помог. Фух... Да что же это такое! Ты опять перевозбудился..."
     Ann_14 "Ďakujem ti, synu, že si mi pomohol. Uff... Čo to preboha je! Zase si nadšený..."
 
 # game/dialogues/anntalk.rpy:1026
-translate slovak ann_yoga_with_maxr_4b3b94d8:
+translate slovak ann_yoga_with_maxr_failure_reassurance_4b3b94d8:
 
     # Max_07 "Ага, виновен..."
     Max_07 "Áno, vinný..."
 
 # game/dialogues/anntalk.rpy:1027
-translate slovak ann_yoga_with_maxr_7c53d0c1:
+translate slovak ann_yoga_with_maxr_failure_reassurance_7c53d0c1:
 
     # Ann_16 "И вот что прикажешь с тобой делать?"
     Ann_16 "Čo mám s tebou robiť?"
 
 # game/dialogues/anntalk.rpy:1028
-translate slovak ann_yoga_with_maxr_88deb7c3:
+translate slovak ann_yoga_with_maxr_failure_reassurance_88deb7c3:
 
     # Max_09 "Понять и простить. Я же мужчина всё-таки..."
     Max_09 "Pochop ma a odpusti mi. Som predsa len slabý muž..."
 
 # game/dialogues/anntalk.rpy:1029
-translate slovak ann_yoga_with_maxr_41ff6034:
+translate slovak ann_yoga_with_maxr_failure_reassurance_41ff6034:
 
     # Ann_17 "Ох, Макс, горе ты моё... Значит так, в ближайшие три дня можешь ко мне не подходить во время йоги, а дальше смотри сам, можешь присоединяться, но чтобы такое не повторялось. Всё понятно?"
     Ann_17 "Ach, Max, beda mi... Takže najbližšie tri dni sa budeš počas jogy držať odo mňa ďalej a potom sa môžeš pridať, ale nech sa to neopakuje. Je to jasné?"
 
 # game/dialogues/anntalk.rpy:1030
-translate slovak ann_yoga_with_maxr_7ac1ee79:
+translate slovak ann_yoga_with_maxr_failure_reassurance_7ac1ee79:
 
     # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
     Max_10 "Nech sa páči, mami. Do budúcna..." nointeract
 
 # game/dialogues/anntalk.rpy:1033
-translate slovak ann_yoga_with_maxr_f2c16400:
+translate slovak ann_yoga_with_maxr_failure_reassurance_f2c16400:
 
     # Max_02 "Под моим присмотром у тебя всегда будет великолепная фигура!"
     Max_02 "Pod mojím dohľadom budeš mať vždy skvelú postavu!"
 
 # game/dialogues/anntalk.rpy:1037
-translate slovak ann_yoga_with_maxr_f0d0acff:
+translate slovak ann_yoga_with_maxr_failure_reassurance_f0d0acff:
 
     # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Буду только рада, если решишь снова присоединиться ко мне."
     Ann_04 "Ďakujem ti, synu, že si mi pomohol. Uff... Myslím, že to je koniec. Budem veľmi rada, ak sa ku mne opäť pridáš."
 
 # game/dialogues/anntalk.rpy:1038
-translate slovak ann_yoga_with_maxr_ff21d29a_1:
+translate slovak ann_yoga_with_maxr_failure_reassurance_ff21d29a:
 
     # Max_01 "С радостью, мам! Обязательно..."
     Max_01 "S radosťou, mami! Rozhodne..."
 
 # game/dialogues/anntalk.rpy:1039
-translate slovak ann_yoga_with_maxr_dc624a8a_1:
+translate slovak ann_yoga_with_maxr_failure_reassurance_dc624a8a:
 
     # Ann_02 "Но, давай хотя бы через день. Чтобы я могла без твоей помощи попробовать сделать то же самое."
     Ann_02 "Ale budme cvičiť spolu aspoň každý druhý deň. Takže sa môžem pokúsiť urobiť to isté bez tvojej pomoci."
 
 # game/dialogues/anntalk.rpy:1040
-translate slovak ann_yoga_with_maxr_136c43d9_1:
+translate slovak ann_yoga_with_maxr_failure_reassurance_136c43d9:
 
     # Max_04 "Хорошо, как скажешь. До следующего раза, мам." nointeract
     Max_04 "Dobre, nech sa páči. Uvidíme sa nabudúce, mami." nointeract
 
 # game/dialogues/anntalk.rpy:1043
-translate slovak ann_yoga_with_maxr_c9b86927:
+translate slovak ann_yoga_with_maxr_failure_reassurance_c9b86927:
 
     # Ann_04 "Ой, спасибо, сынок, что помог. Фух... На этом, пожалуй, закончим. Завтра я сама попробую это повторить без тебя, а дальше присоединяйся, если захочешь. Я буду только рада."
     Ann_04 "Ďakujem ti, synu, že si mi pomohol. Uff... Myslím, že to je koniec. Zajtra to skúsim sama bez teba a potom sa pridaj, ak chceš. Bola by som veľmi rada."
 
 # game/dialogues/anntalk.rpy:1044
-translate slovak ann_yoga_with_maxr_4e133757_2:
+translate slovak ann_yoga_with_maxr_failure_reassurance_4e133757:
 
     # Max_01 "С радостью, мам! Обязательно..." nointeract
     Max_01 "S radosťou, mami! Rozhodne..." nointeract
@@ -67634,7 +67634,7 @@ translate slovak Eric_talk_about_Lisa_3_36c2b900:
 translate slovak lisa_eric_sex_ed_practice_practice_1_999fc9b3:
 
     # Max_07 "Смотри... Я тебе по дружески эти опасения высказал. Если ты на все 150%% уверен, что вам удастся сохранить это в тайне, то пожалуйста. Но тебе потом от этого отмыться не удастся, если что."
-    Max_07 "Pozri sa... Tieto obavy som ti vyjadril priateľským spôsobom. Ak si si na 150 % istí, že to dokážeš udržať v tajnosti, nemáš za čo. Ale neskôr ti to už neprejde, ak vôbec."
+    Max_07 "Pozri sa... Tieto obavy som ti vyjadril priateľským spôsobom. Ak si si na 150%% istí, že to dokážeš udržať v tajnosti, nemáš za čo. Ale neskôr ti to už neprejde, ak vôbec."
 
 # game/events/eric.rpy:1749
 translate slovak lisa_eric_sex_ed_practice_practice_2_f60134c6:
@@ -68999,4 +68999,3564 @@ translate slovak lisa_dressed_stay_in_room_db51f185:
 
     # Max_09 "{m}Я слишком много раз пытался подсмотреть, как Лиза переодевается. Больше не стоит пытаться сделать это сегодня.{/m}"
     Max_09 "{m}Snažil som sa príliš veľakrát, aby som sa pozrel na Lízu, ako sa prezlieka. Dnes sa o to už neoplatí pokúšať.{/m}"
+
+# TODO: Translation updated at 2022-03-18 22:09
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно защитить Лизу от маминого наказания, а затем, как можно быстрее, с ней поговорить..."
+    new "Musíme chrániť lisu pred trestom jej matky a potom s ňou čo najskôr hovoriť..."
+
+# TODO: Translation updated at 2022-04-25 01:48
+
+translate slovak strings:
+
+    # game/screens.rpy:1036
+    old "Активировать чит-меню"
+    new "Aktivácia cheat menu"
+
+# TODO: Translation updated at 2022-04-25 01:48
+
+translate slovak strings:
+
+    # game/core/screens.rpy:220
+    old "{b}ЧИТ-МЕНЮ{/b}"
+    new "{b}CHEAT MENU{/b}"
+
+# TODO: Translation updated at 2022-04-25 01:48
+
+translate slovak strings:
+
+    # game/scripts_s1/s1_screens.rpy:17
+    old "ПРЕДУПРЕЖДЕНИЕ!"
+    new "VAROVANIE!"
+
+    # game/scripts_s1/s1_screens.rpy:19
+    old "С осторожностью используйте чит-меню - это может привести к ошибкам в прохождении."
+    new "Používajte cheat menu s opatrnosťou - môže viesť k chybám v priechode hrou."
+
+    # game/scripts_s1/s1_screens.rpy:20
+    old "Доступ к части читов будет открыт после достижения некоторого прогресса для минимизации последствий вмешательства в переменные игры."
+    new "Časť cheatov bude prístupná po dosiahnutí určitého pokroku, aby sa minimalizovali následky manipulácie s hernými premennými."
+
+    # game/scripts_s1/s1_screens.rpy:87
+    old "Невозможно до открытия доступа к банку (открывается на 9 день)"
+    new "Nedostupné, kým sa neotvorí prístup do banky (otvorí sa 9. deň)"
+
+    # game/scripts_s1/s1_screens.rpy:89
+    old "Доступно один раз в день"
+    new "K dispozícii raz denne"
+
+    # game/scripts_s1/s1_screens.rpy:105
+    old "Восстановить"
+    new "Obnovenie"
+
+    # game/scripts_s1/s1_screens.rpy:126
+    old "Необходимо пройти первый урок онлайн-курса \"Общение\""
+    new "Potrebujete absolvovať prvú lekciu online kurzu \"Komunikácia\""
+
+    # game/scripts_s1/s1_screens.rpy:182
+    old "Пропустить дни до:"
+    new "Preskočiť dni na:"
+
+    # game/scripts_s1/s1_screens.rpy:186
+    old "Понедельника"
+    new "Pondelok"
+
+    # game/scripts_s1/s1_screens.rpy:188
+    old "Доступно только после приезда Киры"
+    new "K dispozícii až po príchode Kiry"
+
+    # game/scripts_s1/s1_screens.rpy:189
+    old "Вторника"
+    new "Utorok"
+
+    # game/scripts_s1/s1_screens.rpy:192
+    old "Среды"
+    new "Stredu"
+
+    # game/scripts_s1/s1_screens.rpy:195
+    old "Четверга"
+    new "Štvrtok"
+
+    # game/scripts_s1/s1_screens.rpy:198
+    old "Пятницы"
+    new "Piatok"
+
+    # game/scripts_s1/s1_screens.rpy:201
+    old "Субботы"
+    new "Sobotu"
+
+    # game/scripts_s1/s1_screens.rpy:204
+    old "Воскресения"
+    new "Nedeľu"
+
+    # game/scripts_s1/s1_screens.rpy:315
+    old "ЧЕРЕЗ НЕКОТОРОЕ ВРЕМЯ..."
+    new "PO CHVÍLI..."
+
+# TODO: Translation updated at 2022-04-25 01:48
+
+translate slovak strings:
+
+    # game/core/02init.rpy:141
+    old "Мам, поговорим?"
+    new "Mami, porozprávame sa?"
+
+    # game/core/02init.rpy:141
+    old "Хотел поговорить о маме..."
+    new "Chcel som hovoriť o svojej mame..."
+
+# TODO: Translation updated at 2022-04-25 01:48
+
+# game/scripts_s1/s1_v91.rpy:17
+translate slovak s1_ann_drink_cam_e1d89378:
+
+    # Max_09 "{m}Что это мама делает в такой поздний час в гостиной? Может, что-то случилось...{/m}" nointeract
+    Max_09 "{m}Čo robí mama v obývačke v túto neskorú hodinu? Možno sa niečo stalo...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:22
+translate slovak s1_ann_drink_cam_be712d34:
+
+    # Max_07 "{m}Похоже, мама снова выпивает в гордом одиночестве!{/m}"
+    Max_07 "{m}Zdá sa, že mama opäť pije vo svojej hrdej samote!{/m}"
+
+# game/scripts_s1/s1_v91.rpy:32
+translate slovak s1_ann_first_drink_f0d16941:
+
+    # Max_07 "{m}Ох, ничего себе! Мама сидит здесь совсем одна и выпивает... Почему? Лучше мне не оставлять её одну в таком состоянии...{/m}"
+    Max_07 "{m}Páni! Mama tu sedí sama a pije... Prečo? Radšej ju tak nenechám samú...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:35
+translate slovak s1_ann_first_drink_89deb820:
+
+    # Max_09 "{m}Что это мама делает в такой поздний час в гостиной? Кажется, ничего хорошего...{/m}"
+    Max_09 "{m}Čo robí mama v obývačke v túto neskorú hodinu? Zdá sa, že z toho nevyplýva nič dobré...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:39
+translate slovak s1_ann_first_drink_db692275:
+
+    # Max_00 "Эй, мам, что ты здесь делаешь?"
+    Max_00 "Ahoj, mami, čo tu robíš?"
+
+# game/scripts_s1/s1_v91.rpy:40
+translate slovak s1_ann_first_drink_c2453842:
+
+    # Ann_14 "А? Это ты Макс... Я... Просто решила немножко расслабиться..."
+    Ann_14 "A? To si ty, Max... Ja... Len som si myslela, že sa trochu uvoľním..."
+
+# game/scripts_s1/s1_v91.rpy:43
+translate slovak s1_ann_first_drink_24bc1e46:
+
+    # Max_08 "Обычно ты не так расслабляешься... Так что давай рассказывай, что не так?"
+    Max_08 "Zvyčajne sa toľko neuvoľňuješ... Tak mi povedz, čo sa deje?"
+
+# game/scripts_s1/s1_v91.rpy:44
+translate slovak s1_ann_first_drink_60b5bf99:
+
+    # Ann_12 "Всё хорошо. Я просто устала..."
+    Ann_12 "Všetko je v poriadku. Som len unavená..."
+
+# game/scripts_s1/s1_v91.rpy:45
+translate slovak s1_ann_first_drink_1bcbb002:
+
+    # Max_09 "От чего?"
+    Max_09 "Z čoho?"
+
+# game/scripts_s1/s1_v91.rpy:46
+translate slovak s1_ann_first_drink_fd74038e:
+
+    # Ann_17 "Да от Эрика и его злорадной рожи... И от чувства собственной ничтожности..."
+    Ann_17 "Áno od Erika a jeho žiarivej tváre... A z pocitu vlastnej bezvýznamnosti..."
+
+# game/scripts_s1/s1_v91.rpy:47
+translate slovak s1_ann_first_drink_93c46a4a:
+
+    # Max_07 "Эй, не говори так! Ты самая замечательная женщина на свете!"
+    Max_07 "Hej, toto nehovor! Si tá najúžasnejšia žena na svete!"
+
+# game/scripts_s1/s1_v91.rpy:48
+translate slovak s1_ann_first_drink_8819ff24:
+
+    # Ann_18 "А кто этого поганого извращенца, привёл в наш дом? Ведь я! Я виновата..."
+    Ann_18 "A kto priviedol tohto špinavého úchyláka do nášho domu? Koniec koncov, som! Som vinná..."
+
+# game/scripts_s1/s1_v91.rpy:49
+translate slovak s1_ann_first_drink_e167331c:
+
+    # Max_09 "Ты же не знала, что он такой! Всё хорошо, сейчас эта проблема уже решена. Так что прекращай себя винить и пить в одиночестве. Ты не одна, мам! Я всегда рядом!"
+    Max_09 "Nevedela si, že je taký! Všetko je teraz v poriadku, tento problém je už vyriešený. Prestaň sa obviňovať a popíjať sama. Nie si sama, mami! Vždy som tu pre teba!"
+
+# game/scripts_s1/s1_v91.rpy:50
+translate slovak s1_ann_first_drink_fac106ef:
+
+    # Ann_02 "Ох, это так мило, сынок... Ты... Ты самый лучший. Сразу видно настоящего мужчину."
+    Ann_02 "To je také milé, synku... Ty... Si najlepší. Okamžite môžem vidieť skutočného muža. "
+
+# game/scripts_s1/s1_v91.rpy:51
+translate slovak s1_ann_first_drink_528df7bd:
+
+    # Max_15 "Вот. И мужчина тебе говорит, что с алкоголем на сегодня всё. Пора идти спать."
+    Max_15 "Tak. A muž ti povie, že si pre tento deň skončila s alkoholom. Je čas ísť spať."
+
+# game/scripts_s1/s1_v91.rpy:52
+translate slovak s1_ann_first_drink_fada79ea:
+
+    # Ann_14 "Хорошо, мой милый... Только... Ты проводишь меня до комнаты? Кажется, меня развезло уже с одного бокала вина."
+    Ann_14 "Dobre, drahý... Iba... Odvedieš ma do mojej izby? Myslím, že som už celkom pod vplyvom z jedného pohára vína."
+
+# game/scripts_s1/s1_v91.rpy:53
+translate slovak s1_ann_first_drink_c1467082:
+
+    # Max_07 "Ну, конечно! Пойдём..."
+    Max_07 "No, samozrejme! Poďme..."
+
+# game/scripts_s1/s1_v91.rpy:54
+translate slovak s1_ann_first_drink_aed28936:
+
+    # Ann_04 "Спасибо, сынок... Ты... Ты такой заботливый." nointeract
+    Ann_04 "Ďakujem, synku... Ty... Si taký pozorný." nointeract
+
+# game/scripts_s1/s1_v91.rpy:60
+translate slovak s1_ann_first_drink_df49f996:
+
+    # Ann_07 "Хи-хи... Комната так смешно качается... Правда?"
+    Ann_07 "Hee hee... Miestnosť sa hojdá tak smiešne... Naozaj?"
+
+# game/scripts_s1/s1_v91.rpy:61
+translate slovak s1_ann_first_drink_15bef9ab:
+
+    # Max_10 "А тебя и правда развезло, мам! Осталось идти совсем немного..."
+    Max_10 "A máš naozaj šťastie, mami! Neostáva veľa času na to, aby sme prišli..."
+
+# game/scripts_s1/s1_v91.rpy:62
+translate slovak s1_ann_first_drink_062f1560:
+
+    # Ann_06 "Спа... Спасибо, что довёл меня, милый... Если бы не ты, я бы точно выселила Киру с дивана в гостиной."
+    Ann_06 "Spáľna... Ďakujem, že si ma sem dostal, srdiečko... Keby nebolo teba, určite by som Kiru vysťahovala z gauča v obývačke."
+
+# game/scripts_s1/s1_v91.rpy:63
+translate slovak s1_ann_first_drink_ae1c22ca:
+
+    # Max_01 "У нас вообще-то два дивана в гостиной, помнишь?"
+    Max_01 "V obývacej izbe máme dve pohovky, pamätaš?"
+
+# game/scripts_s1/s1_v91.rpy:64
+translate slovak s1_ann_first_drink_ef7ad95b:
+
+    # Ann_05 "О, точно! Я вспомнила... Хи-хи... Вот и моя кроватка!"
+    Ann_05 "Oh, určite! Spomenula som si ... Hee Hee ... Takže moja posteľ!"
+
+# game/scripts_s1/s1_v91.rpy:65
+translate slovak s1_ann_first_drink_0836aaae:
+
+    # Max_04 "Ага, добрались."
+    Max_04 "Áno, dostali sme sa tam."
+
+# game/scripts_s1/s1_v91.rpy:68
+translate slovak s1_ann_first_drink_016ed5c5:
+
+    # Ann_03 "Ох, как же хорошо оказаться в мягкой постели... Всё, я спать..."
+    Ann_03 "Ó, aké je to príjemné byť v mäkkej posteli... To je všetko, idem spať..."
+
+# game/scripts_s1/s1_v91.rpy:69
+translate slovak s1_ann_first_drink_4a26f1e0:
+
+    # Max_09 "Эй, мам, подожди! А ты переодеться не хочешь? В халате будет жарко спать."
+    Max_09 "Hej, mami, počkaj! Nechceš sa prezliecť? Spať v župane bude horúce."
+
+# game/scripts_s1/s1_v91.rpy:70
+translate slovak s1_ann_first_drink_ec98d9cc:
+
+    # Ann_14 "Да, ты прав, будет жарко. Но я сейчас не в том состоянии, чтобы переодеваться..."
+    Ann_14 "Áno, máš pravdu, bude horúco. Ale teraz nie som v stave, aby som sa prezliekla..."
+
+# game/scripts_s1/s1_v91.rpy:71
+translate slovak s1_ann_first_drink_5356e943:
+
+    # Max_07 "Не переживай, я всё сделаю. Тебе нужно только приподняться."
+    Max_07 "Neboj sa, urobím to. Stačí len vstať."
+
+# game/scripts_s1/s1_v91.rpy:74
+translate slovak s1_ann_first_drink_6b3d1384:
+
+    # Ann_13 "Ох, только я без лифчика, сынок. Давай, я попробую сама переодеться..."
+    Ann_13 "Ale ja nemám podprsenku, synku. Skúsim sa prezliecť..."
+
+# game/scripts_s1/s1_v91.rpy:75
+translate slovak s1_ann_first_drink_72883ba9:
+
+    # Max_01 "Не волнуйся, здесь довольно темно, так что при всём желании я всё равно ничего не увижу."
+    Max_01 "Neboj sa, je celkom tma, takže nič nevidím, aj keby som chcel."
+
+# game/scripts_s1/s1_v91.rpy:76
+translate slovak s1_ann_first_drink_da72dfe0:
+
+    # Ann_12 "Да? Эээ... И ты даже не хочешь увидеть?"
+    Ann_12 "Áno? Ehm... A ty to ani nechceš vidieť?"
+
+# game/scripts_s1/s1_v91.rpy:77
+translate slovak s1_ann_first_drink_45219040:
+
+    # Max_07 "Ну, как мужчина, конечно хочу! И не только увидеть... Но сейчас я всего лишь пытаюсь тебе помочь..."
+    Max_07 "No, ako muž, samozrejme, že áno! A nielen preto, aby som videl... Ale teraz sa ti len snažím pomôcť..."
+
+# game/scripts_s1/s1_v91.rpy:80
+translate slovak s1_ann_first_drink_c71d9dbb:
+
+    # Ann_14 "Спасибо, мой хороший. Мне как-то даже не удобно перед тобой... Что тебе приходится делать такое для меня..."
+    Ann_14 "Ďakujem, dobrý muž. Ani sa pred tebou necítim nepohodlne... Čo pre mňa musíš urobiť..."
+
+# game/scripts_s1/s1_v91.rpy:81
+translate slovak s1_ann_first_drink_a0c5943f:
+
+    # Max_04 "Всё нормально, мам. Поддержка любимой мамы - дело святое... Вот и всё! Твой лифчик там, где ему и положено быть."
+    Max_04 "To je v poriadku, mami. Podporovať svoju milovanú matku je posvätná vec... To je všetko! Podprsenka je tam, kde má byť."
+
+# game/scripts_s1/s1_v91.rpy:82
+translate slovak s1_ann_first_drink_246c96e1:
+
+    # Ann_03 "Ох, даже не знаю, чтобы я без тебя делала... А сейчас прости, я просто умираю, так хочу спать..."
+    Ann_03 "Och, neviem, čo by som si bez teba počala... Teraz sa ospravedlňujem, chce sa mi spať..."
+
+# game/scripts_s1/s1_v91.rpy:83
+translate slovak s1_ann_first_drink_e6dabdcc:
+
+    # Max_07 "Конечно, мам, ложись. Но я, на всякий случай, останусь здесь. Вдруг, тебе станет плохо и нужна будет помощь."
+    Max_07 "Samozrejme, mami, ľahni si. Ale pre istotu zostanem tu. V prípade, že ti príde zle a budeš potrebovať pomoc."
+
+# game/scripts_s1/s1_v91.rpy:84
+translate slovak s1_ann_first_drink_cfe77046:
+
+    # Ann_17 "Ты останешься спать со мной? Рядом? Сынок, ты уже слишком большой, чтобы спать с мамой..."
+    Ann_17 "Zostaneš so mnou v posteli? V blízkosti? Synu, si príliš veľký na to, aby si spal s mamou..."
+
+# game/scripts_s1/s1_v91.rpy:85
+translate slovak s1_ann_first_drink_efc3b7d6:
+
+    # Max_09 "И тем не менее, я останусь, мне так будет спокойнее за тебя. Кровать большая."
+    Max_09 "Napriek tomu zostanem, cítim sa pri tebe bezpečnejšie. Posteľ je veľká."
+
+# game/scripts_s1/s1_v91.rpy:88
+translate slovak s1_ann_first_drink_cba7487a:
+
+    # Ann_02 "Я... Спасибо, мой милый, ты такой заботливый... Ты у меня самый лучший!"
+    Ann_02 "Och... Ďakujem, drahý, si taká pozorný... Si najlepší muž, akého mám!"
+
+# game/scripts_s1/s1_v91.rpy:89
+translate slovak s1_ann_first_drink_feb90cca:
+
+    # Max_01 "Поцелую перед сном, чтобы ты ни о чём не переживала и отдыхала..."
+    Max_01 "Bozk pred spaním, aby si sa o nič nestarala a odpočívala..."
+
+# game/scripts_s1/s1_v91.rpy:90
+translate slovak s1_ann_first_drink_15e6e7c9:
+
+    # Ann_08 "Ох... Это так мило и нежно, сынок... Спокойной ночи."
+    Ann_08 "Oh... Je to také sladké a jemné, synku... Dobrú noc."
+
+# game/scripts_s1/s1_v91.rpy:91
+translate slovak s1_ann_first_drink_4685800b:
+
+    # Max_04 "Спи, мам... Сладких снов."
+    Max_04 "Spi, mami... Sladké sny."
+
+# game/scripts_s1/s1_v91.rpy:94
+translate slovak s1_ann_first_drink_a89e1c95:
+
+    # Max_02 "{m}Наконец-то я лежу с мамой в одной постели! И не смотря на то, что сейчас она просто спит, это огромное достижение, поскольку она не выгнала меня, а позволила остаться. И я безумно рад засыпать рядом с такой шикарной женщиной...{/m}" nointeract
+    Max_02 "{m}Konečne ležím v posteli s mamou! A napriek tomu, že teraz len spí, je to obrovský úspech, pretože ma nevyhodila, ale nechala ma tu. A som neskutočne šťastný, že môžem zaspať vedľa takej nádhernej ženy...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:102
+translate slovak s1_ann_first_drink_ba7774a4:
+
+    # Max_19 "{m}Что это?! Оу! Похоже, маме не хватает близости и она во сне потянулась обниматься... Это так сильно возбуждает, чувствовать её нежное и горячее тело, которое так крепко прижимается ко мне...{/m}"
+    Max_19 "{m}Čo je to?! Oh! Zdá sa, že mame chýba intimita a že sa v spánku túli po objatí... Je to také vzrušujúce cítiť jej nežné a horúce telo, ktoré sa ku mne tak pevne pritláča...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:103
+translate slovak s1_ann_first_drink_f293a6e7:
+
+    # Ann_03 "Ммм... Неужели это не сон и ты действительно здесь... рядом со мной?"
+    Ann_03 "Mmm... Nie je to sen a ty si naozaj tu... vedľa mňa?"
+
+# game/scripts_s1/s1_v91.rpy:104
+translate slovak s1_ann_first_drink_5a7ea8ac:
+
+    # Max_01 "Да, я здесь. Всё хорошо..."
+    Max_01 "Áno, som tu. Všetko je v poriadku..."
+
+# game/scripts_s1/s1_v91.rpy:107
+translate slovak s1_ann_first_drink_a9a967b9:
+
+    # Ann_03 "Ох... Похоже, что ты соскучился по мне так же сильно, как и я по тебе... Мне так не хватало твоего большого и горячего мальчика... Я очень хочу его..."
+    Ann_03 "Oh... Zdá sa, že ti chýbam rovnako ako ty mne... Tak veľmi mi chýbal tvoj veľký, horúci chlapec... Veľmi ho chcem..."
+
+# game/scripts_s1/s1_v91.rpy:108
+translate slovak s1_ann_first_drink_70954202:
+
+    # Max_07 "Эээ... Мам?"
+    Max_07 "Ehm... Mama?"
+
+# game/scripts_s1/s1_v91.rpy:111
+translate slovak s1_ann_first_drink_026b39b6:
+
+    # Ann_15 "Ой!!! Макс! Я совсем не думала, что это ты, сынок... Какой стыд!"
+    Ann_15 "Au!!! Max! Vôbec som si nemyslela, že si to ty, synu... Aká škoda!"
+
+# game/scripts_s1/s1_v91.rpy:112
+translate slovak s1_ann_first_drink_1f5f4afc:
+
+    # Max_09 "Да? И кто, ты думала, рядом с тобой лежит? Неужели, Эрик?"
+    Max_09 "Áno? A kto podľa teba ležal vedľa teba? Je to tak, Erik?"
+
+# game/scripts_s1/s1_v91.rpy:113
+translate slovak s1_ann_first_drink_87397b48:
+
+    # Ann_19 "Конечно, нет! С этим подонком я бы уж точно не потянулась обниматься!"
+    Ann_19 "Samozrejme, že nie! Určite by som sa s tým bastardom nechcela objímať!"
+
+# game/scripts_s1/s1_v91.rpy:114
+translate slovak s1_ann_first_drink_df3cca05:
+
+    # Max_07 "А кто тогда?"
+    Max_07 "Kto teda?"
+
+# game/scripts_s1/s1_v91.rpy:115
+translate slovak s1_ann_first_drink_8b10c661:
+
+    # Ann_17 "Неважно! Зря я так напилась. Иди к себе, Макс. Нам не стоит спать вместе, от греха подальше." nointeract
+    Ann_17 "Nevadí! Nemala som byť taká opitá. Choď na svoje miesto, Max. Nemali by sme spať spolu, mimo nebezpečenstva." nointeract
+
+# game/scripts_s1/s1_v91.rpy:130
+translate slovak s1_ann_talk_about_night_f4b840e4:
+
+    # Ann_12 "Если ты про то, что случилось ночью, то можешь даже не утруждаться. Я не хочу это обсуждать. Давай просто забудем."
+    Ann_12 "Ak máš na mysli to, čo sa stalo v noci, nemusíš sa ani namáhať. Nechcem o tom diskutovať. Jednoducho na to zabudnime."
+
+# game/scripts_s1/s1_v91.rpy:131
+translate slovak s1_ann_talk_about_night_fafad11c:
+
+    # Max_07 "Ну, знаешь... После того, как ты запустила свою руку мне в шорты, у меня много вопросов!"
+    Max_07 "No, vieš... Po tom, čo si mi prešla rukou po šortkách, mám veľa otázok!"
+
+# game/scripts_s1/s1_v91.rpy:132
+translate slovak s1_ann_talk_about_night_015d0eaf:
+
+    # Ann_14 "Ох, ну зачем напоминать о таком? Мне ужасно стыдно! Выводы для себя я уже сделала, что алкоголь для меня - зло. Тема закрыта, Макс."
+    Ann_14 "Prečo to spomínaš? Strašne sa hanbím! Už som dospela k záveru, že alkohol je pre mňa zlo. Téma je uzavretá, Max."
+
+# game/scripts_s1/s1_v91.rpy:133
+translate slovak s1_ann_talk_about_night_cbc0a9bb:
+
+    # Max_10 "Ладно, как скажешь."
+    Max_10 "Dobre, nech sa páči."
+
+# game/scripts_s1/s1_v91.rpy:141
+translate slovak s1_kira_talk_about_ann_drink_ee018491:
+
+    # Kira_01 "Не переживай за неё, Макс. Она женщина взрослая и переживёт это расставание с Эриком. Но моральная поддержка будет очень кстати."
+    Kira_01 "Neboj sa o ňu, Max. Je to dospelá žena a rozchod s Erikom prekoná. Ale morálna podpora sa bude hodiť."
+
+# game/scripts_s1/s1_v91.rpy:142
+translate slovak s1_kira_talk_about_ann_drink_3cddc573:
+
+    # Max_09 "Это всё понятно. Я про другое хотел спросить. Похоже, мама начала искать утешение в алкоголе."
+    Max_09 "Všetko je pochopiteľné. Na to som sa nechcel spýtať. Zdá sa, že mama začala hľadať útechu v alkohole."
+
+# game/scripts_s1/s1_v91.rpy:143
+translate slovak s1_kira_talk_about_ann_drink_f28ad24b:
+
+    # Kira_03 "Ну... Это не так и страшно, если в меру. Она же не каждый день это делает, иначе по ней было бы видно."
+    Kira_03 "No... Nie je to až také desivé, ak je to s mierou. Nie je to tak, že by to robila každý deň, inak by ste to videli."
+
+# game/scripts_s1/s1_v91.rpy:144
+translate slovak s1_kira_talk_about_ann_drink_b1d4a448:
+
+    # Max_07 "Да, пока я только раз застал её за этим делом. Она себя вообще нормально ведёт, когда выпьет?"
+    Max_07 "Áno, zatiaľ som ju pri tom pristihol len raz. Chová sa vôbec normálne, keď pije?"
+
+# game/scripts_s1/s1_v91.rpy:145
+translate slovak s1_kira_talk_about_ann_drink_52b93e7c:
+
+    # Kira_08 "Боишься, что она начнёт всех по заднице лупить направо и налево?"
+    Kira_08 "Bojíš sa, že začne všetkým nakopávať zadky zľava i sprava?"
+
+# game/scripts_s1/s1_v91.rpy:146
+translate slovak s1_kira_talk_about_ann_drink_db21659c:
+
+    # Max_10 "Нет. Просто хочу знать, чего от неё стоит ожидать в таком состоянии."
+    Max_10 "Nie. Chcem len vedieť, čo od nej môžem v tomto stave očakávať."
+
+# game/scripts_s1/s1_v91.rpy:147
+translate slovak s1_kira_talk_about_ann_drink_8a8e4391:
+
+    # Kira_14 "На самом деле Аню пьяной я видела не так уж много раз. По молодости было дело, уже после того нашего с ней детского... происшествия..."
+    Kira_14 "V skutočnosti som Annu nevidela opitú mnohokrát. Keď som bola mladá, bolo to po tom detstve, po ktorom som s ňou prežila... incidenty..."
+
+# game/scripts_s1/s1_v91.rpy:148
+translate slovak s1_kira_talk_about_ann_drink_6d17d919:
+
+    # Max_09 "И ничего странного за ней ты тогда не наблюдала?"
+    Max_09 "A vtedy ste si na nej nevšimli nič zvláštne?"
+
+# game/scripts_s1/s1_v91.rpy:149
+translate slovak s1_kira_talk_about_ann_drink_7bf2578d:
+
+    # Kira_05 "Расскажу маленькую тайну... Мой первый, сам знаешь какой опыт, с девушками был как раз с твоей мамой."
+    Kira_05 "Prezradím ti malé tajomstvo... Moja prvá skúsenosť s dievčatami bola s tvojou mamou."
+
+# game/scripts_s1/s1_v91.rpy:150
+translate slovak s1_kira_talk_about_ann_drink_c7b6d6be:
+
+    # Max_08 "Ого! Вот с этого момента поподробнее..."
+    Max_08 "Wow! Viac o tomto bode..."
+
+# game/scripts_s1/s1_v91.rpy:151
+translate slovak s1_kira_talk_about_ann_drink_c594ec4e:
+
+    # Kira_07 "Помню, мы с ней урвали бутылочку вина... Ну и пустились во все тяжкие. Как я поняла, когда её развезёт, то она впадает в какое-то состояние... типа фантазии. Она понимает, что происходит и всё помнит, но не считает, что это было правдой."
+    Kira_07 "Pamätám si, že sme s ňou vytiahli fľašu vína... Preto sme sa pustili do besnenia. Podľa toho, čo som pochopila, keď sa napije, dostane sa do nejakého stavu... druh fantázie. Chápe, čo sa deje, a všetko si pamätá, ale nemyslí si, že to bola pravda."
+
+# game/scripts_s1/s1_v91.rpy:152
+translate slovak s1_kira_talk_about_ann_drink_2c727844:
+
+    # Max_02 "Во как! Ну и... понравилось тебе \"развлекаться\" с моей мамой?"
+    Max_02 "Ach, áno! Takže... užila si si \"zábavu\" s mojou mamou?"
+
+# game/scripts_s1/s1_v91.rpy:153
+translate slovak s1_kira_talk_about_ann_drink_7bca3c9c:
+
+    # Kira_06 "А то! Мы были молодые и любопытные... Я и сейчас, собственно, осталась такой же... По большей части."
+    Kira_06 "Vskutku! Boli sme mladé a zvedavé... Vlastne som stále rovnaká aj teraz... Väčšinou."
+
+# game/scripts_s1/s1_v91.rpy:154
+translate slovak s1_kira_talk_about_ann_drink_b6525852:
+
+    # Max_03 "И мне это нравится, тётя Кира!"
+    Max_03 "A mne sa to páči, teta Kira!"
+
+# game/scripts_s1/s1_v91.rpy:155
+translate slovak s1_kira_talk_about_ann_drink_2fafe674:
+
+    # Kira_04 "Мне тоже, Макс. Ты уж там присматривай за своей мамой, чтобы она много не пила."
+    Kira_04 "Mne tiež, Max. Dávaj tam na mamu pozor, aby toho veľa nevypila."
+
+# game/scripts_s1/s1_v91.rpy:156
+translate slovak s1_kira_talk_about_ann_drink_9e9fdd8c:
+
+    # Max_04 "Обязательно!"
+    Max_04 "Rozhodne!"
+
+# game/scripts_s1/s1_v91.rpy:164
+translate slovak s1_ann_drink_269fbda5:
+
+    # Max_07 "{m}Лучше мне не оставлять её одну в таком состоянии...{/m}"
+    Max_07 "{m}Radšej ju tak nenechám samú...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:167
+translate slovak s1_ann_drink_84e869ac:
+
+    # Max_09 "{m}Ага, мама снова выпивает, пока все спят! Ну, кроме меня, конечно...{/m}"
+    Max_09 "{m}Áno, mama opäť pije, kým všetci spia! Samozrejme, okrem mňa...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:171
+translate slovak s1_ann_drink_c1a6cbc7:
+
+    # Max_00 "Снова расслабляешься, пока никто не видит?"
+    Max_00 "Znova relaxuješ, keď sa nikto nepozerá?"
+
+# game/scripts_s1/s1_v91.rpy:172
+translate slovak s1_ann_drink_2d055518:
+
+    # Ann_00 "Да, сынок. Раз в недельку, да немножко, почему бы и нет. Ты почему не спишь?"
+    Ann_00 "Áno, synu. Raz týždenne, na chvíľu, prečo nie? Čo robíš hore?"
+
+# game/scripts_s1/s1_v91.rpy:175
+translate slovak s1_ann_drink_52cd4b1e:
+
+    # Max_00 "Кто-то же должен за тобой присматривать. Много ты уже выпила?"
+    Max_00 "Niekto sa o teba musí postarať. Koľko si už vypila?"
+
+# game/scripts_s1/s1_v91.rpy:176
+translate slovak s1_ann_drink_4ad19dfc:
+
+    # Ann_00 "Нет, всего лишь бокальчик. Я знаю, что мне лучше не напиваться."
+    Ann_00 "Skoro nič, len pohár. Viem, že by som sa radšej nemala opiť."
+
+# game/scripts_s1/s1_v91.rpy:177
+translate slovak s1_ann_drink_fd3e14ed:
+
+    # Max_00 "Да, тебя и от одного бокала развозит неплохо. Может, уже в сторону постельки выдвигаться будем, если тебя ещё ноги держат?"
+    Max_00 "Áno, z jedného drinku sa poriadne rozptýliš. Môžeme sa teraz presunúť do postele, ak si ešte na nohách?"
+
+# game/scripts_s1/s1_v91.rpy:178
+translate slovak s1_ann_drink_6f2aac42:
+
+    # Ann_00 "Нет, сынок, я ещё посижу здесь... А ты иди спать, не переживай за меня." nointeract
+    Ann_00 "Nie, synku, budem tu len sedieť... A ty choď spať, o mňa sa nestaraj." nointeract
+
+# game/scripts_s1/s1_v91.rpy:181
+translate slovak s1_ann_drink_81dd338b:
+
+    # Ann_00 "А я не хочу!"
+    Ann_00 "Nechcem!"
+
+# game/scripts_s1/s1_v91.rpy:182
+translate slovak s1_ann_drink_a1ae8ebf:
+
+    # Max_00 "А мне до лампочки, мам. Спать!"
+    Max_00 "Je mi to jedno, mami. Spať!"
+
+# game/scripts_s1/s1_v91.rpy:183
+translate slovak s1_ann_drink_944b0579:
+
+    # Ann_00 "Да? Ну, ладно..." nointeract
+    Ann_00 "Áno? V poriadku..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:192
+translate slovak s1_ann_drink_79b48a5b:
+
+    # Ann_00 "Вот и добрались! Если бы не ты, я бы точно не смогла сюда подняться, пришлось бы спать прямо на барной стойке. Хи-хи..."
+    Ann_00 "Tak nech sa páči! Keby nebolo teba, určite by som sa sem nedostala, musela by som spať priamo v bare. Hee-hee..."
+
+# game/scripts_s1/s1_v91.rpy:193
+translate slovak s1_ann_drink_74f0c116:
+
+    # Max_00 "Нет, мам, до такой степени я не дам тебе опуститься. Вот и твоя кроватка..."
+    Max_00 "Nie, mami, nedovolím ti klesnúť na takú úroveň. Tam je tvoja postieľka..."
+
+translate slovak strings:
+
+    # game/scripts_s1/s1_v91.rpy:56
+    old "{i}помочь маме добраться до кровати{/i}"
+    new "{i}pomôcť mame dostať sa do postele{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:179
+    old "Хватит пить! Мы идём спать!"
+    new "Prestaň piť! Ideme spať!"
+
+# TODO: Translation updated at 2022-05-10 15:26
+
+# game/scripts_s1/s1_v91.rpy:169
+translate slovak s1_ann_drink_95e0d854:
+
+    # Max_09 "Снова расслабляешься, пока никто не видит?"
+    Max_09 "Znova relaxuješ, keď sa nikto nepozerá?"
+
+# game/scripts_s1/s1_v91.rpy:170
+translate slovak s1_ann_drink_62a37d3d:
+
+    # Ann_12 "Да, сынок. Раз в недельку, да немножко, почему бы и нет. Ты почему не спишь?"
+    Ann_12 "Áno, synu. Raz týždenne, na chvíľu, prečo nie? Čo robíš ešte hore?"
+
+# game/scripts_s1/s1_v91.rpy:174
+translate slovak s1_ann_drink_1b69c140:
+
+    # Ann_13 "Нет, всего лишь бокальчик. Я знаю, что мне лучше не напиваться."
+    Ann_13 "Nie, len jeden pohár. Viem, že by som sa radšej nemala opiť."
+
+# game/scripts_s1/s1_v91.rpy:175
+translate slovak s1_ann_drink_2b627bd9:
+
+    # Max_07 "Да, тебя и от одного бокала развозит неплохо. Может, уже в сторону постельки выдвигаться будем, если тебя ещё ноги держат?"
+    Max_07 "Áno, z jedného drinku si poriadne odskočíš. Môžeme sa teraz presunúť do postele, ak si ešte na nohách?"
+
+# game/scripts_s1/s1_v91.rpy:176
+translate slovak s1_ann_drink_ff4a35d0:
+
+    # Ann_02 "Нет, сынок, я ещё посижу здесь... А ты иди спать, не переживай за меня." nointeract
+    Ann_02 "Nie, synku, budem tu len sedieť... A ty choď spať, o mňa sa nestaraj." nointeract
+
+# game/scripts_s1/s1_v91.rpy:179
+translate slovak s1_ann_drink_13299f28:
+
+    # Ann_14 "А я не хочу!"
+    Ann_14 "Nechcem!"
+
+# game/scripts_s1/s1_v91.rpy:180
+translate slovak s1_ann_drink_52f68794:
+
+    # Max_15 "А мне до лампочки, мам. Спать!"
+    Max_15 "Je mi to jedno, mami. Spať!"
+
+# game/scripts_s1/s1_v91.rpy:181
+translate slovak s1_ann_drink_d7ab74a7:
+
+    # Ann_05 "Да? Ну, ладно... раз ты такой настойчивый..." nointeract
+    Ann_05 "Áno? No, dobre... keďže si taký vytrvalý..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:190
+translate slovak s1_ann_drink_70cb03ea:
+
+    # Ann_07 "Вот и добрались! Если бы не ты, я бы точно не смогла сюда подняться, пришлось бы спать прямо на барной стойке. Хи-хи..."
+    Ann_07 "Tak sme tu! Nebyť teba, určite by som sa sem nedostala, musela by som spať priamo na bare. Hee hee..."
+
+# game/scripts_s1/s1_v91.rpy:191
+translate slovak s1_ann_drink_5fbe2d5d:
+
+    # Max_01 "Нет, мам, до такой степени я не дам тебе опуститься. Вот и твоя кроватка..."
+    Max_01 "Nie, mami, nedovolím ti klesnúť na takú úroveň. Tam je tvoja postieľka..."
+
+# game/scripts_s1/s1_v91.rpy:194
+translate slovak s1_ann_drink_e1e9aa8b:
+
+    # Ann_03 "Да... Моя постелька... Спасибо, мой милый, что помог. Можешь идти спать..."
+    Ann_03 "Áno... Moja posteľ... Ďakujem ti, drahý, že mi pomáhaš. Teraz môžeš ísť spať..."
+
+# game/scripts_s1/s1_v91.rpy:195
+translate slovak s1_ann_drink_38f1a458:
+
+    # Max_07 "Ты рано легла, сначала нужно переодеться. Если приподнимешься, то я помогу тебе с этим..."
+    Max_07 "Išla si spať skoro, musíš sa najprv prezliecť. Ak sa k tomu dostaneš, pomôžem ti s tým..."
+
+# game/scripts_s1/s1_v91.rpy:198
+translate slovak s1_ann_drink_ff680f4b:
+
+    # Ann_02 "Ох... У меня почти нет на это сил... Дальше давай сам, только не подглядывай."
+    Ann_02 "Oh... Takmer na to nemám energiu... Odtiaľto si ich môžem vziať, ale nepozeraj sa."
+
+# game/scripts_s1/s1_v91.rpy:199
+translate slovak s1_ann_drink_99160781:
+
+    # Max_04 "Здесь темно, мам. Я работаю практически на ощупь. Но, не переживай, лишнего не трону."
+    Max_04 "Je tu tma, mami. Pracujem prakticky podľa pocitu. Ale neboj sa, nebudem sa príliš dotýkať."
+
+# game/scripts_s1/s1_v91.rpy:202
+translate slovak s1_ann_drink_a27de2e6:
+
+    # Ann_04 "Я не переживаю. Мне очень повезло с таким заботливым и деликатным сыном."
+    Ann_04 "Nemám obavy. Mala som veľké šťastie, že mám takého starostlivého a citlivého syna."
+
+# game/scripts_s1/s1_v91.rpy:203
+translate slovak s1_ann_drink_cf3e0eea:
+
+    # Max_02 "Вот и всё! Твой лифчик там, где ему и положено быть. Теперь можно ложиться спать."
+    Max_02 "To je všetko! Podprsenka je tam, kde má byť. Teraz môžeš ísť spať."
+
+# game/scripts_s1/s1_v91.rpy:206
+translate slovak s1_ann_drink_575f8f7f:
+
+    # Ann_14 "Хорошо... Если ты снова хочешь остаться здесь, то лучше не стоит. Если мне станет худо, то я справлюсь сама."
+    Ann_14 "No... Ak sa tu chceš znova ubytovať, radšej to nerob. Ak ochoriem, zvládnem to sama."
+
+# game/scripts_s1/s1_v91.rpy:207
+translate slovak s1_ann_drink_873453b3:
+
+    # Max_07 "Нет, мам. Я останусь однозначно. А чтобы тебя ничто не тревожило, одень свою маску для сна. Она поможет тебе лучше выспаться."
+    Max_07 "Nie, mami. Jednoznačne zostanem. A aby ťa nič nerušilo, nasaď si masku na spanie. Pomôže ti to lepšie sa vyspať."
+
+# game/scripts_s1/s1_v91.rpy:208
+translate slovak s1_ann_drink_7d95ec5d:
+
+    # Ann_08 "Надеюсь, так и будет. Спокойной ночи, сынок."
+    Ann_08 "Dúfam, že áno. Dobrú noc, synku."
+
+# game/scripts_s1/s1_v91.rpy:209
+translate slovak s1_ann_drink_6498dd9a:
+
+    # Max_01 "Поцелую перед сном, чтобы ты ни о чём не переживала и отдыхала... Сладких снов."
+    Max_01 "Bozk pred spaním, aby si sa o nič nestarala a odpočívala... Sladké sny."
+
+# game/scripts_s1/s1_v91.rpy:212
+translate slovak s1_ann_drink_1a597b2d:
+
+    # Max_19 "{m}Ну вот, теперь остаётся только ждать... Благодаря маске для сна, мама сможет в полной мере оторваться в своей фантазии. Если, конечно, не станет её снимать...{/m}" nointeract
+    Max_19 "{m}Teraz môžem len čakať... Vďaka maske na spanie sa mamička bude môcť naplno vyšantiť podľa svojich predstáv. Samozrejme, ak si ju nezloží...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:219
+translate slovak s1_ann_drink_7e2fabc6:
+
+    # Max_04 "{m}О да! Мама снова лезет обниматься... Мой член уже в огромном предвкушении всяческих забав!{/m}"
+    Max_04 "{m}Ach, áno! Mama sa opäť mazná... Môj penis je už v očakávaní všetkých druhov zábavy!{/m}"
+
+# game/scripts_s1/s1_v91.rpy:220
+translate slovak s1_ann_drink_c9c94fff:
+
+    # Ann_03 "Ммм... Наконец-то ты снова рядом, дорогой... Как же мне хорошо с тобой..." nointeract
+    Ann_03 "Mmm... Konečne si tam opäť, miláčik... Ako dobre je byť s tebou..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:231
+translate slovak s1_ann_drink_demonstrate_1878288f:
+
+    # Ann_05 "Ухх! Я ещё ничего не делала, а он уже такой твёрдый! Кто-то явно нацелен хорошенько порезвиться..."
+    Ann_05 "Uf! Ešte som nič neurobila a už je tak tvrdý! Niekto sa zjavne chce dobre zabaviť..."
+
+# game/scripts_s1/s1_v91.rpy:232
+translate slovak s1_ann_drink_demonstrate_0e7c069a:
+
+    # Max_02 "С такой горячей сексуальной женщиной как ты, только этим и хочется заниматься!" nointeract
+    Max_02 "S takou sexi ženou, ako si ty, je to všetko, čo chceš robiť!" nointeract
+
+# game/scripts_s1/s1_v91.rpy:239
+translate slovak s1_ann_drink_demonstrate_73685471:
+
+    # Max_05 "{m}Ох, не знаю за кого мама меня принимает, но её поцелуи это что-то! А от того, как нежно её рука обхватила мой член, у меня внутри всё начинает трепетать от восторга...{/m}"
+    Max_05 "{m}Och, neviem, za koho ma moja mama považuje, ale jej bozky sú niečo! A spôsob, akým jej ruka jemne obopínala môj penis, spôsoboval, že moje vnútro sa chvelo vzrušením...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:241
+translate slovak s1_ann_drink_demonstrate_bf6638a1:
+
+    # Ann_08 "Становится слишком жарко, чтобы продолжать. Давай освободимся от всей одежды."
+    Ann_08 "Začína byť príliš horúco na to, aby sme pokračovali oblečení. Zbavme sa všetkého oblečenia."
+
+# game/scripts_s1/s1_v91.rpy:242
+translate slovak s1_ann_drink_demonstrate_cf788ce3:
+
+    # Max_07 "Давай. Но я хочу, чтобы оставила маску. Так будет куда чувственнее..." nointeract
+    Max_07 "No tak. Ale chcem si si nechala masku. Bolo by to oveľa zmyselnejšie..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:248
+translate slovak s1_ann_drink_demonstrate_649abd07:
+
+    # Max_20 "{m}О да! Мама сразу же потянулась прямо вниз... Теперь её губки нежно скользят по концу моего члена, а язычок исследует и играет со всеми изгибами... Она никуда не торопится и просто наслаждается им. Фантастика!{/m}"
+    Max_20 "{m}Ach, áno! Mama okamžite siahla rovno dolu... Teraz jej pery jemne kĺžu po konci môjho penisu a jej jazyk skúma a hrá sa so všetkými krivkami... Dáva si načas a jednoducho si to užíva. Fantastické!{/m}"
+
+# game/scripts_s1/s1_v91.rpy:249
+translate slovak s1_ann_drink_demonstrate_32bdb443:
+
+    # Ann_07 "Ммм... Ты же любишь, когда я дразню твоего мальчика своим языком, прежде чем он попадёт ко мне в рот?"
+    Ann_07 "Mmm... Páči sa ti, keď tvojho chlapca dráždim jazykom, kým sa mi dostane do úst, však?"
+
+# game/scripts_s1/s1_v91.rpy:250
+translate slovak s1_ann_drink_demonstrate_9e501bef:
+
+    # Max_19 "Да, мне очень нравится это, продолжай..."
+    Max_19 "Áno, naozaj sa mi to páči, pokračuj..."
+
+# game/scripts_s1/s1_v91.rpy:253
+translate slovak s1_ann_drink_demonstrate_1a060af5:
+
+    # Max_21 "{m}Пока она играется с моим членом, нужно пользоваться моментом и отвлечься на её киску. Иначе, я просто не выдержу и кончу. Мамина щёлочка слегка мокренькая, но так не пойдёт. Сейчас мои пальцы решат эту проблему...{/m}" nointeract
+    Max_21 "{m}Kým sa hrá s mojím penisom, musím využiť moment a nenechať sa rozptýliť jej kundičkou. Inak to jednoducho nevydržím a vyvrcholím. Maminina kundička je trochu mokrá, ale to nestačí. Teraz tento problém vyriešia moje prsty...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:271
+translate slovak s1_ann_drink_no_restrain_23fb7d5a:
+
+    # Ann_13 "[norestrain!t]Ого! Ты уже кончил, дорогой... Не думала, что это будет так быстро, ведь я ещё даже не начала стараться!"
+    Ann_13 "[norestrain!t]Wow! Už si skončil, miláčik... Nemyslela som si, že to bude také rýchle, pretože som sa ešte ani nezačala snažiť!"
+
+# game/scripts_s1/s1_v91.rpy:272
+translate slovak s1_ann_drink_no_restrain_afae4d6a:
+
+    # Max_07 "Прости. Просто твои прикосновения и ласки меня перевозбудили."
+    Max_07 "Prepáč. Lenže tvoje dotyky a láskanie ma príliš dráždili."
+
+# game/scripts_s1/s1_v91.rpy:273
+translate slovak s1_ann_drink_no_restrain_2776a308:
+
+    # Ann_08 "Ничего страшного. Возможно, я так соскучилась по твоему члену, что немного увлеклась. Сейчас я приведу всё в порядок..."
+    Ann_08 "O nič nejde. Možno mi tvoj penis tak chýbal, že som sa nechala trochu uniesť. Idem to teraz upratať..."
+
+# game/scripts_s1/s1_v91.rpy:274
+translate slovak s1_ann_drink_no_restrain_db8070f2:
+
+    # Max_19 "{m}Вот чёрт! От того, как тщательно и эротично она слизывает мою сперму запросто можно бы было кончить ещё раз! Просто невероятно, что это на самом деле происходит.{/m}"
+    Max_19 "{m}Do prdele! To, ako dôkladne a eroticky vylízala moje semeno, by ma prinútilo spraviť sa znova! Je neuveriteľné, že sa to skutočne deje.{/m}"
+
+# game/scripts_s1/s1_v91.rpy:277
+translate slovak s1_ann_drink_no_restrain_cae2d9bf:
+
+    # Ann_05 "Обещаю, в следующий раз, я не буду так увлекаться и постараюсь растянуть наше удовольствие подольше."
+    Ann_05 "Nabudúce sľubujem, že sa nenechám príliš uniesť a pokúsim sa naše potešenie natiahnuť na dlhšie."
+
+# game/scripts_s1/s1_v91.rpy:278
+translate slovak s1_ann_drink_no_restrain_d98841bc:
+
+    # Max_04 "Но это в следующий раз. А сейчас я просто обязан постараться сделать всё, чтобы ты тоже кончила."
+    Max_04 "Ale to až nabudúce. A teraz musím urobiť všetko pre to, aby si sa aj ty urobila."
+
+# game/scripts_s1/s1_v91.rpy:281
+translate slovak s1_ann_drink_no_restrain_718b6dc4:
+
+    # Ann_09 "Ахх... Этого я и жду... Я вся в предвкушении того, что ты будешь для этого делать. Ох..."
+    Ann_09 "Ahhh... Na to čakám... Som nadšená z toho, čo pre ňu urobíš. Oh..."
+
+# game/scripts_s1/s1_v91.rpy:282
+translate slovak s1_ann_drink_no_restrain_6e349e3f:
+
+    # Max_03 "{m}Ммм... От такой сочной и пышной груди даже отрываться не хочется! Но у меня есть не менее интересные дела кое-где пониже! Только устроюсь поудобнее...{/m}"
+    Max_03 "{m}Mmm... Od takýchto šťavnatých a bujných pŕs sa mi ani nechce odtrhnúť pohľad! Ale mám rovnako zaujímavé veci, ktoré treba urobiť niekde dole! Práve sa cítim pohodlne...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:285
+translate slovak s1_ann_drink_no_restrain_8cf76278:
+
+    # Ann_10 "Да... Как же меня возбуждают твои нежные прикосновения... Твои пальцы знают, как нужно ласкать мою киску. Ухх... Да... Ещё..."
+    Ann_10 "Áno... Ako ma tvoj jemný dotyk vzrušuje... Tvoje prsty vedia, ako hladiť moju kundičku. Uf... Áno... Tiež..."
+
+# game/scripts_s1/s1_v91.rpy:286
+translate slovak s1_ann_drink_no_restrain_bf8a6272:
+
+    # Max_02 "{m}Да, мои пальцы довольно легко скользят по маминой киске. Если бы она только знала, что это делаю я, всё в миг бы прекратилось. Но она не знает, так что нужно пользоваться моментом...{/m}"
+    Max_02 "{m}Áno, moje prsty celkom ľahko kĺžu po maminej kundičke. Keby len vedela, že to robím, hneď by to prestalo. Ale ona to nevie, takže musím využiť príležitosť...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:289
+translate slovak s1_ann_drink_no_restrain_f0f106cc:
+
+    # Ann_14 "Ухх, да... Как же мне хорошо от твоих пальчиков... Да, продолжай... Ещё... Поглубже... Ммм... Я сейчас просто потеряю голову от наслаждения... Ах!" nointeract
+    Ann_14 "Uf, áno... Ako dobre sa cítim po tvojich prstoch... Áno, pokračuj... Tiež... Hlbšie... Mmm... Chystám sa stratiť hlavu od radosti... Ach!" nointeract
+
+# game/scripts_s1/s1_v91.rpy:295
+translate slovak s1_ann_drink_no_restrain_beef9a92:
+
+    # Ann_11 "Ох, это... нет слов, как приятно... Ахх... Ты самый лучший мужчина на свете! Д-а-а! Твой язычок сводит меня с ума... Я... Я больше не могу... Я сейчас... Я кончаю! Д-а-а!"
+    Ann_11 "To je... niet slov, je to taký dobrý pocit... Ahhh... Si najlepší človek na svete! Duh-ah! Tvoj jazyk ma privádza do šialenstva... Ach... Nemôžem pokračovať... Teraz budem... Už idem! Duh-ah!"
+
+# game/scripts_s1/s1_v91.rpy:296
+translate slovak s1_ann_drink_no_restrain_bcd0f0c5:
+
+    # Max_05 "{m}Да, мам! Вот так... Её тело так классно содрогается от оргазма. Ради такой шикарной женщины грех не постараться.{/m}"
+    Max_05 "{m}Áno, mami! A je to... Jej telo sa tak nádherne chvelo v orgazme. Pre takú nádhernú ženu je hriech to neskúsiť.{/m}"
+
+# game/scripts_s1/s1_v91.rpy:304
+translate slovak s1_ann_drink_restrain_5baa544f:
+
+    # Max_22 "[restrain!t]{m}Ох, она начала посасывать мой член... Это просто божественно! Я прямо чувствую, с каким удовольствием она это делает. Как же это приятно, мам, чёрт возьми!{/m}" nointeract
+    Max_22 "[restrain!t]{m}Začala mi fajčiť penis... Je to jednoducho božské! Cítim, ako ju to teší. Je to taký dobrý pocit, mami!{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:311
+translate slovak s1_ann_drink_restrain_ae9af4f4:
+
+    # Max_03 "{m}Ммм... Мои пальцы запросто проскользнули в неё. Обалденно, она стала сосать ещё активнее от моих ласк. Ох, мама... Знала бы ты, что сейчас вытворяешь! Вернее, с кем. Д-а-а...{/m}" nointeract
+    Max_03 "{m}Mmm... Moje prsty do nej ľahko vkĺzli. Samozrejme, že začala ešte aktívnejšie sáť z môjho maznania. Ach, matka... Mala by si vedieť, čo teraz robíš! Alebo skôr s kým. Y-a-a-a...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:316
+translate slovak s1_ann_drink_restrain_3f1d3b3e:
+
+    # Max_02 "{m}Ухх... Уткнуться в её сногсшибательную большую попку одно наслаждение! Теперь она сосёт и одновременно постанывает от того, что вытворяет мой язык с её сочной киской...{/m}" nointeract
+    Max_02 "{m}Uf... Naraziť na jej úžasne veľký zadok je potešením! Teraz saje a zároveň stoná od toho, čo jej robí môj jazyk na jej šťavnatej kundičke...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:323
+translate slovak s1_ann_drink_restrain_eab11e6a:
+
+    # Max_20 "{m}Блин! Она ещё и рукой начала моими яичками играть! А уж про то, что она всё смачнее и глубже заглатывает мой член, я вообще молчу... Только стонать и остаётся. Долго я так не протяну...{/m}" nointeract
+    Max_20 "{m}Do prdele! Tiež sa začala hrať s mojimi semenníkmi rukou! A o tom, že mi hltá penis hlbšie a hlbšie, nechcem ani hovoriť... Zostáva už len nariekať. Tak dlho nevydržím...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:330
+translate slovak s1_ann_drink_restrain_f9f680a2:
+
+    # Max_21 "{m}Д-а-а! Ах, мама не отрываясь принимает всю мою сперму! Она умничка... Знает, как порадовать мужчину. Но я с кое-чем ещё не закончил...{/m}" nointeract
+    Max_21 "{m}Duh-ah! Ach, mama si berie všetky moje spermie bez prerušenia! Je to šikovné dievča... Vie, ako potešiť muža. Ale ešte som s niečím neskončil...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:337
+translate slovak s1_ann_drink_restrain_6e37798e:
+
+    # Ann_10 "Да, дорогой... Уфф... Ты кончил так мощно! Я даже не смогла удержать всё в себе. Ммм... Я хочу кончить так же сильно, как ты. Пожалуйста... Ах-х-х..." nointeract
+    Ann_10 "Áno, drahá... Uf... Urobil si tak mocne! Ani som to všetko nedokázala udržať v sebe. Mmm... Chcem sa vyvrcholiť rovnako silno ako ty. Prosím... Ahhhhh..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:344
+translate slovak s1_ann_drink_restrain_beef9a92:
+
+    # Ann_11 "Ох, это... нет слов, как приятно... Ахх... Ты самый лучший мужчина на свете! Д-а-а! Твой язычок сводит меня с ума... Я... Я больше не могу... Я сейчас... Я кончаю! Д-а-а!"
+    Ann_11 "To je... niet slov, je to taký dobrý pocit... Ahhh... Si najlepší človek na svete! Duh-ah! Tvoj jazyk ma privádza do šialenstva... Ach... Nemôžem pokračovať... Teraz budem... Už idem! Duh-ah!"
+
+# game/scripts_s1/s1_v91.rpy:346
+translate slovak s1_ann_drink_restrain_bcd0f0c5:
+
+    # Max_05 "{m}Да, мам! Вот так... Её тело так классно содрогается от оргазма. Ради такой шикарной женщины грех не постараться.{/m}"
+    Max_05 "{m}Áno, mami! A je to... Jej telo sa tak nádherne chvelo v orgazme. Pre takú nádhernú ženu je hriech to neskúsiť.{/m}"
+
+# game/scripts_s1/s1_v91.rpy:355
+translate slovak s1_ann_drink_end_1_68e5f607:
+
+    # Ann_08 "Ох... Это было... нечто! Я просто... Извини, не знаю даже, что сказать... Так хорошо..."
+    Ann_08 "Oh... Bolo to... niečo! Ja len... Prepáč, ani neviem, čo mám povedať... Tak dobré..."
+
+# game/scripts_s1/s1_v91.rpy:356
+translate slovak s1_ann_drink_end_1_2df45fd4:
+
+    # Max_03 "Ты была великолепна! Теперь просто отдыхай... Спокойной ночи."
+    Max_03 "Bola si skvelá! Teraz už len odpočívaj... Dobrú noc."
+
+# game/scripts_s1/s1_v91.rpy:357
+translate slovak s1_ann_drink_end_1_d975ed12:
+
+    # Ann_07 "Спасибо, дорогой. Мне тоже понравилось. И тебе доброй ночи."
+    Ann_07 "Ďakujem, miláčik. Aj mne sa to páčilo. Aj ti prajem dobrú noc."
+
+# game/scripts_s1/s1_v91.rpy:362
+translate slovak s1_ann_drink_end_1_cb4a8a27:
+
+    # Max_09 "{m}Надо бы натянуть шорты, а то утром будет много визга, когда мама проснётся голой. И ещё больше визга будет, если я буду лежать рядом такой же голый. И не исключено, что с утренним стояком...{/m}"
+    Max_09 "{m}Radšej si oblečiem nejaké šortky, lebo ráno, keď sa mama zobudí nahá, bude veľa piskotu. A bude ešte viac piskotu, ak budem ležať vedľa nej rovnako nahý. A nie je vylúčené, že s rannou erekciou...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:365
+translate slovak s1_ann_drink_end_1_481c4fe1:
+
+    # Max_19 "{m}Фух... Теперь можно и спать. Вот это мы с мамой выдали! Она фантазировала, а я, так сказать, сделал эту фантазию реальной. Эх, вот бы почаще так развлекаться...{/m}" nointeract
+    Max_19 "{m}Uff... Teraz môžem ísť spať. To sme si to s mamou rozdali! Fantazírovala a ja som tú fantáziu takpovediac zrealizoval. Chcel by som, aby sme to mohli robiť častejšie...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:372
+translate slovak s1_ann_drink_end_1_d84609d5:
+
+    # Ann_17 "Охх... Моя голова... Что происходит?!"
+    Ann_17 "Ohhh... Moja hlava... Čo sa deje?!"
+
+# game/scripts_s1/s1_v91.rpy:373
+translate slovak s1_ann_drink_end_1_a96f79e8:
+
+    # Max_20 "Доброе утро, мам."
+    Max_20 "Dobré ráno, mami."
+
+# game/scripts_s1/s1_v91.rpy:376
+translate slovak s1_ann_drink_end_1_1046c4a1:
+
+    # Ann_15 "Макс! Быстро отвернись! Ты что тут делаешь?!"
+    Ann_15 "Max! Rýchlo sa otoč! Čo tu robíš?!"
+
+# game/scripts_s1/s1_v91.rpy:377
+translate slovak s1_ann_drink_end_1_7f7438f4:
+
+    # Max_08 "Не помнишь? Ты вчера выпила и я решил остаться с тобой на случай, если тебе будет плохо."
+    Max_08 "Nepamätáš sa? Včera večer si sa napila a ja som sa rozhodol  zostať s tebou, keby ti bolo zle."
+
+# game/scripts_s1/s1_v91.rpy:378
+translate slovak s1_ann_drink_end_1_de11b26c:
+
+    # Ann_13 "Ах, ну да, точно... Но почему я голая?!"
+    Ann_13 "Aha, správne, správne... Ale prečo som nahá?!"
+
+# game/scripts_s1/s1_v91.rpy:379
+translate slovak s1_ann_drink_end_1_5ed568e4:
+
+    # Max_07 "Ну, видимо тебе стало жарко. А я не стал этому возражать."
+    Max_07 "No, zrejme si sa rozpálila. A mne to nevadilo."
+
+# game/scripts_s1/s1_v91.rpy:380
+translate slovak s1_ann_drink_end_1_e786afda:
+
+    # Ann_14 "Макс, я же твоя мама! Это всё совсем не правильно... Надо было меня остановить!"
+    Ann_14 "Max, som tvoja matka! To vôbec nie je správne... Mal si ma zastaviť!"
+
+# game/scripts_s1/s1_v91.rpy:381
+translate slovak s1_ann_drink_end_1_c74b39dc:
+
+    # Max_09 "Мне кажется, телу нужно дышать. Особенно в том состоянии, в котором ты находилась."
+    Max_09 "Myslím, že telo potrebuje dýchať. Najmä v stave, v akom si bola."
+
+# game/scripts_s1/s1_v91.rpy:382
+translate slovak s1_ann_drink_end_1_05a3d7ce:
+
+    # Ann_17 "Может и так, но не в присутствии же собственного сына! Получается, я сама разделась?"
+    Ann_17 "Možno áno, ale nie pred vlastným synom! Takže som sa vyzliekla?"
+
+# game/scripts_s1/s1_v91.rpy:383
+translate slovak s1_ann_drink_end_1_3b5fb676:
+
+    # Max_01 "Ага. Ты разделась и заснула."
+    Max_01 "Áno. Vyzliekla si sa a zaspala."
+
+# game/scripts_s1/s1_v91.rpy:384
+translate slovak s1_ann_drink_end_1_b513fece:
+
+    # Ann_13 "Фух... А то, мне такой сон приснился... Там я тоже разделась, но не только... Ой, сынок, это ты из-за моего вида так возбудился?!"
+    Ann_13 "Uff... Pretože som mala takýto sen... Aj ja som sa tam vyzliekla, ale nielen... Ach, synku, to ťa môj pohľad tak vzrušuje?!"
+
+# game/scripts_s1/s1_v91.rpy:385
+translate slovak s1_ann_drink_end_1_a041acec:
+
+    # Max_07 "Нет, у меня часто такое по утрам. Лиза не даст соврать. Хотя, возможно, сегодня это произошло благодаря тебе."
+    Max_07 "Nie, ráno sa mi to stáva často. Líza nebude klamať. Aj keď dnes to bolo možno vďaka tebe."
+
+# game/scripts_s1/s1_v91.rpy:386
+translate slovak s1_ann_drink_end_1_5fc3fabf:
+
+    # Ann_18 "Макс, что ты такое при маме говоришь! И вообще, хватит меня забалтывать и глазеть. Давай-ка отвернись уже и иди к себе, ты меня смущаешь." nointeract
+    Ann_18 "Max, čo to hovoríš pred svojou mamou! A vôbec, prestaň ma podpichovať a pozerať sa na mňa. Prečo sa neotočíš a nejdeš do svojej izby, privádzaš ma do rozpakov." nointeract
+
+# game/scripts_s1/s1_v91.rpy:395
+translate slovak s1_ann_drink_end_1_529b9202:
+
+    # Max_19 "{m}Фух... Теперь можно и спать. А когда рядом засыпает совершенно голая и невероятно сексуальная женщина, пускай это и моя мама, то засыпать одно удовольствие.{/m}" nointeract
+    Max_19 "{m}Uff... Teraz môžem ísť spať. A keď vedľa mňa zaspí dokonale nahá a neuveriteľne sexi žena, aj keď je to moja mama, je to radosť zaspať.{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:402
+translate slovak s1_ann_drink_end_1_405b7193:
+
+    # Ann_17 "Охх... Неужели опять... Я тут валяюсь совершенно голая, а мой сын лежит рядом с огромным возбуждением! Тебе не стыдно?"
+    Ann_17 "Ohhh... Už nie... Ležím tu úplne nahá a môj syn leží vedľa mňa s obrovským vzrušením! Nehanbíš sa?"
+
+# game/scripts_s1/s1_v91.rpy:403
+translate slovak s1_ann_drink_end_1_670a9ff8:
+
+    # Max_20 "Ага, и тебе доброе утро. Почему мне должно быть стыдно, если ты сама разделась?"
+    Max_20 "Áno, aj ti prajem dobré ráno. Prečo by som sa mal hanbiť, keď sa vyzlečieš?"
+
+# game/scripts_s1/s1_v91.rpy:406
+translate slovak s1_ann_drink_end_1_e3cb293d:
+
+    # Ann_14 "Потому что это мягко говоря странно, когда сына возбуждает собственная мать. Это что-то нездоровое."
+    Ann_14 "Pretože je prinajmenšom zvláštne, keď syna vzrušuje jeho vlastná matka. Je to niečo nezdravé."
+
+# game/scripts_s1/s1_v91.rpy:407
+translate slovak s1_ann_drink_end_1_f0c77805:
+
+    # Max_07 "Подумаешь, возбудился. Это же самый искренний комплимент для такой прекрасной женщины, как ты."
+    Max_07 "O čo ide, byť nadržaný. To je ten najúprimnejší kompliment pre takú krásnu ženu, ako si ty."
+
+# game/scripts_s1/s1_v91.rpy:408
+translate slovak s1_ann_drink_end_1_9db04b62:
+
+    # Ann_12 "Ой, Макс, прекрати... Спасибо, конечно, но это неуместно! Ты не мог бы отвернуться?"
+    Ann_12 "Max, prestaň... Samozrejme, ďakujem, ale toto je nevhodné! Mohol by si sa otočiť?"
+
+# game/scripts_s1/s1_v91.rpy:409
+translate slovak s1_ann_drink_end_1_1cd036b1:
+
+    # Max_02 "А ты мне расскажешь, как спалось? Что снилось?"
+    Max_02 "Povieš mi, ako si spala? Čo sa ti snívalo?"
+
+# game/scripts_s1/s1_v91.rpy:410
+translate slovak s1_ann_drink_end_1_b122c91c:
+
+    # Ann_14 "Ты выбрал просто самое \"лучшее\" время, чтобы об этом поболтать. Спасибо, что присмотрел за мной, но прекращай глазеть. Давай шуруй к себе."
+    Ann_14 "Práve si si vybral ten \"najlepší\" čas na rozhovor o tom. Ďakujem, že sa o mňa staráš, ale prestaň sa pozerať. Vráť sa na svoje miesto."
+
+# game/scripts_s1/s1_v91.rpy:411
+translate slovak s1_ann_drink_end_1_5e15ef72:
+
+    # Max_01 "Не за что, мам." nointeract
+    Max_01 "Nemáš za čo, mami." nointeract
+
+translate slovak strings:
+
+    # game/scripts_s1/s1_v91.rpy:214
+    old "{i}дремать{/i}"
+    new "{i}driemať{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:222
+    old "Мне тоже... Хочешь почувствовать, насколько?"
+    new "Aj ja... Chceš cítiť, koľko?"
+
+    # game/scripts_s1/s1_v91.rpy:222
+    old "{i}притвориться спящим{/i}"
+    new "{i}predstierať, že spím{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:234
+    old "{i}целовать маму{/i}"
+    new "{i}pobozkať mamu{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:255
+    old "отвлечься на её киску"
+    new "Rozptyľovať ju"
+
+    # game/scripts_s1/s1_v91.rpy:291
+    old "{i}ласкать маму языком{/i}"
+    new "{i}pohladiť mamu jazykom{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:306
+    old "{i}проникнуть пальцами в её киску{/i}"
+    new "{i}preniknúť do nej prstami{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:313
+    old "{i}перебраться в позу 69{/i}"
+    new "{i}prejsť na pózu 69{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:313
+    old "другие позы"
+    new "Iné pózy"
+
+    # game/scripts_s1/s1_v91.rpy:318
+    old "{i}ласкать языком неспеша{/i}"
+    new "{i}pohladkať ju jazykom pomaly{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:325
+    old "{i}кончить маме в рот{/i}"
+    new "{i}vystreknúť do maminých úst{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:332
+    old "{i}продолжить ласкать языком{/i}"
+    new "{i}pokračuj v hladení jazykom{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:339
+    old "{i}ласкать языком активнее{/i}"
+    new "{i}láskať jazykom intenzívnejšie{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:390
+    old "{i}натянуть шорты{/i}"
+    new "{i}natiahnúť si šortky{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:413
+    old "{i}уйти к себе в комнату{/i}"
+    new "{i}odísť do svojej izby{/i}"
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+translate slovak strings:
+
+    # game/core/02init.rpy:143
+    old "Мам, ты подумала?"
+    new "Mami, premýšľala si o tom?"
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Надеюсь, у мамы не будет проблем на работе из-за того, что она разругалась с Эриком. Со временем это станет ясно, а пока нужно поговорить с остальными об Эрике..."
+    new "Dúfam, že mama nebude mať problémy v práci, pretože sa pohádala s Erikom. To sa časom vyjasní, ale zatiaľ sa musíme porozprávať s ostatnými o Erikovi..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно присматривать за тем, что делает мама. Вдруг Эрик её в конец достанет и она начнёт искать утешение в чём-то... нехорошем..."
+    new "Musím sledovať, čo mama robí. Možno jej Erik začne mať plné zuby a ona začne hľadať útechu v niečom inom... nie je to dobrá vec..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это новость! Мама начала заливать своё горе алкоголем. Конечно, не в огромных и постоянных масштабах, но её и от малого количества неплохо сносит. Уже с одного только бокальчика вина мне пришлось помогать ей подняться в комнату. Хоть это всё до добра и не доведёт, но я немного воспользовался маминым уязвимым положением... Помог ей переодеться... Остался с ней... Так, на всякий случай. Каково же было моё удивление, когда она начала со мной обниматься и заигрывать! Не знаю о ком она думала в тот момент, но уж точно не обо мне. Вряд ли мама как-то это прояснит, но попытаться можно. В крайнем случае, всегда можно спросить тётю Киру."
+    new "To je novinka! Mama začala svoj smútok zalievať alkoholom. Samozrejme, nie v obrovskom a trvalom meradle, ale malé množstvo ju pekne odfúkne. Už len s pohárom vína som jej musel pomôcť do izby. Hoci to nebude nič platné, využil som matkinu zraniteľnosť... Pomáhať jej zmeniť sa... Zostať s ňou... Pre každý prípad. Aké bolo moje prekvapenie, keď ma začala objímať a flirtovať so mnou! Neviem, na koho v tej chvíli myslela, ale na mňa určite nie. Je nepravdepodobné, že by mi to moja matka nejakým spôsobom objasnila, ale môžem to skúsiť. V krajnom prípade môžem vždy požiadať tetu Kiru."
+
+    # game/core/09_opportunities.rpy:4
+    old "Сперва нужно поговорить с мамой о том, что это такое ночью она вытворяла..."
+    new "Najprv sa musím porozprávať s matkou o tom, čo robila v noci..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Неплохо бы поинтересоваться у тёти Киры, пока она загорает, о том, как на маму действует алкоголь..."
+    new "Je dobré opýtať sa tety Kiry, kým sa opaľuje, na účinky alkoholu na mamu..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь, если мама снова будет прикладываться к выпивке, то я знаю, как ей стоит подыграть, чтобы нам обоим было хорошо..."
+    new "Ak sa mama opäť chystá na alkohol, viem, ako to zahrať, aby sme sa oboja cítili dobre..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, Кира была права! Мама и правда в выпившем состоянии впадает в какие-то фантазии. Видимо, о каком-то идеальном мужчине... А что, я вполне могу эти фантазии поддержать! Правда, это будет ох как непросто, ведь у меня ухх какая мама! Она ещё не успела заглотить мой член, а я уже перевозбудился, как-будто в первый раз. У меня это действительно первый раз с мамой. Ох, что же будет, если смогу продержаться дольше..."
+    new "Zdá sa, že Kira mala pravdu! Keď je mama opitá, prepadne akejsi fantázii. Zrejme o nejakom dokonalom mužovi... Veď som celkom schopný podporovať tieto fantázie! Nebude to však ľahké, pretože mám woo-woo mamu! Ešte ani neprehltla môjho vtáka a už som bol nadmieru vzrušený, akoby to bolo prvýkrát. Toto je naozaj prvýkrát, čo som s mamou. Ach, čo sa stane, ak vydržím dlhšie..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Мне бы надо постараться не перевозбуждаться так сильно от маминых ласк, чтобы получить больше..."
+    new "Musím sa snažiť, aby som nebol tak vzrušený pohladením mojej mamy, aby som získal viac ..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как же офигенно поддерживать мамины фантазии, когда она выпьет! Сосёт она прямо как мне хочется, ммм... А играться с её киской при этом одно удовольствие! Я уже не могу, так хочу её трахнуть... И ведь могу... Наверно... Но сперва лучше привыкнуть к тому, чем мы занимаемся. А делаем мы это не так уж и часто. Нужно продолжать ей подыгрывать, а уж потом я ей такой трах-бабах устрою..."
+    new "Aký skvelý spôsob, ako podporiť maminu fantáziu, keď sa napije! Saje presne tak, ako chcem, mmm... A hrať sa s jej kundičkou je potešenie! Už to nevydržím, tak veľmi ju chcem jebnúť... A ja môžem... Myslím, že... Najprv je však lepšie zvyknúť si na to, čo robíme. A to nerobíme často. Musím pokračovať v hre a potom jej dám taký buch-buch..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно хоть немного привыкнуть к минету от мамы, чтобы не облажаться с ней в большем. Успешно выдержано минетов от мамы: [ann.flags.held_out] из 3"
+    new "Na fajčenie od mamy si treba aspoň trochu zvyknúť, aby som si to s ňou nepokazil viacerými spôsobmi. Úspešne vydržal fajčenie od mamy: [ann.flags.held_out] z 3"
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+# game/dialogues/anntalk.rpy:656
+translate slovak ann_tv_continuation_massage_failed_persuasion_221bc697:
+
+    # Ann_14 "[failed!t]Да что ты говоришь, Макс! Почему же ты тогда возбуждён так сильно?! Ни стыда, ни совести у тебя нет!"
+    Ann_14 "[failed!t]Nehovor, Max! Tak prečo si taký nadržaný?! Nemáš žiadnu hanbu ani svedomie!"
+
+# game/dialogues/anntalk.rpy:657
+translate slovak ann_tv_continuation_massage_failed_persuasion_9cb21df5:
+
+    # Max_07 "Ну, да... Сползло немного твоё полотенце, но не критично. Мне это не мешает. Тебе же понравился массаж?"
+    Max_07 "No, áno... Uterák sa trochu posunul, ale nie je to kritické. Neprekáža mi to. Masáž sa ti páčila, však?"
+
+# game/dialogues/anntalk.rpy:658
+translate slovak ann_tv_continuation_massage_failed_persuasion_8695f276:
+
+    # Ann_13 "Понравился, но вот то, что у меня за спиной происходит помимо массажа... Это вот мне совсем не нравится."
+    Ann_13 "Páčilo sa mi to, ale to, čo sa deje za mojím chrbtom okrem masáže... To sa mi vôbec nepáči."
+
+# game/dialogues/anntalk.rpy:659
+translate slovak ann_tv_continuation_massage_failed_persuasion_403df953:
+
+    # Max_03 "Ну мам, ты же красивая! Уж извини, но воспринимай, как комплимент."
+    Max_03 "No tak, mami, si krásna! Prepáč, ale ber to ako kompliment."
+
+# game/dialogues/anntalk.rpy:660
+translate slovak ann_tv_continuation_massage_failed_persuasion_157b0aa7:
+
+    # Ann_12 "Да уж, большой комплимент! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
+    Ann_12 "Áno, to je veľký kompliment! Takže, dobre, predstierajme, že sa nič nestalo. Choď von a bav sa..." nointeract
+
+# game/dialogues/anntalk.rpy:1136
+translate slovak ann_yoga_with_maxr_failure_reassurance_7ac1ee79_1:
+
+    # Max_10 "Как скажешь, мам. До следующего раза..." nointeract
+    Max_10 "Nech sa páči, mami. Do budúcna..." nointeract
+
+# game/dialogues/anntalk.rpy:1139
+translate slovak ann_yoga_with_maxr_failure_reassurance_6d31e3c0:
+
+    # Ann_12 "Ох, пора бы тебе уже девушку себе найти и с ней время проводить. Я, конечно, не против твоей помощи, но я всё-таки твоя мама, а потому никак не смогу помочь тебе... ну, снять напряжение."
+    Ann_12 "Je načase, aby si si našiel priateľku a strávil s ňou nejaký čas. Samozrejme, nemám nič proti tvojej pomoci, ale som predsa len tvoja matka, takže ti v žiadnom prípade nemôžem pomôcť... dobre, zbav sa tlaku."
+
+# game/dialogues/anntalk.rpy:1140
+translate slovak ann_yoga_with_maxr_failure_reassurance_74c82a5d:
+
+    # Max_07 "Может и найду. А пока, до следующего раза..." nointeract
+    Max_07 "Možno to urobím. Zatiaľ, do budúcna..." nointeract
+
+translate slovak strings:
+
+    # game/dialogues/anntalk.rpy:178
+    old "Проведём сегодня вечер с \"образовательной\" пользой?"
+    new "Strávime dnešnú noc so \"vzdelávacím\" benefitom?"
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+# game/events/ann.rpy:18
+translate slovak ann_sleep_e0ca90ce:
+
+    # Max_09 "Хм... Мамы нет. Где же она?"
+    Max_09 "Hmmm... Mama tu nie je. Kde je?"
+
+# game/events/ann.rpy:974
+translate slovak ann_bath_about_intime_0_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann "{b}Anna:{/b} Kto je to? Kúpem sa!"
+
+# game/events/ann.rpy:978
+translate slovak ann_bath_about_intime_0_a05b810e:
+
+    # Ann "{b}Анна:{/b} Если это может подождать, то я через полчасика освобожусь..." nointeract
+    Ann "{b}Anna:{/b} Ak to môže počkať, budem vonku za pol hodiny..." nointeract
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+# game/events/ann_cam.rpy:7
+translate slovak cam0_ann_sleep_e0ca90ce:
+
+    # Max_09 "Хм... Мамы нет. Где же она?"
+    Max_09 "Hmmm... Mama tu nie je. Kde je?"
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+# game/events/kira.rpy:43
+translate slovak kira_bath_6147c55c:
+
+    # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
+    Max_09 "Dnes je lepšie odpočívať. A o tom, čo sa stalo ráno, sa môžem porozprávať s tetou Kirou."
+
+# game/events/kira.rpy:990
+translate slovak kira_night_tv_6147c55c:
+
+    # Max_09 "Сегодня лучше отдохнуть. А с тётей Кирой можно поговорить о произошедшем и утром."
+    Max_09 "Dnes je lepšie odpočívať. A o tom, čo sa stalo ráno, sa môžem porozprávať s tetou Kirou."
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+translate slovak strings:
+
+    # game/scripts_s1/s1_screens.rpy:345
+    old "ЧЕРЕЗ НЕСКОЛЬКО МИНУТ..."
+    new "ZA PÁR MINÚT..."
+
+# TODO: Translation updated at 2022-06-17 00:31
+
+# game/scripts_s1/s1_v91.rpy:43
+translate slovak s1_cheat_skip_2bea6bd9:
+
+    # "Есть важные события. Пропуск завершить не удалось."
+    "Dochádza k dôležitému vývoju. Preskočenie sa nepodarilo dokončiť."
+
+# game/scripts_s1/s1_v91.rpy:541
+translate slovak s1_ann_drink_end_1_2638b5b5:
+
+    # Ann_07 "Спасибо, дорогой. Мне тоже понравилось. И тебе доброй ночи." nointeract
+    Ann_07 "Ďakujem, drahý. Tiež sa mi to páčilo. A dobrú noc." nointeract
+
+# game/scripts_s1/s1_v91.rpy:580
+translate slovak s1_about_intimate_lessons_fc38a309:
+
+    # Ann_12 "Да, я подумала и приняла решение - ничего не получится. А теперь давай закончим этот разговор и сделаем вид, что ничего не было. Живут же другие семьи как-то без этих... уроков..."
+    Ann_12 "Áno, premýšľala som o tom a rozhodla som sa - nič nebude fungovať. Teraz ukončime tento rozhovor a predstierajme, že sa nič nestalo. Ostatné rodiny žijú akosi bez týchto... Lekcií..."
+
+# game/scripts_s1/s1_v91.rpy:581
+translate slovak s1_about_intimate_lessons_5893e70d:
+
+    # Max_10 "Но ведь ты была не против! Ты позволяла смотреть за тем, что вы с Эриком делали..."
+    Max_10 "Ale nevadilo ti to! Nechala si ma pozerať sa, čo ty a Erik robíte..."
+
+# game/scripts_s1/s1_v91.rpy:582
+translate slovak s1_about_intimate_lessons_19d06407:
+
+    # Ann_18 "Макс! Я всё сказала! Ты мой сын и делать такие вещи... Это неправильно!"
+    Ann_18 "Max! Povedala som všetko! Si môj syn a robíš takéto veci... Toto nie je správne!"
+
+# game/scripts_s1/s1_v91.rpy:583
+translate slovak s1_about_intimate_lessons_6ba1fc46:
+
+    # Max_11 "Ты это серьёзно?"
+    Max_11 "Myslíš to vážne?"
+
+# game/scripts_s1/s1_v91.rpy:584
+translate slovak s1_about_intimate_lessons_cbc29c20:
+
+    # Ann_16 "Более чем! Нормальные мальчики, если ты не в курсе, находят себе девочку и осваивают всё с ней."
+    Ann_16 "Viac než to! Normálni chlapci, ak nevieš, si nájde dievča a naučí sa s ňou všetko."
+
+# game/scripts_s1/s1_v91.rpy:585
+translate slovak s1_about_intimate_lessons_c695435d:
+
+    # Max_09 "Согласен, мам. Но у меня есть идейка получше... И ходить далеко не придётся..."
+    Max_09 "Súhlasím, mami. Ale mám lepší nápad... A nemusíme chodiť ďaleko..."
+
+# game/scripts_s1/s1_v91.rpy:586
+translate slovak s1_about_intimate_lessons_f2042d88:
+
+    # Ann_15 "Не поняла! Что значит, \"ходить далеко не придётся\"?!"
+    Ann_15 "Nechápem to! Čo to znamená, \"nemusíš chodiť ďaleko\"?!"
+
+# game/scripts_s1/s1_v91.rpy:587
+translate slovak s1_about_intimate_lessons_d432d3e1:
+
+    # Max_07 "По-моему мы договорились о том, что никакого разговора не было? Так что я пошёл..."
+    Max_07 "Myslím, že sme sa zhodli, že nedošlo k žiadnemu rozhovoru? Tak som šiel..."
+
+# game/scripts_s1/s1_v91.rpy:588
+translate slovak s1_about_intimate_lessons_9e75a728:
+
+    # Ann_17 "Минуточку! Я тебя не отпускала! Ты что, уже подстраховался на случай моего отказа?"
+    Ann_17 "Minútu! Nepustila som ťa! Už si si zabezpečil svoje stávky proti môjmu odmietnutiu?"
+
+# game/scripts_s1/s1_v91.rpy:589
+translate slovak s1_about_intimate_lessons_7e387496:
+
+    # Max_09 "Ну... Я не особо надеялся на твою помощь... Поэтому пойду к тёте Кире. Она взрослая и опытная женщина... Уж она-то наверняка знает, как мужчине нужно ублажать женщину."
+    Max_09 "No... V tvoju pomoc som nedúfal... Takže idem k tete Kire. Je to zrelá a skúsená žena... Určite vie, ako má muž potešiť ženu."
+
+# game/scripts_s1/s1_v91.rpy:590
+translate slovak s1_about_intimate_lessons_921e42b8:
+
+    # Ann_13 "Господи, Макс, ты совсем с ума сошёл, просить о таком мою сестру?!"
+    Ann_13 "Ježiš, Max, zbláznil si sa, keď žiadaš moju sestru, aby to urobila?!"
+
+# game/scripts_s1/s1_v91.rpy:591
+translate slovak s1_about_intimate_lessons_94beb716:
+
+    # Max_07 "А что? Мне кажется, она как раз таки та женщина, которая действительно не отвернётся от своего любимого племянника, а не будет искать отговорки, как и думать, правильно это или нет."
+    Max_07 "Prečo? Myslím si, že je to typ ženy, ktorá sa svojmu milovanému synovcovi naozaj neotočí chrbtom a nebude hľadať výhovorky, ako napríklad premýšľať, či je to správne alebo nie."
+
+# game/scripts_s1/s1_v91.rpy:592
+translate slovak s1_about_intimate_lessons_fc2a769a:
+
+    # Ann_15 "Нет, Макс, я не отворачивалась от тебя! Просто... Я считаю, что мама не должна учить {b}ТАКОМУ{/b} своего сына."
+    Ann_15 "Nie, Max, neotočila som sa k tebe chrbtom! Je to len... Nemyslím si, že by matka mala učiť {b}TAKÉ{/b} svojho syna."
+
+# game/scripts_s1/s1_v91.rpy:593
+translate slovak s1_about_intimate_lessons_b87e3e4e:
+
+    # Max_09 "А смотреть, как ты занимаешься этим с Эриком - это должное? Или тебе нравилось, что я на вас смотрел?"
+    Max_09 "A pozerať sa na to, ako to robíš s Erikom, je samozrejmé? Alebo sa ti páčilo, že som sa na teba pozeral?"
+
+# game/scripts_s1/s1_v91.rpy:594
+translate slovak s1_about_intimate_lessons_248dd135:
+
+    # Ann_14 "Господи, Макс, ну что ты такое говоришь? Я просто... Я..."
+    Ann_14 "Pane, Max, čo to hovoríš? Ja len... Ja..."
+
+# game/scripts_s1/s1_v91.rpy:595
+translate slovak s1_about_intimate_lessons_380b082b:
+
+    # Max_00 "Короче, я пошёл..."
+    Max_00 "Každopádne, odchádzam..."
+
+# game/scripts_s1/s1_v91.rpy:596
+translate slovak s1_about_intimate_lessons_616b441d:
+
+    # Ann_17 "О боже... Ну ладно, будь по-твоему, давай попробуем... Не хватало ещё, чтобы ты просил о подобной помощи кого-то ещё."
+    Ann_17 "Ach, bože... Dobre, nech je po tvojom, skúsme to... O takúto pomoc nemusíš žiadať nikoho iného."
+
+# game/scripts_s1/s1_v91.rpy:597
+translate slovak s1_about_intimate_lessons_b0bd52a7:
+
+    # Max_03 "Отлично! Когда начнём?"
+    Max_03 "Skvelé! Kedy začneme?"
+
+# game/scripts_s1/s1_v91.rpy:598
+translate slovak s1_about_intimate_lessons_7ca0b85a:
+
+    # Ann_12 "Так, давай не торопиться! Вот как я вечером, после ванны, буду одна в гостиной отдыхать за просмотром ТВ, так и подходи. Будем разбираться..."
+    Ann_12 "Dobre, poďme na to pomaly! Takto budem večer po kúpeli sama v obývačke a pozerať televíziu, tak poď za mnou. Pozrieme sa na to..."
+
+# game/scripts_s1/s1_v91.rpy:599
+translate slovak s1_about_intimate_lessons_01316ee1:
+
+    # Max_02 "Договорились. Кстати, можно было бы тогда посмотреть что-то... обучающего плана... Заодно, так сказать."
+    Max_02 "Je to dohoda. Mimochodom, potom by sme mohli niečo sledovať... podľa tréningového plánu... Takpovediac v rovnakom čase."
+
+# game/scripts_s1/s1_v91.rpy:600
+translate slovak s1_about_intimate_lessons_4b24ef57:
+
+    # Ann_13 "Пожалуй... Это будет весьма уместно. Но никому не говори об этом. И к Кире не вздумай ходить!"
+    Ann_13 "Možno... To by bolo veľmi vhodné. Ale nikomu o tom nehovor. A nechoď ku Kire!"
+
+# game/scripts_s1/s1_v91.rpy:601
+translate slovak s1_about_intimate_lessons_499f29a4:
+
+    # Max_01 "Конечно! Это будет нашим секретом, мам." nointeract
+    Max_01 "Samozrejme! Toto bude naše tajomstvo, mami." nointeract
+
+# game/scripts_s1/s1_v91.rpy:614
+translate slovak s1_ann_intimate_lesson_1_7599b96c:
+
+    # Ann_01 "Проведём... Я же согласилась, на свою голову. Я, в общем-то, определилась, что тебе покажу..."
+    Ann_01 "Poďme... Povedala som áno, na vlastnú hlavu. Už som sa rozhodla, čo ti ukážem..."
+
+# game/scripts_s1/s1_v91.rpy:615
+translate slovak s1_ann_intimate_lesson_1_dfc9c730:
+
+    # Max_01 "Я весь в предвкушении!"
+    Max_01 "Som nadšený!"
+
+# game/scripts_s1/s1_v91.rpy:618
+translate slovak s1_ann_intimate_lesson_1_dcdcc847:
+
+    # Ann_02 "Вот... Сейчас посмотришь, как девочки развлекают себя без мальчиков. Думаю, этого будет вполне достаточно, чтобы понять... основу..."
+    Ann_02 "Tu... Teraz uvidíš, ako sa dievčatá zabávajú bez chlapcov. Myslím, že to stačí na pochopenie... základ..."
+
+# game/scripts_s1/s1_v91.rpy:619
+translate slovak s1_ann_intimate_lesson_1_41224389:
+
+    # Max_08 "Так, ладно... И в чем основа?"
+    Max_08 "Takže, OK... A čo je základom?"
+
+# game/scripts_s1/s1_v91.rpy:622
+translate slovak s1_ann_intimate_lesson_1_031ce397:
+
+    # Ann_04 "В стимуляции... сам знаешь чего. У вас, мальчиков, с этим куда проще. Ты и сам, уж я думаю, прекрасно знаешь, как снять напряжение... самостоятельно."
+    Ann_04 "Pri stimulácii... vieš čo. Vy to máte oveľa jednoduchšie. Myslím, že vieš, ako sa zbaviť tlaku... samostatne."
+
+# game/scripts_s1/s1_v91.rpy:623
+translate slovak s1_ann_intimate_lesson_1_021896f4:
+
+    # Max_07 "А у вас?"
+    Max_07 "A ty?"
+
+# game/scripts_s1/s1_v91.rpy:626
+translate slovak s1_ann_intimate_lesson_1_775d59dd:
+
+    # Ann_14 "А у нас множество нюансов, из-за которых добиться... оргазма сложнее. Женщинам важна и обстановка, максимально ли мы привлекательны, нет ли у нас в голове каких-то проблем, которые нас не оставят в покое..."
+    Ann_14 "A máme veľa nuáns, ktoré sťažujú dosiahnutie... orgazmus je ťažší. Ženy sa starajú aj o životné prostredie, o to, či sme čo najpríťažlivejšie, či máme v hlave nejaké problémy, ktoré nás nenechajú na pokoji..."
+
+# game/scripts_s1/s1_v91.rpy:627
+translate slovak s1_ann_intimate_lesson_1_676e08c8:
+
+    # Max_10 "О-о-о... Как всё печально."
+    Max_10 "Uh-oh... Aké je to všetko smutné."
+
+# game/scripts_s1/s1_v91.rpy:630
+translate slovak s1_ann_intimate_lesson_1_8ce0f08a:
+
+    # Max_09 "Но, мам, это какой-то уж совсем детский уровень. Я, например, уже взрослый, а потому хочу знать, как целовать девочек, как прикасаться к ним... Так что давай, показывай."
+    Max_09 "Ale, mami, to je veľmi detská úroveň. Ja som napríklad dospelý, a preto chcem vedieť, ako bozkávať dievčatá, ako sa ich dotýkať... Tak do toho a ukáž mi to."
+
+# game/scripts_s1/s1_v91.rpy:631
+translate slovak s1_ann_intimate_lesson_1_52061cc9:
+
+    # Ann_01 "Ну да, я так и думала, что просмотром одного ролика мы не обойдёмся..."
+    Ann_01 "Áno, myslela som, že budeme robiť viac ako len pozerať jeden klip..."
+
+# game/scripts_s1/s1_v91.rpy:634
+translate slovak s1_ann_intimate_lesson_1_71a91c7c:
+
+    # Max_03 "Во! Вот это уже ближе к теме... Такое мне нравится. Красиво!"
+    Max_03 "Bum! Teraz je to viac k téme... Takéto veci sa mi páčia. Nádhera!"
+
+# game/scripts_s1/s1_v91.rpy:635
+translate slovak s1_ann_intimate_lesson_1_6cea527e:
+
+    # Ann_02 "Тогда смотри и запоминай. Если будет что-то непонятно, я объясню."
+    Ann_02 "Potom sa pozeraj a pamätaj si. Ak niečomu nerozumieš, vysvetlím ti to."
+
+# game/scripts_s1/s1_v91.rpy:638
+translate slovak s1_ann_intimate_lesson_1_ee056de1:
+
+    # Max_07 "Да, вопросик есть. А что, ласки женской груди действительно настолько приятны, что эта девушка просто потеряла голову?"
+    Max_07 "Áno, je tu otázka. Je hladenie ženských pŕs naozaj také príjemné, že tamto dievča práve stratilo hlavu?"
+
+# game/scripts_s1/s1_v91.rpy:639
+translate slovak s1_ann_intimate_lesson_1_5355b1ad:
+
+    # Ann_05 "Ну конечно! А вообще, у всех это бывает по-разному... Это зависит от чувствительности и возбудимости девушки..."
+    Ann_05 "Samozrejme! Vo všeobecnosti je to pre každého iné... Závisí to od citlivosti a vzrušivosti dievčaťa..."
+
+# game/scripts_s1/s1_v91.rpy:642
+translate slovak s1_ann_intimate_lesson_1_aa83dc45:
+
+    # Max_09 "И как это выяснить?"
+    Max_09 "A ako to zistím?"
+
+# game/scripts_s1/s1_v91.rpy:643
+translate slovak s1_ann_intimate_lesson_1_24d351a1:
+
+    # Ann_14 "В процессе сближения с девушкой. Иначе, просто никак."
+    Ann_14 "V procese zbližovania sa s dievčaťom. Inak to jednoducho nejde."
+
+# game/scripts_s1/s1_v91.rpy:646
+translate slovak s1_ann_intimate_lesson_1_d99b1ea5:
+
+    # Max_11 "Хмм... Засада, однако..."
+    Max_11 "Hmm... Zatiaľ všetko v poriadku, však... "
+
+# game/scripts_s1/s1_v91.rpy:647
+translate slovak s1_ann_intimate_lesson_1_418ad13b:
+
+    # Ann_01 "И почему ты так тяжко вздыхаешь? Разочарован, что не ко всему можно подготовиться заранее?"
+    Ann_01 "A prečo tak silno vzdycháš? Si sklamaný, že sa nevieš na všetko pripraviť vopred?"
+
+# game/scripts_s1/s1_v91.rpy:650
+translate slovak s1_ann_intimate_lesson_1_23526750:
+
+    # Max_04 "Ага. Так когда мы это всё попробуем, мам?"
+    Max_04 "Aha. Tak kedy to všetko skúsime, mami?"
+
+# game/scripts_s1/s1_v91.rpy:651
+translate slovak s1_ann_intimate_lesson_1_20fc9780:
+
+    # Ann_13 "В смысле, \"мы\"?! Это же очень интимные процессы..."
+    Ann_13 "Myslíš \"my\"?! Sú to veľmi intímne procesy..."
+
+# game/scripts_s1/s1_v91.rpy:654
+translate slovak s1_ann_intimate_lesson_1_5b0aa651:
+
+    # Max_07 "Поэтому я к тебе и обратился. И я же не прошу целоваться в губы, а так... Хотя бы в шею попробовать... Заодно и массаж сделаю..."
+    Max_07 "Preto som sa na teba obrátil. A nežiadam o bozk na pery, ale tak... Aspoň na krku, aby sme to skúsili... Zároveň budem robiť masáž..."
+
+# game/scripts_s1/s1_v91.rpy:655
+translate slovak s1_ann_intimate_lesson_1_2848ecd9:
+
+    # Ann_12 "Даже не знаю... Как-то это всё..." nointeract
+    Ann_12 "Ani neviem... Akosi je to všetko..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:661
+translate slovak s1_ann_intimate_lesson_1_472590a6:
+
+    # Ann_17 "Массаж и поцелуи, это всё, конечно, здорово, сынок... Но не когда это происходит с мамой."
+    Ann_17 "Masáž a bozkávanie, to je všetko skvelé, synu... Ale nie vtedy, keď sa to stane mame."
+
+# game/scripts_s1/s1_v91.rpy:662
+translate slovak s1_ann_intimate_lesson_1_94042a4a:
+
+    # Max_01 "Да не напрягайся ты так, мам. Мы просто проверим, насколько я с этим справлюсь, вот и всё."
+    Max_01 "Neobťažuj sa takto, mami. Skontrolujeme, či to zvládnem, to je všetko."
+
+# game/scripts_s1/s1_v91.rpy:665
+translate slovak s1_ann_intimate_lesson_1_dfb8ce5b:
+
+    # Ann_12 "И как, по-твоему, я должна оценивать твои поцелуи? Я вряд ли смогу сделать это, как женщина, потому что я твоя мать. Но, ладно, так уж и быть, я постараюсь..." nointeract
+    Ann_12 "A ako si myslíš, že by som mala zhodnotiť tvoje bozky? Sotva to môžem urobiť ako žena, pretože som tvoja matka. Ale dobre, tak nech sa páči, skúsim to..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:671
+translate slovak s1_ann_intimate_lesson_1_154bb5cf:
+
+    # Max_04 "{m}Мама замолчала... И начала так глубоко дышать! Нужно постараться целовать её хоть немного неуклюже, чтобы не было похоже, что у меня есть в этом опыт. Вот только не так-то это и просто...{/m}"
+    Max_04 "{m}Mama mlčí... A začala dýchať tak zhlboka! Musím sa ju snažiť pobozkať aspoň trochu nešikovne, aby to nevyzeralo, že s tým mám nejaké skúsenosti. Až na to, že to nie je také jednoduché...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:674
+translate slovak s1_ann_intimate_lesson_1_1983b8c2:
+
+    # Ann_02 "Ну что я скажу... Получается у тебя, Макс, довольно неплохо. Я имею ввиду сами поцелуи. Но тебе нужно расширять область их применения."
+    Ann_02 "Čo na to povedať... Vedieš si celkom dobre, Max. Mám na mysli samotné bozkávanie. Musíš však rozšíriť ich pôsobnosť."
+
+# game/scripts_s1/s1_v91.rpy:675
+translate slovak s1_ann_intimate_lesson_1_d6beaf4d:
+
+    # Max_09 "Эээ... То есть?"
+    Max_09 "Ehm... Čo to znamená?"
+
+# game/scripts_s1/s1_v91.rpy:676
+translate slovak s1_ann_intimate_lesson_1_cce37033:
+
+    # Ann_05 "Нужно не забывать и про остальное: ключицу, плечи, спину, мочку ушка. Раз уж ты взялся это осваивать..."
+    Ann_05 "Nesmieš zabúdať na ostatné: kľúčna kosť, ramená, chrbát, ušný lalok. Keď už ste pri tom..."
+
+# game/scripts_s1/s1_v91.rpy:677
+translate slovak s1_ann_intimate_lesson_1_f069bec4:
+
+    # Max_02 "Понял. Тогда я сейчас попробую..." nointeract
+    Max_02 "Rozumiem. Tak to skúsim teraz..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:683
+translate slovak s1_ann_intimate_lesson_1_70ee05dc:
+
+    # Max_03 "{m}Всё перечисленное я с удовольствием попробую, пока мой массаж всё ближе и ближе подступает к маминой груди. Ох, вот бы их тоже помассировать...{/m}"
+    Max_03 "{m}Všetky vyššie uvedené by som rada vyskúšal, pretože moja masáž je čoraz bližšie k maminým prsiam. Ach, aj ja by som ich chcel masírovať...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:684
+translate slovak s1_ann_intimate_lesson_1_d2feb746:
+
+    # Ann_03 "Ахх... Сынок, если ты не будешь так частить с поцелуями, а будешь повышать их качество продолжительностью, то в сочетании с твоими навыками массажа, все девочки будут терять голову... Ммм..."
+    Ann_03 "Ahhh... Synu, ak sa nebudeš tak intenzívne bozkávať, ale zlepšíš kvalitu bozkávania, tak v kombinácii s tvojimi masážnymi schopnosťami všetky dievčatá stratia hlavu... Mmm..."
+
+# game/scripts_s1/s1_v91.rpy:685
+translate slovak s1_ann_intimate_lesson_1_68b5a75b:
+
+    # Max_04 "Ну... Если ты потеряешь голову, то твой прогноз однозначно верен."
+    Max_04 "No... Ak stratíš hlavu, tvoju prognóza je jednoznačne správna."
+
+# game/scripts_s1/s1_v91.rpy:686
+translate slovak s1_ann_intimate_lesson_1_e254abbd:
+
+    # Ann_14 "Ох... Мне кажется, что ты сейчас не только о своём образовании заботишься, но и... Тебе не хватает кое-чего. И заниматься тебе этим нужно не со мной..."
+    Ann_14 "Oh... Zdá sa mi, že sa teraz nestaráš len o svoje vzdelanie, ale aj o... Niečo ti chýba. A nemusíš to robiť so mnou..."
+
+# game/scripts_s1/s1_v91.rpy:689
+translate slovak s1_ann_intimate_lesson_1_382e011b:
+
+    # Max_07 "Мам, а с кем, как не с тобой, мне такое можно пробовать делать? С тобой мне как-то легче преодолеть страхи. А девочкам, как я слышал, нравятся уверенные мальчики!"
+    Max_07 "Mami, s kým iným to môžem skúsiť, ak nie s tebou? S tebou sa mi akosi ľahšie prekonáva strach. A dievčatá, ako som počul, majú rady sebavedomých chlapcov!"
+
+# game/scripts_s1/s1_v91.rpy:690
+translate slovak s1_ann_intimate_lesson_1_345fa74a:
+
+    # Ann_12 "И что, я теперь из-за этого должна отбросить всё смущение и наслаждаться, как эта девушка на экране?"
+    Ann_12 "Takže teraz mám kvôli tomu odložiť všetky rozpaky a tešiť sa ako to dievča na obrazovke?"
+
+# game/scripts_s1/s1_v91.rpy:691
+translate slovak s1_ann_intimate_lesson_1_2afa5928:
+
+    # Max_09 "А почему нет? Для меня бесценный опыт, для тебя одно удовольствие. Тебе же нравится массаж?"
+    Max_09 "Prečo nie? Pre mňa neoceniteľná skúsenosť, preteba potešenie. Máš rada masáže, však?"
+
+# game/scripts_s1/s1_v91.rpy:694
+translate slovak s1_ann_intimate_lesson_1_5e32cafa:
+
+    # Ann_17 "Ну, Макс! Одно дело, когда это просто массаж и другое, когда сын начинает делать своей маме эротический массаж!"
+    Ann_17 "No, Max! Jedna vec je, keď ide len o masáž, a druhá, keď syn začne robiť svojej mame erotickú masáž!"
+
+# game/scripts_s1/s1_v91.rpy:695
+translate slovak s1_ann_intimate_lesson_1_29386537:
+
+    # Max_07 "То есть, если бы я, например, начал массировать твою грудь, то тебе бы не понравилось?"
+    Max_07 "Takže keby som ti napríklad začal masírovať prsia, nepáčilo by sa ti to?"
+
+# game/scripts_s1/s1_v91.rpy:696
+translate slovak s1_ann_intimate_lesson_1_f2bfe275:
+
+    # Ann_12 "Зная твой талант в массаже, я не сомневаюсь, что мне бы понравилось. Но делать такое мы не будем!"
+    Ann_12 "Keďže poznám tvoj masážny talent, nepochybujem, že by sa mi to páčilo. Ale my to neurobíme!"
+
+# game/scripts_s1/s1_v91.rpy:697
+translate slovak s1_ann_intimate_lesson_1_1323a763:
+
+    # Max_08 "Почему ты так сильно этого стесняешься? У тебя же просто невероятно прекрасная грудь! Мне же нужно знать, как массировать её так, чтобы женщине нравилось. Вдруг, мой массаж здесь не сработает и нужны иные движения рук!"
+    Max_08 "Prečo sa za to tak hanbíš? Tvoje prsia sú jednoducho neuveriteľne krásne! Musím vedieť, ako ich masírovať, aby sa to žene páčilo. Čo ak tu moja masáž nefunguje a sú potrebné iné pohyby rúk!"
+
+# game/scripts_s1/s1_v91.rpy:700
+translate slovak s1_ann_intimate_lesson_1_6545d9ef:
+
+    # Ann_14 "Ох, сынок... Ты, видимо, не отстанешь, да? Хорошо, попробуем разок, чтобы ты знал, как это... делается... Я скажу, если ты будешь делать что-то не так." nointeract
+    Ann_14 "Ach, synku... Pravdepodobne sa nedáš, však? Dobre, skúsme to raz, aby sme vedeli, ako to je... sa vykonáva... Poviem ti, ak urobíš niečo zlé." nointeract
+
+# game/scripts_s1/s1_v91.rpy:706
+translate slovak s1_ann_intimate_lesson_1_960c1adc:
+
+    # Max_05 "{m}Неужто мои руки наконец дотянулись до этих самых потрясающих сисек на свете! Несмотря на свои годы, мамина грудь выглядит просто отлично, а на ощупь, вообще, обалденная! Но продолжать неуклюжничать, как с поцелуями, так же нужно не забывать...{/m}"
+    Max_05 "{m}Nemôžem uveriť, že sa mi do rúk konečne dostali tie najúžasnejšie prsia na svete! Napriek svojim rokom vyzerajú mamine prsia skvele a cítiť ich je skvele! Ale rovnako dôležité je pamätať aj na to, aby som bol aj naďalej nešikovní, rovnako ako pri bozkávaní...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:707
+translate slovak s1_ann_intimate_lesson_1_d0dadc91:
+
+    # Ann_08 "Да, Макс... У тебя довольно неплохо получается. Но с грудью, по крайней мере, поначалу, лучше обращаться как можно нежнее... А так, твои навыки в массаже здесь очень к месту. Охх..."
+    Ann_08 "Áno, Max... Darí sa ti celkom dobre. Ale s prsiami, aspoň zo začiatku, je najlepšie zaobchádzať čo najjemnejšie... Tvoje masážne schopnosti sú tu však veľmi dobré. Ohhh..."
+
+# game/scripts_s1/s1_v91.rpy:708
+translate slovak s1_ann_intimate_lesson_1_2aa5e608:
+
+    # Max_02 "Значит, как женщине, тебе нравится, как я это делаю? Может, ещё что-нибудь подскажешь?"
+    Max_02 "Takže ako žene sa ti páči, ako to robím? Môžem navrhnúť niečo iné?"
+
+# game/scripts_s1/s1_v91.rpy:709
+translate slovak s1_ann_intimate_lesson_1_e1eb7ba8:
+
+    # Ann_03 "Да, не останавливайся только на груди. Продолжай массировать и всё то, что ты массировал до этого. Ммм... Но обязательно возвращайся... Как же пошло такое говорить своему сыну..."
+    Ann_03 "Áno, nezastavuj sa len pri hrudníku. Pokračuj v masírovaní všetkých vecí, ktoré si masíroval aj predtým. Mmm... Určite sa však vráť... To je ale sprostosť povedať svojmu synovi..."
+
+# game/scripts_s1/s1_v91.rpy:712
+translate slovak s1_ann_intimate_lesson_1_98be7369:
+
+    # Max_03 "{m}Да, мять эти сочные сисечки одно удовольствие, как и целовать её в шею. Она дышит жарко и глубоко, ей явно приятно. Но вместе с этим, я всё ещё чувствую, как она напрягается от того, что всё это делаю я.{/m}"
+    Max_03 "{m}Áno, stláčať tie šťavnaté prsia je pôžitok, rovnako ako bozkávať jej krk. Horúco a zhlboka dýcha, očividne si to užíva. Ale popri tom stále cítim, ako je napätá z toho, že to všetko robím.{/m}"
+
+# game/scripts_s1/s1_v91.rpy:715
+translate slovak s1_ann_intimate_lesson_1_c127b58d:
+
+    # Ann_05 "Так, сынок, достаточно. Я думаю, ты вполне готов сводить с ума всех девочек, какие попадутся в твои умелые руки. Ты ещё талантливее, чем мне казалось."
+    Ann_05 "Dobre, synu, to stačí. Myslím, že si pripravený poblázniť všetky dievčatá, ktoré sa ti dostanú do rúk. Si ešte talentovanejší, ako som si myslela."
+
+# game/scripts_s1/s1_v91.rpy:716
+translate slovak s1_ann_intimate_lesson_1_314e3e67:
+
+    # Max_07 "Супер! А как же остальное?"
+    Max_07 "Skvelé! A čo ostatné?"
+
+# game/scripts_s1/s1_v91.rpy:719
+translate slovak s1_ann_intimate_lesson_1_3c77be73:
+
+    # Ann_17 "Остальное? В смысле остальное? Ты о чём, Макс?"
+    Ann_17 "Zvyšok? Čo myslíš tým zvyškom? O čom to hovoríš, Max?"
+
+# game/scripts_s1/s1_v91.rpy:720
+translate slovak s1_ann_intimate_lesson_1_5e421526:
+
+    # Max_01 "Ну как... Мне же ещё нужно попробовать доставить удовольствие женщине там... внизу... Там же можно не только руками, так ведь?"
+    Max_01 "Ako sa... Stále sa musím snažiť potešiť ženu... dole... Nie je to len o mojich rukách, však?"
+
+# game/scripts_s1/s1_v91.rpy:721
+translate slovak s1_ann_intimate_lesson_1_1b043e2f:
+
+    # Ann_13 "Да, но это уже осваивай без меня. С мамой таким заниматься, даже в образовательных целях - уже чересчур!"
+    Ann_13 "Áno, ale zvládni to bezo mňa. Je to príliš veľa na to, aby si to robil so svojou matkou, dokonca aj na výchovné účely!"
+
+# game/scripts_s1/s1_v91.rpy:722
+translate slovak s1_ann_intimate_lesson_1_ebad62e7:
+
+    # Max_07 "Наверно, ты права. Лучше учиться у нескольких женщин. К тому же, у тёти Киры, наверно, такого опыта побольше, чем у тебя. Ты же не против, если я поучусь у неё?"
+    Max_07 "Pravdepodobne máš pravdu. Je lepšie učiť sa od viacerých žien. Okrem toho má teta Kira pravdepodobne viac skúseností ako ty. Nebude ti vadiť, ak sa od nej budem učiť, však?"
+
+# game/scripts_s1/s1_v91.rpy:725
+translate slovak s1_ann_intimate_lesson_1_ce9b98ea:
+
+    # Ann_06 "Ага, хотела бы я посмотреть, как ты будешь её на это уговаривать. Думаю, она ещё не всю свою нравственность растеряла, чтобы заниматься таким."
+    Ann_06 "Áno, rada by som videla, ako ju k tomu prehovoríš. Nemyslím si, že ešte stratila všetky svoje morálne zásady, aby urobila niečo také."
+
+# game/scripts_s1/s1_v91.rpy:726
+translate slovak s1_ann_intimate_lesson_1_60c104a5:
+
+    # Max_09 "Но! Если что... Никаких претензий к ней или ко мне, хорошо?"
+    Max_09 "Ale! Ak niečo... Žiadne sťažnosti na ňu alebo na mňa, dobre?"
+
+# game/scripts_s1/s1_v91.rpy:727
+translate slovak s1_ann_intimate_lesson_1_ad057f04:
+
+    # Ann_07 "Ой, сынок, давай без этой ерунды. Найди уже себе девочку." nointeract
+    Ann_07 "Synku, nerobme tieto nezmysly. Nájdi si už dievča." nointeract
+
+# game/scripts_s1/s1_v91.rpy:742
+translate slovak s1_bait_for_ann_57679d55:
+
+    # Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
+    Max_03 "Wow... kúpeš sa nahá, teta Kira?! Vyzeráš skvele!"
+
+# game/scripts_s1/s1_v91.rpy:743
+translate slovak s1_bait_for_ann_41436e7f:
+
+    # Kira_01 "А, Макс... Я думала, что все уже спят. Хотела немного поплавать... А ты чего не спишь?" nointeract
+    Kira_01 "Ach, Max... Myslela som, že už všetci spia. Chcela som si ísť trochu zaplávať... Čo robíš hore?" nointeract
+
+# game/scripts_s1/s1_v91.rpy:747
+translate slovak s1_bait_for_ann_a15a1f83:
+
+    # Kira_14 "Ой, Макс, может лучше будем решать проблемы с утра? На свежую голову..."
+    Kira_14 "Ach, Max, možno by sme mali problémy riešiť ráno? S čistou hlavou..."
+
+# game/scripts_s1/s1_v91.rpy:748
+translate slovak s1_bait_for_ann_cb24c246:
+
+    # Max_07 "От тебя почти ничего не потребуется."
+    Max_07 "Nebudeš musieť robiť takmer nič."
+
+# game/scripts_s1/s1_v91.rpy:749
+translate slovak s1_bait_for_ann_9fabc03c:
+
+    # Kira_01 "Оу... Ну раз так, то дай мне пару минут, я только загляну в ванную комнату."
+    Kira_01 "Ach... No, ak áno, potom mi daj pár minút, pozriem sa iba do kúpeľne."
+
+# game/scripts_s1/s1_v91.rpy:750
+translate slovak s1_bait_for_ann_fac376a1:
+
+    # Max_04 "Без проблем, тётя Кира."
+    Max_04 "Žiadny problém, teta Kira."
+
+# game/scripts_s1/s1_v91.rpy:757
+translate slovak s1_bait_for_ann_7e99f327:
+
+    # Kira_06 "Ничего, если я включу что-нибудь \"горяченькое\"? Или это будет мешать?"
+    Kira_06 "Je v poriadku, ak zahrám niečo \"horúce\"? Alebo ti to bude prekážať?"
+
+# game/scripts_s1/s1_v91.rpy:758
+translate slovak s1_bait_for_ann_0b28652a:
+
+    # Max_02 "Обязательно включай! Это как раз таки будет нам необходимо для того, чтобы задуманная мной постановка сработала."
+    Max_02 "Nezabudni sa zapnúť! Presne to budeme potrebovať, aby inscenácia, ktorú som vymyslel, fungovala."
+
+# game/scripts_s1/s1_v91.rpy:759
+translate slovak s1_bait_for_ann_bffab8dc:
+
+    # Kira_07 "О как! Ты решил перейти со мной на ролевые игры? Интересно! Я думала, ты сперва будешь просить попробовать со мной анальный секс..."
+    Kira_07 "Ach, áno! Rozhodol si sa prejsť na hranie rolí so mnou? Zaujímavé! Myslela som, že si chceš najprv vyskúšať análny sex so mnou..."
+
+# game/scripts_s1/s1_v91.rpy:760
+translate slovak s1_bait_for_ann_d7a277e7:
+
+    # Max_06 "Ух ты! А что, уже можно?!"
+    Max_06 "Wow! Môžeme to urobiť teraz?!"
+
+# game/scripts_s1/s1_v91.rpy:761
+translate slovak s1_bait_for_ann_4f82bd8a:
+
+    # Kira_05 "Можно? Макс, твой член уже столько раз побывал у меня во рту и вообще во мне, что просто грех для тебя, как мне кажется, не натянуть на него мою попку."
+    Kira_05 "Môžem? Max, tvoj vták bol v mojich ústach a vo mne už toľkokrát, že by bolo pre teba hriechom, keby si mi ho nedal do zadku."
+
+# game/scripts_s1/s1_v91.rpy:762
+translate slovak s1_bait_for_ann_a2f0e512:
+
+    # Max_09 "Блин, тётя Кира! Как ты с этим не вовремя! У меня теперь моральная дилемма, между моей задумкой и твоей..."
+    Max_09 "Do riti, teta Kira! Aké zlé načasovanie! Teraz mám morálnu dilemu medzi mojou a tvojou myšlienkou..."
+
+# game/scripts_s1/s1_v91.rpy:763
+translate slovak s1_bait_for_ann_ead7d151:
+
+    # Kira_01 "Ну, ролевые игры - это тоже весьма интересный опыт."
+    Kira_01 "No, hranie rolí je tiež celkom zaujímavá skúsenosť."
+
+# game/scripts_s1/s1_v91.rpy:764
+translate slovak s1_bait_for_ann_7026412e:
+
+    # Max_07 "Да, это здорово, но мне сейчас нужно не совсем это. Нужна ролевая помощь с мамой!"
+    Max_07 "Áno, to je skvelé, ale to práve teraz nepotrebujem. Potrebujem pomoc pri hraní rolí s mamou!"
+
+# game/scripts_s1/s1_v91.rpy:765
+translate slovak s1_bait_for_ann_2ef9dc7c:
+
+    # Kira_15 "Эээ... Думаешь, она согласится на ролевой тройничок?!"
+    Kira_15 "Ehm... Myslíš, že bude súhlasiť s hraním rolí v trojici?!"
+
+# game/scripts_s1/s1_v91.rpy:766
+translate slovak s1_bait_for_ann_5e66f6ec:
+
+    # Max_09 "Так, тётя Кира, давай серьёзнее! Помнишь, я говорил, что мама вытворяет вещи, которые до Эрика и не подумала бы делать?"
+    Max_09 "Dobre, teta Kira, začnime vážne! Pamätáš si, ako som ti hovoril, že mama robí veci, ktoré by ju pred Erikom ani nenapadlo robiť?"
+
+# game/scripts_s1/s1_v91.rpy:769
+translate slovak s1_bait_for_ann_32302405:
+
+    # Kira_13 "Да, помню. А что, градус таких вещей стал ещё больше?"
+    Kira_13 "Áno, pamätám si to. Zvýšila sa miera takýchto vecí?"
+
+# game/scripts_s1/s1_v91.rpy:770
+translate slovak s1_bait_for_ann_f0afb72d:
+
+    # Max_07 "Ага, знаешь, я подглядывал за ними... Мама несколько раз меня за это наказала, но Эрик взял и убедил её, что нужно удовлетворить моё подростковое любопытство. Они во всех подробностях показали мне, что такое минет..."
+    Max_07 "Áno, vieš, pozeral som sa na nich... Mama ma za to niekoľkokrát pokarhala, ale Erik sa ju pokúsil presvedčiť, aby uspokojila moju tínedžerskú zvedavosť. Veľmi podrobne mi ukázali, čo je to fajčenie..."
+
+# game/scripts_s1/s1_v91.rpy:771
+translate slovak s1_bait_for_ann_fa71c365:
+
+    # Kira_17 "Ничего себе! Хочешь сказать, моя сестра, которая довольно строго вас от этого всего старалась оберегать, теперь вытворяет такие номера? Вау!"
+    Kira_17 "Wow! Chceš povedať, že moja sestra, ktorá sa ťa pred tým všetkým snažila ochrániť celkom prísne, teraz robí takéto čísla? Wow!"
+
+# game/scripts_s1/s1_v91.rpy:772
+translate slovak s1_bait_for_ann_d8d6f810:
+
+    # Max_01 "Вот-вот. Но раз уж у нас теперь такие вот реалии наступили, то я начал упрашивать её на продолжение таких вот уроков, но в плане ублажения женщин."
+    Max_01 "To je všetko. Ale keďže teraz máme takúto realitu, začal som ju prosiť, aby pokračovala v takýchto lekciách, ale pokiaľ ide o potešenie žien."
+
+# game/scripts_s1/s1_v91.rpy:773
+translate slovak s1_bait_for_ann_ab689666:
+
+    # Kira_03 "Смело и находчиво, должна сказать! Только немного обидно, что меня тебе стало мало..."
+    Kira_03 "Odvážne a vynaliezavo, musím povedať! Je to len trochu škoda, že ti nestačím..."
+
+# game/scripts_s1/s1_v91.rpy:776
+translate slovak s1_bait_for_ann_4b55ef21:
+
+    # Max_03 "Что ты, тётя Кира! Ты вообще лучшая тётя на свете! Просто, я хочу получить такой опыт от разных женщин, чтобы расширить свои границы в сексе."
+    Max_03 "Čo si, teta Kira! Si najlepšia teta na svete! Jednoducho, chcem získať túto skúsenosť od rôznych žien, aby som rozšíril svoje hranice v sexe."
+
+# game/scripts_s1/s1_v91.rpy:777
+translate slovak s1_bait_for_ann_47d2723b:
+
+    # Kira_04 "Ну... Не могу здесь с тобой не согласиться. И чему же тебя учит моя сестра-развратница?"
+    Kira_04 "No... Nemôžem s tebou súhlasiť viac. A čo ťa učí moja sestra, chlípnička?"
+
+# game/scripts_s1/s1_v91.rpy:778
+translate slovak s1_bait_for_ann_586539e2:
+
+    # Max_02 "Мы начали со слегка интимных поцелуев и эротического массажа. Ну как, эротического... Она разрешила поласкать её грудь."
+    Max_02 "Začali sme mierne intímnymi bozkami a erotickou masážou. Ako erotické... Dovolila mi hladiť jej prsia."
+
+# game/scripts_s1/s1_v91.rpy:779
+translate slovak s1_bait_for_ann_bc4b4bb0:
+
+    # Kira_05 "Ухх... Моё воображение уже не слабо меня заводит от твоих рассказов. А дальше?"
+    Kira_05 "Uf... Moja predstavivosť ma už z vašich príbehov dostáva do varu. A potom?"
+
+# game/scripts_s1/s1_v91.rpy:780
+translate slovak s1_bait_for_ann_5dc7ef6e:
+
+    # Max_07 "А дальше, всё. Большее - это уже слишком интимно, а потому дальше я должен завести девушку и постигать всё это с ней. И вот здесь мне и нужна твоя помощь."
+    Max_07 "A okrem toho je to všetko. Viac je príliš intímne, takže si musím nájsť priateľku a robiť to všetko s ňou. A práve tu potrebujem tvoju pomoc."
+
+# game/scripts_s1/s1_v91.rpy:783
+translate slovak s1_bait_for_ann_88a3f603:
+
+    # Kira_14 "Ты хочешь, чтобы я с ней об этом поговорила? Я, конечно, могу попробовать..."
+    Kira_14 "Chceš, aby som sa s ňou o tom porozprávala? Určite to môžem skúsiť..."
+
+# game/scripts_s1/s1_v91.rpy:784
+translate slovak s1_bait_for_ann_1e339f19:
+
+    # Max_04 "Это ни к чему. Я сказал ей, что наберусь опыта у тебя."
+    Max_04 "Je to zbytočné. Povedal som jej, že sa od teba budem učiť."
+
+# game/scripts_s1/s1_v91.rpy:785
+translate slovak s1_bait_for_ann_17dd95c7:
+
+    # Kira_15 "Да?! И как она на такое мощное заявление отреагировала?"
+    Kira_15 "Áno?! A ako reagovala na takéto silné vyhlásenie?"
+
+# game/scripts_s1/s1_v91.rpy:786
+translate slovak s1_bait_for_ann_06a6ee89:
+
+    # Max_03 "Ха, она думает, что ты до такой степени нравственность ещё не потеряла. Как же много всего она не знает."
+    Max_03 "Ha, ona si myslí, že si ešte nestratila morálku do takej miery. Koľko toho nevie."
+
+# game/scripts_s1/s1_v91.rpy:787
+translate slovak s1_bait_for_ann_c38e70f6:
+
+    # Kira_06 "И хорошо, что не знает. Если бы знала, то точно не пустила бы меня сюда жить."
+    Kira_06 "A je dobre, že to tak nie je. Keby to tak bolo, určite by ma tu nenechala bývať."
+
+# game/scripts_s1/s1_v91.rpy:790
+translate slovak s1_bait_for_ann_c1489104:
+
+    # Max_07 "Так вот, я надеюсь, что она сегодня пойдёт проверять, так ли она в тебе уверена. В другие дни ей не до этого, а вот сегодня..."
+    Max_07 "Takže dúfam, že sa dnes pôjde pozrieť, či je o tebe taká presvedčená. V iné dni sa o to nezaujíma, ale dnes..."
+
+# game/scripts_s1/s1_v91.rpy:791
+translate slovak s1_bait_for_ann_7d49d5ed:
+
+    # Kira_16 "Макс, ты же понимаешь, что в таком случае ругани будет море. Не знаю, что она сделает с тобой, а вот мне точно придётся искать новое жильё."
+    Kira_16 "Max, uvedomuješ si, že v takom prípade sa bude veľa nadávať? Neviem, čo ti urobí, ale určite si budem musieť nájsť nové bývanie."
+
+# game/scripts_s1/s1_v91.rpy:792
+translate slovak s1_bait_for_ann_8524dae7:
+
+    # Max_09 "Не придётся, тётя Кира! Главное подыграй мне, если она начнёт спускаться по лестнице. А когда пойдут разборки, продолжай подыгрывать в направлении, что меня нужно готовить к взрослой жизни."
+    Max_09 "To nebudeš musieť, teta Kira! Ak začne schádzať po schodoch, hraj sa s ňou. A keď príde zúčtovanie, pokračuj v hre smerom k tomu, že sa potrebujem pripraviť na dospelosť."
+
+# game/scripts_s1/s1_v91.rpy:793
+translate slovak s1_bait_for_ann_dd3c316e:
+
+    # Kira_07 "Ох, Макс... Рискованно... Но смело! Затея мне нравится."
+    Kira_07 "Ach, Max... Riskantné... Ale buďme odvážni! Táto myšlienka sa mi páči."
+
+# game/scripts_s1/s1_v91.rpy:796
+translate slovak s1_bait_for_ann_85d60993:
+
+    # Max_02 "Так, а что ты там насчёт анального секса говорила?"
+    Max_02 "Čo si hovorila o análnom sexe?"
+
+# game/scripts_s1/s1_v91.rpy:797
+translate slovak s1_bait_for_ann_2aaa7b97:
+
+    # Kira_05 "Я просто думала, что тебе уже неймётся это попробовать..."
+    Kira_05 "Len som si myslela, že ťa to nakopne..."
+
+# game/scripts_s1/s1_v91.rpy:798
+translate slovak s1_bait_for_ann_e1f885e0:
+
+    # Max_04 "Честно говоря, было столько забот, что я и не успевал об этом думать... Попробуем?"
+    Max_04 "Úprimne povedané, bolo toho toľko, že som nemal čas o tom premýšľať... Vyskúšame to?"
+
+# game/scripts_s1/s1_v91.rpy:799
+translate slovak s1_bait_for_ann_c09ffee1:
+
+    # Kira_04 "Обязательно! Но у меня давненько не было анального секса, поэтому мне нужно будет к этому немного подготовиться..."
+    Kira_04 "Rozhodne! Ale už dlho som nemala análny sex, takže sa na to musím trochu pripraviť..."
+
+# game/scripts_s1/s1_v91.rpy:802
+translate slovak s1_bait_for_ann_9dde754b:
+
+    # Max_08 "Тихо, а вот и мама! Самое время тебе раздвинуть ножки, тётя Кира. Начинаем..."
+    Max_08 "Ticho, tam je mama! Je načase, aby si roztiahla nohy, teta Kira. A je to tu..."
+
+# game/scripts_s1/s1_v91.rpy:805
+translate slovak s1_bait_for_ann_87d088a9:
+
+    # Kira_02 "Да, Макс... Всё правильно. Нужны именно вот-такие лёгкие прикосновения..."
+    Kira_02 "Áno, Max... Presne tak. Potrebuješ práve takýto ľahký dotyk..."
+
+# game/scripts_s1/s1_v91.rpy:808
+translate slovak s1_bait_for_ann_40479877:
+
+    # Ann_20 "Это что тут такое происходит!!! Ну-ка немедленно прекратите! Кира! Макс! С ума сошли что ли?!"
+    Ann_20 "Čo sa to tu, do pekla, deje!!! Okamžite s tým prestaňte! Kira! Max! Zbláznili ste sa?!"
+
+# game/scripts_s1/s1_v91.rpy:811
+translate slovak s1_bait_for_ann_bb0262b6:
+
+    # Max_09 "Мам, давай потише, а то всех разбудишь! Ты же сама разрешила, помнишь? Никаких претензий..."
+    Max_09 "Mami, stíš sa, lebo všetkých zobudíš! Sama si to povedala, pamätáš? Žiadne sťažnosti..."
+
+# game/scripts_s1/s1_v91.rpy:812
+translate slovak s1_bait_for_ann_0bf995e8:
+
+    # Ann_18 "Вообще-то, я ничего такого не разрешала! Я подумала, ты сказал про Киру просто так, чтобы меня позлить..."
+    Ann_18 "Vlastne som nič z toho nedovolila! Myslela som, že si hovoril o Kire, aby si ma naštval..."
+
+# game/scripts_s1/s1_v91.rpy:813
+translate slovak s1_bait_for_ann_6ded7eed:
+
+    # Max_15 "Ну вот, будешь знать, что ко мне нужно относиться посерьёзнее. А теперь, будь добра, иди спать, не отвлекай..."
+    Max_15 "Tu ma budeš brať vážnejšie. Teraz, prosím, choď spať, nerozptyľuj pozornosť..."
+
+# game/scripts_s1/s1_v91.rpy:814
+translate slovak s1_bait_for_ann_32f4e841:
+
+    # Ann_16 "Ах вот так, значит! И вы считаете это нормальным, да? Чтобы родная тётя лежала тут с раздвинутыми ногами и учила своего племянника всяким непристойностям, если не сказать похуже!"
+    Ann_16 "Aha, takže to je ono! A vy si myslíte, že je to normálne, však? Aby tam moja vlastná teta ležala s roztiahnutými nohami a učila svojho synovca všelijaké oplzlosti, to je prinajmenšom!"
+
+# game/scripts_s1/s1_v91.rpy:815
+translate slovak s1_bait_for_ann_2241c813:
+
+    # Kira_16 "Не непристойностям, а взрослой жизни и её... важным аспектам. Раз уж ты сама отказалась помогать сыну, то кому, как не мне следует позаботиться о его воспитании..."
+    Kira_16 "Nie neslušnosť, ale dospelosť a jej... dôležité aspekty. Keďže si sama odmietla pomôcť svojmu synovi, kto iný by sa mal postarať o jeho výchovu ako ja..."
+
+# game/scripts_s1/s1_v91.rpy:818
+translate slovak s1_bait_for_ann_f8bf6b26:
+
+    # Ann_17 "Вот пусть заведёт себе девочку и там осваивает все эти... занятия! Именно таким образом приходит этот опыт и знания, а не на диване со своей тётей."
+    Ann_17 "Nech si nájde dievča a naučí sa všetky tieto... triedy! Takto sa získavajú skúsenosti a vedomosti, nie na pohovke s tetou."
+
+# game/scripts_s1/s1_v91.rpy:819
+translate slovak s1_bait_for_ann_607ee02b:
+
+    # Kira_15 "Ой, Ань, а то ты не знаешь, какие бывают девочки по молодости глупые и жестокие. С ними ничему хорошему не научишься, а в добавок они ещё и сердце разобьют. И если второе Макса однозначно ждёт, то вот с первым мы как раз и можем действительно помочь."
+    Kira_15 "Ach, Anna, pretože nevieš, aké hlúpe a kruté vedia byť dievčatá, keď sú mladé. Nič dobré sa od nich nedozvieš a navyše ti zlomia srdce. Zatiaľ čo druhý prípad Maxa určite čaká, s tým prvým môžem skutočne pomôcť."
+
+# game/scripts_s1/s1_v91.rpy:820
+translate slovak s1_bait_for_ann_bddd3b15:
+
+    # Ann_19 "Знаешь, тоже мне великая учительница нашлась. Ты-то как раз именно такой и была. Ещё не известно, какой похабщине ты его научишь..."
+    Ann_19 "Vieš, tiež som našla skvelého učiteľa. Presne tak to bolo. Neviem, aké sračky ho naučíš..."
+
+# game/scripts_s1/s1_v91.rpy:821
+translate slovak s1_bait_for_ann_e62e79fa:
+
+    # Kira_13 "Если до тебя ещё вдруг не дошло, то твой мальчик вырос и его запросы тоже! И твоя задача, держать процесс воспитания детей в своих собственных руках, как ты и делала. Только уже интимной сферы жизни."
+    Kira_13 "Ak ti to ešte nedošlo, tvojchlapec vyrástol a s ním aj jeho požiadavky! A tvojou úlohou je udržať proces výchovy vo vlastných rukách, ako to robíš doteraz. Iba v intímnej sfére života."
+
+# game/scripts_s1/s1_v91.rpy:822
+translate slovak s1_bait_for_ann_ca3bfb9f:
+
+    # Ann_14 "Но это... Одно дело обучать детей каким-то бытовым навыкам и совсем другое... интимным моментам. Это сложно."
+    Ann_14 "Ale toto... Jedna vec je naučiť deti niektoré domáce zručnosti a druhá vec je... intímne chvíle. Je to zložité."
+
+# game/scripts_s1/s1_v91.rpy:823
+translate slovak s1_bait_for_ann_ba59e7e9:
+
+    # Max_07 "Может, хватит? Тётя Кира мне помочь хочет, в отличие от тебя. Кто не помогает, тот мешает."
+    Max_07 "Zastavíte sa? Teta Kira mi chce na rozdiel od teba pomôcť. Kto nepomáha, ten prekáža."
+
+# game/scripts_s1/s1_v91.rpy:824
+translate slovak s1_bait_for_ann_0032ea38:
+
+    # Ann_16 "Так, сынок, давай-ка отойдём и поговорим наедине..." nointeract
+    Ann_16 "Takže, synu, ustúpme a porozprávajme sa v súkromí..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:830
+translate slovak s1_bait_for_ann_1dc89583:
+
+    # Ann_12 "Как я уже, наверное, говорила - ни стыда, ни совести у тебя, Макс. Вот что прикажешь с тобой делать? Я не знаю..."
+    Ann_12 "Ako som ti už pravdepodobne povedala - nemáš žiadnu hanbu ani svedomie, Max. Čo mám s tebou robiť? Ja neviem..."
+
+# game/scripts_s1/s1_v91.rpy:831
+translate slovak s1_bait_for_ann_ca2469be:
+
+    # Max_09 "Давай, пока ты будешь думать, я пойду к Кире?"
+    Max_09 "Prečo ma nenecháš ísť ku Kire, kým budeš rozmýšľať?"
+
+# game/scripts_s1/s1_v91.rpy:832
+translate slovak s1_bait_for_ann_53f00c17:
+
+    # Ann_13 "Ну уж нет! Как представлю, чему тебя может научить моя сестра-оторва, аж страшно становится. Я лучше возьму эту задачу на себя, чем буду каждый день беспокоится об этом..."
+    Ann_13 "V žiadnom prípade! Je to desivé, keď pomyslím na to, čo ťa moja sestra môže naučiť. Radšej by som sa mala tejto úlohy ujať, ako sa o ňu každý deň starať..."
+
+# game/scripts_s1/s1_v91.rpy:833
+translate slovak s1_bait_for_ann_7c238abc:
+
+    # Max_10 "Здорово, но... Ты же всё время занята. Когда мы будем успевать?"
+    Max_10 "Skvelé, ale... Si neustále zaneprázdnená. Kedy budeme mať čas?"
+
+# game/scripts_s1/s1_v91.rpy:834
+translate slovak s1_bait_for_ann_e6287c08:
+
+    # Ann_12 "Что-нибудь придумаем. Можем попробовать тогда, когда я принимаю ванну. Там нам с этим не должны помешать."
+    Ann_12 "Niečo vymyslíme. Môžeme to vyskúšať, keď sa budem kúpať. Nemalo by nám v tom nič brániť."
+
+# game/scripts_s1/s1_v91.rpy:835
+translate slovak s1_bait_for_ann_05f5e63c:
+
+    # Max_07 "Отлично! Договорились. А ты уверена, что справишься с этим?"
+    Max_07 "Skvelé! Je to dohoda. Si si istá, že to zvládneš?"
+
+# game/scripts_s1/s1_v91.rpy:836
+translate slovak s1_bait_for_ann_ec2bc7c4:
+
+    # Ann_14 "Ну... Будет непросто, но я постараюсь. А теперь расходимся по комнатам и спим." nointeract
+    Ann_14 "No... Nebude to ľahké, ale pokúsim sa o to. Teraz choď do svojej izby a spi." nointeract
+
+# game/scripts_s1/s1_v91.rpy:846
+translate slovak s1_ann_bath_59e8f8d8:
+
+    # Max_00 "{m}Сейчас, обычно, мама должна принимать ванну...{/m}" nointeract
+    Max_00 "{m}Mamička sa teraz normálne musí okúpať...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:853
+translate slovak s1_ann_bath_752a4ee4:
+
+    # Ann_15 "Макс! Ты почему так нагло врываешься?! Я тут вообще-то ванну принимаю..."
+    Ann_15 "Max! Prečo sem tak drzo vpadáš?! Vlastne sa tu kúpem..."
+
+# game/scripts_s1/s1_v91.rpy:854
+translate slovak s1_ann_bath_9bd203b4:
+
+    # Max_07 "У нас ведь есть дело, помнишь?"
+    Max_07 "Máme prípad, pamätáš?"
+
+# game/scripts_s1/s1_v91.rpy:855
+translate slovak s1_ann_bath_b8985256:
+
+    # Ann_16 "Я не вижу смысла тебя чему-либо учить, Макс, пока ты не научишься стучаться перед тем, как войти!"
+    Ann_16 "Nevidím zmysel v tom, aby som ťa niečo učila, Max, kým sa nenaučíš klopať, kým nevstúpiš!"
+
+# game/scripts_s1/s1_v91.rpy:856
+translate slovak s1_ann_bath_834f0d78:
+
+    # Max_09 "Хорошо, в следующий раз постучусь."
+    Max_09 "Dobre, nabudúce zaklopem."
+
+# game/scripts_s1/s1_v91.rpy:857
+translate slovak s1_ann_bath_f18fbf7a:
+
+    # Ann_17 "Вот и урок наш состоится только в следующий раз, если постучишься. А сейчас выйди." nointeract
+    Ann_17 "Takže naša lekcia sa uskutoční až nabudúce, ak zaklopeš. Teraz choď von." nointeract
+
+# game/scripts_s1/s1_v91.rpy:872
+translate slovak s1_ann_intimate_lesson_02_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann "{b}ANNA:{/b} Kto je tam? Idem sa okúpať!"
+
+# game/scripts_s1/s1_v91.rpy:873
+translate slovak s1_ann_intimate_lesson_02_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 "To som ja, Max. Môžem vojsť?"
+
+# game/scripts_s1/s1_v91.rpy:874
+translate slovak s1_ann_intimate_lesson_02_896e111e:
+
+    # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
+    Ann "{b}ANNA:{/b} Dobrá práca za klopanie. Poď dnu, len sa pozeraj, aby nikto nevidel..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:880
+translate slovak s1_ann_intimate_lesson_02_83499f7b:
+
+    # Ann_12 "Только, сынок, это должно быть нашим с тобой огромным секретом, понял? Потому что маме с сыном нехорошо этим заниматься, неправильно."
+    Ann_12 "Len, synak, toto musí byť pre teba a pre mňa obrovské tajomstvo, vieš? Pretože to nie je dobré, aby to matka a syn robili, je to zlé."
+
+# game/scripts_s1/s1_v91.rpy:881
+translate slovak s1_ann_intimate_lesson_02_2a769a8a:
+
+    # Max_01 "Ты же просто будешь меня учить. Что в этом плохого?"
+    Max_01 "Len ma to naučíš. Čo je na tom zlé?"
+
+# game/scripts_s1/s1_v91.rpy:884
+translate slovak s1_ann_intimate_lesson_02_b2fcf636:
+
+    # Ann_14 "Да, но {b}ЧЕМУ{/b} учить! Для тебя это всё будет, наверняка, очень интересно... Но чтобы ты понимал, для меня не просто учить {b}ТАКОМУ{/b} своего сына."
+    Ann_14 "Áno, ale {b}ČO{/b} učiť! Pre teba to bude určite veľmi zaujímavé... Ale len aby si pochopil, nie je pre mňa ľahké {b}TAKÉ{/b} učiť môjho syna."
+
+# game/scripts_s1/s1_v91.rpy:885
+translate slovak s1_ann_intimate_lesson_02_b387c27d:
+
+    # Max_09 "Ну... Уж кто и может научить ТАКОМУ лучше всех, так это мама. Ты же заинтересована в том, чтобы я был лучшим во всём, в том числе и в ЭТОМ?"
+    Max_09 "No... Ak to niekto dokáže naučiť najlepšie, je to mama. Zaujíma ťa, aby som bol najlepší vo všetkom, však, vrátane TOHTO?"
+
+# game/scripts_s1/s1_v91.rpy:886
+translate slovak s1_ann_intimate_lesson_02_07f19152:
+
+    # Ann_13 "Ох, только такие мысли мне и помогают сейчас. Ладно, раздевайся и залазь ко мне в ванну." nointeract
+    Ann_13 "Ach, len takéto myšlienky mi teraz pomáhajú. Dobre, vyzleč sa a vlez mi do vane." nointeract
+
+# game/scripts_s1/s1_v91.rpy:892
+translate slovak s1_ann_intimate_lesson_02_80245246:
+
+    # Ann_01 "Сейчас мы сядем и немного побеседуем. Ты девочку ещё не завёл?"
+    Ann_01 "Teraz si sadneme a trochu sa porozprávame. Už máš dievča?"
+
+# game/scripts_s1/s1_v91.rpy:893
+translate slovak s1_ann_intimate_lesson_02_f01f6a8e:
+
+    # Max_04 "Нет. Но на примете несколько есть."
+    Max_04 "Nie. Na pamäti však mám niekoľko z nich."
+
+# game/scripts_s1/s1_v91.rpy:894
+translate slovak s1_ann_intimate_lesson_02_ee5e67c7:
+
+    # Ann_02 "Честно говоря, я рада, что ты интересуешься тем, как не только доставить удовольствие себе, но и твоей девушке."
+    Ann_02 "Úprimne povedané, som rada, že sa zaujímaš nielen o to, aby si potešil seba, ale aj svoju priateľku."
+
+# game/scripts_s1/s1_v91.rpy:895
+translate slovak s1_ann_intimate_lesson_02_8ff25c03:
+
+    # Max_03 "Я хочу наслаждаться этим по полной, чтобы хорошо было всем."
+    Max_03 "Chcem si to užiť naplno, aby sa všetci dobre bavili."
+
+# game/scripts_s1/s1_v91.rpy:898
+translate slovak s1_ann_intimate_lesson_02_d3346fad:
+
+    # Ann_04 "Приятно слышать. Значит будем учить тебя, как следует ласкать женские эрогенные зоны."
+    Ann_04 "To je dobré počuť. Naučím ťa teda, ako hladiť ženské erotogénne zóny."
+
+# game/scripts_s1/s1_v91.rpy:899
+translate slovak s1_ann_intimate_lesson_02_77dc7d16:
+
+    # Max_02 "Вверху я в тот раз ведь немного освоился?"
+    Max_02 "Vtedy som sa dostal na vrchol, však?"
+
+# game/scripts_s1/s1_v91.rpy:900
+translate slovak s1_ann_intimate_lesson_02_4ed32277:
+
+    # Ann_14 "Да, но эрогенных зон у женщины очень много, сынок. При чём их уровень возбудимости у каждой женщины разный. Если одна женщина просто с ума сходит, когда ей массируют ножки, то другой это может не особо нравится."
+    Ann_14 "Áno, ale erotogénnych zón ženy je veľa, synku. A ich úroveň vzrušenia sa u jednotlivých žien líši. Ak sa jedna žena pri masáži chodidiel zblázni, druhej sa to nemusí páčiť."
+
+# game/scripts_s1/s1_v91.rpy:901
+translate slovak s1_ann_intimate_lesson_02_8eda2b08:
+
+    # Max_07 "И определить, какой женщине что нравится, можно только \"прощупав реакцию\", да?"
+    Max_07 "A to, ktorej žene sa to páči, zistím len tak, že skúmam \"jej reakcie\", však?"
+
+# game/scripts_s1/s1_v91.rpy:902
+translate slovak s1_ann_intimate_lesson_02_1db96e37:
+
+    # Ann_12 "Да, Макс. Всё правильно. Но меня мы \"прощупывать\" не будем. С этим, я думаю, и так всё понятно. А вот то, как нужно ласкать... Вот с этим нам нужно разобраться."
+    Ann_12 "Áno, Max. Presne tak. Ale nebudeš ma \"vyšetrovať\". Myslím si, že vďaka tomu je všetko jasné. A tu je návod, ako pohladiť... To je to, s čím sa musíme vysporiadať."
+
+# game/scripts_s1/s1_v91.rpy:905
+translate slovak s1_ann_intimate_lesson_02_4650bde4:
+
+    # Max_04 "К этому я готов. У меня, вроде, неплохо получалось тогда... на диване?"
+    Max_04 "Som na to pripravený. Vtedy som bol v tom celkom dobrý... Na gauči?"
+
+# game/scripts_s1/s1_v91.rpy:906
+translate slovak s1_ann_intimate_lesson_02_0b059c20:
+
+    # Ann_14 "Да, только вот там мы занимались детскими шалостями по сравнению с тем, чему я должна научить тебя дальше..."
+    Ann_14 "Áno, ale to je miesto, kde sme robili detinské žarty v porovnaní s tým, čo ťa musím naučiť ďalej..."
+
+# game/scripts_s1/s1_v91.rpy:907
+translate slovak s1_ann_intimate_lesson_02_b7d855e9:
+
+    # Max_01 "Мам, не напрягайся ты так. Это же всё в образовательных целях делается. С чего мы начнём?"
+    Max_01 "Mami, neobťažuj ma takto. To všetko sa vykonáva na vzdelávacie účely. Kde začneme?"
+
+# game/scripts_s1/s1_v91.rpy:908
+translate slovak s1_ann_intimate_lesson_02_b5296c29:
+
+    # Ann_12 "Ох, ну... Я думаю, сначала нужно проверить, как... как у тебя получится ласкать мою грудь. Даже не верится, что я тебе такое говорю. Давай, устраивайся поближе ко мне..." nointeract
+    Ann_12 "Ach, no... Myslím, že najprv musíme skontrolovať, ako... Ako mi budeš môcť pohladiť prsia? Nemôžem uveriť, že ti to hovorím. Poď, priblíž sa ku mne..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:914
+translate slovak s1_ann_intimate_lesson_02_a01e74fd:
+
+    # Ann_02 "С поцелуями и массажем у тебя более-менее, но женская грудь... Она куда чувствительнее, особенно сосочки. Поэтому с ней лучше обходиться понежнее. По крайней мере, сначала."
+    Ann_02 "S bozkami a masážami máš viac-menej, ale ženské prsia... Je to oveľa citlivejšie, najmä papily. Preto je lepšie s ním zaobchádzať opatrnejšie. Aspoň na začiatku."
+
+# game/scripts_s1/s1_v91.rpy:915
+translate slovak s1_ann_intimate_lesson_02_0283ec79:
+
+    # Max_07 "А впоследствии?"
+    Max_07 "A potom?"
+
+# game/scripts_s1/s1_v91.rpy:916
+translate slovak s1_ann_intimate_lesson_02_7252ae2e:
+
+    # Ann_05 "А дальше всё зависит от женщины. Может быть дальше она любит погрубее."
+    Ann_05 "A potom to všetko závisí od ženy. Možno sa jej páči byť drsnejší."
+
+# game/scripts_s1/s1_v91.rpy:917
+translate slovak s1_ann_intimate_lesson_02_eb253a72:
+
+    # Max_02 "А как любишь ты?"
+    Max_02 "Ako sa ti páči?"
+
+# game/scripts_s1/s1_v91.rpy:918
+translate slovak s1_ann_intimate_lesson_02_6905e57b:
+
+    # Ann_13 "Макс, ну что за вопрос такой? Мы же этим занимаемся в образовательных целях, а не для удовольствия и забавы."
+    Ann_13 "Max, aká je to otázka? Robíme to pre vzdelávacie účely, nie pre potešenie a zábavu."
+
+# game/scripts_s1/s1_v91.rpy:919
+translate slovak s1_ann_intimate_lesson_02_1178f669:
+
+    # Max_03 "Да, но тебе же должно быть приятно, чтобы понять, что у меня хорошо получается?"
+    Max_03 "Áno, ale musíš byť rada, že vieš, v čom som dobrý?"
+
+# game/scripts_s1/s1_v91.rpy:920
+translate slovak s1_ann_intimate_lesson_02_5b651a27:
+
+    # Ann_12 "Макс, ты давай пробуй, а я в свою очередь сделаю какие-то замечания." nointeract
+    Ann_12 "Max, skúsme to a poviem pár poznámok." nointeract
+
+# game/scripts_s1/s1_v91.rpy:926
+translate slovak s1_ann_intimate_lesson_02_d45e60d2:
+
+    # Ann_09 "Ахх... Только поаккуратнее с моими сосочками, они очень чувствительные... Не нужно их так грубо ласкать языком! Нежнее, сынок..." nointeract
+    Ann_09 "Ahhh... Len si dávaj pozor na moje bradavky, sú veľmi citlivé ... Nemusíš ich tak hrubo hladiť jazykom! Jemnejšie, synu..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:932
+translate slovak s1_ann_intimate_lesson_02_0c29d27a:
+
+    # Ann_03 "Да-а... Всё правильно, вот так... Охх... Ты молодец. Продолжай..."
+    Ann_03 "Áno... Presne tak, takto... Oh... Si skvelý. Ideš..."
+
+# game/scripts_s1/s1_v91.rpy:933
+translate slovak s1_ann_intimate_lesson_02_b10b45b3:
+
+    # Max_05 "{m}Какое блаженство играть с маминой грудью! У неё невероятно шикарные сиськи! Такие большие и аппетитные, а сосочки твёрденькие... Ласкал бы без отрыва. Ммм...{/m}"
+    Max_05 "{m}Aká blaženosť hrať sa s prsiami mamy! Má neuveriteľne nádherné prsia! Tak veľké a chutné, a papily sú ťažké ... Bez prerušenia by som ich hladil. Mmm...{/m}"
+
+# game/scripts_s1/s1_v91.rpy:934
+translate slovak s1_ann_intimate_lesson_02_de6b87b3:
+
+    # Ann_14 "Ухх... А руками уже можно работать более властно... По-хозяйски, так сказать. Ммм... Д-а-а! Ой, что же я такое говорю..."
+    Ann_14 "Uh... A rukami už môžeš pracovať neúprosnejšie ... Majstrovským spôsobom, takpovediac. Mmm... Ach, čo tým chcem povedať..."
+
+# game/scripts_s1/s1_v91.rpy:937
+translate slovak s1_ann_intimate_lesson_02_a0c59985:
+
+    # Max_07 "Ладно тебе, мам, не смущайся. Тебе понравилось?"
+    Max_07 "Dobre, mami, nehanbi sa. Páčilo sa ti to?"
+
+# game/scripts_s1/s1_v91.rpy:938
+translate slovak s1_ann_intimate_lesson_02_0de91542:
+
+    # Ann_17 "Сынок, ну вот как я должна на это ответить? Если \"да\", то получается я в конец больная, а если \"нет\", то лгунья... Как же неправильно то, что мы делаем!"
+    Ann_17 "Synu, ako mám na to reagovať? Ak \"áno\", potom sa ukáže, že som na konci chorá, a ak \"nie\", potom som klamárka... Ako zlé je to, čo robíme!"
+
+# game/scripts_s1/s1_v91.rpy:939
+translate slovak s1_ann_intimate_lesson_02_bd28a745:
+
+    # Max_08 "Так может мне всё-таки к тёте Кире пойти, чтобы ты не мучилась?"
+    Max_08 "Takže možno by som mal ísť k tete Kire, aby si netrpela?"
+
+# game/scripts_s1/s1_v91.rpy:940
+translate slovak s1_ann_intimate_lesson_02_203aa821:
+
+    # Ann_18 "Нет уж! Раз взялась, то нужно проконтролировать твоё обучение. А там я понятия не имею, чему она тебя научит."
+    Ann_18 "Nie! Akonáhle to vezmem, musím ovládať tvoj tréning. A tam netuším, čo ťa naučí."
+
+# game/scripts_s1/s1_v91.rpy:943
+translate slovak s1_ann_intimate_lesson_02_9be3c691:
+
+    # Max_09 "Почему ты так плохо о ней думаешь в этом плане?"
+    Max_09 "Prečo o nej v tomto ohľade myslíš tak zle?"
+
+# game/scripts_s1/s1_v91.rpy:944
+translate slovak s1_ann_intimate_lesson_02_08eb3fe2:
+
+    # Ann_12 "Да у неё вся жизнь какая-то сомнительная. Ладно, не будем о ней. Давай закругляться. Продолжим в следующий раз."
+    Ann_12 "Áno, má nejaký pochybný život. Dobre, nehovorme o tom. Poďme to ukončiť. Pokračujme nabudúce."
+
+# game/scripts_s1/s1_v91.rpy:945
+translate slovak s1_ann_intimate_lesson_02_c5f6330b:
+
+    # Max_10 "Это что, всё?! Я думал ещё что-то будет..."
+    Max_10 "Je to všetko?! Myslel som, že aj niečo iné bude ..."
+
+# game/scripts_s1/s1_v91.rpy:948
+translate slovak s1_ann_intimate_lesson_02_b0e4030c:
+
+    # Ann_00 "Сынок, мне всё это очень непросто даётся делать. Так что дай маме отдохнуть и побыть одной. О многом нужно подумать."
+    Ann_00 "Synu, je pre mňa veľmi ťažké urobiť to všetko. Nechaj teda svoju mamu relaxovať a zostať samú. Musím veľa premýšľať."
+
+# game/scripts_s1/s1_v91.rpy:949
+translate slovak s1_ann_intimate_lesson_02_b790d1ab:
+
+    # Max_00 "Хорошо. Тогда до следующего раза." nointeract
+    Max_00 "Dobré. Potom až nabudúce." nointeract
+
+translate slovak strings:
+
+    # game/scripts_s1/s1_v91.rpy:666
+    old "{i}продолжить массаж с поцелуями в шею{/i}"
+    new "{i}pokračovať v masáži bozkmi na krku{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:678
+    old "{i}продолжить массаж и поцелуи{/i}"
+    new "{i}pokračovať v masáži a bozkoch{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:701
+    old "{i}массировать мамину грудь{/i}"
+    new "{i}masírovať mamin prsník{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:744
+    old "Нужна твоя помощь. Пойдём на диван, расскажу..."
+    new "Potrebujem tvoju pomoc. Poďme na gauč a poviem ti..."
+
+    # game/scripts_s1/s1_v91.rpy:825
+    old "{i}идти на кухню{/i}"
+    new "{i}ísť do kuchyne{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:837
+    old "{i}пойти спать{/i}"
+    new "{i}ísť do postele{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:847
+    old "{i}войти без стука{/i}"
+    new "{i}vstúpiť bez klopania{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:909
+    old "{i}устроиться между маминых ног{/i}"
+    new "{i}usadiť sa medzi maminými nohami{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:921
+    old "{i}ласкать мамину грудь{/i}"
+    new "{i}hladiť maminé prsia{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:927
+    old "{i}ласкать языком нежнее{/i}"
+    new "{i}hladiť jazykom jemnejšie{/i}"
+
+# TODO: Translation updated at 2022-06-30 16:39
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "После всех этих интимных маминых уроков в ванне, она уже гораздо спокойней воспринимает моё возбуждение во время массажа. Может, в дальнейшем, это и вовсе перестанет её напрягать и она позволит мне помассировать не только спину и плечи, но и грудь?"
+    new "Po všetkých tých intímnych matkiných lekciách vo vani je oveľa pokojnejšia ohľadom môjho vzrušenia počas masáže. Možno ju to v budúcnosti úplne prestane namáhať a umožní mi masírovať nielen chrbát a ramená, ale aj hrudník?"
+
+    # game/core/09_opportunities.rpy:4
+    old "После всех этих ночных маминых фантазий, она уже гораздо спокойней воспринимает моё возбуждение во время массажа. Может, в дальнейшем, это и вовсе перестанет её напрягать и она позволит мне помассировать не только спину и плечи, но и грудь?"
+    new "Po všetkých tých nočných materských fantáziách je oveľa pokojnejšia pri mojom vzrušení počas masáže. Možno ju to v budúcnosti úplne prestane namáhať a umožní mi masírovať nielen chrbát a ramená, ale aj hrudník?"
+
+    # game/core/09_opportunities.rpy:4
+    old "Через несколько дней нужно будет спросить маму о том, подумала ли она о моей просьбе..."
+    new "O pár dní sa budem musieť spýtať mamy, či premýšľala o mojej žiadosti..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Чтобы у меня появилась возможность начать интимные уроки с мамой, нужно чтобы она смотрела ТВ одна..."
+    new "Aby som mal možnosť začať intímne lekcie s mojou matkou, potrebujem, aby sledovala televíziu sama..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Наконец-то я смог попасть на порно-шоу с мамой и Эриком! Тёте Кире, правда, теперь придётся за мои прихоти отдуваться перед Эриком... В промежутках между шоу, нужно будет найти способ присоединиться к Кире с Эриком. Может быть, даже удастся поучаствовать в их... развлечениях... Да и маму можно попробовать развести на продолжение уроков по минету, которые организовал Эрик. По крайней мере, можно выразить недовольство тем, что мне никто не разъяснил, каким образом следует ублажать женщин!"
+    new "Konečne som sa mohol dostať na show s mojou mamou a Erikom! Teta Kira však teraz bude musieť bojovať pred Erikom o moje rozmary ... Medzi predstaveniami budem musieť nájsť spôsob, ako sa pripojiť ku Kire s Erikom. Môžem sa dokonca zúčastniť na ich... Činnosti... A môžem sa pokúsiť vziať svoju matku, aby pokračovala v lekciách, ktoré Erik organizoval. Aspoň môžem vyjadriť nespokojnosť s tým, že mi nikto nevysvetlil, ako potešiť ženy!"
+
+    # game/core/09_opportunities.rpy:4
+    old "Чтобы произвести самый сильный эффект по вопросу об интимных уроках, с мамой следует поговорить тогда, когда она принимает ванну..."
+    new "Aby som mal čo najsilnejší účinok na otázku intímnych lekcií, mal by som sa so svojou matkou rozprávať, keď sa kúpe..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Наконец-то мы с мамой посмотрели порнушку, да ещё и с якобы обучающими целями. \nСтранно, что когда я спросил о том, когда мы увиденное будем практиковать, она сильно удивилась. Должно быть она думала, что отделается просмотром порно с некоторыми комментариями. \nНо моя наглость не знает границ и уже через несколько минут я целовал её шею и массировал её грудь! Просто сказочные сиськи! \nНо вот когда речь зашла о том, чтобы переместиться ниже... Тут мама уже наотрез отказалась. \nБлаго, это не проблема, ведь тётя Кира всегда поможет. И мне кажется, что моя уверенность на счёт тёти Киры, теперь не даст маме покоя. Она точно решит проверить, что мы ничем таким не балуемся, как только у неё будет время."
+    new "Nakoniec sme s mamou pozerali porno, a to údajne aj na vzdelávacie účely. \nKeď som sa jej spýtal, kedy budeme cvičiť to, čo sme videli, bola veľmi prekvapená. Asi si myslela, že jej prejde sledovanie porna s nejakým komentárom. \nAle moja drzosť nepozná hraníc a v priebehu niekoľkých minút som ju bozkával na krk a masíroval jej prsia! Jej úžasné prsia! \nAle keď prišlo na presun pod... Tu už moja matka rázne odmietla. \nNo, to nie je problém, pretože teta Kira mi vždy pomôže. A myslím si, že moja istota o tete Kire dáva teraz mojej mame zabrať. Určite sa rozhodne skontrolovať, či sa v niečom takom neflákame, len čo bude mať čas."
+
+    # game/core/09_opportunities.rpy:4
+    old "По воскресеньям мама ночует дома и к тому же одна. Отличные условия для того, чтобы она не смогла заснуть, пока не проверит, не с Кирой ли я провожу время ночью..."
+    new "V nedeľu mama spí doma a je tiež sama. Ideálne podmienky na to, aby nemohla spať, kým si neskontroluje, či trávim noc s Kirou..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Сказать, что мама была шокирована увиденным, ничего не сказать. Тётя Кира отлично отыграла свою роль и теперь мама уже не так категорична в отношении интимных уроков. Лишь бы меня не учила этому развратница Кира. А продолжатся наши с мамой уроки там, где и началась моя инициатива... В ванной комнате! Но это будет возможно, только если Эрика не будет у нас дома."
+    new "Povedať, že moja matka bola šokovaná tým, čo videla, je zbytočné. Teta Kira zohrala svoju úlohu dobre a mama už nie je taká neoblomná, pokiaľ ide o intímne lekcie. Škoda, že ma to nenaučila chlípna Kira. A ja a moja mama pokračujeme v našich lekciách tam, kde sa začala moja iniciatíva... V kúpeľni! Ale to bude možné len vtedy, ak Erik nebude v našom dome."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно пойти к маме, когда она принимает ванну..."
+    new "Musím ísť k mame vtedy, keď sa kúpe..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно пойти к маме, когда она принимает ванну. И лучше стучаться, а не врываться..."
+    new "Musím ísť k mame vtedy, keď sa kúpe. A je lepšie zaklopať, než vtrhnúť dnu..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Сказать, что мама была шокирована увиденным, ничего не сказать. Тётя Кира отлично отыграла свою роль и теперь мама уже не так категорична в отношении интимных уроков. Лишь бы меня не учила этому развратница Кира. А продолжатся наши с мамой уроки там, где и началась моя инициатива... В ванной комнате! \nВот только желательно обезвредить Эрика, чтобы он не застукал нас там. Слабительное точно отпадает."
+    new "Povedať, že moja matka bola šokovaná tým, čo videla, je zbytočné. Teta Kira zohrala svoju úlohu dobre a mama už nie je taká neoblomná, pokiaľ ide o intímne lekcie. Škoda, že ma to nenaučila chlípna Kira. A ja a moja mama pokračujeme v našich lekciách tam, kde sa začala moja iniciatíva... V kúpeľni! \nAle radšej by sme mali Erika odzbrojiť, aby nás tam neprichytil. Laxatíva sú určite mimo."
+
+    # game/core/09_opportunities.rpy:4
+    old "Интимные уроки с совершенно голой мамой в ванне... Ухх... О таком я даже и мечтать не мог. Хотя, что я говорю, об этом я как раз и мечтал! Понятно, что учить меня такому ей не просто, но когда я ласкал её грудь руками и языком - удовольствие она получала однозначно. А значит, ей будет сложно устоять и не пойти дальше... Но смущение от того, что это делает её сын, пусть и в образовательных целях, может перекрыть это удовольствие."
+    new "Intímne lekcie s úplne nahou matkou vo vani... Uf... O tom sa mi ani nesnívalo. Hoci, čo to hovorím, presne o tom som sníval! Zjavne to pre ňu nebolo ľahké naučiť ma to, ale keď som jej rukami a jazykom hladil prsia, určite sa jej to páčilo. To znamená, že pre ňu bude ťažké odolať ďalšiemu postupu... Ale rozpaky z toho, že to robí jej syn, hoci aj na vzdelávacie účely, môžu prevážiť nad týmto potešením."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот мои пальцы и добрались до маминой киски! Она дала мне столько советов... Видимо, компенсирует это тем, чего не получает от Эрика. С такой женщиной, как моя мама нужно выкладываться на все 100%, она того стоит. А Эрику лишь бы себя любимого порадовать. Ох, зря ты так, Эрик... \nПравда, теперь у меня есть сомнения, что эти уроки продолжатся. Мама удивлена, что ей понравилась моя работа руками, а я в открытую пошёл и подрочил на неё в душе. Но, может обойдётся..."
+    new "Tu sa moje prsty dostali do kundičky mojej matky! Dala mi toľko rád... Zrejme si to vynahradí tým, čo nedostane od Erika. Žene, akou je moja mama, musím dať 100 %, stojí za to. Erik sa chce len uspokojiť. To by si nemal robiť, Erik... \nTeraz mám však pochybnosti, či tieto hodiny budú pokračovať. Mama bola prekvapená, že sa jej moja práca páči, a ja som ju išiel otvorene honiť do sprchy. Ale možno to vyjde..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Ох, как же всё пошло не по плану... Нет, в целом, всё было круто, но я явно перешёл черту, когда довёл маму до оргазма своим языком. Мы должны были закрепить пройденный материал, а я не сдержался и показал ей то, на что способен. Это я, конечно, зря... К тому же ещё и сам не сдержался и кончил прямо на неё... \nМама довольно чётко дала понять, что нашим интимным урокам пришёл конец. Что же теперь делать?"
+    new "Ach, ako sa veci nevyvíjali podľa plánu... Nie, celkovo to bolo v pohode, ale zjavne som to prehnal, keď som mamu priviedol k orgazmu jazykom. Museli sme si utvrdiť, čo sme sa naučili, a ja som sa nezdržiaval a ukázal som jej, čo dokážem. Samozrejme, je to moja chyba... Nemohol som sa zastaviť ani pred tým, aby som na ňu nevystriekal... \nMama dala jasne najavo, že naše intímne hodiny sa skončili. Čo budem robiť teraz?"
+
+    # game/core/09_opportunities.rpy:4
+    old "После всех этих интимных маминых уроков в ванне, она уже гораздо спокойней воспринимает моё возбуждение во время занятий йогой. Может, в дальнейшем, это и вовсе перестанет её напрягать, а я смогу сделать эту йогу ещё интереснее?"
+    new "Po všetkých tých intímnych lekciách od mamy vo vani je už oveľa pokojnejšia, pokiaľ ide o moje vzrušenie počas hodín jogy. Možno ju to v budúcnosti vôbec nebude trápiť a ja si tú jogu urobím ešte zaujímavejšou?"
+
+    # game/core/09_opportunities.rpy:4
+    old "После всех этих ночных маминых фантазий, она уже гораздо спокойней воспринимает моё возбуждение во время занятий йогой. Может, в дальнейшем, это и вовсе перестанет её напрягать, а я смогу сделать эту йогу ещё интереснее?"
+    new "Po všetkých týchto nočných fantáziách mojej mamy je už oveľa pokojnejšia, pokiaľ ide o moje vzrušenie počas hodín jogy. Možno ju to v budúcnosti vôbec nebude trápiť a ja si tú jogu urobím ešte zaujímavejšou?"
+
+# TODO: Translation updated at 2022-06-27 01:25
+
+# game/events/ann.rpy:360
+translate slovak ann_dressed_stay_in_room_659d5d18:
+
+    # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_12 "Nie, samozrejme, že nie! Pozri sa, čo má za lubom! Prestaň s tými nezmyslami a nechaj mamičku v pokoji sa prezliecť." nointeract
+
+# game/events/ann.rpy:362
+translate slovak ann_dressed_stay_in_room_e4ef4b48:
+
+    # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
+    Ann_05 "To rada počujem, synku. Ďakujem za upozornenie." nointeract
+
+# game/events/ann.rpy:394
+translate slovak ann_dressed_moment0_659d5d18:
+
+    # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_12 "Nie, samozrejme, že nie! Pozri sa, čo má za lubom! Prestaň s tými nezmyslami a nechaj mamičku v pokoji sa prezliecť." nointeract
+
+# game/events/ann.rpy:396
+translate slovak ann_dressed_moment0_e4ef4b48:
+
+    # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
+    Ann_05 "To rada počujem, synku. Ďakujem za upozornenie." nointeract
+
+# game/events/ann.rpy:398
+translate slovak ann_dressed_moment0_84eb80a2:
+
+    # Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_05 "Max! Nestačí ti to, čo si už videl? Prestaň s tými nezmyslami a nechaj mamičku v pokoji sa prezliecť." nointeract
+
+# game/events/ann.rpy:402
+translate slovak ann_dressed_moment0_ad028372:
+
+    # Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
+    Ann_05 "Len si dávaj pozor, kam šliapeš, synku. Nechceš si naraziť čelo..." nointeract
+
+# game/events/ann.rpy:421
+translate slovak ann_dressed_moment2_126ffe76:
+
+    # Ann_13 "Ой, Макс! Почему не стучишься? {p=3}{nw}"
+    Ann_13 "Ach, Max! Prečo nezaklopeš? {p=3}{nw}"
+
+# game/events/ann.rpy:433
+translate slovak ann_dressed_moment2_2cd5729c:
+
+    # Ann_02 "Ты что-то хотел или просто от безделья маешься?"
+    Ann_02 "Chcel si niečo, alebo sa len tak poflakuješ?"
+
+# game/events/ann.rpy:436
+translate slovak ann_dressed_moment2_2cd5729c_1:
+
+    # Ann_02 "Ты что-то хотел или просто от безделья маешься?"
+    Ann_02 "Chcel si niečo, alebo sa len tak poflakuješ?"
+
+# game/events/ann.rpy:458
+translate slovak ann_dressed_moment1_dfc78518:
+
+    # Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
+    Ann_13 "Ach, Max! Prečo nezaklopeš? Chcel si niečo, alebo sa len tak poflakuješ?"
+
+# game/events/ann.rpy:461
+translate slovak ann_dressed_moment1_dfc78518_1:
+
+    # Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
+    Ann_13 "Ach, Max! Prečo nezaklopeš? Chcel si niečo, alebo sa len tak poflakuješ?"
+
+# game/events/ann.rpy:525
+translate slovak ann_dressed_lvl_3_48432cd3:
+
+    # Max_01 "Нет, просто решил заглянуть. А ты что, всё ещё стесняешься? Это же я!"
+    Max_01 "Nie, len som si myslel, že sa pozriem. Stále sa hanbíš? To som ja!"
+
+# game/events/ann.rpy:530
+translate slovak ann_dressed_lvl_3_50567e5f:
+
+    # Ann_04 "Да это я так, по привычке. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
+    Ann_04 "Práve som si na to zvykla. Ak nemáš nič naliehavé, vyjdi von. Musím sa prezliecť..." nointeract
+
+# game/events/ann.rpy:532
+translate slovak ann_dressed_lvl_3_fa70085d:
+
+    # Ann_04 "Конечно стесняюсь! Ещё я тут всю себя на показ не выставляла, только из-за того, что ты уже всё видел. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
+    Ann_04 "Samozrejme, že som! Takisto som sa tu nevystavovala, len preto, že si už všetko videl. Ak nemáš nič naliehavé, vyjdi von. Musím sa prezliecť..." nointeract
+
+# game/events/ann.rpy:535
+translate slovak ann_dressed_lvl_3_659d5d18:
+
+    # Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_12 "Nie, samozrejme, že nie! Pozri sa, čo má za lubom! Prestaň s tými nezmyslami a nechaj mamičku v pokoji sa prezliecť." nointeract
+
+# game/events/ann.rpy:537
+translate slovak ann_dressed_lvl_3_e4ef4b48:
+
+    # Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
+    Ann_05 "To rád počujem, synku. Ďakujem za upozornenie." nointeract
+
+# game/events/ann.rpy:543
+translate slovak ann_dressed_lvl_4_2af495cf:
+
+    # Max_02 "Нет, просто решил заглянуть и полюбоваться на твою шикарную фигуру. Ты же не против?"
+    Max_02 "Nie, len som si myslel, že sa zastavím a budem obdivovať tvoju nádhernú postavu. Nevadí ti to, však?"
+
+# game/events/ann.rpy:544
+translate slovak ann_dressed_lvl_4_b937a903:
+
+    # Ann_04 "Ну... Если налюбовался, то выйди пожалуйста. Мне нужно переодеться..." nointeract
+    Ann_04 "No... Ak si sa už nasýtil, vyjdi von. Musím sa zmeniť..." nointeract
+
+# game/events/ann.rpy:547
+translate slovak ann_dressed_lvl_4_84eb80a2:
+
+    # Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_05 "Max! Nestačí ti to, čo si už videl? Prestaň s tými nezmyslami a nechaj mamičku v pokoji sa prezliecť." nointeract
+
+# game/events/ann.rpy:551
+translate slovak ann_dressed_lvl_4_ad028372:
+
+    # Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
+    Ann_05 "Len si dávaj pozor, kam šliapeš, synku. Nechceš si naraziť čelo..." nointeract
+
+translate slovak strings:
+
+    # game/events/ann.rpy:358
+    old "Да легко! Не буду мешать. Выглядишь, кстати, превосходно!"
+    new "Je to jednoduché! Nebudem ti stáť v ceste. Mimochodom, vyzeráš skvele!"
+
+    # game/events/ann.rpy:385
+    old "А можно остаться и посмотреть?"
+    new "Môžem zostať a pozerať sa?"
+
+    # game/events/ann.rpy:385
+    old "Да легко! А повернуться можешь, пока я ухожу?"
+    new "Je to jednoduché! Môžeš sa otočiť, keď odchádzam?"
+
+# TODO: Translation updated at 2022-06-30 16:39
+
+# game/events/ann.rpy:195
+translate slovak ann_shower_not_luck_7fca7b55:
+
+    # Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
+    Ann_14 "[spotted!t] Synku, ja vlastne vidím všetko! Viem, že sa čuduješ, ale je to trochu... trápne. Nevyrušuj mamičku." nointeract
+
+# game/events/ann.rpy:411
+translate slovak ann_dressed_moment0_04c8c654:
+
+    # Ann_13 "Ой, Макс! Где именно?!"
+    Ann_13 "Ach, Max! Kde presne?!"
+
+# game/events/ann.rpy:412
+translate slovak ann_dressed_moment0_90f23736:
+
+    # Max_02 "А нет, это были твои прекрасные сосочки!"
+    Max_02 "A nie, boli to tvoje krásne bradavky!"
+
+# game/events/ann.rpy:414
+translate slovak ann_dressed_moment0_8e8d5338:
+
+    # Ann_05 "Ну и шуточки у тебя, Макс! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+    Ann_05 "No, len žartujem, Max!  Prestaň s tými nezmyslami a nechaj mamičku v pokoji sa prezliecť." nointeract
+
+translate slovak strings:
+
+    # game/events/ann.rpy:397
+    old "Подожди! Мне кажется или у тебя под халатом что-то шевелится..."
+    new "Počkaj! Zdá sa mi, že sa ti niečo hýbe pod županom..."
+
+# TODO: Translation updated at 2022-06-30 16:39
+
+# game/events/eric.rpy:1105
+translate slovak eric_ann_shower_not_luck_43bfc377:
+
+    # Ann_14 "[spotted!t]Макс! Если ты думаешь, что теперь можешь смотреть за нами в любое время, то ты ошибаешься! Если быстро не уйдёшь, то я тебя накажу!"
+    Ann_14 "[spotted!t] Max! Ak si myslíš, že nás teraz môžeš kedykoľvek sledovať, mýliš sa! Ak neodídeš rýchlo, potrestám ťa!"
+
+# TODO: Translation updated at 2022-06-30 16:39
+
+translate slovak strings:
+
+    # game/extra/extra.rpy:60
+    old "Влажные фантазии"
+    new "Mokré fantázie"
+
+    # game/extra/extra.rpy:60
+    old "1-ый интимный урок с Анной"
+    new "1-intímna lekcia s Annou"
+
+    # game/extra/extra.rpy:60
+    old "2-ый интимный урок с Анной"
+    new "2-intímna lekcia s Annou"
+
+    # game/extra/extra.rpy:60
+    old "3-ый интимный урок с Анной"
+    new "3-intímna lekcia s Annou"
+
+    # game/extra/extra.rpy:60
+    old "4-ый интимный урок с Анной"
+    new "4-intímna lekcia s Annou"
+
+# TODO: Translation updated at 2022-06-27 01:25
+
+# game/scripts_s1/s1_v91.rpy:876
+translate slovak s1_ann_bath_6272e6b4:
+
+    # Max_09 "{m}Пока Эрик у нас в доме, лучше не рисковать заходить к маме. Он в любой момент может зайти в ванную комнату.{/m}" nointeract
+    Max_09 "{m}Kým je Erik v našom dome, najlepšie je neriskovať, že pôjdem k mame. Do kúpeľne môžem ísť kedykoľvek.{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:927
+translate slovak s1_ann_intimate_lesson_02_a9e1c035:
+
+    # Max_09 "Ну... Уж кто и может научить {b}ТАКОМУ{/b} лучше всех, так это мама. Ты же заинтересована в том, чтобы я был лучшим во всём, в том числе и в {b}ЭТОМ{/b}?"
+    Max_09 "No... Ak to niekto dokáže naučiť lepšie ako ktokoľvek iný, je to mama. Zaujíma ťa, aby som bol najlepší vo všetkom, vrátane {b}tohto{/b}, však?"
+
+# game/scripts_s1/s1_v91.rpy:1015
+translate slovak s1_ann_intimate_lesson_03_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann "{b}ANNA:{/b} Kto je tam? Kúpem sa!"
+
+# game/scripts_s1/s1_v91.rpy:1016
+translate slovak s1_ann_intimate_lesson_03_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 "To som ja, Max. Môžem vstúpiť?"
+
+# game/scripts_s1/s1_v91.rpy:1017
+translate slovak s1_ann_intimate_lesson_03_896e111e:
+
+    # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
+    Ann "{b}ANNA:{/b} Výborne, že si zaklopal. Vstúp, ale nech ťa nikto nevidí..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1024
+translate slovak s1_ann_intimate_lesson_03_9c627c00:
+
+    # Ann_14 "Я надеюсь Лиза не видела, что ты пошёл в ванную комнату? Она же сейчас на кухне..."
+    Ann_14 "Dúfam, že ťa Líza nevidela ísť do kúpeľne? Teraz je v kuchyni..."
+
+# game/scripts_s1/s1_v91.rpy:1025
+translate slovak s1_ann_intimate_lesson_03_e8444647:
+
+    # Max_00 "Да я как-то не смотрел, видела она или нет."
+    Max_00 "Akosi som sa nepozeral na to, či to videla alebo nie."
+
+# game/scripts_s1/s1_v91.rpy:1026
+translate slovak s1_ann_intimate_lesson_03_da4d684b:
+
+    # Ann_18 "Макс, ты же понимаешь, как важно держать наши с тобой занятия в тайне! Если она видела..."
+    Ann_18 "Max, chápeš, aké dôležité je udržať naše aktivity v tajnosti! Ak ťa videla..."
+
+# game/scripts_s1/s1_v91.rpy:1027
+translate slovak s1_ann_intimate_lesson_03_3c28894a:
+
+    # Max_01 "Мам, это шутка была. Она не видела, так что расслабься."
+    Max_01 "Mami, to bol vtip. Nevidela, tak sa uvoľni."
+
+# game/scripts_s1/s1_v91.rpy:1032
+translate slovak s1_ann_intimate_lesson_03_749e00f2:
+
+    # Ann_13 "Фух... Не пугай меня так больше! Я и так на нервах из-за наших уроков."
+    Ann_13 "Uf... Už ma toľko nevystrašuj! Už teraz mám nervy na dranc kvôli našim lekciám."
+
+# game/scripts_s1/s1_v91.rpy:1033
+translate slovak s1_ann_intimate_lesson_03_e3b6ee31:
+
+    # Max_07 "Извини. А ты почему прикрываешься? Я же ведь уже всё видел и не раз. И не только видел."
+    Max_07 "Prepáč. Prečo sa zakrývaš? Už som to všetko videl, a nie raz. A nielen ja som to videl."
+
+# game/scripts_s1/s1_v91.rpy:1034
+translate slovak s1_ann_intimate_lesson_03_2842875b:
+
+    # Ann_16 "Смотри мне, договоришься сейчас! Если ты здесь только для того, чтобы поглазеть на голую маму, то урока сегодня не будет."
+    Ann_16 "Pozri sa na mňa, teraz uzatvárame dohodu! Ak si tu len preto, aby si sa pozeral na svoju nahú mamu, dnes ťa nečaká žiadna lekcia."
+
+# game/scripts_s1/s1_v91.rpy:1035
+translate slovak s1_ann_intimate_lesson_03_d1ca0782:
+
+    # Max_09 "Что ты! Я здесь ради знаний!"
+    Max_09 "Čo si zač! Som tu kvôli vedomostiam!"
+
+# game/scripts_s1/s1_v91.rpy:1036
+translate slovak s1_ann_intimate_lesson_03_ba442144:
+
+    # Ann_12 "Тогда хватит шутки шутить, залазь ко мне в ванну." nointeract
+    Ann_12 "Tak prestaň žartovať a choď do mojej vane." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1043
+translate slovak s1_ann_intimate_lesson_03_41306dbb:
+
+    # Ann_14 "Да, сынок... Не верится даже, что ты так подрос. Кажется, что ещё совсем недавно только в школу пошёл..."
+    Ann_14 "Áno, synku... Nemôžem uveriť, ako veľmi si vyrástol. Zdá sa, že je to len krátko, čo si chodil do školy..."
+
+# game/scripts_s1/s1_v91.rpy:1044
+translate slovak s1_ann_intimate_lesson_03_d4f2d4ce:
+
+    # Max_03 "Ну ты, мам, вспомнила!"
+    Max_03 "Spomenula si si, mami!"
+
+# game/scripts_s1/s1_v91.rpy:1048
+translate slovak s1_ann_intimate_lesson_03_88e11b8c:
+
+    # Ann_12 "Да, было время... А сейчас вон чем мы занимаемся! Дальше, я так полагаю, нужно показать тебе, как ласкать женщину... ну там, внизу..."
+    Ann_12 "Áno, boli časy... A teraz robíme toto! Ďalej ti asi ukážem, ako hladiť ženu... no, tam dole..."
+
+# game/scripts_s1/s1_v91.rpy:1049
+translate slovak s1_ann_intimate_lesson_03_f3a4c8b3:
+
+    # Max_02 "Мне нравится слово \"киска\"!"
+    Max_02 "Milujem slovo \"kunda\"!"
+
+# game/scripts_s1/s1_v91.rpy:1050
+translate slovak s1_ann_intimate_lesson_03_c47c7cf4:
+
+    # Ann_02 "Пусть так. Честно говоря, я считаю, ты с этим справишься и без уроков, потому что пальчиками ты работаешь хорошо, массажист ты наш талантливый."
+    Ann_02 "Nech sa páči. Úprimne povedané, myslím, že to zvládneš aj bez lekcií, pretože dobre pracuješ prstami, si talentovaný masér."
+
+# game/scripts_s1/s1_v91.rpy:1051
+translate slovak s1_ann_intimate_lesson_03_5fcd471d:
+
+    # Max_09 "Подожди! Но это всё равно же не одно и то же! Там же тоже, наверно, нужно как-то понежнее себя вести? Или нет?"
+    Max_09 "Počkaj! Ale stále to nie je to isté! Aj tam musím byť jemný, však? Alebo nie?"
+
+# game/scripts_s1/s1_v91.rpy:1055
+translate slovak s1_ann_intimate_lesson_03_cca5d1a8:
+
+    # Ann_04 "Ну... Там, на самом деле, можно по разному, то наращивая темп стимуляции, то сбавляя. А сначала лучше конечно понежнее и помедленнее. По крайней мере, мне так нравится... В смысле, я думаю, что так нравится всем женщинам."
+    Ann_04 "No... V skutočnosti môžeš meniť tempo stimulácie, postupne ho zvyšovať a potom spomaľovať. Spočiatku je lepšie byť jemný a pomalý. Aspoň mne sa to tak páči... Myslím, že tak to majú rady všetky ženy."
+
+# game/scripts_s1/s1_v91.rpy:1056
+translate slovak s1_ann_intimate_lesson_03_91c1be4d:
+
+    # Max_07 "Ага... Но мне же всё равно нужно попробовать это сделать! Чтобы хоть представление иметь, как это вообще происходит..."
+    Max_07 "Áno... Ale aj tak sa o to musím pokúsiť! Len aby som mal predstavu, ako sa to vôbec deje..."
+
+# game/scripts_s1/s1_v91.rpy:1057
+translate slovak s1_ann_intimate_lesson_03_0e933278:
+
+    # Ann_13 "Ой, не знаю, сынок... Понимаю, что тебе это нужно, но может... Мне нравится, что у нас тобой такие близкие отношения, но делать {b}ТАКОЕ{/b}... В голове не укладывается."
+    Ann_13 "No, ja neviem, synku... Viem, že to potrebuješ, ale možno... Páči sa mi, že máme taký blízky vzťah, ale robiť {b}TAKÉTO{/b}... Nedokážem si to predstaviť."
+
+# game/scripts_s1/s1_v91.rpy:1058
+translate slovak s1_ann_intimate_lesson_03_b9a2b566:
+
+    # Max_01 "А мы всего разок попробуем и всё. Для образовательных целей же."
+    Max_01 "Vyskúšame to len raz a hotovo. Na vzdelávacie účely."
+
+# game/scripts_s1/s1_v91.rpy:1062
+translate slovak s1_ann_intimate_lesson_03_9db8175b:
+
+    # Ann_12 "Так уж и быть. Ты уже меня видел, так что постараюсь не стесняться и покажу тебе, как это всё происходит."
+    Ann_12 "Tak dobre. Už si ma videl, takže sa pokúsim nehanbiť a ukázať ti, ako to všetko prebieha."
+
+# game/scripts_s1/s1_v91.rpy:1063
+translate slovak s1_ann_intimate_lesson_03_d7a8a4ef:
+
+    # Max_04 "Ты лучшая мама на свете! Как же я благодарен тебе за эти знания и опыт. Это очень дорогого стоит. Ты самая-самая!"
+    Max_04 "Si tá najlepšia mama na svete! Som vďačný za tieto vedomosti a skúsenosti. Je to veľmi cenné. Si najlepšia!"
+
+# game/scripts_s1/s1_v91.rpy:1064
+translate slovak s1_ann_intimate_lesson_03_b53b83fe:
+
+    # Ann_02 "Спасибо! Надеюсь, ты помнишь, как это делали в том эротическом ролике, что мы смотрели?"
+    Ann_02 "Ďakujem! Dúfam, že si pamätáš, ako to bolo urobené v tom erotickom videu, ktoré sme pozerali?"
+
+# game/scripts_s1/s1_v91.rpy:1065
+translate slovak s1_ann_intimate_lesson_03_e48adeab:
+
+    # Max_07 "Ну, в общих чертах, да. Но, твои наставления однозначно нужны."
+    Max_07 "Všeobecne povedané, áno. Tvoje vedenie je však určite potrebné."
+
+# game/scripts_s1/s1_v91.rpy:1069
+translate slovak s1_ann_intimate_lesson_03_f379e77f:
+
+    # Ann_04 "Для начала, попробуй просто поводить по ней пальчиком... вверх-вниз... нежно и аккуратно, не торопясь." nointeract
+    Ann_04 "Pre začiatok skús po nej prejsť prstom... hore a dole... jemne a opatrne, neponáhľaj sa." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1075
+translate slovak s1_ann_intimate_lesson_03_3574b02c:
+
+    # Ann_14 "Да, вот так... Можно до такой степени не осторожничать, не бойся. Поувереннее, сынок..."
+    Ann_14 "Áno, to je ono... Môžeš ísť až tak ďaleko, že nebudeš opatrní, neboj sa. Maj trochu sebadôvery, synku..."
+
+# game/scripts_s1/s1_v91.rpy:1076
+translate slovak s1_ann_intimate_lesson_03_69803dd1:
+
+    # Max_10 "Я просто не знаю... Вдруг, я сделаю тебе больно!"
+    Max_10 "Len neviem... Pre prípad, že by som ti ublížil!"
+
+# game/scripts_s1/s1_v91.rpy:1077
+translate slovak s1_ann_intimate_lesson_03_5b13e978:
+
+    # Ann_09 "Не переживай из-за этого, всё хорошо. Нежно и уверенно... Ухх... Да... Хорошо... В смысле, у тебя хорошо получается."
+    Ann_09 "Netráp sa tým, je to v poriadku. Jemne a sebaisto... Uf... Áno... No... Myslím tým, že si v tom dobrý."
+
+# game/scripts_s1/s1_v91.rpy:1078
+translate slovak s1_ann_intimate_lesson_03_b4302cb5:
+
+    # Max_07 "А что делать дальше?"
+    Max_07 "Čo budeme robiť ďalej?"
+
+# game/scripts_s1/s1_v91.rpy:1082
+translate slovak s1_ann_intimate_lesson_03_21f9fde7:
+
+    # Ann_08 "Теперь можешь попробовать водить пальчиками из стороны в сторону, а так же круговыми движениями. И темп уже можно понемногу наращивать."
+    Ann_08 "Teraz môže skúsiť pohybovať prstami zo strany na stranu a krúživým pohybom. A tempo sa dá zvyšovať postupne."
+
+# game/scripts_s1/s1_v91.rpy:1083
+translate slovak s1_ann_intimate_lesson_03_68d72acd:
+
+    # Max_01 "Ага, сейчас попробую..."
+    Max_01 "Áno, skúsim to..."
+
+# game/scripts_s1/s1_v91.rpy:1087
+translate slovak s1_ann_intimate_lesson_03_4458c9ef:
+
+    # Ann_09 "Ох, сынок... Никогда бы не подумала, что ты делаешь это впервые! Ммм... У тебя волшебные пальчики..."
+    Ann_09 "Ach, synku... Nikdy by ma nenapadlo, že to robíš prvýkrát! Mmm... Máš čarovné prsty..."
+
+# game/scripts_s1/s1_v91.rpy:1088
+translate slovak s1_ann_intimate_lesson_03_9709739b:
+
+    # Max_05 "Правда?! Видимо, сказываются мои навыки в массаже."
+    Max_05 "Naozaj?! Zrejme si moje masérske schopnosti vyberajú svoju daň."
+
+# game/scripts_s1/s1_v91.rpy:1089
+translate slovak s1_ann_intimate_lesson_03_0e7264fb:
+
+    # Ann_14 "Похоже на то... Д-а-а... Можно побыстрее. Помнишь, что я говорила? Ухх... Наращивать темп... О да! Вот так... Ещё... Ой, что я такое говорю!"
+    Ann_14 "Vyzerá to tak, že... Y-a-a-a... Môžeš to robiť rýchlejšie. Pamätáš si, čo som povedala? Uf... Zvyšuj tempo... Ó áno! A je to... Tiež... Ach, čo to hovorím!"
+
+# game/scripts_s1/s1_v91.rpy:1090
+translate slovak s1_ann_intimate_lesson_03_f803a7c5:
+
+    # Max_04 "Не напрягайся из-за этого, мам. По твоим эмоциям я лучше понимаю, что всё делаю правильно."
+    Max_04 "Nestresuj sa tým, mami. Z tvojích emócií viem lepšie, že to robím správne."
+
+# game/scripts_s1/s1_v91.rpy:1091
+translate slovak s1_ann_intimate_lesson_03_398c7a36:
+
+    # Ann_09 "Я понимаю, но... Мне стоит держать себя в руках, иначе пропадёт вся серьёзность наших с тобой уроков."
+    Ann_09 "Chápem, ale... Musím si zachovať chladnú hlavu, inak sa všetka vážnosť našich hodín stratí."
+
+# game/scripts_s1/s1_v91.rpy:1092
+translate slovak s1_ann_intimate_lesson_03_d592e138:
+
+    # Max_07 "Так, а как мне действовать дальше?"
+    Max_07 "Ako mám teda postupovať?"
+
+# game/scripts_s1/s1_v91.rpy:1096
+translate slovak s1_ann_intimate_lesson_03_1e24aa34:
+
+    # Ann_13 "Ой, сынок, я даже не знаю... Дальше должно идти уже проникновение пальчиков... в киску. Но это..."
+    Ann_13 "Ach, synku, ani neviem... Ďalším krokom by mala byť penetrácia prstom... v kundičke. Ale toto..."
+
+# game/scripts_s1/s1_v91.rpy:1097
+translate slovak s1_ann_intimate_lesson_03_9f5cbf9c:
+
+    # Max_03 "О, круто! Значит, постимулировал снаружи, раззадорил, а теперь смещаю акцент внутрь?"
+    Max_03 "Oh, super! Takže som stimuloval  navonok, rozprúdil veci a teraz presúvam pozornosť dovnútra?"
+
+# game/scripts_s1/s1_v91.rpy:1098
+translate slovak s1_ann_intimate_lesson_03_7c403b85:
+
+    # Ann_17 "Смахиваешь на лету. Но я не уверена, что мы будем это делать."
+    Ann_17 "Vyzeráš ako za behu. Ale nie som si istá, či to urobíme."
+
+# game/scripts_s1/s1_v91.rpy:1099
+translate slovak s1_ann_intimate_lesson_03_caa452a5:
+
+    # Max_08 "Но почему? Я же, вроде, всё нормально делал..."
+    Max_08 "Ale prečo? Myslel som si, že sa mi darí..."
+
+# game/scripts_s1/s1_v91.rpy:1103
+translate slovak s1_ann_intimate_lesson_03_274e5d31:
+
+    # Ann_12 "Ты молодец, Макс. Просто, проникнуть пальцами в свою маму... Тебе не кажется, что это уже совсем перебор? Не говоря уже о том, до какой степени матери с сыном неправильно заниматься {b}ТАКИМ{/b}..."
+    Ann_12 "Počínal si si dobre, Max. Len aby som dostal prsty do mamy... Nemyslíš si, že je to trochu veľa? Nehovoriac o tom, do akej miery je nesprávne, ak matka a jej syn robia {b}TOTO{/b}..."
+
+# game/scripts_s1/s1_v91.rpy:1104
+translate slovak s1_ann_intimate_lesson_03_dd7ed56f:
+
+    # Max_09 "Мы же учимся! Вернее, учусь я, а ты делишься со мной важными знаниями. Я же должен знать, какие движения делать там, внутри. Там явно будет иначе."
+    Max_09 "Učím sa! Alebo sa skôr učím a ty sa so mnou delíš o dôležité vedomosti. Mám vedieť, aké pohyby tam mám robiť. Tam to bude zjavne iné."
+
+# game/scripts_s1/s1_v91.rpy:1105
+translate slovak s1_ann_intimate_lesson_03_7c35c2cb:
+
+    # Ann_14 "Ох, Макс... Надеюсь, я потом, после всего этого, смогу тебе в глаза смотреть и не краснеть. Что я делаю..."
+    Ann_14 "Ach, Max... Dúfam, že sa ti potom budem môcť pozrieť do očí a nebudem sa červenať. Čo to robím..."
+
+# game/scripts_s1/s1_v91.rpy:1106
+translate slovak s1_ann_intimate_lesson_03_41224b86:
+
+    # Max_07 "Так как мне лучше это сделать?"
+    Max_07 "Aký je teda najlepší spôsob, ako to urobiť?"
+
+# game/scripts_s1/s1_v91.rpy:1107
+translate slovak s1_ann_intimate_lesson_03_2f4be1e2:
+
+    # Ann_12 "Всё так же, нежно и не спеша. Просто вводи свои пальчики в мою киску..." nointeract
+    Ann_12 "Stále rovnaký, jemný a neunáhlený. Len mi strč prsty do kundičky..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1113
+translate slovak s1_ann_intimate_lesson_03_45ab582b:
+
+    # Ann_09 "Ахх... Да... Не спеши, не проникай сразу как можно глубже. Вот так... Ммм..."
+    Ann_09 "Ahhh... Áno... Neponáhľaj sa, nepúšťaj sa do toho naraz tak hlboko, ako sa len dá. A je to... Mmm..."
+
+# game/scripts_s1/s1_v91.rpy:1114
+translate slovak s1_ann_intimate_lesson_03_181dce01:
+
+    # Max_05 "Ух ты, мам! Это классно! Что дальше?"
+    Max_05 "Páni, mami! To je skvelé! Čo ďalej?"
+
+# game/scripts_s1/s1_v91.rpy:1115
+translate slovak s1_ann_intimate_lesson_03_fdca3f7b:
+
+    # Ann_10 "Теперь двигай своими пальчиками, назад-вперёд... Постепенно наращивая темп... Ухх... Да, отлично..."
+    Ann_10 "Teraz pohybuj prstami tam a späť... Postupne sa zrýchľuj... Uf... Áno, skvelé..."
+
+# game/scripts_s1/s1_v91.rpy:1116
+translate slovak s1_ann_intimate_lesson_03_59fa2106:
+
+    # Max_08 "Ой, мам, а там становится... мокренько! Это нормально или я что-то не так делаю?"
+    Max_08 "Ach, mami, a začína sa... mokré! Je to normálne alebo robím niečo zle?"
+
+# game/scripts_s1/s1_v91.rpy:1120
+translate slovak s1_ann_intimate_lesson_03_43177c17:
+
+    # Ann_08 "Ах, Макс, ты всё делаешь правильно. Чем больше женщина возбуждена твоей прелюдией, тем влажнее становится её киска. Ммм..."
+    Ann_08 "Max, všetko robíš správne. Čím viac je žena vzrušená tvojou predohrou, tým je jej kundička vlhkejšia. Mmm..."
+
+# game/scripts_s1/s1_v91.rpy:1121
+translate slovak s1_ann_intimate_lesson_03_9b9504bb:
+
+    # Max_03 "Мои пальцы от этого проскальзывают в тебя всё легче и легче, хотя ты довольно узенькая."
+    Max_03 "Vďaka tomu do teba moje prsty vkĺznu čoraz ľahšie, aj keď si dosť úzka."
+
+# game/scripts_s1/s1_v91.rpy:1122
+translate slovak s1_ann_intimate_lesson_03_9f8cebdc:
+
+    # Ann_14 "Ой, сынок, не смущай меня ещё сильнее такими словами! Я вообще не ожидала такой реакции от себя... Ахх... Это очень странно."
+    Ann_14 "Synku, už ma tými slovami neuvádzaj do rozpakov! Takúto reakciu som od seba vôbec nečakala... Ahhh... Je to veľmi zvláštne."
+
+# game/scripts_s1/s1_v91.rpy:1123
+translate slovak s1_ann_intimate_lesson_03_a241e038:
+
+    # Max_07 "А ты думала, что тебе будет приятно, но при этом мокренькой ты становиться не будешь?"
+    Max_07 "Myslela si si, že sa budeš cítiť dobre, ale nezvlhneš?"
+
+# game/scripts_s1/s1_v91.rpy:1124
+translate slovak s1_ann_intimate_lesson_03_08a8b06c:
+
+    # Ann_12 "Именно! Поэтому... На этот раз, я думаю, достаточно, сынок. Закругляемся."
+    Ann_12 "Presne tak! Takže... Myslím, že to zatiaľ stačí, synku. Ukončíme to."
+
+# game/scripts_s1/s1_v91.rpy:1128
+translate slovak s1_ann_intimate_lesson_03_1054e4c7:
+
+    # Max_04 "Ты только не переживай из-за этого, мам. Ну подумаешь, понравилось... Мне вот это всё очень нравится. Столько нового для себя открыл."
+    Max_04 "Netráp sa tým, mami. Čo na tom, že sa ti to páčilo... To všetko sa mi veľmi páči. Toľko nových vecí, ktoré treba objaviť."
+
+# game/scripts_s1/s1_v91.rpy:1129
+translate slovak s1_ann_intimate_lesson_03_c7828ec0:
+
+    # Ann_17 "Да уж, но вот мои открытия меня больше озадачили... Всё, хватит глазеть." nointeract
+    Ann_17 "Áno, ale moje objavy ma viac mätú... To by stačilo." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1135
+translate slovak s1_ann_intimate_lesson_03_a9e6e6ca:
+
+    # Ann_15 "Ой, Макс! Как же ты возбудился! Хотя, чего я удивляюсь. Я же здесь, перед тобой, с раздвинутыми ногами сидела и {b}ТАКОМУ{/b} учила..."
+    Ann_15 "Ach, Max! Aký si nadržaný! Prečo som však prekvapená. Sedela som tu pred tebou s roztiahnutými nohami a učila ťa {b}TAKÉTO{/b}..."
+
+# game/scripts_s1/s1_v91.rpy:1136
+translate slovak s1_ann_intimate_lesson_03_d68b3bac:
+
+    # Max_07 "Ну да. Я же сказал, что мне {b}ОЧЕНЬ{/b} понравилось."
+    Max_07 "Áno. Povedal som vám, že sa mi to {b}veľmi{/b} páči."
+
+# game/scripts_s1/s1_v91.rpy:1137
+translate slovak s1_ann_intimate_lesson_03_d28bff17:
+
+    # Ann_13 "Думаю, тебе нужно принять душ и сбросить... это напряжение. С учётом того, чем мы тут с тобой занимались, смысла стесняться нет. Давай бегом, я не буду смотреть."
+    Ann_13 "Myslím, že sa musíš osprchovať a vypustiť si... napätie. Vzhľadom na to, čo sme tu spolu robili, nemá zmysel sa hanbiť. Utekaj, nebudem sa pozerať."
+
+# game/scripts_s1/s1_v91.rpy:1138
+translate slovak s1_ann_intimate_lesson_03_fef83954:
+
+    # Max_01 "Хорошо, мам!"
+    Max_01 "Dobre, mami!"
+
+# game/scripts_s1/s1_v91.rpy:1143
+translate slovak s1_ann_intimate_lesson_03_3888c586:
+
+    # Max_07 "{m}Это что-то с чем-то! Теперь мои пальцы побывали в маминой киске. В маминой!!! И не менее приятно то, что она от этого так потекла... Интересно, что она теперь будет делать после такого? Вдруг она решит прекратить эти уроки?!{/m}" nointeract
+    Max_07 "{m}To je niečo z tohto sveta! Teraz som mal prsty v maminej kundičke. U mamy!!! A rovnako potešujúce je, že sa pri tom tak veľmi zapotila... Som zvedavý, čo bude robiť teraz po tomto? Čo ak sa rozhodne prestať s týmito hodinami?!{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:1149
+translate slovak s1_ann_intimate_lesson_03_a431a981:
+
+    # Ann_15 "Макс! А что это ты там делаешь?!"
+    Ann_15 "Max! Čo tam robíš?!"
+
+# game/scripts_s1/s1_v91.rpy:1150
+translate slovak s1_ann_intimate_lesson_03_04af0b5f:
+
+    # Max_08 "Эээ... Ну, как бы это... снимаю напряжение. Ты же сама разрешила."
+    Max_08 "Ehm... No, ako by to bolo... odbremeniť sa od tlaku. Sama si to povedala."
+
+# game/scripts_s1/s1_v91.rpy:1154
+translate slovak s1_ann_intimate_lesson_03_ec8d607e:
+
+    # Ann_17 "Да, но... Я думала, ты хотя бы отвернёшься и будешь делать это не глядя на меня."
+    Ann_17 "Áno, ale... Myslela som si, že sa aspoň odvrátiš a urobíš to bez toho, aby si sa na mňa pozrel."
+
+# game/scripts_s1/s1_v91.rpy:1155
+translate slovak s1_ann_intimate_lesson_03_dbe0841a:
+
+    # Max_09 "А зачем мне отворачиваться и фантазировать о ком-то, когда всего в метре от меня, за стеклом {b}ТЫ{/b}? С твоей красотой ни одна фантазия не сравнится и близко!"
+    Max_09 "A prečo by som sa mal odvracať a fantazírovať o niekom, keď len meter odo mňa, za sklom {b}SI{/b}? Žiadna fantázia sa nepribližuje tvojej kráse!"
+
+# game/scripts_s1/s1_v91.rpy:1156
+translate slovak s1_ann_intimate_lesson_03_1b5e0ed1:
+
+    # Ann_12 "Очень приятно слышать, конечно, но это ненормально, когда сына так сильно возбуждает его собственная мать."
+    Ann_12 "Samozrejme, veľmi pekne sa to počúva, ale nie je normálne, aby bol syn tak vzrušený vlastnou matkou."
+
+# game/scripts_s1/s1_v91.rpy:1157
+translate slovak s1_ann_intimate_lesson_03_6a444508:
+
+    # Max_07 "Ты для меня и женщиной являешься. И очень сексуальной женщиной!"
+    Max_07 "Aj ty si pre mňa žena. A veľmi sexy žena!"
+
+# game/scripts_s1/s1_v91.rpy:1158
+translate slovak s1_ann_intimate_lesson_03_f94d7691:
+
+    # Ann_16 "И не стыдно тебе вот так демонстративно это делать прямо передо мной, а?" nointeract
+    Ann_16 "A nehanbíš sa za to, že to robíš tak bezostyšne predo mnou, čo?" nointeract
+
+# game/scripts_s1/s1_v91.rpy:1165
+translate slovak s1_ann_intimate_lesson_03_138d5c05:
+
+    # Ann_17 "Ну Макс! Вот что ты наделал! Всё стекло заляпал... Даже не вздумай уходить, не прибравшись за собой! Безобразник."
+    Ann_17 "No tak, Max! Presne to si urobil! Po celom skle... Ani nepomýšľaj na to, že by si odišiel bez toho, aby si po sebe upratal! Chuligán."
+
+# game/scripts_s1/s1_v91.rpy:1166
+translate slovak s1_ann_intimate_lesson_03_031d6965:
+
+    # Max_20 "Фух... Конечно приберусь, не ругайся." nointeract
+    Max_20 "Uff... Samozrejme, že upracem, nenadávaj." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1179
+translate slovak s1_ann_intimate_lesson_04_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann "{b}ANNA:{/b} Kto je tam? Kúpem sa!"
+
+# game/scripts_s1/s1_v91.rpy:1180
+translate slovak s1_ann_intimate_lesson_04_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 "To som ja, Max. Môžem vstúpiť?"
+
+# game/scripts_s1/s1_v91.rpy:1181
+translate slovak s1_ann_intimate_lesson_04_896e111e:
+
+    # Ann "{b}Анна:{/b} Молодец, что постучался. Заходи, только смотри, чтобы никто не увидел..." nointeract
+    Ann "{b}ANNA:{/b} Výborne, že si zaklopal. Vstúp, ale nech ťa nikto nevidí..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1187
+translate slovak s1_ann_intimate_lesson_04_a1d94f75:
+
+    # Ann_02 "Ну... Что стоишь и глазеешь? Раздевайся и залазь в ванну."
+    Ann_02 "No... Prečo tam stojíš a pozeráš? Vyzleč sa a vlez do vane."
+
+# game/scripts_s1/s1_v91.rpy:1188
+translate slovak s1_ann_intimate_lesson_04_bf13bde3:
+
+    # Max_09 "Я просто не был уверен, что наши уроки будут продолжаться."
+    Max_09 "Len som si nebol istý, či budú naše hodiny pokračovať."
+
+# game/scripts_s1/s1_v91.rpy:1191
+translate slovak s1_ann_intimate_lesson_04_803c2d63:
+
+    # Ann_05 "Уж как минимум закрепить пройденное надо, Макс. Если ты готов."
+    Ann_05 "Mal by si si aspoň zhrnúť, čo si sa naučil, Max. Ak si pripravený."
+
+# game/scripts_s1/s1_v91.rpy:1192
+translate slovak s1_ann_intimate_lesson_04_b100e351:
+
+    # Max_05 "Я всегда готов!" nointeract
+    Max_05 "Som vždy pripravený!" nointeract
+
+# game/scripts_s1/s1_v91.rpy:1197
+translate slovak s1_ann_intimate_lesson_04_c43a615e:
+
+    # Ann_12 "Надеюсь, на всех прошедших уроках ты не просто меня разглядывал, но и усвоил мои наставления."
+    Ann_12 "Dúfam, že si sa počas všetkých predchádzajúcich lekcií na mňa len nepozeral, ale že si si osvojil moje pokyny."
+
+# game/scripts_s1/s1_v91.rpy:1198
+translate slovak s1_ann_intimate_lesson_04_24cd072d:
+
+    # Max_01 "Я был очень внимательным! Ну... к наставлениям."
+    Max_01 "Bol som veľmi pozorný! No... k prikázaniam."
+
+# game/scripts_s1/s1_v91.rpy:1201
+translate slovak s1_ann_intimate_lesson_04_642d9a26:
+
+    # Ann_04 "Тогда сегодня твоя задача, попытаться совместить знания со всех наших уроков. Думаю, ты справишься. Ты у меня талантливый." nointeract
+    Ann_04 "Tvojou dnešnou úlohou je teda pokúsiť sa spojiť vedomosti zo všetkých našich lekcií. Myslím, že to zvládneš. Si talentovaný." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1206
+translate slovak s1_ann_intimate_lesson_04_ed2d911e:
+
+    # Ann_02 "Сейчас я не буду тебе ничего подсказывать. Попробуешь полностью сам."
+    Ann_02 "Teraz ti nič nepoviem. Vyskúšaj si to úplne sám."
+
+# game/scripts_s1/s1_v91.rpy:1207
+translate slovak s1_ann_intimate_lesson_04_57f52aab:
+
+    # Max_07 "Тогда ты должна не сдерживаться в выражении эмоций! Мне же нужен ориентир."
+    Max_07 "Potom nesmieš zadržiavať vyjadrovanie svojich emócií! Potrebujem referenčný bod."
+
+# game/scripts_s1/s1_v91.rpy:1208
+translate slovak s1_ann_intimate_lesson_04_14854d78:
+
+    # Ann_13 "Ну... Хорошо, я буду вести себя так, как вела бы со своим мужчиной. Хоть мне и не очень удобно это делать..." nointeract
+    Ann_13 "No... Dobre, budem sa správať tak, ako by som sa správala k svojmu mužovi. Aj keď mi to nie je veľmi príjemné..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1213
+translate slovak s1_ann_intimate_lesson_04_8ff301a2:
+
+    # Ann_14 "Оу! Ты решил начать сразу оттуда... Чему я тебя учила, сынок? А как же прелюдия?"
+    Ann_14 "Oh! Rozhodol si sa začať priamo odtiaľ... Čo som ťa naučila, synu? A čo predohra?"
+
+# game/scripts_s1/s1_v91.rpy:1214
+translate slovak s1_ann_intimate_lesson_04_538e281d:
+
+    # Max_02 "Не переживай, она тоже будет."
+    Max_02 "Neboj sa, aj to bude."
+
+# game/scripts_s1/s1_v91.rpy:1215
+translate slovak s1_ann_intimate_lesson_04_0ddc1141:
+
+    # Ann_03 "Охх... Не знаю, что ты там придумал, но, так уж и быть, продолжай... Д-а-а..." nointeract
+    Ann_03 "Oh... Neviem, s čím si tam prišiel, ale choď do toho... D-a-ah..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1220
+translate slovak s1_ann_intimate_lesson_04_1e1d5cdc:
+
+    # Ann_08 "Ммм... Должна признать, пальчиками ты работаешь очень приятно. Ахх... Как хорошо... что ты стал заниматься массажем."
+    Ann_08 "Mmm... Musím sa priznať, že s prstami pracuješ veľmi pekne. Ahhh Aké dobré... Že si začal s masážou."
+
+# game/scripts_s1/s1_v91.rpy:1221
+translate slovak s1_ann_intimate_lesson_04_c4d8a8d0:
+
+    # Max_03 "{m}Чёрт, как же мне хочется попробовать на вкус эти нежные губки... Интересно, она позволит мне это сделать? Лучше посильнее её раззадорить, чтобы она не смогла от этого отказаться.{/m}"
+    Max_03 "{m}Sakra, ako chcem ochutnať tie jemné špongie ... Som zvedavý, či mi to dovolí? Je lepšie ju viac obťažovať, aby to nemohla odmietnuť.{/m}"
+
+# game/scripts_s1/s1_v91.rpy:1224
+translate slovak s1_ann_intimate_lesson_04_4a78fe22:
+
+    # Ann_09 "Да, как хорошо! Я хочу, чтобы твои пальчики двигались ещё быстрее... Ухх... Д-а-а... Вот так. Какой же ты у меня молодец!"
+    Ann_09 "Áno, aké dobré! Chcem, aby sa tvoje prsty pohybovali ešte rýchlejšie... Uh... D-a-ah... Len tak. Aký si skvelý chlap!"
+
+# game/scripts_s1/s1_v91.rpy:1225
+translate slovak s1_ann_intimate_lesson_04_beda0759:
+
+    # Max_04 "{m}Ох, мама так завелась от удовольствия или же она просто отыгрывает роль? Как бы там ни было, самое время переходить к её груди... Все руки должны быть при деле!{/m}"
+    Max_04 "{m}Oh, mama je tak nadšená radosťou, alebo len hrá úlohu? Každopádne, je čas prejsť na jej prsia... Všetky ruky by mali byť v akcii!{/m}"
+
+# game/scripts_s1/s1_v91.rpy:1228
+translate slovak s1_ann_intimate_lesson_04_7135350f:
+
+    # Ann_14 "Да, продолжай... Всё правильно. Свои ручки используй по максимуму. Д-а-а... А так же не забывай потренировать свой язычок на моих сосочках, потому что с этим у тебя куда меньше опыта..." nointeract
+    Ann_14 "Áno, choď do toho... Presne tak. Pery používaj na maximum. D-a-ah... A tiež nezabudni trénovať jazyk na mojich papilách, pretože s tým máš oveľa menej skúseností..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1233
+translate slovak s1_ann_intimate_lesson_04_e61e4718:
+
+    # Max_02 "{m}Мама даже и близко не представляет, сколько на самом деле у меня опыта и в том, и в том. Но языком всё же лучше работать не очень изобретательно. Если с руками ещё можно успехи списать на опыт в массаже, то с языком так не выйдет. Я же не чемпион по облизыванию Чупа-Чупсов.{/m}"
+    Max_02 "{m}Moja mama sa ani nepribližuje k tomu, aby si uvedomila, koľko skúseností v skutočnosti mám v oboch. Ale jazykom je stále lepšie pracovať nie veľmi vynaliezavo. Ak s rukami stále môžem odpísať úspech na skúsenosti s masážou, potom s jazykom to nebude fungovať. Nie som šampión chupa chups lízania.{/m}"
+
+# game/scripts_s1/s1_v91.rpy:1234
+translate slovak s1_ann_intimate_lesson_04_05c7906b:
+
+    # Ann_10 "Ох, сынок... Ммм... Да... Очень неплохо. Думаю, я достаточно хорошо тебя подготовила... Ухх... Надо закругляться."
+    Ann_10 "Ach, synku... Mmm... Áno... Veľmi dobré. Myslím, že som ťa dostatočne pripravila... Uf... Mali by sme to uzavrieť."
+
+# game/scripts_s1/s1_v91.rpy:1237
+translate slovak s1_ann_intimate_lesson_04_29d2acbe:
+
+    # Max_08 "Как это закругляться?! А мне разве не стоит побольше попрактиковаться языком, раз уж он у меня отстаёт от пальцев? Я хочу опробовать его на твоей киске."
+    Max_08 "Ako to myslíš, zabaliť?! Nemal by som viac cvičiť s jazykom, keďže zaostávam za prstami? Chcem to vyskúšať na tvojej kundičke."
+
+# game/scripts_s1/s1_v91.rpy:1238
+translate slovak s1_ann_intimate_lesson_04_cdf904e6:
+
+    # Ann_13 "Нет, Макс... Такое делать - это уже совсем уму не постижимо..." nointeract
+    Ann_13 "Nie, Max... Urobiť niečo také je nepochopiteľné..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1243
+translate slovak s1_ann_intimate_lesson_04_e3c6affd:
+
+    # Ann_14 "Охх... сынок... Что же ты вытворяешь! Нам нельзя... Ах... Это... невероятно... Я... я не могу сопротивляться... Это не в моих силах! Как же хорошо..." nointeract
+    Ann_14 "Ohhh... syn... Čo to preboha robíš! Nemôžeme... Ach... Toto je... neuveriteľné... Ach... Nemôžem odolať... Je to mimo mojich rúk! Ako pekné..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1248
+translate slovak s1_ann_intimate_lesson_04_2355dedf:
+
+    # Ann_09 "Д-а-а... Кажется, я ошиблась... Ты и языком талантливо управляешься! Ухх... Ещё... Ох, это... нет слов, как приятно... Я и секунды больше не продержусь..."
+    Ann_09 "Y-a-a-a... Myslím, že som urobila chybu... Máš talent aj na jazyk! Uf... Tiež... To je... niet slov, je to taký dobrý pocit... Už to nevydržím ani sekundu..."
+
+# game/scripts_s1/s1_v91.rpy:1249
+translate slovak s1_ann_intimate_lesson_04_ab6477bc:
+
+    # Max_07 "{m}Да, мама вот-вот кончит! Чёрт, да я и сам от её стонов уже на грани...{/m}" nointeract
+    Max_07 "{m}Áno, mama sa chystá vyvrcholiť! Sakra, sám som na pokraji jej stonania...{/m}" nointeract
+
+# game/scripts_s1/s1_v91.rpy:1254
+translate slovak s1_ann_intimate_lesson_04_b84b58ab:
+
+    # Ann_11 "Ещё быстрее... Моё тело меня больше не слушается... Ох, я кончаю, сынок... Д-а-а..." nointeract
+    Ann_11 "Ešte rýchlejšie... Moje telo ma už neposlúcha... Už idem, synku... Y-a-a-a..." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1259
+translate slovak s1_ann_intimate_lesson_04_62323a41:
+
+    # Ann_17 "Макс! Ну что же ты делаешь?! Всю меня своей спермой забрызгал! Не мог отвернуться что ли?"
+    Ann_17 "Max! Čo to robíš?! Rozprskol si na mňa svoje spermie! Nemohol si odvrátiť zrak?"
+
+# game/scripts_s1/s1_v91.rpy:1260
+translate slovak s1_ann_intimate_lesson_04_c153e0ef:
+
+    # Max_22 "Фух, извини... Перевозбудился... Хотелось просто кончить, а куда - неважно!"
+    Max_22 "Uff, prepáč... Príliš vzrušený... Chcel som sa len vystriekať a bolo jedno kde!"
+
+# game/scripts_s1/s1_v91.rpy:1263
+translate slovak s1_ann_intimate_lesson_04_af3d407f:
+
+    # Ann_12 "Пора, сынок, всё это заканчивать. Я имею ввиду, эти уроки. До добра это не доведёт точно. И зачем я только на это согласилась..."
+    Ann_12 "Je čas, synku, ukončiť to. Myslím tým tieto lekcie. Nebude to nič platné. Prečo som s tým vôbec súhlasila..."
+
+# game/scripts_s1/s1_v91.rpy:1264
+translate slovak s1_ann_intimate_lesson_04_c441a121:
+
+    # Max_08 "Но, мам..."
+    Max_08 "Ale, mami..."
+
+# game/scripts_s1/s1_v91.rpy:1265
+translate slovak s1_ann_intimate_lesson_04_d8e85bcd:
+
+    # Ann_16 "Не спорь! Всё это ты должен осваивать со своей девушкой, а не с мамой. Надеюсь, мы сможем представить, что на этих уроках ничего не было."
+    Ann_16 "Nehádaj sa! Toto všetko by si sa mal naučiť so svojou priateľkou, nie s mamou. Dúfam, že si dokážeme predstaviť, že sa na týchto hodinách nič nestalo."
+
+# game/scripts_s1/s1_v91.rpy:1266
+translate slovak s1_ann_intimate_lesson_04_561f1b40:
+
+    # Max_09 "Ну... Даже не знаю. После твоих стонов..."
+    Max_09 "No... Ja neviem. Po tvojich nárekoch..."
+
+# game/scripts_s1/s1_v91.rpy:1267
+translate slovak s1_ann_intimate_lesson_04_ec4a933e:
+
+    # Ann_17 "Забыли, сынок! А теперь иди. Мне нужно привести себя в порядок." nointeract
+    Ann_17 "Zabudol si, synku! Teraz choď. Musím sa dať do poriadku." nointeract
+
+translate slovak strings:
+
+    # game/scripts_s1/s1_v91.rpy:1070
+    old "{i}следовать маминому совету{/i}"
+    new "{i}poslúchnuť radu mojej matky{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1108
+    old "{i}сделать, как сказала мама{/i}"
+    new "{i}urobiť, ako povedala mama{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1130
+    old "{i}освободить ванну{/i}"
+    new "{i}vyprázdniť vaňu{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1144
+    old "{i}дрочить, глядя на маму{/i}"
+    new "{i}honiť pri pohľade na mamu{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1167
+    old "{i}прибраться и уйти{/i}"
+    new "{i}upratať a odísť{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1209
+    old "{i}начать водить пальцами по маминой киске{/i}"
+    new "{i}začať prechádzať prstami po maminej kundičke{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1216
+    old "{i}ласкать пальцами быстрее{/i}"
+    new "{i}rýchlejšie pracovať prstami{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1239
+    old "{i}ласкать мамину киску языком{/i}"
+    new "{i}hladiť jazykom mamininu kundičku{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1244
+    old "{i}не останавливаться{/i}"
+    new "{i}zostať naladení{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1250
+    old "{i}проникнуть в маму пальцами{/i}"
+    new "{i}preniknúť do mojej matky mojimi prstami{/i}"
+
+    # game/scripts_s1/s1_v91.rpy:1255
+    old "{i}тоже кончить!{/i}"
+    new "{i}aj spermie!{/i}"
+
+# TODO: Translation updated at 2022-06-30 16:39
+
+# game/scripts_s1/s1_v91.rpy:935
+translate slovak s1_ann_bath_8b2e455e:
+
+    # Max_07 "Я просто спросить хотел..."
+    Max_07 "Len som sa chcel spýtať..."
+
+# game/scripts_s1/s1_v91.rpy:936
+translate slovak s1_ann_bath_d6e21fdb:
+
+    # Ann_12 "Никаких больше уроков. Я ведь уже сказала! А сейчас выйди." nointeract
+    Ann_12 "Už žiadne lekcie. Už som ti to povedala! Teraz vystúp." nointeract
+
+# game/scripts_s1/s1_v91.rpy:1352
+translate slovak s1_ann_rejection_3aa93926:
+
+    # Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
+    Ann "{b}ANNA:{/b} Kto je tam? Kúpem sa!"
+
+# game/scripts_s1/s1_v91.rpy:1353
+translate slovak s1_ann_rejection_006aa2f9:
+
+    # Max_07 "Это я, Макс. Можно войти?"
+    Max_07 "To som ja, Max. Môžem vstúpiť?"
+
+# game/scripts_s1/s1_v91.rpy:1354
+translate slovak s1_ann_rejection_f1089d36:
+
+    # Ann "{b}Анна:{/b} Никаких больше уроков. Я ведь уже сказала! Не мешай..." nointeract
+    Ann "{b}ANNA:{/b} Už žiadne lekcie. Už som ti to povedala! Neprekážaj..." nointeract
+
+# TODO: Translation updated at 2022-07-05 16:02
+
+translate slovak strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Осталось проверить, изменилась ли реакция мамы на мой стояк. Лучше быть без майки..."
+    new "Uvidíme, či sa reakcia mamy na moju erekciu zmenila. Je lepšie byť bez trička..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь с Алисой можно вести себя посмелее..."
+    new "Teraz sa môžem správať odvážnejšie s Alicou..."
+
+    # game/scripts_s1/s1_screens.rpy:79
+    old "Деньги:"
+    new "Peniaze:"
+
+    # game/scripts_s1/s1_screens.rpy:184
+    old "{b}Пропустить дни:{/b}"
+    new "{b}Preskočiť dni:{/b}"
+
+# TODO: Translation updated at 2022-07-07 23:20
+
+translate slovak strings:
+
+    # game/dialogues/anntalk.rpy:678
+    old "Нет. Видно не так уж и много..."
+    new "Nie. Zrejme nie až tak veľmi..."
+
+    # game/dialogues/anntalk.rpy:1154
+    old "не париться"
+    new "Uvoľni sa"
 

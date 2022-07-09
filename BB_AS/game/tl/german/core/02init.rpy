@@ -725,3 +725,23 @@ translate german strings:
     old "Чтобы на маме были только очки для сна!"
     new "Dass Mom nur eine Augenbinde trägt!"
 
+# TODO: Translation updated at 2022-04-25 01:44
+
+translate german strings:
+
+    # game/core/02init.rpy:141
+    old "Мам, поговорим?"
+    new "Mom, wollen wir reden?"
+
+    # game/core/02init.rpy:141
+    old "Хотел поговорить о маме..."
+    new "Ich wollte über Mom reden..."
+
+# TODO: Translation updated at 2022-06-09 13:17
+
+translate german strings:
+
+    # game/core/02init.rpy:141
+    old "Мам, ты подумала?"
+    new "Mom, hast du darüber nachgedacht?"
+

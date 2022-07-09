@@ -10,6 +10,14 @@ label ann_sleep:
     menu:
         Max_00 "{m}В это время мама обычно спит.\nМне кажется, не стоит её будить...{/m}"
         "{i}заглянуть в окно{/i}":
+
+            if all([ann.flags.showdown_e > 1, flags.eric_wallet > 4, ann.flags.truehelp > 4, not ann.dcv.drink.stage, '02:00'>tm>='01:00']):
+                # состоялся за завтраком разговор об изгнании Эрика
+                # Макс набрал 5 успешных расширенных йог
+                scene Ann_sleep no_ann
+                Max_09 "Хм... Мамы нет. Где же она?"
+                jump Waiting
+
             scene Ann_sleep
             # scene BG char Ann bed-night-01
             # $ renpy.show('Ann sleep-night '+pose3_3+ann.dress)
@@ -177,6 +185,18 @@ label ann_shower:
             jump .not_luck
 
     label .not_luck:
+        if ann.dcv.private.stage > 4:
+            # после прохождения 2-ого интимного урока (ванна)
+            $ ann.daily.shower = 2
+            $ ann.dress_inf = '00a'
+            scene BG shower-closer
+            $ renpy.show('Ann shower-closer '+renpy.random.choice(['07', '08']))
+            show FG shower-closer
+            Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
+            menu:
+                "{i}уйти{/i}":
+                    jump .end_peeping
+
         if rand_result:
             $ ann.daily.shower = 2
             $ ann.dress_inf = '00a'
@@ -231,16 +251,6 @@ label ann_yoga:
     $ var_pose = '0' + str(int(eval('pose3_' + str(1 + int(tm[3]) % 3) )))
     scene Ann_yoga basic
     $ persone_button1 = 'Ann yoga ann-yoga-' + var_pose + ann.dress
-    # scene BG char Ann yoga 00
-    # if int(tm[3:4])%3 == 0: # смена позы каждые 10 минут
-    #     $ renpy.show('Ann yoga '+pose3_1+ann.dress)
-    #     $ persone_button1 = 'Ann yoga '+pose3_1+ann.dress
-    # elif int(tm[3:4])%3 == 1:
-    #     $ renpy.show('Ann yoga '+pose3_2+ann.dress)
-    #     $ persone_button1 = 'Ann yoga '+pose3_2+ann.dress
-    # else:
-    #     $ renpy.show('Ann yoga '+pose3_3+ann.dress)
-    #     $ persone_button1 = 'Ann yoga '+pose3_3+ann.dress
     return
 
 
@@ -346,12 +356,17 @@ label ann_dressed:
                 Ann_12 "Сынок, я собиралась переодеться. Не мешай маме. Займись чем-нибудь полезным..." nointeract
             else:
                 Ann_00 "Сынок, я собиралась переодеться. Иди пока, займись чем-нибудь..." nointeract
+        if all([lvl > 2, ann.prev_plan != 'shower2', flags.eric_wallet != 2]):
+            menu:
+                "А посмотреть нельзя?":
+                    Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+                "Да легко! Не буду мешать. Выглядишь, кстати, превосходно!":
+                    Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
         menu:
             "{i}уйти{/i}":
                 jump .end
 
     label .moment0:     # "нулевой"
-        # $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
         $ get_ann_dress(0)
@@ -375,14 +390,31 @@ label ann_dressed:
                 Ann_13 "Конечно! Это как-то неправильно, если мать будет переодеваться при своём ребёнке. Так что, пожалуйста, выйди ненадолго." nointeract
             "А я не помешаю. Начинай..." if lvl == 2:
                 Ann_12 "Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
-            "Да легко! Не буду мешать...":
+            "Да легко! Не буду мешать..." if lvl < 3:
                 Ann_01 "Спасибо, Макс. Если ты что-то хотел, то я недолго..." nointeract
+            "А посмотреть нельзя?" if lvl == 3:
+                Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+            "Да легко! Не буду мешать. Выглядишь, кстати, превосходно!" if lvl == 3:
+                Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
+            "Подожди! Мне кажется или у тебя под халатом что-то шевелится..." if lvl > 3 and var_dress[0] == 'b':
+                $ get_ann_dress(2, var_pose)
+                # первый момент с халатом
+                Ann_13 "Ой, Макс! Где именно?!"
+                Max_02 "А нет, это были твои прекрасные сосочки!"
+                # третий момент с халатом
+                $ get_ann_dress(3, var_pose)
+                Ann_05 "Ну и шуточки у тебя, Макс! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+            "А можно остаться и посмотреть?" if lvl > 3:
+                Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+            "Да легко! А повернуться можешь, пока я ухожу?" if lvl > 3  and var_dress[0] not in ['b', 'g']:
+                # Анна поворачивается задом
+                $ get_ann_dress(3, var_pose, True)
+                Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
         menu:
             "{i}уйти{/i}":
                 jump .end
 
-    label .moment2():     # повезло
-        # $ renpy.dynamic('lvl')
+    label .moment2:   # повезло
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
         $ get_ann_dress(2)
@@ -395,22 +427,36 @@ label ann_dressed:
             Ann_15 "Макс! Я же учила тебя стучаться! {p=3}{nw}"
         elif lvl == 2:
             Ann_15 "Макс! А стучаться кто будет?! {p=3}{nw}"
+        else:
+            Ann_13 "Ой, Макс! Почему не стучишься? {p=3}{nw}"
 
-        $ get_ann_dress(1, var_pose) # изменение позы вызывает автоматическое обновление изображения
+        # изменение позы вызывает автоматическое обновление изображения
         ### поза
+        if lvl > 3:
+            $ get_ann_dress(3, var_pose)
+        else:
+            $ get_ann_dress(1, var_pose)
 
         if lvl == 1:
             Ann_14 "Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
             jump .lvl_1
-        elif lvl == 2:
+        elif lvl == 2 or (items['nightie'].have and ann.plan_name=='dressed'):
             Ann_12 "Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
             jump .lvl_2
+        elif lvl == 3:
+            Ann_02 "Ты что-то хотел или просто от безделья маешься?"
+            jump .lvl_3
+        elif lvl==4:
+            Ann_02 "Ты что-то хотел или просто от безделья маешься?"
+            jump .lvl_4
 
     label .moment1:     # неповезло
-        # $ renpy.dynamic('lvl')
         $ ann.hourly.dressed = 1
         $ lvl = get_ann_emancipation()
-        $ get_ann_dress(1)
+        if lvl > 3:
+            $ get_ann_dress(3)
+        else:
+            $ get_ann_dress(1)
         $ mood = 0
 
         ### фон + поза
@@ -419,9 +465,15 @@ label ann_dressed:
         if lvl == 1:
             Ann_15 "Макс! Я же учила тебя стучаться! Нельзя вот так без предупреждения врываться в комнату! Что-то случилось?" nointeract
             jump .lvl_1
-        elif lvl == 2:
+        elif lvl == 2 or (items['nightie'].have and ann.plan_name=='dressed'):
             Ann_15 "Макс! А стучаться кто будет?! Прекращай уже без предупреждения врываться в комнату! Или у тебя что-то срочное?" nointeract
             jump .lvl_2
+        elif lvl == 3:
+            Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
+            jump .lvl_3
+        elif lvl == 4:
+            Ann_13 "Ой, Макс! Почему не стучишься? Ты что-то хотел или просто от безделья маешься?"
+            jump .lvl_4
 
     label .lvl_1:
         menu:
@@ -479,6 +531,38 @@ label ann_dressed:
             "Извини, всё позабыл, когда тебя увидел. Ты прекрасна!":
                 $ mood += 20
                 Ann_02 "Приятно слышать. Но маме нужно переодеться... Так что подожди за дверью, хорошо?" nointeract
+        menu:
+            "{i}уйти{/i}":
+                jump .end
+
+    label .lvl_3:
+        Max_01 "Нет, просто решил заглянуть. А ты что, всё ещё стесняешься? Это же я!"
+
+        $ relax = get_ann_dress(3, var_pose)
+
+        if relax:
+            Ann_04 "Да это я так, по привычке. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
+        else:
+            Ann_04 "Конечно стесняюсь! Ещё я тут всю себя на показ не выставляла, только из-за того, что ты уже всё видел. Если у тебя ничего срочного, то выйди пожалуйста. Мне нужно переодеться..." nointeract
+        menu:
+            "А посмотреть нельзя?":
+                Ann_12 "Нет, конечно! Ишь ты, что удумал! Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+            "Да легко! Не буду мешать. Выглядишь, кстати, превосходно!":
+                Ann_05 "Приятно слышать, сынок. Спасибо, что подметил." nointeract
+        menu:
+            "{i}уйти{/i}":
+                jump .end
+
+    label .lvl_4:
+        Max_02 "Нет, просто решил заглянуть и полюбоваться на твою шикарную фигуру. Ты же не против?"
+        Ann_04 "Ну... Если налюбовался, то выйди пожалуйста. Мне нужно переодеться..." nointeract
+        menu:
+            "А можно остаться и посмотреть?":
+                Ann_05 "Макс! Тебе что, мало того, что ты уже увидел? Завязывай с этими глупостями и дай маме спокойно переодеться." nointeract
+            "Да легко! А повернуться можешь, пока я ухожу?":
+                # Анна поворачивается задом, если стояла передом и наоборот
+                $ get_ann_dress(3, var_pose, True)
+                Ann_05 "Только под ноги смотри, сынок. А то мало ли куда лбом врежешься..." nointeract
         menu:
             "{i}уйти{/i}":
                 jump .end
@@ -889,9 +973,17 @@ label ann_bath:
         return
 
     $ ann.daily.bath = 1
+    if ann.dcv.private.stage > 3:
+        # Анну удалось уговорить на продолжение интимных уроков
+        jump s1_ann_bath
+
     menu:
         Max_00 "{m}Видимо, мама принимает ванну...{/m}"
-        "{i}постучаться{/i}" if all([get_rel_eric()[0] == 2, flags.voy_stage == 8, ann.flags.m_back > 2, ann.flags.truehelp > 4, not ann.dcv.private.stage]):
+        "{i}постучаться{/i}" if all([get_rel_eric()[0] == 2, flags.voy_stage == 8, ann.dcv.feature.stage > 3, ann.flags.m_back > 2, ann.flags.truehelp > 4, not ann.dcv.private.stage]):
+            # Д-, прекращены шоу АиЭ, знает секрет Анны, 3 раза успешно сделал массаж, 5 раз скрыл стояк на йоге
+            jump .about_intime_0
+        "{i}постучаться{/i}" if all([get_rel_eric()[0] == 3, flags.voy_stage > 11, flags.voy_stage != 0, ann.dcv.feature.stage > 3, ann.flags.m_back > 2, ann.flags.truehelp > 4, not ann.dcv.private.stage]):
+            # Д+, попал на просмотр шоу АиЭ (после возобновления), знает секрет Анны, 3 раза успешно сделал массаж, 5 раз скрыл стояк на йоге
             jump .about_intime_0
         "{i}заглянуть со двора{/i}" if flags.ladder < 2:
             scene Ann bath 01
@@ -908,8 +1000,6 @@ label ann_bath:
             Max_01 "{m}Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное...{/m}"
             $ flags.ladder = 3
             $ items['ladder'].give()
-            # $ items['ladder'].have = False
-            # $ items['ladder'].InShop = False
             jump .ladder
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
@@ -959,26 +1049,32 @@ label ann_bath:
                     jump .end
 
     label .about_intime_0:
-        Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!" nointeract
+        Ann "{b}Анна:{/b} Кто там? Я принимаю ванну!"
         Max_07 "Это я, Макс. Можно войти?"
         Ann "{b}Анна:{/b} Зачем, дорогой? Тебе что-то нужно?"
         Max_09 "Да, мам. Хотел поговорить."
-        Ann "{b}Анна{/b}: Если это может подождать, то я через полчасика освобожусь..." nointeract
+        Ann "{b}Анна:{/b} Если это может подождать, то я через полчасика освобожусь..." nointeract
         menu:
             "{i}войти{/i}":
                 $ ann.dcv.private.stage = 1     # состоялся первый разговор с Анной о "других" уроках
+                $ ann.dcv.private.set_lost(3)
             "{i}уйти{/i}":
                 jump .end
 
-        $ poss['control'].open(12)
+        if get_rel_eric()[0] == 2:
+            $ poss['control'].open(12)
+        elif get_rel_eric()[0] == 3:
+            $ poss['control'].open(15)
+
 
         # bath-open-00 + bath-open-ann-01
-        scene Ann_in_bath open with diss4
+        scene ann_in_bath_open with diss4
         Ann_15 "Макс! Ты почему так нагло врываешься! Я же сказала, что скоро освобожусь! Не мог подождать?"
         Max_08 "Нет, нужно кое-что обсудить, пока ты здесь."
 
         # bathrooom-bath-02 + bathrooom-bath-02-ann-00
-        scene Ann_in_bath enter with diss4
+        $ var_pose = '00'
+        scene ann_in_bath_enter with diss4
         Ann_14 "И что там у тебя такого срочного?!"
         Max_07 "Хотел поговорить о девочках!"
         Ann_17 "И ты считаешь, что это настолько важно, что кроме как здесь об этом говорить нельзя, да?"
@@ -990,7 +1086,9 @@ label ann_bath:
         Ann_13 "Ну... Что-то я даже не знаю..."
 
         # after-club-bath01-max&alice-01-f + bathrooom-bath-02-ann&max-01 + Одежда(только Макс)
-        scene Ann_in_bath talk with diss4
+        $ var_stage = '02'
+        $ var_pose = '01'
+        scene ann_in_bath_talk with diss4
         Max_07 "Да ладно, я же уже такое видел с вами на тех уроках..."
         Ann_12 "Ой, Макс, не напоминай. Это всё было исключительно для твоего... сексуального образования..."
         Max_08 "Так и это тоже для образования! Потому что я хочу не только получать ласку от девочек, но и давать её им. А это, как я понимаю, куда сложнее."
@@ -1005,7 +1103,6 @@ label ann_bath:
                 $ spent_time += 10
                 jump .end
 
-
     label .end:
         $ spent_time += 10
         jump Waiting
@@ -1019,7 +1116,6 @@ label ann_tv:
 
 
 label ann_tv_closer:
-    scene BG lounge-tv-01
-    $ renpy.show('Ann tv-closer '+pose3_3)
-    $ renpy.show('Max tv 00'+mgg.dress)
+    $ var_pose = '00'
+    scene tv_talk ann
     return

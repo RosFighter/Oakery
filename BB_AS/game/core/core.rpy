@@ -69,14 +69,19 @@ label Waiting:
     if prevtime < '12:00' <= tm:
         call Noon from _call_Noon
     if day != prevday:
-        call Midnight from _call_Midnight
+        $ start_midnight()
+
+        # call Midnight from _call_Midnight
+
         $ weekday = GetWeekday(day)
         if weekday == 0:
             # с субботы на воскресение начинается новая неделя
             # в том числе для еженедельного понижения влияния и/или отношения
-            call NewWeek from _call_NewWeek
+            # call NewWeek from _call_NewWeek
+            $ start_newweek()
     if prevtime < "04:30" < tm or ("04:30" < tm and day > prevday):
-        call NewDay from _call_NewDay
+        $ start_newday()
+        # call NewDay from _call_NewDay
 
     $ delt = TimeDifference(prevtime, tm) # вычислим действительно прошедшее время
 
@@ -203,180 +208,134 @@ label eric_time_settings:
     return
 
 
-label Midnight:
-    # "Полночь"
-    $ renpy.dynamic("chance", "char")
-    $ random_loc_ab = renpy.random.choice(['a', 'b'])
-    $ random_sigloc = renpy.random.choice(['n', 't'])
-
-    if alice.dcv.special.enabled and alice.dcv.set_up.enabled:
-        $ alice.daily.smoke = 0
-        $ alice.nopants     = False
-        $ alice.sleeptoples = False
-        $ alice.sleepnaked  = False
-        if alice.req.req == 'money':
-            $ alice.req.reset()
-        elif alice.req.result=='nojeans': # если требование не носить джинсы, оно не может быть нарушено
-            pass
-        elif alice.req.req and (not alice.req.result or alice.req.result[:3] != 'not'):
-            # Если требование Макса было и это не деньги
-            if random_outcome(GetDisobedience()):   # шанс, что Алиса не будет соблюдать договоренность
-                $ alice.req.result = 'not_' + alice.req.req
-                $ alice.req.noted = False  # нарушение ещё не замечено Максом
-            else:
-                $ alice.req.result = alice.req.req
-                if alice.req.req == 'nopants':
-                    $ alice.nopants = True
-                elif alice.req.req == 'sleep':
-                    $ alice.sleeptoples = True
-                elif alice.req.req == 'naked':
-                    $ alice.sleepnaked = True
-
-    $ GetDeliveryList()
-
-    if 'eric' in chars and all([eric.daily.tv_sex, eric.stat.handjob > 0]):
-        # если подсматривали за АиЭ у ТВ, меняем фильм
-        $ ae_tv_order.pop(0)
-        if not ae_tv_order:
-            $ ae_tv_order = ['0'+str(i) for i in range(1, 8)]
-            $ renpy.random.shuffle(ae_tv_order)  # перемешаем список случайным образом
-
-    $ flags.eric_noticed = False
-    $ prenoted = 0
-    $ film = ''
-    $ olivia_night_visits = olivia_nightvisits()
-    $ lisa.sleeptoples = False
-
-    if poss['nightclub'].st() >= 5 and kol_choco == 0:
-        $ items['choco'].unblock()
-
-    python:
-        # уменьшение счетчика событий, зависимых от прошедших дней
-        for ch in chars:
-            char = chars[ch]
-            if char.id == 'lisa':
-                # фильм-наказание сбрасывается позже, при наступлении нового игрового дня
-                char.dcv.countdown(['special'])
-            else:
-                char.dcv.countdown()
-
-            if char.dcv.shower is None:
-                char.dcv.reinit()
-
-            if char.dcv.shower.done and char.dcv.shower.stage:
-                # откат по подглядыванию в душе кончился, обнуляем этап
-                char.dcv.shower.stage = 0
-
-        dcv.countdown()
-
-        if flags.about_earn:
-            # был разговор о заработках за ужином
-            if dcv.clearpool.done and dcv.clearpool.stage < 3:  # прошёл откат чистки бассейна
-                dcv.clearpool.stage = 3     # теперь Макс работает без оплаты
-            if dcv.buyfood.done and dcv.buyfood.stage < 3:      # прошёл откат заказа продуктов
-                dcv.buyfood.stage = 3       # теперь Макс работает без оплаты
-
-        if SpiderResp > 0:
-            SpiderResp -= 1
-
-    return
+# label Midnight:
+#     # "Полночь"
+#     $ renpy.dynamic("char")
+#     $ random_loc_ab = renpy.random.choice(['a', 'b'])
+#     $ random_sigloc = renpy.random.choice(['n', 't'])
+#
+#     $ alice_disodedience()
+#
+#     $ GetDeliveryList()
+#
+#     $ changing_movie()
+#
+#     $ flags.eric_noticed = False
+#     $ prenoted = 0
+#     $ film = ''
+#     $ olivia_night_visits = olivia_nightvisits()
+#     $ lisa.sleeptoples = False
+#
+#     if poss['nightclub'].st() >= 5 and kol_choco == 0:
+#         $ items['choco'].unblock()
+#
+#     python:
+#         # уменьшение счетчика событий, зависимых от прошедших дней
+#         for ch in chars:
+#             char = chars[ch]
+#             if char.id == 'lisa':
+#                 # фильм-наказание сбрасывается позже, при наступлении нового игрового дня
+#                 char.dcv.countdown(['special'])
+#             else:
+#                 char.dcv.countdown()
+#
+#             if char.dcv.shower is None:
+#                 char.dcv.reinit()
+#
+#             if char.dcv.shower.done and char.dcv.shower.stage:
+#                 # откат по подглядыванию в душе кончился, обнуляем этап
+#                 char.dcv.shower.stage = 0
+#
+#         dcv.countdown()
+#
+#         if flags.about_earn:
+#             # был разговор о заработках за ужином
+#             if dcv.clearpool.done and dcv.clearpool.stage < 3:  # прошёл откат чистки бассейна
+#                 dcv.clearpool.stage = 3     # теперь Макс работает без оплаты
+#             if dcv.buyfood.done and dcv.buyfood.stage < 3:      # прошёл откат заказа продуктов
+#                 dcv.buyfood.stage = 3       # теперь Макс работает без оплаты
+#
+#         if SpiderResp > 0:
+#             SpiderResp -= 1
+#
+#     return
 
 
-label NewDay:
-    # "Новый день"
-
-    if 'spider' in NightOfFun:
-        $ NightOfFun.remove('spider') # если ночная забава не состоялась, паука из списка забав удаляем - он сбежал
-
-    if 0 < GetWeekday(prevday) < 6:
-        if poss['sg'].st() > 0 and not lisa.daily.homework:  # был разговор с Лизой по поводу наказаний и не помогал
-            $ punlisa.insert(0, [  # вставляем в начало
-                0,  # помощь Макса с д/з (0, 1, 2, 3, 4) (не помогал / допустил ошибку / неудачно попросил услугу / помог безвозмездно / помог за услугу)
-                0,  # получена двойка в школе (0, 1)
-                0,  # Макс заступился за Лизу перед наказанием (0, 1, 2)
-                0,  # Лиза понесла наказание (0, 1)
-                0,  # подозрительность
-                ])
-            $ del punlisa[10:]
-
-    if poss['smoke'].st() > 2:  # Макс видел курящую Алису
-        $ punalice.insert(0, [  # вставляем в начало
-            0,  # Макс шантажировал Алису (1-передумал, 2-неудачно, 3-деньги, 4-перекур топлес, 5-лифчик, 6-трусики, 7-джинсы, 8-голая)
-            0,  # Макс подставлял Алису
-            0,  # Макс заступился за Алису перед наказанием
-            0,  # Ализа понесла наказание
-            0,  # подозрительность
-            ])
-        $ del punalice[14:]
-
-
-    if lisa.clothes.learn.rand:
-        if 'kira' not in chars:
-            $ lisa.clothes.casual.cur = 1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 0
-        else:
-            if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
-                $ lisa.clothes.casual.cur = renpy.random.randint(1, 2)
-            else:
-                $ lisa.clothes.casual.cur = 1 if 'bathrobe' in lisa.gifts else 2
-
-    if mgg.credit.debt > 0:        # если кредит не погашен
-        $ mgg.credit.left -= 1       # уменьшим счетчик дней
-        if mgg.credit.left == 0:   # если счетчик дней кончился
-            $ mgg.credit.charge()    # начислим штраф
-
-    $ cam_flag = []  # обнулим подсматривания через камеры
-    $ ann_eric_scene = ''
-
-    $ cam_poses.clear()  # обнулим список поз для камер
-
-    if flags.voy_stage in [9, 10, 12, 13, 14] and weekday == flags.ae_bonus_day:
-        # наличие чулков определяется договорённстью
-        $ stockings = flags.can_ask == 3
-    else:
-        # просто рандом
-        $ stockings = random_outcome(50) # шанс, что Аня будет в чулках, 50%
-
-    python:
-        random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
-
-        if olivia_nightvisits():
-            # установим откат для ночных визитов Оливии.
-            if not olivia.dcv.special.stage:
-                # первого ночного визита Оливии ещё не было
-                olivia.dcv.special.set_lost(5)
-
-            elif lisa.flags.showdown_e > 1:
-                # после изгнания Эрика откат 1 неделя
-                olivia.dcv.special.set_lost(5)
-
-            else:
-                # если Эрик вмешался до прихода Оливии, откат неделя, иначе две недели
-                olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
-
-        for ch in chars:
-            char = chars[ch]
-            # сбросим подглядывания, диалоги и состояния
-            char.daily.reset()
-            char.spanked = False
-
-            # срок извинительных подарков
-            if char.sorry.owe and char.sorry.left > 0:
-                char.sorry.left -= 1
-
-            # для каждого типа одежды каждого персонажа запустим рандомную смену
-            lst = char.clothes.GetList()
-            for cl_t in lst:
-                if eval('char.clothes.'+cl_t+'.rand'):
-                    eval('char.clothes.'+cl_t+'.SetRand()')
-
-        # сброс фильма-наказания
-        lisa.dcv.countdown(only=['special'])
-
-    # назначаем день бонусных потрахушек (за Лизу) первый раз
-    if flags.voy_stage in [9, 10, 12, 13, 14] and not flags.ae_bonus_day:
-        $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
-
-    return
+# label NewDay:
+#     # "Новый день"
+#
+#     if 'spider' in NightOfFun:
+#         $ NightOfFun.remove('spider') # если ночная забава не состоялась, паука из списка забав удаляем - он сбежал
+#
+#     $ pun_list_update()
+#
+#     if lisa.clothes.learn.rand:
+#         if 'kira' not in chars:
+#             $ lisa.clothes.casual.cur = 1 if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]) else 0
+#         else:
+#             if all(['bathrobe' in lisa.gifts, lisa.GetMood()[0] > 1]):
+#                 $ lisa.clothes.casual.cur = renpy.random.randint(1, 2)
+#             else:
+#                 $ lisa.clothes.casual.cur = 1 if 'bathrobe' in lisa.gifts else 2
+#
+#     if mgg.credit.debt > 0:        # если кредит не погашен
+#         $ mgg.credit.left -= 1       # уменьшим счетчик дней
+#         if mgg.credit.left == 0:   # если счетчик дней кончился
+#             $ mgg.credit.charge()    # начислим штраф
+#
+#     $ cam_flag = []  # обнулим подсматривания через камеры
+#     $ ann_eric_scene = ''
+#
+#     $ cam_poses.clear()  # обнулим список поз для камер
+#
+#     if flags.voy_stage in [9, 10, 12, 13, 14] and weekday == flags.ae_bonus_day:
+#         # наличие чулков определяется договорённстью
+#         $ stockings = flags.can_ask == 3
+#     else:
+#         # просто рандом
+#         $ stockings = random_outcome(50) # шанс, что Аня будет в чулках, 50%
+#
+#     python:
+#         random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
+#
+#         if olivia_nightvisits():
+#             # установим откат для ночных визитов Оливии.
+#             if not olivia.dcv.special.stage:
+#                 # первого ночного визита Оливии ещё не было
+#                 olivia.dcv.special.set_lost(5)
+#
+#             elif lisa.flags.showdown_e > 1:
+#                 # после изгнания Эрика откат 1 неделя
+#                 olivia.dcv.special.set_lost(5)
+#
+#             else:
+#                 # если Эрик вмешался до прихода Оливии, откат неделя, иначе две недели
+#                 olivia.dcv.special.set_lost(5 * olivia.dcv.battle.stage)
+#
+#         for ch in chars:
+#             char = chars[ch]
+#             # сбросим подглядывания, диалоги и состояния
+#             char.daily.reset()
+#             char.spanked = False
+#
+#             # срок извинительных подарков
+#             if char.sorry.owe and char.sorry.left > 0:
+#                 char.sorry.left -= 1
+#
+#             # для каждого типа одежды каждого персонажа запустим рандомную смену
+#             lst = char.clothes.GetList()
+#             for cl_t in lst:
+#                 if eval('char.clothes.'+cl_t+'.rand'):
+#                     eval('char.clothes.'+cl_t+'.SetRand()')
+#
+#         # сброс фильма-наказания
+#         lisa.dcv.countdown(only=['special'])
+#
+#     # назначаем день бонусных потрахушек (за Лизу) первый раз
+#     if flags.voy_stage in [9, 10, 12, 13, 14] and not flags.ae_bonus_day:
+#         $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
+#
+#     return
 
 
 label Noon:
@@ -412,59 +371,60 @@ label Noon:
     return
 
 
-label NewWeek:
-    # в полночь с субботы на воскресение начинается новая неделя
-    if 'kira' in chars:
-        $ kira.sleepnaked = False # сбрасываем флаг стриптиза Киры
-
-    if 'kira' in chars and not shower_schedule:
-        $ shower_schedule = 1       # активируем новое расписаниеa
-
-
-    if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0, get_rel_eric()[0] < 0]):
-        # отношения с Эриком по сёстрам определены, вражда
-        # активируем еженедельный счетчик на спаливание Киры и Макса Эриком
-        $ wcv.catch_Kira.enabled = True  # теперь можно сдать Киру Эрику (при дружбе), либо Эрик может сам спалить Макса и Киру
-
-    if 'olivia' in chars:
-        if olivia.dcv.feature.stage==2:
-            # состоялись первые два разговора по средам, теперь Оливия будет приходить во вторник и пятницу
-            $ olivia.dcv.feature.stage = 3
-
-    $ flags.noclub = False
-    $ flags.trick = False
-
-    if 'eric' in chars and all([eric_obligation.get_debt(), flags.eric_wallet == 0, get_rel_eric()[0] < 0]):
-        # Макс не заплатил Эрику дань, запускается кошелёк
-        $ eric_obligation.volume = 0
-        $ eric_obligation.debt = 0
-        $ flags.eric_wallet = 1
-
-    # назначаем день бонусных потрахушек (за Лизу) на новую неделю
-    if flags.voy_stage in [9, 10, 12, 13, 14]:
-        $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
-
-    python:
-        # уменьшение счетчика событий, зависимых от прошедших дней
-        wcv.countdown()
-
-        for char in chars:
-            chars[char].weekly.reset()
-
-        # еженедельное снижения влияния
-        for char in infl:
-            infl[char].sub_m(30)
-            infl[char].sub_e(30)
-
-        if 'eric' in chars:
-            eric_obligation.reset()
-
-    return
+# label NewWeek:
+#     # в полночь с субботы на воскресение начинается новая неделя
+#     if 'kira' in chars:
+#         $ kira.sleepnaked = False # сбрасываем флаг стриптиза Киры
+#
+#     if 'kira' in chars and not shower_schedule:
+#         $ shower_schedule = 1       # активируем новое расписаниеa
+#
+#
+#     if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0, get_rel_eric()[0] < 0]):
+#         # отношения с Эриком по сёстрам определены, вражда
+#         # активируем еженедельный счетчик на спаливание Киры и Макса Эриком
+#         $ wcv.catch_Kira.enabled = True  # теперь можно сдать Киру Эрику (при дружбе), либо Эрик может сам спалить Макса и Киру
+#
+#     if 'olivia' in chars:
+#         if olivia.dcv.feature.stage==2:
+#             # состоялись первые два разговора по средам, теперь Оливия будет приходить во вторник и пятницу
+#             $ olivia.dcv.feature.stage = 3
+#
+#     $ flags.noclub = False
+#     $ flags.trick = False
+#
+#     if 'eric' in chars and all([eric_obligation.get_debt(), flags.eric_wallet == 0, get_rel_eric()[0] < 0]):
+#         # Макс не заплатил Эрику дань, запускается кошелёк
+#         $ eric_obligation.volume = 0
+#         $ eric_obligation.debt = 0
+#         $ flags.eric_wallet = 1
+#
+#     # назначаем день бонусных потрахушек (за Лизу) на новую неделю
+#     if flags.voy_stage in [9, 10, 12, 13, 14]:
+#         $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
+#
+#     python:
+#         # уменьшение счетчика событий, зависимых от прошедших дней
+#         wcv.countdown()
+#
+#         for char in chars:
+#             chars[char].weekly.reset()
+#
+#         # еженедельное снижения влияния
+#         for char in infl:
+#             infl[char].sub_m(30)
+#             infl[char].sub_e(30)
+#
+#         if 'eric' in chars:
+#             eric_obligation.reset()
+#
+#     return
 
 
 label AfterWaiting:
 
     # $ renpy.dynamic('name_label', 'cur_plan')
+    $ renpy.block_rollback()
 
     ## расчет притока/оттока зрителей для каждой камеры и соответствующего начисления
     $ CamShow()
@@ -574,6 +534,12 @@ label AfterWaiting:
         elif all([current_room == house[6], flags.eric_jerk, '02:00'<=tm<'02:30', flags.eric_noticed, eric.stat.mast]):
             $ renpy.show('Eric jerk off fg-'+current_room.cur_bg[-1:])
 
+    if ann.dcv.drink is None:
+        $ ann.dcv.drink = Daily()
+
+    if all([ann.flags.showdown_e > 1, flags.eric_wallet > 4, ann.flags.truehelp > 4, not ann.dcv.drink.stage, '02:00'>tm>='01:00']):
+        jump s1_ann_first_drink
+
     ## если в комнате есть персонаж, отмечаем, что видели его
     python:
         for char in current_room.cur_char:
@@ -582,7 +548,10 @@ label AfterWaiting:
     window hide
     $ hide_say()
     $ renpy.block_rollback()
-    call screen room_navigation
+    # call screen room_navigation
+    # show screen room_navigation
+    call start_room_navigation from _call_start_room_navigation_3
+    jump AfterWaiting
 
 
 label random_dressed:
@@ -895,7 +864,8 @@ label cam_after_waiting:
             $ renpy.show('Max cams myroom 01'+mgg.dress, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         call screen cam_show
-
+    elif view_cam[0] == house[4] and all([ann.flags.showdown_e > 1, flags.eric_wallet > 4, ann.flags.truehelp > 4, not ann.dcv.drink.stage, '02:00'>tm>='01:00']):
+        jump s1_ann_drink_cam
     else:
         call cam_background from _call_cam_background_3
         show FG cam-shum-noact at laptop_screen
@@ -1004,9 +974,8 @@ label after_load:
 
         if _version < current_ver or current_ver < "0.06.0.999":
             call old_fix from _call_old_fix
-
-    elif config.developer:
-        "_ver [_version], conf.ver [config.version]"
+    # elif config.developer:
+    #     "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
 
@@ -1014,6 +983,7 @@ label after_load:
 
         python:
             for char in chars:
+                # print char
                 chars[char].reinit()
                 chars[char].dcv.reinit()
 
@@ -1093,10 +1063,20 @@ label after_load:
         $ append_album('01-Kira', ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'])
 
     if 'kira' in chars and all([renpy.seen_label('kira_about_photo2'), '02-Kira' not in persistent.photos, kira.dcv.photo.stage > 1]):
-        $ append_album('01-Kira', ['01', '02', '03', '04', '05', '06', '07', '08', '09'])
+        $ append_album('02-Kira', ['01', '02', '03', '04', '05', '06', '07', '08', '09'])
 
     if 'kira' in persistent.mems_var:
         $ open_cookies()
+
+    if flags.can_ask == -1 and alice.dcv.intrusion.stage > 7:
+        $ flags.can_ask = 1
+    elif alice.dcv.intrusion.stage == 7 and flags.can_ask > 1:
+        $ flags.can_ask = 1
+
+    if cheat_skip:
+        $ cheat_skip = False
+        $ skip_error = True
+        # $ print('dot')
 
     return
 

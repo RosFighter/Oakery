@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "0.08.0.07"
+define config.version = "0.09.1.03"
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -229,10 +229,10 @@ init python:
     build.classify('game/extra/**.rpyc', 'extra')
     # build.classify('game/tl/**/extra/**.rpyc', 'extra')
 
-    build.archive("img_fix", "all")
+    # build.archive("img_fix", "all")
     # убрать перед сборкой!
-    build.classify('game/images/interface/poss/control/ep08.webp', 'img_fix')
-    build.classify('game/images/Ann/hugging/morning-annroom/*j*.webp', 'img_fix')
+    # build.classify('game/images/BG/lounge-tv-01.webp', 'img_fix')
+    # build.classify('game/images/interface/menu/boosty.webp', 'img_fix')
     # build.classify('game/images/interface/poss/yoga/ep04.webp', 'img_fix')
     # build.classify('game/images/interface/poss/mentor/ep13a.webp', 'img_fix')
 
@@ -258,6 +258,7 @@ init python:
     build.classify('game/core/**.rpyc', 'scripts')
     build.classify('game/dialogues/**.rpyc', 'scripts')
     build.classify('game/events/**.rpyc', 'scripts')
+    build.classify('game/scripts_s1/**.rpyc', 'scripts')
 
     build.archive('font', 'all')
     build.classify('game/**.ttf', 'font')

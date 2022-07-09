@@ -376,4 +376,3 @@ translate english cam1_eric_kira_night_swim_45123771:
 
     # Max_10 "{m}Вот чёрт! Похоже, Кира ублажает Эрика, чтобы он нас не заложил маме...{/m}"
     Max_10 "{m}Oh, shit! It looks like Kira is pleasuring Eric so he won't rat us out to Mom...{/m}"
-

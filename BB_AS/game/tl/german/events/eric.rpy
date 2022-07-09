@@ -583,7 +583,7 @@ translate german eric_ann_fucking_voyeur_1a6dca32:
     Ann_18 "Max? Spionierst du schon wieder?! Raus mit dir!" nointeract
 
 # game/events/eric.rpy:593
-translate german eric_ann_fucking_voyeur_afca94eb:
+translate german eric_ann_fucking_voyeur_141f69df:
 
     # Eric_02 "Ань, пусть лучше смотрит на нас, чем на не пойми какие извращения в интернете, верно? Так, Макс, зайди сюда, поговорим..." nointeract
     Eric_02 "Ann, es ist besser, uns zuzuschauen, als das ganze verkorkste Zeug im Internet, weißt du? Max, komm hier rein und wir reden..." nointeract
@@ -694,7 +694,7 @@ translate german eric_ann_sleep_6d97eb0c:
 translate german eric_ann_sleep_adf5bbdf:
 
     # Max_09 "{m}О! Мама спит одна... Как она прекрасна, особенно голая... А Эрик где? Уж не у Алисы ли в комнате?!{/m}" nointeract
-    Max_09 "{m}О! Mom schläft allein... Wie schön sie ist, besonders nackt... Wo ist Eric? Er ist doch in Alice's Zimmer?!{/m}" nointeract
+    Max_09 "{m}O! Mom schläft allein... Wie schön sie ist, besonders nackt... Wo ist Eric? Er ist doch in Alice's Zimmer?!{/m}" nointeract
 
 # game/events/eric.rpy:728
 translate german eric_ann_sleep_980b6a59:
@@ -3582,3 +3582,12 @@ translate german strings:
     # game/events/eric.rpy:694
     old "{i}хорошо устроиться{/i}"
     new "{i}sich gut verstehen{/i}"
+
+# TODO: Translation updated at 2022-06-30 16:40
+
+# game/events/eric.rpy:1105
+translate german eric_ann_shower_not_luck_43bfc377:
+
+    # Ann_14 "[spotted!t]Макс! Если ты думаешь, что теперь можешь смотреть за нами в любое время, то ты ошибаешься! Если быстро не уйдёшь, то я тебя накажу!"
+    Ann_14 "[spotted!t]Max! Wenn du denkst, dass du uns jetzt jederzeit beobachten kannst, liegst du falsch! Wenn du nicht schnell verschwindest, werde ich dich bestrafen!"
+

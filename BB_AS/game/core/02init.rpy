@@ -54,6 +54,8 @@ default persistent.request_savename = True
 default persistent.transparent_textbox = False
 default persistent.all_opportunities = False
 default persistent.skip_lisa_dressed = False
+default persistent.use_cheats = False
+default cheats_warning = False
 default number_autosave = 0
 default number_quicksave = 0
 default number_save = 0
@@ -80,9 +82,13 @@ default purchased_items = []
 default var_pose = '02'
 default var_stage = '01'
 default var_dress = ''
+default var_film = ''
 
 define cam_flag = []
 define cam_list = []
+define cheat_skip = False
+define skip_error = False
+default skiped = []
 
 define weekdays = (
                   (_("ВС"), _("ВОСКРЕСЕНЬЕ")),
@@ -103,7 +109,9 @@ default cam_poses = {}
 default cam_pose_blog = []
 default cur_ch = 'max'
 default current_language_list = []
-default stockings= False
+default stockings = False
+default menu_starting = False
+default kt6_first = False
 
 init:
     $ config.keymap['hide_windows'].append('`')
@@ -202,7 +210,11 @@ define talks = {
     'kira.kiss'     : TalkTheme('kira', _("Кира, мне нужно научиться целоваться..."), 'kira_about_kiss', "all([kira.dcv.feature.stage>2, lisa.dcv.seduce.stage==1, list_in_list(['ann', 'alice'], flags.how_to_kiss), 'kira' not in flags.how_to_kiss])"),
     'kt4'           : TalkTheme('kira', _("Ну как, ты с мамой-то поговорила?"), 'kira_talk4', "all([kira.stat.blowjob, kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==3])"),
     'kt5'           : TalkTheme('kira', _("Как отдыхается, тётя Кира?"), 'kira_talk5', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==4])"),
-    'kt6'           : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, (not items['photocamera'].have and not items['nightie2'].have) or (items['photocamera'].have and items['nightie2'].have)])"),
+
+    'kt6'           : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([not kt6_first, kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, (not items['photocamera'].have and not items['nightie2'].have) or (items['photocamera'].have and items['nightie2'].have)])"),
+    'kt6_2'         : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([kt6_first==1, kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have])"),
+    'kt6_3'         : TalkTheme('kira', _("Насчёт фотосессии..."), 'kira_talk6', "all([kt6_first==2, weekday==6, kira.dcv.feature.done, kira.plan_name=='sun', kira.dcv.feature.stage==5, items['photocamera'].have, items['nightie2'].have])"),
+
     'kt_ft1'        : TalkTheme('kira', _("Понравились фотографии?"), 'kira_about_photo1', "all([kira.dcv.feature.done, kira.dcv.feature.stage==6, kira.plan_name=='sun'])"),
     'kt_cuni'       : TalkTheme('kira', _("Не злишься на меня, тётя Кира?"), 'kira_about_cuni', "all([kira.dcv.sweets.done, kira.flags.promise, kira.plan_name=='sun'])"),
     'kt.ft2'        : TalkTheme('kira', _("Так когда будем снова фотографироваться, тётя Кира?"), 'kira_about_photo2', "all([kira.dcv.feature.stage==7, kira.plan_name=='sun', not expected_photo, kira.dcv.photo.stage==1, kira.dcv.photo.done, kira.dcv.feature.done])"),
@@ -266,6 +278,10 @@ define talks = {
     'ol.l.sun_crR'  : TalkTheme(['lisa', 'olivia'], _("Давайте, я намажу вас кремом для загара?"), 'olivia_repeat_sunscreen',  "all([olivia.plan_name=='sun', not olivia.daily.oiled, olivia.flags.incident>3])"),
     'ol.l.sun_crG'  : TalkTheme(['lisa', 'olivia'], _("Вам дать крем для загара?"), 'olivia_give_sunscreen',  "all([olivia.plan_name=='sun', not olivia.daily.oiled, olivia.flags.incident>3, olivia.flags.handmass])"),
 
+    # ====== 0.09.1 ===================
+    'ann.drink1'    : TalkTheme('ann', _("Мам, поговорим?"), 's1_ann_talk_about_night', "ann.dcv.drink.stage==1"),
+    'ann.drink2'    : TalkTheme('kira', _("Хотел поговорить о маме..."), 's1_kira_talk_about_ann_drink', "all([kira.plan_name=='sun', ann.dcv.drink.stage==2])"),
+    'ann.intime0'   : TalkTheme('ann', _("Мам, ты подумала?"), 's1_about_intimate_lessons', "all([ann.dcv.private.stage == 1, ann.dcv.private.done])")
     }
 
 

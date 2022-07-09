@@ -131,97 +131,97 @@ define Alice = Character(_("Алиса"))
 
 define Alice_00 = Character(kind=Alice, image='alice_00')
 image side alice_00 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-00',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-00',
                         'True', 'Alice emo-00a')
 
 define Alice_01 = Character(kind=Alice, image='alice_01')
 image side alice_01 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-01',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-01',
                         'True', 'Alice emo-01a')
 
 define Alice_02 = Character(kind=Alice, image='alice_02')
 image side alice_02 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-02',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-02',
                         'True', 'Alice emo-02a')
 
 define Alice_03 = Character(kind=Alice, image='alice_03')
 image side alice_03 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-03',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-03',
                         'True', 'Alice emo-03a')
 
 define Alice_04 = Character(kind=Alice, image='alice_04')
 image side alice_04 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-04',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-04',
                         'True', 'Alice emo-04a')
 
 define Alice_05 = Character(kind=Alice, image='alice_05')
 image side alice_05 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-05',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-05',
                         'True', 'Alice emo-05a')
 
 define Alice_06 = Character(kind=Alice, image='alice_06')
 image side alice_06 = ConditionSwitch(
-                        'tm < \'09:00\' or tm >= \'20:00\'', 'Alice emo-06a',
-                        'True', 'Alice emo-06')
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-06',
+                        'True', 'Alice emo-06a')
 
 define Alice_07 = Character(kind=Alice, image='alice_07')
 image side alice_07 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-07',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-07',
                         'True', 'Alice emo-07a')
 
 define Alice_08 = Character(kind=Alice, image='alice_08')
 image side alice_08 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-08',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-08',
                         'True', 'Alice emo-08a')
 
 define Alice_09 = Character(kind=Alice, image='alice_09')
 image side alice_09 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-09',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-09',
                         'True', 'Alice emo-09a')
 
 define Alice_10 = Character(kind=Alice, image='alice_10')
 image side alice_10 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-10',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-10',
                         'True', 'Alice emo-10a')
 
 define Alice_11 = Character(kind=Alice, image='alice_11')
 image side alice_11 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-11',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-11',
                         'True', 'Alice emo-11a')
 
 define Alice_12 = Character(kind=Alice, image='alice_12')
 image side alice_12 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-12',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-12',
                         'True', 'Alice emo-12a')
 
 define Alice_13 = Character(kind=Alice, image='alice_13')
 image side alice_13 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-13',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-13',
                         'True', 'Alice emo-13a')
 
 define Alice_14 = Character(kind=Alice, image='alice_14')
 image side alice_14 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-14',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-14',
                         'True', 'Alice emo-14a')
 
 define Alice_15 = Character(kind=Alice, image='alice_15')
 image side alice_15 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-15',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-15',
                         'True', 'Alice emo-15a')
 
 define Alice_16 = Character(kind=Alice, image='alice_16')
 image side alice_16 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-16',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-16',
                         'True', 'Alice emo-16a')
 
 define Alice_17 = Character(kind=Alice, image='alice_17')
 image side alice_17 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-17',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-17',
                         'True', 'Alice emo-17a')
 
 define Alice_18 = Character(kind=Alice, image='alice_18')
 image side alice_18 = ConditionSwitch(
-                        '\'09:00\' <= tm < \'20:00\'', 'Alice emo-18',
+                        "'08:00' <= tm < '20:00' and alice.plan_name != 'shower'", 'Alice emo-18',
                         'True', 'Alice emo-18a')
 
 

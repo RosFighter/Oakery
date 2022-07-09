@@ -266,6 +266,13 @@ init python:
                     l.append(attr)
             return True if len(l) else False
 
+        def SetDailyRand(self):
+            lst = self.GetList()
+            for attr in lst:
+                val_attr = getattr(self, attr)
+                if val_attr is not None and val_attr.rand:
+                    val_attr.SetRand()
+
         def __repr__(self):
             return '\n'.join([attr for attr in self.__dict__ if getattr(self, attr) is not None])
 
@@ -567,6 +574,7 @@ init python:
         private     = None      # доступно приватное наказание
         shower      = None      # откат по подглядыванию в душе. Стадии: 0-без ограничений, 1-мягкое ограничение, 2-спалился, жёсткое ограничение
         mistress    = None      # доминирование
+        drink       = None      # стадии выпивашек Анны
 
         def __init__(self):
             self.punpause   = Daily()
@@ -584,6 +592,7 @@ init python:
             self.private    = Daily()
             self.shower     = Daily()
             self.mistress   = Daily()
+            self.drink      = Daily()
 
         def countdown(self, exceptions=[], only=[]):
             for attr in self.__dict__:
@@ -605,6 +614,8 @@ init python:
                 self.shower = Daily()
             if self.mistress is None:
                 self.mistress = Daily()
+            if self.drink is None:
+                self.drink = Daily()
 
         def __repr__(self):
             return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
@@ -1393,6 +1404,7 @@ init python:
         buyfood     = Daily(enabled=True)   # заказ продуктов
         mw          = Daily(enabled=True)   # утренний стояк
         new_pun     = Daily()               # следующий тип наказания
+        ch_money    = None                  # получено $500 читом
 
         def __init__(self):
             self.clearpool  = Daily(enabled=True)   # очистка бассейна
@@ -1400,6 +1412,7 @@ init python:
             self.buyfood    = Daily(enabled=True)   # заказ продуктов
             self.mw         = Daily(enabled=True)   # утренний стояк
             self.new_pun    = Daily()               # следующий тип наказания
+            self.ch_money   = Daily(enabled=True)   # получено $500 читом
 
         def countdown(self, exceptions=[], only=[]):
             for attr in self.__dict__:

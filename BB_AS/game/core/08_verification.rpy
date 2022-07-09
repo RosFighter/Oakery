@@ -164,13 +164,13 @@ init python:
                 # Лизу наказывали
                 if lw.protected:
                     # была успешная защита от наказания
-                    return 1 if all([lw.help, lw.mass1, lw.dishes]) else -1
+                    return 1 if all([lw.help > 0, lw.mass1 > 0, lw.dishes > 0]) else -1
                 else:
                     # не защитил (или не смог)
-                    return 3 if all([lw.help>2, lw.mass1>1, lw.dishes>2]) else -3
+                    return 3 if all([lw.help > 2, lw.mass1 > 0, lw.dishes > 2]) else -3
             else:
                 # не было наказаний
-                    return 2 if all([lw.help>1, lw.mass1, lw.dishes>1]) else -2
+                    return 2 if all([lw.help > 1, lw.mass1 > 0, lw.dishes > 1]) else -2
         # else:
         #     if not lisa.dcv.other.done:
         #         # Лизу наказали, значит ужастики в майке
@@ -252,8 +252,16 @@ init python:
     # возвращает уровень раскрепощения Анны
     def get_ann_emancipation():
         # 01. Я же мать! Стесняется показываться перед Максом в нижнем белье. Переход: 1-ая попытка сделать массаж у ТВ.
-        # 02. Не для детских глаз. Стесняется показываться перед Максом с обнажённой грудью и без трусиков. Переход: ???.
-        if _in_replay or poss['mom-tv'].st() > 7:
+        # 02. Не для детских глаз. Стесняется показываться перед Максом с обнажённой грудью и без трусиков. Переход: 2-ой интимный урок с Анной.
+        # 03. Ещё не всё. Стесняется показываться перед Максом без трусиков. Переход: 5-ий интимный урок с Анной.
+        # 04. На все сто! Не стесняется показываться перед Максом без одежды.
+
+        if ann.dcv.private.stage > 5:
+            return 4
+        elif ann.dcv.private.stage > 4:
+            # состоялся второй интимный урок с Аней
+            return 3
+        elif _in_replay or poss['mom-tv'].st() > 7:
             # состоялся первый массаж у ТВ
             return 2
         else:
