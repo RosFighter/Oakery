@@ -161,11 +161,11 @@ screen LaptopScreen():
                     yspacing 40
 
                     frame xysize(370, 295) background None:
-                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop shop' action Jump('LaptopShop') at book_marks
+                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop shop' action [Hide('LaptopScreen'), Jump('LaptopShop')] at book_marks
                         text _("{b}ИНТЕРНЕТ-МАГАЗИН{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
                     frame xysize(370, 295) background None:
-                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action Jump('courses_start') at book_marks
+                        imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop courses' action [Hide('LaptopScreen'), Jump('courses_start')] at book_marks
                         text _("{b}ОНЛАЙН-КУРСЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
                     if dcv.buyfood.stage in [1, 3] and dcv.buyfood.done:
@@ -178,7 +178,7 @@ screen LaptopScreen():
                                         idle im.MatrixColor('images/interface/laptop/grocery.webp', im.matrix.desaturate())
                                 text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color gray
                             else:
-                                imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action Jump('buyfood') at book_marks
+                                imagebutton anchor (0.5, 0.5) pos (185, 115) idle 'interface laptop grocery' action [Hide('LaptopScreen'), Jump('buyfood')] at book_marks
                                 text _("{b}КУПИТЬ ПРОДУКТЫ{/b}") xanchor 0.5 xpos 185 ypos 232 color '#FFFFFF' drop_shadow[(2, 2)]
 
                     if poss['cams'].st() == 3:

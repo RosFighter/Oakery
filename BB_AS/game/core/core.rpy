@@ -1006,6 +1006,7 @@ label after_load:
         call update_07_p1_99 from _call_update_07_p1_99
         call update_07_p2_99 from _call_update_07_p2_99
         call update_08_0_99 from _call_update_08_0_99
+        call update_09_1_00 from _call_update_09_1_99
 
         $ _version = config.version
 
@@ -1812,6 +1813,8 @@ label update_07_0_99:
             if kira.dcv.feature.stage >= 11 and kira.dcv.photo.stage < 3:
                 $ kira.dcv.photo.stage = 3
 
+    return
+
 label update_07_p1_99:
 
     if _version < '0.07.p1.01':
@@ -1840,6 +1843,8 @@ label update_07_p1_99:
     if _version < '0.07.p1.32':
         call InitActions from _call_InitActions_1
         $ SetAvailableActions()
+
+    return
 
 label update_07_p2_99:
 
@@ -1911,6 +1916,8 @@ label update_07_p2_99:
                 $ poss['yoga'].stages[2] = 0
                 $ poss['yoga'].open(3)
 
+    return
+
 label update_08_0_99:
     if _version < '0.08.0.02':
         if all([get_rel_eric()[0] == 3, flags.voy_stage <= 8, wcv.catch_Kira.stage > 0]):
@@ -1938,6 +1945,10 @@ label update_08_0_99:
                 for st in range(8, len(poss['control'].stages)):
                     poss['control'].stages[st] = 0
             $ flags.can_ask = 0
+            $ kira.dcv.battle.stage = 0
+            $ wcv.catch_Kira.stage = 0
+            $ wcv.catch_Kira.set_lost(0)
+            $ wcv.catch_Kira.enabled = False
 
         # корректировка преждевременного открытия мысли об уговоре Лизы спать без майки
         if all([poss['SoC'].used(16), not poss['SoC'].used(15), not lisa.dcv.other.enabled]):
@@ -2062,3 +2073,15 @@ label update_08_0_99:
                 $ poss['seduction'].stages[17] = 0 # Д+
                 $ poss['seduction'].open(19)
             # $ print poss['seduction']
+
+    return
+
+label update_09_1_00:
+    if _version < '0.09.1.04':
+        if all([get_rel_eric()[0] == 3, flags.voy_stage <= 8, wcv.catch_Kira.stage > 0]):
+            $ kira.dcv.battle.stage = 0
+            $ wcv.catch_Kira.stage = 0
+            $ wcv.catch_Kira.set_lost(0)
+            $ wcv.catch_Kira.enabled = False
+
+    return

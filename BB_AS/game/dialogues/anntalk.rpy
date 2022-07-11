@@ -561,9 +561,11 @@ label ann_tv_casual_r:
     Ann_08 "У тебя это очень хорошо получается... Такая лёгкость наступает. С таким талантом ты можешь много достичь в этом деле!"
     menu:
         Max_02 "Очень надеюсь, что так и будет."
-        "{i}продолжать массаж{/i}" ('mass', mgg.massage) if any([all([get_rel_eric()[0] < 0, not ann.flags.showdown_e]),
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage) if (ann.dcv.feature.stage < 7 or any([
+                                    all([get_rel_eric()[0] < 0, not ann.flags.showdown_e]),
                                     get_rel_eric()[0] == 2 and not all([flags.voy_stage == 8, poss['control'].used(10)]),
-                                    get_rel_eric()[0] == 3 and not all([flags.voy_stage > 11, poss['control'].used(14)])]):
+                                    get_rel_eric()[0] == 3 and not all([flags.voy_stage > 11, poss['control'].used(14)]),
+                                    ])):
             if rand_result:
                 # (Маме понравился массаж!)
                 # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
@@ -594,12 +596,12 @@ label ann_tv_casual_r:
                 Ann_14 "[ann_bad_mass!t]Ой, Макс... Нет, теперь уже не так хорошо... Что-то даже мышцам немного больно стало. Давай в другой раз продолжим... Но всё равно, спасибо!"
                 Max_10 "Извини. Наверно, на сериал засмотрелся... Я пойду."
                 $ ann.flags.handmass = False
-        "{i}продолжать массаж{/i}" if get_rel_eric()[0] < 0 and ann.flags.showdown_e:
+        "{i}продолжать массаж{/i}" if all([ann.dcv.feature.stage > 6, get_rel_eric()[0] < 0, ann.flags.showdown_e]):
             # вражда, Эрик изгнан, состоялся первый разговор на балконе
             jump ann_tv_continuation_massage
-        "{i}продолжать массаж{/i}" if all([get_rel_eric()[0] == 2, flags.voy_stage == 8, poss['control'].used(10)]):
+        "{i}продолжать массаж{/i}" if all([ann.dcv.feature.stage > 6, get_rel_eric()[0] == 2, flags.voy_stage == 8, poss['control'].used(10)]):
             jump ann_tv_continuation_massage
-        "{i}продолжать массаж{/i}" if all([get_rel_eric()[0] == 3, flags.voy_stage > 11, poss['control'].used(14)]):
+        "{i}продолжать массаж{/i}" if all([ann.dcv.feature.stage > 6, get_rel_eric()[0] == 3, flags.voy_stage > 11, poss['control'].used(14)]):
             jump ann_tv_continuation_massage
 
     $ spent_time = max((60 - int(tm[-2:])), 40)
@@ -718,9 +720,8 @@ label ann_tv_continuation_massage:
                                             Ann_13 "Понравился, но вот то, что у меня за спиной происходит помимо массажа... Это вот мне совсем не нравится."
                                             Max_03 "Ну мам, ты же красивая! Уж извини, но воспринимай, как комплимент."
                                             Ann_12 "Да уж, большой комплимент! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
-                                "Нет. Видно не так уж и много..." if (mgg.social > 75 and
-                                                                      any([get_rel_eric()[0] < 0 and ann.dcv.drink.stage < 4,
-                                                                           get_rel_eric()[0] > 1 and ann.dcv.private.stage < 6])):
+                                "Нет. Видно не так уж и много..." if any([get_rel_eric()[0] < 0 and ann.dcv.drink.stage == 4,
+                                                                          get_rel_eric()[0] > 1 and ann.dcv.private.stage == 6]):
                                     jump .failed_persuasion
                                 "Есть немного...":
                                     # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
@@ -1215,9 +1216,8 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
                                         $ poss['yoga'].open(8)
                                 Ann_12 "Ох, пора бы тебе уже девушку себе найти и с ней время проводить. Я, конечно, не против твоей помощи, но я всё-таки твоя мама, а потому никак не смогу помочь тебе... ну, снять напряжение."
                                 Max_07 "Может и найду. А пока, до следующего раза..." nointeract
-                "не париться" if (mgg.sex > 22 and
-                                  any([get_rel_eric()[0] < 0 and ann.dcv.drink.stage < 4,
-                                       get_rel_eric()[0] > 1 and ann.dcv.private.stage < 6])):
+                "не париться" if any([get_rel_eric()[0] < 0 and ann.dcv.drink.stage == 4,
+                                      get_rel_eric()[0] > 1 and ann.dcv.private.stage == 6]):
                     jump .failure_reassurance
         else:
             $ ann.dcv.seduce.set_lost(2)
