@@ -56,7 +56,7 @@ define gui.interface_text_color = '#ffffff'
 ## Шрифты и их размеры #########################################################
 
 ## Шрифт, используемый внутриигровым текстом.
-define gui.text_font = "trebuc.ttf"
+define gui.text_font = "fonts/trebuc.ttf"
 
 ## Шрифт, используемый именами персонажей.
 define gui.name_text_font = "DejaVuSans.ttf"
@@ -210,7 +210,7 @@ define gui.choice_button_width = 490
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(5, 8, 5, 8)
-define gui.choice_button_text_font = "trebuc.ttf"
+define gui.choice_button_text_font = "fonts/trebuc.ttf"
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.0
 define gui.choice_button_text_idle_color = gui.accent_color

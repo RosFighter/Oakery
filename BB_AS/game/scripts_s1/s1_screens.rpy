@@ -14,7 +14,7 @@ screen s1_cheat_warning():
         xmargin 0 ymargin 0 xpadding 70 ypadding 50
         vbox spacing 10:
             xalign .5
-            text _("ПРЕДУПРЕЖДЕНИЕ!") xalign 0.5 color red font 'hermes.ttf' size 36
+            text _("ПРЕДУПРЕЖДЕНИЕ!") style 'ch_warning'
             null height 20
             text _("С осторожностью используйте чит-меню - это может привести к ошибкам в прохождении.") xalign 0.5 text_align 0.5 color gui.accent_color
             text _("Доступ к части читов будет открыт после достижения некоторого прогресса для минимизации последствий вмешательства в переменные игры.") xalign 0.5 text_align 0.5 color gui.accent_color
@@ -33,6 +33,13 @@ style ch_warn_btn_text:
     idle_color gui.accent_color
     hover_color gui.text_color
     font gui.interface_text_font
+
+style ch_warning:
+    font 'fonts/hermes.ttf'
+    size 36
+    color red
+    xalign 0.5
+
 
 
 screen s1_cheat_screen():
@@ -108,7 +115,7 @@ screen s1_cheat_screen():
                                 sensitive mgg.energy < 100
 
                         frame xsize 350 background None top_padding 20:
-                            text _("Навыки:") size 26 font 'trebucbd.ttf' color gui.text_color
+                            text _("Навыки:") style 'title_skills'
 
                         hbox spacing 30:
                             frame xsize 260 padding(30, 6, 0, 6) background None:
@@ -259,10 +266,6 @@ screen s1_cheat_screen():
                                     action Function(set_influence, CurChar, 'e+')
                                     sensitive infl[chars[CurChar]].balance[1] < 100 and chars[CurChar].dcv.battle.stage > 0
 
-
-
-
-
     $ tt_hint = GetTooltip()
 
 
@@ -281,7 +284,7 @@ style cheat_lst_button:
     left_padding 40
 
 style cheat_lst_button_text:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     yalign .0
     idle_color gui.accent_color
     hover_color gui.text_color
@@ -308,7 +311,12 @@ screen after_a_while():
         action Return()
 
     frame align(.5, .5) background None:
-        text _("ЧЕРЕЗ НЕКОТОРОЕ ВРЕМЯ...") color gui.accent_color size 38 font 'hermes.ttf'
+        text _("ЧЕРЕЗ НЕКОТОРОЕ ВРЕМЯ...") style 'after_waiting'
+
+style after_waiting:
+    font 'fonts/hermes.ttf'
+    size 38
+    color gui.accent_color
 
 screen after_some_minutes():
     modal True
@@ -319,4 +327,4 @@ screen after_some_minutes():
         action Return()
 
     frame align(.5, .5) background None:
-        text _("ЧЕРЕЗ НЕСКОЛЬКО МИНУТ...") color gui.accent_color size 38 font 'hermes.ttf'
+        text _("ЧЕРЕЗ НЕСКОЛЬКО МИНУТ...") style 'after_waiting'

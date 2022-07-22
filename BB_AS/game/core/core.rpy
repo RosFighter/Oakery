@@ -1060,14 +1060,17 @@ label after_load:
                 if expected_photo == ['01', '02', '03', '04', '05', '06', '07', '08']:
                     $ expected_photo.clear()
 
-    if 'kira' in chars and all([renpy.seen_label('kira_about_photo1'), '01-Kira' not in persistent.photos, kira.dcv.photo.stage]):
+    if 'kira' in chars and all(['01-Kira' not in persistent.photos, kira.dcv.photo.stage]):
         $ append_album('01-Kira', ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'])
 
-    if 'kira' in chars and all([renpy.seen_label('kira_about_photo2'), '02-Kira' not in persistent.photos, kira.dcv.photo.stage > 1]):
+    if 'kira' in chars and all(['02-Kira' not in persistent.photos, kira.dcv.photo.stage > 1]):
         $ append_album('02-Kira', ['01', '02', '03', '04', '05', '06', '07', '08', '09'])
 
     if 'kira' in persistent.mems_var:
         $ open_cookies()
+
+    if lisa.flags.topless and lisa.dcv.other.enabled and not poss['SoC'].used(16):
+        $ lisa.dcv.other.enabled = False
 
     if flags.can_ask == -1 and alice.dcv.intrusion.stage > 7:
         $ flags.can_ask = 1

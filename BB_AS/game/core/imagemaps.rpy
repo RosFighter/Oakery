@@ -7,18 +7,23 @@ screen dynamic_tooltip():
     $ tt = GetTooltip()
     $ x, y = renpy.get_mouse_pos()
     if tt:
-        label "[tt!t]" text_text_align 0.5:
-            xalign 0.5  text_size 36
+        label "[tt!t]" style 'dyn_tooltip':
             if renpy.game.preferences.physical_size is not None and renpy.game.preferences.physical_size[1] < 900:
                 pos (x, y+45)
             else:
                 pos (x, y+65)
-            xminimum 40
-            xmaximum 300
-            text_color gui.text_color
-            text_drop_shadow[(3, 3)]
-            text_font 'segoeprb.ttf'
 
+style dyn_tooltip:
+    xalign 0.5
+    xminimum 40
+    xmaximum 300
+
+style dyn_tooltip_text:
+    font 'fonts/segoeprb.ttf'
+    size 36
+    text_align 0.5
+    color gui.text_color
+    drop_shadow[(3, 3)]
 
 screen search_cigarettes():
     tag menu

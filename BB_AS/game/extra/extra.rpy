@@ -240,7 +240,7 @@ screen menu_gallery():
     elif st_gallery == 'art':
         if count_album()==0:
             frame area(100, 160, 1720, 850) xalign 0.0 yalign 0.5 background None:
-                text _("В вашей коллекции ещё нет фотоснимков.") size 36 font 'hermes.ttf' color gui.accent_color align(0.5, 0.5)
+                text _("В вашей коллекции ещё нет фотоснимков.") style 'menu_header' align(0.5, 0.5) size 36
         else:
             hbox spacing 15 pos (50, 160):
                 # список альбомов
@@ -271,8 +271,8 @@ screen menu_gallery():
                         vbar value YScrollValue('vp') style 'extra_vscroll'
 
 style extra_button_text is default:
+    font 'fonts/hermes.ttf'
     size 28
-    font 'hermes.ttf'
     idle_color gui.accent_color
     hover_color gui.text_color
     selected_color gui.text_color
@@ -283,7 +283,7 @@ style alb_button:
     foreground 'interface marker'
 
 style album_button_text:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     yalign .5
     size 26
     idle_color gui.accent_color

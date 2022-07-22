@@ -1,6 +1,6 @@
 style mm_t_style:
+    font "fonts/BRLNSB.ttf"
     color "#ff000070"
-    font "BRLNSB.ttf"
     size 48
     outlines [( 1, "#99999960", 1, 2)]
 
@@ -425,7 +425,7 @@ style nav_button:
     foreground "interface/marker.webp"
 
 style navigation_button_text is gui_button_text:
-    font "trebucbd.ttf"
+    font "fonts/trebucbd.ttf"
     xpos 30
     yalign .0
     size gui.button_text_size
@@ -487,11 +487,11 @@ screen main_menu():
     #         text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
 
     frame xalign 0.5 ypos 125 xsize 1180 background None:
-        text "ANOTHER STORY" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 0.0 outlines [( 1, "#99999960", 1, 2)]
+        text "ANOTHER STORY" style 'mm_subhead' xalign 0.0
 
         if extra_content:
             text "{bt=18}{=mm_t_style}EXTRA{/=mm_t_style}{/bt}" xpos .5
-        text "v[config.version]" font "BRLNSB.ttf" color "#FFFFFF80" size 48 xalign 1.0  outlines [( 1, "#99999960", 1, 2)]
+        text "v[config.version]" style 'mm_subhead' xalign 1.0
 
     if 'kira' in persistent.mems_var:
         imagebutton:
@@ -546,11 +546,16 @@ style main_menu_button:
     xsize 360
 
 style main_menu_button_text:
-    font "hermes.ttf"
+    font "fonts/hermes.ttf"
     idle_color "#FFFFFF"
     size 48
     xalign 0.5
 
+style mm_subhead:
+    font "fonts/BRLNSB.ttf"
+    color "#FFFFFF80"
+    size 48
+    outlines [( 1, "#99999960", 1, 2)]
 
 ## Экран игрового меню #########################################################
 ##
@@ -667,9 +672,9 @@ style game_menu_label:
     ysize 50
 
 style game_menu_label_text:
-    color gui.accent_color
-    font "hermes.ttf"
+    font "fonts/hermes.ttf"
     size gui.title_text_size
+    color gui.accent_color
     yalign 0.5
 
 
@@ -932,7 +937,7 @@ style slot_name_text is slot_button_text:
     color gui.hover_color
 
 style ext_text:
-    font "seguisb.ttf"
+    font 'fonts/seguisb.ttf'
     size 28
     xalign 1.
     color "#ffffff"#gui.hover_color
@@ -1010,24 +1015,25 @@ screen preferences():
                     vbox:
                         style_prefix "radio"
                         label _("Язык")
-                        textbutton "Русский" action Language(None)
-                        textbutton "English" action Language("english")
-                        textbutton "Deutsch" action Language("german")
+                        textbutton "Русский" action Language(None) text_font 'fonts/trebucbd.ttf'
+                        textbutton "English" action Language("english") text_font 'fonts/trebucbd.ttf'
+                        textbutton "Deutsch" action Language("german") text_font 'fonts/trebucbd.ttf'
                         if 'french' in current_language_list:
-                            textbutton "Français" action Language("french")
+                            textbutton "Français" action Language("french") text_font 'fonts/trebucbd.ttf'
                         if 'italian' in current_language_list:
-                            textbutton "Italiano" action Language("italian")
+                            textbutton "Italiano" action Language("italian") text_font 'fonts/trebucbd.ttf'
                         if 'polish' in current_language_list:
-                            textbutton "Polski" action Language("polish")
+                            textbutton "Polski" action Language("polish") text_font 'fonts/trebucbd.ttf'
                         if 'portuguese' in current_language_list:
-                            textbutton "Português" action Language("portuguese")
+                            textbutton "Português" action Language("portuguese") text_font 'fonts/trebucbd.ttf'
                         if 'spanish' in current_language_list:
-                            textbutton "Español" action Language("spanish")
+                            textbutton "Español" action Language("spanish") text_font 'fonts/trebucbd.ttf'
                         if 'slovak' in current_language_list:
-                            textbutton "Slovenský" action Language("slovak")
+                            textbutton "Slovenský" action Language("slovak") text_font 'fonts/trebucbd.ttf'
                         if 'persian' in current_language_list:
                             textbutton "فارسی" action Language("persian")
-
+                        if 'chinese' in current_language_list:
+                            textbutton "中文" action Language("chinese") text_font "fonts/chinese/W04.ttf" #text_line_leading -12
                 vbox:
                     spacing 20
                     vbox:

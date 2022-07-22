@@ -721,7 +721,7 @@ label ann_tv_continuation_massage:
                                             Max_03 "Ну мам, ты же красивая! Уж извини, но воспринимай, как комплимент."
                                             Ann_12 "Да уж, большой комплимент! Так, ладно, представим, что ничего не было. Иди куда-нибудь, развейся..." nointeract
                                 "Нет. Видно не так уж и много..." if any([get_rel_eric()[0] < 0 and ann.dcv.drink.stage == 4,
-                                                                          get_rel_eric()[0] > 1 and ann.dcv.private.stage == 6]):
+                                                                          get_rel_eric()[0] > 1 and ann.dcv.private.stage > 5]):
                                     jump .failed_persuasion
                                 "Есть немного...":
                                     # after-club-s04-f + tv-ero-05-max-(01a/01b)-ann-01
@@ -1217,7 +1217,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
                                 Ann_12 "Ох, пора бы тебе уже девушку себе найти и с ней время проводить. Я, конечно, не против твоей помощи, но я всё-таки твоя мама, а потому никак не смогу помочь тебе... ну, снять напряжение."
                                 Max_07 "Может и найду. А пока, до следующего раза..." nointeract
                 "не париться" if any([get_rel_eric()[0] < 0 and ann.dcv.drink.stage == 4,
-                                      get_rel_eric()[0] > 1 and ann.dcv.private.stage == 6]):
+                                      get_rel_eric()[0] > 1 and ann.dcv.private.stage > 5]):
                     jump .failure_reassurance
         else:
             $ ann.dcv.seduce.set_lost(2)
@@ -1456,7 +1456,7 @@ label erofilm2_1:
         # $ renpy.show('Max tv-ero 03-01'+mgg.dress)
         # show Ann tv-ero 03-01
 
-        $ var_pose = 'good'
+        $ var_dress = 'good'
 
         $ ann.flags.m_shoulder += 1
         $ ann.flags.handmass = True
@@ -1493,7 +1493,7 @@ label erofilm2_1:
             # $ renpy.show('Max tv-ero 03'+mgg.dress)
             # $ renpy.show('Ann tv-ero 01-0'+str(6+int(pose3_3)))
 
-            $ var_pose = 'lucky'
+            $ var_dress = 'lucky'
 
         else:
             # (Не повезло!)
@@ -1516,7 +1516,7 @@ label erofilm2_1:
             Ann_14 "Ты специально такой фильм купил?"
             Max_07 "Нет. Меня начало описания к фильму заинтересовало. Наверно, нужно было дочитать до конца..."
 
-            $ var_pose = 'unlucky'
+            $ var_dress = 'unlucky'
 
     Ann_15 "Всё, Макс! Такое мы дальше смотреть не будем. По крайней мере {b}ТЫ{/b} не будешь смотреть!"
     Max_09 "Я же всё равно досмотрю этот фильм. Только без тебя это не так интересно..."
@@ -1524,7 +1524,7 @@ label erofilm2_1:
     # scene BG tv-watch-01
     # show tv ero2 06 at tv_screen
     $ var_stage = '06'
-    if var_pose == 'good':
+    if var_dress == 'good':
         # tv-watch-01 + ero_mov_02_06 + tv-watch-01-max&ann-(01a/01b)
         # $ renpy.show('Max tv-watch ann-01'+mgg.dress)
         scene tv_watch ann_max
@@ -1542,11 +1542,11 @@ label erofilm2_1:
         # Анна и Эрик ловили Макса за подглядыванием
         Max_07 "Я ведь уже не раз видел, как вы с Эриком такое делаете! И просмотр эротического фильма точно не дотягивает до вас!"
 
-    if var_pose == 'good':
+    if var_dress == 'good':
         # tv-mass-05 + tv-ero-02-max-(01a/01b)-ann-01
         scene BG tv-mass-05
         $ renpy.show('Ann tv-ero 02-01'+mgg.dress)
-    elif var_pose == 'lucky':
+    elif var_dress == 'lucky':
         # tv-mass-03 + tv-ero-01-max-(01a/01b) + tv-ero-01-ann-(01/02/03)
         $ var_pose = renpy.random.choice(['01', '02', '03'])
         scene ann_tv_ero_01
@@ -1564,7 +1564,7 @@ label erofilm2_1:
     # scene BG tv-watch-01
     # show tv ero2 07 at tv_screen
     $ var_stage = '07'
-    if var_pose == 'good':
+    if var_dress == 'good':
         # tv-watch-01 + ero_mov_02_07 + tv-watch-01-max&ann-(01a/01b)
         # $ renpy.show('Max tv-watch ann-01'+mgg.dress)
         scene tv_watch ann_max
@@ -1577,7 +1577,7 @@ label erofilm2_1:
     Ann_12 "Да, ты прав. Но пока у тебя эта самая девушка не появилась..."
     Max_00 "А пока я буду смотреть эротику с тобой! Под твоим контролем."
 
-    if var_pose == 'good':
+    if var_dress == 'good':
         # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01 + tv-ero-04-ann-01a
         scene BG tv-ero-04
         $ renpy.show('Max tv-ero 04-01'+mgg.dress)
@@ -1595,6 +1595,7 @@ label erofilm2_1:
     Ann_15 "Хорошо, сынок, я подумаю... Ого! А я и не знала, что это кино идёт больше двух часов! Давай досмотрим в следующее воскресенье? Если, конечно, я не передумаю..."
     Max_01 "Ладно."
 
+    $ var_dress = ''
     $ renpy.end_replay()
     $ ann.flags.erofilms = 2
     $ poss['mom-tv'].open(9)
