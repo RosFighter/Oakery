@@ -1340,6 +1340,7 @@ init python:
             'portuguese': 'interface/POR.webp',
             'spanish'   : 'interface/SPA.webp',
             'slovak'    : 'interface/SLO.webp',
+            'chinese'   : 'interface/CHI.webp',
             'persian'   : 'interface/ENG.webp',         # заменить
             }[lang]
 
@@ -1402,7 +1403,12 @@ init python:
                     new_lang = True
                     persistent.list_language.append('persian')
 
-
+            if 'chinese/script.rpy' in fn or 'chinese.rpy' in fn:
+                if 'chinese' not in current_language_list:
+                    current_language_list.append('chinese')
+                if 'chinese' not in persistent.list_language:
+                    new_lang = True
+                    persistent.list_language.append('chinese')
 
         return new_lang
 

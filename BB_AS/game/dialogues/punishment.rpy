@@ -524,11 +524,14 @@ label punishment_lisa:
                         $ lisa.flags.defend += 1
 
                         if lisa.flags.defend >= 5:
-                            if all([poss['SoC'].used(15), lisa.flags.topless, not lisa.dcv.other.enabled, not lisa.dcv.other.stage]):
+                            if any([
+                                all([poss['SoC'].used(15), lisa.flags.topless, not lisa.dcv.other.enabled, not lisa.dcv.other.stage]),
+                                all([poss['SoC'].used(15), lisa.flags.topless, lisa.dcv.other.enabled, not lisa.dcv.other.stage, not poss['SoC'].used(16)]),
+                                ]):
                                 Max_07 "{m}На одних \"спасибо\" далеко не уедешь... Нужно придумать и для себя что-то хорошее. Думаю, Лизу удастся уговорить смотреть ужастики без маечки. Это точно лучше, чем получать по голой заднице от мамы у всех на глазах! И поговорить с ней лучше, пока моя доброта свежа в её памяти...{/m}"
                                 $ poss['SoC'].open(16)
                                 $ lisa.dcv.other.set_lost(1)
-                            elif lisa.dcv.other.enabled or poss['SoC'].used(15):
+                            elif lisa.dcv.other.enabled and poss['SoC'].used(16):
                                 $ lisa.dcv.other.set_lost(1)
 
                     $ lisa.weekly.protected += 1

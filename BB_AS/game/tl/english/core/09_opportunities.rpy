@@ -2246,8 +2246,12 @@ translate english strings:
     new "I think it's not hopeless, and Eric might be able to get something interesting out of it. I'll have to talk to him when he starts sucking up to Lisa..."
 
     # game/core/09_opportunities.rpy:4
-    old "Вот это поворот! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я потерял премию, которую мне обещал Эрик. Лиза, видите ли, и есть премия. Правда, он намекнул, что если мне будет, что ему рассказать, то у меня будут и другие премиальные. Я сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... Теперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, а я за это получу возможность присутствовать во время их с мамой секса! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет!"
-    new "What a turnaround! Because Lisa's sex education is now entrusted to me, I've lost the bonus Eric promised me. Lisa, you see, is the bonus. True, he hinted that if I had something to tell him, I would have other bonuses. I immediately told Eric about me and Kira and he was pleasantly surprised! He was surprised to find out you had a porn actress by your side... Now I have to play along with Eric in the bathtub with Kira, when he supposedly bumps into us by accident, so that he can have an easier time with her, and I get to be present during her and Mom's sex! True, with some reservations. Mom won't see me, and I, in turn, don't have to make any noise. I think I can manage that. Oh, how cool would that be?"
+    old "Вот это поворот! Из-за того, что сексуальное воспитание Лизы теперь доверено мне, я потерял премию, которую мне обещал Эрик. Лиза, видите ли, и есть премия. \nПравда, он намекнул, что если мне будет, что ему рассказать, то у меня будут и другие премиальные. \nЯ сразу же рассказал Эрику о нас с Кирой и его это приятно удивило! Ещё бы, узнать, что у тебя под боком имеется порноактриса... \nТеперь нужно подыграть Эрику в ванне с Кирой, когда он якобы случайно на нас натолкнётся, чтобы и ему было с ней проще, а я за это получу возможность присутствовать во время их с мамой секса! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет!"
+    new "What a turnaround! Because Lisa's sex education is now entrusted to me, I've lost the bonus Eric promised me. Lisa, you see, is the bonus. \nTrue, he hinted that if I had something to tell him, I would have other bonuses. \nI immediately told Eric about me and Kira and he was pleasantly surprised! He was surprised to find out you had a porn actress by your side... \nNow I have to play along with Eric in the bathtub with Kira, when he supposedly bumps into us by accident, so that he can have an easier time with her, and I get to be present during her and Mom's sex! True, with some reservations. Mom won't see me, and I, in turn, don't have to make any noise. I think I can manage that. Oh, how cool would that be?"
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько поразвлечься с Кирой..."
+    new "You just have to wait until Tuesday or Friday night and have a good time with Kira..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько с ней поразвлечься..."
@@ -2472,3 +2476,4 @@ translate english strings:
     # game/core/09_opportunities.rpy:4
     old "Теперь с Алисой можно вести себя посмелее..."
     new "Now you can behave more bravely with Alice..."
+

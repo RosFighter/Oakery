@@ -124,7 +124,7 @@ label lisa_shower:
                 jump .closer_peepeng
             "{i}взглянуть со стороны{/i}" ('hide', mgg.stealth * 2, 90, 2) if lisa.dcv.shower.stage<2:
                 jump .alt_peepeng
-            "{i}немного пошуметь{/i}" if lisa.dcv.shower.stage<2 and (0<len(lisa.sorry.give)<4 or (not poss['SoC'].used(0) and mgg.stealth * 3 > 60)):
+            "{i}немного пошуметь{/i}" if lisa.dcv.shower.stage<2 and (0<len(lisa.sorry.give)<4 or (any([not poss['SoC'].used(0), poss['SoC'].used(1)]) and mgg.stealth * 3 > 60)):
                 jump .pinded
             "{i}немного пошуметь{/i}" if len(lisa.sorry.give)>3 and lisa.dcv.shower.stage<2:
                 jump .pinded

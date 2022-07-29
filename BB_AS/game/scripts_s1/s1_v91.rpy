@@ -10,8 +10,8 @@ label s1_cheat_screen:
 
 label s1_cheat_skip(skip_days=0):
 
-    # $ print('skip '+str(skip_days)+' days')
-    # $ print(cheat_skip)
+    $ print('skip '+str(skip_days)+' days')
+    $ print(cheat_skip)
 
     if cheat_skip:
         $ skiped = []
@@ -44,7 +44,7 @@ label s1_cheat_skip(skip_days=0):
 
                     if len(event_list):
                         # если остались неудалённые события, прерываем пропуск
-                        # print event_list
+                        print event_list
                         skip_error = True
                         break
 
@@ -72,7 +72,7 @@ label s1_cheat_skip(skip_days=0):
 
                 if len(event_list):
                     # если остались неудалённые события, прерываем пропуск
-                    # print event_list
+                    print event_list
                     skip_error = True
                     break
             # else:
@@ -82,7 +82,7 @@ label s1_cheat_skip(skip_days=0):
             # если встечено событие, загружаем сохранение, созданное перед пропуском дней
             $ renpy.loadsave.load("auto-1")
         else:
-            # $ print skiped
+            $ print skiped
             if len(skiped) > 2 and lisa_was_topless():
                 $ lisa.weekly.dishes = 2 if skiped > 3 else 1
             if 6 in skiped:
@@ -828,6 +828,7 @@ label s1_ann_intimate_lesson_1:
             $ renpy.end_replay()
             $ poss['control'].open(16)
             $ ann.dcv.private.stage = 3
+            $ spent_time = max((60 - int(tm[-2:])), 40)
             jump Waiting
 
 

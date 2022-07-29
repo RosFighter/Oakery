@@ -1,5 +1,5 @@
 init python:
-    from itertools import izip, cycle
+    # from itertools import izip, cycle
     from collections import namedtuple, OrderedDict
     from datetime import datetime
     import hashlib, base64, copy

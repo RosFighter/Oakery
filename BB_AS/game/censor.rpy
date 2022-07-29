@@ -1,4 +1,4 @@
-init -100 python:
+init -200 python:
     from collections import OrderedDict
     replace_dict_ru = OrderedDict([
         ("родную сестру"    , "лучшую сожительницу"),
@@ -172,8 +172,10 @@ init -100 python:
     ])
     replace_dict_ps = OrderedDict([
     ])
+    replace_dict_ch = OrderedDict([
+    ])
 
-init python:
+init -100 python:
     import re
     def game_text_mod(st0):
         if _preferences.language is None:
@@ -194,8 +196,10 @@ init python:
             replace_dict = replace_dict_sp
         elif _preferences.language=='slovak':
             replace_dict = replace_dict_sl
-        elif _preferences.language=='persian':
-            replace_dict = replace_dict_ps
+        # elif _preferences.language=='persian':
+        #     replace_dict = replace_dict_ps
+        # elif _preferences.language=='chinese':
+        #     replace_dict = replace_dict_ch
         else:
             return st0
 
@@ -225,7 +229,6 @@ init python:
 
         return st1
 
-default persistent.patch_enabled = False
+    config.say_menu_text_filter = game_text_mod
 
-init:
-    $ config.say_menu_text_filter = game_text_mod
+    persistent.patch_enabled = False

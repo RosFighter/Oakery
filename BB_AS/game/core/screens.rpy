@@ -250,7 +250,7 @@ screen Bank():
             xmargin 0 ymargin 0 xpadding 50 ypadding 30
             vbox spacing 10:
                 frame xysize(900, 300) background 'interface laptop banner bank'
-                text _("ВЫГОДНЫЕ ЗАЙМЫ ИНТЕРНЕТ-ПРЕДПРИНИМАТЕЛЯМ") font 'trebucbd.ttf' color '#FFFFFF' size 28 xalign 0.5
+                text _("ВЫГОДНЫЕ ЗАЙМЫ ИНТЕРНЕТ-ПРЕДПРИНИМАТЕЛЯМ") style 'centred_label'
                 if mgg.credit.debt > 0:
                     hbox xfill True:
                         if mgg.credit.fines:
@@ -275,6 +275,9 @@ screen Bank():
                     textbutton _("ВЗЯТЬ КРЕДИТ"):
                         action Jump('getting_load')
                         style 'green_button'
+style centred_label:
+    font 'fonts/trebucbd.ttf'
+    color '#FFFFFF' size 28 xalign 0.5
 
 style green_button:
     idle_background Frame('interface button green', 12, 12)
@@ -282,7 +285,7 @@ style green_button:
     xalign .5
     xpadding 30 ypadding 10 ymargin 5
 style green_button_text:
-    font 'trebuc.ttf'
+    font 'fonts/trebuc.ttf'
     text_align 0.5
     size 30
     idle_color '#000000'
@@ -293,7 +296,7 @@ style red_button:
     xalign .5
     xpadding 30 ypadding 10 ymargin 5
 style red_button_text:
-    font 'trebuc.ttf'
+    font 'fonts/trebuc.ttf'
     text_align 0.5
     size 30
     idle_color '#000000'
@@ -415,7 +418,7 @@ style cat_button:
     xsize 270
     xpadding 30
 style cat_button_text is default:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     # xpos 30
     yalign .5
     size 28
@@ -423,11 +426,11 @@ style cat_button_text is default:
     hover_color gui.text_color
     selected_color gui.text_color
 style item_header:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     color '#FFFFFF'
     size 28
 style price:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     color '#000000'
     size 36
 style buy_button:
@@ -436,7 +439,7 @@ style buy_button:
     ypadding 10
     ymargin 5
 style buy_button_text:
-    font 'trebuc.ttf'
+    font 'fonts/trebuc.ttf'
     min_width 100
     text_align 0.5
     size 30
@@ -453,8 +456,8 @@ screen OnlineCources():
         vbox:
             hbox:
                 xfill True
-                label _("ОНЛАЙН-КУРСЫ") xalign 0.02 text_color gui.accent_color text_size 36 text_font 'hermes.ttf'
-                label "$[mgg.money]" xalign 0.98 text_size 36 text_font 'hermes.ttf' text_drop_shadow[(2, 2)] text_color gui.text_color
+                label _("ОНЛАЙН-КУРСЫ") xalign 0.02 text_color gui.accent_color style 'cource_header'
+                label "$[mgg.money]" xalign 0.98 text_color gui.text_color text_drop_shadow[(2, 2)]  style 'cource_header' text_font 'fonts/hermes.ttf'
             hbox:
                 frame xsize 395 yfill True background None:
                     xpadding 35 ypadding 15
@@ -478,10 +481,7 @@ screen OnlineCources():
                             frame xfill True background None:
                                 add 'interface laptop '+CurCource.img+'-header-'+str(CurCource.current) xalign 0.5 size(900,450)
                             $ text2 = CurCource.cources[CurCource.current].total
-                            label CurCource.cources[CurCource.current].header:
-                                xalign 0.5 text_xalign 0.5 text_size 36
-                                text_text_align 0.5
-                                text_font 'hermes.ttf' text_color gui.text_color
+                            label CurCource.cources[CurCource.current].header style 'cource_header'
                             if CurCource.cources[CurCource.current].bought:
                                 label _("Вы уже оплатили этот курс и можете в любой момент включить следующий доступный видеоурок."):
                                     xsize 900 xalign 0.5 text_size 26
@@ -522,19 +522,27 @@ screen OnlineCources():
                                         idle_background Frame('interface button green', 12, 12)
                                         hover_background Frame('interface button green', 12, 12)
                                         action Function(CurCource.cources[CurCource.current].buy)
-
 style buy_button2:
     xalign 0.5
     xpadding 30
     ypadding 10
     ymargin 5
 style buy_button2_text:
-    font 'trebuc.ttf'
+    font 'fonts/trebuc.ttf'
     min_width 600
     text_align 0.5
     size 30
     idle_color '#000000'
     hover_color '#FFFFFF'
+
+style cource_header:
+    xalign 0.5
+style cource_header_text:
+    font 'fonts/hermes.ttf'
+    size 36
+    color gui.text_color
+    text_align 0.5
+    xalign 0.5
 
 ################################################################################
 
@@ -554,34 +562,32 @@ screen Withdraw():
         xmargin 0 ymargin 0 xpadding 50 ypadding 30
         vbox spacing 10:
             frame xysize(900, 300) background 'interface laptop revenue views'
-            text _("ДОХОД ОТ ПРОСМОТРОВ") font 'trebucbd.ttf' color '#FFFFFF' size 28 xalign 0.5
+            text _("ДОХОД ОТ ПРОСМОТРОВ") style 'centred_label'
             text _("Каждое посещение страниц вашего сайта приносит небольшой доход. Увеличивайте аудиторию и зарабатывайте на рекламе!\n\nМинимальная сумма единоразового снятия: $100.") color gui.accent_color
             text _("На вашем счете $[paid]") color '#FFFFFF'
             if paid >= 100:
-                textbutton _("Забрать $[paid]"):
+                textbutton _("Забрать $[paid]") style 'withdraw_btn':
                     idle_background Frame('interface button green', 12, 12)
                     hover_background Frame('interface button green', 12, 12)
-                    xalign .5
-                    xpadding 30 ypadding 10 ymargin 5
-                    text_font 'trebuc.ttf'
-                    text_align 0.5
-                    text_size 30
-                    text_idle_color '#000000'
-                    text_hover_color '#FFFFFF'
-
-                    action [Withdraw(paid), Hide('Withdraw'), Jump('open_site')] #Function(mgg.withdraw)
+                    action [Withdraw(paid), Hide('Withdraw'), Jump('open_site')]
             else:
-                textbutton _("НЕДОСТАТОЧНАЯ СУММА ДЛЯ СНЯТИЯ"):
+                textbutton _("НЕДОСТАТОЧНАЯ СУММА ДЛЯ СНЯТИЯ") style 'withdraw_btn':
                     idle_background Frame('interface button red', 12, 12)
                     hover_background Frame('interface button red', 12, 12)
-                    xalign .5
-                    xpadding 30 ypadding 10 ymargin 5
-                    text_font 'trebuc.ttf'
-                    text_align 0.5
-                    text_size 30
-                    text_idle_color '#000000'
-                    text_hover_color '#FFFFFF'
                     action NullAction()
+
+style withdraw_btn:
+    xalign .5
+    xpadding 30 ypadding 10 ymargin 5
+
+style withdraw_btn_text:
+    font 'fonts/trebuc.ttf'
+    text_align 0.5
+    size 30
+    idle_color '#000000'
+    hover_color '#FFFFFF'
+
+
 
 screen SEO():
     tag menu2
@@ -599,32 +605,18 @@ screen SEO():
         xmargin 0 ymargin 0 xpadding 50 ypadding 30
         vbox spacing 10:
             frame xysize(900, 300) background 'interface laptop banner adverticing'
-            text _("СЕТЬ БАННЕРНОЙ РЕКЛАМЫ") font 'trebucbd.ttf' color '#FFFFFF' size 28 xalign 0.5
+            text _("СЕТЬ БАННЕРНОЙ РЕКЛАМЫ") style 'centred_label'
             text _("Уникальное предложение только для вас! Наша баннерная сеть предназначена для клиентов с особыми запросами и готова донести вашу рекламу до целевой аудитории.\n\nЗа каждый пакет, который вы оплачиваете сейчас, мы гарантируем 10000 показов рекламы вашего сайта в ближайшем будущем!") color gui.accent_color
             if mgg.money >= 50:
-                textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"):
+                textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50") style 'withdraw_btn':
                     action Function(mgg.buy_promoution)
                     idle_background Frame('interface button green', 12, 12)
                     hover_background Frame('interface button green', 12, 12)
-                    xalign .5
-                    xpadding 30 ypadding 10 ymargin 5
-                    text_font 'trebuc.ttf'
-                    text_align 0.5
-                    text_size 30
-                    text_idle_color '#000000'
-                    text_hover_color '#FFFFFF'
             else:
-                textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50"):
+                textbutton _("КУПИТЬ ПАКЕТ РЕКЛАМЫ ЗА $50") style 'withdraw_btn':
                     action NullAction()
                     idle_background Frame('interface button red', 12, 12)
                     hover_background Frame('interface button red', 12, 12)
-                    xalign .5
-                    xpadding 30 ypadding 10 ymargin 5
-                    text_font 'trebuc.ttf'
-                    text_align 0.5
-                    text_size 30
-                    text_idle_color '#000000'
-                    text_hover_color '#FFFFFF'
 
 screen MySite():
     tag menu
@@ -648,7 +640,7 @@ screen MySite():
         xmargin 0 ymargin 0 xpadding 0 ypadding 0
         vbox: # деньги
             align(0.98, 0.03)
-            text "$[mgg.money]" xalign(1.0) font 'hermes.ttf' size 48 drop_shadow[(2, 2)]
+            text "$[mgg.money]" style 'mysite_header'
         frame pos(0, 100) xysize (1475, 585) background None:
             xmargin 0 ymargin 0 ypadding 25
             viewport:
@@ -732,6 +724,11 @@ style text2:
     size 24
     bold True
 
+style mysite_header:
+    font 'fonts/hermes.ttf'
+    size 48
+    xalign(1.0)
+    drop_shadow[(2, 2)]
 
 ################################################################################
 screen room_navigation():
@@ -896,8 +893,8 @@ screen room_navigation():
                                                 focus_mask True action NullAction() at middle_face
                             elif len(current_room.cur_char) == 4:
                                 pass
-                    text room.name font 'trebucbd.ttf' size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
-            key str(i) action Transition_to_room(room)#[Hide('wait_navigation'), SetVariable('prev_room', current_room), SetVariable('current_room', room), Jump('AfterWaiting')]
+                    text room.name style 'act_capt'
+            key str(i) action Transition_to_room(room)
 
     hbox:
         align(.99, .99)  # правый нижний угол
@@ -911,25 +908,25 @@ screen room_navigation():
                         frame xysize (126, 140) background None:
                             imagebutton idle act.icon align (0.5, 0.0) focus_mask True:
                                         action [Hide('wait_navigation'), Jump(act.label)] at middle_zoom
-                        text act.sing font 'trebucbd.ttf' size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+                        text act.sing style 'act_capt'
 
         button xysize (136, 190) action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')]: # ждать час
             vbox xsize 136 spacing 0:
                 frame xysize (136, 140) background None:
-                    imagebutton idle 'interface wait 60' hover 'interface wait 60 a':# hovered Show('wait_navigation'):
+                    imagebutton idle 'interface wait 60' hover 'interface wait 60 a':
                                 align (0.5, 0.0) focus_mask True action [Hide('wait_navigation'), SetVariable('spent_time', wait), Jump('Waiting')] at middle_zoom
-                text _("ЖДАТЬ") font 'trebucbd.ttf' size 18 drop_shadow[(2, 2)] xalign 0.5 text_align 0.5 line_leading 0 line_spacing -2
+                text _("ЖДАТЬ") style 'act_capt'
 
     vbox:  # Время и день недели
         align(0.5, 0.01)
-        text tm xalign(0.5) font 'hermes.ttf' size 60 drop_shadow[(2, 2)]
-        text weekdays[weekday][1] xalign(0.5) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
+        text tm xalign(0.5) style 'nav_tytl1'
+        text weekdays[weekday][1] xalign(0.5) style 'nav_tytl2'
 
     vbox: # деньги и зрители
         align(0.99, 0.01)
-        text "$[mgg.money]" xalign(1.0) font 'hermes.ttf' size 60 drop_shadow[(2, 2)]
+        text "$[mgg.money]" xalign(1.0) style 'nav_tytl1'
         if len(current_room.cams) > 0:
-            text _("Зрителей: [public]") xalign(1.0) font 'hermes.ttf' size 24 drop_shadow[(2, 2)] line_leading -16
+            text _("Зрителей: [public]") xalign(1.0) style 'nav_tytl2'
 
     $ kol = sum([1 if sum(poss[ps].stages) else 0 for ps in poss_dict]) # количество открытых возможностей
     $ lst = [char for char in chars if chars[char].clothes.Opens()]
@@ -964,6 +961,26 @@ screen room_navigation():
         imagebutton idle 'interface menu patreon' focus_mask True action [Hide('wait_navigation'), OpenURL('https://www.patreon.com/aleksey90artimages')] at small_menu
         imagebutton idle 'interface menu boosty' focus_mask True action [Hide('wait_navigation'), OpenURL('https://boosty.to/bbas')] at small_menu
 
+style act_capt:
+    font 'fonts/trebucbd.ttf'
+    size 18
+    xalign 0.5
+    text_align 0.5
+    drop_shadow[(2, 2)]
+    line_leading 0
+    line_spacing -2
+
+style nav_tytl1:
+    font 'fonts/hermes.ttf'
+    size 60
+    drop_shadow[(2, 2)]
+
+style nav_tytl2:
+    font 'fonts/hermes.ttf'
+    size 24
+    drop_shadow[(2, 2)]
+    line_leading -16
+
 screen wait_navigation(): # дополнительные кнопки для ожидания в 10 и 30 минут
     frame align(.99, .99) xysize(123, 395) background None:
         if all(['11:00' > tm >= '10:00', 6 > weekday > 0, flags.eric_banished]):
@@ -980,7 +997,7 @@ screen menu_my_help():
 
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
-        text _("ПОЛЕЗНОЕ") color gui.accent_color size 28 font 'hermes.ttf'
+        text _("ПОЛЕЗНОЕ") style 'menu_header'
     imagebutton pos (1740, 100) auto 'interface close %s':
         action Jump('AfterWaiting')
         if not renpy.variant('small'):
@@ -1003,7 +1020,7 @@ screen menu_my_help():
         frame area (0, 0, 1040, 850) background None:
             vbox spacing 20:
                 frame xsize 1030 xalign 0.5 background None:
-                    text helps[CurHP].name size 30 font 'hermes.ttf' xalign 0.5
+                    text helps[CurHP].name style 'helps_name'
                 frame xsize 1040 xalign 0.5 background None:
                     hbox:
                         viewport mousewheel 'change' draggable True id 'vp2':
@@ -1015,7 +1032,7 @@ screen menu_my_help():
     key 'mouseup_3' action Jump('AfterWaiting')
 
 style my_help_button_text is default:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     xpos 30
     yalign .0
     size 28
@@ -1025,6 +1042,16 @@ style my_help_button_text is default:
 
 style hp_vscroll is vscrollbar:
     unscrollable 'hide'
+
+style menu_header:
+    font 'fonts/hermes.ttf'
+    size 28
+    color gui.accent_color
+
+style helps_name:
+    font 'fonts/hermes.ttf'
+    size 30
+    xalign 0.5
 
 ################################################################################
 screen menu_opportunity():
@@ -1081,7 +1108,7 @@ screen menu_opportunity():
 
     add 'interface phon'
     frame area(150, 95, 350, 50) background None:
-        text _("ВОЗМОЖНОСТИ ([kol] / [all])") color gui.accent_color size 28 font 'hermes.ttf'
+        text _("ВОЗМОЖНОСТИ ([kol] / [all])") style 'menu_header'
     imagebutton pos (1740, 100) auto 'interface close %s':
         action Jump('AfterWaiting')
         if not renpy.variant('small'):
@@ -1143,7 +1170,7 @@ screen menu_opportunity():
                             if poss_dict[CurPoss][1][view_stage].img != '':
                                 add 'interface poss '+poss_dict[CurPoss][1][view_stage].img
                     frame xsize 1180 xalign 0.5 background None:
-                        text renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[CurPoss][0])) size 30 font 'hermes.ttf' xalign 0.5
+                        text renpy.config.say_menu_text_filter(renpy.translate_string(poss_dict[CurPoss][0])) style 'poss_header'
                     if view_stage>=0:
                         frame area (0, 0, 1190, 400) background None:
                             hbox:
@@ -1224,7 +1251,7 @@ screen menu_opportunity():
     key 'mouseup_3' action Jump('AfterWaiting')
 
 style opportunity_button_text is default:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     xpos 30
     yalign .0
     size 28
@@ -1236,6 +1263,11 @@ style poss_vscroll is vscrollbar:
     xsize 7
     unscrollable 'hide'
 
+style poss_header:
+    font 'fonts/hermes.ttf'
+    size 30
+    xalign 0.5
+
 ################################################################################
 screen menu_inventory():
 
@@ -1244,7 +1276,7 @@ screen menu_inventory():
     add 'interface phon2'
     style_prefix 'inventory'
     frame area(150, 95, 350, 50) background None:
-        text _("ВЕЩИ") color gui.accent_color size 28 font 'hermes.ttf'
+        text _("ВЕЩИ") style 'menu_header'
 
     imagebutton pos (1740, 100) auto 'interface close %s':
         action Jump('AfterWaiting')
@@ -1340,13 +1372,19 @@ screen menu_inventory():
 
 
         frame area(200, 0, 1220, 50) background None:
-            text tl.value xalign 0.5 size 28 font 'hermes.ttf'  color gui.text_color
+            text tl.value style 'inventory_header'
 
         frame area(300, 0, 1020, 180) background None:
             text tdesc.value xalign 0.5 size gui.text_size font gui.text_font color gui.accent_color
 
     key 'K_ESCAPE' action Jump('AfterWaiting')
     key 'mouseup_3' action Jump('AfterWaiting')
+
+style inventory_header:
+    font 'fonts/hermes.ttf'
+    size 28
+    color gui.text_color
+    xalign 0.5
 
 ################################################################################
 screen menu_userinfo():
@@ -1356,7 +1394,7 @@ screen menu_userinfo():
     style_prefix 'userinfo'
 
     frame area(150, 95, 350, 50) background None:
-        text _("ПЕРСОНАЖИ") color gui.accent_color size 28 font 'hermes.ttf'
+        text _("ПЕРСОНАЖИ") style 'menu_header'
 
     imagebutton pos (1740, 100) auto 'interface close %s':
         action Jump('AfterWaiting')
@@ -1437,7 +1475,7 @@ screen menu_userinfo():
                                         frame area (0, 0, 350, 25):
                                             background None
                                         frame xsize 350 background None:
-                                            text _("Навыки:") size 26 font 'trebucbd.ttf'
+                                            text _("Навыки:") style 'title_skills'
                                         hbox xfill True:
                                             frame xsize 350 background None:
                                                 text _("Навык убеждения:") size 24 color gui.accent_color
@@ -1592,8 +1630,7 @@ style userinfo_button is default:
     yalign .5
 
 style userinfo_button_text is default:
-    font 'trebucbd.ttf'
-    # xpos 30
+    font 'fonts/trebucbd.ttf'
     yalign .0
     size 30
     idle_color gui.accent_color
@@ -1602,12 +1639,17 @@ style userinfo_button_text is default:
 
 style userinfo_button_text:
     variant "small"
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     yalign .0
     size 36
     idle_color gui.accent_color
     hover_color gui.text_color
     insensitive_color gui.insensitive_color
+
+style title_skills:
+    font 'fonts/trebucbd.ttf'
+    size 26
+    color gui.text_color
 
 style info_vscroll is vscrollbar:
     unscrollable 'hide'
@@ -1619,7 +1661,7 @@ screen ClothesSelect():
     add 'interface phon'
     style_prefix 'clothesselect'
     frame area(150, 95, 750, 50) background None:
-        text _("ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА") color gui.accent_color size 28 font 'hermes.ttf'
+        text _("ЗАДАТЬ ОДЕЖДУ ПЕРСОНАЖА") style 'menu_header'
 
     imagebutton pos (1740, 100) auto 'interface close %s':
         action Jump('AfterWaiting')
@@ -1754,7 +1796,7 @@ style clothesselect_button is default:
     padding (30, 7, 6, 7)
 
 style clothesselect_button_text is default:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     yalign .0
     size 24
     idle_color gui.accent_color
@@ -1769,14 +1811,16 @@ style clothesselect_vscroll is vscrollbar:
 
 screen cam_show():
 
+    style_prefix 'cam'
+
     hbox pos(350, 800):
         xalign 0.0
-        text tm font 'bedel.otf' size 30  # drop_shadow[(2, 2)]
+        text tm
 
     hbox pos(1560, 800):
         xalign 1.0
         spacing 10
-        text _("[view_cam[1].public]") font 'bedel.otf' size 30  # drop_shadow[(2, 2)]
+        text _("[view_cam[1].public]")
         add 'interface laptop cam audience' ypos 5
 
     if len(cam_list) > 1:
@@ -1786,7 +1830,6 @@ screen cam_show():
         imagebutton pos (1672, 490) auto 'interface next %s':
             focus_mask (None if renpy.variant('small') else True)
             action [Function(next_cam), Jump('Waiting')]
-
 
     frame xalign 0.5 ypos 985 xsize 200:# background None:
         if '06:00' <= tm < '22:00':
@@ -1818,6 +1861,12 @@ screen cam_show():
         # key 'K_F5' action [SetVariable('number_quicksave', number_quicksave+1), QuickSave()]
         key 'K_F8' action QuickLoad()
 
+style cam_text:
+    # только цифры
+    font 'fonts/bedel.otf'
+    size 30
+    # drop_shadow[(2, 2)]
+
 ################################################################################
 
 screen watermark():
@@ -1833,9 +1882,6 @@ screen watermark():
 
 screen notify_check():
     timer .3 repeat True action Function(notify_queue)
-    # $ tt = GetTooltip()
-    # if tt:
-    #     text "[tt!t]" pos renpy.get_mouse_pos()
 
 ################################################################################
 
@@ -1859,8 +1905,8 @@ screen age_verification():
 
     vbox xalign .5 yalign .1:
         spacing -5
-        text _("ВНИМАНИЕ") color red font 'hermes.ttf' size 120 xalign .5
-        text _("КОНТЕНТ ДЛЯ ВЗРОСЛЫХ") color red font 'hermes.ttf' size 70 xalign .5
+        text _("ВНИМАНИЕ") style 'attention'
+        text _("КОНТЕНТ ДЛЯ ВЗРОСЛЫХ") style 'adult'
 
     vbox xalign .5 yalign .5:
         spacing 15
@@ -1874,6 +1920,17 @@ screen age_verification():
         textbutton _("Продолжить") action Return()
         foreground 'interface marker'
 
+style attention:
+    font 'fonts/hermes.ttf'
+    size 120
+    color red
+    xalign .5
+style adult:
+    font 'fonts/hermes.ttf'
+    size 70
+    color red
+    xalign .5
+
 ################################################################################
 
 screen changes_menu_clot():
@@ -1884,7 +1941,7 @@ screen changes_menu_clot():
     style_prefix 'mmclot'
 
     frame area(150, 95, 750, 50) background None:
-        text _("ОДЕЖДА ПЕРСОНАЖЕЙ В ГЛАВНОМ МЕНЮ") color gui.accent_color size 28 font 'hermes.ttf'
+        text _("ОДЕЖДА ПЕРСОНАЖЕЙ В ГЛАВНОМ МЕНЮ") style 'menu_header'
 
     imagebutton pos (1740, 100) auto 'interface close %s' action Return():
         if not renpy.variant('small'):
@@ -1987,7 +2044,7 @@ style mmclot_button is default:
     yalign .5
 
 style mmclot_button_text is default:
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     # xpos 30
     yalign .0
     size 30
@@ -1997,7 +2054,7 @@ style mmclot_button_text is default:
 
 style mmclot_button_text:
     variant "small"
-    font 'trebucbd.ttf'
+    font 'fonts/trebucbd.ttf'
     yalign .0
     size 36
     idle_color gui.accent_color
@@ -2024,7 +2081,7 @@ style check_button_text:
 
 screen Cookies_Button():
     for cookie in mm_cookies_events:
-        if cookie_verification(cookie) and not _in_replay:
+        if cookie_verification(cookie):
             imagebutton:
                 if '06:00' <= tm < '22:00':
                     idle 'interface button cookies'
