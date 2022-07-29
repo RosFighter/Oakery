@@ -675,7 +675,7 @@ translate german strings:
 
     # game/core/02init.rpy:135
     old "Давайте, я намажу вас кремом для загара?"
-    new "Warum reibe ich dich nicht mit Sonnencreme ein?"
+    new "Soll ich euch mit Sonnencreme einreiben?"
 
     # game/core/02init.rpy:135
     old "Вам дать крем для загара?"
