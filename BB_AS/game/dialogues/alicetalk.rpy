@@ -1207,8 +1207,9 @@ label advanced_massage1:
             # не воспоминание или воспоминание "Помассирую не только ножки"
             jump advanced_massage1_faster
 
-        "{i}не торопиться{/i}" if alice.dcv.intrusion.stage in [5, 7]:
+        "{i}не торопиться{/i}" if alice.dcv.intrusion.stage in [5, 7] and alice.flags.touched:
             # Макс подарил Алисе кружевное боди, опередив Эрика
+            # пройден момент с пауком во дворе "спрячься за меня"
             jump advanced_massage1_no_rush
 
 # окончание расширенного массажа

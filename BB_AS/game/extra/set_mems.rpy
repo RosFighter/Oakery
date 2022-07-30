@@ -639,6 +639,7 @@ init python:
     def set_kira_kiss_01():
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = 'c'
         mg.kissing = 0
 
         my_scope = {
@@ -729,6 +730,9 @@ init python:
         mg.social = renpy.random.randint(700, 930) / 10
         mg.sex    = renpy.random.randint(60, 80) / 10
 
+        ta = Profile('ann', "Анна", "Анны", "Анне", "Анну", "Анной", "Анне")
+
+
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
         tk.stat.handjob   = renpy.random.randint(1, 2)
         tk.flags.promise  = False
@@ -737,6 +741,7 @@ init python:
             tk.stat.sex = 5
         my_scope = {
             'mgg'       : mg,
+            'ann'       : ta,
             'kira'      : tk,
             'flags'     : Other_Flags_and_counters(),
             }
@@ -949,9 +954,13 @@ init python:
     def set_olivia_second_night_visit():
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
         tl.dcv.special.stage = 5
+        tl.dress = 'b'
 
         to = Profile('olivia', "Оливия", "Оливии", "Оливии", "Оливию", "Оливией", "Оливии")
         to.dcv.other.stage = 1
+
+        mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
+        mg.dress = 'c'
 
         tf = Other_Flags_and_counters()
         tf.film_punish = False
@@ -960,6 +969,7 @@ init python:
         renpy.random.shuffle(t_tv_order)
 
         my_scope = {
+            'mgg'           : mg,
             'lisa'          : tl,
             'olivia'        : to,
             'flags'         : tf,
@@ -1016,6 +1026,7 @@ init python:
         mg.massage = renpy.random.randint(478, 632) / 10
         mg.social = renpy.random.randint(537, 684) / 10
         my_scope = {
+            'rel_eric'      : (3, ''),
             'ann'       : ta,
             'mgg'       : mg,
             }
