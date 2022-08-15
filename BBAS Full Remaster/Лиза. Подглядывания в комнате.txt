@@ -14,18 +14,18 @@ Max_00 (мысли) ""   #вс.
 	  #с пн. по пт.
 	  (Я остался незамеченным!)
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(01a/02a) + m&lroom-atwindow-m-01a   #самое начало
-	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(03h/04h) + m&lroom-atwindow-m-01a   #на 10 минут позже
+	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(03g/04g) + m&lroom-atwindow-m-01a   #на 10 минут позже
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(05e/06e) + m&lroom-atwindow-m-01a   #после 10 минут
 	  Max_03 (мысли) "Ого, какой вид! Вот это я удачно заглянул! Моя младшая сестрёнка как раз переодевается..."
 	     продолжить подглядывать (навык скрытности ур.01 70-80% / ур.02 80-90% / ур.03 90-100%)
 		    (Я остался незамеченным!)
-			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(03h/04h) + m&lroom-atwindow-m-01a   #самое начало
+			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(03g/04g) + m&lroom-atwindow-m-01a   #самое начало
 			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(05e/06e) + m&lroom-atwindow-m-01a   #на 10 минут позже
 			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(07e/08e) + m&lroom-atwindow-m-01a   #после 10 минут
 			Max_05 (мысли) "Ох, Лиза! Благодаря зеркалу я могу разглядеть тебя со всех сторон... Главное, чтобы там не было видно меня."
 			уйти
 			(Вот чёрт, я попался!)
-			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-02h + m&lroom-atwindow-m-01a   #самое начало
+			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-02g + m&lroom-atwindow-m-01a   #самое начало
 			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-02e + m&lroom-atwindow-m-01a   #на 10 минут позже
 			#m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-02e1 + m&lroom-atwindow-m-01a   #после 10 минут
 			Lisa_10 "Ой, Макс! Я не одета!!! Не мешай мне собираться в школу!"
@@ -38,7 +38,7 @@ Max_00 (мысли) ""   #вс.
 		 уйти
 	  (Я чуть не попался!)
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01a + m&lroom-atwindow-m-01a   #самое начало
-	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01h + m&lroom-atwindow-m-01a   #на 10 минут позже
+	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01g + m&lroom-atwindow-m-01a   #на 10 минут позже
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01e + m&lroom-atwindow-m-01a   #после 10 минут
 	  Max_15 (мысли) "Фух! Кажется, она не успела меня заметить... Надо сматываться!"
 	  убежать
