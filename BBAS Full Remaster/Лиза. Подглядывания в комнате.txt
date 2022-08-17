@@ -13,7 +13,7 @@ Max_00 (мысли) ""   #вс.
 
 	  #с пн. по пт.
 	  (Я остался незамеченным!)
-	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(01a/02a) + m&lroom-atwindow-m-01a   #самое начало
+	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(01a2/02a2) + одежда Лизы + m&lroom-atwindow-m-01a   #самое начало
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(03g/04g) + m&lroom-atwindow-m-01a   #на 10 минут позже
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-notsee-(05e/06e) + m&lroom-atwindow-m-01a   #после 10 минут
 	  Max_03 (мысли) "Ого, какой вид! Вот это я удачно заглянул! Моя младшая сестрёнка как раз переодевается..."
@@ -37,7 +37,7 @@ Max_00 (мысли) ""   #вс.
 				  уйти
 		 уйти
 	  (Я чуть не попался!)
-	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01a + m&lroom-atwindow-m-01a   #самое начало
+	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01a1 + одежда Лизы + m&lroom-atwindow-m-01a   #самое начало
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01g + m&lroom-atwindow-m-01a   #на 10 минут позже
 	  #m&lroom-atwindow-m-01 + m&lroom-atwindow-m-01-lisa-see-01e + m&lroom-atwindow-m-01a   #после 10 минут
 	  Max_15 (мысли) "Фух! Кажется, она не успела меня заметить... Надо сматываться!"
