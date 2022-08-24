@@ -674,9 +674,72 @@ Max_07 (мысли) "Да мне и трёх секунд хватит, чтоб
 
 одеться и подождать Алису
 #villa-delivery-00 + gate-max&alice-01
-Alice_05 "Что, Макс, кого-то ждёшь? Пошли, а то тебя ведь ждём..."
+Alice_05 "Что, Макс, кого-то ждёшь? Давай, пошли..."
 идти в магазин одежды
 #road-01 + road-01-max&alice-01
+Alice_00 ""
+Max_00 ""
+Alice_00 ""
+Max_00 ""
+Alice_00 ""
+Max_00 ""
+#clothingshop-01-max&alice-01
+Alice_00 ""
+Max_00 ""
+Alice_00 ""
+Max_00 ""
+Alice_00 ""
+Max_00 ""
+#clothingshop-02 + clothingshop-02-christine-(01/01a)
+Christine_00 ""
+Max_00 ""
+Christine_00 ""
+Max_00 ""
+Christine_00 ""
+идти к примерочной
+#fittingroom-01
+Max_00 (мысли) ""
+   подсматривать за Алисой
+      #fittingroom-02-alice-(01b/01c)
+	  Max_00 (мысли) ""
+	  #fittingroom-02-alice-(02b/02c)
+	  Alice_00 ""
+	  зайти к Алисе
+	  #fittingroom-03-alice-(03b/03c) + fittingroom-03-max-01d
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+	  #fittingroom-03-alice-04a + fittingroom-03-max-01d
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+	  #fittingroom-03-alice-05 + fittingroom-03-max-02d
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+	  #fittingroom-03-alice-06j + fittingroom-03-max-02d
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+	  #fittingroom-03-alice-07j + fittingroom-03-max-03d
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+	     
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+	  Alice_00 ""
+	  Max_00 ""
+   подождать
 Alice_00 ""
 Max_00 ""
 Alice_00 ""
@@ -697,3 +760,4 @@ Eric_00 ""
 Alice_00 ""
 Max_00 ""
 Max_00 (мысли) ""
+Christine_00 ""
