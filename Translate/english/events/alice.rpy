@@ -4099,3 +4099,17 @@ translate english alice_lisa_shower_start_peeping_dda24c4d:
 
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
     Max_01 "{m}It's a good thing this doesn't apply to Kira...{/m}" nointeract
+# TODO: Translation updated at 2022-09-25 19:43
+
+# game/events/alice.rpy:425
+translate english alice_shower_spider_75632a81:
+
+    # Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!" nointeract
+    Alice_13 "" nointeract
+
+translate english strings:
+
+    # game/events/alice.rpy:426
+    old "Хорошо, сейчас принесу. Никуда не уходи..."
+    new ""
+

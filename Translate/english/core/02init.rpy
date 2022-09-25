@@ -745,3 +745,11 @@ translate english strings:
     # game/core/02init.rpy:141
     old "Мам, ты подумала?"
     new "Mom, did you think about it?"
+# TODO: Translation updated at 2022-09-25 19:43
+
+translate english strings:
+
+    # game/core/02init.rpy:151
+    old "Я разжился деньгами! Идём за костюмом?"
+    new ""
+
