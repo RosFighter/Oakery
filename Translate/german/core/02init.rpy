@@ -745,3 +745,11 @@ translate german strings:
     old "Мам, ты подумала?"
     new "Mom, hast du darüber nachgedacht?"
 
+# TODO: Translation updated at 2022-09-25 19:43
+
+translate german strings:
+
+    # game/core/02init.rpy:151
+    old "Я разжился деньгами! Идём за костюмом?"
+    new ""
+
