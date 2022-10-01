@@ -4106,11 +4106,11 @@ translate german alice_lisa_shower_start_peeping_dda24c4d:
 translate german alice_shower_spider_75632a81:
 
     # Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!" nointeract
-    Alice_13 "" nointeract
+    Alice_13 "Nein, ich kann da noch nicht wieder rein... Ich brauche Zeit, um mich von diesem Albtraum zu erholen. Hol mir lieber ein Handtuch, es liegt im Bad... Du bist zu glücklich, dass du mich nackt anstarren kannst!" nointeract
 
 translate german strings:
 
     # game/events/alice.rpy:426
     old "Хорошо, сейчас принесу. Никуда не уходи..."
-    new ""
+    new "In Ordnung, ich gehe schon. Bleib, wo du bist..."
 

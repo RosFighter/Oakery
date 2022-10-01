@@ -2252,11 +2252,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько поразвлечься с Кирой..."
-    new "Man muss nur bis Dienstag- oder Freitagabend warten und sich mit Kira amüsieren..."
+    new "Man muss nur bis Dienstag- oder Freitagabend warten um sich mit Kira zu amüsieren..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько с ней поразвлечься..."
-    new "Man muss nur bis Dienstag- oder Freitagabend warten und sich mit ihr amüsieren..."
+    new "Man muss nur bis Dienstag- oder Freitagabend warten um sich mit ihr zu amüsieren..."
 
     # game/core/09_opportunities.rpy:4
     old "Круто! Я попросил у Эрика возможность присутствовать во время их с мамой секса и он согласился это устроить! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет! Только бы не упустить день, в который на маме будут очки для сна..."

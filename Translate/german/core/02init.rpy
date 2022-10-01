@@ -751,5 +751,5 @@ translate german strings:
 
     # game/core/02init.rpy:151
     old "Я разжился деньгами! Идём за костюмом?"
-    new ""
+    new "Ich habe das Geld! Wollen wir das Kostüm kaufen?"
 
