@@ -4111,5 +4111,4 @@ translate english strings:
 
     # game/events/alice.rpy:426
     old "Хорошо, сейчас принесу. Никуда не уходи..."
-    new ""
-
+    new "All right, I'll get it. Don't go anywhere..."
