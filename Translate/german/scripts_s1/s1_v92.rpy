@@ -774,11 +774,11 @@ translate german ev_v92_005_a81ded0b:
     # Alice_12 "Да ну тебя, отстань!" nointeract
     Alice_12 "Komm schon, lass mich in Ruhe!" nointeract
 
-# game/scripts_s1/s1_v92.rpy:475
-translate german ev_v92_005_restore_bra_fcc5cdba:
+# game/scripts_s1/s1_v92.rpy:478
+translate german ev_v92_005_restore_bra_3473fbd3:
 
-    # Max_01 "[lucky]{m}Фух! Похоже, всё прошло, как по маслу и Алиса не проснулась. Пока, милые сисечки, мы с вами ещё обязательно увидимся... Не скучайте.{/m}" nointeract
-    Max_01 "[lucky]{m}Sieht so aus, als wäre alles glatt gelaufen und Alice nicht aufgewacht. Tschüss süße Brüste, wir sehen uns bestimmt wieder... Vergesst mich nicht.{/m}" nointeract
+    # Max_01 "[lucky!t]{m}Фух! Похоже, всё прошло, как по маслу и Алиса не проснулась. Пока, милые сисечки, мы с вами ещё обязательно увидимся... Не скучайте.{/m}" nointeract
+    Max_01 "[lucky!t]{m}Sieht so aus, als wäre alles glatt gelaufen und Alice nicht aufgewacht. Tschüss süße Brüste, wir sehen uns bestimmt wieder... Vergesst mich nicht.{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:487
 translate german ev_v92_005_bra_fall_811a6deb:
@@ -1446,7 +1446,7 @@ translate german strings:
 
     # game/scripts_s1/s1_v92.rpy:123
     old "{i}зайти к Алисе{/i}"
-    new "{i}Alice besuchen/i}"
+    new "{i}Alice besuchen{/i}"
 
     # game/scripts_s1/s1_v92.rpy:170
     old "Покрутись ещё немного..."
@@ -1547,4 +1547,656 @@ translate german strings:
     # game/scripts_s1/s1_v92.rpy:834
     old "{i}поймать паука{/i}"
     new "{i}Spinne{/i}"
+
+# TODO: Translation updated at 2022-10-08 23:59
+
+# game/scripts_s1/s1_v92.rpy:900
+translate german ev_v92_010_245ddc0e:
+
+    # Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз... Посмотришь, чтобы он до меня не добрался, пока я буду мыться?"
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:901
+translate german ev_v92_010_4e32f61e:
+
+    # Max_01 "Ну конечно посмотрю, не переживай!"
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:904
+translate german ev_v92_010_107a3d85:
+
+    # Max_19 "{m}Как мне помнится, Алиса зазывала меня потереть ей спинку... Так что никакого смысла скромничать нет. За дело!{/m}"
+    Max_19 ""
+
+# game/scripts_s1/s1_v92.rpy:907
+translate german ev_v92_010_3d4f578c:
+
+    # Max_07 "Эй, Алиса, если это сможет тебя успокоить, то я могу потереть тебе спинку, а то трясёшься вся от страха."
+    Max_07 ""
+
+# game/scripts_s1/s1_v92.rpy:908
+translate german ev_v92_010_fed3a4ef:
+
+    # Alice_13 "Руки у тебя волшебные, но мне кажется, что даже они смогут отвлечь мои мысли от паука, который где-то тут ползает сейчас. Бррр..."
+    Alice_13 ""
+
+# game/scripts_s1/s1_v92.rpy:909
+translate german ev_v92_010_b4f114bf:
+
+    # Max_03 "Ну, тебе кажется, а я в своих способностях уверен. Останешься довольной, гарантирую."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:911
+translate german ev_v92_010_4e89b1e1:
+
+    # Alice_02 "Продано! Пробуй..." nointeract
+    Alice_02 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:915
+translate german ev_v92_010_fdaf5158:
+
+    # Alice_05 "Ммм... Довольно неплохо... Хоть какая-то польза от тебя, а то только и можешь, что подглядывать за мной."
+    Alice_05 ""
+
+# game/scripts_s1/s1_v92.rpy:916
+translate german ev_v92_010_3a719fa7:
+
+    # Max_01 "Лучше бы радовалась. Значит есть, на что посмотреть."
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:917
+translate german ev_v92_010_954b545f:
+
+    # Alice_06 "Хм... Весьма сомнительная радость, красоваться обнажённой перед братом."
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:918
+translate german ev_v92_010_52ccfdee:
+
+    # Max_02 "По-моему не сомнительная, а очевидная. Раз я здесь, то тебе приятно моё внимание и мои прикосновения..."
+    Max_02 ""
+
+# game/scripts_s1/s1_v92.rpy:921
+translate german ev_v92_010_a0f9fd4c:
+
+    # Alice_14 "Воу-воу! Эй, Макс, ты ничего не перепутал? Разве твои ручонки не должны быть у меня на спине?"
+    Alice_14 ""
+
+# game/scripts_s1/s1_v92.rpy:922
+translate german ev_v92_010_b3b6d6b8:
+
+    # Max_04 "Побыли и хватит. Может я не хочу ограничиться лишь твоей прелестной спинкой?"
+    Max_04 ""
+
+# game/scripts_s1/s1_v92.rpy:923
+translate german ev_v92_010_262b4dfa:
+
+    # Alice_12 "А ты при этом на пол-то хоть смотришь? Там ведь паук где-то бегает или ты забыл?"
+    Alice_12 ""
+
+# game/scripts_s1/s1_v92.rpy:924
+translate german ev_v92_010_26076e33:
+
+    # Max_02 "У меня всё под контролем. Можешь расслабиться."
+    Max_02 ""
+
+# game/scripts_s1/s1_v92.rpy:927
+translate german ev_v92_010_ccd16eec:
+
+    # Alice_04 "Охх... Ну, раз так, то я просто таю в твоих чутких руках. Это очень приятно..."
+    Alice_04 ""
+
+# game/scripts_s1/s1_v92.rpy:928
+translate german ev_v92_010_d71bc8ad:
+
+    # Max_01 "И они могут побывать везде, чтобы тебе стало ещё приятнее..."
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:931
+translate german ev_v92_010_8f1e3e36:
+
+    # Alice_08 "Ммм... Какое интересное предложение. Прям везде-везде могут?"
+    Alice_08 ""
+
+# game/scripts_s1/s1_v92.rpy:932
+translate german ev_v92_010_3c52977d:
+
+    # Max_04 "Абсолютно везде! Хочешь попробовать?"
+    Max_04 ""
+
+# game/scripts_s1/s1_v92.rpy:935
+translate german ev_v92_010_d46c69a9:
+
+    # Alice_14 "Ой, мамочки... Макс, он... Он здесь..."
+    Alice_14 ""
+
+# game/scripts_s1/s1_v92.rpy:936
+translate german ev_v92_010_11c49333:
+
+    # Max_16 "Вот чёрт! Как же он не вовремя показался."
+    Max_16 ""
+
+# game/scripts_s1/s1_v92.rpy:939
+translate german ev_v92_010_4acb5690:
+
+    # Alice_15 "А-а-а! Боже мой! Он пополз прямо к нам! Макс, сделай что-нибудь!"
+    Alice_15 ""
+
+# game/scripts_s1/s1_v92.rpy:940
+translate german ev_v92_010_677d72f9:
+
+    # Max_08 "Уфф... Ничего себе, ты устроилась. Я же не вешалка!"
+    Max_08 ""
+
+# game/scripts_s1/s1_v92.rpy:941
+translate german ev_v92_010_acaf3bce:
+
+    # Alice_06 "Убери его скорее, Макс! Прошу тебя!"
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:942
+translate german ev_v92_010_94df0282:
+
+    # Max_07 "Да, я бы с радостью, но у меня руки сейчас заняты, если ты не заметила."
+    Max_07 ""
+
+# game/scripts_s1/s1_v92.rpy:945
+translate german ev_v92_010_03d5aa26:
+
+    # Alice_12 "Подожди... это... Ты серьёзно? Я тут чуть ли не умираю от страха, а у тебя встал!"
+    Alice_12 ""
+
+# game/scripts_s1/s1_v92.rpy:946
+translate german ev_v92_010_b0ce0556:
+
+    # Max_03 "Просто ты очень удачно пристроила свою голенькую попку и мне от этого приятно."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:948
+translate german ev_v92_010_88920c66:
+
+    # Alice_13 "Я, так уж и быть, тогда слезу с твоей подставки, а ты быстрее лови этого паука..." nointeract
+    Alice_13 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:952
+translate german ev_v92_010_85d20cd1:
+
+    # Alice_12 "Ну же, Макс, скорее! Убери его отсюда! Убери его, пожалуйста, как можно дальше от нашего дома!"
+    Alice_12 ""
+
+# game/scripts_s1/s1_v92.rpy:953
+translate german ev_v92_010_5d7b6602:
+
+    # Max_01 "Не переживай, я выпущу его за ворота, чтобы ты уже наконец успокоилась."
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:956
+translate german ev_v92_010_e755cdd5:
+
+    # Max_07 "{m}Ползи к своим, паучок. Жаль, что тебя заметила Алиса, а не я.{/m}"
+    Max_07 ""
+
+# game/scripts_s1/s1_v92.rpy:959
+translate german ev_v92_010_14e76f71:
+
+    # Max_09 "Эй! Ты куда это? Неужели всё..."
+    Max_09 ""
+
+# game/scripts_s1/s1_v92.rpy:960
+translate german ev_v92_010_cc0e7134:
+
+    # Alice_05 "Относился бы ты к своим обязанностям повнимательнее, может было бы и не всё."
+    Alice_05 ""
+
+# game/scripts_s1/s1_v92.rpy:963
+translate german ev_v92_010_d7535565:
+
+    # Max_02 "Но... Я ведь ещё не закончил массаж. Мои руки жаждут продолжения..."
+    Max_02 ""
+
+# game/scripts_s1/s1_v92.rpy:964
+translate german ev_v92_010_03ad419d:
+
+    # Alice_02 "Да что ты... Возможно в следующий раз нам повезёт больше."
+    Alice_02 ""
+
+# game/scripts_s1/s1_v92.rpy:965
+translate german ev_v92_010_7aa893d3:
+
+    # Max_11 "Как печально..."
+    Max_11 ""
+
+# game/scripts_s1/s1_v92.rpy:968
+translate german ev_v92_010_dcd82e5e:
+
+    # Alice_04 "Но за спасение от чудовища пожалуй чмокну тебя разочек. Спасибо тебе."
+    Alice_04 ""
+
+# game/scripts_s1/s1_v92.rpy:969
+translate german ev_v92_010_e2b5b8ee:
+
+    # Max_01 "Рад был помочь."
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:987
+translate german ev_v92_011_245ddc0e:
+
+    # Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз... Посмотришь, чтобы он до меня не добрался, пока я буду мыться?"
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:988
+translate german ev_v92_011_4e32f61e:
+
+    # Max_01 "Ну конечно посмотрю, не переживай!"
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:991
+translate german ev_v92_011_0f2caadd:
+
+    # Max_09 "{m}Посмотреть-то я посмотрю, но... из-за этого паука, который может выползти в самый неподходящий момент и всё обломать, я далеко с Алисой не продвинусь по части соблазнения.{/m}"
+    Max_09 ""
+
+# game/scripts_s1/s1_v92.rpy:995
+translate german ev_v92_011_c518fa1e:
+
+    # Max_04 "{m}Фух, повезло! Наконец-то он выполз с моей стороны. Теперь, пока Алиса ничего не заметила, нужно сделать так, чтобы он не помешал нам. Закину его в ванну и буду надеяться, что он не сможет оттуда свалить...{/m}" nointeract
+    Max_04 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:999
+translate german ev_v92_011_504bc5b8:
+
+    # Max_01 "Ну, ты как, Алиса, успокоилась? Давай я потру тебе спинку, чтобы ты немного расслабилась."
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:1000
+translate german ev_v92_011_a6bc8c51:
+
+    # Alice_12 "Нет, блин, я просто так прикалываюсь, что боюсь пауков, на самом деле мне нравится сверкать перед тобой голой задницей."
+    Alice_12 ""
+
+# game/scripts_s1/s1_v92.rpy:1001
+translate german ev_v92_011_21bc0fc8:
+
+    # Max_02 "Мойся спокойно... Я ОЧЕНЬ внимательно прослежу за тем, чтобы всё было хорошо."
+    Max_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1004
+translate german ev_v92_011_5bad9ffb:
+
+    # Alice_13 "Лучше бы пошёл и отыскал этого паука, вместо того, чтобы меня успокаивать."
+    Alice_13 ""
+
+# game/scripts_s1/s1_v92.rpy:1005
+translate german ev_v92_011_119f7ffd:
+
+    # Max_07 "И оставить тебя здесь одну, такую беззащитную? Находится в моих руках куда безопаснее... Разве нет?"
+    Max_07 ""
+
+# game/scripts_s1/s1_v92.rpy:1008
+translate german ev_v92_011_bf0b1618:
+
+    # Alice_02 "Ну... Пока ты не лапаешь меня, как какой-нибудь озабоченный грубиян, а проявляешь максимум чуткости и заботы, лучше оставайся рядом."
+    Alice_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1009
+translate german ev_v92_011_b207d195:
+
+    # Max_03 "С такой красивой сестрёнкой, как ты, находится рядом одно удовольствие."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1012
+translate german ev_v92_011_6d6001cb:
+
+    # Alice_08 "Ммм... Да, ты прав, от такого удовольствия было бы глупо отказываться. Правда, меня немного смущает то, что я позволяю своему брату скользить руками по всему моему телу..."
+    Alice_08 ""
+
+# game/scripts_s1/s1_v92.rpy:1013
+translate german ev_v92_011_b4301b40:
+
+    # Max_04 "Что поделать, если руки так и тянутся к прекрасному..."
+    Max_04 ""
+
+# game/scripts_s1/s1_v92.rpy:1016
+translate german ev_v92_011_8cab161b:
+
+    # Alice_06 "Охх... Ты полез рукой прямо туда... Твои пальцы... Ммм... Это о-о-очень многообещающее начало, Макс. Ты хоть помнишь, что я пустила тебя сюда не только за этим?"
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:1017
+translate german ev_v92_011_9fcae7be:
+
+    # Max_02 "На этот раз нам никто не помешает."
+    Max_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1021
+translate german ev_v92_011_679972ac:
+
+    # Alice_09 "Ахх... Как же хорошо! Я просто таю в твоих талантливых ручках... Д-а-а... Это так неправильно! Но к чёрту, продолжай... Мне нравится, как ты это делаешь, ммм..." nointeract
+    Alice_09 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1024
+translate german ev_v92_011_d9b3b6ff:
+
+    # Alice_10 "Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
+    Alice_10 ""
+
+# game/scripts_s1/s1_v92.rpy:1025
+translate german ev_v92_011_1257c037:
+
+    # Max_04 "{m}Алиса так приятно постанывает... А уж как приятно тереться членом прямо между её упругих и мокрых булочек! Класс...{/m}"
+    Max_04 ""
+
+# game/scripts_s1/s1_v92.rpy:1028
+translate german ev_v92_011_4b702feb:
+
+    # Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да-а-а... Это было что-то невообразимое... Мне о-о-очень понравилось! А ты ещё не кончил?"
+    Alice_11 ""
+
+# game/scripts_s1/s1_v92.rpy:1029
+translate german ev_v92_011_19811d05:
+
+    # Max_03 "Думаешь, что твоя прелестная попка может заставить меня так быстро кончить? Нет, для этого ей нужно очень чувственно подвигаться..."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1032
+translate german ev_v92_011_8db39efa:
+
+    # Alice_07 "Сейчас ты узнаешь, на что способна моя попка! Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?"
+    Alice_07 ""
+
+# game/scripts_s1/s1_v92.rpy:1033
+translate german ev_v92_011_94ff5038:
+
+    # Max_22 "О да, Алиса, так приятно... Давай ещё! Я уже почти... вот-вот... Д-а-а..."
+    Max_22 ""
+
+# game/scripts_s1/s1_v92.rpy:1036
+translate german ev_v92_011_3518bcef:
+
+    # Alice_09 "Ого, сколько в тебе было... потенциала... Всю спину мне заляпал! Удобно, что мы сейчас принимаем душ..."
+    Alice_09 ""
+
+# game/scripts_s1/s1_v92.rpy:1037
+translate german ev_v92_011_48410418:
+
+    # Max_02 "Я здесь вообще-то, в первую очередь, от паука тебя защищаю, а уже потом всё остальное."
+    Max_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1040
+translate german ev_v92_011_0870b1e5:
+
+    # Alice_02 "Кстати, я только сейчас обратила внимание, что паука нигде не видно. Твои ручки и правда могут заставить забыться..."
+    Alice_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1041
+translate german ev_v92_011_6fdc89b4:
+
+    # Max_01 "Может он просто услышал твои стоны, испугался и забился в какой-нибудь угол? Или вовсе убежал отсюда куда подальше."
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:1042
+translate german ev_v92_011_b1f5f490:
+
+    # Alice_05 "Оу... Если так, то мне теперь будет нужна твоя помощь, потому что какой смысл стонать одной, если есть ты. Ну, конечно, если меня снова будут терроризировать пауки..."
+    Alice_05 ""
+
+# game/scripts_s1/s1_v92.rpy:1043
+translate german ev_v92_011_08512c11:
+
+    # Max_04 "Как всегда, кричи погромче, чтобы я прибежал на помощь."
+    Max_04 ""
+
+# game/scripts_s1/s1_v92.rpy:1046
+translate german ev_v92_011_e72ab991:
+
+    # Alice_04 "Спасибо тебе. И вообще, ты же никому не проболтаешься о том, что тут было?"
+    Alice_04 ""
+
+# game/scripts_s1/s1_v92.rpy:1047
+translate german ev_v92_011_7894f632:
+
+    # Max_02 "Где было? Что было? Не понимаю, о чём ты!"
+    Max_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1048
+translate german ev_v92_011_2ea64efd:
+
+    # Alice_05 "Вот именно, что ничего!"
+    Alice_05 ""
+
+# game/scripts_s1/s1_v92.rpy:1062
+translate german ev_v92_012_e2e452f2:
+
+    # Alice_00 "Макс, поглазеть пришёл?"
+    Alice_00 ""
+
+# game/scripts_s1/s1_v92.rpy:1063
+translate german ev_v92_012_88fac8d5:
+
+    # Max_09 "Не без этого. Ты же знаешь, что мама осуждает курение на территории нашего дома. Придётся тебя наказать..."
+    Max_09 ""
+
+# game/scripts_s1/s1_v92.rpy:1064
+translate german ev_v92_012_704448bb:
+
+    # Alice_13 "Но, мы же сможем как-то... договориться?"
+    Alice_13 ""
+
+# game/scripts_s1/s1_v92.rpy:1065
+translate german ev_v92_012_af2c2b24:
+
+    # Max_01 "Ну, это зависит от тебя..."
+    Max_01 ""
+
+# game/scripts_s1/s1_v92.rpy:1067
+translate german ev_v92_012_5f3a2548:
+
+    # Alice_05 "Говори, что ты хочешь за то, чтобы моя попка осталась в целости и сохранности?" nointeract
+    Alice_05 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1069
+translate german ev_v92_012_0763ca1c:
+
+    # Alice_02 "Вон ты что удумал! Не даёт тебе покоя моя голая грудь, да, маленький извращенец?"
+    Alice_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1070
+translate german ev_v92_012_9e12426a:
+
+    # Max_03 "Сисечки тоже хотят загорать!"
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1071
+translate german ev_v92_012_a416980f:
+
+    # Alice_03 "Но только, когда дома кроме нас никого больше нет. Хорошо?"
+    Alice_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1072
+translate german ev_v92_012_a2f180ea:
+
+    # Max_04 "Естественно!"
+    Max_04 ""
+
+# game/scripts_s1/s1_v92.rpy:1074
+translate german ev_v92_012_acb01f98:
+
+    # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
+    Alice_01 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1080
+translate german ev_v92_012_4969f187:
+
+    # Alice_02 "Прямо совсем-совсем голая?! Что, фантазия закончилась, скатился до самого простейшего?"
+    Alice_02 ""
+
+# game/scripts_s1/s1_v92.rpy:1081
+translate german ev_v92_012_8440a421:
+
+    # Max_03 "Мне уже от одной мысли, что ты будешь спать голенькая, на душе приятно."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1082
+translate german ev_v92_012_5aba69a4:
+
+    # Alice_03 "На такой пустяк я соглашусь... Пока ты что-нибудь ещё не попросил."
+    Alice_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1083
+translate german ev_v92_012_201d6989:
+
+    # Max_04 "Вот и отлично!"
+    Max_04 ""
+
+# game/scripts_s1/s1_v92.rpy:1085
+translate german ev_v92_012_acb01f98_1:
+
+    # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
+    Alice_01 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1094
+translate german ev_v92_012_18a9f4c1:
+
+    # Alice_05 "Ну... Только если легонько! Понял?! И дай докурить сперва в тишине и покое..." nointeract
+    Alice_05 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1099
+translate german ev_v92_012_7e122231:
+
+    # Alice_06 "Сегодня? Значит, попросишь в следующий раз?"
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:1100
+translate german ev_v92_012_f41a0967:
+
+    # Max_03 "Как знать, может быть... Если не бросишь курить."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1102
+translate german ev_v92_012_1629c481:
+
+    # Alice_05 "А вот не брошу! И вообще, не отвлекай меня, дай спокойно покурить, раз ты добрый." nointeract
+    Alice_05 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1113
+translate german ev_v92_013_e2e452f2:
+
+    # Alice_00 "Макс, поглазеть пришёл?"
+    Alice_00 ""
+
+# game/scripts_s1/s1_v92.rpy:1114
+translate german ev_v92_013_88fac8d5:
+
+    # Max_09 "Не без этого. Ты же знаешь, что мама осуждает курение на территории нашего дома. Придётся тебя наказать..."
+    Max_09 ""
+
+# game/scripts_s1/s1_v92.rpy:1116
+translate german ev_v92_013_a90b4383:
+
+    # Alice_12 "Вот ещё! Я ведь нашу договорённость соблюдаю! Провожу время во дворе, сверкая своей голой грудью. Так что ходи и любуйся." nointeract
+    Alice_12 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1119
+translate german ev_v92_013_acb01f98:
+
+    # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
+    Alice_01 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1123
+translate german ev_v92_013_45773b81:
+
+    # Alice_06 "Ты уверен? Значит, решил за моей попкой охоту устроить?"
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:1124
+translate german ev_v92_013_f41a0967:
+
+    # Max_03 "Как знать, может быть... Если не бросишь курить."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1126
+translate german ev_v92_013_31ccc968:
+
+    # Alice_05 "А вот не брошу! И вообще, не отвлекай меня, дай спокойно покурить." nointeract
+    Alice_05 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1138
+translate german ev_v92_014_e2e452f2:
+
+    # Alice_00 "Макс, поглазеть пришёл?"
+    Alice_00 ""
+
+# game/scripts_s1/s1_v92.rpy:1139
+translate german ev_v92_014_88fac8d5:
+
+    # Max_09 "Не без этого. Ты же знаешь, что мама осуждает курение на территории нашего дома. Придётся тебя наказать..."
+    Max_09 ""
+
+# game/scripts_s1/s1_v92.rpy:1141
+translate german ev_v92_014_379ecc76:
+
+    # Alice_12 "Вот ещё! Я ведь нашу договорённость соблюдаю! Сплю себе спокойненько голышом и никого не трогаю. Так что не приставай." nointeract
+    Alice_12 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1144
+translate german ev_v92_014_acb01f98:
+
+    # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
+    Alice_01 "" nointeract
+
+# game/scripts_s1/s1_v92.rpy:1148
+translate german ev_v92_014_45773b81:
+
+    # Alice_06 "Ты уверен? Значит, решил за моей попкой охоту устроить?"
+    Alice_06 ""
+
+# game/scripts_s1/s1_v92.rpy:1149
+translate german ev_v92_014_f41a0967:
+
+    # Max_03 "Как знать, может быть... Если не бросишь курить."
+    Max_03 ""
+
+# game/scripts_s1/s1_v92.rpy:1151
+translate german ev_v92_014_31ccc968:
+
+    # Alice_05 "А вот не брошу! И вообще, не отвлекай меня, дай спокойно покурить." nointeract
+    Alice_05 "" nointeract
+
+translate german strings:
+
+    # game/scripts_s1/s1_v92.rpy:910
+    old "{i}помассировать Алисе спинку{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:994
+    old "{i}осторожно поместить паука в ванну{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:1020
+    old "{i}ласкать Алису быстрее{/i}"
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:1066
+    old "Если будешь находиться во дворе без верха купальника, то наказывать не буду."
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:1066
+    old "Если будешь спать голая, то наказывать не буду."
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:1066
+    old "Ты знаешь, пожалуй, я тебя всё-таки отшлёпаю..."
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:1115
+    old "Точно! Тогда сверкай и дальше..."
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:1115
+    old "Чёрт! Тогда с завтрашнего дня прекращай..."
+    new ""
+
+    # game/scripts_s1/s1_v92.rpy:1140
+    old "Точно! Тогда продолжай в том же духе..."
+    new ""
 

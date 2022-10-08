@@ -4114,3 +4114,29 @@ translate german strings:
     old "Хорошо, сейчас принесу. Никуда не уходи..."
     new "In Ordnung, ich gehe schon. Bleib, wo du bist..."
 
+# TODO: Translation updated at 2022-10-08 23:59
+
+# game/events/alice.rpy:672
+translate german alice_shower_pinded_1e3fdfdd:
+
+    # Alice_12 "[spotted!t]Блин, Макс! Напугал! Тебе по заднице так сильно неймётся получить? Я это запросто устрою..."
+    Alice_12 ""
+
+# game/events/alice.rpy:673
+translate german alice_shower_pinded_ba3830ca:
+
+    # Max_10 "Да за что?! Я же не увидел ничего нового!"
+    Max_10 ""
+
+# game/events/alice.rpy:674
+translate german alice_shower_pinded_c88b1c38:
+
+    # Alice_16 "Подглядывать - нехорошо! И это обязательно должно наказываться. Не мной, так мамой."
+    Alice_16 ""
+
+# game/events/alice.rpy:675
+translate german alice_shower_pinded_5452dc65:
+
+    # Max_11 "Вот же ёлки-палки."
+    Max_11 ""
+
