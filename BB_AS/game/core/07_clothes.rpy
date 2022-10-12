@@ -197,19 +197,30 @@ init python:
                     if not ('09:00' <= tm < '20:00'):
                         inf += 'a'
             elif name == 'sun':
-                dress = 'a'
-                inf   = '03'
+                if alice.req.result == 'bikini' and check_only_home():
+                    # требование - купальник топлес
+                    dress, inf = 'b', '03b'
+                else:
+                    dress, inf = 'a', '03'
             elif name == 'swim':
-                dress = 'a'
-                inf = '03a' if pose3_2 == '03' else '03'
+                if alice.req.result == 'bikini' and check_only_home():
+                    dress = 'b'
+                    inf = '03a1' if pose3_2 == '03' else '03b'
+                else:
+                    dress = 'a'
+                    inf = '03a' if pose3_2 == '03' else '03'
             elif name in ['in_shop', 'at_friends']:
                 inf = '01'
             elif name == 'cooking':
                 inf  = {'a' : '01b', 'b' : '01d', 'c' : '01g', 'd' : '01f'}[dress]
                 clot = 'casual'
             elif name == 'smoke':
-                dress = 'b' if alice.req.result == 'toples' else 'a'
-                inf   = '03b' if alice.req.result == 'toples' else '03'
+                if alice.req.result == 'toples':
+                    dress, inf = 'b', '03b'
+                elif alice.req.result ==  'bikini':
+                    dress, inf = 'd', '03b'
+                else:
+                    dress, inf = 'a', '03'
             elif name == 'club':
                 dress = 'a'
                 inf   = '06'
@@ -629,7 +640,7 @@ init python:
                     if lvl > 2:
                         lst.extend(['01d', '04d'])
 
-            pose = renpy.random.choice(lst)
+            pose = random_choice(lst)
 
         if vr < 2:
             if lvl == 1 and pose in ['01b1', '01d1', '01h', '01g1',
@@ -746,7 +757,7 @@ init python:
         if all([lvl > 2, lisa.plan_name != 'sleep', lisa.prev_plan != 'dishes', not no_naked]):
             lst.append('01')
 
-        pose = renpy.random.choice(lst)
+        pose = random_choice(lst)
         # print pose, lst
 
         if not vr:  # подсмотреть не удалось
@@ -758,11 +769,11 @@ init python:
                     '01d':'05d1',
                     '01e':'05e1',
                     '01h':'06h',
-                    '01h3':renpy.random.choice(['02h3', '05h3']),
+                    '01h3':random_choice(['02h3', '05h3']),
                     }[pose]
             elif lvl == 2:
                 pose = {
-                    '01a':renpy.random.choice(['02a', '05a']),
+                    '01a':random_choice(['02a', '05a']),
                     '01b1':'02b1',
                     '01c':'03c',
                     '01d':'02d1',
@@ -771,14 +782,14 @@ init python:
                     }[pose]
             else:   #lvl == 3
                 pose = {
-                    '01':renpy.random.choice(['03', '06']),
-                    '01a':renpy.random.choice(['02a', '05a']),
+                    '01':random_choice(['03', '06']),
+                    '01a':random_choice(['02a', '05a']),
                     '01b':'03b',
                     '01b1':'02b1',
-                    '01c':renpy.random.choice(['03c', '06c']),
-                    '01d':renpy.random.choice(['02d1', '05d1']),
-                    '01e':renpy.random.choice(['02e1', '05e1']),
-                    '01h':renpy.random.choice(['02h', '05h']),
+                    '01c':random_choice(['03c', '06c']),
+                    '01d':random_choice(['02d1', '05d1']),
+                    '01e':random_choice(['02e1', '05e1']),
+                    '01h':random_choice(['02h', '05h']),
                     }[pose]
         # print pose
         return pose
@@ -812,7 +823,7 @@ init python:
                 # Оливия загорает в купальнике
                 lst.extend(['01c', '04c'])
 
-            pose = renpy.random.choice(lst)
+            pose = random_choice(lst)
 
         if vr < 2:
             pose = {'01e':'07e', '04e':'07e', '01e2':'07e2', '04e2':'07e2',
@@ -834,7 +845,7 @@ init python:
         else:
             lst.append('01c')
 
-        pose = renpy.random.choice(lst)
+        pose = random_choice(lst)
         if not vr:  # подсмотреть не удалось
             pose = {
                 '01e':'02e', '01e2':'02e2', '01':'02', '01c':'02c',
@@ -878,7 +889,7 @@ init python:
             elif ann.prev_plan == 'tv':
                 lst.append('07g')
 
-            pose = renpy.random.choice(lst)
+            pose = random_choice(lst)
             ann.dress_inf = {
                 '07b':'04', '07b1':'04d', '07b2':'04c',
                 '07h':'05a', '07h1':'05a', '07i':'05c', '07i1':'05c',
@@ -975,7 +986,7 @@ init python:
             if lvl > 2:
                 lst.extend(['01', '04'])
 
-            pose = renpy.random.choice(lst)
+            pose = random_choice(lst)
 
         if vr < 2:
             # получим позу для "не повезло" или вторую позу при "повезло"
@@ -1176,13 +1187,13 @@ init python:
         if not pose:
             # установим одежду и выберем позу для момента "повезло"
             print vr, lvl, lst
-            var_dress = renpy.random.choice(lst)
+            var_dress = random_choice(lst)
             if vr in [0, 'g', 'b0']:
                 pose = '07'
             elif var_dress in ['b', 'b1']:
                 pose = '01'
             else:
-                pose = renpy.random.choice(['01', '04'])
+                pose = random_choice(['01', '04'])
             var_pose = pose
             print pose, var_dress
 

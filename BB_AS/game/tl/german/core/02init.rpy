@@ -675,7 +675,7 @@ translate german strings:
 
     # game/core/02init.rpy:135
     old "Давайте, я намажу вас кремом для загара?"
-    new "Warum reibe ich dich nicht mit Sonnencreme ein?"
+    new "Soll ich euch mit Sonnencreme einreiben?"
 
     # game/core/02init.rpy:135
     old "Вам дать крем для загара?"
@@ -744,4 +744,12 @@ translate german strings:
     # game/core/02init.rpy:141
     old "Мам, ты подумала?"
     new "Mom, hast du darüber nachgedacht?"
+
+# TODO: Translation updated at 2022-09-25 19:43
+
+translate german strings:
+
+    # game/core/02init.rpy:151
+    old "Я разжился деньгами! Идём за костюмом?"
+    new "Ich habe das Geld! Wollen wir das Kostüm kaufen?"
 

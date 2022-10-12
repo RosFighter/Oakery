@@ -1,16 +1,16 @@
 
 ##  Ежедневно обновляемые переменные
-default pose2_1 = renpy.random.choice(['01', '02'])
-default pose3_1 = renpy.random.choice(['01', '02', '03'])
-default pose2_2 = renpy.random.choice(['01', '02'])
-default pose3_2 = renpy.random.choice(['01', '02', '03'])
-default pose2_3 = renpy.random.choice(['01', '02'])
-default pose2_4 = renpy.random.choice(['02', '03'])
-default pose3_3 = renpy.random.choice(['01', '02', '03'])
-default pose3_4 = renpy.random.choice(['01', '02', '03'])
-default random_loc_ab = renpy.random.choice(['a', 'b'])
-default tv_scene = renpy.random.choice(['', 'bj', 'hj'])
-default random_sigloc = renpy.random.choice(['n', 't'])
+default pose2_1 = random_choice(['01', '02'])
+default pose3_1 = random_choice(['01', '02', '03'])
+default pose2_2 = random_choice(['01', '02'])
+default pose3_2 = random_choice(['01', '02', '03'])
+default pose2_3 = random_choice(['01', '02'])
+default pose2_4 = random_choice(['02', '03'])
+default pose3_3 = random_choice(['01', '02', '03'])
+default pose3_4 = random_choice(['01', '02', '03'])
+default random_loc_ab = random_choice(['a', 'b'])
+default tv_scene = random_choice(['', 'bj', 'hj'])
+default random_sigloc = random_choice(['n', 't'])
 default persone_button1 = None
 default persone_button2 = None
 default persone_button3 = None

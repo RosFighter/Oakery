@@ -119,7 +119,7 @@ init python:
                 lr = [i for i in range(len(self.sel)) if self.sel[i].rand and i!=self.cur for j in range(5)]
                 if len(lr):
                     renpy.random.shuffle(lr)
-                    self.cur = renpy.random.choice(lr)
+                    self.cur = random_choice(lr)
                     if self.cur > len(self.sel)-1:
                         # print("баг, однако  "+self.name+' - ['+str(lr)+']')
                         self.cur = len(self.sel)-1
@@ -497,6 +497,7 @@ init python:
         incident    = 0         # стадии разговора об инцеденте
         talkblock   = 0         # диалог с персонажем блокирован (Эрик запустил кошелёк, первый разговор об этом состоялся)
         showdown_e  = 0         # состоялся разговор об изгнании Эрика
+        shower_max  = 0         # стадия совместных душей с Максом
 
         # счетчики
         defend      = 0         # счетчик спасений от наказания голышом, счётчик йоги с прикосновениями для Анны
@@ -518,6 +519,8 @@ init python:
         ladder      = 0         # счетчик подсматриваний со стремянки
         topless     = 0         # снимала верх при Максе
         held_out    = 0         # Макс продержался до конца
+        together_sleep = 0      # спала с Максом
+        sober_fj    = 0         # счетчик трезвых массажей
 
         def __init__(self, id):
             self.id         = id
@@ -533,6 +536,7 @@ init python:
             self.incident       = 0
             self.talkblock      = 0
             self.showdown_e     = 0
+            self.shower_max     = 0
 
             #счетчики
             self.defend         = 0
@@ -554,6 +558,8 @@ init python:
             self.ladder         = 0
             self.topless        = 0
             self.held_out       = 0
+            self.together_sleep = 0
+            self.sober_fj       = 0
 
         def __repr__(self):
             return str({attr : getattr(self, attr) for attr in self.__dict__ if attr!='id'})[1:-1]
@@ -691,13 +697,13 @@ init python:
         def GetMood(self): # возвращает кортеж с номером и описанием диапазона настроения персонажа
             mood = self.mood
             return {
-                       mood <= -285 : (-4, _("Ужасное")),
+                mood        <= -285 : (-4, _("Ужасное")),
                 -285 < mood <= -165 : (-3, _("Очень плохое")),
                 -165 < mood <= -75  : (-2, _("Плохое")),
                 -75  < mood <= -15  : (-1, _("Не очень")),
                 -15  < mood <=  15  : (0, _("Нейтральное")),
-                 15  < mood <=  75  : (1, _("Неплохое")),
-                 75  < mood <=  165 : (2, _("Хорошее")),
+                15   < mood <=  75  : (1, _("Неплохое")),
+                75   < mood <=  165 : (2, _("Хорошее")),
                 165  < mood <=  285 : (3, _("Очень хорошее")),
                 285  < mood         : (4, _("Прекрасное")),
                 }[True]
@@ -726,17 +732,17 @@ init python:
                     list_of_day = tuple(d for d in rec.lod if d not in zap.lod)
                     if len(list_of_day):  # есть дни, не затронутые изменениями
                         new_plan.append(Schedule(list_of_day, rec.ts, rec.te, rec.name, rec.desc, rec.loc, rec.room, rec.label,
-                                                 rec.krat, rec.shift, rec.weekstart, rec.variable, rec.enabletalk, rec.talklabel,
-                                                 rec.glow))
+                                                rec.krat, rec.shift, rec.weekstart, rec.variable, rec.enabletalk, rec.talklabel,
+                                                rec.glow))
                     list_of_day = tuple(d for d in rec.lod if d in zap.lod)
                     if rec.ts < zap.ts < rec.te and len(list_of_day):  # часть перед новой записью
                         new_plan.append(Schedule(list_of_day, rec.ts, add_time(zap.ts, -1), rec.name, rec.desc, rec.loc,
-                                                 rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
-                                                 rec.enabletalk, rec.talklabel, rec.glow))
+                                                rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
+                                                rec.enabletalk, rec.talklabel, rec.glow))
                     if rec.ts < zap.te < rec.te and len(list_of_day):  # часть после новой записи
                         new_plan.append(Schedule(list_of_day, add_time(zap.te), rec.te, rec.name, rec.desc, rec.loc,
-                                                 rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
-                                                 rec.enabletalk, rec.talklabel, rec.glow))
+                                                rec.room, rec.label, rec.krat, rec.shift, rec.weekstart, rec.variable,
+                                                rec.enabletalk, rec.talklabel, rec.glow))
                 else:  # копируем запись в новый план как есть
                     new_plan.append(rec)
 
@@ -1245,8 +1251,7 @@ init python:
             self.sing    = sing    # подпись кнопки
             self.icon    = icon    # иконка кнопки
             self.label   = label   # имя блока обработки события
-            self.enabled = enabled # доступна ли кнопка в целом (задается событиями)
-                                   # для отображения кнопки должны быть истинны оба условия
+            self.enabled = enabled # доступна ли кнопка в целом (задается событиями) для отображения кнопки должны быть истинны оба условия
 
         def __repr__(self):
             return "Кнопка: {self.sing} с иконкой \"{self.icon}\" запускает метку {self.label}. {self.enabled}".format(self=self)
@@ -1560,6 +1565,12 @@ init python:
         Lisa_ab_Olivia  = CutEvent('10:00', (5,), 'lisa_about_olivia_5', "разговор с Лизой о посиделках с Оливией", "all([flags.eric_wallet>3, lisa.flags.showdown_e==1])", cut=True)
         Meet_Olivia_Ann = CutEvent('15:00', (6,), 'olivia_ann_meeting', "знакомство Оливии с Анной", "all([lisa.flags.showdown_e==2, not olivia.flags.incident])", cut=True)
 
+        ####    09.2    ########################################################
+
+        # НАХ, в ближайшую среду, после разговора за завтраком после изгнания Эрика, сразу после ужина
+        Alice_inv_shop0 = CutEvent('20:00', (3,), 'ev_v92_001', "Алиса зовёт Макса в магазин одежды", "all([alice.flags.showdown_e == 1, flags.eric_wallet > 4])")
+        Alice_inv_shop1 = CutEvent('10:00', (4,), 'ev_v92_003', "Алиса говорит Максу собираться в магазин", "all([alice.flags.showdown_e == 3, flags.eric_wallet > 4])")
+
         def get_list_events(self, tm1, tm2, ev_day):
             # составим список всех событий, вписывающихся во временные рамки
             lst = []
@@ -1631,7 +1642,7 @@ init python:
                     else:
                         i += 1
                 if len(lst) > 1:
-                    return renpy.random.choice(lst)# lst[renpy.random.randint(0, len(lst)-1)]
+                    return random_choice(lst)# lst[renpy.random.randint(0, len(lst)-1)]
                 else:
                     return lst[0]
             else:

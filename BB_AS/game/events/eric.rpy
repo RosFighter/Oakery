@@ -325,7 +325,7 @@ label eric_ann_tv:
             pass
         "{i}подойти к ним{/i}":
             scene BG lounge-tv-00
-            $ renpy.show('Eric tv '+renpy.random.choice(['01', '02', '03'])+eric.dress)
+            $ renpy.show('Eric tv '+random_choice(['01', '02', '03'])+eric.dress)
             if eric.stat.handjob:
                 Ann_12 "Макс, мы тут с Эриком фильм смотрим. Я бы тебя пригласила, но он не для детей. Ты не мог бы погулять где-то? И, пожалуйста, не подглядывай. Хорошо?" nointeract
             else:
@@ -339,7 +339,7 @@ label eric_ann_tv:
             $ current_room = house[0]
             jump Waiting
 
-    $ tv_scene = renpy.random.choice(['bj', 'hj']) if eric.stat.handjob > 0 else 'hj'
+    $ tv_scene = random_choice(['bj', 'hj']) if eric.stat.handjob > 0 else 'hj'
 
     $ spent_time += 10
     $ pose2_3 = '01'
@@ -554,7 +554,7 @@ label eric_ann_fucking:
         play music spying
         $ spent_time += 10
 
-    $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
+    $ fuck_scene = random_choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
     if fuck_scene in [3, 6]:
         scene BG char Eric bed-02
     else:
@@ -678,7 +678,7 @@ label eric_ann_fuck_glasses_sleeping:
 
     # $ renpy.dynamic('precum')
     $ precum = renpy.random.randint(0, 1)   # 50% шанс, что Эрик кончит во время секса
-    $ var_pose = renpy.random.choice(['01', '02'])
+    $ var_pose = random_choice(['01', '02'])
 
     # annroom-bedann-01 + ann&eric-sex00 + Чулки + annroom-bedann-01-voyeur
     scene Eric_glasses_fuck voyeur with fade4
@@ -908,7 +908,7 @@ label eric_ann_shower:
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-morning 01'+mgg.dress)
         Max_04 "{m}Посмотрим, что у нас тут...{/m}"
-        $ fuck_scene = renpy.random.choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
+        $ fuck_scene = random_choice([6,1,2,3,4,5,6,1,2,3,4,5,6,1,2,3,4,5,6])
 
         scene BG bathroom-morning-00
         if fuck_scene == 4:
@@ -975,7 +975,7 @@ label eric_ann_shower:
 
     label .start_peeping:
         $ Skill('hide', 0.03, 10)
-        $ __r1 = renpy.random.choice(['01', '02', '03'])
+        $ __r1 = random_choice(['01', '02', '03'])
         $ renpy.scene()
         $ renpy.show('Eric shower '+ __r1)
         $ renpy.show('FG shower 00'+mgg.dress)
@@ -1002,15 +1002,15 @@ label eric_ann_shower:
     label .alt_peepeng:
         $ spent_time += 10
         if __r1 == '01':
-            $ __r2 = renpy.random.choice(['01', '02', '03'])
+            $ __r2 = random_choice(['01', '02', '03'])
         elif __r1 == '02':
-            $ __r2 = renpy.random.choice(['05', '06'])
+            $ __r2 = random_choice(['05', '06'])
         else:
-            $ __r2 = renpy.random.choice(['04', '07'])
+            $ __r2 = random_choice(['04', '07'])
         if not rand_result and flags.voy_stage<1:
             jump .not_luck
         $ ann.dress_inf = '00a'
-        scene BG shower-alt
+        scene BG shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Eric shower-alt '+str(__r2))
         show FG shower-water
@@ -1052,16 +1052,16 @@ label eric_ann_shower:
     label .closer_peepeng:
         $ spent_time += 10
         if __r1 == '01':
-            $ __r2 = renpy.random.choice(['01', '02', '03'])
+            $ __r2 = random_choice(['01', '02', '03'])
         elif __r1 == '02':
-            $ __r2 = renpy.random.choice(['04', '05'])
+            $ __r2 = random_choice(['04', '05'])
         else:
-            $ __r2 = renpy.random.choice(['06', '07'])
+            $ __r2 = random_choice(['06', '07'])
         if not rand_result and flags.voy_stage<1:
             jump .not_luck
 
         $ ann.dress_inf = '00a'
-        scene BG shower-closer
+        scene BG shower-01
         $ renpy.show('Eric shower-closer '+__r2)
         show FG shower-closer
         if __r1 == '01':
@@ -1094,7 +1094,7 @@ label eric_ann_shower:
         jump Waiting
 
     label .not_luck:
-        scene BG shower-closer
+        scene BG shower-01
         if __r1 == '01':
             show Eric shower-closer seen01
         else:
@@ -1970,8 +1970,9 @@ label eric_about_practice_war:
                     "Договорились. Сейчас принесу деньги...":
                         Eric_06 "Вот это деловой разговор двух мужчин! Буду ждать в комнате твоей мамы..."
                         #max&eric-terrace-00 + ad-max-(00a/00b)
-                        scene BG talk-terrace-00
-                        $ renpy.show("Max talk-terrace 00"+mgg.dress)
+                        scene thinking_max_terrace
+                        # scene BG talk-terrace-00
+                        # $ renpy.show("Max talk-terrace 00"+mgg.dress)
                         menu:
                             Max_09 "{m}Если он и правда не полезет к Лизе, если я буду платить каждую неделю, то это уже хорошо. Но как же мне уберечь от него всех остальных? Надеюсь, я найду способ...{/m}"
                             "{i}принести Эрику деньги{/i}":
@@ -2011,8 +2012,9 @@ label eric_about_practice_war:
 
 label lisa_eric_zero_practice_war:
     # max&eric-terrace-00 + ad-max-(00a/00b)
-    scene BG talk-terrace-00
-    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+    scene thinking_max_terrace
+    # scene BG talk-terrace-00
+    # $ renpy.show("Max talk-terrace 00"+mgg.dress)
     if flags.lisa_sexed == 8:
         # Настоящая дружба, состоялась 1-ая практика
         Max_07 "{m}У Лизы сейчас должен состояться практический урок сексуального воспитания. Надо обязательно подглядеть за этим! Правда, она попросила помыть за неё посуду...{/m}" nointeract
@@ -2140,8 +2142,9 @@ label start_eric_wallet:
     Max_16 "Да пошёл ты..."
 
     # max&eric-terrace-00 + ad-max-(00a/00b)
-    scene BG talk-terrace-00
-    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+    scene thinking_max_terrace
+    # scene BG talk-terrace-00
+    # $ renpy.show("Max talk-terrace 00"+mgg.dress)
     Max_09 "{m}Ну всё! Он меня достал! Так позорить меня перед всеми... Даже если я дам ему деньги, то все уже на 100%% будут считать меня вором и обманщиком. А значит пришло время избавляться от Эрика!{/m}"
     if flags.eric_photo2:
         # у Макса есть 2 снимка с Эриком

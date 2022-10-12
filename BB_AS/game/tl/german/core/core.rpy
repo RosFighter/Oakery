@@ -86,7 +86,7 @@ translate german strings:
 
     # game/core/core.rpy:792
     old "Зрелище действительно завораживающее! Умудриться раздеть и отшлёпать свою старшую сестрёнку не многим, наверно, доводилось...\nХоть она капризничает и сыпет угрозами при этом, но похоже моя настойчивость взяла верх. Любоваться её голой и упругой попкой одно удовольствие, как и шлёпать по ней.\n\nИ теперь мне понятно, как не перегибать палку, чтобы наслаждаться этим приватным наказанием как можно дольше..."
-    new "Es ist wirklich ein faszinierender Anblick! Ich glaube nicht, dass viele Leute es jemals geschafft haben, ihre große Schwester auszuziehen und zu bestrafen...\nObwohl sie launisch und gefährlich ist, scheint meine Hartnäckigkeit das Beste aus ihr herauszuholen. Es macht genauso viel Spaß, ihren nackten und knackigen Arsch zu bewundern, wie sie zu bestrafen.\n\nUnd jetzt weiß ich auch, das ich es nicht übertreiben darf, um diese private Bestrafung so lange wie möglich zu genießen..."
+    new "Es ist wirklich ein faszinierender Anblick! Ich glaube nicht, dass viele Leute es jemals geschafft haben, ihre große Schwester auszuziehen und zu bestrafen...\nObwohl sie launisch und gefährlich ist, scheint meine Hartnäckigkeit das Beste aus ihr herauszuholen. Es macht genauso viel Spaß, ihren nackten und knackigen Arsch zu bewundern, wie sie zu bestrafen.\n\Und jetzt weiß ich auch, das ich es nicht übertreiben darf, um diese private Bestrafung so lange wie möglich zu genießen..."
 
 # TODO: Translation updated at 2022-01-04 00:24
 

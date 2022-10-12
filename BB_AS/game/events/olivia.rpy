@@ -148,7 +148,7 @@ label olivia_first_meeting:
 
 label olivia_night_visit:
     $ olivia.daily.tvwatch = 1      # сразу прописываем, что состоялся диалог о совместном просмотре ТВ
-    $ olivia.dress = renpy.random.choice(['a', 'b'])
+    $ olivia.dress = random_choice(['a', 'b'])
     if not olivia.dcv.special.stage:
         # первый ночной визит
         $ olivia.dcv.special.stage = 1

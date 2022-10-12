@@ -1046,7 +1046,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
             pass
 
     # yoga-01 + yoga-01-ann-(01/01a или 02/02a или 03/03a) + yoga-01-max-(01a/01b)
-    $ var_pose = renpy.random.choice(['01', '02', '03'])
+    $ var_pose = random_choice(['01', '02', '03'])
     $ var_stage = '01'
     $ renpy.retain_after_load()
     scene Ann_yoga
@@ -1059,7 +1059,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
     Max_03 "А, что? Я просто засмотрелся и немного прослушал, что ты говорила..."
 
     # yoga-02 + yoga-02-ann-(01/01a или 02/02a или 03/03a) + yoga-02-max-(01a/01b)
-    $ var_pose = renpy.random.choice(['01', '02', '03'])
+    $ var_pose = random_choice(['01', '02', '03'])
     $ var_stage = '02'
     $ renpy.retain_after_load()
     scene Ann_yoga
@@ -1071,7 +1071,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
 
     hide screen Cookies_Button
     # yoga-03 + yoga-03-max-(a/b)-ann-(01/01a или 02/02a или 03/03a)
-    $ var_pose = renpy.random.choice(['01', '02', '03'])
+    $ var_pose = random_choice(['01', '02', '03'])
     $ var_stage = '03'
     $ renpy.retain_after_load()
     Max_05 "{m}Она такая гибкая! Главное всё не испортить, хотя, как же хочется прикоснуться ко всему, что я перед собой сейчас вижу... Мама у меня конфетка!{/m}"
@@ -1088,7 +1088,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
         # (yoga-06 + yoga-06-max&ann-01 + Одежда(Анна перекрывает Макса))
         # (yoga-06 + yoga-06-max&ann-02 + Одежда(перекрытие неважно))
         # (yoga-04 + yoga-06-max&ann-03 + Одежда(перекрытие неважно))
-        $ var_stage, var_pose = renpy.random.choice([('06', '01'), ('06', '02'), ('04', '03')])
+        $ var_stage, var_pose = random_choice([('06', '01'), ('06', '02'), ('04', '03')])
         $ renpy.retain_after_load()
         Max_04 "Я смотрю, чтобы всё правильно делалось. Ты же этого хотела?"
         Ann_13 "А тебе, Макс, не кажется, что твои руки не совсем на месте?"
@@ -1101,7 +1101,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
         # (yoga-06 + yoga-06-max&ann-01 + Одежда(Анна перекрывает Макса))
         # (yoga-06 + yoga-06-max&ann-02 + Одежда(перекрытие неважно))
         # (yoga-04 + yoga-06-max&ann-03 + Одежда(перекрытие неважно))
-        $ var_stage, var_pose = renpy.random.choice([('06', '01'), ('06', '02'), ('04', '03')])
+        $ var_stage, var_pose = random_choice([('06', '01'), ('06', '02'), ('04', '03')])
         $ renpy.retain_after_load()
         Max_04 "Я смотрю, чтобы всё правильно делалось. Ты же этого хотела?"
         Ann_03 "Только не держи меня так крепко, Макс! Придерживай легонько, я справлюсь."
@@ -1109,7 +1109,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
 
     # yoga-04 + yoga-04-max-(a/b)-ann-(01/01a или 02/02a)
     # yoga-05 + yoga-05-max-(a/b)-ann-(03/03a)
-    $ var_stage, var_pose = renpy.random.choice([('04', '01'), ('04', '02'), ('05', '03')])
+    $ var_stage, var_pose = random_choice([('04', '01'), ('04', '02'), ('05', '03')])
     $ renpy.retain_after_load()
     Ann_07 "Приятно каждый раз от тебя слышать, что я не зря этим занимаюсь... Это прекрасно мотивирует."
     Max_04 "Тебе явно эти занятия идут только на пользу. А чувствуешь себя как?"
@@ -1138,7 +1138,7 @@ label ann_yoga_with_maxr:       # повторяемая совместная й
         # (yoga-06 + yoga-07-max&ann-01 + Одежда(перекрытие неважно))
         # (yoga-06 + yoga-07-max&ann-02 + Одежда(перекрытие неважно))
         # (yoga-07-max&ann-03 + Одежда(Макс перекрывает Анну))
-        $ var_pose = renpy.random.choice(['01', '02', '03'])
+        $ var_pose = random_choice(['01', '02', '03'])
         $ var_stage = '07'
         $ renpy.retain_after_load()
         scene Ann_yoga seven
@@ -1285,7 +1285,7 @@ label ann_gift_fit1:
     Ann_05 "Спасибо, что делаешь маме приятно... Иди ко мне, я тебя обниму, как следует..."
     # annroom-morning-01 + (hugging-annroom-01-max-(01a/01b)-ann-01b или hugging-annroom-02-max-(01a/01b)-ann-01b)
     # $ renpy.show('Ann hugging morning-annroom 0'+str(renpy.random.randint(1, 2))+'-1c'+mgg.dress)
-    $ var_pose, var_dress = renpy.random.choice(['01', '02']), 'c'
+    $ var_pose, var_dress = random_choice(['01', '02']), 'c'
     scene Ann_gift hug1
     Max_05 "{m}О да... У мамы такое потрясающее тело! Так приятно прижиматься к ней... её упругой груди... Что точно хорошо в новой одежде, так это то, что мне прекрасно видны очертания её сосочков через эту тонкую ткань!{/m}"
     # annroom-morning-01 + (hugging-annroom-01-max-(02a/02b)-ann-02b или hugging-annroom-02-max-(02a/02b)-ann-02b)
@@ -1369,7 +1369,7 @@ label erofilm2_1:
     Max_02 "{m}Только в кино в твою машину может въехать такая красивая девушка! Я бы с её задним \"бампером\" такое навытворял... И так, и этак!{/m}"
 
     # tv-mass-03 + tv-ero-01-max-(01a/01b) + tv-ero-01-ann-(01/02/03)
-    $ var_pose = renpy.random.choice(['01', '02', '03'])
+    $ var_pose = random_choice(['01', '02', '03'])
     scene ann_tv_ero_01
     # scene BG tv-mass-03
     # $ renpy.show('Max tv-ero 01'+mgg.dress)
@@ -1548,7 +1548,7 @@ label erofilm2_1:
         $ renpy.show('Ann tv-ero 02-01'+mgg.dress)
     elif var_dress == 'lucky':
         # tv-mass-03 + tv-ero-01-max-(01a/01b) + tv-ero-01-ann-(01/02/03)
-        $ var_pose = renpy.random.choice(['01', '02', '03'])
+        $ var_pose = random_choice(['01', '02', '03'])
         scene ann_tv_ero_01
         # scene BG tv-mass-03
         # $ renpy.show('Max tv-ero 01'+mgg.dress)
@@ -1644,7 +1644,7 @@ label erofilm2_2:
     Max_03 "А что? Качество твоей готовки от этого не стало бы хуже! Зато какой вид..."
 
     # tv-mass-03 + tv-ero-01-max-(01a/01b) + tv-ero-01-ann-(01/02/03)
-    $ var_pose = renpy.random.choice(['01', '02', '03'])
+    $ var_pose = random_choice(['01', '02', '03'])
     scene ann_tv_ero_01
     # scene BG tv-mass-03
     # $ renpy.show('Max tv-ero 01'+mgg.dress)

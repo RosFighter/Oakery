@@ -164,8 +164,8 @@ label Alarm:
 
 label Shower:
     $ renpy.block_rollback()
-    scene BG shower-closer
-    $ renpy.show('Max shower '+renpy.random.choice(['01', '02', '03']))
+    scene BG shower-01
+    $ renpy.show('Max shower '+random_choice(['01', '02', '03']))
     show FG shower-water
 
     menu:
@@ -618,7 +618,7 @@ label delivery2:
     scene BG delivery-00
     Max_07 "{m}Звонок в ворота! Похоже, к нам кто-то приехал...{/m}"
     scene BG delivery-01
-    $ __dress = renpy.random.choice(['a', 'b'])
+    $ __dress = random_choice(['a', 'b'])
     $ renpy.show('Christine delivery 01'+__dress)
     Christine_00 "Здравствуйте! По этому адресу на сегодня назначена доставка. Распишитесь?"
     Max_00 "Конечно! А что тут?"

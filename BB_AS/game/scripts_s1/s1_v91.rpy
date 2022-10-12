@@ -309,6 +309,10 @@ label s1_ann_drink:
     # lounge-night-01-ann-01-drunk + lounge-night-01-ann-01a-drunk
     $ var_pose = '01'
     scene Ann_drink
+
+    if not ann.dcv.drink.done:
+        return
+
     if ann.daily.drink > 0:
         # Макс видел Анну в гостиной через камеру
         Max_07 "{m}Лучше мне не оставлять её одну в таком состоянии...{/m}"
@@ -413,7 +417,7 @@ label s1_ann_drink:
             "{i}раздеться{/i}":
                 pass
         # (annroom-bedann-night-07 + annroom-bedann-night-07-ann&max-01 + annroom-bedann-night-07-ann-01z) или (annroom-bedann-night-09 + annroom-bedann-night-09-ann&max-01 + annroom-bedann-night-09-ann-01z)
-        $ var_stage, var_pose = renpy.random.choice(['07', '09']), '01'
+        $ var_stage, var_pose = random_choice(['07', '09']), '01'
         scene Ann_sleep_drink mask naked
         Max_20 "{m}О да! Мама сразу же потянулась прямо вниз... Теперь её губки нежно скользят по концу моего члена, а язычок исследует и играет со всеми изгибами... Она никуда не торопится и просто наслаждается им. Фантастика!{/m}"
         Ann_07 "Ммм... Ты же любишь, когда я дразню твоего мальчика своим языком, прежде чем он попадёт ко мне в рот?"
@@ -457,7 +461,7 @@ label s1_ann_drink:
         Max_04 "Но это в следующий раз. А сейчас я просто обязан постараться сделать всё, чтобы ты тоже кончила."
 
         # (annroom-bedann-night-02 + annroom-bedann-night-02-ann&max-02 + annroom-bedann-night-02-ann-02z) или (annroom-bedann-night-06 + annroom-bedann-night-06-ann&max-02 + annroom-bedann-night-06-ann-02z) или (annroom-bedann-night-09 + annroom-bedann-night-09-ann&max-03 + annroom-bedann-night-09-ann-03z)
-        $ var_stage, var_pose = renpy.random.choice([('02', '02'), ('09', '03')])
+        $ var_stage, var_pose = random_choice([('02', '02'), ('09', '03')])
         Ann_09 "Ахх... Этого я и жду... Я вся в предвкушении того, что ты будешь для этого делать. Ох..."
         Max_03 "{m}Ммм... От такой сочной и пышной груди даже отрываться не хочется! Но у меня есть не менее интересные дела кое-где пониже! Только устроюсь поудобнее...{/m}"
 
@@ -467,7 +471,7 @@ label s1_ann_drink:
         Max_02 "{m}Да, мои пальцы довольно легко скользят по маминой киске. Если бы она только знала, что это делаю я, всё в миг бы прекратилось. Но она не знает, так что нужно пользоваться моментом...{/m}"
 
         # (annroom-bedann-night-04 + annroom-bedann-night-04-ann&max-04 + annroom-bedann-night-04-ann-04z) или (annroom-bedann-night-05 + annroom-bedann-night-05-ann&max-04 + annroom-bedann-night-05-ann-04z) или (annroom-bedann-night-09 + annroom-bedann-night-09-ann&max-04)
-        $ var_stage, var_pose = renpy.random.choice(['04', '05', '09']), '04'
+        $ var_stage, var_pose = random_choice(['04', '05', '09']), '04'
         if var_stage == '09':
             show Ann_sleep_drink -mask
 
@@ -490,7 +494,7 @@ label s1_ann_drink:
         $ added_mem_var('s1_ann_drink.restrain')
 
         # (annroom-bedann-night-07 + annroom-bedann-night-07-ann&max-02 + annroom-bedann-night-07-ann-02z) или (annroom-bedann-night-09 + annroom-bedann-night-09-ann&max-05 + annroom-bedann-night-09-ann-05z)
-        $ var_stage, var_pose = renpy.random.choice([('07', '02'), ('09', '05')])
+        $ var_stage, var_pose = random_choice([('07', '02'), ('09', '05')])
         scene Ann_sleep_drink mask naked
         Max_22 "[restrain!t]{m}Ох, она начала посасывать мой член... Это просто божественно! Я прямо чувствую, с каким удовольствием она это делает. Как же это приятно, мам, чёрт возьми!{/m}" nointeract
 
@@ -513,7 +517,7 @@ label s1_ann_drink:
                         pass
 
                 # (annroom-bedann-night-05 + annroom-bedann-night-05-ann&max-06 + annroom-bedann-night-05-ann-06z) или (annroom-bedann-night-08 + annroom-bedann-night-08-ann&max-02 + annroom-bedann-night-08-ann-02z)
-                $ var_stage, var_pose = renpy.random.choice([('05', '06'), ('08', '02')])
+                $ var_stage, var_pose = random_choice([('05', '06'), ('08', '02')])
                 Max_20 "{m}Блин! Она ещё и рукой начала моими яичками играть! А уж про то, что она всё смачнее и глубже заглатывает мой член, я вообще молчу... Только стонать и остаётся. Долго я так не протяну...{/m}" nointeract
 
                 menu:
@@ -837,7 +841,7 @@ label s1_bait_for_ann:
     # с вс на пн, даже если 1-ый урок у ТВ с Анной был в вс
 
     if var_pose not in ['01', '02', '03']:
-        $ var_pose = renpy.random.choice(['01', '02', '03'])
+        $ var_pose = random_choice(['01', '02', '03'])
     $ renpy.scene()
     $ renpy.show('Kira night-swim ' + var_pose)
     Max_03 "Ого... Купаешься голой, тётя Кира?! Классно смотришься!"
@@ -996,7 +1000,7 @@ label s1_ann_bath:
             Ann_15 "Макс! Ты почему так нагло врываешься?! Я тут вообще-то ванну принимаю..."
             if ann.dcv.private.stage == 7:
                 # bathrooom-bath-02 + bathrooom-bath-02-ann-(01/02/03)
-                $ var_pose = renpy.random.choice(['01', '02', '03'])
+                $ var_pose = random_choice(['01', '02', '03'])
                 scene ann_in_bath_enter with diss4
                 Max_07 "Я просто спросить хотел..."
                 Ann_12 "Никаких больше уроков. Я ведь уже сказала! А сейчас выйди." nointeract
@@ -1302,7 +1306,7 @@ label s1_ann_intimate_lesson_04:
             pass
 
     # bathrooom-bath-02 + bathrooom-bath-02-ann-(01/02/03)
-    $ var_pose = renpy.random.choice(['01', '02', '03'])
+    $ var_pose = random_choice(['01', '02', '03'])
     scene ann_in_bath_enter with diss4
     Ann_02 "Ну... Что стоишь и глазеешь? Раздевайся и залазь в ванну."
     Max_09 "Я просто не был уверен, что наши уроки будут продолжаться."

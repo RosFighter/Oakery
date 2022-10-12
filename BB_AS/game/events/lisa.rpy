@@ -80,11 +80,11 @@ label lisa_shower:
             $ r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
         else:
             $ lst = ['a', 'b', 'c', 'd'] if 'bathrobe' in lisa.gifts else ['c', 'd']
-            $ r1 = renpy.random.choice(lst)
+            $ r1 = random_choice(lst)
             $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[r1]
 
         scene BG bathroom-morning-00
-        $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
+        $ renpy.show('Lisa bath-window-morning '+random_choice(['01', '02', '03'])+r1)
         show FG bathroom-morning-00
         $ Skill('hide', 0.05)
         if r1 in ['a', 'b']:
@@ -138,7 +138,7 @@ label lisa_shower:
         $ lisa.daily.shower = 1
         $ lisa.dress_inf = '00a'
         $ r1 = renpy.random.randint(1, 6)
-        scene BG shower-alt
+        scene BG shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Lisa shower-alt 0'+str(r1))
         show FG shower-water
@@ -154,7 +154,7 @@ label lisa_shower:
             $ lisa.daily.shower = 1
             $ lisa.dress_inf = '00a'
             $ r1 = renpy.random.randint(1, 6)
-            scene BG shower-closer
+            scene BG shower-01
             $ renpy.show('Lisa shower-closer 0'+str(r1))
             show FG shower-closer
             if 1 < r1 < 5:
@@ -171,8 +171,8 @@ label lisa_shower:
         if rand_result or len(lisa.sorry.give) > 3:
             $ lisa.daily.shower = 2
             $ lisa.dress_inf = '00a'
-            $ r1 = renpy.random.choice(['07', '08'])
-            scene BG shower-closer
+            $ r1 = random_choice(['07', '08'])
+            scene BG shower-01
             $ renpy.show('Lisa shower-closer '+r1)
             show FG shower-closer
             Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\n{m}О нет! Похоже, она что-то заметила... Надо бежать!{/m}"
@@ -189,10 +189,10 @@ label lisa_shower:
             $ punreason[0] = 1
         if lisa_was_topless():
             # после второго ТВ с Оливией
-            $ r1 = renpy.random.choice(['07', '08'])
+            $ r1 = random_choice(['07', '08'])
         else:
-            $ r1 = renpy.random.choice(['09', '10'])
-        scene BG shower-closer
+            $ r1 = random_choice(['09', '10'])
+        scene BG shower-01
         $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
         if lisa_was_topless() and lisa.dcv.other.stage:
@@ -308,13 +308,13 @@ label lisa_dressed:
         "{i}заглянуть в окно{/i}" if GetWeekday(day):
             # в любой день, кроме воскресенья
             if GetWeekday(day) == 6:
-                $ r1 = renpy.random.choice(['03', '04', '05', '06'])
+                $ r1 = random_choice(['03', '04', '05', '06'])
                 $ lisa.dress_inf ={'03':'02b', '04':'02c', '05':'02i', '06':'02g'}[r1]
             else:
-                $ r1 = renpy.random.choice(['01', '02', '03', '04'])
+                $ r1 = random_choice(['01', '02', '03', '04'])
                 $ lisa.dress_inf = {'01':'02h', '02':'02e', '03':'02b', '04':'02c'}[r1]
 
-            if all([GetWeekday(day) != 6, mgg.stealth >= 11.0, renpy.random.choice([False, False, True])]):
+            if all([GetWeekday(day) != 6, mgg.stealth >= 11.0, random_choice([False, False, True])]):
                 scene BG char Lisa voyeur-01
                 $ renpy.show('Lisa voyeur alt-'+r1)
                 $ renpy.show('FG voyeur-lisa-01'+mgg.dress)
@@ -805,7 +805,7 @@ label lisa_bath:
                 Max_03 "{m}Кажется, Лиза как раз собирается принять ванну... О да, моя младшая сестрёнка хороша... а голенькая, так особенно!{/m}"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
-                    $ renpy.show('Lisa bath-window '+renpy.random.choice(['02', '03', '04']))
+                    $ renpy.show('Lisa bath-window '+random_choice(['02', '03', '04']))
                     $ Skill('hide', 0.03, 10)
                     menu:
                         Max_05 "{m}Ох, вот это повезло! Лиза демонстрирует свои прелестные сисечки словно специально! Разумеется, она не знает, что я смотрю, а то крику бы было...{/m}"

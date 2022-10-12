@@ -62,7 +62,7 @@ label alice_bath:
                 Max_03 "{m}Вот это повезло! Алиса как раз собирается принять ванну... Её шикарная попка меня просто завораживает! Так бы любовался и любовался...{/m}"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
-                    $ renpy.show('Alice bath-window '+renpy.random.choice(['02', '03', '04']))
+                    $ renpy.show('Alice bath-window '+random_choice(['02', '03', '04']))
                     $ Skill('hide', 0.025, 10)
                     menu:
                         Max_05 "{m}Чёрт возьми, она меня что, специально дразнит своей мокренькой грудью... Может моя старшая сестрёнка и стерва, но какая же она горячая! Очень сексуальна...{/m}"
@@ -390,12 +390,14 @@ label alice_shower:
         Max_02 "{m}...подождать.{/m}"
         if not _in_replay:
             $ poss['spider'].open(3)
+        $ var_pose = random_choice(['a','b','c'])
         scene BG char Alice spider-bathroom-00
-        $ renpy.show('Alice spider-shower 01'+renpy.random.choice(['a','b','c']))
+        $ renpy.show('Alice spider-shower 01'+var_pose)
         Alice_06 "Боже мой, какой кошмар... И что мне теперь с этим пауком делать... Ну почему эти твари лезут именно ко мне? Может быть, он уползёт..."
         $ renpy.show('Max spider-bathroom 03'+mgg.dress)
         Max_07 "Алиса, ты кричала... Что случилось?"
-        $ renpy.show('Alice spider-shower 02'+renpy.random.choice(['a','b','c']))
+        $ var_pose = random_choice(['a','b','c'])
+        $ renpy.show('Alice spider-shower 02'+var_pose)
         if GetRelMax('alice')[0] < 1:
             Alice_16 "Макс! Ты какого хрена так тихо подходишь, я же тут голая стою! Мало того, что паук ко мне в душ заполз, так ещё ты тут на меня пялишься... А ну вали отсюда, бегом!"
             Max_00 "Ладно, ладно... Как скажешь. Ухожу."
@@ -409,24 +411,46 @@ label alice_shower:
             Max_00 "Ладно, ладно... Уже ухожу."
             jump .end
         else:
-            Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз..."
-            Max_04 "Не переживай! Сейчас я его поймаю и выброшу... И ты спокойно домоешься."
-            Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!"
-            menu:
-                Max_01 "Хорошо, сейчас принесу. Никуда не уходи..."
-                "{i}принести Алисе полотенце{/i}":
-                    pass
-        scene BG char Alice spider-bathroom-01
-        $ renpy.show('Alice spider-shower 03'+renpy.random.choice(['a','b','c']))
+            if alice.flags.together_sleep > 3:
+                # Макс обломал Алису с куни в её комнате при защите от пауков
+                if not alice.flags.shower_max:
+                    # Макс охраняет Алису в душе 1-ый раз
+                    jump ev_v92_009
+                elif alice.flags.shower_max == 1:
+                    # Макс охраняет Алису в душе 2-ый раз
+                    jump ev_v92_010
+                elif alice.flags.shower_max == 2:
+                    # Макс охраняет Алису в душе 3-ый раз
+                    jump ev_v92_011
+            elif alice.flags.together_sleep > 0:
+                # Макс начал ночевать с Алисой
+                call ev_v92_008 from _call_ev_v92_008
+            else:
+                # Макс ещё не ночевал с Алисой
+                Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз..."
+                Max_04 "Не переживай! Сейчас я его поймаю и выброшу... И ты спокойно домоешься."
+                Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!" nointeract
+                menu:
+                    "Хорошо, сейчас принесу. Никуда не уходи...":
+                        pass
+
+        # scene BG char Alice spider-bathroom-01
+        # $ renpy.show('Alice spider-shower 03'+random_choice(['a','b','c']))
+        $ var_pose = random_choice(['a','b','c'])
+        $ var_stage, var_pose2 = '03', '04'
+        scene alice_near_shower
         Alice_12 "Макс, ну ты где там?! Только смотри, чтобы этого монстра не было на моём полотенце! Иначе тебе будет очень-очень больно..."
-        $ renpy.show('Max spider-bathroom 04'+mgg.dress)
+        # $ renpy.show('Max spider-bathroom 04'+mgg.dress)
+        scene alice_near_shower mgg
         if not _in_replay:
             $ spent_time = 50 - int(tm[-2:])
         menu:
             Max_03 "Вот я и вернулся! С полотенцем всё в порядке, вот, держи."
             "{i}отдать Алисе полотенце{/i}":
-                $ renpy.show('Alice spider-shower 04'+renpy.random.choice(['a','b']))
-                $ renpy.show('Max spider-bathroom 06'+mgg.dress)
+                # $ renpy.show('Alice spider-shower 04'+random_choice(['a','b']))
+                # $ renpy.show('Max spider-bathroom 06'+mgg.dress)
+                $ var_pose = random_choice(['a', 'b'])
+                $ var_stage, var_pose2 = '04', '06'
                 if 'sexbody1' in alice.gifts and alice.flags.hugs>4:
                     # подарено сексуальное боди + 3-5 обнимашек за сладости
                     menu:
@@ -445,11 +469,14 @@ label alice_shower:
                 $ AddRelMood('alice', 10, 50, 3)
 
             "{i}отдать Алисе полотенце (выронив его из одной руки){/i}":
-                $ renpy.show('Alice spider-shower 05'+renpy.random.choice(['a','b','c','d']))
-                $ renpy.show('Max spider-bathroom 05'+mgg.dress)
+                # $ renpy.show('Alice spider-shower 05'+random_choice(['a','b','c','d']))
+                # $ renpy.show('Max spider-bathroom 05'+mgg.dress)
+                $ var_pose = random_choice(['a','b','c','d'])
+                $ var_stage, var_pose2 = '05', '05'
                 Alice_14 "Макс!!! Ах ты... Ну-ка дай сюда полотенце!!!"
-                show Alice spider-shower 04b
-                $ renpy.show('Max spider-bathroom 06'+mgg.dress)
+                # show Alice spider-shower 04b
+                # $ renpy.show('Max spider-bathroom 06'+mgg.dress)
+                $ var_pose, var_stage, var_pose2 = 'b', '04', '06'
                 Max_08 "Ой! Извини, я..."
                 menu:
                     Alice_17 "Какого чёрта, Макс?! Что за шуточки! Или ты безрукий? Живо признавайся, ты специально это сделал?!"
@@ -560,7 +587,7 @@ label alice_shower:
         $ alice.daily.shower = 1
         $ alice.dress_inf = '00aa'
         $ r1 = renpy.random.randint(1, 6)
-        scene BG shower-alt
+        scene BG shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Alice shower-alt 0'+str(r1))
         show FG shower-water
@@ -577,7 +604,7 @@ label alice_shower:
             $ alice.daily.shower = 1
             $ alice.dress_inf = '00aa'
             $ r1 = renpy.random.randint(1, 6)
-            scene BG shower-closer
+            scene BG shower-01
             $ renpy.show('Alice shower-closer 0'+str(r1))
             show FG shower-closer
             if r1 % 2 > 0:
@@ -594,7 +621,7 @@ label alice_shower:
             $ alice.daily.shower = 2
             $ alice.dress_inf = '00aa'
             $ r1 = renpy.random.randint(7, 8)
-            scene BG shower-closer
+            scene BG shower-01
             $ renpy.show('Alice shower-closer 0'+str(r1))
             show FG shower-closer
             Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\n{m}Ох, чёрт! Нужно скорее уносить ноги, пока они ещё есть...{/m}"
@@ -610,9 +637,14 @@ label alice_shower:
         else:
             $ punreason[1] = 1
             $ alice.daily.shower = 3
-        $ r1 = renpy.random.choice(['09', '10'])
+        if not alice.flags.shower_max:
+            # Макс ещё не принимал душ с Алисой
+            $ r1 = random_choice(['09', '10'])
+        else:
+            # shower-alice-(09/10) - уходят, на смену приходят shower-alice-(07/08)
+            $ r1 = random_choice(['07', '08'])
 
-        scene BG shower-closer
+        scene BG shower-01
         $ renpy.show('Alice shower-closer '+r1)
         show FG shower-closer
         if alice.dcv.shower.stage and get_alice_shower_peeping_stage() < 2:
@@ -629,11 +661,18 @@ label alice_shower:
             Alice_18 "Ух, я тобой займусь вечером, если осмелишься подойти... А сейчас брысь отсюда!!!"
             Max_10 "Вот чёрт!"
             jump .end
-        elif poss['risk'].st() > 17:
+        elif poss['risk'].st() > 17 and not alice.flags.shower_max:
             Alice_15 "[spotted!t]Макс!!! Опять ты здесь! Сколько можно-то?! Тебе по заднице нравится получать что ли?"
             Max_13 "Нет! Я просто..."
             Alice_18 "Ух, я тобой займусь вечером, если осмелишься подойти... А сейчас брысь отсюда!!!"
             Max_10 "Вот чёрт!"
+            jump .end
+        elif alice.flags.shower_max > 0:
+            # после того, как Макс 1-ый раз примет душ вместе с Алисой (из-за паука)
+            Alice_12 "[spotted!t]Блин, Макс! Напугал! Тебе по заднице так сильно неймётся получить? Я это запросто устрою..."
+            Max_10 "Да за что?! Я же не увидел ничего нового!"
+            Alice_16 "Подглядывать - нехорошо! И это обязательно должно наказываться. Не мной, так мамой."
+            Max_11 "Вот же ёлки-палки."
             jump .end
 
         menu:
@@ -651,13 +690,13 @@ label alice_shower:
             $ r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d', '00aa':'d'}[alice.dress_inf]
         else:
             if alice.nopants:
-                $ r1 = renpy.random.choice(['b', 'd'])
+                $ r1 = random_choice(['b', 'd'])
             else:
-                $ r1 = renpy.random.choice(['a', 'c'])
+                $ r1 = random_choice(['a', 'c'])
             $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[r1]
 
         scene BG bathroom-morning-00
-        $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
+        $ renpy.show('Alice bath-window-morning '+random_choice(['01', '02', '03'])+r1)
         show FG bathroom-morning-00
         $ Skill('hide', 0.05)
         if alice.req.result == 'not_nopants' and not alice.req.noted:
@@ -728,7 +767,7 @@ label alice_dressed_shop:
                         'c':['02','03'],
                         'd':['02','03','05']
                     }[alice.dress]
-                $ r1 = renpy.random.choice(lst)
+                $ r1 = random_choice(lst)
 
                 $ suf = 'a' if all([r1 != '01', alice.req.result == 'nopants']) else ''
                 if alice.req.result == 'not_nopants':
@@ -742,7 +781,7 @@ label alice_dressed_shop:
                         '05':'02h',
                     }[r1]
 
-                if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+                if mgg.stealth >= 11.0 and random_choice([False, False, True]):
                     scene BG char Alice voyeur-01
                     $ renpy.show('Alice voyeur alt-'+r1+suf)
                     $ renpy.show('FG voyeur-morning-01'+mgg.dress)
@@ -823,7 +862,7 @@ label alice_dressed_friend:
                         'c':['02','03'],
                         'd':['02','03','05']
                     }[alice.dress]
-                $ r1 = renpy.random.choice(lst)
+                $ r1 = random_choice(lst)
 
                 $ suf = 'a' if all([r1 != '01', alice.req.result == 'nopants']) else ''
                 if alice.req.result == 'not_nopants':
@@ -837,7 +876,7 @@ label alice_dressed_friend:
                         '05':'02h',
                     }[r1]
 
-                if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+                if mgg.stealth >= 11.0 and random_choice([False, False, True]):
                     scene BG char Alice voyeur-01
                     $ renpy.show('Alice voyeur alt-'+r1+suf)
                     $ renpy.show('FG voyeur-morning-01'+mgg.dress)
@@ -892,7 +931,7 @@ label alice_dressed_club:
             if alice.req.result == 'not_nopants':
                 $ added_mem_var('alice_not_nopants')
                 $ alice.req.noted = True
-            if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+            if mgg.stealth >= 11.0 and random_choice([False, False, True]):
                 scene BG char Alice voyeur-01
                 $ renpy.show('Alice voyeur alt-04'+suf)
                 $ renpy.show('FG voyeur-morning-01'+mgg.dress)
@@ -967,7 +1006,10 @@ label alice_dressed_club:
 label alice_sun:
     if alice.daily.oiled:
         scene BG char Alice sun-alone 01
-        if alice.daily.oiled in [2, 4]:
+        if alice.req.result == 'bikini':
+            show Alice sun-alone 01
+            $ persone_button1 = 'Alice sun-alone 01b'
+        elif alice.daily.oiled in [2, 4]:
             show Alice sun-alone 01a
             $ persone_button1 = 'Alice sun-alone 01a'
         else:
@@ -1030,12 +1072,14 @@ label alice_evening_closer:
     $ renpy.show('Alice evening-closer '+pose3_2+alice.dress)
     return
 
+default violation = False
 
 label spider_in_bed:
     # $ renpy.dynamic('mood', 'naked', 'toples', 'suf')
     $ mood = 0
     $ naked = False
     $ toples = False
+    $ violation = False
     if alice.req.result == 'sleep':
         $ suf = alice.dress[:1]+'t'
         $ toples = True
@@ -1048,12 +1092,12 @@ label spider_in_bed:
         $ alice.req.noted = True
 
     scene BG char Alice spider-night-01
-    $ renpy.show('Alice spider-night 01-'+renpy.random.choice(['01', '02', '03'])+suf)
+    $ renpy.show('Alice spider-night 01-'+random_choice(['01', '02', '03'])+suf)
     with fade4
     Alice_13 "Макс!"
 
     scene BG char Alice spider-night-02
-    $ renpy.show('Max spider-night 02-'+renpy.random.choice(['01', '02', '03']))
+    $ renpy.show('Max spider-night 02-'+random_choice(['01', '02', '03']))
     $ renpy.show('Alice spider-night 02-01'+suf)
     if alice.dress == 'b':
         show screen Cookies_Button
@@ -1089,7 +1133,7 @@ label spider_in_bed:
 
     label .help:
         scene BG char Alice spider-night-03
-        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['01', '02', '03'])+suf)
+        $ renpy.show('Alice spider-night 03-'+random_choice(['01', '02', '03'])+suf)
         show Max spider-night 03-01
 
         if not _in_replay:
@@ -1148,7 +1192,7 @@ label spider_in_bed:
                     "Покажи сиськи!":
                         # spider-night-03-alice-(10b/11b/12b)
                         show Max spider-night 03-03
-                        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+suf)
+                        $ renpy.show('Alice spider-night 03-'+random_choice(['10', '11', '12'])+suf)
                         if alice.GetMood()[0] < 3:
                             $ mood -= 50
                         Alice_09 "Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
@@ -1195,7 +1239,7 @@ label spider_in_bed:
                                 Alice_06 "Ну вот... разделась... И не говори, что этого мало... Я и так перед тобой тут голая стою, рук всё прикрыть не хватает... Доволен?"
                                 "Сиськи ещё покажи...":
                                     # spider-night-03-alice-(10b/11b/12b)
-                                    $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+'n')
+                                    $ renpy.show('Alice spider-night 03-'+random_choice(['10', '11', '12'])+'n')
                                     Alice_14 "Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
                                     Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
                                 "О да, я очень доволен!":
@@ -1205,6 +1249,7 @@ label spider_in_bed:
                     $ alice.dcv.prudence.set_lost(renpy.random.randint(3, 7))
                     $ alice.req.result = alice.req.req
                     $ alice.req.noted = False
+                    $ violation = True
                     $ alice.sleepnaked = True
                     $ alice.dress = ''
                     $ suf = 'n'
@@ -1227,7 +1272,7 @@ label spider_in_bed:
                 Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
                 Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
                 scene BG char Alice spider-night-05
-                $ renpy.show('Alice spider-night 05-'+renpy.random.choice(['01', '02', '03'])+suf)
+                $ renpy.show('Alice spider-night 05-'+random_choice(['01', '02', '03'])+suf)
                 Alice_06 "Ну вот... смотри... И не говори, что этого мало... большего не покажу! Доволен?"
                 Max_05 "О да, я очень доволен! Попка у тебя просто супер, сестрёнка!"
                 Alice_12 "Всё! Посмотрел и хватит, давай уже, лови этого паука!"
@@ -1236,6 +1281,7 @@ label spider_in_bed:
                 $ alice.dcv.prudence.set_lost(renpy.random.randint(3, 7))
                 $ alice.req.result = alice.req.req
                 $ alice.req.noted = False
+                $ violation = True
                 if alice.req.req == 'nopants':
                     $ alice.nopants = True
                 elif alice.req.req == 'sleep':
@@ -1262,7 +1308,7 @@ label spider_in_bed:
         show Max spider-night 03-03
         if alice.GetMood()[0] < 3:
             $ mood -= 50
-            $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['07', '08'])+suf)
+            $ renpy.show('Alice spider-night 03-'+random_choice(['07', '08'])+suf)
             Alice_14 "[succes!t]Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
         else:
             $ renpy.show('Alice spider-night 03-09'+suf)
@@ -1275,7 +1321,7 @@ label spider_in_bed:
             $ toples = True
             $ suf += 't'
         show Max spider-night 03-03
-        $ renpy.show('Alice spider-night 03-'+renpy.random.choice(['10', '11', '12'])+suf)
+        $ renpy.show('Alice spider-night 03-'+random_choice(['10', '11', '12'])+suf)
         if alice.GetMood()[0] < 3:
             $ mood -= 50
         Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
@@ -1286,9 +1332,9 @@ label spider_in_bed:
         scene BG char Alice spider-night-04
         show Max spider-night 04-01
         if toples:
-            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['04', '05', '06'])+suf)
+            $ renpy.show('Alice spider-night 04-'+random_choice(['04', '05', '06'])+suf)
         else:
-            $ renpy.show('Alice spider-night 04-'+renpy.random.choice(['01', '02', '03'])+suf)
+            $ renpy.show('Alice spider-night 04-'+random_choice(['01', '02', '03'])+suf)
         if alice.dress == 'a':
             show screen Cookies_Button
         menu:
@@ -1341,6 +1387,32 @@ label spider_in_bed:
     label .let_go:
         hide screen Cookies_Button
         scene BG char Alice spider-balcony
+        pause
+        if alice.sleepnaked:
+            $ var_dress = 'n'
+        elif alice.sleeptoples:
+            $ var_dress = alice.dress[:1] + 't'
+        else:
+            $ var_dress = alice.dress[:1]
+
+        scene alice_talk_about_sleepeng
+        $ SpiderKill = 0
+        $ SpiderResp = 1
+
+        if all([alice.dcv.mistress.stage > 4, alice.flags.sober_fj, alice.flags.touched, alice.dcv.intrusion.stage in [5, 7]]):
+            # - успешно пройдено доминирование Алисы с конфетой
+            # - получен трезвый fj перед ТВ
+            # - пройдены "прятки" от паука (а значит, Макс опередил Эрика с боди)
+            if not alice.flags.together_sleep:
+                # (1-ый раз)
+                jump ev_v92_004
+            elif alice.flags.together_sleep < 2:
+                jump ev_v92_005
+            elif alice.flags.together_sleep < 3:
+                jump ev_v92_006
+            elif alice.flags.together_sleep < 4:
+                jump ev_v92_007
+
         menu:
             Alice_13 "Макс! Я тебя просила убить его, а не отпускать! Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?.. Всё, иди отсюда. Я хочу спать!"
             "{i}вернуться в кровать{/i}":
@@ -1348,8 +1420,6 @@ label spider_in_bed:
                 $ spent_time = 30
                 $ mood -= 50
                 $ AddRelMood('alice', 0, mood)
-                $ SpiderKill = 0
-                $ SpiderResp = 1
                 return
 
     label .kill:
@@ -1397,6 +1467,15 @@ label alice_smoke:
 
             if flags.eric_wallet == 2 and flags.eric_photo1:
                 jump smoke_after_wallet
+
+            if alice.flags.shower_max > 2:
+                # после 3-его совместного принятия душа Алисы и Макса
+                if alice.req.result == 'bikini':
+                    jump ev_v92_013
+                elif alice.req.result == 'naked':
+                    jump ev_v92_014
+                else:
+                    jump ev_v92_012
 
             if alice.req.result is None:
                 # нет текущих требований
@@ -1478,7 +1557,7 @@ label alice_after_club:
         else:
             $ suf = ''
             $ alice.dress_inf = '04ca'
-        $ r1 = renpy.random.choice(['01', '02', '03'])
+        $ r1 = random_choice(['01', '02', '03'])
         scene BG char Alice bath-after-club 01
         $ renpy.show('Alice bath-after-club 01-'+r1+suf)
         show Max bath-after-club 01
@@ -1966,7 +2045,7 @@ label alice_lisa_shower:
                     $ r1 = 'd'
                 $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[r1]
 
-            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
+            $ renpy.show('Lisa bath-window-morning '+random_choice(['01', '02', '03'])+r1)
             show FG bathroom-morning-00
             if r1 == 'a':
                 Max_03 "{m}Лиза смотрится в подаренном мною халатике очень соблазнительно... Особенно когда так хорошо видно её упругие сисечки, а за кадром ещё и Алиса принимает душ!{/m}"
@@ -1986,7 +2065,7 @@ label alice_lisa_shower:
                 else:
                     $ r1 = 'd'
                 $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[r1]
-            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1)
+            $ renpy.show('Alice bath-window-morning '+random_choice(['01', '02', '03'])+r1)
             show FG bathroom-morning-00
             if r1=='a':
                 Max_02 "{m}Может Алиса и в халатике, но сиськи её видны просто замечательно, а за кадром ещё и Лиза принимает душ!{/m}"
@@ -1996,9 +2075,9 @@ label alice_lisa_shower:
                 Max_06 "{m}Алиса сегодня совершенно голая! И даже не представляет, что тем самым дарит мне возможность любоваться всеми её прелестями, а за кадром ещё и Лиза принимает душ!{/m}"
 
         else: # если девчонки перед зеркалом вдвоём, то они могут быть либо в трусиках, либо голыми
-            $ r1 = 'd' if 'lisa_alice_sh' in cam_flag else renpy.random.choice(['c', 'd', 'c', 'd', 'c', 'd'])
-            $ renpy.show('Alice bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1, at_list=[ladder_left_shift,])
-            $ renpy.show('Lisa bath-window-morning '+renpy.random.choice(['01', '02', '03'])+r1, at_list=[ladder_right_shift,])
+            $ r1 = 'd' if 'lisa_alice_sh' in cam_flag else random_choice(['c', 'd', 'c', 'd', 'c', 'd'])
+            $ renpy.show('Alice bath-window-morning '+random_choice(['01', '02', '03'])+r1, at_list=[ladder_left_shift,])
+            $ renpy.show('Lisa bath-window-morning '+random_choice(['01', '02', '03'])+r1, at_list=[ladder_right_shift,])
             show FG bathroom-morning-00
             if r1=='c':
                 Max_05 "{m}Две мои сестрёнки красуются перед зеркалом в одних лишь трусиках! Такую прелесть редко можно увидеть...{/m}"
@@ -2037,7 +2116,7 @@ label alice_lisa_shower:
         $ spent_time += 10
         $ r1 = renpy.random.randint(1, 6)
         $ r2 = renpy.random.randint(1, 6)
-        scene BG shower-closer
+        scene BG shower-01
         $ renpy.show('Alice shower-closer 0'+str(r2), at_list=[left_shift,])
         $ renpy.show('Lisa shower-closer 0'+str(r1), at_list=[right_shift,])
         show FG shower-closer
@@ -2051,7 +2130,7 @@ label alice_lisa_shower:
         $ lisa.dress_inf = '00a'
         $ r1 = renpy.random.randint(1, 6)
         $ r2 = renpy.random.randint(1, 6)
-        scene BG shower-alt
+        scene BG shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Lisa shower-alt 0'+str(r1), at_list=[alt_left_shift,])
         $ renpy.show('Alice shower-alt 0'+str(r2), at_list=[alt_right_shift,])
@@ -2275,7 +2354,7 @@ label alice_blog_lingerie:
                 # Алиса позирует стоя и Макс остаётся незамеченным
                 if all([alice.dcv.photo.stage==1, alice.dcv.photo.done]):
                     # blog-desk-01 + alice 02 + max 02
-                    $ renpy.show('Alice blog '+renpy.random.choice(['03', '04'])+alice.dress)
+                    $ renpy.show('Alice blog '+random_choice(['03', '04'])+alice.dress)
                     $ renpy.show('Max blog 02'+mgg.dress)
                     menu:
                         Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?"
@@ -2283,7 +2362,7 @@ label alice_blog_lingerie:
                             jump give_photos1
                 elif alice.dcv.intrusion.stage in [1, 2]:
                     # blog-desk-01 + alice 03-04 + max 02
-                    $ renpy.show('Alice blog '+renpy.random.choice(['03', '04'])+alice.dress)
+                    $ renpy.show('Alice blog '+random_choice(['03', '04'])+alice.dress)
                     $ renpy.show('Max blog 02'+mgg.dress)
                     menu:
                         Alice_05 "Макс, совсем стыд потерял! Уже не подглядываешь, а просто открыто приходишь и глазеешь?"
@@ -2292,7 +2371,7 @@ label alice_blog_lingerie:
                         "Покажешь боди, которое тебе Эрик купит?" if get_stage_sexbody2() == 4:
                             jump alice_showing_lingerie1
                 else:
-                    $ renpy.show('Alice blog '+renpy.random.choice(['03', '04'])+alice.dress)
+                    $ renpy.show('Alice blog '+random_choice(['03', '04'])+alice.dress)
                     $ renpy.show('Max blog 03'+mgg.dress)
                     menu:
                         Max_05 "{m}Отлично! Алиса крутит задом перед камерой в одном нижнем белье! Надеюсь, не заметит... Отсюда вид точно лучше, чем через камеру...{/m}"
@@ -2789,24 +2868,24 @@ label blog_with_Eric:
                 # spider-night-04 + aliceroom-blog-dresses-01-eric-(01/01a) + Алиса в белье(spider-night-04-alice-(01/02/03) / spider-night-04-alice-(01a/02a/03a) / aliceroom-blog-dresses-01-alice-(01a/02a/03a))
                 scene BG char Alice spider-night-04
                 $ renpy.show('Eric newbody2 01'+eric.dress)
-                $ renpy.show('Alice newbody2 '+renpy.random.choice(['01', '02', '03'])+alice.dress)
+                $ renpy.show('Alice newbody2 '+random_choice(['01', '02', '03'])+alice.dress)
                 Max_07 "{m}Хоть Эрик и сказал, что подглядывать можно, но вот Алиса вряд ли с этим согласится, так что нужно быть как можно осторожнее...{/m}"
                 Alice_06 "Эрик, ты правда хочешь, чтобы я здесь перед тобой одела новое боди? Я, конечно, могу... но только, если ты закроешь глаза и не будешь подглядывать! Хорошо?"
                 Eric_02 "Конечно, Алиса. Давай, мне не терпится увидеть, как оно на тебе сидит..."
 
                 # spider-night-04 + aliceroom-blog-dresses-01-eric-(01/01a) + Алиса раздевается(spider-night-04-alice-(04/05/06) / spider-night-04-alice-(04a/05a/06a) / aliceroom-blog-dresses-01-alice-(04a/05a/06a))
-                $ renpy.show('Alice newbody2 '+renpy.random.choice(['04', '05', '06'])+alice.dress)
+                $ renpy.show('Alice newbody2 '+random_choice(['04', '05', '06'])+alice.dress)
                 Alice_14 "Эй! Эрик! Ты обещал не подглядывать. Я же вижу, что ты пялишься на меня! Отвернись, быстро! Ну или хотя бы закрой глаза руками..."
                 Eric_03 "Ты так красиво начала раздеваться, что я забыл не смотреть. Считай, закрыл."
 
                 # spider-night-04 + aliceroom-blog-dresses-01-eric-(02/02a) + Алиса голая(aliceroom-blog-dresses-02-alice-(01a/02a))
                 $ renpy.show('Eric newbody2 02'+eric.dress)
-                $ renpy.show('Alice newbody2 '+renpy.random.choice(['07', '08']))
+                $ renpy.show('Alice newbody2 '+random_choice(['07', '08']))
                 Max_02 "{m}Ага, закрыл он, как же! Точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису! Бесподобная у меня сестрёнка...{/m}"
 
                 # spider-night-04 + aliceroom-blog-dresses-01-eric-(02/02a) + Алиса одевается(aliceroom-blog-dresses-02-alice-(03a/04a))
                 $ renpy.show('Eric newbody2 02'+eric.dress)
-                $ renpy.show('Alice newbody2 '+renpy.random.choice(['09', '10']))
+                $ renpy.show('Alice newbody2 '+random_choice(['09', '10']))
                 Max_07 "{m}Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Прямо, как мне и хочется... Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня...{/m}"
 
                 # spider-night-04 + aliceroom-blog-dresses-01-eric-(01/01a) + Алиса в новом боди(aliceroom-blog-dresses-02-alice-05a)

@@ -52,15 +52,15 @@ label Waiting:
         $ mgg.flags.hourly_reset()
 
         # позы обновляются каждый час
-        $ pose3_1 = renpy.random.choice(['01', '02', '03'])
-        $ pose3_2 = renpy.random.choice(['01', '02', '03'])
-        $ pose3_3 = renpy.random.choice(['01', '02', '03'])
-        $ pose3_4 = renpy.random.choice(['01', '02', '03'])
-        $ pose2_1 = renpy.random.choice(['01', '02'])
-        $ pose2_2 = renpy.random.choice(['01', '02'])
-        $ pose2_3 = renpy.random.choice(['01', '02'])
-        $ pose2_4 = renpy.random.choice(['02', '03'])
-        $ tv_scene = '' # renpy.random.choice(['', 'bj', 'hj'])
+        $ pose3_1 = random_choice(['01', '02', '03'])
+        $ pose3_2 = random_choice(['01', '02', '03'])
+        $ pose3_3 = random_choice(['01', '02', '03'])
+        $ pose3_4 = random_choice(['01', '02', '03'])
+        $ pose2_1 = random_choice(['01', '02'])
+        $ pose2_2 = random_choice(['01', '02'])
+        $ pose2_3 = random_choice(['01', '02'])
+        $ pose2_4 = random_choice(['02', '03'])
+        $ tv_scene = '' # random_choice(['', 'bj', 'hj'])
 
     # начисление влияния и другие события по времени
     if 'eric' in chars:
@@ -211,8 +211,8 @@ label eric_time_settings:
 # label Midnight:
 #     # "Полночь"
 #     $ renpy.dynamic("char")
-#     $ random_loc_ab = renpy.random.choice(['a', 'b'])
-#     $ random_sigloc = renpy.random.choice(['n', 't'])
+#     $ random_loc_ab = random_choice(['a', 'b'])
+#     $ random_sigloc = random_choice(['n', 't'])
 #
 #     $ alice_disodedience()
 #
@@ -333,7 +333,7 @@ label eric_time_settings:
 #
 #     # назначаем день бонусных потрахушек (за Лизу) первый раз
 #     if flags.voy_stage in [9, 10, 12, 13, 14] and not flags.ae_bonus_day:
-#         $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
+#         $ flags.ae_bonus_day = random_choice([1, 3, 4])
 #
 #     return
 
@@ -401,7 +401,7 @@ label Noon:
 #
 #     # назначаем день бонусных потрахушек (за Лизу) на новую неделю
 #     if flags.voy_stage in [9, 10, 12, 13, 14]:
-#         $ flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
+#         $ flags.ae_bonus_day = random_choice([1, 3, 4])
 #
 #     python:
 #         # уменьшение счетчика событий, зависимых от прошедших дней
@@ -974,8 +974,8 @@ label after_load:
 
         if _version < current_ver or current_ver < "0.06.0.999":
             call old_fix from _call_old_fix
-    # elif config.developer:
-    #     "_ver [_version], conf.ver [config.version]"
+    elif config.developer:
+        "_ver [_version], conf.ver [config.version]"
 
     if _version < config.version:
 
@@ -1006,7 +1006,8 @@ label after_load:
         call update_07_p1_99 from _call_update_07_p1_99
         call update_07_p2_99 from _call_update_07_p2_99
         call update_08_0_99 from _call_update_08_0_99
-        call update_09_1_00 from _call_update_09_1_99
+        call update_09_1_00 from _call_update_09_1_00
+        call update_09_2_00 from _call_update_09_2_00
 
         $ _version = config.version
 
@@ -2087,4 +2088,10 @@ label update_09_1_00:
             $ wcv.catch_Kira.set_lost(0)
             $ wcv.catch_Kira.enabled = False
 
+    return
+
+label update_09_2_00:
+    if _version < '0.09.2.00':
+        if alice.flags.hip_mass > 4:
+            $ alice.flags.sober_fj = 2
     return

@@ -8,7 +8,7 @@ label cam0_ann_sleep:
         return
 
     $ renpy.show('Ann cams sleep '+cam_poses_manager(ann, ['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
-    # $ renpy.show('Ann cams sleep night '+renpy.random.choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
+    # $ renpy.show('Ann cams sleep night '+random_choice(['01', '02', '03'])+ann.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'ann_sleep' not in cam_flag:
         $ cam_flag.append('ann_sleep')
@@ -40,7 +40,7 @@ label cam1_ann_shower:
         if ann.dress_inf != '04a':
             $ __r1 = {'04c':'a', '04d':'b', '02b':'c', '00':'d', '00a':'d'}[ann.dress_inf]
         else:
-            $ __r1 = renpy.random.choice(['a', 'b', 'c', 'd'])
+            $ __r1 = random_choice(['a', 'b', 'c', 'd'])
             $ ann.dress_inf = {'a':'04c', 'b':'04d', 'c':'02b', 'd':'00'}[__r1]
 
         $ renpy.show('Ann cams bath-mirror '+cam_poses_manager(ann, ['01', '02', '03'], 1)+__r1, at_list=[laptop_screen])
@@ -136,7 +136,7 @@ label cam0_ann_dressed_work:
     # $ spent_time += 10
     $ Wait(10)
     $ __list = ['03', '03a', '04'] if ann.dress=='d' else ['01', '01a', '02', '02a', '02b']  # частично одета. Может быть как с нижним бельём, так и без
-    $ __ran1 = renpy.random.choice(__list)
+    $ __ran1 = random_choice(__list)
     call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf
 
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
@@ -148,7 +148,7 @@ label cam0_ann_dressed_work:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ __ran1 = renpy.random.choice(['05','06','07','08'])
+    $ __ran1 = random_choice(['05','06','07','08'])
     $ ann.dress_inf = '00'
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -161,7 +161,7 @@ label cam0_ann_dressed_work:
 
     # $ spent_time += 10
     $ Wait(10)
-    $ __ran1 = renpy.random.choice(['09', '09a'])
+    $ __ran1 = random_choice(['09', '09a'])
     call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_1
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -183,7 +183,7 @@ label cam0_ann_dressed_shop:
     # $ spent_time += 10
     $ Wait(10)
     $ __list = ['03', '03a', '04'] if ann.dress=='d' else ['01', '01a', '02', '02a', '02b']  # частично одета. Может быть как с нижним бельём, так и без
-    $ __ran1 = renpy.random.choice(__list)
+    $ __ran1 = random_choice(__list)
     call ann_cam_dress_inf(__ran1) from _call_ann_cam_dress_inf_2
 
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
@@ -195,7 +195,7 @@ label cam0_ann_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ __ran1 = renpy.random.choice(['05','06','07','08'])
+    $ __ran1 = random_choice(['05','06','07','08'])
     $ ann.dress_inf = '00'
     $ renpy.show('Ann cams dressed '+__ran1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen

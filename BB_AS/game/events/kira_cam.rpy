@@ -49,7 +49,7 @@ label cam1_kira_shower:
         if kira.daily.shower > 1 or 'kira_bath_mirror' in cam_flag:
             $ __r1 = {'04a':'b', '02a':'c', '00':'d', '00a':'d'}[kira.dress_inf]
         else:
-            $ __r1 = renpy.random.choice(['b', 'c', 'd'])
+            $ __r1 = random_choice(['b', 'c', 'd'])
             $ kira.dress_inf = {'b':'04a', 'c':'02a', 'd':'00'}[__r1]
 
         $ __pose = cam_poses_manager(kira, ['01', '02', '03'], 1) if __r1 != 'd' else cam_poses_manager(kira, ['01', '02', '03', '04', '05'], 1)
@@ -78,7 +78,7 @@ label cam0_kira_alice_shower:
     elif 'kira_alice_sh' in cam_flag:
         $ __var = 'kira_alice'
     else:
-        $ __var = renpy.random.choice(['alice', 'kira_alice', 'kira', 'kira_alice'])
+        $ __var = random_choice(['alice', 'kira_alice', 'kira', 'kira_alice'])
         if __var == 'alice':
             $ cam_flag.append('alice_sh' if tm[-2:] < '30' else 'kira_sh')
         elif __var == 'kira':
@@ -140,7 +140,7 @@ label cam1_kira_alice_shower:
     elif 'kira_alice_sh' in cam_flag:
         $ __var = 'kira_alice'
     else:
-        $ __var = renpy.random.choice(['alice', 'kira_alice', 'kira', 'kira_alice'])
+        $ __var = random_choice(['alice', 'kira_alice', 'kira', 'kira_alice'])
         if __var == 'alice':
             $ cam_flag.append('kira_sh' if tm[-2:] < '30' else 'alice_sh')
         elif __var == 'kira':
@@ -194,7 +194,7 @@ label cam0_kira_lisa_shower:
     elif 'kira_lisa_sh' in cam_flag:
         $ __var = 'kira_lisa'
     else:
-        $ __var = renpy.random.choice(['lisa', 'kira_lisa', 'kira', 'kira_lisa'])
+        $ __var = random_choice(['lisa', 'kira_lisa', 'kira', 'kira_lisa'])
         if __var == 'lisa':
             $ cam_flag.append('lisa_sh' if tm[-2:] < '30' else 'kira_sh')
         elif __var == 'kira':
@@ -256,7 +256,7 @@ label cam1_kira_lisa_shower:
     elif 'kira_lisa_sh' in cam_flag:
         $ __var = 'kira_lisa'
     else:
-        $ __var = renpy.random.choice(['lisa', 'kira_lisa', 'kira', 'kira_lisa'])
+        $ __var = random_choice(['lisa', 'kira_lisa', 'kira', 'kira_lisa'])
         if __var == 'lisa':
             $ cam_flag.append('kira_sh' if tm[-2:] < '30' else 'lisa_sh')
         elif __var == 'kira':

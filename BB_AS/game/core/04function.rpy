@@ -8,6 +8,12 @@ init -100:
 
 
 init python:
+    # store.current_label = "none"
+    # def label_callback(name, abnormal):
+    #     if name[0] != '_':
+    #         store.current_label = name
+    # config.label_callback = label_callback
+
     config.layers.insert(1, 'wm')
     random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
 
@@ -451,7 +457,7 @@ init python:
 
         cam2 = [] # список камер с повышенным зрительским интересом
 
-        cycles = spent_time / 10 # расчет выполняется каждые 10 минут
+        cycles = spent_time // 10 # расчет выполняется каждые 10 минут
 
         for i in range(cycles):
             watchers = mgg.invited * renpy.random.randint(170, 250) / 60000.0 # количество привлеченных рекламмой зрителей
@@ -625,7 +631,14 @@ init python:
             AvailableActions['usb'].active = True
             AvailableActions['searchbook'].active = all([alice.plan_name != 'read', '08:00' <= tm < '22:00'])
             if items['spider'].have and poss['spider'].used(3) and not flags.eric_wallet == 2:
-                AvailableActions['hidespider'].active = True
+                # есть паук, открыта возможность подкидывать в спальню, не обвинён в воровстве
+                if alice.flags.together_sleep < 3:
+                    # Алиса не просыпалась утром от дрочки Максу
+                    AvailableActions['hidespider'].active = True
+                elif all([alice.flags.together_sleep == 3, alice.flags.sober_fj > 2]):
+                    # Алиса просыпалась утром от дрочки Максу,
+                    # Алиса на трезвую голову делала Максу фут-джоб у ТВ >2 раз
+                    AvailableActions['hidespider'].active = True
             AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00', (not alice.flags.privpunish or 0 < GetWeekday(day) < 6), not flags.eric_wallet == 2])
 
         # ванная комната
@@ -736,7 +749,7 @@ init python:
 
 
     def MoodNeutralize(): # с течением времени настроение стремится к нейтральному
-        cycles = spent_time / 10 # расчет выполняется каждые 10 минут
+        cycles = spent_time // 10 # расчет выполняется каждые 10 минут
         for char in chars:
             if char in ['olivia', 'kira']:
                 continue
@@ -751,17 +764,17 @@ init python:
         renpy.scene()
         renpy.show('BG breakfast 00') # общий фон
         if check_is_home('kira'):
-            renpy.show('Kira breakfast 2-0'+renpy.random.choice(['1', '2', '3'])+kira.dress)
-            renpy.show('Ann breakfast 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+            renpy.show('Kira breakfast 2-0'+random_choice(['1', '2', '3'])+kira.dress)
+            renpy.show('Ann breakfast 2-0'+random_choice(['1', '2', '3'])+ann.dress)
         else:
-            renpy.show('Ann breakfast 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
-        renpy.show('Alice breakfast 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
-        renpy.show('Lisa breakfast 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
+            renpy.show('Ann breakfast 0'+random_choice(['1', '2', '3'])+ann.dress)
+        renpy.show('Alice breakfast 0'+random_choice(['1', '2', '3'])+alice.dress)
+        renpy.show('Lisa breakfast 0'+random_choice(['1', '2', '3'])+lisa.dress)
         if check_is_home('kira'):
-            renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
+            renpy.show('FG breakfast 0'+random_choice(['1', '2', '3'])+'a') # стол
         else:
-            renpy.show('FG breakfast 0'+renpy.random.choice(['1', '2', '3'])) # стол
-        renpy.show('Max breakfast 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
+            renpy.show('FG breakfast 0'+random_choice(['1', '2', '3'])) # стол
+        renpy.show('Max breakfast 0'+random_choice(['1', '2', '3'])+mgg.dress)
 
         if 'kira' in chars:
             renpy.show_screen('Cookies_Button')
@@ -776,13 +789,13 @@ init python:
                 ('eric' in chars and eric.plan_name == 'dinner'),
                 all([GetWeekday(day)==6, day>=11, flags.dinner==6]),
             ]):
-            renpy.show('Eric dinner 0'+renpy.random.choice(['1', '2', '3'])+eric.dress)
-            renpy.show('Ann dinner 2-0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+            renpy.show('Eric dinner 0'+random_choice(['1', '2', '3'])+eric.dress)
+            renpy.show('Ann dinner 2-0'+random_choice(['1', '2', '3'])+ann.dress)
         else:
-            renpy.show('Ann dinner 0'+renpy.random.choice(['1', '2', '3'])+ann.dress)
+            renpy.show('Ann dinner 0'+random_choice(['1', '2', '3'])+ann.dress)
 
-        renpy.show('Alice dinner 0'+renpy.random.choice(['1', '2', '3'])+alice.dress)
-        renpy.show('Lisa dinner 0'+renpy.random.choice(['1', '2', '3'])+lisa.dress)
+        renpy.show('Alice dinner 0'+random_choice(['1', '2', '3'])+alice.dress)
+        renpy.show('Lisa dinner 0'+random_choice(['1', '2', '3'])+lisa.dress)
 
         if any([
                 day == 4,
@@ -790,11 +803,11 @@ init python:
                 ('eric' in chars and eric.plan_name == 'dinner'),
                 all([GetWeekday(day)==6, day>=11, flags.dinner==6])
             ]):
-            renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])+'a') # стол
+            renpy.show('FG dinner 0'+random_choice(['1', '2', '3'])+'a') # стол
         else:
-            renpy.show('FG dinner 0'+renpy.random.choice(['1', '2', '3'])) # стол
+            renpy.show('FG dinner 0'+random_choice(['1', '2', '3'])) # стол
 
-        renpy.show('Max dinner 0'+renpy.random.choice(['1', '2', '3'])+mgg.dress)
+        renpy.show('Max dinner 0'+random_choice(['1', '2', '3'])+mgg.dress)
         if 'kira' in chars:
             renpy.show_screen('Cookies_Button')
 
@@ -1002,7 +1015,7 @@ init python:
     def random_pose(pose_list, last_pose=None):  # назначает из списка позу, отличную от последней
         if len(pose_list)>1 and pose_list.count(last_pose) > 0:
             pose_list.remove(last_pose)
-        return renpy.random.choice(pose_list)
+        return random_choice(pose_list)
 
 
     def cooldown_cam_pose(char, last_time, cam=0):

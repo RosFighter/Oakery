@@ -24,10 +24,10 @@ label cam0_alice_sleep_night:
         show Alice cams fun-in-bed 01 at laptop_screen
         Max_07 "{m}Похоже, Алиса перед сном решила что-то посмотреть... Интересно, что?{/m}"
 
-        $ renpy.show('Alice cams fun-in-bed 02'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
+        $ renpy.show('Alice cams fun-in-bed 02'+random_choice(['a', 'b']), at_list=[laptop_screen])
         Max_02 "{m}Ага! Теперь ясно... Порнушку она решила посмотреть... посасывая заодно свою игрушку...{/m}"
 
-        $ renpy.show('Alice cams fun-in-bed 03'+renpy.random.choice(['a', 'b', 'c']), at_list=[laptop_screen])
+        $ renpy.show('Alice cams fun-in-bed 03'+random_choice(['a', 'b', 'c']), at_list=[laptop_screen])
         Max_06 "{m}Ого! Видимо, массаж ног с конфетами очень завёл мою сестрёнку! Может, мне попробовать помассировать ей не только ноги в следующий раз?!{/m}"
         if not alice.flags.hip_mass:
             $ alice.flags.hip_mass = 1
@@ -148,9 +148,9 @@ label cam1_alice_shower:
             $ __r1 = {'04ca':'a', '04da':'b', '02fa':'c', '00a':'d'}[alice.dress_inf]
         else:
             if alice.nopants:
-                $ __r1 = renpy.random.choice(['b', 'd'])
+                $ __r1 = random_choice(['b', 'd'])
             else:
-                $ __r1 = renpy.random.choice(['a', 'c'])
+                $ __r1 = random_choice(['a', 'c'])
             $ alice.dress_inf = {'a':'04ca', 'b':'04da', 'c':'02fa', 'd':'00a'}[__r1]
 
         $ renpy.show('Alice cams bath-mirror '+cam_poses_manager(alice, ['01', '02', '03'], 1)+__r1, at_list=[laptop_screen])
@@ -175,7 +175,7 @@ label cam0_alice_lisa_shower:
     elif 'lisa_alice_sh' in cam_flag:
         $ __var = 'lisa_alice'
     else:
-        $ __var = renpy.random.choice(['alice', 'lisa_alice', 'lisa', 'lisa_alice'])
+        $ __var = random_choice(['alice', 'lisa_alice', 'lisa', 'lisa_alice'])
         if __var == 'alice':
             $ cam_flag.append('alice_sh' if tm[-2:] < '30' else 'lisa_sh')
         elif __var == 'lisa':
@@ -237,7 +237,7 @@ label cam1_alice_lisa_shower:
     elif 'lisa_alice_sh' in cam_flag:
         $ __var = 'lisa_alice'
     else:
-        $ __var = renpy.random.choice(['alice', 'lisa_alice', 'lisa', 'lisa_alice'])
+        $ __var = random_choice(['alice', 'lisa_alice', 'lisa', 'lisa_alice'])
         if __var == 'alice':
             $ cam_flag.append('lisa_sh' if tm[-2:] < '30' else 'alice_sh')
         elif __var == 'lisa':
@@ -320,7 +320,7 @@ label cam0_alice_dressed_shop:
     $ Wait(10)
 
     if alice.dress in ['a', 'c']:
-        $ __r1 = renpy.random.choice(['01', '02a']) if alice.nopants else renpy.random.choice(['01', '02'])
+        $ __r1 = random_choice(['01', '02a']) if alice.nopants else random_choice(['01', '02'])
     elif alice.dress == 'b':
         $ __r1 = '03' # нет спрайта, временно ставим в одних
     elif alice.dress == 'd':
@@ -336,7 +336,7 @@ label cam0_alice_dressed_shop:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ __r1 = renpy.random.choice(['06','07','08'])
+    $ __r1 = random_choice(['06','07','08'])
     call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_1
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -378,7 +378,7 @@ label cam0_alice_dressed_friend:
     $ Wait(10)
 
     if alice.dress in ['a', 'c']:
-        $ __r1 = renpy.random.choice(['01', '02a']) if alice.nopants else renpy.random.choice(['01', '02'])
+        $ __r1 = random_choice(['01', '02a']) if alice.nopants else random_choice(['01', '02'])
     elif alice.dress == 'b':
         $ __r1 = '03' # нет спрайта, временно ставим в одних
     elif alice.dress == 'd':
@@ -394,7 +394,7 @@ label cam0_alice_dressed_friend:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ __r1 = renpy.random.choice(['06','07','08'])
+    $ __r1 = random_choice(['06','07','08'])
     call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_6
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -446,7 +446,7 @@ label cam0_alice_dressed_club:
         "{i}достаточно{/i}":
             jump open_site
 
-    $ __r1 = renpy.random.choice(['06','07','08'])
+    $ __r1 = random_choice(['06','07','08'])
     call alice_cam_dress_inf(__r1) from _call_alice_cam_dress_inf_11
     $ renpy.show('Alice cams dressed '+__r1, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
@@ -516,12 +516,12 @@ label cam1_alice_smoke:
     return
 
 label cam0_alice_sun:
-    if alice.daily.oiled in [2, 4]:
+    if alice.daily.oiled in [2, 4] or alice.req.result == 'bikini':
         show Alice cams sun-alone 00a at laptop_screen
     elif alice.daily.oiled > 0:
         show Alice cams sun-alone 00 at laptop_screen
     else:
-        $ renpy.show('Alice cams sun '+cam_poses_manager(alice, ['01', '02', '03', '04', '05', '06']), at_list=[laptop_screen])
+        $ renpy.show('Alice cams sun '+cam_poses_manager(alice, ['01', '02', '03', '04', '05', '06']+alice.dress), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_sun0' not in cam_flag:
         $ cam_flag.append('alice_sun0')
@@ -529,7 +529,7 @@ label cam0_alice_sun:
     return
 
 label cam1_alice_sun:
-    if alice.daily.oiled in [2, 4]:
+    if alice.daily.oiled in [2, 4] or alice.req.result == 'bikini':
         show Alice cams sun-alone 01a at laptop_screen
     elif alice.daily.oiled > 0:
         show Alice cams sun-alone 01 at laptop_screen
@@ -559,7 +559,7 @@ label cam0_alice_swim:
     return
 
 label cam1_alice_swim:
-    $ renpy.show('Alice cams swim '+cam_poses_manager(alice, ['01', '02', '03', '04']), at_list=[laptop_screen])
+    $ renpy.show('Alice cams swim '+cam_poses_manager(alice, ['01', '02', '03', '04']+alice.dress), at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_swim1' not in cam_flag:
         $ cam_flag.append('alice_swim1')
@@ -596,7 +596,7 @@ label cam0_alice_rest_evening:
         Max_03 "{m}Ого! Похоже, начинается что-то интересненькое! Алиса решила снять лишнюю одежду и поразвлечься?!{/m}"
 
         $ __suf = 'a' if alice.dress in ['a', 'c'] else alice.dress
-        $ renpy.show('Alice cams fun-at-desk '+renpy.random.choice(['03', '04'])+__suf, at_list=[laptop_screen])
+        $ renpy.show('Alice cams fun-at-desk '+random_choice(['03', '04'])+__suf, at_list=[laptop_screen])
         Max_05 "{m}Вот так, сестрёнка! То, как ты ласкаешь киску и посасываешь свою игрушку что мне, что зрителям, однозначно нравится...{/m}"
 
         if not alice.stat.mast:
@@ -745,16 +745,16 @@ label cam0_blog_with_Eric:
 
         # cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(07a/07b)
         $ renpy.show('Eric cams blog 04'+eric.dress, at_list=[laptop_screen])
-        $ renpy.show('Alice cams blog dresses 07'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 07'+random_choice(['a', 'b']), at_list=[laptop_screen])
         Max_01 "{m}Голая и прекрасная Алиса! Сказала Эрику не подглядывать, только вот он точно во всю глазеет сквозь пальцы... Я бы уж точно рискнул так близко поглазеть на голую Алису!{/m}"
 
         # cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(08a/08b)
-        $ renpy.show('Alice cams blog dresses 08'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 08'+random_choice(['a', 'b']), at_list=[laptop_screen])
         Max_07 "{m}Ухх... Алиса не спешит спрятать свои аппетитные сисечки под боди! Хм, а может она заметила, что Эрик всё равно подглядывает и таким образом дразнит его?! И не подозревает, что заодно и меня...{/m}"
 
         # cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(09a/09b)
         $ renpy.show('Eric cams blog 03'+eric.dress, at_list=[laptop_screen])
-        $ renpy.show('Alice cams blog dresses 09'+renpy.random.choice(['a', 'b']), at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 09'+random_choice(['a', 'b']), at_list=[laptop_screen])
         Max_09 "{m}Понятно всё с вами, Алиса села на шею Эрику, а он и рад. Эх, Алиса... надеюсь, ты знаешь, что делаешь...{/m}"
         #после этого через камеру можно увидеть 2 варианта того, что делают Алиса и Эрик, либо она сидит он стоит рядом, либо она позирует он сидит на кровати
 

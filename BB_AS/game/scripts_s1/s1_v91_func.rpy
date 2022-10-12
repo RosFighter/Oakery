@@ -139,12 +139,13 @@ init python:
 
     ############################################################################
 
+    # полночь
     def start_midnight(cheat = False):
         global random_loc_ab, random_sigloc
         global prenoted, film, SpiderResp, olivia_night_visits
 
-        random_loc_ab = renpy.random.choice(['a', 'b'])
-        random_sigloc = renpy.random.choice(['n', 't'])
+        random_loc_ab = random_choice(['a', 'b'])
+        random_sigloc = random_choice(['n', 't'])
 
         alice_disodedience()    # нарушение или соблюдение требований Алисой
 
@@ -187,7 +188,7 @@ init python:
         if poss['nightclub'].st() >= 5 and kol_choco == 0:
             items['choco'].unblock()
 
-
+    # новая неделя
     def start_newweek(cheat = False):
         global shower_schedule
 
@@ -195,7 +196,9 @@ init python:
             kira.sleepnaked = False # сбрасываем флаг стриптиза Киры
 
         if 'kira' in chars and not shower_schedule:
-            shower_schedule = 1       # активируем новое расписаниеa
+            shower_schedule = 1         # активируем новое расписаниеa
+        elif all([shower_schedule == 1, alice.flags.together_sleep > 0]):
+            shower_schedule = 2         # в среду и воскресенье Лизу с Кирой отправляем в душ раньше Алисы
 
         if all(['sexbody2' in alice.gifts, flags.lisa_sexed>0, get_rel_eric()[0] < 0]):
             # отношения с Эриком по сёстрам определены, вражда
@@ -212,7 +215,7 @@ init python:
 
         # назначаем день бонусных потрахушек (за Лизу) на новую неделю
         if flags.voy_stage in [9, 10, 12, 13, 14]:
-            flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
+            flags.ae_bonus_day = random_choice([1, 3, 4])
 
         # уменьшение счетчика событий, зависимых от прошедших дней
         wcv.countdown()
@@ -234,7 +237,7 @@ init python:
         if 'eric' in chars:
             eric_obligation.reset()
 
-
+    # новый игровой день
     def start_newday(cheat = False):
         global random_tab, ann_eric_scene, stockings
 
@@ -270,10 +273,6 @@ init python:
 
             # для каждого типа одежды каждого персонажа запустим рандомную смену
             char.clothes.SetDailyRand()
-            # lst = char.clothes.GetList()
-            # for cl_t in lst:
-            #     if eval('char.clothes.'+cl_t+'.rand'):
-            #         eval('char.clothes.'+cl_t+'.SetRand()')
 
         if olivia_nightvisits():
             # установим откат для ночных визитов Оливии.
@@ -291,7 +290,7 @@ init python:
 
         # назначаем день бонусных потрахушек (за Лизу) первый раз
         if flags.voy_stage in [9, 10, 12, 13, 14] and not flags.ae_bonus_day:
-            flags.ae_bonus_day = renpy.random.choice([1, 3, 4])
+            flags.ae_bonus_day = random_choice([1, 3, 4])
 
         if mgg.credit.debt > 0:        # если кредит не погашен
             mgg.credit.left -= 1       # уменьшим счетчик дней
@@ -313,7 +312,16 @@ init python:
             pass
         elif alice.req.req and (not alice.req.result or alice.req.result[:3] != 'not'):
             # Если требование Макса было и это не деньги
-            if random_outcome(GetDisobedience()):   # шанс, что Алиса не будет соблюдать договоренность
+            if alice.req.req in ['sleep', 'naked', 'bikini'] and alice.flags.together_sleep:  # 09.2
+                # Макс уже ночевал с Алисой, требование спать топлес или голой больше не нарушается
+                # после 3-го совместного душа требование загорать топлес так же не нарушается
+                alice.req.result = alice.req.req
+                if alice.req.req == 'sleep':
+                    alice.sleeptoples = True
+                elif alice.req.req == 'naked':
+                    alice.sleepnaked = True
+            elif random_outcome(GetDisobedience()):
+                # шанс, что Алиса не будет соблюдать договоренность
                 alice.req.result = 'not_' + alice.req.req
                 alice.req.noted = False  # нарушение ещё не замечено Максом
             else:

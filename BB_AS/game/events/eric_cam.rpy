@@ -156,7 +156,7 @@ label cam0_eric_ann_tv:
         $ tv_scene = ''
         $ pose2_3 = cam_poses_manager(eric, ['01', '02', '03'])
     elif tm[-2:] < '30' and eric.stat.handjob and not tv_scene:
-        $ tv_scene = renpy.random.choice(['bj', 'hj']) if eric.stat.handjob else 'hj'
+        $ tv_scene = random_choice(['bj', 'hj']) if eric.stat.handjob else 'hj'
         $ pose2_3 = '01'
     elif tm[-2:]>='30' and tv_scene:
         $ pose2_3 = '02'

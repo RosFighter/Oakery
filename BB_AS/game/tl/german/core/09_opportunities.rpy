@@ -2252,11 +2252,11 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько поразвлечься с Кирой..."
-    new "Man muss nur bis Dienstag- oder Freitagabend warten und sich mit Kira amüsieren..."
+    new "Man muss nur bis Dienstag- oder Freitagabend warten um sich mit Kira zu amüsieren..."
 
     # game/core/09_opportunities.rpy:4
     old "Нужно лишь дождаться ночи вторника или пятницы и хорошенько с ней поразвлечься..."
-    new "Man muss nur bis Dienstag- oder Freitagabend warten und sich mit ihr amüsieren..."
+    new "Man muss nur bis Dienstag- oder Freitagabend warten um sich mit ihr zu amüsieren..."
 
     # game/core/09_opportunities.rpy:4
     old "Круто! Я попросил у Эрика возможность присутствовать во время их с мамой секса и он согласился это устроить! Правда, с некоторыми оговорками. Мама меня не увидит, а я в свою очередь не должен шуметь. Думаю, я справлюсь. Ох, и круто же будет! Только бы не упустить день, в который на маме будут очки для сна..."
@@ -2477,4 +2477,68 @@ translate german strings:
     # game/core/09_opportunities.rpy:4
     old "Теперь с Алисой можно вести себя посмелее..."
     new "Jetzt kann man mit Alice mutiger sein..."
+
+# TODO: Translation updated at 2022-10-08 23:59
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "На всякий случай, лучше подкопить деньжат, хотя бы $1500, потому что не понятно, что Алиса захочет купить..."
+    new "Nur für den Fall, dass du etwas Geld sparen musst, mindestens $1500, denn es ist nicht klar, was Alice kaufen will..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, что Алиса загорелась желанием транслировать то, как она играет в видео игры и при этом будет сексуально одеваться под соответствующую играм тематику. И я с радостью поучаствую в этом. Начать мы решили с костюма Чёрной кошки из вселенной Человека-паука, правда Алиса хочет дополнить образ ещё некоторыми аксессуарами. Вот дополнит и я её отщёлкаю... Ну, в смысле, пофотографирую."
+    new "Es scheint, dass Alice unbedingt zeigen will, wie sie Videospiele spielt und sich dabei passend zum Thema des Spiels sexy kleidet. Und ich würde mich gerne daran beteiligen. Wir haben uns für das Black Cat-Kostüm aus dem Spider-Man-Universum entschieden, aber Alice möchte den Look mit weiteren Accessoires vervollständigen. Also werde ich einen Schnappschuss von ihr machen... Ich meine, Fotos machen."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Кто не рискует...\"..."
+    new "Es wird ein gewisser Erfolg in der Möglichkeit von \"Wer nichts wagt...\" nötig sein..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Ночью приставать к Алисе я не стал. Это явная дорога обратно в свою комнату на костылях. А вот утром, пока Алиса ещё спит, это другое дело... \nЯ, конечно, уже кучу раз видел её сиськи, но всё равно было очень приятно стягивать её лифчик и не менее приятно то, что она от этого не проснулась. Самое главное, это то, что я смог попасть в её постель и теперь можно двигаться дальше. \n\nИнтересно, что будет, если она проснётся от моих приставаний? Это и надо выяснить..."
+    new "Ich habe Alice nachts nicht gestört. Der Weg zurück in mein Zimmer war frei und brauche keine Krücken. Aber am Morgen, wenn Alice noch schläft, ist das eine andere Sache...\nIch hatte ihre Titten schon ein paar Mal gesehen, aber es war trotzdem schön, ihr den BH auszuziehen, und ebenso schön, dass es sie nicht aufweckte. Das Wichtigste war, dass ich in ihr Bett kommen konnte, und jetzt sollte ich weitere Schritte planen.\n\nIch frage mich, was passieren würde, wenn sie durch meine Annäherungsversuche aufwachen würde? Das gilt es herauszufinden..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Желательно, чтобы Алиса проснулась от моих приставаний..."
+    new "Hoffentlich wacht Alice auf, wenn ich sie belästige..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Ну что, я жив, здоров и полон сил, готов и дальше приставать к Алисе. Она может и попросила меня больше к ней не лезть, но я то знаю, что она сама этого хочет. И ей нужно это показать в следующий раз... \nНаверняка, чтобы теперь остаться с ней на ночь придётся уговаривать, но мне не в первой этим заниматься."
+    new "Nun, ich bin gesund und munter und voller Energie und bereit, Alice weiterhin zu belästigen. Sie hat mich zwar gebeten, sie nicht mehr zu belästigen, aber ich weiß, dass sie genau das will. Und das wird sie mir das nächste Mal zeigen müssen...\nIch bin sicher, dass ich mich da herausreden muss, wenn ich die Nacht mit ihr verbringen will, aber das ist nicht das erste Mal, dass ich das tun werde."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать оберегать Алису от пауков в её комнате..."
+    new "Alice muss vor den Spinnen in ihrem Zimmer beschützt werden..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Ох уж какая Алиса оказывается проказница! Лежала такая, якобы спала и вдруг бац... уже мне дрочит... А ещё оправдывается! Всё теперь понятно, что у неё на уме и мне стоит ответить в том же ключе... в следующий раз... когда останусь с ней на ночь..."
+    new "Oh, was für ein Spaßvogel Alice doch ist! Ich lag da und tat so, als ob ich schlafe, und plötzlich... holt sie mir einen runter... Und sie redet sich heraus! Jetzt weiß ich, was in ihr vorgeht, und ich sollte genauso reagieren... Das nächste Mal... wenn ich bei ihr übernachte..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Потребуются успехи в возможности \"Шаловливые ножки\"... Алиса поработала ножками без конфеты [alice.flags.sober_fj] раз из 3"
+    new "Es wird einige Fortschritte bei der Möglichkeit \"freche Schenkel\" brauchen... Alice arbeitete mit ihren Füßen ohne Süßigkeiten [alice.flags.sober_fj] von 3"
+
+    # game/core/09_opportunities.rpy:4
+    old "Эх, теряет Алиса хватку... Она мне и так угрожала, и этак, а мне всё ни по чём... Я просто взял и запустил свой язык в её киску! А как я её обломал на самом пике блаженства... Ну ничего, будет знать, что я тоже человек и хочу кончать... на неё... Посмотрим, задумается ли она над этим. \nИ пока лучше перестать подбрасывать пауков в её комнату, а то это и так уже крайне подозрительно. \nО, может теперь она пустит меня к себе, когда принимает душ?"
+    new "Eh, Alice verliert die Kontrolle... Sie drohte mir auf diese und jene Weise, aber das war mir egal... Ich stecke einfach meine Zunge in ihre Pussy. Und wie ich sie auf dem Höhepunkt ihrer Glückseligkeit gefickt habe... Sie wird wissen, dass ich auch ein Mensch bin und kommen will... auf sie... Mal sehen, ob sie darüber nachdenkt.\nIn der Zwischenzeit sollte ich besser aufhören, Spinnen in ihr Zimmer zu bri9ngen, denn das ist schon sehr verdächtig.\nOh, vielleicht lässt sie mich jetzt rein, wenn sie duscht."
+
+    # game/core/09_opportunities.rpy:4
+    old "Пустит ли меня Алиса к себе в душ для охраны, если её будет терроризировать паук? Стоит проверить..."
+    new "Würde Alice mich in ihre Dusche lassen, wenn sie von einer Spinne terrorisiert würde? Es lohnt sich, das zu überprüfen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как я удачно пригодился Алисе! Оказался прямо там где нужно и когда нужно, чтобы спасти её мокрую попку от паука. А судя по тому, что она дала потискать эту самую попку и намекнула на то, чтобы я в следующий раз не забыл потереть ей спинку - выводы она сделала правильные. По крайней мере, мне так кажется, что правильные. Вопрос только в том, сколько времени она ещё станет ломаться? Ухх... Я уже жду не дождусь дня, когда она будет принимать душ одна..."
+    new "Was für ein Glück, dass ich Alice von Nutzen sein konnte! Ich war gerade zur Stelle, als sie mich brauchte, um ihren nassen Arsch vor der Spinne zu retten. Und der Tatsache nach zu urteilen, dass sie mich ihren Arsch anfassen lässt und andeutet, dass ich beim nächsten Mal daran denken soll, ihr den Rücken zu massieren - hatte sie die richtigen Schlüsse gezogen. Zumindest glaube ich, dass sie das getan hat. Die Frage ist nur, wie lange sie noch durchhält. Ach... Ich kann den Tag kaum erwarten, an dem sie alleine duscht..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно продолжать оберегать Алису от пауков, когда она принимает душ..."
+    new "Wenn Alice duscht, muss sie vor Spinnen geschützt werden..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, что паук теперь мне больше мешает, нежели, помогает. Только я начал подбираться к самому интересному с Алисой, как он выполз к нам и всё испортил. Не сказать, что прямо всё, ведь я получил от Алисы благодарный поцелуйчик, да ещё и успел потереться своим членом об её попку, пока она висела на мне... Но я явно мог получить больше... Может в следующий раз повезёт и я замечу паука первым?"
+    new "Die Spinne scheint jetzt eher ein Hindernis als eine Hilfe zu sein. Ich war gerade bei dem besten Teil mit Alice angekommen, als sie hereingekrochen ist und alles ruiniert hat. Ich würde nicht sagen alles, denn ich bekam einen dankbaren Kuss von Alice, und rieb meinen Schwanz an ihrem Arsch, während sie an mir hing... Aber ich hätte mehr haben können... Vielleicht habe ich beim nächsten Mal das Glück, die Spinne zuerst zu sehen."
+
+    # game/core/09_opportunities.rpy:4
+    old "О-ля-ля... Вот Алиса наконец и попалась. Для меня открывается много всего интересного с ней, но вместе с тем, стервозиной она быть не перестанет, так что не всё будет гладко и просто."
+    new "Ooh la la... Alice hat endlich aufgeholt. Mit ihr eröffnen sich mir viele interessante Dinge, aber gleichzeitig wird sie nicht aufhören, ein Miststück zu sein, es wird also nicht alles glatt laufen und einfacher werden."
 

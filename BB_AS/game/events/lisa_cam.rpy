@@ -1,7 +1,7 @@
 
 label cam0_lisa_sleep_night:
     $ renpy.show('Lisa cams sleep night '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
-    # $ renpy.show('Lisa cams sleep night '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    # $ renpy.show('Lisa cams sleep night '+random_choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_sleep' not in cam_flag:
         $ cam_flag.append('lisa_sleep')
@@ -10,7 +10,7 @@ label cam0_lisa_sleep_night:
 
 label cam0_lisa_sleep_morning:
     $ renpy.show('Lisa cams sleep morning '+cam_poses_manager(lisa, ['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
-    # $ renpy.show('Lisa cams sleep morning '+renpy.random.choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
+    # $ renpy.show('Lisa cams sleep morning '+random_choice(['01', '02', '03'])+lisa.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'lisa_sleep' not in cam_flag:
         $ cam_flag.append('lisa_sleep')
@@ -43,10 +43,10 @@ label cam1_lisa_shower:
             $ __r1 = {'04c':'a', '04d':'b', '02c':'c', '00':'d', '00a':'d'}[lisa.dress_inf]
         else:
             $ __list = ['a', 'b', 'c', 'd'] if 'bathrobe' in lisa.gifts else ['c', 'd']
-            $ __r1 = renpy.random.choice(__list)
+            $ __r1 = random_choice(__list)
             $ lisa.dress_inf = {'a':'04c', 'b':'04d', 'c':'02c', 'd':'00'}[__r1]
 
-        $ renpy.show('Lisa cams bath-mirror '+renpy.random.choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
+        $ renpy.show('Lisa cams bath-mirror '+random_choice(['01', '02', '03'])+__r1, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
         if 'lisa_bath_mirror' not in cam_flag:
             $ cam_flag.append('lisa_bath_mirror')
@@ -113,7 +113,7 @@ label lisa_cam_dress_inf(r1):
 #     $ cam_flag.append('lisa_dressed')
 #     # $ Wait(10)
 #
-#     # $ __r1 = renpy.random.choice(['00', '01', '02'])
+#     # $ __r1 = random_choice(['00', '01', '02'])
 #     # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf
 #     # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
 #     # show FG cam-shum-act at laptop_screen
@@ -124,7 +124,7 @@ label lisa_cam_dress_inf(r1):
 #     #     "{i}достаточно{/i}":
 #     #         jump open_site
 #     #
-#     # $ __r1 = renpy.random.choice(['03','04','05','06'])
+#     # $ __r1 = random_choice(['03','04','05','06'])
 #     # call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_1
 #     # $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
 #     # show FG cam-shum-act at laptop_screen
@@ -135,7 +135,7 @@ label lisa_cam_dress_inf(r1):
 #     #     "{i}достаточно{/i}":
 #     #         jump open_site
 #
-#     $ __r1 = renpy.random.choice(['07','08','09'])
+#     $ __r1 = random_choice(['07','08','09'])
 #     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_2
 #     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
 #     show FG cam-shum-act at laptop_screen
@@ -159,7 +159,7 @@ label lisa_cam_dress_inf(r1):
 #     # $ spent_time += 10
 #     $ Wait(10)
 #
-#     $ __r1 = renpy.random.choice(['00', '01', '02'])
+#     $ __r1 = random_choice(['00', '01', '02'])
 #     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_3
 #     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
 #     show FG cam-shum-act at laptop_screen
@@ -170,7 +170,7 @@ label lisa_cam_dress_inf(r1):
 #         "{i}достаточно{/i}":
 #             jump open_site
 #
-#     $ __r1 = renpy.random.choice(['03','04','05','06'])
+#     $ __r1 = random_choice(['03','04','05','06'])
 #     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_4
 #     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
 #     show FG cam-shum-act at laptop_screen
@@ -183,7 +183,7 @@ label lisa_cam_dress_inf(r1):
 #
 #     # $ spent_time += 10
 #     $ Wait(10)
-#     $ __r1 = renpy.random.choice(['10','11','12'])
+#     $ __r1 = random_choice(['10','11','12'])
 #     call lisa_cam_dress_inf(__r1) from _call_lisa_cam_dress_inf_5
 #     $ renpy.show('Lisa cams dressed '+__r1, at_list=[laptop_screen])
 #     show FG cam-shum-act at laptop_screen
@@ -216,7 +216,7 @@ label cam0_lisa_dressed:
 
     if 'lisa_dr0' in cam_flag:
         # Макс взял ноутбук до переодеваний, может быть любая одежда
-        $ r1 = renpy.random.choice(['00', '01', '02'])
+        $ r1 = random_choice(['00', '01', '02'])
         $ st = 0
     else:
         $ r1 = {'02a':'00', '02b':'01', '02c':'02', '00':'03', '02h':'07',
@@ -238,7 +238,7 @@ label cam0_lisa_dressed:
             Max_07 "{m}Отлично! Лиза наряжается, чтобы отправиться на прогулку...{/m}" nointeract
         menu:
             "{i}продолжать смотреть{/i}":
-                $ r1 = renpy.random.choice(['03','04','05','06'])
+                $ r1 = random_choice(['03','04','05','06'])
             "{i}достаточно{/i}":
                 jump open_site
 
@@ -250,11 +250,11 @@ label cam0_lisa_dressed:
             Max_02 "{m}Ухх! Сейчас она такая голенькая и милая...{/m}"
             "{i}продолжать смотреть{/i}":
                 if not weekday:
-                    $ r1 = renpy.random.choice(['15', '16'])
+                    $ r1 = random_choice(['15', '16'])
                 elif weekday == 6:
-                    $ r1 = renpy.random.choice(['10','11','12'])
+                    $ r1 = random_choice(['10','11','12'])
                 else:
-                    $ r1 = renpy.random.choice(['07','08','09'])
+                    $ r1 = random_choice(['07','08','09'])
             "{i}достаточно{/i}":
                 jump open_site
 

@@ -274,14 +274,14 @@ init python:
             new_color = ""
             # Create a random color using hex values
             for i in range(0,6):
-                new_color += renpy.random.choice(self.color_choice)
+                new_color += random_choice(self.color_choice)
             new_color = "#" + new_color
             new_style.add_tags("color=" + str(new_color))
             # Random size
             rand_size = renpy.random.randint(0,50)
             new_style.add_tags("size="+str(rand_size))
             # Random font
-            rand_font = renpy.random.choice(self.font_list)
+            rand_font = random_choice(self.font_list)
             new_style.add_tags("font="+rand_font)
             #Apply our style to our Text child
             self.child.set_text(new_style.apply_style(self.orig_text))

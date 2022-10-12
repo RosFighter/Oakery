@@ -19,7 +19,7 @@ init python:
 
         # if tp != '':
         #     print(dr_l)
-        return renpy.random.choice(dr_l)
+        return random_choice(dr_l)
 
 
     def get_max_dress(st='', ex=''):
@@ -45,17 +45,17 @@ init python:
         # print dr_m
         if not dr_m:
             return 'c'
-        return renpy.random.choice(dr_m)
+        return random_choice(dr_m)
 
     ############################################################################
 
     # Новый купальник Лизы
     def set_gift_swimsuit():
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
-        tl.plan_name = renpy.random.choice(['sun', 'read'])
+        tl.plan_name = random_choice(['sun', 'read'])
         tl.flags.promise = True
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
-        mg.dress = renpy.random.choice(['a', 'b']) if 'max-a' in persistent.mems_var else 'a'
+        mg.dress = random_choice(['a', 'b']) if 'max-a' in persistent.mems_var else 'a'
         my_scope = {
                 'lisa' : tl,
                 'mgg'         : mg,
@@ -65,10 +65,10 @@ init python:
     # Извинительная пижамка для Алисы
     def set_gift_pajamas():
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.plan_name = renpy.random.choice(['sun', 'resting'])
+        al.plan_name = random_choice(['sun', 'resting'])
         if al.plan_name != 'sun':
-            al.dress = renpy.random.choice(['a', 'd']) if 'kira' in persistent.mems_var else 'a'
-            _tm = renpy.random.choice(['10:20', '21:00'])
+            al.dress = random_choice(['a', 'd']) if 'kira' in persistent.mems_var else 'a'
+            _tm = random_choice(['10:20', '21:00'])
         else:
             al.dress = 'a'
             _tm = '15:30'
@@ -79,7 +79,7 @@ init python:
             sm.append('nopants')
         if 'alice_not_nopants' in persistent.mems_var:
             sm.append('not_nopants')
-        smoke = renpy.random.choice(sm)
+        smoke = random_choice(sm)
         al.req.result = smoke if al.dress=='a' else ''
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
@@ -89,21 +89,21 @@ init python:
                 'tm'          : _tm,
                 'mgg'         : mg,
                 'alice'       : al,
-                'pose2_2'     : renpy.random.choice(['01', '02']),
-                'pose3_2'     : renpy.random.choice(['01', '02', '03']),
+                'pose2_2'     : random_choice(['01', '02']),
+                'pose3_2'     : random_choice(['01', '02', '03']),
             }
         return my_scope
 
     # Тёмное кружево
     def set_gift_black_lingerie():
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.plan_name = renpy.random.choice(['sun', 'resting'])
+        al.plan_name = random_choice(['sun', 'resting'])
         if al.plan_name != 'sun':
             dress = ['a', 'd'] if 'kira' in persistent.mems_var else ['a']
-            _tm = renpy.random.choice(['10:20', '21:00'])
+            _tm = random_choice(['10:20', '21:00'])
             if 'pajamas' in persistent.mems_var:
                 dress.append('b')
-            al.dress = renpy.random.choice(dress)
+            al.dress = random_choice(dress)
         else:
             al.dress = 'a'
             _tm = '15:30'
@@ -113,7 +113,7 @@ init python:
             sm.append('nopants')
         if 'alice_not_nopants' in persistent.mems_var:
             sm.append('not_nopants')
-        smoke = renpy.random.choice(sm)
+        smoke = random_choice(sm)
         al.req.result = smoke if al.dress=='a' else ''
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
@@ -167,11 +167,11 @@ init python:
             dr_var.append(2)
         if 'pajamas' in persistent.mems_var:
             dr_var.append(3)
-        if 'smoke_nojeans' in persistent.mems_var:  # and renpy.random.choice([False, True]):
+        if 'smoke_nojeans' in persistent.mems_var:  # and random_choice([False, True]):
             dr_var.append(4)
         if 'kira' in persistent.mems_var:
             dr_var.append(5)
-        var = renpy.random.choice(dr_var)
+        var = random_choice(dr_var)
         al.dress, al.req.result = {
                 0 : ('a', ''),
                 1 : ('a', 'nopants'),
@@ -182,7 +182,7 @@ init python:
             }[var]
         al.stat.footjob = 3
         al.flags.m_foot = 7
-        al.dcv.seduce.done = renpy.random.choice([False, True])
+        al.dcv.seduce.done = random_choice([False, True])
 
         my_scope = {
                 'house'     : copy.deepcopy(house),
@@ -190,7 +190,7 @@ init python:
                 'mgg'       : mg,
                 'alice'     : al,
                 'kol_choco' : 5,
-                'pose3_2'   : renpy.random.choice(['01', '02', '03']),
+                'pose3_2'   : random_choice(['01', '02', '03']),
                 'chars'     : ['alice'],
             }
         return my_scope
@@ -206,14 +206,14 @@ init python:
         dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
         if 'kira' in persistent.mems_var:
             dr_var.append('d')
-        al.dress = renpy.random.choice(dr_var)
+        al.dress = random_choice(dr_var)
         al.daily.drink = 2
 
         my_scope = {
                 'tm'            : '22:00',
                 'alice'         : al,
                 'mgg'           : mg,
-                '_pose'         : renpy.random.choice(['03', '04']),
+                '_pose'         : random_choice(['03', '04']),
                 'chars'         : ['kira'],
                 'rand_result'   : True,
             }
@@ -231,12 +231,12 @@ init python:
         dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
         if 'kira' in persistent.mems_var:
             dr_var.append('d')
-        al.dress = renpy.random.choice(dr_var)
+        al.dress = random_choice(dr_var)
         my_scope = {
                 'alice'     : al,
                 'mgg'       : mg,
                 '_drink'    : 1,
-                '_pose'     : renpy.random.choice(['05', '06']),
+                '_pose'     : random_choice(['05', '06']),
                 '_dress'    : mg.dress + al.dress,
             }
         return my_scope
@@ -252,7 +252,7 @@ init python:
         dr_var = ['b', 'c'] if 'pajamas' in persistent.mems_var else ['c']
         if 'kira' in persistent.mems_var:
             dr_var.append('d')
-        al.dress = renpy.random.choice(dr_var)
+        al.dress = random_choice(dr_var)
         my_scope = {
                 'alice'     : al,
                 'mgg'       : mg,
@@ -269,7 +269,7 @@ init python:
         mg.massage = renpy.random.randint(70, 90) / 10#8.7
 
         my_scope = {
-                'pose3_1' : renpy.random.choice(['01', '02', '03']),
+                'pose3_1' : random_choice(['01', '02', '03']),
                 'lisa' : tl,
                 'mgg'  : mg,
             }
@@ -321,8 +321,8 @@ init python:
 
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
         tk.flags.m_breast = 1
-        tk.flags.promise = renpy.random.choice([True, False])
-        tk.stat.handjob = renpy.random.choice([1, 2])
+        tk.flags.promise = random_choice([True, False])
+        tk.stat.handjob = random_choice([1, 2])
 
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
         tl.dcv.seduce.stage = 2
@@ -344,8 +344,8 @@ init python:
 
         my_scope = {
             'kol_cream' : 10,
-            'pose3_1'   : renpy.random.choice(['01', '02', '03']),
-            'pose3_3'   : renpy.random.choice(['01', '02', '03']),
+            'pose3_1'   : random_choice(['01', '02', '03']),
+            'pose3_3'   : random_choice(['01', '02', '03']),
             'olivia'    : to,
             'lisa'      : tl,
             }
@@ -359,14 +359,14 @@ init python:
         mg.social = renpy.random.randint(181, 219) / 10.0
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
         al.mood = 250
-        al.dress = renpy.random.choice(['a', 'b']) if 'black_linderie' in persistent.mems_var else 'a'
+        al.dress = random_choice(['a', 'b']) if 'black_linderie' in persistent.mems_var else 'a'
 
         sm = [None, None]
         if 'alice_sleeptoples' in persistent.mems_var:
             sm.extend(['sleep', 'not_sleep'])
         if 'alice_sleepnaked' in persistent.mems_var:
             sm.extend(['naked', 'not_naked'])
-        al.req.result = renpy.random.choice(sm)
+        al.req.result = random_choice(sm)
         al.req.req = {None: None, 'sleep':'sleep', 'not_sleep':'sleep', 'naked':'naked', 'not_naked':'naked'}[al.req.result]
         my_scope = {
             'tm'       : '02:30',
@@ -381,7 +381,7 @@ init python:
         mg.dress = 'c'
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        # al.daily.oiled = renpy.random.choice([1, 2])
+        # al.daily.oiled = random_choice([1, 2])
         al.daily.oiled = 2
 
         if 'squeeze_chest' in persistent.mems_var:
@@ -450,7 +450,7 @@ init python:
         if 'alice_nopants' in persistent.mems_var:
             sm.extend(['nopants', 'not_nopants'])
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.req.result = renpy.random.choice(sm)
+        al.req.result = random_choice(sm)
 
         my_scope = {
             'tm'       : '03:00',
@@ -465,7 +465,7 @@ init python:
         if 'alice_nopants' in persistent.mems_var:
             sm.extend(['nopants', 'not_nopants'])
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.req.result       = renpy.random.choice(sm)
+        al.req.result       = random_choice(sm)
         # Макс ласкал киску Алисы перед ТВ
         al.flags.hip_mass   = 2 if 'double_mass_alice' in persistent.mems_var else 0
         al.dcv.intrusion.stage = 7
@@ -491,7 +491,7 @@ init python:
         if renpy.seen_label('smoke_fear.nopants'):  #'alice_nopants' in persistent.mems_var:
             sm.extend(['nopants', 'not_nopants'])
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.req.result       = renpy.random.choice(sm)
+        al.req.result       = random_choice(sm)
         # Макс ласкал киску Алисы перед ТВ
         al.flags.hip_mass   = 5
         al.dcv.intrusion.stage = 7
@@ -534,7 +534,7 @@ init python:
     # Первые снимки для блога Алисы
     def set_alice_body_photoset1():
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.dress = renpy.random.choice(['a', 'b'])
+        al.dress = random_choice(['a', 'b'])
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
@@ -557,7 +557,7 @@ init python:
     # Я обошёл Эрика с подарком для Алисы
     def set_gift_lace_lingerie():
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.dress = renpy.random.choice(['a', 'b'])
+        al.dress = random_choice(['a', 'b'])
 
         mg = MaxProfile('mgg', "Макс", "Макса", "Максу", "Макса", "Максом", "Максе")
         mg.dress = get_max_dress(ex='a')
@@ -606,12 +606,12 @@ init python:
         mg.kissing = renpy.random.randint(110, 165) / 10
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.dress = renpy.random.choice(['a', 'b', 'c', 'd'])
+        al.dress = random_choice(['a', 'b', 'c', 'd'])
         al.flags.hip_mass = 5
 
         my_scope = {
             'tm'        : '22:00',
-            'pose3_2'   : renpy.random.choice(['01', '02', '03']),
+            'pose3_2'   : random_choice(['01', '02', '03']),
             'mgg'       : mg,
             'alice'     : al,
             'kol_choco' : 5,
@@ -629,7 +629,7 @@ init python:
         tk.dress = 'a'
         tk.flags.porno = 2
         tk.flags.m_foot = 1
-        tk.flags.promise = renpy.random.choice([True, False])
+        tk.flags.promise = random_choice([True, False])
         my_scope = {
             'kira'     : tk,
             }
@@ -654,9 +654,9 @@ init python:
         mg.sex    = renpy.random.randint(60, 80) / 10
 
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
-        tk.flags.promise = renpy.random.choice([True, False])
+        tk.flags.promise = random_choice([True, False])
         tk.stat.blowjob = 1
-        tk.stat.handjob = renpy.random.choice([1, 2])
+        tk.stat.handjob = random_choice([1, 2])
         tk.flags.m_breast = 2
 
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
@@ -697,7 +697,7 @@ init python:
         mg.sex = renpy.random.randint(60, 80) / 10
 
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
-        tk.stat.blowjob = renpy.random.choice([True, False])
+        tk.stat.blowjob = random_choice([True, False])
         tk.stat.handjob = renpy.random.randint(0, 2)
         tk.stat.footjob = 1
         my_scope = {
@@ -759,7 +759,7 @@ init python:
         tk.stat.blowjob = 1
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.daily.drink = renpy.random.choice([0, 1])
+        al.daily.drink = random_choice([0, 1])
 
         my_scope = {
                 'tm'    : '03:10',
@@ -831,7 +831,7 @@ init python:
         tk = Profile('kira', "Кира", "Киры", "Кире", "Киру", "Кирой", "Кире")
         tk.dress = 'a'
         my_scope = {
-            'pose3_4'   : renpy.random.choice(['01', '02', '03']),
+            'pose3_4'   : random_choice(['01', '02', '03']),
             'kira'      : tk,
             'mgg'       : mg,
         }
@@ -887,7 +887,7 @@ init python:
             'lisa'          : tl,
             'mgg'           : mg,
             'spent_time'    : 0,
-            'pose3_1'       : renpy.random.choice(['01', '02', '03']),
+            'pose3_1'       : random_choice(['01', '02', '03']),
             'var_pose'      : '',
             }
         return my_scope
@@ -903,7 +903,7 @@ init python:
         mg.massage = renpy.random.randint(170, 210) / 10
 
         my_scope = {
-                'pose3_1' : renpy.random.choice(['01', '02', '03']),
+                'pose3_1' : random_choice(['01', '02', '03']),
                 'lisa'    : tl,
                 'mgg'     : mg,
             }
@@ -920,7 +920,7 @@ init python:
 
         tf = Other_Flags_and_counters()
         tf.cur_series = renpy.random.randint(1, 2)
-        tf.cur_movies = [renpy.random.choice(['hes', 'f13', 'scr']), renpy.random.randint(1, 5), renpy.random.randint(1, 5), renpy.random.randint(1, 4)]
+        tf.cur_movies = [random_choice(['hes', 'f13', 'scr']), renpy.random.randint(1, 5), renpy.random.randint(1, 5), renpy.random.randint(1, 4)]
 
         my_scope = {
             'lisa'  : tl,
@@ -941,7 +941,7 @@ init python:
 
         tf = Other_Flags_and_counters()
         tf.cur_series = renpy.random.randint(1, 2)
-        tf.cur_movies = [renpy.random.choice(['hes', 'f13', 'scr']), renpy.random.randint(1, 5), renpy.random.randint(1, 5), renpy.random.randint(1, 4)]
+        tf.cur_movies = [random_choice(['hes', 'f13', 'scr']), renpy.random.randint(1, 5), renpy.random.randint(1, 5), renpy.random.randint(1, 4)]
 
         my_scope = {
             'lisa'  : tl,
@@ -1001,8 +1001,8 @@ init python:
         my_scope = {
             'ann'       : ta,
             'mgg'       : mg,
-            'pose3_1'   : renpy.random.choice(['01', '02', '03']),
-            'pose3_3'   : renpy.random.choice(['01', '02', '03']),
+            'pose3_1'   : random_choice(['01', '02', '03']),
+            'pose3_3'   : random_choice(['01', '02', '03']),
             'flags'     : Other_Flags_and_counters(),
             }
         return my_scope
@@ -1015,6 +1015,7 @@ init python:
         my_scope = {
             'ann'       : ta,
             'mgg'       : mg,
+            'rel_eric'  : (3, ''),
             }
         return my_scope
 
@@ -1026,7 +1027,7 @@ init python:
         mg.massage = renpy.random.randint(478, 632) / 10
         mg.social = renpy.random.randint(537, 684) / 10
         my_scope = {
-            'rel_eric'      : (3, ''),
+            'rel_eric'  : (3, ''),
             'ann'       : ta,
             'mgg'       : mg,
             }
@@ -1083,7 +1084,7 @@ init python:
         tl.dress = get_lisa_dress()
 
         te = Profile('eric', "Эрик", "Эрика", "Эрику", "Эрика", "Эриком", "Эрике")
-        te.dress = renpy.random.choice(['a', 'b'])
+        te.dress = random_choice(['a', 'b'])
 
         my_scope = {
             'eric' : te,
@@ -1097,7 +1098,7 @@ init python:
         tl = Profile('lisa', "Лиза", "Лизы", "Лизе", "Лизу", "Лизой", "Лизе")
         tl.dress = get_lisa_dress()
         te = Profile('eric', "Эрик", "Эрика", "Эрику", "Эрика", "Эриком", "Эрике")
-        te.dress = renpy.random.choice(['a', 'b'])
+        te.dress = random_choice(['a', 'b'])
         my_scope = {
             'dishes_washed' : False,
             'rel_eric'      : (3, ''),
@@ -1110,10 +1111,10 @@ init python:
     def set_blog_with_Eric_01():
 
         al = Profile('alice', "Алиса", "Алисы", "Алисе", "Алису", "Алисой", "Алисе")
-        al.dress = renpy.random.choice(['a', 'b', 'c'])
+        al.dress = random_choice(['a', 'b', 'c'])
 
         te = Profile('eric', "Эрик", "Эрика", "Эрику", "Эрика", "Эриком", "Эрике")
-        te.dress = renpy.random.choice(['a', 'b'])
+        te.dress = random_choice(['a', 'b'])
 
         my_scope = {
                 'spent_time' : 0,
@@ -1133,7 +1134,7 @@ init python:
         my_scope = {
             'tm'        : '20:00',
             'mgg'       : mg,
-            'pose3_3'   : renpy.random.choice(['01', '02', '03']),
+            'pose3_3'   : random_choice(['01', '02', '03']),
             }
         return my_scope
 

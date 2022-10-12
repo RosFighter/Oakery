@@ -1122,7 +1122,7 @@ label Lisa_HomeWork:
             Max_01 "Чтобы ты показала свою грудь!"
             scene BG char Lisa lessons-help-01
             if lisa.GetMood()[0] < 3:
-                $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
+                $ renpy.show("Lisa lessons-breast "+random_choice(["01", "02"])+lisa.dress)
             else:
                 $ renpy.show("Lisa lessons-breast 03"+lisa.dress)
             $ renpy.show('Max lessons-breast 01'+mgg.dress)
@@ -1153,7 +1153,7 @@ label Lisa_HomeWork:
             if not _in_replay:
                 $ poss['sg'].open(6)
             if lisa.GetMood()[0] < 3:
-                $ renpy.show("Lisa lessons-breast "+renpy.random.choice(["01", "02"])+lisa.dress)
+                $ renpy.show("Lisa lessons-breast "+random_choice(["01", "02"])+lisa.dress)
                 $ renpy.show("Max lessons-breast 01"+mgg.dress)
                 Lisa_09 "[succes!t]Ладно. Всё равно у меня нет выбора... Смотри, раз ты такой извращенец..."
                 if lisa.flags.m_foot>0:
@@ -1264,7 +1264,7 @@ label Lisa_HomeWork:
             Lisa_01 "Тогда делай то, от чего у Алисы был такой блаженный вид! А я пока уроками займусь..."
             "{i}начать массаж{/i}":
                 pass
-        $ foot = renpy.random.choice(['03', '04'])
+        $ foot = random_choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
         $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         show FG lessons-mass-03-01
@@ -1345,7 +1345,7 @@ label Lisa_HomeWork:
                 Lisa_02 "Дай-ка подумать... Конечно, да! Ещё бы я от этого отказалась."
                 "{i}начать массаж{/i}":
                     pass
-        $ foot = renpy.random.choice(['03', '04'])
+        $ foot = random_choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
         $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         show FG lessons-mass-03-01
@@ -1413,7 +1413,7 @@ label Lisa_HomeWork:
     label .shoulders:
         # $ renpy.dynamic("foot")
         if _in_replay:
-            $ foot = renpy.random.choice(['02', '01'])
+            $ foot = random_choice(['02', '01'])
             scene BG char Lisa lessons-mass-01
             $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
             show FG lessons-mass-01-01
@@ -1545,7 +1545,7 @@ label Lisa_HomeWork:
             Lisa_02 "Дай-ка подумать... Да, давай! Я люблю, когда ты это делаешь!"
             "{i}начать массаж{/i}":
                 pass
-        $ foot = renpy.random.choice(['03', '04'])
+        $ foot = random_choice(['03', '04'])
         scene BG char Lisa lessons-mass-03
         $ renpy.show("Lisa lessons-mass "+foot+lisa.dress+mgg.dress)
         show FG lessons-mass-03-01
@@ -3319,7 +3319,7 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
 
 label lisa_ment_kiss1:
     # стартовая фраза "Ну что, Лиза, готова?"
-    $ var_pose = renpy.random.choice(['01', '02'])
+    $ var_pose = random_choice(['01', '02'])
     Lisa_01 "Готова к чему?"
     Max_01 "Как к чему? К уроку поцелуев!"
     Lisa_09 "Опять ты за своё... Что, где-то набрался знаний? Погуглил или на ютубе подсмотрел?"
@@ -3423,7 +3423,7 @@ label lisa_ment_kiss:
         Lisa_00 "Слушай, Макс, а это всё, чему ты решил меня научить? Может быть, в твоём учебном плане есть ещё что-то? Ну там, скажем, немного теории или что-то ещё в плане практики?"
         Max_02 "Конечно! Сейчас будет \"расширенный\" урок поцелуев..."
         $ poss['seduction'].open(11)
-        $ var_pose = renpy.random.choice(['01', '02'])
+        $ var_pose = random_choice(['01', '02'])
         scene Lisa_read_kiss kiss start
         menu:
             Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим!{/m}"
@@ -3476,7 +3476,7 @@ label lisa_ment_kiss:
 
 
 label lisa_kiss_lesson:
-    $ var_pose = renpy.random.choice(['01', '02'])
+    $ var_pose = random_choice(['01', '02'])
     scene Lisa_read_kiss kiss start
     $ renpy.music.play('audio/Romantic'+str(renpy.random.randint(1, 3))+'.ogg', fadein=2.0)
     menu:
@@ -3504,7 +3504,7 @@ label lisa_kiss_lesson:
 
 
 label lisa_advanced_kiss_lesson:
-    $ var_pose = renpy.random.choice(['01', '02'])
+    $ var_pose = random_choice(['01', '02'])
     scene Lisa_read_kiss kiss start
     menu:
         Max_04 "{m}Эти нежные губки такие сладкие... А её горячий язычок начинает всё активнее играть с моим!{/m}"
@@ -4270,8 +4270,9 @@ label lisa_about_ae_sexed5:
                     Max_00 "Не за что."
 
                     # max&eric-terrace-00 + ad-max-(00a/00b)
-                    hide Lisa
-                    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+                    scene thinking_max_terrace
+                    # hide Lisa
+                    # $ renpy.show("Max talk-terrace 00"+mgg.dress)
                     Max_09 "{m}Так, а вот это мне нужно обсудить с Эриком! Потому что я хочу видеть, чему он там её будет \"учить\"...{/m}"
                 "Ясно. А тебе не кажется, что это как минимум неправильно?" if get_rel_eric()[0] == 2:  # lisa.dcv.battle.stage in [2, 5]:     # (хитрая дружба)
                     Lisa_11 "Неправильно готовиться к взрослой жизни?"
@@ -4288,8 +4289,9 @@ label lisa_about_ae_sexed5:
                     Max_00 "Не за что."
 
                     # max&eric-terrace-00 + ad-max-(00a/00b)
-                    hide Lisa
-                    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+                    scene thinking_max_terrace
+                    # hide Lisa
+                    # $ renpy.show("Max talk-terrace 00"+mgg.dress)
                     Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
         else:
             # у Макса с Эриком вражда
@@ -4307,8 +4309,9 @@ label lisa_about_ae_sexed5:
             Max_16 "Ладно, мы ещё с ним посмотрим, кто кого..."
 
             # max&eric-terrace-00 + ad-max-(00a/00b)
-            hide Lisa
-            $ renpy.show("Max talk-terrace 00"+mgg.dress)
+            scene thinking_max_terrace
+            # hide Lisa
+            # $ renpy.show("Max talk-terrace 00"+mgg.dress)
             Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
 
     else:
@@ -4346,8 +4349,9 @@ label lisa_about_ae_sexed5:
                     Max_00 "Не за что."
 
                     # max&eric-terrace-00 + ad-max-(00a/00b)
-                    hide Lisa
-                    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+                    scene thinking_max_terrace
+                    # hide Lisa
+                    # $ renpy.show("Max talk-terrace 00"+mgg.dress)
                     Max_09 "{m}Так, а вот это мне нужно обсудить с Эриком! Потому что я хочу видеть, чему он там её будет \"учить\"...{/m}"
                 "Ясно. И что, ты хочешь на это согласиться?" if get_rel_eric()[0] == 2:  # lisa.dcv.battle.stage in [2, 5]:                    # (хитрая дружба)
                     # max&eric-terrace-00 + max&lisa-(02a/02b) + max&lisa-(04a/04b)
@@ -4393,8 +4397,9 @@ label lisa_about_ae_sexed5:
             Max_07 "Всегда пожалуйста, сестрёнка! А с Эриком я разберусь..."
 
             # max&eric-terrace-00 + ad-max-(00a/00b)
-            hide Lisa
-            $ renpy.show("Max talk-terrace 00"+mgg.dress)
+            scene thinking_max_terrace
+            # hide Lisa
+            # $ renpy.show("Max talk-terrace 00"+mgg.dress)
             Max_09 "{m}Похоже, Эрик уже во всю начал пользоваться наивностью Лизы и втихушку за спиной мамы хочет развратить мою младшую сестрёнку! Надо это прекращать!{/m}"
 
     if any([get_rel_eric()[0] in [-1, 2]]):
@@ -4715,8 +4720,9 @@ label lisa_about_olivia_5:
     Lisa_01 "Да, подробности лучше опустить. Ох и удивится завтра мама."
 
     #after-breakfast + ad-max-(00a/00b)
-    hide Lisa with dis5
-    $ renpy.show("Max talk-terrace 00"+mgg.dress)
+    scene thinking_max_terrace
+    # hide Lisa with dis5
+    # $ renpy.show("Max talk-terrace 00"+mgg.dress)
     Max_09 "{m}Лиза может быть права. После подлянки от Эрика, мама может начать снова оберегать Лизу от всего на свете. Надеюсь, мне удастся её завтра убедить, что контактирование с голой Оливией - это безобидное занятие, что для меня, что для Лизы.{/m}"
 
     $ lisa.flags.showdown_e = 2
@@ -4787,7 +4793,7 @@ label lisa_about_sex_book0:
     Lisa_02 "Это если мне понравится. А это не факт, Макс! Но давай попробуем..." nointeract
     menu:
         "{i}поцеловать Лизу{/i}":
-            $ var_pose = renpy.random.choice(['01', '02'])
+            $ var_pose = random_choice(['01', '02'])
     # myroom-bedlisa-mde-02 + (
     # (myroom-bedlisa-mde-02-lisa-(01b/01c/01d/01e)-kiss + myroom-bedlisa-mde-02-max-(01b/01c)-kiss)
     # (myroom-bedlisa-mde-02-lisa-(02b/02c/02d/02e)-kiss + myroom-bedlisa-mde-02-max-(02b/02c)-kiss))
@@ -4969,7 +4975,7 @@ label lisa_read_with_Max_r:
     Lisa_10 "В смысле, всё?! Раззадорил меня и уходишь что ли? Я хочу ещё!" nointeract
     menu:
         "{i}снова целовать Лизу{/i}":
-            $ var_pose = renpy.random.choice(['01', '02'])
+            $ var_pose = random_choice(['01', '02'])
 
     # myroom-bedlisa-mde-02 + (
     # (myroom-bedlisa-mde-02-lisa-(01b/01c/01d/01e)-kiss + myroom-bedlisa-mde-02-max-(01b/01c)-kiss)

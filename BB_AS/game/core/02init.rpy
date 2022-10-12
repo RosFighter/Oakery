@@ -80,8 +80,10 @@ default expected_photo = []
 
 default purchased_items = []
 default var_pose = '02'
+default var_pose2 = '01'
 default var_stage = '01'
 default var_dress = ''
+default var_dress2 = ''
 default var_film = ''
 
 define cam_flag = []
@@ -91,14 +93,14 @@ define skip_error = False
 default skiped = []
 
 define weekdays = (
-                  (_("ВС"), _("ВОСКРЕСЕНЬЕ")),
-                  (_("ПН"), _("ПОНЕДЕЛЬНИК")),
-                  (_("ВТ"), _("ВТОРНИК")),
-                  (_("СР"), _("СРЕДА")),
-                  (_("ЧТ"), _("ЧЕТВЕРГ")),
-                  (_("ПТ"), _("ПЯТНИЦА")),
-                  (_("СБ"), _("СУББОТА"))
-                  )
+                (_("ВС"), _("ВОСКРЕСЕНЬЕ")),
+                (_("ПН"), _("ПОНЕДЕЛЬНИК")),
+                (_("ВТ"), _("ВТОРНИК")),
+                (_("СР"), _("СРЕДА")),
+                (_("ЧТ"), _("ЧЕТВЕРГ")),
+                (_("ПТ"), _("ПЯТНИЦА")),
+                (_("СБ"), _("СУББОТА"))
+                )
 define notify_list = []
 
 define cloth = None
@@ -132,6 +134,8 @@ init:
             'talk' : [('images/interface/cursors/talk-80.webp', 14, 61)],
             'palms': [('images/interface/cursors/palms-80.webp', 46, 40)],
             }
+
+define random_choice = renpy.random.choice
 
 ################################################################################
 
@@ -281,7 +285,11 @@ define talks = {
     # ====== 0.09.1 ===================
     'ann.drink1'    : TalkTheme('ann', _("Мам, поговорим?"), 's1_ann_talk_about_night', "ann.dcv.drink.stage==1"),
     'ann.drink2'    : TalkTheme('kira', _("Хотел поговорить о маме..."), 's1_kira_talk_about_ann_drink', "all([kira.plan_name=='sun', ann.dcv.drink.stage==2])"),
-    'ann.intime0'   : TalkTheme('ann', _("Мам, ты подумала?"), 's1_about_intimate_lessons', "all([ann.dcv.private.stage == 1, ann.dcv.private.done])")
+    'ann.intime0'   : TalkTheme('ann', _("Мам, ты подумала?"), 's1_about_intimate_lessons', "all([ann.dcv.private.stage == 1, ann.dcv.private.done])"),
+
+    # ====== 0.09.2 ===================
+    'a.havemoney'   : TalkTheme('alice', _("Я разжился деньгами! Идём за костюмом?"), 'ev_v92_002', "all([alice.flags.showdown_e == 2, flags.eric_wallet > 4])"),
+
     }
 
 

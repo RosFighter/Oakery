@@ -341,7 +341,7 @@ label lessons_from_Eric:
                 pass
 
         # max&eric-terrace-00 + ad-max-(00a/00b)
-
+        scene thinking_max_terrace
         if all([get_rel_eric()[0] > 1, not lisa.dcv.battle.stage]):
             # выбор пути дружбы уже установлен через Алису, но ещё без Лизы
             if get_rel_eric()[0] == 3:

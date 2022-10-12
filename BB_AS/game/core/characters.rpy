@@ -293,9 +293,9 @@ define Ann_20 = Character(kind=Ann, image='ann_20')
 image side ann_20 = 'Ann emo-20'
 
 
-## Ерик - антагонист
+## Эрик - антагонист
 
-define Eric = Character("Ерик")
+define Eric = Character("Эрик")
 
 define Eric_00 = Character(kind=Eric, image='eric_00')
 image side eric_00 = 'Eric emo-00'

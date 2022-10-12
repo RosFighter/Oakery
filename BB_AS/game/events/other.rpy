@@ -529,8 +529,8 @@ label showdown_with_eric:
     # annroom-morning-01 + eric-dresses-morning-01 + ann-dresses-morning-05c
     # scene BG char Ann mde-01
     # show Eric dressed 01
-    # $ renpy.show('Ann dressed 07b'+renpy.random.choice(['1', '2']))
-    $ var_pose, var_dress = '07', 'b'+renpy.random.choice(['1', '2'])
+    # $ renpy.show('Ann dressed 07b'+random_choice(['1', '2']))
+    $ var_pose, var_dress = '07', 'b'+random_choice(['1', '2'])
     scene Ann_dressing eric
 
     Ann_13 "Алиса! Ты зачем так врываешься?! Стучаться надо..."

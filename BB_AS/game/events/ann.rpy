@@ -103,11 +103,11 @@ label ann_shower:
         if ann.dress_inf != '04a':
             $ __r1 = {'04c':'a', '04d':'b', '02b':'c', '00':'d', '00a':'d'}[ann.dress_inf]
         else:
-            $ __r1 = renpy.random.choice(['a', 'b', 'c', 'd'])
+            $ __r1 = random_choice(['a', 'b', 'c', 'd'])
             $ ann.dress_inf = {'a':'04c', 'b':'04d', 'c':'02b', 'd':'00'}[__r1]
 
         scene BG bathroom-morning-00
-        $ renpy.show('Ann bath-window-morning '+renpy.random.choice(['01', '02', '03'])+__r1)
+        $ renpy.show('Ann bath-window-morning '+random_choice(['01', '02', '03'])+__r1)
         show FG bathroom-morning-00
         $ Skill('hide', 0.05)
         if __r1 == 'a':
@@ -157,7 +157,7 @@ label ann_shower:
         $ ann.daily.shower = 1
         $ ann.dress_inf = '00a'
         $ __ran1 = renpy.random.randint(1, 6)
-        scene BG shower-alt
+        scene BG shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Ann shower-alt 0'+str(__ran1))
         show FG shower-water
@@ -173,7 +173,7 @@ label ann_shower:
             $ ann.daily.shower = 1
             $ ann.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(1, 6)
-            scene BG shower-closer
+            scene BG shower-01
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
             if __ran1 % 2 > 0:
@@ -189,8 +189,8 @@ label ann_shower:
             # после прохождения 2-ого интимного урока (ванна)
             $ ann.daily.shower = 2
             $ ann.dress_inf = '00a'
-            scene BG shower-closer
-            $ renpy.show('Ann shower-closer '+renpy.random.choice(['07', '08']))
+            scene BG shower-01
+            $ renpy.show('Ann shower-closer '+random_choice(['07', '08']))
             show FG shower-closer
             Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
             menu:
@@ -201,15 +201,15 @@ label ann_shower:
             $ ann.daily.shower = 2
             $ ann.dress_inf = '00a'
             $ __ran1 = renpy.random.randint(7, 8)
-            scene BG shower-closer
+            scene BG shower-01
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
             Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\n{m}Упс... надо бежать, пока она меня не увидела!{/m}"
             jump .end_peeping
         else:
             $ ann.daily.shower = 3
-            $ __ran1 = renpy.random.choice(['09', '10'])
-            scene BG shower-closer
+            $ __ran1 = random_choice(['09', '10'])
+            scene BG shower-01
             $ renpy.show('Ann shower-closer '+__ran1)
             show FG shower-closer
             menu:
@@ -277,7 +277,7 @@ label ann_dressed:
     $ mood = 0
     $ spent_time = 10
     # Эрик изгнан, час переодеваний в будние дни, в сумке нет ночнушки
-    $ balcony = renpy.random.choice([True, False]) if all([flags.eric_banished, '11:00' > tm >= '10:00', weekday != 6, not items['nightie'].have]) else False
+    $ balcony = random_choice([True, False]) if all([flags.eric_banished, '11:00' > tm >= '10:00', weekday != 6, not items['nightie'].have]) else False
 
     if weekday == 6:
         Max_09 "{m}Сегодня суббота, день шоппинга. Видимо, мама собирается...{/m}" nointeract
@@ -319,10 +319,10 @@ label ann_dressed:
                 $ lst = ['01', '01a', '02', '03', '03a', '04']
             if ann.dress=='d':
                 $ lst.extend(['05', '06', '06a'])
-            $ r1 = renpy.random.choice(lst)
+            $ r1 = random_choice(lst)
             $ ann.dress_inf = {'01':'02e', '01a':'02c', '02':'02d', '03':'02', '03a':'02a', '04':'02b', '05':'2g', '06':'2i', '06a':'2h'}[r1]
 
-            if mgg.stealth >= 11.0 and renpy.random.choice([False, False, True]):
+            if mgg.stealth >= 11.0 and random_choice([False, False, True]):
                 scene BG char Ann voyeur-01
                 $ renpy.show('Ann voyeur alt-'+r1)
                 $ renpy.show('FG voyeur-morning-01'+mgg.dress)
@@ -591,9 +591,9 @@ label ann_dressed:
         # $ renpy.show('Ann dressed 07' + ('j' if weekday == 6 else 'a'))
         scene Ann_dressing
         Ann_08 "Ох... Спасибо за комплимент, мой милый. Сразу видно, что мой сын настоящий мужчина! Иди ко мне, я тебя обниму..."
-        # $ r1 = renpy.random.choice(['01', '02'])
+        # $ r1 = random_choice(['01', '02'])
         # $ renpy.show('Ann hugging morning-annroom '+r1+'-1'+('b' if weekday == 6 else 'a')+mgg.dress)
-        $ var_pose = renpy.random.choice(['01', '02'])
+        $ var_pose = random_choice(['01', '02'])
         scene Ann_gift hug1
         Max_05 "{m}О да... У меня действительно лучшая мама на свете! Какая же потрясающая у неё фигура... Так приятно прижиматься к ней... её упругой груди... Эту мечту не хочется отпускать!{/m}"
         # $ renpy.show('Ann hugging morning-annroom '+r1+'-2'+('b' if weekday == 6 else 'a')+mgg.dress)
@@ -827,8 +827,9 @@ label ann_dressed:
                 $ mood = 75
 
         # after-breakfast + ad-max-(00a/00b)
-        scene BG after-breakfast
-        $ renpy.show("Max talk-terrace 00"+mgg.dress)
+        scene thinking_max_terrace
+        # scene BG after-breakfast
+        # $ renpy.show("Max talk-terrace 00"+mgg.dress)
         Max_09 "{m}Смущают её мои прикосновения... Ясно. Значит, нужно больше прикасаться тогда, когда это максимально естественно, чтобы она привыкла. Пожалуй, йога - то, что нужно! Стоит попробовать...{/m}"
 
         $ prev_room = house[2]
@@ -1022,7 +1023,7 @@ label ann_bath:
                 Max_03 "{m}Ох, как горячо! Разумеется, я не про воду, а про её внешний вид. Ухх... Мама потрясающе выглядит...{/m}"
                 "{i}смотреть ещё{/i}":
                     $ spent_time += 10
-                    $ renpy.show('Ann bath-window '+renpy.random.choice(['02', '03', '04']))
+                    $ renpy.show('Ann bath-window '+random_choice(['02', '03', '04']))
                     $ Skill('hide', 0.025, 10)
                     menu:
                         Max_05 "{m}Ух ты, аж завораживает! Мамины водные процедуры могут посоперничать с самыми горячими эротическими роликами! Эта упругая грудь и эти длинные стройные ножки сведут с ума кого угодно...{/m}"

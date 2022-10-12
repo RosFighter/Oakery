@@ -4100,3 +4100,43 @@ translate german alice_lisa_shower_start_peeping_dda24c4d:
     # Max_01 "{m}Хорошо, что это не распространяется на Киру...{/m}" nointeract
     Max_01 "{m}Es ist gut, dass das nicht auf Kira zutrifft...{/m}" nointeract
 
+# TODO: Translation updated at 2022-09-25 19:43
+
+# game/events/alice.rpy:425
+translate german alice_shower_spider_75632a81:
+
+    # Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!" nointeract
+    Alice_13 "Nein, ich kann da noch nicht wieder rein... Ich brauche Zeit, um mich von diesem Albtraum zu erholen. Hol mir lieber ein Handtuch, es liegt im Bad... Du bist zu glücklich, dass du mich nackt anstarren kannst!" nointeract
+
+translate german strings:
+
+    # game/events/alice.rpy:426
+    old "Хорошо, сейчас принесу. Никуда не уходи..."
+    new "In Ordnung, ich gehe schon. Bleib, wo du bist..."
+
+# TODO: Translation updated at 2022-10-08 23:59
+
+# game/events/alice.rpy:672
+translate german alice_shower_pinded_1e3fdfdd:
+
+    # Alice_12 "[spotted!t]Блин, Макс! Напугал! Тебе по заднице так сильно неймётся получить? Я это запросто устрою..."
+    Alice_12 "[spotted!t]Scheiße, Max! Du hast mich erschreckt! Willst du so sehr in den Arsch getreten werden? Ich kann das möglich machen..."
+
+# game/events/alice.rpy:673
+translate german alice_shower_pinded_ba3830ca:
+
+    # Max_10 "Да за что?! Я же не увидел ничего нового!"
+    Max_10 "Wozu? Ich habe nichts Neues gesehen!"
+
+# game/events/alice.rpy:674
+translate german alice_shower_pinded_c88b1c38:
+
+    # Alice_16 "Подглядывать - нехорошо! И это обязательно должно наказываться. Не мной, так мамой."
+    Alice_16 "Spanner sind nicht gut! Und das muss bestraft werden. Wenn nicht von mir, dann von Mom."
+
+# game/events/alice.rpy:675
+translate german alice_shower_pinded_5452dc65:
+
+    # Max_11 "Вот же ёлки-палки."
+    Max_11 "Verdammter Mist."
+
