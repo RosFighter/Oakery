@@ -4105,7 +4105,7 @@ translate english alice_lisa_shower_start_peeping_dda24c4d:
 translate english alice_shower_spider_75632a81:
 
     # Alice_13 "Нет уж, я не смогу пока зайти обратно... Мне нужно время, чтобы перестать думать обо всём этом кошмаре. Лучше принеси мне полотенце, оно там, в ванной... А то слишком уж тебе повезло на меня голую глазеть!" nointeract
-    Alice_13 "" nointeract
+    Alice_13 "No, I can't go back in yet... I need time to stop thinking about this nightmare. Better get me a towel, it's in the bathroom... You're too lucky to be staring at me naked!" nointeract
 
 translate english strings:
 
@@ -4119,23 +4119,23 @@ translate english strings:
 translate english alice_shower_pinded_1e3fdfdd:
 
     # Alice_12 "[spotted!t]Блин, Макс! Напугал! Тебе по заднице так сильно неймётся получить? Я это запросто устрою..."
-    Alice_12 ""
+    Alice_12 "[spotted!t]Shit, Max! You scared me! You want to get your ass kicked that bad? I can make that happen..."
 
 # game/events/alice.rpy:673
 translate english alice_shower_pinded_ba3830ca:
 
     # Max_10 "Да за что?! Я же не увидел ничего нового!"
-    Max_10 ""
+    Max_10 "What for?! I didn't see anything new!"
 
 # game/events/alice.rpy:674
 translate english alice_shower_pinded_c88b1c38:
 
     # Alice_16 "Подглядывать - нехорошо! И это обязательно должно наказываться. Не мной, так мамой."
-    Alice_16 ""
+    Alice_16 "Peeping is not good! And it must be punished. If not by me, then by Mom."
 
 # game/events/alice.rpy:675
 translate english alice_shower_pinded_5452dc65:
 
     # Max_11 "Вот же ёлки-палки."
-    Max_11 ""
+    Max_11 "Holy crap."
 

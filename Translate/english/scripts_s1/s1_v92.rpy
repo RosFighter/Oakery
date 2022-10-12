@@ -1554,649 +1554,649 @@ translate english strings:
 translate english ev_v92_010_245ddc0e:
 
     # Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз... Посмотришь, чтобы он до меня не добрался, пока я буду мыться?"
-    Alice_06 ""
+    Alice_06 "Max! Oh, crap, you scared me, too! A big spider crawled into my shower... Will you make sure it doesn't get to me while I'm showering?"
 
 # game/scripts_s1/s1_v92.rpy:901
 translate english ev_v92_010_4e32f61e:
 
     # Max_01 "Ну конечно посмотрю, не переживай!"
-    Max_01 ""
+    Max_01 "Of course I will, don't worry!"
 
 # game/scripts_s1/s1_v92.rpy:904
 translate english ev_v92_010_107a3d85:
 
     # Max_19 "{m}Как мне помнится, Алиса зазывала меня потереть ей спинку... Так что никакого смысла скромничать нет. За дело!{/m}"
-    Max_19 ""
+    Max_19 "{m}As I recall, Alice beckoned me to rub her back... So there's no point in being modest. Let's do it!{/m}"
 
 # game/scripts_s1/s1_v92.rpy:907
 translate english ev_v92_010_3d4f578c:
 
     # Max_07 "Эй, Алиса, если это сможет тебя успокоить, то я могу потереть тебе спинку, а то трясёшься вся от страха."
-    Max_07 ""
+    Max_07 "Hey, Alice, if it will calm you down, I can rub your back, you're shaking with fear."
 
 # game/scripts_s1/s1_v92.rpy:908
 translate english ev_v92_010_fed3a4ef:
 
     # Alice_13 "Руки у тебя волшебные, но мне кажется, что даже они смогут отвлечь мои мысли от паука, который где-то тут ползает сейчас. Бррр..."
-    Alice_13 ""
+    Alice_13 "Your hands are magic, but I don't think even they can take my mind off the spider that's crawling around here right now. Urgh..."
 
 # game/scripts_s1/s1_v92.rpy:909
 translate english ev_v92_010_b4f114bf:
 
     # Max_03 "Ну, тебе кажется, а я в своих способностях уверен. Останешься довольной, гарантирую."
-    Max_03 ""
+    Max_03 "Well, you think so, but I'm sure of my abilities. You'll be satisfied, I guarantee it."
 
 # game/scripts_s1/s1_v92.rpy:911
 translate english ev_v92_010_4e89b1e1:
 
     # Alice_02 "Продано! Пробуй..." nointeract
-    Alice_02 "" nointeract
+    Alice_02 "Sold! Try..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:915
 translate english ev_v92_010_fdaf5158:
 
     # Alice_05 "Ммм... Довольно неплохо... Хоть какая-то польза от тебя, а то только и можешь, что подглядывать за мной."
-    Alice_05 ""
+    Alice_05 "Mmm... Pretty good... At least you're doing me some good, because all you can do is peep at me."
 
 # game/scripts_s1/s1_v92.rpy:916
 translate english ev_v92_010_3a719fa7:
 
     # Max_01 "Лучше бы радовалась. Значит есть, на что посмотреть."
-    Max_01 ""
+    Max_01 "You'd better be glad. So there is something to look at."
 
 # game/scripts_s1/s1_v92.rpy:917
 translate english ev_v92_010_954b545f:
 
     # Alice_06 "Хм... Весьма сомнительная радость, красоваться обнажённой перед братом."
-    Alice_06 ""
+    Alice_06 "Hmm... It's a dubious joy to show off naked in front of my brother."
 
 # game/scripts_s1/s1_v92.rpy:918
 translate english ev_v92_010_52ccfdee:
 
     # Max_02 "По-моему не сомнительная, а очевидная. Раз я здесь, то тебе приятно моё внимание и мои прикосновения..."
-    Max_02 ""
+    Max_02 "I don't think it's questionable, but obvious. Since I am here, you enjoy my attention and my touch..."
 
 # game/scripts_s1/s1_v92.rpy:921
 translate english ev_v92_010_a0f9fd4c:
 
     # Alice_14 "Воу-воу! Эй, Макс, ты ничего не перепутал? Разве твои ручонки не должны быть у меня на спине?"
-    Alice_14 ""
+    Alice_14 "Whoa-whoa-whoa! Hey, Max, aren't you confused? Shouldn't your hands be on my back?"
 
 # game/scripts_s1/s1_v92.rpy:922
 translate english ev_v92_010_b3b6d6b8:
 
     # Max_04 "Побыли и хватит. Может я не хочу ограничиться лишь твоей прелестной спинкой?"
-    Max_04 ""
+    Max_04 "We've been there and that's it. Maybe I don't want to be limited to your lovely back?"
 
 # game/scripts_s1/s1_v92.rpy:923
 translate english ev_v92_010_262b4dfa:
 
     # Alice_12 "А ты при этом на пол-то хоть смотришь? Там ведь паук где-то бегает или ты забыл?"
-    Alice_12 ""
+    Alice_12 "Do you even look at the floor? Is there a spider running around somewhere, or have you forgotten?"
 
 # game/scripts_s1/s1_v92.rpy:924
 translate english ev_v92_010_26076e33:
 
     # Max_02 "У меня всё под контролем. Можешь расслабиться."
-    Max_02 ""
+    Max_02 "I have everything under control. You can relax."
 
 # game/scripts_s1/s1_v92.rpy:927
 translate english ev_v92_010_ccd16eec:
 
     # Alice_04 "Охх... Ну, раз так, то я просто таю в твоих чутких руках. Это очень приятно..."
-    Alice_04 ""
+    Alice_04 "Ohhh... Well, if that's the case, I'm just melting in your sensitive hands. That's very nice..."
 
 # game/scripts_s1/s1_v92.rpy:928
 translate english ev_v92_010_d71bc8ad:
 
     # Max_01 "И они могут побывать везде, чтобы тебе стало ещё приятнее..."
-    Max_01 ""
+    Max_01 "And they can go everywhere to make you feel even better..."
 
 # game/scripts_s1/s1_v92.rpy:931
 translate english ev_v92_010_8f1e3e36:
 
     # Alice_08 "Ммм... Какое интересное предложение. Прям везде-везде могут?"
-    Alice_08 ""
+    Alice_08 "Mmm... What an interesting suggestion. Can they do that everywhere?"
 
 # game/scripts_s1/s1_v92.rpy:932
 translate english ev_v92_010_3c52977d:
 
     # Max_04 "Абсолютно везде! Хочешь попробовать?"
-    Max_04 ""
+    Max_04 "Absolutely everywhere! Would you like to try it?"
 
 # game/scripts_s1/s1_v92.rpy:935
 translate english ev_v92_010_d46c69a9:
 
     # Alice_14 "Ой, мамочки... Макс, он... Он здесь..."
-    Alice_14 ""
+    Alice_14 "Oh, mommies. Max, he's-- He's here."
 
 # game/scripts_s1/s1_v92.rpy:936
 translate english ev_v92_010_11c49333:
 
     # Max_16 "Вот чёрт! Как же он не вовремя показался."
-    Max_16 ""
+    Max_16 "Oh, shit! What a bad time he showed up."
 
 # game/scripts_s1/s1_v92.rpy:939
 translate english ev_v92_010_4acb5690:
 
     # Alice_15 "А-а-а! Боже мой! Он пополз прямо к нам! Макс, сделай что-нибудь!"
-    Alice_15 ""
+    Alice_15 "Aah! Oh, my God! It came right at us! Max, do something!"
 
 # game/scripts_s1/s1_v92.rpy:940
 translate english ev_v92_010_677d72f9:
 
     # Max_08 "Уфф... Ничего себе, ты устроилась. Я же не вешалка!"
-    Max_08 ""
+    Max_08 "Ugh... Wow, you've settled in. I'm not a hanger!"
 
 # game/scripts_s1/s1_v92.rpy:941
 translate english ev_v92_010_acaf3bce:
 
     # Alice_06 "Убери его скорее, Макс! Прошу тебя!"
-    Alice_06 ""
+    Alice_06 "Get him out of here, Max! I beg of you!"
 
 # game/scripts_s1/s1_v92.rpy:942
 translate english ev_v92_010_94df0282:
 
     # Max_07 "Да, я бы с радостью, но у меня руки сейчас заняты, если ты не заметила."
-    Max_07 ""
+    Max_07 "Yeah, I'd love to, but I've got my hands full right now, in case you haven't noticed."
 
 # game/scripts_s1/s1_v92.rpy:945
 translate english ev_v92_010_03d5aa26:
 
     # Alice_12 "Подожди... это... Ты серьёзно? Я тут чуть ли не умираю от страха, а у тебя встал!"
-    Alice_12 ""
+    Alice_12 "Wait... that's... Are you serious? I'm practically dying of fright here, and you got a hard-on!"
 
 # game/scripts_s1/s1_v92.rpy:946
 translate english ev_v92_010_b0ce0556:
 
     # Max_03 "Просто ты очень удачно пристроила свою голенькую попку и мне от этого приятно."
-    Max_03 ""
+    Max_03 "It's just that you're very lucky to have your naked ass, and that makes me feel good."
 
 # game/scripts_s1/s1_v92.rpy:948
 translate english ev_v92_010_88920c66:
 
     # Alice_13 "Я, так уж и быть, тогда слезу с твоей подставки, а ты быстрее лови этого паука..." nointeract
-    Alice_13 "" nointeract
+    Alice_13 "I'll get off your coaster, but you better catch that spider..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:952
 translate english ev_v92_010_85d20cd1:
 
     # Alice_12 "Ну же, Макс, скорее! Убери его отсюда! Убери его, пожалуйста, как можно дальше от нашего дома!"
-    Alice_12 ""
+    Alice_12 "Come on, Max, hurry up! Get him out of here! Please get him as far away from our house as possible!"
 
 # game/scripts_s1/s1_v92.rpy:953
 translate english ev_v92_010_5d7b6602:
 
     # Max_01 "Не переживай, я выпущу его за ворота, чтобы ты уже наконец успокоилась."
-    Max_01 ""
+    Max_01 "Don't worry, I'll let him out of the gate so you can finally calm down."
 
 # game/scripts_s1/s1_v92.rpy:956
 translate english ev_v92_010_e755cdd5:
 
     # Max_07 "{m}Ползи к своим, паучок. Жаль, что тебя заметила Алиса, а не я.{/m}"
-    Max_07 ""
+    Max_07 "{m}Crawl back to yours, spider. It's a pity you were spotted by Alice and not by me.{/m}"
 
 # game/scripts_s1/s1_v92.rpy:959
 translate english ev_v92_010_14e76f71:
 
     # Max_09 "Эй! Ты куда это? Неужели всё..."
-    Max_09 ""
+    Max_09 "Hey! Where are you going? Is everything..."
 
 # game/scripts_s1/s1_v92.rpy:960
 translate english ev_v92_010_cc0e7134:
 
     # Alice_05 "Относился бы ты к своим обязанностям повнимательнее, может было бы и не всё."
-    Alice_05 ""
+    Alice_05 "If you had been more attentive to your responsibilities, maybe it wouldn't have been everything."
 
 # game/scripts_s1/s1_v92.rpy:963
 translate english ev_v92_010_d7535565:
 
     # Max_02 "Но... Я ведь ещё не закончил массаж. Мои руки жаждут продолжения..."
-    Max_02 ""
+    Max_02 "But... I haven't finished the massage yet. My hands are eager to continue..."
 
 # game/scripts_s1/s1_v92.rpy:964
 translate english ev_v92_010_03ad419d:
 
     # Alice_02 "Да что ты... Возможно в следующий раз нам повезёт больше."
-    Alice_02 ""
+    Alice_02 "No way... Maybe next time we'll have better luck."
 
 # game/scripts_s1/s1_v92.rpy:965
 translate english ev_v92_010_7aa893d3:
 
     # Max_11 "Как печально..."
-    Max_11 ""
+    Max_11 "It's so sad..."
 
 # game/scripts_s1/s1_v92.rpy:968
 translate english ev_v92_010_dcd82e5e:
 
     # Alice_04 "Но за спасение от чудовища пожалуй чмокну тебя разочек. Спасибо тебе."
-    Alice_04 ""
+    Alice_04 "But I'll give you one kiss for saving me from the monster. Oh, thank you."
 
 # game/scripts_s1/s1_v92.rpy:969
 translate english ev_v92_010_e2b5b8ee:
 
     # Max_01 "Рад был помочь."
-    Max_01 ""
+    Max_01 "Glad I could help."
 
 # game/scripts_s1/s1_v92.rpy:987
 translate english ev_v92_011_245ddc0e:
 
     # Alice_06 "Макс! Вот чёрт, ещё и ты меня напугал! Ко мне здоровенный паук в душ заполз... Посмотришь, чтобы он до меня не добрался, пока я буду мыться?"
-    Alice_06 ""
+    Alice_06 "Max! Oh, crap, you scared me, too! A big spider crawled into my shower... Will you make sure it doesn't get to me while I'm showering?"
 
 # game/scripts_s1/s1_v92.rpy:988
 translate english ev_v92_011_4e32f61e:
 
     # Max_01 "Ну конечно посмотрю, не переживай!"
-    Max_01 ""
+    Max_01 "Of course I will, don't worry!"
 
 # game/scripts_s1/s1_v92.rpy:991
 translate english ev_v92_011_0f2caadd:
 
     # Max_09 "{m}Посмотреть-то я посмотрю, но... из-за этого паука, который может выползти в самый неподходящий момент и всё обломать, я далеко с Алисой не продвинусь по части соблазнения.{/m}"
-    Max_09 ""
+    Max_09 "{m}I'll look, but... Because of this spider, which can crawl out at the most inopportune moment and ruin everything, I will not go far with Alice in terms of seduction.{/m}"
 
 # game/scripts_s1/s1_v92.rpy:995
 translate english ev_v92_011_c518fa1e:
 
     # Max_04 "{m}Фух, повезло! Наконец-то он выполз с моей стороны. Теперь, пока Алиса ничего не заметила, нужно сделать так, чтобы он не помешал нам. Закину его в ванну и буду надеяться, что он не сможет оттуда свалить...{/m}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{m}Whew, lucky! He finally crawled out my side. Now, before Alice notices anything, we have to make sure he doesn't interfere with us. I'll throw him in the bathtub and hope he can't get out of there...{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:999
 translate english ev_v92_011_504bc5b8:
 
     # Max_01 "Ну, ты как, Алиса, успокоилась? Давай я потру тебе спинку, чтобы ты немного расслабилась."
-    Max_01 ""
+    Max_01 "So, Alice, have you calmed down? Let me rub your back so you can relax a little."
 
 # game/scripts_s1/s1_v92.rpy:1000
 translate english ev_v92_011_a6bc8c51:
 
     # Alice_12 "Нет, блин, я просто так прикалываюсь, что боюсь пауков, на самом деле мне нравится сверкать перед тобой голой задницей."
-    Alice_12 ""
+    Alice_12 "No, man, I'm just kidding around about being afraid of spiders, I actually like flashing my naked ass at you."
 
 # game/scripts_s1/s1_v92.rpy:1001
 translate english ev_v92_011_21bc0fc8:
 
     # Max_02 "Мойся спокойно... Я ОЧЕНЬ внимательно прослежу за тем, чтобы всё было хорошо."
-    Max_02 ""
+    Max_02 "Wash in peace... I will be VERY careful to make sure everything is okay."
 
 # game/scripts_s1/s1_v92.rpy:1004
 translate english ev_v92_011_5bad9ffb:
 
     # Alice_13 "Лучше бы пошёл и отыскал этого паука, вместо того, чтобы меня успокаивать."
-    Alice_13 ""
+    Alice_13 "You should have gone and found that spider instead of trying to calm me down."
 
 # game/scripts_s1/s1_v92.rpy:1005
 translate english ev_v92_011_119f7ffd:
 
     # Max_07 "И оставить тебя здесь одну, такую беззащитную? Находится в моих руках куда безопаснее... Разве нет?"
-    Max_07 ""
+    Max_07 "And leave you here alone, so defenseless? Being in my hands is much safer... Isn't it?"
 
 # game/scripts_s1/s1_v92.rpy:1008
 translate english ev_v92_011_bf0b1618:
 
     # Alice_02 "Ну... Пока ты не лапаешь меня, как какой-нибудь озабоченный грубиян, а проявляешь максимум чуткости и заботы, лучше оставайся рядом."
-    Alice_02 ""
+    Alice_02 "Well... As long as you're not groping me like some horny brute, but showing the utmost sensitivity and care, you'd better stay close to me."
 
 # game/scripts_s1/s1_v92.rpy:1009
 translate english ev_v92_011_b207d195:
 
     # Max_03 "С такой красивой сестрёнкой, как ты, находится рядом одно удовольствие."
-    Max_03 ""
+    Max_03 "With such a beautiful sister like you, it's a pleasure to be around."
 
 # game/scripts_s1/s1_v92.rpy:1012
 translate english ev_v92_011_6d6001cb:
 
     # Alice_08 "Ммм... Да, ты прав, от такого удовольствия было бы глупо отказываться. Правда, меня немного смущает то, что я позволяю своему брату скользить руками по всему моему телу..."
-    Alice_08 ""
+    Alice_08 "Mmm... Yes, you're right, it would be silly to refuse such pleasure. It does make me a little uncomfortable, though, to let my brother slide his hands all over my body..."
 
 # game/scripts_s1/s1_v92.rpy:1013
 translate english ev_v92_011_b4301b40:
 
     # Max_04 "Что поделать, если руки так и тянутся к прекрасному..."
-    Max_04 ""
+    Max_04 "What can you do if your hands reach for the beautiful..."
 
 # game/scripts_s1/s1_v92.rpy:1016
 translate english ev_v92_011_8cab161b:
 
     # Alice_06 "Охх... Ты полез рукой прямо туда... Твои пальцы... Ммм... Это о-о-очень многообещающее начало, Макс. Ты хоть помнишь, что я пустила тебя сюда не только за этим?"
-    Alice_06 ""
+    Alice_06 "Ohhh... You put your hand right there... Your fingers... Mmm... That's a very, very promising start, Max. Do you remember that I didn't just let you in here for this?"
 
 # game/scripts_s1/s1_v92.rpy:1017
 translate english ev_v92_011_9fcae7be:
 
     # Max_02 "На этот раз нам никто не помешает."
-    Max_02 ""
+    Max_02 "This time no one will interfere with us."
 
 # game/scripts_s1/s1_v92.rpy:1021
 translate english ev_v92_011_679972ac:
 
     # Alice_09 "Ахх... Как же хорошо! Я просто таю в твоих талантливых ручках... Д-а-а... Это так неправильно! Но к чёрту, продолжай... Мне нравится, как ты это делаешь, ммм..." nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Ahhh... That feels so good! I'm just melting in your talented hands... Y-a-a... This is so wrong! But fuck it, keep going... I love the way you do it, mmm..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1024
 translate english ev_v92_011_d9b3b6ff:
 
     # Alice_10 "Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
-    Alice_10 ""
+    Alice_10 "Ah! Oh, shit, Max! Yeah... this is so cool... faster... I'm so turned on by your huge dick!"
 
 # game/scripts_s1/s1_v92.rpy:1025
 translate english ev_v92_011_1257c037:
 
     # Max_04 "{m}Алиса так приятно постанывает... А уж как приятно тереться членом прямо между её упругих и мокрых булочек! Класс...{/m}"
-    Max_04 ""
+    Max_04 "{m}Alice moans so nicely... And how nice it is to rub my cock right between her firm and wet buns! That's great...{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1028
 translate english ev_v92_011_4b702feb:
 
     # Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да-а-а... Это было что-то невообразимое... Мне о-о-очень понравилось! А ты ещё не кончил?"
-    Alice_11 ""
+    Alice_11 "Ah! I can't take it anymore, Max... I'm coming! Yeah... That was unbelievable. I loved it. You didn't come yet?"
 
 # game/scripts_s1/s1_v92.rpy:1029
 translate english ev_v92_011_19811d05:
 
     # Max_03 "Думаешь, что твоя прелестная попка может заставить меня так быстро кончить? Нет, для этого ей нужно очень чувственно подвигаться..."
-    Max_03 ""
+    Max_03 "Do you think your beautiful ass can make me come so fast? No, it needs to move very sensually..."
 
 # game/scripts_s1/s1_v92.rpy:1032
 translate english ev_v92_011_8db39efa:
 
     # Alice_07 "Сейчас ты узнаешь, на что способна моя попка! Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?"
-    Alice_07 ""
+    Alice_07 "You're about to find out what my ass can do! Mmm... I never thought I'd be doing this to you. You got a big dick, Max. Are you coming?"
 
 # game/scripts_s1/s1_v92.rpy:1033
 translate english ev_v92_011_94ff5038:
 
     # Max_22 "О да, Алиса, так приятно... Давай ещё! Я уже почти... вот-вот... Д-а-а..."
-    Max_22 ""
+    Max_22 "Oh yes, Alice, that's so nice... Come on! I'm almost... I'm almost... Uh-huh..."
 
 # game/scripts_s1/s1_v92.rpy:1036
 translate english ev_v92_011_3518bcef:
 
     # Alice_09 "Ого, сколько в тебе было... потенциала... Всю спину мне заляпал! Удобно, что мы сейчас принимаем душ..."
-    Alice_09 ""
+    Alice_09 "Wow, you had a lot of... potential... You got all over my back! Convenient that we're taking a shower right now..."
 
 # game/scripts_s1/s1_v92.rpy:1037
 translate english ev_v92_011_48410418:
 
     # Max_02 "Я здесь вообще-то, в первую очередь, от паука тебя защищаю, а уже потом всё остальное."
-    Max_02 ""
+    Max_02 "I'm actually here to protect you from the spider in the first place, and then everything else."
 
 # game/scripts_s1/s1_v92.rpy:1040
 translate english ev_v92_011_0870b1e5:
 
     # Alice_02 "Кстати, я только сейчас обратила внимание, что паука нигде не видно. Твои ручки и правда могут заставить забыться..."
-    Alice_02 ""
+    Alice_02 "By the way, I just now noticed that the spider is nowhere to be seen. Your pens really can make you forget..."
 
 # game/scripts_s1/s1_v92.rpy:1041
 translate english ev_v92_011_6fdc89b4:
 
     # Max_01 "Может он просто услышал твои стоны, испугался и забился в какой-нибудь угол? Или вовсе убежал отсюда куда подальше."
-    Max_01 ""
+    Max_01 "Maybe he just heard you moaning, got scared, and crawled into a corner somewhere. Or maybe he ran away from here."
 
 # game/scripts_s1/s1_v92.rpy:1042
 translate english ev_v92_011_b1f5f490:
 
     # Alice_05 "Оу... Если так, то мне теперь будет нужна твоя помощь, потому что какой смысл стонать одной, если есть ты. Ну, конечно, если меня снова будут терроризировать пауки..."
-    Alice_05 ""
+    Alice_05 "Oh... If so, I'll need your help now, because what's the point of moaning alone if you're there. Well, of course, if I'm going to be terrorized by spiders again..."
 
 # game/scripts_s1/s1_v92.rpy:1043
 translate english ev_v92_011_08512c11:
 
     # Max_04 "Как всегда, кричи погромче, чтобы я прибежал на помощь."
-    Max_04 ""
+    Max_04 "As always, yell louder so I come to the rescue."
 
 # game/scripts_s1/s1_v92.rpy:1046
 translate english ev_v92_011_e72ab991:
 
     # Alice_04 "Спасибо тебе. И вообще, ты же никому не проболтаешься о том, что тут было?"
-    Alice_04 ""
+    Alice_04 "Thank you. Anyway, you're not going to tell anyone about what happened here, are you?"
 
 # game/scripts_s1/s1_v92.rpy:1047
 translate english ev_v92_011_7894f632:
 
     # Max_02 "Где было? Что было? Не понимаю, о чём ты!"
-    Max_02 ""
+    Max_02 "Where was it? What was what? I don't know what you mean!"
 
 # game/scripts_s1/s1_v92.rpy:1048
 translate english ev_v92_011_2ea64efd:
 
     # Alice_05 "Вот именно, что ничего!"
-    Alice_05 ""
+    Alice_05 "That's right, there's nothing!"
 
 # game/scripts_s1/s1_v92.rpy:1062
 translate english ev_v92_012_e2e452f2:
 
     # Alice_00 "Макс, поглазеть пришёл?"
-    Alice_00 ""
+    Alice_00 "Max, are you here to stare?"
 
 # game/scripts_s1/s1_v92.rpy:1063
 translate english ev_v92_012_88fac8d5:
 
     # Max_09 "Не без этого. Ты же знаешь, что мама осуждает курение на территории нашего дома. Придётся тебя наказать..."
-    Max_09 ""
+    Max_09 "Not without that. You know that Mom disapproves of smoking on our property. I have to punish you..."
 
 # game/scripts_s1/s1_v92.rpy:1064
 translate english ev_v92_012_704448bb:
 
     # Alice_13 "Но, мы же сможем как-то... договориться?"
-    Alice_13 ""
+    Alice_13 "But we can somehow... negotiate?"
 
 # game/scripts_s1/s1_v92.rpy:1065
 translate english ev_v92_012_af2c2b24:
 
     # Max_01 "Ну, это зависит от тебя..."
-    Max_01 ""
+    Max_01 "Well, that depends on you..."
 
 # game/scripts_s1/s1_v92.rpy:1067
 translate english ev_v92_012_5f3a2548:
 
     # Alice_05 "Говори, что ты хочешь за то, чтобы моя попка осталась в целости и сохранности?" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Tell me, what do you want to keep my ass safe and sound?" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1069
 translate english ev_v92_012_0763ca1c:
 
     # Alice_02 "Вон ты что удумал! Не даёт тебе покоя моя голая грудь, да, маленький извращенец?"
-    Alice_02 ""
+    Alice_02 "That's what you're up to! My naked breasts are bothering you, aren't they, you little pervert?"
 
 # game/scripts_s1/s1_v92.rpy:1070
 translate english ev_v92_012_9e12426a:
 
     # Max_03 "Сисечки тоже хотят загорать!"
-    Max_03 ""
+    Max_03 "Tits want to sunbathe too!"
 
 # game/scripts_s1/s1_v92.rpy:1071
 translate english ev_v92_012_a416980f:
 
     # Alice_03 "Но только, когда дома кроме нас никого больше нет. Хорошо?"
-    Alice_03 ""
+    Alice_03 "But only when there's nobody else at home but us. Okay?"
 
 # game/scripts_s1/s1_v92.rpy:1072
 translate english ev_v92_012_a2f180ea:
 
     # Max_04 "Естественно!"
-    Max_04 ""
+    Max_04 "Naturally!"
 
 # game/scripts_s1/s1_v92.rpy:1074
 translate english ev_v92_012_acb01f98:
 
     # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
-    Alice_01 "" nointeract
+    Alice_01 "Now don't distract me, let me smoke in peace!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1080
 translate english ev_v92_012_4969f187:
 
     # Alice_02 "Прямо совсем-совсем голая?! Что, фантазия закончилась, скатился до самого простейшего?"
-    Alice_02 ""
+    Alice_02 "You're totally, totally naked?! What, have you run out of imagination, have you fallen to the simplest of things?"
 
 # game/scripts_s1/s1_v92.rpy:1081
 translate english ev_v92_012_8440a421:
 
     # Max_03 "Мне уже от одной мысли, что ты будешь спать голенькая, на душе приятно."
-    Max_03 ""
+    Max_03 "Already the thought of you sleeping naked makes me feel good."
 
 # game/scripts_s1/s1_v92.rpy:1082
 translate english ev_v92_012_5aba69a4:
 
     # Alice_03 "На такой пустяк я соглашусь... Пока ты что-нибудь ещё не попросил."
-    Alice_03 ""
+    Alice_03 "I'll settle for this trifle... Before you ask for anything else."
 
 # game/scripts_s1/s1_v92.rpy:1083
 translate english ev_v92_012_201d6989:
 
     # Max_04 "Вот и отлично!"
-    Max_04 ""
+    Max_04 "That's great!"
 
 # game/scripts_s1/s1_v92.rpy:1085
 translate english ev_v92_012_acb01f98_1:
 
     # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
-    Alice_01 "" nointeract
+    Alice_01 "Now don't distract me, let me smoke in peace!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1094
 translate english ev_v92_012_18a9f4c1:
 
     # Alice_05 "Ну... Только если легонько! Понял?! И дай докурить сперва в тишине и покое..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Well... Only if it's light! Got it?! And let me finish first in peace and quiet..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1099
 translate english ev_v92_012_7e122231:
 
     # Alice_06 "Сегодня? Значит, попросишь в следующий раз?"
-    Alice_06 ""
+    Alice_06 "Today? So you'll ask next time?"
 
 # game/scripts_s1/s1_v92.rpy:1100
 translate english ev_v92_012_f41a0967:
 
     # Max_03 "Как знать, может быть... Если не бросишь курить."
-    Max_03 ""
+    Max_03 "Who knows, maybe... If you don't quit smoking."
 
 # game/scripts_s1/s1_v92.rpy:1102
 translate english ev_v92_012_1629c481:
 
     # Alice_05 "А вот не брошу! И вообще, не отвлекай меня, дай спокойно покурить, раз ты добрый." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "But I won't quit! In fact, don't distract me, let me smoke in peace, since you are kind." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1113
 translate english ev_v92_013_e2e452f2:
 
     # Alice_00 "Макс, поглазеть пришёл?"
-    Alice_00 ""
+    Alice_00 "Max, are you here to stare?"
 
 # game/scripts_s1/s1_v92.rpy:1114
 translate english ev_v92_013_88fac8d5:
 
     # Max_09 "Не без этого. Ты же знаешь, что мама осуждает курение на территории нашего дома. Придётся тебя наказать..."
-    Max_09 ""
+    Max_09 "Not without that. You know that Mom disapproves of smoking on our property. I have to punish you..."
 
 # game/scripts_s1/s1_v92.rpy:1116
 translate english ev_v92_013_a90b4383:
 
     # Alice_12 "Вот ещё! Я ведь нашу договорённость соблюдаю! Провожу время во дворе, сверкая своей голой грудью. Так что ходи и любуйся." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "No way! I'm sticking to our agreement, aren't I? I spend my time in the yard, flashing my naked breasts. So go ahead and admire it." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1119
 translate english ev_v92_013_acb01f98:
 
     # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
-    Alice_01 "" nointeract
+    Alice_01 "Now don't distract me, let me smoke in peace!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1123
 translate english ev_v92_013_45773b81:
 
     # Alice_06 "Ты уверен? Значит, решил за моей попкой охоту устроить?"
-    Alice_06 ""
+    Alice_06 "Are you sure? So you're going to go after my ass?"
 
 # game/scripts_s1/s1_v92.rpy:1124
 translate english ev_v92_013_f41a0967:
 
     # Max_03 "Как знать, может быть... Если не бросишь курить."
-    Max_03 ""
+    Max_03 "Who knows, maybe... If you don't quit smoking."
 
 # game/scripts_s1/s1_v92.rpy:1126
 translate english ev_v92_013_31ccc968:
 
     # Alice_05 "А вот не брошу! И вообще, не отвлекай меня, дай спокойно покурить." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "But I'm not going to quit! In fact, don't distract me, let me smoke in peace." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1138
 translate english ev_v92_014_e2e452f2:
 
     # Alice_00 "Макс, поглазеть пришёл?"
-    Alice_00 ""
+    Alice_00 "Max, are you here to stare?"
 
 # game/scripts_s1/s1_v92.rpy:1139
 translate english ev_v92_014_88fac8d5:
 
     # Max_09 "Не без этого. Ты же знаешь, что мама осуждает курение на территории нашего дома. Придётся тебя наказать..."
-    Max_09 ""
+    Max_09 "Not without that. You know that Mom disapproves of smoking on our property. I have to punish you..."
 
 # game/scripts_s1/s1_v92.rpy:1141
 translate english ev_v92_014_379ecc76:
 
     # Alice_12 "Вот ещё! Я ведь нашу договорённость соблюдаю! Сплю себе спокойненько голышом и никого не трогаю. Так что не приставай." nointeract
-    Alice_12 "" nointeract
+    Alice_12 "No way! I'm sticking to our agreement, aren't I? I'm sleeping peacefully in the nude and I'm not touching anybody. So don't bother me." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1144
 translate english ev_v92_014_acb01f98:
 
     # Alice_01 "А теперь не отвлекай меня, дай спокойно покурить!" nointeract
-    Alice_01 "" nointeract
+    Alice_01 "Now don't distract me, let me smoke in peace!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1148
 translate english ev_v92_014_45773b81:
 
     # Alice_06 "Ты уверен? Значит, решил за моей попкой охоту устроить?"
-    Alice_06 ""
+    Alice_06 "Are you sure? So you're going to go after my ass?"
 
 # game/scripts_s1/s1_v92.rpy:1149
 translate english ev_v92_014_f41a0967:
 
     # Max_03 "Как знать, может быть... Если не бросишь курить."
-    Max_03 ""
+    Max_03 "Who knows, maybe... If you don't quit smoking."
 
 # game/scripts_s1/s1_v92.rpy:1151
 translate english ev_v92_014_31ccc968:
 
     # Alice_05 "А вот не брошу! И вообще, не отвлекай меня, дай спокойно покурить." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "But I'm not going to quit! In fact, don't distract me, let me smoke in peace." nointeract
 
 translate english strings:
 
     # game/scripts_s1/s1_v92.rpy:910
     old "{i}помассировать Алисе спинку{/i}"
-    new ""
+    new "{i}massage Alice's back{/i}"
 
     # game/scripts_s1/s1_v92.rpy:994
     old "{i}осторожно поместить паука в ванну{/i}"
-    new ""
+    new "{i}carefully place the spider in the bathtub{/i}"
 
     # game/scripts_s1/s1_v92.rpy:1020
     old "{i}ласкать Алису быстрее{/i}"
-    new ""
+    new "{i}Fondle Alice faster{/i}"
 
     # game/scripts_s1/s1_v92.rpy:1066
     old "Если будешь находиться во дворе без верха купальника, то наказывать не буду."
-    new ""
+    new "If you are in the yard without a top, I will not punish you."
 
     # game/scripts_s1/s1_v92.rpy:1066
     old "Если будешь спать голая, то наказывать не буду."
-    new ""
+    new "If you sleep naked, I won't punish you."
 
     # game/scripts_s1/s1_v92.rpy:1066
     old "Ты знаешь, пожалуй, я тебя всё-таки отшлёпаю..."
-    new ""
+    new "You know, I think I'm going to give you a spanking after all..."
 
     # game/scripts_s1/s1_v92.rpy:1115
     old "Точно! Тогда сверкай и дальше..."
-    new ""
+    new "Exactly! Then keep sparkling..."
 
     # game/scripts_s1/s1_v92.rpy:1115
     old "Чёрт! Тогда с завтрашнего дня прекращай..."
-    new ""
+    new "Shit! Then, starting tomorrow, stop it..."
 
     # game/scripts_s1/s1_v92.rpy:1140
     old "Точно! Тогда продолжай в том же духе..."
-    new ""
+    new "Exactly! Then keep up the good work..."
 
