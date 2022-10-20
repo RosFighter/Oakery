@@ -1998,12 +1998,6 @@ translate english lisa_sudden_dressing_lvl_1_b2616dcb_1:
     # Lisa_12 "Что?! Если не уйдёшь, то я всё маме расскажу!" nointeract
     Lisa_12 "What?! If you don't go, I'll tell Mom!" nointeract
 
-# game/events/lisa.rpy:1540
-translate english lisa_sudden_dressing_lvl_1_4d33062b:
-
-    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
-    Lisa_13 "How long are you going to keep staring at me? Wait outside, Please!" nointeract
-
 # game/events/lisa.rpy:1545
 translate english lisa_sudden_dressing_lvl_2_366df3c4:
 

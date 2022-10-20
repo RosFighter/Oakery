@@ -2541,3 +2541,15 @@ translate english strings:
     old "О-ля-ля... Вот Алиса наконец и попалась. Для меня открывается много всего интересного с ней, но вместе с тем, стервозиной она быть не перестанет, так что не всё будет гладко и просто."
     new "Ooh la la... Here Alice is finally caught. A lot of interesting things are opening up for me with her, but at the same time, she's not going to stop being a bitch, so it's not all going to be smooth and easy."
 
+# TODO: Translation updated at 2022-10-20 19:01
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Всё должно сработать, как надо, если Алиса ещё хотя бы пару раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Всё должно сработать, как надо, если Алиса ещё хотя бы раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
+    new ""
+
