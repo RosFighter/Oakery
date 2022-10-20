@@ -2542,3 +2542,15 @@ translate german strings:
     old "О-ля-ля... Вот Алиса наконец и попалась. Для меня открывается много всего интересного с ней, но вместе с тем, стервозиной она быть не перестанет, так что не всё будет гладко и просто."
     new "Ooh la la... Alice hat endlich aufgeholt. Mit ihr eröffnen sich mir viele interessante Dinge, aber gleichzeitig wird sie nicht aufhören, ein Miststück zu sein, es wird also nicht alles glatt laufen und einfacher werden."
 
+# TODO: Translation updated at 2022-10-20 19:02
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Всё должно сработать, как надо, если Алиса ещё хотя бы пару раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
+    new ""
+
+    # game/core/09_opportunities.rpy:4
+    old "Всё должно сработать, как надо, если Алиса ещё хотя бы раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
+    new ""
+

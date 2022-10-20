@@ -8593,9 +8593,9 @@ translate german alice_about_private_punish_3714870a:
     Max_01 "Ja, mach dir keine Sorgen."
 
 # game/dialogues/alicetalk.rpy:4794
-translate german alice_private_punish_0_d5f4ef08:
+translate german alice_private_punish_0_8f61a68b:
 
-    # Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, где это сделам?"
+    # Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, где это сделаем?"
     Alice_03 "Oh, Max... Ich habe so gut gelegen und mich gesonnt. Oh, komm schon, wo machen wir das?"
 
 # game/dialogues/alicetalk.rpy:4797
@@ -8791,9 +8791,9 @@ translate german alice_private_punish_r_pun_daa1c1ea:
     Alice_05 "Hast du da schon angefangen? Denn es kam mir eher wie ein Streicheln als ein Versohlen vor..." nointeract
 
 # game/dialogues/alicetalk.rpy:4972
-translate german alice_private_punish_r_pun_57b399dd:
+translate german alice_private_punish_r_pun_370e3765:
 
-    # Alice_02 "Мне нравится, что небольно. Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
+    # Alice_02 "Мне нравится, что не больно. Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
     Alice_02 "Ich mag es, dass es nicht weh tut. Das war's, du hast meinen Arsch angefasst, das war's. Wenn ich dich nicht stoppe, machst du weiter und greifst zu, wo du nicht hinsolltest..."
 
 # game/dialogues/alicetalk.rpy:4973

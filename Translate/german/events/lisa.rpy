@@ -1998,12 +1998,6 @@ translate german lisa_sudden_dressing_lvl_1_b2616dcb_1:
     # Lisa_12 "Что?! Если не уйдёшь, то я всё маме расскажу!" nointeract
     Lisa_12 "Was?! Wenn du nicht gehst, sage ich es Mom!" nointeract
 
-# game/events/lisa.rpy:1540
-translate german lisa_sudden_dressing_lvl_1_4d33062b:
-
-    # Lisa_13 "Ну и долго ты ещё пялиться на меня будешь?! Выйди и подожди за дверью. Пожалуйста!" nointeract
-    Lisa_13 "Wie lange willst du mich noch anstarren?! Geh raus und warte vor der Tür. Bitte!" nointeract
-
 # game/events/lisa.rpy:1545
 translate german lisa_sudden_dressing_lvl_2_366df3c4:
 
