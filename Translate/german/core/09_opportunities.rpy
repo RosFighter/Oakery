@@ -2548,9 +2548,9 @@ translate german strings:
 
     # game/core/09_opportunities.rpy:4
     old "Всё должно сработать, как надо, если Алиса ещё хотя бы пару раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
-    new ""
+    new "Es sollte funktionieren, wenn Alice wenigstens noch ein paar Mal nüchtern eine Fußmassage vor dem Fernseher bekommt."
 
     # game/core/09_opportunities.rpy:4
     old "Всё должно сработать, как надо, если Алиса ещё хотя бы раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
-    new ""
+    new "Es sollte eigentlich klappen, wenn Alice zumindest noch mal nüchtern ihre Füße bewegt, wenn ich sie vor dem Fernseher massiere."
 
