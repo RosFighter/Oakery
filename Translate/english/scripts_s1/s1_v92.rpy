@@ -2206,1248 +2206,1248 @@ translate english strings:
 translate english ev_v92_015_part0_a3f16ae5:
 
     # Alice_13 "Макс!"
-    Alice_13 ""
+    Alice_13 "Max!"
 
 # game/scripts_s1/s1_v92.rpy:1229
 translate english ev_v92_015_part0_12221b33:
 
     # Alice_12 "Макс! Макс! Вставай быстрее! Мне нужна помощь!" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Max! Max! Get up quick! I need help!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1234
 translate english ev_v92_015_part0_4e92be20:
 
     # Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!" nointeract
-    Alice_06 "" nointeract
+    Alice_06 "Max, help me. There's a huge, gigantic spider in my room! Kill it, please!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1246
 translate english ev_v92_015_part1_f1f76bd4:
 
     # Alice_13 "Макс, Макс! Вот он! Убери его, скорее!!!"
-    Alice_13 ""
+    Alice_13 "Max, Max! There he is! Get him out of here, quick!!!"
 
 # game/scripts_s1/s1_v92.rpy:1247
 translate english ev_v92_015_part1_5b9201e7:
 
     # Max_07 "Хорошо, где он там..."
-    Max_07 ""
+    Max_07 "Okay, where is he..."
 
 # game/scripts_s1/s1_v92.rpy:1250
 translate english ev_v92_015_part1_fde33a73:
 
     # Max_01 "Ага, попался! Не бойся, сейчас я выброшу его с балкона и ты будешь в безопасности..."
-    Max_01 ""
+    Max_01 "Yeah, I got him! Don't worry, I'll throw him off the balcony and you'll be safe..."
 
 # game/scripts_s1/s1_v92.rpy:1252
 translate english ev_v92_015_part1_cc01ecd3:
 
     # Max_04 "{m}Мягкой тебе посадки, паучок. Может даже ещё встретимся.{/m}"
-    Max_04 ""
+    Max_04 "{m}Have a soft landing, spider. Maybe we'll even meet again.{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1257
 translate english ev_v92_015_part1_6d7ec7b4:
 
     # Alice_12 "Спасибо, конечно, что убрал его из комнаты, но вдруг он вернётся?" nointeract
-    Alice_12 "" nointeract
+    Alice_12 "Thanks, of course, for getting him out of the room, but what if he comes back?" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1272
 translate english ev_v92_015_part1_bda3d8f3:
 
     # Alice_02 "Ладно, давай тогда ложиться спать. С тобой мне будет спокойнее... Я, пожалуй, прямо так и лягу, в одних трусиках. Надоели мне эти лифчики..."
-    Alice_02 ""
+    Alice_02 "Well, let's go to bed then. You'll make me feel better... I think I'll just go to bed like this, in my panties. I'm sick of these bras..."
 
 # game/scripts_s1/s1_v92.rpy:1273
 translate english ev_v92_015_part1_4c5bc1d7:
 
     # Max_05 "Правильно! Я обеими руками за!"
-    Max_05 ""
+    Max_05 "That's right! I'm all for it!"
 
 # game/scripts_s1/s1_v92.rpy:1276
 translate english ev_v92_015_part1_62a251a5:
 
     # Alice_02 "Ладно, давай тогда ложиться спать. С тобой мне будет спокойнее... И чтобы было честно, одену хотя бы трусики, раз уж я в постели не одна."
-    Alice_02 ""
+    Alice_02 "Well, let's go to bed then. I'll feel safer with you... And to be fair, at least I'll wear panties, since I'm not alone in bed."
 
 # game/scripts_s1/s1_v92.rpy:1277
 translate english ev_v92_015_part1_5bba16cf:
 
     # Max_05 "Хорошо. Так уж и быть, спорить не буду."
-    Max_05 ""
+    Max_05 "All right. All right, I won't argue."
 
 # game/scripts_s1/s1_v92.rpy:1282
 translate english ev_v92_015_part1_58e83255:
 
     # Alice_05 "Но если увижу, что ты бесцеремонно пялишься на мою грудь - выпну! И не вздумай мешать мне спать ночью..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "But if I see you unceremoniously staring at my breasts, I'll kick you out! And don't you dare disturb my sleep at night..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1290
 translate english ev_v92_015_part1_5808b520:
 
     # Alice_02 "Ладно, давай тогда ложиться спать. С тобой мне будет спокойнее... Правила ты помнишь."
-    Alice_02 ""
+    Alice_02 "Well, let's go to bed then. I'll feel safer with you... You remember the rules."
 
 # game/scripts_s1/s1_v92.rpy:1293
 translate english ev_v92_015_part1_66de57b7:
 
     # Alice_02 "Ладно, давай тогда ложиться спать. С тобой мне будет спокойнее... Только трусики одену. Правила ты помнишь."
-    Alice_02 ""
+    Alice_02 "Well, let's go to bed then. I'll feel safer with you... I'll just put on my panties. You remember the rules."
 
 # game/scripts_s1/s1_v92.rpy:1295
 translate english ev_v92_015_part1_01bb6cb4:
 
     # Max_02 "Не пялиться и не приставать ночью. Всё помню."
-    Max_02 ""
+    Max_02 "No staring and no pestering at night. I remember everything."
 
 # game/scripts_s1/s1_v92.rpy:1297
 translate english ev_v92_015_part1_73aea83a:
 
     # Alice_03 "Вот и чудненько. Доброй ночи, Макс." nointeract
-    Alice_03 "" nointeract
+    Alice_03 "That's fine. Good night, Max." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1303
 translate english ev_v92_015_part1_7573b7eb:
 
     # Max_19 "{m}Да уж, просто спать с такой стройной и красивой девушкой хочется меньше всего, но... правила есть правила. Зато утро будет шикарным...{/m}" nointeract
-    Max_19 "" nointeract
+    Max_19 "{m}Yeah, I don't want to sleep with such a slim and beautiful girl, but... rules are rules. It's gonna make for a great morning...{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1316
 translate english ev_v92_015_first_max_dc43930d:
 
     # Max_07 "{m}Вот и утро. Хорошо, что Алиса долго спит. Самое время урвать небольшую награду за охрану соблазнительного тела моей сестрёнки...{/m}" nointeract
-    Max_07 "" nointeract
+    Max_07 "{m}It's morning. It's a good thing Alice has been asleep for a long time. It's about time to snatch a small reward for guarding my sister's seductive body...{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1321
 translate english ev_v92_015_first_max_9bb27d27:
 
     # Max_01 "{m}Ухх... Какие же у неё нежные сисечки! Такие мягкие и приятные, что аж отпускать не хочется... Да и Алисе это нравится! Она стала глубже дышать. Как бы мне её поприятнее разбудить?{/m}" nointeract
-    Max_01 "" nointeract
+    Max_01 "{m}Ugh... What delicate tits she has! So soft and cuddly that you don't want to let go... And Alice likes it! She began to breathe more deeply. How could I wake her up more pleasantly?{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1327
 translate english ev_v92_015_first_max_ae4ba7e7:
 
     # Max_02 "{m}Чёрт, я просто не могу обделить вниманием эти милые торчащие сосочки! Ох, какими они становятся твёрденькими! Ммм...{/m}" nointeract
-    Max_02 "" nointeract
+    Max_02 "{m}Damn, I just can't ignore those nice protruding nipples! Oh, how hard they're getting! Mmm...{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1332
 translate english ev_v92_015_first_max_88ec5343:
 
     # Max_04 "{m}Алиса то ли ещё не проснулась, то ли очень хорошо притворяется, что спит. Как бы там ни было, у меня есть кое-что, что тебе очень понравится...{/m}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{m}Alice either isn't awake yet, or she's pretending very well to be asleep. Anyway, I've got something you'll really like...{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1339
 translate english ev_v92_015_first_max_88ec5343_1:
 
     # Max_04 "{m}Алиса то ли ещё не проснулась, то ли очень хорошо притворяется, что спит. Как бы там ни было, у меня есть кое-что, что тебе очень понравится...{/m}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{m}Alice either isn't awake yet, or she's pretending very well to be asleep. Anyway, I've got something you'll really like...{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1346
 translate english ev_v92_015_first_max_d7161ab4:
 
     # Max_04 "{m}Похоже, Алиса спит довольно крепко. Но ничего, у меня есть кое-что, что ей очень понравится...{/m}" nointeract
-    Max_04 "" nointeract
+    Max_04 "{m}Alice seems to be sleeping quite soundly. But that's okay, I've got something she'll really like...{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1352
 translate english ev_v92_015_first_alice_30ab2aa7:
 
     # Max_19 "{m}Ммм... Кажется, Алиса проснулась раньше и не смогла устоять... Ухх... Мне нравится так приятно просыпаться.{/m}"
-    Max_19 ""
+    Max_19 "{m}Mmm... It seems Alice woke up early and couldn't resist... Ugh... I love waking up so nicely.{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1354
 translate english ev_v92_015_first_alice_af445c5b:
 
     # Alice_04 "Доброе утро, Макс. Ты с утра всегда такой возбуждённый?"
-    Alice_04 ""
+    Alice_04 "Good morning, Max. Are you always this excited in the morning?"
 
 # game/scripts_s1/s1_v92.rpy:1355
 translate english ev_v92_015_first_alice_d9e8e520:
 
     # Max_01 "Не то слово. Особенно когда рядом лежит такая секси-сестрёнка!"
-    Max_01 ""
+    Max_01 "That's right. Especially with such a sexy little sister lying next to me!"
 
 # game/scripts_s1/s1_v92.rpy:1357
 translate english ev_v92_015_first_alice_9b58f3ed:
 
     # Alice_03 "Оу... А я вот проснулась и решила, как бы мне поприятнее тебя разбудить того, кто всю ночь охранял мой покой..." nointeract
-    Alice_03 "" nointeract
+    Alice_03 "Oh... And I woke up and decided how I'd like to wake up the one who'd been guarding my peace all night..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1361
 translate english ev_v92_015_first_alice_924640e4:
 
     # Alice_05 "Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Может, мне ускориться?"
-    Alice_05 ""
+    Alice_05 "Mmm... I never thought I'd be doing this to you. You got a big dick, Max. Maybe I should speed it up."
 
 # game/scripts_s1/s1_v92.rpy:1362
 translate english ev_v92_015_first_alice_c868c9b9:
 
     # Max_03 "Я никуда не тороплюсь. Понежнее..."
-    Max_03 ""
+    Max_03 "I'm not in a hurry. Gently..."
 
 # game/scripts_s1/s1_v92.rpy:1364
 translate english ev_v92_015_first_alice_11473623:
 
     # Alice_07 "О да, я могу быть очень нежной, если ты в свою очередь постараешься не забрызгать мне кровать. И не обделишь меня вниманием..." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Oh yes, I can be very gentle if you in turn try not to splash my bed. And you won't neglect me..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1367
 translate english ev_v92_015_first_alice_d9b3b6ff:
 
     # Alice_10 "Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
-    Alice_10 ""
+    Alice_10 "Ah! Oh, shit, Max! Yeah... this is so cool... faster... I'm so turned on by your huge dick!"
 
 # game/scripts_s1/s1_v92.rpy:1368
 translate english ev_v92_015_first_alice_87ebfb90:
 
     # Max_02 "Я сейчас устрою твоей сладкой киске такое, о чём ты будешь вспоминать весь день!"
-    Max_02 ""
+    Max_02 "I'm going to give your sweet pussy something to remember all day long!"
 
 # game/scripts_s1/s1_v92.rpy:1370
 translate english ev_v92_015_first_alice_80b8eb4e:
 
     # Alice_09 "Охх... Обожаю твои пальчики. Они дарят такое наслаждение... Ммм..." nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Ohhh... I love your fingers. They give me such pleasure... Mmm..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1377
 translate english ev_v92_015_first_alice_1b57e8e9:
 
     # Alice_08 "Ммм... Когда ты оказываешься у меня между ног, я вся замираю в предвкушении ещё большего удовольствия..." nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Mmmm... When you're between my legs, I'm all frozen in anticipation of more pleasure..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1381
 translate english ev_v92_015_first_alice_ab57c1b8:
 
     # Alice_09 "Ухх... Как же хорошо... Д-а-а... Так и продолжай! Ещё чуть-чуть быстрее... Ммм... Обалденно!"
-    Alice_09 ""
+    Alice_09 "Ugh... It feels so good... Y-a-a... Keep going! A little faster... Mmm... That's great!"
 
 # game/scripts_s1/s1_v92.rpy:1382
 translate english ev_v92_015_first_alice_c8ad23a6:
 
     # Max_19 "{m}Как приятно, что Алиса не забывает при всём этом работать своей нежной ручкой. Вцепилась в мой член мёртвой хваткой...{/m}"
-    Max_19 ""
+    Max_19 "{m}How nice that Alice doesn't forget to work her gentle hand in all this. She's got her hands on my cock with a deadly grip...{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1385
 translate english ev_v92_015_first_alice_3eb9bef8:
 
     # Alice_06 "Да, Макс, да! Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм..." nointeract
-    Alice_06 "" nointeract
+    Alice_06 "Yes, Max, yes! Don't stop... You have such a quick and nimble tongue, Max... Mmm..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1392
 translate english ev_v92_015_fingering_e72c2bb7:
 
     # Max_02 "{m}О да! Как тебе такое? Постанываешь? Правильно... Твоя киска ещё не так увлажнится, если я буду продолжать ласкать тебя своими озорными пальцами...{/m}"
-    Max_02 ""
+    Max_02 "{m}Oh, yeah! How about that? Are you moaning? That's right... Your pussy won't get so wet if I keep fondling you with my mischievous fingers...{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1393
 translate english ev_v92_015_fingering_13a9139b:
 
     # Alice_04 "Ммм... Макс... Доброе утро. Ахх..."
-    Alice_04 ""
+    Alice_04 "Mmm... Max... Good morning. Ahh..."
 
 # game/scripts_s1/s1_v92.rpy:1394
 translate english ev_v92_015_fingering_96300c2b:
 
     # Max_03 "Ты, наверное, хотела сказать, какое это возбуждающее утро, да?"
-    Max_03 ""
+    Max_03 "You were probably going to say what a rousing morning it is, weren't you?"
 
 # game/scripts_s1/s1_v92.rpy:1396
 translate english ev_v92_015_fingering_c373a73c:
 
     # Alice_07 "Д-а-а... Пожалуй... Мне нравится так приятно просыпаться." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Y-a-a... I guess... I like waking up so nicely." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1400
 translate english ev_v92_015_fingering_7ff4f4c7:
 
     # Alice_08 "Охх... Обожаю твои пальчики. Давай-ка я тоже займу кое-чем свои ручки..." nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Ohhh... I love your fingers. Let me do something with my hands, too..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1410
 translate english ev_v92_015_penetrate_d9b3b6ff:
 
     # Alice_10 "Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
-    Alice_10 ""
+    Alice_10 "Ah! Oh, shit, Max! Yeah... this is so cool... faster... I'm so turned on by your huge dick!"
 
 # game/scripts_s1/s1_v92.rpy:1411
 translate english ev_v92_015_penetrate_87ebfb90:
 
     # Max_02 "Я сейчас устрою твоей сладкой киске такое, о чём ты будешь вспоминать весь день!"
-    Max_02 ""
+    Max_02 "I'm going to give your sweet pussy something to remember all day long!"
 
 # game/scripts_s1/s1_v92.rpy:1413
 translate english ev_v92_015_penetrate_f82216db:
 
     # Alice_09 "Охх... Как хорошо, что ты остался со мной на ночь. Ммм... Твои ловкие пальчики сводят меня с ума..." nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Ohhh... How nice of you to spend the night with me. Mmm... Your nimble fingers drive me crazy..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1417
 translate english ev_v92_015_penetrate_ecfd2d1f:
 
     # Alice_11 "Да, Макс, да! Я кончаю... Загони свои шаловливые пальчики поглубже... Д-а-а! Ох... Это было потрясающе..."
-    Alice_11 ""
+    Alice_11 "Yes, Max, yes! I'm coming... Get your naughty fingers in deeper... Yeah! Oh... That was amazing..."
 
 # game/scripts_s1/s1_v92.rpy:1418
 translate english ev_v92_015_penetrate_5995d244:
 
     # Max_05 "Как ты сладко кончила... Я тоже так хочу!"
-    Max_05 ""
+    Max_05 "What a sweet cum you had... I want that too!"
 
 # game/scripts_s1/s1_v92.rpy:1425
 translate english ev_v92_015_cuni_1b57e8e9:
 
     # Alice_08 "Ммм... Когда ты оказываешься у меня между ног, я вся замираю в предвкушении ещё большего удовольствия..." nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Mmmm... When you're between my legs, I'm all frozen in anticipation of more pleasure..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1429
 translate english ev_v92_015_cuni_161c6115:
 
     # Alice_09 "Охх... Как хорошо, что ты остался со мной на ночь. Ммм... Твой горячий язычок сводит меня с ума..."
-    Alice_09 ""
+    Alice_09 "Ohhh... How nice of you to spend the night with me. Mmm... Your hot tongue is driving me crazy..."
 
 # game/scripts_s1/s1_v92.rpy:1430
 translate english ev_v92_015_cuni_970d9f8b:
 
     # Max_02 "{m}Я сейчас устрою твоей сладкой киске такое, о чём ты будешь вспоминать весь день!{/m}"
-    Max_02 ""
+    Max_02 "{m}I'm going to give your sweet pussy something to remember all day long!{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1432
 translate english ev_v92_015_cuni_d9b3b6ff:
 
     # Alice_10 "Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
-    Alice_10 ""
+    Alice_10 "Ah! Oh, shit, Max! Yeah... this is so cool... faster... I'm so turned on by your huge dick!"
 
 # game/scripts_s1/s1_v92.rpy:1433
 translate english ev_v92_015_cuni_c8ad23a6:
 
     # Max_19 "{m}Как приятно, что Алиса не забывает при всём этом работать своей нежной ручкой. Вцепилась в мой член мёртвой хваткой...{/m}"
-    Max_19 ""
+    Max_19 "{m}}How nice that Alice doesn't forget to work her gentle hand in all this. She's got her hands on my cock with a deadly grip...{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1435
 translate english ev_v92_015_cuni_75b81793:
 
     # Alice_09 "Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм..." nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Yes, Max, yes! I'm so close... Don't stop. You have such a quick and nimble tongue, Max. Mmm..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1439
 translate english ev_v92_015_cuni_840fd6d9:
 
     # Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Д-а-а! Ох... Это было потрясающе..."
-    Alice_11 ""
+    Alice_11 "Ah! I can't take it anymore, Max... I'm coming! Yaah! Oh... That was amazing..."
 
 # game/scripts_s1/s1_v92.rpy:1440
 translate english ev_v92_015_cuni_5995d244:
 
     # Max_05 "Как ты сладко кончила... Я тоже так хочу!"
-    Max_05 ""
+    Max_05 "What a sweet cum you had... I want that too!"
 
 # game/scripts_s1/s1_v92.rpy:1448
 translate english ev_v92_015_alice_job_f5f2248a:
 
     # Alice_05 "Нравится? Ты хочешь, чтобы я делала это понежнее? Или мне лучше не церемониться, когда ты уже такой твёрдый и горячий..." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Do you like it? Do you want me to do it more gently? Or should I not be ceremonious when you're already so hard and hot..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1451
 translate english ev_v92_015_alice_job_2824a77b:
 
     # Alice_09 "Ахх... Макс... Не сдерживайся, а то у меня начинает уставать рука. Я чувствую, что ты уже на грани... Давай..." nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Ahhh... Max... Don't hold back, my arm is starting to get tired. I feel like you're on the verge of... Come on..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1455
 translate english ev_v92_015_alice_job_782f690b:
 
     # Alice_08 "Да, вот так... Как её много! Молодец, что не забрызгал мне кровать..."
-    Alice_08 ""
+    Alice_08 "Yes, that's it... That's a lot of her! Well done for not splashing my bed..."
 
 # game/scripts_s1/s1_v92.rpy:1456
 translate english ev_v92_015_alice_job_78b14d3a:
 
     # Max_01 "Фух... Это потому что я хотел поделиться свои удовольствием с тобой и твоими прелестными сисечками!"
-    Max_01 ""
+    Max_01 "Whew... That's because I wanted to share my pleasure with you and your lovely boobs!"
 
 # game/scripts_s1/s1_v92.rpy:1458
 translate english ev_v92_015_alice_job_e7f9e148:
 
     # Alice_02 "Ох, спасибо! Я бы ещё с радость после такого повалялась, но нужно скорее идти в душ, чтобы никто не успел увидеть, какая я испорченная девчонка." nointeract
-    Alice_02 "" nointeract
+    Alice_02 "Oh, thank you! I'd still love to lie around after that, but I have to get in the shower before anyone can see what a spoiled brat I am." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1476
 translate english ev_v92_016_8f61a68b:
 
     # Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, где это сделаем?"
-    Alice_03 ""
+    Alice_03 "Eh, Max... I've been lying and sunbathing so well. Oh, come on, where shall we do it?"
 
 # game/scripts_s1/s1_v92.rpy:1481
 translate english ev_v92_016_smoke_pun_2259f05c:
 
     # Alice_03 "Всё, я готова. Где это сделаем?"
-    Alice_03 ""
+    Alice_03 "That's it, I'm ready. Where do we do it?"
 
 # game/scripts_s1/s1_v92.rpy:1484
 translate english ev_v92_016_pun_64b31743:
 
     # Max_01 "Да прямо тут, во дворе."
-    Max_01 ""
+    Max_01 "Yeah, right here in the yard."
 
 # game/scripts_s1/s1_v92.rpy:1489
 translate english ev_v92_016_pun_3deebad4:
 
     # Alice_05 "Тут, так тут. Давай поживее с этим покончим, а то знаешь, я здесь вообще-то отдыхаю!"
-    Alice_05 ""
+    Alice_05 "Here, so here. Let's get it over with, because, you know, I'm actually resting here!"
 
 # game/scripts_s1/s1_v92.rpy:1490
 translate english ev_v92_016_pun_714f308a:
 
     # Max_02 "Сама разденешься или помочь?"
-    Max_02 ""
+    Max_02 "Will you undress yourself or help me?"
 
 # game/scripts_s1/s1_v92.rpy:1493
 translate english ev_v92_016_pun_1c0c8b5a:
 
     # Alice_04 "Вот тебе надо, чтобы я была голая, так сам и раздевай! Не облегчать же тебе работу..." nointeract
-    Alice_04 "" nointeract
+    Alice_04 "If you want me to be naked, then undress me yourself! Not to make your job easier..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1497
 translate english ev_v92_016_pun_d739f9b9:
 
     # Alice_15 "Ну не так же резко, Макс! Смотри, если порвёшь мой купальник, я тебе тоже мигом что-нибудь порву..." nointeract
-    Alice_15 "" nointeract
+    Alice_15 "Well, don't be so harsh, Max! Look, if you tear my swimsuit, I'll tear something for you, too..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1501
 translate english ev_v92_016_pun_3deebad4_1:
 
     # Alice_05 "Тут, так тут. Давай поживее с этим покончим, а то знаешь, я здесь вообще-то отдыхаю!"
-    Alice_05 ""
+    Alice_05 "Here, so here. Let's get it over with, because, you know, I'm actually resting here!"
 
 # game/scripts_s1/s1_v92.rpy:1502
 translate english ev_v92_016_pun_714f308a_1:
 
     # Max_02 "Сама разденешься или помочь?"
-    Max_02 ""
+    Max_02 "Will you undress yourself or help me?"
 
 # game/scripts_s1/s1_v92.rpy:1504
 translate english ev_v92_016_pun_1c0c8b5a_1:
 
     # Alice_04 "Вот тебе надо, чтобы я была голая, так сам и раздевай! Не облегчать же тебе работу..." nointeract
-    Alice_04 "" nointeract
+    Alice_04 "If you want me to be naked, then undress me yourself! Not to make your job easier..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1512
 translate english ev_v92_016_pun_56f85399:
 
     # Alice_06 "И чего глазеем? Шлёпай давай! Руки только не распускай слишком сильно." nointeract
-    Alice_06 "" nointeract
+    Alice_06 "What are we staring at? Slap it! Just don't let your arms open too much." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1524
 translate english ev_v92_016_usual_3c5c4d81:
 
     # Alice_05 "Ты там уже начал? А то мне показалось, что это больше тянет на поглаживания, а не на шлепки..."
-    Alice_05 ""
+    Alice_05 "Have you started there yet? Because it seemed to me that it was more like stroking than spanking..."
 
 # game/scripts_s1/s1_v92.rpy:1525
 translate english ev_v92_016_usual_45713430:
 
     # Max_09 "Могу сильнее, раз ты заскучала!"
-    Max_09 ""
+    Max_09 "I can do more, since you're bored!"
 
 # game/scripts_s1/s1_v92.rpy:1527
 translate english ev_v92_016_usual_a4f2c5d6:
 
     # Alice_06 "Ой, Макс! Ну ты чего? Так уже больно. Ты же говорил, что будешь с нежностью шлёпать!"
-    Alice_06 ""
+    Alice_06 "Oh, Max! What's the matter with you? It hurts already. I thought you said you were going to spank with tenderness!"
 
 # game/scripts_s1/s1_v92.rpy:1528
 translate english ev_v92_016_usual_960d624c:
 
     # Max_04 "А я потру, чтобы не болело... Так легче?"
-    Max_04 ""
+    Max_04 "And I'll rub it so it doesn't hurt... Is that easier?"
 
 # game/scripts_s1/s1_v92.rpy:1530
 translate english ev_v92_016_usual_42899ba4:
 
     # Alice_13 "Да, я не жалуюсь... Но можно было ведь и дальше шлёпать легонько."
-    Alice_13 ""
+    Alice_13 "Yeah, I'm not complaining... But you could have spanked me gently."
 
 # game/scripts_s1/s1_v92.rpy:1531
 translate english ev_v92_016_usual_bb2ccad5:
 
     # Max_07 "Это я чисто, чтобы напомнить, что это всё равно наказание."
-    Max_07 ""
+    Max_07 "That's me purely to remind you that it's still a punishment."
 
 # game/scripts_s1/s1_v92.rpy:1532
 translate english ev_v92_016_usual_c0c2f489:
 
     # Alice_02 "Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
-    Alice_02 ""
+    Alice_02 "That's it, you've touched my ass, and that's it. If you don't stop, you're just gonna keep sticking it where it doesn't belong..."
 
 # game/scripts_s1/s1_v92.rpy:1534
 translate english ev_v92_016_usual_ef81ae5b:
 
     # Max_03 "Я, кстати, кое-что ещё умею делать руками..."
-    Max_03 ""
+    Max_03 "By the way, I can do something else with my hands..."
 
 # game/scripts_s1/s1_v92.rpy:1536
 translate english ev_v92_016_usual_60e37dd3:
 
     # Alice_05 "Да что ты говоришь... В самом деле? Надо же... Только я лучше откажусь, а то за такое милое наказание ещё попросишь каких-нибудь жутких похабностей." nointeract
-    Alice_05 "" nointeract
+    Alice_05 "What are you saying... Really? Well... But I'd better say no, or else you'll ask for some horrible indignities for such a nice punishment." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1539
 translate english ev_v92_016_usual_09f56963:
 
     # Alice_03 "Ага, сложно не заметить, сколько радости от этого в твоих шортах. Приму это за комплимент, но спасибо, мне этого хватило!"
-    Alice_03 ""
+    Alice_03 "Yeah, it's hard not to notice how much joy it brings to your shorts. I'll take that as a compliment, but thanks, that was enough for me!"
 
 # game/scripts_s1/s1_v92.rpy:1541
 translate english ev_v92_016_usual_8f47acee:
 
     # Max_02 "Хорошо, до следующего раза." nointeract
-    Max_02 "" nointeract
+    Max_02 "Okay, until next time." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1546
 translate english ev_v92_016_hard_punisment_1_13f0ce32:
 
     # Alice_12 "Эй! С какой это стати будет больно?! Ты чего..."
-    Alice_12 ""
+    Alice_12 "Hey! Why would that hurt?! What are you..."
 
 # game/scripts_s1/s1_v92.rpy:1547
 translate english ev_v92_016_hard_punisment_1_b4957ac3:
 
     # Max_09 "Видишь ли, у меня не вызывает особого восторга то, как ты меня наказываешь в своей комнате."
-    Max_09 ""
+    Max_09 "You see, I don't particularly like the way you punish me in your room."
 
 # game/scripts_s1/s1_v92.rpy:1548
 translate english ev_v92_016_hard_punisment_1_cf587e24:
 
     # Alice_16 "Я наказываю по заслугам!"
-    Alice_16 ""
+    Alice_16 "I punish on merit!"
 
 # game/scripts_s1/s1_v92.rpy:1549
 translate english ev_v92_016_hard_punisment_1_2306234c:
 
     # Max_07 "Вот как? Издеваешься, мучаешь и используешь меня, как секс-раба... И было бы за что!"
-    Max_07 ""
+    Max_07 "Is that so? You mock me, torture me, and use me as a sex slave... I wish I was!"
 
 # game/scripts_s1/s1_v92.rpy:1550
 translate english ev_v92_016_hard_punisment_1_e7b7a739:
 
     # Alice_12 "Может быть и чересчур, но это наказание. Оно не должно тебе нравится."
-    Alice_12 ""
+    Alice_12 "It may be too much, but it's a punishment. You don't have to like it."
 
 # game/scripts_s1/s1_v92.rpy:1551
 translate english ev_v92_016_hard_punisment_1_eebec2f5:
 
     # Max_15 "Вот и тебе наказание не должно нравится. Так что залазь на шезлонг..."
-    Max_15 ""
+    Max_15 "So you shouldn't like the punishment either. So get on the chaise lounge..."
 
 # game/scripts_s1/s1_v92.rpy:1552
 translate english ev_v92_016_hard_punisment_1_6cd426b2:
 
     # Alice_13 "Ну ладно. А что будет дальше?"
-    Alice_13 ""
+    Alice_13 "All right. What happens next?"
 
 # game/scripts_s1/s1_v92.rpy:1554
 translate english ev_v92_016_hard_punisment_1_f6f4272b:
 
     # Max_01 "Вот оно, твоё наказание, Алиса..."
-    Max_01 ""
+    Max_01 "This is your punishment, Alice..."
 
 # game/scripts_s1/s1_v92.rpy:1555
 translate english ev_v92_016_hard_punisment_1_9234fa24:
 
     # Alice_12 "Эээ... В смысле? Ты хочешь, чтобы я тебе подрочила?"
-    Alice_12 ""
+    Alice_12 "Um... What do you mean? You want me to jerk you off?"
 
 # game/scripts_s1/s1_v92.rpy:1556
 translate english ev_v92_016_hard_punisment_1_593aaec6:
 
     # Max_07 "О нет, я хочу, чтобы это наказание было хоть немного соразмерно тому, как наказываешь меня ты. С тебя минет!"
-    Max_07 ""
+    Max_07 "Oh no, I want this punishment to be at least a little commensurate with the way you punish me. You owe me a blow job!"
 
 # game/scripts_s1/s1_v92.rpy:1558
 translate english ev_v92_016_hard_punisment_1_7ecaba69:
 
     # Alice_15 "Минет?! Блин, Макс... Ты же мой брат!"
-    Alice_15 ""
+    Alice_15 "A blow job?! Shit, Max... You're my brother!"
 
 # game/scripts_s1/s1_v92.rpy:1559
 translate english ev_v92_016_hard_punisment_1_303a9320:
 
     # Max_09 "Да ты что! Правда? Что-то я не могу вспомнить ни одного момента во время наказаний в твоей комнате, где бы ты сетовала на этот счёт. Так что отговорка не засчитывается!"
-    Max_09 ""
+    Max_09 "You don't say! Really? I can't think of a single moment during the punishments in your room where you complained about it. So the excuse doesn't count!"
 
 # game/scripts_s1/s1_v92.rpy:1560
 translate english ev_v92_016_hard_punisment_1_71ebb5dd:
 
     # Alice_13 "Чёрт! Может, ты как-то иначе меня накажешь?"
-    Alice_13 ""
+    Alice_13 "Shit! Isn't there some other way you can punish me?"
 
 # game/scripts_s1/s1_v92.rpy:1561
 translate english ev_v92_016_hard_punisment_1_7e7860d2:
 
     # Max_15 "Я всё по-честному требую. Если ты отказываешься, то я мигом сделаю так, что ты несколько дней нормально сидеть не сможешь."
-    Max_15 ""
+    Max_15 "I demand everything honestly. If you refuse, I'll make it so that you won't be able to sit properly for several days."
 
 # game/scripts_s1/s1_v92.rpy:1563
 translate english ev_v92_016_hard_punisment_1_25b91491:
 
     # Alice_06 "Нет-нет, не надо! Лучше уж я немного поработаю своим язычком..."
-    Alice_06 ""
+    Alice_06 "No, no, don't do that! I'd rather work with my tongue for a while..."
 
 # game/scripts_s1/s1_v92.rpy:1564
 translate english ev_v92_016_hard_punisment_1_b68a84d3:
 
     # Max_02 "Одним своим язычком ты так просто не отделаешься! Я же не только языком тебя ласкал..."
-    Max_02 ""
+    Max_02 "You don't get off that easy with just your tongue! I didn't just caress you with my tongue..."
 
 # game/scripts_s1/s1_v92.rpy:1565
 translate english ev_v92_016_hard_punisment_1_ea73d85e:
 
     # Alice_08 "Ладно, как скажешь... Всё равно, когда я начну, ты долго не продержишься."
-    Alice_08 ""
+    Alice_08 "Okay, whatever you say... Anyway, when I start, you won't last long."
 
 # game/scripts_s1/s1_v92.rpy:1566
 translate english ev_v92_016_hard_punisment_1_31af2a2b:
 
     # Max_03 "Это мы ещё посмотрим! И давай там с чувством, потому что если мне что-то не понравится, то твоей шикарной попке..."
-    Max_03 ""
+    Max_03 "We'll see about that! And let's go there with feeling, because if I don't like something, your gorgeous ass..."
 
 # game/scripts_s1/s1_v92.rpy:1568
 translate english ev_v92_016_hard_punisment_1_d229f13b:
 
     # Max_20 "Ухх... несдобровать... Но если ты и дальше продолжишь так смачно... Ммм... сосать, то можешь за неё не переживать! Пока что..."
-    Max_20 ""
+    Max_20 "Ugh... That's bad luck... But if you keep on sucking like that... Mmm... sucking, you don't have to worry about her! For now..."
 
 # game/scripts_s1/s1_v92.rpy:1569
 translate english ev_v92_016_hard_punisment_1_ef0d3d63:
 
     # Max_19 "Ох, Алиса! Какие у тебя нежные губы... Д-а-а... У тебя хорошо получается, сестрёнка... Давай поактивнее... Как же приятно!"
-    Max_19 ""
+    Max_19 "Oh, Alice! What tender lips you have... Yeah... You're good at it, sister... Come on... Oh, that feels good."
 
 # game/scripts_s1/s1_v92.rpy:1571
 translate english ev_v92_016_hard_punisment_1_22f25ed1:
 
     # Max_22 "Да, продолжай вот так! Давай быстрее, сестрёнка... Вижу, что с ним не просто справиться, но у тебя классно получается! Д-а-а..."
-    Max_22 ""
+    Max_22 "Yes, go on like that! Hurry up, sister... I can see he's not easy to handle, but you're doing great! Yeah..."
 
 # game/scripts_s1/s1_v92.rpy:1573
 translate english ev_v92_016_hard_punisment_1_3704ae37:
 
     # Max_21 "Давай, соси ещё быстрее... Ммм... Вот умница! Я держусь из последних сил... Вот-вот кончу..." nointeract
-    Max_21 "" nointeract
+    Max_21 "Come on, suck it even faster... Mmm... That's a good girl! I'm doing my best... I'm about to come..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1577
 translate english ev_v92_016_hard_punisment_1_07baa796:
 
     # Max_19 "{m}Д-а-а... Как же обалденно кончать Алисе в её горячий ротик, чувствуя как её нежный язычок судорожно скользит по головке члена, размазывая мою сперму...{/m}"
-    Max_19 ""
+    Max_19 "{m}Yeah... What a delightful way to cum in Alice's hot mouth, feeling her delicate tongue sliding convulsively over the head of my cock, smearing my cum...{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1579
 translate english ev_v92_016_hard_punisment_1_69a58ab8:
 
     # Alice_15 "Чёрт возьми, Макс, я чуть не захлебнулась твоей спермой! Ты хоть представляешь, как непросто справиться с таким огромным членом?"
-    Alice_15 ""
+    Alice_15 "Damn it, Max, I almost choked on your cum! Do you have any idea how hard it is to handle such a huge cock?"
 
 # game/scripts_s1/s1_v92.rpy:1580
 translate english ev_v92_016_hard_punisment_1_7820b1a0:
 
     # Max_04 "Слава богу, не представляю! Но ты прекрасно справилась, умничка."
-    Max_04 ""
+    Max_04 "Thank God, I can't imagine! But you did a great job, good girl."
 
 # game/scripts_s1/s1_v92.rpy:1582
 translate english ev_v92_016_hard_punisment_1_1bc42779:
 
     # Alice_13 "Да? Значит наказание засчитано и моей бедной попке ничего больше не угрожает?"
-    Alice_13 ""
+    Alice_13 "Yes? So the punishment counts and my poor ass is no longer in danger?"
 
 # game/scripts_s1/s1_v92.rpy:1583
 translate english ev_v92_016_hard_punisment_1_d324433c:
 
     # Max_02 "Да, сестрёнка, твой ротик поработал на славу! Претензий к тебе больше нет. Пока что..."
-    Max_02 ""
+    Max_02 "Yes, sister, your mouth did a good job! No more complaints about you. For now..."
 
 # game/scripts_s1/s1_v92.rpy:1584
 translate english ev_v92_016_hard_punisment_1_9ff8295d:
 
     # Alice_12 "Может, когда снова появятся, ты больше не будешь кончать мне в рот?"
-    Alice_12 ""
+    Alice_12 "Maybe when they come again, you won't cum in my mouth anymore?"
 
 # game/scripts_s1/s1_v92.rpy:1585
 translate english ev_v92_016_hard_punisment_1_e7cb3c3f:
 
     # Max_03 "Конечно. Тебе всего лишь нужно будет выбрать наказание для своей попки."
-    Max_03 ""
+    Max_03 "Sure. All you have to do is choose a punishment for your ass."
 
 # game/scripts_s1/s1_v92.rpy:1586
 translate english ev_v92_016_hard_punisment_1_2d6c39cf:
 
     # Alice_13 "А вот может и выберу!"
-    Alice_13 ""
+    Alice_13 "Maybe I will!"
 
 # game/scripts_s1/s1_v92.rpy:1587
 translate english ev_v92_016_hard_punisment_1_9b7567e7:
 
     # Max_01 "Это вот как тебе будет угодно."
-    Max_01 ""
+    Max_01 "That's the way you want it."
 
 # game/scripts_s1/s1_v92.rpy:1606
 translate english ev_v92_017_in_room_2879aca1:
 
     # Alice_02 "Ну же, Макс, не тормози. Хватит на меня так пялиться и проходи! Раздевайся давай..."
-    Alice_02 ""
+    Alice_02 "Come on, Max, don't slow down. Stop staring at me like that and come in! Take your clothes off..."
 
 # game/scripts_s1/s1_v92.rpy:1607
 translate english ev_v92_017_in_room_dd706ac2:
 
     # Max_07 "А может без этого? Может, лучше привяжешь меня к стулу и уже там как-нибудь накажешь?"
-    Max_07 ""
+    Max_07 "How about without it? Why don't you just tie me to a chair and punish me there?"
 
 # game/scripts_s1/s1_v92.rpy:1609
 translate english ev_v92_017_in_room_39940f2d:
 
     # Alice_05 "Неужели такому мелкому извращенцу, как ты, стало страшно поворачиваться ко мне задом? Это хорошо... Но раздеться тебе придётся всё равно! Или есть возражения?!" nointeract
-    Alice_05 "" nointeract
+    Alice_05 "Did a little pervert like you get scared to turn your back on me? That's good... But you still have to get naked! Or do you have a problem with that?!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1613
 translate english ev_v92_017_in_room_8c0a3d49:
 
     # Alice_12 "Хм... А я смотрю, Макс, тебе нравится то, что я делаю. Задницу подставлять боишься, а вот демонстрировать, насколько ты «большой» извращенец и близко не стесняешься!"
-    Alice_12 ""
+    Alice_12 "Hmm... I see you like what I do, Max. You're afraid to get your ass handed to you, but you're not too shy to show me how "big" of a pervert you are!"
 
 # game/scripts_s1/s1_v92.rpy:1614
 translate english ev_v92_017_in_room_809834fe:
 
     # Max_04 "А чего стесняться? Это естественно, что у парня стоит на такую сексуальную девушку... Да ещё и в таком костюмчике..."
-    Max_04 ""
+    Max_04 "What's there to be embarrassed about? It's natural for a guy to have a hard-on for such a sexy girl... And in a suit like that..."
 
 # game/scripts_s1/s1_v92.rpy:1615
 translate english ev_v92_017_in_room_df544769:
 
     # Alice_16 "Ах, вот так, да?! Вообще-то, тебя должен настораживать мой внешний вид!"
-    Alice_16 ""
+    Alice_16 "Oh, that's it, huh?! Actually, you should be alarmed by my appearance!"
 
 # game/scripts_s1/s1_v92.rpy:1616
 translate english ev_v92_017_in_room_0ed5c76a:
 
     # Max_03 "А меня заводит! С огромной радостью бы залез руками под этот костюмчик, да вот только они связаны..."
-    Max_03 ""
+    Max_03 "And it turns me on! I'd love to get my hands under that costume, but they're all tied up..."
 
 # game/scripts_s1/s1_v92.rpy:1618
 translate english ev_v92_017_in_room_36743246:
 
     # Alice_17 "Вот ты наглец, Макс! Думаешь, это шуточки такие и я тебя связала ради развлечений?"
-    Alice_17 ""
+    Alice_17 "You've got some nerve, Max! Do you think this is a joke and I tied you up for fun?"
 
 # game/scripts_s1/s1_v92.rpy:1619
 translate english ev_v92_017_in_room_b2cf343b:
 
     # Max_07 "Нет... Просто у меня не получается по другому реагировать на тебя!"
-    Max_07 ""
+    Max_07 "No... I just don't have any other way of reacting to you!"
 
 # game/scripts_s1/s1_v92.rpy:1620
 translate english ev_v92_017_in_room_05e0ace7:
 
     # Alice_05 "Ох... Это так мило... У моего младшего брата-извращенца на меня стоит. Должно быть это так мучительно, просто смотреть и мечтать обо мне!"
-    Alice_05 ""
+    Alice_05 "Oh... That's so sweet... My pervy little brother has a hard-on for me. It must be so excruciating just to watch and dream about me!"
 
 # game/scripts_s1/s1_v92.rpy:1621
 translate english ev_v92_017_in_room_ba4b2a5d:
 
     # Max_10 "А то! Очень мучительно..."
-    Max_10 ""
+    Max_10 "Yes! It's very painful..."
 
 # game/scripts_s1/s1_v92.rpy:1623
 translate english ev_v92_017_in_room_f44abc52:
 
     # Alice_03 "Ха! В таком случае, наказывать тебя теперь я буду вот так!"
-    Alice_03 ""
+    Alice_03 "Ha! In that case, I'll punish you like this from now on!"
 
 # game/scripts_s1/s1_v92.rpy:1625
 translate english ev_v92_017_in_room_f8bdc8dd:
 
     # Max_05 "Ого! Эти офигенные сисечки всегда радуют мои глаза!"
-    Max_05 ""
+    Max_05 "Wow, those awesome boobs always make my eyes pop!"
 
 # game/scripts_s1/s1_v92.rpy:1626
 translate english ev_v92_017_in_room_57858d48:
 
     # Alice_06 "Ну ещё бы! Ты же наверняка их уже наизусть запомнил... Но одно дело, когда ты видишь их во время наших с тобой тайных развлечений, и другое, когда ты просто стоишь и бессовестно подглядываешь за мной!"
-    Alice_06 ""
+    Alice_06 "Of course, you must have them memorized by heart by now... But it's one thing when you see them during our secret amusements, and another when you just stand there and shamelessly peep at me!"
 
 # game/scripts_s1/s1_v92.rpy:1627
 translate english ev_v92_017_in_room_096ec6c4:
 
     # Max_02 "Ну, что тут сказать, виновен по всем пунктам..."
-    Max_02 ""
+    Max_02 "Well, what can I say, guilty on all counts..."
 
 # game/scripts_s1/s1_v92.rpy:1629
 translate english ev_v92_017_in_room_3a1e2b0a:
 
     # Alice_13 "Вот что толку просто смотреть, а, Макс? Даже если я нахожусь вот так близко... Ведь тебе же, наверняка, уже не только хочется смотреть?"
-    Alice_13 ""
+    Alice_13 "What's the use of just looking, huh, Max? Even if I'm this close... I mean, you probably don't just want to look anymore, do you?"
 
 # game/scripts_s1/s1_v92.rpy:1630
 translate english ev_v92_017_in_room_153a407c:
 
     # Max_05 "О да! Мне хочется обласкать каждый их сантиметр!"
-    Max_05 ""
+    Max_05 "Oh yes! I want to caress every inch of them!"
 
 # game/scripts_s1/s1_v92.rpy:1632
 translate english ev_v92_017_in_room_2de0cc84:
 
     # Alice_07 "Какая жалость! Похоже, кто-то привязан к стулу и не может делать то, что так сильно хочется... Должно быть, обидно?" nointeract
-    Alice_07 "" nointeract
+    Alice_07 "What a pity! Looks like someone is tied to a chair and can't do what they want to do so badly... That must be frustrating, huh?" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1635
 translate english ev_v92_017_in_room_a3418458:
 
     # Alice_16 "Вот ещё! Такое мог попросить только очень плохой мальчик, который совершенно не понимает, как себя надо вести со своей госпожой!"
-    Alice_16 ""
+    Alice_16 "No way! Only a very bad boy who doesn't understand how to behave with his mistress could ask for that!"
 
 # game/scripts_s1/s1_v92.rpy:1636
 translate english ev_v92_017_in_room_cb32de16:
 
     # Max_08 "А как надо?"
-    Max_08 ""
+    Max_08 "What's the right way?"
 
 # game/scripts_s1/s1_v92.rpy:1638
 translate english ev_v92_017_in_room_1001ec6a:
 
     # Alice_12 "Услужливо! Если ты ещё до сих пор это не усвоил, то я просто обязана тебя наказать... Как ты того и заслужил!"
-    Alice_12 ""
+    Alice_12 "Polite! If you haven't learned that by now, I must punish you... As you deserve it!"
 
 # game/scripts_s1/s1_v92.rpy:1639
 translate english ev_v92_017_in_room_b1b05964:
 
     # Max_10 "Эй! В смысле плёткой что ли?!"
-    Max_10 ""
+    Max_10 "Hey! You mean with the whip?!"
 
 # game/scripts_s1/s1_v92.rpy:1644
 translate english ev_v92_017_in_room_7fe3c6f4:
 
     # Alice_03 "И правда! Ах, как приятно порой бывает сесть и расслабиться... Приятно, что ты не просто извращенец, а галантный извращенец!"
-    Alice_03 ""
+    Alice_03 "It's true! Ah, how nice it is sometimes to sit down and relax... It's nice that you're not just a pervert, but a gallant pervert!"
 
 # game/scripts_s1/s1_v92.rpy:1645
 translate english ev_v92_017_in_room_916f938b:
 
     # Max_04 "Таким стройным и красивым ножкам надо давать отдых."
-    Max_04 ""
+    Max_04 "Such slender and beautiful legs should be given a rest."
 
 # game/scripts_s1/s1_v92.rpy:1646
 translate english ev_v92_017_in_room_a5e87b67:
 
     # Alice_08 "Ну а моя грудь... Не хочешь поработать над тем, чтобы заслужить милость своей госпожи?"
-    Alice_08 ""
+    Alice_08 "And my breasts... Don't you want to work on earning your mistress's favor?"
 
 # game/scripts_s1/s1_v92.rpy:1647
 translate english ev_v92_017_in_room_657fc844:
 
     # Max_02 "Буду всеми силами стараться..."
-    Max_02 ""
+    Max_02 "I'll do my best..."
 
 # game/scripts_s1/s1_v92.rpy:1650
 translate english ev_v92_017_in_room_63f01203:
 
     # Alice_07 "Смотри, Макс! Я не хочу разочаровываться... Ах-х! Это хорошо... Но если мне хоть что-то не понравится, то я..." nointeract
-    Alice_07 "" nointeract
+    Alice_07 "Look, Max! I don't want to be disappointed... Ahh! That's good... But if I don't like anything, I..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1655
 translate english ev_v92_017_in_room_2c90d23e:
 
     # Alice_09 "Ахх, Макс! Ты так приятно и нежно посасываешь мои сосочки... Ммм... Я чувствую, твой дружок стал твёрже! Меня это очень возбуждает! Д-а-а..." nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Ahh, Max! You suck my nipples so nicely and gently... Mmm... I can feel your buddy getting harder! It's really turning me on. Yeah..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1668
 translate english ev_v92_017_caressing_tongue_10c2a7d0:
 
     # Alice_08 "[like!t]Охх... Да, Макс, ещё! Ммм... Хорошо... Это просто... Ах-х-х... Превосходно!"
-    Alice_08 ""
+    Alice_08 "[like!t]Ohhh... Yes, Max, more! Mmm... Okay, um... It's just... Ahhhh... Excellent!"
 
 # game/scripts_s1/s1_v92.rpy:1669
 translate english ev_v92_017_caressing_tongue_33e78f9e:
 
     # Max_02 "{m}Ещё бы! Я ведь обожаю твои нежные сисечки, Алиса... Такие мягкие и приятные, что аж отрываться не хочется... Ммм... А какие сосочки твёрденькие...{/m}"
-    Max_02 ""
+    Max_02 "{m}You bet! I adore your soft tits, Alice... So soft and cuddly, you don't want to tear yourself away... Mmm... And your nipples are so hard.{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1671
 translate english ev_v92_017_caressing_tongue_f5f2f359:
 
     # Alice_06 "Всё, Макс, я больше не могу! Эти шортики не должны мешать тому, что я хочу от тебя получить..."
-    Alice_06 ""
+    Alice_06 "That's it, Max, I can't take it anymore! These shorts must not interfere with what I want from you..."
 
 # game/scripts_s1/s1_v92.rpy:1672
 translate english ev_v92_017_caressing_tongue_b091f74a:
 
     # Max_03 "Оу... И что же это?"
-    Max_03 ""
+    Max_03 "Oh... And what is that?"
 
 # game/scripts_s1/s1_v92.rpy:1677
 translate english ev_v92_017_caressing_tongue_f31b0129:
 
     # Alice_05 "О, небольшой пустячок, Макс. Тебе нужно будет всего лишь поработать за моим столом..."
-    Alice_05 ""
+    Alice_05 "Oh, just a little something, Max. All you have to do is work at my desk..."
 
 # game/scripts_s1/s1_v92.rpy:1678
 translate english ev_v92_017_caressing_tongue_afab32ad:
 
     # Max_07 "Не понял!"
-    Max_07 ""
+    Max_07 "I don't get it!"
 
 # game/scripts_s1/s1_v92.rpy:1680
 translate english ev_v92_017_caressing_tongue_eac56272:
 
     # Alice_04 "И включим, пожалуй, свет над столом. Так сказать, для создания более интимной обстановки..."
-    Alice_04 ""
+    Alice_04 "And let's turn on the light above the table. To create a more intimate atmosphere, so to speak..."
 
 # game/scripts_s1/s1_v92.rpy:1681
 translate english ev_v92_017_caressing_tongue_8b57be78:
 
     # Max_01 "Я уже в предвкушении!"
-    Max_01 ""
+    Max_01 "I'm already looking forward to it!"
 
 # game/scripts_s1/s1_v92.rpy:1684
 translate english ev_v92_017_caressing_tongue_5651d866:
 
     # Alice_08 "Нисколько не сомневалась! Ну так, как? Продолжишь всеми силами ублажать свою госпожу?!" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "I didn't doubt it at all! So, what do you say? Will you continue with all your efforts to please your mistress?!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1689
 translate english ev_v92_017_caressing_tongue_b348ff95:
 
     # Alice_05 "О, небольшой пустячок, Макс, для которого мне нужно поудобнее устроиться на столе..."
-    Alice_05 ""
+    Alice_05 "Oh, a little trifle, Max, for which I need to get comfortable on the table..."
 
 # game/scripts_s1/s1_v92.rpy:1690
 translate english ev_v92_017_caressing_tongue_0852e2e0:
 
     # Max_10 "Что, опять?!"
-    Max_10 ""
+    Max_10 "What, again?!"
 
 # game/scripts_s1/s1_v92.rpy:1692
 translate english ev_v92_017_caressing_tongue_446fb90a:
 
     # Alice_12 "Не опять, а снова! И вообще, что это ещё за тон?! Нет, ты конечно можешь предпочесть другую форму наказания, где будет задействован мой стек..."
-    Alice_12 ""
+    Alice_12 "Not again, but again! What kind of tone is that, anyway?! No, you might prefer another form of punishment that involves my stack..."
 
 # game/scripts_s1/s1_v92.rpy:1693
 translate english ev_v92_017_caressing_tongue_e587e8b2:
 
     # "Я сделаю всё, что пожелает моя госпожа!"
-    ""
+    "I will do whatever my lady desires!"
 
 # game/scripts_s1/s1_v92.rpy:1696
 translate english ev_v92_017_caressing_tongue_a4972b2a:
 
     # Alice_08 "Какой хороший мальчик! Надеюсь, мне не нужно ещё более явно намекать на то, как ты должен продолжить всеми силами ублажать свою госпожу?!" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "What a good boy! I hope I don't need to hint even more explicitly at how you must continue to please your mistress with all your might!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1703
 translate english ev_v92_017_prefer_suck_677302b1:
 
     # Alice_16 "Макс! Такое мог сказать только очень плохой мальчик, который совершенно не знает, как надо себя вести со своей госпожой! Сейчас я оденусь и устрою тебе..."
-    Alice_16 ""
+    Alice_16 "Max! Only a very bad boy who doesn't know how to behave with his mistress would say that! Now I'll get dressed and give you..."
 
 # game/scripts_s1/s1_v92.rpy:1704
 translate english ev_v92_017_prefer_suck_f657117f:
 
     # Max_09 "Я что, слишком много попросил?!"
-    Max_09 ""
+    Max_09 "Did I ask for too much?!"
 
 # game/scripts_s1/s1_v92.rpy:1711
 translate english ev_v92_017_dont_like_4a53814e:
 
     # Alice_16 "[dont_like!t]Ай! Ты слишком грубо это делаешь! Я люблю грубость, но не до такой же степени... Такое мог сделать только очень плохой мальчик, который совершенно не знает, как надо ублажать свою госпожу!"
-    Alice_16 ""
+    Alice_16 "[dont_like!t]Ouch! You're making it too rough! I love rudeness, but not to this extent... Only a very bad boy who doesn't know how to please his mistress could do that!"
 
 # game/scripts_s1/s1_v92.rpy:1712
 translate english ev_v92_017_dont_like_cb32de16:
 
     # Max_08 "А как надо?"
-    Max_08 ""
+    Max_08 "What's the right way?"
 
 # game/scripts_s1/s1_v92.rpy:1714
 translate english ev_v92_017_dont_like_2bdfa3d2:
 
     # Alice_12 "Приятно и нежно! Если ты так не умеешь, то я просто обязана тебя наказать... Как ты того и заслужил!"
-    Alice_12 ""
+    Alice_12 "Nice and gentle! If you can't do that, I have to punish you... As you deserve it!"
 
 # game/scripts_s1/s1_v92.rpy:1715
 translate english ev_v92_017_dont_like_b1b05964:
 
     # Max_10 "Эй! В смысле плёткой что ли?!"
-    Max_10 ""
+    Max_10 "Hey! You mean with the whip?!"
 
 # game/scripts_s1/s1_v92.rpy:1724
 translate english ev_v92_017_caressing_tongue_drink_56f015cb:
 
     # Alice_08 "Охх... Да, Макс, ещё! Ммм... Хорошо... Это просто... Ах-х-х... Превосходно! Ты, наверно, и целуешься так же хорошо?" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "Ohhh... Yes, Max, more! Mmm... Okay, um... It's just... Ahhhh... That's perfect. You must be a good kisser, too, huh?" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1729
 translate english ev_v92_017_caressing_tongue_drink_9d6bbf0d:
 
     # Max_20 "{m}Надеюсь, моего опыта поцелуев хватит, чтобы Алиса приятно удивилась... Она так страстно целуется и трётся о мой член, что вполне могла бы в порыве страсти взять и отсосать мне! Это было бы круто!{/m}" nointeract
-    Max_20 "" nointeract
+    Max_20 "{m}I hope my kissing experience is enough to give Alice a pleasant surprise... She kisses and rubs my dick so passionately, she might as well suck my dick in a fit of passion! That would be cool!{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1742
 translate english ev_v92_017_kiss_1d65d60e:
 
     # Max_19 "[like!t]{m}Эх, если бы мои руки не были привязаны к стулу, мне бы не пришлось так стараться и мои прикосновения завели её ещё сильнее. Но судя по тому, как сладко наши язычки играют с друг другом, у меня всё получается и так!{/m}"
-    Max_19 ""
+    Max_19 "[like!t]{m}Eh, if my hands weren't tied to the chair, I wouldn't have had to try so hard and my touch would have turned her on even more. But judging by how sweetly our tongues were playing with each other, I was doing just fine!{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1744
 translate english ev_v92_017_kiss_f5f2f359:
 
     # Alice_06 "Всё, Макс, я больше не могу! Эти шортики не должны мешать тому, что я хочу от тебя получить..."
-    Alice_06 ""
+    Alice_06 "That's it, Max, I can't take it anymore! These shorts must not interfere with what I want from you..."
 
 # game/scripts_s1/s1_v92.rpy:1745
 translate english ev_v92_017_kiss_b091f74a:
 
     # Max_03 "Оу... И что же это?"
-    Max_03 ""
+    Max_03 "Oh... And what is that?"
 
 # game/scripts_s1/s1_v92.rpy:1750
 translate english ev_v92_017_kiss_f31b0129:
 
     # Alice_05 "О, небольшой пустячок, Макс. Тебе нужно будет всего лишь поработать за моим столом..."
-    Alice_05 ""
+    Alice_05 "Oh, just a little something, Max. All you have to do is work at my desk..."
 
 # game/scripts_s1/s1_v92.rpy:1751
 translate english ev_v92_017_kiss_afab32ad:
 
     # Max_07 "Не понял!"
-    Max_07 ""
+    Max_07 "I don't get it!"
 
 # game/scripts_s1/s1_v92.rpy:1753
 translate english ev_v92_017_kiss_eac56272:
 
     # Alice_04 "И включим, пожалуй, свет над столом. Так сказать, для создания более интимной обстановки..."
-    Alice_04 ""
+    Alice_04 "And let's turn on the light above the table. To create a more intimate atmosphere, so to speak..."
 
 # game/scripts_s1/s1_v92.rpy:1754
 translate english ev_v92_017_kiss_8b57be78:
 
     # Max_01 "Я уже в предвкушении!"
-    Max_01 ""
+    Max_01 "I'm already looking forward to it!"
 
 # game/scripts_s1/s1_v92.rpy:1757
 translate english ev_v92_017_kiss_5651d866:
 
     # Alice_08 "Нисколько не сомневалась! Ну так, как? Продолжишь всеми силами ублажать свою госпожу?!" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "I didn't doubt it at all! So, what do you say? Will you continue with all your efforts to please your mistress?!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1763
 translate english ev_v92_017_kiss_b348ff95:
 
     # Alice_05 "О, небольшой пустячок, Макс, для которого мне нужно поудобнее устроиться на столе..."
-    Alice_05 ""
+    Alice_05 "Oh, a little trifle, Max, for which I need to get comfortable on the table..."
 
 # game/scripts_s1/s1_v92.rpy:1764
 translate english ev_v92_017_kiss_0852e2e0:
 
     # Max_10 "Что, опять?!"
-    Max_10 ""
+    Max_10 "What, again?!"
 
 # game/scripts_s1/s1_v92.rpy:1766
 translate english ev_v92_017_kiss_446fb90a:
 
     # Alice_12 "Не опять, а снова! И вообще, что это ещё за тон?! Нет, ты конечно можешь предпочесть другую форму наказания, где будет задействован мой стек..."
-    Alice_12 ""
+    Alice_12 "Not again, but again! What kind of tone is that, anyway?! No, you might prefer another form of punishment that involves my stack..."
 
 # game/scripts_s1/s1_v92.rpy:1767
 translate english ev_v92_017_kiss_e587e8b2:
 
     # "Я сделаю всё, что пожелает моя госпожа!"
-    ""
+    "I will do whatever my lady desires!"
 
 # game/scripts_s1/s1_v92.rpy:1770
 translate english ev_v92_017_kiss_e01ec723:
 
     # Alice_08 "Какой хороший мальчик! Надеюсь, мне не нужно ещё более явно намекать на то, как именно ты должен продолжить всеми силами ублажать свою госпожу?!" nointeract
-    Alice_08 "" nointeract
+    Alice_08 "What a good boy! I hope I don't need to hint even more explicitly how exactly you should continue to please your mistress with all your might!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1781
 translate english ev_v92_017_dont_like_kiss_9299017f:
 
     # Alice_16 "[dont_like!t]Макс! С чего ты взял, что мне понравится, если ты так грубо будешь напирать своим языком?! Такое мог сделать только очень плохой мальчик, который совершенно не знает, как надо себя вести со своей госпожой!"
-    Alice_16 ""
+    Alice_16 "[dont_like!t]Max! What makes you think I like it when you use your tongue so rudely? Only a very bad boy who doesn't know how to behave with his mistress would do that!"
 
 # game/scripts_s1/s1_v92.rpy:1782
 translate english ev_v92_017_dont_like_kiss_cb32de16:
 
     # Max_08 "А как надо?"
-    Max_08 ""
+    Max_08 "What's the right way?"
 
 # game/scripts_s1/s1_v92.rpy:1784
 translate english ev_v92_017_dont_like_kiss_2bdfa3d2:
 
     # Alice_12 "Приятно и нежно! Если ты так не умеешь, то я просто обязана тебя наказать... Как ты того и заслужил!"
-    Alice_12 ""
+    Alice_12 "Nice and gentle! If you can't do that, I have to punish you... As you deserve it!"
 
 # game/scripts_s1/s1_v92.rpy:1785
 translate english ev_v92_017_dont_like_kiss_b1b05964:
 
     # Max_10 "Эй! В смысле плёткой что ли?!"
-    Max_10 ""
+    Max_10 "Hey! You mean with the whip?!"
 
 # game/scripts_s1/s1_v92.rpy:1791
 translate english ev_v92_017_cunnilingus_882a3d6f:
 
     # Alice_09 "О да! Как хорошо, что ты быстро сообразил, что к чему. Ммм... Пусть твой горячий язычок с самыми страстными чувствами сводит меня с ума!" nointeract
-    Alice_09 "" nointeract
+    Alice_09 "Oh, yes! It's a good thing you figured it out quickly. Mmm... Let your hot tongue with the most passionate feelings drive me crazy!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1804
 translate english ev_v92_017_cunnilingus_3a4cfc2a:
 
     # Alice_10 "Ах! Д-а-а... Так и продолжай! Ещё чуть-чуть быстрее... Ухх... Как же хорошо... Ммм..."
-    Alice_10 ""
+    Alice_10 "Ah! D-a-a-a... Keep going! Just a little faster... Ugh... That feels good... Mmm..."
 
 # game/scripts_s1/s1_v92.rpy:1805
 translate english ev_v92_017_cunnilingus_94bc7958:
 
     # Max_07 "Ого! Алиса с такой силой вдавливает между своих ножек мою голову, что я аж еле дышу! Похоже, что у меня всё получается, как надо и её ножки скоро задрожат от наслаждения..."
-    Max_07 ""
+    Max_07 "Alice is pushing my head so hard between her legs that I can hardly breathe! It looks like I'm doing just fine, and her legs will soon be trembling with pleasure..."
 
 # game/scripts_s1/s1_v92.rpy:1808
 translate english ev_v92_017_cunnilingus_4e322e76:
 
     # Alice_06 "Да, Макс, да! Не останавливайся... Я уже так близко! У тебя такой быстрый и ловкий язычок, Макс... Охх..." nointeract
-    Alice_06 "" nointeract
+    Alice_06 "Yes, Max, yes! Don't stop... I'm so close! You have such a quick and nimble tongue, Max... Ohh..." nointeract
 
 # game/scripts_s1/s1_v92.rpy:1812
 translate english ev_v92_017_cunnilingus_91df6b13:
 
     # Alice_11 "Ах! Ещё, Макс... Всё, я больше не могу... Я кончаю! Д-а-а! Ммм... Как же чертовски хорошо это было..."
-    Alice_11 ""
+    Alice_11 "Ah! More, Max... That's it, I can't go on... I'm coming! Duh-ah! Mmm... That was so fucking good..."
 
 # game/scripts_s1/s1_v92.rpy:1813
 translate english ev_v92_017_cunnilingus_3ec9282d:
 
     # Max_03 "Да, это было мощно!"
-    Max_03 ""
+    Max_03 "Yes, it was powerful!"
 
 # game/scripts_s1/s1_v92.rpy:1815
 translate english ev_v92_017_cunnilingus_1e956808:
 
     # Alice_05 "Фух... И не говори! Меня даже ноги с трудом держат... ещё трясутся..."
-    Alice_05 ""
+    Alice_05 "Phew... Tell me about it! Even my legs can hardly hold me... I'm still shaking..."
 
 # game/scripts_s1/s1_v92.rpy:1816
 translate english ev_v92_017_cunnilingus_8593514e:
 
     # Max_07 "А я за такое не должен быть вознаграждён?"
-    Max_07 ""
+    Max_07 "Shouldn't I be rewarded for that?"
 
 # game/scripts_s1/s1_v92.rpy:1821
 translate english ev_v92_017_cunnilingus_e2f3d045:
 
     # Alice_12 "Вот что ты точно не должен забывать, Макс, так это то, что мы тут наказываем тебя!"
-    Alice_12 ""
+    Alice_12 "The one thing you mustn't forget, Max, is that we're punishing you here!"
 
 # game/scripts_s1/s1_v92.rpy:1822
 translate english ev_v92_017_cunnilingus_032fa13d:
 
     # Max_10 "Ну Алиса! Так нельзя..."
-    Max_10 ""
+    Max_10 "Alice! You can't do that..."
 
 # game/scripts_s1/s1_v92.rpy:1823
 translate english ev_v92_017_cunnilingus_cce00283:
 
     # Alice_13 "Что нельзя, так это подглядывать за мной! Но знаешь, кое-чем я тебе всё же помогу..."
-    Alice_13 ""
+    Alice_13 "What you can't do is spy on me! But you know, I can help you with something..."
 
 # game/scripts_s1/s1_v92.rpy:1824
 translate english ev_v92_017_cunnilingus_e8425f39:
 
     # Max_07 "Отвяжешь от стула?"
-    Max_07 ""
+    Max_07 "Will you untie me from the chair?"
 
 # game/scripts_s1/s1_v92.rpy:1826
 translate english ev_v92_017_cunnilingus_911eca53:
 
     # Alice_05 "Именно! И ты сможешь уйти без какого-либо вреда для здоровья. А в остальном помоги себе сам!"
-    Alice_05 ""
+    Alice_05 "Exactly! And you can leave without any harm to your health. Otherwise, help yourself!"
 
 # game/scripts_s1/s1_v92.rpy:1830
 translate english ev_v92_017_cunnilingus_ee60a2e4:
 
     # Max_09 "{m}Вот так значит, да?! Я тут стараюсь, а она... Наказывает видите ли она меня тут! Нужно было обойтись без конфеты с ликёром, тогда она бы помнила, что вытворяла, а мне было бы что ей предъявить за это!{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}So that's it, huh?! I'm trying here, and she's... She's punishing me, you see! I should have done without the candy and liquor, then she would have remembered what she did, and I would have had something to charge her for it!{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1839
 translate english ev_v92_017_cunnilingus_857f2585:
 
     # Max_09 "{m}Вот так значит, да?! Я тут стараюсь, а она... Наказывает видите ли она меня тут! Ну всё, сучка, ты у меня скоро такого члена получишь... Тебя ведь тоже ещё будет за что наказать!{/m}" nointeract
-    Max_09 "" nointeract
+    Max_09 "{m}So that's it, huh?! I'm trying here, and she's... She's punishing me! That's it, bitch, you're about to get your dick handed to you... You'll be punished too, you know!{/m}" nointeract
 
 # game/scripts_s1/s1_v92.rpy:1847
 translate english ev_v92_017_dont_like_cuni_af2358d4:
 
     # Alice_16 "Ай! Ты слишком грубо это делаешь! Я люблю грубость, но не до такой же степени... Такое мог сделать только очень плохой мальчик, который совершенно не знает, как надо ублажать свою госпожу!"
-    Alice_16 ""
+    Alice_16 "Ouch! You're making it too rough! I love rudeness, but not to this extent... Only a very bad boy who doesn't know how to please his mistress could do that!"
 
 # game/scripts_s1/s1_v92.rpy:1848
 translate english ev_v92_017_dont_like_cuni_cb32de16:
 
     # Max_08 "А как надо?"
-    Max_08 ""
+    Max_08 "What's the right way?"
 
 # game/scripts_s1/s1_v92.rpy:1850
 translate english ev_v92_017_dont_like_cuni_bbd2c54f:
 
     # Alice_12 "Я же тебе сказала, как! Чувственно! Если ты так не умеешь, то я просто обязана тебя наказать... Как ты того и заслужил! Сейчас я оденусь и устрою тебе..."
-    Alice_12 ""
+    Alice_12 "I told you how! Sensual! If you can't do that, I have to punish you... Just as you deserve. I'm going to get dressed and give you..."
 
 # game/scripts_s1/s1_v92.rpy:1851
 translate english ev_v92_017_dont_like_cuni_5e84ae6b:
 
     # Max_09 "Да блин, я так и делал!"
-    Max_09 ""
+    Max_09 "Yeah, that's what I was doing!"
 
 translate english strings:
 
     # game/scripts_s1/s1_v92.rpy:1256
     old "Не переживай, не вернётся. Спокойной ночи."
-    new ""
+    new "Don't worry, he won't come back. Good night."
 
     # game/scripts_s1/s1_v92.rpy:1356
     old "{i}устроиться поудобнее{/i}"
-    new ""
+    new "{i}Get comfortable{/i}"
 
     # game/scripts_s1/s1_v92.rpy:1363
     old "{i}устроиться у неё между ног{/i}"
-    new ""
+    new "{i}Nestle between her legs{/i}"
 
     # game/scripts_s1/s1_v92.rpy:1384
     old "{i}устроиться поудобнее и проникнуть в неё пальцами{/i}"
-    new ""
+    new "{i}Get comfortable and penetrate it with your fingers{/i}"
 
     # game/scripts_s1/s1_v92.rpy:1395
     old "{i}продолжить ласкать пальцами{/i}"
-    new ""
+    new "{i}Continue fondling with your fingers{/i}"
 
     # game/scripts_s1/s1_v92.rpy:1412
     old "{i}ласкать её киску пальцами быстрее{/i}"
-    new ""
+    new "{i}Caress her pussy with my fingers faster{/i}"
 
     # game/scripts_s1/s1_v92.rpy:1447
     old "Да, давай жёстче! Я уже близко..."
-    new ""
+    new "Yeah, let's get tough! I'm getting close..."
 
     # game/scripts_s1/s1_v92.rpy:1447
     old "оральные ласки"
-    new ""
+    new "Oral caresses"
 
     # game/scripts_s1/s1_v92.rpy:1511
     old "Сразу предупреждаю, будет больно!"
-    new ""
+    new "I warn you right away, it's going to hurt!"
 
     # game/scripts_s1/s1_v92.rpy:1535
     old "Что ты! Ничего такого..."
-    new ""
+    new "What are you! It's nothing like that..."
 
     # game/scripts_s1/s1_v92.rpy:1695
     old "Я лучше предпочту, чтобы ты сперва мне отсосала!"
-    new ""
+    new "I'd rather you suck my dick first!"
 
     # game/scripts_s1/s1_v92.rpy:1790
     old "{i}устроить чувственные ласки{/i}"
-    new ""
+    new "{i}Arrange sensual caresses{/i}"

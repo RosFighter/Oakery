@@ -2547,9 +2547,8 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Всё должно сработать, как надо, если Алиса ещё хотя бы пару раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
-    new ""
+    new "It should work properly if Alice works her feet at least a couple more times sober when I massage her by the TV"
 
     # game/core/09_opportunities.rpy:4
     old "Всё должно сработать, как надо, если Алиса ещё хотя бы раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
-    new ""
-
+    new "Everything should work properly if Alice works her feet sober at least once more when I massage her by the TV"
