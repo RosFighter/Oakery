@@ -4139,3 +4139,17 @@ translate english alice_shower_pinded_5452dc65:
     # Max_11 "Вот же ёлки-палки."
     Max_11 "Holy crap."
 
+# TODO: Translation updated at 2022-10-23 23:50
+
+# game/events/alice.rpy:1444
+translate english alice_smoke_47220f25:
+
+    # Max_02 "Ну вот, Алиса, ты и попалась! Видимо, уже невмоготу стало, как курить захотелось..."
+    Max_02 ""
+
+# game/events/alice.rpy:1447
+translate english alice_smoke_4b3f7378:
+
+    # Max_09 "Странно, Алиса в это время обычно курит... Она решила бросить, что ли?"
+    Max_09 ""
+

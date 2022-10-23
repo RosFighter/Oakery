@@ -12103,3 +12103,21 @@ translate english alice_about_showdown_fd54e914:
 
     # Max_01 "Конечно. Если что, зови."
     Max_01 "Sure. Call me if you need anything."
+# TODO: Translation updated at 2022-10-23 23:50
+
+# game/dialogues/alicetalk.rpy:5583
+translate english alice_domine_drink_kiss_5873bed2:
+
+    # Alice_11 "Вот именно! Д-а-а... Я хочу скользить киской по твоему мощному члену до тех пор, пока не кончу! Как приятно... Держись, Макс, ведь я буду это делать всё быстрее и быстрее... Ах-х-х..."
+    Alice_11 ""
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:3075
+    old "Давай просто подождём, пока он уползёт..."
+    new ""
+
+    # game/dialogues/alicetalk.rpy:3075
+    old "Просто спрячься за меня..."
+    new ""
+
