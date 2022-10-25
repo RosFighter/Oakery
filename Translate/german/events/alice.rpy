@@ -4146,11 +4146,11 @@ translate german alice_shower_pinded_5452dc65:
 translate german alice_smoke_47220f25:
 
     # Max_02 "Ну вот, Алиса, ты и попалась! Видимо, уже невмоготу стало, как курить захотелось..."
-    Max_02 ""
+    Max_02 "So, Alice, jetzt hat es dich erwischt! Ich schätze, du hast genug vom Drang zu rauchen..."
 
 # game/events/alice.rpy:1447
 translate german alice_smoke_4b3f7378:
 
     # Max_09 "Странно, Алиса в это время обычно курит... Она решила бросить, что ли?"
-    Max_09 ""
+    Max_09 "Seltsam, Alice raucht normalerweise um diese Zeit... Hat sie beschlossen, aufzuhören oder so?"
 

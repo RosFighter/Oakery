@@ -12109,15 +12109,15 @@ translate german alice_about_showdown_fd54e914:
 translate german alice_domine_drink_kiss_5873bed2:
 
     # Alice_11 "Вот именно! Д-а-а... Я хочу скользить киской по твоему мощному члену до тех пор, пока не кончу! Как приятно... Держись, Макс, ведь я буду это делать всё быстрее и быстрее... Ах-х-х..."
-    Alice_11 ""
+    Alice_11 "Ganz genau! Ja... Ich will meine Pussy auf deinem mächtigen Schwanz bewegen, bis ich komme! Das fühlt sich geil an. Halte durch, Max, denn ich werde es immer schneller machen... Ahhh..."
 
 translate german strings:
 
     # game/dialogues/alicetalk.rpy:3075
     old "Давай просто подождём, пока он уползёт..."
-    new ""
+    new "Lass uns einfach warten, bis sie sich verkrochen hat..."
 
     # game/dialogues/alicetalk.rpy:3075
     old "Просто спрячься за меня..."
-    new ""
+    new "Versteck dich einfach hinter mir..."
 
