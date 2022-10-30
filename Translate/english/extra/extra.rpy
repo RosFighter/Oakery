@@ -329,3 +329,67 @@ translate english strings:
     # game/extra/extra.rpy:60
     old "4-ый интимный урок с Анной"
     new "4th intimate lesson with Ann"
+# TODO: Translation updated at 2022-10-30 23:55
+
+translate english strings:
+
+    # game/extra/extra.rpy:60
+    old "В магазин с Алисой"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "С добрым утром"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Афера века"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Сама напросилась"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Так себе охранник"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Хоть на что-то сгодился"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Пока паук где-то рядом..."
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Лучшее пробуждение с Алисой"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Лучше делать то, что она хочет..."
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Покорность будет вознаграждаться..."
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Выбери своё наказание"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Вот и посмотрели ТВ"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "В ванную комнату за минетом!"
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Меня ждёт кое-что особенное..."
+    new ""
+
+    # game/extra/extra.rpy:60
+    old "Самый хитрый охранник"
+    new ""
+
