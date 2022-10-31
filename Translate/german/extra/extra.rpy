@@ -336,61 +336,61 @@ translate german strings:
 
     # game/extra/extra.rpy:60
     old "В магазин с Алисой"
-    new ""
+    new "Zum Einkaufen mit Alice"
 
     # game/extra/extra.rpy:60
     old "С добрым утром"
-    new ""
+    new "Guten Morgen!"
 
     # game/extra/extra.rpy:60
     old "Афера века"
-    new ""
+    new "Schwindel des Jahrhunderts"
 
     # game/extra/extra.rpy:60
     old "Сама напросилась"
-    new ""
+    new "Du hast es so gewollt"
 
     # game/extra/extra.rpy:60
     old "Так себе охранник"
-    new ""
+    new "Nicht wirklich ein Bewacher"
 
     # game/extra/extra.rpy:60
     old "Хоть на что-то сгодился"
-    new ""
+    new "Zumindest eine kleine Hilfe"
 
     # game/extra/extra.rpy:60
     old "Пока паук где-то рядом..."
-    new ""
+    new "Solange es die Spinne gibt..."
 
     # game/extra/extra.rpy:60
     old "Лучшее пробуждение с Алисой"
-    new ""
+    new "Der schönste Morgen mit Alice"
 
     # game/extra/extra.rpy:60
     old "Лучше делать то, что она хочет..."
-    new ""
+    new "Es ist besser, zu tun, was sie will..."
 
     # game/extra/extra.rpy:60
     old "Покорность будет вознаграждаться..."
-    new ""
+    new "Gehorsamkeit wird belohnt..."
 
     # game/extra/extra.rpy:60
     old "Выбери своё наказание"
-    new ""
+    new "Wähle deine Strafe"
 
     # game/extra/extra.rpy:60
     old "Вот и посмотрели ТВ"
-    new ""
+    new "Hier sitzen wir und sehen fern"
 
     # game/extra/extra.rpy:60
     old "В ванную комнату за минетом!"
-    new ""
+    new "Rein ins Bad zum Blasen!"
 
     # game/extra/extra.rpy:60
     old "Меня ждёт кое-что особенное..."
-    new ""
+    new "Ich erwarte etwas Besonderes von dir..."
 
     # game/extra/extra.rpy:60
     old "Самый хитрый охранник"
-    new ""
+    new "Raffinierter Wächter"
 
