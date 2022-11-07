@@ -74,7 +74,7 @@ label kira_firsttalk:
     Max_08 "Тётя Кира!"
     Kira_04 "А что тётя Кира? Проехали. Кое-кому, так вообще нужно принять душ и расслабиться. Может быть, и мне тоже, но вдвоём не стоит это делать. Так что, иди ты в душ. И включи холодную воду. Очень холодную!"
     Max_00 "Хорошо..."
-    scene BG shower-01
+    scene BG bathroom-shower-01
     show Max shower 04
     show FG shower-closer
     menu:
@@ -148,7 +148,7 @@ label kira_talk2:
             Max_00 "Хорошо..."
         "Пожалуй, я пойду...":
             pass
-    scene BG shower-01
+    scene BG bathroom-shower-01
     show Max shower 04
     show FG shower-closer
     menu:
@@ -304,7 +304,7 @@ label kira_talk4:
     Kira_06 "Макс! Что ты такое своей тёте предлагаешь! Как тебе не стыдно..."
     Max_09 "Ладно, смейся..."
 
-    scene BG shower-01
+    scene BG bathroom-shower-01
     show Max shower 04
     show FG shower-closer
 
@@ -373,7 +373,7 @@ label kira_talk5:
     Kira_06 "Уж не знаю, Макс, что ты уже нафантазировал насчёт фотосессии, но тебе опять пора в душ. Что же ты такой впечатлительный? Эх..."
     Max_09 "Да, я пойду. И если не хочешь помочь мне с этим, то не мешай, как в тот раз!"
 
-    scene BG shower-01
+    scene BG bathroom-shower-01
     show Max shower 04
     show FG shower-closer
 
@@ -648,7 +648,7 @@ label kira_about_photo1:
     Kira_02 "Пожалуй, я ещё немного понежусь на солнышке. Ты и сам прекрасно справишься..."
     Max_09 "Эх, всё приходится делать самому..."
 
-    scene BG shower-01
+    scene BG bathroom-shower-01
     show Max shower 04
     show FG shower-closer
 
@@ -659,7 +659,7 @@ label kira_about_photo1:
     Kira_04 "Не паникуй, Макс, это всего лишь я. Стало как-то слишком жарко... Ты же ведь не против моей компании?"
     Max_03 "Конечно не против! Ещё спрашиваешь..."
 
-    scene BG shower-01
+    scene BG bathroom-shower-01
     show Kira shower-Max 01
     show FG shower-closer
 
@@ -671,21 +671,21 @@ label kira_about_photo1:
     Kira_10 "Ты хоть представляешь, Макс, что будет, если нас застукают за таким?"
     Max_07 "Боюсь даже представить... Может, сделать всё по-быстрому?"
 
-    scene BG shower-04
+    scene BG bathroom-shower-04
     show Kira shower-Max 04
     show FG shower-water
 
     Kira_02 "Тогда нам лучше выключить воду... И смотри по сторонам, чтобы никто не увидел, что мы делаем! Мы ведь с тобой такими плохими делишками занимаемся..."
     Max_02 "Само собой, тётя Кира!"
 
-    scene BG shower-05
+    scene BG bathroom-shower-05
     show AnimMaxKira1
 
     menu:
         Max_20 "{m}Ох, как она сосёт... Да так глубоко... Похоже, у неё чёрный пояс по минету! Блин, я уже на грани... Вот-вот и кончу... Отпадно!{/m}"
         "{i}кончить!{/i}":
             pass
-    scene BG shower-06
+    scene BG bathroom-shower-06
     show Kira shower-Max 06
     Max_22 "{m}Да... Я кончаю... Прямо ей в рот! О боже... Она так смачно посасывает головку моего члена... Вот это отсос, так отсос! Кажется, это самое офигенное развлечение в мире!{/m}"
 

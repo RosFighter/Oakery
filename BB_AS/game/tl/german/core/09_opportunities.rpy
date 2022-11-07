@@ -2542,3 +2542,74 @@ translate german strings:
     old "О-ля-ля... Вот Алиса наконец и попалась. Для меня открывается много всего интересного с ней, но вместе с тем, стервозиной она быть не перестанет, так что не всё будет гладко и просто."
     new "Ooh la la... Alice hat endlich aufgeholt. Mit ihr eröffnen sich mir viele interessante Dinge, aber gleichzeitig wird sie nicht aufhören, ein Miststück zu sein, es wird also nicht alles glatt laufen und einfacher werden."
 
+# TODO: Translation updated at 2022-10-20 19:02
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Всё должно сработать, как надо, если Алиса ещё хотя бы пару раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
+    new "Es sollte funktionieren, wenn Alice wenigstens noch ein paar Mal nüchtern eine Fußmassage vor dem Fernseher bekommt."
+
+    # game/core/09_opportunities.rpy:4
+    old "Всё должно сработать, как надо, если Алиса ещё хотя бы раз поработает ножками на трезвую голову, когда я делаю ей массаж у ТВ"
+    new "Es sollte eigentlich klappen, wenn Alice zumindest noch mal nüchtern ihre Füße bewegt, wenn ich sie vor dem Fernseher massiere."
+
+# TODO: Translation updated at 2022-10-30 23:56
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "О-ля-ля... Вот Алиса наконец и попалась. Для меня открывается много всего интересного с ней, но вместе с тем, стервозиной она быть не перестанет, так что не всё будет гладко и просто. В любом случае, теперь я могу обеспечить себе очень приятное утро рядом с моей старшей сестрёнкой, принять вместе с ней душ, может и из массажа у ТВ удастся извлечь что-то новое..."
+    new "Oooh la la... Da hat Alice endlich aufgeholt. Mit ihr eröffnen sich mir viele interessante Wege, aber gleichzeitig wird sie nicht aufhören, ein Miststück zu sein, es wird also nicht alles glatt laufen. Wie auch immer, jetzt kann ich mir einen sehr angenehmen Morgen neben meiner großen Schwester gönnen, mit ihr duschen, vielleicht kann ich der Massage am Fernseher etwas Neues abgewinnen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Как бы я не старался ей угождать во время наказаний, для большего мне всё равно нужны подвижки в наших отношениях без конфет. Потребуются успехи в возможности \"Арахнофобия\"..."
+    new "Ganz gleich, wie sehr ich mich bemühe, ihr bei der Bestrafung zu gefallen, ich brauche immer noch Fortschritte in unserer Beziehung ohne Süßigkeiten, um mehr zu erreichen. Es braucht Fortschritte bei der \"Arachnophobie-Möglichkeit\"..."
+
+    # game/core/09_opportunities.rpy:4
+    old "После всех этих приключений с пауками наши отношения с Алисой перешли на новый уровень. Может быть и в наказаниях что-то изменится..."
+    new "Nach all diesen Abenteuern mit Spinnen hat die Beziehung zu Alice eine neue Ebene erreicht. Vielleicht ändert sich auch etwas an den Strafen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Чёрт! Я, на самом деле, рассчитывал не на это... Я думал, что у меня получится развести Алису, уж как минимум, на минет, но похоже этого не будет. \nВ этих наказаниях мне в любом случае придётся подчиняться ей, чтобы уйти с целой задницей и довольствоваться тем, что мой язык побывает в самых разных местах на теле Алисы. Сверху до низу. \n\nИ ведь ей не получится ничего за это предъявить, она не вспомнит содержания этих издевательств надо мной из-за действия конфеты."
+    new "Mist! Damit hatte ich nicht gerechnet... Ich dachte, ich könnte Alice wenigstens dazu bringen, mir einen zu blasen, aber das wird wohl nicht passieren.\nBei dieser Strafe werde ich mich ihr wohl oder übel unterwerfen müssen, damit ich mit meinem intakten Arsch davonkomme und mich damit begnügen, meine Zunge an allen möglichen Stellen von Alice' Körper zu haben. Von oben nach unten.\n\nUnd sie würde sich an nichts davon erinnern, wegen der Süßigkeiten-Aktion."
+
+    # game/core/09_opportunities.rpy:4
+    old "Возможно, получится добиться от неё того же без конфет? Стоит проверить..."
+    new "Vielleicht könnte man sie dazu bringen, dasselbe auch ohne Süßigkeiten zu tun? Es lohnt sich, das zu überprüfen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Теперь Алисе можно будет, так сказать, отплатить той же монетой, когда она снова провинится, а для этого нужно поймать её с сигаретой во рту или спасти он наказания мамы..."
+    new "Jetzt kann ich es Alice sozusagen mit der gleichen Münze zurückzahlen, wenn sie wieder rückfällig wird, und dazu muss ich sie mit einer Zigarette erwischen oder sie durch die Strafe von Mom bewahren..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Чёрт! Я, на самом деле, рассчитывал не на это... Я думал, что у меня получится развести Алису, уж как минимум, на минет, но похоже этого не будет. \nВ этих наказаниях мне в любом случае придётся подчиняться ей, чтобы уйти с целой задницей и довольствоваться тем, что мой язык побывает в самых разных местах на теле Алисы. Сверху до низу. \n\nХотя... Теперь Алисе можно будет, так сказать, отплатить той же монетой, когда она снова провинится..."
+    new "Mist! Damit hatte ich nicht gerechnet... Ich dachte, ich könnte Alice wenigstens dazu bringen, mir einen zu blasen, aber das wird wohl nicht passieren.\nBei dieser Strafe werde ich mich ihr wohl oder übel unterwerfen müssen, damit ich mit meinem intakten Arsch davonkomme und mich damit begnügen, meine Zunge an allen möglichen Stellen von Alice' Körper zu haben. Von oben nach unten.\n\nObwohl... Jetzt kann Alice sozusagen belohnt werden, wenn sie wieder erwischt wurde..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно поймать Алису с сигаретой во рту или спасти он наказания мамы..."
+    new "Man muss Alice mit einer Zigarette erwischen oder Sie vor der Bestrafung durch Mom schützen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Вот это Алиса получила от меня сполна! За все издевательства... Я бы с превеликим удовольствием повторил весь этот наказательный процесс ещё кучу раз, даже если Алиса постарается больше не попадаться с сигаретами ни мне, ни маме. Всё равно курить она не бросит..."
+    new "Das ist es, was Alice von mir erhalten hat! Trotz aller Beschimpfungen... Ich würde diesen ganzen Bestrafungsprozess gerne noch ein paar Mal wiederholen, auch wenn Alice versuchen würde, sich nicht mehr mit Zigaretten erwischen zu lassen, weder von mir noch von Mom. Sie wird sowieso nicht aufhören zu rauchen..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно снова попасться Алисе на глаза, когда она принимает душ и дать ей себя наказать... И, пожалуй, стоит попробовать разные варианты - с конфетой и без..."
+    new "Man muss Alice noch einmal unter der Dusche beobachten und sich von ihr bestrafen lassen... Wahrscheinlich lohnt es sich, verschiedene Optionen auszuprobieren, mit und ohne Süßigkeiten..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Похоже, Алиса начинает понимать, что отсосать мне во время наказания куда менее ущербно, чем пытаться усидеть на жёстко отшлёпанной попке. \nА раз минет теперь есть при наказании, то он может стать привычным делом и проявиться в других наших с ней... развлечениях... \nМожет, их пока ещё немного, но я вполне могу расcчитывать на минет по утрам в комнате Алисы, не без помощи паука, конечно. Да и благодаря массажу у ТВ, даже без конфеты, уже есть шанс получить что-то интересное от Алисы..."
+    new "Es scheint, dass Alice langsam begreift, dass es weitaus weniger schlimm ist, während der Bestrafung mir einen zu blasen, als zu versuchen, darauf zu sitzen.\nUnd jetzt, wo Blowjobs zur Bestrafung da sind, könnte es sein, dass sie auch in unseren anderen... Aktivitäten...\nEs sind zwar noch nicht viele, aber ich kann mich darauf verlassen, dass ich morgens in Alices Zimmer einen Blowjob bekomme, natürlich nicht ohne die Hilfe einer Spinne. Und dank einer Massage vor dem Fernseher besteht auch ohne die Süßigkeiten die Chance, etwas Interessantes mit Alice zu erleben..."
+
+    # game/core/09_opportunities.rpy:4
+    old "Нужно проверить, появился ли минет в арсенале Алисы, если я защищаю её от пауков и делаю массаж у ТВ без конфет..."
+    new "Ich muss sehen, ob ein Blowjob bei Alice möglich ist, wenn ich sie vor Spinnen beschütze und ihr eine Massage vor dem Fernseher gebe, ohne Süßigkeiten..."
+
+# TODO: Translation updated at 2022-11-03 17:05
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Может быть, если Алиса всё же кончит от того, что я вытворяю языком с её киской, то она в ответ чем-нибудь меня наградит? Это нужно выяснить..."
+    new "Wenn Alice von meiner Zunge in ihrer Pussy kommt, wird sie mich vielleicht mit einer Gegenleistung belohnen. Das bleibt jedoch abzuwarten..."

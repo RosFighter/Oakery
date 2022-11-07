@@ -581,6 +581,7 @@ init python:
         shower      = None      # откат по подглядыванию в душе. Стадии: 0-без ограничений, 1-мягкое ограничение, 2-спалился, жёсткое ограничение
         mistress    = None      # доминирование
         drink       = None      # стадии выпивашек Анны
+        revenge     = None      # требуется отомстить
 
         def __init__(self):
             self.punpause   = Daily()
@@ -599,6 +600,7 @@ init python:
             self.shower     = Daily()
             self.mistress   = Daily()
             self.drink      = Daily()
+            self.revenge    = Daily()
 
         def countdown(self, exceptions=[], only=[]):
             for attr in self.__dict__:
@@ -622,6 +624,8 @@ init python:
                 self.mistress = Daily()
             if self.drink is None:
                 self.drink = Daily()
+            if self.revenge is None:
+                self.revenge = Daily()
 
         def __repr__(self):
             return str({attr : getattr(self, attr) for attr in self.__dict__})[1:-1]
@@ -1082,7 +1086,7 @@ init python:
         def buy_promoution(self): # Покупка пакета рекламы
             if self.__tange >= 50:
                 self.__tange -= 50
-                ef = 10 + renpy.random.randint(-100, 100)/100.0 # процент эффективности рекламы
+                ef = 10 + random_randint(-100, 100)/100.0 # процент эффективности рекламы
                 k = 0
                 for loc in locations:
                     for room in locations[loc]:
@@ -1642,7 +1646,7 @@ init python:
                     else:
                         i += 1
                 if len(lst) > 1:
-                    return random_choice(lst)# lst[renpy.random.randint(0, len(lst)-1)]
+                    return random_choice(lst)# lst[random_randint(0, len(lst)-1)]
                 else:
                     return lst[0]
             else:
@@ -2067,20 +2071,20 @@ init python:
     #             Cipher.kdir[i] = ''.join(l0)
     #
     #     def __cur_gen__(self):
-    #         k0 = renpy.random.randint(0, 9)
-    #         k1 = renpy.random.randint(0, 9)
+    #         k0 = random_randint(0, 9)
+    #         k1 = random_randint(0, 9)
     #         while k0 == k1:
-    #             k1 = renpy.random.randint(0, 9)
-    #         k2 = renpy.random.randint(0, 9)
-    #         k3 = renpy.random.randint(0, 9)
+    #             k1 = random_randint(0, 9)
+    #         k2 = random_randint(0, 9)
+    #         k3 = random_randint(0, 9)
     #         while k2 == k3:
-    #             k3 = renpy.random.randint(0, 9)
+    #             k3 = random_randint(0, 9)
     #         lets = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
     #         w1 = w2 = ''
-    #         for i in range(renpy.random.randint(6, 15)):
-    #             w1 += lets[renpy.random.randint(0, 51)]
-    #         for i in range(renpy.random.randint(6, 15)):
-    #             w2 += lets[renpy.random.randint(0, 51)]
+    #         for i in range(random_randint(6, 15)):
+    #             w1 += lets[random_randint(0, 51)]
+    #         for i in range(random_randint(6, 15)):
+    #             w2 += lets[random_randint(0, 51)]
     #         Cipher.cur[0] = str(k0)+str(k1)
     #         Cipher.cur[1] = str(k2)+str(k3)
     #         Cipher.cur[2] = w1
@@ -2178,11 +2182,11 @@ init python:
     #     def alg3_0(self, string, numb_sys=None, rev=None):
     #         # мой алгоритм. шифровка в произвольную систему счисления на базе рандомизированной строки
     #         if numb_sys is None:
-    #             numb_sys = renpy.random.randint(4, 36)  # выбираем систему счисления
+    #             numb_sys = random_randint(4, 36)  # выбираем систему счисления
     #         nums = []
     #         max_len = 1
     #         if rev is None:
-    #             rev = renpy.random.randint(1, 3)        # каждая rev запись будет в развёрнутом виде
+    #             rev = random_randint(1, 3)        # каждая rev запись будет в развёрнутом виде
     #         for ch in string:
     #             s = ''
     #             d = ord(ch)  # получаем десятичный код символа
@@ -2190,7 +2194,7 @@ init python:
     #                 s = Cipher.NS[0]
     #             while d > 0:
     #                 # переводим в выбранную систему счисления, регистр случаен
-    #                 s = (Cipher.NS[d % numb_sys] if renpy.random.randint(0, 1)>0 else Cipher.NS[d % numb_sys].upper())+ s
+    #                 s = (Cipher.NS[d % numb_sys] if random_randint(0, 1)>0 else Cipher.NS[d % numb_sys].upper())+ s
     #                 d = d // numb_sys
     #             max_len = max(max_len, len(s))
     #             nums.append(s)

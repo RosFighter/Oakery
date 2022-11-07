@@ -559,7 +559,7 @@ label cam0_alice_swim:
     return
 
 label cam1_alice_swim:
-    $ renpy.show('Alice cams swim '+cam_poses_manager(alice, ['01', '02', '03', '04']+alice.dress), at_list=[laptop_screen])
+    $ renpy.show('Alice cams swim '+cam_poses_manager(alice, ['01', '02', '03', '04'])+alice.dress, at_list=[laptop_screen])
     show FG cam-shum-act at laptop_screen
     if 'alice_swim1' not in cam_flag:
         $ cam_flag.append('alice_swim1')
@@ -734,13 +734,13 @@ label cam0_blog_with_Eric:
 
         # cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(02a/02b/02c или 03a/03b/03c)
         $ renpy.show('Eric cams blog 03'+eric.dress, at_list=[laptop_screen])
-        $ renpy.show('Alice cams blog dresses 0'+str(renpy.random.randint(2, 3))+alice.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 0'+str(random_randint(2, 3))+alice.dress, at_list=[laptop_screen])
         show FG cam-shum-act at laptop_screen
 
         Max_09 "{m}Эрик о чём-то разговаривает с Алисой. И развалился так, как будто это его комната...{/m}"
 
         # cam-blog-desk-eric-(03/03a) + cam-blog-dresses-alice-(04a/04b/04c или 05a/05b/05c)
-        $ renpy.show('Alice cams blog dresses 0'+str(renpy.random.randint(4, 5))+alice.dress, at_list=[laptop_screen])
+        $ renpy.show('Alice cams blog dresses 0'+str(random_randint(4, 5))+alice.dress, at_list=[laptop_screen])
         Max_08 "{m}Ого! Да она при нём, похоже, переодеваться вздумала! Что сказать, Эрик умеет добиваться своего...{/m}"
 
         # cam-blog-desk-eric-(04/04a) + cam-blog-dresses-alice-(07a/07b)
@@ -772,12 +772,12 @@ label cam0_blog_with_Eric:
         # cam-blog-desk-alice-(01d/01e/01f/01g - после дарения) + cam-blog-desk-eric-(01(a) или 02(a))
         if alice.dcv.intrusion.stage>4:
             # кружевное боди подарено
-            $ __r = renpy.random.randint(1, 2)
+            $ __r = random_randint(1, 2)
             $ renpy.show('Eric cams blog 0'+str(__r)+eric.dress, at_list=[laptop_screen])
             if __r<2:
                 $ renpy.show('Alice cams blog 01'+alice.dress, at_list=[laptop_screen])
             else:
-                $ renpy.show('Alice cams blog 0'+str(renpy.random.randint(1, 6))+alice.dress, at_list=[laptop_screen])
+                $ renpy.show('Alice cams blog 0'+str(random_randint(1, 6))+alice.dress, at_list=[laptop_screen])
         else:
             $ renpy.show('Eric cams blog 01'+eric.dress, at_list=[laptop_screen])
             $ renpy.show('Alice cams blog 01'+alice.dress, at_list=[laptop_screen])

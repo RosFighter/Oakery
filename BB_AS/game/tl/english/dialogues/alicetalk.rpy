@@ -8593,9 +8593,9 @@ translate english alice_about_private_punish_3714870a:
     Max_01 "Yeah, don't worry about it."
 
 # game/dialogues/alicetalk.rpy:4794
-translate english alice_private_punish_0_d5f4ef08:
+translate english alice_private_punish_0_8f61a68b:
 
-    # Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, где это сделам?"
+    # Alice_03 "Эх, Макс... Я так хорошо лежала и загорала. Ну да ладно, где это сделаем?"
     Alice_03 "Eh, Max... I've been enjoying my sunbathing. Oh, come on, where do we do that?"
 
 # game/dialogues/alicetalk.rpy:4797
@@ -8791,9 +8791,9 @@ translate english alice_private_punish_r_pun_daa1c1ea:
     Alice_05 "Have you started yet? Feels more like a massage than a spanking..." nointeract
 
 # game/dialogues/alicetalk.rpy:4972
-translate english alice_private_punish_r_pun_57b399dd:
+translate english alice_private_punish_r_pun_370e3765:
 
-    # Alice_02 "Мне нравится, что небольно. Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
+    # Alice_02 "Мне нравится, что не больно. Ну всё, потискал мою попку и хватит. А то, если тебя не остановить, ты так и будешь залипать, куда не надо..."
     Alice_02 "I like that it doesn't hurt. That's it, you've touched my ass, and that's all. If I don't stop you, you're just gonna keep sticking it where it doesn't belong..."
 
 # game/dialogues/alicetalk.rpy:4973
@@ -12103,3 +12103,21 @@ translate english alice_about_showdown_fd54e914:
 
     # Max_01 "Конечно. Если что, зови."
     Max_01 "Sure. Call me if you need anything."
+# TODO: Translation updated at 2022-10-23 23:50
+
+# game/dialogues/alicetalk.rpy:5583
+translate english alice_domine_drink_kiss_5873bed2:
+
+    # Alice_11 "Вот именно! Д-а-а... Я хочу скользить киской по твоему мощному члену до тех пор, пока не кончу! Как приятно... Держись, Макс, ведь я буду это делать всё быстрее и быстрее... Ах-х-х..."
+    Alice_11 "Exactly! Yeah... I want to slide my pussy on your powerful cock until I cum! That feels good... Hold on, Max, because I'm going to do it faster and faster... Ahhhh..."
+
+translate english strings:
+
+    # game/dialogues/alicetalk.rpy:3075
+    old "Давай просто подождём, пока он уползёт..."
+    new "Let's just wait for him to crawl away..."
+
+    # game/dialogues/alicetalk.rpy:3075
+    old "Просто спрячься за меня..."
+    new "Just hide behind me..."
+

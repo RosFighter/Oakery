@@ -168,7 +168,7 @@ layeredimage ann_in_bath_enter:
     always 'Ann bath bathrooom-bath-02-ann-[var_pose]'
 
 layeredimage ann_in_bath_talk:
-    always 'BG after-club-bath01'
+    always 'after-club-bath01-max&alice-01-f'
     always 'Ann bath bathrooom-bath-[var_stage]-ann&max-[var_pose]'
     always 'Ann bath bathrooom-bath-[var_stage]-max-01[mgg.dress]'
 

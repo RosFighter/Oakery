@@ -278,7 +278,7 @@ init python:
             new_color = "#" + new_color
             new_style.add_tags("color=" + str(new_color))
             # Random size
-            rand_size = renpy.random.randint(0,50)
+            rand_size = random_randint(0,50)
             new_style.add_tags("size="+str(rand_size))
             # Random font
             rand_font = random_choice(self.font_list)

@@ -242,7 +242,7 @@ label MorningWoodCont:  # последующие утренние стояки
         $ poss['seduction'].open(4)
 
     # $ dcv.mw.set_lost(2)
-    $ dcv.mw.set_lost(renpy.random.randint(1, 4))
+    $ dcv.mw.set_lost(random_randint(1, 4))
     $ dcv.mw.stage += 1  # 3, 5, 7
     $ spent_time += 30
     jump Waiting
@@ -863,7 +863,7 @@ label about_boy2: # разговор с Лизой после того, как �
     $ AddRelMood('lisa', 0, 100)
     $ spent_time += 30
     $ lisa.flags.crush = 6
-    $ lisa.dcv.feature.set_lost(renpy.random.randint(4, 6))
+    $ lisa.dcv.feature.set_lost(random_randint(4, 6))
     $ cooldown['lisa_boy'] = CooldownTime("05:00")
     return
 
@@ -1426,7 +1426,7 @@ label Lisa_HomeWork:
         # убеждение удалось
         menu:
             Lisa_02 "[succes!t]Ну, можно. Мне бы это тоже не помешало."
-            "{i}начать массаж{/i}" ('mass', mgg.massage * 10):
+            "{i}начать массаж{/i}" ('mass', mgg.massage * 6):
                 pass
         #спрайт с массажем шеи и плеч
         scene BG char Lisa lessons-mass-05
@@ -1451,7 +1451,7 @@ label Lisa_HomeWork:
                 $ renpy.show("Max lessons-help "+pose3_1+mgg.dress)
                 Lisa_03 "Это было так приятно... Спасибо, Макс! И проверь, пожалуйста, всё ли я сделала правильно."
                 jump .random_answer
-            "{i}продолжить ниже{/i}" ('mass', mgg.massage * 7):
+            "{i}продолжить ниже{/i}" ('mass', mgg.massage * 5):
                 pass
         $ renpy.show("Lisa lessons-mass 06"+lisa.dress+mgg.dress)
         if not rand_result:
@@ -1486,7 +1486,7 @@ label Lisa_HomeWork:
 
     label .random_answer:
         ### 3 рандомных ответа###
-        $ _r1 = renpy.random.randint(0, 3)
+        $ _r1 = random_randint(0, 3)
         if _r1 == 1:
             Max_05 "Всё правильно, Лиза. Сегодня ошибок нет. Ты умница!"
         elif _r1 == 2:
@@ -1701,7 +1701,7 @@ label liza_hand_mass:
     Lisa_01 "Да. Спасибо, что не забыл..."
     menu:
         Max_01 "Тогда давай устраиваемся поудобнее и начинаем."
-        "{i}начать массаж{/i}" ('mass', mgg.massage * 10):
+        "{i}начать массаж{/i}" ('mass', mgg.massage * 6):
             pass
     #спрайт с правой рукой
     scene BG char Lisa phone-mass-01
@@ -1722,7 +1722,7 @@ label liza_hand_mass:
         $ spent_time += 10
     menu:
         Max_04 "Сейчас разомнём все пальчики и тебе будет легче писать."
-        "{i}продолжить{/i}" ('mass', mgg.massage * 8):
+        "{i}продолжить{/i}" ('mass', mgg.massage * 5):
             hide screen Cookies_Button
     scene BG char Lisa phone-mass-02
     $ renpy.show("Lisa phone-mass 02"+lisa.dress+mgg.dress)
@@ -3312,7 +3312,7 @@ label lisa_gift_sweets:  # Периодическое дарение сладо�
     $ spent_time += 10
 
     # включаем откат на дарение сладости
-    $ lisa.dcv.sweets.set_lost(renpy.random.randint(5, 7))
+    $ lisa.dcv.sweets.set_lost(random_randint(5, 7))
     $ lisa.daily.sweets = 1
     jump Waiting
 
@@ -3478,7 +3478,7 @@ label lisa_ment_kiss:
 label lisa_kiss_lesson:
     $ var_pose = random_choice(['01', '02'])
     scene Lisa_read_kiss kiss start
-    $ renpy.music.play('audio/Romantic'+str(renpy.random.randint(1, 3))+'.ogg', fadein=2.0)
+    $ renpy.music.play('audio/Romantic'+str(random_randint(1, 3))+'.ogg', fadein=2.0)
     menu:
         Max_05 "{m}Эти нежные губки такие сладкие... С огромным удовольствием целовал бы Лизу весь день!{/m}"
         "{i}Продемонстрировать своё мастерство{/i}" ('kiss', mgg.kissing * 12, 90):
@@ -3720,7 +3720,7 @@ label MorningWoodCont2:
         jump .end
 
     label .end:
-        $ dcv.mw.set_lost(renpy.random.randint(5, 10))
+        $ dcv.mw.set_lost(random_randint(5, 10))
         $ spent_time += 30
         jump Waiting
 
@@ -3920,7 +3920,7 @@ label about_boy3:
     $ spent_time += 10
     $ poss['Schoolmate'].open(1)
     $ lisa.flags.crush = 7
-    $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
+    $ lisa.dcv.feature.set_lost(random_randint(5, 7))
     return
 
 
@@ -3945,7 +3945,7 @@ label about_olivia_1:
     $ spent_time += 10
     $ poss['Schoolmate'].open(2)
     $ lisa.flags.crush = 8
-    $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
+    $ lisa.dcv.feature.set_lost(random_randint(5, 7))
     return
 
 
@@ -3975,7 +3975,7 @@ label about_olivia_2:
     $ spent_time += 10
     $ poss['Schoolmate'].open(3)
     $ lisa.flags.crush = 9
-    $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
+    $ lisa.dcv.feature.set_lost(random_randint(5, 7))
     return
 
 
@@ -4013,7 +4013,7 @@ label about_olivia_3:
     $ spent_time += 20
     $ poss['Schoolmate'].open(4)
     $ lisa.flags.crush = 10
-    $ lisa.dcv.feature.set_lost(renpy.random.randint(5, 7))
+    $ lisa.dcv.feature.set_lost(random_randint(5, 7))
     return
 
 
@@ -4850,7 +4850,7 @@ label lisa_read_with_Max0:
             $ var_pose = ''
     # myroom-bedlisa-mde-01 + myroom-bedlisa-mde-01-max&lisa-read-(01/02/03) + Одежда(Лиза перекрывает Макса)
     scene Lisa_read_with_Max read
-    $ renpy.music.play('audio/Romantic'+str(renpy.random.randint(1, 3))+'.ogg', fadein=2.0)
+    $ renpy.music.play('audio/Romantic'+str(random_randint(1, 3))+'.ogg', fadein=2.0)
     Lisa_01 "Осторожнее, Макс! Если начнёшь приставать, то я и обидеться могу."
     Max_04 "Да ладно тебе. Я же ничего не делаю. Ты как, не передумала?"
     Lisa_00 "Насчёт чего? Уроков поцелуев?"
@@ -4937,7 +4937,7 @@ label lisa_read_with_Max_r:
     # лечь рядом с Лизой
     # myroom-bedlisa-mde-01 + myroom-bedlisa-mde-01-max&lisa-read-(01/02/03) + Одежда(Лиза перекрывает Макса)
     scene Lisa_read_with_Max read
-    $ renpy.music.play('audio/Romantic'+str(renpy.random.randint(1, 3))+'.ogg', fadein=2.0)
+    $ renpy.music.play('audio/Romantic'+str(random_randint(1, 3))+'.ogg', fadein=2.0)
     Lisa_01 "Не успел лечь, уже ручонки начинаешь распускать?"
     Max_03 "Ты что! И в мыслях не было. Просто с тобой хочу побыть."
     Lisa_02 "Ну конечно... Всё я знаю. Целоваться опять полезешь..."

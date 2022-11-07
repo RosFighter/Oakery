@@ -317,7 +317,8 @@ init python:
 
     # Алиса загорает топлес после нанесения крема
     def alice_sun_topless():
-        return alice.plan_name == 'sun' and alice.daily.oiled in [2, 4]
+        return alice.plan_name == 'sun' and (
+            alice.daily.oiled in [2, 4] or alice.req.result == 'bikini')
 
 
     # возвращает стадию событий по вручению кружевного белья Алисе

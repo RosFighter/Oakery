@@ -164,7 +164,7 @@ label Alarm:
 
 label Shower:
     $ renpy.block_rollback()
-    scene BG shower-01
+    scene BG bathroom-shower-01
     $ renpy.show('Max shower '+random_choice(['01', '02', '03']))
     show FG shower-water
 
@@ -918,9 +918,9 @@ label ViewLesson:
     $ renpy.show('interface laptop '+CurCource.img+'-'+str(CurCource.current)+'-'+str(CurCource.cources[CurCource.current].less), [laptop_screen])
 
     if CurCource.skill == 'social':
-        $ mgg.social += round(renpy.random.randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
+        $ mgg.social += round(random_randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
     elif CurCource.skill == 'massage':
-        $ mgg.massage += round(renpy.random.randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
+        $ mgg.massage += round(random_randint(1000, 1000*CurCource.cources[CurCource.current].grow) / 1000.0, 2)
     $ CurCource.cources[CurCource.current].less += 1
     if CurCource.cources[CurCource.current].less == CurCource.cources[CurCource.current].total: # Последний урок текущейго курса
         if CurCource.current < len(CurCource.cources):

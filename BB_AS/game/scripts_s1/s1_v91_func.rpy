@@ -241,7 +241,7 @@ init python:
     def start_newday(cheat = False):
         global random_tab, ann_eric_scene, stockings
 
-        random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
+        random_tab = [[random_randint(0, 99) for i in range(10)] for j in range(10)]
 
         if 'spider' in NightOfFun:
             NightOfFun.remove('spider') # если ночная забава не состоялась, паука из списка забав удаляем - он сбежал
@@ -296,6 +296,9 @@ init python:
             mgg.credit.left -= 1       # уменьшим счетчик дней
             if mgg.credit.left == 0:   # если счетчик дней кончился
                 mgg.credit.charge()    # начислим штраф
+
+        if alice.flags.promise == 'bath':
+            alice.flags.promise = False     # если Макс пропустил развлечение в ванной, Алиса ему ничего не должна
 
     ############################################################################
 
@@ -365,3 +368,7 @@ init python:
                 0,  # подозрительность
                 ])
             del punalice[14:]
+
+    # уменьшает букву одежды для многослойных изображений
+    def sub_dress_ind(k):
+        return {'a':'', 'b':'a', 'c':'b', 'd':'c'}[k]

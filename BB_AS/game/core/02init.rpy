@@ -40,6 +40,8 @@ init 110:
     $ impact_reduced   = _("{color=#FFBE00}{b}Внимание:{/b} Ваше влияние на присутствующих понизилось!{/color}\n")
     $ ann_bad_mass     = renpy.config.say_menu_text_filter(renpy.translate_string(_("{color=#E59400}{i}Маме не понравился массаж!{/i}{/color}\n")))
 
+    $ renpy.music.register_channel('fg_music', mixer='music', loop=True)
+
 define good_mission     = _("{color=#00FF00}{i}Успех!{/i}{/color}\n")
 define bad_mission      = _("{color=#E59400}{i}Провал!{/i}{/color}\n")
 
@@ -82,6 +84,7 @@ default purchased_items = []
 default var_pose = '02'
 default var_pose2 = '01'
 default var_stage = '01'
+default var_cum = ''
 default var_dress = ''
 default var_dress2 = ''
 default var_film = ''
@@ -136,6 +139,7 @@ init:
             }
 
 define random_choice = renpy.random.choice
+define random_randint = renpy.random.randint
 
 ################################################################################
 

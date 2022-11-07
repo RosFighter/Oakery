@@ -128,7 +128,7 @@ label ann_shower:
 
     label .start_peeping:
         $ Skill('hide', 0.03, 10)
-        $ __ran1 = renpy.random.randint(1, 4)
+        $ __ran1 = random_randint(1, 4)
 
         scene image ('Ann shower 0'+str(__ran1))
         $ renpy.show('FG shower 00'+mgg.dress)
@@ -156,8 +156,8 @@ label ann_shower:
         $ spent_time += 10
         $ ann.daily.shower = 1
         $ ann.dress_inf = '00a'
-        $ __ran1 = renpy.random.randint(1, 6)
-        scene BG shower-03
+        $ __ran1 = random_randint(1, 6)
+        scene BG bathroom-shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Ann shower-alt 0'+str(__ran1))
         show FG shower-water
@@ -172,8 +172,8 @@ label ann_shower:
         if rand_result > 1:
             $ ann.daily.shower = 1
             $ ann.dress_inf = '00a'
-            $ __ran1 = renpy.random.randint(1, 6)
-            scene BG shower-01
+            $ __ran1 = random_randint(1, 6)
+            scene BG bathroom-shower-01
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
             if __ran1 % 2 > 0:
@@ -189,7 +189,7 @@ label ann_shower:
             # после прохождения 2-ого интимного урока (ванна)
             $ ann.daily.shower = 2
             $ ann.dress_inf = '00a'
-            scene BG shower-01
+            scene BG bathroom-shower-01
             $ renpy.show('Ann shower-closer '+random_choice(['07', '08']))
             show FG shower-closer
             Ann_14 "[spotted!t]Сынок, я вообще-то всё вижу! Понимаю, тебе интересно, но меня это несколько... смущает. Не мешай маме." nointeract
@@ -200,8 +200,8 @@ label ann_shower:
         if rand_result:
             $ ann.daily.shower = 2
             $ ann.dress_inf = '00a'
-            $ __ran1 = renpy.random.randint(7, 8)
-            scene BG shower-01
+            $ __ran1 = random_randint(7, 8)
+            scene BG bathroom-shower-01
             $ renpy.show('Ann shower-closer 0'+str(__ran1))
             show FG shower-closer
             Max_12 "{color=[orange]}{i}Кажется, мама что-то заподозрила!{/i}{/color}\n{m}Упс... надо бежать, пока она меня не увидела!{/m}"
@@ -209,7 +209,7 @@ label ann_shower:
         else:
             $ ann.daily.shower = 3
             $ __ran1 = random_choice(['09', '10'])
-            scene BG shower-01
+            scene BG bathroom-shower-01
             $ renpy.show('Ann shower-closer '+__ran1)
             show FG shower-closer
             menu:
@@ -1012,7 +1012,7 @@ label ann_bath:
         $ renpy.show('Max bathroom-window-evening 02'+mgg.dress)
         Max_04 "{m}Посмотрим, что у нас тут...{/m}"
 
-        $ __r1 = renpy.random.randint(1, 4)
+        $ __r1 = random_randint(1, 4)
 
         scene BG bath-00
         $ renpy.show('Ann bath-window 0'+str(__r1))

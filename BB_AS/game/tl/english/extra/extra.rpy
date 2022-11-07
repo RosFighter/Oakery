@@ -329,3 +329,67 @@ translate english strings:
     # game/extra/extra.rpy:60
     old "4-ый интимный урок с Анной"
     new "4th intimate lesson with Ann"
+# TODO: Translation updated at 2022-10-30 23:55
+
+translate english strings:
+
+    # game/extra/extra.rpy:60
+    old "В магазин с Алисой"
+    new "To the store with Alice"
+
+    # game/extra/extra.rpy:60
+    old "С добрым утром"
+    new "Good morning"
+
+    # game/extra/extra.rpy:60
+    old "Афера века"
+    new "Scam of the Century"
+
+    # game/extra/extra.rpy:60
+    old "Сама напросилась"
+    new "You asked for it"
+
+    # game/extra/extra.rpy:60
+    old "Так себе охранник"
+    new "So-so security guard"
+
+    # game/extra/extra.rpy:60
+    old "Хоть на что-то сгодился"
+    new "At least I'm good for something"
+
+    # game/extra/extra.rpy:60
+    old "Пока паук где-то рядом..."
+    new "While the spider is around..."
+
+    # game/extra/extra.rpy:60
+    old "Лучшее пробуждение с Алисой"
+    new "Best Wake-Up with Alice"
+
+    # game/extra/extra.rpy:60
+    old "Лучше делать то, что она хочет..."
+    new "It's better to do what she wants..."
+
+    # game/extra/extra.rpy:60
+    old "Покорность будет вознаграждаться..."
+    new "Obedience will be rewarded..."
+
+    # game/extra/extra.rpy:60
+    old "Выбери своё наказание"
+    new "Choose your punishment"
+
+    # game/extra/extra.rpy:60
+    old "Вот и посмотрели ТВ"
+    new "So we watched TV"
+
+    # game/extra/extra.rpy:60
+    old "В ванную комнату за минетом!"
+    new "Into the bathroom for a blowjob!"
+
+    # game/extra/extra.rpy:60
+    old "Меня ждёт кое-что особенное..."
+    new "I have something special waiting for me..."
+
+    # game/extra/extra.rpy:60
+    old "Самый хитрый охранник"
+    new "The sneakiest guard"
+

@@ -1,5 +1,4 @@
 
-
 ################################################################################
 ## события Алисы
 
@@ -10,6 +9,10 @@ label alice_bath:
 
     $ alice.daily.bath = 1
     $ alice.prev_plan = alice.plan_name
+
+    if alice.flags.promise == 'bath':
+        # перед дверью в ванную комнату, если Макс выбрал награду у ТВ
+        jump ev_v92_020
 
     menu:
         Max_00 "{m}Если полночь, значит Алиса отмокает в ванне... Входить без стука - опасно для жизни.{/m}"
@@ -37,8 +40,6 @@ label alice_bath:
             Max_01 "{m}Надеюсь, что ни у кого не возникнет вопроса, а что же здесь делает стремянка... Как, что? Конечно стоит, мало ли что! А теперь начинается самое интересное...{/m}"
             $ flags.ladder = 3
             $ items['ladder'].give()
-            # $ items['ladder'].have = False
-            # $ items['ladder'].InShop = False
             jump .ladder
         "{i}воспользоваться стремянкой{/i}" if flags.ladder > 2:
             jump .ladder
@@ -46,12 +47,11 @@ label alice_bath:
             jump .end
 
     label .ladder:
-        # $ renpy.dynamic('r1')
         $ renpy.scene()
         $ renpy.show('Max bathroom-window-evening 02'+mgg.dress)
         Max_04 "{m}Посмотрим, что у нас тут...{/m}"
 
-        $ r1 = renpy.random.randint(1, 4)
+        $ r1 = random_randint(1, 4)
 
         scene BG bath-00
         $ renpy.show('Alice bath-window 0'+str(r1))
@@ -111,20 +111,23 @@ label alice_sleep_night:
             if not alice.sleepnaked:
                 $ renpy.show('cloth1 Alice sleep-night '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
-            if alice.req.result == 'sleep':
-                #  условие выполняется
-                if pose3_2 == '01':
-                    Max_07 "{m}О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела, в одних лишь трусиках, хочется смотреть вечно!{/m}" nointeract
-                elif pose3_2 == '02':
-                    Max_04 "{m}Эх! Не повезло, что Алиса спит спиной к окну и её грудь не видно... Правда, в таком случае, всегда можно насладиться красотой Алисиной попки.{/m}" nointeract
-                else:
-                    Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
-
-            elif alice.req.result == 'naked':
+            if alice.req.result == 'naked':
+                # договорённость спать голой
+                # условие выполняется
                 if pose3_2 == '01':
                     Max_07 "{m}О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её совершенно обнажённого тела хочется смотреть вечно!{/m}" nointeract
                 elif pose3_2 == '02':
                     Max_04 "{m}Ого! Мне повезло, что Алиса спит спиной к окну... И не подозревает, что демонстрирует свою голенькую попку для меня во всей красе.{/m}" nointeract
+                else:
+                    Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
+
+            elif alice.req.result == 'sleep' or alice.flags.shower_max > 2:
+                # договорённость спать топлес или после третьего совместного душа с Максом
+                # условие выполняется
+                if pose3_2 == '01':
+                    Max_07 "{m}О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела, в одних лишь трусиках, хочется смотреть вечно!{/m}" nointeract
+                elif pose3_2 == '02':
+                    Max_04 "{m}Эх! Не повезло, что Алиса спит спиной к окну и её грудь не видно... Правда, в таком случае, всегда можно насладиться красотой Алисиной попки.{/m}" nointeract
                 else:
                     Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её голая грудь торчит, как два холмика... Соблазнительное зрелище...{/m}" nointeract
 
@@ -139,6 +142,7 @@ label alice_sleep_night:
                 else:
                     Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её грудь торчит, как два холмика... Соблазнительно... Но, похоже, она кое-что забыла с себя снять перед сном!{/m}"
                 Max_09 "{m}Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!{/m}" nointeract
+
             elif alice.req.result == 'not_naked' and not alice.req.noted:
                 # Алиса нарушила условие
                 $ alice.req.noted = True
@@ -150,6 +154,7 @@ label alice_sleep_night:
                 else:
                     Max_01 "{m}Обалденно! Сестрёнка спит выгнув спину, отчего её грудь торчит, как два холмика... Соблазнительно... Но она должна быть совершенно голой! Эх, Алиса, не хорошо нарушать наш уговор...{/m}"
                 Max_09 "{m}Так что надо выводить тебя на чистую воду... Возможно, мне стоит воспользоваться тем, чего Алиса боится больше всего?!{/m}" nointeract
+
             else:
                 if pose3_2 == '01':
                     Max_07 "{m}О, да! Моя старшая сестрёнка выглядит потрясающе... На изгибы её тела в этом полупрозрачном белье хочется смотреть вечно!{/m}" nointeract
@@ -167,20 +172,26 @@ label alice_sleep_night:
             $ renpy.show('Alice sleep-night-closer '+pose3_2)
             if not alice.sleepnaked:
                 $ renpy.show('cloth1 Alice sleep-night-closer '+pose3_2+alice.dress)
-            if alice.req.result == 'sleep':
-                if pose3_2 == '01':
-                    Max_03 "{m}Да уж... Жаль только, что грудь не видно так, как хотелось бы, но её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить...{/m}" nointeract
-                elif pose3_2 == '02':
-                    Max_02 "{m}Класс! Может Алиса мне и сестра, но рядом с этой упругой попкой я бы пристроился с огромным удовольствием... Можно было бы пройти ещё дальше и хоть одним глазком увидеть сиськи, но лучше уйти, а то ещё проснётся...{/m}" nointeract
-                else:
-                    Max_05 "{m}Чёрт, какая же она притягательная, когда лежит вот так, с совершенно голой грудью... Так и хочется занырнуть между этих сисечек и её стройных ножек! Только бы она сейчас не проснулась...{/m}" nointeract
-            elif alice.req.result == 'naked':
+            if alice.req.result == 'naked':
+                # договорённость спать голой
+                # условие выполняется
                 if pose3_2 == '01':
                     Max_03 "{m}Да уж... Её обворожительной попкой можно любоваться бесконечно... Так и хочется кое-что в неё присунуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить...{/m}" nointeract
                 elif pose3_2 == '02':
                     Max_02 "{m}Класс! Может Алиса мне и сестра, но рядом с этой упругой попкой я бы не лежал без дела, а как следует её... Но пора уходить, а то ещё проснётся...{/m}" nointeract
                 else:
                     Max_05 "{m}Чёрт, какая же она притягательная, когда лежит вот так, полностью голая... И как будто только и ждёт, когда я занырну между этих сисечек и её стройных ножек! Только бы она сейчас не проснулась...{/m}" nointeract
+
+            elif alice.req.result == 'sleep' or alice.flags.shower_max > 2:
+                # договорённость спать топлес или после третьего совместного душа с Максом
+                # условие выполняется
+                if pose3_2 == '01':
+                    Max_03 "{m}Да уж... Жаль только, что грудь не видно так, как хотелось бы, но её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить...{/m}" nointeract
+                elif pose3_2 == '02':
+                    Max_02 "{m}Класс! Может Алиса мне и сестра, но рядом с этой упругой попкой я бы пристроился с огромным удовольствием... Можно было бы пройти ещё дальше и хоть одним глазком увидеть сиськи, но лучше уйти, а то ещё проснётся...{/m}" nointeract
+                else:
+                    Max_05 "{m}Чёрт, какая же она притягательная, когда лежит вот так, с совершенно голой грудью... Так и хочется занырнуть между этих сисечек и её стройных ножек! Только бы она сейчас не проснулась...{/m}" nointeract
+
             else:
                 if pose3_2 == '01':
                     Max_03 "{m}Да уж... Её обворожительной попкой можно любоваться бесконечно... Так и хочется по ней шлёпнуть... Правда, тогда это будет последнее, что я сделаю в жизни. Так что лучше потихоньку уходить...{/m}" nointeract
@@ -213,7 +224,15 @@ label alice_sleep_morning:
             if not alice.sleepnaked:
                 $ renpy.show('cloth1 Alice sleep-morning '+pose3_2+alice.dress)
             $ renpy.show('FG alice-voyeur-morning-00'+mgg.dress)
-            if alice.req.result == 'sleep':
+            if alice.req.result == 'naked':
+                if pose3_2 == '01':
+                    Max_07 "{m}Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, совершенно голую фигурку как следует...{/m}" nointeract
+                elif pose3_2 == '02':
+                    Max_01 "{m}Чёрт! Как же хорошо, что теперь она спит голая и я могу насладится всей красотой её тела, и ещё как... Обалденные у неё сиськи!{/m}" nointeract
+                else:
+                    Max_04 "{m}Вот это да! От таких соблазнительных изгибов её полностью голого тела можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!{/m}" nointeract
+
+            elif alice.req.result == 'sleep' or alice.flags.shower_max > 2:
                 $ alice.dress_inf = '02ga'
                 if pose3_2 == '01':
                     Max_07 "{m}Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную фигурку, на которой лишь одни трусики...{/m}" nointeract
@@ -221,14 +240,6 @@ label alice_sleep_morning:
                     Max_01 "{m}Чёрт! Как же хорошо, что теперь она спит без лифчика и я могу насладится почти всей красотой её тела, и ещё как... Обалденные у неё сиськи!{/m}" nointeract
                 else:
                     Max_04 "{m}Вот это да! От таких соблазнительных изгибов и сисечек можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!{/m}" nointeract
-
-            elif alice.req.result == 'naked':
-                if pose3_2 == '01':
-                    Max_07 "{m}Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, совершенно голую фигурку как следует...{/m}" nointeract
-                elif pose3_2 == '02':
-                    Max_01 "{m}Чёрт! Как же хорошо, что теперь она спит голая и я могу насладится всей красотой её тела, и ещё как... Обалденные у неё сиськи!{/m}" nointeract
-                else:
-                    Max_04 "{m}Вот это да! От таких соблазнительных изгибов её полностью голого тела можно сознание потерять с утра пораньше... Классная у меня старшая сестрёнка!{/m}" nointeract
 
             elif alice.req.result == 'not_sleep' and not alice.req.noted:
                 $ alice.req.noted = True
@@ -271,21 +282,21 @@ label alice_sleep_morning:
             $ renpy.show('Alice sleep-morning-closer '+pose3_2)
             if not (alice.sleepnaked or alice.dress==''):
                 $ renpy.show('cloth1 Alice sleep-morning-closer '+pose3_2+alice.dress)
-            if alice.req.result == 'sleep':
-                if pose3_2 == '01':
-                    Max_05 "{m}Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эти сиськи! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти.{/m}" nointeract
-                elif pose3_2 == '02':
-                    Max_03 "{m}О, да! Не лечь и не приобнять эту нежную попку – настоящее преступление... Как и поласкать эти аппетитные сосочки! Только вот Алиса посчитает иначе и оторвёт мне голову прямо здесь. Так что лучше потихоньку уходить...{/m}" nointeract
-                else:
-                    Max_02 "{m}Вот чёрт! С каким же огромным удовольствием я бы сел рядом с ней, запустил свои руки в её трусики и мял эти упругие сисечки всё утро... Эх, хороша сестрёнка, но пора уходить... Если она проснётся, мне точно не поздоровится.{/m}" nointeract
-
-            elif alice.req.result == 'naked':
+            if alice.req.result == 'naked':
                 if pose3_2 == '01':
                     Max_05 "{m}Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эту попку! А после натянуть её на свой... И ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти.{/m}" nointeract
                 elif pose3_2 == '02':
                     Max_03 "{m}О, да! Не лечь и не приобнять эту нежную попку – настоящее преступление... Как и поласкать эти аппетитные сосочки! Только вот Алиса посчитает иначе и оторвёт мне голову прямо здесь. Так что лучше потихоньку уходить...{/m}" nointeract
                 else:
                     Max_02 "{m}Вот чёрт! С каким же огромным удовольствием я бы запустил свои руки во все самые интересные места на ёё теле... Эх, хороша сестрёнка, но пора уходить... Если она проснётся, мне точно не поздоровится.{/m}" nointeract
+
+            elif alice.req.result == 'sleep' or alice.flags.shower_max > 2:
+                if pose3_2 == '01':
+                    Max_05 "{m}Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эти сиськи! И стянуть эти трусики... и ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти.{/m}" nointeract
+                elif pose3_2 == '02':
+                    Max_03 "{m}О, да! Не лечь и не приобнять эту нежную попку – настоящее преступление... Как и поласкать эти аппетитные сосочки! Только вот Алиса посчитает иначе и оторвёт мне голову прямо здесь. Так что лучше потихоньку уходить...{/m}" nointeract
+                else:
+                    Max_02 "{m}Вот чёрт! С каким же огромным удовольствием я бы сел рядом с ней, запустил свои руки в её трусики и мял эти упругие сисечки всё утро... Эх, хороша сестрёнка, но пора уходить... Если она проснётся, мне точно не поздоровится.{/m}" nointeract
 
             else:
                 if pose3_2 == '01':
@@ -321,6 +332,11 @@ label alice_shower:
     else:
         $ alice.daily.shower = 4
         $ alice.prev_plan = alice.plan_name
+
+        if alice.flags.promise == 'shower':
+            # выбрал обещание для душа
+            jump ev_v92_021 # Целовашки/обнимашки от Алисы в душе (обещание во время куни у ТВ)
+
         menu:
             Max_00 "{m}Похоже, Алиса принимает душ...{/m}"
             "{i}заглянуть со двора{/i}" if not flags.block_peeping:
@@ -337,7 +353,7 @@ label alice_shower:
     label .start_peeping:
         # $ renpy.dynamic('r1')
         $ Skill('hide', 0.025, 10)
-        $ r1 = renpy.random.randint(1, 4)
+        $ r1 = random_randint(1, 4)
 
         scene image ('Alice shower 0'+str(r1))
         $ renpy.show('FG shower 00'+mgg.dress)
@@ -382,10 +398,11 @@ label alice_shower:
         menu:
             Max_03 "Давай, паучок, вперёд! Я хочу, чтобы ты познакомился с моей очаровательной сестрёнкой. Характер у неё правда так себе, но думаю, вы оба поладите..."
             "{i}спрятаться{/i}":
-                pass
+                stop music fadeout 1.5
         scene BG char Max spider-bathroom-00
         $ renpy.show('Max spider-bathroom 02'+mgg.dress)
         Max_01 "{m}Похоже, я успел обойти ванную комнату через дом ещё до криков Алисы... Это хорошо, значит Алиса вот-вот должна заметить паука! Остаётся только немного...{/m}"
+        play sound scare1
         Alice "{b}Алиса:{/b} А-а-а-а-а!!! Вот чёрт... Охренеть!"
         Max_02 "{m}...подождать.{/m}"
         if not _in_replay:
@@ -422,6 +439,9 @@ label alice_shower:
                 elif alice.flags.shower_max == 2:
                     # Макс охраняет Алису в душе 3-ый раз
                     jump ev_v92_011
+                else:
+                    # в дальнейшем
+                    jump ev_v92_022
             elif alice.flags.together_sleep > 0:
                 # Макс начал ночевать с Алисой
                 call ev_v92_008 from _call_ev_v92_008
@@ -586,8 +606,8 @@ label alice_shower:
         # $ renpy.dynamic('r1')
         $ alice.daily.shower = 1
         $ alice.dress_inf = '00aa'
-        $ r1 = renpy.random.randint(1, 6)
-        scene BG shower-03
+        $ r1 = random_randint(1, 6)
+        scene BG bathroom-shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Alice shower-alt 0'+str(r1))
         show FG shower-water
@@ -603,8 +623,8 @@ label alice_shower:
             # $ renpy.dynamic('r1')
             $ alice.daily.shower = 1
             $ alice.dress_inf = '00aa'
-            $ r1 = renpy.random.randint(1, 6)
-            scene BG shower-01
+            $ r1 = random_randint(1, 6)
+            scene BG bathroom-shower-01
             $ renpy.show('Alice shower-closer 0'+str(r1))
             show FG shower-closer
             if r1 % 2 > 0:
@@ -620,8 +640,8 @@ label alice_shower:
             # $ renpy.dynamic('r1')
             $ alice.daily.shower = 2
             $ alice.dress_inf = '00aa'
-            $ r1 = renpy.random.randint(7, 8)
-            scene BG shower-01
+            $ r1 = random_randint(7, 8)
+            scene BG bathroom-shower-01
             $ renpy.show('Alice shower-closer 0'+str(r1))
             show FG shower-closer
             Max_09 "{color=[orange]}{i}Кажется, Алиса что-то заподозрила!{/i}{/color}\n{m}Ох, чёрт! Нужно скорее уносить ноги, пока они ещё есть...{/m}"
@@ -644,7 +664,7 @@ label alice_shower:
             # shower-alice-(09/10) - уходят, на смену приходят shower-alice-(07/08)
             $ r1 = random_choice(['07', '08'])
 
-        scene BG shower-01
+        scene BG bathroom-shower-01
         $ renpy.show('Alice shower-closer '+r1)
         show FG shower-closer
         if alice.dcv.shower.stage and get_alice_shower_peeping_stage() < 2:
@@ -1005,16 +1025,13 @@ label alice_dressed_club:
 
 label alice_sun:
     if alice.daily.oiled:
-        scene BG char Alice sun-alone 01
-        if alice.req.result == 'bikini':
-            show Alice sun-alone 01
-            $ persone_button1 = 'Alice sun-alone 01b'
+        scene alice_sun_alone
+        $ persone_button1 = 'Alice sun-alone 01'
+        if alice.req.result == 'bikini' or all([alice.daily.oiled in [2, 4], alice.flags.shower_max > 2]):
+            $ persone_button1 += 'b'
         elif alice.daily.oiled in [2, 4]:
-            show Alice sun-alone 01a
-            $ persone_button1 = 'Alice sun-alone 01a'
-        else:
-            show Alice sun-alone 01
-            $ persone_button1 = 'Alice sun-alone 01'
+            $ persone_button1 += 'a'
+
     else:
         scene BG char Alice sun
         $ renpy.show('Alice sun '+pose2_2+alice.dress)
@@ -1053,9 +1070,6 @@ label alice_tv:
 
 
 label alice_tv_closer:
-    # scene BG lounge-tv-01
-    # $ renpy.show('Alice tv-closer '+pose3_2+alice.dress)
-    # $ renpy.show('Max tv 00'+mgg.dress)
     $ var_pose = '00'
     scene tv_talk alice
     return
@@ -1072,33 +1086,34 @@ label alice_evening_closer:
     $ renpy.show('Alice evening-closer '+pose3_2+alice.dress)
     return
 
-default violation = False
-
 label spider_in_bed:
-    # $ renpy.dynamic('mood', 'naked', 'toples', 'suf')
     $ mood = 0
     $ naked = False
     $ toples = False
-    $ violation = False
-    if alice.req.result == 'sleep':
-        $ suf = alice.dress[:1]+'t'
-        $ toples = True
-    elif alice.req.result == 'naked':
+    if alice.req.result == 'naked':
+        # договорённость спать голой
         $ suf = 'n'
         $ naked = True
+    elif alice.req.result == 'sleep':
+        # договорённость спать топлес
+        $ suf = alice.dress[:1]+'t'
+        $ toples = True
     else:
         $ suf = alice.dress[:1]
     if alice.req.result in ['not_sleep', 'not_naked']:
         $ alice.req.noted = True
 
-    scene BG char Alice spider-night-01
-    $ renpy.show('Alice spider-night 01-'+random_choice(['01', '02', '03'])+suf)
-    with fade4
+    # scene BG char Alice spider-night-01
+    # $ renpy.show('Alice spider-night 01-'+random_choice(['01', '02', '03'])+suf)
+    $ var_stage, var_pose, var_dress = '01', random_choice(['01', '02', '03']), suf
+    scene alice_wakes_max_up with fade4
     Alice_13 "Макс!"
 
-    scene BG char Alice spider-night-02
-    $ renpy.show('Max spider-night 02-'+random_choice(['01', '02', '03']))
-    $ renpy.show('Alice spider-night 02-01'+suf)
+    # scene BG char Alice spider-night-02
+    # $ renpy.show('Max spider-night 02-'+random_choice(['01', '02', '03']))
+    # $ renpy.show('Alice spider-night 02-01'+suf)
+    $ var_stage, var_pose, var_pose2 = '02', '01', random_choice(['01', '02', '03'])
+    scene alice_wakes_max_up mgg
     if alice.dress == 'b':
         show screen Cookies_Button
     menu:
@@ -1108,7 +1123,8 @@ label spider_in_bed:
         "Разбирайся сама..." if not _in_replay:
             jump .goaway
 
-    show Max spider-night 02-04
+    # show Max spider-night 02-04
+    $ var_pose2 = '04'
     menu:
         Alice_06 "Макс, помоги. В моей комнате огромный такой, просто гигантский паук! Убей его, пожалуйста!"
         "Ну, пойдём посмотрим...":
@@ -1119,9 +1135,6 @@ label spider_in_bed:
 
     label .goaway:
         hide screen Cookies_Button
-        # scene BG char Max bed-night-01
-        # $ renpy.show('Max sleep-night '+pose3_3)
-        # $ renpy.show('cloth1 Max sleep-night '+pose3_3)
         scene Max_sleep with diss5
         menu:
             Max_09 "Бегает ещё, кричит что-то... Совсем сдурела..."
@@ -1132,9 +1145,8 @@ label spider_in_bed:
                 return
 
     label .help:
-        scene BG char Alice spider-night-03
-        $ renpy.show('Alice spider-night 03-'+random_choice(['01', '02', '03'])+suf)
-        show Max spider-night 03-01
+        $ var_stage, var_pose, var_pose2 = '03', random_choice(['01', '02', '03']), '01'
+        scene alice_talk_max_aliceroom
 
         if not _in_replay:
             $ poss['spider'].open(4)
@@ -1142,8 +1154,7 @@ label spider_in_bed:
         menu:
             Alice_13 "Макс, Макс! Вот он! Убей его, скорее!!!"
             "А что мне за это будет?" if all([not toples, not naked, not alice.req.noted]):  # Вариант недоступен, если Алиса без лифчика или нарушает договоренность и Макс об этом знает
-                show Max spider-night 03-02
-                $ renpy.show('Alice spider-night 03-04'+suf)
+                $ var_pose, var_pose2 = '04', '02'
                 menu:
                     Alice_12 "Что ты хочешь за смерть этого паука?"
                     "Давай $10!" ('soc', mgg.social * 5, 90):
@@ -1167,8 +1178,7 @@ label spider_in_bed:
                         jump .spider
             "А что мне за это будет?" if toples:
                 # Алиса без лифчика
-                show Max spider-night 03-02
-                $ renpy.show("Alice spider-night 03-04"+suf)
+                $ var_pose, var_pose2 = '04', '02'
                 Alice_06 "Макс, не наглей! Я и так перед тобой тут в одних трусиках... Тебе этого мало что ли?!"
                 Max_07 "Ну, я вижу, что условия нашей договорённости ты соблюдаешь, только вот к поимке паука это никак не относится."
                 Alice_12 "И чего тебе, в таком случае, ещё от меня надо?"
@@ -1185,14 +1195,12 @@ label spider_in_bed:
                 jump .spider
             "А что мне за это будет?" if naked:
                 # Алиса голая
-                show Max spider-night 03-02
-                $ renpy.show("Alice spider-night 03-04"+suf)
+                $ var_pose, var_pose2 = '04', '02'
                 menu:
                     Alice_12 "Что ты хочешь за смерть этого паука?"
                     "Покажи сиськи!":
                         # spider-night-03-alice-(10b/11b/12b)
-                        show Max spider-night 03-03
-                        $ renpy.show('Alice spider-night 03-'+random_choice(['10', '11', '12'])+suf)
+                        $ var_pose, var_pose2 = random_choice(['10', '11', '12']), '03'
                         if alice.GetMood()[0] < 3:
                             $ mood -= 50
                         Alice_09 "Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
@@ -1211,7 +1219,7 @@ label spider_in_bed:
                 $ infl[alice].add_m(20)
                 jump .spider
             "Паука-то я поймаю, только вот кое-кто нарушает уговор! Или может я не прав?!" if alice.req.noted:
-                $ renpy.show("Alice spider-night 03-04"+suf)
+                $ var_pose = '04'
                 if alice.req.result == 'not_sleep':
                     # Алиса должна спать без лифчика
                     Alice_12 "Ну забыла я снять лифчик перед сном, просто по привычке... Подумаешь, какое большое преступление!"
@@ -1223,7 +1231,7 @@ label spider_in_bed:
                 elif alice.req.result == 'not_naked':
                     # Алиса должна спать голой
                     Alice_12 "Серьёзно, Макс?! Может я оделась и прибежала! Как тебе такое, а?"
-                    show Max spider-night 03-02
+                    $ var_pose2 = '02'
                     Max_09 "Что я тебя, не знаю что ли! Ты так боишься пауков, что одежда - это последнее, о чём ты вспомнишь увидя их. Ты просто наплевала на наш уговор, а я ведь твою задницу спас от маминой хлёсткой руки... Я его тоже тогда соблюдать не стану, так что завтра получишь! Приятных снов..."
                     Alice_14 "Нет, нет, нет! Ты куда собрался?! У меня же паук на кровати!"
                     Max_07 "Что тут скажешь... Успехов тебе!"
@@ -1233,23 +1241,21 @@ label spider_in_bed:
                             Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
                             Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
                             # spider-night-03-alice-04d
-                            show Max spider-night 03-03
-                            show Alice spider-night 03-04n
+                            $ var_pose, var_pose2, var_dress = '04', '03', 'n'
                             menu:
                                 Alice_06 "Ну вот... разделась... И не говори, что этого мало... Я и так перед тобой тут голая стою, рук всё прикрыть не хватает... Доволен?"
                                 "Сиськи ещё покажи...":
                                     # spider-night-03-alice-(10b/11b/12b)
-                                    $ renpy.show('Alice spider-night 03-'+random_choice(['10', '11', '12'])+'n')
+                                    $ var_pose = random_choice(['10', '11', '12'])
                                     Alice_14 "Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
                                     Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
                                 "О да, я очень доволен!":
                                     Alice_12 "Вот и хватит глазеть! Давай уже, лови этого паука!"
                                     Max_04 "Классная у тебя фигура, сестрёнка! Особенно когда ты голенькая. Ну да ладно, теперь можно и поймать..."
 
-                    $ alice.dcv.prudence.set_lost(renpy.random.randint(3, 7))
+                    $ alice.dcv.prudence.set_lost(random_randint(3, 7))
                     $ alice.req.result = alice.req.req
                     $ alice.req.noted = False
-                    $ violation = True
                     $ alice.sleepnaked = True
                     $ alice.dress = ''
                     $ suf = 'n'
@@ -1271,17 +1277,16 @@ label spider_in_bed:
                 Max_09 "Вот и хорошо, что не будешь! А за сегодняшнее нарушение ты покажешь мне свою попку, если хочешь, чтобы я убрал паука... Не зря же я её спас от наказания?!"
                 Alice_13 "Какой же ты извращенец, Макс! Не стыдно тебе такое просить?!"
                 Max_01 "Сама виновата! Я с тобой по хорошему хотел... Не спускать же тебе это теперь с рук?!"
-                scene BG char Alice spider-night-05
-                $ renpy.show('Alice spider-night 05-'+random_choice(['01', '02', '03'])+suf)
+                $ var_stage, var_pose = '05', random_choice(['01', '02', '03'])
+                scene alice_wakes_max_up
                 Alice_06 "Ну вот... смотри... И не говори, что этого мало... большего не покажу! Доволен?"
                 Max_05 "О да, я очень доволен! Попка у тебя просто супер, сестрёнка!"
                 Alice_12 "Всё! Посмотрел и хватит, давай уже, лови этого паука!"
                 Max_04 "Ладно, теперь можно и поймать..."
 
-                $ alice.dcv.prudence.set_lost(renpy.random.randint(3, 7))
+                $ alice.dcv.prudence.set_lost(random_randint(3, 7))
                 $ alice.req.result = alice.req.req
                 $ alice.req.noted = False
-                $ violation = True
                 if alice.req.req == 'nopants':
                     $ alice.nopants = True
                 elif alice.req.req == 'sleep':
@@ -1290,14 +1295,14 @@ label spider_in_bed:
                 jump .spider
 
     label .fail:
-        $ renpy.show('Alice spider-night 03-05'+suf)
+        $ var_pose = '05'
         Alice_17 "[failed!t]Что?! Да я сама тебя сейчас придушу! Тебя-то я не боюсь! Быстро убил его! Или он, или ты. Кто-то из вас умрёт сегодня!"
         Max_08 "Ух, какая ты кровожадная. Ну ладно..."
         $ mood -= 100
         jump .spider
 
     label .money:
-        $ renpy.show('Alice spider-night 03-06'+suf)
+        $ var_pose = '06'
         Alice_16 "[succes!t]Ну ты и хам, Макс! Ладно, держи $10, только убей его, быстрее!!!"
         Max_04 "Деньги всегда пригодятся! Ладно, где этот твой паук..."
         $ mood -= 20
@@ -1305,13 +1310,13 @@ label spider_in_bed:
         jump .spider
 
     label .tits:
-        show Max spider-night 03-03
+        $ var_pose2 = '03'
         if alice.GetMood()[0] < 3:
             $ mood -= 50
-            $ renpy.show('Alice spider-night 03-'+random_choice(['07', '08'])+suf)
+            $ var_pose = random_choice(['07', '08'])
             Alice_14 "[succes!t]Ах! Ну ты хам... Ладно, смотри быстро. И убей его уже, наконец!"
         else:
-            $ renpy.show('Alice spider-night 03-09'+suf)
+            $ var_pose = '09'
             Alice_09 "[succes!t]Ах! Ну и хам же ты, Макс... Ладно, любуйся, я сегодня добрая. И убей его уже, наконец!"
         Max_04 "Сиськи - что надо! Ладно, где этот твой паук..."
         jump .spider
@@ -1320,8 +1325,8 @@ label spider_in_bed:
         if not toples:
             $ toples = True
             $ suf += 't'
-        show Max spider-night 03-03
-        $ renpy.show('Alice spider-night 03-'+random_choice(['10', '11', '12'])+suf)
+            $ var_dress += 't'
+        $ var_pose2, var_pose = '03', random_choice(['10', '11', '12'])
         if alice.GetMood()[0] < 3:
             $ mood -= 50
         Alice_15 "[succes!t]Ах! Ну ты хам... Ладно... Ну что, доволен, извращенец? А теперь иди, убей его уже, наконец!"
@@ -1329,17 +1334,14 @@ label spider_in_bed:
         jump .spider
 
     label .spider:
-        scene BG char Alice spider-night-04
-        show Max spider-night 04-01
-        if toples:
-            $ renpy.show('Alice spider-night 04-'+random_choice(['04', '05', '06'])+suf)
-        else:
-            $ renpy.show('Alice spider-night 04-'+random_choice(['01', '02', '03'])+suf)
+        $ var_pose = random_choice(['04', '05', '06']) if toples else random_choice(['01', '02', '03'])
+        $ var_stage, var_pose2 = '04', '01'
+        scene alice_wakes_max_up mgg
         if alice.dress == 'a':
             show screen Cookies_Button
         menu:
             Max_07 "Ага, попался! Пожалуй, вот что я сделаю..."
-            "{i}оставлю этого паука себе{/i}":
+            "{i}оставлю этого паука себе{/i}" if not all([alice.dcv.mistress.stage > 3, alice.flags.sober_fj, alice.flags.touched, alice.dcv.intrusion.stage in [5, 7]]):
                 menu:
                     Alice_16 "Макс! Ты должен его убить! А не то я подумаю, что это твоих рук дело... Докажи, что это был не ты!"
                     "Я не буду его убивать!":
@@ -1356,7 +1358,7 @@ label spider_in_bed:
                                 $ items['spider'].have = True
                                 return
                     "Пусть живёт. Я пойду и выкину его с балкона за ограду, чтобы он обратно не приполз." ('soc', mgg.social * 3, 90):
-                        show Max spider-night 04-02
+                        $ var_pose2 = '02'
                         if rand_result:
                             Alice_12 "[succes!t]Ладно, Макс, уговорил. Только сделай так, чтобы его и близко к этому дому не было..."
                             menu:
@@ -1382,7 +1384,7 @@ label spider_in_bed:
                         jump .kill
             "{i}выброшу этого паука с балкона{/i}":
                 jump .let_go
-            "{i}убью этого паука{/i}":
+            "{i}убью этого паука{/i}" if not all([alice.dcv.mistress.stage > 3, alice.flags.sober_fj, alice.flags.touched, alice.dcv.intrusion.stage in [5, 7]]):
                 jump .kill
     label .let_go:
         hide screen Cookies_Button
@@ -1395,11 +1397,12 @@ label spider_in_bed:
         else:
             $ var_dress = alice.dress[:1]
 
-        scene alice_talk_about_sleepeng
+        $ var_stage, var_pose, var_pose2 = '03', '04', '02'
+        scene alice_wakes_max_up mgg
         $ SpiderKill = 0
         $ SpiderResp = 1
 
-        if all([alice.dcv.mistress.stage > 4, alice.flags.sober_fj, alice.flags.touched, alice.dcv.intrusion.stage in [5, 7]]):
+        if all([alice.dcv.mistress.stage > 3, alice.flags.sober_fj, alice.flags.touched, alice.dcv.intrusion.stage in [5, 7]]):
             # - успешно пройдено доминирование Алисы с конфетой
             # - получен трезвый fj перед ТВ
             # - пройдены "прятки" от паука (а значит, Макс опередил Эрика с боди)
@@ -1424,7 +1427,8 @@ label spider_in_bed:
 
     label .kill:
         hide screen Cookies_Button
-        show Max spider-night 04-03
+        # show Max spider-night 04-03
+        $ var_pose2 = '03'
         menu:
             Alice_01 "Так ему! Спасибо, Макс! Ты мой спаситель. А теперь иди отсюда, я спать хочу!"
             "{i}вернуться в кровать{/i}":
@@ -1438,6 +1442,25 @@ label spider_in_bed:
 
 
 label alice_smoke:
+
+    if all([not alice.daily.smoke, alice.dcv.revenge.enabled]):
+        # Макс сегодня ещё не видел курящую Алису, за последний куни ещё не отомстил
+        $ chance = 100
+        if alice.dcv.revenge.lost:
+            $ chance /= 2 * alice.dcv.revenge.lost
+        if random_outcome(chance):
+            Max_02 "Ну вот, Алиса, ты и попалась! Видимо, уже невмоготу стало, как курить захотелось..."
+            $ alice.dcv.revenge.disable()
+        else:
+            Max_09 "Странно, Алиса в это время обычно курит... Она решила бросить, что ли?"
+            $ alice.daily.smoke = 1
+            call alice_swim from _call_alice_swim
+            return
+
+    elif alice.dcv.revenge.enabled:
+        # за последний куни ещё не отомстил
+        call alice_swim from _call_alice_swim_1
+        return
 
     scene BG char Alice smoke
 
@@ -1509,7 +1532,6 @@ label alice_smoke:
 
 #  Алиса перед зеркалом ванной
 label alice_after_club:
-    # $ renpy.dynamic('lst')
     scene location house bathroom door-evening
     if alice.daily.bath != 0:
         return
@@ -1550,18 +1572,10 @@ label alice_after_club:
     jump .end
 
     label .knock:
-        # $ renpy.dynamic('suf', 'r1')
-        if alice.req.result == 'nopants':
-            $ suf = 'a'
-            $ alice.dress_inf = '04da'
-        else:
-            $ suf = ''
-            $ alice.dress_inf = '04ca'
-        $ r1 = random_choice(['01', '02', '03'])
-        scene BG char Alice bath-after-club 01
-        $ renpy.show('Alice bath-after-club 01-'+r1+suf)
-        show Max bath-after-club 01
-        with fade4
+        $ alice.dress_inf = '04da' if alice.req.result == 'nopants' else '04ca'
+        # after-club-01 + after-club-01-alice-(01/02/03)(/a)+ after-club-01-max-01
+        $ var_pose, var_pose2, var_dress = random_choice(['01', '02', '03']), '01', 'a' if alice.req.result == 'nopants' else ''
+        scene alice_bath_mirror with fade4
         Alice_05 "А, Макс... Не спится? Чего хотел?"
         Max_01 "Да... Я вот... Умыться перед сном хотел!"
         Alice_03 "Ну, проходи. Я собиралась ванну принять, но ещё вода набирается..."
@@ -1571,7 +1585,9 @@ label alice_after_club:
         Alice_05 "Конечно! Ты же мой брат. Ты извини, если я с тобой бываю груба. Это просто защитная реакция..."
         Max_09 "Защитная реакция?"
         Alice_04 "Тебе не понять... Ты знаешь, я бы хотела извиниться, если тебя чем-то обижала в последнее время... Ой, у тебя что-то в штанах шевелится..."
-        show Max bath-after-club 02
+
+        # after-club-01 + after-club-01-alice-(01/02/03)(/a)+ after-club-01-max-02
+        $ var_pose2 = '02'
         Max_07 "Э... Ты точно в порядке?"
         menu:
             Alice_07 "Ага. И ты, я вижу, тоже... Какой же он у тебя большой..."
@@ -1580,27 +1596,32 @@ label alice_after_club:
                     if alice.flags.incident < 1:
                         $ alice.flags.incident = 3 if alice.req.result == 'nopants' else 1
                     $ poss['nightclub'].open(8)
-                $ r1 = {'01':'04', '02':'05', '03':'06'}[r1]
-                $ renpy.show('Alice bath-after-club 01-'+r1+suf)
+                # after-club-01 + after-club-01-alice-(04/05/06)(/a)+ after-club-01-max-02
+                $ var_pose = {'01':'04', '02':'05', '03':'06'}[var_pose]
                 Alice_04 "Спасибо, Макс. Девушке очень приятно такое слышать от парня. Даже, если это её младший брат... которого ей хочется подразнить..."
+
                 if alice.req.result == 'not_nopants':
                     # Алиса нарушила уговор по трусикам
                     Max_09 "А почему на тебе трусики?"
                     Alice_05 "Какой ужас! Похоже, я нарушила наш уговор... или нет... Разве я не могу носить их ночью?"
                     Max_07 "Когда спишь - да, а вот всё остальное время - нет!"
                     Alice_03 "Ну что ж, значит на мне есть кое-что лишнее... Это можно легко исправить..."
-                    $ suf = 'a'
-                    $ renpy.show('Alice bath-after-club 01-'+r1+'b')
+
+                    # after-club-01 + after-club-01-alice-(04b/05b/06b)+ after-club-01-max-02
+                    $ var_dress = 'b'
                     Alice_07 "Вот... Теперь всё так, как должно быть. И твоему дружку явно стало очень тесно в трусах, да?"
+
                 elif alice.req.result == 'nopants':
                     # Алиса без трусиков
                     if not _in_replay:
                         if alice.flags.incident == 2:
                             $ alice.flags.incident = 4
                     Max_04 "Да, эти сосочки выглядят очень соблазнительно... Но чтобы меня подразнить, нужно показать куда больше..."
-                    $ suf = 'a'
-                    $ renpy.show('Alice bath-after-club 01-'+r1+'b')
+
+                    # after-club-01 + after-club-01-alice-(04b/05b/06b)+ after-club-01-max-02
+                    $ var_dress = 'b'
                     Alice_07 "Например, так? Да, я вижу твой дружок запульсировал ещё сильнее... Это так возбуждает!"
+
                 Max_03 "А ты не хочешь мне помочь?"
                 if 'black_linderie' in alice.gifts:
                     # если подарен комплект тёмного белья для блога
@@ -1613,8 +1634,10 @@ label alice_after_club:
             "Ну Алиса... Ну чуть-чуть...":
                 Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
                 Max_00 "Всё понял, ухожу..."
+
             "Хорошо. Спокойной ночи, Алиса...":
                 pass
+
         $ renpy.end_replay()
         ### здесь ставим флаг разговора в ванной, продвижение возможности тусовщица
         $ spent_time += 10
@@ -1623,20 +1646,22 @@ label alice_after_club:
 
     label .next1:   # подарен комплект тёмного белья для блога
         if _in_replay:
-            $ suf = 'a' if alice.req.result else ''
-        scene BG char Alice bath-after-club 02
-        $ renpy.show('Alice bath-after-club 02-01'+suf)
+            $ var_dress = 'a' if alice.req.result else ''
         $ spent_time += 10
 
+        # after-club-02 + after-club-02-max-01-alice-(01/01a)
+        $ var_stage, var_pose = '02', '01'
+        if var_dress > 'a':
+            $ var_dress = 'a'
+        scene alice_bath_mirror_01
         Alice_13 "Может и хочу! Я ведь была очень плохой девочкой... Ты помогаешь мне с блогом, купил классное нижнее бельё, балуешь сладостями... а я только угрозами в тебя сыплю..."
         Max_01 "Не только... С тобой бывают светлые моменты!"
         menu:
             Alice_08 "Сейчас их может стать на один больше! Что ты хочешь, чтобы я сделала?"
-            "Хочу, чтобы ты сняла трусики..." if suf!='a':   #если на Алисе есть трусики
+            "Хочу, чтобы ты сняла трусики..." if var_dress != 'a':   #если на Алисе есть трусики
 
-                $ suf = 'a'
-                $ renpy.show('Alice bath-after-club 02-01'+suf)
-
+                # after-club-02 + after-club-02-max-01-alice-01a
+                $ var_dress = 'a'
                 Alice_05 "Какие у тебя скромные желания, Макс! Всего лишь раздеть свою старшую сестру..."
                 Max_02 "На тебе ещё есть халат, так что ты точно не раздетая!"
                 menu:
@@ -1654,7 +1679,9 @@ label alice_after_club:
                 jump .suck
 
     label .caress:
-        $ renpy.show('Alice bath-after-club 02-02'+suf)
+        # after-club-02 + after-club-02-max-02-alice-(02/02a)
+        $ var_pose = '02'
+        # scene alice_bath_mirror_01
         $ spent_time += 10
         if not _in_replay:
             $ poss['nightclub'].open(9)
@@ -1667,9 +1694,8 @@ label alice_after_club:
             Alice_05 "Не сомневаюсь. Ванна почти наполнилась водой, так что мы можем быстренько успеть что-то ещё! Но осторожнее с желаниями..."
             "Хочу показать тебе, как я научился целоваться..." if lisa.dcv.seduce.stage>3:   #если пройдены уроки поцелуев с Кирой
 
-                scene BG char Alice bath-after-club 03
-                $ renpy.show('Alice bath-after-club 03-02'+suf)
-
+                # after-club-03 + after-club-03-max-02-alice-(02/02a)
+                $ var_stage = '03'
                 Alice_03 "Да ладно! Где это ты успел? Ты же дома больше меня сидишь. Не верю я тебе..."
                 menu:
                     Max_03 "А ты попробуй!"
@@ -1677,18 +1703,19 @@ label alice_after_club:
                         if not _in_replay:
                             $ poss['nightclub'].open(10)
 
-                $ renpy.show('Alice bath-after-club 03-01'+suf)
-
+                # after-club-03 + after-club-03-max-01-alice-(01/01a)
+                $ var_pose = '01'
                 menu:
                     Max_02 "{m}А Алиса хорошо целуется! Да со страстью, увлечённо... Ммм... Губки у неё сочные... А уж как в член мой вцепилась!{/m}"
                     "{i}закончить целоваться{/i}":
                         pass
-                    "{i}прикоснуться к её груди{/i}" if all([alice.dcv.intrusion.stage in [5, 7], suf=='a', alice.daily.drink>1, alice.flags.hip_mass<5]):  # Макс подарил Алисе кружевное боди, две конфетки, пьяный путь
+                    "{i}прикоснуться к её груди{/i}" if all([alice.dcv.intrusion.stage in [5, 7], var_dress=='a', alice.daily.drink>1, alice.flags.hip_mass<5]):  # Макс подарил Алисе кружевное боди, две конфетки, пьяный путь
                         jump .next2
-                    "{i}прикоснуться к её груди{/i}" if all([alice.dcv.intrusion.stage in [5, 7], suf=='a', alice.flags.hip_mass>4]):  # Макс подарил Алисе кружевное боди, пройден "трезвый путь"
+                    "{i}прикоснуться к её груди{/i}" if all([alice.dcv.intrusion.stage in [5, 7], var_dress=='a', alice.flags.hip_mass>4]):  # Макс подарил Алисе кружевное боди, пройден "трезвый путь"
                         jump .next2
 
-                $ renpy.show('Alice bath-after-club 03-02'+suf)
+                # after-club-03 + after-club-03-max-02-alice-(02/02a)
+                $ var_pose = '02'
 
                 Alice_09 "Нифига себе! Ты и этому что ли на интернет-курсах научился? Не может быть такого..."
                 Max_04 "А вот теперь ванну принимай и гадай, как я научился."
@@ -1697,29 +1724,27 @@ label alice_after_club:
 
             "А если бы я был твоим парнем... Что бы ты сделала дальше?" if alice.flags.hip_mass>1:   #если Макс ласкал Алисе киску у ТВ
 
-                scene BG char Alice bath-after-club 03
-                $ renpy.show('Alice bath-after-club 03-02'+suf)
-
+                # after-club-03 + after-club-03-max-02-alice-(02/02a)
+                $ var_stage = '03'
                 Alice_07 "Ха! Кое-чего ты обо мне не знаешь, Макс... Я предпочитаю девушек... Но не откажусь от парня, если у него есть что-то... особенное..."
                 Max_03 "Как удачно, что ты как раз держишь в руке кое-что особенное!"
 
-                $ renpy.show('Alice bath-after-club 03-03'+suf)
+                # after-club-03 + after-club-03-max-03-alice-(03/03a)
+                $ var_pose = '03'
 
                 Alice_04 "Да... И я бы, пожалуй, сняла с себя халат, пока ласкала его член... Чтобы ничто не мешало ему наслаждаться моим совершенно голым телом!"
-                if suf:
+                if var_dress:
                     Max_05 "Правильно, Алиса... Такое шикарное тело лучше не скрывать! А потом?"   #если Алиса без трусиков
                 else:
                     Max_05 "ПОЧТИ голым телом, но это мелочи... Мне нравится к чему всё идёт! А потом?"   #если Алиса в трусиках
 
-                scene BG char Alice bath-after-club 04
-                $ renpy.show('Alice bath-after-club 04-01'+suf)
-
+                # after-club-04 + after-club-04-max-01-alice-(01/01a)
+                $ var_stage, var_pose = '04', '01'
                 Alice_08 "А потом я бы опустилась на колени и начала водить его членом по своему лицу... неспеша и слегка задевая губами..."
                 Max_20 "Ох, чёрт! А потом..."
 
-                scene BG char Alice bath-after-club 03
-                $ renpy.show('Alice bath-after-club 03-04'+suf)
-
+                # after-club-03 + after-club-03-max-04-alice-04a
+                $ var_stage, var_pose = '03', '04'
                 Alice_05 "У меня ванна набралась, так что спокойной ночи!"
                 Max_10 "Да ладно, Алиса! Это слишком жёсткий облом!"
                 Alice_04 "Макс... Ты же не хочешь, чтобы я рассказала маме, что ты ко мне приставал?"
@@ -1739,30 +1764,26 @@ label alice_after_club:
             $ poss['nightclub'].open(11)
 
         # after-club-03 + after-club-03-max-06-alice-06a
-        scene BG char Alice bath-after-club 03
-        show Alice bath-after-club 03-06a
+        $ var_stage, var_pose, var_dress = '03', '06', 'a'
+        scene alice_bath_mirror_01
         Max_04 "{m}Ох, какая у неё нежная и упругая грудь! Ухх.. Она ещё активнее начала мне дрочить, а это означает, что ей нравится, как я мну её сиськи! Может даже удастся зайти ещё дальше...{/m}"
 
         # after-club-03 + after-club-03-max-05-alice-05a
-        show Alice bath-after-club 03-05a
+        $ var_pose = '05'
         Alice_09 "Ах, Макс! И где ты такому научился?! У меня теперь сосочки изнывают от возбуждения! А как жарко стало..."
         Max_03 "Сними халатик и я покажу, что ещё умею..."
 
         # after-club-05 + after-club-05-max&alice-01
-        scene BG char Alice bath-after-club 05
-        show Alice bath-after-club 05-01
+        $ var_stage, var_pose = '05', '01'
+        scene alice_bath_mirror_02
         Alice_06 "Ммм... Макс... Ну вот что ты делаешь?! Я же твоя сестра, а ты... ведёшь себя со мной... как будто я твоя девушка..."
         Max_07 "Так почему бы тебе не представить ненадолго, что я твой парень?"
         menu:
             Alice_07 "Ты должно быть не в курсе, но я предпочитаю девушек... Но для парня, у которого есть кое-что особенное, я не прочь сделать исключение, ради любопытства..."
             "{i}ласкать её киску рукой{/i}":
-                # after-club-05 + after-club-05-max&alice-02 или after-club-06 + after-club-06-max&alice-01
-                if renpy.random.randint(1, 2)>1:
-                    scene BG char Alice bath-after-club 05
-                    show Alice bath-after-club 05-02
-                else:
-                    scene BG char Alice bath-after-club 06
-                    show Alice bath-after-club 06-01
+                # after-club-05 + after-club-05-max&alice-02
+                # after-club-06 + after-club-06-max&alice-01
+                $ var_stage, var_pose = random_choice([('05', '02'), ('06', '01')])
                 Alice_15 "Макс! Ахх... Ты полез рукой прямо туда... Это же так..."
                 Max_02 "Приятно? Это ты хотела сказать?"
                 menu:
@@ -1771,8 +1792,7 @@ label alice_after_club:
                         if rand_result:
                             # (Ей нравится!)
                             # after-club-06 + after-club-06-max&alice-02
-                            scene BG char Alice bath-after-club 06
-                            show Alice bath-after-club 06-02
+                            $ var_stage, var_pose = '06', '02'
                             Alice_10 "[like!t]Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее... Как же меня возбуждает твой огромный член!"
                             menu:
                                 Max_04 "{m}Алиса так приятно постанывает... А уж мне не менее приятно трахать эту нежную киску пальцами. Может быть, она даже кончит, если я ускорюсь...{/m}"
@@ -1795,18 +1815,18 @@ label alice_after_club:
             Max_02 "Для этого тебе придётся очень постараться..."
 
             # after-club-04 + after-club-04-max-01-alice-01a
-            scene BG char Alice bath-after-club 04
-            show Alice bath-after-club 04-01a
+            $ var_stage, var_pose, var_dress = '04', '01', 'a'
+            scene alice_bath_mirror_01
             Alice_08 "Если я кончила, то и мой парень должен кончить... Только так и не иначе! Хочешь узнать, на что мой язычок способен?"
             Max_01 "Жду не дождусь, Алиса!"
 
-            # after-club-04 + after-club-04-max&alice-01 или after-club-08 + after-club-08-max&alice-bj01
-            if renpy.random.randint(1, 2)>1:
-                scene BG char Alice bath-after-club 04
-                show Alice bath-after-club 04-02
+            # after-club-04 + after-club-04-max&alice-01
+            # after-club-08 + after-club-08-max&alice-bj01
+            $ var_stage, var_pose = random_choice(['04', '08']), '01'
+            if var_stage == '04':
+                scene alice_bath_mirror_02
             else:
-                scene BG char Alice bath-after-club 08
-                show Alice bath-after-club 08-bj01
+                scene alice_bath_mirror_02 bj
             menu:
                 Alice_07 "Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?"
                 "{i}кончить ей на лицо{/i}":
@@ -1826,42 +1846,36 @@ label alice_after_club:
             jump .dont_like
 
     label .cunnilingus:
-        $ r1 = renpy.random.randint(1, 2)
-        if r1>1:
-            scene BG char Alice bath-after-club 05
-            show Alice bath-after-club 05-03
-        else:
-            scene BG char Alice bath-after-club 07
-            show Alice bath-after-club 07-01
         if rand_result:
             #(Ей нравится!)
-            # after-club-05 + after-club-05-max&alice-03 или after-club-07 + after-club-07-max&alice-01
+            # after-club-05 + after-club-05-max&alice-03
+            # after-club-07 + after-club-07-max&alice-01
+            $ var_stage, var_pose = random_choice([('05', '03'), ('07', '01')])
+            scene alice_bath_mirror_02
             menu:
                 Alice_09 "[like!t]Да, Макс, да! Я уже так близко... Не останавливайся... У тебя такой быстрый и ловкий язычок, Макс... Ммм..."
                 "{i}ещё быстрее работать языком{/i}":
                     pass
 
-            # after-club-05 + after-club-05-max&alice-04 или after-club-07 + after-club-07-max&alice-02
-            if r1>1:
-                show Alice bath-after-club 05-04
-            else:
-                show Alice bath-after-club 07-02
+            # after-club-05 + after-club-05-max&alice-04
+            # after-club-07 + after-club-07-max&alice-02
+            $ var_pose = '04' if var_stage == '05' else '02'
             Alice_11 "Ах! Я больше не могу, Макс... Кончаю! Да... Как же это было классно! Ох... А ты кончил?"
             Max_02 "А должен был?"
 
             # after-club-04 + after-club-04-max-01-alice-01a
-            scene BG char Alice bath-after-club 04
-            show Alice bath-after-club 04-01a
+            $ var_stage, var_pose, var_dress = '04', '01', 'a'
+            scene alice_bath_mirror_01
             Alice_08 "Если я кончила, то и мой парень должен кончить... Только так и не иначе! Хочешь узнать, на что мой язычок способен?"
             Max_01 "Жду не дождусь, Алиса!"
 
-            # after-club-04 + after-club-04-max&alice-01 или after-club-08 + after-club-08-max&alice-bj01
-            if renpy.random.randint(1, 2)>1:
-                scene BG char Alice bath-after-club 04
-                show Alice bath-after-club 04-02
+            # after-club-04 + after-club-04-max&alice-01
+            # after-club-08 + after-club-08-max&alice-bj01
+            $ var_stage, var_pose = random_choice(['04', '08']), '01'
+            if var_stage == '04':
+                scene alice_bath_mirror_02
             else:
-                scene BG char Alice bath-after-club 08
-                show Alice bath-after-club 08-bj01
+                scene alice_bath_mirror_02 bj
             menu:
                 Alice_07 "Ммм... Никогда бы не подумала, что буду вытворять такое с тобой! Ну и вымахал же у тебя такой член, Макс! Ты уже скоро?"
                 "{i}кончить ей на лицо{/i}":
@@ -1883,22 +1897,22 @@ label alice_after_club:
     label .need_hurry:
         # пройден "трезвый" путь с фут-джобом у ТВ
         # after-club-04 + after-club-04-max-01-alice-01a
-        scene BG char Alice bath-after-club 04
-        show Alice bath-after-club 04-01a
+        $ var_stage, var_pose, var_dress = '04', '01', 'a'
+        scene alice_bath_mirror_01
         Alice_08 "В таком случае, я буду меньше говорить и больше делать... Тебе понравится!"
         if not _in_replay:
             $ poss['nightclub'].open(12)
+
         # after-club-09 + after-club-09-max&alice-bj02
-        scene BG char Alice bath-after-club 09
-        show Alice bath-after-club 09-bj02
+        $ var_stage, var_pose = '09', '02'
+        scene alice_bath_mirror_02 bj
         menu:
             Max_21 "Ох, Алиса, это мне очень нравится! Так приятно... Д-а-а... Давай ещё... Как же сладко твои сочные губки это делают, д-а-а..."
             "{i}сдерживаться{/i}" ('sex', (10 + mgg.sex) * 4, 90):
                 if rand_result:
                     # (Удалось сдержаться!)
                     # after-club-08 + after-club-08-max&alice-bj02
-                    scene BG char Alice bath-after-club 08
-                    show Alice bath-after-club 08-bj02
+                    $ var_stage = '08'
                     menu:
                         Max_22 "[restrain!t]Да, продолжай вот так! Давай быстрее, сестрёнка... Вижу, что с ним не просто справиться, но у тебя классно получается! Ещё немного... Я сейчас кончу..."
                         "{i}кончить ей на лицо{/i}":
@@ -1912,10 +1926,8 @@ label alice_after_club:
 
     label .cum_breast:
         # after-club-08 + after-club-08-max&alice-cum02 + after-club-08-max&alice-(cum02a/cum02b)
-        scene BG char Alice bath-after-club 08
-        show Alice bath-after-club 08-cum02
-        $ renpy.show("FG Alice bath-after-club 08-cum02"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
-
+        $ var_stage, var_pose, var_pose2 = '08', '02', random_choice(['a', 'b'])
+        scene alice_bath_mirror_02 cum
         Alice_09 "Ого, сколько в тебе было... потенциала... Ты заляпал мне всю грудь! Теперь мыться надо..."
         Max_03 "А ты разве не для этого ванну собиралась принять?"
         Alice_06 "Да, точно... Ты же никому не проболтаешься о том, что тут было?"
@@ -1927,10 +1939,8 @@ label alice_after_club:
 
     label .cum_face:
         # after-club-09 + after-club-09-max&alice-cum01 + after-club-09-max&alice-(cum01a/cum01b)
-        scene BG char Alice bath-after-club 09
-        show Alice bath-after-club 09-cum01
-        $ renpy.show("FG Alice bath-after-club 09-cum01"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
-
+        $ var_stage, var_pose, var_pose2 = '09', '01', random_choice(['a', 'b'])
+        scene alice_bath_mirror_02 cum
         Alice_06 "Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"
         Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
@@ -1944,10 +1954,8 @@ label alice_after_club:
 
     label .no_restrain:
         # after-club-09 + after-club-09-max&alice-cum01 + after-club-09-max&alice-(cum01a/cum01b)
-        scene BG char Alice bath-after-club 09
-        show Alice bath-after-club 09-cum01
-        $ renpy.show("FG Alice bath-after-club 09-cum01"+('a' if renpy.random.randint(1, 2)>1 else 'b'))
-
+        $ var_stage, var_pose, var_pose2 = '09', '01', random_choice(['a', 'b'])
+        scene alice_bath_mirror_02 cum
         Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"
         Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
@@ -2022,7 +2030,7 @@ label alice_lisa_shower:
         elif 'lisa_alice_sh' in cam_flag:
             $ r0 = 0 # $ vr = 'lisa_alice'
         else:
-            $ r0 = renpy.random.randint(1, 4)
+            $ r0 = random_randint(1, 4)
             if r0 < 3: # если выпал один персонаж
                 $ vr = 'alice' if r0 == 1 else 'lisa'
                 if vr == 'alice':
@@ -2114,9 +2122,9 @@ label alice_lisa_shower:
                 jump .end
 
         $ spent_time += 10
-        $ r1 = renpy.random.randint(1, 6)
-        $ r2 = renpy.random.randint(1, 6)
-        scene BG shower-01
+        $ r1 = random_randint(1, 6)
+        $ r2 = random_randint(1, 6)
+        scene BG bathroom-shower-01
         $ renpy.show('Alice shower-closer 0'+str(r2), at_list=[left_shift,])
         $ renpy.show('Lisa shower-closer 0'+str(r1), at_list=[right_shift,])
         show FG shower-closer
@@ -2128,9 +2136,9 @@ label alice_lisa_shower:
         $ spent_time += 10
         $ alice.dress_inf = '00aa'
         $ lisa.dress_inf = '00a'
-        $ r1 = renpy.random.randint(1, 6)
-        $ r2 = renpy.random.randint(1, 6)
-        scene BG shower-03
+        $ r1 = random_randint(1, 6)
+        $ r2 = random_randint(1, 6)
+        scene BG bathroom-shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Lisa shower-alt 0'+str(r1), at_list=[alt_left_shift,])
         $ renpy.show('Alice shower-alt 0'+str(r2), at_list=[alt_right_shift,])
@@ -2163,7 +2171,7 @@ label alice_blog_lingerie:
             scene BG char Alice blog-desk-01
             $ alice.dress_inf = {'a':'02', 'b':'02ia', 'c':'02ka', 'd':'02la'}[alice.dress]
             if any([
-                    renpy.random.randint(1, 2) < 2,             # поза за столом
+                    random_randint(1, 2) < 2,             # поза за столом
                     (_in_replay and items['sexbody1'].have),    # повтор и в сумке сексбоди
                     can_give_sexbody2(),                        # или можно подарить гружевное боди (не дожидаясь, когда выпадет поза за столом)
                 ]):
@@ -2202,7 +2210,7 @@ label alice_blog_lingerie:
                             # if alice.dcv.battle.stage in [0, 2] and (alice.dcv.intrusion.lost>3 or not alice.dcv.intrusion.enabled):
                             if get_stage_sexbody2() < 2:
                                 # Эрик ещё не помогает Алисе с блогом или уже изгнан
-                                if renpy.random.randint(1, 2) < 2:
+                                if random_randint(1, 2) < 2:
                                     Alice_03 "Неплохо. Развиваюсь понемногу. Подаренное тобой бельё зачастую сильно выручает!"
                                     Max_04 "Рад помочь своей сестрёнке! Если что, обращайся."
                                     menu:
@@ -2547,22 +2555,18 @@ label alice_towel_after_club:
             pass
 
     # bath-open-00 + bath-open-alice-01
-    scene BG bath-open-00
-    show Alice bath-talk 01
-    with fade4
+    scene alice_open_bath with fade4
     Alice_15 "Макс, я тут вообще-то голая лежу в ванне! Оу, ты всё же принёс мне полотенце..."
     Max_02 "Да, я тут как раз нашёл, на что его можно повесить..."
 
     # bath-talk-02 + bath-talk-02-alice-01 + bath-talk-02-max-03
-    scene BG bath-talk-02
-    show Alice bath-talk 2-01
-    show Max bath-talk 2-03
+    $ var_pose = '03'
+    scene alice_bath_talk
     Alice_06 "Оригинально... А ты не думал, что нужно было постучаться, прежде чем входить? Я ведь могла здесь... чем-нибудь ещё заниматься..."
     Max_03 "На это я, если честно, и надеялся."
 
     # bath-talk-03-max&alice-01-f + bath-talk-03-max&alice-01
-    scene BG char Alice bath-talk-03-f
-    show Alice bath-talk 3-01
+    $ var_pose = '01'
 
     Alice_05 "Ты что, стоял перед дверью и о чём-то таком думал, чтобы ТАК отдать мне полотенце?"
 
@@ -2584,16 +2588,16 @@ label alice_towel_after_club:
     Alice_13 "Да не смеши, Макс! Тётя Кира, конечно, пьяная, но... хотя в клубе она это вытворяла..."
 
     # after-club-bath01-max&alice-01-f + after-club-bath01-max&alice-01
-    scene BG after-club-bath01
-    show Alice after-club-bath 01-01
+    $ var_pose = '01'
+    scene alice_in_bath_02
 
     Max_03 "Двигалась она классно! Ну а как ты повеселилась в клубе?"
     Alice_02 "Ты знаешь, очень... очень хорошо. Но, похоже, я выпила сегодня куда больше, чем планировала... А что это твоя рука забыла на моей попке?"
     Max_07 "Она потянулась к прекрасному! А может ей хочется наказать эту попку..."
 
     # bath-cun-02 + after-club-bath01-max&alice-02
-    scene BG bath-cun-02
-    show Alice after-club-bath 01-02
+    $ var_pose = '02'
+    scene alice_in_bath_cun
 
     Alice_12 "За что это?!"
     Max_09 "Может, потому что ты была плохой девочкой?! Я тебе с блогом помогаю, бельё покупаю, сладостями балую... а ты только угрозами в меня сыпешь..."
@@ -2602,18 +2606,16 @@ label alice_towel_after_club:
         "Ну, разве, что так...\n{i}(начать массировать её киску рукой){/i}":
 
             # after-club-bath02a-max&alice-02-f + after-club-bath02a-max&alice-02
-            scene BG char Alice after-club-bath 02a
-            show Alice after-club-bath 02-02a
-
+            $ var_pose = '02a'
+            scene alice_in_bath_03
             Alice_15 "Макс! Ну что ты делаешь?! Ахх... Ты полез рукой прямо туда... Это же так..."
             Max_02 "Приятно? Это ты хотела сказать?"
             Alice_06 "Д-а-а... То есть, я хотела сказать... неправильно! Ммм..."
             Max_01 "Хочешь, чтобы я перестал это делать?"
 
             # after-club-bath01-max&alice-01-f + after-club-bath02a-max&alice-01
-            scene BG after-club-bath01
-            show Alice after-club-bath 02-01a
-
+            $ var_pose = '02a'
+            scene alice_in_bath_02
             Alice_09 "Хочу... ухх... чтобы ты продолжал... Как же хорошо... Ты этому на своих курсах массажа научился?!"
             Max_03 "Считай, да. Давно хотел попрактиковаться в этом!"
             menu:
@@ -2622,15 +2624,14 @@ label alice_towel_after_club:
                     pass
 
             # after-club-bath03a-max&alice-02-f + after-club-bath03a-max&alice-02
-            scene BG char Alice after-club-bath 03a
-            show Alice after-club-bath 03-02a
-
+            $ var_pose = '03a'
+            scene alice_in_bath_03
             Alice_10 "Ах! Вот чёрт, Макс! Да-а-а... это так классно... быстрее..."
             Max_04 "{m}Алиса так приятно постанывает... А уж мне не менее приятно трахать эту нежную киску пальцами. Может быть, она даже кончит, если я ускорюсь...{/m}"
 
             # after-club-bath01-max&alice-01-f + after-club-bath03a-max&alice-01
-            scene BG after-club-bath01
-            show Alice after-club-bath 03-01a
+            $ var_pose = '03a'
+            scene alice_in_bath_02
 
             Alice_11 "Да, Макс, да! Я кончаю... загони свои шаловливые пальчики поглубже... да... Ох... Класс!"
 
@@ -2641,9 +2642,8 @@ label alice_towel_after_club:
             Max_09 "Вот об этом я и говорю, ты очень неблагодарно себя ведёшь. Совершенно не хочешь меня порадовать в ответ..."
 
             # after-club-bath01-max&alice-01-f + after-club-bath02b-max&alice-01
-            scene BG after-club-bath01
-            show Alice after-club-bath 02-01b
-
+            $ var_pose = '02b'
+            scene alice_in_bath_02
             Alice_06 "Нет, я хочу... Ахх... но это ведь так... неправильно. Ммм..."
             Max_02 "Может, мне помассировать твои ножки, чтобы тебя это не так напрягало?"
             menu:
@@ -2652,9 +2652,8 @@ label alice_towel_after_club:
                     pass
 
             # bath-talk-03-max&alice-01-f + after-club-bath03b-max&alice-01
-            scene BG char Alice bath-talk-03-f
-            show Alice after-club-bath 03-01b
-
+            $ var_pose = '03'
+            scene alice_in_bath_01
             Alice_07 "О да... Наши с тобой пальчики сегодня творят чудеса! Расшалились не на шутку. Как же меня это всё заводит..."
             Max_03 "Хочешь узнать, как твои ножки любят шалить?"
             menu:
@@ -2663,16 +2662,14 @@ label alice_towel_after_club:
                     pass
 
             # after-club-bath04b-max&alice-02-f + after-club-bath04b-max&alice-02
-            scene BG char Alice after-club-bath 04b
-            show Alice after-club-bath 04-02b
-
+            $ var_pose = '04b'
+            scene alice_in_bath_03
             Alice_10 "Ах! Да-а-а... это так классно... чувствовать твой большущий член... Я и не думала, что тебе понравится такое!"
             Max_04 "Как могут не нравится прикосновения твоих красивых и нежных ног... Особенно к члену!"
 
             # bath-talk-03-max&alice-01-f + after-club-bath04b-max&alice-01
-            scene BG char Alice bath-talk-03-f
-            show Alice after-club-bath 04-01b
-
+            $ var_pose = '04'
+            scene alice_in_bath_01
             Alice_09 "Ммм... Да, Макс, продолжай! Кажется, я скоро кончу... Ахх... ты сводишь меня с ума! Ох..."
             Max_05 "{m}Алиса так приятно постанывает и всё глубже проникает пальцами в свою киску... Наверняка представляет, как я её трахаю! Вот бы до этого дошло...{/m}"
             Alice_11 "Ох, Макс... да, да! Я... кончаю... Ухх... Кажется, я не чувствую своих ног... всё..."
@@ -2684,17 +2681,15 @@ label alice_towel_after_club:
         Max_02 "Ну вот, можешь же быть хорошей девочкой, хоть недолго."
 
         # bath-cun-02 + after-club-bathbj01-max&alice-01
-        scene BG bath-cun-02
-        show Alice after-club-bath bj-01
-
+        $ var_pose = '01'
+        scene alice_in_bath_cun
         menu:
             Alice_05 "Мне понравилось, как ты меня \"наказал\", Макс! И я хочу, чтобы ты тоже кончил..."
             "Ох! Тогда тебе стоит быстрее работать рукой...":
 
                 # bath-talk-03-max&alice-01-f + after-club-bathbj01-max&alice-01a
-                scene BG char Alice bath-talk-03-f
-                show Alice after-club-bath bj-01a
-
+                $ var_pose = '01'
+                scene alice_in_bath_01
                 menu:
                     Alice_04 "Так достаточно быстро? Ну и вымахал же у тебя такой член, Макс! Нравится? Не сдерживайся, а то у меня начинает уставать рука..."
                     "{i}кончить{/i}":
@@ -2704,15 +2699,13 @@ label alice_towel_after_club:
                 $ added_mem_var('bath_tongue')
                 Alice_08 "Честно говоря, я еле сдерживалась, чтобы не начать именно так! Но раз ты настаиваешь..."
 
-                if renpy.random.randint(0, 1):
-                    # after-club-bath02a-max&alice-02-f + after-club-bathbj01-max&alice-02
-                    scene BG char Alice after-club-bath 02a
-                    show Alice after-club-bath bj-02
-
+                # after-club-bath02a-max&alice-02-f + after-club-bathbj01-max&alice-02
+                # after-club-bathbj01-max&alice-02a-f + after-club-bathbj01-max&alice-02a
+                if random_choice([True, False]):
+                    scene alice_in_bath_bj
                 else:
-                    # или after-club-bathbj01-max&alice-02a-f + after-club-bathbj01-max&alice-02a
-                    scene BG char Alice after-club-bath bj-02a
-                    show Alice after-club-bath bj-02a
+                    $ var_pose = '02a'
+                    scene alice_in_bath_bj_01
 
                 Max_20 "{m}О да, сестрёнка... Она так сладко скользит своим языком по всей длине моего члена! И про головку не забывает... Ухх...{/m}"
                 menu:
@@ -2733,10 +2726,8 @@ label alice_towel_after_club:
     label .cum_breast:
 
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-06 + after-club-bathbj01-max&alice-06a
-        scene BG char Alice after-club-bath bj-03
-        show Alice after-club-bath bj-06
-        show FG Alice after-club-bath bj-06
-
+        $ var_pose = '06'
+        scene alice_in_bath_cum
         Alice_09 "Ого, сколько спермы... Ты заляпал мне всю грудь! Теперь мыться надо..."
         Max_03 "А ты разве не для этого ванну решила принять?"
         Alice_06 "Да, точно... Мы же никому не станем рассказывать, что тут было?"
@@ -2751,10 +2742,8 @@ label alice_towel_after_club:
     label .cum_face:
 
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-05 + after-club-bathbj01-max&alice-05a
-        scene BG char Alice after-club-bath bj-03
-        show Alice after-club-bath bj-05
-        show FG Alice after-club-bath bj-05
-
+        $ var_pose = '05'
+        scene alice_in_bath_cum
         Alice_06 "Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"
         Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."
@@ -2770,20 +2759,21 @@ label alice_towel_after_club:
 
     label .not_even_close:
         # пройден "трезвый" путь с фут-джобом у ТВ
-        scene BG char Alice bath-talk-03-f
-        show Alice after-club-bath bj-01a
         # bath-talk-03-max&alice-01-f + after-club-bathbj01-max&alice-01a
+        $ var_pose = '01'
+        scene alice_in_bath_01
         Alice_08 "Кажется, я знаю, что с этим поможет... Смотри, не упади от наслаждения!"
-        scene BG char Alice after-club-bath bj-03
-        show Alice after-club-bath bj-03
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-03
+        $ var_pose = '03'
+        scene alice_in_bath_bj
         menu:
             Max_21 "Ох, Алиса! Упасть здесь действительно есть от чего! Какие у тебя нежные губы... Д-а-а... У тебя хорошо получается, сестрёнка... Давай поактивнее... Как же приятно, д-а-а..."
             "{i}сдерживаться{/i}" ('sex', mgg.sex * 4, 90):
                 if rand_result:
                     # (Удалось сдержаться!)
-                    show Alice after-club-bath bj-03a
                     # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-03a
+                    $ var_pose = '03a'
+                    scene alice_in_bath_bj
                     menu:
                         Max_22 "[restrain!t]Вот чёрт, Алиса! Ты делаешь это просто потрясающе! Да, продолжай вот так... Ещё быстрее... Вот умница! Я держусь из последних сил... Вот-вот кончу..."
                         "{i}кончить ей на лицо{/i}":
@@ -2798,10 +2788,8 @@ label alice_towel_after_club:
     label .no_restrain:
         # не сджерждался. как в варианте "кончить ей на лицо"
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-05 + after-club-bathbj01-max&alice-05a
-        scene BG char Alice after-club-bath bj-03
-        show Alice after-club-bath bj-05
-        show FG Alice after-club-bath bj-05
-
+        $ var_pose = '05'
+        scene alice_in_bath_cum
         Alice_06 "[norestrain!t]Макс! Ну то за фигня! Ты кончил мне прямо на лицо!"
         Max_07 "А ты хотела как-то по-другому?"
         Alice_13 "Ну, предупредил бы хоть, чтобы в глаза не попало... Теперь мыться надо..."

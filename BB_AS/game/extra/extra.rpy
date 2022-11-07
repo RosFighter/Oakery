@@ -127,6 +127,23 @@ define mems = [
             Memories('ann_dressed.balcony', 'ann-01-hug', 'set_ann_dressed_balcony', _("Не надо печалиться"), "'balcony_hug' in persistent.mems_var"),
         ],
         [
+            Memories('ev_v92_003', 'alice-01-cshop',        'set_ev_v92_003',   _("В магазин с Алисой")),
+            Memories('ev_v92_005', 'alice-02-spidernight',  'set_ev_v92_005',   _("С добрым утром"), "renpy.seen_label('ev_v92_005.bra_fall')"),
+            Memories('ev_v92_006', 'alice-03-spidernight',  'set_ev_v92_005',   _("Афера века")),
+            Memories('ev_v92_007', 'alice-04-spidernight',  'set_ev_v92_005',   _("Сама напросилась")),
+            Memories('ev_v92_009', 'alice-02-spidershower', 'set_ev_v92_009',   _("Так себе охранник")),
+            Memories('ev_v92_010', 'alice-03-spidershower', 'set_ev_v92_009',   _("Хоть на что-то сгодился")),
+            Memories('ev_v92_011', 'alice-04-spidershower', 'set_ev_v92_009',   _("Пока паук где-то рядом...")),
+            Memories('ev_v92_015', 'alice-05-spidernight',  'set_ev_v92_015',   _("Лучшее пробуждение с Алисой")),
+            Memories('ev_v92_017', 'alice-02-dominance',    'set_ev_v92_017a',  _("Лучше делать то, что она хочет..."), "renpy.seen_label('ev_v92_017.caressing_tongue') and renpy.seen_label('ev_v92_017.cunnilingus')"),
+            Memories('ev_v92_017', 'alice-03-dominance',    'set_ev_v92_017b',  _("Покорность будет вознаграждаться..."), "renpy.seen_label('ev_v92_017.caressing_tongue_drink') and renpy.seen_label('ev_v92_017.cunnilingus')"),
+            Memories('ev_v92_016.smoke_pun', 'alice-02-privatepun',   'set_ev_v92_016',   _("Выбери своё наказание"), "renpy.seen_label('ev_v92_016.blow_job')"),
+            Memories('ev_v92_019', 'alice-05-massagetv',    'set_ev_v92_019',   _("Вот и посмотрели ТВ"), "renpy.seen_label('ev_v92_019.drink')"),
+            Memories('ev_v92_020', 'alice-01-bathroombj',   'set_ev_v92_020',   _("В ванную комнату за минетом!")),
+            Memories('ev_v92_021', 'alice-01-showerrub',    'set_ev_v92_021',   _("Меня ждёт кое-что особенное...")),
+            Memories('ev_v92_022', 'alice-05-spidershower', 'set_ev_v92_021',   _("Самый хитрый охранник"), "renpy.seen_label('ev_v92_022.side_max')"),
+        ],
+        [
             Memories('lessons_from_Eric.first_bj', 'ann&eric-bj01', 'set_lessons_Eric_01', _("Урок по минету от мамы и Эрика")),
             Memories('lessons_from_Eric.second_bj', 'ann&eric-bj02', 'set_lessons_Eric_01', _("Так близко к маминой попке")),
             Memories('lessons_from_Eric.third_bj', 'ann&eric-bj03', 'set_lessons_Eric_01', _("Глубокий минет в мамином исполнении")),
@@ -156,8 +173,8 @@ define photo_album = [
         ("01-Alice", _("Первые снимки для блога Алисы")),
     ]
 
-define cur_starts = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-define displayed_group = [1, 1, 1, 1, 1, 1, 0, 0, 0]
+define cur_starts = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+define displayed_group = [1, 1, 1, 1, 1, 1, 1, 0, 0, 0]
 default st_gallery =  'mem'
 
 define next_sh = False

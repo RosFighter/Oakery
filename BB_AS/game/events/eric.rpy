@@ -301,7 +301,7 @@ label eric_ann_tv:
         $ renpy.show('porn_'+film+' 01_02', at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     elif eric.daily.tv_sex == 2:
-        $ renpy.show('tv serial 0'+str(renpy.random.randint(1, 7))+'-0'+str(renpy.random.randint(1, 3)), at_list=[tv_screen,])
+        $ renpy.show('tv serial 0'+str(random_randint(1, 7))+'-0'+str(random_randint(1, 3)), at_list=[tv_screen,])
         $ renpy.show('Eric tv-watch 01'+eric.dress)
     else:
         ### Дальний план, поза, на которой остановилось подглядывание
@@ -677,7 +677,7 @@ label eric_ann_fuck_glasses_sleeping:
     # подглядываем, Анна может быть с очками для сна раз в неделю
 
     # $ renpy.dynamic('precum')
-    $ precum = renpy.random.randint(0, 1)   # 50% шанс, что Эрик кончит во время секса
+    $ precum = random_randint(0, 1)   # 50% шанс, что Эрик кончит во время секса
     $ var_pose = random_choice(['01', '02'])
 
     # annroom-bedann-01 + ann&eric-sex00 + Чулки + annroom-bedann-01-voyeur
@@ -1010,7 +1010,7 @@ label eric_ann_shower:
         if not rand_result and flags.voy_stage<1:
             jump .not_luck
         $ ann.dress_inf = '00a'
-        scene BG shower-03
+        scene BG bathroom-shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Eric shower-alt '+str(__r2))
         show FG shower-water
@@ -1061,7 +1061,7 @@ label eric_ann_shower:
             jump .not_luck
 
         $ ann.dress_inf = '00a'
-        scene BG shower-01
+        scene BG bathroom-shower-01
         $ renpy.show('Eric shower-closer '+__r2)
         show FG shower-closer
         if __r1 == '01':
@@ -1094,7 +1094,7 @@ label eric_ann_shower:
         jump Waiting
 
     label .not_luck:
-        scene BG shower-01
+        scene BG bathroom-shower-01
         if __r1 == '01':
             show Eric shower-closer seen01
         else:
@@ -1626,7 +1626,7 @@ label eric_ann_resting:
         Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}"
         "{i}заглянуть в окно{/i}":
             scene BG char Eric bed-01
-            $ renpy.show('Eric relax2 0'+str(renpy.random.randint(1, 2))+eric.dress)
+            $ renpy.show('Eric relax2 0'+str(random_randint(1, 2))+eric.dress)
             menu:
                 Max_01 "{m}Что, Эрик, сегодня ты не такой активный, как обычно? С тобой рядом такая женщина, а у тебя голова чем-то другим забита...{/m}"
                 "{i}уйти{/i}":
@@ -1660,7 +1660,7 @@ label eric_ann_try_fucking:
         Max_07 "{m}Из комнаты мамы не доносится почти никаких звуков. Похоже, Эрику совершенно не до развлечений...{/m}"
         "{i}заглянуть в окно{/i}":
             scene BG char Eric bed-01
-            $ renpy.show('Eric nosex 0'+str(renpy.random.randint(1, 2)))
+            $ renpy.show('Eric nosex 0'+str(random_randint(1, 2)))
             Max_02 "{m}Ну как на такую шикарную женщину может не стоять?! Я не понимаю...{/m}" nointeract
             menu:
                 "{i}уйти{/i}":

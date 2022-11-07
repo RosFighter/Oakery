@@ -28,10 +28,10 @@ label cam0_kira_shower:
         $ kira.dress_inf = '00a'
         if 'kira_shower' not in cam_flag:
             $ __pose = cam_poses_manager(kira, [x for x in range(1,9)])
-            # $ __pose = renpy.random.randint(1, 8)
+            # $ __pose = random_randint(1, 8)
         else:
             $ __pose = cam_poses_manager(kira, [x for x in range(1,7)]) if __pose < 7 else cam_poses_manager(kira, [7,8])
-            # $ __pose = renpy.random.randint(1, 6) if __pose < 7 else renpy.random.randint(7, 8)
+            # $ __pose = random_randint(1, 6) if __pose < 7 else random_randint(7, 8)
         $ renpy.show('Kira cams shower 0'+str(__pose), at_list=[laptop_screen])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
@@ -434,7 +434,7 @@ label cam1_return_from_club:
 
 label cam0_kira_bath_with_eric:
     # cam-bath-eric&kira-hj01 или cam-bath-eric&kira-lick01
-    if renpy.random.randint(1, 2):
+    if random_randint(1, 2):
         show Eric cams bath-kira hj01 at laptop_screen
     else:
         show Eric cams bath-kira lick01 at laptop_screen
@@ -445,7 +445,7 @@ label cam0_kira_bath_with_eric:
         Max_01 "{m}Повезло Эрику... Тётя Кира умеет ублажать мужчин и ещё как!{/m}"   #если Макс сдал Киру
 
     # cam-bath-eric&kira-bj01 или cam-bath-eric&kira-bj02
-    if renpy.random.randint(1, 2):
+    if random_randint(1, 2):
         show Eric cams bath-kira bj01 at laptop_screen
     else:
         show Eric cams bath-kira bj02 at laptop_screen
@@ -455,7 +455,7 @@ label cam0_kira_bath_with_eric:
         Max_07 "{m}Со стороны кажется, что для Киры это самое обыденное дело! Она так легко управляется с членом Эрика, хотя это и не сложно, после моего-то...{/m}"   #если Макс сдал Киру
 
     # cam-bath-eric&kira-cum01 или cam-bath-eric&kira-cum02
-    if renpy.random.randint(1, 2):
+    if random_randint(1, 2):
         show Eric cams bath-kira cum01 at laptop_screen
     else:
         show Eric cams bath-kira cum02 at laptop_screen

@@ -28,7 +28,7 @@ label cam0_lisa_shower:
                 Max_09 "{m}Лизы не видно через эту камеру...{/m}"
     else:
         $ lisa.dress_inf = '00a'
-        $ renpy.show('Lisa cams shower 0'+str(renpy.random.randint(1, 9)), at_list=[laptop_screen])
+        $ renpy.show('Lisa cams shower 0'+str(random_randint(1, 9)), at_list=[laptop_screen])
         show other cam-shower-water at laptop_screen
         show FG cam-shum-act at laptop_screen
         if 'lisa_shower' not in cam_flag:

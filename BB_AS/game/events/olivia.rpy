@@ -46,7 +46,7 @@ label olivia_lisa_tv:
                 # tv-mass-05 + tv-watch-02-max-(01a/01b) + (tv-watch-02-lisa&olivia-(01/01a) или tv-watch-02-lisa&olivia-(02/02a) или tv-watch-02-lisa&olivia-(03/03a))
                 scene BG tv-mass-05
                 $ renpy.show('Max tv 02'+mgg.dress)
-                $ renpy.show('Olivia night-tv 02-0'+str(renpy.random.randint(1, 3))+lisa.dress)
+                $ renpy.show('Olivia night-tv 02-0'+str(random_randint(1, 3))+lisa.dress)
                 if lisa.dcv.special.stage < 4:
                     Max_04 "{m}Красота! Сидеть вместе с ними на диване было бы куда интереснее... Можно было бы поглядывать одним глазком на них, а другим на экран. Эх, лучше здесь не задерживаться, они в любой момент могут меня заметить...{/m}"
                 else:
@@ -124,7 +124,7 @@ label olivia_first_meeting:
     Max_07 "Я бы с радостью, да только вот кое-что будет вас смущать..."
 
     # hugging-sun-01 + sun-incoming-03-lisa&olivia-01 + sun-incoming-03-max-(01a/01b)
-    scene BG char Alice hugging sun-01
+    scene hugging-sun-01
     show Olivia incoming 03
     $ renpy.show('Max incoming 01'+mgg.dress)
     Olivia_03 "Да ладно тебе прикрываться... Меня это нисколько не смущает! Честно говоря, я не видела таких больших ещё ни разу... У моего папы меньше раза в два, если не в три, да и у моего парня... Ой. Это я вслух сказала сейчас?!"
@@ -451,7 +451,7 @@ label olivia_first_night_out_with:
     Lisa_01 "А Макс успокаивается наконец..."
     # tv-kiss-03 + tv-watch-06-lisa&olivia-(01/02) + tv-watch-06-max-01
     scene BG tv-kiss-03
-    $ renpy.show('Olivia night-tv 06-0'+str(renpy.random.randint(1, 2))+'b')
+    $ renpy.show('Olivia night-tv 06-0'+str(random_randint(1, 2))+'b')
     show Max night-tv 06-01
     Max_04 "Самую малость."
     Olivia_03 "Это я просто немного поскромнее уселась, чтобы у Макса косоглазие не развилось. Мальчики - они такие, он даже если будет стараться смотреть на экран, глаза всё равно потянутся в сторону голых девичьих прелестей."
@@ -532,7 +532,7 @@ label olivia_second_night_out_with:
     Max_02 "Это я вас таким образом от темы с Алексом решил отвлечь."
     # tv-kiss-03 + tv-watch-06-lisa&olivia-(01/02) + tv-watch-06-max-01
     scene BG tv-kiss-03
-    $ renpy.show('Olivia night-tv 06-0'+str(renpy.random.randint(1, 2))+'b')
+    $ renpy.show('Olivia night-tv 06-0'+str(random_randint(1, 2))+'b')
     show Max night-tv 06-01
     Lisa_03 "Фух... А то мне сразу в голову всякое невероятное полезло!"
     Olivia_05 "Ха! Это было смешно, Макс! Я рада, что оказалась в такой тёплой компании. Надеюсь, так будет и дальше..."
@@ -607,7 +607,7 @@ label olivia_repeatable_night_out_with:
     # $ renpy.show('Olivia night-tv 03-02'+lisa.dress)
     # show Max night-tv 03-01
 
-    if renpy.random.randint(0, 1):
+    if random_randint(0, 1):
         #вариант 1
         Olivia_05 "Ты бы поосторожнее запрыгивал на диван, Макс! А то своей огромной штуковиной по Лизе ещё попадёшь! Тебе же потом придётся объяснять всем своим, откуда у неё фингал."
         Max_03 "Уж извините... Со мной лучше ртом не зевать!"
@@ -625,7 +625,7 @@ label olivia_repeatable_night_out_with:
     $ renpy.show('tv serial '+film+'-01', at_list=[tv_screen,])
     $ renpy.show('Olivia night-tv 01-02'+lisa.dress)
 
-    if renpy.random.randint(0, 1):
+    if random_randint(0, 1):
         #вариант 1
         Olivia_04 "О! Давайте это посмотрим... Жалко, что не на самое начало серии попали, а то как-то совсем уж непонятно, что там происходит."
         Lisa_01 "Непонятно, но лично меня заинтриговало... Мне интересно, что дальше будет."
@@ -640,7 +640,7 @@ label olivia_repeatable_night_out_with:
     scene BG tv-mass-01
     $ renpy.show('Olivia night-tv 04-01'+lisa.dress)
 
-    if renpy.random.randint(0, 1):
+    if random_randint(0, 1):
         #вариант 1
         Olivia_02 "Здорово, что можно просто вот так, побездельничать в пустом и шикарном доме... Да ещё и с такими классными ребятами, как вы!"
         Lisa_03 "Ага. Особенно здорово Максу. Мальчики, наверно, только о таком и мечтают?!"
@@ -668,7 +668,7 @@ label olivia_repeatable_night_out_with:
 
     # tv-kiss-03 + tv-watch-06-lisa&olivia-(01(a)/02(a)) + tv-watch-06-max-01
     scene BG tv-kiss-03
-    $ renpy.show('Olivia night-tv 06-0'+str(renpy.random.randint(1, 2))+lisa.dress)
+    $ renpy.show('Olivia night-tv 06-0'+str(random_randint(1, 2))+lisa.dress)
     show Max night-tv 06-01
     Max_07 "Так не всем же может повезти! Кто-нибудь да огребёт... возможно..."
     Olivia_04 "Твоя правда. Ладно, тихо... Мы смотреть будем или обсуждать?"
@@ -1077,7 +1077,7 @@ label olivia_ann_meeting:
     Max_03 "У них не семья, а праздник какой-то!"
 
     # hugging-sun-01 + sun-incoming-03-ann-01 + sun-incoming-03-lisa&olivia-02 + sun-incoming-03-max-(01a/01b)
-    scene BG char Alice hugging sun-01
+    scene hugging-sun-01
     show Ann incoming 04
     show Olivia incoming 04a
     $ renpy.show('Max incoming 01'+mgg.dress)
@@ -1090,9 +1090,6 @@ label olivia_ann_meeting:
     Ann_01 "Конечно, Оливия. Если тебя не смущает Макс, который только на тебя и пялится, то я не против. Можешь приходить в любое время! Ну а я пойду по делам, а то уже достаточно позагорала. Развлекайтесь!"
 
     # hugging-sun-01 + sun-incoming-03-lisa&olivia-02 + sun-incoming-03-max-(01a/01b)
-    # scene BG char Alice hugging sun-01
-    # show Olivia incoming 04a
-    # $ renpy.show('Max incoming 01'+mgg.dress)
     hide Ann with diss6
 
     Max_02 "Как мне кажется, всё прошло довольно хорошо."

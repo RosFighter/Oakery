@@ -297,11 +297,11 @@ label ann_tv_casual_0:
     # $ renpy.dynamic('mood', 'ch')
 
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
-    $ var_film = 'serial 0'+str(renpy.random.randint(1, 7))+'-'
+    $ var_film = 'serial 0'+str(random_randint(1, 7))+'-'
     $ var_stage = '01'
     scene tv_watch ann mgg
     # scene BG tv-watch-01
-    # $ renpy.show('tv serial 0'+str(renpy.random.randint(1, 7))+'-01', at_list=[tv_screen,]) # tv_screen
+    # $ renpy.show('tv serial 0'+str(random_randint(1, 7))+'-01', at_list=[tv_screen,]) # tv_screen
     # show Ann tv-watch 01
     # $ renpy.show('Max tv-watch 01'+mgg.dress)
     Max_02 "{m}Мама так близко... В одном полотенце... Даже не знаю о чём сериал, о нём я думать точно не могу...{/m}"
@@ -419,7 +419,7 @@ label ann_tv_casual_0:
 label ann_tv_casual_1:
     # $ renpy.dynamic('film')
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
-    $ var_film = 'serial 0' + str(renpy.random.randint(1, 7))+'-'
+    $ var_film = 'serial 0' + str(random_randint(1, 7))+'-'
     $ var_stage = '01'
     scene tv_watch ann mgg
     # scene BG tv-watch-01
@@ -503,7 +503,7 @@ label ann_tv_casual_1:
 label ann_tv_casual_r:
     # $ renpy.dynamic('film')
     # tv-watch-01 + serial_(01/02/03/04/05/06/07)_01 + tv-watch-01-ann-01 + tv-watch-01-max-(01/01a/01b)
-    $ var_film = 'serial 0' + str(renpy.random.randint(1, 7))+'-'
+    $ var_film = 'serial 0' + str(random_randint(1, 7))+'-'
     $ var_stage = '01'
     scene tv_watch ann mgg
     # scene BG tv-watch-01
@@ -561,7 +561,7 @@ label ann_tv_casual_r:
     Ann_08 "У тебя это очень хорошо получается... Такая лёгкость наступает. С таким талантом ты можешь много достичь в этом деле!"
     menu:
         Max_02 "Очень надеюсь, что так и будет."
-        "{i}продолжать массаж{/i}" ('mass', mgg.massage) if (ann.dcv.feature.stage < 7 or any([
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage * 2) if (ann.dcv.feature.stage < 7 or any([
                                     all([get_rel_eric()[0] < 0, not ann.flags.showdown_e]),
                                     get_rel_eric()[0] == 2 and not all([flags.voy_stage == 8, poss['control'].used(10)]),
                                     get_rel_eric()[0] == 3 and not all([flags.voy_stage > 11, poss['control'].used(14)]),
@@ -610,7 +610,7 @@ label ann_tv_casual_r:
 
 label ann_tv_continuation_massage:
     # $ renpy.dynamic('film')
-    $ film = '0' + str(renpy.random.randint(1, 7))
+    $ film = '0' + str(random_randint(1, 7))
     # after-club-s08a-f + tv-ero-03-max-(01a/01b)-ann-01 + tv-ero-03-ann-01a
     scene ann_tv_ero_04 towel
     # scene BG after-club-s08a-f
@@ -661,7 +661,7 @@ label ann_tv_continuation_massage:
             jump .end
 
     menu .massage:
-        "{i}массировать маме спину{/i}" ('mass', mgg.massage): #(навык массажа)
+        "{i}массировать маме спину{/i}" ('mass', mgg.massage * 2): #(навык массажа)
             if rand_result:
                 # (Маме понравился массаж!)
                 # tv-mass-07 + tv-ero-06-max-(02a/02b)-ann-02
@@ -670,7 +670,7 @@ label ann_tv_continuation_massage:
                 Ann_03 "[ann_good_mass!t]Да, Макс... Твои руки приносят мне огромное удовольствие. В смысле, у тебя получается очень хорошо... Как будто сходила к профессионалу..."
                 Max_06 "{m}Вау... Какая у неё шикарная и почти голая попка! Блин, как же хочется прижаться к ней членом, прямо по серединке, и тереться... Но лучше не отвлекаться, а то запросто можно массаж запороть!{/m}" nointeract
                 menu:
-                    "{i}продолжить массаж{/i}" ('mass', mgg.massage): #(навык массажа)
+                    "{i}продолжить массаж{/i}" ('mass', mgg.massage * 1.5): #(навык массажа)
                         if rand_result:
                             # (Маме понравился массаж!)
                             # tv-ero-07 + tv-ero-07-max-(01a/01b)-ann-01
@@ -1284,19 +1284,19 @@ label ann_gift_fit1:
     Max_04 "Я уверен, что будет..."
     Ann_05 "Спасибо, что делаешь маме приятно... Иди ко мне, я тебя обниму, как следует..."
     # annroom-morning-01 + (hugging-annroom-01-max-(01a/01b)-ann-01b или hugging-annroom-02-max-(01a/01b)-ann-01b)
-    # $ renpy.show('Ann hugging morning-annroom 0'+str(renpy.random.randint(1, 2))+'-1c'+mgg.dress)
+    # $ renpy.show('Ann hugging morning-annroom 0'+str(random_randint(1, 2))+'-1c'+mgg.dress)
     $ var_pose, var_dress = random_choice(['01', '02']), 'c'
     scene Ann_gift hug1
     Max_05 "{m}О да... У мамы такое потрясающее тело! Так приятно прижиматься к ней... её упругой груди... Что точно хорошо в новой одежде, так это то, что мне прекрасно видны очертания её сосочков через эту тонкую ткань!{/m}"
     # annroom-morning-01 + (hugging-annroom-01-max-(02a/02b)-ann-02b или hugging-annroom-02-max-(02a/02b)-ann-02b)
-    # $ renpy.show('Ann hugging morning-annroom 0'+str(renpy.random.randint(1, 2))+'-2c'+mgg.dress)
+    # $ renpy.show('Ann hugging morning-annroom 0'+str(random_randint(1, 2))+'-2c'+mgg.dress)
     scene Ann_gift hug2
     menu:
         Ann_04 "Ну всё, мой дорогой, не будем же мы так часами стоять обниматься, пора делами заняться..."
         "Давай ещё?! Ты такая классная!":
             Ann_05 "Ты сегодня очень мил, Макс! За это я тебя даже в щёчку поцелую, чтобы ты почаще старался меня радовать..."
             # annroom-morning-01 + (hugging-annroom-01-max-(03a/03b)-ann-03b или hugging-annroom-02-max-(03a/03b)-ann-03b)
-            # $ renpy.show('Ann hugging morning-annroom 0'+str(renpy.random.randint(1, 2))+'-3c'+mgg.dress)
+            # $ renpy.show('Ann hugging morning-annroom 0'+str(random_randint(1, 2))+'-3c'+mgg.dress)
             scene Ann_gift hug3
             Max_06 "{m}Ухх, а как хочется притянуть маму к себе за её аппетитную и подтянутую попку... Ммм... Вот это было бы очень сладко!{/m}"
             menu:
@@ -1373,7 +1373,7 @@ label erofilm2_1:
     scene ann_tv_ero_01
     # scene BG tv-mass-03
     # $ renpy.show('Max tv-ero 01'+mgg.dress)
-    # $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
+    # $ renpy.show('Ann tv-ero 01-0'+str(random_randint(1, 3)))
     show screen Cookies_Button
     menu:
         Max_08 "{m}Зря я это представил... Если мама увидит мой стояк, то просмотр для меня точно закончится. Хорошо, что есть проверенный и приятный способ его скрыть...{/m}"
@@ -1421,7 +1421,7 @@ label erofilm2_1:
     # $ renpy.show('Max tv-ero 03-01'+mgg.dress)
     menu:
         Max_05 "{m}Уххх... А у мамы ведь полотенце сползло... И она это ещё не заметила! Должно быть, мой массаж действительно её хорошо расслабил! Надо продолжать... Может оно тогда ещё больше спадёт...{/m}"
-        "{i}продолжать массаж{/i}" ('mass', mgg.massage):
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage * 2):
             pass
     if rand_result:
         # (Маме понравился массаж!)
@@ -1552,7 +1552,7 @@ label erofilm2_1:
         scene ann_tv_ero_01
         # scene BG tv-mass-03
         # $ renpy.show('Max tv-ero 01'+mgg.dress)
-        # $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
+        # $ renpy.show('Ann tv-ero 01-0'+str(random_randint(1, 3)))
         show screen Cookies_Button
     else:
         pass
@@ -1648,7 +1648,7 @@ label erofilm2_2:
     scene ann_tv_ero_01
     # scene BG tv-mass-03
     # $ renpy.show('Max tv-ero 01'+mgg.dress)
-    # $ renpy.show('Ann tv-ero 01-0'+str(renpy.random.randint(1, 3)))
+    # $ renpy.show('Ann tv-ero 01-0'+str(random_randint(1, 3)))
     show screen Cookies_Button
     Ann_17 "Так, Макс... В этот раз представим, что я ничего не слышала, но за подобные мысли я и наказать могу. И даже представлять меня не вздумай в одном лишь фартуке!"
     menu:
@@ -1724,7 +1724,7 @@ label erofilm2_2:
                     else:
                         jump .unlucky
 
-        "{i}продолжать массаж{/i}" ('mass', mgg.massage):
+        "{i}продолжать массаж{/i}" ('mass', mgg.massage * 2):
             if rand_result:
                 # (Маме понравился массаж!)
                 # tv-ero-04 + tv-ero-04-max-(01a/01b)-ann-01

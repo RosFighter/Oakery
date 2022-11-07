@@ -168,14 +168,16 @@ init python:
             if name == 'sleep':
                 dress = alice.clothes.sleep.GetCur().suf
                 inf   = alice.clothes.sleep.GetCur().info
-                if alice.req.result == 'sleep':
-                    alice.sleeptoples = True
-                    dress += 'a'
-                    inf = {'a':'02ga', 'b':'02ja'}[alice.clothes.sleep.GetCur().suf]
-                elif alice.req.result == 'naked':
+                if alice.req.result == 'naked':
+                    # договорённость спать голой
                     alice.sleepnaked = True
                     dress = ''
                     inf = '00a'
+                elif alice.req.result == 'sleep'  or alice.flags.shower_max > 2:
+                    # договорённость спать топлес или после третьего совместного душа с Максом
+                    alice.sleeptoples = True
+                    dress += 'a'
+                    inf = {'a':'02ga', 'b':'02ja'}[alice.clothes.sleep.GetCur().suf]
             elif name in ['shower', 'bath']:
                 inf = '04aa'
             elif name in ['read', 'breakfast', 'dinner', 'dishes']:
@@ -197,13 +199,13 @@ init python:
                     if not ('09:00' <= tm < '20:00'):
                         inf += 'a'
             elif name == 'sun':
-                if alice.req.result == 'bikini' and check_only_home():
+                if alice.req.result == 'bikini' and check_only_home('alice'):
                     # требование - купальник топлес
                     dress, inf = 'b', '03b'
                 else:
                     dress, inf = 'a', '03'
             elif name == 'swim':
-                if alice.req.result == 'bikini' and check_only_home():
+                if alice.req.result == 'bikini' and check_only_home('alice'):
                     dress = 'b'
                     inf = '03a1' if pose3_2 == '03' else '03b'
                 else:
@@ -466,7 +468,10 @@ init python:
     def setting_clothes_by_conditions():
         # Алиса
         alice.clothes.sleep.enable(0)       # обычное бельё для сна доступно всегда
-        alice.clothes.casual.enable(0)      # джинсы доступны всегда
+        if alice.flags.shower_max > 2:
+            alice.clothes.casual.disable(0) # после 3-го совместного душа джинсы блокируются
+        else:
+            alice.clothes.casual.enable(0)
         if 'pajamas' in alice.gifts:        # подарена пижамка
             alice.clothes.casual.enable(1)
         if 'kira' in chars:                 # приехала Кира

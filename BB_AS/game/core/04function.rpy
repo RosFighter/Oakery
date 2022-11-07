@@ -15,7 +15,7 @@ init python:
     # config.label_callback = label_callback
 
     config.layers.insert(1, 'wm')
-    random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
+    random_tab = [[random_randint(0, 99) for i in range(10)] for j in range(10)]
 
     def hide_say():
         if renpy.get_screen('say'):
@@ -268,7 +268,7 @@ init python:
 
 
     def RandomChance(chance): # прошло или нет применение навыка с указанным шансом
-        return renpy.random.randint(0, 999) < chance
+        return random_randint(0, 999) < chance
 
 
     def Skill(skill, rise, limit=100):
@@ -441,7 +441,7 @@ init python:
         else:
             k_earn = 600
         # рандомизация коэффициента
-        k_earn += renpy.random.randint(-25, 51)
+        k_earn += random_randint(-25, 51)
 
         # коэффициент количества камер
         if len(cameras) > 5:
@@ -460,7 +460,7 @@ init python:
         cycles = spent_time // 10 # расчет выполняется каждые 10 минут
 
         for i in range(cycles):
-            watchers = mgg.invited * renpy.random.randint(170, 250) / 60000.0 # количество привлеченных рекламмой зрителей
+            watchers = mgg.invited * random_randint(170, 250) / 60000.0 # количество привлеченных рекламмой зрителей
             watchers = round(watchers, 2)
 
             cam2.clear()
@@ -475,8 +475,8 @@ init python:
             for loc in locations:
                 num_room = 0
                 for room in locations[loc]:
-                    r1 = renpy.random.randint(0, 1)
-                    r2 = renpy.random.randint(600, 900)
+                    r1 = random_randint(0, 1)
+                    r2 = random_randint(600, 900)
                     for cam in room.cams:
                         # определим наличее персонажей в комнате
                         grow_list.clear()
@@ -639,6 +639,10 @@ init python:
                     # Алиса просыпалась утром от дрочки Максу,
                     # Алиса на трезвую голову делала Максу фут-джоб у ТВ >2 раз
                     AvailableActions['hidespider'].active = True
+                elif alice.flags.shower_max > 2:
+                    # после третьего совместного душа
+                    AvailableActions['hidespider'].active = True
+
             AvailableActions['searchciga'].active = all([alice.plan_name != 'smoke', alice.dcv.set_up.enabled, alice.dcv.set_up.done, '08:00' <= tm < '19:00', (not alice.flags.privpunish or 0 < GetWeekday(day) < 6), not flags.eric_wallet == 2])
 
         # ванная комната
@@ -1155,13 +1159,13 @@ init python:
             return
 
         if '06:00' <= tm < '11:00':
-            m_name = "morning1" if renpy.random.randint(1, 2) < 2 else "morning2"
+            m_name = "morning1" if random_randint(1, 2) < 2 else "morning2"
         elif '11:00' <= tm < '18:00':
-            m_name = "day1" if renpy.random.randint(1, 2) < 2 else "day2"
+            m_name = "day1" if random_randint(1, 2) < 2 else "day2"
         elif '18:00' <= tm < '22:00':
-            m_name = "evening1" if renpy.random.randint(1, 2) < 2 else "evening2"
+            m_name = "evening1" if random_randint(1, 2) < 2 else "evening2"
         else:
-            m_name = "night1" if renpy.random.randint(1, 2) < 2 else "night2"
+            m_name = "night1" if random_randint(1, 2) < 2 else "night2"
 
         renpy.music.play("audio/"+m_name+'.ogg', fadeout=0.5, fadein=1.0, if_changed=True)
 
@@ -1200,8 +1204,8 @@ init python:
     def random_outcome(value):
         if _in_replay:
             return True if value else False
-        # random_tab = [[renpy.random.randint(0, 99) for i in range(10)] for j in range(10)]
-        return random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < value
+        # random_tab = [[random_randint(0, 99) for i in range(10)] for j in range(10)]
+        return random_tab[random_randint(0, 9)][random_randint(0, 9)] < value
 
     def skill_outcome(skill, value, lim=100, d=1, bl=False):
         # результат применения навыка в меню выбора:
@@ -1234,11 +1238,11 @@ init python:
             return
         else:
             show_success_message()
-            rand_result = 1 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 0
+            rand_result = 1 if random_tab[random_randint(0, 9)][random_randint(0, 9)] < ch else 0
             if d > 1 and rand_result:
-                rand_result = 2 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 1
+                rand_result = 2 if random_tab[random_randint(0, 9)][random_randint(0, 9)] < ch else 1
             if d > 2 and rand_result > 1:
-                rand_result = 3 if random_tab[renpy.random.randint(0, 9)][renpy.random.randint(0, 9)] < ch else 2
+                rand_result = 3 if random_tab[random_randint(0, 9)][random_randint(0, 9)] < ch else 2
 
         increase = rand_result * 0.1 if rand_result else 0.05
         if skill in ['sex', 'kiss']:

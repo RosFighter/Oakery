@@ -236,7 +236,7 @@ label punishment_max:
                 Max_09 "Трусиха!"
 
         if max(punreason):
-            $ _r1 = renpy.random.randint(1, 3)
+            $ _r1 = random_randint(1, 3)
             if _r1 == 1:
                 Ann_18 "Ты не закончил, Макс. Продолжай..." nointeract
             elif _r1 == 2:
@@ -447,7 +447,7 @@ label punishment_lisa:
 
     $ mood = 0
 
-    $ lisa.dcv.punpause.set_lost(renpy.random.randint(3, 8))
+    $ lisa.dcv.punpause.set_lost(random_randint(3, 8))
     $ lisa.weekly.punished += 1
     if newpunishment==0:
         # Лиза стоит в одежде, Макс может вмешаться и прервать наказание (если получится)
@@ -583,7 +583,7 @@ label punishment_lisa:
 
     $ punlisa[0][3] = 1  # Лиза понесла наказание
     if punlisa[0][0] == 1:  # Макс умышленно сделал ошибку и Лизу наказали
-        $ punlisa[0][4] = renpy.random.randint(50, 300)  # подозрительность Лизы растет случайно от 5 до 30%
+        $ punlisa[0][4] = random_randint(50, 300)  # подозрительность Лизы растет случайно от 5 до 30%
 
     stop sound
     # сцена с наказанной Лизой
@@ -612,7 +612,7 @@ label punishment_alice:
 
     $ mood = 0
     $ alice.dcv.special.set_lost(3) # Анна забрала сигареты, поэтому Алиса пока не сможет курить
-    $ alice.dcv.punpause.set_lost(renpy.random.randint(5, 14))
+    $ alice.dcv.punpause.set_lost(random_randint(5, 14))
 
     $ alice.nopants = (alice.dress=="a" and alice.req.result=='nopants') or alice.dress=='b'
     $ alice.weekly.punished += 1
@@ -772,7 +772,7 @@ label punishment_alice:
 
     $ punalice[0][3] = 1  # Алиса понесла наказание
     if  punalice[0][0] > 0 and punalice[0][1] == 1:  # Макс шантажировал Алису и подставил её в этот же день
-        $ punalice[0][4] = renpy.random.randint(50, 300)  # подозрительность Алисы растет случайно от 5 до 30%
+        $ punalice[0][4] = random_randint(50, 300)  # подозрительность Алисы растет случайно от 5 до 30%
 
     stop sound
     # сцена с наказанной Алисой

@@ -104,7 +104,7 @@ label lisa_shower:
     label .start_peeping:
         $ lisa.daily.shower = 1
         $ Skill('hide', 0.03, 60)
-        $ r1 = renpy.random.randint(1, 4)
+        $ r1 = random_randint(1, 4)
 
         $ renpy.scene()
         $ renpy.show('Lisa shower 0'+str(r1))
@@ -137,8 +137,8 @@ label lisa_shower:
         $ spent_time += 10
         $ lisa.daily.shower = 1
         $ lisa.dress_inf = '00a'
-        $ r1 = renpy.random.randint(1, 6)
-        scene BG shower-03
+        $ r1 = random_randint(1, 6)
+        scene BG bathroom-shower-03
         $ renpy.show('Max shower-alt 01'+mgg.dress)
         $ renpy.show('Lisa shower-alt 0'+str(r1))
         show FG shower-water
@@ -153,8 +153,8 @@ label lisa_shower:
         if rand_result > 1:
             $ lisa.daily.shower = 1
             $ lisa.dress_inf = '00a'
-            $ r1 = renpy.random.randint(1, 6)
-            scene BG shower-01
+            $ r1 = random_randint(1, 6)
+            scene BG bathroom-shower-01
             $ renpy.show('Lisa shower-closer 0'+str(r1))
             show FG shower-closer
             if 1 < r1 < 5:
@@ -172,7 +172,7 @@ label lisa_shower:
             $ lisa.daily.shower = 2
             $ lisa.dress_inf = '00a'
             $ r1 = random_choice(['07', '08'])
-            scene BG shower-01
+            scene BG bathroom-shower-01
             $ renpy.show('Lisa shower-closer '+r1)
             show FG shower-closer
             Max_12 "{color=[orange]}{i}Кажется, Лиза что-то заподозрила!{/i}{/color}\n{m}О нет! Похоже, она что-то заметила... Надо бежать!{/m}"
@@ -192,7 +192,7 @@ label lisa_shower:
             $ r1 = random_choice(['07', '08'])
         else:
             $ r1 = random_choice(['09', '10'])
-        scene BG shower-01
+        scene BG bathroom-shower-01
         $ renpy.show('Lisa shower-closer '+r1)
         show FG shower-closer
         if lisa_was_topless() and lisa.dcv.other.stage:
@@ -794,7 +794,7 @@ label lisa_bath:
         Max_04 "{m}Посмотрим, что у нас тут...{/m}"
         $ spent_time += 10
 
-        $ r1 = renpy.random.randint(1, 4)
+        $ r1 = random_randint(1, 4)
 
         scene BG bath-00
         $ renpy.show('Lisa bath-window 0'+str(r1))
@@ -1020,7 +1020,7 @@ label lisa_romantic_movie_r:
         Max_03 "Ты сама выбирала, моё дело маленькое. Вот этот вроде ничего должен быть..."
         Lisa_02 "Ага, давай его. И твоё маленькое дело - это смотреть фильм, мучиться и чтобы у тебя ничего не шевелилось!"
 
-    if renpy.random.randint(1, 2) < 2:
+    if random_randint(1, 2) < 2:
         scene BG char Lisa horror-myroom 01
         $ renpy.show("Lisa horror-myroom 01-01"+lisa.dress)
     else:
@@ -1274,7 +1274,7 @@ label lisa_horor_movie_r:
                 play music f13
 
 
-    if renpy.random.randint(1, 2) < 2:
+    if random_randint(1, 2) < 2:
         scene BG char Lisa horror-myroom 01
         $ renpy.show("Lisa horror-myroom 01-01"+lisa.dress)
     else:
@@ -1330,7 +1330,7 @@ label lisa_horor_movie_r:
                 "{i}поцеловать Лизу{/i}" if lisa.flags.kiss_lesson > 6:   #если открыты поцелуи с прикосновениями
                     $ added_mem_var('horror_kiss')
                     # horror-myroom-02 + horror-myroom-02-max&lisa-02 или horror-myroom-02a + horror-myroom-02-max&lisa-03
-                    $ r1 = '0'+str(renpy.random.randint(2, 3))
+                    $ r1 = '0'+str(random_randint(2, 3))
                     if r1=='02':
                         scene BG char Lisa horror-myroom 02
                     else:

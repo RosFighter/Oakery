@@ -516,11 +516,11 @@ init python:
         MM_Cookies('lisa', 'sleep0', 'house[0]', '0,1,2,3,4,5,6', '00:00', '01:00', (518, 7), 0.6, 0.8, req="renpy.showing('BG char Lisa horror-myroom 01a')"),
         MM_Cookies('lisa', 'new_year', 'house[0]', '2,5', '20:30', '21:59', (60, 13), 0.75, 0.5),
 
-        MM_Cookies('alice', 'casual_d', 'house[4]', '3', '22:00', '23:59', (457, 206), 0.5, 0.8, req="alice.dress=='d'"),
-        MM_Cookies('alice', 'swim', 'house[6]', '4', '15:00', '15:59', (165, 614), 0.75, 0.8, req="renpy.showing('BG char Alice sun-alone 05')"),
+        MM_Cookies('alice', 'casual_d', 'house[4]', '3', '22:00', '23:59', (457, 206), 0.5, 0.8, req="all([alice.dress=='d', renpy.showing('alice_tv_01'), var_stage=='01'])"),
+        MM_Cookies('alice', 'swim', 'house[6]', '4', '15:00', '15:59', (165, 614), 0.75, 0.8, req="all([renpy.showing('alice_sunscreen'), var_stage=='05'])"),
         MM_Cookies('alice', 'sleep0', 'house[0]', '0,1,2,3,4,6', '02:00', '04:00', (1793, 501), 0.5, 0.35, req="alice.dress=='a'"),
         MM_Cookies('alice', 'sleep1', 'house[0]', '0,1,2,3,4,6', '02:00', '04:00', (1820, 30), 0.5, 0.35, req="alice.dress=='b'"),
-        MM_Cookies('alice', 'new_year', 'house[6]', '1,2,3,4,5', '13:00', '15:59', (1827, 367), 0.75, 0.5, req="renpy.showing('BG punish-sun 03')"),
+        MM_Cookies('alice', 'new_year', 'house[6]', '1,2,3,4,5', '13:00', '15:59', (1827, 367), 0.75, 0.5, req="[renpy.showing('alice_punish_sun'), var_stage=='03']"),
 
         MM_Cookies('ann', 'casual_d', 'house[5]', '0,1,2,3,4,5,6', '19:00', '19:59', (754, 596), 0.75, req="all([ann.dress=='d', renpy.showing('BG dinner 00'),not check_is_home('eric')])"),
         MM_Cookies('ann', 'sleep0', 'house[6]', '1,3', '7:0', '7:59', (5, 730), 0.6, 0.4, req="all([renpy.showing('Ann_yoga'), var_stage=='02'])"),

@@ -679,7 +679,7 @@ label dictaphone_showdown_with_eric:
     Max_09 "В таком случае, я за то, чтобы провести экспертизу её подлинности!"
 
     # tv-max&kira-sex01-01-f + lounge-sud-01-alice-03-ann-03 + lounge-sud-01-eric-(03/03a)
-    scene BG char Kira tv-sex01-01-f
+    scene BG tv-sex01-01-f
     show Alice showdown lounge 03
     $ renpy.show('Eric showdown lounge 03' + eric.dress)
 

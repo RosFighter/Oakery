@@ -51,11 +51,11 @@ screen choice_zone_sunscreen():
 
     use show_dynamic_tooltip
     imagemap:
-        ground 'BG char Alice sun-alone 01f'
-        add 'Alice sun-alone 01-'+('01a' if alice.daily.oiled == 2 else '01')
-        idle 'Alice sun-alone 01-'+('01a' if alice.daily.oiled == 2 else '01')
-        hover 'Alice sun-alone 01-'+('01a' if alice.daily.oiled == 2 else '01')
-        add 'Max sun-alone 01'+mgg.dress
+        ground 'sun-alone-01'
+        add 'sun-alone-01-alice-01'+('a' if alice.daily.oiled == 2 else '')
+        idle 'sun-alone-01-alice-01'+('a' if alice.daily.oiled == 2 else '')
+        hover 'sun-alone-01-alice-01'+('a' if alice.daily.oiled == 2 else '')
+        add 'sun-alone-01-max-01'+('a' if mgg.dress == 'c' else '')
         hotspot (78, 358, 132, 108) action [Hide('dynamic_tooltip'), Jump('massage_sunscreen.left_foot')]:
             mouse 'palms'
             tooltip _("{i}массировать ступни{/i}")

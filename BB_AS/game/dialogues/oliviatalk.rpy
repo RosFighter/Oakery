@@ -505,7 +505,7 @@ label olivia_repeat_sunscreen:
             jump .lisa_first
 
     label .olivia_first:
-        $ r0 = renpy.random.randint(0, 1)
+        $ r0 = random_randint(0, 1)
 
         # sun2-01 + sun2-01-max&olivia-01 + одежда Макса
         scene BG char Lisa Olivia sun2-01
@@ -614,7 +614,7 @@ label olivia_repeat_sunscreen:
         jump .end
 
     label .lisa_first:
-        $ r0 = renpy.random.randint(0, 1)
+        $ r0 = random_randint(0, 1)
 
         # sun3-01 + sun3-01-max&lisa-01 + одежда Макса и Лизы
         scene BG char Lisa Olivia sun3-01
