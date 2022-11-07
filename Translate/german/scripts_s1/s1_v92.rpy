@@ -1510,7 +1510,7 @@ translate german strings:
 
     # game/scripts_s1/s1_v92.rpy:527
     old "Тогда ты уже бы была облапана с ног до головы!"
-    new "Du wirst komplett befummelt werden!"
+    new "Dann wirst Du auch befummelt werden!"
 
     # game/scripts_s1/s1_v92.rpy:576
     old "{i}положить её руку на свой член{/i}"
