@@ -106,11 +106,17 @@ label alice_sleep_night:
             if flags.eric_jerk and '02:00'<=tm<'02:30':
                 jump jerk_balkon
 
-            scene BG char Alice bed-night-01
-            $ renpy.show('Alice sleep-night '+pose3_2)
-            if not alice.sleepnaked:
-                $ renpy.show('cloth1 Alice sleep-night '+pose3_2+alice.dress)
-            $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
+            if alice.sleeptoples and alice.req.result == 'not_sleep':
+                $ alice.sleeptoples = False
+            if alice.sleepnaked and alice.req.result == 'not_naked':
+                $ alice.sleepnaked = False
+
+            # scene BG char Alice bed-night-01
+            # $ renpy.show('Alice sleep-night '+pose3_2)
+            # if not alice.sleepnaked:
+            #     $ renpy.show('cloth1 Alice sleep-night '+pose3_2+alice.dress)
+            # $ renpy.show('FG alice-voyeur-night-00'+mgg.dress)
+            scene alice_sleep_night
             if alice.req.result == 'naked':
                 # договорённость спать голой
                 # условие выполняется
@@ -168,10 +174,11 @@ label alice_sleep_night:
                 "{i}уйти{/i}":
                     jump .end
             $ spent_time += 10
-            scene BG char Alice bed-night-02
-            $ renpy.show('Alice sleep-night-closer '+pose3_2)
-            if not alice.sleepnaked:
-                $ renpy.show('cloth1 Alice sleep-night-closer '+pose3_2+alice.dress)
+            # scene BG char Alice bed-night-02
+            # $ renpy.show('Alice sleep-night-closer '+pose3_2)
+            # if not alice.sleepnaked:
+            #     $ renpy.show('cloth1 Alice sleep-night-closer '+pose3_2+alice.dress)
+            scene alice_sleep_night closer
             if alice.req.result == 'naked':
                 # договорённость спать голой
                 # условие выполняется
@@ -219,11 +226,18 @@ label alice_sleep_morning:
         Max_00 "{m}Кажется, Алиса спит. Стучать в дверь точно не стоит.\nДа и входить опасно для здоровья...{/m}"
         "{i}заглянуть в окно{/i}":
             $ spent_time = 10
-            scene BG char Alice bed-morning-01
-            $ renpy.show('Alice sleep-morning '+pose3_2)
-            if not alice.sleepnaked:
-                $ renpy.show('cloth1 Alice sleep-morning '+pose3_2+alice.dress)
-            $ renpy.show('FG alice-voyeur-morning-00'+mgg.dress)
+
+            if alice.sleeptoples and alice.req.result == 'not_sleep':
+                $ alice.sleeptoples = False
+            if alice.sleepnaked and alice.req.result == 'not_naked':
+                $ alice.sleepnaked = False
+
+            # scene BG char Alice bed-morning-01
+            # $ renpy.show('Alice sleep-morning '+pose3_2)
+            # if not (alice.sleepnaked or alice.dress==''):
+            #     $ renpy.show('cloth1 Alice sleep-morning '+pose3_2+alice.dress)
+            # $ renpy.show('FG alice-voyeur-morning-00'+mgg.dress)
+            scene alice_sleep_morning
             if alice.req.result == 'naked':
                 if pose3_2 == '01':
                     Max_07 "{m}Ухх! Алиса ещё спит, что меня безусловно радует... Ведь это значит, что я могу рассмотреть её классную, совершенно голую фигурку как следует...{/m}" nointeract
@@ -278,10 +292,12 @@ label alice_sleep_morning:
                 "{i}уйти{/i}":
                     jump Waiting
             $ spent_time += 10
-            scene BG char Alice bed-morning-02
-            $ renpy.show('Alice sleep-morning-closer '+pose3_2)
-            if not (alice.sleepnaked or alice.dress==''):
-                $ renpy.show('cloth1 Alice sleep-morning-closer '+pose3_2+alice.dress)
+
+            # scene BG char Alice bed-morning-02
+            # $ renpy.show('Alice sleep-morning-closer '+pose3_2)
+            # if not (alice.sleepnaked or alice.dress==''):
+            #     $ renpy.show('cloth1 Alice sleep-morning-closer '+pose3_2+alice.dress)
+            scene alice_sleep_morning closer
             if alice.req.result == 'naked':
                 if pose3_2 == '01':
                     Max_05 "{m}Ох, от такого вида в голове остаются лишь самые пошлые мысли... Как же я хочу помять эту попку! А после натянуть её на свой... И ещё... пожалуй, пока она не проснулась, тихонько отсюда уйти.{/m}" nointeract
@@ -1449,12 +1465,13 @@ label alice_smoke:
         if alice.dcv.revenge.lost:
             $ chance /= 2 * alice.dcv.revenge.lost
         if random_outcome(chance):
+            scene BG char Alice smoke
             Max_02 "Ну вот, Алиса, ты и попалась! Видимо, уже невмоготу стало, как курить захотелось..."
             $ alice.dcv.revenge.disable()
         else:
+            call alice_swim from _call_alice_swim
             Max_09 "Странно, Алиса в это время обычно курит... Она решила бросить, что ли?"
             $ alice.daily.smoke = 1
-            call alice_swim from _call_alice_swim
             return
 
     elif alice.dcv.revenge.enabled:
@@ -2765,7 +2782,7 @@ label alice_towel_after_club:
         Alice_08 "Кажется, я знаю, что с этим поможет... Смотри, не упади от наслаждения!"
         # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-03
         $ var_pose = '03'
-        scene alice_in_bath_bj
+        scene alice_in_bath_bj_02
         menu:
             Max_21 "Ох, Алиса! Упасть здесь действительно есть от чего! Какие у тебя нежные губы... Д-а-а... У тебя хорошо получается, сестрёнка... Давай поактивнее... Как же приятно, д-а-а..."
             "{i}сдерживаться{/i}" ('sex', mgg.sex * 4, 90):
@@ -2773,7 +2790,7 @@ label alice_towel_after_club:
                     # (Удалось сдержаться!)
                     # after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-03a
                     $ var_pose = '03a'
-                    scene alice_in_bath_bj
+                    scene alice_in_bath_bj_02
                     menu:
                         Max_22 "[restrain!t]Вот чёрт, Алиса! Ты делаешь это просто потрясающе! Да, продолжай вот так... Ещё быстрее... Вот умница! Я держусь из последних сил... Вот-вот кончу..."
                         "{i}кончить ей на лицо{/i}":

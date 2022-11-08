@@ -2606,3 +2606,10 @@ translate german strings:
     old "Нужно проверить, появился ли минет в арсенале Алисы, если я защищаю её от пауков и делаю массаж у ТВ без конфет..."
     new "Ich muss sehen, ob ein Blowjob bei Alice möglich ist, wenn ich sie vor Spinnen beschütze und ihr eine Massage vor dem Fernseher gebe, ohne Süßigkeiten..."
 
+# TODO: Translation updated at 2022-11-03 17:05
+
+translate german strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Может быть, если Алиса всё же кончит от того, что я вытворяю языком с её киской, то она в ответ чем-нибудь меня наградит? Это нужно выяснить..."
+    new "Wenn Alice von meiner Zunge in ihrer Pussy kommt, wird sie mich vielleicht mit einer Gegenleistung belohnen. Das bleibt jedoch abzuwarten..."

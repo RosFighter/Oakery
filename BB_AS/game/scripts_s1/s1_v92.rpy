@@ -2939,6 +2939,7 @@ label ev_v92_020:
         # (after-club-bath02a-max&alice-02-f + after-club-bathbj01-max&alice-02)
         # (after-club-bathbj01-max&alice-02a-f + after-club-bathbj01-max&alice-02a)
         if random_choice([True, False]):
+            $ var_pose = '02'
             scene alice_in_bath_bj
         else:
             $ var_pose = '02a'
@@ -2954,7 +2955,7 @@ label ev_v92_020:
             # (after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-03)
             # (after-club-bathbj01-max&alice-03-f + after-club-bathbj01-max&alice-03a)
             $ var_pose = random_choice(['03', '03a'])
-            scene alice_in_bath_bj
+            scene alice_in_bath_bj_02
             menu:
                 Max_21 "[restrain!t]Ох, Алиса, это мне очень нравится! Так приятно... Д-а-а... Давай ещё... Как же сладко твои сочные губки это делают, д-а-а..."
                 "{i}сдерживаться{/i}" ('sex', mgg.sex * 2, 90):     # (секс опыт)
@@ -2968,7 +2969,7 @@ label ev_v92_020:
                     scene alice_in_bath_bj_01
                 else:
                     $ var_pose = '04a'
-                    scene alice_in_bath_bj
+                    scene alice_in_bath_bj_02
                 menu:
                     Max_22 "[restrain!t]Да, продолжай вот так! Давай быстрее, сестрёнка... Вижу, что с ним не просто справиться, но у тебя классно получается! Ещё немного... Я сейчас кончу..."
                     "{i}кончить ей на грудь{/i}":
@@ -2986,11 +2987,11 @@ label ev_v92_020:
                                 jump .end
             else:
                 # (Не удалось сдержаться!)
-                Max_20 "Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
+                Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
                 jump .cum_breast_bath
         else:
             # (Не удалось сдержаться!)
-            Max_20 "Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
+            Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
             jump .cum_breast_bath
 
     label .end:

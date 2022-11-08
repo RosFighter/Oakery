@@ -1126,13 +1126,13 @@ translate english ev_v92_007_43df41ee:
 translate english ev_v92_007_c55b7083:
 
     # Alice_10 "Ухх... Как же классно ты это делаешь! Я... Я знаю, что это неправильно, но... чертовски классно... Д-а-а...." nointeract
-    Alice_10 "Ugh... What a great job you're doing! I... I know it's wrong, but...so damn cool... A-a-a-...." nointeract
+    Alice_10 "Ugh... What a great job you're doing! I... I know it's wrong, but...so damn good... A-a-a-...." nointeract
 
 # game/scripts_s1/s1_v92.rpy:742
 translate english ev_v92_007_3f95c1ae:
 
     # Alice_11 "Да, Макс! Продолжай вот так... Охх... Как хорошо! Д-а-а... Теперь чуть быстрее... Да, вот так! Ещё... чуть-чуть... и я кончу..."
-    Alice_11 "Yes, Max! Keep going like that... Ohhh... That feels good! Yeah... A little faster now... Yes, that's it. A little more... a little more... and I'll come..."
+    Alice_11 "Yes, Max! Keep going like that... Ohhh... That feels good! Yeah... A little faster now... Yes, that's it. A little more... a little more... And I'll Cum..."
 
 # game/scripts_s1/s1_v92.rpy:743
 translate english ev_v92_007_e1e06390:
@@ -2518,7 +2518,7 @@ translate english ev_v92_015_cuni_d9b3b6ff:
 translate english ev_v92_015_cuni_c8ad23a6:
 
     # Max_19 "{m}Как приятно, что Алиса не забывает при всём этом работать своей нежной ручкой. Вцепилась в мой член мёртвой хваткой...{/m}"
-    Max_19 "{m}}How nice that Alice doesn't forget to work her gentle hand in all this. She's got her hands on my cock with a deadly grip...{/m}"
+    Max_19 "{m}How nice that Alice doesn't forget to work her gentle hand in all this. She's got her hands on my cock with a deadly grip...{/m}"
 
 # game/scripts_s1/s1_v92.rpy:1435
 translate english ev_v92_015_cuni_75b81793:
@@ -4575,7 +4575,7 @@ translate english ev_v92_020_mirror_a3300081:
 translate english ev_v92_020_mirror_5aa8b6b3:
 
     # Alice_02 "Да, правильно... Халатик лучше снять, а то мало ли, ещё забрызгаешь его чем-нибудь."
-    Alice_02 "Yes, that's right... You'd better take off your robe, or you might get something on it."
+    Alice_02 "Yes, that's right... You'd better take off me robe, or you might get something on it."
 
 # game/scripts_s1/s1_v92.rpy:2699
 translate english ev_v92_020_mirror_29b95329:
@@ -4800,16 +4800,16 @@ translate english ev_v92_020_cum_breast_bath_50e121f5:
     Alice_05 "Yeah. That's exactly what happened!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:2808
-translate english ev_v92_020_cum_breast_bath_a4a5b488:
+translate english ev_v92_020_cum_breast_bath_1bb78087:
 
-    # Max_20 "Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
-    Max_20 "Oh, Alice... No, I can't take it anymore... Ugh... I'm going to cum!"
+    # Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
+    Max_20 "[norestrain!t]Oh, Alice... No, I can't take it anymore... Ugh... I'm going to cum!"
 
 # game/scripts_s1/s1_v92.rpy:2812
-translate english ev_v92_020_cum_breast_bath_a4a5b488_1:
+translate english ev_v92_020_cum_breast_bath_1bb78087_1:
 
-    # Max_20 "Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
-    Max_20 "Oh, Alice... No, I can't take it anymore... Ugh... I'm going to cum!"
+    # Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
+    Max_20 "[norestrain!t]Oh, Alice... No, I can't take it anymore... Ugh... I'm going to cum!"
 
 # game/scripts_s1/s1_v92.rpy:2826
 translate english ev_v92_021_01c3b2fa:
@@ -5382,4 +5382,3 @@ translate english strings:
     # game/scripts_s1/s1_v92.rpy:3051
     old "{i}остаться за спиной Алисы{/i}"
     new "{i}stay behind Alice's back{/i}"
-

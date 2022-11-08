@@ -1848,7 +1848,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:768
     old "Нужно и дальше защищать Алису от наказаний..."
-    new "We must continue to protect Alice from punishment..."
+    new "I must continue to protect Alice from punishment..."
 
     # game/core/09_opportunities.rpy:768
     old "Эрик подарил Алисе кружевное боди раньше меня, а значит я упустил возможность ещё больше с ней сблизиться. По крайней мере, пока не избавлюсь от него (но не в этой версии игры)..."
@@ -2491,7 +2491,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Потребуются успехи в возможности \"Кто не рискует...\"..."
-    new "It's going to take success in the possibility of \"Who doesn't risk...\..."
+    new "It's going to take success in the possibility of \"Who doesn't risk...\"..."
 
     # game/core/09_opportunities.rpy:4
     old "Ночью приставать к Алисе я не стал. Это явная дорога обратно в свою комнату на костылях. А вот утром, пока Алиса ещё спит, это другое дело... \nЯ, конечно, уже кучу раз видел её сиськи, но всё равно было очень приятно стягивать её лифчик и не менее приятно то, что она от этого не проснулась. Самое главное, это то, что я смог попасть в её постель и теперь можно двигаться дальше. \n\nИнтересно, что будет, если она проснётся от моих приставаний? Это и надо выяснить..."
@@ -2507,7 +2507,7 @@ translate english strings:
 
     # game/core/09_opportunities.rpy:4
     old "Нужно продолжать оберегать Алису от пауков в её комнате..."
-    new "We must continue to protect Alice from the spiders in her room..."
+    new "I must continue to protect Alice from the spiders in her room..."
 
     # game/core/09_opportunities.rpy:4
     old "Ох уж какая Алиса оказывается проказница! Лежала такая, якобы спала и вдруг бац... уже мне дрочит... А ещё оправдывается! Всё теперь понятно, что у неё на уме и мне стоит ответить в том же ключе... в следующий раз... когда останусь с ней на ночь..."
@@ -2605,3 +2605,10 @@ translate english strings:
     old "Нужно проверить, появился ли минет в арсенале Алисы, если я защищаю её от пауков и делаю массаж у ТВ без конфет..."
     new "I need to see if a blow job is in Alice's arsenal if I protect her from spiders and give her a massage at the TV without candy..."
 
+# TODO: Translation updated at 2022-11-03 17:05
+
+translate english strings:
+
+    # game/core/09_opportunities.rpy:4
+    old "Может быть, если Алиса всё же кончит от того, что я вытворяю языком с её киской, то она в ответ чем-нибудь меня наградит? Это нужно выяснить..."
+    new "Maybe if Alice did cum from what I was doing with her pussy with my tongue, she would reward me with something in return. We'll have to find out..."

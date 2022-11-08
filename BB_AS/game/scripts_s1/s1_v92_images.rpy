@@ -373,7 +373,7 @@ layeredimage alice_in_bath_bj_01:
     always 'after-club-bathbj01-max&alice-02a-f'
     always 'after-club-bathbj01-max&alice-[var_pose]'
 
-layeredimage alice_in_bath_bj:
+layeredimage alice_in_bath_bj_02:
     always 'after-club-bathbj01-max&alice-03-f'
     always 'after-club-bathbj01-max&alice-[var_pose]'
 
@@ -388,3 +388,59 @@ layeredimage alice_in_bath_cun:
         'after-club-bathbj01-max&alice-01'
     else:
         'after-club-bath01-max&alice-02'
+
+layeredimage alice_sleep_morning:
+    group BG:
+        attribute far default:
+            'BG char Alice bed-morning-01'
+        attribute closer:
+            'BG char Alice bed-morning-02'
+
+    group bode:
+        attribute far default:
+            'Alice sleep-morning [pose3_2]'
+        attribute closer:
+            'Alice sleep-morning-closer [pose3_2]'
+
+    if alice.sleeptoples and not (alice.sleepnaked or alice.dress==''):
+        if_all 'far'
+        'cloth1 Alice sleep-morning [pose3_2][alice.dress]a'
+    elif not (alice.sleepnaked or alice.dress==''):
+        if_all 'far'
+        'cloth1 Alice sleep-morning [pose3_2][alice.dress]'
+    if alice.sleeptoples and not (alice.sleepnaked or alice.dress==''):
+        if_all 'closer'
+        'cloth1 Alice sleep-morning-closer [pose3_2][alice.dress]a'
+    elif not (alice.sleepnaked or alice.dress==''):
+        if_all 'closer'
+        'cloth1 Alice sleep-morning-closer [pose3_2][alice.dress]'
+
+    always 'FG alice-voyeur-morning-00[mgg.dress]' if_all 'far'
+
+layeredimage alice_sleep_night:
+    group BG:
+        attribute far default:
+            'BG char Alice bed-night-01'
+        attribute closer:
+            'BG char Alice bed-morning-02'
+
+    group bode:
+        attribute far default:
+            'Alice sleep-night [pose3_2]'
+        attribute closer:
+            'Alice sleep-night-closer [pose3_2]'
+
+    if alice.sleeptoples and not (alice.sleepnaked or alice.dress==''):
+        if_all 'far'
+        'cloth1 Alice sleep-night [pose3_2][alice.dress]a'
+    elif not (alice.sleepnaked or alice.dress==''):
+        if_all 'far'
+        'cloth1 Alice sleep-night [pose3_2][alice.dress]'
+    if alice.sleeptoples and not (alice.sleepnaked or alice.dress==''):
+        if_all 'closer'
+        'cloth1 Alice sleep-night [pose3_2][alice.dress]a'
+    elif not (alice.sleepnaked or alice.dress==''):
+        if_all 'closer'
+        'cloth1 Alice sleep-night-closer [pose3_2][alice.dress]'
+
+    always 'FG alice-voyeur-night-00[mgg.dress]' if_all 'far'

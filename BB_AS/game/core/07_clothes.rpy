@@ -176,7 +176,7 @@ init python:
                 elif alice.req.result == 'sleep'  or alice.flags.shower_max > 2:
                     # договорённость спать топлес или после третьего совместного душа с Максом
                     alice.sleeptoples = True
-                    dress += 'a'
+                    # dress += 'a'
                     inf = {'a':'02ga', 'b':'02ja'}[alice.clothes.sleep.GetCur().suf]
             elif name in ['shower', 'bath']:
                 inf = '04aa'
