@@ -189,6 +189,11 @@ layeredimage alice_punishes_max:
     always 'aliceroom-punish-[var_stage]-alice-[var_pose]'
     always 'aliceroom-punish-[var_stage]-max-[var_pose2][var_dress]'
 
+layeredimage alice_sunscreen_start:
+    always 'sun-alone-01'
+    always 'sun-alone-01-alice-01[var_dress]'
+    always 'sun-alone-01-max-01[var_dress2]'
+
 layeredimage alice_sunscreen:
     if var_stage in ['07', '08']:
         'sun-alone-07'
@@ -438,7 +443,7 @@ layeredimage alice_sleep_night:
         'cloth1 Alice sleep-night [pose3_2][alice.dress]'
     if alice.sleeptoples and not (alice.sleepnaked or alice.dress==''):
         if_all 'closer'
-        'cloth1 Alice sleep-night [pose3_2][alice.dress]a'
+        'cloth1 Alice sleep-night-closer [pose3_2][alice.dress]a'
     elif not (alice.sleepnaked or alice.dress==''):
         if_all 'closer'
         'cloth1 Alice sleep-night-closer [pose3_2][alice.dress]'

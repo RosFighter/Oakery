@@ -1466,6 +1466,8 @@ label alice_smoke:
             $ chance /= 2 * alice.dcv.revenge.lost
         if random_outcome(chance):
             scene BG char Alice smoke
+            $ renpy.show('Alice smoke '+pose3_3+alice.dress)
+            $ persone_button1 = 'Alice smoke '+pose3_3+alice.dress
             Max_02 "Ну вот, Алиса, ты и попалась! Видимо, уже невмоготу стало, как курить захотелось..."
             $ alice.dcv.revenge.disable()
         else:
@@ -1480,14 +1482,13 @@ label alice_smoke:
         return
 
     scene BG char Alice smoke
-
     if alice.daily.smoke:
         $ renpy.show('Alice smoke '+pose3_3+alice.dress)
         $ persone_button1 = 'Alice smoke '+pose3_3+alice.dress
         return
     else:
         $ renpy.show('Alice smoke '+pose3_3+alice.dress)
-        with fade4
+        # with fade4
 
     $ alice.daily.smoke = 1
     $ alice.prev_plan = alice.plan_name
