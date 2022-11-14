@@ -4801,16 +4801,16 @@ translate german ev_v92_020_cum_breast_bath_50e121f5:
     Alice_05 "Ja, genau das ist passiert!" nointeract
 
 # game/scripts_s1/s1_v92.rpy:2808
-translate german ev_v92_020_cum_breast_bath_a4a5b488:
+translate german ev_v92_020_cum_breast_bath_1bb78087:
 
-    # Max_20 "Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
-    Max_20 "Oh, Alice... Ich kann nicht mehr... Ugh... Ich werde abspritzen!"
+    # Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
+    Max_20 "[norestrain!t]Oh, Alice... Ich kann nicht mehr... Ugh... Ich werde abspritzen!"
 
 # game/scripts_s1/s1_v92.rpy:2812
-translate german ev_v92_020_cum_breast_bath_a4a5b488_1:
+translate german ev_v92_020_cum_breast_bath_1bb78087_1:
 
-    # Max_20 "Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
-    Max_20 "Oh, Alice... Ich kann nicht mehr... Ugh... Ich werde abspritzen!"
+    # Max_20 "[norestrain!t]Ох, Алиса... Нет, я уже больше не могу... Ухх... Сейчас кончу!"
+    Max_20 "[norestrain!t]Oh, Alice... Ich kann nicht mehr... Ugh... Ich werde abspritzen!"
 
 # game/scripts_s1/s1_v92.rpy:2826
 translate german ev_v92_021_01c3b2fa:
@@ -5383,4 +5383,3 @@ translate german strings:
     # game/scripts_s1/s1_v92.rpy:3051
     old "{i}остаться за спиной Алисы{/i}"
     new "{i}bleib bei hinter Alice{/i}"
-
