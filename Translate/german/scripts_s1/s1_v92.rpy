@@ -3932,7 +3932,7 @@ translate german ev_v92_017_cunnilingus_5bbcc6da:
 translate german ev_v92_017_cunnilingus_1ebb3ff1:
 
     # Alice_08 "Фух... Это было нечто... Макс... Ты доволен, своей наградой за покорность?"
-    Alice_08 "Puh... Das war etwas... Max... Bist du mit deiner Belohnung einverstanden, die du für dein Vorhaben erhalten hast?"
+    Alice_08 "Puh... Das war doch was... Max... Bist du mit deiner Belohnung zufrieden?"
 
 # game/scripts_s1/s1_v92.rpy:2322
 translate german ev_v92_017_cunnilingus_667be4e1:
